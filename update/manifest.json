@@ -1,6 +1,6 @@
 {
-    "version":  "0.1.6",
-    "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.6/patch-fr-0.1.6.zip",
-    "sha256":  "c56b20c09aeae73132a0bf92f9aab2816565d96db96af1aae28367ad61557324",
-    "notes":  "Ajout de la fonctionnalité permettant de modifier les décors et les sprites en appuyant sur F1 F2"
+    "version":  "0.1.7",
+    "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.7/patch-fr-0.1.7.zip",
+    "sha256":  "b01a57fcc05356b550f90f08df7b30ae8b46e8e7b2fee650c41c41a52cdd44a1",
+    "notes":  ""
 }
