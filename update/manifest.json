@@ -1,6 +1,6 @@
 {
-  "version": "0.1.1",
-  "downloadUrl": "https://github.com/Naries5/umineko-fr/releases/download/v0.1.1/patch-fr-0.1.1.zip",
-  "sha256": "c27fb46d9c2a57c4c3f4d56357de82004b821f7b5009186cc37b47c103b57d27",
-  "notes": "Correction du caractère parasite affiché avant une réplique de Kinzo."
+  "version": "0.1.2",
+  "downloadUrl": "https://github.com/Naries5/umineko-fr/releases/download/v0.1.2/patch-fr-0.1.2.zip",
+  "sha256": "22aa4914ceea8e485b06c1bc67c93b1569f500471f1cd5717590970c518f6816",
+  "notes": "Corrections de traduction et harmonisation de plusieurs éléments."
 }
