@@ -1,98 +1,98 @@
 {
     "schemaVersion":  3,
-    "version":  "0.1.9",
-    "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.9/patch-fr-0.1.9.zip",
-    "sha256":  "2b02c574792a3648d754db7d35f1e2df76c8b1499e452291e6b6ebb8c62a6e9c",
-    "notes":  "",
+    "version":  "0.1.10",
+    "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.10/patch-fr-0.1.10.zip",
+    "sha256":  "6d5c2ac3037a0497ca8465ab6c7a0ecb9d94c1f550cd33ebef00bcd61ed80cad",
+    "notes":  "Corrections de certains background OG et de fautes dans le texte.",
     "requires07thMod":  true,
     "updater":  {
-                    "version":  "0.1.9",
-                    "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.9/UminekoFR-Updater-win-x64.exe",
+                    "version":  "0.1.10",
+                    "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.10/UminekoFR-Updater-win-x64.exe",
                     "sha256":  "7f90b1f79eab1919999d4737c965324686f3e9b1d0be9db0ae369f05a3d79a3f",
                     "size":  35105077
                 },
     "packages":  [
                      {
                          "id":  "core",
-                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.9/core.zip",
-                         "sha256":  "4afc0db8d4609624d39024c3b0cbef2ec03a9e18b15d05c1246be7b36edd2329",
-                         "size":  4652869
+                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.10/core.zip",
+                         "sha256":  "9e151ac78c47d299e59404305c31ba9d1662ec1af084f4c0dbe02e828d21ce53",
+                         "size":  4652683
                      },
                      {
                          "id":  "misc-001",
-                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.9/misc-001.zip",
-                         "sha256":  "49c8415fc58d3d8b3e487f2d2dfd1a86679a3c816a9fae50938569b943219304",
+                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.10/misc-001.zip",
+                         "sha256":  "e4ed1eaf9ee2390b3559edb8ca7c5aea1419211b98fe756a5c06b2afb3ddc3df",
                          "size":  75892545
                      },
                      {
                          "id":  "misc-002",
-                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.9/misc-002.zip",
-                         "sha256":  "d850d4a6cc15d9d5cb7958232083182da57e4fbaf235c0be0dfd71bc61f14a3d",
+                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.10/misc-002.zip",
+                         "sha256":  "bc14e3413203da835b07dbe782e6126ec48a3969515f58ccef04e87222770ac0",
                          "size":  92326492
                      },
                      {
                          "id":  "misc-003",
-                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.9/misc-003.zip",
-                         "sha256":  "420e3b7a3b3a619e50402064e0c4d42c7538150ce1821fa863396525f78ed229",
+                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.10/misc-003.zip",
+                         "sha256":  "59b1c3f3ee02996614d88bba49f2cb07080fd298394ac2d10ae87603220608ea",
                          "size":  92289059
                      },
                      {
                          "id":  "misc-004",
-                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.9/misc-004.zip",
-                         "sha256":  "4cbfb36b758d2ce43fac14049cb4876307fb3ae708e491e35aa33a81e0400977",
+                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.10/misc-004.zip",
+                         "sha256":  "7ea092981dd5f93c7fa473163162038fc8c27c0b24a3bf097465fb1ef3dfe6ff",
                          "size":  92576538
                      },
                      {
                          "id":  "misc-005",
-                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.9/misc-005.zip",
-                         "sha256":  "6fe6d11bcfb9202dbbca5d0e90866f91792f823e7483fae234c8cd9b21f6d4da",
+                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.10/misc-005.zip",
+                         "sha256":  "786ea7f798cddab86da05ad6768779230bd314cdca658dee01b233417344a4fa",
                          "size":  92549988
                      },
                      {
                          "id":  "misc-006",
-                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.9/misc-006.zip",
-                         "sha256":  "b0026ff99b137eb194d550a387e4102eacc2b554d4b1d72a8f957580223fb00a",
+                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.10/misc-006.zip",
+                         "sha256":  "65c6b61c95aac20fa9ad132fb37beaba9a7b5f49a8e27c12749a0ccd06810a82",
                          "size":  92789741
                      },
                      {
                          "id":  "misc-007",
-                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.9/misc-007.zip",
-                         "sha256":  "f344703d3894b8340f59d499c4111d395f32fc7373978e2fcda6f3fecc9af9b3",
+                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.10/misc-007.zip",
+                         "sha256":  "d9d6c2d917917cf690dafde7827d981ede9813f905ef6758b397988a306f25c7",
                          "size":  87047570
                      },
                      {
                          "id":  "misc-008",
-                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.9/misc-008.zip",
-                         "sha256":  "0fe1e4d14b675d7eb9cfe0dac9f624d95a5c0d21edc3e18af2e02ed9f8a39f5d",
+                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.10/misc-008.zip",
+                         "sha256":  "af17a3a5891a80b533c60ba812f6e2890597adccce6a2a2309d348f24f6b6948",
                          "size":  86345135
                      },
                      {
                          "id":  "misc-009",
-                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.9/misc-009.zip",
-                         "sha256":  "f01a3885a71c19a0517ab60839a1e1a64796e1277543ef1c49dce6674510310a",
+                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.10/misc-009.zip",
+                         "sha256":  "e1987deb6d53845d07d6551d4de6c19c7796a75c72cc7c8e3292d980f8bb33ea",
                          "size":  92469936
                      },
                      {
                          "id":  "misc-010",
-                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.9/misc-010.zip",
-                         "sha256":  "393a61d3e749afa5f7063df5528b711f9e01511a12977a4e74810ffcfbd4d559",
+                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.10/misc-010.zip",
+                         "sha256":  "1350be4d10d6030cc51b1ef426db307463bed08621f395c9446e7fadc5183b4a",
                          "size":  89831092
                      },
                      {
                          "id":  "misc-011",
-                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.9/misc-011.zip",
-                         "sha256":  "20d377acb461aa34b07b94d56b7f7218e134e67ed3800fdcb3c64c30dff3c8f5",
+                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.10/misc-011.zip",
+                         "sha256":  "eeba605b31f296285dfdccd9eba2c0f4be870a618c50aad0900b7eaa21bca48c",
                          "size":  89074507
                      },
                      {
                          "id":  "misc-012",
-                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.9/misc-012.zip",
-                         "sha256":  "87d5641042bb570bbbdc8bda7bfedd4c95ce0f1089047dce11c0d76853b85d5c",
+                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.10/misc-012.zip",
+                         "sha256":  "e6528f3deaf3590487e025c8f6fee48e92b3142f997bad128553b3bda5387429",
                          "size":  92891683
                      },
                      {
                          "id":  "misc-013",
-                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.9/misc-013.zip",
+                         "downloadUrl":  "https://github.com/Naries5/umineko-fr/releases/download/v0.1.10/misc-013.zip",
                          "sha256":  "cdc08ed41c0d22fb7a82e7a209f60b8dadf906f862cdfe312953768664377aa8",
                          "size":  10669309
                      }
@@ -16258,8 +16258,8 @@
                   },
                   {
                       "path":  "0.u",
-                      "sha256":  "d031f80ebc9400b548883738e40b5936a28cb6db3de52dea4d1bb94b62c412e2",
-                      "size":  17914003,
+                      "sha256":  "74ab4e19714d45b6bfac7678ed83f975dbb305517472c7e718c92e67075453ad",
+                      "size":  17911802,
                       "packageId":  "core"
                   },
                   {
