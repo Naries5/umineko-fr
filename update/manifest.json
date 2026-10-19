@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "version": "0.1.11",
+  "version": "0.1.12",
   "downloadUrl": "https://github.com/Naries5/umineko-fr/releases/download/v0.1.11/patch-fr-0.1.11.zip",
   "sha256": "a17deb89c122b4d7bbe45c79c442716d3e1c02b2ce1fa5a29cbc3daebb3f2980",
-  "notes": "Relecture et améliorations de la traduction française de l’arc Questions : tome 1, chapitre 2 et début du chapitre 3, avec maintien des corrections précédentes.",
+  "notes": "Mise à jour ciblée du script Questions 0.u (relecture française) ; ressources et archive complète antérieure conservées.",
   "requires07thMod": true,
   "updater": {
     "version": "0.1.10",
@@ -14,9 +14,9 @@
   "packages": [
     {
       "id": "core",
-      "downloadUrl": "https://github.com/Naries5/umineko-fr/releases/download/v0.1.11/core.zip",
-      "sha256": "73850a75417882ca64723f91e4af56a13647d78310f0b09c1190f95d368607af",
-      "size": 4660591
+      "downloadUrl": "https://github.com/Naries5/umineko-fr/releases/download/v0.1.12/core.zip",
+      "sha256": "0c67b6bb124986950d386e7843b984be5fb0b2573fab777a2e7a9e7a94ae3f89",
+      "size": 4770352
     },
     {
       "id": "misc-001",
@@ -16258,8 +16258,8 @@
     },
     {
       "path": "0.u",
-      "sha256": "a1a9626826cb169a5c117652350e0873e1fb51bcf9418d52089ac31e935fe904",
-      "size": 17922029,
+      "sha256": "d301832436aa27f7154138810380182f36e12b05e3da8bf60a58a4b59e8b7ac3",
+      "size": 17947189,
       "packageId": "core"
     },
     {
