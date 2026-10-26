@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "version": "0.1.13",
+  "version": "0.1.14",
   "downloadUrl": "https://github.com/Naries5/umineko-fr/releases/download/v0.1.11/patch-fr-0.1.11.zip",
   "sha256": "a17deb89c122b4d7bbe45c79c442716d3e1c02b2ce1fa5a29cbc3daebb3f2980",
-  "notes": "Mise à jour ciblée du script Questions 0.u (relecture française) ; ressources et archive complète antérieure conservées.",
+  "notes": "Mise à jour du script Questions (EP1–EP4) : corrections littéraires et techniques.",
   "requires07thMod": true,
   "updater": {
     "version": "0.1.10",
@@ -101,6 +101,12 @@
       "downloadUrl": "https://github.com/Naries5/umineko-fr/releases/download/v0.1.13/patch-0.1.13.zip",
       "sha256": "c5315eb4afe0d4ad88918f9ae9bb682a615f5d063c173c371432895cc8ace102",
       "size": 4696439
+    },
+    {
+      "id": "patch-0.1.14",
+      "downloadUrl": "https://github.com/Naries5/umineko-fr/releases/download/v0.1.14/patch-0.1.14.zip",
+      "sha256": "68003527715f268e450a89c25d44cd7932aba5ae273e134b931bfc4d3d159812",
+      "size": 4682641
     }
   ],
   "files": [
@@ -16264,9 +16270,9 @@
     },
     {
       "path": "0.u",
-      "sha256": "f6a2981faa330aa50c45b7b7492420294f88daf4cc14ef9443420a9be2d6d87c",
-      "size": 18015581,
-      "packageId": "patch-0.1.13"
+      "sha256": "183196c72bb59355c39d99bd3594682b00009268324b23b2f211ae5895db409c",
+      "size": 18058323,
+      "packageId": "patch-0.1.14"
     },
     {
       "path": "bmp\\r_click\\black.bmp",
