@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "version": "0.1.15",
+  "version": "0.1.16",
   "downloadUrl": "https://github.com/Naries5/umineko-fr/releases/download/v0.1.11/patch-fr-0.1.11.zip",
   "sha256": "a17deb89c122b4d7bbe45c79c442716d3e1c02b2ce1fa5a29cbc3daebb3f2980",
-  "notes": "Mise à jour : Trad Umineko (205 fichiers).",
+  "notes": "Mise à jour : script 0.u, bmp (10 fichiers), en (194 fichiers).",
   "requires07thMod": true,
   "updater": {
     "version": "0.1.10",
@@ -119,104 +119,116 @@
       "downloadUrl": "https://github.com/Naries5/umineko-fr/releases/download/v0.1.15/patch-0.1.15-002.zip",
       "sha256": "80e1068982643e159430917bf8f5e974413a1a2bc4afcc0ef3d573b347aa914a",
       "size": 66465251
+    },
+    {
+      "id": "patch-0.1.16-001",
+      "downloadUrl": "https://github.com/Naries5/umineko-fr/releases/download/v0.1.16/patch-0.1.16-001.zip",
+      "sha256": "ca583b68dd83d091d368a110bbe0f34172b2010520ef6c9f47f71026439c701b",
+      "size": 65726081
+    },
+    {
+      "id": "patch-0.1.16-002",
+      "downloadUrl": "https://github.com/Naries5/umineko-fr/releases/download/v0.1.16/patch-0.1.16-002.zip",
+      "sha256": "c930280f76f2d76adf61afc122d57ff9b7a67e5cd7886ac60f8b3d9ad47c1c98",
+      "size": 66770755
     }
   ],
   "files": [
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\kla_1.png",
-      "sha256": "ef8cb25930bba2448e3ed2bcea867500f82ddd1c533b30cb2fd23741d5a9285b",
-      "size": 35795,
-      "packageId": "misc-010"
+      "sha256": "676bbfa747da18e953b0107ddcd4f39d92f4433b63e91d91edfae93ff06cb9dd",
+      "size": 53604,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\kir_2.png",
-      "sha256": "292c3f8be54a6409d6838af1805774a2a7584f1714c93ebe57aaf503024ba60c",
-      "size": 32686,
-      "packageId": "misc-010"
+      "sha256": "4f45db87bace605e8c3f95b539b3f0be3c54de9b8027723e7a8d08b92ba13ae2",
+      "size": 38350,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\kir_1.png",
-      "sha256": "1c0ea034b9ab8309eca28915eea46c0f3f45740e0bf47ec0d0aa36d732357f64",
-      "size": 32929,
-      "packageId": "misc-010"
+      "sha256": "5da567b999cb0ba075219d53f829e628939ccb10eac2396376dad6bc491a30b1",
+      "size": 44508,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\kla_2.png",
-      "sha256": "b965a867c986fc8d9585d924242d89e9a75d0531fd6ff6dae70b8086b535e61b",
-      "size": 37903,
-      "packageId": "misc-010"
+      "sha256": "18a8bc6303d959eba266d3c3ad54e81dc5786c4b06be971f6c28b7530803ef0d",
+      "size": 33088,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\mar_1.png",
-      "sha256": "ded2dc08940db9e065791dee14ad0ad986b95da3ead83ff8b4788333b34f38c7",
-      "size": 36130,
-      "packageId": "misc-010"
+      "sha256": "c004f122a02055b0fef29092561806e1d60271cd2c75b8c63ae3593085c159b9",
+      "size": 49184,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\kum_2.png",
-      "sha256": "3bc43ae695a0db22cc622e74a9a13a07b578f324c1d468c16460a5b86189165a",
-      "size": 34334,
-      "packageId": "misc-010"
+      "sha256": "a9fd87359160a5434428fd9c0874c68a5700e9d1622e42dac2637269422715b4",
+      "size": 37169,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\kum_1.png",
-      "sha256": "39ab715a23809c677142b0f690ec85ff35c5d899fa351e088e3804c880c3bcd7",
-      "size": 34417,
-      "packageId": "misc-010"
+      "sha256": "f12077752a08a7782b4ed5f5a1d4e4643371e168b2cbfd331bded075558b4dc6",
+      "size": 49111,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\kin_2.png",
-      "sha256": "080b8fdf6c97bd5b9080275f94977da67fedbec5c3118e847f1d77af0121f6f0",
-      "size": 38008,
-      "packageId": "misc-010"
+      "sha256": "4c2a1ef2c0ba8b1bc501b629d19ea22dd3d9db2b9873110f875ca8448e3257c1",
+      "size": 43756,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\jes_1.png",
-      "sha256": "6ceb3eb9a928306fbe377f4630a3fbf25465629738f0c9205c988c67f592becb",
-      "size": 33586,
-      "packageId": "misc-010"
+      "sha256": "7fbb044ca5fa2520b32bec3f489ffdeede11e10cf364d64199edc67c9ed7c0bc",
+      "size": 46226,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\hid_2.png",
-      "sha256": "2db7c3a3f63e650979b84045eaee0961165d0594714e4a615dd24c6d71fe4538",
-      "size": 24616,
-      "packageId": "misc-010"
+      "sha256": "3dcb519951803a233b67dc8527e9142ecd548530ed5f264fc44a39b195308a00",
+      "size": 26659,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\hid_1.png",
-      "sha256": "d0d07ab50d0d6db091c4da011f1d60f9e759ea8f492da4586c3232496f39fd6f",
-      "size": 43272,
-      "packageId": "misc-010"
+      "sha256": "85ed741b8ee0c00abff0dcd7511323967f2ba29f78f6fbd91574e478a2f1d86f",
+      "size": 56799,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\jes_2.png",
-      "sha256": "3b6cdfad3ba931e0bfa84c9bcb83aeab6899cf0746b4430f542f87b9c7d7fc36",
-      "size": 42947,
-      "packageId": "misc-010"
+      "sha256": "c15aa638c13176dc1cb3f0d06f39a9f1f0bfce1fe8beb77ae9038b749ea2d249",
+      "size": 49519,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\kin_1.png",
-      "sha256": "50123852e4b72817968eb312a85667d6628458a9f6c1b075e402ea597497410e",
-      "size": 42262,
-      "packageId": "misc-010"
+      "sha256": "9ed7bb20d468a9a0125541d87c342d45d5c189593843d539306d09264f803226",
+      "size": 54488,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\kan_2.png",
-      "sha256": "e8b859b11995986648019dfa297e6c249306c022872ad8e106eda38bf34de6a3",
-      "size": 31054,
-      "packageId": "misc-010"
+      "sha256": "c94bb5281a2c11e0fa64f848541dfddeebead4e0f794ec0daf191d96b91979d8",
+      "size": 37527,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\kan_1.png",
-      "sha256": "fb7e8704dfa331e21f89246d8faa1b2e9138853b185360b50ae981f33343f7c4",
-      "size": 29319,
-      "packageId": "misc-010"
+      "sha256": "378d119dd9408ac8f27f520399ba45cd9a566b184ddebcd69e6280ceb52fc4cb",
+      "size": 44968,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\mar_2.png",
-      "sha256": "ac753c5603c7b5155377a2f8194c1b664059bf74b2cf49ad17801d9357c168c9",
-      "size": 37617,
-      "packageId": "misc-010"
+      "sha256": "e3f1243cb0af7601d76b9e70d48c1cdc3e5a1f64351f80d692ac34aff0813f77",
+      "size": 38301,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3_2\\.DS_Store",
@@ -226,333 +238,333 @@
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\sha_2.png",
-      "sha256": "a2a5f626e03e186f1efc9876842a4621df2f547c853ff417eab2d23a0f1285ac",
-      "size": 30968,
-      "packageId": "misc-010"
+      "sha256": "df41255a28f8e779083efdac8f2830cfa7013fa234e16b10b00bbbae3f4e47f6",
+      "size": 37088,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\sha_1.png",
-      "sha256": "e95ca649d8297f709c19ba630f46c9f84070912ebee1aaeca389c94fa8d6371e",
-      "size": 25535,
-      "packageId": "misc-010"
+      "sha256": "93d5983a52bd206c900c09c32914b8581986dc6dce45c39729b003b359a62c78",
+      "size": 44480,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3_2\\bea_1.png",
-      "sha256": "656b414b7e27371f7bf0cfe91f37ab7a6ad9d05f3ec93af9afde47d71adf44eb",
-      "size": 53918,
-      "packageId": "misc-010"
+      "sha256": "bce2cf861746236f2ddcbe1979186e82048cb7239c70282debb5c187aa1fbe69",
+      "size": 64308,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3_2\\ev2_1.png",
-      "sha256": "5981a6617bf98c54b78977851621e475262d2bf4059c1f6b19c3df5063aaa30a",
-      "size": 56533,
-      "packageId": "misc-010"
+      "sha256": "fd31afec645d4fbbf966d42251d3fd9813c014c99d5babc9d4027ddcb1d454a6",
+      "size": 66091,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3_2\\enj_1.png",
-      "sha256": "fb2f82e03189c7b96a13eb0a91334d87cc729379b65e091e88b379850afe48f3",
-      "size": 62166,
-      "packageId": "misc-010"
+      "sha256": "ec02ce87b6b24f2fef558f38857151dd4f3b987e68336e097a1fb923b1c94ece",
+      "size": 79127,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3_2\\ber_1.png",
-      "sha256": "be8241e09e082ce6b89fb4124ebb082f9bb1031c19714e2e892c805cf8726242",
-      "size": 65185,
-      "packageId": "misc-010"
+      "sha256": "1ff023a44a0d348cfde5147ae252c942bc7039baf8640b0102794cfd63683c52",
+      "size": 91957,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\rud_2.png",
-      "sha256": "640aac9483863b2d275d7a3c812652d411f23a013a8ece361c9ec1564c824914",
-      "size": 28395,
-      "packageId": "misc-010"
+      "sha256": "20192a8f0c6e217bf364d567975e10e08aea2eb2d8316b5e29b0ec0610408e4e",
+      "size": 31618,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\nat_1.png",
-      "sha256": "b014f229d8c0453e50bbc0103bfccb618598797810dbebfe862ac5e266638692",
-      "size": 40183,
-      "packageId": "misc-010"
+      "sha256": "0a9faf6bd0e19307b04d9cdfaa3e221d79bf3517a7ef2b115559301228a6efbb",
+      "size": 55014,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\nan_2.png",
-      "sha256": "0ac588a9c6569b3b0bf9b76b7cce78fcb9f7b53ced99e6d2240619f5e3ab5387",
-      "size": 36074,
-      "packageId": "misc-010"
+      "sha256": "d6bd83c277efc2aab176d5eafa0b80947a9c2152e76cfa2a5e7bd93c2719937b",
+      "size": 41618,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\nan_1.png",
-      "sha256": "11ef20c06fe60adae02bf996d85b9b1af93ec124e716ab891d2e0d6258de884a",
-      "size": 43080,
-      "packageId": "misc-010"
+      "sha256": "799080b85b910b478116050f8cd24e108c5cdef35f81d1aaeff5296de2c7f65b",
+      "size": 57290,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\nat_2.png",
-      "sha256": "244d7ae55b81b0901e2a3887b7e8a5c75831f9f3c92f073cd1aba2cf5393aa71",
-      "size": 36842,
-      "packageId": "misc-010"
+      "sha256": "965c5168b174028aab0fc8ba9f413f0558b82e5dfa98585bfcc3e64981640ab5",
+      "size": 34939,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\rud_1.png",
-      "sha256": "59c5d19afd5b74d1b514926d19c729a54ceb5e3bffe0f3c25d6a5fd460e78339",
-      "size": 32322,
-      "packageId": "misc-010"
+      "sha256": "3db1b4b1016d4675a3bf95a5b1f4be8f4161f47cd94f2f82a69212a60ac7cef4",
+      "size": 47771,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\ros_2.png",
-      "sha256": "51f11ccf2f604bbf349b20af6fc8d149134ef683bf810314490842191627fe75",
-      "size": 30332,
-      "packageId": "misc-010"
+      "sha256": "cfeacb390dc5f8cb13f2830ff77d0f3e40619ad34d369d1659a7434966c289c5",
+      "size": 28565,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\ros_1.png",
-      "sha256": "f6090e02e43dd0062c8abcf242e78e55ec25201b4c70cb00ab329f12a6c31404",
-      "size": 28135,
-      "packageId": "misc-010"
+      "sha256": "62868044740c7af7e87f5c4bb3d231a2e451103dcbdf1f2f17d94700f1aaff1c",
+      "size": 45682,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\goh_2.png",
-      "sha256": "023ef35867c767a4afa14f057c359af9ae3af16f4435e7e19435e616450a6fda",
-      "size": 34884,
-      "packageId": "misc-010"
+      "sha256": "cdaff891250f507daaa08b0106476f3b9eaa9b05669e78a1c16d63204aa27d7d",
+      "size": 39711,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2_2\\mar_1.png",
-      "sha256": "df015aab2a1bda49b2493c5d501d28b3f794757a1201d8b0c3b142d279c26938",
-      "size": 51345,
-      "packageId": "misc-010"
+      "sha256": "d9f47a1855c8cd9a0f859aa390cd8bf815a6f24eedd966838f364721e3a0d2aa",
+      "size": 51984,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2_2\\lam_1.png",
-      "sha256": "aa1d2f9fcf920ba0ce6d9287cb23711419ef255f4ad9df8498dafaa6718c173b",
-      "size": 72113,
-      "packageId": "misc-010"
+      "sha256": "fe3beb3e9c8458ac0eb1cf171a8bcbad70bce9fd1e8ae2290ba4445731dff702",
+      "size": 96907,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2_2\\kin_1.png",
-      "sha256": "661d7cbed67b8e930b8d7b8769399db790b04880394e8f3af8f9da8656dcae51",
-      "size": 59655,
-      "packageId": "misc-010"
+      "sha256": "ccc5014e710ba440e5ad53e294b8e269d85580c0165fc9708a1726ffb973d80f",
+      "size": 63225,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2_2\\rg1_1.png",
-      "sha256": "01c74fb15dc06adedafb9350687f56f1ecca8b3d161abe2537a1702b4315a2f7",
-      "size": 55967,
-      "packageId": "misc-010"
+      "sha256": "24e0106fe57dad1b5329113eda5b0addc38262b2ed1ecb18f0fef27b800d748b",
+      "size": 68155,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2_2\\rg4_1.png",
-      "sha256": "94b080e8c9421aa14ac57dbe3b0872c0d2f1b2caa2811126c171abde543f0470",
-      "size": 59194,
-      "packageId": "misc-010"
+      "sha256": "1539c17d40fc9db416acaf5e4d073cb75d2e2d19f8fd1635dc1e8f233950f312",
+      "size": 74950,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2_2\\rg3_1.png",
-      "sha256": "f54c6a1b6f4934daab992dd33ffa1c55a51eb74719a9ff18d5043c3adc8a1b1e",
-      "size": 57478,
-      "packageId": "misc-010"
+      "sha256": "1a271f8a180e5dac3718d2d95b982a1c4b16525904fc6436234b99e0585603c5",
+      "size": 68776,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2_2\\rg2_1.png",
-      "sha256": "b115db62babda6d8558eb36a68e30e3be54f0e048a2e8fa05f7385374710d103",
-      "size": 57502,
-      "packageId": "misc-010"
+      "sha256": "04317112145c4e42cbf00bc6364bf55e6245613350e951764251d02eb1955f01",
+      "size": 68238,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2_2\\kan_1.png",
-      "sha256": "65693b8adc1a5a8f8134cc019d72d7eec5c7740f05344f463b5d76da0ef2b48e",
-      "size": 61505,
-      "packageId": "misc-010"
+      "sha256": "8d5679439a8dbf271cc1efb8c6bbf9f590d0f6a30d8d7d97c9c46f88370cffa5",
+      "size": 66168,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\sha_2.png",
-      "sha256": "0db6f26c9803ea6751830f3f4ebf990fb806181ddb1607d76ca287d24ac96a32",
-      "size": 30140,
-      "packageId": "misc-010"
+      "sha256": "9d9af6012aa3cc3423d5c2de3a5ee3c5de0159837633a2bf890ab7d73721884a",
+      "size": 35284,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\rud_2.png",
-      "sha256": "c40dec952c31cf8d9fed55b86cbbd7d67f5bb4ecdbd5c34228afafaf67a2a7f8",
-      "size": 42896,
-      "packageId": "misc-010"
+      "sha256": "cea5fac56a6065749bd7cc683cdaadd8c59633fef351cd4c3df7149dbc440f5d",
+      "size": 44253,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\ros_2.png",
-      "sha256": "1ff5e0f9ddf79f110fca669f475a819544a46b2932026104405e8b43f394727e",
-      "size": 38482,
-      "packageId": "misc-010"
+      "sha256": "352ee8229c98423c389a8661315bbb04f4554fba9a232499f5c6956394233b6f",
+      "size": 51670,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2_2\\bea_1.png",
-      "sha256": "4f806e84f1cf971ea1ef2c2232328eb37f45a62e65ae70d579ee37b7fa4d5a98",
-      "size": 56357,
-      "packageId": "misc-010"
+      "sha256": "bce2cf861746236f2ddcbe1979186e82048cb7239c70282debb5c187aa1fbe69",
+      "size": 64308,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2_2\\gen_1.png",
-      "sha256": "718256b28e69c982c0088035e07643d035929fddca966f03e2c3ac3398b18a8c",
-      "size": 57608,
-      "packageId": "misc-010"
+      "sha256": "9c932ae1e1d5138fe86931b3de538e660b02419dfbaf89fa84f282e09dae949e",
+      "size": 73974,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2_2\\but_1.png",
-      "sha256": "52e3fb2f956f54124c0b1e0b35a506779bfb19d0f0c4848b000208aa926236c8",
-      "size": 59210,
-      "packageId": "misc-010"
+      "sha256": "dcbaf0a62a2c0c36e7b8338aef9119038d67749e4e44a9c793cf3b845abf8490",
+      "size": 79770,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2_2\\ber_1.png",
-      "sha256": "0fb127b47659aa5ea6be17ea08b8768b7e77f01d663d59eecf59250af17641d5",
-      "size": 69024,
-      "packageId": "misc-010"
+      "sha256": "1ff023a44a0d348cfde5147ae252c942bc7039baf8640b0102794cfd63683c52",
+      "size": 91957,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2_2\\rg5_1.png",
-      "sha256": "319282ee19f56b477486904a860307955be9af5b5b3f24b5ac7cf1e52410ca64",
-      "size": 57061,
-      "packageId": "misc-010"
+      "sha256": "01003edf819ad01b171bb23b5bc4eecf9451024b3f732ee2826a1bb093a3fcae",
+      "size": 71592,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\gen_1.png",
-      "sha256": "c79b5b19c3a76c21ac774b3d5178763addd3bbffb899aba480c7f37e4ef90793",
-      "size": 26127,
-      "packageId": "misc-010"
+      "sha256": "8a86e0eb6cff0af61cfadc0c74d31e3dea4be3dc1293399ef5138387cf2cad6a",
+      "size": 42527,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\eva_1.png",
-      "sha256": "db6a00123b66cea46748ef59bd315ec3572fcc3961674d5b1779643257b5557f",
-      "size": 37690,
-      "packageId": "misc-010"
+      "sha256": "d14214bb62c5206064e53ac4813e329fcf69e59b6036299575a977ab6f157f2b",
+      "size": 51001,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\enj_1.png",
-      "sha256": "da871b43c14e6399e3b28db11e5c05f067c2fab0ddae6aba3c53ad633c3cdbd8",
-      "size": 55515,
-      "packageId": "misc-010"
+      "sha256": "1e585e1e5878e755ccf0f04d3f9cdf317448c9d75bb21f6f2b292aaeaaee1e46",
+      "size": 68927,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\gen_2.png",
-      "sha256": "cf56d21e8c889a1cca01c35f042bd3d67aa9af330ea392b22d524708ab82849e",
-      "size": 30177,
-      "packageId": "misc-010"
+      "sha256": "1c68da67a9e2dcd27a4ee7741971a1e0f161c0a4ec9d158700ad57d0acc98555",
+      "size": 36436,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\goh_1.png",
-      "sha256": "37d14e9d6b0180ed87b5af7bd7366a8e80824a32a5c8dd2a23efe985d40ee5ee",
-      "size": 25337,
-      "packageId": "misc-010"
+      "sha256": "639e5dc83cfab54cd435fd0c6560d0c65ebf6507c65fe38c3149fe2b96cfe641",
+      "size": 50647,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\geo_2.png",
-      "sha256": "bfe543794551e7de8df77c974f447bafa0ebce8833485b398c010a7499a644ae",
-      "size": 34883,
-      "packageId": "misc-010"
+      "sha256": "1665845104503435b4aeb190720217873bd9168cd3d98d924848e34e1acd62b0",
+      "size": 45558,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\geo_1.png",
-      "sha256": "7db9e7166eef4d9a0e3fe6b58b72a4d42009d4a918669253417d67b540d29510",
-      "size": 29273,
-      "packageId": "misc-010"
+      "sha256": "8a2bf3400d31fbe30574edc5a5c062c107eea65ad16157d9449c581781d45e37",
+      "size": 46885,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\but_2.png",
-      "sha256": "596f8d515819ec68c18f64177b315e8e0a3efda3fe0ad7ebf44fcb1a3c6f2e5c",
-      "size": 31924,
-      "packageId": "misc-010"
+      "sha256": "53d2bac836465aabe09b1debcf02303544a89825e6cb1ea0a5a424e43e343339",
+      "size": 39719,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2_2\\sha_1.png",
-      "sha256": "beab8e1b27db5ab02b8251bfda9ac3d7252d40037ff22d3dc530c9535b015846",
-      "size": 66497,
-      "packageId": "misc-010"
+      "sha256": "8e077598c2574520fed0b1479b1b5c58f8954a062bdad6a34d5fa96bf17c3a64",
+      "size": 70199,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2_2\\rg7_1.png",
-      "sha256": "2ce71e9b8101654e2901c5fd67ef2552387ac26b380e7db87f36da0a46b6f18c",
-      "size": 59581,
-      "packageId": "misc-010"
+      "sha256": "d6c22a4a544e2cf1c2369192fda1a8c66f7c549d69f56bd34316a006f24a9b10",
+      "size": 72274,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2_2\\rg6_1.png",
-      "sha256": "8d0fc26012d031e7b4037f9081fc2e5fab604d86f8c0cea077e4102d5c359fbd",
-      "size": 60701,
-      "packageId": "misc-010"
+      "sha256": "eb8fda9bee62babaa17cb0b4091421e1ef1fe7ad3d4969f3130d2a5f15703807",
+      "size": 75221,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\bea_1.png",
-      "sha256": "5d51b4f8e9df33b8e20bcb4abdfac3ab2c6279942386b90ccf5f3693d8cdedba",
-      "size": 30905,
-      "packageId": "misc-010"
+      "sha256": "49d97697a64a9871c237fee3e0c028b711a31cf5904b07ceead96aec83ac4598",
+      "size": 52507,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\but_1.png",
-      "sha256": "2b98d58d7c86d9e0c5d5de4cb6546f9e32e0db2f7cff9b5d5d07667ae8a7562f",
-      "size": 40676,
-      "packageId": "misc-010"
+      "sha256": "2ce1355cfba3717dbafe7e020a616407db654f39f50fdb44844e353e955a42a7",
+      "size": 67449,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\ber_1.png",
-      "sha256": "baf668e56595ce2abeb84cebc7b673592942c105517099f996ec762058c37b20",
-      "size": 37553,
-      "packageId": "misc-010"
+      "sha256": "3c825840d32cb861ca1c0a5301f3813a019f267cde832c85c2ac427b18e1810e",
+      "size": 56747,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3\\bea_2.png",
-      "sha256": "2c4cb48153c7a56c7553d906305d7fd80525f87b45046ec5b5662f34f1a9f650",
-      "size": 33801,
-      "packageId": "misc-010"
+      "sha256": "3d97c282e89facdc0224b7c67b22fa9d3bf806bca3b79ab9d4db978e9e521bcd",
+      "size": 53886,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_2\\s00_1.png",
-      "sha256": "ef187bc7f627fda2c1ca4624e0c3aa9885bc4915504ee7933c485271e04f3e3f",
-      "size": 60859,
-      "packageId": "misc-010"
+      "sha256": "f393294493997026e6fd40616a3fe23000d89bf0c089ad3f5d48f613c903921e",
+      "size": 80400,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_2\\mar_2.png",
-      "sha256": "58c54801fa4c40c47c16e6abb652ac470946cbc59828995dd82bfe322e99bfad",
-      "size": 54759,
-      "packageId": "misc-010"
+      "sha256": "2940c419a9c2be74252c0f82ad79c0f81b511fee82636cb845a24b00cc36444a",
+      "size": 66847,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_2\\lam_1.png",
-      "sha256": "b3c53246e58394cb38b00372800f115bbbf6a2d26145bbb649f559659b2cdd33",
-      "size": 54435,
-      "packageId": "misc-010"
+      "sha256": "74ea65dfde35136ef082615d938e4a5f23864cdf3159cd8c9e9e7cb5f2354079",
+      "size": 63932,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_2\\s55_1.png",
-      "sha256": "435ba1be6232a16b3563c0e38c68334bf9e138224288c322c8287df86cba383a",
-      "size": 27197,
-      "packageId": "misc-010"
+      "sha256": "b88a58521ed1bcec66a1ecd0d5c3422cbc84a068a95b14003daab6b9dd3a2193",
+      "size": 34834,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_2\\sak_2.png",
-      "sha256": "ccf2800c932fb704a065f7f4a2852f7e0e52414655749909a7cdfc28bd4a211b",
-      "size": 47193,
-      "packageId": "misc-010"
+      "sha256": "9868b3e9cda4d21fe8a06f72572f990c5159abff07727f5a78da6e331a779451",
+      "size": 55823,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_2\\sak_1.png",
-      "sha256": "a47d21e381df9666d9e407314f684a9fef5430f9f5b4cfd91be735b9d9dbee1f",
-      "size": 45113,
-      "packageId": "misc-010"
+      "sha256": "38207bc4e223745b4bc15d4b88e6fc52ee77c048550de9ea0a6836ed726cf8a2",
+      "size": 51868,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_2\\s55_2.png",
-      "sha256": "a012d21c9670c3f421985f593516d5bb39982ddf2988453d6c805f17b98a7600",
-      "size": 51561,
-      "packageId": "misc-010"
+      "sha256": "ede6a0dc7b8a4ff065eb2cc5c51506f4e4e662c923836d4f3613a2b1d11086d3",
+      "size": 67695,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_2\\kin_1.png",
-      "sha256": "d98f49e42fcc72a68089799d2e4dc36a8d30572f17ee20b689a31432ebc86391",
-      "size": 71427,
-      "packageId": "misc-010"
+      "sha256": "7aab854a7d48964f75987f87c7db97b6f6d97018ff2a9e0db87928b4d168b396",
+      "size": 80999,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_2\\bea_1.png",
-      "sha256": "656b414b7e27371f7bf0cfe91f37ab7a6ad9d05f3ec93af9afde47d71adf44eb",
-      "size": 53918,
-      "packageId": "misc-010"
+      "sha256": "bce2cf861746236f2ddcbe1979186e82048cb7239c70282debb5c187aa1fbe69",
+      "size": 64308,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_2\\.DS_Store",
@@ -562,33 +574,33 @@
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\sha_2.png",
-      "sha256": "ac5d234bdca791a95aa58b44c205593166951ee1a9fbf4aace113a92cc14171f",
-      "size": 37901,
-      "packageId": "misc-010"
+      "sha256": "24d2ae330100d62badb18a2a5d992d50574dc055f512765a531f2eea67b52810",
+      "size": 42116,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_2\\bea_2.png",
-      "sha256": "5309d68fd2a004dc65d4215a2d7bec0825aedbffc5379099043fb06aca1f14ce",
-      "size": 51294,
-      "packageId": "misc-010"
+      "sha256": "d9575500c7b691cbace290bfa4f1f699c5f85ce213df46ce77d3f12cc6d07a61",
+      "size": 68287,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_2\\gap_1.png",
-      "sha256": "043e62ced0fc4093f18af4844b60baaf987cbe7f99ce36df398d1a86166186a6",
-      "size": 58384,
-      "packageId": "misc-010"
+      "sha256": "90b545d6acfc65f6935fba080b5223d9a224ff0382ddbf44bae7ff5c3ee4d623",
+      "size": 71505,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_2\\enj_1.png",
-      "sha256": "eb5ca75d6c420818dd6a6278836a87dd115e6f888bd3008c415dec31dce18c14",
-      "size": 41522,
-      "packageId": "misc-010"
+      "sha256": "fef209a128788c594af093291cd8245ad161ca65a6064fefd3d6474e95fc30f3",
+      "size": 52987,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_2\\ber_1.png",
-      "sha256": "e9698774ec1e691fc1dbde019979ffc1a3b94929311111b9dc6030780b8b6870",
-      "size": 55425,
-      "packageId": "misc-010"
+      "sha256": "8673ad94915702df0db80645d59b55851f63dd347fc9e76ea6ee06a0fd70428a",
+      "size": 73489,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_3\\.DS_Store",
@@ -598,135 +610,135 @@
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_3\\rg1_1.png",
-      "sha256": "7375f52d75ea376a77f9365b62c4a430a3dbbb5751fc6f16e7f151ee03334578",
-      "size": 52217,
-      "packageId": "misc-010"
+      "sha256": "e7b31cceb20fcb51ea88aae040aaa13ed511405f2b51ce5657c23a87203b6ff4",
+      "size": 64992,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_3\\pro_1.png",
-      "sha256": "b7a040364a6c1188247834b7991a92f1546467a58015b020a03b847f3c11665f",
-      "size": 61922,
-      "packageId": "misc-010"
+      "sha256": "409296c7cbd3a6579adab9a26f12eb04dfa7b264a76e4dc8327ead1917385d12",
+      "size": 64143,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_3\\oko_1.png",
-      "sha256": "06b2d4bce3394311202f15014d20a354290a24a8a0dfbe1448c295f6b90dc8d3",
-      "size": 62526,
-      "packageId": "misc-010"
+      "sha256": "7775d3134881c31ed7418c4be43d940c4209f2b8b33c029a9f5e96e56aab8342",
+      "size": 76007,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_3\\rg2_1.png",
-      "sha256": "9351662bd451a3cd98f1f975424d0c04a96bbb5c42764b07d66eb6e56fdce2d7",
-      "size": 56643,
-      "packageId": "misc-010"
+      "sha256": "faa12bd50846020dce5b14d1df5a503884bcc4cdc066cc007c62e1c34311a4a3",
+      "size": 71132,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_3\\rg5_1.png",
-      "sha256": "996b05bde45d416f687991cecca25893a23ecfb8d46a5de14156a7610a1e9a1c",
-      "size": 55492,
-      "packageId": "misc-010"
+      "sha256": "df9a2f55b33c2830805cd7411e83fc7809c8d3bf1694ce2f39f7bceb1e9a2f4b",
+      "size": 75651,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_3\\rg4_1.png",
-      "sha256": "dd00dea76ea52d8a86a74ff5393de7c7362681a6567e0f9e59f6d510fa5eb429",
-      "size": 53985,
-      "packageId": "misc-010"
+      "sha256": "d2d27105a3dff17e9602436a8f649233e27a85bb8a1931a7beea38224b643153",
+      "size": 70635,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_3\\rg3_1.png",
-      "sha256": "6b6c0c07bae454f9d2e58ddbbb389361af69faf89fa5522967a50c823d4020cd",
-      "size": 51131,
-      "packageId": "misc-010"
+      "sha256": "3c0a58ca5ffcb970f2fbe6e9dfbbbfbac1fb2217d0d8f6c59e83d64ad8618176",
+      "size": 66713,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_3\\mas_1.png",
-      "sha256": "d269478eef5e7c11fcafea7f5bcb40b2a49bc26d3d29c87fae40917f85edf0c6",
-      "size": 48448,
-      "packageId": "misc-010"
+      "sha256": "60acfb27de3313879217bb07a820f94ef8c6785a80512b8a12627f3e6dda7958",
+      "size": 53997,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_3\\enj_1.png",
-      "sha256": "9bdca4d7fb7bf39bfab58c5898d9e43e9d5800bea038cf6b7c12c708ebf105a0",
-      "size": 40500,
-      "packageId": "misc-010"
+      "sha256": "45a04e1995ab739c9e928636441883085b9b4f8c3321cc449cf72474f0a14bab",
+      "size": 51291,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_3\\ber_1.png",
-      "sha256": "79d4370aa03a8e1b1f473d36dc69eba9a077151dbdac8b4f95296fadfd914ea0",
-      "size": 54116,
-      "packageId": "misc-010"
+      "sha256": "8673ad94915702df0db80645d59b55851f63dd347fc9e76ea6ee06a0fd70428a",
+      "size": 73489,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_3\\ama_1.png",
-      "sha256": "80eed63cc8d9ea212f84d97136cfb768dc229c37850f6b27a6477aadf989e58d",
-      "size": 68460,
-      "packageId": "misc-010"
+      "sha256": "2b5c235a6be0949be2dc8de3bd519812d2a85098f7acefd30a55410211a7082f",
+      "size": 77109,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_3\\eva_1.png",
-      "sha256": "32b0d71f30b3a95b85713979e50f336bc88a494c27dbb4e6f2a3ade31955509b",
-      "size": 70550,
-      "packageId": "misc-010"
+      "sha256": "068a5ea1b76f29f891014fd22cd242be7dc6b05adc3da7829f06def0f73cd1e7",
+      "size": 90004,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_3\\mar_1.png",
-      "sha256": "c2946166b12da1c18a80af9a1cf71acbc96ca3cf693d9a88a3a4f4ee63c2b225",
-      "size": 54765,
-      "packageId": "misc-010"
+      "sha256": "2940c419a9c2be74252c0f82ad79c0f81b511fee82636cb845a24b00cc36444a",
+      "size": 66847,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_3\\kwa_1.png",
-      "sha256": "61f63a285be152397f677dbaa5b1a5f9ac0ba0acd4cef2f4cb7431e7307dadbc",
-      "size": 56829,
-      "packageId": "misc-010"
+      "sha256": "36621a285ac05e4abbead37888e2dcf11cb736e2264c2abce28fd3c3ca8ca460",
+      "size": 65796,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_3\\kas_1.png",
-      "sha256": "f4f2dae06281657add4847650e23e6e3530bb964b675d2e27890eccdee61c36c",
-      "size": 63603,
-      "packageId": "misc-010"
+      "sha256": "4f385ce3e068d1d5142099a279cb7933df5bc477647fb38f34b58d3d4a26521d",
+      "size": 77776,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\rud_2.png",
-      "sha256": "771fed5e407412e2be25b07a6d2a93bd9d633c06d47a1c6d8145b78629cfd507",
-      "size": 32897,
-      "packageId": "misc-010"
+      "sha256": "d28eb5994392b96765a6a274332b6d7ad4e76a4acdf7be9a747d8e5ec31ec270",
+      "size": 36662,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3_2\\s45_1.png",
-      "sha256": "de293bda1578f93142de12868aa4b0102061d7be84cfc70f55a69ea1feb1bfb2",
-      "size": 52648,
-      "packageId": "misc-010"
+      "sha256": "bff12166568bfa366b38c0d464e41ca777367a8b938a090bdf2ad3f3879799d5",
+      "size": 51508,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3_2\\s41_1.png",
-      "sha256": "119b49341c46033d1713782a3b394e0e02dda3557bef8aefcc3d9f26d0bf6186",
-      "size": 56772,
-      "packageId": "misc-010"
+      "sha256": "fafbbd586a62c2a9927b12686278d6ae15e626b698bf2160763ff46661cdd30a",
+      "size": 66974,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3_2\\ron_1.png",
-      "sha256": "4f8299ba2c8c843c7753e8a6f1d1c10d0b82c142f6109c38af5732b9ead221e4",
-      "size": 68203,
-      "packageId": "misc-010"
+      "sha256": "9a2d4ac8bb73ffbf6c94ebca31e9b0590d9765b34a7eb01af335040585092902",
+      "size": 79669,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3_2\\wal_1.png",
-      "sha256": "d74e87205db2a94977932837656d11574bdf10fd68dd27b0ac33d623a3dcd245",
-      "size": 66629,
-      "packageId": "misc-010"
+      "sha256": "40ec8e68ba10401e38ef881b703f31d2f3c3eb7e834685e292fb599aec50c04c",
+      "size": 75566,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\but_2.png",
-      "sha256": "ab2543656f19f61b4928e2db927b38b8567a8a2f3707b0aa33d4e650ef16458d",
-      "size": 23365,
-      "packageId": "misc-010"
+      "sha256": "b9083cd733e87549b11d460fb3c7d2b3173226f9b2b5704454aba110fafa811d",
+      "size": 26351,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\bea_1.png",
-      "sha256": "25bbe7b0077f4cb8847b2c998c5e3daf89f5c599b0804e9cf270d665d568695a",
-      "size": 53274,
-      "packageId": "misc-010"
+      "sha256": "bce2cf861746236f2ddcbe1979186e82048cb7239c70282debb5c187aa1fbe69",
+      "size": 64308,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\.DS_Store",
@@ -736,147 +748,147 @@
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3_2\\rg7_1.png",
-      "sha256": "86eab2b8664ab827959d311c49f8479d6805ac11d4d0ce80f0c0cf47088a2b6c",
-      "size": 56483,
-      "packageId": "misc-010"
+      "sha256": "d001f33094c66b6844ef34bbfb049835a41cb5cfa52a2d8f786102c455714fea",
+      "size": 70409,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3_2\\rg2_1.png",
-      "sha256": "9351662bd451a3cd98f1f975424d0c04a96bbb5c42764b07d66eb6e56fdce2d7",
-      "size": 56643,
-      "packageId": "misc-010"
+      "sha256": "faa12bd50846020dce5b14d1df5a503884bcc4cdc066cc007c62e1c34311a4a3",
+      "size": 71132,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3_2\\rg1_1.png",
-      "sha256": "7375f52d75ea376a77f9365b62c4a430a3dbbb5751fc6f16e7f151ee03334578",
-      "size": 52217,
-      "packageId": "misc-010"
+      "sha256": "e7b31cceb20fcb51ea88aae040aaa13ed511405f2b51ce5657c23a87203b6ff4",
+      "size": 64992,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3_2\\goa_1.png",
-      "sha256": "376d8f2bc55f90234b4bc7ce2bbfa899203509ce6d50f64df0d63eaf93c84d3d",
-      "size": 59724,
-      "packageId": "misc-010"
+      "sha256": "fa93d85fbef93c9a0bb0e0bcb7f0f8a0899d0194802626cb0be739f0ef90d05b",
+      "size": 68372,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3_2\\rg3_1.png",
-      "sha256": "6b6c0c07bae454f9d2e58ddbbb389361af69faf89fa5522967a50c823d4020cd",
-      "size": 51131,
-      "packageId": "misc-010"
+      "sha256": "3c0a58ca5ffcb970f2fbe6e9dfbbbfbac1fb2217d0d8f6c59e83d64ad8618176",
+      "size": 66713,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3_2\\rg6_1.png",
-      "sha256": "7f691efafaa7eaa691b871926172f4ed9e0c172e9dec386680e8a405e2cfe19e",
-      "size": 60249,
-      "packageId": "misc-010"
+      "sha256": "387dd4efaeaae0b3b811ea7ff6b013098ae4ae224fc76cf74b9c466c8db72749",
+      "size": 79495,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3_2\\rg5_1.png",
-      "sha256": "996b05bde45d416f687991cecca25893a23ecfb8d46a5de14156a7610a1e9a1c",
-      "size": 55492,
-      "packageId": "misc-010"
+      "sha256": "df9a2f55b33c2830805cd7411e83fc7809c8d3bf1694ce2f39f7bceb1e9a2f4b",
+      "size": 75651,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep3_2\\rg4_1.png",
-      "sha256": "dd00dea76ea52d8a86a74ff5393de7c7362681a6567e0f9e59f6d510fa5eb429",
-      "size": 53985,
-      "packageId": "misc-010"
+      "sha256": "d2d27105a3dff17e9602436a8f649233e27a85bb8a1931a7beea38224b643153",
+      "size": 70635,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\enj_1.png",
-      "sha256": "ddb1c68ce8cb0c254cd110bdc5ae8d142c0a9fda1577e342c1e01283165cfa3a",
-      "size": 55727,
-      "packageId": "misc-010"
+      "sha256": "1e585e1e5878e755ccf0f04d3f9cdf317448c9d75bb21f6f2b292aaeaaee1e46",
+      "size": 68927,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\kum_2.png",
-      "sha256": "e5202ada16eaf0ee754ecbc16d407fa0d9d1578367656f0faa92201c62fd2a0d",
-      "size": 29987,
-      "packageId": "misc-010"
+      "sha256": "998a3816ea8750b33be21be16c93ce3c8c5103d5d3808600ce28bcfc608a7151",
+      "size": 33209,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\kla_2.png",
-      "sha256": "033c9e7e8302b26979bdee07f0f7e92cc0161afb9ee223081c38fbd0ad6288bf",
-      "size": 39900,
-      "packageId": "misc-010"
+      "sha256": "d4e95ca0aaaf2e440c201541439749d3e6855bcd8ccb39573bbf8b20d1ec3913",
+      "size": 45986,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\kir_2.png",
-      "sha256": "37103916bcb3a8a4d194014bc53d3f5cde661da670fac474c8b039aabe863909",
-      "size": 47505,
-      "packageId": "misc-010"
+      "sha256": "a34ef550ef958393e883cdd09f309c18ca4188159d192225bd052512057cce74",
+      "size": 51932,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\mar_2.png",
-      "sha256": "fbfd15de09734cc8c7dae9a9186b5433cee212cb8f49e835ebcba4776f557f90",
-      "size": 30956,
-      "packageId": "misc-010"
+      "sha256": "74f21e6de432d8339d6626581a3c41ed0a4b0cfe25eac74ed6c492aab3a55679",
+      "size": 31023,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\ros_2.png",
-      "sha256": "c2d3781a54ec7b2472a3d7c05f29c15d1acb4174072242d39f30fb63ae3ac98b",
-      "size": 32838,
-      "packageId": "misc-010"
+      "sha256": "3db8331fb23019bc104a783cd9f4c3473574beb1a57568fefae32bd3cf65b537",
+      "size": 35967,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\nat_2.png",
-      "sha256": "53c8045ab62ba5ab0f1b0c640b792cd72284da54bbf4388d7e2dc09d95b462eb",
-      "size": 33554,
-      "packageId": "misc-010"
+      "sha256": "632cc346fb9e2ed914cbd473c6d672060d10c6916021662bc9865d372486fbd6",
+      "size": 36424,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\nan_2.png",
-      "sha256": "e9801d61744943edef9098dec7090b48258bd5f52aff2a8ae45a1f60afec3654",
-      "size": 32191,
-      "packageId": "misc-010"
+      "sha256": "8db57379bf99cfe2517533e1b5fc8a8ef34f6c71a7d7b4e474a53b0d51f66ec2",
+      "size": 34349,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\kin_2.png",
-      "sha256": "8fc74222e96fc8200cb6f154ae72cf305b2d5d936108a4f4cb83cdf0dcbc92a4",
-      "size": 43105,
-      "packageId": "misc-010"
+      "sha256": "5feebb7d81e288ddf2bb294364ed204d4b4f56d5b6b006f3ef754997bb7c1787",
+      "size": 46783,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\geo_2.png",
-      "sha256": "1148c45b70d6a85632ab2993d71281f534914d1424b5bd20180ab4252be979f8",
-      "size": 32704,
-      "packageId": "misc-010"
+      "sha256": "91d9e83276db6e3811270819689285b15313a2ff03cdb5d7e9b1547cb5f6f5db",
+      "size": 34035,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\gen_2.png",
-      "sha256": "391fe45702a15d4f17e8b2a51a241c386e3a8f2a91bb1455997d323473c0b0e5",
-      "size": 32578,
-      "packageId": "misc-010"
+      "sha256": "aa91a06d93e97326d1217156f65bf7c7a7f5c86f26f6122b05200a1633630f4a",
+      "size": 35936,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\eva_2.png",
-      "sha256": "427047d1c1bb994b3610800c4f64554a7f426ba98f79eb620b359484412fb1c8",
-      "size": 32929,
-      "packageId": "misc-010"
+      "sha256": "6af040587cd0ae0cd061182f49daff70a2e7e8f026899c4ac09451b3c49fc61c",
+      "size": 36071,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\goh_2.png",
-      "sha256": "124a52b91415a0960d247fb77876c16e26fabf5746255500fa3d11fdddbe270c",
-      "size": 30955,
-      "packageId": "misc-010"
+      "sha256": "4db5764102bfad4e14004d228e32b9a40b3ab8e31faa3b2092264db91d60d9c0",
+      "size": 34790,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\kan_2.png",
-      "sha256": "bd175f07b7d214c3265e48f27c3fd589f5a4381570028964332c8d4b069b983d",
-      "size": 33311,
-      "packageId": "misc-010"
+      "sha256": "92a717f1102808eda29ecead0b92f11700e05216f9354415ed455cc44c31d342",
+      "size": 43319,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\jes_2.png",
-      "sha256": "a6dad10f0e585b6ec8f0c931e5e65a2658dd1d171b20222053526ae2beacce32",
-      "size": 39410,
-      "packageId": "misc-010"
+      "sha256": "86c82d5ab9dd29bb19b747e2b5fb32e7558d91ade0fb8e7e5b5c267dae04d3d5",
+      "size": 41901,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4\\hid_2.png",
-      "sha256": "12c89546448805ad864e679fa81a512b45ee00cf53e4b6ca38944da1b45ba49b",
-      "size": 32804,
-      "packageId": "misc-010"
+      "sha256": "255f3b4a4e7041d1bf1ee7cdbc61d6d3aa93877c4945953084849c74b7c9270e",
+      "size": 36526,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\background\\r_click\\tips_btn\\tips4_6.png",
@@ -1258,21 +1270,21 @@
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\but_2.png",
-      "sha256": "418ce029b1a5d564b5f6eaad6e99ebc5afe0a8d7282b724d5a84707be5b81ec5",
-      "size": 48945,
-      "packageId": "misc-010"
+      "sha256": "cd43c2eaed52a6cdd1d1a1d86f931a124ef239e061cc47bb670e30a83dcd1bbc",
+      "size": 48698,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\but_1.png",
-      "sha256": "0dcae0033e479036d9cb073677320ff762f326ec70c6ef942e93a54e338c436b",
-      "size": 63094,
-      "packageId": "misc-010"
+      "sha256": "2ce1355cfba3717dbafe7e020a616407db654f39f50fdb44844e353e955a42a7",
+      "size": 67449,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ber_2.png",
-      "sha256": "ee367a8e4b9f66f0db05893d90d74f1f79ce6aec16db3f8793a3fb58fb7bafc6",
-      "size": 47721,
-      "packageId": "misc-010"
+      "sha256": "28086d6ad069c34613c9b2173348d285108de2603bf6d792a3bb9d2a16fe571a",
+      "size": 53537,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\.DS_Store",
@@ -1282,27 +1294,27 @@
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\eva_2.png",
-      "sha256": "39af0c7775be9bfe96f30a295b5241e2f003c7bd198e6b94ac1f2f1d904f6506",
-      "size": 36727,
-      "packageId": "misc-010"
+      "sha256": "577c422e1373b774701c876f9a5d50ebbce12396a379ffd0ef2da93b24ef3503",
+      "size": 39508,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\but_2.png",
-      "sha256": "d93fe24ae6a6a8414060f728e2fbaf6793b69de0675fe6c95953b8cdaf0ce18d",
-      "size": 44257,
-      "packageId": "misc-010"
+      "sha256": "81da317868aa8fbfe601ceab16a3f7760905f2aa158a3364dfa63cf4a5b90950",
+      "size": 56234,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\bea_2.png",
-      "sha256": "70ecf35471519740adce4e0e42a0164efb2f0598e8139754be13583446fc3645",
-      "size": 35366,
-      "packageId": "misc-010"
+      "sha256": "193c56870801cb63873758e398b435e7b21bdd751845705d2bddcea87b65df75",
+      "size": 45650,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ber_1.png",
-      "sha256": "3592903e0b1e9bba7be415d46a9bd32f77d96d7684782a4c2f24f859e6b2285e",
-      "size": 51300,
-      "packageId": "misc-010"
+      "sha256": "3c825840d32cb861ca1c0a5301f3813a019f267cde832c85c2ac427b18e1810e",
+      "size": 56747,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\sys_btn\\yes.png",
@@ -1330,15 +1342,15 @@
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\bea_2.png",
-      "sha256": "e87092404e0b0083425e4cb80f21a25a1c40efc57c53476041c380487ec0ee28",
-      "size": 48612,
-      "packageId": "misc-010"
+      "sha256": "3d97c282e89facdc0224b7c67b22fa9d3bf806bca3b79ab9d4db978e9e521bcd",
+      "size": 53886,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\bea_1.png",
-      "sha256": "60661788d4f6c12cd8abddaa33257e9348f5da5d629887def4cf36148189d364",
-      "size": 40642,
-      "packageId": "misc-010"
+      "sha256": "49d97697a64a9871c237fee3e0c028b711a31cf5904b07ceead96aec83ac4598",
+      "size": 52507,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\.DS_Store",
@@ -1348,99 +1360,99 @@
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\gen_2.png",
-      "sha256": "8113899e7192cba2fb179202e81bcdb02b91417f44dbe8ac8dcfdc9899c1ceda",
-      "size": 35856,
-      "packageId": "misc-010"
+      "sha256": "276f5b1dbd0ea2c5ef816b9dbfec74c707a151c73984941b8a306ef861a258c8",
+      "size": 41761,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\kum_3.png",
-      "sha256": "11ec288eed59e2e839158524de1ba3d6eb59989a7ba086633e0e4b642a5bd893",
-      "size": 27515,
-      "packageId": "misc-010"
+      "sha256": "b241280cd6f923e5e8c59d675428ec158ce6b981d5a2c9aabe30c3ddbfe5f136",
+      "size": 29226,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\kum_2.png",
-      "sha256": "9d93513ae695ebd796c2eb1f3641906f72db9b4203478a45ee12d2e57b686d20",
-      "size": 24672,
-      "packageId": "misc-010"
+      "sha256": "4623a0eb1c1c876eb96f7de1cb9750c8c521ab81b81aac2efeb1c6d555cc7f97",
+      "size": 27946,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\kla_2.png",
-      "sha256": "32e6414970c75ae20ae36d96a9579f218be7c565c1b6ee203e660975878dd750",
-      "size": 36719,
-      "packageId": "misc-010"
+      "sha256": "ca05b315fe27d959da7e74566abb1a8e5a8b371ad5185c15e2aa896d4678485c",
+      "size": 39575,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\mar_2.png",
-      "sha256": "68e8ca8b080d598db532ae7e27df08ccf9b7b1e6605a8f2eb925dc5e0de44068",
-      "size": 22442,
-      "packageId": "misc-010"
+      "sha256": "d359855f61729209c2e0785ad1d6a008ddd75905cebdad3321f1da05bc11e438",
+      "size": 24971,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\nat_2.png",
-      "sha256": "46609c915aeb5b87a1b1fe23a60172562b42f9ec436cc6130365500ab73731e1",
-      "size": 39920,
-      "packageId": "misc-010"
+      "sha256": "47aaf817a02a4568feb0a036e072ee404924629a930d1d9d871ce9a0fe0bad5d",
+      "size": 43809,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\nan_3.png",
-      "sha256": "eb8d8eb3d5902e7aaa3a815802f6175589e95572907a69441c18c0b4745d9d86",
-      "size": 28035,
-      "packageId": "misc-010"
+      "sha256": "b66e527079b6e5bd69200d3756b6f849530c5a9195777eadf9670f5937d8fba6",
+      "size": 29259,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\nan_2.png",
-      "sha256": "e7dbdc3fce170946bf85c9d3208088dd89caaa95d392db2a97770c9c30a7606c",
-      "size": 24931,
-      "packageId": "misc-010"
+      "sha256": "8117ac52c4bd065af7598b6e76c9636353b7287a61e37f44521698d26a88c13f",
+      "size": 27995,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\kir_2.png",
-      "sha256": "59948b924dc79eb1946472b57a0d57ab11d5e51fc040d2f38335e8ca441d21f2",
-      "size": 38012,
-      "packageId": "misc-010"
+      "sha256": "d773c8b67c5f9862a2c24d46b89f15b57a98bdff109c48fdb814511011a24a96",
+      "size": 42632,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\hid_2.png",
-      "sha256": "73bb275a009db6579f6772db1bce2df93d9e7e63554d617945d6b7fdb009ae1c",
-      "size": 39142,
-      "packageId": "misc-010"
+      "sha256": "a093c85672708ab2cc334c2506d7e847a617de45ecc894003aa7c272398abf49",
+      "size": 42193,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\goh_2.png",
-      "sha256": "9b9f1ae69fd283cfd94a0ff056f6e95aa7225903b1629a683b7472c9e59a45f6",
-      "size": 27983,
-      "packageId": "misc-010"
+      "sha256": "334fafbeb89c301b0ca9643d9036fa97f7b3f4d32734c0dc2151ff6cdb4af9d9",
+      "size": 34269,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\geo_2.png",
-      "sha256": "8dc13c4728aa12252d979a1713e160e102ec6652fb76717648e4acac5285f79c",
-      "size": 30372,
-      "packageId": "misc-010"
+      "sha256": "d2708b0e21bcba0d163b1072d5d8bab6343cb4964763b903fb68035ad15e85b3",
+      "size": 37155,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\jes_2.png",
-      "sha256": "5d5f2704d7ecb81404be16bae2baaa88c6b26f89c206f4b1ec865192dc9bfc9a",
-      "size": 26944,
-      "packageId": "misc-010"
+      "sha256": "8d7ef01cd27f81a7a94000285e7ed1c680d833faa6cf3324c93a72c5a6d42c48",
+      "size": 31417,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\kin_2.png",
-      "sha256": "fe1b4d482d59c85e02039d8867eebcebfc722b4de6f39059de66c0df5b2963f7",
-      "size": 44448,
-      "packageId": "misc-010"
+      "sha256": "9c2d58c2e043f53f5e797f2ac9b7c00a743dd2e5113acaf46e0b7c5e57dfa00b",
+      "size": 55059,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\kan_3.png",
-      "sha256": "8ca3b16e65f249d3df692fbdf53b5efb46aa66714f8c889f5e2aefb1ee45bca2",
-      "size": 23605,
-      "packageId": "misc-010"
+      "sha256": "106f5521bf5fcda28144cb5255cd9b9905f6191802744821410bcdda3c7717a8",
+      "size": 26042,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep2\\kan_2.png",
-      "sha256": "b714303ca6e57f169f217470fd18134d6a7f672a9d836b13f4c80c9b10f45570",
-      "size": 34907,
-      "packageId": "misc-010"
+      "sha256": "548d9d911bcbfedc1bd5e4358e5741481b5730400ba6e6931be6ebeb113c7589",
+      "size": 47654,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\sys_btn\\tips.png",
@@ -1846,9 +1858,9 @@
     },
     {
       "path": "en\\bmp\\title\\manual.png",
-      "sha256": "78d8d2f7dc04397a00f129b6990e4b52d08405933bff72527a37a59d5ca8156f",
-      "size": 1290020,
-      "packageId": "misc-010"
+      "sha256": "28cc037fcbd8760f2fca7425c95e52c47724e1035ca1062ff81067d492f444dd",
+      "size": 1460353,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\title\\txt_box\\.DS_Store",
@@ -2440,45 +2452,45 @@
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ros_2.png",
-      "sha256": "5896e86f5ffdba08f344af79d95eb1fe9e6c7a5a9fca1ba6971d743b5b5831e0",
-      "size": 26800,
-      "packageId": "misc-010"
+      "sha256": "72c15df50c09db3cedf0f7fd2e9580425e17917049ce3305aefea50682b6f634",
+      "size": 28122,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ros_1.png",
-      "sha256": "bbe3e162239ed197a9939d3f0a67d28038483eeb4aa0917106229e2c15b7fb54",
-      "size": 45252,
-      "packageId": "misc-010"
+      "sha256": "62868044740c7af7e87f5c4bb3d231a2e451103dcbdf1f2f17d94700f1aaff1c",
+      "size": 45682,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\nat_2.png",
-      "sha256": "ed680a61f030741112c02268d2a9ba08a5565b13d4973f36b4db1e7a07196b0f",
-      "size": 28197,
-      "packageId": "misc-010"
+      "sha256": "840d6997aac828fca1967b3aa229d7ad8e533d1fb6a9e3479303a59f68f72527",
+      "size": 31425,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\rud_1.png",
-      "sha256": "7269cd02f7861aefd5dcc6120ab0d3cef834890d0c0375f5451b3431d6cadbf7",
-      "size": 41275,
-      "packageId": "misc-010"
+      "sha256": "3db1b4b1016d4675a3bf95a5b1f4be8f4161f47cd94f2f82a69212a60ac7cef4",
+      "size": 47771,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\sha_2.png",
-      "sha256": "b68180ced64bee154a3c63fc579fd60fbfbf4a3c29845770f7e81d00f1ca5978",
-      "size": 27918,
-      "packageId": "misc-010"
+      "sha256": "bfe27b1a1c6af5ebd200749cbfdbfa49a4ab814b6470e3dcf4ef4dd3656eaece",
+      "size": 29985,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\sha_1.png",
-      "sha256": "fcf3196683b77041380710140b9ac916d7ed077293b4bd23f0886bf301f7ec16",
-      "size": 42007,
-      "packageId": "misc-010"
+      "sha256": "93d5983a52bd206c900c09c32914b8581986dc6dce45c39729b003b359a62c78",
+      "size": 44480,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\rud_2.png",
-      "sha256": "4c00020a5d2c9e7684a264a02f880951f3abe3f9576c38a9c4f52bdb7c71fdfb",
-      "size": 25849,
-      "packageId": "misc-010"
+      "sha256": "9adfc66316c47fd6776053a9f022bf10f270a2d7fc28565605146a2442cd1dce",
+      "size": 26773,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\tips\\2_5.png",
@@ -2578,195 +2590,195 @@
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\nat_1.png",
-      "sha256": "26ff225b8e19ef2dda1e4117eb05efaf96bea0760f3d15621d0f4a0b1de515fb",
-      "size": 59644,
-      "packageId": "misc-010"
+      "sha256": "0a9faf6bd0e19307b04d9cdfaa3e221d79bf3517a7ef2b115559301228a6efbb",
+      "size": 55014,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\goh_1.png",
-      "sha256": "644042e2897996eff5c32a028b9cee5628bd269132126fde9c24ed4549fabbcf",
-      "size": 46553,
-      "packageId": "misc-010"
+      "sha256": "639e5dc83cfab54cd435fd0c6560d0c65ebf6507c65fe38c3149fe2b96cfe641",
+      "size": 50647,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\geo_2.png",
-      "sha256": "27e36d6b19c6e09937a771a6a4171c30773ad76d18e8cdb37e44cd44876360a9",
-      "size": 35060,
-      "packageId": "misc-010"
+      "sha256": "0947211acef3f1e997a2499419b2cd1dc75a440ca8300cf9887199d12c4167b5",
+      "size": 37179,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\geo_1.png",
-      "sha256": "c5ce8524033ffd2fd4a3479614e3382b6cd60d5e1fd740ac69780818bf5e9765",
-      "size": 46045,
-      "packageId": "misc-010"
+      "sha256": "8a2bf3400d31fbe30574edc5a5c062c107eea65ad16157d9449c581781d45e37",
+      "size": 46885,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\goh_2.png",
-      "sha256": "c4934683beaeb4d446fb2bbb3005695404b4ef216fc6891cbbb242ce40b13db0",
-      "size": 28888,
-      "packageId": "misc-010"
+      "sha256": "27437f954529d871e100e29467cec12f4dfeab20f47f42b4ea89122e3efe1ee1",
+      "size": 34334,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\jes_1.png",
-      "sha256": "13238407ec0f920dd215f543179050dadc92d66ed33acb2c2e9ee5c64df3b6e2",
-      "size": 42379,
-      "packageId": "misc-010"
+      "sha256": "7fbb044ca5fa2520b32bec3f489ffdeede11e10cf364d64199edc67c9ed7c0bc",
+      "size": 46226,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\hid_2.png",
-      "sha256": "3ec85d9cf6d9e77508138da1547eb832121d182677809dee26e374cae541fc7c",
-      "size": 46147,
-      "packageId": "misc-010"
+      "sha256": "358680d0b9a6d71b694310e397269c84a11799abd21d0e577565f382d41e4a2a",
+      "size": 54089,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\hid_1.png",
-      "sha256": "edbe560020cd0fa67cdcfb5099cbc1a84217da34c38a423515030970dcf4b0ef",
-      "size": 56745,
-      "packageId": "misc-010"
+      "sha256": "85ed741b8ee0c00abff0dcd7511323967f2ba29f78f6fbd91574e478a2f1d86f",
+      "size": 56799,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\gen_2.png",
-      "sha256": "4a3d1950d9905c945c5a6ec84ba19524ba193c07a27ba32af96561a6f9982f87",
-      "size": 27999,
-      "packageId": "misc-010"
+      "sha256": "05d5b5cf6c71d0727d7c4af1854f80836b049df05941ddd4aa79513bdb9da0ed",
+      "size": 29864,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_3\\sab_1.png",
-      "sha256": "9240f0a577cece75bf4afde1702a78a17b34b3696e85fd4863fb0385272943b8",
-      "size": 54864,
-      "packageId": "misc-010"
+      "sha256": "464991e8364d35979aba5fe905ee6956f8a96b29d13bcfa37a8b5734bf86199e",
+      "size": 64262,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_3\\rg7_1.png",
-      "sha256": "86eab2b8664ab827959d311c49f8479d6805ac11d4d0ce80f0c0cf47088a2b6c",
-      "size": 56483,
-      "packageId": "misc-010"
+      "sha256": "d001f33094c66b6844ef34bbfb049835a41cb5cfa52a2d8f786102c455714fea",
+      "size": 70409,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_3\\rg6_1.png",
-      "sha256": "7f691efafaa7eaa691b871926172f4ed9e0c172e9dec386680e8a405e2cfe19e",
-      "size": 60249,
-      "packageId": "misc-010"
+      "sha256": "387dd4efaeaae0b3b811ea7ff6b013098ae4ae224fc76cf74b9c466c8db72749",
+      "size": 79495,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\ep4_3\\sak_1.png",
-      "sha256": "b623d3ed7e444a642eb56aeb9c488f35e8fbcc05a98a3b547fa915b23e9fc27d",
-      "size": 26531,
-      "packageId": "misc-010"
+      "sha256": "aa6ab205c87a5eb5d8a49e376423772767159727f9ac0b6fd036b988c7a28649",
+      "size": 32037,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\gen_1.png",
-      "sha256": "7ecd063cb90c413542ed686c1375f25356759f56a3acdddee82e3f27a38bf4dc",
-      "size": 39113,
-      "packageId": "misc-010"
+      "sha256": "8a86e0eb6cff0af61cfadc0c74d31e3dea4be3dc1293399ef5138387cf2cad6a",
+      "size": 42527,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\eva_2.png",
-      "sha256": "a2a5d93d7cc9ea20ffd2e16481d4203d914a1b61ab8098068dc3223763ceab78",
-      "size": 37444,
-      "packageId": "misc-010"
+      "sha256": "daae966cfb2c5641630d4e992183ba1dfa6adcf91c4612ada814eda50b109742",
+      "size": 37568,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\eva_1.png",
-      "sha256": "3531461ec314b69cf31d09017bbf6f0de238ed5b94bc702c7fbf0cd1a95d07d4",
-      "size": 50242,
-      "packageId": "misc-010"
+      "sha256": "d14214bb62c5206064e53ac4813e329fcf69e59b6036299575a977ab6f157f2b",
+      "size": 51001,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\jes_2.png",
-      "sha256": "8cb1b1dfaf1b99f5fcf3417e94945b3326838002dcd4b0b7a97732c446912ac6",
-      "size": 37928,
-      "packageId": "misc-010"
+      "sha256": "de286d408485b5ea94a4341ea6fb9b6d7ff6dea50bed6a1eb0d9bd6b2daff837",
+      "size": 36786,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\kum_2.png",
-      "sha256": "1eafcf5fbb4e43dd04145ee4925d4125323fd939f90b2dc732dc782e9d4b37cd",
-      "size": 26429,
-      "packageId": "misc-010"
+      "sha256": "421c3ee6b9a2563a7c550cf5ca7248101e308b30edf9882002f3f2427b1ae05b",
+      "size": 31645,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\kum_1.png",
-      "sha256": "fa68272cbe1c0df7df70ba16480b6e615722a8db0f5d3c51371da25b2a6339af",
-      "size": 45080,
-      "packageId": "misc-010"
+      "sha256": "f12077752a08a7782b4ed5f5a1d4e4643371e168b2cbfd331bded075558b4dc6",
+      "size": 49111,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\kla_2.png",
-      "sha256": "51451fbee952019549ec9679bd433778d245abec39041cc54816cd649a0005ca",
-      "size": 28923,
-      "packageId": "misc-010"
+      "sha256": "9269fe2c676d16517d7ba33dfd56761cbdd01e87c48b12baf34ad95a2469f8d9",
+      "size": 29593,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\mar_1.png",
-      "sha256": "f93180376bf9932628a230e146fbc2c3c714f88c8a7945cc36ec241456aebdcd",
-      "size": 50617,
-      "packageId": "misc-010"
+      "sha256": "c004f122a02055b0fef29092561806e1d60271cd2c75b8c63ae3593085c159b9",
+      "size": 49184,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\nan_2.png",
-      "sha256": "82d176c90e0ebf34a7515b4ef3c41da65705a90562c57af9c7c7a555bfa37b5c",
-      "size": 27567,
-      "packageId": "misc-010"
+      "sha256": "1a79c9a75169dca6fb81d0c2caecacf25aceb73832b041fdd0e15693c4d951fa",
+      "size": 31720,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\nan_1.png",
-      "sha256": "75dbc47a78d3c9d77492f27c75486389ce18b947feb48c53fb7462c5f9befc6f",
-      "size": 58622,
-      "packageId": "misc-010"
+      "sha256": "799080b85b910b478116050f8cd24e108c5cdef35f81d1aaeff5296de2c7f65b",
+      "size": 57290,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\mar_2.png",
-      "sha256": "8b2f4fb014973d6f76d7088f8905d071141fe1dba4a23bf953a0a94db14bbf4e",
-      "size": 10883,
-      "packageId": "misc-010"
+      "sha256": "1e6b3d42dacf716c6f2b91e5ffc9bfe82b87a384fd2594e9006a0c61a9e3fac0",
+      "size": 12358,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\kla_1.png",
-      "sha256": "f0e9b9afd09f45008e6ee18b39f4252cd4fe9c564fade05108d7239cc73c13ff",
-      "size": 53477,
-      "packageId": "misc-010"
+      "sha256": "676bbfa747da18e953b0107ddcd4f39d92f4433b63e91d91edfae93ff06cb9dd",
+      "size": 53604,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\kin_1.png",
-      "sha256": "65cc6b538983014c2fe101eec3761fef80acb4eef887d0c22a1c97731cc428f0",
-      "size": 50927,
-      "packageId": "misc-010"
+      "sha256": "9ed7bb20d468a9a0125541d87c342d45d5c189593843d539306d09264f803226",
+      "size": 54488,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\kan_2.png",
-      "sha256": "6ca78d8bafbec9a026e898a3563a4f94d3cdb2d114b8583b361799a2facae48b",
-      "size": 23163,
-      "packageId": "misc-010"
+      "sha256": "51dcafb4555813a9a59493a56e4f7bb0e9f8902bb171d1436f61ce173d09ad7e",
+      "size": 28159,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\kan_1.png",
-      "sha256": "0528d1b1c0a4c960bb6b5cdf9fbcb8e190cd6039b79bb63c8caf2d235bf751f4",
-      "size": 40730,
-      "packageId": "misc-010"
+      "sha256": "378d119dd9408ac8f27f520399ba45cd9a566b184ddebcd69e6280ceb52fc4cb",
+      "size": 44968,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\kin_2.png",
-      "sha256": "9317062272e9b19b8a1997083e3d33362d09c74abef34799d01d5dcb05378cd8",
-      "size": 67149,
-      "packageId": "misc-010"
+      "sha256": "45b7da0ada53eeefa0364b456c1cee2c56b1f043f7d0afe5ca391aecac8575e4",
+      "size": 65519,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\kir_2.png",
-      "sha256": "e846c6649cadce0edad471b6acd6e26bddba69e265bcaf5673c98432b89ee131",
-      "size": 28157,
-      "packageId": "misc-010"
+      "sha256": "5d7d066b30d273df799daf97d377afd10074b093bc96015446d0ef7bd6fba51f",
+      "size": 28277,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\kir_1.png",
-      "sha256": "3d57b2f3334cbd475993f03042ac1fdeb4eac1c36c1544c68048a84253d0eae5",
-      "size": 44934,
-      "packageId": "misc-010"
+      "sha256": "5da567b999cb0ba075219d53f829e628939ccb10eac2396376dad6bc491a30b1",
+      "size": 44508,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\cha\\kin_3.png",
-      "sha256": "4ed289e7a51d392dc8980b931a18ad5538200e247b2964da63b700846c304f43",
-      "size": 40760,
-      "packageId": "misc-010"
+      "sha256": "3099c32c594ff565d1d4a985e81ad302fcf7b982c4ee5dd1f781b9b57ae79d63",
+      "size": 35642,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\tips_btn\\tips1_4.png",
@@ -3082,15 +3094,15 @@
     },
     {
       "path": "en\\bmp\\r_click\\text\\tips\\ep4\\6_1.png",
-      "sha256": "64b75a2e5b46849637f92bb2606834c02e7a075da3bede095de62d413f9f6cad",
-      "size": 160085,
-      "packageId": "misc-010"
+      "sha256": "3149dd5a7815728ef9662bab9bdbdc530596f78402fe7a850cdf4c71e6c721a6",
+      "size": 200472,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\tips\\ep4\\5_1.png",
-      "sha256": "3149dd5a7815728ef9662bab9bdbdc530596f78402fe7a850cdf4c71e6c721a6",
-      "size": 200472,
-      "packageId": "misc-010"
+      "sha256": "74373f91b63b67249214307ac28a43f5d29ea33ab2dc67722372fea7ec1bf4fd",
+      "size": 159057,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\r_click\\text\\tips\\ep4\\4_1.png",
@@ -3208,9 +3220,9 @@
     },
     {
       "path": "en\\bmp\\background\\efe\\end_3a.png",
-      "sha256": "56622862e9e470269186ad107665ae16e984c3e16a989a3f7f5002aaa870e6ac",
-      "size": 24281919,
-      "packageId": "misc-009"
+      "sha256": "214306f23ea43d6a4ee9f7494b6892fc30f65c12f4bcf345bada21a7a95ea446",
+      "size": 27042060,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\background\\efe\\end_2d.png",
@@ -3220,9 +3232,9 @@
     },
     {
       "path": "en\\bmp\\background\\efe\\end_3d.png",
-      "sha256": "fd44a0fd2317f4ad1787fcb4fdef39261db305c827218e3d69a0a5fbd3af0171",
-      "size": 1977398,
-      "packageId": "misc-009"
+      "sha256": "c81b606ed5f61a52ae1570605dde55281fb697cb72f673070a9f6aeaf1286a89",
+      "size": 1778843,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\background\\efe\\enj_mirai01.png",
@@ -3238,9 +3250,9 @@
     },
     {
       "path": "en\\bmp\\background\\efe\\end_4a.png",
-      "sha256": "3cd6f008cae6a9a0236cc9f15c4326e0f41ef6bf582528050a648181e488e3af",
-      "size": 24266993,
-      "packageId": "misc-009"
+      "sha256": "3f0629e12d37145bb4c45943a9d3fa08133cb00e20ff2108c8d3152f0bf2f995",
+      "size": 27484674,
+      "packageId": "patch-0.1.16-002"
     },
     {
       "path": "en\\bmp\\background\\efe\\ep4last08.png",
@@ -3460,15 +3472,15 @@
     },
     {
       "path": "en\\bmp\\background\\efe\\end_1a.png",
-      "sha256": "37c9cd3cca9347964ec14f43d5e4747829d2274f818418d58624f91077ab9d31",
-      "size": 35264705,
-      "packageId": "misc-008"
+      "sha256": "2d380dd0424b3c5b44487670bcceb5ad8cc2e60059956964c9ff367ff5e0b4fb",
+      "size": 35699859,
+      "packageId": "patch-0.1.16-001"
     },
     {
       "path": "en\\bmp\\background\\efe\\end_2a.png",
-      "sha256": "9409ce44c765d707b5e37d13d7c4108fa072980980b56e2c0429e8c613bd7a54",
-      "size": 25308291,
-      "packageId": "misc-009"
+      "sha256": "e02a4227f932599ebadb3a7b274a84a9c6fbf573531961af306062ece4679a18",
+      "size": 25445687,
+      "packageId": "patch-0.1.16-001"
     },
     {
       "path": "en\\bmp\\background\\efe\\end_1d.png",
@@ -4168,9 +4180,9 @@
     },
     {
       "path": "bmp\\title\\selectlangback.png",
-      "sha256": "616d0dc27ce01e7373e1cf6d8e739c7c948d1cbc35a029257f13afe7de674f4b",
-      "size": 10042,
-      "packageId": "misc-007"
+      "sha256": "1b4a7bdce72aabc8d247b26030895db43b026cf889dd41cf64ccee2312b8dcba",
+      "size": 21381,
+      "packageId": "patch-0.1.16-001"
     },
     {
       "path": "bmp\\title\\title_menu\\ep1_tea.png",
@@ -16282,9 +16294,9 @@
     },
     {
       "path": "0.u",
-      "sha256": "183196c72bb59355c39d99bd3594682b00009268324b23b2f211ae5895db409c",
-      "size": 18058323,
-      "packageId": "patch-0.1.14"
+      "sha256": "6a89043db967be90d5c9b7934c40ea37e3203db21d8864547538082f2d5b1bc4",
+      "size": 18058419,
+      "packageId": "patch-0.1.16-001"
     },
     {
       "path": "bmp\\r_click\\black.bmp",
@@ -20320,9 +20332,9 @@
     },
     {
       "path": "bmp\\title\\english_textbutton.png",
-      "sha256": "1e2301a79f3a15f032aaab82efed0c98da46f436643e47aee84e46be7df88c0f",
-      "size": 4298,
-      "packageId": "misc-007"
+      "sha256": "6848a45637f16cf21dbb2331f9bab481b018c62d15957feaf15ad10db8cec495",
+      "size": 7128,
+      "packageId": "patch-0.1.16-001"
     },
     {
       "path": "bmp\\title\\circle_logo\\hd_credits.png",
@@ -24357,1234 +24369,52 @@
       "packageId": "misc-004"
     },
     {
-      "path": "Trad Umineko\\0.u",
-      "sha256": "6a89043db967be90d5c9b7934c40ea37e3203db21d8864547538082f2d5b1bc4",
-      "size": 18058419,
-      "packageId": "patch-0.1.15-001"
-    },
-    {
-      "path": "Trad Umineko\\bmp\\system\\exit.png",
+      "path": "bmp\\system\\exit.png",
       "sha256": "a1bdbe43daa07d4c1ad0907d8f4ebc92bcaec7893d6228444e4997de64c2767c",
       "size": 39276,
-      "packageId": "patch-0.1.15-001"
+      "packageId": "patch-0.1.16-002"
     },
     {
-      "path": "Trad Umineko\\bmp\\system\\exit_b.png",
+      "path": "bmp\\system\\exit_b.png",
       "sha256": "9766bad54f569ce31f6effd98b47b0b4017e1e26a2d8164bede634c25c74b071",
       "size": 23827,
-      "packageId": "patch-0.1.15-001"
+      "packageId": "patch-0.1.16-002"
     },
     {
-      "path": "Trad Umineko\\bmp\\system\\hane_load.png",
+      "path": "bmp\\system\\hane_load.png",
       "sha256": "35b4cca51b03d7b1010a95fae29cdcdca1837bfae66269f3f3db8b708b87cf19",
       "size": 75054,
-      "packageId": "patch-0.1.15-001"
+      "packageId": "patch-0.1.16-002"
     },
     {
-      "path": "Trad Umineko\\bmp\\system\\hane_save.png",
+      "path": "bmp\\system\\hane_save.png",
       "sha256": "2a720960b14afb6b286587a28dc5d9d98f4afcd0cb295c00913bdbf0ed75cb1e",
       "size": 76446,
-      "packageId": "patch-0.1.15-001"
+      "packageId": "patch-0.1.16-002"
     },
     {
-      "path": "Trad Umineko\\bmp\\system\\load.png",
+      "path": "bmp\\system\\load.png",
       "sha256": "f945d97b1683d712a82c954ad82fa717a13b3e364109582238235472866e5e03",
       "size": 33741,
-      "packageId": "patch-0.1.15-001"
+      "packageId": "patch-0.1.16-002"
     },
     {
-      "path": "Trad Umineko\\bmp\\system\\load_b.png",
+      "path": "bmp\\system\\load_b.png",
       "sha256": "62a63997558a7800f56ef6efea7e87d9d8ebffc195e86086f41c2640909f5653",
       "size": 20146,
-      "packageId": "patch-0.1.15-001"
+      "packageId": "patch-0.1.16-002"
     },
     {
-      "path": "Trad Umineko\\bmp\\system\\save.png",
+      "path": "bmp\\system\\save.png",
       "sha256": "139d31aec22d048d9db598fc9d5a114903342ec87db977384d88c0b32dae1fd0",
       "size": 26745,
-      "packageId": "patch-0.1.15-001"
+      "packageId": "patch-0.1.16-002"
     },
     {
-      "path": "Trad Umineko\\bmp\\system\\save_b.png",
+      "path": "bmp\\system\\save_b.png",
       "sha256": "56b73c28ff24df619ad7da3fa7b16f2c6fa54d3523f7fccbdb4e1e054a58866b",
       "size": 15728,
-      "packageId": "patch-0.1.15-001"
-    },
-    {
-      "path": "Trad Umineko\\bmp\\title\\english_textbutton.png",
-      "sha256": "6848a45637f16cf21dbb2331f9bab481b018c62d15957feaf15ad10db8cec495",
-      "size": 7128,
-      "packageId": "patch-0.1.15-001"
-    },
-    {
-      "path": "Trad Umineko\\bmp\\title\\selectlangback.png",
-      "sha256": "1b4a7bdce72aabc8d247b26030895db43b026cf889dd41cf64ccee2312b8dcba",
-      "size": 21381,
-      "packageId": "patch-0.1.15-001"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\background\\efe\\end_1a.png",
-      "sha256": "2d380dd0424b3c5b44487670bcceb5ad8cc2e60059956964c9ff367ff5e0b4fb",
-      "size": 35699859,
-      "packageId": "patch-0.1.15-001"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\background\\efe\\end_2a.png",
-      "sha256": "e02a4227f932599ebadb3a7b274a84a9c6fbf573531961af306062ece4679a18",
-      "size": 25445687,
-      "packageId": "patch-0.1.15-001"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\background\\efe\\end_3a.png",
-      "sha256": "214306f23ea43d6a4ee9f7494b6892fc30f65c12f4bcf345bada21a7a95ea446",
-      "size": 27042060,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\background\\efe\\end_3d.png",
-      "sha256": "c81b606ed5f61a52ae1570605dde55281fb697cb72f673070a9f6aeaf1286a89",
-      "size": 1778843,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\background\\efe\\end_4a.png",
-      "sha256": "3f0629e12d37145bb4c45943a9d3fa08133cb00e20ff2108c8d3152f0bf2f995",
-      "size": 27484674,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\bea_1.png",
-      "sha256": "49d97697a64a9871c237fee3e0c028b711a31cf5904b07ceead96aec83ac4598",
-      "size": 52507,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\bea_2.png",
-      "sha256": "3d97c282e89facdc0224b7c67b22fa9d3bf806bca3b79ab9d4db978e9e521bcd",
-      "size": 53886,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ber_1.png",
-      "sha256": "3c825840d32cb861ca1c0a5301f3813a019f267cde832c85c2ac427b18e1810e",
-      "size": 56747,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ber_2.png",
-      "sha256": "28086d6ad069c34613c9b2173348d285108de2603bf6d792a3bb9d2a16fe571a",
-      "size": 53537,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\but_1.png",
-      "sha256": "2ce1355cfba3717dbafe7e020a616407db654f39f50fdb44844e353e955a42a7",
-      "size": 67449,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\but_2.png",
-      "sha256": "cd43c2eaed52a6cdd1d1a1d86f931a124ef239e061cc47bb670e30a83dcd1bbc",
-      "size": 48698,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\bea_2.png",
-      "sha256": "193c56870801cb63873758e398b435e7b21bdd751845705d2bddcea87b65df75",
-      "size": 45650,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\but_2.png",
-      "sha256": "81da317868aa8fbfe601ceab16a3f7760905f2aa158a3364dfa63cf4a5b90950",
-      "size": 56234,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\eva_2.png",
-      "sha256": "577c422e1373b774701c876f9a5d50ebbce12396a379ffd0ef2da93b24ef3503",
-      "size": 39508,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\gen_2.png",
-      "sha256": "276f5b1dbd0ea2c5ef816b9dbfec74c707a151c73984941b8a306ef861a258c8",
-      "size": 41761,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\geo_2.png",
-      "sha256": "d2708b0e21bcba0d163b1072d5d8bab6343cb4964763b903fb68035ad15e85b3",
-      "size": 37155,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\goh_2.png",
-      "sha256": "334fafbeb89c301b0ca9643d9036fa97f7b3f4d32734c0dc2151ff6cdb4af9d9",
-      "size": 34269,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\hid_2.png",
-      "sha256": "a093c85672708ab2cc334c2506d7e847a617de45ecc894003aa7c272398abf49",
-      "size": 42193,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\jes_2.png",
-      "sha256": "8d7ef01cd27f81a7a94000285e7ed1c680d833faa6cf3324c93a72c5a6d42c48",
-      "size": 31417,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\kan_2.png",
-      "sha256": "548d9d911bcbfedc1bd5e4358e5741481b5730400ba6e6931be6ebeb113c7589",
-      "size": 47654,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\kan_3.png",
-      "sha256": "106f5521bf5fcda28144cb5255cd9b9905f6191802744821410bcdda3c7717a8",
-      "size": 26042,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\kin_2.png",
-      "sha256": "9c2d58c2e043f53f5e797f2ac9b7c00a743dd2e5113acaf46e0b7c5e57dfa00b",
-      "size": 55059,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\kir_2.png",
-      "sha256": "d773c8b67c5f9862a2c24d46b89f15b57a98bdff109c48fdb814511011a24a96",
-      "size": 42632,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\kla_2.png",
-      "sha256": "ca05b315fe27d959da7e74566abb1a8e5a8b371ad5185c15e2aa896d4678485c",
-      "size": 39575,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\kum_2.png",
-      "sha256": "4623a0eb1c1c876eb96f7de1cb9750c8c521ab81b81aac2efeb1c6d555cc7f97",
-      "size": 27946,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\kum_3.png",
-      "sha256": "b241280cd6f923e5e8c59d675428ec158ce6b981d5a2c9aabe30c3ddbfe5f136",
-      "size": 29226,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\mar_2.png",
-      "sha256": "d359855f61729209c2e0785ad1d6a008ddd75905cebdad3321f1da05bc11e438",
-      "size": 24971,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\nan_2.png",
-      "sha256": "8117ac52c4bd065af7598b6e76c9636353b7287a61e37f44521698d26a88c13f",
-      "size": 27995,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\nan_3.png",
-      "sha256": "b66e527079b6e5bd69200d3756b6f849530c5a9195777eadf9670f5937d8fba6",
-      "size": 29259,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\nat_2.png",
-      "sha256": "47aaf817a02a4568feb0a036e072ee404924629a930d1d9d871ce9a0fe0bad5d",
-      "size": 43809,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\ros_2.png",
-      "sha256": "352ee8229c98423c389a8661315bbb04f4554fba9a232499f5c6956394233b6f",
-      "size": 51670,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\rud_2.png",
-      "sha256": "cea5fac56a6065749bd7cc683cdaadd8c59633fef351cd4c3df7149dbc440f5d",
-      "size": 44253,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2\\sha_2.png",
-      "sha256": "9d9af6012aa3cc3423d5c2de3a5ee3c5de0159837633a2bf890ab7d73721884a",
-      "size": 35284,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2_2\\bea_1.png",
-      "sha256": "bce2cf861746236f2ddcbe1979186e82048cb7239c70282debb5c187aa1fbe69",
-      "size": 64308,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2_2\\ber_1.png",
-      "sha256": "1ff023a44a0d348cfde5147ae252c942bc7039baf8640b0102794cfd63683c52",
-      "size": 91957,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2_2\\but_1.png",
-      "sha256": "dcbaf0a62a2c0c36e7b8338aef9119038d67749e4e44a9c793cf3b845abf8490",
-      "size": 79770,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2_2\\gen_1.png",
-      "sha256": "9c932ae1e1d5138fe86931b3de538e660b02419dfbaf89fa84f282e09dae949e",
-      "size": 73974,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2_2\\kan_1.png",
-      "sha256": "8d5679439a8dbf271cc1efb8c6bbf9f590d0f6a30d8d7d97c9c46f88370cffa5",
-      "size": 66168,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2_2\\kin_1.png",
-      "sha256": "ccc5014e710ba440e5ad53e294b8e269d85580c0165fc9708a1726ffb973d80f",
-      "size": 63225,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2_2\\lam_1.png",
-      "sha256": "fe3beb3e9c8458ac0eb1cf171a8bcbad70bce9fd1e8ae2290ba4445731dff702",
-      "size": 96907,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2_2\\mar_1.png",
-      "sha256": "d9f47a1855c8cd9a0f859aa390cd8bf815a6f24eedd966838f364721e3a0d2aa",
-      "size": 51984,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2_2\\rg1_1.png",
-      "sha256": "24e0106fe57dad1b5329113eda5b0addc38262b2ed1ecb18f0fef27b800d748b",
-      "size": 68155,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2_2\\rg2_1.png",
-      "sha256": "04317112145c4e42cbf00bc6364bf55e6245613350e951764251d02eb1955f01",
-      "size": 68238,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2_2\\rg3_1.png",
-      "sha256": "1a271f8a180e5dac3718d2d95b982a1c4b16525904fc6436234b99e0585603c5",
-      "size": 68776,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2_2\\rg4_1.png",
-      "sha256": "1539c17d40fc9db416acaf5e4d073cb75d2e2d19f8fd1635dc1e8f233950f312",
-      "size": 74950,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2_2\\rg5_1.png",
-      "sha256": "01003edf819ad01b171bb23b5bc4eecf9451024b3f732ee2826a1bb093a3fcae",
-      "size": 71592,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2_2\\rg6_1.png",
-      "sha256": "eb8fda9bee62babaa17cb0b4091421e1ef1fe7ad3d4969f3130d2a5f15703807",
-      "size": 75221,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2_2\\rg7_1.png",
-      "sha256": "d6c22a4a544e2cf1c2369192fda1a8c66f7c549d69f56bd34316a006f24a9b10",
-      "size": 72274,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep2_2\\sha_1.png",
-      "sha256": "8e077598c2574520fed0b1479b1b5c58f8954a062bdad6a34d5fa96bf17c3a64",
-      "size": 70199,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\bea_1.png",
-      "sha256": "49d97697a64a9871c237fee3e0c028b711a31cf5904b07ceead96aec83ac4598",
-      "size": 52507,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\bea_2.png",
-      "sha256": "3d97c282e89facdc0224b7c67b22fa9d3bf806bca3b79ab9d4db978e9e521bcd",
-      "size": 53886,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\ber_1.png",
-      "sha256": "3c825840d32cb861ca1c0a5301f3813a019f267cde832c85c2ac427b18e1810e",
-      "size": 56747,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\but_1.png",
-      "sha256": "2ce1355cfba3717dbafe7e020a616407db654f39f50fdb44844e353e955a42a7",
-      "size": 67449,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\but_2.png",
-      "sha256": "53d2bac836465aabe09b1debcf02303544a89825e6cb1ea0a5a424e43e343339",
-      "size": 39719,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\enj_1.png",
-      "sha256": "1e585e1e5878e755ccf0f04d3f9cdf317448c9d75bb21f6f2b292aaeaaee1e46",
-      "size": 68927,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\eva_1.png",
-      "sha256": "d14214bb62c5206064e53ac4813e329fcf69e59b6036299575a977ab6f157f2b",
-      "size": 51001,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\gen_1.png",
-      "sha256": "8a86e0eb6cff0af61cfadc0c74d31e3dea4be3dc1293399ef5138387cf2cad6a",
-      "size": 42527,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\gen_2.png",
-      "sha256": "1c68da67a9e2dcd27a4ee7741971a1e0f161c0a4ec9d158700ad57d0acc98555",
-      "size": 36436,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\geo_1.png",
-      "sha256": "8a2bf3400d31fbe30574edc5a5c062c107eea65ad16157d9449c581781d45e37",
-      "size": 46885,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\geo_2.png",
-      "sha256": "1665845104503435b4aeb190720217873bd9168cd3d98d924848e34e1acd62b0",
-      "size": 45558,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\goh_1.png",
-      "sha256": "639e5dc83cfab54cd435fd0c6560d0c65ebf6507c65fe38c3149fe2b96cfe641",
-      "size": 50647,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\goh_2.png",
-      "sha256": "cdaff891250f507daaa08b0106476f3b9eaa9b05669e78a1c16d63204aa27d7d",
-      "size": 39711,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\hid_1.png",
-      "sha256": "85ed741b8ee0c00abff0dcd7511323967f2ba29f78f6fbd91574e478a2f1d86f",
-      "size": 56799,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\hid_2.png",
-      "sha256": "3dcb519951803a233b67dc8527e9142ecd548530ed5f264fc44a39b195308a00",
-      "size": 26659,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\jes_1.png",
-      "sha256": "7fbb044ca5fa2520b32bec3f489ffdeede11e10cf364d64199edc67c9ed7c0bc",
-      "size": 46226,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\jes_2.png",
-      "sha256": "c15aa638c13176dc1cb3f0d06f39a9f1f0bfce1fe8beb77ae9038b749ea2d249",
-      "size": 49519,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\kan_1.png",
-      "sha256": "378d119dd9408ac8f27f520399ba45cd9a566b184ddebcd69e6280ceb52fc4cb",
-      "size": 44968,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\kan_2.png",
-      "sha256": "c94bb5281a2c11e0fa64f848541dfddeebead4e0f794ec0daf191d96b91979d8",
-      "size": 37527,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\kin_1.png",
-      "sha256": "9ed7bb20d468a9a0125541d87c342d45d5c189593843d539306d09264f803226",
-      "size": 54488,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\kin_2.png",
-      "sha256": "4c2a1ef2c0ba8b1bc501b629d19ea22dd3d9db2b9873110f875ca8448e3257c1",
-      "size": 43756,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\kir_1.png",
-      "sha256": "5da567b999cb0ba075219d53f829e628939ccb10eac2396376dad6bc491a30b1",
-      "size": 44508,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\kir_2.png",
-      "sha256": "4f45db87bace605e8c3f95b539b3f0be3c54de9b8027723e7a8d08b92ba13ae2",
-      "size": 38350,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\kla_1.png",
-      "sha256": "676bbfa747da18e953b0107ddcd4f39d92f4433b63e91d91edfae93ff06cb9dd",
-      "size": 53604,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\kla_2.png",
-      "sha256": "18a8bc6303d959eba266d3c3ad54e81dc5786c4b06be971f6c28b7530803ef0d",
-      "size": 33088,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\kum_1.png",
-      "sha256": "f12077752a08a7782b4ed5f5a1d4e4643371e168b2cbfd331bded075558b4dc6",
-      "size": 49111,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\kum_2.png",
-      "sha256": "a9fd87359160a5434428fd9c0874c68a5700e9d1622e42dac2637269422715b4",
-      "size": 37169,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\mar_1.png",
-      "sha256": "c004f122a02055b0fef29092561806e1d60271cd2c75b8c63ae3593085c159b9",
-      "size": 49184,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\mar_2.png",
-      "sha256": "e3f1243cb0af7601d76b9e70d48c1cdc3e5a1f64351f80d692ac34aff0813f77",
-      "size": 38301,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\nan_1.png",
-      "sha256": "799080b85b910b478116050f8cd24e108c5cdef35f81d1aaeff5296de2c7f65b",
-      "size": 57290,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\nan_2.png",
-      "sha256": "d6bd83c277efc2aab176d5eafa0b80947a9c2152e76cfa2a5e7bd93c2719937b",
-      "size": 41618,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\nat_1.png",
-      "sha256": "0a9faf6bd0e19307b04d9cdfaa3e221d79bf3517a7ef2b115559301228a6efbb",
-      "size": 55014,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\nat_2.png",
-      "sha256": "965c5168b174028aab0fc8ba9f413f0558b82e5dfa98585bfcc3e64981640ab5",
-      "size": 34939,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\ros_1.png",
-      "sha256": "62868044740c7af7e87f5c4bb3d231a2e451103dcbdf1f2f17d94700f1aaff1c",
-      "size": 45682,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\ros_2.png",
-      "sha256": "cfeacb390dc5f8cb13f2830ff77d0f3e40619ad34d369d1659a7434966c289c5",
-      "size": 28565,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\rud_1.png",
-      "sha256": "3db1b4b1016d4675a3bf95a5b1f4be8f4161f47cd94f2f82a69212a60ac7cef4",
-      "size": 47771,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\rud_2.png",
-      "sha256": "20192a8f0c6e217bf364d567975e10e08aea2eb2d8316b5e29b0ec0610408e4e",
-      "size": 31618,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\sha_1.png",
-      "sha256": "93d5983a52bd206c900c09c32914b8581986dc6dce45c39729b003b359a62c78",
-      "size": 44480,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3\\sha_2.png",
-      "sha256": "df41255a28f8e779083efdac8f2830cfa7013fa234e16b10b00bbbae3f4e47f6",
-      "size": 37088,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3_2\\bea_1.png",
-      "sha256": "bce2cf861746236f2ddcbe1979186e82048cb7239c70282debb5c187aa1fbe69",
-      "size": 64308,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3_2\\ber_1.png",
-      "sha256": "1ff023a44a0d348cfde5147ae252c942bc7039baf8640b0102794cfd63683c52",
-      "size": 91957,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3_2\\enj_1.png",
-      "sha256": "ec02ce87b6b24f2fef558f38857151dd4f3b987e68336e097a1fb923b1c94ece",
-      "size": 79127,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3_2\\ev2_1.png",
-      "sha256": "fd31afec645d4fbbf966d42251d3fd9813c014c99d5babc9d4027ddcb1d454a6",
-      "size": 66091,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3_2\\goa_1.png",
-      "sha256": "fa93d85fbef93c9a0bb0e0bcb7f0f8a0899d0194802626cb0be739f0ef90d05b",
-      "size": 68372,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3_2\\rg1_1.png",
-      "sha256": "e7b31cceb20fcb51ea88aae040aaa13ed511405f2b51ce5657c23a87203b6ff4",
-      "size": 64992,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3_2\\rg2_1.png",
-      "sha256": "faa12bd50846020dce5b14d1df5a503884bcc4cdc066cc007c62e1c34311a4a3",
-      "size": 71132,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3_2\\rg3_1.png",
-      "sha256": "3c0a58ca5ffcb970f2fbe6e9dfbbbfbac1fb2217d0d8f6c59e83d64ad8618176",
-      "size": 66713,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3_2\\rg4_1.png",
-      "sha256": "d2d27105a3dff17e9602436a8f649233e27a85bb8a1931a7beea38224b643153",
-      "size": 70635,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3_2\\rg5_1.png",
-      "sha256": "df9a2f55b33c2830805cd7411e83fc7809c8d3bf1694ce2f39f7bceb1e9a2f4b",
-      "size": 75651,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3_2\\rg6_1.png",
-      "sha256": "387dd4efaeaae0b3b811ea7ff6b013098ae4ae224fc76cf74b9c466c8db72749",
-      "size": 79495,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3_2\\rg7_1.png",
-      "sha256": "d001f33094c66b6844ef34bbfb049835a41cb5cfa52a2d8f786102c455714fea",
-      "size": 70409,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3_2\\ron_1.png",
-      "sha256": "9a2d4ac8bb73ffbf6c94ebca31e9b0590d9765b34a7eb01af335040585092902",
-      "size": 79669,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3_2\\s41_1.png",
-      "sha256": "fafbbd586a62c2a9927b12686278d6ae15e626b698bf2160763ff46661cdd30a",
-      "size": 66974,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3_2\\s45_1.png",
-      "sha256": "bff12166568bfa366b38c0d464e41ca777367a8b938a090bdf2ad3f3879799d5",
-      "size": 51508,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep3_2\\wal_1.png",
-      "sha256": "40ec8e68ba10401e38ef881b703f31d2f3c3eb7e834685e292fb599aec50c04c",
-      "size": 75566,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4\\bea_1.png",
-      "sha256": "bce2cf861746236f2ddcbe1979186e82048cb7239c70282debb5c187aa1fbe69",
-      "size": 64308,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4\\but_2.png",
-      "sha256": "b9083cd733e87549b11d460fb3c7d2b3173226f9b2b5704454aba110fafa811d",
-      "size": 26351,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4\\enj_1.png",
-      "sha256": "1e585e1e5878e755ccf0f04d3f9cdf317448c9d75bb21f6f2b292aaeaaee1e46",
-      "size": 68927,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4\\eva_2.png",
-      "sha256": "6af040587cd0ae0cd061182f49daff70a2e7e8f026899c4ac09451b3c49fc61c",
-      "size": 36071,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4\\gen_2.png",
-      "sha256": "aa91a06d93e97326d1217156f65bf7c7a7f5c86f26f6122b05200a1633630f4a",
-      "size": 35936,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4\\geo_2.png",
-      "sha256": "91d9e83276db6e3811270819689285b15313a2ff03cdb5d7e9b1547cb5f6f5db",
-      "size": 34035,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4\\goh_2.png",
-      "sha256": "4db5764102bfad4e14004d228e32b9a40b3ab8e31faa3b2092264db91d60d9c0",
-      "size": 34790,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4\\hid_2.png",
-      "sha256": "255f3b4a4e7041d1bf1ee7cdbc61d6d3aa93877c4945953084849c74b7c9270e",
-      "size": 36526,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4\\jes_2.png",
-      "sha256": "86c82d5ab9dd29bb19b747e2b5fb32e7558d91ade0fb8e7e5b5c267dae04d3d5",
-      "size": 41901,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4\\kan_2.png",
-      "sha256": "92a717f1102808eda29ecead0b92f11700e05216f9354415ed455cc44c31d342",
-      "size": 43319,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4\\kin_2.png",
-      "sha256": "5feebb7d81e288ddf2bb294364ed204d4b4f56d5b6b006f3ef754997bb7c1787",
-      "size": 46783,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4\\kir_2.png",
-      "sha256": "a34ef550ef958393e883cdd09f309c18ca4188159d192225bd052512057cce74",
-      "size": 51932,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4\\kla_2.png",
-      "sha256": "d4e95ca0aaaf2e440c201541439749d3e6855bcd8ccb39573bbf8b20d1ec3913",
-      "size": 45986,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4\\kum_2.png",
-      "sha256": "998a3816ea8750b33be21be16c93ce3c8c5103d5d3808600ce28bcfc608a7151",
-      "size": 33209,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4\\mar_2.png",
-      "sha256": "74f21e6de432d8339d6626581a3c41ed0a4b0cfe25eac74ed6c492aab3a55679",
-      "size": 31023,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4\\nan_2.png",
-      "sha256": "8db57379bf99cfe2517533e1b5fc8a8ef34f6c71a7d7b4e474a53b0d51f66ec2",
-      "size": 34349,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4\\nat_2.png",
-      "sha256": "632cc346fb9e2ed914cbd473c6d672060d10c6916021662bc9865d372486fbd6",
-      "size": 36424,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4\\ros_2.png",
-      "sha256": "3db8331fb23019bc104a783cd9f4c3473574beb1a57568fefae32bd3cf65b537",
-      "size": 35967,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4\\rud_2.png",
-      "sha256": "d28eb5994392b96765a6a274332b6d7ad4e76a4acdf7be9a747d8e5ec31ec270",
-      "size": 36662,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4\\sha_2.png",
-      "sha256": "24d2ae330100d62badb18a2a5d992d50574dc055f512765a531f2eea67b52810",
-      "size": 42116,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_2\\bea_1.png",
-      "sha256": "bce2cf861746236f2ddcbe1979186e82048cb7239c70282debb5c187aa1fbe69",
-      "size": 64308,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_2\\bea_2.png",
-      "sha256": "d9575500c7b691cbace290bfa4f1f699c5f85ce213df46ce77d3f12cc6d07a61",
-      "size": 68287,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_2\\ber_1.png",
-      "sha256": "8673ad94915702df0db80645d59b55851f63dd347fc9e76ea6ee06a0fd70428a",
-      "size": 73489,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_2\\enj_1.png",
-      "sha256": "fef209a128788c594af093291cd8245ad161ca65a6064fefd3d6474e95fc30f3",
-      "size": 52987,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_2\\gap_1.png",
-      "sha256": "90b545d6acfc65f6935fba080b5223d9a224ff0382ddbf44bae7ff5c3ee4d623",
-      "size": 71505,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_2\\kin_1.png",
-      "sha256": "7aab854a7d48964f75987f87c7db97b6f6d97018ff2a9e0db87928b4d168b396",
-      "size": 80999,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_2\\lam_1.png",
-      "sha256": "74ea65dfde35136ef082615d938e4a5f23864cdf3159cd8c9e9e7cb5f2354079",
-      "size": 63932,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_2\\mar_2.png",
-      "sha256": "2940c419a9c2be74252c0f82ad79c0f81b511fee82636cb845a24b00cc36444a",
-      "size": 66847,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_2\\s00_1.png",
-      "sha256": "f393294493997026e6fd40616a3fe23000d89bf0c089ad3f5d48f613c903921e",
-      "size": 80400,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_2\\s55_1.png",
-      "sha256": "b88a58521ed1bcec66a1ecd0d5c3422cbc84a068a95b14003daab6b9dd3a2193",
-      "size": 34834,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_2\\s55_2.png",
-      "sha256": "ede6a0dc7b8a4ff065eb2cc5c51506f4e4e662c923836d4f3613a2b1d11086d3",
-      "size": 67695,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_2\\sak_1.png",
-      "sha256": "38207bc4e223745b4bc15d4b88e6fc52ee77c048550de9ea0a6836ed726cf8a2",
-      "size": 51868,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_2\\sak_2.png",
-      "sha256": "9868b3e9cda4d21fe8a06f72572f990c5159abff07727f5a78da6e331a779451",
-      "size": 55823,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_3\\ama_1.png",
-      "sha256": "2b5c235a6be0949be2dc8de3bd519812d2a85098f7acefd30a55410211a7082f",
-      "size": 77109,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_3\\ber_1.png",
-      "sha256": "8673ad94915702df0db80645d59b55851f63dd347fc9e76ea6ee06a0fd70428a",
-      "size": 73489,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_3\\enj_1.png",
-      "sha256": "45a04e1995ab739c9e928636441883085b9b4f8c3321cc449cf72474f0a14bab",
-      "size": 51291,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_3\\eva_1.png",
-      "sha256": "068a5ea1b76f29f891014fd22cd242be7dc6b05adc3da7829f06def0f73cd1e7",
-      "size": 90004,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_3\\kas_1.png",
-      "sha256": "4f385ce3e068d1d5142099a279cb7933df5bc477647fb38f34b58d3d4a26521d",
-      "size": 77776,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_3\\kwa_1.png",
-      "sha256": "36621a285ac05e4abbead37888e2dcf11cb736e2264c2abce28fd3c3ca8ca460",
-      "size": 65796,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_3\\mar_1.png",
-      "sha256": "2940c419a9c2be74252c0f82ad79c0f81b511fee82636cb845a24b00cc36444a",
-      "size": 66847,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_3\\mas_1.png",
-      "sha256": "60acfb27de3313879217bb07a820f94ef8c6785a80512b8a12627f3e6dda7958",
-      "size": 53997,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_3\\oko_1.png",
-      "sha256": "7775d3134881c31ed7418c4be43d940c4209f2b8b33c029a9f5e96e56aab8342",
-      "size": 76007,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_3\\pro_1.png",
-      "sha256": "409296c7cbd3a6579adab9a26f12eb04dfa7b264a76e4dc8327ead1917385d12",
-      "size": 64143,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_3\\rg1_1.png",
-      "sha256": "e7b31cceb20fcb51ea88aae040aaa13ed511405f2b51ce5657c23a87203b6ff4",
-      "size": 64992,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_3\\rg2_1.png",
-      "sha256": "faa12bd50846020dce5b14d1df5a503884bcc4cdc066cc007c62e1c34311a4a3",
-      "size": 71132,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_3\\rg3_1.png",
-      "sha256": "3c0a58ca5ffcb970f2fbe6e9dfbbbfbac1fb2217d0d8f6c59e83d64ad8618176",
-      "size": 66713,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_3\\rg4_1.png",
-      "sha256": "d2d27105a3dff17e9602436a8f649233e27a85bb8a1931a7beea38224b643153",
-      "size": 70635,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_3\\rg5_1.png",
-      "sha256": "df9a2f55b33c2830805cd7411e83fc7809c8d3bf1694ce2f39f7bceb1e9a2f4b",
-      "size": 75651,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_3\\rg6_1.png",
-      "sha256": "387dd4efaeaae0b3b811ea7ff6b013098ae4ae224fc76cf74b9c466c8db72749",
-      "size": 79495,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_3\\rg7_1.png",
-      "sha256": "d001f33094c66b6844ef34bbfb049835a41cb5cfa52a2d8f786102c455714fea",
-      "size": 70409,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_3\\sab_1.png",
-      "sha256": "464991e8364d35979aba5fe905ee6956f8a96b29d13bcfa37a8b5734bf86199e",
-      "size": 64262,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ep4_3\\sak_1.png",
-      "sha256": "aa6ab205c87a5eb5d8a49e376423772767159727f9ac0b6fd036b988c7a28649",
-      "size": 32037,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\eva_1.png",
-      "sha256": "d14214bb62c5206064e53ac4813e329fcf69e59b6036299575a977ab6f157f2b",
-      "size": 51001,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\eva_2.png",
-      "sha256": "daae966cfb2c5641630d4e992183ba1dfa6adcf91c4612ada814eda50b109742",
-      "size": 37568,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\gen_1.png",
-      "sha256": "8a86e0eb6cff0af61cfadc0c74d31e3dea4be3dc1293399ef5138387cf2cad6a",
-      "size": 42527,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\gen_2.png",
-      "sha256": "05d5b5cf6c71d0727d7c4af1854f80836b049df05941ddd4aa79513bdb9da0ed",
-      "size": 29864,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\geo_1.png",
-      "sha256": "8a2bf3400d31fbe30574edc5a5c062c107eea65ad16157d9449c581781d45e37",
-      "size": 46885,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\geo_2.png",
-      "sha256": "0947211acef3f1e997a2499419b2cd1dc75a440ca8300cf9887199d12c4167b5",
-      "size": 37179,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\goh_1.png",
-      "sha256": "639e5dc83cfab54cd435fd0c6560d0c65ebf6507c65fe38c3149fe2b96cfe641",
-      "size": 50647,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\goh_2.png",
-      "sha256": "27437f954529d871e100e29467cec12f4dfeab20f47f42b4ea89122e3efe1ee1",
-      "size": 34334,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\hid_1.png",
-      "sha256": "85ed741b8ee0c00abff0dcd7511323967f2ba29f78f6fbd91574e478a2f1d86f",
-      "size": 56799,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\hid_2.png",
-      "sha256": "358680d0b9a6d71b694310e397269c84a11799abd21d0e577565f382d41e4a2a",
-      "size": 54089,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\jes_1.png",
-      "sha256": "7fbb044ca5fa2520b32bec3f489ffdeede11e10cf364d64199edc67c9ed7c0bc",
-      "size": 46226,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\jes_2.png",
-      "sha256": "de286d408485b5ea94a4341ea6fb9b6d7ff6dea50bed6a1eb0d9bd6b2daff837",
-      "size": 36786,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\kan_1.png",
-      "sha256": "378d119dd9408ac8f27f520399ba45cd9a566b184ddebcd69e6280ceb52fc4cb",
-      "size": 44968,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\kan_2.png",
-      "sha256": "51dcafb4555813a9a59493a56e4f7bb0e9f8902bb171d1436f61ce173d09ad7e",
-      "size": 28159,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\kin_1.png",
-      "sha256": "9ed7bb20d468a9a0125541d87c342d45d5c189593843d539306d09264f803226",
-      "size": 54488,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\kin_2.png",
-      "sha256": "45b7da0ada53eeefa0364b456c1cee2c56b1f043f7d0afe5ca391aecac8575e4",
-      "size": 65519,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\kin_3.png",
-      "sha256": "3099c32c594ff565d1d4a985e81ad302fcf7b982c4ee5dd1f781b9b57ae79d63",
-      "size": 35642,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\kir_1.png",
-      "sha256": "5da567b999cb0ba075219d53f829e628939ccb10eac2396376dad6bc491a30b1",
-      "size": 44508,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\kir_2.png",
-      "sha256": "5d7d066b30d273df799daf97d377afd10074b093bc96015446d0ef7bd6fba51f",
-      "size": 28277,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\kla_1.png",
-      "sha256": "676bbfa747da18e953b0107ddcd4f39d92f4433b63e91d91edfae93ff06cb9dd",
-      "size": 53604,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\kla_2.png",
-      "sha256": "9269fe2c676d16517d7ba33dfd56761cbdd01e87c48b12baf34ad95a2469f8d9",
-      "size": 29593,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\kum_1.png",
-      "sha256": "f12077752a08a7782b4ed5f5a1d4e4643371e168b2cbfd331bded075558b4dc6",
-      "size": 49111,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\kum_2.png",
-      "sha256": "421c3ee6b9a2563a7c550cf5ca7248101e308b30edf9882002f3f2427b1ae05b",
-      "size": 31645,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\mar_1.png",
-      "sha256": "c004f122a02055b0fef29092561806e1d60271cd2c75b8c63ae3593085c159b9",
-      "size": 49184,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\mar_2.png",
-      "sha256": "1e6b3d42dacf716c6f2b91e5ffc9bfe82b87a384fd2594e9006a0c61a9e3fac0",
-      "size": 12358,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\nan_1.png",
-      "sha256": "799080b85b910b478116050f8cd24e108c5cdef35f81d1aaeff5296de2c7f65b",
-      "size": 57290,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\nan_2.png",
-      "sha256": "1a79c9a75169dca6fb81d0c2caecacf25aceb73832b041fdd0e15693c4d951fa",
-      "size": 31720,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\nat_1.png",
-      "sha256": "0a9faf6bd0e19307b04d9cdfaa3e221d79bf3517a7ef2b115559301228a6efbb",
-      "size": 55014,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\nat_2.png",
-      "sha256": "840d6997aac828fca1967b3aa229d7ad8e533d1fb6a9e3479303a59f68f72527",
-      "size": 31425,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ros_1.png",
-      "sha256": "62868044740c7af7e87f5c4bb3d231a2e451103dcbdf1f2f17d94700f1aaff1c",
-      "size": 45682,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\ros_2.png",
-      "sha256": "72c15df50c09db3cedf0f7fd2e9580425e17917049ce3305aefea50682b6f634",
-      "size": 28122,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\rud_1.png",
-      "sha256": "3db1b4b1016d4675a3bf95a5b1f4be8f4161f47cd94f2f82a69212a60ac7cef4",
-      "size": 47771,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\rud_2.png",
-      "sha256": "9adfc66316c47fd6776053a9f022bf10f270a2d7fc28565605146a2442cd1dce",
-      "size": 26773,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\sha_1.png",
-      "sha256": "93d5983a52bd206c900c09c32914b8581986dc6dce45c39729b003b359a62c78",
-      "size": 44480,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\cha\\sha_2.png",
-      "sha256": "bfe27b1a1c6af5ebd200749cbfdbfa49a4ab814b6470e3dcf4ef4dd3656eaece",
-      "size": 29985,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\tips\\ep4\\5_1.png",
-      "sha256": "74373f91b63b67249214307ac28a43f5d29ea33ab2dc67722372fea7ec1bf4fd",
-      "size": 159057,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\r_click\\text\\tips\\ep4\\6_1.png",
-      "sha256": "3149dd5a7815728ef9662bab9bdbdc530596f78402fe7a850cdf4c71e6c721a6",
-      "size": 200472,
-      "packageId": "patch-0.1.15-002"
-    },
-    {
-      "path": "Trad Umineko\\en\\bmp\\title\\manual.png",
-      "sha256": "28cc037fcbd8760f2fca7425c95e52c47724e1035ca1062ff81067d492f444dd",
-      "size": 1460353,
-      "packageId": "patch-0.1.15-002"
+      "packageId": "patch-0.1.16-002"
     }
   ],
   "deletePaths": []
