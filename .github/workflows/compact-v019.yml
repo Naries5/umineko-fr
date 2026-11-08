@@ -1,0 +1,23 @@
+name: Optimize manifest response size without changing update behavior
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/compact_v019_manifest.py'
+      - '.github/workflows/compact-v019.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  compact:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate equality and minimize remote manifest JSON
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/compact_v019_manifest.py
