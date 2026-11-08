@@ -23,7 +23,7 @@ internal static class Program
 
         try
         {
-            Log(root, "=== Lancement updater v3.4 ===");
+            Log(root, "=== Lancement updater v3.5 ===");
 
             var mod = UpdaterCore.DetectSeventhMod(root);
             if (!mod.Installed)
@@ -47,7 +47,7 @@ internal static class Program
                     try
                     {
                         var manifest = await UpdaterCore.GetRemoteManifestAsync(
-                            cfg.ManifestUrl, cfg.TimeoutSeconds);
+                            cfg.ManifestUrl, Math.Max(120, cfg.TimeoutSeconds));
 
                         if (await TrySelfUpdateAsync(root, manifest))
                             return 0;
