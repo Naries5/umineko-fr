@@ -117,7 +117,7 @@ public static class UpdaterCore
                     throw new Exception("Un package du manifeste est invalide.");
             }
 
-            foreach (var file in manifest.Files)
+            foreach (var file in manifest.Files!)
             {
                 ValidateRelativePath(file.Path);
                 if (string.IsNullOrWhiteSpace(file.Sha256) ||
