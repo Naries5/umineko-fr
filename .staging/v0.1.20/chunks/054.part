@@ -1,0 +1,5000 @@
+ld r,$BEA_gamanA5,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e961:「……………うむ………。@:dwave_jp 0, bea_4e962:……魔法であるぞ……。@/
+langjp:dwave_jp 0, bea_4e963:^^!s1……それこそが、/
+sl
+langjp:voicedelay 1280:dwave_jp 0, bea_4e964:^^………本当の、/
+sl
+langjp:voicedelay 1010:dwave_jp 0, bea_4e965:^^………魔法であるぞ………。」/
+sl
+langen:dwave_eng 0, bea_4e961:^... En effet... ^@:dwave_eng 0, bea_4e962:^C'est de la magie...^@/
+langen:dwave_eng 0, bea_4e963:^^!s1^ C'est cela... ^@/
+sl
+langen:voicedelay 1280:dwave_eng 0, bea_4e964:^la véritable... ^@/
+sl
+langen:voicedelay 1010:dwave_eng 0, bea_4e965:^magie...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜ベアト
+
+ld l,$mar_waraiA1,80
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1390:「どうしてベアトにも出来ない魔法を縁寿が使えるの？！@:dwave_jp 0, mar_4e1391:　どうして？！@:dwave_jp 0, mar_4e1392:　どうしてッ？！@/
+langen:dwave_eng 0, mar_4e1390:^Pourquoi Ange peut utiliser une magie que même Béato n'arrivait pas à utiliser ?! ^@:dwave_eng 0, mar_4e1391:^Pourquoi... ?! ^@:dwave_eng 0, mar_4e1392:^Pourquoi... ?! ^@/
+
+ld l,$MAR_WaraiA2,80
+
+langjp:dwave_jp 0, mar_4e1393:　縁寿すごい、縁寿はすごい魔女！@:dwave_jp 0, mar_4e1394:　真里亞なんかよりもずっとずっとすごい、本当の魔女だよ……！！！」\
+;＜真理亞
+langen:dwave_eng 0, mar_4e1393:^Ange est incroyable, Ange est une sorcière incroyable ! ^@:dwave_eng 0, mar_4e1394:^Une vraie sorcière, beaucoup, beaucoup plus incroyable que Maria... !!!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3ap.png",0
+ld r,$ENJ_nakuA1,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1876:「えぇ、そうよ、お姉ちゃん。@/
+langen:dwave_eng 0, enj_4e1876:^Oui, c'est ça, grande sœur.^@/
+
+ld r,$ENJ_hanbesoA1,80
+
+langjp:dwave_jp 0, enj_4e1877:……………私は、反魂の魔女エンジェ。@:dwave_jp 0, enj_4e1878:……私に蘇らせられないものはないわ。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1877:^ Je suis ANGE, la Sorcière de la Résurrection.^@:dwave_eng 0, enj_4e1878:^ Il n'existe rien que je ne puisse ressusciter.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3bp.jpg",":b;bmp\background\garden\rose_3bp.png",0
+ld l,$SAK_WaraiA1,0
+ld c,$MAR_WaraiA2,23
+ld c,$mar_OdorokiA1,80
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1395:「すごいよすごい！！@:dwave_jp 0, mar_4e1396:　反魂の魔法って、一番難しいってベアトも言ってたのに！！@/
+langen:dwave_eng 0, mar_4e1395:^Incroyable, incroyable !! ^@:dwave_eng 0, mar_4e1396:^Même Béato disait que la magie de résurrection était la plus difficile de toutes !! ^@/
+
+ld c,$MAR_WaraiA2,80
+
+langjp:dwave_jp 0, mar_4e1397:　エンジェはすごい！！@:dwave_jp 0, mar_4e1398:　本当の本当の、大魔女なんだ……ッ！！！」\
+;＜真理亞
+langen:dwave_eng 0, mar_4e1397:^ANGE est incroyable !! ^@:dwave_eng 0, mar_4e1398:^C'est une vraie, une authentique Grande Sorcière... !!!^\
+
+textoff
+se1 22
+bg white,2
+se2 52
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\garden\rose_3bp.jpg" : mov $oldnew_bg,":b;bmp\background\garden\rose_3bp.png" : if %4095 = 0 bg ":b;bmp\background\garden\rose_3bp.png",99,3000,"breakup.dll/lrb" : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\garden\rose_3bp.jpg",99,3000,"breakup.dll/lrb"
+
+advchar "-1"
+langjp　その時、真里亞とさくたろうの姿が黄金色に瞬き、@……二人の姿が黄金の花びらに変わって、崩れ去った……。@
+langen^Les silhouettes de Maria et de Sakutarō se mirent à scintiller d'or,^@^ puis se changèrent en pétales dorés emportés par le vent.^@
+br
+langjp　二人は黄金の風になって混じりあいながら、@………ここではない、別の安らぎの地へ、去っていく。@
+langen^Ils se mêlèrent aux pétales qui traversaient le jardin,^@^ et partirent vers une terre plus paisible, loin d'ici.^@
+br
+langjp　ベアトは真里亞を、……約束どおり、黄金郷から追放したのだ。/
+sl
+langen^Béato avait tenu parole : elle avait laissé Maria quitter la Terre d'Or.^@/
+
+mov %play_scene,40320 : mov %r_hyouji_side,1 : mov %r_hyouji_cha_ma,0
+
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+fede 0,3000
+
+wait 1000
+
+me1v 5,50
+
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3bp.jpg",":b;bmp\background\garden\rose_3bp.png",22
+
+ld r,$ENJ_nakuA1,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1879:「……さよなら、…真里亞お姉ちゃん。@:dwave_jp 0, enj_4e1880:そしていつまでも、お幸せに。@/
+langen:dwave_eng 0, enj_4e1879:^... Adieu... grande sœur Maria. ^@:dwave_eng 0, enj_4e1880:^Et... sois heureuse pour toujours.^@/
+
+bgm1v 106,85
+
+ld r,$ENJ_fumanA2,80
+
+langjp:dwave_jp 0, enj_4e1881:…………大丈夫よ、お姉ちゃんの世界にも必ずあなたはいるわ。@/
+langen:dwave_eng 0, enj_4e1881:^ ... Ne t'inquiète pas, tu existes forcément aussi dans le monde de ta grande sœur. ^@/
+
+langjp:dwave_jp 0, enj_4e1882:でもそれは、^~ib~^あなたのことじゃない^~ib~^。」\
+;＜縁寿
+;＜点処理：あなたのことじゃない
+langen:dwave_eng 0, enj_4e1882:^Mais ce n'est pas ~ib~toi~ib~.^\
+
+se1v 2,100
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3ap.png",0
+ld c,$BEA_gamanA5,22
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e966:^^!s1「……………よかったな、/
+sl
+langjp:voicedelay 1110:dwave_jp 0, bea_4e967:^^……真里亞……。@:dwave_jp 0, bea_4e968:……妾はそなたの親友として、/
+sl
+langjp:voicedelay 2550:dwave_jp 0, bea_4e969:^^………その再会を、心より祝福するぞ………。」/
+sl
+langen:dwave_eng 0, bea_4e966:^^!s1^... Je suis heureuse pour toi^@/
+sl
+langen:voicedelay 1110:dwave_eng 0, bea_4e967:^... Maria... ^@:dwave_eng 0, bea_4e968:^En tant que ta plus proche amie^@/
+sl
+langen:voicedelay 2550:dwave_eng 0, bea_4e969:^... je bénis de tout cœur ces retrouvailles...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜ベアト
+
+langjp　ベアトの表情には、……おそらく人間が浮かべることの出来る、全ての表情が入り混じっていた。@
+langen^Sur le visage de Béato... se mêlaient sans doute toutes les expressions dont un être humain est capable.^@
+br
+langjp　それは、@喜びであり、@怒りであり、@哀しみであり。\
+langen^C'était à la fois ^@^de la joie, ^@^de la colère, ^@^et de la tristesse.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3bp.jpg",":b;bmp\background\garden\rose_3bp.png",0
+ld r,$ENJ_komaruA2,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1883:「………それが、魔法の根源よね。@/
+langen:dwave_eng 0, enj_4e1883:^C'est cela, n'est-ce pas... la source de la magie ?^@/
+
+ld r,$ENJ_NakuA1,80
+
+langjp:dwave_jp 0, enj_4e1884:…………愛がなければ。@:dwave_jp 0, enj_4e1885:悲しみがなければ。@:dwave_jp 0, enj_4e1886:怒りがなければ。@:dwave_jp 0, enj_4e1887:…………魔法は、視えない。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1884:^ Sans amour,^@:dwave_eng 0, enj_4e1885:^ sans tristesse,^@:dwave_eng 0, enj_4e1886:^ sans colère...^@:dwave_eng 0, enj_4e1887:^ on ne peut pas voir la magie.^\
+
+me2v 17,90
+
+textoff
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_2cp.jpg",":b;bmp\background\garden\rose_2cp.png",2
+wait 1000
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_2cn.jpg",":b;bmp\background\garden\rose_2cn.png",9
+se1 60
+se2v 2,100
+se3v 1100,100
+quakey 4,400
+
+advchar "-1"
+langjp　大地が、震える。@……地震。@
+langen^La terre se mit à trembler,^@^ comme si tout le jardin vacillait.^@
+br
+langjp　………それは次第に大きな地割れを呼び、@ベアトリーチェの最後の楽園を、引き裂き始める。\
+langen^... Peu à peu, de profondes fissures s'ouvrirent...^@^ et commencèrent à déchirer le dernier paradis de Béatrice.^\
+
+me3v 16,60
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_2an.jpg",":b;bmp\background\garden\rose_2an.png",0
+;se1 22
+bfly2 22
+
+langjp　黄金の蝶たちは逃げ惑うが、どこにも逃げ場などない。@
+langjp　…そして、ベアトリーチェも。\
+langen^Les papillons dorés prirent la fuite, sans trouver le moindre refuge.^@
+langen^Et Béatrice elle-même ne semblait plus avoir nulle part où se réfugier.^\
+
+;cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3an.jpg",":b;bmp\background\garden\rose_3an.png",22
+se1v 60,100
+se2v 2,100
+se3v 1100,100
+quakey 4,400
+
+langjp　黄金郷は崩れ去ってゆく。@
+langen^La Terre d'Or commença à s'effondrer.^@
+br
+
+E_MA
+se1v 1006,100
+se2v 61,100
+se3v 66,100
+
+cbfly 0
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",14,300 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",14,300
+
+langjp　大地はまるで抜け落ちる床のように崩れ落ち、/
+sl
+langjp^^!d800………ベアトリーチェを漆黒の闇の底へ飲み込んでいく。\
+langen^Le sol céda comme un plancher qui se dérobe^@/
+sl
+langen:!d800^... et engloutit Béatrice au fond d'un abîme de ténèbres absolues.^\
+
+textoff
+wait 2000
+
+se3v 1006,100
+se2v 12,85
+se1v 39,90
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1c.jpg",":b;bmp\background\efe\different_space_1c.png",1
+quakey 4,800
+
+langjp　そして無慈悲に漆黒の床に叩き付けられた。\
+langen^Sa chute s'acheva brutalement sur un sol d'un noir profond.^\
+
+mov %play_scene,40330 : mov %r_hyouji_side,1 : mov %r_hyouji_cha_ma,0
+
+langjp　……そこは、とても薄暗い、喫煙室。@
+langen^... Elle se trouvait dans un fumoir plongé dans la pénombre.^@
+br
+langjp　出ることの出来る扉はなく、窓はあれど光も差さぬ、/
+sl
+langjp^^!d800……薄暗きベアトリーチェの喫煙室。\
+langen^Il n'y avait aucune porte pour s'enfuir et, malgré la fenêtre, pas un rayon de lumière ne pénétrait...^@/
+sl
+langen:!d800^ dans le fumoir obscur de Béatrice.^\
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1a.jpg",":b;bmp\background\efe\different_space_1a.png",6
+
+langjp　ベアトはその冷たく硬い床に叩き付けられた痛みに呻きながらも、@ふらふらと立ち上がる……。\
+langen^Béato gémit sous le choc de sa chute sur le sol froid et dur,^@^ puis se redressa péniblement...^\
+
+
+langjp　そこには席が。@
+langen^Un siège l'attendait...^@
+br
+langjp　……彼女が退席したままの形で残っている、……ゲームのテーブルが。@
+langen^La table de jeu se dressait devant elle, exactement dans l'état où elle l'avait laissée.^@
+br
+langjp　ゲーム盤もまた、ベアトが放置した状態で残されている。\
+langen^L'échiquier n'avait pas davantage changé depuis qu'elle avait abandonné sa place.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1b.jpg",":b;bmp\background\efe\different_space_1b.png",0
+ld r,$ENJ_fumanA1,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1888:「そこがあなたの席よ。@:dwave_jp 0, enj_4e1889:座りなさい。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1888:^C'est ta place.^@:dwave_eng 0, enj_4e1889:^ Assieds-toi.^@
+
+ld l,$bea_hanbesoA4,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e970:^^!s1「……………妾に座るべき席は、/
+sl
+langjp:voicedelay 2220:dwave_jp 0, bea_4e971:^^………ここしかない、ということなのか………。」/
+sl
+langen:dwave_eng 0, bea_4e970:^^!s1^ ... Ainsi, la seule place...^@/
+sl
+langen:voicedelay 2220:dwave_eng 0, bea_4e971:^ où je doive m'asseoir est celle-ci... ?^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+
+langjp　ベアトは自らの席に手を付き、……悲しく笑う。\
+langen^Béato posa une main sur son siège... et eut un sourire triste.^\
+
+ld r,$ENJ_hanbesoA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1890:「勝つか、負けるか。@:dwave_jp 0, enj_4e1891:あなたに与えられるのはそれだけよ。@:dwave_jp 0, enj_4e1892:それに行き着く過程での引き分けは許されるでしょう。\
+langen:dwave_eng 0, enj_4e1890:^Gagner ou perdre. ^@:dwave_eng 0, enj_4e1891:^Voilà les seules issues qui te sont accordées. ^@:dwave_eng 0, enj_4e1892:^Les matchs nuls en cours de route pourront sans doute être tolérés.^\
+
+ld r,$ENJ_hanbesoA2,80
+
+langjp:dwave_jp 0, enj_4e1893:　………でも、中断して投げ出すことだけは許さない！@:dwave_jp 0, enj_4e1894:　勝って生き残るか、負けて消え去るか、@:dwave_jp 0, enj_4e1895:そのどちらかになるまで、あなたはその席を立つことなんて許されない！！@:dwave_jp 0, enj_4e1896:　それが魔女のゲームのホストである、黄金の魔女ベアトリーチェの唯一の務めでしょう…！！」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1893:^... Mais abandonner la partie en plein milieu, ça, je ne te le permettrai pas ! ^@:dwave_eng 0, enj_4e1894:^Soit tu gagnes et tu survis, soit tu perds et tu disparais. ^@:dwave_eng 0, enj_4e1895:^Tant que tu n'auras pas atteint l'une de ces deux issues, t'as pas le droit de quitter ce siège !! ^@:dwave_eng 0, enj_4e1896:^C'est ton unique devoir en tant qu'hôte de ce jeu de sorcière, Sorcière d'Or Béatrice... !!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",5
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1c.jpg",":b;bmp\background\efe\different_space_1c.png",22
+
+
+advchar "-1"
+langjp　ベアトは力なく笑いながら、その席に、/
+sl
+langjp^^!d600……座る。@
+langen^Béato laissa échapper un rire sans joie...^@/
+sl
+langen:!d600^ s'assit sur ce siège.^@
+br
+langjp　……そして肘を付き、両手で顔を覆って、/
+sl
+langjp^^!d900………口だけはせめて笑って見せた。\
+langen^Elle posa les coudes sur la table et dissimula son visage entre ses mains^@/
+sl
+langen:!d900^... et ne laissa paraître qu'un sourire au coin des lèvres.^\
+
+;ld c,$BEA_gamanA3,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e972:「………勝てぬゲームを逃げることは許されぬか。@:dwave_jp 0, bea_4e973:………ならばよかろう。@:dwave_jp 0, bea_4e974:……妾が負けるまで、……繰り返そうではないか……。」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e972:^... Je n'ai donc pas le droit de fuir une partie que je ne peux pas gagner... ^@:dwave_eng 0, bea_4e973:^Fort bien. ^@:dwave_eng 0, bea_4e974:^... Alors répétons-le... jusqu'à ce que je perde...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1b.jpg",":b;bmp\background\efe\different_space_1b.png",0
+ld r,$ENJ_hanbesoA3,22
+
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1897:「何を気弱な！@:dwave_jp 0, enj_4e1898:　勝ちなさいよ。@:dwave_jp 0, enj_4e1899:あなたの最善手を尽くしなさい…！！@:dwave_jp 0, enj_4e1900:　あなたが始めたゲーム！@:dwave_jp 0, enj_4e1901:　あなたには最善手を指す義務があるッ！！@:dwave_jp 0, enj_4e1902:　いい加減に優柔不断にふざけるのはやめて！」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1897:^Arrête de te montrer si faible ! ^@:dwave_eng 0, enj_4e1898:^Gagne. ^@:dwave_eng 0, enj_4e1899:^Joue tes meilleurs coups... !! ^@:dwave_eng 0, enj_4e1900:^C'est toi qui as commencé ce jeu ! ^@:dwave_eng 0, enj_4e1901:^Tu as le devoir de jouer du mieux possible !! ^@:dwave_eng 0, enj_4e1902:^Alors arrête enfin de tergiverser et de faire l'idiote !^\
+
+se1v 57,100
+se3v 16,100
+se2v 44,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+se1v 32,100
+
+advchar "-1"
+langjp　その時、激しい音がした。@
+langjp　……ベアトは足に冷たく痛々しい感触を覚える。\
+langen^Un fracas métallique interrompit brusquement la conversation.^@
+langen^Béato sentit quelque chose de glacé et de douloureux se refermer autour de sa cheville.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1a.jpg",":b;bmp\background\efe\different_space_1a.png",22
+se1v 57,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1a.jpg",":b;bmp\background\efe\different_space_1a.png",0
+ld l,$LAM_akuwaraiA5,80
+
+advchar "29"
+langjp:dwave_jp 0, lam_4e219:「……つゥかまえたァ…！@:dwave_jp 0, lam_4e220:　やっと捕まえたわよ、ベアトぉ〜？」\
+;＜ラムダ
+langen:dwave_eng 0, lam_4e219:^... Je t'ai eue... ! ^@:dwave_eng 0, lam_4e220:^Enfin je te tiens, Béatooo ?^\
+
+ld r,$BEA_gamanA4,26
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e975:「おや、大ラムダデルタ卿ではないか…。@/
+langen:dwave_eng 0, bea_4e975:^Oh... mais voilà donc la grande Dame Lambdadelta... ?^@/
+
+;ld r,$BEA_KomaruA3,80
+
+langjp:dwave_jp 0, bea_4e976:………まだおられたとはな。」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e976:^ ... Je ne pensais pas que vous étiez toujours là.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",26
+;se2v 32,100
+
+
+advchar "-1"
+langjp　ベアトの足には、凍え切った鋼鉄の足枷がはめられ、@……自らの座る椅子に括り付けられている。@
+langen^Une lourde entrave d'acier s'était refermée sur la cheville de Béato,^@^ la reliant au pied de son siège.^@
+
+se3v 32,100
+br
+langjp　……もう、この席から逃げることは出来ない。\
+langen^Il lui était désormais impossible de quitter cette place.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1b.jpg",":b;bmp\background\efe\different_space_1b.png",22
+se1v 57,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1b.jpg",":b;bmp\background\efe\different_space_1b.png",0
+ld r,$LAM_futekiA1,80
+
+advchar "29"
+langjp:dwave_jp 0, lam_4e221:「をーっほっほっほ！@:dwave_jp 0, lam_4e222:　もう逃げられないんだからね？@:dwave_jp 0, lam_4e223:　私、こう見えてもしつこいの、意外でしょぅ？」@
+;＜ラムダ
+langen:dwave_eng 0, lam_4e221:^Ohohohohoho ! ^@:dwave_eng 0, lam_4e222:^Maintenant, tu peux plus t'échapper, tu sais ? ^@:dwave_eng 0, lam_4e223:^J'en ai peut-être pas l'air, mais quand je m'accroche, je lâche rien. Surprenant, hein ?^@
+
+ld l,$BEA_iiwakeA3,23
+advchar "27"
+langjp:dwave_jp 0, bea_4e977:「…………自覚がなかった方が意外であるわ。」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e977:^... Ce qui me surprendrait surtout, c'est que vous n'en ayez pas conscience.^\
+
+ld r,$LAM_FutekiA2,80
+
+advchar "29"
+langjp:dwave_jp 0, lam_4e224:「あんたには中座も中断も許されてないのよ。@:dwave_jp 0, lam_4e225:永遠に戦うのよ、勝つためにね？@/
+langen:dwave_eng 0, lam_4e224:^Tu n'as le droit ni de quitter la table ni d'interrompre cette partie. ^@:dwave_eng 0, lam_4e225:^Tu te battras éternellement pour gagner, compris ?^@/
+
+ld r,$LAM_AkuwaraiA5,80
+
+langjp:dwave_jp 0, lam_4e226:　………負けたくはないでしょう？@:dwave_jp 0, lam_4e227:　負けたらどんな素敵な世界に叩き落されるか、ちょっぴりだけ覗いてみたいぃ？\
+langen:dwave_eng 0, lam_4e226:^ ... T'as pas envie de perdre, pas vrai ? ^@:dwave_eng 0, lam_4e227:^Tu veux jeter un petit coup d'œil au merveilleux monde où tu seras précipitée si tu perds ?^\
+
+ld r,$LAM_futekiA1,80
+
+langjp:dwave_jp 0, lam_4e228:　ダイジョウブよ。@:dwave_jp 0, lam_4e229:勝てるわよ、この大ラムダデ/
+sl
+langen:dwave_eng 0, lam_4e228:^PAS D'INQUIÉTUDE. ^@:dwave_eng 0, lam_4e229:^Tu peux gagner, car moi, la grande Dame Lambdadelta, je vais m'occuper de toi ^@/
+sl
+langjpルタ卿が、^~ib~^あんたが勝つまで^~ib~^、付きっ切りで永遠に面倒を見てあげるから…！！」\
+;＜ラムダ：点処理：あんたが勝つまで
+langen^sans jamais te quitter ^^~ib~jusqu'à ce que tu gagnes~ib~^^, pour l'éternité... !!^\
+
+
+
+;ld c,$BEA_gamanA3,80
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1c.jpg",":b;bmp\background\efe\different_space_1c.png",25
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e978:「……………………………。@:dwave_jp 0, bea_4e979:……ふ、……ははははは。@:dwave_jp 0, bea_4e980:………しかし、戦いたくとも、妾の向かいに対戦相手はおらぬぞ……？」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e978:^...^@:dwave_eng 0, bea_4e979:^ Hmph... hahahahaha. ^@:dwave_eng 0, bea_4e980:^... Mais même si je voulais me battre, il n'y a aucun adversaire assis en face de moi, n'est-ce pas... ?^\
+
+se1 52
+;ld c,$BER_DefA2,99,1000,"breakup.dll/urb"
+
+textoff
+wait 2000
+
+ld c,$BER_DefA2,65
+se2 11
+quakey 2,200
+
+advchar "28"
+langjp:dwave_jp 0, ber_4e126:「………大丈夫よ、戦人を見つけてきたわ。」\
+;＜ベルン
+langen:dwave_eng 0, ber_4e126:^... Ne t'inquiète pas. J'ai retrouvé Battler.^\
+
+textoff
+se1 9
+bg white,1
+wait 100
+se2 13
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1a.jpg",":b;bmp\background\efe\different_space_1a.png",1
+;ld r,$BUT_KuyasigaruA1,1
+quakey 3,800
+
+advchar "-1"
+langjp　ベルンカステルが現れて、手をパンと打つと、@宙より戦人が現れて、どさりと向かいの席に落ちる。/
+sl
+langen^Bernkastel apparut et frappa doucement dans ses mains.^@^ Le corps de Battler surgit dans les airs avant de retomber lourdement sur le siège d'en face.^@/
+mov %play_scene,40335 : mov %r_hyouji_side,1
+mov %disable_adv_clear, 1
+langjp:noclear_cw:
+langen:noclear_cw:
+mov %disable_adv_clear, 0
+
+br
+
+langjp　戦人は目を薄っすらと開けてはいるが、輝きはなく、まるで人形のようだった。\
+langen^ Battler avait les yeux entrouverts, mais sans la moindre lueur, comme une poupée.^\
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　自分の魂を確立する柱の一本を欠き、/
+sl
+langjp^^!d800…………暗闇の底の底まで落ち、ずっと漂っていた。@
+langen^Privé d'un des piliers sur lesquels reposait son identité^@/
+sl
+langen:!d800^... il était tombé au plus profond des ténèbres... où il dérivait depuis tout ce temps.^@
+br
+langjp　……そのまま、霧のように散って消えてしまうはずだった。\
+langen^Il aurait fini par se disperser et disparaître comme de la brume.^\
+
+langjp　それをベルンカステルが掻き集めてきた。@
+langjp　よくも人の形にまで戻せたものだ。\
+langen^Bernkastel avait néanmoins rassemblé ce qui restait de lui.^@
+langen^Le simple fait de lui rendre une apparence humaine relevait déjà de l'exploit.^\
+
+langjp　しかし、肉体は戻っても、魂がまだ戻ってこない。@
+langjp　……ベアトリーチェに存在を否定されて吹き飛ばされた。@
+langjp　容易には戻らない。\
+langen^Mais si son corps était revenu, son âme demeurait absente.^@
+langen^Béatrice l'avait profondément blessé en niant jusqu'à son existence.^@
+langen^Il ne suffirait pas de l'appeler pour le ramener à lui.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1c.jpg",":b;bmp\background\efe\different_space_1c.png",0
+ld c,$BER_DefA1,26
+
+advchar "28"
+langjp:dwave_jp 0, ber_4e127:「……………戦人もこの戦いを逃げないわよ。@:dwave_jp 0, ber_4e128:あんたに勝つまでね。@:dwave_jp 0, ber_4e129:……勝ち目がなくなってきたからって、全て投げ出して逃げるなんて、そんな無粋を許しはしない。@/
+langen:dwave_eng 0, ber_4e127:^... Battler non plus ne fuira pas ce combat. ^@:dwave_eng 0, ber_4e128:^Pas avant de t'avoir vaincue. ^@:dwave_eng 0, ber_4e129:^... Ce n'est pas parce que tes chances de gagner diminuent que je vais te laisser tout jeter et t'enfuir de façon aussi peu élégante. ^@/
+
+ld c,$BER_DefA2,80
+
+langjp:dwave_jp 0, ber_4e130:彼だって、そんなことを望んではいないわ。@:dwave_jp 0, ber_4e131:…………でしょう、右代宮戦人…？」\
+;＜ベルン
+langen:dwave_eng 0, ber_4e130:^Lui non plus ne le souhaite pas. ^@:dwave_eng 0, ber_4e131:^... N'est-ce pas, Battler Ushiromiya... ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1a.jpg",":b;bmp\background\efe\different_space_1a.png",23
+;ld c,$BUT_NayamuA4,22
+
+me1v 16,40
+
+advchar "-1"
+langjp　戦人は答えない。@
+langjp　……心がまだ、死んでいる。@
+langen^Battler ne répondit pas.^@
+langen^Sa conscience demeurait inaccessible.^@
+br
+langjp　問い掛けに、わずかに目を震わせるが、返事は出来ない。\
+langen^Ses yeux frémirent à peine, sans qu'il puisse répondre à cette question.^\
+
+ld r,$ENJ_komaruA4,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1903:「戦人…！/
+sl
+langen:dwave_eng 0, enj_4e1903:^Battler... ! ^@/
+quakey 3,300
+langjp:noclear_cw:dwave_jp 0, enj_4e1904:　しっかり！@:dwave_jp 0, enj_4e1905:　あなたはここにいるわよ。@:dwave_jp 0, enj_4e1906:そして敵は目の前にいる…！@:dwave_jp 0, enj_4e1907:　戦って！@:dwave_jp 0, enj_4e1908:　勝つために！！」\
+;＜縁寿
+langen:noclear_cw:dwave_eng 0, enj_4e1904:^Ressaisis-toi ! ^@:dwave_eng 0, enj_4e1905:^Tu es bien là. ^@:dwave_eng 0, enj_4e1906:^Et ton ennemie est juste devant toi... ! ^@:dwave_eng 0, enj_4e1907:^Bats-toi ! ^@:dwave_eng 0, enj_4e1908:^Bats-toi pour gagner !!^\
+
+advchar "-1"
+langjp　戦人はぼんやりとそれを、うわ言のように復唱する。@
+langen^Battler répétait vaguement ces mots, comme au sortir d'un long cauchemar.^@
+br
+langjp　………戻ってきた。\
+langen^Il commençait pourtant à retrouver une partie de sa conscience.^\
+
+langjp　魂に負った傷は浅くない。@
+langen^La blessure infligée à son âme était encore profonde.^@
+br
+langjp　それは無理からぬこと。@
+langjp　ベアトリーチェに赤を織り交ぜ、否定された。@
+langen^Il n'y avait là rien d'étonnant.^@
+langen^Béatrice avait utilisé la vérité rouge pour remettre en cause son identité.^@
+br
+langjp　敬愛していた母親が、生みの親でなかったことを知り、@………自分が誰なのかわからないのだ。\
+langen^Il venait d'apprendre que la femme qu'il avait toujours appelée Maman ne l'avait pas mis au monde,^@^ et cette révélation l'empêchait de savoir qui il était.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+advchar "10"
+langjp:dwave_jp 0, but_4e847:　……自分は右代宮戦人では、/
+sl
+langjp:voicedelay 3420:dwave_jp 0, but_4e848:^^……ない…………。\
+langen:dwave_eng 0, but_4e847:^... Il n'était pas... ^@/
+sl
+langen:voicedelay 3420:dwave_eng 0, but_4e848:^Battler Ushiromiya...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1a.jpg",":b;bmp\background\efe\different_space_1a.png",0
+ld c,$ENJ_ikariA1,1
+
+se1 11
+quakey 3,400
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1909:「馬鹿なこと言ってんじゃないわッ！@:dwave_jp 0, enj_4e1910:　あんたは他の誰でもない、右代宮戦人よ！@/
+langen:dwave_eng 0, enj_4e1909:^Ne raconte pas n'importe quoi ! ^@:dwave_eng 0, enj_4e1910:^Tu n'es personne d'autre que Battler Ushiromiya ! ^@/
+
+ld c,$ENJ_KomaruA4,80
+
+langjp:dwave_jp 0, enj_4e1911:　誰が認めようと否定しようと、あなたがそれを信じなさい…！！@:dwave_jp 0, enj_4e1912:　あなたの世界はね、あなただけが作れるのよ。@:dwave_jp 0, enj_4e1913:あなたが右代宮戦人である世界を、失わないで！」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1911:^Que les autres l'admettent ou le nient, toi, tu dois y croire... !! ^@:dwave_eng 0, enj_4e1912:^Ton monde, il n'y a que toi qui puisses le créer. ^@:dwave_eng 0, enj_4e1913:^Ne perds pas le monde dans lequel tu es Battler Ushiromiya !^\
+
+
+;ld c,$BUT_nayamua1,80
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1c.jpg",":b;bmp\background\efe\different_space_1c.png",25
+
+advchar "10"
+langjp:dwave_jp 0, but_4e849:^^!s1「……………じゃあ、/
+sl
+langjp:voicedelay 990:dwave_jp 0, but_4e850:^^…………俺は、/
+sl
+langjp:voicedelay 940:dwave_jp 0, but_4e851:^^……誰なんだよ………？@:dwave_jp 0, but_4e852:　お袋の子じゃないんだぜ……？@:dwave_jp 0, but_4e853:　俺はどこから生まれてきたんだよ……？」/
+sl
+langen:dwave_eng 0, but_4e849:^^!s1^... Alors^@/
+sl
+langen:voicedelay 990:dwave_eng 0, but_4e850:^... moi... ^@/
+sl
+langen:voicedelay 940:dwave_eng 0, but_4e851:^qui je suis... ? ^@:dwave_eng 0, but_4e852:^J'suis pas le fils de Maman, c'est ça... ? ^@:dwave_eng 0, but_4e853:^Alors... d'où est-ce que je viens... ?^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜戦人
+
+langjp　戦人は輝きの戻らぬ瞳で、ぼんやりと天井を見たまま、それを問う。@
+langen^Battler posa la question sans quitter le plafond de son regard vide.^@
+br
+langjp　もちろん彼女は即答する。\
+langen^Bernkastel lui répondit aussitôt.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1b.jpg",":b;bmp\background\efe\different_space_1b.png",0
+ld r,$ENJ_nayamuA1,26
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1914:「えぇ、そうね。@:dwave_jp 0, enj_4e1915:ベアトが赤き真実で宣言したわ。@/
+langen:dwave_eng 0, enj_4e1914:^Oui, c'est exact. ^@:dwave_eng 0, enj_4e1915:^Béato l'a proclamé avec la vérité rouge.^@/
+
+ld r,$ENJ_FumanA1,80
+
+langjp:dwave_jp 0, enj_4e1916:……だから私も宣言する。@/
+langen:dwave_eng 0, enj_4e1916:^ ... Alors moi aussi, je vais le proclamer. ^@/
+se1 59
+langjp:dwave_jp 0, enj_4e1917:#ff0000右代宮戦人は右代宮明日夢の息子ではないわ。#ffffff」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1917:^#ff0000Battler Ushiromiya n'est pas le fils d'Asumu Ushiromiya.#ffffff^\
+
+
+ld l,$BEA_iiwakeA1,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e981:「………ふっ、……なれば、我がゲームの対戦相手の資格はないではないか…。」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e981:^... Hmph... dans ce cas, il n'a donc pas qualité pour être mon adversaire dans ce jeu...^\
+
+
+ld r,$ENJ_ikariA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1918:「ベアトリーチェに復唱要求。@:dwave_jp 0, enj_4e1919:« 右代宮戦人は右代宮金蔵の孫ではない »。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1918:^Béatrice, demande de répétition. ^@:dwave_eng 0, enj_4e1919:^« Battler Ushiromiya n'est pas le petit-fils de Kinzo Ushiromiya. »^@
+
+ld l,$BEA_fukigenA1,80
+E_MA
+advchar "27"
+langjp:dwave_jp 0, bea_4e982:「…………………………。」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e982:^...^\
+
+advchar "-1"
+langjp　ベアトが眉間にしわをよせながら、/
+sl
+langjp^^!d800……辛そうに苦笑いを浮かべる。\
+langen^Béato fronça légèrement les sourcils^@/
+sl
+langen:!d800^... et esquissa un sourire douloureux.^\
+
+ld r,$ENJ_nayamuA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1920:「復唱拒否ね。@:dwave_jp 0, enj_4e1921:ベアトが宣言した２つの赤き真実、@/
+langen:dwave_eng 0, enj_4e1920:^Tu refuses donc de le répéter. ^@:dwave_eng 0, enj_4e1921:^Béato a proclamé deux vérités rouges, ^@/
+se1 59
+langjp:dwave_jp 0, enj_4e1922:« #ff0000戦人は明日夢の息子ではない#ffffff »、@:dwave_jp 0, enj_4e1923:そして/
+sl
+langen:dwave_eng 0, enj_4e1922:^« #ff0000Battler n'est pas le fils d'Asumu#ffffff » ^@:dwave_eng 0, enj_4e1923:^et ^@/
+sl
+se2 59
+langjp:dwave_jp 0, enj_4e1924:« #ff0000金蔵の孫である戦人にしか対戦相手の資格がない#ffffff »。@/
+langen:dwave_eng 0, enj_4e1924:^« #ff0000Nul autre que Battler, petit-fils de Kinzo, n'a qualité pour être son adversaire#ffffff ». ^@/
+
+ld r,$ENJ_IkariA1,80
+
+langjp:dwave_jp 0, enj_4e1925:これに矛盾せずに戦人に資格を認められるのは、以下の仮説よ。@:dwave_jp 0, enj_4e1926:これが私の青き真実、聞きなさい…！」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1925:^L'hypothèse suivante permet de reconnaître la qualité de Battler sans contredire ces deux vérités. ^@:dwave_eng 0, enj_4e1926:^Voici ma vérité bleue. Écoute bien... !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+
+monocro #0000ff
+
+se3v 27,100
+wait 500
+
+se1v 1006,100
+se2v 57,100
+
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+monocro off
+se1v 2,100
+langjp:dwave_jp 0, enj_4e1927:　#5decffベアトの対戦相手の資格は、« 金蔵の孫である右代宮戦人 »であって、@/
+langen:dwave_eng 0, enj_4e1927:^#5decffCelui qui a qualité pour être l'adversaire de Béato est « Battler Ushiromiya, petit-fils de Kinzo », ^@/
+se2v 2,100
+langjp:dwave_jp 0, enj_4e1928:« 明日夢の息子 »であるか否かは問題ではない。@
+langen:dwave_eng 0, enj_4e1928:^et le fait qu'il soit ou non « le fils d'Asumu » n'a aucune importance.^@
+se3v 2,100
+br
+langjp:dwave_jp 0, enj_4e1929:　即ち、あなたは明日夢の息子でなくても、金蔵の孫であることは出来る。@
+langen:dwave_eng 0, enj_4e1929:^Ainsi, même s'il n'est pas le fils d'Asumu, il peut tout de même être le petit-fils de Kinzo.^@
+se1v 2,100
+br
+langjp:dwave_jp 0, enj_4e1930:　留弗夫の息子でさえあるならば！#ffffff\
+langen:dwave_eng 0, enj_4e1930:^Du moment qu'il est le fils de Rudolf !#ffffff^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1a.jpg",":b;bmp\background\efe\different_space_1a.png",0
+ld l,$BER_DefA1,0
+ld c,$LAM_futekiA2,26
+ld c,$LAM_akuwaraiA4,80
+
+advchar "29"
+langjp:dwave_jp 0, lam_4e230:「フン、下らない言葉遊びよね？」@
+;＜ラムダ
+langen:dwave_eng 0, lam_4e230:^Hmph. Tout ça... pour un stupide jeu de mots ?^@
+
+
+ld l,$BER_DefA2,80
+
+advchar "28"
+langjp:dwave_jp 0, ber_4e132:「……………青き真実、有効よ。@:dwave_jp 0, ber_4e133:ベアト、赤き真実での反論は？@:dwave_jp 0, ber_4e134:　赤き真実で受けられないなら、戦人の対戦資格は何の問題もない。」\
+;＜ベルン
+langen:dwave_eng 0, ber_4e132:^... Ta vérité bleue est valide. ^@:dwave_eng 0, ber_4e133:^Béato, ta réfutation en vérité rouge ? ^@:dwave_eng 0, ber_4e134:^Si tu ne peux pas la réfuter en rouge, la qualité d'adversaire de Battler sera considérée comme établie.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1b.jpg",":b;bmp\background\efe\different_space_1b.png",0
+ld r,$BEA_majimeA1,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e983:「……………………………。」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e983:^...^\
+
+advchar "-1"
+langjp　………戦人はまだぼんやりしている。@
+langjp　彼女が何を言ってくれたのか、まだよく理解できないのだ。@
+langen^Battler demeurait plongé dans le brouillard.^@
+langen^Il ne comprenait pas encore ce que Bernkastel venait de faire pour lui.^@
+br
+langjp　……しかしそれでも、少しずつ魂が戻ってきている…。\
+langen^Malgré cela, sa conscience commençait lentement à revenir.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1a.jpg",":b;bmp\background\efe\different_space_1a.png",0
+ld c,$BUT_nayamuA1,6
+ld c,$BUT_KuyasigaruA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_4e854:^^!s1「………………じゃあ、/
+sl
+langjp:voicedelay 1300:dwave_jp 0, but_4e855:^^…………俺は、/
+sl
+langjp:voicedelay 1120:dwave_jp 0, but_4e856:^^………誰なんだよ……？」/
+sl
+langen:dwave_eng 0, but_4e854:^^!s1^... Alors^@/
+sl
+langen:voicedelay 1300:dwave_eng 0, but_4e855:^... moi...^@/
+sl
+langen:voicedelay 1120:dwave_eng 0, but_4e856:^ qui je suis... ?^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜戦人
+
+
+ld l,$ENJ_komaruA4,23
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1931:「しっかりなさいッ！@:dwave_jp 0, enj_4e1932:　あんたは右代宮戦人！@:dwave_jp 0, enj_4e1933:　確かに明日夢お母さんがあなたを生んだわけではないかもしれない。@:dwave_jp 0, enj_4e1934:でも、だから何？！@:dwave_jp 0, enj_4e1935:　あなたにとって母親であることに、何も変わりはないでしょう？！\
+langen:dwave_eng 0, enj_4e1931:^Ressaisis-toi ! ^@:dwave_eng 0, enj_4e1932:^Tu es Battler Ushiromiya ! ^@:dwave_eng 0, enj_4e1933:^Oui, peut-être qu'Asumu ne t'a pas mis au monde. ^@:dwave_eng 0, enj_4e1934:^Mais et alors ?! ^@:dwave_eng 0, enj_4e1935:^Ça ne change absolument rien au fait qu'elle est ta mère, si ?!^\
+
+ld l,$ENJ_HanbesoA3,80
+
+langjp:dwave_jp 0, enj_4e1936:　………例えば、あなたにとって右代宮縁寿は何？@:dwave_jp 0, enj_4e1937:　血は繋がってないかもしれないけど、それでも妹でしょ？！@:dwave_jp 0, enj_4e1938:　血じゃないでしょ、絆でしょうッ？！」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1936:^... Par exemple, qu'est-ce qu'Ange Ushiromiya représente pour toi ? ^@:dwave_eng 0, enj_4e1937:^Vous n'avez peut-être pas le même sang, mais elle reste ta petite sœur, pas vrai ?! ^@:dwave_eng 0, enj_4e1938:^C'est pas le sang qui compte, ce sont les liens, pas vrai ?!^\
+
+
+ld c,$BUT_OdorokiA3,80
+
+advchar "10"
+langjp:dwave_jp 0, but_4e857:「…………そりゃ、そうさ……。@:dwave_jp 0, but_4e858:……縁寿は、……血が繋がってなくても、/
+sl
+langjp:voicedelay 4320:dwave_jp 0, but_4e859:^^………妹だ。」@
+;＜戦人
+langen:dwave_eng 0, but_4e857:^... Ouais... c'est vrai... ^@:dwave_eng 0, but_4e858:^Même si on n'a pas le même sang... Ange est...^@/
+sl
+langen:voicedelay 4320:dwave_eng 0, but_4e859:^ ma petite sœur.^@
+
+ld l,$ENJ_komaruA4,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1939:「赤で言って！@:dwave_jp 0, enj_4e1940:　縁寿は妹だって言って！！」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1939:^Dis-le en rouge ! ^@:dwave_eng 0, enj_4e1940:^Dis qu'Ange est ta petite sœur !!^\
+
+ld c,$BUT_KuyasigaruA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_4e860:「………/
+sl
+langen:dwave_eng 0, but_4e860:^...^@/
+sl
+se1 59
+langjp:dwave_jp 0, but_4e861:#ff0000縁寿は、……俺の妹だ#ffffff。@/
+langen:dwave_eng 0, but_4e861:^ #ff0000Ange est... ma petite sœur#ffffff.^@/
+
+ld c,$BUT_niramuA3,80
+
+langjp:dwave_jp 0, but_4e862:…………ぁ、…………言えた。」\
+;＜戦人
+langen:dwave_eng 0, but_4e862:^ ... Ah... j'ai réussi à le dire.^\
+
+cl a,0
+ld c,$BUT_KomaruA3,22
+ld r,$ENJ_KomaruA4,64
+ld c,$BUT_KuyasigaruA1,1
+se1 12
+quakex 4,600
+
+advchar "-1"
+langjp　まだぼんやりして、椅子に全身を預けている戦人を、後から強く抱き締める。@
+langjp　痛いくらいに。\
+langen^Alors qu'il restait hébété dans son fauteuil, Ange le prit dans ses bras par-derrière avec une force désespérée.^@
+langen^Elle le serra si fort qu'il en éprouva presque de la douleur.^\
+
+ld r,$ENJ_hanbesoA2,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1941:「どういう事情で、明日夢お母さんがあなたの生みのお母さんじゃないかはわからない。@:dwave_jp 0, enj_4e1942:でも、あなたは今日まで、そして今でも母親だと信じてるでしょう？！@:dwave_jp 0, enj_4e1943:　世の中にはね、母親さえ、/
+sl
+langjp:voicedelay 2840:dwave_jp 0, enj_4e1944:^^……家族さえいない人だって大勢いるのよッ！！\
+langen:dwave_eng 0, enj_4e1941:^Je ne sais pas pour quelle raison Asumu n'est pas ta mère biologique. ^@:dwave_eng 0, enj_4e1942:^Mais jusqu'à aujourd'hui, et même maintenant, tu la considères comme ta mère, pas vrai ?! ^@:dwave_eng 0, enj_4e1943:^Tu sais, dans ce monde, il y a beaucoup de gens qui n'ont même pas de mère^@/
+sl
+langen:voicedelay 2840:dwave_eng 0, enj_4e1944:^... qui n'ont même pas de famille !!^\
+
+ld r,$ENJ_IkariA1,80
+
+langjp:dwave_jp 0, enj_4e1945:　明日夢お母さんはあなたを寂しがらせたことがある？@:dwave_jp 0, enj_4e1946:　ないでしょ？！@:dwave_jp 0, enj_4e1947:　あなたの平和だった家族を簡単に捨て去らないでッ！！@:dwave_jp 0, enj_4e1948:　あんたは６年も家族のもとから離れてたから家族の絆が希薄過ぎるのよ！！\
+langen:dwave_eng 0, enj_4e1945:^Est-ce qu'Asumu t'a déjà fait te sentir seul ? ^@:dwave_eng 0, enj_4e1946:^Non, n'est-ce pas ?! ^@:dwave_eng 0, enj_4e1947:^Ne jette pas si facilement cette famille paisible que tu avais !! ^@:dwave_eng 0, enj_4e1948:^Après six ans loin des tiens, tes liens familiaux sont devenus beaucoup trop faibles !!^\
+
+ld r,$ENJ_HanbesoA2,80
+
+langjp:dwave_jp 0, enj_4e1949:　もっともっと、家族の絆を強く感じて！@:dwave_jp 0, enj_4e1950:　思い出して！！@:dwave_jp 0, enj_4e1951:　明日夢お母さんのためにも、こんな下らない魔女の妄言で、愛情を失わないでッ！」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1949:^Ressens ces liens familiaux bien plus fort encore ! ^@:dwave_eng 0, enj_4e1950:^Souviens-toi !! ^@:dwave_eng 0, enj_4e1951:^Pour Asumu aussi, ne laisse pas les absurdités d'une sorcière te faire perdre cet amour !^\
+
+
+ld c,$BUT_nakuA2,80
+
+advchar "10"
+langjp:dwave_jp 0, but_4e863:「………………………。@:dwave_jp 0, but_4e864:………そうさ……。@:dwave_jp 0, but_4e865:……お袋は、……いつだって俺の味方だったんだ……。@/
+langen:dwave_eng 0, but_4e863:^...^@:dwave_eng 0, but_4e864:^ Ouais... ^@:dwave_eng 0, but_4e865:^Maman a... toujours été de mon côté...^@/
+
+ld c,$BUT_NakuA3,80
+
+langjp:dwave_jp 0, but_4e866:^^!s1……………ここはどこだよ……？@:dwave_jp 0, but_4e867:　……暗ぇよ……、/
+sl
+langjp:voicedelay 1210:dwave_jp 0, but_4e868:^^……帰りてぇよ……。@:dwave_jp 0, but_4e869:俺の家族は、/
+sl
+langjp:voicedelay 1170:dwave_jp 0, but_4e870:^^みんなは、/
+sl
+langjp:voicedelay 910:dwave_jp 0, but_4e871:^^……どこなんだよ………。」/
+sl
+langen:dwave_eng 0, but_4e866:^^!s1^ C'est quoi cet endroit... ? ^@:dwave_eng 0, but_4e867:^... Il fait noir^@/
+sl
+langen:voicedelay 1210:dwave_eng 0, but_4e868:^... j'veux rentrer... ^@:dwave_eng 0, but_4e869:^Ma famille... ^@/
+sl
+langen:voicedelay 1170:dwave_eng 0, but_4e870:^tout le monde...^@/
+sl
+langen:voicedelay 910:dwave_eng 0, but_4e871:^ où est-ce qu'ils sont... ?^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜戦人
+
+langjp　戦人の目にまだ光は戻らない。@
+langjp　でも、……涙が浮かぶ。\
+langen^La lumière n'était toujours pas revenue dans les yeux de Battler.^@
+langen^Cependant, des larmes commençaient à lui monter aux yeux.^\
+
+
+ld r,$ENJ_hanbesoA3,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1952:「お家であなたの妹が帰りを待ってるわ。@:dwave_jp 0, enj_4e1953:せめてあなただけでも帰ってあげないと、……彼女はいつまでも独りぼっち…！@:dwave_jp 0, enj_4e1954:　妹のためにも、どうか魔女のゲームに勝って…！！」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1952:^Ta petite sœur t'attend à la maison. ^@:dwave_eng 0, enj_4e1953:^Si même toi tu ne rentres pas... elle restera seule pour toujours... ! ^@:dwave_eng 0, enj_4e1954:^Pour ta petite sœur aussi, je t'en prie, gagne ce jeu de sorcière... !!^\
+
+ld c,$BUT_nakuA2,80
+
+advchar "10"
+langjp:dwave_jp 0, but_4e872:^^!s1「…………縁寿……、/
+sl
+langjp:voicedelay 2790:dwave_jp 0, but_4e873:^^俺の、/
+sl
+langjp:voicedelay 520:dwave_jp 0, but_4e874:^^……妹………。@:dwave_jp 0, but_4e875:……でもよ、/
+sl
+langjp:voicedelay 1410:dwave_jp 0, but_4e876:^^………わからねぇんだ…。@:dwave_jp 0, but_4e877:………どうして、/
+sl
+langjp:voicedelay 610:dwave_jp 0, but_4e878:^^俺はベアトと、こんなわけのわかんねぇ、残酷なゲームを永遠に繰り返さなきゃならねぇんだ……？@:dwave_jp 0, but_4e879:　………もう、/
+sl
+langjp:voicedelay 1240:dwave_jp 0, but_4e880:^^……嫌だ………。」/
+sl
+langen:dwave_eng 0, but_4e872:^^!s1^... Ange^@/
+sl
+langen:voicedelay 2790:dwave_eng 0, but_4e873:^... ma... ^@/
+sl
+langen:voicedelay 520:dwave_eng 0, but_4e874:^petite sœur... ^@:dwave_eng 0, but_4e875:^Mais je...^@/
+sl
+langen:voicedelay 1410:dwave_eng 0, but_4e876:^ comprends toujours pas... ^@:dwave_eng 0, but_4e877:^Pourquoi... ^@/
+sl
+langen:voicedelay 610:dwave_eng 0, but_4e878:^je dois continuer éternellement ce jeu incompréhensible et cruel avec Béato... ? ^@:dwave_eng 0, but_4e879:^... J'en ai... ^@/
+sl
+langen:voicedelay 1240:dwave_eng 0, but_4e880:^marre...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜戦人
+
+
+ld r,$ENJ_IkariA2,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1955:「なら、早くこんなゲームに決着をつけて、お家へ帰りなさいッ！！@:dwave_jp 0, enj_4e1956:　右代宮戦人、いつまでこんなところで遊んでいるのッ？！@:dwave_jp 0, enj_4e1957:　妹が帰りを待ってるわよッ！！！」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1955:^Alors mets vite un terme à ce jeu et rentre chez toi !! ^@:dwave_eng 0, enj_4e1956:^Battler Ushiromiya, combien de temps comptes-tu encore rester ici à jouer ?! ^@:dwave_eng 0, enj_4e1957:^Ta petite sœur attend ton retour !!!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1c.jpg",":b;bmp\background\efe\different_space_1c.png",22
+
+advchar "-1"
+langjp　………そう。@
+langen^... C'est vrai.^@
+br
+langjp　戦人は気付いた時にはもう、このおかしなゲームに巻き込まれていた。@
+langen^Battler s'était retrouvé prisonnier de ce jeu étrange avant même de comprendre ce qui lui arrivait.^@
+br
+langjp　そして、何のために戦うかさえもわからないまま、@ずっとずっと、魔女のペースに飲み込まれて、遊ばれ、戦わされてきた。\
+langen^Sans savoir précisément pourquoi il se battait,^@^ il avait suivi les provocations et les défis de la sorcière, entraîné de partie en partie.^\
+
+langjp　それはもっとも素朴な、最初の疑問であるべきなのだ。@
+langen^Il aurait pourtant dû se poser cette question dès le commencement.^@
+br
+langjp　……そこが理解できてないから、戦いの目的を喪失してしまう…！！@
+langen^... Parce qu'il n'avait jamais compris ça, il avait perdu de vue le but même de ce combat... !!^@
+br
+langjp　だから私の声が、戦人の耳に、届かない…！\
+langen^C'est pour cela que ma voix n'atteint pas les oreilles de Battler... !^\
+
+langjp　魔女に勝つためとか、許せないとか、そんなあやふやな目的じゃなくて。@
+langen^Il ne suffisait pas de vouloir vaincre la sorcière ou de se battre parce qu'il ne pouvait pas lui pardonner.^@
+br
+langjp　……彼には、必ず勝つための目的を自覚しなくてはならない。\
+langen^Il devait enfin comprendre pourquoi il lui fallait absolument gagner.^\
+
+;ld c,$BUT_nakuA2,80
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+me1v 5,50
+
+advchar "10"
+langjp:dwave_jp 0, but_4e881:^^!s1「………そうだ……。@:dwave_jp 0, but_4e882:……帰りたい……、/
+sl
+langjp:voicedelay 790:dwave_jp 0, but_4e883:^^……親父やお袋、/
+sl
+langjp:voicedelay 1300:dwave_jp 0, but_4e884:^^……縁寿のところに帰りたい……。@:dwave_jp 0, but_4e885:………もう嫌だ、/
+sl
+langjp:voicedelay 2009:dwave_jp 0, but_4e886:^^……ここは嫌だ……。@:dwave_jp 0, but_4e887:……もう魔女は嫌だ、ゲームも殺人も嫌だ……、/
+sl
+langjp:voicedelay 4330:dwave_jp 0, but_4e888:^^……嫌だ、/
+sl
+langjp:voicedelay 610:dwave_jp 0, but_4e889:^^嫌だ……。」/
+sl
+langen:dwave_eng 0, but_4e881:^^!s1^... Ouais... ^@:dwave_eng 0, but_4e882:^J'veux rentrer...^@/
+sl
+langen:voicedelay 790:dwave_eng 0, but_4e883:^ J'veux rentrer auprès de Papa et Maman... ^@/
+sl
+langen:voicedelay 1300:dwave_eng 0, but_4e884:^et d'Ange... ^@:dwave_eng 0, but_4e885:^J'en ai marre^@/
+sl
+langen:voicedelay 2009:dwave_eng 0, but_4e886:^... j'en ai marre d'ici... ^@:dwave_eng 0, but_4e887:^J'en ai marre des sorcières, des jeux, des meurtres^@/
+sl
+langen:voicedelay 4330:dwave_eng 0, but_4e888:^... j'en ai marre, ^@/
+sl
+langen:voicedelay 610:dwave_eng 0, but_4e889:^j'en ai marre...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜戦人
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1c.jpg",":b;bmp\background\efe\different_space_1c.png",0
+ld l,$BER_DefA1,0
+ld r,$LAM_futekiA2,26
+ld r,$LAM_akuwaraiA3,80
+
+advchar "29"
+langjp:dwave_jp 0, lam_4e231:「戦人の魂が、…戻り掛けてる。」@
+;＜ラムダ
+langen:dwave_eng 0, lam_4e231:^L'âme de Battler... commence à revenir.^@
+
+ld l,$BER_DefA2,80
+
+advchar "28"
+langjp:dwave_jp 0, ber_4e135:「……………でも、あとちょっとが、届いていない。」\
+;＜ベルン
+langen:dwave_eng 0, ber_4e135:^Mais il lui manquait encore quelque chose d'essentiel.^\
+
+*cgtest_ep4_1
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",26
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1a.jpg",":b;bmp\background\efe\different_space_1a.png",0
+ld c,$ENJ_hanbesoA3,22
+ld c,$ENJ_IkariA2,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1958:「もう嫌でしょう？！@:dwave_jp 0, enj_4e1959:　なら、家族のもとへ帰るためにも戦って！！@:dwave_jp 0, enj_4e1960:　ベアトリーチェを打ち破って、帰ってきて！！」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1958:^Tu en as assez, pas vrai ?! ^@:dwave_eng 0, enj_4e1959:^Alors bats-toi pour pouvoir retourner auprès de ta famille !! ^@:dwave_eng 0, enj_4e1960:^Terrasse Béatrice et rentre chez toi !!^\
+
+
+mbg black,22
+
+fedexx 0,50,0,0,0,0,1000
+
+mcbg 0
+
+cl c,0
+ld l,$ENJ_IkariA2,0
+ld r,$BUT_nakuA2,2
+ld r,$BUT_nakuA3,80
+
+
+advchar "10"
+langjp:dwave_jp 0, but_4e890:「嫌だ、……もう魔女は嫌だ…！@:dwave_jp 0, but_4e891:　ベアトも嫌だ、…どいつもこいつも嫌だ、お前も嫌だ、お前だってどうせきっと、魔女の仲間だ…。@:dwave_jp 0, but_4e892:いつまた裏切るかもわからない…！！\
+langen:dwave_eng 0, but_4e890:^Non... j'en ai marre des sorcières... ! ^@:dwave_eng 0, but_4e891:^J'en ai marre de Béato... j'en ai marre de tout le monde... et toi aussi, j'en ai marre. Toi aussi, t'es sûrement du côté des sorcières... ^@:dwave_eng 0, but_4e892:^Je sais même pas quand on va encore me trahir... !! ^\
+
+cl a,0
+ld c,$BUT_NakuA1,24
+se1 12
+se2 2
+quakex 4,500
+se3 59
+langjp:dwave_jp 0, but_4e893:#ff0000　何も信用できない、赤くない言葉は何も信用できない…！！#ffffff/
+sl
+langen:dwave_eng 0, but_4e893:^#ff0000Je peux plus croire en rien, aucune parole qui n'est pas rouge... !!#ffffff ^@/
+
+langjp:noclear_cw:dwave_jp 0, but_4e894:　俺に構うな、構うなぁあああぁあああぁ！！」\
+;＜戦人
+langen:noclear_cw:dwave_eng 0, but_4e894:^Laissez-moi tranquille, laissez-moi tranquiiiiiiille !!^\
+
+advchar "-1"
+langjp　戦人の魂が吼える。@
+langjp　それを、彼女は後から痛いくらいに強く、その頭を抱き締める。\
+langen^L'âme de Battler hurla de désespoir.^@
+langen^Il se prit la tête entre les mains avec une force presque douloureuse.^\
+
+;TODO: There are several CGs for this scene
+;ld c,$ENJ_hanbesoa2,80
+se1v 11,85
+;bg black,1
+set_oldnew_bg e0407,black,1,1
+textoff
+wait 1000
+
+
+fedexx 90,50,0,0,0,0,1000
+
+se1 59
+advchar "11"
+langjp:dwave_jp 0, enj_4e1961:^^!s0「#ff0000早く帰ってきて、お兄ちゃんッ！！@/
+langen:dwave_eng 0, enj_4e1961:^^!s0^#ff0000Rentre vite, mon frère !! ^@/
+se2 59
+langjp:dwave_jp 0, enj_4e1962:　私を独りぼっちにしないでッ！！！#ffffff」/
+sl
+langen:dwave_eng 0, enj_4e1962:^Ne me laisse pas toute seule !!!#ffffff^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜縁寿
+
+;bg Different_space_1b,0
+;set_oldnew_bg cg_ep4_7,Different_space_1b,1,0  ;TODO: Perhaps place this further down.
+set_oldnew_bg e0407,Different_space_1b,1,0
+
+mld c,$BUT_nakuA2,22
+mld c,$BUT_NakuA3,80
+
+advchar "10"
+langjp:dwave_jp 0, but_4e895:「……………え、……。@:dwave_jp 0, but_4e896:………お前、/
+sl
+langjp:voicedelay 570:dwave_jp 0, but_4e897:^^………、……誰……。」\
+;＜戦人
+langen:dwave_eng 0, but_4e895:^... Hein... ? ^@:dwave_eng 0, but_4e896:^... Toi...^@/
+sl
+langen:voicedelay 570:dwave_eng 0, but_4e897:^ t'es qui... ? ^\
+
+ld r,$ENJ_hanbesoA2,24
+se1 59
+advchar "11"
+langjp:dwave_jp 0, enj_4e1963:「#ff0000私よ、縁寿よ…！！#ffffff@/
+langen:dwave_eng 0, enj_4e1963:^#ff0000C'est moi, Ange... !!#ffffff^@/
+se2 59
+langjp:dwave_jp 0, enj_4e1964:　#ff0000お父さんもお母さんもお兄ちゃんも、誰も帰ってこないッ！！#ffffff@/
+langen:dwave_eng 0, enj_4e1964:^#ff0000 Papa, Maman, mon frère... personne n'est rentré !!#ffffff^@/
+
+ld r,$ENJ_HanbesoA3,80
+se3 59
+langjp:dwave_jp 0, enj_4e1965:　#ff0000寂しいよ！！#ffffff@/
+langen:dwave_eng 0, enj_4e1965:^#ff0000 Je suis si seule !!#ffffff^@/
+se1 59
+langjp:dwave_jp 0, enj_4e1966:　#ff0000お願いだからッ、早く帰ってきてッ！#ffffff」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1966:^#ff0000 Je t'en supplie, rentre vite !#ffffff^\
+
+
+mld c,$BUT_nakuA2,80
+
+advchar "10"
+langjp:dwave_jp 0, but_4e898:「……え、………縁寿……。@:dwave_jp 0, but_4e899:………お前、………縁寿だったのか…………。」\
+;＜戦人
+langen:dwave_eng 0, but_4e898:^... A-Ange... ^@:dwave_eng 0, but_4e899:^Toi... t'étais Ange... ^\
+
+
+
+ld r,$ENJ_hanbesoA2,80
+se1 59
+advchar "11"
+langjp:dwave_jp 0, enj_4e1967:「#ff0000そうよ、縁寿よ！！#ffffff@/
+langen:dwave_eng 0, enj_4e1967:^#ff0000Oui, c'est moi, Ange !!#ffffff^@/
+se2 59
+langjp:dwave_jp 0, enj_4e1968:　#ff0000誰も帰って来ない世界の右代宮縁寿…！！#ffffff@/
+langen:dwave_eng 0, enj_4e1968:^#ff0000 Ange Ushiromiya, celle du monde où personne n'est rentré... !!#ffffff^@/
+se3 59
+langjp:dwave_jp 0, enj_4e1969:　#ff0000………私の家族は全て、あの日の六軒島から帰って来ない…！！#ffffff\
+langen:dwave_eng 0, enj_4e1969:^#ff0000 ... Personne dans ma famille... n'est jamais revenu de Rokkenjima ce jour-là... !!#ffffff^\
+
+ld r,$ENJ_hanbesoA3,80
+se1 59
+langjp:dwave_jp 0, enj_4e1970:　#ff0000目の前のあの魔女が、家族を全て、お兄ちゃんさえも奪い取ってしまった…！#ffffff@/
+langen:dwave_eng 0, enj_4e1970:^#ff0000La sorcière qui est devant toi m'a pris toute ma famille, même toi, mon frère... !#ffffff^@/
+se2 59
+langjp:dwave_jp 0, enj_4e1971:　#ff0000………お兄ちゃんだけが、あいつをやっつけられる！！#ffffff@/
+langen:dwave_eng 0, enj_4e1971:^#ff0000 ... Il n'y a que toi qui puisses la vaincre, mon frère !!#ffffff^@/
+se3 59
+langjp:dwave_jp 0, enj_4e1972:　#ff0000あいつをやっつけて…！！#ffffff\
+langen:dwave_eng 0, enj_4e1972:^#ff0000 Bats-la... !!#ffffff^\
+
+ld r,$ENJ_HanbesoA2,80
+se1 59
+langjp:dwave_jp 0, enj_4e1973:　#ff0000そして、家族を取り戻して！！#ffffff@/
+langen:dwave_eng 0, enj_4e1973:^#ff0000Et récupère notre famille !!#ffffff^@/
+
+ld r,$ENJ_hanbesoA3,80
+se2 59
+langjp:dwave_jp 0, enj_4e1974:　#ff0000そして、………私のところに帰ってきて……！！！#ffffff」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1974:^#ff0000 Et ensuite... reviens auprès de moi... !!!#ffffff^\
+
+mld c,$BUT_nakuA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_4e900:「……………ベアトが、/
+sl
+langjp:voicedelay 780:dwave_jp 0, but_4e901:^^……俺の家族を………。」\
+langen:dwave_eng 0, but_4e900:^... Béato a...^@/
+sl
+langen:voicedelay 780:dwave_eng 0, but_4e901:^ pris ma famille...^\
+
+csp -1
+clr_oldnew_bg
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1a.jpg",":b;bmp\background\efe\different_space_1a.png",0
+ld c,$BEA_nayamuA1,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e984:「……ふ、…………そうとも。@/
+langen:dwave_eng 0, bea_4e984:^Hmph... exactement. ^@/
+
+ld c,$BEA_majimeA1,80
+
+langjp:dwave_jp 0, bea_4e985:逃げも隠れもせぬわ。@:dwave_jp 0, bea_4e986:……妾が右代宮縁寿から家族を奪った。\
+langen:dwave_eng 0, bea_4e985:^Je ne fuirai ni ne me cacherai. ^@:dwave_eng 0, bea_4e986:^... C'est moi qui ai arraché sa famille à Ange Ushiromiya.^\
+
+ld c,$BEA_fumanA2,22
+wait 1000
+
+ld c,$BEA_waraiA1,22
+
+E_MA
+se1v 2,100
+mbg white,1
+mcbg 0
+ld c,$BEA_akuwaraiA2,80
+
+
+langjp:dwave_jp 0, bea_4e987:　戦人は妾の玩具よ！@:dwave_jp 0, bea_4e988:　その父親も母親も全て玩具よ。@:dwave_jp 0, bea_4e989:……そなたには返さぬわ。@:dwave_jp 0, bea_4e990:……永遠に独りぼっちで、帰らぬ家族の帰りを待って、彷徨い続けるがいいわ……！」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e987:^Battler est mon jouet ! ^@:dwave_eng 0, bea_4e988:^Son père et sa mère, tous sont mes jouets. ^@:dwave_eng 0, bea_4e989:^... Je ne te les rendrai pas. ^@:dwave_eng 0, bea_4e990:^... Reste donc seule pour l'éternité, à attendre une famille qui ne reviendra jamais, et erre ainsi sans fin... !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1c.jpg",":b;bmp\background\efe\different_space_1c.png",22
+
+advchar "-1"
+langjp　抱き締める縁寿の腕から、…………たった一人残された妹の、@……あまりに辛く悲しく、寂しい日々が、戦人の中に流れ込んでくる……。\
+langen^Des bras d'Ange qui l'étreignaient... les jours atrocement douloureux, tristes et solitaires...^@^ qu'avait vécus sa petite sœur restée seule... se déversèrent en Battler...^\
+
+
+se1v 22,70
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+langjp　……自分がこんなところで遊んでいたせいで、@…………ひとり残された妹は、………こんなにも、@…………辛い日々を……………！！\
+langen^Parce qu'il était resté ici à jouer... ^@^sa petite sœur, restée toute seule, avait dû endurer...^@^ des jours aussi douloureux... !!^\
+
+
+ld c,$BUT_nakuA1,26
+se1 11
+quakey 3,300
+
+advchar "10"
+langjp:dwave_jp 0, but_4e902:「…縁寿、………縁寿………！！@:dwave_jp 0, but_4e903:　くそ、……俺は、………何をやってたんだ………！！@:dwave_jp 0, but_4e904:　ありがとうな、縁寿…。@:dwave_jp 0, but_4e905:お兄ちゃんは、……大切なことをずっと忘れていた……！」\
+;＜戦人
+langen:dwave_eng 0, but_4e902:^... Ange... Ange... !! ^@:dwave_eng 0, but_4e903:^Merde... moi... qu'est-ce que je foutais... !! ^@:dwave_eng 0, but_4e904:^Merci, Ange... ^@:dwave_eng 0, but_4e905:^Ton frère... avait oublié quelque chose d'essentiel depuis tout ce temps... !^\
+
+advchar "-1"
+langjp　戦人は振り返ろうとするが、@縁寿はものすごい力で戦人の頭にしがみ付いていて、振り返ることが出来なかった。\
+langen^Battler tenta de se retourner,^@^ mais Ange le serrait avec une telle force qu'elle l'en empêchait.^\
+
+textoff
+se1 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2a.jpg",":b;bmp\background\efe\blood_2a.png",1
+
+
+langjp　……汗？@
+langen^... De la sueur ?^@
+
+textoff
+se2 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2b.jpg",":b;bmp\background\efe\blood_2b.png",1
+
+br
+langjp　熱い雫がぼたりぼたりと戦人のうなじを濡らす。\
+langen^Des gouttes chaudes tombaient sur la nuque de Battler.^\
+
+langjp　……それの正体を、自分にしがみつく縁寿の腕を抱いていて、知る。@
+langen^Il comprit ce que c'était en saisissant le bras d'Ange qui s'accrochait à lui.^@
+br
+langjp　………戦人の手を、指を、赤く染めたから。\
+langen^La paume et les doigts de Battler se couvrirent aussitôt de rouge.^\
+
+;ld c,$BUT_odorokiA2,80
+
+advchar "10"
+langjp:dwave_jp 0, but_4e906:「………血…、/
+sl
+langjp:voicedelay 390:dwave_jp 0, but_4e907:^^……え、縁寿？！@:dwave_jp 0, but_4e908:　だ、大丈夫か？！@:dwave_jp 0, but_4e909:　お、おい……？！」\
+;＜戦人
+langen:dwave_eng 0, but_4e906:^... Du sang...^@/
+sl
+langen:voicedelay 390:dwave_eng 0, but_4e907:^ A-Ange ?! ^@:dwave_eng 0, but_4e908:^Ç-Ça va ?! ^@:dwave_eng 0, but_4e909:^H-Hé... ?!^\
+
+me1v 28,70
+
+textoff
+se3 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2c.jpg",":b;bmp\background\efe\blood_2c.png",1
+wait 600
+se1 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2d.jpg",":b;bmp\background\efe\blood_2d.png",1
+
+advchar "-1"
+langjp　それは、ぼたりぼたりと、ぼたぼたと。@
+langen^Les gouttes se succédèrent de plus en plus vite, jusqu'à former un écoulement continu.^@
+br
+langjp　何が何やらわからない。@
+langen^Battler ne comprenait plus ce qui lui arrivait.^@
+br
+langjp　戦人には振り向けないからわからないが、@きっとこの背中全体に染みるこの熱い雫は全て、……血なのだ。\
+langen^Ange l'empêchait toujours de se retourner,^@^ mais le liquide brûlant qui imbibait sa veste ne pouvait être que du sang.^\
+
+
+;ld c,$ENJ_hanbesoA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1975:^^!s1「…………お兄ちゃんを助けるために、/
+sl
+langjp:voicedelay 2660:dwave_jp 0, enj_4e1976:^^ここに来るために、@/
+langjp:dwave_jp 0, enj_4e1977:唯一守らなきゃいけないルールが、/
+sl
+langjp:voicedelay 3240:dwave_jp 0, enj_4e1978:^^……あったの…。@:dwave_jp 0, enj_4e1979:…………それが、/
+sl
+langjp:voicedelay 1260:dwave_jp 0, enj_4e1980:^^…………これ。@:dwave_jp 0, enj_4e1981:………お兄ちゃんに、/
+sl
+langjp:voicedelay 1540:dwave_jp 0, enj_4e1982:^^…………私が縁寿だと、/
+sl
+langjp:voicedelay 3170:dwave_jp 0, enj_4e1983:^^………知られてしまう、/
+sl
+langjp:voicedelay 1420:dwave_jp 0, enj_4e1984:^^……こと………。」/
+sl
+langen:dwave_eng 0, enj_4e1975:^^!s1^... Pour te sauver, mon frère... ^@/
+sl
+langen:voicedelay 2660:dwave_eng 0, enj_4e1976:^Pour pouvoir venir ici, ^@/
+langen:dwave_eng 0, enj_4e1977:^il y avait une seule règle... ^@/
+sl
+langen:voicedelay 3240:dwave_eng 0, enj_4e1978:^que je devais absolument respecter... ^@:dwave_eng 0, enj_4e1979:^C'était...^@/
+sl
+langen:voicedelay 1260:dwave_eng 0, enj_4e1980:^ celle-ci. ^@:dwave_eng 0, enj_4e1981:^... Que toi, mon frère^@/
+sl
+langen:voicedelay 1540:dwave_eng 0, enj_4e1982:^... tu apprennes...^@/
+sl
+langen:voicedelay 3170:dwave_eng 0, enj_4e1983:^ que j'étais...^@/
+sl
+langen:voicedelay 1420:dwave_eng 0, enj_4e1984:^ Ange...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜縁寿
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1c.jpg",":b;bmp\background\efe\different_space_1c.png",2
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1985:　……辛かったよ………。@
+langen:dwave_eng 0, enj_4e1985:^C'était si dur...^@
+br
+langjp:dwave_jp 0, enj_4e1986:　お兄ちゃんが目の前にいるのに、……それを口に出来ないなんて………。\
+langen:dwave_eng 0, enj_4e1986:^Même avec toi juste devant moi... je ne pouvais pas te le dire...^\
+
+langjp:dwave_jp 0, enj_4e1987:　このルールさえ守れば、……ずっと永遠にお兄ちゃんの側にいられるはずだった。@
+langen:dwave_eng 0, enj_4e1987:^Si seulement je respectais cette règle... j'aurais dû pouvoir rester éternellement à tes côtés.^@
+br
+langjp:dwave_jp 0, enj_4e1988:^^!s1　………お兄ちゃんと一緒に、/
+sl
+langjp:voicedelay 2070:dwave_jp 0, enj_4e1989:^^…魔女と戦うゲームを、/
+sl
+langjp:voicedelay 2880:dwave_jp 0, enj_4e1990:^^……永遠に遊べるはずだった……。/
+sl
+langen:dwave_eng 0, enj_4e1988:^^!s1^ ... J'aurais dû pouvoir... ^@/
+sl
+langen:voicedelay 2070:dwave_eng 0, enj_4e1989:^jouer avec toi à ce jeu... ^@/
+sl
+langen:voicedelay 2880:dwave_eng 0, enj_4e1990:^où nous combattions la sorcière... pour l'éternité...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+se1v 2,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+
+;ld c,$ENJ_nakuA2,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1991:^^!s1「でも、/
+sl
+langjp:voicedelay 570:dwave_jp 0, enj_4e1992:^^………それじゃ駄目。@/
+langen:dwave_eng 0, enj_4e1991:^^!s1^Mais^@/
+sl
+langen:voicedelay 570:dwave_eng 0, enj_4e1992:^... ça ne peut pas rester comme ça.^@/
+
+se1 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2a.jpg",":b;bmp\background\efe\blood_2a.png",1
+
+langjp:dwave_jp 0, enj_4e1993:…………お兄、/
+sl
+langjp:voicedelay 2650:dwave_jp 0, enj_4e1994:^^……ッ、/
+sl
+langjp:voicedelay 520:dwave_jp 0, enj_4e1995:^^………ちゃんは、/
+sl
+langjp:voicedelay 1460:dwave_jp 0, enj_4e1996:^^……帰らなきゃ。@/
+langen:dwave_eng 0, enj_4e1993:^ ... Mon frè... ^@/
+sl
+langen:voicedelay 2650:dwave_eng 0, enj_4e1994:^ngh...^@/
+sl
+langen:voicedelay 520:dwave_eng 0, enj_4e1995:^ re^@/
+sl
+langen:voicedelay 1460:dwave_eng 0, enj_4e1996:^... tu dois rentrer chez toi.^@/
+
+se2 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2b.jpg",":b;bmp\background\efe\blood_2b.png",1
+
+langjp:dwave_jp 0, enj_4e1997:………お家で、/
+sl
+langjp:voicedelay 1380:dwave_jp 0, enj_4e1998:^^……あなたの妹が待っているもの……。@/
+langen:dwave_eng 0, enj_4e1997:^ ... À la maison...^@/
+sl
+langen:voicedelay 1380:dwave_eng 0, enj_4e1998:^ ta petite sœur t'attend...^@/
+
+se3 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2c.jpg",":b;bmp\background\efe\blood_2c.png",1
+
+langjp:dwave_jp 0, enj_4e1999:………それは私のことではないけれど、/
+sl
+langjp:voicedelay 4350:dwave_jp 0, enj_4e2000:^^…………それで、あなたの妹は、/
+sl
+langjp:voicedelay 4790:dwave_jp 0, enj_4e2001:^^…救われる………。」/
+sl
+langen:dwave_eng 0, enj_4e1999:^ Cette petite sœur, ce n'est pas moi^@/
+sl
+langen:voicedelay 4350:dwave_eng 0, enj_4e2000:^... mais ainsi, ta petite sœur... ^@/
+sl
+langen:voicedelay 4790:dwave_eng 0, enj_4e2001:^pourra être sauvée...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜縁寿
+
+
+;ld c,$BUT_odorokiA2,80
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1a.jpg",":b;bmp\background\efe\different_space_1a.png",0
+
+mld c,$BUT_KuyasigaruA1,22
+mld c,$BUT_OdorokiA2,80
+
+advchar "10"
+langjp:dwave_jp 0, but_4e910:「縁寿？！@:dwave_jp 0, but_4e911:　縁寿！！@:dwave_jp 0, but_4e912:　こんなに血が…！！@/
+langen:dwave_eng 0, but_4e910:^Ange ?! ^@:dwave_eng 0, but_4e911:^Ange !! ^@:dwave_eng 0, but_4e912:^Tout ce sang... !! ^@/
+
+;mld c,$BUT_MajimeA4,80
+
+langjp:dwave_jp 0, but_4e913:　こんなに、こんなに！！」\
+;＜戦人
+langen:dwave_eng 0, but_4e913:^Il y en a tellement... tellement !!^\
+
+advchar "-1"
+langjp　振り向きたいが、縁寿に力強く頭を抱えられ、振り向けない。@
+langen^Il voulut se retourner, mais Ange le retenait fermement contre elle.^@
+br
+langjp　しかし、その溢れ出す血と縁寿の辛そうな息遣いで、@彼女が今、大変なことになっていることは理解できた。\
+langen^À la quantité de sang qui coulait et à la respiration douloureuse d'Ange,^@^ il comprit qu'elle était gravement blessée.^\
+
+
+;ld r,$ENJ_nakuA2,23
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e2002:「…………気に…しないで………。@:dwave_jp 0, enj_4e2003:……私は所詮、……駒だから……。@:dwave_jp 0, enj_4e2004:………あのね、チェスではね、……サクリファイスって、言うんだって……。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e2002:^... Ne t'en... fais pas... ^@:dwave_eng 0, enj_4e2003:^Après tout, je ne suis... qu'une pièce... ^@:dwave_eng 0, enj_4e2004:^Tu sais, aux échecs... ça s'appelle un sacrifice...^\
+
+
+mld c,$BUT_kuyasigaruA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_4e914:「サクリ、……何だって？！@/
+langen:dwave_eng 0, but_4e914:^Un sacri... quoi ?! ^@/
+
+mld c,$BUT_OdorokiA1,80
+
+langjp:dwave_jp 0, but_4e915:　そんなことはどうでもいい！！@:dwave_jp 0, but_4e916:　早く手当てを！！@:dwave_jp 0, but_4e917:　この手を一度離すんだ、縁寿…！！」\
+;＜戦人
+langen:dwave_eng 0, but_4e915:^On s'en fout de ça !! ^@:dwave_eng 0, but_4e916:^Il faut te soigner, vite !! ^@:dwave_eng 0, but_4e917:^Lâche-moi une seconde, Ange... !!^\
+
+mcl c,0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1b.jpg",":b;bmp\background\efe\different_space_1b.png",0
+ld r,$BEA_nayamuA1,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e991:「……………サクリファイスとは、捨て駒のことよ。@:dwave_jp 0, bea_4e992:戦略的展望のために、わざと損を承知で駒を見捨てることを言う…。」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e991:^... Un sacrifice, c'est une pièce qu'on abandonne. ^@:dwave_eng 0, bea_4e992:^On accepte délibérément de perdre une pièce au profit d'une stratégie d'ensemble...^\
+
+csp -1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+fr_bg ":b;fr_bg\orig\bmp\background\efe\chess1.jpg",":b;bmp\background\efe\chess1.png",22
+
+advchar "-1"
+langjp　チェスにおいての至上目的は相手に勝利すること。@
+langjp　……だから、最終的にそれに結びつくならば、個々の駒の犠牲は問題にならない。\
+langen^Aux échecs, l'objectif est de vaincre son adversaire.^@
+langen^Si un sacrifice permet d'obtenir une position gagnante, perdre volontairement quelques pièces peut se justifier.^\
+
+langjp　縁寿は、冷静に判断したのだ。@
+langen^Ange avait accepté ce choix en connaissance de cause.^@
+br
+langjp　………繰り返し、自分はプレイヤーではなく駒だと教えられてきた。@
+langjp　……駒らしく振舞い、戦人を救うには、今、自らが捨て駒とならねばならないのだ。\
+langen^On lui avait répété qu'elle n'était pas une joueuse, mais une pièce.^@
+langen^Pour sauver Battler, elle devait désormais assumer le rôle d'une pièce sacrifiée.^\
+
+langjp　…………戦人は、知らなければならない。@
+langen^Il était indispensable que Battler le comprenne.^@
+br
+langjp　この魔女のゲームの目的は、魔女をやっつけるなんて抽象的なものであってはならない。@
+langjp　ゲームに打ち勝ち、自らを解放し、家族を連れ帰らなければならないのだ。\
+langen^Le but de leur affrontement ne pouvait se réduire à la seule idée de vaincre une sorcière.^@
+langen^Il lui fallait gagner, se libérer et ramener sa famille auprès de lui.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　なぜ？@　………帰りを待っている、妹という家族がいるから。\
+langen^Pourquoi ? ^@^... Parce qu'il avait une famille qui attendait son retour : sa petite sœur.^\
+
+langjp　右代宮縁寿の声を届けるために、生み出された存在。@
+langen^Une existence destinée à faire parvenir jusqu'à lui la voix d'Ange Ushiromiya.^@
+br
+langjp　それが私、エンジェ・ベアトリーチェ…！！\
+langen^C'est moi, ANGE Béatrice... !!^\
+
+langjp　私という駒を生贄に、@お兄ちゃんに戦う意思を、目的を！@
+langen^Je sacrifierai la pièce que je suis pour donner à mon frère une raison de se battre, un but !^@
+
+br
+langjp　私の目的はお兄ちゃんと永遠に魔女のゲームで遊ぶことじゃない！@
+langen^Mon but n'est pas de jouer éternellement à ce jeu de sorcière avec mon frère !^@
+br
+langjp　私は右代宮縁寿の嘆きと悲しみを、あなたに届けに来たッ！@　それこそが私の揺るぎ無い目的！\
+langen^Je suis venue te transmettre la douleur et la tristesse d'Ange Ushiromiya ! ^@^Voilà mon but, inébranlable !^\
+
+;ld c,$BUT_nakuA1,80
+textoff
+se1 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2a.jpg",":b;bmp\background\efe\blood_2a.png",1
+wait 500
+se1 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2b.jpg",":b;bmp\background\efe\blood_2b.png",1
+wait 400
+se1 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2c.jpg",":b;bmp\background\efe\blood_2c.png",1
+
+advchar "10"
+langjp:dwave_jp 0, but_4e918:「………縁寿！！@:dwave_jp 0, but_4e919:　縁寿！！@:dwave_jp 0, but_4e920:　うおおおぉおおおおおおぉ！！」/
+sl
+langen:dwave_eng 0, but_4e918:^... Ange !! ^@:dwave_eng 0, but_4e919:^Ange !! ^@:dwave_eng 0, but_4e920:^Uoooooooooooooh !!!^@/
+quakex 4,400
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜戦人
+
+langjp　戦人を抱き締めるその白くか細い腕は、……まるで蝋のように白く透き通っている。@
+langen^Le bras blanc et frêle qui étreignait Battler... était devenu blanc et translucide, comme de la cire.^@
+br
+langjp　…なのに鮮血が、あまりにも残酷に、それを染めている……。\
+langen^Le sang qui continuait de couler lui donnait pourtant une couleur rouge insoutenable.^\
+
+textoff
+se1 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2d.jpg",":b;bmp\background\efe\blood_2d.png",1
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e2005:^^!s1「…私は………、/
+sl
+langjp:voicedelay 1510:dwave_jp 0, enj_4e2006:^^…もう消えちゃうけれど……。@:dwave_jp 0, enj_4e2007:……お兄ちゃんは、がんばって戦って、/
+sl
+langjp:voicedelay 5560:dwave_jp 0, enj_4e2008:^^………きっと、私のところへ/
+sl
+langjp:voicedelay 3680:dwave_jp 0, enj_4e2009:^^………帰ってきてね………。@/
+langen:dwave_eng 0, enj_4e2005:^^!s1^... Je vais...^@/
+sl
+langen:voicedelay 1510:dwave_eng 0, enj_4e2006:^ disparaître maintenant, mais... ^@:dwave_eng 0, enj_4e2007:^mon frère, bats-toi de toutes tes forces^@/
+sl
+langen:voicedelay 5560:dwave_eng 0, enj_4e2008:^... et je suis sûre que tu...^@/
+sl
+langen:voicedelay 3680:dwave_eng 0, enj_4e2009:^ reviendras jusqu'à moi...^@/
+
+textoff
+se1 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2e.jpg",":b;bmp\background\efe\blood_2e.png",1
+
+langjp:dwave_jp 0, enj_4e2010:…………待ってるよ、/
+sl
+langjp:voicedelay 1460:dwave_jp 0, enj_4e2011:^^…………ずっと……………。@:dwave_jp 0, enj_4e2012:……お兄ちゃんをもっといっぱい、手助けしてあげるつもりだったのに、/
+sl
+langjp:voicedelay 8890:dwave_jp 0, enj_4e2013:^^……何も出来なかった。@:dwave_jp 0, enj_4e2014:……ごめんね…………………。」/
+sl
+langen:dwave_eng 0, enj_4e2010:^ ... Je t'attendrai^@/
+sl
+langen:voicedelay 1460:dwave_eng 0, enj_4e2011:^... toujours... ^@:dwave_eng 0, enj_4e2012:^J'avais l'intention de t'aider encore bien davantage^@/
+sl
+langen:voicedelay 8890:dwave_eng 0, enj_4e2013:^... mais je n'ai rien pu faire. ^@:dwave_eng 0, enj_4e2014:^... Pardon...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜縁寿
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1a.jpg",":b;bmp\background\efe\different_space_1a.png",0
+mld c,$BUT_nakuA1,26
+
+advchar "10"
+langjp:dwave_jp 0, but_4e921:「い、いいんだ……！！@:dwave_jp 0, but_4e922:　お前は俺に、……教えてくれたじゃねぇか……！@:dwave_jp 0, but_4e923:　どうして俺が、勝たなくちゃならないか…！@:dwave_jp 0, but_4e924:　そして俺が、…絶対に勝って、お前のところに帰ってやらなくちゃ、って……！！\
+langen:dwave_eng 0, but_4e921:^C-C'est pas grave... !! ^@:dwave_eng 0, but_4e922:^Tu... me l'as appris, pas vrai... ?! ^@:dwave_eng 0, but_4e923:^Tu m'as appris pourquoi je devais gagner... ! ^@:dwave_eng 0, but_4e924:^Et que... je devais absolument gagner... et revenir auprès de toi... !!^\
+
+mld c,$BUT_sakebuA2,80
+quakey 3,300
+
+langjp:dwave_jp 0, but_4e925:　俺は、………何をこんなところでぼんやりと遊んでいたんだ……！！@:dwave_jp 0, but_4e926:　あぁ、もうこんなところで遊んでなんかいないぞ…！！@:dwave_jp 0, but_4e927:　帰るからな、帰るからな！！@:dwave_jp 0, but_4e928:　お土産持って、きっと帰るからなッ、約束する……！！！」\
+;＜戦人
+langen:dwave_eng 0, but_4e925:^Qu'est-ce que je... foutais à traîner ici comme ça... ?!! ^@:dwave_eng 0, but_4e926:^Ouais, je ne vais plus perdre mon temps ici... !! ^@:dwave_eng 0, but_4e927:^Parce que je vais rentrer, je vais rentrer !! ^@:dwave_eng 0, but_4e928:^Je rentrerai avec un cadeau, je te le promets... !!!^\
+
+;ld r,$ENJ_NakuA2,23
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e2015:^^!s1「…………いらないから、/
+sl
+langjp:voicedelay 1760:dwave_jp 0, enj_4e2016:^^…………ひとつだけ約束して……。」/
+sl
+langen:dwave_eng 0, enj_4e2015:^^!s1^... J'en veux pas^@/
+sl
+langen:voicedelay 1760:dwave_eng 0, enj_4e2016:^... alors promets-moi juste une chose...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜縁寿
+
+mld c,$BUT_nakuA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_4e929:「何だよ、何でも約束する…ッ！！」\
+;＜戦人
+langen:dwave_eng 0, but_4e929:^Quoi ? Je te promets tout ce que tu veux... !!^\
+
+;ld r,$ENJ_nakuA2,23
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e2017:^^!s1「……この手を、今から離すね……。@:dwave_jp 0, enj_4e2018:痛かったでしょ……？@:dwave_jp 0, enj_4e2019:　ぎゅっとしてて、/
+sl
+langjp:voicedelay 1630:dwave_jp 0, enj_4e2020:^^………ごめんね………。@:dwave_jp 0, enj_4e2021:………私は大丈夫だから、/
+sl
+langjp:voicedelay 3880:dwave_jp 0, enj_4e2022:^^……振り返らなくていいから…。@:dwave_jp 0, enj_4e2023:　………だから最後にお兄ちゃんの、/
+sl
+langjp:voicedelay 4700:dwave_jp 0, enj_4e2024:^^……一番かっこいいところを、/
+sl
+langjp:voicedelay 3590:dwave_jp 0, enj_4e2025:^^……見せて………。@:dwave_jp 0, enj_4e2026:……席を立って、/
+sl
+langjp:voicedelay 2650:dwave_jp 0, enj_4e2027:^^……目の前の魔女を指差して、/
+sl
+langjp:voicedelay 4150:dwave_jp 0, enj_4e2028:^^……ゲームの再開を宣言して………。」/
+sl
+langen:dwave_eng 0, enj_4e2017:^^!s1^... Dans un instant, je vais lâcher ta main... ^@:dwave_eng 0, enj_4e2018:^Ça t'a fait mal, hein... ? ^@:dwave_eng 0, enj_4e2019:^Je te serrais très fort... ^@/
+sl
+langen:voicedelay 1630:dwave_eng 0, enj_4e2020:^Pardon... ^@:dwave_eng 0, enj_4e2021:^Moi, ça va^@/
+sl
+langen:voicedelay 3880:dwave_eng 0, enj_4e2022:^... alors ne te retourne pas... ^@:dwave_eng 0, enj_4e2023:^Alors pour finir, mon frère... ^@/
+sl
+langen:voicedelay 4700:dwave_eng 0, enj_4e2024:^ce que tu as de plus classe... ^@/
+sl
+langen:voicedelay 3590:dwave_eng 0, enj_4e2025:^montre-le-moi... ^@:dwave_eng 0, enj_4e2026:^Lève-toi de ton siège^@/
+sl
+langen:voicedelay 2650:dwave_eng 0, enj_4e2027:^... pointe du doigt la sorcière qui est devant toi^@/
+sl
+langen:voicedelay 4150:dwave_eng 0, enj_4e2028:^... et annonce la reprise du jeu...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+
+cl r,4
+
+langjp　縁寿の手が、……するりと、/
+sl
+langjp^^!d900………後へ消える。@
+langen^La main d'Ange... glissa doucement... ^@/
+sl
+langen:!d900^et disparut derrière moi.^@
+br
+langjp　そこには、彼女の爪から滲んでいた血の指の跡がくっきりと残されていた…。\
+langen^Il ne lui restait que les traces de ses doigts, imprimées en rouge par le sang qui avait coulé sous ses ongles.^\
+
+langjp　しかし俺はすぐに振り返る。@
+langjp　縁寿の怪我を手当てするために…！\
+langen^Mais Battler se retourna aussitôt.^@
+langen^Pour soigner les blessures d'Ange... !^\
+
+csp -1
+
+E_A
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",0
+ld r,$ENJ_nakuA2,64
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+;bg black,0
+;ld l,$ENJ_nakuA2,2
+;mono 2
+;print 18,3000,"bmp\efe\blood_2a_efe.bmp"
+;wait 500
+;bg black,2
+;mono off
+
+advchar "10"
+langjp:dwave_jp 0, but_4e930:^^!s1「縁寿ええぇえぇッ、/
+sl
+langjp:voicedelay 2050:dwave_jp 0, but_4e931:^^ぇぇぇ…ぇ………、/
+sl
+langjp:voicedelay 4240:dwave_jp 0, but_4e932:^^……………………。@:dwave_jp 0, but_4e933:……縁寿…？」/
+sl
+langen:dwave_eng 0, but_4e930:^^!s1^Aaaaaaaaange, ^@/
+sl
+langen:voicedelay 2050:dwave_eng 0, but_4e931:^eeeee... e...^@/
+sl
+langen:voicedelay 4240:dwave_eng 0, but_4e932:^^@:dwave_eng 0, but_4e933:^ Ange... ?^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜戦人
+
+me1v 16,50
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1b.jpg",":b;bmp\background\efe\different_space_1b.png",0
+ld c,$LAM_futekiA3,22
+
+advchar "29"
+langjp:dwave_jp 0, lam_4e232:「あ〜あ、振り向いちゃ駄目って、約束したのにィ…。」@
+;＜ラムダ
+langen:dwave_eng 0, lam_4e232:^Aaaah... Tu avais pourtant promis que tu ne te retournerais pas...^@
+
+
+ld r,$BUT_odorokiA2,80
+
+advchar "10"
+langjp:dwave_jp 0, but_4e934:「……え、……縁寿……………。@:dwave_jp 0, but_4e935:ぁ、ぅ、…ど、どこへ……、」\
+;＜戦人
+langen:dwave_eng 0, but_4e934:^A-Ange... ^@:dwave_eng 0, but_4e935:^Euh... o-où es-tu... ?^\
+
+textoff
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1a.jpg",":b;bmp\background\efe\blood_1a.png",42
+
+
+advchar "-1"
+langjp　俺の椅子の後には、@/
+langjp^^!s0………まるで、……血の詰まった西瓜をまとめて十個くらいを、/
+sl
+langjp^^!d500……叩き潰したような、@
+langjp……ぐちゃぐちゃぼきゅぶぎゃの、/
+sl
+langjp^^!d600……山があった…。@
+langen^Derrière ma chaise, ^@/
+langen^^!s0^comme si... une dizaine de pastèques pleines de sang... ^@/
+sl
+langen:!d500^avaient été écrasées ^@
+langen^... il y avait un amas visqueux, écrasé... ^@/
+sl
+langen:!d600^réduit en bouillie...^@
+br
+langjp　そしてその血と挽き肉の山の周りに、/
+sl
+langjp^^!d800……縁寿の着ていた服や靴が、@……脱ぎ捨てたようにぐしゃぐしゃに潰れていた…。/
+sl
+langen^Et autour de cet amas de sang et de chair hachée^@/
+sl
+langen:!d800^... les vêtements et les chaussures d'Ange...^@^ étaient froissés et aplatis comme si on les avait arrachés puis jetés...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+
+langjp　……まるで、人間の中身だけを、磨り潰して捨てたかのように。@
+langen^Comme si on avait broyé tout ce qu'il y avait à l'intérieur d'un être humain avant de le jeter là.^@
+br
+langjp　……ついさっきまでそこに立っていた縁寿をそのままに、潰してしまったかのように………。\
+langen^... Comme si Ange, qui se tenait là encore un instant plus tôt, avait été écrasée sur place...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1b.jpg",":b;bmp\background\efe\different_space_1b.png",0
+ld l,$BER_DefA1,0
+ld c,$LAM_FutekiA3,26
+ld r,$BUT_komaruA1,24
+
+advchar "10"
+langjp:dwave_jp 0, but_4e936:「縁寿……？@/
+langen:dwave_eng 0, but_4e936:^Ange... ?^@/
+
+ld r,$BUT_OdorokiA2,80
+
+langjp:dwave_jp 0, but_4e937:　え、……縁寿はどこだよ……？@:dwave_jp 0, but_4e938:　縁寿はどこに消えたんだよ……？@/
+langen:dwave_eng 0, but_4e937:^ ... O-Où est Ange... ? ^@:dwave_eng 0, but_4e938:^Où est passée Ange... ? ^@/
+
+ld r,$BUT_sakebua1,80
+
+langjp:dwave_jp 0, but_4e939:　お、おい！/
+sl
+langen:dwave_eng 0, but_4e939:^H-Hé ! ^@/
+se1 12
+quakey 3,300
+langjp:noclear_cw:dwave_jp 0, but_4e940:　縁寿はどこに消えたんだよ？！」\
+;＜戦人
+langen:noclear_cw:dwave_eng 0, but_4e940:^Où est passée Ange ?!^\
+
+ld l,$BER_DefA2,0
+ld c,$LAM_AkuwaraiA3,80
+
+advchar "-1"
+langjp　幼そうな二人の魔女は何も言わず、ただ無言で、@………その血と肉と服の山を見ている。\
+langen^Les deux sorcières à l'apparence juvénile ne dirent rien...^@^ et fixèrent en silence l'amas de sang, de chair et de vêtements.^\
+
+langjp　でも、……俺は認めたくない。@
+langjp　……絶対に認めたくないッ！！！\
+langen^Je refusais pourtant de reconnaître ce que je voyais.^@
+langen^... Je refusais absolument de l'admettre !!!^\
+
+E_A
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1a.jpg",":b;bmp\background\efe\different_space_1a.png",23
+ld c,$BEA_nayamuA1,24
+
+bgm1 24
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e993:「………………妾は、そなたの正面で。@:dwave_jp 0, bea_4e994:………ずっと見ていた。@/
+langen:dwave_eng 0, bea_4e993:^... J'étais là, juste devant toi. ^@:dwave_eng 0, bea_4e994:^... J'ai tout regardé. ^@/
+
+ld c,$BEA_majimeA1,80
+
+langjp:dwave_jp 0, bea_4e995:そなたの後で、縁寿が、………どうなっていくかを。」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e995:^J'ai vu ce qui arrivait... à Ange, derrière toi.^\
+
+cl c,0
+ld r,$BEA_fukigenA3,0
+ld l,$BUT_odorokiA3,23
+
+advchar "10"
+langjp:dwave_jp 0, but_4e941:「……お、……お前は知ってるのか……？@:dwave_jp 0, but_4e942:　………縁寿は、…どこへ行ったんだ………。」\
+;＜戦人
+langen:dwave_eng 0, but_4e941:^... T-Tu le sais... ? ^@:dwave_eng 0, but_4e942:^... Où... est Ange... ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e996:^^!s1「………生きながら。@:dwave_jp 0, bea_4e997:焼けたでっかいペンチで、ひと摘み、ひと摘み、/
+sl
+langjp:voicedelay 5690:dwave_jp 0, bea_4e998:^^……親指大の大きさに、全身の肉を引き千切って、/
+sl
+langjp:voicedelay 5120:dwave_jp 0, bea_4e999:^^……捨てていくんだよ。@:dwave_jp 0, bea_4e1000:………妾は見ていた。@:dwave_jp 0, bea_4e1001:魔女の窯で真っ赤に焼かれた無数の残忍な工具が、縁寿を後から、@:dwave_jp 0, bea_4e1002:ひと摘みひと摘み、……肉を啄ばみ、捻り、引き千切り、……細切れにするのを見ていた。\
+langen:dwave_eng 0, bea_4e996:^^!s1^... Alors qu'elle était encore en vie, ^@:dwave_eng 0, bea_4e997:^pincée après pincée, d'énormes tenailles chauffées au rouge...^@/
+sl
+langen:voicedelay 5690:dwave_eng 0, bea_4e998:^ ont arraché à tout son corps des morceaux de chair gros comme un pouce...^@/
+sl
+langen:voicedelay 5120:dwave_eng 0, bea_4e999:^ et les ont jetés. ^@:dwave_eng 0, bea_4e1000:^... J'ai tout vu. ^@:dwave_eng 0, bea_4e1001:^J'ai vu d'innombrables outils cruels, chauffés au rouge dans la fournaise de la sorcière, s'approcher d'Ange par-derrière, ^@:dwave_eng 0, bea_4e1002:^et, morceau après morceau... la picorer, la tordre, lui arracher la chair... la réduire en lambeaux.^\
+textoff
+
+monocro #ff0000
+
+ld c,$ENJ_nakuA2,22
+
+se1v 1006,100
+se2v 36,100
+se3v 37,100
+
+bg white,15,1000,":c;bmp\efe\blood_2a_efe.bmp"
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2e.jpg",":b;bmp\background\efe\blood_2e.png",1
+monocro off
+
+langjp:dwave_jp 0, bea_4e1003:　…………縁寿は誇っていい。@:dwave_jp 0, bea_4e1004:兄と最後の言葉を交わすために、/
+sl
+langjp:voicedelay 2400:dwave_jp 0, bea_4e1005:^^……その苦痛の喘ぎを、最後まで堪えたことを、@:dwave_jp 0, bea_4e1006: ……誇っていい。」/
+sl
+
+langen:dwave_eng 0, bea_4e1003:^... Ange peut être fière d'elle. ^@:dwave_eng 0, bea_4e1004:^Pour pouvoir échanger ses derniers mots avec son frère^@/
+sl
+langen:voicedelay 2400:dwave_eng 0, bea_4e1005:^... elle a enduré jusqu'au bout cette terrible douleur, sans laisser échapper ses cris...^@:dwave_eng 0, bea_4e1006:^ Elle peut en être fière.^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜ベアト
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1a.jpg",":b;bmp\background\efe\blood_1a.png",22
+
+me1v 16,50
+
+langjp　……そんな、馬鹿なことがあっていいものか……。@
+langen^... Non... Une chose pareille ne peut pas être arrivée...^@
+br
+langjp^^!s0　でも、……その肉と服の山の上に、/
+sl
+langjp^^!d600……ちょこんと転がるのは、/
+sl
+langjp^^!d900…………間違いなく、あいつが頭に付けていた、ピンクの珠の…髪飾りだ。/
+sl
+langen^^!s0^ Mais... au sommet de cet amas de chair et de vêtements^@/
+sl
+langen:!d600^... ce qui reposait là... ^@/
+sl
+langen:!d900^était sans aucun doute la barrette aux perles roses... qu'elle portait dans les cheveux.^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+
+langjp　正直、彼女にはちょっと子どもっぽ過ぎてあまりに似合ってないなと思っていた…。@
+langen^À vrai dire, je trouvais cette barrette bien trop enfantine pour elle, et qu'elle ne lui allait vraiment pas...^@
+br
+langjp　……だからよく覚えてる。\
+langen^C'était précisément pour cela que je m'en souvenais si bien.^\
+
+langjp　……………縁寿は何だって、こんな安っぽい髪飾りをずっと……？@
+langen^... Pourquoi Ange continuait-elle à porter une barrette aussi bas de gamme... ?^@
+br
+langjp　じゃなくてじゃなくて、@……これが縁寿だなんて、/
+sl
+langjp^^!d800……そんな、/
+sl
+langjp^^!d600……、う、うぅうううぅぅ…！\
+langen^Non... non... ^@^que ça, ce soit Ange... ^@/
+sl
+langen:!d800^c'est impossible... ^@/
+sl
+langen:!d600^u, uuuuuuuuuu... !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1a.jpg",":b;bmp\background\efe\different_space_1a.png",22
+ld r,$BER_DefA2,24
+
+advchar "28"
+langjp:dwave_jp 0, ber_4e136:「…………………ベアトも正直ね。」@
+;＜ベルン
+langen:dwave_eng 0, ber_4e136:^... Béato, tu es vraiment honnête.^@
+
+ld l,$LAM_akuwaraiA2,23
+
+advchar "29"
+langjp:dwave_jp 0, lam_4e233:「戦人には見えてなかったんだから、@:dwave_jp 0, lam_4e234:蝶々になって飛んでいったとか言って、誤魔化しちゃえばいいのに。」\
+;＜ラムダ
+langen:dwave_eng 0, lam_4e233:^Battler voyait rien. ^@:dwave_eng 0, lam_4e234:^T'aurais très bien pu lui raconter qu'elle s'était changée en papillons et qu'elle s'était envolée.^\
+
+
+;ld c,$BUT_odorokiA1,80
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+me2v 5,70
+
+advchar "10"
+langjp:dwave_jp 0, but_4e943:^^!s1「……お、/
+sl
+langjp:voicedelay 2530:dwave_jp 0, but_4e944:^^…お前らも、/
+sl
+langjp:voicedelay 740:dwave_jp 0, but_4e945:^^………そ、……それを、/
+sl
+langjp:voicedelay 2310:dwave_jp 0, but_4e946:^^………見ていたのか……？@:dwave_jp 0, but_4e947:　え、/
+sl
+langjp:voicedelay 310:dwave_jp 0, but_4e948:^^……縁寿が、/
+sl
+langjp:voicedelay 920:dwave_jp 0, but_4e949:^^……ばらばらに引き千切られていくところを、/
+sl
+langjp:voicedelay 2480:dwave_jp 0, but_4e950:^^………見ていたのかよ…？@:dwave_jp 0, but_4e951:　見てて。@:dwave_jp 0, but_4e952:………そんな、/
+sl
+langjp:voicedelay 1540:dwave_jp 0, but_4e953:^^……平然とした顔を、/
+sl
+langjp:voicedelay 1850:dwave_jp 0, but_4e954:^^……してたのかよ………？！」/
+sl
+langen:dwave_eng 0, but_4e943:^^!s1^... V-^@/
+sl
+langen:voicedelay 2530:dwave_eng 0, but_4e944:^ Vous aussi... ^@/
+sl
+langen:voicedelay 740:dwave_eng 0, but_4e945:^V-Vous avez... ^@/
+sl
+langen:voicedelay 2310:dwave_eng 0, but_4e946:^vu ça... ? ^@:dwave_eng 0, but_4e947:^V-^@/
+sl
+langen:voicedelay 310:dwave_eng 0, but_4e948:^ Vous avez vu... ^@/
+sl
+langen:voicedelay 920:dwave_eng 0, but_4e949:^Ange... ^@/
+sl
+langen:voicedelay 2480:dwave_eng 0, but_4e950:^se faire déchiqueter en petits morceaux... ? ^@:dwave_eng 0, but_4e951:^Vous regardiez, ^@:dwave_eng 0, but_4e952:^et malgré ça^@/
+sl
+langen:voicedelay 1540:dwave_eng 0, but_4e953:^... vous êtes restées... ^@/
+sl
+langen:voicedelay 1850:dwave_eng 0, but_4e954:^parfaitement calmes tout ce temps... ?!^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜戦人
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1c.jpg",":b;bmp\background\efe\different_space_1c.png",22
+
+langjp　ベルンカステルもラムダデルタも、@そしてベアトリーチェも、何も答えず、じっと俺を、@……ある者は憐れみ、…ある者は嘲笑うように、……見ている………。\
+langen^Sans répondre, Bernkastel, Lambdadelta, ^@^et Béatrice me fixaient... ^@^certaines avec pitié... d'autres comme pour se moquer de moi... toutes me regardaient...^\
+
+
+langjp　今までは、……グレーテルと名乗ってたから、@前回のワルギリアのこともあって、ひょっとするとベアトの手先かもしれないと思って、@味方ではあっても心を許さないように気をつけていた…。\
+langen^Elle s'était présentée sous le nom de Gretel,^@^ et, depuis la trahison apparente de Virgilia dans la partie précédente, j'avais craint qu'elle soit une sbire de Béato.^@^ J'étais donc resté sur mes gardes, incapable de lui faire pleinement confiance.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp^^!s0　そして、/
+sl
+langjp^^!d800…………実は縁寿だったとわかったら、/
+sl
+langjp^^!d600……その顔を見ることが許されなくて、@/
+langen^^!s0^Et puis^@/
+sl
+langen:!d800^... quand j'ai appris qu'elle était en réalité Ange^@/
+sl
+langen:!d600^... alors que je n'avais même pas le droit de voir son visage^@/
+
+se1 36
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1a.jpg",":b;bmp\background\efe\blood_1a.png",1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1ar.jpg",":b;bmp\background\efe\blood_1ar.png",22
+
+langjp………振り返ったら、/
+sl
+langjp^^!d600……こんな、/
+sl
+langjp^^!d600………こと、/
+sl
+langjp^^!d800………なんて、/
+sl
+langjp^^!d1000…………ぅううぅおおぉ………！/
+sl
+langen^... je me suis retourné... ^@/
+sl
+langen:!d600^et j'ai découvert... ^@/
+sl
+langen:!d600^quelque chose... ^@/
+sl
+langen:!d800^comme ça... ^@/
+sl
+langen:!d1000^Uuuuuoooh... !^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1b.jpg",":b;bmp\background\efe\different_space_1b.png",0
+ld c,$BEA_fumanA1,26
+ld c,$BEA_fumanA3,80
+
+E_MA
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e1007:「良いではないか。@:dwave_jp 0, bea_4e1008:………妹のことなど。」@
+;＜ベアト
+langen:dwave_eng 0, bea_4e1007:^Quelle importance ? ^@:dwave_eng 0, bea_4e1008:^... Ta petite sœur, tout ça.^@
+
+;ld c,$BUT_majimeA3,80
+
+advchar "10"
+langjp:dwave_jp 0, but_4e955:「……な、……んだと…………。」\
+;＜戦人
+langen:dwave_eng 0, but_4e955:^... Qu'est-ce... que tu viens de dire... ?^\
+
+
+ld c,$BEA_majimeA2,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e1009:「どうせそなたは、永遠にここから帰れなどせぬわ。@/
+langen:dwave_eng 0, bea_4e1009:^De toute façon, tu ne quitteras jamais cet endroit.^@/
+
+ld c,$BEA_AkuwaraiA5,80
+se1v 37,100
+langjp:dwave_jp 0, bea_4e1010:………そなたが帰らぬ世界の妹など、どうなろうが知ったことではなかろうが。@:dwave_jp 0, bea_4e1011:そなたがここで遊んでいる限り、無数の世界の縁寿が孤独となり、@:dwave_jp 0, bea_4e1012:今の最期と同じ苦痛を、十年以上にもかけて薄めて、強いられる。\
+langen:dwave_eng 0, bea_4e1010:^ Ce qui arrivera à ta petite sœur dans un monde où tu ne rentres pas ne te concerne pas.^@:dwave_eng 0, bea_4e1011:^ Tant que tu continueras à jouer ici, les Ange d'innombrables mondes vivront seules^@:dwave_eng 0, bea_4e1012:^ et subiront, pendant plus de dix ans, une souffrance comparable à celle de ses derniers instants.^\
+
+ld c,$BEA_akuwaraiA2,80
+;se1v 37,100
+langjp:dwave_jp 0, bea_4e1013:　………だが、そんなことはどうでもいいことではないか。@:dwave_jp 0, bea_4e1014:ここにいるそなたには視えない。@:dwave_jp 0, bea_4e1015:観測できない。@:dwave_jp 0, bea_4e1016:観測できない真実は、赤き真実を用いねば立証できない。\
+langen:dwave_eng 0, bea_4e1013:^Mais cela n'a aucune importance, n'est-ce pas ?^@:dwave_eng 0, bea_4e1014:^ Depuis ici, tu ne peux pas le « voir ».^@:dwave_eng 0, bea_4e1015:^ Tu ne peux pas l'observer.^@:dwave_eng 0, bea_4e1016:^ Une vérité impossible à observer ne peut être démontrée qu'en recourant à la vérité rouge.^\
+
+
+ld c,$BEA_akuwaraiA4,80
+
+langjp:dwave_jp 0, bea_4e1017:　だから、縁寿のその後の不幸は、そなたの杞憂かも知れない。@:dwave_jp 0, bea_4e1018:…………案外、留弗夫の遺産で、のんびりと生涯働かずに暮らせてたりしてなぁ？@/
+langen:dwave_eng 0, bea_4e1017:^Tes inquiétudes sur le malheur futur d'Ange sont donc peut-être inutiles.^@:dwave_eng 0, bea_4e1018:^ Qui sait ? Grâce à l'héritage de Rudolf, elle mène peut-être une vie tranquille sans jamais avoir besoin de travailler.^@/
+se1v 37,100
+langjp:dwave_jp 0, bea_4e1019:　くっくっくくくくくくく…！」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e1019:^ Kukukukukukuku... !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+me1v 17,70
+
+advchar "-1"
+langjp　……それは、@…嘘だ。\
+langen^... C'est...^@^ un mensonge.^\
+
+langjp　縁寿の腕から、その後の全ての悲しい世界が俺に、あの一瞬で流れ込んできたから。@
+langen^À travers l'étreinte d'Ange, j'avais pourtant ressenti toute la tristesse qui l'attendait dans son monde.^@
+br
+langjp^^!s0　俺が、/
+sl
+langjp^^!d800………こんなところで、/
+sl
+langjp^^!d600………いつまでもぼんやりと、/
+sl
+langjp^^!d900………遊んでいるから………！！/
+sl
+langen^^!s0^ Tout ça parce que... ^@/
+sl
+langen:!d800^je continue... ^@/
+sl
+langen:!d600^à rester éternellement ici... ^@/
+sl
+langen:!d900^à jouer comme si de rien n'était... !!^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+
+langjp　……俺は、@俺一人のことしか考えてなかった……。\
+langen^... Moi...^@^ je n'ai pensé qu'à moi-même...^\
+
+E_A
+
+se1v 1006,100
+se2v 2,100
+se3v 57,100
+
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1c.jpg",":b;bmp\background\efe\different_space_1c.png",2
+me1v 5,50
+langjp　こいつを倒し！@　家族を取り返して、@……俺は留守をしている、縁寿のところへ、………一秒でも早く帰らなければ………！@
+langen^Je dois la vaincre ! ^@^Récupérer toute ma famille, ^@^rentrer auprès d'Ange qui m'attend... le plus vite possible... !^@
+br
+langjp　こうして魔女に付き合っている間にも、@縁寿の心は、悲しみで細切れにされ続けているのだから…！！\
+langen^Parce que même pendant que je continue à jouer avec cette sorcière, ^@^le cœur d'Ange ne cesse d'être mis en pièces par la tristesse... !!^\
+
+
+E_A
+bgm1v 107,85
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1b.jpg",":b;bmp\background\efe\different_space_1b.png",0
+ld c,$BUT_kuyasigaruA1,26
+ld c,$BUT_NayamuA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_4e956:「…………縁寿、……お前が見たかったのは、/
+sl
+langjp:voicedelay 6280:dwave_jp 0, but_4e957:^^………これだよな……？」\
+;＜戦人
+langen:dwave_eng 0, but_4e956:^... Ange... c'est bien ça... ^@/
+sl
+langen:voicedelay 6280:dwave_eng 0, but_4e957:^que tu voulais voir... ?^\
+
+advchar "-1"
+langjp^^!s0　俺は、……縁寿の無残な最期を淡々と語った、その残忍なる魔女をゆっくりと、@/
+langjp^^!d600……だけれども、/
+sl
+langjp^^!d600……渾身の力で、/
+sl
+langjp^^!d800……指差す……。/
+sl
+langen^^!s0^... Je me tournai lentement vers la cruelle sorcière qui avait raconté avec indifférence les derniers instants atroces d'Ange, mais^@/
+langen:!d600^... de toutes mes forces, ^@/
+sl
+langen:!d800^je la pointai du doigt...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+
+cl a,0
+ld c,$BUT_majimeb4,26
+
+advchar "10"
+langjp:dwave_jp 0, but_4e958:「………ベアトリーチェ……。」@
+;＜戦人
+langen:dwave_eng 0, but_4e958:^Béatrice...^@
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1a.jpg",":b;bmp\background\efe\different_space_1a.png",0
+ld r,$BEA_majimeA1,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e1020:「うむ。」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e1020:^Oui.^\
+
+
+ld l,$BUT_MAjimeA3,23
+
+advchar "10"
+langjp:dwave_jp 0, but_4e959:「…………ゲームの、再開だ。@/
+langen:dwave_eng 0, but_4e959:^... Le jeu reprend.^@/
+
+ld l,$BUT_OdorokiB1,80
+
+langjp:dwave_jp 0, but_4e960:………もう俺は逃げねぇし、……お前も逃がさない。」@
+;＜戦人
+langen:dwave_eng 0, but_4e960:^ ... Je ne fuirai plus... et je ne te laisserai pas fuir non plus.^@
+
+textoff
+ld r,$BEA_nayamuA1,80
+
+wait 1000
+
+ld r,$BEA_akuwaraiA5,80
+se1v 2,100
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e1021:「望むところよ。@:dwave_jp 0, bea_4e1022:妾はもはや、逃げも隠れも出来ぬわ。@:dwave_jp 0, bea_4e1023:………妾とそなたの決着を、確実につけようぞ。\
+langen:dwave_eng 0, bea_4e1021:^C'est exactement ce que je souhaite. ^@:dwave_eng 0, bea_4e1022:^Je ne peux désormais ni fuir ni me cacher. ^@:dwave_eng 0, bea_4e1023:^... Mettons définitivement un terme à notre duel.^\
+
+ld r,$BEA_akuwaraiA3,80
+
+langjp:dwave_jp 0, bea_4e1024:　………どちらかが勝つ。@:dwave_jp 0, bea_4e1025:どちらかが敗れて、滅ぶ。@:dwave_jp 0, bea_4e1026:それ以外の結末は、存在しない。」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e1024:^... L'un de nous gagnera. ^@:dwave_eng 0, bea_4e1025:^L'autre perdra et périra. ^@:dwave_eng 0, bea_4e1026:^Aucune autre fin n'est possible.^\
+
+
+ld l,$BUT_Kuyasigarub1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_4e961:「………俺は勝つ。@:dwave_jp 0, but_4e962:どれほどの時間を掛けようとも、絶対にお前を打ち破る…！！@/
+langen:dwave_eng 0, but_4e961:^... Je gagnerai. ^@:dwave_eng 0, but_4e962:^Peu importe combien de temps ça prendra, je finirai forcément par te vaincre... !! ^@/
+
+ld l,$BUT_OdorokiB1,80
+
+langjp:dwave_jp 0, but_4e963:　この勝負にもう妥協も中断も不戦敗もないッ！！@:dwave_jp 0, but_4e964:　俺は逃げない！@:dwave_jp 0, but_4e965:　逃がさない！！\
+langen:dwave_eng 0, but_4e963:^Dans ce duel, il n'y aura plus ni compromis, ni interruption, ni défaite par forfait !! ^@:dwave_eng 0, but_4e964:^Je ne fuirai pas ! ^@:dwave_eng 0, but_4e965:^Et je ne te laisserai pas fuir !!^\
+
+ld l,$BUT_sakebuB1,80
+
+langjp:dwave_jp 0, but_4e966:　俺を本気で倒しに来いよ…！！@:dwave_jp 0, but_4e967:　下らない騙しも誤魔化しも、おかしな交流も馴れ合いも一切必要ないッ！！@:dwave_jp 0, but_4e968:　お前と俺は敵同士…！！！@:dwave_jp 0, but_4e969:　一秒でも早く決着をつけて、………俺は縁寿のところへ家族を連れ帰らなきゃならないッ！！！」\
+;＜戦人
+langen:dwave_eng 0, but_4e966:^Viens vraiment pour me vaincre... !! ^@:dwave_eng 0, but_4e967:^Plus besoin de mensonges minables, de faux-semblants, d'échanges bizarres ou de copinage !! ^@:dwave_eng 0, but_4e968:^Toi et moi, on est ennemis... !!! ^@:dwave_eng 0, but_4e969:^Je dois en finir au plus vite... et ramener ma famille auprès d'Ange !!!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_space_1c.jpg",":b;bmp\background\efe\different_space_1c.png",22
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e1027:　……揺るぎ無き決意。@
+langjp:dwave_jp 0, bea_4e1028:　…絶対の意思。@
+langen:dwave_eng 0, bea_4e1027:^Sa résolution ne vacillait plus.^@
+langen:dwave_eng 0, bea_4e1028:^Sa volonté était désormais absolue.^@
+br
+langjp:dwave_jp 0, bea_4e1029:　ニンゲンの絶対なる意思は絶対の魔力となる。@
+langjp:dwave_jp 0, bea_4e1030:　……それは奇跡に通じ、それを約束する。@
+langen:dwave_eng 0, bea_4e1029:^La volonté absolue d'un Humain peut devenir un pouvoir magique absolu.^@
+langen:dwave_eng 0, bea_4e1030:^Elle peut mener au miracle et lui donner un caractère certain.^@
+langjp:dwave_jp 0, bea_4e1031:　そう、これは、約束された、^~ib~^絶対の奇跡^~ib~^。\
+langen:dwave_eng 0, bea_4e1031:^Oui. C'est un ~ib~miracle absolu~ib~, promis.^\
+
+;＜点処理：絶対の奇跡
+
+
+langjp:dwave_jp 0, bea_4e1032:　………………妾の勝ちは百億にひとつも、@/
+langen:dwave_eng 0, bea_4e1032:^... Je n'ai même pas une chance sur dix milliards de gagner... ? ^@/
+langjp:dwave_jp 0, bea_4e1033:いや………、^~ib~^ひとカケラの奇跡も絶対になく^~ib~^、ありえぬということか。\
+
+langen:dwave_eng 0, bea_4e1033:^Non... Cela signifie donc qu'il est ~ib~absolument impossible qu'il subsiste ne serait-ce qu'un Fragment de miracle~ib~...^\
+
+;＜点処理：ひとかけらの奇跡も絶対になく
+;　………………妾の勝ちは百億にひとつも、いや………、ひとカケラの奇跡も絶対になく、ありえぬということか。
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",26
+se1 32
+
+langjp:dwave_jp 0, bea_4e1035:　妾の足にはいつの間にか、音もなく、もう片方の足にも冷たく頑丈な鎖が絡みつき、@:dwave_jp 0, bea_4e1036:この椅子に縛り付けている…。\
+langen:dwave_eng 0, bea_4e1035:^Sans que je m'en aperçoive, une autre chaîne froide et robuste s'est enroulée sans bruit autour de mon autre jambe, ^@:dwave_eng 0, bea_4e1036:^me ligotant à cette chaise...^\
+
+langjp:dwave_jp 0, bea_4e1037:　…………妾に残されたる運命は、戦人に殺され敗北することか、@:dwave_jp 0, bea_4e1038:それを拒み、永遠に引き分けを繰り返すことのみ。@
+langen:dwave_eng 0, bea_4e1037:^Le seul destin qui me reste est d'être tuée par Battler et de perdre...^@:dwave_eng 0, bea_4e1038:^ ou le refuser et répéter éternellement les matchs nuls.^@
+br
+langjp:dwave_jp 0, bea_4e1039:　……いや、殺されるための心の整理がつくまで、引き分けを繰り返すの間違いか。\
+langen:dwave_eng 0, bea_4e1039:^Plus exactement, je devrais répéter ces matchs nuls jusqu'à trouver la force d'accepter ma mort.^\
+
+langjp:dwave_jp 0, bea_4e1040:　いずれにせよ、妾は。@
+langen:dwave_eng 0, bea_4e1040:^Quoi qu'il en soit, je...^@
+br
+langjp:dwave_jp 0, bea_4e1041:　………敗れるためだけに、戦わねばならぬ。\
+langen:dwave_eng 0, bea_4e1041:^dois me battre dans le seul but de perdre.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_spiral_1a.jpg",":b;bmp\background\efe\different_spiral_1a.png",22
+
+langjp:dwave_jp 0, bea_4e1042:　もう永遠の鎖は妾を縛り付けた。@
+langjp:dwave_jp 0, bea_4e1043:　そして戦人もまた、妾を逃さない。\
+langen:dwave_eng 0, bea_4e1042:^Les chaînes de l'éternité me retenaient déjà prisonnière.^@
+langen:dwave_eng 0, bea_4e1043:^Battler non plus ne me permettrait pas de fuir.^\
+
+langjp:dwave_jp 0, bea_4e1044:　……みっともなく許しを乞うか…？@
+langjp:dwave_jp 0, bea_4e1045:　同情を乞うために、憐れみの心に訴えかけるか…？@
+langen:dwave_eng 0, bea_4e1044:^Devrais-je mendier son pardon au prix de toute ma dignité ?^@
+langen:dwave_eng 0, bea_4e1045:^Tenter d'éveiller sa pitié afin d'obtenir sa compassion ?^@
+
+br
+langjp:dwave_jp 0, bea_4e1046:　形振り構わず土下座して？\
+langen:dwave_eng 0, bea_4e1046:^Me prosterner devant lui, sans plus me soucier de l'honneur qui me restait ?^\
+
+
+se1 32
+
+langjp:dwave_jp 0, bea_4e1047:　鎖のせいでそれも叶わぬわ。@
+langjp:dwave_jp 0, bea_4e1048:　……チェックメイト。@
+langen:dwave_eng 0, bea_4e1047:^Même cette dernière tentative de fuite m'était interdite par les chaînes.^@
+langen:dwave_eng 0, bea_4e1048:^... Échec et mat.^@
+br
+langjp:dwave_jp 0, bea_4e1049:　これは完全なる詰めだ。\
+langen:dwave_eng 0, bea_4e1049:^C'est un mat parfait.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+
+langjp:dwave_jp 0, bea_4e1050:　……………………………だが。\
+langen:dwave_eng 0, bea_4e1050:^... Mais.^\
+
+se1v 2,100
+bg white,1
+me1v 5,70
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\portrait2.jpg",":b;bmp\background\mainbuilding\portrait2.png",22
+
+br
+langjp:dwave_jp 0, bea_4e1051:　妾は、黄金の魔女、ベアトリーチェ。\
+langen:dwave_eng 0, bea_4e1051:^Je suis la Sorcière d'Or, Béatrice.^\
+
+langjp:dwave_jp 0, bea_4e1052:　黄金郷に君臨したる黄金の魔王。@
+langen:dwave_eng 0, bea_4e1052:^Le Roi Démon d'Or qui règne sur la Terre d'Or.^@
+br
+langjp:dwave_jp 0, bea_4e1053:　敗れるための戦いであっても、妾には相応しき態度がある。@
+langen:dwave_eng 0, bea_4e1053:^Même dans un combat voué à ma défaite, je dois conserver une attitude digne de moi.^@
+br
+langjp:dwave_jp 0, bea_4e1054:　そして、妾には、妾に相応しき散り際を飾る権利がある。\
+langen:dwave_eng 0, bea_4e1054:^Et j'ai le droit de donner à ma fin l'éclat qui me sied.^\
+
+se3v 27,50
+
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\different_space_1a.jpg" : mov $oldnew_bg,":b;bmp\background\efe\different_space_1a.png" : if %4095 = 0 bg ":b;bmp\background\efe\different_space_1a.png",99,4000,"breakup.dll/lrb" : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\different_space_1a.jpg",99,4000,"breakup.dll/lrb"
+ld c,$BEA_MajimeA1,24
+
+langjp:dwave_jp 0, bea_4e1055:「………妾とて同じよ。@:dwave_jp 0, bea_4e1056:そなたに我が魔法を、存在を認めさせてこの島に黄金郷の扉を開く。@:dwave_jp 0, bea_4e1057:そなたはその最初の茶会の主賓となるだろう。\
+langen:dwave_eng 0, bea_4e1055:^... Moi aussi. ^@:dwave_eng 0, bea_4e1056:^Je te ferai reconnaître ma magie et mon existence, et j'ouvrirai sur cette île les portes de la Terre d'Or. ^@:dwave_eng 0, bea_4e1057:^Tu seras l'invité d'honneur de ce premier goûter.^\
+
+ld c,$BEA_nayamuA1,80
+
+langjp:dwave_jp 0, bea_4e1058:　そなた以外は全員がすでに揃っているぞ？@:dwave_jp 0, bea_4e1059:　主賓の到着が遅れているから、いつまでも茶会が開けない。\
+langen:dwave_eng 0, bea_4e1058:^Tous les autres sont déjà réunis, tu sais ? ^@:dwave_eng 0, bea_4e1059:^Mais tant que l'invité d'honneur tarde à arriver, le goûter ne peut pas commencer.^\
+
+ld c,$BEA_majimeA3,80
+;se1v 37,100
+langjp:dwave_jp 0, bea_4e1060:　そなたの父親も、母親も、いとこたちもみんなみんな、お前の到着を待ちくたびれているぞ。」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e1060:^Ton père, ta mère, tes cousins... tout le monde est las d'attendre ton arrivée.^\
+
+se1 20
+
+cl c,0
+ld r,$BEA_majimeA3,0
+ld l,$BUT_sakebuA1,63
+se2v 2,100
+quakey 3,200
+advchar "10"
+langjp:dwave_jp 0, but_4e970:「あぁッ、上等だぜ、まったくにもって上等だッ！！@:dwave_jp 0, but_4e971:　何が魔法だ、何が魔女だ…！！@:dwave_jp 0, but_4e972:　お前との遊びはこれまでだ！！@:dwave_jp 0, but_4e973:　行くぞ、ベアトリーチェ…！！！」\
+;＜戦人
+langen:dwave_eng 0, but_4e970:^Ouais, parfait, c'est vraiment parfait !! ^@:dwave_eng 0, but_4e971:^La magie, les sorcières... j'en ai plus rien à foutre !! ^@:dwave_eng 0, but_4e972:^J'en ai fini de jouer avec toi !! ^@:dwave_eng 0, but_4e973:^J'arrive, Béatrice... !!!^\
+
+ld r,$BEA_majimeA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e1061:「存分に来るがよいぞ、妥協も中断も不戦敗もない。@:dwave_jp 0, bea_4e1062:どちらかが勝ち、どちらかが滅ぶ。@/
+langen:dwave_eng 0, bea_4e1061:^Alors viens de toutes tes forces. Il n'y aura ni compromis, ni interruption, ni défaite par forfait. ^@:dwave_eng 0, bea_4e1062:^L'un gagnera et l'autre périra. ^@/
+
+ld r,$BEA_majimeA4,80
+
+langjp:dwave_jp 0, bea_4e1063:お前に負ける意思がないというなら、妾を倒すしかない、殺すしかない。@:dwave_jp 0, bea_4e1064:　しかし、妾もむざむざと殺されはしない。@:dwave_jp 0, bea_4e1065:妾に相応しき最期をそなたが用意できるまで、抵抗を繰り返すことが出来る。\
+langen:dwave_eng 0, bea_4e1063:^Si tu n'as aucune intention de perdre, alors tu n'as d'autre choix que de me vaincre, de me tuer. ^@:dwave_eng 0, bea_4e1064:^Mais je ne me laisserai pas tuer docilement. ^@:dwave_eng 0, bea_4e1065:^Jusqu'à ce que tu puisses m'offrir une fin digne de moi, je pourrai résister encore et encore.^\
+
+me2v 17,70
+
+ld r,$BEA_fumanA3,80
+
+langjp:dwave_jp 0, bea_4e1066:　そなたにそれが出来るか？@:dwave_jp 0, bea_4e1067:　……いや、出来るだろう。@:dwave_jp 0, bea_4e1068:必ず出来るさ。@:dwave_jp 0, bea_4e1069:来いよ、殺しに。@:dwave_jp 0, bea_4e1070:………………。\
+langen:dwave_eng 0, bea_4e1066:^En es-tu capable ? ^@:dwave_eng 0, bea_4e1067:^... Non, tu en es sûrement capable. ^@:dwave_eng 0, bea_4e1068:^Tu y arriveras forcément. ^@:dwave_eng 0, bea_4e1069:^Viens donc me tuer. ^@:dwave_eng 0, bea_4e1070:^...^\
+
+ld r,$BEA_fumanA1,80
+
+langjp:dwave_jp 0, bea_4e1071:　…………………やりにくいか？@:dwave_jp 0, bea_4e1072:　ならばいつもの調子で行こう。@:dwave_jp 0, bea_4e1073:…………………。\
+langen:dwave_eng 0, bea_4e1071:^Tu as du mal comme ça ? ^@:dwave_eng 0, bea_4e1072:^Alors reprenons notre ton habituel. ^@:dwave_eng 0, bea_4e1073:^...^\
+
+textoff
+ld r,$BEA_nayamuA1,22
+wait 2000
+
+ld r,$BEA_AkuwaraiA2,1
+
+langjp:dwave_jp 0, bea_4e1074:^^!s1　ひゃっははッ！！/
+sl
+langen:dwave_eng 0, bea_4e1074:^^!s1^Hyahhaha !! ^@/
+
+se1v 37,100
+quakey 3,300
+
+langjp:noclear_cw:dwave_jp 0, bea_4e1075:　殺されるかよ、/
+langjp:voicedelay 1890:dwave_jp 0, bea_4e1076:^^せめて勝てなくても、お前に勝ちを譲らない程度の嫌がらせは出来るんだぜぇえええぇ？！\
+langen:noclear_cw:dwave_eng 0, bea_4e1075:^Tu crois vraiment que je vais me laisser tuer ? ^@/
+sl
+langen:voicedelay 1890:dwave_eng 0, bea_4e1076:^Même si je peux pas gagner, je peux au moins t'emmerder assez pour t'empêcher de gagner, pas vraiiiiii ?!^\
+
+ld l,$BUT_sakebuA2,0
+ld r,$BEA_AkuwaraiA4,22
+
+langjp:dwave_jp 0, bea_4e1077:　ほぉ、いい面構えだ！@/
+langen:dwave_eng 0, bea_4e1077:^Oh, voilà une tête qui me plaît !^@/
+
+se1v 37,85
+
+langjp:dwave_jp 0, bea_4e1078:　……くっくくくくっく、/
+sl
+langen:dwave_eng 0, bea_4e1078:^ ... Kukukukukuku, ^@/
+sl
+
+se2v 37,100
+
+langjp:voicedelay 2020:dwave_jp 0, bea_4e1079:^^うっひゃっはははははははは、/
+sl
+langen:voicedelay 2020:dwave_eng 0, bea_4e1079:^Uhhyahhahahahahaha, ^@/
+sl
+
+se3v 37,100
+se1v 1006,100
+
+langjp:voicedelay 2390:dwave_jp 0, bea_4e1080:あーっきゃっきゃっきゃっきゃっきゃ！！\
+langen:voicedelay 2390:dwave_eng 0, bea_4e1080:^Ah, hahahahaha !!^\
+
+
+ld r,$BEA_ikariA1,80
+
+langjp:dwave_jp 0, bea_4e1081:　殺してみろッ、/
+sl
+langjp:voicedelay 1480:dwave_jp 0, bea_4e1082:^^殺してみろよォ、右代宮戦人ァあああああああぁあああぁああああああぁあうおおおおおおおあああああああああぁああぁぁあっぁぁあぁぁッ！！！」/
+sl
+langen:dwave_eng 0, bea_4e1081:^Essaie donc de me tuer, ^@/
+sl
+langen:voicedelay 1480:dwave_eng 0, bea_4e1082:^essaie donc de me tuer, Battler Ushiromiyaaaaaaaaaaaaaaaaaaaaaaaaaaa !!!^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜ベアト
+
+textoff
+
+
+lsp 889,":c;bmp\background\efe\EP4last00.png",0,0  ;uses PNG now
+
+mov %ryuu1,150
+
+bgmvol 100
+
+se1v 46,90
+se3v 36,90
+vsp 889,1
+print 1
+vsp 889,0
+
+;bg "bmp\background\efe\EP4last01.png",10,%ryuu1
+mov $witchh4, "bmp\background\efe\EP4last01.png"
+	setLangString $witchh4, ""
+bg $witchh4,10,%ryuu1
+
+resettimer
+waittimer 500
+
+se1v 46,90
+se2v 36,90
+vsp 889,1
+print 1
+vsp 889,0
+;bg "bmp\background\efe\EP4last02.png",10,%ryuu1
+mov $witchh4, "bmp\background\efe\EP4last02.png"
+	setLangString $witchh4, ""
+bg $witchh4,10,%ryuu1
+
+resettimer
+waittimer 300
+
+se1v 46,90
+se3v 36,90
+vsp 889,1
+print 1
+vsp 889,0
+;bg "bmp\background\efe\EP4last03.png",10,%ryuu1
+mov $witchh4, "bmp\background\efe\EP4last03.png"
+	setLangString $witchh4, ""
+bg $witchh4,10,%ryuu1
+
+resettimer
+waittimer 100
+
+se1v 46,90
+se2v 36,90
+vsp 889,1
+print 1
+vsp 889,0
+;bg "bmp\background\efe\EP4last04.png",10,%ryuu1
+mov $witchh4, "bmp\background\efe\EP4last04.png"
+	setLangString $witchh4, ""
+bg $witchh4,10,%ryuu1
+
+se1v 46,90
+se3v 36,90
+vsp 889,1
+print 1
+vsp 889,0
+;bg "bmp\background\efe\EP4last05.png",10,%ryuu1
+mov $witchh4, "bmp\background\efe\EP4last05.png"
+	setLangString $witchh4, ""
+bg $witchh4,10,%ryuu1
+
+se1v 46,90
+se2v 36,90
+vsp 889,1
+print 1
+vsp 889,0
+;bg "bmp\background\efe\EP4last06.png",10,%ryuu1
+mov $witchh4, "bmp\background\efe\EP4last06.png"
+	setLangString $witchh4, ""
+bg $witchh4,10,%ryuu1
+
+se1v 46,90
+se3v 36,90
+vsp 889,1
+print 1
+vsp 889,0
+;bg "bmp\background\efe\EP4last07.png",10,%ryuu1
+mov $witchh4, "bmp\background\efe\EP4last07.png"
+	setLangString $witchh4, ""
+bg $witchh4,10,%ryuu1
+
+se1v 46,90
+se2v 36,90
+vsp 889,1
+print 1
+vsp 889,0
+;bg "bmp\background\efe\EP4last08.png",10,%ryuu1
+mov $witchh4, "bmp\background\efe\EP4last08.png"
+	setLangString $witchh4, ""
+bg $witchh4,10,%ryuu1
+
+
+
+
+mov %ryuu1,70
+
+se1v 46,90
+se3v 36,90
+vsp 889,1
+print 1
+vsp 889,0
+;bg "bmp\background\efe\EP4last01.png",10,%ryuu1
+mov $witchh4, "bmp\background\efe\EP4last01.png"
+	setLangString $witchh4, ""
+bg $witchh4,10,%ryuu1
+
+;resettimer
+;waittimer 500
+
+se1v 46,90
+se2v 36,90
+vsp 889,1
+print 1
+vsp 889,0
+;bg "bmp\background\efe\EP4last02.png",10,%ryuu1
+mov $witchh4, "bmp\background\efe\EP4last02.png"
+	setLangString $witchh4, ""
+bg $witchh4,10,%ryuu1
+
+;resettimer
+;waittimer 300
+
+se1v 46,90
+se3v 36,90
+vsp 889,1
+print 1
+vsp 889,0
+;bg "bmp\background\efe\EP4last03.png",10,%ryuu1
+mov $witchh4, "bmp\background\efe\EP4last03.png"
+	setLangString $witchh4, ""
+bg $witchh4,10,%ryuu1
+
+;resettimer
+;waittimer 100
+
+se1v 46,90
+se2v 36,90
+vsp 889,1
+print 1
+vsp 889,0
+;bg "bmp\background\efe\EP4last04.png",10,%ryuu1
+mov $witchh4, "bmp\background\efe\EP4last04.png"
+	setLangString $witchh4, ""
+bg $witchh4,10,%ryuu1
+
+se1v 46,90
+se3v 36,90
+vsp 889,1
+print 1
+vsp 889,0
+;bg "bmp\background\efe\EP4last05.png",10,%ryuu1
+mov $witchh4, "bmp\background\efe\EP4last05.png"
+	setLangString $witchh4, ""
+bg $witchh4,10,%ryuu1
+
+se1v 46,90
+se2v 36,90
+vsp 889,1
+print 1
+vsp 889,0
+;bg "bmp\background\efe\EP4last06.png",10,%ryuu1
+mov $witchh4, "bmp\background\efe\EP4last06.png"
+	setLangString $witchh4, ""
+bg $witchh4,10,%ryuu1
+
+se1v 46,90
+se3v 36,90
+vsp 889,1
+print 1
+vsp 889,0
+;bg "bmp\background\efe\EP4last07.png",10,%ryuu1
+mov $witchh4, "bmp\background\efe\EP4last07.png"
+	setLangString $witchh4, ""
+bg $witchh4,10,%ryuu1
+
+se1v 46,90
+se2v 36,90
+vsp 889,1
+print 1
+vsp 889,0
+;bg "bmp\background\efe\EP4last08.png",10,700
+mov $witchh4, "bmp\background\efe\EP4last08.png"
+	setLangString $witchh4, ""
+bg $witchh4,10,700
+
+;resettimer
+;waittimer 700
+
+
+
+
+
+
+
+
+bgmvol 90
+
+se1v 27,100
+se2v 2,100
+se3v 36,100
+vsp 889,1
+print 1
+vsp 889,0
+;bg ":b;bmp\background\efe\end_1d.png",10,4000   ;タイトルロゴ
+mov $witchh4, "bmp\background\efe\end_1d.png"
+	setLangString $witchh4, ""
+bg $witchh4,10,4000
+;waittimer 500
+
+
+
+resettimer
+waittimer 6000
+
+me1v 12,50
+
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,12000 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,12000
+
+fede 1,6000
+wait 3000
+
+;クリアフラグの更新
+if %UMINEKOEND < 41 mov %UMINEKOEND,41 : mov %UMINEKOEND_FLG,41 ;クリアフラグの変更
+
+se1 22
+mov $witchh4, TEXT004
+	setLangString $witchh4, ""
+bg $witchh4,22
+set_achievement "UMI43"
+
+delay 10000
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+reset
+
+
+;■表お茶会
+;■１９８６年１０月５日
+;■時計が表示される。
+
+*teatime_4
+mov %m_temp1,1
+if %UMINEKOEND_FLG = 41 mov %UMINEKOEND_FLG,0	;新要素告知フラグの解除
+
+
+
+E_A
+
+btndef ""
+csp -1
+;setwindow 137,16,25,20,23,23,0,2,20,1,1,#999999,0,0,853,479
+adv_default_text_speed_restore_window
+windoweffect 50,200
+
+
+textoff
+
+me1v 12,70
+wait 3000
+
+se1v 28,100
+;bg oct_5_1986,80
+mov $witchh4, oct_5_1986
+setLangString $witchh4, ""
+bg $witchh4,80
+
+wait 4000
+
+
+
+mov %disable_adv_clear, 1
+langjp!sd
+langen!sd
+mov %disable_adv_clear, 0
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+dllefe 1,1
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_1an.jpg",":b;bmp\background\garden\rose_1an.png",2
+wait 2000
+;bg rose_1bN,2
+;wait 2000
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_1an.jpg",":b;bmp\background\garden\garden_1an.png",2
+wait 2000
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_o1an.jpg",":b;bmp\background\mainbuilding\m_o1an.png",2
+
+se2v 21,80
+
+clock 0,0,23,51,13,0,490,340,30
+
+
+wait 1000
+csp -1
+csp2 -1
+
+E_MA
+se1v 1006,100
+;se3v 2,100
+
+dllefe_off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+
+
+mov %play_scene,40340 : mov %r_hyouji_side,0 : mov %r_hyouji_cha,but
+mov %grim_scene,411
+
+me1v 12,50
+bgm1 38
+
+langjp　………何が何だか、俺にはさっぱりだ。@
+langen^... Je n'y comprends absolument rien.^@
+br
+langjp　誰か俺にもわかるように、昨日何があったのか説明してくれ。\
+langen^Quelqu'un peut m'expliquer ça d'une façon que même moi je puisse comprendre... ?^@^ Ce qui s'est passé hier.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mkit_1an.jpg",":b;bmp\background\mainbuilding\mkit_1an.png",2
+
+langjp　俺は屋敷の厨房で、勝手にメシを頂戴している。@
+langen^Je m'étais installé dans la cuisine du manoir et je me servais à manger comme si j'étais chez moi.^@
+br
+langjp　でかい業務用冷蔵庫を開けりゃ何でもある。@
+langjp　何でも食い放題の飲み放題。@
+langen^Cet énorme réfrigérateur professionnel était rempli de provisions en tout genre.^@
+langen^Je pouvais manger et boire à ma guise.^@
+br
+langjp　……台風が一週間は明けなくても、俺は充分食っていけるぜ。\
+langen^Même si le typhon devait durer encore une semaine, j'aurais largement de quoi me nourrir.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mkit_1cn.jpg",":b;bmp\background\mainbuilding\mkit_1cn.png",24
+;ld r,$BUT_nayamuA2,24
+
+langjp　俺はワインを片手に、切り分けた生ハムをいただいてる。@
+langjp　ワインもハムも、一体いくらするんだろうな。@
+langen^Un verre de vin à la main, je dégustais quelques tranches de jambon cru.^@
+langen^Je n'avais aucune idée de ce que pouvaient coûter ce vin et ce jambon.^@
+br
+
+;ld r,$BUT_NayamuA1,80
+
+langjp　あんたら食材もツイてないぜ。@
+langjp　郷田さんに料理してもらえたなら、はるかにすごい料理に生まれ変われただろうに。\
+langen^Pas de chance pour vous, les ingrédients.^@
+langen^Si Monsieur Gohda avait été là pour vous cuisiner, vous auriez fini en plats autrement plus raffinés...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+
+me2v 11,90
+
+langjp　時計を見る。@
+langjp　もうじき、２４時になる。@
+langen^Je jetai un œil à l'horloge.^@
+langen^Il allait bientôt être minuit.^@
+br
+langjp　１０月５日が、二日目が終わる。\
+langen^Le 5 octobre, notre deuxième journée sur Rokkenjima, touchait à sa fin.^\
+
+langjp　………昨日の、狂った１０月４日が嘘のようだ。@
+langen^En repensant à la folie du 4 octobre, j'avais presque l'impression d'avoir fait un cauchemar.^@
+br
+langjp　…それくらいに、……俺へのテストとやらの後、何も起こらなかった。\
+langen^Depuis ce fameux test qu'on m'avait imposé, il ne s'était pourtant plus rien passé.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mkit_1bn.jpg",":b;bmp\background\mainbuilding\mkit_1bn.png",22
+
+langjp　何も起こらない。@
+langen^J'attendais toujours qu'un événement se produise.^@
+br
+langjp　電話も来ないし、手紙も来ない。@
+langjp　誰も来ないし、誰にも襲われない。@
+langen^Personne ne m'avait téléphoné ni envoyé la moindre lettre.^@
+langen^Et personne n'était venu me trouver ou m'attaquer.^@
+br
+langjp　何にも起こりゃしない。\
+langen^Bref, il ne s'était absolument rien passé.^\
+
+
+langjp　緊張してた分の時間と体力を返しやがれと悪態をつきたくなるくらいに、@………その後、丸一日、かっきり２４時間。@
+langen^J'en venais presque à réclamer qu'on me rende toute l'énergie gaspillée à rester sur mes gardes... ^@^car vingt-quatre heures entières s'étaient écoulées depuis.^@
+br
+langjp　……なぁんにもなかった。@
+langen^... Il ne s'est riiien passé.^@
+br
+langjp　そしてきっと、この後も何も起こらないだろう。\
+langen^Et tout indiquait que cette attente ne déboucherait sur rien.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+dllefe 1,1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_o1an.jpg",":b;bmp\background\mainbuilding\m_o1an.png",2
+
+langjp　………まさにかっきり２４時間前。@
+langen^... Il y a exactement vingt-quatre heures.^@
+br
+langjp　…俺はベアトリーチェに、屋敷の玄関前に呼び出された。\
+langen^... Béatrice m'avait fait venir devant l'entrée du manoir.^\
+
+gosub *BEA_Isyou2
+
+dllefe_off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",0
+ld c,$BEA_waraiA2,22
+
+langjp　そこで、当主跡継ぎを決めるとかいうおかしなテストを出された。@
+langjp　俺は俺なりに真面目に答えたのだが、どうにも向こうと噛み合わない。\
+langen^Elle m'avait imposé un drôle de test censé déterminer qui méritait de succéder au chef de famille.^@
+langen^J'y avais répondu sérieusement, du mieux que je pouvais, mais nous avions parlé sans parvenir à nous comprendre.^\
+
+ld c,$BEA_fumanA1,80
+
+langjp　ベアトリーチェは、勝手にヘソを曲げて黙り込んでしまった。@
+langen^Elle avait fini par se vexer toute seule et se murer dans le silence.^@
+br
+langjp　俺が、ウンとかスンとか言ってみろと怒鳴っても、何も答えやしない。\
+langen^J'avais beau lui demander de répondre quelque chose, n'importe quoi, elle était restée muette.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+dllefe 1,1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_o1bn.jpg",":b;bmp\background\mainbuilding\m_o1bn.png",25
+
+langjp　真里亞はどこだと言ったら、礼拝堂へ行けとだけ答え、引っ込んでしまった。\
+langen^Quand je lui avais demandé où se trouvait Maria, elle s'était contentée de m'envoyer à la chapelle avant de disparaître.^\
+
+langjp　まったくにもって、拍子抜けだった。@
+langjp　……曲がりなりにもテストだったんなら、せめて合否くらい教えろってんだ。@
+langen^Franchement, ça m'avait laissé complètement sur ma faim.^@
+langen^Même si son test ne rimait à rien, elle aurait au moins pu m'annoncer si je l'avais réussi !^@
+
+br
+langjp　ご苦労様です、結果は後ほど郵送いたしますってか？@　……ふざけやがって。\
+langen^C'était quoi, « Merci de votre participation, les résultats vous seront communiqués ultérieurement » ? ^@^... Faut pas déconner.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+langjp　とにかく俺は礼拝堂へ向かった。\
+langen^Je m'étais néanmoins dirigé vers la chapelle.^\
+
+langjp　……テストにしくじって、譲治の兄貴も朱志香も殺された。@
+langen^... George et Jessica avaient raté leur test, et ils avaient été tués.^@
+
+br
+langjp　真里亞まで殺されるわけにはいかない。@
+langen^Hors de question que Maria subisse le même sort.^@
+br
+langjp　……それに、真里亞を殺そうとしている何者かを、とっ捕まえるチャンスかもしれない。\
+langen^Avec un peu de chance, je mettrais même la main sur celui qui cherchait à l'assassiner.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\chapel\cha_o2an.jpg",":b;bmp\background\chapel\cha_o2an.png",24
+
+langjp　礼拝堂は、近付いたら怒られると幼かった頃に朱志香にさんざん言われていたので、@行ったことはないが、場所だけは知っていた。\
+langen^Quand j'étais petit, Jessica m'avait tellement répété que j'aurais des ennuis si je m'approchais de la chapelle que je n'y avais jamais mis les pieds.^@^ Mais je savais au moins où elle se trouvait.^\
+
+langjp　そこに人の気配はなく、@………その扉の前に、鍵束だけが落ちていた。@
+langen^À mon arrivée, personne ne m'attendait... ^@^seul un trousseau de clés reposait devant la porte.^@
+
+se1 32
+
+langjp　それで礼拝堂の扉を開けろという意味なのかと思ったが、どれを試しても合わない。\
+langen^J'avais d'abord cru qu'on m'invitait à entrer, mais aucune des clés ne convenait à la serrure.^\
+
+langjp　真里亞の名を叫ぶが、返事はまったくなかった。@
+langjp　礼拝堂の周りも探すが、真っ暗な中、懐中電灯で探すには無理もあった。\
+langen^J'avais appelé Maria aussi fort que possible, sans obtenir la moindre réponse.^@
+langen^J'avais également fouillé les alentours avec ma lampe torche, sans découvrir aucune trace d'elle.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+langjp　俺は、この鍵束がマスターキーの束で、屋敷の扉も開けるのではないかと気付く。\
+langen^Je compris alors que le trousseau contenait peut-être des passe-partout permettant d'ouvrir les portes du manoir.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_o1an.jpg",":b;bmp\background\mainbuilding\m_o1an.png",23
+
+langjp　真里亞の気配もなかったので、屋敷に戻った。\
+langen^Puisque je ne trouvais aucune trace de Maria, je fis demi-tour vers le manoir.^\
+
+se1 17
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",10
+dllefe_off
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\ment_1an.jpg",":b;bmp\background\mainbuilding\ment_1an.png",22
+
+langjp　屋敷は静寂に包まれていた。@
+langjp　そして、酷い異臭も。\
+langen^À mon retour, le manoir était plongé dans un silence absolu.^@
+langen^Une odeur épouvantable y flottait également.^\
+
+langjp　しかし、人間の慣れってのはすごい。@
+langen^L'être humain possède tout de même une capacité d'adaptation incroyable.^@
+br
+langjp　本来なら、この屋敷中にその臭いはまだ立ち込めているはずなのだ。\
+langen^Normalement, cette odeur aurait encore dû empester tout le manoir.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mhal_2an.jpg",":b;bmp\background\mainbuilding\mhal_2an.png",24
+
+langjp　しかし、もうすっかり慣れちまって、気にならなくなってしまった。@
+langjp　どっかの家がおかしな焼肉を焦がしたくらいにしか感じない。\
+langen^Pourtant, je m'étais habitué à cette puanteur au point de ne presque plus y faire attention.^@
+langen^Elle me rappelait une maison où quelqu'un aurait fait brûler une quantité monstrueuse de viande.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m1f_p1bn.jpg",":b;bmp\background\mainbuilding\m1f_p1bn.png",24
+
+langjp　最初は俺もその臭いに面食らったが、とにかく、食堂へ向かい、@/
+langen^Au début, l'odeur m'avait moi aussi pris de court, mais je me suis quand même dirigé vers la salle à manger... ^@/
+
+textoff
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+se1 15
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1en.jpg",":b;bmp\background\mainbuilding\mdin_1en.png",24
+wait 1000
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1b.jpg",":b;bmp\background\efe\blood_1b.png",22
+
+langjp……郷田さんたちが詳しく話すのを躊躇うほどの、気の毒な死体の数々を見つけた。/
+sl
+langen^et j'y avais retrouvé les cadavres dont Monsieur Gohda et les autres avaient hésité à me parler.^@/
+mov %play_scene,40350 : mov %r_hyouji_side,0 : mov %r_hyouji_cha,0 : seplay2 9,1061,70
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+
+
+langjp　一番最初の犠牲になった夏妃伯母さんたちの遺体だった。@
+langen^Il s'agissait de tante Natsuhi et des autres, les six premières victimes.^@
+br
+
+langjp　見事に全員が頭部を半分、ぶちまけられていて、@俺に検死の知識がなくても、１００％の死亡を宣告できる惨いものだった…。\
+langen^Chacun avait eu la moitié de la tête pulvérisée,^@^ et, même sans connaissances en médecine légale, je savais qu'aucun n'avait survécu.^\
+
+langjp　……しかもその上、顔の残り半分はちゃんと残ってるんだから、身元確認まで容易に出来る。@
+langen^L'autre moitié des visages était pourtant restée suffisamment intacte pour permettre leur identification.^@
+br
+langjp　…実に至れり尽くせりな死体だった。\
+langen^On aurait presque dit que quelqu'un avait soigneusement préparé ces cadavres pour qu'on les reconnaisse.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　そして、その６人の遺体だけでなく、もう１人、遺体が増えていた。\
+langen^Et en plus de ces six corps... il y en avait un septième.^\
+
+langjp　７人目の遺体は、…………真里亞だった。/
+sl
+langen^Ce septième corps appartenait à Maria.^@/
+mov %play_scene,40360 : mov %r_hyouji_side,0 : mov %r_hyouji_cha,0 : seplay2 9,1061,70
+mov %disable_adv_clear, 1
+langjp:noclear_cw:
+langen:noclear_cw:
+mov %disable_adv_clear, 0
+
+br
+langjp　楼座叔母さんの遺体の傍らに、並んで眠るように、横たわっていた。\
+langen^Elle reposait auprès de tante Rosa, comme si elles dormaient côte à côte.^\
+
+langjp　……………泣いたさ。@
+langen^... Oui, j'ai pleuré.^@
+br
+langjp　無邪気な幼子の死に。@そして、親父たちの無惨な死に様に。@
+langen^Je pleurais cette enfant innocente qu'on avait tuée,^@^ autant que mon père et les autres, morts dans des conditions atroces.^@
+br
+langjp　帽子掛けの槍を振り回して、屋敷中を駆け回り、出てきやがれと叫んださ。\
+langen^J'avais arraché la lance d'un porte-manteau et parcouru les couloirs en criant au meurtrier de se montrer.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m2f_p1bn.jpg",":b;bmp\background\mainbuilding\m2f_p1bn.png",22
+
+langjp　……しかし、人の気配はまったくない。\
+langen^... Mais il n'y avait absolument aucune présence humaine.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m2f_p1cn.jpg",":b;bmp\background\mainbuilding\m2f_p1cn.png",24
+
+langjp　……どこかに隠れていて、俺の背中から襲いかかろうって魂胆だろうと、隠れ場所を探し回ったり、@慎重になったり、@わざと隙を見せてみたりと色々試してみたが、猫の子一匹、現れりゃしなかった…。\
+langen^Je m'étais dit que le coupable se cachait peut-être quelque part, prêt à me sauter dessus par-derrière.^@^ Alors j'avais fouillé toutes les cachettes possibles, redoublé de prudence, puis même fait exprès de baisser ma garde...^@^ J'avais tout essayé, mais pas même un chat n'avait montré le bout de son nez...^\
+
+textoff
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+
+fedexx 0,50,0,0,0,0,2000
+E_B
+
+dllefe 1,1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_o1an.jpg",":b;bmp\background\mainbuilding\m_o1an.png",22
+
+me2v 5,50
+
+langjp　そして、朝が来た。@
+langen^Puis le matin est arrivé.^@
+br
+langjp　……緊張感と疲労感、そして眠さが入り混じった、最悪の夜明けだった。\
+langen^Entre la peur, l'épuisement et le manque de sommeil, cette aube avait été l'une des pires de ma vie.^\
+
+textoff
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_o1ar.jpg",":b;bmp\background\mainbuilding\m_o1ar.png",2
+wait 2000
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+dllefe_off
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m2f_p1ar.jpg",":b;bmp\background\mainbuilding\m2f_p1ar.png",22
+
+
+langjp　人間ってすげえもんだ。@
+langen^L'être humain est vraiment incroyable.^@
+br
+langjp　……殺人犯がどこに潜んでるかわからねぇってのに、自分の命の心配より、眠気と疲れを優先しやがる。\
+langen^... Même quand on ne sait pas où se cache un meurtrier, le corps finit par faire passer la fatigue et le sommeil avant sa propre survie.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m1f_p1cr.jpg",":b;bmp\background\mainbuilding\m1f_p1cr.png",25
+
+langjp　……その頃にはもう、何だか馬鹿馬鹿しくなり始めていた。@
+langen^À force, cette attente sans fin commençait à me paraître franchement ridicule.^@
+br
+langjp　夜が明けるまで、６時間もたっぷり、俺は屋敷を歩き回り、姿を見せやがれと怒鳴って回っていたのだから。\
+langen^Après tout, pendant six bonnes heures, jusqu'à l'aube, j'avais arpenté le manoir en hurlant au coupable de se montrer.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　丹念に探したし、疲れて隙も晒した。@
+langjp　それでも、誰も襲いかかっては来ない。@
+langen^J'avais fouillé méticuleusement, puis la fatigue m'avait fait baisser ma garde.^@
+langen^Et malgré ça, personne n'était venu m'attaquer.^@
+br
+langjp　もう俺は呆れ果て、好きにしやがれとなったわけだ………。\
+langen^À la fin, j'en avais tellement eu marre que je m'étais dit : faites ce que vous voulez...^\
+
+langjp　船は台風が通り過ぎるまで来ない。@
+langjp　台風は明日には抜けるとテレビで言っているから、今日も丸一日時間がある。@
+langen^Le bateau ne viendra pas avant que le typhon soit passé.^@
+langen^D'après la télévision, il devrait être passé demain, donc j'avais encore toute la journée devant moi.^@
+br
+langjp　ぼんやりとしているのも面白くなく、@……俺は、きっと警察に怒られるだろうことを承知で、探偵ごっこを始めた。\
+langen^Rester là sans rien faire n'avait aucun sens... ^@^alors, malgré ce qu'en penserait la police, j'avais décidé d'examiner les lieux.^\
+
+bgm1v 14,70
+fede 10,1000
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1fr.jpg",":b;bmp\background\mainbuilding\mdin_1fr.png",26
+
+langjp　まず、一番最初の殺人が起こった、食堂。\
+langen^D'abord, la salle à manger, où avait eu lieu le tout premier meurtre.^@
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1b.jpg",":b;bmp\background\efe\blood_1b.png",22
+
+langjp　最初に殺された６人は、とにかくお気の毒だ。@
+langen^Les six premières victimes avaient vraiment connu une fin atroce.^@
+br
+langjp　……恐らく凶器は銃。@
+langjp　マグナム弾とかショットガンとか、そういう強力なもので頭を砕かれたのではないか。@
+langen^... L'arme du crime était probablement une arme à feu.^@
+langen^Leur tête avait sans doute été pulvérisée par une arme puissante, un magnum ou un fusil à pompe.^@
+br
+langjp　妥当な推理だった。\
+langen^C'était une déduction raisonnable.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1cn.jpg",":b;bmp\background\mainbuilding\mdin_1cn.png",22  ;fixed lighting issue
+
+langjp　それに比べたら、７人目の遺体である真里亞は、遥かにマシな綺麗な死に方をしていた。\
+langen^À côté de ça, Maria, la septième victime, avait eu une mort bien plus propre.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1gn.jpg",":b;bmp\background\mainbuilding\mdin_1gn.png",22  ;fixed lighting issue
+
+langjp　一見したところ、外傷はなく、どうやって殺されたのかはわからない。@
+langen^À première vue, elle ne portait aucune blessure extérieure, alors je ne comprenais pas comment elle avait été tuée.^@
+br
+langjp　しかし、口元から泡を吐き出したような痕跡があり、@それはテレビドラマなどで見るような、典型的な毒殺の死体のように見えた。\
+langen^Autour de sa bouche, il restait cependant quelques traces de mousse séchée,^@^ comme chez les victimes d'empoisonnement qu'on voit dans les séries télévisées.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　真里亞は、礼拝堂に呼び出されてテストを受けたのでは…？@
+langen^Maria n'avait-elle pas été appelée à la chapelle pour y passer son test... ?^@
+br
+langjp　……それがどうしてこの死体だらけの食堂にいて、母親の脇に並んで、死んでいるのか……？\
+langen^... Alors pourquoi était-elle morte ici, dans cette salle à manger remplie de cadavres, allongée à côté de sa mère... ?^\
+
+langjp　もし仮に毒物が死因だとしたなら、……それは誰に与えられたのか。\
+langen^Si le poison était bien la cause de sa mort... qui le lui avait fait prendre ?^\
+
+langjp　着衣に乱れはない。@
+langen^Ses vêtements n'étaient pas en désordre.^@
+br
+langjp　無理やり押さえつけられて、毒物の注射を受けたとは考え難い。@
+langen^Il était difficile d'imaginer qu'on l'ait maintenue de force pour lui injecter du poison.^@
+br
+langjp　………毒のカプセルか何かを与えられ、飲まされたと考える方が妥当だろう。\
+langen^... Il semblait plus logique de penser qu'on lui avait donné une capsule de poison ou quelque chose du genre, puis qu'on lui avait fait l'avaler.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1an.jpg",":b;bmp\background\mainbuilding\mdin_1an.png",26  ;fixed lighting issue
+
+langjp　しかし、この部屋に散らばる乱暴に破壊された死体に比べれば、真里亞の死体は綺麗過ぎる。@
+langen^Comparé aux corps atrocement mutilés dans cette pièce, celui de Maria paraissait presque paisible.^@
+br
+langjp　銃なら引き金を引くだけでいい。@しかし毒殺は、飲ませるにしろ注射するにしろ、はるかに手間が掛かる。@
+langen^Avec une arme à feu, il suffit d'appuyer sur la détente. ^@^Mais un empoisonnement, qu'on lui fasse boire le poison ou qu'on l'injecte, demande beaucoup plus d'efforts.^@
+br
+langjp　犯人の凶暴性から考えても、明らかに真里亞の死だけは別格の扱いを受けているように思われた。\
+langen^Le meurtrier avait apparemment réservé à Maria un traitement très différent de celui des autres victimes.^\
+
+
+langjp　なぜ真里亞にだけ、眠るような死が与えられたのか。@
+langen^Pourquoi seule Maria semblait-elle avoir trouvé la mort dans son sommeil ?^@
+br
+
+langjp　………殺されたという意味においては、気の毒であることは間違いないのだが、@……なぜか真里亞だけ、その殺し方が、とても丁寧なような印象を受けた……。\
+langen^... Bien sûr, puisqu'elle avait été tuée, ça n'en restait pas moins tragique... ^@^mais pour une raison étrange, sa mort à elle donnait l'impression d'avoir été mise en scène avec beaucoup de soin...^\
+
+langjp　真里亞の手は、死者がそうするかのように、お腹の上で両手を組まれている。@
+langen^Les deux mains de Maria étaient jointes sur son ventre, comme on arrange celles d'un défunt.^@
+br
+langjp　……死ぬ間際に真里亞が自らそうしたのだろうか……？@
+langjp　……普通、こういうのは、死後に誰かがするものではないのか……？\
+langen^... Maria les avait-elle placées ainsi elle-même juste avant de mourir... ?^@
+langen^... Normalement, ce genre de pose est plutôt donné au corps par quelqu'un après la mort, non... ?^\
+
+langjp　頭部を半分砕かれた母親と、添い寝をするように、安らかに眠る真里亞。@
+langen^Elle reposait paisiblement près de sa mère, dont la moitié de la tête avait été pulvérisée.^@
+br
+langjp　……その対比は、なぜかとても気になった。\
+langen^... Pour une raison ou une autre, ce contraste me troublait énormément.^\
+
+langjp　死因も含めて、真里亞の死は多くの謎に包まれているだろう…。\
+langen^Même sans connaître la cause exacte de sa mort, cette différence soulevait déjà bien des questions...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1en.jpg",":b;bmp\background\mainbuilding\mdin_1en.png",24  ;fixed lighting issue
+
+langjp　そして何よりも。@
+langen^Et surtout.^@
+
+me1v 16,50
+
+br
+langjp　この食堂で最大の謎は、……「落とし穴」だった。@
+langjp　……蔵臼伯父さんたちも、そして郷田さんたちも口にした、「落とし穴」だ。\
+langen^Le plus grand mystère de cette salle à manger... c'était les « trappes ».^@
+langen^... Ces « trappes » dont avaient parlé aussi bien l'oncle Krauss et les autres que Gohda et Kumasawa.^\
+
+langjp　６人が殺された後、さらに５人が「落とし穴」に落ちて捕らわれた。@
+langen^Après le meurtre des six premiers, cinq autres personnes étaient tombées dans des « trappes » et avaient été capturées.^@
+br
+langjp　………落とし穴って何だ。@
+langjp　がばっと開いて落ちる、あれだよな……？\
+langen^... Mais au juste, c'est quoi, une trappe ?^@
+langen^Ce truc qui s'ouvre d'un coup sous tes pieds et te fait tomber, non... ?^\
+
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1g.jpg" : mov $oldnew_bg,":b;bmp\background\mainbuilding\mdin_1gn_lit.png" : mov $witchh12,$oldnew_bg_old : if %4095 = 0 mov $witchh12,$oldnew_bg
+bg $witchh12,25  ;fixed lighting issue
+langjp　床にはしっかりと、くたびれてはいるが貫禄ある絨毯が敷かれている。@
+langen^Le sol était bien là, recouvert d'un tapis un peu usé mais encore imposant.^@
+
+br
+langjp　……どう見ても一枚物だ。\
+langen^À première vue, le tapis formait une seule pièce.^\
+
+langjp　落とし穴が開くってんなら、ちゃんとそこだけ切れ目が入れてあるってことになる。@
+langen^Si une trappe s'était ouverte, il devrait forcément y avoir une jointure à cet endroit précis.^@
+br
+langjp　……それに、落とし穴なんて細工があったら、あるけばギシギシとか、音を立てるんじゃないか？？\
+langen^... Et puis, s'il y avait un mécanisme de trappe, ça grincerait bien quelque part quand on marche dessus, non ??^\
+
+langjp　いくら歩き回り、絨毯を撫で回してみても、とても落とし穴が隠されているとは思えない。\
+langen^J'avais beau marcher dessus et en examiner les bords, je ne trouvais aucune trace d'une trappe.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　第一、ひとりの人間を落とすならともかく、５人も落としてる。@
+langen^Faire tomber une personne, à la rigueur, mais les témoignages parlaient de cinq victimes.^@
+br
+langjp　……彼らの話を総合する限り、彼らの落下地点はそれぞれ違うわけで、@少なくとも５ヶ所は落とし穴が隠されてることになる。@
+langen^... D'après l'ensemble de leurs témoignages, chacun est tombé à un endroit différent, ^@^ce qui voudrait dire qu'il y avait au moins cinq trappes cachées.^@
+br
+langjp　……………ってことは何だ。\
+langen^... Alors, ça veut dire quoi ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1dn.jpg",":b;bmp\background\mainbuilding\mdin_1dn.png",26  ;fixed lighting issue
+
+langjp　この部屋は実は、全ての床が落とし穴に出来るようになっていて、@ボタンひとつで好きな場所に落とし穴が開けるとか、……そういう構造なのか？？@
+langen^Cette pièce aurait donc été conçue pour que n'importe quelle partie du sol puisse s'ouvrir en trappe, et qu'en appuyant sur un bouton, on puisse en déclencher une où on veut...^@^ Ce serait vraiment un mécanisme pareil ??^@
+br
+langjp　忍者屋敷もびっくりの、とんでもないカラクリだ。\
+langen^Même un manoir de ninja passerait pour banal à côté d'un truc pareil.^\
+
+langjp　……それでもこの話を親父たちが聞いたなら、@« 祖父さまならやりかねない、作りかねない »ということになるのだろうか。\
+langen^... Mais si Papa et les autres entendaient ça,^@^ ils diraient sûrement : « Grand-père en serait bien capable, il aurait très bien pu construire ça. »^\
+
+langjp　……とにかく、食堂ではそれ以上の、何もわかりはしなかった。\
+langen^Mes recherches dans la salle à manger ne m'avaient finalement rien appris de plus.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+
+langjp　落とし穴は存在しないのか。@それとも、存在しているけれども、素人の俺には発見できないだけなのか。@
+langjp　その判断はつかない。@
+langen^Ces trappes étaient-elles imaginaires ?^@^ Ou existaient-elles réellement, sans que je sois capable de les repérer ?^@
+langen^Impossible de trancher.^@
+br
+langjp　彼らが、あったと主張する以上。@……俺に発見できなくても、その存在を無視することは出来ないのだ……。\
+langen^Puisque plusieurs personnes affirmaient les avoir vues,^@^ je ne pouvais pas simplement écarter leurs témoignages parce que je ne comprenais pas le mécanisme.^\
+
+fede 0,1000
+wait 1000
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m1f_p1an.jpg",":b;bmp\background\mainbuilding\m1f_p1an.png",23  ;fixed lighting issue
+
+bgm1v 26,70
+
+langjp　その次に殺されたのは、朱志香と譲治の兄貴だ。@
+langen^Les suivants à avoir été tués furent Jessica et George.^@
+br
+langjp　譲治の兄貴については、俺のテストで呼び出された時に発見している。\
+langen^J'avais découvert George quand j'avais été appelé pour mon test.^\
+
+textoff
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+
+langjp　薔薇庭園の東屋に呼び出され、……多分、銃で、眉間を撃たれた。\
+langen^Il avait été convoqué à la tonnelle de la roseraie... et, probablement, abattu d'une balle entre les yeux.^\
+
+textoff
+
+me1v 13,50
+
+mono 1
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_r1cn.jpg",":b;bmp\background\garden\garden_r1cn.png",0
+ld c,$GEO_ikariA1,22
+wait 1000
+
+se2v 46,50
+;bg blood_1a,1
+set_oldnew_bg g0402,blood_1a,1,1
+quakex 5,1200
+
+wait 1000
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+wait 2000
+clr_oldnew_bg
+mono off
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m2f_p1bn.jpg",":b;bmp\background\mainbuilding\m2f_p1bn.png",24
+
+langjp　朱志香は屋敷の２階の、自分の部屋に呼び出された。\
+langen^Jessica avait été convoquée dans sa propre chambre, au deuxième étage du manoir.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_door1.jpg",":b;bmp\background\mainbuilding\m_door1.png",24
+se1 32
+
+langjp　朱志香の部屋には鍵が掛かっていた。@
+langjp　しかし、俺にはマスターキーがあるから何も問題はない。\
+langen^La porte de sa chambre était verrouillée.^@
+langen^Mais ça ne posait aucun problème, puisque j'avais un passe-partout.^\
+
+se1 16
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+;bg MJES_1aR,22
+set_oldnew_bg g0401,MJes_1aN,1,22
+
+langjp　そして室内は、………ひどい有様だった。@
+langen^À l'intérieur, le spectacle était horrible.^@
+br
+langjp　…でも、食堂でもうお馴染みの死体だから、……多少は免疫もあった。\
+langen^... Mais après ce que j'avais déjà vu dans la salle à manger, j'avais malheureusement commencé à m'endurcir.^\
+
+;bg MJES_1e,25
+set_oldnew_bg g0401,MJes_1eN,1,25  ;fixed lighting issue
+
+langjp　受話器が外れて、ぶら下がっている。@
+langjp　……俺との電話中に、殺されたのだろうか。@
+langen^Le combiné était décroché et pendait dans le vide.^@
+langen^... Est-ce qu'elle avait été tuée pendant qu'elle me parlait au téléphone ?^@
+br
+
+;bg blood_1a,22
+set_oldnew_bg g0401,blood_1a,1,22
+
+langjp　朱志香はすぐその脇の壁に寄りかかるようにして、/
+sl
+langjp^^!d800……頭部を半分、ブチまけている。/
+sl
+langen^Jessica était adossée au mur juste à côté^@/
+sl
+langen:!d800^... la moitié du crâne éclatée.^@/
+
+mov %play_scene,40370 : mov %r_hyouji_side,0 : mov %r_hyouji_cha,0 : seplay2 9,1061,70
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+
+;bg blood_1aR,22
+set_oldnew_bg g0401,blood_1aR,1,22
+
+langjp　この状況を見る限りなら、……まるで、電話中に殺されたように見える。@
+langen^La disposition des lieux donnait l'impression que Jessica avait été tuée pendant notre dernier appel.^@
+br
+langjp　なら、犯人は目の前にいたのだろうか？@
+langen^Dans ce cas, le coupable était-il juste devant elle ?^@
+br
+langjp　………電話の向こうの朱志香の声には、そのような感じはなかった。\
+langen^... Pourtant, à la voix de Jessica au téléphone, je n'avais pas eu cette impression.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+
+langjp　朱志香は確か、……「やられちまったぜ。」と、そう言った。@
+langen^Jessica avait dit, si je me souvenais bien... « Je me suis fait avoir. »^@
+br
+langjp　電話の時点で、すでに瀕死の重傷を負っていたと見るのが妥当だろう。\
+langen^Il serait logique de penser qu'au moment de l'appel, elle avait déjà reçu une blessure mortelle.^\
+
+langjp　そうだ、そしてこうも言った。@
+langen^Oui. Et elle avait aussi dit ceci.^@
+br
+advchar "04"
+langjp:dwave_jp 0, jes_9e73:「戦人が来た時には、私は頭を半分ブチまけた死体だよ。」、@そうだ、そう言った。\
+langen:dwave_eng 0, jes_9e73:^« Quand tu arriveras, Battler, je serai un cadavre avec la moitié du crâne éclaté. » ^@^Oui, c'est bien ce qu'elle avait dit.^\
+
+;bg blood_1a,26
+set_oldnew_bg g0401,blood_1a,1,26
+
+advchar "-1"
+langjp　………朱志香の死体を見る限り、頭部損壊以外に外傷はない。@
+langen^... À en juger par le corps de Jessica, elle ne portait aucune blessure extérieure en dehors de celle à la tête.^@
+br
+langjp　死を覚悟するような重症を負い、電話の最中に死亡したと？\
+langen^Aurait-elle reçu une blessure assez grave pour comprendre qu'elle allait mourir, puis succombé au beau milieu de notre appel ?^\
+
+langjp　しかし電話の口調では、朱志香はとりあえず、難を逃れていたように思う。@
+langjp　目の前に犯人がいたら、のんびり電話なんか出来ないはずだ。\
+langen^Pourtant, au téléphone, elle m'avait donné l'impression d'avoir échappé au danger, au moins provisoirement.^@
+langen^Si le coupable avait été juste devant elle, elle n'aurait pas pu discuter tranquillement au téléphone.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　では、電話中に犯人が来て、朱志香を殺した…？\
+langen^Alors... le coupable serait arrivé pendant l'appel et aurait tué Jessica... ?^\
+
+;bg MJES_1e,22
+set_oldnew_bg g0401,MJes_1eN,1,22  ;fixed lighting issue
+
+langjp　………いや、それはない。@
+langjp　なぜならこの部屋が施錠されていたからだ。\
+langen^... Non, ça ne collait pas.^@
+langen^Puisque cette pièce était verrouillée.^\
+
+langjp　……いや、そんなこと当てになるものか。@
+langen^... Non. À bien y réfléchir, ça ne prouvait rien.^@
+br
+langjp　……犯人が犠牲者の誰かから、マスターキーを奪っていたなら、施錠なんて何の意味もないのだから。\
+langen^... Si le coupable avait volé un passe-partout à l'une des victimes, le verrou ne voulait plus rien dire.^\
+
+langjp　しかし、頭部以外に外傷はない。@
+langen^Mais elle n'avait aucune blessure extérieure ailleurs qu'à la tête.^@
+br
+langjp　………となれば、死を覚悟する外傷と、実際に頭部を損壊させた外傷は異なるもので２回あり、@それらがいずれも同じ部位に対して行なわれた、……と考えるべきだろうか。\
+langen^... Dans ce cas, fallait-il imaginer que la blessure qui lui avait fait comprendre qu'elle allait mourir et celle qui avait réellement détruit sa tête étaient deux blessures distinctes, ^@^infligées toutes les deux au même endroit... ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　つまり、朱志香は頭を強烈に殴られ、ものすごい大怪我をした。@
+langen^Bref, Jessica avait reçu un coup extrêmement violent à la tête et avait été grièvement blessée.^@
+br
+langjp　そして俺に電話を掛け、……そのまま気を失ったか、あるいは死亡した。@
+langen^Puis elle m'avait téléphoné... avant de perdre connaissance, ou de mourir pendant l'appel.^@
+br
+langjp　そこへ犯人がやってきて、改めて頭部を破壊した、とか。\
+langen^Puis le coupable serait revenu plus tard pour lui détruire la tête une seconde fois... quelque chose comme ça.^\
+
+clr_oldnew_bg
+textoff
+mono 1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1cn.jpg",":b;bmp\background\mainbuilding\mjes_1cn.png",0  ;fixed lighting issue
+ld r,$JES_odorokiA1,22
+wait 2000
+ld r,$JES_ikariA2,80
+wait 1000
+se1 12
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2e.jpg",":b;bmp\background\efe\blood_2e.png",1
+quakex 4,1000
+
+langjp　この部屋に呼び出された朱志香はここで犯人に襲われ、大怪我をした。@
+langen^Après avoir été appelée dans sa chambre, Jessica y avait été attaquée par le coupable et grièvement blessée.^@
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_door1.jpg",":b;bmp\background\mainbuilding\m_door1.png",24
+br
+langjp　そして、犯人は殺したと思い、一度は立ち去る。\
+langen^Le coupable, la croyant morte, était alors reparti.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1e.jpg",":b;bmp\background\mainbuilding\mjes_1en.png",9  ;fixed lighting issue
+
+langjp　……しかし朱志香は奇跡的に息を吹き返し、俺に、まさにダイイングメッセージとなる電話を掛ける。\
+langen^... Mais Jessica avait miraculeusement repris connaissance et m'avait appelé, laissant ce qui allait devenir son message de mourante.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_door2.jpg",":b;bmp\background\mainbuilding\m_door2.png",24
+
+langjp　そして殺し損ねていたことに気付き、犯人が大慌てで戻ってきて、大量出血で意識を失った朱志香にトドメを……。@
+langen^Puis le coupable, comprenant qu'il ne l'avait pas achevée, serait revenu en catastrophe pour lui porter le coup de grâce alors qu'elle avait perdu connaissance après une hémorragie massive...^@
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",64
+bg white,22
+se1 46
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1a.jpg",":b;bmp\background\efe\blood_1a.png",1
+quakex 5,1200
+
+br
+langjp　……………それで一応の筋は通る。@
+langen^Ainsi, le scénario tenait à peu près debout, même s'il reposait sur beaucoup de suppositions.^@
+br
+langjp　朱志香がなぜ、そのトドメによる死因を正確に予見できたのかを除けば。\
+langen^À ceci près que Jessica avait prédit avec exactitude la manière dont ce coup de grâce la tuerait.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+mono off
+
+langjp　そして、朱志香からの電話にはもうひとつ、気になる部分があった。\
+langen^Mais un autre détail de l'appel de Jessica continuait de me troubler.^\
+
+langjp　朱志香はこう言ったんだ。\
+langen^Jessica avait dit ceci.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_spiral_1a.jpg",":b;bmp\background\efe\different_spiral_1a.png",22
+
+advchar "04"
+langjp:dwave_jp 0, jes_9e74:「譲治兄さんも駄目だった。@:dwave_jp 0, jes_9e75:ありゃあ、即死だ。」と。@
+;＜朱志香
+langen:dwave_eng 0, jes_9e74:^George aussi y est passé. ^@:dwave_eng 0, jes_9e75:^Lui... il est mort sur le coup...^@
+br
+advchar "-1"
+langjp　……まるで、譲治の兄貴が殺されるところを目撃したかのような言い方だった。\
+langen^Elle avait parlé comme si elle avait assisté à la mort de George.^\
+
+langjp　しかし、朱志香の部屋の窓からは、確かに薔薇庭園は見えるものの、@譲治の兄貴が呼び出された東屋は、………屋根を認められはするものの、かなり遠い。@
+langen^Depuis la fenêtre de la chambre de Jessica, on voyait bien la roseraie, ^@^et même le toit de la tonnelle où George avait été convoqué... mais c'était très loin.^@
+br
+langjp　台風の夜であったことを加味すれば、この窓から東屋での一部始終が目撃できたとは、とても思えない。\
+langen^Avec ce typhon, en pleine nuit, il était difficile d'imaginer qu'elle ait observé précisément la tonnelle depuis sa fenêtre.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　……そして何よりも。@
+langen^... Et surtout.^@
+br
+langjp　朱志香は譲治の兄貴より先に出発している。@
+langjpだから、譲治の兄貴のテストが東屋で行なわれたことを、知らないはずなのだ。\
+langen^Jessica était partie avant George.^@
+langen^Elle ne pouvait pas davantage savoir que le test de George aurait lieu à la tonnelle.^\
+
+langjp　どうして朱志香は、譲治の兄貴が殺されたことを、……知っていたんだ……？\
+langen^Alors comment Jessica savait-elle... que George avait été tué... ?^\
+
+fede 0,2000
+wait 1000
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m2f_r4an.jpg",":b;bmp\background\mainbuilding\m2f_r4an_lit.png",26  ;fixed lighting issue
+
+bgm1 20
+
+langjp　…………そして、屋敷全体の捜索の中で、霧江さんの死体も見つけた。/
+sl
+langen^... Et en fouillant tout le manoir, j'avais également retrouvé le corps de Kyrie.^@/
+mov %play_scene,40380 : mov %r_hyouji_side,0 : mov %r_hyouji_cha,0 : seplay2 9,1061,70
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+
+
+langjp　一階の奥の、古い客室の一室だった。@
+langen^Elle se trouvait dans l'une des anciennes chambres du manoir, au fond du rez-de-chaussée.^@
+br
+langjp　かつてゲストハウスが建てられる前は、親族たちはここに泊まっていた。\
+langen^Avant la construction de la résidence des invités, les membres de la famille logeaient dans ces chambres.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m2f_r4bn.jpg",":b;bmp\background\mainbuilding\m2f_r4bn.png",24  ;fixed lighting issue
+
+langjp　……霧江さんの状況も、朱志香とそっくりだった。\
+langen^La scène de la mort de Kyrie rappelait étrangement celle de Jessica.^\
+
+langjp　俺との電話中に殺されたのだろう。@
+langjp　受話器がだらしなくぶら下がり、……その脇に霧江さんが、倒れている。@
+langen^Elle aussi avait probablement été tuée pendant notre conversation téléphonique.^@
+langen^Le combiné pendait encore dans le vide, et Kyrie gisait juste à côté.^@
+br
+langjp　しかし、殺され方が朱志香のそれとは大きく異なった。\
+langen^Mais la façon dont elle avait été tuée était très différente de celle de Jessica.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　頭部を砕かれてはいない。@
+langen^Sa tête n'avait pas été fracassée.^@
+br
+langjp　……その代わりに、額に、オカルトめいた装飾の、杭のようなものが打ち込まれている。@
+langen^... À la place, un pieu orné de motifs occultes avait été planté dans son front.^@
+br
+langjp　……あまりに惨く、……俺はそれを引き抜いた。\
+langen^La vision m'avait tellement bouleversé que j'avais retiré le pieu sans réfléchir.^\
+
+textoff
+
+mono 2
+
+se1 38
+wait 100
+se2 38
+bg white,15,1000,":c;bmp\efe\blood_2a_efe.bmp"
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+mono off
+print 1
+
+langjp　後で警察に怒られるかもしれないとは、抜いてから気がついた。@
+langjp　だから今さらのようにではあるが、霧江さんの脇に、それを置く。\
+langen^Ce n'est qu'ensuite que j'avais compris que la police me reprocherait d'avoir manipulé une pièce à conviction.^@
+langen^Alors, un peu tard pour m'en soucier, je l'avais posé à côté de Kyrie.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2e.jpg",":b;bmp\background\efe\blood_2e.png",22
+
+langjp　その先端は鋭く、脳まで完全に届くほどに、血に塗れていた。@
+langen^Sa pointe était acérée et couverte de sang sur une longueur suffisante pour avoir atteint le cerveau.^@
+br
+langjp　何の金属で出来てるか知らないが、文鎮並の重さもあった。@
+langen^Je ne savais pas de quel métal il était fait, mais il pesait presque autant qu'un presse-papiers.^@
+br
+langjp　確かにこんなもので思い切り刺されたら、大怪我をするかもしれない。\
+langen^C'est sûr qu'en enfonçant de toutes ses forces un truc pareil dans quelqu'un, on pouvait lui infliger une blessure terrible.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　………この杭の意味を、俺は多分、理解していた。@
+langen^... Je crois que je savais ce que signifiait ce pieu.^@
+br
+langjp　……これは、あれだ。@
+langen^... C'était ça.^@
+br
+langjp　魔女の碑文の、第四の晩以降の殺し方。@
+langjp　……杭で抉りて殺せ、というヤツだろう。\
+langen^La méthode de meurtre décrite dans l'épitaphe de la sorcière à partir du quatrième crépuscule.^@
+langen^... Le fameux « transperce et tue » avec un pieu.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1a.jpg",":b;bmp\background\efe\blood_1a.png",22
+
+langjp　しかし、人間の頭蓋骨は頑丈だ。@
+langen^Mais le crâne humain est particulièrement solide.^@
+br
+langjp　………いくら思い切り力を込めたからといって、こうも鋭く貫けるだろうか……？\
+langen^... Même en frappant de toutes ses forces, pouvait-on vraiment transpercer un crâne aussi nettement... ?^\
+
+langjp　違う。@
+langen^Non.^@
+br
+langjp　……俺の推理では、この杭は死因ではなく、死後の死体損壊に使われただけだ。\
+langen^À mes yeux, il était plus plausible que le pieu ait servi à mutiler son corps après sa mort.^\
+
+langjp　おそらく、譲治の兄貴と同じで、銃か何かで撃たれて殺されて、@………その銃痕の穴に、この杭を捻じ込んだのではないか。@
+langen^Comme George, elle avait probablement été tuée d'un coup de feu ou quelque chose du genre... ^@^puis le pieu avait été enfoncé dans l'orifice laissé par la balle.^@
+br
+langjp　……そう考えた方がすっきりとした。\
+langen^... Cette explication me paraissait bien plus plausible.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m2f_r4cn.jpg",":b;bmp\background\mainbuilding\m2f_r4cn.png",26  ;fixed lighting issue
+
+me1v 16,50
+
+langjp　しかし、……霧江さんは、本当に銃で殺されたのだろうか。\
+langen^Mais Kyrie avait-elle vraiment été tuée par balle ?^\
+
+langjp　電話でも言っていたが、霧江さんは、施錠して部屋に閉じ篭っていたにもかかわらず、攻撃を受けていた。\
+langen^Comme elle me l'avait dit au téléphone, Kyrie avait été attaquée alors même qu'elle s'était enfermée dans une pièce verrouillée.^\
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_door2.jpg",":b;bmp\background\mainbuilding\m_door2.png",22
+
+langjp　実際、この部屋は施錠されていた。@
+langen^Et de fait, cette pièce était verrouillée.^@
+br
+langjp　……そして、@……鍵穴から、黄金の糸のようなものが飛び込んできて、襲ってくるというようなことを言っていた。\
+langen^... Et elle avait dit^@^... qu'une sorte de fil doré était entré par le trou de la serrure pour l'attaquer.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　確かに霧江さんの死体の周辺には、四ヶ所ほど、その攻撃によるものと思われる穴が開いている。@
+langen^Autour du corps de Kyrie, il y avait effectivement quatre trous qui semblaient avoir été causés par cette attaque.^@
+br
+langjp^^!s0　…………しかし、/
+sl
+langjp^^!d800……鍵穴から、/
+sl
+langjp^^!d900………黄金の糸が襲って…？/
+sl
+langen^^!s0^ ... Mais... ^@/
+sl
+langen:!d800^un fil doré l'aurait attaquée...^@/
+sl
+langen:!d900^ par le trou de la serrure... ?^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_door1.jpg",":b;bmp\background\mainbuilding\m_door1.png",22
+
+langjp　霧江さんの目線から、扉を見る。@
+langen^Je regardai la porte depuis l'endroit où se trouvait Kyrie.^@
+br
+langjp　よく、古いミステリー映画に出てくるような、@向こうが覗けるというタイプの古い鍵穴だったなら、何かが突き抜けてくるかもしれないというのはわかる。\
+langen^Si ça avait été une vieille serrure comme dans les films policiers, ^@^avec un trou permettant de voir de l'autre côté, je pourrais comprendre que quelque chose ait pu passer au travers.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_door2.jpg",":b;bmp\background\mainbuilding\m_door2.png",22
+
+langjp　しかし、この屋敷の扉は、いくら古めかしいとはいえ、鍵は一般家庭でお馴染みの、平均的なシリンダー型だ。@
+langen^Mais même si les portes de ce manoir étaient vieillottes, leurs serrures étaient de simples cylindres, tout ce qu'il y a de plus ordinaire.^@
+br
+langjp　……つまりその構造上、貫通はしていない。\
+langen^... Donc, le trou ne traversait pas la porte de part en part.^\
+
+langjp　だから鍵穴から、どんなに細い何かであったとしても、@外から貫いて何かが襲ってくることは考えられないのだ。\
+langen^Donc, quelle que soit la finesse de l'objet qu'on voudrait faire passer par la serrure, ^@^il était impossible qu'une chose venue de l'extérieur traverse ainsi la porte pour attaquer quelqu'un.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　………シリンダー錠。@
+langen^... Une serrure à cylindre.^@
+br
+langjp　………鍵穴………？\
+langen^... Un trou de serrure... ?^\
+
+langjp　それでも霧江さんは、鍵穴から黄金の糸のようなものが飛び込んできて、@……くるくる回りながら狙ってくる、攻撃してくると、……確かにそう言った。@
+langen^Et pourtant, Kyrie avait bien dit qu'une sorte de fil doré était entré par le trou de la serrure... ^@^qu'il tournoyait autour d'elle en la visant avant d'attaquer...^@
+br
+langjp　« 鍵穴から襲ってくる黄金の糸 »。@
+langen^« Un fil doré qui attaque par le trou d'une serrure. »^@
+br
+langjp　………それが何を意味するのか、……俺にはまったく理解できない。\
+langen^... Je n'avais absolument aucune idée de ce que ça pouvait vouloir dire.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_spiral_1a.jpg",":b;bmp\background\efe\different_spiral_1a.png",22
+
+me2v 17,50
+
+langjp　いや、でも。@
+langjp　……霧江さんは多分、俺がこれらを理解できないだろうと、予見していた。\
+langen^Non, mais...^@
+langen^Kyrie avait sans doute prévu que je serais incapable de donner un sens à tout ça.^\
+
+langjp　それは霧江さんだけじゃない。@
+langjp　朱志香の電話でも言っていた。@
+langen^Et elle n'était pas la seule.^@
+langen^Jessica l'avait dit au téléphone, elle aussi.^@
+br
+langjp　……いや、遡れば、一番最初の、郷田さんたちの話と蔵臼伯父さんたちからの電話でも、@みんな一貫して同じことを言っている。\
+langen^... Non, en remontant encore plus loin, depuis le tout début, du récit de Gohda et Kumasawa jusqu'à l'appel de l'oncle Krauss et des autres^@^... tout le monde répétait exactement la même chose.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\magicsquare_sun7.jpg",":b;bmp\background\efe\magicsquare_sun7.png",26
+
+langjp　………祖父さまが魔女や悪魔を呼び出し、魔法で人を殺している。@
+langen^... Grand-père avait invoqué des sorcières et des démons... et tuait les gens par magie.^@
+br
+langjp　それをまさに目の前で見せ付けられた。@
+langjp　何の誤魔化しもまやかしもない。@
+langjp　信じるほかない。@
+langen^Ils avaient vu tout ça de leurs propres yeux.^@
+langen^D'après ceux qui l'avaient vu, il ne s'agissait ni d'une ruse ni d'une illusion.^@
+langen^Ils n'avaient donc trouvé aucune autre possibilité que d'y croire.^@
+br
+langjp　……彼らは異口同音に、そう言った。\
+langen^... Tous, sans exception, avaient raconté la même chose.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+fede 10,1000
+
+;se1 15
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m2f_p1bn.jpg",":b;bmp\background\mainbuilding\m2f_p1bn.png",23  ;fixed lighting issue
+
+me1v 12,50
+
+langjp　俺も、あのベアトリーチェと名乗った謎の女が現れた時には、@ヤツが本当に魔女で、山羊のバケモノを次々に呼び出すのではないかと、かなり信じていた。\
+langen^Quand cette mystérieuse femme se faisant appeler Béatrice était apparue, ^@^même moi, j'avais presque cru qu'elle était réellement une sorcière et qu'elle allait invoquer les uns après les autres ces monstres à tête de chèvre.^\
+
+langjp　……しかし、丸一日も放置されて、緊張感がすっかり解けてしまうと。@そんなバカなことが絶対にあるわけがないと思えるのだ。\
+langen^... Mais après avoir été laissé tranquille pendant toute une journée, toute la tension était retombée. ^@^Et je pouvais de nouveau me dire qu'une absurdité pareille ne pouvait tout simplement pas être vraie.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m1f_p1cn.jpg",":b;bmp\background\mainbuilding\m1f_p1cn.png",25  ;fixed lighting issue
+
+langjp　命が危険に晒された異常な状況下で、@ちょっと頭が混乱して、魔女が魔法で襲ってきたかのような、そんな勘違いをしてしまったのではないか。\
+langen^Peut-être que, dans une situation aussi anormale, avec leur vie en danger, ils avaient perdu leurs moyens^@^ et fini par croire qu'une sorcière les attaquait avec de la magie... ?^\
+
+langjp　…………しかし、複数の人間が同じように証言し、その上、全員の意見が食い違わない。@
+langen^... Mais plusieurs personnes avaient donné le même témoignage, sans que leurs récits se contredisent.^@
+br
+langjp　……ひとりだけの発言だったなら、何かの見間違いだろうと疑うところなのだが、@………それがあまりに、難しい……。\
+langen^S'il n'y avait eu qu'un témoin, j'aurais pu penser à une erreur de perception... ^@^mais plusieurs personnes racontaient des faits semblables.^\
+
+me2v 5,50
+
+textoff
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m1f_p1dn.jpg",":b;bmp\background\mainbuilding\m1f_p1dn.png",26  ;fixed lighting issue
+wait 2000
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_door1.jpg",":b;bmp\background\mainbuilding\m_door1.png",23
+wait 500
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1a.jpg",":b;bmp\background\efe\blood_1a.png",23
+
+langjp　そして、裏口扉のすぐ近くで、頭部を半壊している蔵臼伯父さんを見つけた。/
+sl
+langen^Puis, juste à côté de la porte arrière, j'avais trouvé l'oncle Krauss, la moitié du crâne fracassée.^@/
+mov %play_scene,40390 : mov %r_hyouji_side,0 : mov %r_hyouji_cha,0 : seplay2 9,1061,70
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+
+
+langjp　……九羽鳥庵の地下牢から逃げ出してきて、@秘密の地下道から何とかここまで逃げ延びたのに、……殺されてしまった。\
+langen^... Il avait réussi à s'échapper du cachot souterrain de Kuwadorian^@^ et à parvenir jusqu'ici par un passage secret... pour finalement se faire tuer.^\
+
+
+
+langjp　その半壊した頭部の、残酷な断面に、@……霧江さんの額に打ち込まれていたのと同じような、オカルト装飾の杭が捻じ込まれている。@
+langen^Dans l'horrible plaie ouverte de sa tête à moitié détruite,^@^ un pieu aux décorations occultes avait été enfoncé, semblable à celui qu'on avait trouvé dans le front de Kyrie.^@
+br
+langjp　さすがにこの状況では、この杭が凶器だとは到底思えない。\
+langen^Dans cet état, impossible d'imaginer que ce pieu avait lui-même servi d'arme du crime.^\
+
+langjp　……食堂の６人と同様の、強力な銃器などで殺し、@その死後に霧江さんのように、この杭を突き刺したのだ。\
+langen^... Comme les six victimes de la salle à manger, il avait probablement été tué avec une arme à feu puissante, ^@^puis le pieu avait été planté dans son corps après sa mort, comme pour Kyrie.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　霧江さんの言う、黄金の糸が、蔵臼伯父さんにも襲い掛かったのだろうか。@
+langen^Est-ce que le fil doré dont parlait Kyrie avait aussi attaqué Monsieur Krauss ?^@
+br
+langjp　内視鏡のようなものすごく細いけれども、自在に動かせるような道具でも存在するのだろうか………？@
+langen^Existait-il un outil extrêmement fin, comme un endoscope, qu'on puisse déplacer librement... ?^@
+
+br
+langjp　しかもそれで人を襲えるような……？@
+langjp　馬鹿な。そんな道具、聞いたこともない。\
+langen^Et qui puisse, en plus, attaquer quelqu'un... ?^@
+langen^Ridicule. Je n'ai jamais entendu parler d'un outil pareil.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_spiral_1a.jpg",":b;bmp\background\efe\different_spiral_1a.png",8
+
+langjp　しかしそれでも、……それを親族の誰かに打ち明けたなら、@「祖父さまなら作りかねない」ということになってしまうのだろうか…。\
+langen^Mais même ainsi... si je racontais ça à l'un des membres de la famille, ^@^on me répondrait peut-être encore : « Grand-père aurait très bien pu fabriquer un truc pareil. »^\
+
+langjp　自在に動かせ、人を襲える黄金の糸Ｘの存在を否定できない以上、@その摩訶不思議な凶器を認めるか、さもなくば、@……魔法殺人を認めざるを、得なくなる。\
+langen^Tant que je ne pouvais pas nier l'existence d'un mystérieux fil doré X qu'on pouvait déplacer librement et utiliser pour attaquer quelqu'un, ^@^je devais soit admettre l'existence d'une arme aussi invraisemblable,^@^ soit accepter l'idée d'un meurtre commis par magie.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+langjp　次の死体を見つけるには、勝手口から出て、表を少しだけ探し回る必要があった。\
+langen^J'étais ensuite sorti par l'arrière du manoir pour chercher les autres cadavres.^\
+
+textoff
+bg white,22
+
+fedexx 0,70,70,0,0,0,2000
+E_B
+
+dllefe 1,1
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\forest_p1bn.jpg",":b;bmp\background\forest\forest_p1bn.png",23  ;fixed lighting issue
+wait 1000
+fr_bg ":b;fr_bg\orig\bmp\background\forest\forest_p2an.jpg",":b;bmp\background\forest\forest_p2an.png",23  ;fixed lighting issue
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+fr_bg ":b;fr_bg\orig\bmp\background\forest\well_1cn.jpg",":b;bmp\background\forest\well_1cn.png",23  ;fixed lighting issue
+
+langjp　裏手の、ほとんど森に飲み込まれた荒れ果てた茂みに、古い井戸のようなものがあり、@/
+langen^Derrière le manoir, dans des fourrés abandonnés presque engloutis par la forêt, se trouvait une sorte de vieux puits^@/
+
+notif %is_old_sprites = 1 dllefe_off
+;bg well_1bR,22
+set_oldnew_bg g0404,well_1bN,1,22
+
+langjp……そのすぐ近くに、南條先生と紗音ちゃんの死体があった。/
+sl
+langen^ C'est là que j'avais retrouvé les corps du docteur Nanjo et de Shannon, près du vieux puits.^@/
+mov %play_scene,40400 : mov %r_hyouji_side,0 : mov %r_hyouji_cha,0 : seplay2 9,1061,70
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+
+
+;bg black,22
+set_oldnew_bg g0404,black,1,22
+dllefe_off
+;bg black,1
+set_oldnew_bg g0404,black,1,1
+
+bgm1 39
+fede 10,1000
+
+;bg blood_1b,22
+set_oldnew_bg g0404,blood_1b,1,22
+
+langjp　二人の死体も、頭部を砕かれている。\
+langen^Les deux cadavres avaient le crâne fracassé.^\
+
+langjp　……そして、突き刺さってこそはいなかったが、損壊した頭部のすぐ近くに、杭がそれぞれ置かれている。@
+langen^Les pieux n'étaient pas plantés dans leurs têtes : chacun avait été déposé près de la blessure.^@
+br
+langjp　……惨いのは誰も一緒だが、紗音ちゃんの可愛らしい顔が半分吹き飛んでいるのを正視するのは、とても辛かった……。\
+langen^... Tous les cadavres étaient atroces à voir, mais regarder en face le joli visage de Shannon, à moitié arraché, était particulièrement pénible...^\
+
+;bg black,22
+set_oldnew_bg g0404,black,1,22
+
+me1v 13,50
+
+if %is_old_sprites = 1 dllefe 1,1
+;bg well_1aR,26
+set_oldnew_bg g0404,well_1aN,1,26
+
+langjp　そして、井戸だ。@
+langen^Et puis, il y avait le puits.^@
+br
+langjp　その奥に、謎の屋敷、九羽鳥庵への秘密の地下道があるという。@
+langen^D'après ce qu'on m'avait raconté, un passage souterrain secret menant à la mystérieuse demeure de Kuwadorian se trouvait au fond.^@
+br
+langjp　…この頃には、ひょっとするとベアトリーチェ一味は、@この地下道を使って、九羽鳥庵に立ち去ってしまっているのではないかと思い始めていた。\
+langen^J'en étais venu à envisager que Béatrice et ses complices avaient pu s'échapper par ce passage souterrain... ^@^pour rejoindre une demeure cachée sans affronter le typhon.^\
+
+langjp　１０人以上はいると思わしき連中が、これだけ影も形もないのだ。@
+langen^Ils devaient être plus d'une dizaine, et pourtant il n'y avait plus la moindre trace d'eux.^@
+br
+langjp　……別の場所へすでに脱出していると考えるのが極めて妥当だろう。\
+langen^... Il semblait donc parfaitement logique qu'ils aient déjà fui vers un autre endroit.^\
+
+clr_oldnew_bg
+dllefe 1,1
+fr_bg ":b;fr_bg\orig\bmp\background\forest\sky_3a.jpg",":b;bmp\background\forest\sky_3a.png",22
+
+langjp　この台風だ。@
+langjp　海へは出られない。@
+langen^Avec ce typhon,^@
+langen^impossible de prendre la mer.^@
+br
+langjp　森だって同じだ。@
+langjp　こんな深い未開の森を、徒歩で横断など出来るわけがない。\
+langen^Traverser cette forêt était tout aussi difficile.^@
+langen^La végétation était devenue si dense qu'on ne pouvait guère espérer s'y déplacer à pied.^\
+
+dllefe_off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　となれば、連中の行き先はひとつ。@
+langen^Dans ce cas, il ne leur restait qu'une destination.^@
+br
+langjp　謎の隠し屋敷、九羽鳥庵。@
+langen^Le mystérieux manoir caché de Kuwadorian.^@
+br
+langjp　……井戸の底の秘密の地下道だ…！\
+langen^... Par le passage secret au fond du puits... !^\
+
+langjp　……敵に出くわせば殺されるかもしれないという恐怖感は、この頃には完全に失われていた。\
+langen^À ce moment-là, je m'étais presque résigné à rencontrer les meurtriers, même si cela devait me coûter la vie.^\
+
+langjp　ふざけやがって…！@
+langen^Vous vous foutez de moi... !^@
+br
+langjp　今度は俺が貴様らの屋敷に乗り込んでやる…！\
+langen^Cette fois, c'était moi qui allais débarquer chez vous... !^\
+
+;textoff
+;ld r,$BUT_NayamuA1,24
+;wait 1000
+;ld r,$BUT_NayamuA3,80
+;wait 1000
+;cl r,0
+;ld c,$BUT_KuyasigaruA1,24
+;wait 1000
+;ld c,$BUT_OdorokiA2,80
+
+dllefe 1,1
+fr_bg ":b;fr_bg\orig\bmp\background\forest\well_1an.jpg",":b;bmp\background\forest\well_1an.png",22  ;fixed lighting issue
+
+me2v 16,50
+
+advchar "10"
+langjp:dwave_jp 0, but_9e246:「………あ……、…な、何だこりゃ…？！@:dwave_jp 0, but_9e247:　ち、……畜生ッ…！！」\
+;＜戦人
+langen:dwave_eng 0, but_9e246:^... Hein... q-qu'est-ce que c'est que ce bordel... ?! ^@:dwave_eng 0, but_9e247:^M-Merde... !!^\
+
+advchar "-1"
+langjp　その古井戸には、頑丈な蓋がされていた。@
+langen^Le vieux puits était recouvert d'un solide couvercle.^@
+br
+langjp　その蓋は鉄格子で出来ている。@
+langjp　格子の隙間は２０ｃｍ四方あるかどうか。@中を覗きこむことは出来るが、とても人間が通り抜けられるようなものではなかった。\
+langen^Ce couvercle était fait de barreaux de fer.^@
+langen^Les ouvertures entre ses barreaux de fer faisaient à peine vingt centimètres de côté.^@^ On pouvait regarder au travers, mais certainement pas y faire passer un corps humain.^\
+
+langjp　何も知らなかったなら、単なる転落防止用の蓋にしか思わなかったろう。@
+langen^Si je n'avais rien su, je l'aurais pris pour un simple couvercle destiné à empêcher quelqu'un de tomber dans le puits.^@
+br
+langjp　……しかし俺は、霧江さんに聞かされているから、この奥にある秘密の地下道への侵入者を防ぐためのものだと知っている…！\
+langen^... Mais grâce à ce que Kyrie m'avait raconté, je savais qu'il servait en réalité à empêcher les intrus d'accéder au passage secret tout au fond... !^\
+
+dllefe_off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",26
+
+langjp　しかしその蓋は非常に頑丈に固定されていて、どんなに押しても引いても、決して外すことが出来ない。\
+langen^Pourtant, ce couvercle était fixé avec une solidité incroyable, et j'avais beau pousser ou tirer, impossible de le faire bouger.^\
+
+langjp　一見、施錠らしきものは見当たらない。@
+langjp　ひょっとすると、何かの仕掛けで閉ざされているかもしれない。\
+langen^À première vue, il n'y avait aucune serrure.^@
+langen^Peut-être qu'un mécanisme quelconque le maintenait fermé.^\
+
+langjp　しかし、いくら調べても、それを解除するような何かは見つけられなかった。@
+langen^J'avais examiné les barreaux avec soin, sans trouver de serrure ni de mécanisme permettant de les déplacer.^@
+br
+langjp　………霧江さんが、最期の瞬間を賭して俺に伝えてくれた最大の情報が、この井戸の地下道なんだ…！\
+langen^... Le renseignement le plus important que Kyrie m'avait transmis au prix de ses derniers instants... ^@^c'était justement l'existence de ce passage souterrain dans le puits... !^\
+
+dllefe 1,1
+fr_bg ":b;fr_bg\orig\bmp\background\forest\well_1an.jpg",":b;bmp\background\forest\well_1an.png",26  ;fixed lighting issue
+;ld r,$BUT_KuyasigaruA1,26
+
+advchar "10"
+langjp:dwave_jp 0, but_9e248:「こんな蓋程度で俺を阻めると思うんじゃねぇぜ…！@/
+langen:dwave_eng 0, but_9e248:^Vous croyez vraiment qu'un simple couvercle va m'arrêter... ?! ^@/
+
+;ld r,$BUT_OdorokiA1,80
+
+langjp:dwave_jp 0, but_9e249:　こいつをブチ壊してやる…！@:dwave_jp 0, but_9e250:　その道具を探そう…！」\
+;＜戦人
+langen:dwave_eng 0, but_9e249:^Je vais vous le démolir... ! ^@:dwave_eng 0, but_9e250:^Je vais trouver de quoi faire... !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+fr_bg ":b;fr_bg\orig\bmp\background\forest\sky_3a.jpg",":b;bmp\background\forest\sky_3a.png",22
+
+advchar "-1"
+langjp　心当たりはあった。@
+langen^J'avais déjà une idée.^@
+br
+
+langjp　……郷田さんたちを園芸倉庫に閉じ込めた時、そこに色々な工具がしまわれていたのを、見ていたから。\
+langen^... Quand on avait enfermé Gohda et Kumasawa dans la remise de la roseraie, j'avais vu qu'il y avait tout un tas d'outils à l'intérieur.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+dllefe_off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+
+fede 1,2000
+
+dllefe 1,1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\garden\warehous_o1a.jpg" : mov $oldnew_bg,":b;bmp\background\garden\warehous_o1an.png" : mov $witchh12,$oldnew_bg_old : if %4095 = 0 mov $witchh12,$oldnew_bg
+bg $witchh12,22  ;fixed lighting issue
+langjp　しかし、園芸倉庫のシャッターは閉ざされている。@
+langjp　その上、鍵は中で死んでいる郷田さんに預けられている。\
+langen^Mais le rideau métallique de la remise de la roseraie était fermé.^@
+langen^Et en plus, la clé était sur Gohda, qui était mort à l'intérieur.^\
+
+langjp　……つまり、この園芸倉庫は密室。@
+langjp　外から開く方法はないのだ。\
+langen^... Bref, la remise de la roseraie était une chambre close.^@
+langen^Impossible de l'ouvrir depuis l'extérieur.^\
+
+dllefe_off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　なら、シャッターを、破らなければならない。@
+langjp　そのための工具がどこかにないものか。@
+langen^Dans ce cas, il fallait que je défonce le rideau.^@
+langen^Il devait bien y avoir quelque part un outil pour ça.^@
+br
+langjp　……何だか本末転倒な話だ。\
+langen^... Ça commençait quand même à tourner au problème sans fin.^\
+
+;bg Mboi_1c,6
+
+me3v 20,0
+fedexx 0,0,0,50,0,0,2000
+
+langjp　そしてそれを探す途中で、屋敷にずっと漂っていた異臭の発生源が、地下のボイラー室であることを知った。\
+langen^Et c'est en cherchant un outil que j'avais découvert l'origine de l'odeur infecte qui imprégnait le manoir depuis tout ce temps : la chaufferie au sous-sol.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mboi_1a.jpg",":b;bmp\background\mainbuilding\mboi_1a.png",24
+
+langjp　ボイラー室は薄暗く、蒸し暑く、凄まじい臭いで、その上、ものすごく薄気味悪かった。\
+langen^La chaufferie était sombre, étouffante, elle puait atrocement et, en plus de ça, elle foutait franchement les jetons.^\
+
+langjp　しかしそこには大型の工具の類が多数あり、防火斧や巨大な番線カッターなどを見つけることが出来た。@
+langen^Mais plusieurs gros outils s'y trouvaient, et j'avais réussi à mettre la main sur une hache de secours et un énorme coupe-boulons.^@
+br
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　そして、…………祖父さまの死体も。/
+sl
+langen^Et puis... le cadavre de Grand-père.^@/
+mov %play_scene,40410 : mov %r_hyouji_side,0 : mov %r_hyouji_cha,0 : seplay2 9,1061,70
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+
+
+bgm1 15
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mboi_1c.jpg",":b;bmp\background\mainbuilding\mboi_1c.png",22
+
+langjp　いや、厳密には、多分、祖父さまと思われる人物の焼死体を発見した、というべきだろう。@
+langen^Pour être exact, j'avais découvert un homme calciné dont le corps pouvait être celui de Grand-père.^@
+br
+langjp　ボイラーの燃え盛る炎の中に、誰かの死体が詰め込まれていたのだ……。\
+langen^Le corps de quelqu'un avait été jeté dans les flammes de la chaudière...^\
+
+langjp　しかし、偶然にも俺は、その死体の足の指の数に気付くことが出来た。@
+langen^Mais par hasard, j'avais remarqué le nombre d'orteils du cadavre.^@
+br
+langjp　……両足とも、６本の指を持っているのだ。\
+langen^... Il en avait six à chaque pied.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　……そう、俺は昔どこかで親父に聞かされていたかもしれない。@
+langjp　祖父さまは多指症で、足の指が多い、みたいな話を。\
+langen^... Oui, je crois que Papa m'en avait parlé il y a très longtemps.^@
+langen^Papa m'avait raconté autrefois que Grand-père était atteint de polydactylie : il avait des doigts ou des orteils supplémentaires.^\
+
+langjp　右代宮家の古い習慣では、指が多い人物には吉があるとかで、縁起が良いとされていたらしい。@
+langen^D'après une vieille tradition de la famille Ushiromiya, les personnes ayant des doigts ou des orteils en plus étaient censées porter bonheur et étaient considérées comme de bon augure.^@
+br
+langjp　……何でも祖父さまは、そのせいで、次期当主に抜擢されたとか何とか………。\
+langen^... Et c'était même, paraît-il, l'une des raisons pour lesquelles Grand-père avait été choisi comme successeur...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mboi_1a.jpg",":b;bmp\background\mainbuilding\mboi_1a.png",22
+
+langjp　しかし、足の指の数だけで、祖父さまの死体だと確認しても良いのだろうか。@
+langen^Mais pouvait-on vraiment affirmer que ce cadavre était celui de Grand-père uniquement à cause de ses orteils ?^@
+br
+langjp　何しろ、祖父さまは犯人グループのリーダー格のはず。@
+langen^Après tout, Grand-père était censé être le chef du groupe de coupables.^@
+br
+langjp　それがこんなところでボイラーにブチ込まれて死んでるなんて、さっぱり理解が出来ない。\
+langen^Je ne comprenais absolument pas comment il aurait pu finir mort, fourré dans une chaudière pareille.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mboi_1c.jpg",":b;bmp\background\mainbuilding\mboi_1c.png",22
+
+langjp　炎の中で凄まじい臭いを吐き出しながら焦がされる、謎の死体。@
+langen^Un cadavre inconnu brûlait au milieu des flammes en dégageant une puanteur épouvantable...^@
+br
+langjp　……その正体が祖父さまであるならば、@…………犯人グループのリーダーは、祖父さまではなく、やはりあの、ベアトリーチェ……？\
+langen^Si ce cadavre était bien celui de Grand-père... ^@^le groupe des meurtriers était peut-être dirigé par Béatrice plutôt que par lui.^\
+
+langjp　祖父さまは都合よく使われ、最後に切り捨てられた、ということなのだろうか。@
+langen^Grand-père aurait donc été utilisé tant qu'il était utile... puis éliminé une fois devenu encombrant ?^@
+br
+langjp　………残念ながら、祖父さまにその釈明の機会は、与えられそうになかった…。\
+langen^... Malheureusement, il ne semblait plus vraiment en mesure de donner sa version des faits...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",6
+
+me1v 12,0
+me2v 5,0
+fedexx 0,50,50,0,0,0,2000
+E_B
+
+dllefe 1,1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\garden\warehous_o1a.jpg" : mov $oldnew_bg,":b;bmp\background\garden\warehous_o1an.png" : mov $witchh12,$oldnew_bg_old : if %4095 = 0 mov $witchh12,$oldnew_bg
+bg $witchh12,24  ;fixed lighting issue
+langjp　工具を得た俺は、さっそく井戸の蓋の破壊に挑戦しようとしたが、@その前に園芸倉庫のシャッターを破ることにした。\
+langen^Maintenant que j'avais de quoi faire, j'avais d'abord pensé aller m'attaquer immédiatement au couvercle du puits, ^@^mais j'avais finalement décidé de commencer par défoncer le rideau métallique de la remise de la roseraie.^\
+
+langjp　……どうせ時間は腐るほどある。@
+langen^... De toute façon, j'avais tout mon temps.^@
+br
+langjp　郷田さんたちの死体の状況も、確認しておくべきだと思ったのだ。\
+langen^Je préférai toutefois commencer par vérifier ce qu'étaient devenus Gohda et Kumasawa.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+dllefe_off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+
+se1 20
+wait 1000
+se2v 12,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+se1 20
+wait 1000
+se2v 12,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+se1 20
+wait 1000
+se2v 12,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　斧で殴りつけてシャッターを破り、@その隙間から番線カッターを突っ込み、@ジョキジョキと鋏の要領で穴を開ける。\
+langen^J'avais frappé le rideau métallique à coups de hache pour l'éventrer, ^@^puis glissé le coupe-boulons dans l'ouverture ^@^et découpé la tôle comme avec de gros ciseaux pour agrandir le passage.^\
+
+fede 12,1000
+
+;bg warehous_i1e,22
+set_oldnew_bg g0403,warehouse_i1e,1,22
+bgm1 18
+
+langjp　そして、郷田さんと熊沢さんの死体と、俺は再び対面した……。/
+sl
+langen^Et je m'étais retrouvé une nouvelle fois face aux corps de Gohda et Kumasawa...^@/
+mov %play_scene,40420 : mov %r_hyouji_side,0 : mov %r_hyouji_cha,0 : seplay2 9,1061,70
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+
+
+langjp　その結果、新しい事実がわかる。@
+langen^Et c'est là que j'avais découvert quelque chose de nouveau.^@
+br
+langjp　まず、二人は首を吊って死んでいるのではなかった。@二人の足はちゃんと床についている。@
+langen^D'abord, les cordes ne semblaient pas les avoir tués.^@^ Leurs pieds touchaient encore le sol.^@
+br
+langjp　……そして二人の額には、銃で撃たれたような跡があった。\
+langen^... Et chacun portait au front une blessure ressemblant à un impact de balle.^\
+
+langjp　ロープの長さは一般的な首吊りを考えると、かなり長めに取られている。@
+langen^Les cordes étaient bien trop longues pour une pendaison ordinaire.^@
+br
+langjp　その上、二人の身長に合わせて長さが変えてあった。\
+langen^Leur longueur avait manifestement été réglée en fonction de la taille de chaque victime.^\
+
+langjp　つまり、背の高い郷田さんも背の低い熊沢さんも、どちらもちゃんと地面に足がつくことが出来るギリギリになるように、@長さが調整してあったということだ。\
+langen^Bref, que ce soit pour le grand Gohda ou la petite Kumasawa,^@^ les cordes avaient été réglées juste assez longues pour que leurs pieds puissent encore toucher le sol.^\
+
+langjp　また、そのロープに体重を預けて俯いている二人は、どちらも膝から下が少し余っている。@
+langen^Le poids de leur corps les faisait s'affaisser, mais leurs jambes restaient légèrement fléchies.^@
+br
+langjp　これは二人がこのロープを首に掛けて直立したなら、長さが余ることを意味している。@
+langen^En clair, s'ils s'étaient tenus bien droits avec les cordes autour du cou, celles-ci auraient été trop longues.^@
+br
+langjp　つまり、首を吊るためのロープとしては、少々不適格だということだ。\
+langen^Bref, comme cordes de pendaison, elles étaient assez mal réglées.^\
+
+clr_oldnew_bg
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　多分、直接の死因は頭部への銃撃。@
+langen^La cause directe de leur mort était probablement une balle dans la tête.^@
+br
+langjp　惨いものだ。@その深い穴からはどろりと未だに中身が溢れ出し、二人の顔を真っ赤に汚している。@
+langen^C'était atroce. ^@^Le contenu de leurs crânes suintait encore de ces profondes blessures et maculait leurs visages de rouge.^@
+br
+langjp　そしてそれを首吊りのようにして引っ張り上げ、晒し者にした、と考えるのが妥当だろう。\
+langen^Le plus logique était donc de penser qu'après les avoir tués, on avait hissé leurs corps avec ces cordes pour les exhiber comme des pendus.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\warehous_i1c.jpg",":b;bmp\background\garden\warehous_i1c.png",26
+
+langjp　……もし、銃で撃たれたなら、床に突っ伏しているだろう。@
+langen^... S'ils avaient simplement été abattus, ils seraient sans doute tombés au sol.^@
+br
+langjp　……そうだったなら、窓から覗いても、死んでいることがわからない。@
+langjp　荷物の山が邪魔で、横になられたら隠れてしまうのだ。\
+langen^... Et dans ce cas, même en regardant par la fenêtre, on n'aurait pas pu voir qu'ils étaient morts.^@
+langen^Les piles d'affaires auraient caché leurs corps s'ils avaient été allongés par terre.^\
+
+langjp　中に入れない俺たちに、この二人の死を知らしめるには、こうして吊るし、@外からわかるようにしなくてはならない。@
+langen^Pour que nous, qui ne pouvions pas entrer, puissions constater leur mort, ^@^il fallait donc les suspendre ainsi afin qu'ils soient visibles depuis l'extérieur.^@
+br
+langjp　………これは、……鍵を預ければ二人は安全に違いないと思っていた俺たちへの、……当てつけ……？\
+langen^Avait-on voulu se moquer de nous, qui pensions les protéger en leur confiant la clé ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　彼らの安全を保証したはずの、郷田さんに預けたシャッターの鍵はどこにあるのだろう…。\
+langen^Qu'était devenue la clé du rideau métallique qu'on avait confiée à Gohda et qui était censée garantir leur sécurité... ?^\
+
+langjp　その鍵は、………彼のズボンのポケットに入っていた。@
+langjp　ご丁寧にも、園芸倉庫の鍵とプレートまで付いている。@
+langen^Cette clé... se trouvait dans la poche de son pantalon.^@
+langen^Et on avait même pris soin de laisser dessus la plaque indiquant qu'il s'agissait de la clé de la remise de la roseraie.^@
+br
+langjp　つまり、やはりこの園芸倉庫は密室だったわけだ。\
+langen^Bref, la remise de la roseraie avait bel et bien été une chambre close.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\warehous_i1e.jpg",":b;bmp\background\garden\warehous_i1e.png",22
+
+langjp　そして、それはさらなる疑問を生む。@
+langen^Et cela soulevait une nouvelle question.^@
+br
+langjp　……なぜなら、首吊りが説明できないからだ。\
+langen^Ce détail rendait leur prétendue pendaison particulièrement difficile à expliquer.^\
+
+langjp　彼らが自殺したわけでなければ、この首吊りロープは犯人の細工だ。@
+langen^S'ils ne s'étaient pas suicidés, alors les cordes autour de leur cou avaient été installées par le coupable.^@
+br
+langjp　……銃撃は窓からでも可能かもしれないが、この梁にロープを二人分も結びつけるのは外部からではとても出来るとは思えない。\
+langen^... Les abattre depuis la fenêtre était peut-être envisageable, mais nouer depuis l'extérieur deux cordes à cette poutre paraissait totalement irréalisable.^\
+
+langjp　しかもその上、重い死体の吊り上げなど、出来るわけもない。@
+langjp　つまり、これらの作業のために、この中へ入らなければならないのだ。\
+langen^Il aurait été encore plus difficile d'y suspendre des cadavres aussi lourds.^@
+langen^Bref, pour faire tout ça, le coupable devait forcément entrer à l'intérieur.^\
+
+langjp　しかしその鍵は郷田さんのポケットに入っているし、シャッターは施錠されたままだった。@
+langen^Et pourtant, la clé était restée dans la poche de Gohda, tandis que le rideau était verrouillé.^@
+br
+langjp　つまり園芸倉庫は密室だったのだ。\
+langen^Bref, la remise de la roseraie était une chambre close.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　このシャッターの鍵はひとつしかないと郷田さんは言っていた。@
+langen^Gohda avait affirmé qu'il n'existait qu'une seule clé pour ce rideau métallique.^@
+br
+langjp　……しかし本当は複製があり、/
+sl
+langjp^^!d800……それを犯人が所有していた、ということはありえないだろうか……？\
+langen^... Mais était-il possible qu'il existe en réalité un double...^@/
+sl
+langen:!d800^ que le coupable possédait ?^\
+
+langjp　郷田さんが知らなかっただけで、実は園芸倉庫の鍵が複数あった、@とする仮定さえ許されるなら、これは密室でも何でもない。\
+langen^Si on acceptait l'hypothèse qu'il existait en réalité plusieurs clés de la remise de la roseraie, sans que Gohda le sache,^@^ alors il n'y avait plus rien d'une chambre close.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\warehous_i1e.jpg",":b;bmp\background\garden\warehous_i1e.png",25
+
+langjp　………しかしそれでも、他の死体のほとんどは、みな銃殺されて、ほぼそのままの形で放り出されているにもかかわらず、@なぜこの二人の死体だけは、わざわざ吊るし上げられているのか。@
+langen^... Mais malgré tout, alors que presque tous les autres cadavres avaient été abattus puis laissés quasiment tels quels, ^@^pourquoi seuls ces deux corps avaient-ils été suspendus de cette manière ?^@
+br
+langjp　そこにわずかの違和感を覚えなくもなかった……。\
+langen^... Malgré tout, quelque chose là-dedans continuait de me chiffonner.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　これで、ボイラーの中の謎の死体を祖父さまだと仮定すれば、@……１６人の死体が確認されたわけだ。\
+langen^Si le corps calciné de la chaudière appartenait bien à Grand-père,^@^ j'avais donc retrouvé seize morts.^\
+
+langjp　この島には１８人いた。@
+langjp　俺がいて、死体が１６。@
+langen^Il y avait dix-huit personnes sur cette île.^@
+langen^Moi, plus seize cadavres.^@
+br
+langjp　嘉音くんの死体だけが、まだ確認できていない。\
+langen^Le seul corps que je n'avais toujours pas pu vérifier était celui de Kanon.^\
+
+me2v 13,0
+me3v 5,0
+
+fedexx 0,0,50,50,0,0,2000
+E_B
+textoff
+wait 1000
+
+textoff
+dllefe 1,1
+fr_bg ":b;fr_bg\orig\bmp\background\forest\forest_p1an.jpg",":b;bmp\background\forest\forest_p1an.png",22  ;fixed lighting issue
+wait 2000
+fr_bg ":b;fr_bg\orig\bmp\background\forest\forest_p2an.jpg",":b;bmp\background\forest\forest_p2an.png",22  ;fixed lighting issue
+wait 1000
+;bg well_1cR,24
+if %is_old_sprites = 0 dllefe_off
+set_oldnew_bg g0404,well_1cN,1,24
+wait 1000
+dllefe 1,1
+fr_bg ":b;fr_bg\orig\bmp\background\forest\well_1an.jpg",":b;bmp\background\forest\well_1an.png",22  ;fixed lighting issue
+
+langjp　霧江さんの話では、彼は井戸を登っている時に殺されて、そのまま井戸の底に転落している。@
+langen^D'après Kyrie, il avait été tué alors qu'il remontait le puits, puis était retombé tout au fond.^@
+br
+langjp　だから、こうして井戸を閉ざされてしまったら確認は不可能なわけだ。\
+langen^La grille du puits m'empêchait toutefois d'aller vérifier ce qui se trouvait au fond.^\
+
+clr_oldnew_bg
+dllefe_off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　格子の間から懐中電灯で、井戸の底の暗闇を照らしてみる。@
+langen^Je glissai ma lampe torche entre les barreaux et tentai d'éclairer l'obscurité au fond du puits.^@
+br
+langjp　だが、漆黒の闇は、その程度の灯りでは、俺に深淵を教えるつもりはさらさらないようだった…。\
+langen^La lumière de ma lampe se perdait dans les ténèbres sans rien me révéler.^\
+
+;ld c,$BUT_NiramuA1,24
+
+langjp　やはり、この格子蓋を破壊しなくてはならない。@
+langen^Il fallait vraiment que je détruise cette grille.^@
+
+bgm1 30
+
+br
+langjp　俺は、ボイラー室や園芸倉庫から引き摺ってきた斧などで、井戸の蓋の破壊を試みた。\
+langen^Avec la hache et les autres outils que j'avais traînés depuis la chaufferie et la remise de la roseraie, j'avais essayé de détruire le couvercle du puits.^\
+
+textoff
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+se1v 20,100
+wait 1000
+;se2v 12,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+
+langjp　だが、金属製の格子の非常に頑丈なもので、破壊は容易なものではなかった。@
+langen^Mais les barreaux métalliques étaient extrêmement solides, et les casser n'avait rien de facile.^@
+br
+langjp　……斧で何度も殴りつけ、手の方がおかしくなってしまい、とうとうその破壊を諦める……。\
+langen^... J'avais frappé dessus encore et encore avec la hache, jusqu'à avoir les mains en vrac, avant de finir par abandonner...^\
+
+;textoff
+;bg black,22
+;se1v 20,100
+;wait 1000
+;se2v 57,100
+;bg white,1
+;bg black,22
+;wait 1000
+;se1v 20,100
+;wait 1000
+;se2v 57,100
+;bg white,1
+;bg black,22
+
+dllefe 1,1
+fr_bg ":b;fr_bg\orig\bmp\background\forest\well_1an.jpg",":b;bmp\background\forest\well_1an.png",26  ;fixed lighting issue
+
+
+langjp　……無理だ。@
+langjp　せめて木製だったなら、破壊も出来ただろう。@
+langen^... Impossible.^@
+langen^S'ils avaient au moins été en bois, j'aurais peut-être réussi à les briser.^@
+br
+langjp　しかし、金属製じゃなぁ…。\
+langen^Mais du métal...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　そう、鉄格子を人間の力でバターのように切断など、出来るわけがないのだ。@
+langen^Oui. Avec la force d'un humain, impossible de trancher des barreaux de fer comme du beurre.^@
+br
+langjp　……嘉音くんの鉄格子切断の話も、……まったく理解できないものだった。\
+langen^... Et cette histoire de Kanon découpant des barreaux de fer... je n'y comprenais absolument rien.^\
+
+textoff
+
+mono 1
+dllefe_off
+print 1
+
+fede 10,1000
+
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",0
+ld l,$KAN_IkariA2B,2
+
+langjp　腕から、赤いレーザー光線のような光を伸ばして、@それで鉄格子を、バターでも切るように切断してみせたという。@
+langen^On racontait qu'une lumière pareille à un rayon laser rouge avait jailli de son bras,^@^ et qu'avec ça, il avait découpé les barreaux comme du beurre.^@
+br
+langjp　鉄格子を、バターでも切るかのように…？\
+langen^Découper des barreaux de fer comme du beurre... ?^\
+
+langjp　……赤いレーザー光線とは何だろう。@
+langen^... Et c'était quoi, ce rayon laser rouge ?^@
+br
+langjp　バーナーのようなものをこっそり持っていて、@それで焼き切ったという意味ではないのだろうか……？\
+langen^Est-ce qu'il cachait sur lui une sorte de chalumeau^@^ et s'en était servi pour faire fondre les barreaux... ?^\
+
+langjp　しかし、鉄格子をバターを切るように、とは………一体、どんなレーザーなのか。@
+langen^Mais quand même... quel genre de laser pourrait découper des barreaux de fer comme du beurre ?^@
+br
+langjp　…まるで、俺が子どもの頃に大好きだった、ロボットアニメに出てくるようなレーザー光線そのものじゃないか。\
+langen^... On aurait dit exactement un de ces rayons laser sortis des animes de robots que j'adorais quand j'étais gosse.^\
+
+cl a,22
+
+langjp　そんなものが、本当に実在するのか……？@
+langjp　そして嘉音くんはどうやってそのレーザー光線を……？\
+langen^Un truc pareil existe vraiment... ?^@
+langen^Et comment Kanon aurait-il pu utiliser ce rayon laser... ?^\
+
+me1v 13,50
+
+mono off
+if %is_old_sprites = 1 dllefe 1,1
+;bg well_1cR,22
+mov %hide_bgsp2_cg,1
+set_oldnew_bg g0404,well_1cN,1,22
+;dllefe 1,1
+
+langjp　それを聞きたくても、彼はすでに殺されている。@
+langen^J'aurais bien voulu lui poser la question, mais il avait déjà été tué.^@
+br
+langjp　それどころか、死体すらも、この蓋の奥、井戸の底だ。\
+langen^Et pire encore, même son cadavre était au fond du puits, derrière ce couvercle.^\
+
+langjp　鉄格子を切断できた嘉音くんなら、きっとこんな金属製の蓋だって一撃だろう。\
+langen^Si Kanon avait réellement pu découper des barreaux de fer, il aurait certainement ouvert cette grille sans difficulté.^\
+
+langjp　……何だか、さっきの鍵を持ってる郷田さんが園芸倉庫の中に閉じ込められているという密室にそっくりだ。@
+langen^... Ça ressemblait drôlement à la chambre close de la remise de la roseraie, où Gohda était enfermé à l'intérieur avec l'unique clé.^@
+br
+langjp　扉を開けられる唯一の人物が、にもかかわらず、中に閉じ込められている……。\
+langen^La seule personne capable d'ouvrir la porte était justement enfermée de l'autre côté...^\
+
+langjp　……俺にも、嘉音くんのその力があれば、この蓋を何とか出来るのに……。@……………………………。\
+langen^Si seulement j'avais moi aussi le pouvoir de Kanon, je pourrais faire quelque chose contre ce couvercle...^@^ ^\
+
+;ld r,$BUT_NayamuA1,24
+
+me2v 16,50
+
+langjp　嘉音くんは何者だろう。@
+langen^Mais au fond... qui était vraiment Kanon ?^@
+br
+langjp　まさか本当に、……不思議な力が使えるニンゲン外の存在なのだろうか。@
+langen^Et si Kanon n'était pas humain, mais possédait réellement un pouvoir surnaturel ?^@
+br
+langjp　霧江さんも魔女を信じろといったし、そうだと名乗るイカレた女にも会っている。\
+langen^Kyrie m'avait dit de croire aux sorcières, et j'avais même rencontré une cinglée qui se présentait comme telle.^\
+
+;ld r,$BUT_KuyasigaruA1,80
+
+langjp　…嘉音くんはひょっとして、/
+sl
+langjp^^!d800……魔女側の人間…？@
+langen^... Et si Kanon était peut-être...^@/
+sl
+langen:!d800^ un humain du côté des sorcières ?^@
+br
+langjp　……むしろ、/
+sl
+langjp^^!d900………犯人？\
+langen^... Ou plutôt^@/
+sl
+langen:!d900^... le coupable ?^\
+
+;ld r,$BUT_KomaruA1,80
+
+langjp　…………何てこった。@
+langen^... Qu'est-ce que je raconte ?^@
+br
+langjp　……死体が発見できないだけで、…犯人扱いだなんて。\
+langen^... J'allais vraiment le traiter de coupable... juste parce que son cadavre restait introuvable ?^\
+
+
+fedexx 10,50,50,0,0,0,2000
+textoff
+wait 1000
+msetef 0,22
+
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e395:　ほぅ、……死体がないだけで犯人扱い…？@
+langjp:dwave_jp 0, bea_9e396:　疑わしきはシロだとほざいたのは誰だったやら……。\
+langen:dwave_eng 0, bea_9e395:^Hoh... Tu le traites de coupable simplement parce que son cadavre est introuvable... ?^@
+langen:dwave_eng 0, bea_9e396:^Et qui donc braillait que le doute devait profiter à l'accusé... ?^\
+
+langjp:dwave_jp 0, bea_9e397:　………良かろう、嘉音に全ての犯行を押し付けて人間犯人説にされては敵わぬ。@
+langen:dwave_eng 0, bea_9e397:^... Fort bien. Je ne peux pas te laisser rejeter tous les crimes sur Kanon et en profiter pour bâtir une théorie avec un coupable humain.^@
+br
+langjp:dwave_jp 0, bea_9e398:　妾が赤にて保証する…。\
+langen:dwave_eng 0, bea_9e398:^Je vais te le garantir en rouge...^\
+
+se1 59
+langjp:dwave_jp 0, bea_9e399:　#ff0000嘉音は死亡している。#ffffff/
+sl
+langen:dwave_eng 0, bea_9e399:^#ff0000Kanon est mort.#ffffff^@/
+mov %play_scene,40430 : mov %r_hyouji_side,0 : mov %r_hyouji_cha,0 : seplay2 9,1061,70
+mov %disable_adv_clear, 1
+langjp:noclear_cw:
+langen:noclear_cw:
+mov %disable_adv_clear, 0
+advchar "-1"
+
+se2 59
+advchar "27"
+langjp:dwave_jp 0, bea_9e400:　#ff0000霧江たち５人の中で、一番最初に死亡した。@
+langen:dwave_eng 0, bea_9e400:^ #ff0000Parmi les cinq personnes du groupe de Kyrie, il fut le premier à mourir.^@
+se3 59
+langjp:dwave_jp 0, bea_9e401:　つまりは、９人目の犠牲者というわけだ。#ffffff\
+langen:dwave_eng 0, bea_9e401:^En somme, il fut la neuvième victime.#ffffff^\
+
+mend
+mov %hide_bgsp2_cg,0
+fedexx 50,50,50,0,0,0,1000
+clr_oldnew_bg
+dllefe 1,1
+fr_bg ":b;fr_bg\orig\bmp\background\forest\well_1an.jpg",":b;bmp\background\forest\well_1an.png",0  ;transition to this after CG
+ld r,$BUT_nayamuA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e251:「……死体がない以上、……嘉音くんが死亡しているとは、/
+sl
+langjp:voicedelay 5220:dwave_jp 0, but_9e252:^^…断言できない。」\
+;＜戦人
+langen:dwave_eng 0, but_9e251:^... Tant que je n'aurai pas retrouvé son cadavre... je ne pourrai pas affirmer avec certitude...^@/
+sl
+langen:voicedelay 5220:dwave_eng 0, but_9e252:^ que Kanon est mort.^\
+
+msetef 0,22
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e402:　妾が赤で囁いたところで、駒であるそなたには届かぬか……。@/
+langen:dwave_eng 0, bea_9e402:^Même si je te murmure la vérité rouge, elle n'atteint donc pas la pièce que tu es...^@/
+
+langjp:dwave_jp 0, bea_9e403:　………^~ib~^そなた^~ib~^には、届いたよな………？\
+;＜点処理：そなた
+langen:dwave_eng 0, bea_9e403:^ Mais elle t'est bien parvenue à ^^~ib~toi~ib~^^, n'est-ce pas... ?^\
+
+textoff
+mend
+
+dllefe_off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+fede 0,3000
+
+wait 1000
+
+me1v 13,50
+me2v 5,50
+
+dllefe 1,1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_o1bn.jpg",":b;bmp\background\mainbuilding\m_o1bn.png",22
+wait 2000
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+me3v 11,90
+
+dllefe_off
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mkit_1an.jpg",":b;bmp\background\mainbuilding\mkit_1an.png",0  ;fixed lighting issue
+ld4 r,$BUT_KuyasigaruA1,10,3000
+ld r,$BUT_NayamuA1,80
+
+
+advchar "-1"
+langjp　一見、魔法としか思えない不思議な何かによる、大量殺人。@
+langen^À première vue, il s'agissait d'un massacre perpétré par quelque chose qu'on ne pouvait qualifier que de magie.^@
+br
+langjp　……鍵穴から襲い来る黄金の糸。@
+langen^Il y avait aussi ces fils dorés capables d'attaquer à travers les trous de serrure.^@
+br
+langjp　いや、食堂での６人殺しの時も、黄金の何かが飛び回っていたという証言がある。@
+langen^Et lors du meurtre des six personnes dans la salle à manger, plusieurs témoins avaient également vu quelque chose de doré voler dans tous les sens.^@
+br
+langjp　ひょっとすると両者は同じ凶器かもしれない。\
+langen^Peut-être s'agissait-il de la même arme.^\
+
+langjp　そして、園芸倉庫の密室殺人に、鉄格子を切断するレーザー光線。@
+langen^Puis il y avait le meurtre en chambre close de la remise de la roseraie, et ce rayon laser capable de découper des barreaux de fer.^@
+br
+langjp　……それだけではない。\
+langen^... Et ce n'était pas tout.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+
+langjp　他にも他にも、山羊のバケモノの群とか、@落とし穴を指を鳴らすだけで生み出せる魔女の話とか、黄金の糸を打ち出したうさぎみたいな悪魔たちとか。@
+langen^Et il y avait encore tout le reste : les hordes de monstres à tête de chèvre, ^@^la sorcière capable de créer des trappes d'un simple claquement de doigts, ou encore ces démons ressemblant à des lapins qui tiraient des fils dorés...^@
+br
+langjp　他にもあった気がするが、………どれも滅茶苦茶な話ばかりだった。\
+langen^J'avais sûrement oublié d'autres témoignages, tout aussi invraisemblables.^\
+
+langjp　到底、受け容れることは出来ず、何かのトリックと何かの勘違いを疑わざるを得ない。@
+langen^Impossible d'accepter ça tel quel... Je ne pouvais que soupçonner un trucage, une erreur d'interprétation, quelque chose.^@
+br
+langjp　……しかしそれらがみんな、異口同音に同じことを言っていて、証言に矛盾がないのは、一体どういうわけなのか…。\
+langen^Mais pourquoi tant de personnes racontaient-elles des choses semblables sans se contredire ?^\
+
+langjp　魔法だけじゃない。\
+langen^Et il n'y a pas que la magie.^\
+
+mono 1
+ld r,$MAR_DefA1,24
+
+me3v 16,50
+
+langjp　真里亞の謎の死。@
+langen^Il y avait la mort mystérieuse de Maria.^@
+br
+
+ld l,$JES_DefA2,23
+
+langjp　譲治の兄貴が殺されたことをなぜか知っていた朱志香。@
+langen^Le fait que Jessica ait su, on ne sait comment, que George avait été tué.^@
+br
+
+ld c,$KIN_DefA1,24
+
+langjp　本当にクソジジイかどうか確認も出来ない謎の焼死体。@
+langen^Ce mystérieux cadavre carbonisé dont je n'avais même pas pu vérifier s'il appartenait vraiment à ce vieux salaud.^@
+br
+langjp　……他にも他にも。\
+langen^... Et encore plein d'autres choses.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+bgm1 39
+fede 10,3000
+
+mono off
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mkit_1an.jpg",":b;bmp\background\mainbuilding\mkit_1an.png",22
+
+langjp　ワケのわからないことだらけだ……！/
+sl
+langen^Tout était incompréhensible... !^@/
+se1 11
+quakey 3,300
+mov %disable_adv_clear, 1
+langjp:noclear_cw:
+langen:noclear_cw:
+mov %disable_adv_clear, 0
+
+br
+langjp　俺はぐびりとワインの瓶を傾け、喉を鳴らす。\
+langen^ Je portai la bouteille de vin à mes lèvres et avalai une longue gorgée.^\
+
+langjp　……何が何やら、俺にはさっぱりわからない。@
+langen^... Je ne comprends vraiment plus rien à rien.^@
+br
+langjp　昨日の夕食後、子どもたちはゲストハウスに帰っていろといって屋敷を追い出され、@………その間に食堂では大虐殺。\
+langen^Après le dîner d'hier soir, on nous avait chassés du manoir, nous les gamins, en nous ordonnant de retourner à la résidence des invités^@^... et pendant ce temps, un véritable massacre avait eu lieu dans la salle à manger.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+
+langjp　霧江さんたちは落とし穴に落とされて捕まって。@
+langen^Kyrie et les autres étaient tombés dans des trappes et avaient été capturés.^@
+br
+langjp　そして朱志香と譲治の兄貴はテストとやらに呼び出されて殺されて。\
+langen^Puis Jessica et George avaient été convoqués pour ce fameux test, avant d'être tués.^\
+
+langjp　霧江さんたちは地下牢を何とか脱走できたのに、結局みんな殺されてしまって。@
+langen^Le groupe de Kyrie avait réussi à s'échapper de sa prison, mais tous ses membres avaient finalement été tués.^@
+br
+langjp　そして最後の最後に真里亞までもが殺されて、俺はひとりぼっちで残されている。\
+langen^Et à la toute fin, même Maria avait été tuée, me laissant complètement seul.^\
+
+langjp　………つまり、俺はゲストハウスに閉じ込められてただけなんだ。@
+langen^... En gros, moi, je n'avais fait que rester enfermé dans la résidence des invités.^@
+br
+langjp　その間に、いつの間にか大事件が起こっていて、そしていつの間にか終わってたってわけなんだ。@
+langen^Toute cette catastrophe s'était déroulée pendant que j'ignorais ce qui se passait... avant de s'achever sans moi.^@
+br
+langjp　これをワケがわからないと言わずして何と言う？@
+langjp　もう、何が何だかさっぱりだ！\
+langen^J'en avais complètement perdu le fil !^@
+langen^Je ne parvenais plus à comprendre ce qui s'était réellement passé !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mkit_1cn.jpg",":b;bmp\background\mainbuilding\mkit_1cn.png",22
+;ld r,$BUT_FutekiA1,24
+
+advchar "10"
+langjp:dwave_jp 0, but_9e253:「もう俺はただの酔っ払いなんだぜ。@:dwave_jp 0, but_9e254:俺だけ生き残らせるつもりかよ…？@:dwave_jp 0, but_9e255:　とっとと姿を現して殺しに来いってんだ。@:dwave_jp 0, but_9e256:もう面倒だからこっちからは探さねぇぞ。@:dwave_jp 0, but_9e257:そっちから正体を見せやがれってんだ……！@:dwave_jp 0, but_9e258:　俺は逃げも隠れもしねぇぞ、矢でも鉄砲でも持って来やがれ…！」\
+;＜戦人
+langen:dwave_eng 0, but_9e253:^Maintenant, je ne suis plus qu'un pauvre type bourré. ^@:dwave_eng 0, but_9e254:^Vous comptez vraiment ne laisser que moi en vie... ? ^@:dwave_eng 0, but_9e255:^Alors montrez-vous et venez me tuer une bonne fois pour toutes. ^@:dwave_eng 0, but_9e256:^J'en ai marre, je vais même plus vous chercher. ^@:dwave_eng 0, but_9e257:^C'est à vous de venir me montrer votre vraie gueule... ! ^@:dwave_eng 0, but_9e258:^Je ne fuirai pas, je ne me cacherai pas. Ramenez vos flèches, vos flingues ou ce que vous voulez... !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mkit_1an.jpg",":b;bmp\background\mainbuilding\mkit_1an.png",23
+
+advchar "-1"
+langjp　昨日からまったく寝てないから、眠くてしょうがない。@
+langjp　殺したきゃ勝手にしろ。\
+langen^Je n'ai pas dormi depuis hier, alors je crève de sommeil.^@
+langen^Vous voulez me tuer ? Faites-vous plaisir.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+langjp　俺はゲストハウスに戻り、堂々とベッドで休むことにした。\
+langen^Je décidai donc de retourner à la résidence des invités pour dormir enfin dans un vrai lit.^\
+
+textoff
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m1f_p1bn.jpg",":b;bmp\background\mainbuilding\m1f_p1bn.png",24
+wait 1000
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mhal_2cn.jpg",":b;bmp\background\mainbuilding\mhal_2cn.png",24
+
+langjp　……厨房を出て、ロビーを通り掛ると、@………あの、魔女の肖像画が目に入った。\
+langen^... En sortant de la cuisine, je traversai le hall^@^... et mon regard tomba sur le portrait de la sorcière.^\
+
+langjp　大時計が目に入る。@
+langen^La grande horloge accrocha aussi mon regard.^@
+br
+langjp　……まさにちょうど、２４時を指すところだった。\
+langen^... Ses aiguilles s'apprêtaient tout juste à marquer minuit.^\
+
+fede 0,2000
+
+se1v 71,100
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\portrait2.jpg",":b;bmp\background\mainbuilding\portrait2.png",6
+
+langjp　そして鳴り響く、２４時を知らせる鐘の音……。@
+langen^Puis retentirent les coups de cloche annonçant minuit...^@
+br
+langjp　それを聞きながら、……ベアトリーチェの肖像画を見上げる。\
+langen^Bercé par leur écho... je levai les yeux vers le portrait de Béatrice.^\
+
+langjp　ぴったり２４時間前、俺はお前と会った。@
+langen^Il y a vingt-quatre heures tout rond, je t'ai rencontrée.^@
+br
+langjp　お前は何が言いたかったんだ…？@
+langjp　そしてどこへ行った？\
+langen^Qu'est-ce que tu cherchais à me dire... ?^@
+langen^Et où est-ce que t'es passée ?^\
+
+langjp　お前は一体、何者なんだ………？@
+langjp　黄金の魔女、ベアトリーチェ。@
+langen^Qui es-tu, au juste... ?^@
+langen^Sorcière d'Or, Béatrice.^@
+br
+langjp　お前を巡る謎は、何一つ解けちゃ、いないんだ……！\
+langen^Je n'ai pas résolu un seul des mystères qui t'entourent... !^\
+
+langjp　姿を見せやがれ…。@
+langen^Montre-toi...^@
+br
+langjp　………そして俺と勝負しろッ…！！\
+langen^... et viens m'affronter... !!^\
+
+msetef 0,42
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mhal_2bn.jpg",":b;bmp\background\mainbuilding\mhal_2bn.png",42
+
+gosub *BEA_Isyou1
+
+
+;■メタ視
+mov %play_scene,40440 : mov %r_hyouji_side,0 : mov %r_hyouji_cha,bea
+langjp　そして、……魔女が姿を現す。@/
+langjp　いよいよ主賓が姿を現したかのように、大階段の上の踊り場に、その姿を現す……。\
+langen^Et alors... la sorcière apparut.^@
+langen^Telle l'invitée d'honneur qui daigne enfin faire son entrée, elle se dressait sur le palier, en haut du grand escalier...^\
+
+fede 0,2000
+wait 1000
+
+Mld l,$BUT_majimeA3,23
+
+bgm1 106
+
+advchar "10"
+langjp:dwave_jp 0, but_9e259:「ようやく姿を現しやがったな……。@:dwave_jp 0, but_9e260:……丸一日、退屈させられてたところだぜ。」\
+;＜戦人
+langen:dwave_eng 0, but_9e259:^T'as enfin daigné te montrer...^@:dwave_eng 0, but_9e260:^ Ça fait une journée entière que je m'emmerde à t'attendre.^\
+
+mld r,$BEA_nayamuA1,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e404:「……………そうだ。@:dwave_jp 0, bea_9e405:丸一日を与えた。@:dwave_jp 0, bea_9e406:ニンゲン側の権利行使は充分か。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e404:^... Exactement.^@:dwave_eng 0, bea_9e405:^ Je t'ai accordé une journée entière.^@:dwave_eng 0, bea_9e406:^ Le camp des Humains a-t-il pu jouir pleinement de ses droits ?^\
+
+
+mld l,$BUT_komaruA2,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e261:「あぁ。@:dwave_jp 0, but_9e262:退屈だったんでな。@:dwave_jp 0, but_9e263:存分にやらせてもらったぜ。」\
+;＜戦人
+langen:dwave_eng 0, but_9e261:^Ouais. ^@:dwave_eng 0, but_9e262:^Je m'ennuyais ferme, après tout. ^@:dwave_eng 0, but_9e263:^Alors j'en ai profité à fond.^\
+
+
+mld r,$BEA_MajimeA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e407:「…………縁寿は、良い駒であったな。」@
+;＜ベアト
+langen:dwave_eng 0, bea_9e407:^... Ange... fut une bonne pièce.^@
+
+mld l,$BUT_KomaruA3,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e264:「縁寿の名を、……お前が口にするんじゃねぇ。」\
+;＜戦人
+langen:dwave_eng 0, but_9e264:^Ne prononce pas... le nom d'Ange.^\
+
+
+mld r,$BEA_fumanA3,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e408:「………あれは奇跡によって現れ、自らを生贄にして、そなたに絶対の勝利の執念を与えた。」@
+;＜ベアト
+langen:dwave_eng 0, bea_9e408:^... Surgie par miracle, elle s'est offerte en sacrifice pour t'insuffler une volonté de vaincre absolue.^@
+
+mld l,$BUT_niramuA4,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e265:「縁寿の名を、口にするな。」\
+;＜戦人
+langen:dwave_eng 0, but_9e265:^Ne prononce pas le nom d'Ange.^\
+
+
+mld r,$BEA_majimeA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e409:「…………あの無残な死は、そなたにとって必要なものだった。@:dwave_jp 0, bea_9e410:あの死を見なければ、そなたは本気にならない。@:dwave_jp 0, bea_9e411:縁寿の幸薄き未来を自覚しなければ、そなたに勝利の執念は生まれない。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e409:^... Cette mort atroce, il te la fallait.^@:dwave_eng 0, bea_9e410:^ Sans l'avoir vue, jamais tu ne te serais battu pour de bon.^@:dwave_eng 0, bea_9e411:^ Sans avoir compris quel triste avenir attend Ange, jamais tu n'aurais connu cette soif de victoire.^\
+
+
+mld l,$BUT_odorokiA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e266:「縁寿の名を口にするなと言っている…！！」\
+;＜戦人
+langen:dwave_eng 0, but_9e266:^Je t'ai dit de ne pas prononcer le nom d'Ange... !!^\
+
+
+mld r,$BEA_nayamuA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e412:「…………つまりは、必要な生贄だったというわけだ。@:dwave_jp 0, bea_9e413:そうでなくては、そなたに妾を殺すほどの怒りは生まれない。@:dwave_jp 0, bea_9e414:妾とそなたの拮抗が崩せない。\
+langen:dwave_eng 0, bea_9e412:^... Autrement dit, c'était un sacrifice nécessaire.^@:dwave_eng 0, bea_9e413:^ Sans lui, tu n'aurais jamais conçu assez de colère pour me tuer.^@:dwave_eng 0, bea_9e414:^ Et jamais l'équilibre entre nous deux n'aurait pu se rompre.^\
+
+mld r,$BEA_futekiA2,80
+
+langjp:dwave_jp 0, bea_9e415:　ベルンカステル卿め、これは駒ではないわ、切り札と呼ぶが相応しい。@:dwave_jp 0, bea_9e416:……駒はどれほど活躍しようとも盤上を離れることはない。@:dwave_jp 0, bea_9e417:しかし切り札は、どんな力を発揮しようとも、切れば確実に捨てられる。\
+langen:dwave_eng 0, bea_9e415:^Ah, Dame Bernkastel... Ce n'est pas une pièce, cela. C'est un atout, au sens le plus noble du terme.^@:dwave_eng 0, bea_9e416:^ Une pièce, si brillante soit-elle, ne quitte jamais l'échiquier.^@:dwave_eng 0, bea_9e417:^ Mais un atout, quelle que soit sa puissance, est défaussé sitôt joué.^\
+
+mld r,$BEA_akuwaraiA2,80
+
+langjp:dwave_jp 0, bea_9e418:　縁寿は、そなたにとって実に良き切り札だったのだ。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e418:^Ange fut pour toi un atout de tout premier ordre.^\
+
+
+mld l,$BUT_sakebuA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e267:「縁寿の名を、口にするんじゃねええええぇえええええぇッ！！！」/
+sl
+langen:dwave_eng 0, but_9e267:^NE PRONONCE PAS... LE NOM D'AAAAAAAAAAAAANGE !!!^@/
+
+se1v 2,100
+quakex 5,600
+
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜戦人
+
+mld r,$BEA_iiwakeA3,80
+
+langjp　戦人の怒号の叫びに、ベアトはようやく口を噤む。\
+langen^Face au rugissement de Battler, Béato se tut enfin.^\
+
+mld l,$BUT_majimeA4,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e268:「……俺はな、こんなところで遊んでる暇はもう一切ねぇんだ。@:dwave_jp 0, but_9e269:……引き分けすらも、縁寿を待たせてる。@/
+langen:dwave_eng 0, but_9e268:^... Écoute-moi bien. J'ai plus de temps à perdre à m'amuser ici.^@:dwave_eng 0, but_9e269:^ Même un match nul, ce serait encore faire attendre Ange.^@/
+
+mld l,$BUT_kuyasigaruA1,80
+
+langjp:dwave_jp 0, but_9e270:^^!s1…………俺はな、お前を打ち破り、/
+sl
+langjp:voicedelay 3260:dwave_jp 0, but_9e271:^^……家族を連れて、/
+sl
+langjp:voicedelay 1390:dwave_jp 0, but_9e272:^^……家に帰るんだよッ！！@:dwave_jp 0, but_9e273:　てめえと魔女ごっこで遊んでる暇は、一秒たりともありはしないッ！！」/
+sl
+langen:dwave_eng 0, but_9e270:^^!s1^ ... Je vais te battre^@/
+sl
+langen:voicedelay 3260:dwave_eng 0, but_9e271:^... ramener ma famille^@/
+sl
+langen:voicedelay 1390:dwave_eng 0, but_9e272:^... et rentrer à la maison !!^@:dwave_eng 0, but_9e273:^ J'ai pas une seule seconde à gaspiller à jouer à la sorcière avec toi !!^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜戦人
+
+
+mld r,$BEA_iiwakeA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e419:「ならば、どうすれば良いか。@:dwave_jp 0, bea_9e420:わかっているな。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e419:^Alors, que dois-tu faire ?^@:dwave_eng 0, bea_9e420:^ Tu le sais, n'est-ce pas ?^\
+
+
+mld l,$BUT_odorokiA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e274:「あぁ！@:dwave_jp 0, but_9e275:　お前をぶっ倒す！！@:dwave_jp 0, but_9e276:　魔女も魔法も幻想も妄想も、全て俺がぶっ飛ばすッ！！@:dwave_jp 0, but_9e277:　さぁ、おっ始めようぜッ！！！@:dwave_jp 0, but_9e278:　もう二度と誤魔化させない！！@:dwave_jp 0, but_9e279:　ゲーム再開だぜ？@/
+langen:dwave_eng 0, but_9e274:^Ouais ! ^@:dwave_eng 0, but_9e275:^Je vais t'écraser !! ^@:dwave_eng 0, but_9e276:^Sorcières, magie, illusions, délires... je vais tout faire voler en éclats !! ^@:dwave_eng 0, but_9e277:^Allez, c'est parti !!! ^@:dwave_eng 0, but_9e278:^Tu ne m'embrouilleras plus jamais !! ^@:dwave_eng 0, but_9e279:^La partie reprend, compris ? ^@/
+
+;mld l,$BUT_odorokiA1,80
+
+langjp:dwave_jp 0, but_9e280:　お前という嘘っぱちを覆う、魔女のベールを俺が引き裂いてやるッ！！！」\
+;＜戦人
+langen:dwave_eng 0, but_9e280:^Ce voile de sorcière qui recouvre le mensonge ambulant que tu es, je vais le mettre en pièces !!!^\
+
+
+mld r,$BEA_fukigenA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e422:「長いわ。@素直に一言、妾を殺してやると言えばよい。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e422:^C'est trop long.^@^ Dis-le simplement, en trois mots : « Tu vas mourir ».^\
+
+
+mld l,$BUT_niramuA4,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e281:「ああ。@:dwave_jp 0, but_9e282:その言葉をお望みなら、……言ってやるさ。@:dwave_jp 0, but_9e283:俺が聞いてやるお前の望みで、最初で最後のものだ。」@
+;＜戦人
+langen:dwave_eng 0, but_9e281:^Ouais.^@:dwave_eng 0, but_9e282:^ Si c'est ce que tu veux entendre... je vais te le dire.^@:dwave_eng 0, but_9e283:^ C'est le premier et le dernier de tes souhaits que j'exaucerai.^@
+
+
+mld r,$BEA_futekiA2,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e423:「…………感謝する。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e423:^... Je t'en sais gré.^\
+
+mld l,$BUT_MajimeA2,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e284:「お前を、………………、」@
+;＜戦人
+langen:dwave_eng 0, but_9e284:^Tu vas... ^@
+
+mld r,$BEA_waraiA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e424:「………………………。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e424:^...^\
+
+se1v 2,100
+
+mono 2
+
+;mcl a,0
+;mcbg 0
+
+mendef 0
+
+bg white,1

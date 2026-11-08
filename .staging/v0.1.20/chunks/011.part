@@ -1,0 +1,5000 @@
+
+
+
+advchar "16"
+langjp:dwave_jp 0, kan_1e15:「……それでは、まだ仕事がありますので。@:dwave_jp 0, kan_1e16:………失礼します。」\
+
+langen:dwave_eng 0, kan_1e15:^... J'ai encore du travail. ^@:dwave_eng 0, kan_1e16:^... Veuillez m'excuser.^\
+
+advchar "-1"
+langjp　これ以上、この場で沈黙を守ることは嘉音くん自身にとっても居心地の悪いものらしい。@
+
+langjp　もう一度ぺこりと頭を下げると踵を返し、猫車を押し始めるのだった。\
+
+langen^Kanon semblait avoir atteint sa limite quotidienne de conversation.^@
+langen^Il s'inclina une dernière fois et retourna à sa brouette.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+
+se1 13
+
+quakey 5,300
+
+
+
+langjp　すると突然、猫車がぐらりと転んで積荷を散らしてしまった。@
+
+langjp　猫車のひとつしかない車輪が小石でも噛んだのでバランスを崩してしまったのだろう。\
+
+langen^Et c'est là que les ennuis commencèrent. La brouette pencha dangereusement... et patatras ! Tout tomba.^@
+langen^Sa roue unique avait sans doute buté contre une pierre.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_g1a.jpg",":b;bmp\background\garden\rose_g1a.png",0
+
+ld r,$GOH_HohoemiA1,26
+
+
+
+advchar "17"
+langjp:dwave_jp 0, goh_1e31:「何をしてるんですか…、ささ、早く片付けて…！」\
+
+langen:dwave_eng 0, goh_1e31:^Voyons, Kanon... Que faites-vous donc ? Dépêchez-vous de ramasser tout cela, je vous prie... !^\
+
+ld l,$KAN_KomaruA1,6
+
+
+
+advchar "-1"
+langjp　お客様の前で無様な姿を見せるのは使用人の恥だとでも言わんばかりに、郷田さんが小声で急き立てる。@
+langjp　嘉音くんも、言われなくてもわかってるとばかりに、無言で落ちた荷を猫車に積み直す。\
+langen^Sans répondre, Kanon se mit aussitôt à récupérer ses affaires.^@
+langen^Il savait ce qu'il avait à faire et rechargea la brouette en silence.^\
+
+langjp　シャベルなんかの園芸道具は軽そうだからいいが、一抱えもあるような肥料の袋を持ち上げるのには苦労しているようだった。\
+
+langen^Les petits outils ne lui posaient aucun problème. Mais les énormes sacs d'engrais... Ouille. Il galérait.^\
+
+ld c,$JES_DefA1,24
+
+
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e103:「大丈夫かよ、そそっかしいな。@:dwave_jp 0, jes_1e104:ほら。」@
+
+;＜朱志香
+
+langen:dwave_eng 0, jes_1e103:^Hé, ça va ? Fais attention ! ^@:dwave_eng 0, jes_1e104:^Tiens, je vais t'aider !^@
+
+ld r,$GOH_omakaseA3,80
+
+
+
+advchar "17"
+langjp:dwave_jp 0, goh_1e32:「お嬢様、お召し物が汚れます。@:dwave_jp 0, goh_1e33:ここはお任せ下さい。」@
+
+;＜郷田
+langen:dwave_eng 0, goh_1e32:^Mademoiselle, vous risquez de salir vos vêtements. ^@:dwave_eng 0, goh_1e33:^Veuillez nous laisser nous en charger.^@
+
+advchar "-1"
+langjp　朱志香が拾ったシャベルを、郷田さんは優雅な仕草で取り上げる。@
+langen^Gohda récupéra élégamment la pelle que Jessica venait de ramasser.^@
+
+br
+
+langjp　その背中では、肥料の袋に難儀している嘉音くんの姿があった。\
+
+langen^Derrière lui, Kanon continuait à se débattre avec les sacs.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_1a.jpg",":b;bmp\background\garden\garden_1a.png",0
+
+ld r,$MAR_DefA1,24
+
+
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e140:「……うー。@:dwave_jp 0, mar_1e141:お召し物が汚れる？」@
+
+langen:dwave_eng 0, mar_1e140:^... Uu- ? ^@:dwave_eng 0, mar_1e141:^Salir ses vêtements ?^@
+
+ld l,$BUT_WaraiA1,23
+
+
+
+advchar "10"
+langjp:dwave_jp 0, but_1e226:「安心しろよ、俺が着てるのはそんなお上品なものじゃねぇぜ。@/
+
+langen:dwave_eng 0, but_1e226:^Bah, ça va ! Je suis pas habillé pour rencontrer l'empereur non plus ! ^@/
+
+ld l,$BUT_DefA1,80
+
+
+
+langjp:dwave_jp 0, but_1e227:それによ、俺はレストランで、落ちたフォークをウェイトレスに拾わせるってやつが大嫌いなんだ。」@
+
+advchar "-1"
+langjp　俺は他にも転がる肥料を抱え上げる。@
+advchar "10"
+langen:dwave_eng 0, but_1e227:^Et puis, j'ai jamais supporté les types qui laissent une serveuse ramasser leur fourchette sous prétexte que c'est son boulot.^@
+advchar "-1"
+langen^Une paire de bras, ça sert aussi à aider ! Je me baissai pour récupérer les sacs éparpillés.^@
+
+br
+
+langjp　決して軽くはなかったが、俺にとっちゃ朝飯前だ。\
+
+langen^... Ah ouais. C'était pas du coton, ce machin ! Mais j'avais quand même plus de muscles que Kanon.^\
+
+cl r,23
+
+ld r,$KAN_defA2,24
+
+
+
+langjp　嘉音くんは驚いた目を向ける。@
+
+langjp　まさか客人に手伝ってもらえるとは思わなかったって顔だ。\
+
+langen^Kanon me fixa avec des yeux ronds, comme si je venais de lui annoncer que j'étais le président du Japon.^@
+langen^Visiblement, il ne s'attendait absolument pas à voir un invité mettre la main à la pâte.^\
+
+ld r,$KAN_KomaruA1,80
+
+
+
+advchar "16"
+langjp:dwave_jp 0, kan_1e17:「…………ば、戦人さま…。@:dwave_jp 0, kan_1e18:結構です…、僕が全てやりますので…。」@
+
+langen:dwave_eng 0, kan_1e17:^... M-Monsieur Battler... ^@:dwave_eng 0, kan_1e18:^Ce n'est pas nécessaire... Je peux m'en charger...^@
+
+ld l,$BUT_WaraiA2,80
+
+advchar "10"
+langjp:dwave_jp 0, but_1e228:「気にすんなぁ！@:dwave_jp 0, but_1e229:　こう見えても鍛え方が違うぜ！@:dwave_jp 0, but_1e230:　へへん！」@
+langen:dwave_eng 0, but_1e228:^Mais t'en fais pas ! ^@:dwave_eng 0, but_1e229:^J'en ai peut-être pas l'air, mais sous cette silhouette de rêve se cache un véritable athlète ! ^@:dwave_eng 0, but_1e230:^Héhé !^@
+
+br
+
+advchar "-1"
+langjp　嘉音くんはまだ成長期前って感じで、少々ひ弱そうな体つきだ。@
+
+langjp　ちょいとこの重さは堪えるのかもしれない。
+langen^Bon, j'exagérais un peu. Mais Kanon semblait encore loin d'avoir terminé sa croissance.^@
+langen^Avec sa carrure, pas étonnant qu'il peine à déplacer des sacs aussi lourds.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_1b.jpg",":b;bmp\background\garden\garden_1b.png",0
+
+ld r,$GEO_DefA1,24
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e117:「結構重いね。@:dwave_jp 0, geo_1e118:嘉音くんが苦労するのも無理はないよ。@:dwave_jp 0, geo_1e119:嘉音くん、気にしないで。」@
+
+;＜譲治
+langen:dwave_eng 0, geo_1e117:^Ils sont quand même assez lourds. ^@:dwave_eng 0, geo_1e118:^Rien d'étonnant à ce que tu aies du mal avec ça. ^@:dwave_eng 0, geo_1e119:^Ne t'en fais pas, Kanon.^@
+
+ld l,$BUT_WaraiA1,23
+
+advchar "10"
+langjp:dwave_jp 0, but_1e231:「これぞ俺の見せ場さぁ。@:dwave_jp 0, but_1e232:これでさっきの船の分はチャラだよなぁ？」\
+
+langen:dwave_eng 0, but_1e231:^Et voilà, mon heure de gloire ! ^@:dwave_eng 0, but_1e232:^Alors, Jessica ? Cet exploit héroïque efface ma petite mésaventure sur le bateau, non ?^\
+
+cl r,23
+
+ld r,$JES_akuWaraiA1,23
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e105:「は！@:dwave_jp 0, jes_1e106:　この程度のことじゃ、さっきの大騒ぎが帳消しになるもんかよ！@:dwave_jp 0, jes_1e107:　あっはっはっは！@:dwave_jp 0, jes_1e108:　嘉音くんにも後で教えてやるよ、戦人ったら面白ぇんだぜ！」@
+
+;＜朱志香
+
+langen:dwave_eng 0, jes_1e105:^HA ! Tu rêves ! ^@:dwave_eng 0, jes_1e106:^Tu crois que trois sacs d'engrais vont me faire oublier ton numéro sur le bateau ?! ^@:dwave_eng 0, jes_1e107:^Ahahaha ! ^@:dwave_eng 0, jes_1e108:^Attends que je raconte ça à Kanon ! Il va mourir de rire !^@
+
+ld c,$MAR_WaraiA2,22
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e142:「落ちるー落ちるー！！@:dwave_jp 0, mar_1e143:　うーうーうー！！！」\
+
+langen:dwave_eng 0, mar_1e142:^Je vais tombeeer, je vais tombeeer !! ^@:dwave_eng 0, mar_1e143:^Uu-uu-uu- !!!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_g1a.jpg",":b;bmp\background\garden\rose_g1a.png",2
+
+advchar "-1"
+langjp　そんな風にしている内に、積荷は全て元通り猫車に積みあがる。\
+
+langen^Évidemment, mon exploit héroïque ne suffirait pas à effacer cette fichue histoire de bateau ! Tout était enfin rangé.^\
+
+ld c,$KAN_nayamuA1,22
+
+advchar "16"
+langjp:dwave_jp 0, kan_1e19:「…………お見苦しいところをお見せして、申し訳ございませんでした。」@
+
+langen:dwave_eng 0, kan_1e19:^... Veuillez pardonner ce spectacle indigne.^@
+
+ld r,$GOH_DefA1,24
+
+advchar "17"
+langjp:dwave_jp 0, goh_1e34:「ささ、もう結構ですよ。@:dwave_jp 0, goh_1e35:行ってください。」\
+
+;＜郷田
+
+langen:dwave_eng 0, goh_1e34:^Cela suffit, Kanon. ^@:dwave_eng 0, goh_1e35:^Vous pouvez disposer.^\
+
+advchar "-1"
+langjp　もてなすべきお客にみっともないところを見せてしまったのは使用人としては恥ずべきことなのだろう。@
+
+langjp　退場を急かす郷田に促され、嘉音くんは去っていった。
+langen^Faire tomber sa brouette devant les invités, sous l'œil de Gohda... Ouais, j'aurais pas aimé être à sa place.^@
+langen^Kanon baissa la tête, reprit sa brouette et s'éloigna.^\
+
+cl c,23
+
+wait 1000
+
+ld l,$EVA_akireA1,23
+
+advchar "05"
+langjp:dwave_jp 0, eva_1e78:「郷田さんもいじめ過ぎよぅ。@:dwave_jp 0, eva_1e79:意地悪言わないであなたも手伝えばよかったんじゃない？」@
+
+;＜絵羽
+
+langen:dwave_eng 0, eva_1e78:^Monsieur Gohda, vous n'êtes pas un peu dur avec lui ? ^@:dwave_eng 0, eva_1e79:^Au lieu de le gronder, un coup de main aurait été plus utile, non ?^@
+
+ld r,$GOH_omakaseA3,80
+
+advchar "17"
+langjp:dwave_jp 0, goh_1e36:「…これは至りませんで。@:dwave_jp 0, goh_1e37:誠に申し訳ございませんでした。」@
+;＜郷田
+langen:dwave_eng 0, goh_1e36:^... Vous avez parfaitement raison. J'ai manqué de considération. ^@:dwave_eng 0, goh_1e37:^Je vous prie d'accepter mes excuses.^@
+
+advchar "-1"
+langjp　郷田さんは笑顔を寸分歪ませることもなく、優雅に謝罪の言葉を口にするのだった。
+langen^Même pris en faute, Gohda s'excusait avec une élégance de maître d'hôtel dans un palace. ... Presque un super-pouvoir.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_1b.jpg",":b;bmp\background\garden\garden_1b.png",23
+
+ld l,$HID_DefA1,23
+
+advchar "06"
+langjp:dwave_jp 0, hid_1e64:「嘉音くんもえぇところはぎょうさんあるんやで。@:dwave_jp 0, hid_1e65:ただ、若いんかのぅ、色々と損をしとる。@:dwave_jp 0, hid_1e66:勿体無いわ。」@
+
+langen:dwave_eng 0, hid_1e64:^Oh, Kanon a beaucoup de qualités, vous savez ! ^@:dwave_eng 0, hid_1e65:^C'est juste qu'il est encore jeune et se complique parfois la vie tout seul. ^@:dwave_eng 0, hid_1e66:^C'est dommage, quand même !^@
+
+ld r,$RUD_DefA1,24
+
+advchar "08"
+langjp:dwave_jp 0, rud_1e74:「気難しい年頃さぁ。@:dwave_jp 0, rud_1e75:そっとしといてやれよ。@:dwave_jp 0, rud_1e76:使用人は寡黙なくらいが丁度いいさ。@:dwave_jp 0, rud_1e77:なぁ熊沢さん。」\
+
+;＜留弗夫
+
+langen:dwave_eng 0, rud_1e74:^Bah, c'est un âge difficile. ^@:dwave_eng 0, rud_1e75:^Faut pas lui en vouloir. ^@:dwave_eng 0, rud_1e76:^Et entre nous, un domestique qui parle pas, c'est plutôt une qualité, non ? ^@:dwave_eng 0, rud_1e77:^Hein, madame Kumasawa ?^\
+
+cl l,24
+
+ld l,$KUM_WaraiA1,23
+
+advchar "18"
+langjp:dwave_jp 0, kum_1e36:「ほっほっほっほ、留弗夫さまは手厳しゅうございますこと！@:dwave_jp 0, kum_1e37:　私ほど使用人で寡黙な者はおりませんとも、えぇ！」@
+langen:dwave_eng 0, kum_1e36:^Ho ho ho ! Monsieur Rudolf, quelle sévérité ! ^@:dwave_eng 0, kum_1e37:^Mais voyons, vous savez bien qu'il n'existe pas de domestique plus discrète que moi !^@
+
+br
+
+advchar "-1"
+langjp　その白々しい言葉にみんなは思わず苦笑いを漏らす。@
+
+langjp　本人だって夢にもそう思ってなんかいない。@
+
+langjp　だから、場を和ますために言ってくれたのだ。
+langen^... Alors celle-là, elle était bonne. Personne n'allait croire une énormité pareille.^@
+langen^Kumasawa moins que quiconque : elle était la première à savoir qu'elle n'avait rien de discret.^@
+langen^Elle avait lancé ça uniquement pour détendre l'atmosphère.^\
+
+langjp　なるほど、熊沢の婆ちゃんってこういうキャラだったんだな。@
+langen^... Ah ouais. Je commençais à me souvenir du personnage.^@
+
+br
+
+langjp　ちょっと硬くなっていた雰囲気は、熊沢さんのカラカラとした笑いでみるみる晴らされていった。\
+
+langen^Son rire chaleureux finit par chasser le malaise laissé par le départ de Kanon.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_g1a.jpg",":b;bmp\background\garden\rose_g1a.png",24
+
+ld r,$KIR_waraiA2,24
+
+
+
+advchar "09"
+langjp:dwave_jp 0, kir_1e48:「そろそろ荷物を置きたいわね。@:dwave_jp 0, kir_1e49:郷田さん、部屋割りはどうなってるのかしら？」@
+
+;＜霧江
+
+langen:dwave_eng 0, kir_1e48:^Bon... Si nous pouvions enfin aller déposer nos bagages ? ^@:dwave_eng 0, kir_1e49:^Monsieur Gohda, les chambres sont réparties comment, cette année ?^@
+
+ld l,$GOH_DefA1,23
+
+advchar "17"
+langjp:dwave_jp 0, goh_1e38:「昨年と同じになっております。@:dwave_jp 0, goh_1e39:さ、ご案内いたします。@:dwave_jp 0, goh_1e40:どうぞこちらへ。」\
+
+langen:dwave_eng 0, goh_1e38:^Comme l'année dernière, madame. ^@:dwave_eng 0, goh_1e39:^Je vais vous accompagner. ^@:dwave_eng 0, goh_1e40:^Je vous en prie, suivez-moi.^\
+
+advchar "-1"
+langjp　俺たちは瀟洒で小綺麗なゲストハウスへ向かう。@
+
+langjp　ここが、一泊の間の俺たちの仮の宿になるのだ。\
+
+langen^Nous nous dirigeâmes enfin vers la résidence des invités, aussi élégante que dans mes souvenirs.^@
+langen^C'était là que nous allions passer la nuit.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+wait 1000
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_1c.jpg",":b;bmp\background\garden\garden_1c.png",22
+
+ld c,$KAN_majimeA1,22
+
+advchar "16"
+langjp:dwave_jp 0, kan_1e20:「……………………………………。」@
+langen:dwave_eng 0, kan_1e20:^...^@
+
+br
+
+advchar "-1"
+langjp　客人一行がゲストハウスに入っていくのを、嘉音は垣根越しに見送っていた。@
+
+langjp　それから、猫車に積まれた、あの重い肥料の袋に目を落とす。\
+
+langen^Derrière la haie, Kanon regardait les invités entrer dans la résidence.^@
+langen^Puis il baissa les yeux vers la brouette. Vers les sacs d'engrais.^\
+
+langjp　脳裏に過ぎるのは、さっきのミスの時。@
+langen^Ces mêmes sacs avec lesquels il s'était débattu quelques instants plus tôt.^@
+
+br
+
+langjp　体躯の大きい戦人が、自分が満足に持ち上げられない袋を、さも軽そうに持ち上げて見せていた。\
+
+langen^Battler les avait soulevés presque sans effort. Lui, malgré tous ses efforts, avait à peine réussi à les déplacer.^\
+
+langjp　その好意が、嘉音に何の感傷を与えているのか、傍目に理解することはとても難しかっただろう。@
+langjp　でも、そのうな垂れた後姿を見る限り、そっとせずにはいられない何かを感じさせるのだった。\
+
+langen^La gentillesse de Battler n'avait pourtant rien d'une moquerie. Il lui avait simplement tendu la main.^@
+langen^Mais ce geste avait remué quelque chose en Kanon. Quelque chose qu'il aurait peut-être préféré ne pas ressentir.^\
+
+langjp　…ぽつりと独り言が零れる。@
+langen^Il baissa les épaules. Ses lèvres bougèrent ; un murmure lui échappa.^@
+
+br
+
+langjp　でもそれは、呟いた自分の耳にすら届かないほどの小さなもの。\
+
+langen^Si faible qu'il se perdit aussitôt dans l'air, sans même atteindre ses propres oreilles.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",62
+
+adv_mode_off
+locate 0,5
+advchar "16"
+langjp:dwave_jp 0, kan_1e21:^^!s1「……………僕だって、/
+sl
+langen:dwave_eng 0, kan_1e21:^^!s1^... Moi aussi, pourtant...^@/
+sl
+
+langjp:voicedelay 740:dwave_jp 0, kan_1e22:^^………………………。」\
+
+langen:voicedelay 740:dwave_eng 0, kan_1e22:^^\
+
+mov %disable_adv_clear, 1
+langjp!sd
+langen!sd
+mov %disable_adv_clear, 0
+advchar "-1"
+
+adv_mode_on
+
+langjp　嘉音はうな垂れ、下唇を小さく噛むのだった…。
+langen^Kanon baissa la tête et se mordit doucement la lèvre inférieure...^\
+
+;■ゲストハウス前
+
+
+
+;ここはフェードアウトにしたい〜〜〜
+
+fede 0,3000
+
+
+wait 1000
+
+
+
+
+bg white,2
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g_o1a.jpg",":b;bmp\background\guesthouse\g_o1a.png",26
+
+
+
+bgmplay 7
+
+
+
+wait 1000
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g_o1b.jpg",":b;bmp\background\guesthouse\g_o1b.png",22
+
+wait 1000
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g1f_p1a.jpg",":b;bmp\background\guesthouse\g1f_p1a.png",22
+
+
+
+ld l,$BUT_DefA2,23
+
+
+
+advchar "10"
+langjp:dwave_jp 0, but_1e233:「薔薇の庭園は記憶にあったんだけどよぅ…。@:dwave_jp 0, but_1e234:このゲストハウスっつーのは記憶にねぇなぁ。@:dwave_jp 0, but_1e235:これ建てたのは最近か？」@
+langen:dwave_eng 0, but_1e233:^Attendez une seconde... La roseraie, je m'en souviens très bien, ^@:dwave_eng 0, but_1e234:^mais cette résidence des invités... Ça me dit absolument rien. ^@:dwave_eng 0, but_1e235:^Elle est nouvelle, non ?^@
+
+br
+
+advchar "-1"
+langjp　門柱らしきものに「渡来庵」と記されているが、みんなはゲストハウスと呼んでいたので俺もそれに習った。\
+
+langen^Sur un pilier à l'entrée, on pouvait lire « Toraian ». Mais puisque tout le monde l'appelait la résidence des invités, j'allais en faire autant.^\
+
+langjp　薔薇の庭園を見下ろすように立つ真新しい洋館は、庭園との調和を大切にした見事なデザインだった。\
+
+langen^Il fallait reconnaître qu'elle avait fière allure. Cette grande demeure de style occidental, dominant la roseraie, s'intégrait parfaitement au paysage.^\
+
+ld r,$GEO_DefA1,24
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e120:「正解だよ。@:dwave_jp 0, geo_1e121:建ったのはつい一昨年さ。@:dwave_jp 0, geo_1e122:それ以降は、僕たちはこっちに泊めさせてもらってるんだよ。」@
+
+;＜譲治
+
+langen:dwave_eng 0, geo_1e120:^Oui, c'est normal que tu ne la reconnaisses pas. ^@:dwave_eng 0, geo_1e121:^Elle n'a été construite qu'il y a deux ans. ^@:dwave_eng 0, geo_1e122:^Depuis, c'est ici que nous logeons quand nous venons sur l'île.^@
+
+cl l,24
+
+ld l,$JES_DefA1,23
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e109:「へへ、年季の入ったボロ屋敷よりこっちの方が好評みてぇだしな。@:dwave_jp 0, jes_1e110:私も自分の部屋をこっちに持ちたいぜ。」@
+
+;＜朱志香
+
+langen:dwave_eng 0, jes_1e109:^Héhé ! Et crois-moi, personne va s'en plaindre ! À côté, le vieux manoir fait carrément antiquité ! ^@:dwave_eng 0, jes_1e110:^Sérieux, moi aussi, j'veux une chambre ici ! C'est pas juste que seuls les invités en profitent !^@
+
+ld c,$MAR_defA1,22
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e144:「うー！@:dwave_jp 0, mar_1e145:　真里亞も持ちたい！@:dwave_jp 0, mar_1e146:　持ちたいー！」\
+
+langen:dwave_eng 0, mar_1e144:^Uu- ! ^@:dwave_eng 0, mar_1e145:^Maria aussi veut une chambre ici ! ^@:dwave_eng 0, mar_1e146:^Une chaaaambre !^\
+
+advchar "-1"
+langjp　…俺の家も裕福な部類に入るだろうが、本家に比べたらまったくの庶民だなぁと思う。@
+langen^Je savais bien que ma famille n'était pas à plaindre financièrement. Mais à côté de la branche principale, on faisait presque figure de gens ordinaires.^@
+
+br
+
+langjp　年に何度も訪れない客人のために、こんな立派なゲストハウスを建てちまうってんだから、その富豪っぷりには驚かされるさ。\
+
+langen^Construire une résidence aussi luxueuse pour accueillir des visiteurs quelques jours par an... Il fallait vraiment avoir de l'argent à ne plus savoir qu'en faire.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g1f_p1b.jpg",":b;bmp\background\guesthouse\g1f_p1b.png",24
+
+ld c,$GOH_DefA1,24
+
+advchar "17"
+langjp:dwave_jp 0, goh_1e41:「絵羽さま、秀吉さま。@:dwave_jp 0, goh_1e42:こちらのお部屋をお使い下さいませ。@:dwave_jp 0, goh_1e43:留弗夫さま、霧江さまはこちらのお部屋をお使い下さいませ。」\
+
+langen:dwave_eng 0, goh_1e41:^Madame Eva, monsieur Hideyoshi, ^@:dwave_eng 0, goh_1e42:^votre chambre se trouve ici. ^@:dwave_eng 0, goh_1e43:^Monsieur Rudolf, madame Kyrie, la vôtre est juste à côté.^\
+
+cl c,22
+
+ld l,$EVA_DefA1,23
+
+advchar "05"
+langjp:dwave_jp 0, eva_1e80:「やっぱりここは綺麗で上品でいいわね。@:dwave_jp 0, eva_1e81:洋風って本当に素敵だわぁ。」@
+langen:dwave_eng 0, eva_1e80:^Décidément, cette résidence est une merveille. ^@:dwave_eng 0, eva_1e81:^Il faut reconnaître que l'architecture occidentale possède une élégance incomparable.^@
+
+cl l,23
+
+ld r,$HID_WaraiA1,24
+
+advchar "06"
+langjp:dwave_jp 0, hid_1e67:「ほんの２〜３日なら洋風もええやろが、ずっといて落ち着くのは断固和風やで！@:dwave_jp 0, hid_1e68:　日本人は畳みの上が一番くつろげるんや。」\
+
+langen:dwave_eng 0, hid_1e67:^Ah, pour passer deux ou trois nuits, je dis pas ! C'est très joli, tout ça ! ^@:dwave_eng 0, hid_1e68:^Mais pour y vivre toute l'année ? Ah non, merci ! Rien ne vaut une bonne maison japonaise ! Des tatamis sous les pieds, ça, c'est le bonheur !^\
+
+cl r,23
+
+ld l,$GEO_HohoemiA1,23
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e123:「…はは、新しい家を和風にするか洋風にするかで喧嘩してね。@:dwave_jp 0, geo_1e124:お父さんが和風で着工させたのを母さん、まだ根に持って、よく言い合いをするんだよ。」@
+
+langen:dwave_eng 0, geo_1e123:^... Haha. C'est toujours la même histoire avec eux. Ils se sont disputés pour savoir si leur maison serait japonaise ou occidentale. ^@:dwave_eng 0, geo_1e124:^Papa a lancé les travaux dans un style japonais, et maman ne lui a toujours pas pardonné. Dès qu'ils voient une maison occidentale, le débat recommence.^@
+
+ld r,$JES_TohohoA1,24
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e111:「譲治兄さんのところは両親仲が良くて羨ましいぜ？@:dwave_jp 0, jes_1e112:　うちなんか冷め切ったもんさ。@:dwave_jp 0, jes_1e113:そのくせ、私の成績の話だけは連帯しやがる。」\
+
+;＜朱志香
+
+langen:dwave_eng 0, jes_1e111:^... Pff. J't'envie, George. Au moins, tes parents se disputent pour des trucs comme ça. Ça se voit qu'ils s'aiment. ^@:dwave_eng 0, jes_1e112:^Chez moi, ils peuvent passer des journées entières sans s'adresser la parole. ^@:dwave_eng 0, jes_1e113:^Mais dès qu'il est question de mes notes... Là, bizarrement, ils sont toujours d'accord ! C'est le seul sujet qui les met sur la même longueur d'onde.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g1f_p1a.jpg",":b;bmp\background\guesthouse\g1f_p1a.png",22
+
+advchar "-1"
+langjp　部屋はみんなツインらしい。@
+
+langjp　お陰で、家族とかいう理由でクソ親父と同じ部屋を強制されずに済むのはありがたいことさ。@
+langen^Toutes les chambres semblaient être des chambres doubles.^@
+langen^Parfait. Au moins, personne n'allait m'obliger à partager la chambre de mon père sous prétexte qu'on était de la même famille.^@
+
+br
+
+langjp　親父たちだって、俺なんかがいたら、よろしくできないだろうしなー、いっひっひ。\
+
+langen^Et puis, avec leur grand garçon dans les pattes, Rudolf et Kyrie auraient bien du mal à profiter de leur intimité... Hihihi. Quel fils attentionné je faisais !^\
+
+ld l,$KIR_futekiA1,22
+
+advchar "09"
+langjp:dwave_jp 0, kir_1e50:「何、気持ち悪い顔で笑ってんのよ。@:dwave_jp 0, kir_1e51:どうせ下世話なこと考えてるんでしょ。」@
+
+;＜霧江
+
+langen:dwave_eng 0, kir_1e50:^... Battler ? Pourquoi tu souris comme ça ? ^@:dwave_eng 0, kir_1e51:^Tu serais pas encore en train de t'imaginer des choses peu recommandables ?^@
+
+ld r,$BUT_waraiA2,24
+
+advchar "10"
+langjp:dwave_jp 0, but_1e236:「いっひっひっひ〜！@:dwave_jp 0, but_1e237:　下世話なぁんてと〜んでもないぃ！@:dwave_jp 0, but_1e238:　どうぞごゆっくりお過ごし下さいませぇ〜！@/
+
+langen:dwave_eng 0, but_1e236:^Hihihi ! Moi ?! ^@:dwave_eng 0, but_1e237:^Mais enfin, Kyrie ! Quelle idée ! ^@:dwave_eng 0, but_1e238:^Je vous souhaite simplement un trèèès agréable séjouuur ! ^@/
+
+se1 48
+
+quakey 4,300
+
+ld r,$BUT_odorokiA2,80
+
+langjp:dwave_jp 0, but_1e239:　あいててててッ！@:dwave_jp 0, but_1e240:　痛ぇよクソ親父！」@
+
+langen:dwave_eng 0, but_1e239:^AÏE ! AÏE ! AÏE !! ^@:dwave_eng 0, but_1e240:^LÂCHE MON OREILLE, VIEUX CON !!^@
+
+
+cl l,25
+
+ld l,$RUD_DefA1,26
+
+
+
+advchar "-1"
+advchar "-1"
+langjp　またしても後から親父に耳をつねり上げられる。\
+
+langen^Une fois de plus, mon père venait de me saisir l'oreille par-derrière. Décidément, on pouvait même plus plaisanter tranquillement dans cette famille.^\
+
+ld l,$RUD_akuwaraiA1,80
+
+advchar "08"
+langjp:dwave_jp 0, rud_1e78:「馬鹿なこと言ってんじゃねぇ。@:dwave_jp 0, rud_1e79:俺ぁ、胃がキリキリ痛み始めててとてもそんな元気は湧かねぇぜ。@:dwave_jp 0, rud_1e80:今回はお前が主賓だろうが。@:dwave_jp 0, rud_1e81:せいぜい、親父や兄貴たちに可愛がられろよ。@:dwave_jp 0, rud_1e82:　……親父の前では言葉遣いにだけ気をつけろ？@:dwave_jp 0, rud_1e83:　あの人、本ッ当にシャレが通じねぇからなぁ。@:dwave_jp 0, rud_1e84:……朱志香ちゃん、我らが当主さまのご機嫌は最近どうなんだ？」\
+
+;確認
+
+langen:dwave_eng 0, rud_1e78:^Arrête un peu tes conneries, Battler. ^@:dwave_eng 0, rud_1e79:^Moi, rien que de penser à ce qui nous attend, j'ai déjà l'estomac retourné. Alors crois-moi, j'ai pas la tête à plaisanter. ^@:dwave_eng 0, rud_1e80:^Et cette année, c'est toi qui vas attirer toute l'attention. ^@:dwave_eng 0, rud_1e81:^Six ans que t'as pas mis les pieds ici... Ton grand-père, ton oncle et les autres vont te réserver un sacré accueil. ^@:dwave_eng 0, rud_1e82:^... Et surtout, grave-toi bien ça dans le crâne : devant le vieux, surveille ce qui sort de ta bouche. Compris ? ^@:dwave_eng 0, rud_1e83:^Ce type n'a absolument AUCUN sens de l'humour. ^@:dwave_eng 0, rud_1e84:^... Jessica, il donne quoi ces derniers temps, notre cher chef de famille ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g1f_p1b.jpg",":b;bmp\background\guesthouse\g1f_p1b.png",0
+
+ld r,$JES_MajimeA1,24
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e114:「…んー……、/
+sl
+
+langen:dwave_eng 0, jes_1e114:^... Hmm... ^@/
+sl
+
+langjp:voicedelay 1210:dwave_jp 0, jes_1e115:^^去年から相変わらず、かな。@:dwave_jp 0, jes_1e116:……余命３ヶ月、余命３ヶ月って割には相変わらずピンピン、/
+sl
+
+langjp:voicedelay 5550:dwave_jp 0, jes_1e117:^^カリカリ、/
+sl
+
+langjp:voicedelay 560:dwave_jp 0, jes_1e118:^^イライラしてるって話です。」\
+
+langen:voicedelay 1210:dwave_eng 0, jes_1e115:^Bah, à mon avis, il est comme l'année dernière. ^@:dwave_eng 0, jes_1e116:^Ça fait des mois qu'on répète qu'il lui reste à peine trois mois à vivre... Mais tu parles ! Il est toujours aussi en forme, ^@/
+sl
+langen:voicedelay 5550:dwave_eng 0, jes_1e117:^grincheux, ^@/
+sl
+langen:voicedelay 560:dwave_eng 0, jes_1e118:^et toujours aussi insupportable !^\
+
+ld l,$ROS_KomaruA1,23
+
+advchar "12"
+langjp:dwave_jp 0, ros_1e57:「今年も相変わらず不機嫌、ってわけね。@:dwave_jp 0, ros_1e58:……お守りができるのは相変わらず、源次さんだけなの？」@
+
+;＜楼座
+
+langen:dwave_eng 0, ros_1e57:^... Je vois. Donc il est encore d'une humeur massacrante cette année. ^@:dwave_eng 0, ros_1e58:^... Et Genji est toujours le seul à pouvoir l'approcher sans s'attirer ses foudres ?^@
+
+ld c,$KUM_defA1,22
+
+advchar "18"
+langjp:dwave_jp 0, kum_1e38:「お館様も、源次さんにだけは心を許しておいでのようです。@:dwave_jp 0, kum_1e39:私たち下々では、近頃はお目通りすらなかなか叶わず…。」\
+
+;＜熊沢
+
+langen:dwave_eng 0, kum_1e38:^Il semblerait bien que le Maître n'accorde sa confiance qu'à Genji. ^@:dwave_eng 0, kum_1e39:^Quant à nous autres domestiques, il devient rare que nous ayons seulement l'occasion de l'apercevoir...^\
+
+ld r,$JES_atyaA1,80
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e119:「また書斎に閉じこもって、怪しげな黒魔術三昧じゃねえのかな。@:dwave_jp 0, jes_1e120:何をやろうとてめぇの趣味だから構わねぇけど、臭いが立ち込める系は勘弁してほしいもんだぜ。@:dwave_jp 0, jes_1e121:…ついでにそのまま書斎から永久に出てくんなってんだ。@:dwave_jp 0, jes_1e122:へへへ！」\
+
+;＜朱志香
+
+langen:dwave_eng 0, jes_1e119:^Tu m'étonnes ! Il doit encore s'être enfermé dans son bureau avec ses délires de magie noire ! ^@:dwave_eng 0, jes_1e120:^Sérieux, qu'il fasse ce qu'il veut, ça me regarde pas ! Mais il pourrait au moins éviter d'empester toute la baraque ! ^@:dwave_eng 0, jes_1e121:^... Enfin, s'il pouvait y rester enfermé pour toujours, moi, ça m'arrangerait bien ! ^@:dwave_eng 0, jes_1e122:^Héhéhé !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g1f_p1a.jpg",":b;bmp\background\guesthouse\g1f_p1a.png",0
+
+ld r,$GEO_defA1,23
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e125:「年長の人にそんな言い方をするもんじゃないよ。@:dwave_jp 0, geo_1e126:右代宮家を復興させてくれた大恩人なんだから、もっと感謝しないと。」@
+
+;＜譲治
+
+langen:dwave_eng 0, geo_1e125:^Jessica... Tu ne devrais pas parler de ton grand-père de cette façon. ^@:dwave_eng 0, geo_1e126:^C'est grâce à lui que la famille Ushiromiya a retrouvé sa prospérité. Nous lui devons beaucoup. Il ne faudrait pas l'oublier.^@
+
+ld l,$JES_tohohoA2,23
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e123:「ん、…まぁ…。@:dwave_jp 0, jes_1e124:……ごめん。」\
+
+;＜朱志香
+
+langen:dwave_eng 0, jes_1e123:^... Mmh. Ouais... ^@:dwave_eng 0, jes_1e124:^Pardon.^\
+
+advchar "-1"
+langjp　譲治兄貴にたしなめられては、朱志香も暴言を撤回するしかない。\
+
+langen^Quand George la reprenait sur ce ton, même Jessica ne trouvait plus rien à répondre. C'était assez impressionnant, d'ailleurs.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m1f_p1c.jpg",":b;bmp\background\mainbuilding\m1f_p1c.png",22
+
+langjp　右代宮家は大富豪だが、ってことはやはり世間とは完全にズレてる曲者ぞろいだ。@
+langen^Mais plus je retrouvais cette famille, plus je me disais que l'argent ne faisait décidément pas le bonheur. On vivait dans un luxe incroyable, et pourtant chacun semblait avoir ses problèmes.^@
+
+br
+
+langjp　その頂点に立つ右代宮家当主、つまり俺たちの祖父さまは、その中でも特に曲者で恐ろしいお人らしい。\
+
+langen^Et au-dessus de tout ce beau monde régnait notre grand-père. Kinzo Ushiromiya. Le chef de famille. À entendre les autres parler de lui, on aurait dit qu'on s'apprêtait à me jeter dans la fosse aux lions. Et vu la tête de mon père, les lions n'avaient visiblement pas mangé depuis trois jours.^\
+
+langjp　さっき親父が、胃がキリキリして…と言ったが、それは今日ここに来ている大人たちの率直な気持ちだろう。@
+langen^En repensant à l'estomac noué de mon père et à son air inquiet, je commençais à comprendre que tous les adultes présents devaient ressentir la même chose.^@
+
+br
+
+langjp　孫である俺たちがきゃっきゃと遊んでいるのが、さぞや羨ましいに違いない。\
+
+langen^Nous autres petits-enfants, on avait encore de la chance. On pouvait plaisanter et profiter de nos retrouvailles. Les adultes, eux, semblaient déjà appréhender leur rencontre avec le patriarche.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+
+langjp　親父に聞かされた話じゃ、何でもかんでも鉄拳制裁で、娘であろうと木刀で容赦なく打ち据える暴力当主だったそうだ。@
+langen^D'après mon père, Grand-père n'hésitait pas à régler les conflits à coups de poing. Il lui arrivait même de frapper ses propres filles avec un bokken, un sabre d'entraînement en bois. ... Charmant personnage.^@
+
+br
+
+langjp　そんだけの硬派さがあったら、息子たちの名前ももう少し硬派にしたらどうだよ。@
+langjp　お陰で孫まで迷惑してるぜ。\
+
+langen^Et avec un caractère pareil, il aurait quand même pu faire preuve d'un peu plus de bon sens en choisissant les prénoms de ses enfants.^@
+langen^À cause de ses goûts extravagants, même nous, les petits-enfants, en subissions les conséquences.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_p1a.jpg",":b;bmp\background\guesthouse\g2f_p1a.png",22
+
+langjp　……まぁそのおっそろしいイメージには違和感は寸分もない。@
+langen^... Enfin, il fallait reconnaître que tout cela correspondait assez bien au souvenir que j'avais de lui.^@
+
+br
+
+langjp　俺も何度も会った記憶はないが、非常に気難しそうな顔をした祖父さんで、いっつも鋭い眼光で周りを萎縮させていたっけ。\
+
+langen^Je ne l'avais pas vu très souvent, même avant de quitter la famille six ans plus tôt. Mais je me rappelais parfaitement son visage sévère et son regard perçant.^\
+
+langjp　祖父さんがいる時の張り詰めた空気は、窒息しかねない辛いものだったことも思い出す。@
+langen^Quand il était dans la pièce, l'atmosphère devenait aussitôt pesante. On avait l'impression que personne n'osait respirer trop fort.^@
+
+br
+
+langjp　今頃になって親父の、今回はお前が主賓という言葉が重みを持って蘇る。\
+
+langen^Et dire que je m'étais imaginé revenir tranquillement passer du temps avec mes cousins... Les paroles de mon père me revinrent : « Cette année, c'est toi qui vas attirer toute l'attention. » Je regrettais de ne pas l'avoir pris plus au sérieux.^\
+
+advchar "10"
+langjp:dwave_jp 0, but_1e241:「………６年前は俺も小学生だったが、さすがに今は高校生だ。@:dwave_jp 0, but_1e242:失礼のある態度なんか取ったら、大変なことになるかもしれねぇなぁ。@:dwave_jp 0, but_1e243:…怖ぇ怖ぇ。」@
+
+langen:dwave_eng 0, but_1e241:^... Y a six ans, j'étais encore un gamin de primaire. Mais maintenant, je suis au lycée... ^@:dwave_eng 0, but_1e242:^S'il me trouve irrespectueux, il risque de pas me faire de cadeau. ^@:dwave_eng 0, but_1e243:^... Merde. Ça fout les jetons...^@
+
+ld r,$GEO_hohoemiA1,24
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e127:「確かに強面だけど、そんなに硬くなるほど怖い人じゃないよ。@:dwave_jp 0, geo_1e128:決して理不尽なことは言ってないもん。@:dwave_jp 0, geo_1e129:口下手なだけでちゃんと筋は通す人だよ。」\
+
+;＜譲治
+
+langen:dwave_eng 0, geo_1e127:^Allons, Battler. Grand-père est impressionnant, c'est vrai, mais tu n'as pas à avoir peur de lui. ^@:dwave_eng 0, geo_1e128:^Il ne dit pas les choses avec beaucoup de délicatesse, mais il n'est pas injuste pour autant. ^@:dwave_eng 0, geo_1e129:^Au fond, c'est quelqu'un de droit.^\
+
+ld l,$JES_atyaA1,23
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e125:「譲治兄さんは昔から成績優秀で一族の鑑じゃねぇかよ。@:dwave_jp 0, jes_1e126:私たちとじゃ祖父さまの待遇が全然違うぜ！@/
+
+langen:dwave_eng 0, jes_1e125:^AH BAH ÉVIDEMMENT ! Facile à dire pour toi ! Monsieur le petit génie de la famille ! ^@:dwave_eng 0, jes_1e126:^Moi, par contre, Grand-père, il se gêne pas ! ^@/
+
+ld l,$JES_TohohoA1,80
+
+langjp:dwave_jp 0, jes_1e127:　私なんか木刀で引っ叩かれたことあるしよー。@:dwave_jp 0, jes_1e128:尻だぜ尻！@:dwave_jp 0, jes_1e129:　それも乙女の生尻をよー！」\
+
+langen:dwave_eng 0, jes_1e127:^Il m'a déjà foutu un coup de bokken sur les fesses, je te rappelle ! ^@:dwave_eng 0, jes_1e128:^SUR LES FESSES ! ^@:dwave_eng 0, jes_1e129:^ET J'ÉTAIS À POIL, EN PLUS !!^\
+
+
+ld r,$GEO_DefA1k,80
+
+
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e130:「朱志香ちゃんは本家の跡取り娘だもん。@:dwave_jp 0, geo_1e131:お祖父さまも特に目をかけてくれてるんだよ。@:dwave_jp 0, geo_1e132:その厳しさは期待の気持ちの裏返しだと思わなくちゃ。」@
+
+langen:dwave_eng 0, geo_1e130:^Jessica, tu es l'héritière de la branche principale. ^@:dwave_eng 0, geo_1e131:^C'est justement pour cela que Grand-père veille autant sur toi. ^@:dwave_eng 0, geo_1e132:^Il attend énormément de toi. Sa sévérité vient aussi de là.^@
+
+ld l,$JES_KomaruA1,80
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e130:「冗談じゃねぇぜ。@:dwave_jp 0, jes_1e131:…その跡取りってヤツは譲治兄さんに譲るよ。@:dwave_jp 0, jes_1e132:私が担ぐにはちょいとしんどいぜ。」\
+
+langen:dwave_eng 0, jes_1e130:^Eh ben, il peut se les garder, ses grandes attentes ! ^@:dwave_eng 0, jes_1e131:^« L'héritière de la prestigieuse famille Ushiromiya »... Tu parles d'un cadeau ! George, si tu veux ma place, je te la laisse avec plaisir ! ^@:dwave_eng 0, jes_1e132:^Moi, j'ai jamais demandé à porter tout ce bazar sur le dos !^\
+
+advchar "-1"
+langjp　すでに紹介したと思うが、朱志香は本家の跡取り娘だ。@
+langjp　俺たち分家筋のいとことじゃ、肩に圧し掛かるプレッシャーも違うだろう。\
+
+langen^... Jessica n'avait pas tout à fait tort. Après tout, elle était l'héritière de la branche principale.^@
+langen^Nous autres cousins, on pouvait encore nous tenir à l'écart des affaires familiales. Mais Jessica vivait ici, sous l'autorité de notre grand-père. À notre âge, ça devait être difficile à supporter.^\
+
+cl r,23
+
+ld r,$MAR_DefA1,24
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e147:「………うー？@:dwave_jp 0, mar_1e148:　朱志香お姉ちゃんが重い？@:dwave_jp 0, mar_1e149:　真里亞が持ったら軽くなる？」@
+
+langen:dwave_eng 0, mar_1e147:^... Uu- ? ^@:dwave_eng 0, mar_1e148:^Grande sœur Jessica... C'est lourd ? ^@:dwave_eng 0, mar_1e149:^Si Maria t'aide à porter, ce sera moins lourd ?^@
+
+ld l,$JES_WaraiA2,80
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e133:「んー？@:dwave_jp 0, jes_1e134:　あっはははは、サンキューな。@:dwave_jp 0, jes_1e135:大丈夫、真里亞ちゃんには押し付けねぇよ。@/
+
+langen:dwave_eng 0, jes_1e133:^... Hein ? ^@:dwave_eng 0, jes_1e134:^Ahahahaha ! Thank you, Maria. ^@:dwave_eng 0, jes_1e135:^Mais t'en fais pas, va ! Je vais pas te faire porter ça.^@/
+
+ld l,$JES_DefA1,80
+
+langjp:dwave_jp 0, jes_1e136:……この十字架は、私が墓まで背負ってくよ。@:dwave_jp 0, jes_1e137:…安心しなって。」\
+
+langen:dwave_eng 0, jes_1e136:^ ... Cette croix-là, c'est la mienne. Alors je la porterai moi-même, jusqu'au bout. ^@:dwave_eng 0, jes_1e137:^Promis. T'as pas à t'inquiéter pour moi.^\
+
+advchar "-1"
+langjp　真里亞の無邪気な気遣いに感謝するが、朱志香の表情には容易には晴らせぬ将来への不安が残っているようだった。@
+langen^Maria sembla rassurée. Jessica lui adressa un sourire. Pourtant, je sentais bien que ses inquiétudes n'avaient pas disparu. Certaines responsabilités ne se partageaient pas si facilement.^@
+
+br
+
+langjp　…お互い様か。@受験を控えた高校生なら、誰だって将来への不安は隠せねぇさ。\
+
+langen^... Ouais. À bien y réfléchir, on était peut-être tous dans la même situation. ^@^Jessica faisait face aux attentes de sa famille. Moi, je retrouvais un grand-père absent depuis six ans. Et même sans tout ça, avec les examens et l'avenir incertain, difficile de ne pas se faire de souci.^\
+
+cl l,23
+
+ld l,$ROS_DefA1,23
+
+advchar "12"
+langjp:dwave_jp 0, ros_1e59:「真里亞、いらっしゃい。@:dwave_jp 0, ros_1e60:お母さんと真里亞はこの部屋よ。」\
+
+;＜楼座
+
+langen:dwave_eng 0, ros_1e59:^Maria, viens par ici. ^@:dwave_eng 0, ros_1e60:^Maman et toi, on sera dans cette chambre.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_p1b.jpg",":b;bmp\background\guesthouse\g2f_p1b.png",0
+
+ld r,$GEO_DefA1,24
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e133:「戦人くんは僕と一緒にこっちの部屋だってさ。」\
+
+;＜譲治
+
+langen:dwave_eng 0, geo_1e133:^Battler, il paraît que tu partages cette chambre avec moi.^\
+
+;se1 15
+
+bg white,22
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_r1a.jpg",":b;bmp\background\guesthouse\g2f_r1a.png",2
+
+advchar "10"
+langjp:dwave_jp 0, but_1e244:「おー？@:dwave_jp 0, but_1e245:　何々、こりゃあ驚いたぁ〜！@:dwave_jp 0, but_1e246:　親たちの部屋より広めじゃないのよ、わ〜オ！」@
+
+langen:dwave_eng 0, but_1e244:^Oh ? ^@:dwave_eng 0, but_1e245:^Eh ben, quelle surprise ! ^@:dwave_eng 0, but_1e246:^Elle est plus grande que la chambre des parents, waouh !^@
+
+ld r,$JES_futekiA1,22
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e138:「どうせ、いとこ同士で集まるだろうと思ってよ。@:dwave_jp 0, jes_1e139:大きめの部屋にするように言っておいたんだ。」\
+
+;＜朱志香
+
+langen:dwave_eng 0, jes_1e138:^Je savais bien qu'on finirait tous par traîner ensemble, ^@:dwave_eng 0, jes_1e139:^alors j'ai demandé direct qu'on nous file une grande chambre.^\
+
+ld l,$MAR_KomaruA1,23
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e150:「うー！@:dwave_jp 0, mar_1e151:　真里亞もこっちがいい！@:dwave_jp 0, mar_1e152:　お母さんと一緒よりこっちがいい！@:dwave_jp 0, mar_1e153:　うーうー！」\
+
+langen:dwave_eng 0, mar_1e150:^Uu- ! ^@:dwave_eng 0, mar_1e151:^Maria préfère ici aussi ! ^@:dwave_eng 0, mar_1e152:^Maria préfère rester ici qu'avec maman ! ^@:dwave_eng 0, mar_1e153:^Uu-uu- !^\
+
+cl r,23
+
+ld r,$BUT_waraiA1,24
+
+advchar "10"
+langjp:dwave_jp 0, but_1e247:「そうか、真里亞もこっちがいいか！@:dwave_jp 0, but_1e248:　よし、ここは俺と譲治兄貴の部屋だが、特別に出入りを許可してやろう！@:dwave_jp 0, but_1e249:　お母さんにはナイショだぞ〜？」@
+
+langen:dwave_eng 0, but_1e247:^Ah, toi aussi tu préfères ici, Maria ? ^@:dwave_eng 0, but_1e248:^Très bien, c'est la chambre de George et moi, mais je t'accorde une autorisation spéciale d'entrée ! ^@:dwave_eng 0, but_1e249:^Par contre, chut, faut pas le dire à ta mère !^@
+
+ld l,$MAR_WaraiA2,80
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e154:「うー！@:dwave_jp 0, mar_1e155:　ナイショ！」\
+
+langen:dwave_eng 0, mar_1e154:^Uu- ! ^@:dwave_eng 0, mar_1e155:^C'est un secret !^\
+
+advchar "-1"
+langjp　その母親の楼座叔母さんがすぐ後にいるわけだが、真里亞は元気よく握り拳で天を突き、返事をするのだった。\
+
+langen^Sa mère, tante Rosa, se trouvait juste derrière elle, mais Maria répondit avec entrain en levant le poing vers le ciel.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+
+wait 1000
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_p1a.jpg",":b;bmp\background\guesthouse\g2f_p1a.png",22
+
+langjp　親たちは部屋に荷物を入れると、また廊下に集まっていた。\
+
+langen^Après avoir déposé leurs bagages, les adultes se retrouvèrent dans le couloir.^\
+
+ld c,$RUD_DefA1,22
+
+advchar "08"
+langjp:dwave_jp 0, rud_1e85:「おいガキども、お前らはどうする。@:dwave_jp 0, rud_1e86:ここでいとこ同士、おしゃべりでもしてるか？」@
+
+;＜留弗夫
+
+langen:dwave_eng 0, rud_1e85:^Hé, les gamins ! ^@:dwave_eng 0, rud_1e86:^Vous comptez rester là à bavarder ?^@
+
+advchar "-1"
+langjp　到着の挨拶をしに屋敷の方へ行くらしい。@
+langen^Apparemment, ils allaient rejoindre le manoir pour annoncer notre arrivée.^@
+
+br
+
+langjp　…筋なら、付いていって一緒に挨拶するべきなんだが、@そうなら親父はお前らも来いと一言、言って終わりだ。@
+langen^En principe, on aurait dû les accompagner pour saluer tout le monde. ^@^... Mais connaissant mon père, s'il avait vraiment voulu qu'on vienne, il nous l'aurait dit sans prendre de gants.^@
+
+
+br
+
+langjp　来ないのも勝手だぞと言ってくれてるし、どうしよう？\
+
+langen^Autrement dit, on avait le choix. Et franchement, je savais déjà ce que je préférais.^\
+
+cl c,0
+
+ld r,$HID_DefA1,24
+
+advchar "06"
+langjp:dwave_jp 0, hid_1e69:「どうせもうすぐお昼や。@:dwave_jp 0, hid_1e70:子供はそこでくつろいでたらええ。@:dwave_jp 0, hid_1e71:それに表で遊べるのは下手をすると今の内だけかもしれんしの。」\
+
+;＜秀吉
+
+langen:dwave_eng 0, hid_1e69:^Bah, on va bientôt passer à table de toute façon ! ^@:dwave_eng 0, hid_1e70:^Laissez donc les jeunes souffler un peu. ^@:dwave_eng 0, hid_1e71:^Et puis, avec un peu de malchance, ils auront plus beaucoup d'occasions de s'amuser dehors !^\
+
+ld l,$MAR_odorokiA1,23
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e156:「うー！@:dwave_jp 0, mar_1e157:　真里亞も行くー！」@
+
+langen:dwave_eng 0, mar_1e156:^Uu- ! ^@:dwave_eng 0, mar_1e157:^Maria vient aussi !^@
+
+cl r,23
+
+ld r,$ROS_DefA1,24
+
+advchar "12"
+langjp:dwave_jp 0, ros_1e61:「真里亞はここでお留守番してなさい。@:dwave_jp 0, ros_1e62:いたずらをしないで大人しく待ってるのよ。」@
+langen:dwave_eng 0, ros_1e61:^Non, Maria. Tu restes ici et tu attends maman. ^@:dwave_eng 0, ros_1e62:^Et tu te tiens tranquille, d'accord ?^@
+ld l,$MAR_KomaruA1,80
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e158:「……うー。」\
+
+langen:dwave_eng 0, mar_1e158:^... Uu-.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_p1b.jpg",":b;bmp\background\guesthouse\g2f_p1b.png",24
+
+advchar "-1"
+langjp　真里亞が留守番することになった以上、置いてきぼりってわけには行かない。@
+langjp　譲治の兄貴はそれをすぐに察し、いとこ代表として明快に返事をした。\
+
+langen^Bon, puisque Maria devait rester, on n'allait quand même pas la laisser toute seule.^@
+langen^George comprit immédiatement et prit la parole pour nous tous.^\
+
+ld r,$GEO_WaraiA1,24
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e134:「じゃあ、僕たちはお言葉に甘えて、留守番してようか。@:dwave_jp 0, geo_1e135:１年ぶりに積もる話もあるしね。」@
+
+langen:dwave_eng 0, geo_1e134:^Dans ce cas, nous allons rester ici. ^@:dwave_eng 0, geo_1e135:^Ça fait un an qu'on ne s'est pas vus, après tout. Nous avons sûrement beaucoup de choses à nous raconter.^@
+
+ld l,$KIR_waraiA1,23
+
+advchar "09"
+langjp:dwave_jp 0, kir_1e52:「それがいいわ。@:dwave_jp 0, kir_1e53:戦人くんなんか６年分積もってるんだしね。」@
+
+;＜霧江
+
+langen:dwave_eng 0, kir_1e52:^C'est une bonne idée. ^@:dwave_eng 0, kir_1e53:^Et Battler, lui, doit bien avoir six années de nouvelles à vous raconter !^@
+
+ld c,$BUT_defA1,22
+
+advchar "10"
+langjp:dwave_jp 0, but_1e250:「へいへい。@:dwave_jp 0, but_1e251:お子ちゃまな俺は大人しくお留守番してるぜ。」\
+
+;＜戦人
+
+langen:dwave_eng 0, but_1e250:^Ouais, ouais. ^@:dwave_eng 0, but_1e251:^Puisque je suis encore un gamin, autant en profiter pour rester avec les autres.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_p1c.jpg",":b;bmp\background\guesthouse\g2f_p1c.png",0
+
+ld r,$JES_akuWaraiA1,23
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e140:「熊沢さん、私もこっちに残るからよ！@:dwave_jp 0, jes_1e141:　後は大人に任せて若者は退散してるぜ、へへへ！」@
+
+;＜朱志香
+
+langen:dwave_eng 0, jes_1e140:^Madame Kumasawa, moi aussi, je reste ! ^@:dwave_eng 0, jes_1e141:^Les histoires d'adultes, très peu pour moi ! On vous laisse vous débrouiller entre grandes personnes ! Héhéhé !^@
+
+ld l,$KUM_WaraiA1,23
+
+advchar "18"
+langjp:dwave_jp 0, kum_1e40:「それがおよろしいでしょう、ほっほっほ。@:dwave_jp 0, kum_1e41:奥様にはそのようにお伝えいたします…。」
+;＜熊沢
+
+langen:dwave_eng 0, kum_1e40:^Ho ho ho... Je pense que ce sera très bien ainsi. ^@:dwave_eng 0, kum_1e41:^Je transmettrai le message à Madame.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\gsta_1a.jpg",":b;bmp\background\guesthouse\gsta_1a.png",0
+
+ld c,$GOH_hohoemiA1,22
+
+advchar "17"
+langjp:dwave_jp 0, goh_1e44:「それでは皆様、お屋敷の方へご案内させていただきます。@:dwave_jp 0, goh_1e45:どうぞこちらへ。」\
+
+;＜郷田
+
+langen:dwave_eng 0, goh_1e44:^Dans ce cas, mesdames et messieurs, permettez-moi de vous accompagner jusqu'au manoir. ^@:dwave_eng 0, goh_1e45:^Je vous en prie, par ici.^\
+
+cl c,22
+
+ld r,$EVA_DefA1,24
+
+advchar "05"
+langjp:dwave_jp 0, eva_1e82:「…他の子はともかく、譲治は成人してるんだから連れて行った方がいいんじゃない？」@
+
+;＜絵羽
+
+langen:dwave_eng 0, eva_1e82:^... Pour les autres, je veux bien. Mais George est majeur, maintenant. Ne devrait-il pas venir avec nous ?^@
+
+ld l,$HID_DefA1,23
+
+advchar "06"
+langjp:dwave_jp 0, hid_1e72:「そんなんで譲治だけ仲間外れは可哀想やで。@:dwave_jp 0, hid_1e73:いとこ同士の交流も大事や。@:dwave_jp 0, hid_1e74:ほな、行ってくるでー！」\
+
+langen:dwave_eng 0, hid_1e72:^Voyons, Eva ! Tu voudrais vraiment qu'il soit le seul à ne pas rester avec ses cousins ? ^@:dwave_eng 0, hid_1e73:^Laisse-les profiter de leurs retrouvailles ! ^@:dwave_eng 0, hid_1e74:^Allez, on y va !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\gsta_1c.jpg",":b;bmp\background\guesthouse\gsta_1c.png",22
+
+advchar "-1"
+langjp　大人たちはぞろぞろと表へ出て行く。@
+langen^Les adultes quittèrent la résidence les uns après les autres.^@
+
+br
+
+langjp　船着場からの先導と同じで、先頭は郷田さん、しんがりは熊沢さんだ。\
+
+langen^Comme tout à l'heure, Gohda ouvrait la marche et madame Kumasawa fermait le cortège.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_r1a.jpg",":b;bmp\background\guesthouse\g2f_r1a.png",23
+
+langjp　俺たち用に割り当てられたいとこ部屋に集まろうとすると、譲治の兄貴がちょっとごめんと言い、@ぞろぞろと出て行く大人たちの後を付いていく熊沢さんに駆け寄って、何か尋ね事をしているようだった。\
+
+langen^Nous nous apprêtions à rejoindre la chambre réservée aux cousins lorsque George nous demanda de l'attendre une minute. ^@^Il rattrapa madame Kumasawa et lui glissa quelques mots.^\
+
+langjp　用事はすぐ済み、戻ってきた。\
+
+langen^Puis il revint comme si de rien n'était.^\
+
+ld l,$BUT_defA2,22
+
+advchar "10"
+langjp:dwave_jp 0, but_1e252:「どうしたんだよ、兄貴。」@
+
+langen:dwave_eng 0, but_1e252:^Tiens ? Qu'est-ce que tu lui voulais, George ?^@
+
+ld r,$GEO_waraiA1k,22
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e136:「あー、何でもないよ。@:dwave_jp 0, geo_1e137:ちょっと聞きたいことがあっただけさ。」@
+
+langen:dwave_eng 0, geo_1e136:^Oh, rien de particulier. ^@:dwave_eng 0, geo_1e137:^J'avais juste une petite question à lui poser.^@
+
+cl l,24
+
+ld l,$MAR_fukigenA2,23
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e159:「うー！@:dwave_jp 0, mar_1e160:　真里亞にも聞いて！@:dwave_jp 0, mar_1e161:　真里亞にも聞いてー！」\
+
+langen:dwave_eng 0, mar_1e159:^Uu- ! ^@:dwave_eng 0, mar_1e160:^Pose une question à Maria aussi ! ^@:dwave_eng 0, mar_1e161:^Maria aussi veut répondre !^\
+
+cl r,23
+
+ld r,$JES_WaraiA1,22
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e142:「……ん〜？@:dwave_jp 0, jes_1e143:　んふふふふー。@:dwave_jp 0, jes_1e144:何かなぁ、譲治兄さんが、私に聞かなくて熊沢さんには聞くことって何かなぁ〜？@:dwave_jp 0, jes_1e145:　あー、全然検討がつかねぇぜー？」\
+
+;＜朱志香
+
+langen:dwave_eng 0, jes_1e142:^... Tiens, tiens ? ^@:dwave_eng 0, jes_1e143:^Hmhmhmhm... ^@:dwave_eng 0, jes_1e144:^Je me demande bien ce que George peut avoir à demander à madame Kumasawa... et surtout, pourquoi il pouvait pas me le demander à moi. ^@:dwave_eng 0, jes_1e145:^Vraiment, quel mystère ! J'ai beau chercher, je vois absolument pas !^\
+
+cl l,24
+
+ld l,$GEO_KomaruA1k,23
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e138:「いや、誤解だよ…！@:dwave_jp 0, geo_1e139:　朱志香ちゃんが何を誤解してるのか知らないけど…！」\
+
+langen:dwave_eng 0, geo_1e138:^Jessica, tu te trompes complètement... ! ^@:dwave_eng 0, geo_1e139:^Enfin, je ne sais même pas ce que tu es en train d'imaginer !^\
+
+advchar "-1"
+langjp　兄貴が何だかおたおたしている。@
+langen^Oh ? Voilà qui devenait intéressant. George, d'habitude si posé, venait de perdre toute son assurance.^@
+
+br
+
+langjp　何かやましいことでもあって、それを朱志香に握られてるとでも言う感じだな。@
+
+langjp　…何であれ、朱志香だけが知ってて俺は知らないなんて面白くないぜ！\
+
+langen^Et à voir le sourire de Jessica, elle savait parfaitement où elle voulait en venir.^@
+langen^... Minute. Pourquoi elle était au courant, elle, et pas moi ? Hors de question qu'on me laisse de côté !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_r1b.jpg",":b;bmp\background\guesthouse\g2f_r1b.png",23
+
+ld r,$BUT_defA1,22
+
+advchar "10"
+langjp:dwave_jp 0, but_1e253:「なぁ真里亞、俺たちだけ除け者なんてねぇよなぁ〜？@:dwave_jp 0, but_1e254:　何の話か聞きてぇよな〜？！」@
+
+langen:dwave_eng 0, but_1e253:^Hé, Maria ! T'as entendu ça ? Ils sont en train de nous cacher quelque chose, ces deux-là ! ^@:dwave_eng 0, but_1e254:^On va quand même pas les laisser faire, hein ?! Toi aussi, tu veux savoir ?^@
+
+ld l,$MAR_majimeA1,22
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e162:「うー！@:dwave_jp 0, mar_1e163:　戦人と真里亞も聞きたいー！@:dwave_jp 0, mar_1e164:　戦人と真里亞も聞きたいー！」@
+langen:dwave_eng 0, mar_1e162:^Uu- !! ^@:dwave_eng 0, mar_1e163:^Battler et Maria veulent savoir ! ^@:dwave_eng 0, mar_1e164:^Battler et Maria veulent savoir !!^@
+
+br
+
+advchar "-1"
+langjp:dwave_jp 0, mix_but_1e255_mar_uuuu:「「うーうーうーうー！！！」」@
+langen:dwave_eng 0, mix_but_1e255_mar_uuuu:^Uu-uu-uu-uu- !!!^@
+
+br
+
+advchar "-1"
+langjp　真里亞と二人でうーうー唸りながら囃し立てる。\
+
+langen^Maria et moi nous mîmes à protester en chœur, pour le plus grand malheur de George.^\
+
+
+cl c,0
+
+ld r,$MAR_majimeA1,0
+
+ld l,$GEO_KomaruA1,23
+
+
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e140:「いや、だから…大したことじゃ、あははは…、」@
+
+langen:dwave_eng 0, geo_1e140:^Mais enfin, je vous assure que ce n'est rien ! Ahahaha...^@
+
+cl l,0
+
+ld c,$GEO_KomaruA1,0
+
+ld l,$BUT_WaraiA2,23
+
+advchar "10"
+langjp:dwave_jp 0, but_1e256:「嘘吐けぇ〜！@:dwave_jp 0, but_1e257:　兄貴にしちゃ嘘がヘタだぜ、白状しやがれぃ！@:dwave_jp 0, but_1e258:　真里亞、お前は右脇をくすぐれ、俺は左脇だ！」@
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e166:「うー！@:dwave_jp 0, mar_1e167:　真里亞は右脇で、戦人は左脇だー！@:dwave_jp 0, mar_1e168:　うー！」\
+
+advchar "10"
+langen:dwave_eng 0, but_1e256:^Ah non ! Ça prend pas avec moi ! ^@:dwave_eng 0, but_1e257:^George, t'es un piètre menteur ! Allez, avoue tout ! ^@:dwave_eng 0, but_1e258:^Maria, prends-le par la droite ! Moi, je m'occupe de la gauche !^@
+advchar "13"
+langen:dwave_eng 0, mar_1e166:^Uu- ! ^@:dwave_eng 0, mar_1e167:^Maria à droite ! Battler à gauche ! ^@:dwave_eng 0, mar_1e168:^Uu- !!^\
+
+Se1 20
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_r1c.jpg",":b;bmp\background\guesthouse\g2f_r1c.png",22
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e141:「ちょっと！！/
+sl
+
+langen:dwave_eng 0, geo_1e141:^Attendez !! ^@/
+
+se1 13
+
+quakey 3,300
+
+langjp:noclear_cw:dwave_jp 0, geo_1e142:　二人ともやめて…！！@:dwave_jp 0, geo_1e143:　あははは、/
+
+langen:noclear_cw:dwave_eng 0, geo_1e142:^Arrêtez, tous les deux... !! ^@:dwave_eng 0, geo_1e143:^Ahahaha,^@/
+sl
+
+se1 3
+
+quakey 5,300
+
+advchar "-1"
+langjpやめッ、/
+sl
+langen^ arrê...^@/
+sl
+
+se1 7
+
+quakex 4,300
+
+advchar "07"
+langjp:voicedelay 1680:dwave_jp 0, geo_1e144:あっはははははは！！」/
+sl
+
+langen:voicedelay 1680:dwave_eng 0, geo_1e144:^ ahahahahahaha !!^@/
+
+se1 1
+
+quakey 4,1000
+
+mov %disable_adv_clear, 1
+langjp:noclear_cw:
+langen:noclear_cw:
+mov %disable_adv_clear, 0
+advchar "-1"
+
+langjp　ベッドの上を転げ回るように逃げる譲治の兄貴を俺と真里亞で追っ掛けてじゃれ合う。\
+
+langen^ Maria et moi nous jetâmes sur George, qui se tortillait sur le lit pour échapper à nos assauts.^\
+
+langjp　高校生にもなって猫の子じゃあるまいしとは思うが、やっぱりこういうじゃれ合いは懐かしい。@
+langen^À dix-huit ans, j'étais peut-être un peu vieux pour ce genre de chamailleries. ... Mais bon sang, qu'est-ce que ça m'avait manqué !^@
+
+br
+
+langjp　温かみのある楽しさだった。
+langen^Retrouver mes cousins, rire avec eux sans se soucier du reste... Pendant un instant, j'avais l'impression que ces six années n'avaient jamais existé.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_r1a.jpg",":b;bmp\background\guesthouse\g2f_r1a.png",0
+
+ld r,$JES_AkuWaraiA1,23
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e146:「はっはははは、譲治兄さんが熊沢さんに聞いたのはねー？@:dwave_jp 0, jes_1e147:　ん〜？@:dwave_jp 0, jes_1e148:　まぁほらアレだぜ。@:dwave_jp 0, jes_1e149:兄さんも本家は一年ぶりだからよ。@:dwave_jp 0, jes_1e150:その間に辞めた使用人とか入った使用人とか、そういうのがいたら挨拶したいーって、そういうことらしいぜぇ？」\
+
+;＜朱志香
+
+langen:dwave_eng 0, jes_1e146:^Ahahahaha ! Vous voulez vraiment savoir ce qu'il a demandé à madame Kumasawa ? ^@:dwave_eng 0, jes_1e147:^Hmmm... ^@:dwave_eng 0, jes_1e148:^Comment dire... ^@:dwave_eng 0, jes_1e149:^Ça fait un an que George n'est pas venu ici, alors il voulait sûrement savoir si certains domestiques étaient partis... ^@:dwave_eng 0, jes_1e150:^ou s'il y avait de nouvelles têtes. Histoire de pouvoir aller dire bonjour, tu vois ? Enfin... quelque chose comme ça !^\
+
+ld l,$MAR_DefA1,23
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e169:「……うー？@:dwave_jp 0, mar_1e170:　挨拶する、真里亞も挨拶する！」@
+langen:dwave_eng 0, mar_1e169:^... Uu- ? ^@:dwave_eng 0, mar_1e170:^Dire bonjour ? Maria veut dire bonjour aussi !^@
+
+ld c,$BUT_defA1,26
+
+advchar "10"
+langjp:dwave_jp 0, but_1e259:「何だよそれぇ、全然やましくねぇじゃねぇかよ兄貴。@:dwave_jp 0, but_1e260:……う〜〜ん？@:dwave_jp 0, but_1e261:　違うなぁ？？@:dwave_jp 0, but_1e262:　真里亞、騙されるな、兄貴は何か隠してるぞ〜ん？@:dwave_jp 0, but_1e263:　拷問再開だー！！@:dwave_jp 0, but_1e264:　うをりゃああ〜！！」\
+
+langen:dwave_eng 0, but_1e259:^Hein ? Mais y a rien de bizarre à vouloir saluer les gens ! ^@:dwave_eng 0, but_1e260:^... Attends une minute. ^@:dwave_eng 0, but_1e261:^Non, ça colle pas. Jessica nous cache encore quelque chose ! ^@:dwave_eng 0, but_1e262:^Maria ! Ne te laisse pas embobiner ! ^@:dwave_eng 0, but_1e263:^On reprend l'interrogatoire ! ^@:dwave_eng 0, but_1e264:^À L'ATTAQUE !!^\
+
+se1 20
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_r1b.jpg",":b;bmp\background\guesthouse\g2f_r1b.png",24
+
+se1 13
+
+quakey 3,300
+
+se1 4
+
+quakey 3,300
+
+se1 3
+
+quakey 3,300
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e145:「や、やめてよ本当に！@:dwave_jp 0, geo_1e146:　あっははははは！@:dwave_jp 0, geo_1e147:　真里亞ちゃんももうやめてー！！」@
+
+;＜譲治
+
+langen:dwave_eng 0, geo_1e145:^N-Non, arrêtez ! ^@:dwave_eng 0, geo_1e146:^Ahahahahaha ! ^@:dwave_eng 0, geo_1e147:^Maria, pas toi aussi ! Arrêêête !!^@
+
+ld r,$MAR_WaraiA2,24
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e171:「あっははははは、あっははははは！/
+sl
+
+langen:dwave_eng 0, mar_1e171:^Ahahahahaha, ahahahahaha ! ^@/
+
+se1 3
+
+quakey 3,300
+
+langjp:noclear_cw:dwave_jp 0, mar_1e172:　きゃっきゃ、きゃっきゃ！！」/
+
+langen:noclear_cw:dwave_eng 0, mar_1e172:^Haha, haha !!^@/
+
+se1 6
+
+quakex 2,200
+
+se1 7
+
+quakey 2,200
+
+se1 8
+
+quakey 2,200
+
+mov %disable_adv_clear, 1
+langjp
+langen
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜真里亞
+
+ld l,$JES_DefA1,23
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e151:「多分、掃除とか昼飯の準備とかで忙しいんだよ。@:dwave_jp 0, jes_1e152:大丈夫、後でちゃんと挨拶に来るぜ。@:dwave_jp 0, jes_1e153:郷田の出しゃばりの出迎えより、紗音の出迎えの方が良かったーってんだろ？@:dwave_jp 0, jes_1e154:　へっへへ！」\
+
+langen:dwave_eng 0, jes_1e151:^ Elle doit être occupée à faire le ménage ou à préparer le déjeuner. ^@:dwave_eng 0, jes_1e152:^T'en fais pas, elle viendra sûrement te voir plus tard. ^@:dwave_eng 0, jes_1e153:^T'aurais préféré que ce soit Shannon qui vienne nous accueillir, plutôt que Gohda qui adore se faire remarquer, pas vrai ? ^@:dwave_eng 0, jes_1e154:^Héhéhé !^\
+
+cl r,23
+
+ld r,$BUT_waraiA1,24
+
+advchar "10"
+langjp:dwave_jp 0, but_1e265:「紗音？@:dwave_jp 0, but_1e266:　……しゃのん。@:dwave_jp 0, but_1e267:……あぁぁあああぁ…。@:dwave_jp 0, but_1e268:思い出したぜ、そんな子もいたな！@:dwave_jp 0, but_1e269:　今も使用人やってんのか？@:dwave_jp 0, but_1e270:　元気かよ！」\
+
+langen:dwave_eng 0, but_1e265:^Shannon ? ^@:dwave_eng 0, but_1e266:^... Shannon... ^@:dwave_eng 0, but_1e267:^Aaaaah ! ^@:dwave_eng 0, but_1e268:^Mais oui, ça y est, je me souviens ! ^@:dwave_eng 0, but_1e269:^Elle travaille toujours ici ? ^@:dwave_eng 0, but_1e270:^Elle va bien ?!^\
+
+;■屋敷・客間
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+fede 0,3000
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_o1a.jpg",":b;bmp\background\mainbuilding\m_o1a.png",2
+
+bgmplay 10
+
+wait 3000
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\ment_1b.jpg",":b;bmp\background\mainbuilding\ment_1b.png",2
+
+wait 1000
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1a.jpg",":b;bmp\background\mainbuilding\mdin_1a.png",2
+
+ld r,$HID_DefA1,24
+
+advchar "06"
+langjp:dwave_jp 0, hid_1e75:「そういや、夏妃姉さん。@:dwave_jp 0, hid_1e76:最近は頭痛の方はどうなんや。@:dwave_jp 0, hid_1e77:一時、だいぶしんどそうにしとったろ。」@
+
+langen:dwave_eng 0, hid_1e75:^Dis-moi, Natsuhi. ^@:dwave_eng 0, hid_1e76:^Comment vont tes migraines ? ^@:dwave_eng 0, hid_1e77:^Il y a quelque temps, tu avais vraiment l'air d'en souffrir.^@
+
+ld l,$NAT_zutuuA1,23
+
+advchar "03"
+langjp:dwave_jp 0, nat_1e1:「…お陰で、最近はだいぶ調子がいいです。@:dwave_jp 0, nat_1e2:心配をしてくれてありがとう。」\
+
+langen:dwave_eng 0, nat_1e1:^... Je vais beaucoup mieux, merci. ^@:dwave_eng 0, nat_1e2:^C'est gentil à vous de vous en soucier.^\
+
+
+cl r,23
+
+ld r,$ROS_DefA1,24
+
+
+
+advchar "12"
+langjp:dwave_jp 0, ros_1e63:「そうだ、これ。@:dwave_jp 0, ros_1e64:夏妃姉さんにお土産。」@
+
+;＜楼座
+
+langen:dwave_eng 0, ros_1e63:^Ah, justement ! ^@:dwave_eng 0, ros_1e64:^Tiens, Natsuhi, je t'ai rapporté quelque chose.^@
+
+ld l,$NAT_defA1,80
+
+advchar "03"
+langjp:dwave_jp 0, nat_1e3:「……いつもありがとう。@:dwave_jp 0, nat_1e4:貴方には何かをもらってばかりね。@:dwave_jp 0, nat_1e5:…これは、紅茶？」@
+
+langen:dwave_eng 0, nat_1e3:^... Oh, merci. ^@:dwave_eng 0, nat_1e4:^Tu as toujours une attention pour moi... ^@:dwave_eng 0, nat_1e5:^C'est du thé ?^@
+
+ld r,$ROS_WaraiA2,80
+
+advchar "12"
+langjp:dwave_jp 0, ros_1e65:「ペパーミントとレモンバームのハーブティー。@:dwave_jp 0, ros_1e66:頭痛によく効くって有名なお店のブレンドなの。@:dwave_jp 0, ros_1e67:姉さんにも効くかなって思って。」\
+
+langen:dwave_eng 0, ros_1e65:^Une tisane à la menthe poivrée et à la mélisse. ^@:dwave_eng 0, ros_1e66:^Je l'ai trouvée dans une boutique réputée pour ses mélanges. Il paraît que celui-ci fait des merveilles contre les maux de tête. ^@:dwave_eng 0, ros_1e67:^Je me suis dit que ça te ferait peut-être du bien.^\
+
+advchar "-1"
+langjp　楼座は昔から気が効く女性だった。@
+langen^Rosa avait toujours été attentionnée envers les autres.^@
+
+br
+
+langjp　…４兄弟の末っ子であり、上の３人と歳が大きく離れていることもあって、@兄や姉たちの毒気を宿さずに成長できたお陰かもしれない。@
+langen^Il faut dire qu'étant la benjamine de la famille, et de loin, elle avait grandi dans des circonstances bien différentes de celles de ses frères et sœur, ^@^et avait peut-être échappé à une partie de leur mauvais caractère.^@
+
+br
+langjp　その気遣いに夏妃は一瞬だけ表情を和ませるが、@長年の気苦労によって凝り固まってしまったその淡白な表情を解すほどには至らなかった…。
+langen^Pendant un instant, les traits de Natsuhi s'adoucirent. ^@^Mais des années de soucis et de tensions avaient laissé leur empreinte sur son visage. Ce simple geste ne suffisait pas à lui rendre le sourire.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1b.jpg",":b;bmp\background\mainbuilding\mdin_1b.png",24
+
+ld r,$EVA_AkireA2,24
+
+advchar "05"
+langjp:dwave_jp 0, eva_1e83:「そう言えばあなた、いっつも頭痛だって言ってたわねぇ。@:dwave_jp 0, eva_1e84:しっかりなさいな？@:dwave_jp 0, eva_1e85:　朱志香ちゃん、今年は受験でしょう？@:dwave_jp 0, eva_1e86:　人生の節目じゃない。@:dwave_jp 0, eva_1e87:母親のあなたがそんなじゃ頼りないわよぅ？@:dwave_jp 0, eva_1e88:　それに夏妃姉さん、私より３つも若いんだからぁ。@:dwave_jp 0, eva_1e89:もうちょっとしっかりなさい？」\
+
+;＜絵羽
+langen:dwave_eng 0, eva_1e83:^Maintenant que tu le dis... C'est vrai que tu te plains souvent de tes migraines, Natsuhi. ^@:dwave_eng 0, eva_1e84:^Il faudrait peut-être songer à prendre un peu sur toi, tu ne crois pas ? ^@:dwave_eng 0, eva_1e85:^Jessica passe ses examens cette année, si je ne me trompe pas. ^@:dwave_eng 0, eva_1e86:^C'est une étape importante dans la vie d'une jeune fille. ^@:dwave_eng 0, eva_1e87:^Si sa propre mère se laisse abattre au moindre mal de tête, sur qui veux-tu qu'elle s'appuie ? ^@:dwave_eng 0, eva_1e88:^Et puis, voyons... Tu as trois ans de moins que moi ! ^@:dwave_eng 0, eva_1e89:^À ton âge, tu devrais quand même avoir un peu plus de ressort, non ?^\
+
+ld l,$NAT_zutuuA1,23
+
+advchar "03"
+langjp:dwave_jp 0, nat_1e6:「…………。@:dwave_jp 0, nat_1e7:………ごめんなさい。@:dwave_jp 0, nat_1e8:生まれつきの頭痛持ちなもので。」
+langen:dwave_eng 0, nat_1e6:^...^@:dwave_eng 0, nat_1e7:^ Je vous prie de m'excuser. ^@:dwave_eng 0, nat_1e8:^Malheureusement, je souffre de migraines depuis l'enfance.^\
+
+advchar "-1"
+langjp　絵羽は時折、言葉を選ばないが、夏妃に向けた言葉には微笑みで誤魔化しつつも、ちょっぴりの明白な悪意が含まれていたようだった。@
+langen^Eva avait cette façon bien à elle de faire passer ses remarques les plus désagréables pour de simples conseils. Un sourire aimable, une voix légère... et juste assez de méchanceté pour que personne ne puisse s'y tromper.^@
+
+br
+
+langjp　もちろん、それは夏妃にも届く。@
+langen^Surtout pas Natsuhi.^@
+
+br
+
+langjp　夏妃は苦々しく表情を歪めたい衝動を必死に抑えながら、軽く聞き流しているように振舞うのだった。
+langen^Celle-ci sentit son visage se crisper, mais se força à garder une expression impassible. Elle préféra faire comme si elle n'avait rien entendu.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1c.jpg",":b;bmp\background\mainbuilding\mdin_1c.png",0
+
+ld r,$KIR_waraiA2,24
+
+advchar "09"
+langjp:dwave_jp 0, kir_1e54:「うちの戦人くんも今年は受験でしょ？@:dwave_jp 0, kir_1e55:　留弗夫さんも少しは関心を持ったら？@:dwave_jp 0, kir_1e56:　自分の息子のために、夏妃姉さんみたいに頭痛になるくらい真剣になりなさいよ。」\
+
+;＜霧江
+
+langen:dwave_eng 0, kir_1e54:^À propos d'examens, Battler aussi en passe cette année. ^@:dwave_eng 0, kir_1e55:^Rudolf, tu pourrais peut-être t'intéresser un peu plus à ses études, tu ne crois pas ? ^@:dwave_eng 0, kir_1e56:^C'est ton fils, après tout. Tu pourrais au moins te faire autant de souci pour lui que Natsuhi s'en fait pour Jessica !^\
+
+ld l,$RUD_DefA2,23
+
+advchar "08"
+langjp:dwave_jp 0, rud_1e87:「俺が何か言えば必ず反抗するヤツだぜ？@:dwave_jp 0, rud_1e88:　じゃあ何て言うんだ、むしろ逆で遊んでていいぞって言うのか？@:dwave_jp 0, rud_1e89:　あいつそういうのだけは素直に聞きやがるぜ。@/
+
+langen:dwave_eng 0, rud_1e87:^Ah, facile à dire ! Quoi que je lui raconte, ce gosse fait systématiquement le contraire ! ^@:dwave_eng 0, rud_1e88:^Tu veux que je lui dise quoi ? « Vas-y, mon fils, amuse-toi ! Surtout, ne travaille pas trop ! » ? ^@:dwave_eng 0, rud_1e89:^Avec un peu de chance, ce serait bien la seule fois où il m'écouterait ! ^@/
+ld l,$RUD_waraiA1,80
+
+langjp:dwave_jp 0, rud_1e90:秀吉兄さんのところは受験、本当にうまく行ったじゃないですか。@:dwave_jp 0, rud_1e91:ぜひ子供操縦術の秘訣を教えてくださいよ。」\
+
+;＜留弗夫
+
+langen:dwave_eng 0, rud_1e90:^Tiens, Hideyoshi, toi qui as réussi avec George... Ses examens se sont bien passés, non ? ^@:dwave_eng 0, rud_1e91:^Vas-y, donne-moi ta recette ! Comment on s'y prend avec ces fichus gamins ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1b.jpg",":b;bmp\background\mainbuilding\mdin_1b.png",0
+
+ld r,$HID_fumuA1,23
+
+advchar "06"
+langjp:dwave_jp 0, hid_1e78:「うーむ、そうやなぁ…。@:dwave_jp 0, hid_1e79:何のために勉強するのかっちゅうことを説いたかもしれんなぁ！@:dwave_jp 0, hid_1e80:　個々の勉強に意味があるわけやないんや。@/
+
+langen:dwave_eng 0, hid_1e78:^Hmm... Bonne question ! ^@:dwave_eng 0, hid_1e79:^Je crois que j'ai surtout essayé de lui faire comprendre pourquoi il devait étudier. ^@:dwave_eng 0, hid_1e80:^Parce que, tu sais, ce n'est pas forcément chaque matière en elle-même qui compte. ^@/
+
+ld r,$HID_komaruA1,80
+
+langjp:dwave_jp 0, hid_1e81:そう、勉強っちゅうのは、わからんことを自分で調べて身につけるという行為の練習なんや！@:dwave_jp 0, hid_1e82:　これが出来んヤツは社会に出ても使い物にならん！@:dwave_jp 0, hid_1e83:　国語算数が出来ろと言ってるんやない。@:dwave_jp 0, hid_1e84:勉強し身につけることを学べっちゅうことやな！」\
+
+langen:dwave_eng 0, hid_1e81:^L'important, c'est d'apprendre à chercher par soi-même quand on ne comprend pas quelque chose ! Réfléchir, se renseigner, essayer jusqu'à ce qu'on trouve... Voilà ce que les études sont censées nous enseigner ! ^@:dwave_eng 0, hid_1e82:^Quelqu'un qui n'a jamais appris à faire ça risque d'avoir bien du mal une fois dans la vie active ! ^@:dwave_eng 0, hid_1e83:^Alors les bonnes notes en français ou en maths, c'est très bien, mais ce n'est pas tout ! ^@:dwave_eng 0, hid_1e84:^Ce qu'il faut apprendre, c'est à apprendre ! Ahahaha !^\
+ld l,$NAT_defA1,23
+
+advchar "03"
+langjp:dwave_jp 0, nat_1e9:「…ご立派ですわ。@:dwave_jp 0, nat_1e10:うちの朱志香にもそれが理解できればいいんだけど。@:dwave_jp 0, nat_1e11:今のままでは、とてもじゃないけど、右代宮家の跡取りとしては、」@
+
+;＜夏妃
+
+langen:dwave_eng 0, nat_1e9:^... C'est une excellente manière de voir les choses. ^@:dwave_eng 0, nat_1e10:^Si seulement Jessica pouvait le comprendre, elle aussi... ^@:dwave_eng 0, nat_1e11:^Dans l'état actuel des choses, elle est encore loin d'être prête à assumer ses responsabilités d'héritière de la famille Ushiromiya...^@
+
+ld c,$EVA_akireA1,22
+
+advchar "05"
+langjp:dwave_jp 0, eva_1e90:「いいじゃないの、無理に跡取りにしなくても。@:dwave_jp 0, eva_1e91:女には女の幸せというものもあるんだしぃ。@:dwave_jp 0, eva_1e92:それを親が押し付けちゃ悪いわよぅ？」\
+
+;＜絵羽
+
+langen:dwave_eng 0, eva_1e90:^Mais enfin, Natsuhi, pourquoi tiens-tu tant à ce qu'elle devienne l'héritière ? ^@:dwave_eng 0, eva_1e91:^Ce n'est pas une obligation, après tout. Une femme peut très bien trouver son bonheur ailleurs. ^@:dwave_eng 0, eva_1e92:^Ce serait dommage que ses parents décident de son avenir à sa place, tu ne trouves pas ?^\
+
+ld r,$HID_fumuA1,80
+
+advchar "06"
+langjp:dwave_jp 0, hid_1e85:「よさんか、絵羽。@:dwave_jp 0, hid_1e86:子供の育て方は家それぞれや。@:dwave_jp 0, hid_1e87:押し付けがましいのはあかんで。」@
+
+langen:dwave_eng 0, hid_1e85:^Allons, Eva, laisse donc ça. ^@:dwave_eng 0, hid_1e86:^Chaque famille a sa façon d'élever ses enfants. ^@:dwave_eng 0, hid_1e87:^Ce n'est pas à nous de leur dire comment faire.^@
+
+ld c,$EVA_waraiA1,80
+
+advchar "05"
+langjp:dwave_jp 0, eva_1e93:「ごめんなさい。@:dwave_jp 0, eva_1e94:夏妃姉さんも気を悪くしないでね。」\
+
+langen:dwave_eng 0, eva_1e93:^Oh, mais bien sûr ! ^@:dwave_eng 0, eva_1e94:^Pardonne-moi, Natsuhi. J'espère que tu ne l'as pas mal pris.^\
+
+ld l,$NAT_zutuuA1,80
+
+advchar "03"
+langjp:dwave_jp 0, nat_1e12:「………………………。」\
+
+;＜夏妃
+
+langen:dwave_eng 0, nat_1e12:^...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1f.jpg",":b;bmp\background\mainbuilding\mdin_1f.png",22
+
+advchar "-1"
+langjp　窓から射す明かりは、曇天と言えどこんなにも温かなのに、室内の空気は澱んでいて、@…夏妃ならずとも鈍い頭痛を感じさせるような気がした。@
+langen^Dehors, malgré les nuages, une douce lumière entrait par les fenêtres. À l'intérieur, pourtant, l'atmosphère était devenue irrespirable. ^@^À force d'assister à ces échanges, même quelqu'un qui ne souffrait pas de migraines aurait fini par avoir mal à la tête.^@
+br
+
+langjp　その空気を打ち払うかのように、霧江が明るく一同に提案する。
+langen^Kyrie sembla comprendre qu'il valait mieux changer de sujet.^\
+
+ld r,$KIR_WaraiA1,24
+
+advchar "09"
+langjp:dwave_jp 0, kir_1e57:「でも、本当に素敵な香りの紅茶ね。@:dwave_jp 0, kir_1e58:さっそく頂いてみましょうよ。@:dwave_jp 0, kir_1e59:レオポルドの紅茶なんて、日本じゃ確か銀座でしか買えなかったはずよ？」@
+
+langen:dwave_eng 0, kir_1e57:^En tout cas, ce thé sent merveilleusement bon. ^@:dwave_eng 0, kir_1e58:^Et si nous en profitions pour le goûter ? ^@:dwave_eng 0, kir_1e59:^C'est du Leopold, n'est-ce pas ? Il me semble qu'au Japon, on n'en trouve qu'à Ginza.^@
+
+ld l,$ROS_WaraiA2,23
+
+advchar "12"
+langjp:dwave_jp 0, ros_1e68:「霧江姉さんはお詳しいですね。@:dwave_jp 0, ros_1e69:買って来た甲斐がありました。」@
+;＜楼座
+langen:dwave_eng 0, ros_1e68:^Tu as l'œil, Kyrie ! ^@:dwave_eng 0, ros_1e69:^Je suis contente d'en avoir rapporté. Ça valait le déplacement.^@
+
+br
+
+advchar "-1"
+langjp　霧江と楼座が席を立ち、紅茶を入れてこようとする。@それを夏妃が制した。\
+
+langen^Kyrie et Rosa se levèrent pour préparer le thé,^@^ mais Natsuhi les arrêta aussitôt.^\
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1c.jpg",":b;bmp\background\mainbuilding\mdin_1c.png",0
+
+ld r,$NAT_zutuuA1,23
+
+
+
+advchar "03"
+langjp:dwave_jp 0, nat_1e13:「……お二人ともありがとう。@:dwave_jp 0, nat_1e14:それは後で頂きましょう。@:dwave_jp 0, nat_1e15:うちの者がすぐお茶を持ってきますので、どうぞおくつろぎください。」
+langen:dwave_eng 0, nat_1e13:^... Merci, toutes les deux. C'est très aimable à vous. ^@:dwave_eng 0, nat_1e14:^Mais nous le goûterons un peu plus tard. ^@:dwave_eng 0, nat_1e15:^Le service ne devrait plus tarder. Je vous en prie, restez assises et mettez-vous à l'aise.^\
+
+ld l,$RUD_DefA1,23
+
+advchar "08"
+langjp:dwave_jp 0, rud_1e92:「二人とも後にしろよ。@:dwave_jp 0, rud_1e93:ウェルカムドリンクくらいご馳走になろうぜ。」@
+;＜留弗夫
+langen:dwave_eng 0, rud_1e92:^Allons, laissez donc ça pour plus tard. ^@:dwave_eng 0, rud_1e93:^On va quand même laisser nos hôtes nous servir le thé, non ?^@
+
+br
+
+advchar "-1"
+langjp　留弗夫が席に戻れと、さりげなく目で合図をする。@
+
+langjp　…霧江と楼座はすぐに理解し、大人しく無言で席に戻った。
+langen^D'un regard discret, Rudolf leur indiqua de regagner leurs places.^@
+langen^Kyrie et Rosa comprirent immédiatement et se rassirent sans insister.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1g.jpg",":b;bmp\background\mainbuilding\mdin_1g.png",22
+
+langjp　客人たちが挨拶に見えたのだから、すぐにお茶が振舞われるべきなのだ。@
+langen^Des invités venaient présenter leurs salutations. La moindre des politesses aurait été de leur offrir du thé sans les faire attendre.^@
+
+br
+
+langjp　…そのお茶のタイミングが遅れて、客人たちが自分たちでお茶を入れようなどと言い出しては、ホストの顔は丸潰れだ。
+langen^Et si l'attente devenait si longue qu'ils proposaient de le préparer eux-mêmes... quelle humiliation pour la maîtresse de maison.^\
+
+langjp　夏妃は、お茶の準備が遅れている使用人たちの不手際に下唇を噛む。@
+langen^Natsuhi se mordit la lèvre. Les domestiques tardaient, et c'était elle qui en faisait les frais.^@
+
+br
+
+langjp　…絵羽はその表情を見ながら、はばかることなく、くすくすと笑うのだった。
+langen^Eva, qui avait parfaitement compris la situation, ne se donna même pas la peine de cacher son petit rire.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1d.jpg",":b;bmp\background\mainbuilding\mdin_1d.png",22
+
+langjp　……もちろん、客間のそんな経緯など、紗音が知ろうはずもない。@
+langen^... Évidemment, Shannon ignorait tout de ce qui venait de se passer dans le salon.^@
+
+br
+
+langjp　ティーカップを積んだ配膳ワゴンを押してやって来た、という、@ただそれだけで夏妃に痛みを伴う眼差しを向けられて、意味もわからず萎縮するしかなかった。
+langen^Shannon s'écrit 紗音. 紗, c'est une étoffe de soie très fine, et 音, le son. ^@^Tiens, encore ce 音, le même que dans Kanon. Elle arrivait simplement avec son chariot chargé de tasses à thé, prête à faire son service. Mais à peine eut-elle franchi la porte que Natsuhi lui lança un regard glacial. La pauvre fille se raidit aussitôt, sans comprendre ce qu'elle avait fait de mal.^\
+
+ld r,$SHA_fumanA1,4
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e1:「……し、失礼いたします。@:dwave_jp 0, sha_1e2:お茶のご用意をさせていただきます。」\
+
+;＜紗音
+
+langen:dwave_eng 0, sha_1e1:^... V-Veuillez m'excuser. ^@:dwave_eng 0, sha_1e2:^Je vais vous servir le thé immédiatement.^\
+
+ld l,$HID_WaraiA1,23
+
+advchar "06"
+langjp:dwave_jp 0, hid_1e88:「おう、紗音ちゃん、久しぶりやのぅ！@:dwave_jp 0, hid_1e89:　ますますべっぴんさんになりよったなぁ！」
+langen:dwave_eng 0, hid_1e88:^Oh ! Shannon ! Ça fait plaisir de te revoir ! ^@:dwave_eng 0, hid_1e89:^Dis donc, tu es encore plus jolie que l'année dernière !^\
+
+ld r,$SHA_hajiraiA2,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e3:「………いえ、/
+sl
+
+langjp:voicedelay 400:dwave_jp 0, sha_1e4:^^…あの、/
+sl
+
+langjp:voicedelay 950:dwave_jp 0, sha_1e5:^^………どうも…、」@
+
+langen:dwave_eng 0, sha_1e3:^... Oh, non, je...^@/
+sl
+langen:voicedelay 400:dwave_eng 0, sha_1e4:^ Enfin...^@/
+sl
+langen:voicedelay 950:dwave_eng 0, sha_1e5:^ merci beaucoup...^@
+
+ld c,$NAT_hisuA1,22
+
+advchar "03"
+langjp:dwave_jp 0, nat_1e16:「おしゃべりは配膳を済ませてからになさい。@:dwave_jp 0, nat_1e17:お茶が冷めます。」@
+langen:dwave_eng 0, nat_1e16:^Shannon, vous aurez tout le temps de bavarder une fois le service terminé. ^@:dwave_eng 0, nat_1e17:^Dépêchez-vous, avant que le thé ne refroidisse.^@
+
+ld r,$SHA_OdorokiA1,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e6:「……もっ、…申し訳ございません、奥様。」\
+
+langen:dwave_eng 0, sha_1e6:^... P-Pardonnez-moi, madame.^\
+
+advchar "-1"
+langjp　怯える小動物のように謝る仕草が、配膳ワゴンに触れ、ティースプーンを数本落として、耳障りな音を立ててしまう。@
+langen^En voulant se hâter, Shannon heurta malencontreusement le chariot. Plusieurs petites cuillères tombèrent au sol dans un grand tintement.^@
+
+br
+
+langjp　その無様に夏妃がますます表情を険しくし、それがますます紗音を萎縮させていた。
+langen^Elle se figea. Le regard de Natsuhi s'assombrit encore. Et plus Shannon se sentait observée, plus elle perdait ses moyens.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1b.jpg",":b;bmp\background\mainbuilding\mdin_1b.png",23
+
+ld r,$EVA_AkireA1,23
+
+advchar "05"
+langjp:dwave_jp 0, eva_1e95:「いいのよ夏妃姉さん。@:dwave_jp 0, eva_1e96:挨拶のひとつくらいしたって、どうってことないわよ。@:dwave_jp 0, eva_1e97:もう充分待たされてる分、充分、お茶も冷めてるもの。@:dwave_jp 0, eva_1e98:うふふふぅ。」\
+
+;＜絵羽
+
+langen:dwave_eng 0, eva_1e95:^Oh, allons, Natsuhi ! Ne sois pas si pressée. ^@:dwave_eng 0, eva_1e96:^Cette pauvre Shannon peut bien échanger quelques mots avec nous. ^@:dwave_eng 0, eva_1e97:^Et puis, entre nous... vu le temps qu'on a attendu, le thé doit être froid depuis belle lurette ! ^@:dwave_eng 0, eva_1e98:^Huhuhuhu.^\
+
+ld l,$SHA_hajiraiA1,23
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e7:「そ、…それは大丈夫です…。@:dwave_jp 0, sha_1e8:冷めてはおりませんので…、」@
+
+langen:dwave_eng 0, sha_1e7:^N-Non, je vous assure... ^@:dwave_eng 0, sha_1e8:^Il est encore bien chaud...^@
+
+cl r,23
+
+ld r,$NAT_odorokiA1,24
+
+advchar "03"
+langjp:dwave_jp 0, nat_1e18:「………紗音、早く配膳を済ませなさい。」@
+
+langen:dwave_eng 0, nat_1e18:^Shannon. Terminez le service, je vous prie.^@
+
+ld l,$SHA_OdorokiA1,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e9:「しっ、失礼しました奥様……。」@
+langen:dwave_eng 0, sha_1e9:^... O-Oui, madame. Pardonnez-moi...^@
+
+br
+
+advchar "-1"
+langjp　夏妃がイラついていることは明白だった。
+langen^Cette fois, Natsuhi avait bien du mal à dissimuler son irritation.^\
+
+langjp　…お茶が遅れた不手際も、使用人の無様も全ては夏妃の日頃の指導の至らなさということに結びつき、自分の顔を潰してしまう。@
+langen^Le thé était arrivé en retard. Une domestique venait de renverser des cuillères devant les invités. Et Eva ne manquait aucune occasion d'en rajouter. Tout cela donnait l'impression que Natsuhi était incapable de faire tenir sa propre maison.^@
+
+br
+
+langjp　年に一度しかない日に、その無様を晒すことは、右代宮本家の台所を預かる身としては屈辱でしかなかったに違いない。
+langen^Or, c'était précisément elle qui en avait la responsabilité. En ce jour de conférence familiale, chaque maladresse devenait une humiliation supplémentaire.^\
+
+ld c,$RUD_DefA1,24
+
+advchar "08"
+langjp:dwave_jp 0, rud_1e94:「よせよ夏妃姉さん。@:dwave_jp 0, rud_1e95:紗音ちゃんだって頑張ってるのにいじめちゃ可哀想だぜ？」@
+
+;＜留弗夫
+
+langen:dwave_eng 0, rud_1e94:^Allons, Natsuhi, du calme. ^@:dwave_eng 0, rud_1e95:^Shannon fait ce qu'elle peut. Pas la peine de lui tomber dessus.^@
+
+ld r,$NAT_hisuA1,80
+
+advchar "03"
+langjp:dwave_jp 0, nat_1e19:「いじめてなんかいません…！」\
+
+;＜夏妃
+
+langen:dwave_eng 0, nat_1e19:^Je ne lui tombe pas dessus... !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1a.jpg",":b;bmp\background\mainbuilding\mdin_1a.png",0
+
+ld r,$KIR_WaraiA2,23
+
+advchar "09"
+langjp:dwave_jp 0, kir_1e60:「いい香りね。@:dwave_jp 0, kir_1e61:お茶の銘柄を聞いてもいいかしら？」@
+;＜霧江
+
+langen:dwave_eng 0, kir_1e60:^Quel parfum agréable... ^@:dwave_eng 0, kir_1e61:^Dis-moi, Shannon, de quelle maison vient ce thé ?^@
+
+ld l,$SHA_KomaruA1,23
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e10:「…………ぇっと…、/
+sl
+
+langen:dwave_eng 0, sha_1e10:^... Euh...^@/
+sl
+
+langjp:voicedelay 1410:dwave_jp 0, sha_1e11:^^……も、/
+sl
+
+langen:voicedelay 1410:dwave_eng 0, sha_1e11:^ Je...^@/
+sl
+
+langjp:voicedelay 2710:dwave_jp 0, sha_1e12:^^…申し訳ございません…。@後ほど調べてまいります…。」\
+
+langen:voicedelay 2710:dwave_eng 0, sha_1e12:^ je suis vraiment désolée... ^@^Je vais me renseigner tout de suite...^\
+
+advchar "-1"
+langjp　霧江は、険しくなった空気を切り替えたくて気を遣ったつもりだった。@
+langen^Kyrie avait voulu lui tendre une perche en engageant une conversation aimable.^@
+
+br
+
+langjp　…だが、かえって紗音は醜態を晒すことになってしまい、ますますに夏妃の表情と部屋の空気を険しくさせてしまう。@
+langen^Mais la pauvre Shannon n'avait pas su répondre. Cette nouvelle hésitation ne fit qu'accentuer le malaise et assombrir davantage le visage de Natsuhi.^@
+
+br
+
+langjp　もうこの頃には、絵羽は、誰の耳にも届く声でくすくすと笑っていた。
+langen^Eva, elle, riait maintenant assez fort pour que personne ne puisse faire semblant de ne pas l'entendre.^\
+
+cl r,23
+
+ld r,$EVA_akireA1,24
+
+advchar "05"
+langjp:dwave_jp 0, eva_1e99:「なぁにぃ？@:dwave_jp 0, eva_1e100:　紗音ちゃん、自分で淹れてるものが何かもわからないのぅ？@:dwave_jp 0, eva_1e101:　ダメよぅ、そんな怪しげなものを来客に振舞っちゃぁ。@:dwave_jp 0, eva_1e102:こんなお茶じゃ銀のスプーンでもないと飲めないわよぅ？」@
+langen:dwave_eng 0, eva_1e99:^Comment ça, Shannon ? ^@:dwave_eng 0, eva_1e100:^Tu ne sais même pas quel thé tu nous sers ? ^@:dwave_eng 0, eva_1e101:^Voyons, ma petite... On ne présente pas n'importe quoi à ses invités. ^@:dwave_eng 0, eva_1e102:^À ce compte-là, il faudrait presque demander une cuillère en argent avant d'oser y goûter !^@
+
+ld l,$SHA_OdorokiA1,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e13:「………す、/
+sl
+
+langen:dwave_eng 0, sha_1e13:^... Je...^@/
+sl
+
+langjp:voicedelay 2020:dwave_jp 0, sha_1e14:^^…すみません……。@すぐに用意を…、」\
+
+langen:voicedelay 2020:dwave_eng 0, sha_1e14:^ Pardonnez-moi... ^@^Je vais vous en apporter une tout de suite...^\
+
+ld r,$EVA_AkireA2,80
+
+advchar "05"
+langjp:dwave_jp 0, eva_1e103:「ねぇ紗音ちゃん。@:dwave_jp 0, eva_1e104:銀のスプーンって何に使うか知ってるぅ？@:dwave_jp 0, eva_1e105:　銀じゃないとダメなのよ？@:dwave_jp 0, eva_1e106:　なぜかわかるぅ？」@
+
+langen:dwave_eng 0, eva_1e103:^Attends, Shannon. ^@:dwave_eng 0, eva_1e104:^Tu sais au moins à quoi elle sert, cette cuillère en argent ? ^@:dwave_eng 0, eva_1e105:^Et pourquoi il faut absolument qu'elle soit en argent ? ^@:dwave_eng 0, eva_1e106:^Tu le sais, n'est-ce pas ?^@
+
+ld l,$SHA_komaruA1,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e15:「……………ぃぇ…、/
+sl
+
+langen:dwave_eng 0, sha_1e15:^... Non...^@/
+sl
+
+langjp:voicedelay 570:dwave_jp 0, sha_1e16:^^………ぁの……。」\
+
+langen:voicedelay 570:dwave_eng 0, sha_1e16:^ euh...^\
+
+advchar "-1"
+langjp　絵羽がいたずらっぽく微笑みながら、配膳をする紗音を覗き上げる。\
+
+langen^Eva leva les yeux vers Shannon et lui adressa un sourire presque attendrissant.^\
+
+langjp　…絵羽のその表情は、それだけを見たなら小悪魔的な愛くるしいものなのかもしれない。@
+langen^À la voir ainsi, on aurait pu croire qu'elle taquinait gentiment une jeune domestique inexpérimentée.^@
+
+br
+
+langjp　しかし、口から紡がれる言葉には、カミソリのような鋭利さが確かに含まれていた。
+langen^Mais ses paroles ne laissaient guère de doute sur ses intentions.^\
+
+langjp　じっとその瞳を覗きつづける絵羽に、紗音は何とか目を合わせまいとするのが精一杯だ。@
+langen^Elle la fixait avec une insistance parfaitement calculée. Shannon, de son côté, n'osait même plus soutenir son regard.^@
+
+
+br
+
+langjp　紗音が答えに窮したのを見て取り、すぐに楼座が助け舟を出す。
+langen^Rosa finit par intervenir, voyant que Shannon ne savait plus quoi répondre.^\
+
+ld c,$ROS_DefA1,24
+
+advchar "12"
+langjp:dwave_jp 0, ros_1e69_1:「銀は毒に触れると曇るって言われてるの。@:dwave_jp 0, ros_1e69_2:…くす、紗音ちゃんもひとつお勉強ができたわね。」\
+
+;＜楼座
+
+langen:dwave_eng 0, ros_1e69_1:^On dit que l'argent noircit au contact du poison. ^@:dwave_eng 0, ros_1e69_2:^... Hihi. Voilà, Shannon, tu auras appris quelque chose aujourd'hui.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1e.jpg",":b;bmp\background\mainbuilding\mdin_1e.png",22
+
+advchar "-1"
+langjp　毒見をしなければ飲めないお茶扱い。@
+langen^Le sous-entendu était particulièrement insultant. Eva venait de suggérer qu'il fallait se méfier du thé servi dans cette maison, au point de vérifier qu'il ne contenait pas de poison.^@
+
+br
+
+langjp　夏妃にとってそれは、お茶とそれを振舞った自分を貶されたのとまったく同じことだ。@
+langen^Pour Natsuhi, c'était une attaque directe contre l'hospitalité dont elle était responsable.^@
+
+br
+
+langjp　留弗夫は軽薄そうに笑いながら絵羽の肩を叩く。
+langen^Rudolf éclata de rire et donna une petite tape sur l'épaule d'Eva.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1c.jpg",":b;bmp\background\mainbuilding\mdin_1c.png",0
+
+ld r,$RUD_WaraiA1,23
+
+advchar "08"
+langjp:dwave_jp 0, rud_1e96:「はは、姉貴に銀食器なんていらねぇだろ。@:dwave_jp 0, rud_1e97:毒舌の姉貴がひと舐めしたら、銀の皿だって真っ黒に曇っちまうぜ。」\
+
+langen:dwave_eng 0, rud_1e96:^Ahahaha ! Avec toi, Eva, pas besoin de cuillère en argent ! ^@:dwave_eng 0, rud_1e97:^Vu ta langue de vipère, tu ferais noircir toute l'argenterie rien qu'en ouvrant la bouche !^\
+
+ld l,$HID_WaraiA2,23
+
+advchar "06"
+langjp:dwave_jp 0, hid_1e90:「わっはっはっは！@:dwave_jp 0, hid_1e91:　わしゃあその毒舌を毎日聞かされとるから、もう毒に耐性がついてしもぅたわ！@:dwave_jp 0, hid_1e92:　絵羽も、わし相手には構わんが耐性のない相手にはちぃと加減せんとな！@:dwave_jp 0, hid_1e93:　わっはっはっは！」@
+langen:dwave_eng 0, hid_1e90:^Wahahahaha ! ^@:dwave_eng 0, hid_1e91:^Ah, ça, je confirme ! Cette langue-là, je la supporte tous les jours ! À force, j'ai fini par m'y habituer ! ^@:dwave_eng 0, hid_1e92:^Mais Eva, pense un peu aux autres ! Ils ont pas tous développé la même résistance que moi ! ^@:dwave_eng 0, hid_1e93:^Wahahahaha !^@
+
+ld c,$EVA_WaraiA1,22
+
+advchar "05"
+langjp:dwave_jp 0, eva_1e109:「あらあら、ひどぅい。@:dwave_jp 0, eva_1e110:紗音ちゃんにお茶の知識を教えてあげただけじゃない。@:dwave_jp 0, eva_1e111:くすくす。」\
+
+langen:dwave_eng 0, eva_1e109:^Oh, quelle méchanceté ! ^@:dwave_eng 0, eva_1e110:^On ne peut vraiment plus rien dire. Je voulais simplement apprendre quelque chose à Shannon, voilà tout. ^@:dwave_eng 0, eva_1e111:^Hihi.^\
+
+advchar "-1"
+langjp　秀吉の馬鹿笑いに合わせるように、みんなも苦しげではありながらも笑いを重ねる。@
+langen^Entraînés par le rire sonore de Hideyoshi, les autres finirent eux aussi par rire. Certains de bon cœur, d'autres probablement pour éviter de prolonger ce moment embarrassant.^@
+
+br
+
+langjp　夏妃だけは笑いに加わらなかったが、それでもとりあえず、客間内は談笑で盛り上がっていると誤解できる程度にはなった。;確認誤字
+
+langen^Natsuhi, elle, ne riait pas. Mais au moins, à présent, on aurait presque pu croire à une conversation familiale agréable.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1d.jpg",":b;bmp\background\mainbuilding\mdin_1d.png",0
+
+ld r,$SHA_komaruA1,24
+
+ld l,$KIR_NayamuA1,23
+
+langjp　ようやくお茶の配膳を終えて戻ろうとする紗音に、霧江は助け舟にならなくてゴメンと小さく謝る。@
+langen^Lorsque Shannon termina enfin son service, Kyrie profita de son départ pour lui présenter discrètement ses excuses. Elle avait voulu l'aider, mais n'avait fait qu'aggraver la situation.^@
+
+cl r,23
+
+langjp　…紗音は小さく頷き返し、そそくさと出て行くのだった……。
+langen^Shannon lui répondit par un petit signe de tête. Puis elle quitta la pièce aussi vite que possible.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m1f_p1b.jpg",":b;bmp\background\mainbuilding\m1f_p1b.png",23
+
+;■廊下
+
+langjp　俯きながら、配膳ワゴンを押して廊下を歩む紗音…。@
+langen^Shannon avançait lentement dans le couloir, poussant son chariot de service, les yeux baissés...^@
+
+br
+
+langjp　その痛々しい様子に、彼女が何かのいじめを受けたことは容易に想像することができた。
+langen^À la voir ainsi, difficile de ne pas comprendre ce qu'elle venait de subir.^\
+
+ld r,$KAN_defA2,24
+
+advchar "16"
+langjp:dwave_jp 0, kan_1e23:「……気を落とさないで。@:dwave_jp 0, kan_1e24:姉さんは何も悪くない。」@
+
+;＜嘉音
+
+langen:dwave_eng 0, kan_1e23:^... Ne te laisse pas abattre, grande sœur.^@:dwave_eng 0, kan_1e24:^ Tu n'as rien fait de mal.^@
+
+ld l,$SHA_MajimeA1,23
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e17:「……………見てたのね。」@
+
+;＜紗音
+
+langen:dwave_eng 0, sha_1e17:^... Alors tu as tout vu.^@
+
+ld r,$KAN_nayamuA1,80
+
+advchar "16"
+langjp:dwave_jp 0, kan_1e25:「そういうお役目だから。」@
+
+langen:dwave_eng 0, kan_1e25:^C'est mon rôle.^@
+
+ld l,$SHA_fumanA1,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e18:「……………………。」\
+
+langen:dwave_eng 0, sha_1e18:^...^\
+
+ld r,$KAN_komaruA1,80
+
+advchar "16"
+langjp:dwave_jp 0, kan_1e26:「奥様も絵羽さまも地獄へ堕ちろ。@:dwave_jp 0, kan_1e27:……でも、それより卑劣なのはあいつだ。」@
+langen:dwave_eng 0, kan_1e26:^... Que Madame et Eva aillent en enfer.^@:dwave_eng 0, kan_1e27:^ ... Mais le plus lâche de tous... c'est encore lui.^@
+
+br
+
+advchar "-1"
+langjp　嘉音が憎々しげに眼差しを向ける先は、客間とは逆の方向だった。\
+
+langen^Le regard de Kanon se détourna du salon. Vu la colère dans ses yeux, ce n'était plus aux invitées qu'il en voulait.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mkit_1a.jpg",":b;bmp\background\mainbuilding\mkit_1a.png",22
+
+langjp　お茶の準備が遅れたのは、厨房でちょっとしたトラブルがあったからだ。@
+langen^En réalité, le retard du thé venait d'un incident survenu en cuisine.^@
+
+br
+
+langjp　そのトラブルは紗音のせいではない。@
+langen^Et Shannon n'y était absolument pour rien.^@
+
+langjp　実は郷田のちょっとしたミスだった。
+langen^C'était Gohda qui avait commis une erreur.^\
+
+langjp　そもそも、賓客が集まっているところへお茶を運ぶという派手な仕事を、あの見栄っ張りの郷田が譲るわけがない。
+langen^Servir le thé aux invités d'honneur, c'était le genre de tâche que Gohda aimait garder pour lui : une occasion de briller et de recevoir des compliments.^\
+
+langjp　お茶をもう一度準備するのに無駄な時間を掛けてしまった。@
+langen^Mais une maladresse l'avait obligé à tout préparer une seconde fois, lui faisant perdre un temps précieux.^@
+
+br
+
+langjp　だからポイントが稼げないことがわかり、たまたまその場を通りかかった紗音に配膳を押し付けたのだ。@
+langen^Lorsqu'il avait compris qu'il n'en tirerait aucun mérite, il avait changé son fusil d'épaule et confié le service à Shannon, qui passait justement par là.^@
+
+br
+
+langjp　……要領がいいと言えばいいし、卑怯だと言えば紛れもなく卑怯だった。
+langen^... Il s'était bien tiré d'affaire, certes. Aux dépens de Shannon, et avec une lâcheté difficile à excuser.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m1f_p1b.jpg",":b;bmp\background\mainbuilding\m1f_p1b.png",0
+
+ld r,$SHA_fumanA1,0
+
+ld l,$KAN_komaruA1,26
+
+ld r,$SHA_majimeA2,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e19:「……いいの、ありがとう嘉音くん。@:dwave_jp 0, sha_1e20:…私、全然気にしていないし…。」@
+
+langen:dwave_eng 0, sha_1e19:^... C'est gentil de t'inquiéter pour moi, Kanon.^@:dwave_eng 0, sha_1e20:^ ... Mais ça va, vraiment. Ne t'en fais pas. Ça ne me touche pas tant que ça...^@
+
+ld l,$KAN_defA2,80
+
+advchar "16"
+langjp:dwave_jp 0, kan_1e28:「……………………………。」@
+advchar "-1"
+langjp　嘉音のその沈黙は、紗音の言葉が心にもないことであるのを如実に語る。
+advchar "16"
+langen:dwave_eng 0, kan_1e28:^...^@
+advchar "-1"
+langen^Ce silence à lui seul montrait qu'il n'en croyait pas un mot.^\
+
+ld r,$SHA_WaraiA1,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e21:「…………ありがとう。@:dwave_jp 0, sha_1e22:嘉音くんだけでもわかってくれたんで、ちょっと心が楽になったかな。」@
+
+langen:dwave_eng 0, sha_1e21:^... Merci, quand même.^@:dwave_eng 0, sha_1e22:^ Rien que de savoir que tu me comprends, toi au moins... ça me fait du bien.^@
+
+ld l,$KAN_majimeA1,80
+
+advchar "16"
+langjp:dwave_jp 0, kan_1e29:「……姉さんは心に色々溜め込みすぎる。@:dwave_jp 0, kan_1e30:……たまには自分にやさしくしてあげて。」@
+langen:dwave_eng 0, kan_1e29:^... Grande sœur, tu encaisses beaucoup trop de choses sans jamais rien dire.^@:dwave_eng 0, kan_1e30:^ ... Tu devrais penser un peu à toi, de temps en temps.^@
+ld r,$SHA_WaraiA3,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e23:「うん。@:dwave_jp 0, sha_1e24:……ありがとうね。」@
+
+advchar "-1"
+langjp　その時、不意に人の気配がしたので、二人は慌てて振り返った。\
+
+advchar "15"
+langen:dwave_eng 0, sha_1e23:^... Oui.^@:dwave_eng 0, sha_1e24:^ ... Merci, Kanon.^@
+advchar "-1"
+langen^Une présence derrière eux les fit soudain se retourner.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m1f_p2b.jpg",":b;bmp\background\mainbuilding\m1f_p2b.png",0
+
+ld r,$GEN_DefA1,24
+
+langjp　そこには、初老の男の姿があった。@
+
+langjp　使用人の長である源次である。\
+
+langen^Un homme d'un certain âge venait d'apparaître dans le couloir.^@
+langen^C'était Genji, le chef des domestiques.^\
+
+ld r,$GEN_komaruA1,80
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e3:「………………そこで何をしている。@:dwave_jp 0, gen_1e4:…紗音、早く厨房に戻りなさい。」\
+
+;＜源次
+
+langen:dwave_eng 0, gen_1e3:^... Qu'est-ce que vous faites ici ?^@:dwave_eng 0, gen_1e4:^ ... Shannon, retourne vite en cuisine.^\
+
+ld l,$SHA_KomaruA1,23
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e25:「は、はい。@:dwave_jp 0, sha_1e26:……失礼いたしました……。」@
+
+langen:dwave_eng 0, sha_1e25:^O-Oui...^@:dwave_eng 0, sha_1e26:^ Veuillez m'excuser.^@
+
+ld c,$KAN_majimeA1,23
+
+advchar "16"
+langjp:dwave_jp 0, kan_1e31:「……………………………。」\
+
+;＜嘉音
+
+langen:dwave_eng 0, kan_1e31:^...^\
+
+advchar "-1"
+langjp　紗音は畏まり、すぐに配膳ワゴンを押して立ち去ろうとする。@
+
+langjp　だが、嘉音は言葉にできない何かを瞳に宿して、無言でそれを源次に訴えている。\
+
+langen^Shannon s'inclina et se remit aussitôt à pousser son chariot.^@
+langen^Kanon, lui, resta immobile, le regard fixé sur Genji. Il ne disait rien, mais son expression parlait pour lui.^\
+
+ld r,$GEN_defA1,80
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e5:「……………どうした。@:dwave_jp 0, gen_1e6:何かあったか…？」\
+
+;＜源次
+
+langen:dwave_eng 0, gen_1e5:^... Que se passe-t-il ?^@:dwave_eng 0, gen_1e6:^ Quelque chose ne va pas ?^\
+
+ld c,$KAN_odorokiA2,80
+
+advchar "16"
+langjp:dwave_jp 0, kan_1e32:「…しゃ、/
+sl
+
+langjp:voicedelay 960:dwave_jp 0, kan_1e32_1:^^……紗音は何も悪くないのに、/
+sl
+
+langjp:voicedelay 2580:dwave_jp 0, kan_1e32_2:^^あいつら…、」@
+
+;＜嘉音
+
+langen:dwave_eng 0, kan_1e32:^... Sh-^@/
+sl
+langen:voicedelay 960:dwave_eng 0, kan_1e32_1:^... Shannon n'a rien fait de mal... ^@/
+sl
+langen:voicedelay 2580:dwave_eng 0, kan_1e32_2:^Et pourtant, eux...^@
+
+ld l,$SHA_OdorokiA1,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e27:「やめて嘉音くん…。@/
+
+langen:dwave_eng 0, sha_1e27:^Kanon... arrête.^@/
+
+
+ld l,$SHA_fumanA1,80
+
+
+
+langjp:dwave_jp 0, sha_1e28:……失礼しました。@:dwave_jp 0, sha_1e29:すぐに仕事に戻ります。@:dwave_jp 0, sha_1e30:嘉音くんも自分の持ち場に戻って。@:dwave_jp 0, sha_1e31:……お願い。」@
+
+;＜紗音
+
+langen:dwave_eng 0, sha_1e28:^ ... Veuillez nous excuser.^@:dwave_eng 0, sha_1e29:^ Je retourne travailler tout de suite.^@:dwave_eng 0, sha_1e30:^ Kanon, toi aussi, retourne à ton poste.^@:dwave_eng 0, sha_1e31:^ ... S'il te plaît.^@
+
+ld c,$KAN_defA2,80
+
+advchar "16"
+langjp:dwave_jp 0, kan_1e33:「…………姉さんがそういうなら。」\
+
+;＜嘉音
+
+langen:dwave_eng 0, kan_1e33:^... Si c'est ce que tu veux, grande sœur.^\
+
+ld r,$GEN_majimeA2,80
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e7:「………………。@:dwave_jp 0, gen_1e8:…何事もないなら、そうしなさい。」\
+
+;＜源次
+
+langen:dwave_eng 0, gen_1e7:^...^@:dwave_eng 0, gen_1e8:^ S'il ne s'est rien passé, retournez travailler.^\
+
+ld c,$KAN_nayamuA1,80
+
+advchar "16"
+langjp:dwave_jp 0, kan_1e34:「……はい。@:dwave_jp 0, kan_1e35:……失礼します。」\
+
+;＜嘉音
+
+langen:dwave_eng 0, kan_1e34:^... Oui.^@:dwave_eng 0, kan_1e35:^ ... Veuillez m'excuser.^\
+
+cl c,24
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m2f_p1c.jpg",":b;bmp\background\mainbuilding\m2f_p1c.png",22
+
+advchar "-1"
+langjp　その姿を廊下の影から見守る割烹着姿の老婆は熊沢であった…。\
+
+langen^Un peu plus loin, une vieille femme en tablier observait la scène, à l'abri des regards dans l'ombre du couloir...^@
+langen^C'était Kumasawa...^\
+
+lsp_var 1, $KUM_MajimeA1, 347, 0 ;convert to widescreen - fix off-screen sprite
+;lsp 800,$KUM_MajimeA1,434,0
+
+print 24
+
+;この熊沢は、通常のｒの位置ではなく、画面右側からひょこっとはみ出して覗いている感じにしたい〜〜。このモノローグの末・アイキャッチ直前で、熊沢の立ち絵を左フェードで消去したい。
+
+adv_mode_off
+advchar "18"
+langjp:dwave_jp 0, kum_1e41_1:　……おいたわしや、紗音さん、嘉音さん…。@
+langjp:dwave_jp 0, kum_1e41_2:　あの二人がいじめられる理由は何もないのです。@
+langen:dwave_eng 0, kum_1e41_1:^... Ces pauvres enfants... Shannon... Kanon...^@
+langen:dwave_eng 0, kum_1e41_2:^Ils n'ont pourtant rien fait pour mériter qu'on les traite ainsi.^@
+
+br
+
+langjp:dwave_jp 0, kum_1e41_3:　…しかし、郷田さんに嫌われているのは紛れもない事実…。
+langen:dwave_eng 0, kum_1e41_3:^... Et malgré cela, Gohda les a bel et bien pris en grippe.^\
+
+langjp:dwave_jp 0, kum_1e41_4:　郷田さんは、右代宮本家へいらっしゃられるまで、どこかの立派なホテルにお勤めだったそうです。@
+langen:dwave_eng 0, kum_1e41_4:^Avant d'entrer au service de la branche principale des Ushiromiya, Gohda travaillait, paraît-il, dans un grand hôtel.^@
+
+br
+
+langjp:dwave_jp 0, kum_1e41_5:　そこで身につけられたというお仕事ぶりは、そりゃあ大したものだとは思います。
+langen:dwave_eng 0, kum_1e41_5:^Il faut reconnaître qu'il y a acquis un véritable savoir-faire. Dans son métier, cet homme ne manque pas de talent.^\
+
+langjp:dwave_jp 0, kum_1e41_6:　ただ、郷田さんはここではもっとも年季の短い使用人。@
+
+langjp:dwave_jp 0, kum_1e41_7:　…ご自身のそれまでの積み重ねによるプライドもあられたのでしょう。@
+langen:dwave_eng 0, kum_1e41_6:^Seulement, chez les Ushiromiya, Gohda est le dernier arrivé parmi les domestiques.^@
+langen:dwave_eng 0, kum_1e41_7:^... Avec toute l'expérience accumulée auparavant, il a sans doute eu du mal à se retrouver au bas de l'échelle.^@
+
+br
+
+langjp:dwave_jp 0, kum_1e41_8:　彼は、自分より長い年季を持ちながらも未熟で、人生経験も及ばない紗音さんと嘉音くんを、ことある毎にいびられるのです…。\
+
+langen:dwave_eng 0, kum_1e41_8:^Shannon et Kanon sont ici depuis plus longtemps que lui, mais ils restent jeunes et moins expérimentés. Alors Gohda ne manque jamais une occasion de les rabaisser, comme s'il supportait mal leur ancienneté...^\
+
+langjp:dwave_jp 0, kum_1e41_9:　また、…気の毒なことに、夏妃奥様にも嫌われております…。@
+langen:dwave_eng 0, kum_1e41_9:^... Et malheureusement, madame Natsuhi ne les porte guère dans son cœur non plus...^@
+
+br
+
+langjp:dwave_jp 0, kum_1e41_a:　もちろん、年季という意味では奥様の方が長くこの家におられます。@
+langjp:dwave_jp 0, kum_1e41_b:　ただ、………こればかりは奥様にも同情しなくてはなりません。\
+
+langen:dwave_eng 0, kum_1e41_a:^... Bien sûr, Madame est dans cette maison depuis plus longtemps qu'eux.^@
+langen:dwave_eng 0, kum_1e41_b:^... Et pourtant, sur ce point, je ne peux m'empêcher d'avoir aussi de la peine pour elle.^\
+
+langjp:dwave_jp 0, kum_1e41_c:　…本当にお館様も罪作りな方でございます…。@
+langen:dwave_eng 0, kum_1e41_c:^... Ah, le Maître... Il aura causé bien des souffrances...^@
+
+br
+
+langjp:dwave_jp 0, kum_1e41_d:　ご自身の、ちょっとした気まぐれが、奥様にこれほどまでの劣等感をお与えになるとは、どうして思い至らなかったのでしょう…。
+langen:dwave_eng 0, kum_1e41_d:^Comment n'a-t-il pas songé qu'un simple caprice de sa part pourrait laisser à Madame un sentiment d'infériorité aussi profond... ?^\
+
+langjp:dwave_jp 0, kum_1e41_e:　……もちろん奥様とて内心は、あの二人に辛く当たる謂れは何もないことを重々承知してはおります…。@
+langen:dwave_eng 0, kum_1e41_e:^... Au fond d'elle-même, Madame sait parfaitement que Shannon et Kanon n'ont rien fait pour mériter sa sévérité...^@
+
+br
+
+langjp:dwave_jp 0, kum_1e41_f:　…しかし、それが理屈でわかっているからといって、どうにもならないのが人の心…。\
+
+langen:dwave_eng 0, kum_1e41_f:^... Mais il y a des choses que l'on comprend sans parvenir à les accepter. La raison a beau nous dire une chose, le cœur n'en fait parfois qu'à sa tête...^\
+
+langjp:dwave_jp 0, kum_1e41_g:　あぁ、おいたわしや…。@
+langen:dwave_eng 0, kum_1e41_g:^... Ah... Ces pauvres enfants...^@
+
+br
+
+langjp:dwave_jp 0, kum_1e41_h:　私には何もできず、こうして物陰から見守ることしかできないのです……。\
+
+langen:dwave_eng 0, kum_1e41_h:^Et moi qui ne peux rien faire pour eux... Rien d'autre que les regarder souffrir, sans oser intervenir...^\
+
+adv_mode_on
+textoff
+
+csp_var 1
+
+print 3
+
+;この部分で熊沢を左フェードで消したい。今はｒ位置の立ち絵扱いなのでこの命令。
+
+
+
+
+
+wait 3000
+eye1 11,15,12,00,1,0,510,340,25
+
+
+fede 0,3000
+;ここでフェードアウトしたい〜〜〜〜〜〜〜
+
+*umi1_3
+
+
+
+;■ゲストハウス・いとこ部屋
+
+
+
+bg white,6
+
+
+
+bgmplay 2
+
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_r1c.jpg",":b;bmp\background\guesthouse\g2f_r1c.png",22
+
+
+
+advchar "-1"
+langjp　俺たちはいとこ同士４人で、色々な話に花を咲かせていた。\
+
+langen^Nous étions enfin réunis tous les quatre, à discuter tranquillement de tout et de rien.^\
+
+langjp　何しろ、男女の両方が揃い、その上、成人、高校生、小学生と世代も揃ってる。@
+langen^On formait une drôle d'équipe, filles et garçons, à des âges bien différents : ^@^un adulte, deux lycéens et une écolière.^@
+
+br
+
+langjp　それぞれが身の上話をするだけで、他の３人にとっては大いに興味深いことだった。
+langen^Après six ans, on avait des tas de choses à se raconter. Il suffisait que l'un commence pour éveiller la curiosité des trois autres.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_r1a.jpg",":b;bmp\background\guesthouse\g2f_r1a.png",0
+
+ld l,$BUT_defA2,23
+
+advchar "10"
+langjp:dwave_jp 0, but_1e271:「なんかやっと馴染んできたぜ。@:dwave_jp 0, but_1e272:朱志香も真里亞も６年前からは想像もつかないくらい成長しちまったからよ。@:dwave_jp 0, but_1e273:正直なところ、少しだけ違和感を持ってたんだが、こうして話をしている内に、中身はあの頃から何も変わってないことがわかったぜ。」\
+
+langen:dwave_eng 0, but_1e271:^... Ah, ça y est. Je commence enfin à me sentir comme avant. ^@:dwave_eng 0, but_1e272:^Sérieux, Jessica, Maria... vous avez tellement grandi en six ans que j'ai eu du mal à vous reconnaître. ^@:dwave_eng 0, but_1e273:^Au début, je savais plus trop comment vous parler. Mais au fond, vous avez pas tant changé. On est toujours les mêmes, hein ?^\
+
+ld r,$JES_futekiA1,24
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e155:「同じ言葉を返してやるよ。@:dwave_jp 0, jes_1e156:戦人だって、６年ぶりだってのに全然変わってねぇぜ。@:dwave_jp 0, jes_1e157:図体がいくらでかくなっても、中身は相変わらずお子様だってことだな。」\
+
+langen:dwave_eng 0, jes_1e155:^Ahahaha ! Tu peux parler, toi ! ^@:dwave_eng 0, jes_1e156:^Six ans qu'on t'avait pas vu, et t'es toujours aussi idiot ! ^@:dwave_eng 0, jes_1e157:^T'as beau avoir grandi, dans ta tête, t'as toujours douze ans !^\
+
+ld c,$MAR_niyariA1,26
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e173:「うー！@:dwave_jp 0, mar_1e174:　真里亞もお子様！@:dwave_jp 0, mar_1e175:　真里亞もお子様ー！」
+langen:dwave_eng 0, mar_1e173:^Uu- ! ^@:dwave_eng 0, mar_1e174:^Maria aussi, c'est une enfant ! ^@:dwave_eng 0, mar_1e175:^Maria aussi, c'est une enfant !^\
+
+ld l,$BUT_WaraiA2,80
+
+advchar "10"
+langjp:dwave_jp 0, but_1e274:「真里亞だっていつまでもお子様じゃねぇぞぅ？@:dwave_jp 0, but_1e275:　お子様から可愛いお姫様に成長してくんだからなぁ〜？@:dwave_jp 0, but_1e276:　そうしたらまな板みてぇな胸も、すぅぐ朱志香並みになるぞ〜？@:dwave_jp 0, but_1e277:　そしたら揉ませてくれよー約束だぞぉぅ！！」@
+
+langen:dwave_eng 0, but_1e274:^Mais toi non plus, Maria, tu vas pas rester une gamine toute ta vie ! ^@:dwave_eng 0, but_1e275:^Un jour, tu vas devenir une jolie princesse, hein ? ^@:dwave_eng 0, but_1e276:^Et là, même ta poitrine toute plate finira vite au niveau de celle de Jessica ! ^@:dwave_eng 0, but_1e277:^Et quand ça arrivera, tu me laisseras toucher, hein ? Promis ?^@
+
+ld c,$MAR_WaraiA1,80
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e176:「うー！@:dwave_jp 0, mar_1e177:　揉ませる！@:dwave_jp 0, mar_1e178:　約束する！@:dwave_jp 0, mar_1e179:　うー！」\
+
+langen:dwave_eng 0, mar_1e176:^Uu- ! ^@:dwave_eng 0, mar_1e177:^Maria te laissera toucher ! ^@:dwave_eng 0, mar_1e178:^Maria promet ! ^@:dwave_eng 0, mar_1e179:^Uu- !^\
+
+cl r,23
+
+ld r,$GEO_KomaruA1k,24
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e148:「だ、駄目だよ真里亞ちゃん！@:dwave_jp 0, geo_1e149:　そんな約束しちゃ、ダメダメダメ！」@
+
+;＜譲治
+
+langen:dwave_eng 0, geo_1e148:^N-Non, Maria, surtout pas ! ^@:dwave_eng 0, geo_1e149:^Ne fais pas ce genre de promesse ! Non, non, non !^@
+
+ld c,$MAR_MajimeA1,80
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e180:「うー？@:dwave_jp 0, mar_1e181:　約束したから揉ませる！@:dwave_jp 0, mar_1e182:　真里亞、約束は守る！@:dwave_jp 0, mar_1e183:　絶対守る、うー！！」
+langen:dwave_eng 0, mar_1e180:^Uu- ? ^@:dwave_eng 0, mar_1e181:^Maria a promis, alors Maria laissera Battler toucher ! ^@:dwave_eng 0, mar_1e182:^Maria tient ses promesses ! ^@:dwave_eng 0, mar_1e183:^Toujours ! Uu- !!^\
+
+ld l,$BUT_WaraiA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_1e278:「…真里亞ぁ、お前、本当に素直ないい子だなぁ…。@:dwave_jp 0, but_1e279:お前と結婚する未来の旦那さんはきっと幸せ者だぜ。」\
+
+;＜戦人
+
+langen:dwave_eng 0, but_1e278:^... Maria, t'es vraiment une brave petite, toi... ^@:dwave_eng 0, but_1e279:^Le gars qui t'épousera plus tard aura vraiment de la chance.^\
+
+cl r,23
+
+ld r,$JES_OdorokiA1,24
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e158:「って、いい話に摩り替えつつ、約束を保持してんじゃねぇぜ！@:dwave_jp 0, jes_1e159:　真里亞ちゃん、その約束はナシ！@:dwave_jp 0, jes_1e160:　ナシ！」@
+;＜朱志香
+
+langen:dwave_eng 0, jes_1e158:^Hé, fais pas passer ça pour une belle histoire juste pour garder la promesse ! ^@:dwave_eng 0, jes_1e159:^Maria, cette promesse est annulée ! ^@:dwave_eng 0, jes_1e160:^Annulée !^@
+
+ld c,$MAR_KomaruA1,80
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e184:「うー。@:dwave_jp 0, mar_1e185:約束取り消し？@:dwave_jp 0, mar_1e186:　うー……。」\
+
+langen:dwave_eng 0, mar_1e184:^Uu-. ^@:dwave_eng 0, mar_1e185:^Promesse annulée ? ^@:dwave_eng 0, mar_1e186:^Uu-...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_r1b.jpg",":b;bmp\background\guesthouse\g2f_r1b.png",0
+
+ld r,$GEO_WaraiA1,24
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e150:「やっぱり、戦人くんも揃って４人で集まらないと、いとこが集合した気がしなかったね。@:dwave_jp 0, geo_1e151:この６年は、やっぱり寂しかったよ。」
+;＜譲治
+
+langen:dwave_eng 0, geo_1e150:^Tu sais, Battler, sans toi, ces dernières années, j'avais toujours l'impression qu'il manquait quelqu'un quand on se retrouvait entre cousins. ^@:dwave_eng 0, geo_1e151:^Ces six dernières années, tu nous as quand même beaucoup manqué.^\
+
+ld l,$JES_defA2,23
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e161:「…そうだなー。@:dwave_jp 0, jes_1e162:こういうふざけた話にはならなかったな。@:dwave_jp 0, jes_1e163:でも建設的な話はできてたと思ったぜ？@:dwave_jp 0, jes_1e164:　将来に対する心構えとか、受験とか就職とかよー。」\
+
+langen:dwave_eng 0, jes_1e161:^... Ouais, c'est vrai. ^@:dwave_eng 0, jes_1e162:^Sans toi, au moins, on arrivait à avoir des conversations sérieuses ! ^@:dwave_eng 0, jes_1e163:^On parlait de nos études, de ce qu'on ferait plus tard... ^@:dwave_eng 0, jes_1e164:^Enfin, tous ces trucs auxquels on commence à penser en grandissant.^\
+
+cl r,23
+
+ld r,$BUT_WaraiA2,24
+
+advchar "10"
+langjp:dwave_jp 0, but_1e280:「へへーん、悪ぅござーましたね〜！@:dwave_jp 0, but_1e281:　俺が来たらおマヌケなドタバタばっかりでよ〜！」@
+langen:dwave_eng 0, but_1e280:^Héhéhé ! Eh ben, pardon de mettre le bazar dans vos conversations de grandes personnes ! ^@:dwave_eng 0, but_1e281:^Je reviens après six ans et je vous fais déjà tous retomber en enfance !^@
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_r1a.jpg",":b;bmp\background\guesthouse\g2f_r1a.png",0
+
+ld l,$MAR_niyariA2,23
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e187:「でも真里亞は今年のが楽しい。@:dwave_jp 0, mar_1e188:うーうー！」@
+langen:dwave_eng 0, mar_1e187:^Mais Maria préfère cette année. ^@:dwave_eng 0, mar_1e188:^Uu-uu- !^@
+
+ld r,$GEO_waraiA2,24
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e152:「そうだね。@:dwave_jp 0, geo_1e153:僕も同感、今年が一番楽しいよ。」\
+
+langen:dwave_eng 0, geo_1e152:^... Oui, moi aussi. ^@:dwave_eng 0, geo_1e153:^Je crois bien que c'est l'année où je m'amuse le plus.^\
+
+;＜譲治
+
+advchar "-1"
+langjp　真里亞の率直な一言が、多分、この場にいる全員の代弁に違いなかった。@
+langen^Cette simple remarque de Maria disait tout. Après six ans d'absence, je me sentais enfin de retour parmi les miens.^@
+
+br
+
+langjp　譲治兄貴が真里亞の頭を撫でてやると、真里亞は上機嫌の猫の子のようにころころと笑うのだった…。
+langen^George lui caressa doucement la tête, et Maria répondit par un sourire radieux et un rire joyeux...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",5
+
+textoff
+
+wait 1500
+
+se1 19
+
+wait 2000
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_r1b.jpg",":b;bmp\background\guesthouse\g2f_r1b.png",22
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e32:「……失礼いたします。@:dwave_jp 0, sha_1e33:お食事のご用意ができました。」@
+
+;＜紗音
+langen:dwave_eng 0, sha_1e32:^... Excusez-moi. ^@:dwave_eng 0, sha_1e33:^Le repas est prêt.^@
+
+advchar "-1"
+langjp　慎ましやかなノックの音と、同じくらい慎ましやかな若い女性の声が聞こえた。@
+langen^On frappa doucement à la porte. Une jeune femme parla d'une voix si discrète qu'elle semblait craindre de nous déranger.^@
+
+br
+
+langjp　朱志香がそれに元気よく応える。
+langen^Jessica la reconnut aussitôt.^\
+
+ld r,$JES_waraiA1,24
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e165:「紗音、入れよー！@:dwave_jp 0, jes_1e166:　戦人は覚えてるだろー？！」@
+advchar "-1"
+langjp　朱志香がベッドから立ち上がり、扉を開ける。@
+advchar "04"
+langen:dwave_eng 0, jes_1e165:^Ah, Shannon ! Entre, vas-y ! ^@:dwave_eng 0, jes_1e166:^Hé, tu te souviens de Battler, hein ?!^@
+advchar "-1"
+langen^Jessica se leva du lit et ouvrit la porte.^@
+
+br
+
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_r1a.jpg",":b;bmp\background\guesthouse\g2f_r1a.png",23
+
+;se1 16
+
+ld r,$SHA_DefA1,24
+
+
+
+langjp　そこには、俺らと近い歳に違いない使用人の女の子がいた。\
+
+langen^Devant nous se tenait une jeune domestique, qui devait avoir à peu près notre âge.^\
+
+ld r,$SHA_tokuiA1,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e34:「ご、ご無沙汰いたしております、戦人さま。@:dwave_jp 0, sha_1e35:６年ぶりでございます、紗音です。」@
+langen:dwave_eng 0, sha_1e34:^C-Cela fait bien longtemps, monsieur Battler.^@:dwave_eng 0, sha_1e35:^ Six ans, déjà... C'est moi, Shannon.^@
+
+br
+
+advchar "-1"
+langjp　おずおずとした仕草で俺の姿を認めると、深々と会釈をした。
+langen^En me reconnaissant, elle s'avança timidement et s'inclina profondément.^\
+
+ld l,$BUT_waraiA1,23
+
+advchar "10"
+langjp:dwave_jp 0, but_1e282:「…はーー…！@:dwave_jp 0, but_1e283:　朱志香にも驚かされたが、紗音ちゃんにも驚かされたぜ…。@:dwave_jp 0, but_1e284:あんたもすっかり美人になったじゃねぇのよ〜！」@
+
+langen:dwave_eng 0, but_1e282:^... Eh ben... !^@:dwave_eng 0, but_1e283:^ Jessica m'avait déjà surpris, mais alors toi, Shannon... J'en reviens pas !^@:dwave_eng 0, but_1e284:^ T'es devenue une vraie beauté, dis donc !^@
+
+ld r,$SHA_HajiraiA3,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e36:「も、……勿体無いお言葉、恐悦に存じます……。」\
+
+langen:dwave_eng 0, sha_1e36:^C-C'est trop d'honneur...^\
+
+ld l,$BUT_waraiA2,80
+
+advchar "10"
+langjp:dwave_jp 0, but_1e285:「しかしよ〜、この島じゃよっぽど食事の栄養価が高いんじゃねぇのか〜ん？@:dwave_jp 0, but_1e286:　何を食ってどこを鍛えたらそんなにでかいお乳になるんだか〜！！@/
+langen:dwave_eng 0, but_1e285:^N'empêche, la nourriture doit être sacrément nourrissante sur cette île, hein ?^@:dwave_eng 0, but_1e286:^ Qu'est-ce que t'as bien pu manger, et comment t'as fait pour avoir une poitrine pareille ?!^@/
+
+ld l,$BUT_grope1,80
+
+langjp:dwave_jp 0, but_1e287:　朱志香とどっちがでけぇか、ちょいと触って確かめさせてもらうぜぇえぇ〜？！」
+langen:dwave_eng 0, but_1e287:^ Allez, laisse-moi tâter pour voir si c'est toi ou Jessica qui en a le plus, hein ?!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+advchar "-1"
+langjp　両手をわきわきさせてヨダレを垂らしながら迫る俺！@
+langen^Et me voilà qui m'avançais vers elle, les mains frétillantes et la bave aux lèvres !^@
+
+br
+
+langjp　……俺の名誉と正義のために補足しておくが、@これは別に、おっぱいを揉まないと首のリンパ腺が異様に痒くなって掻き破ってしまうような奇病に冒されたからじゃないぞ？@
+
+langjp　俺的なお約束のコミュニケーションなのだ。
+langen^... Pour défendre mon honneur et celui de la justice, je tiens à préciser une chose :^@^ je ne suis pas atteint d'une maladie bizarre qui me provoquerait d'atroces démangeaisons aux ganglions du cou, jusqu'à m'en arracher la carotide, si je ne pelotais pas une poitrine.^@
+langen^Non, c'est simplement ma façon bien à moi de communiquer.^\
+
+langjp　こんな風に迫るシーンがあれば、十中八九、引っ叩かれたりどつかれたりするだろ？@
+langen^Quand je fais ce numéro, neuf fois sur dix, je me prends une gifle ou un bon coup, pas vrai ?^@
+br
+
+langjp　そういうお茶目な展開を狙う戦人さまオリジナルのコミュニケーション術なわけさ！
+langen^Eh bien, voilà toute la technique de communication inventée par Battler en personne : provoquer ce genre de petite scène comique !^\
+
+langjp　………ま、まぁその何だ、十中八九の残り一くらいの確率で、本当にタッチできたらラッキーだけどな…？@
+langen^... B-Bon, après, si la dixième fois je réussis vraiment à toucher, je vais pas m'en plaindre non plus...^@
+
+br
+
+langjp　いひひゃひゃひゃっ、そこまではさすがに期待してねぇってぇえぇ〜！！
+langen^Ihihyahyahya ! Enfin, faut pas rêver, j'espère quand même pas avoir autant de chance !!^\
+
+;mov %rmordflg,on
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_r1a.jpg",":b;bmp\background\guesthouse\g2f_r1a.png",0
+lsp_var 1,"bmp\TATI\SHA\1\SHA_bustupSP",0,0
+;lsp bgsp,":a;bmp\TATI\SHA\1\SHA_bustupSP.bmp",0,0
+
+print 8
+
+langjp　と、俺の手は今や紗音ちゃんのお乳に接触するまで１ｃｍくらいのところまで来たんだが、……未だ反撃が来ない。@
+langen^Seulement voilà : mes mains n'étaient plus qu'à un centimètre de la poitrine de Shannon... et toujours aucune riposte.^@
+
+;skipoff
+
+br
+
+langjp　何をされるのかは理解していて真っ赤になって俯いているのだが、@両手は前でお行儀よく組まれたままで、拒絶してどつくとか、胸を庇おうとか、そういう行動を取ろうとはしないのだ。
+langen^Elle avait parfaitement compris ce que je m'apprêtais à faire. Elle était rouge jusqu'aux oreilles, la tête baissée, mais gardait sagement les mains jointes devant elle.^@^ Elle ne cherchait ni à me repousser, ni même à se protéger la poitrine.^\
+
+langjp^^!s0　…うををおおい、それは想定外だろッ！！/
+sl
+
+langen^^!s0^... Héééé ! Mais attends, c'était pas prévu, ça !!^@/
+sl
+
+quakey 5,500
+
+mov %disable_adv_clear, 1
+langjp !sd@
+langen!sd@
+mov %disable_adv_clear, 0
+
+br
+
+langjp　たた、頼むよどついてくれよ、このままじゃマジでお触りしちまうぞぉおおぉ？！\
+
+langen^ J-Je t'en supplie, colle-m'en une ! Sinon je vais vraiment finir par te toucher, moi !!^\
+
+textoff
+
+;mov %rmordflg,off
+
+csp_var 1
+;csp bgsp
+
+se1 20
+
+wait 300
+
+se1 12
+
+quakey 4,300
+
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",14,300 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",14,300
+
+se1 13
+
+quakey 3,300
+
+langjp　って、タイミングだったので、朱志香が俺の後頭部に肘鉄を叩き込んでくれて本当に嬉しかったぜ…。
+langen^... Et c'est justement à cet instant que Jessica m'envoya un coup de coude derrière le crâne. Croyez-moi, j'étais vraiment content qu'elle me cogne...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_r1b.jpg",":b;bmp\background\guesthouse\g2f_r1b.png",0
+
+ld r,$JES_IkariA1,26
+
+advchar "10"
+langjp:dwave_jp 0, but_1e288:「ふぐぉおおおぉおぉぉ、あいたたたたたぁ、朱志香ぁあぁッ、ありがとよっぉおぉ〜！！」@
+langen:dwave_eng 0, but_1e288:^Fugooohhh ! Aïe, aïe, aïe ! Jessicaaa ! Merciiiiii !!^@
+
+ld r,$JES_OdorokiA1,80
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e167:「なな、何で私が感謝されんだぁ？！@:dwave_jp 0, jes_1e168:　？？？」\
+
+langen:dwave_eng 0, jes_1e167:^P-Pourquoi tu me remercies, toi ?! ^@:dwave_eng 0, jes_1e168:^???^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_r1a.jpg",":b;bmp\background\guesthouse\g2f_r1a.png",0
+
+ld l,$BUT_komaruA1,23
+
+advchar "10"
+langjp:dwave_jp 0, but_1e289:「いやいや済まんぜ紗音ちゃん。@:dwave_jp 0, but_1e290:魅力的な胸に思わず吸着されそうになっちまった…。@:dwave_jp 0, but_1e291:つーか、さすがにあの間合いまで来たら痴漢確定だろ。@:dwave_jp 0, but_1e292:駄目だぜ、抵抗しなきゃよぅ〜！」\
+
+langen:dwave_eng 0, but_1e289:^Non, mais sérieusement, désolé, Shannon.^@:dwave_eng 0, but_1e290:^ Ta poitrine était tellement attirante que j'ai failli m'y retrouver collé...^@:dwave_eng 0, but_1e291:^ À cette distance-là, ça aurait carrément été une agression !^@:dwave_eng 0, but_1e292:^ Faut pas te laisser faire comme ça !^\
+
+ld r,$SHA_hajiraiA2,24
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e37:「………で、ですけど、/
+sl
+
+langjp:voicedelay 2710:dwave_jp 0, sha_1e38:^^………戦人さまは、…大切なお客様ですし……。」\
+
+langen:dwave_eng 0, sha_1e37:^... M-Mais...^@/
+sl
+langen:voicedelay 2710:dwave_eng 0, sha_1e38:^ vous êtes un invité très important, monsieur Battler...^\
+
+ld l,$BUT_aseruA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_1e293:「あのなぁ、お客様でも痴漢は痴漢！@:dwave_jp 0, but_1e294:　女の子の胸は大体、１０ｃｍくらいからが防空識別圏だなぁ。@:dwave_jp 0, but_1e295:２ｃｍ圏まで侵入してきたらこれはもう領空侵犯だぜ、スクランブル発進で即ビンタを食らわせてやれぃ！」
+langen:dwave_eng 0, but_1e293:^Écoute, invité ou pas, un pervers reste un pervers !^@:dwave_eng 0, but_1e294:^ La poitrine d'une fille, c'est comme un espace aérien : à moins de dix centimètres, on entre dans la zone d'identification !^@:dwave_eng 0, but_1e295:^ Et si un intrus passe sous les deux centimètres, c'est une violation de l'espace aérien ! Faut faire décoller les chasseurs et lui envoyer une gifle en pleine figure !^\
+
+ld r,$SHA_OdorokiA1,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e39:「…………そっ、そんなことできません…！@:dwave_jp 0, sha_1e40:　私たちは……、…その、家具ですし…。」\
+
+langen:dwave_eng 0, sha_1e39:^... J-Je ne pourrais jamais faire une chose pareille... !^@:dwave_eng 0, sha_1e40:^ Nous sommes... enfin... des meubles...^\
+
+advchar "-1"
+langjp　もちろん触られたくはないのだが…、客人がそれを望むなら何とか応えようという自己犠牲精神。@
+langen^Évidemment, elle n'avait aucune envie qu'on lui touche la poitrine... mais elle était prête à se sacrifier pour satisfaire les désirs d'un invité, quels qu'ils soient.^@
+
+br
+
+langjp　…こんな子、トキより先に保護すべきだぞ…。
+langen^... Une fille pareille, il faudrait la protéger avant même les ibis japonais, pourtant menacés d'extinction...^\
+
+ld l,$BUT_komaruA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_1e296:「…い、今時、こんな献身美徳な子がいるとは…。@:dwave_jp 0, but_1e297:軽い眩暈すら覚えるぜ。@:dwave_jp 0, but_1e298:……でも駄目だ！@:dwave_jp 0, but_1e299:　ダメなんだぁああぁ！！@:dwave_jp 0, but_1e300:　俺がエロい顔で迫る！@:dwave_jp 0, but_1e301:　張ッ倒す！！@:dwave_jp 0, but_1e302:　イヤ〜ン、エッチ！@:dwave_jp 0, but_1e303:　そういうお約束じゃないとオチがつかねぇんだよぉ、頼むよお願いだよ、俺を引っ叩いてくれよ！@:dwave_jp 0, but_1e304:　こう、バチンっと！@:dwave_jp 0, but_1e305:　バチンっとぉおぉ〜！！」\
+
+langen:dwave_eng 0, but_1e296:^Q-Qu'il existe encore des filles aussi dévouées de nos jours...^@:dwave_eng 0, but_1e297:^ J'en ai presque le vertige.^@:dwave_eng 0, but_1e298:^ ... Mais non !^@:dwave_eng 0, but_1e299:^ Ça va pas du tout !!^@:dwave_eng 0, but_1e300:^ Moi, je m'approche avec ma tête de pervers !^@:dwave_eng 0, but_1e301:^ Toi, tu me colles une baffe !^@:dwave_eng 0, but_1e302:^ Aaaah, espèce d'obsédé !^@:dwave_eng 0, but_1e303:^ Si tu me mets pas la gifle qui va avec, toute la blague tombe à plat ! Alors je t'en supplie, gifle-moi !^@:dwave_eng 0, but_1e304:^ Une bonne claque ! Paf !^@:dwave_eng 0, but_1e305:^ Paaaf !!^\
+
+ld r,$SHA_HajiraiA2,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e41:「お、…………お願いは聞けません。@:dwave_jp 0, sha_1e42:家具ですから。@:dwave_jp 0, sha_1e43:……でも、/
+sl
+
+langjp:voicedelay 600:dwave_jp 0, sha_1e44:^^…………命令ならお聞きします。@:dwave_jp 0, sha_1e45:…それが勤めですから。」\
+
+langen:dwave_eng 0, sha_1e41:^Je... ne peux pas accéder à une simple demande.^@:dwave_eng 0, sha_1e42:^ Parce que je suis un meuble...^@:dwave_eng 0, sha_1e43:^ Mais...^@/
+sl
+langen:voicedelay 600:dwave_eng 0, sha_1e44:^ si vous m'en donnez l'ordre... alors j'obéirai.^@:dwave_eng 0, sha_1e45:^ ... C'est mon devoir...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_r1b.jpg",":b;bmp\background\guesthouse\g2f_r1b.png",24
+
+
+
+ld r,$GEO_hohoemiA1,24
+
+
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e154:「あはは、じゃあ命令させてもらうことにするよ。@:dwave_jp 0, geo_1e155:次から戦人くんが胸に触ろうとしてきたら、平手打ちで反撃すること。@:dwave_jp 0, geo_1e156:いいね？」\
+
+;＜譲治
+
+langen:dwave_eng 0, geo_1e154:^Haha ! Dans ce cas, je vais te donner un ordre.^@:dwave_eng 0, geo_1e155:^ La prochaine fois que Battler essaiera de te toucher la poitrine, tu lui répondras par une bonne gifle.^@:dwave_eng 0, geo_1e156:^ Compris ?^\
+
+ld l,$SHA_WaraiA3,23
+
+
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e46:「……は、はい。@:dwave_jp 0, sha_1e47:仰せつかりました。@:dwave_jp 0, sha_1e48:以後、そのようにさせていただきます。@:dwave_jp 0, sha_1e49:戦人さま、ご承知おきくださいませ…。」\
+langen:dwave_eng 0, sha_1e46:^... O-Oui.^@:dwave_eng 0, sha_1e47:^ À vos ordres.^@:dwave_eng 0, sha_1e48:^ Désormais, je ferai comme vous me l'avez demandé.^@:dwave_eng 0, sha_1e49:^ Monsieur Battler, veuillez en prendre bonne note...^\
+
+advchar "-1"
+langjp　紗音ちゃんは優雅な仕草で俺にお辞儀しながらそう宣言する。@
+langen^Shannon m'annonça cela en s'inclinant avec élégance.^@
+
+br
+
+langjp　表情は晴れやかだった。@
+
+langjp　俺は、それでＯＫと親指を立てて応えてやる。\
+
+langen^Son visage s'était éclairé.^@
+langen^Je lui répondis en levant le pouce. Parfait, c'était exactement ce que je voulais !^\
+
+cl r,23
+
+ld r,$BUT_defA2,24
+
+
+
+advchar "10"
+langjp:dwave_jp 0, but_1e306:「６年前はお手伝いさんの連れ子がついでにお手伝いみたいな印象だったんだけど、@:dwave_jp 0, but_1e307:……すっかり一人前の使用人さんだなぁ。@:dwave_jp 0, but_1e308:今年で何年になるんだぁ？」\
+
+langen:dwave_eng 0, but_1e306:^Il y a six ans, je te voyais encore comme la gamine d'une employée qui aidait un peu sa mère...^@:dwave_eng 0, but_1e307:^ Mais maintenant, t'es devenue une véritable domestique !^@:dwave_eng 0, but_1e308:^ Ça fait combien d'années que tu travailles ici ?^\
+
+ld l,$SHA_WaraiA1,80
+
+
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e50:「はい。@:dwave_jp 0, sha_1e51:お陰様で１０年ほどお仕えさせていただいております。」\
+
+langen:dwave_eng 0, sha_1e50:^Oui. ^@:dwave_eng 0, sha_1e51:^Grâce à votre famille, cela fait maintenant près de dix ans que j'ai l'honneur de servir cette maison.^\
+
+cl a,0
+
+ld c,$SHA_WaraiA1,22
+
+
+
+;ここで紗音の情報閲覧が可能に〜〜〜〜〜〜〜
+
+mov ?r[sha][condition],1
+
+seplay 9,1060
+
+
+
+advchar "-1"
+langjp　彼女は紗音。@……« シャノン »と読む。@
+
+langjp　これまた日本人離れしたすげぇ名前だ。@
+langen^Elle s'appelle Shannon.^@^ ... Enfin, son prénom s'écrit 紗音 : 紗 désigne une étoffe de soie fine, et 音 signifie le son. Le même 音 que dans Kanon.^@
+langen^Encore un prénom qui n'a vraiment rien de japonais !^@
+
+br
+
+
+
+langjp　昔は俺もガキだったので大して気にせずこの名前を鵜呑みにしていたのだが、@右代宮家の人間でないにも関わらず、このネーミングセンスは珍しい。\
+
+langen^Quand j'étais gamin, je n'y avais pas prêté attention et j'avais accepté son prénom sans me poser de questions.^@^ Mais maintenant que j'y réfléchis, c'est assez étonnant de porter un nom pareil sans même faire partie de la famille Ushiromiya.^\
+
+langjp　…恐らく、使用人の源氏名みたいなもんだろう。@
+langen^... Sans doute une sorte de nom de service donné aux domestiques.^@
+
+br
+
+langjp　…だとすると、さっき薔薇庭園で出会った嘉音くんのネーミングセンスも納得できる。\
+langen^... Ça expliquerait aussi le prénom de Kanon, le garçon que nous avions rencontré un peu plus tôt dans la roseraie.^\
+
+;introduction_flg SHA,1,scenario1_1,scenario1_1
+
+
+
+langjp　彼女は６つの時からここに勤めているという古参の使用人だ。@
+langjp　容姿がすっかり変わってしまったので記憶は繋がらないが、６年前の彼女にはお互い面識がある。@
+langen^Shannon travaille ici depuis l'âge de six ans. C'est donc une domestique particulièrement ancienne, malgré son jeune âge.^@
+langen^Elle avait tellement changé que j'avais du mal à retrouver la petite fille de mes souvenirs. Pourtant, nous nous connaissions déjà six ans plus tôt.^@
+
+br
+
+langjp　内気な感じの性格は今も昔も変わらないようだが、やはり歳相応の女の子らしい魅力が宿ったような気がする。@
+langen^Elle semblait avoir conservé la même timidité, mais elle possédait désormais tout le charme d'une jeune fille de son âge.^@
+
+br
+
+langjp　特に胸だな、胸。\
+langen^Surtout au niveau de la poitrine. Ah oui, la poitrine...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_r1c.jpg",":b;bmp\background\guesthouse\g2f_r1c.png",0
+
+ld r,$GEO_HohoemiA1k,24
+
+
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e157:「さっき会った嘉音くんは彼女の弟なんだよ。」@
+
+;＜譲治
+langen:dwave_eng 0, geo_1e157:^Kanon, le garçon que nous avons rencontré tout à l'heure, est son petit frère.^@
+
+
+
+ld l,$SHA_MajimeA2,23
+
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e52:「…弟というわけでは…。@:dwave_jp 0, sha_1e53:でも、私のことを姉と慕ってくれます。@:dwave_jp 0, sha_1e54:…何か失礼なことはしませんでしたか？」\
+
+langen:dwave_eng 0, sha_1e52:^... Pas exactement mon frère...^@:dwave_eng 0, sha_1e53:^ Mais il me considère comme sa grande sœur.^@:dwave_eng 0, sha_1e54:^ ... J'espère qu'il ne s'est pas montré impoli envers vous ?^\
+
+cl r,23
+
+ld r,$JES_atyaA1,24
+
+
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e169:「はは！@:dwave_jp 0, jes_1e170:　相変わらずいつも通りだぜ。@:dwave_jp 0, jes_1e171:もうちょっと愛想よくすればいいのによ、勿体無いやつー。」\
+
+langen:dwave_eng 0, jes_1e169:^Haha !^@:dwave_eng 0, jes_1e170:^ Il a pas changé, celui-là !^@:dwave_eng 0, jes_1e171:^ S'il pouvait être un peu plus aimable, ce serait pas du luxe. C'est vraiment dommage !^\
+
+;＜朱志香
+
+
+
+ld l,$SHA_KomaruA1,80
+
+
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e55:「…嘉音くんがご迷惑をお掛けしたようで、…申し訳ございません……。」@
+
+langen:dwave_eng 0, sha_1e55:^... Veuillez m'excuser si Kanon vous a causé des désagréments...^@
+
+cl r,23
+
+ld r,$BUT_waraiA1,24
+
+advchar "10"
+langjp:dwave_jp 0, but_1e309:「別に迷惑なんか何も！@:dwave_jp 0, but_1e310:　同じ男としてわかるさ、ありゃあ気難しい年頃だ。@:dwave_jp 0, but_1e311:愛想が悪いのは当り前だぜ！」\
+
+;＜戦人
+
+langen:dwave_eng 0, but_1e309:^Mais non, pas du tout !^@:dwave_eng 0, but_1e310:^ En tant que mec, je le comprends parfaitement. Il est à cet âge où on a tendance à être un peu compliqué.^@:dwave_eng 0, but_1e311:^ C'est normal qu'il soit pas très aimable !^\
+
+ld c,$MAR_waraiA2,23
+
+
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e189:「うー！@:dwave_jp 0, mar_1e190:　真里亞もよく言われる！@:dwave_jp 0, mar_1e191:　愛想悪いって言われるー！@:dwave_jp 0, mar_1e192:　嘉音と一緒！@:dwave_jp 0, mar_1e193:　うー！」@
+
+langen:dwave_eng 0, mar_1e189:^Uu- !^@:dwave_eng 0, mar_1e190:^ On me le dit souvent, à moi aussi !^@:dwave_eng 0, mar_1e191:^ On dit que je suis pas aimable !^@:dwave_eng 0, mar_1e192:^ Comme Kanon !^@:dwave_eng 0, mar_1e193:^ Uu- !^@
+
+ld l,$SHA_WaraiA1,80
+
+
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e56:「くす、……真里亞さまは愛想悪くなんかありません。」@
+
+langen:dwave_eng 0, sha_1e56:^Hihi... Mais non, Maria. Tu n'es pas du tout désagréable.^@
+
+ld c,$MAR_fukigenA1,80
+
+
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e194:「うー？@:dwave_jp 0, mar_1e195:　一緒が良かった…。@:dwave_jp 0, mar_1e196:うー。」\
+
+langen:dwave_eng 0, mar_1e194:^Uu- ?^@:dwave_eng 0, mar_1e195:^ Maria voulait être comme lui...^@:dwave_eng 0, mar_1e196:^ Uu-.^\
+
+cl r,23
+
+ld r,$GEO_DefA1k,24
+
+
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e158:「えっと、食事の準備が出来たんだっけ？」@
+
+;＜譲治
+
+langen:dwave_eng 0, geo_1e158:^Euh... tu étais venue nous prévenir que le repas était prêt, non ?^@
+
+ld l,$SHA_hajiraiA1,80
+
+
+
+advchar "15"
+langjp:dwave_jp 0, sha_1e57:「あ、……はい！@:dwave_jp 0, sha_1e58:　失礼いたしました！@:dwave_jp 0, sha_1e59:　…お食事のご用意が整いましたので、皆様をお屋敷へご案内いたします。」@
+langen:dwave_eng 0, sha_1e57:^Ah... oui !^@:dwave_eng 0, sha_1e58:^ Pardonnez-moi !^@:dwave_eng 0, sha_1e59:^ Le repas est prêt. Je vais vous accompagner jusqu'au manoir, si vous voulez bien me suivre.^@
+
+br
+
+advchar "-1"
+langjp　紗音は形式的なお辞儀をし直して勤務モードに復帰する。\
+
+langen^Shannon s'inclina de nouveau, retrouvant aussitôt son attitude professionnelle.^\
+
+langjp　これ以上、下らない話に付き合わせれば、@それはかえって彼女の仕事に迷惑をかけてしまうことを察した俺たちは、それ以上の脱線はせず腰を上げることにした。\
+
+langen^Nous comprîmes qu'en continuant à la retenir avec nos bavardages,^@^ nous risquions de gêner son travail.^@^ Nous décidâmes donc d'en rester là et de nous lever.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_r1a.jpg",":b;bmp\background\guesthouse\g2f_r1a.png",24
+
+ld r,$GEO_WaraiA2,24
+
+
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e159:「じゃ、お屋敷に行こうか。@:dwave_jp 0, geo_1e160:みんなもお腹が空いてたところでしょ。」@
+
+;＜譲治
+
+langen:dwave_eng 0, geo_1e159:^Bon, allons au manoir.^@:dwave_eng 0, geo_1e160:^ Vous devez tous commencer à avoir faim, non ?^@
+
+ld l,$JES_waraiA2,23
+
+
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e172:「だなー。@:dwave_jp 0, jes_1e173:郷田さんがいる時のメシは楽しみなんだよ。@:dwave_jp 0, jes_1e174:あの人、どこぞの有名ホテルでシェフをやってたらしくて、かなり料理の腕があるんだぜ！」\
+
+;＜朱志香
+
+langen:dwave_eng 0, jes_1e172:^Carrément !^@:dwave_eng 0, jes_1e173:^ Quand Gohda est là, j'attends toujours les repas avec impatience.^@:dwave_eng 0, jes_1e174:^ Il paraît qu'il a été chef dans un grand hôtel réputé, et il est vraiment doué en cuisine !^\
+
+cl r,23
+
+ld r,$BUT_WaraiA1,24
+
+
+
+advchar "10"
+langjp:dwave_jp 0, but_1e312:「ほぅほぅ！@:dwave_jp 0, but_1e313:　そ〜りゃ楽しみぃ！！@:dwave_jp 0, but_1e314:　行こうぜ真里亞！@:dwave_jp 0, but_1e315:　ガツガツ犬みたいに食い散らかすぞ！！」@
+
+langen:dwave_eng 0, but_1e312:^Ooooh !^@:dwave_eng 0, but_1e313:^ Alors ça, j'ai hâte de voir !!^@:dwave_eng 0, but_1e314:^ Allez, Maria, on y va !^@:dwave_eng 0, but_1e315:^ On va se jeter sur la bouffe comme des chiens affamés !!^@
+
+ld c,$MAR_WaraiA1,80
+
+
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e197:「うー！@:dwave_jp 0, mar_1e198:　犬みたいに食い散らかす！」\
+
+langen:dwave_eng 0, mar_1e197:^Uu- !^@:dwave_eng 0, mar_1e198:^ Comme des chiens affamés !^\
+
+cl l,24
+
+ld l,$GEO_WaraiA1,23
+
+
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e161:「ダメダメ！@:dwave_jp 0, geo_1e162:　戦人くんの言うことはいちいち真に受けちゃダメだよ？@:dwave_jp 0, geo_1e163:　全部冗談なんだから。@:dwave_jp 0, geo_1e164:さ、行こ行こ。」\
+
+;＜譲治
+
+langen:dwave_eng 0, geo_1e161:^Non, non !^@:dwave_eng 0, geo_1e162:^ Il ne faut pas prendre tout ce que dit Battler au pied de la lettre, d'accord ?^@:dwave_eng 0, geo_1e163:^ Il plaisante tout le temps.^@:dwave_eng 0, geo_1e164:^ Allez, en route.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g1f_p1a.jpg",":b;bmp\background\guesthouse\g1f_p1a.png",23
+
+
+
+
+
+advchar "-1"
+langjp　俺たちは紗音ちゃんに先導され、お屋敷へ向かうのだった。\
+
+langen^Nous suivîmes Shannon jusqu'au manoir.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_g1a.jpg",":b;bmp\background\garden\rose_g1a.png",23
+
+wait 2000
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_1a.jpg",":b;bmp\background\garden\rose_1a.png",23
+
+wait 2000
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_1c.jpg",":b;bmp\background\garden\garden_1c.png",23
+
+wait 2000
+
+bg white,22
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_o1a.jpg",":b;bmp\background\mainbuilding\m_o1a.png",2
+
+
+
+langjp　再び立派な薔薇庭園に迎えられ、さらに進むと見えてくるのが、………迫力ある、右代宮本家のお屋敷である。\
+
+langen^Nous traversâmes de nouveau la magnifique roseraie. Un peu plus loin se dressait enfin le manoir des Ushiromiya, aussi imposant qu'intimidant.^\
+
+langjp　戦後すぐに建てられたらしいから、すでに半世紀近くを経た貫禄を漂わせている。@
+langen^Il aurait été construit juste après la guerre. Près d'un demi-siècle plus tard, il avait déjà acquis toute la prestance d'une demeure chargée d'histoire.^@
+
+br
+
+langjp　見てくれは確かにゴージャスだが、古い建物だけあり、空調などの設備が今ひとつ弱いらしい。@
+
+langjp　朱志香の話によれば、特に真冬は隙間風に悩まされるそうだ。@
+langen^De l'extérieur, c'était un véritable palais. Mais derrière cette façade somptueuse, le bâtiment accusait son âge : les installations de chauffage et de climatisation laissaient apparemment à désirer.^@
+
+langen^D'après Jessica, en plein hiver, les courants d'air devenaient même un véritable calvaire.^@
+
+br
+
+langjp　…コタツでも出しゃあいいのにな。\
+langen^... Ils pourraient au moins installer une table chauffante, quand même !^\
+
+textoff
+
+
+fede 0,2000
+
+
+
+se1 17
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",50
+
+
+
+bgmplay 12
+
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mhal_2a.jpg",":b;bmp\background\mainbuilding\mhal_2a.png",50
+
+ld c,$GEN_DefA1,24
+
+
+langjp　玄関を入ると、老いた使用人が迎えてくれた。@
+
+langjp　彼はさすがに俺の記憶にも残ってる。@
+langen^À peine avions-nous franchi l'entrée qu'un domestique âgé vint nous accueillir.^@
+langen^Ah, lui, impossible de l'oublier.^@
+
+br
+
+
+
+;ここで源次の情報閲覧が可能に〜〜〜〜〜
+
+mov ?r[gen][condition],1
+
+seplay 9,1060
+
+
+
+advchar "-1"
+langjp　最古参で、使用人の長を勤める源次さんだ。\
+
+langen^Genji. Le doyen des domestiques, et celui qui les dirigeait tous. Son prénom s'écrit 源次 : 源 évoque la source ou l'origine, 次 ce qui vient après.^@^ Et surtout, « Genji », ça se prononce exactement comme ça s'écrit. Ah, merci, Genji !^\
+
+ld c,$GEN_MajimeA2,80
+
+
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e9:「…………戦人さま、お久しゅうございます。」@
+
+advchar "-1"
+langjp　俺と目が合うと、落ち着きある声で挨拶してくれた。@
+advchar "14"
+langen:dwave_eng 0, gen_1e9:^... Quel plaisir de vous revoir, monsieur Battler. Cela faisait bien longtemps.^@
+advchar "-1"
+langen^Nos regards se croisèrent. Il me salua d'une voix tranquille, empreinte de cette dignité qui le caractérisait si bien.^@
+
+br
+
+langjp　郷田さんのお辞儀を優雅だと例えるなら、@そこまで洗練されていないが、無骨だけれども気持ちが伝わるお辞儀だった。\
+langen^La révérence de Gohda avait quelque chose de raffiné, presque théâtral. Celle de Genji était bien différente.^@^ Moins élégante, peut-être, un peu raide même... mais elle dégageait une sincérité qui se passait de tout artifice.^\
+
+advchar "10"
+langjp:dwave_jp 0, but_1e316:「源次さん、本当にお久しぶりっす！@:dwave_jp 0, but_1e317:　お元気そうですね。」@
+
+langen:dwave_eng 0, but_1e316:^Genji ! Ça fait une éternité !^@:dwave_eng 0, but_1e317:^ Vous avez l'air en pleine forme, dites donc !^@
+
+ld c,$GEN_DefA1,80
+
+
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e10:「お陰様で健やかに過ごさせていただいております…。@:dwave_jp 0, gen_1e11:……戦人さまこそ、ご立派になられました。@:dwave_jp 0, gen_1e12:………お館様の若き日に、少し似てこられましたな。」@
+
+advchar "10"
+langjp:dwave_jp 0, but_1e318:「俺が祖父さまに？@:dwave_jp 0, but_1e319:　ってことは、さぞや祖父さまは若い頃モテたろうなぁ、いっひっひ！」\
+
+advchar "14"
+langen:dwave_eng 0, gen_1e10:^Je vous remercie. Je me porte fort bien, grâce à vous...^@:dwave_eng 0, gen_1e11:^ Mais c'est surtout vous qui avez grandi, monsieur Battler.^@:dwave_eng 0, gen_1e12:^ ... À présent, vous me rappelez un peu le Maître dans sa jeunesse.^@
+advchar "10"
+langen:dwave_eng 0, but_1e318:^Moi, je ressemble à Grand-père ?!^@:dwave_eng 0, but_1e319:^ Eh ben, dans ce cas, il devait faire sacrément tourner les têtes à mon âge ! Hihihi !^\
+
+ld c,$GEN_komaruA1,80
+
+
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e13:「………ここからは紗音に代わって私がご案内申し上げます。@:dwave_jp 0, gen_1e14:どうぞこちらへ。」@
+
+advchar "-1"
+langjp　紗音ちゃんは深々とお辞儀をして俺たちを見送る。@
+advchar "14"
+langen:dwave_eng 0, gen_1e13:^... Je vais maintenant prendre le relais de Shannon pour vous conduire à la salle à manger.^@:dwave_eng 0, gen_1e14:^ Si vous voulez bien me suivre.^@
+advchar "-1"
+langen^Shannon nous salua d'une profonde révérence et nous regarda nous éloigner.^@
+
+br
+
+langjp　ここからは源次さんの案内で食堂へ向かっていった。\
+
+langen^Nous prîmes donc le chemin de la salle à manger, guidés par Genji.^\
+
+langjp　若者勢がこの６年で見違えるほど成長したのに比べれば、源次さんは熊沢さんと同じでまったく逆。@
+langen^En six ans, nous autres, les jeunes, avions changé au point d'être parfois méconnaissables. Mais Genji, tout comme Kumasawa, semblait avoir échappé aux ravages du temps.^@
+br
+
+langjp　６年前の記憶とまったく姿が変わらない。@
+
+langjp　時間を止めたまま再会したかのようだった。\
+
+langen^Il était exactement comme dans mes souvenirs.^@
+langen^Comme si, pour lui, ces six années n'avaient tout simplement jamais existé.^\
+
+langjp　源次さんは非常に寡黙で真面目な人だ。@
+langen^Genji était un homme de peu de mots, d'un sérieux à toute épreuve.^@
+
+br
+
+langjp　祖父さまの側近というか、介護者というか、@……考えようによっては女房役とまで言えたかもしれない。\
+langen^Bras droit de Grand-père, homme de confiance, celui qui veillait sur lui au quotidien...^@^ À bien y réfléchir, il remplissait presque auprès de lui le rôle d'une épouse.^\
+
+
+
+langjp　実際、死んだ祖母さまよりも常に側に控えさせていたらしい。@
+langen^Il paraît même qu'il restait plus souvent à ses côtés que ma défunte grand-mère elle-même, du temps où elle était encore en vie.^@
+
+br
+
+langjp　朱志香に言わせると、祖父さまはどんな肉親たちよりも信頼しているという。\
+langen^À en croire Jessica, Grand-père lui accordait davantage de confiance qu'à n'importe quel membre de sa propre famille.^\
+
+
+
+langjp　しかし勤めてどのくらいになるんだろう。@
+langen^Mais au fait... depuis combien de temps travaillait-il ici ?^@
+
+br
+
+langjp　詳しく聞いたことはないが、この屋敷が建てられた当初からいる、みたいな話を聞いたこともある。@
+langen^Je ne lui avais jamais posé la question, mais j'avais entendu dire qu'il était déjà au service des Ushiromiya lorsque le manoir avait été construit.^@
+
+br
+
+langjp　…ということは、半生を奉公に捧げてるってことになる。@…そりゃあ、信頼も厚いわけだぜ。\
+langen^... Ça voudrait dire qu'il avait consacré près de la moitié de sa vie à cette famille.^@^ ... Pas étonnant que Grand-père ait une confiance aussi absolue en lui.^\
+
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+
+
+langjp　食堂に向かうため、源次さんの先導で吹き抜けのホールを通り抜ける時。@
+langen^Alors que nous traversions le vaste hall au plafond vertigineux, Genji en tête pour nous conduire à la salle à manger...^@
+
+br
+
+langjp　……俺は６年前の記憶にないものを見つける。\
+langen^... quelque chose attira mon attention. Quelque chose dont je n'avais aucun souvenir, six ans plus tôt.^\
+
+
+
+
+textoff
+
+
+
+fede 0,3000
+
+
+
+bg white,22
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+
+
+bgmplay 1
+
+
+
+wait 500
+
+
+
+lsp efesp,portrait1,0,-825
+
+for %Free1 = 1 to 412
+
+
+
+msp efesp,0,2
+
+print 1
+
+wait 30
+
+next
+
+delay 6000
+
+csp efesp
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mhal_2c.jpg",":b;bmp\background\mainbuilding\mhal_2c.png",2
+
+
+
+
+
+langjp　それは、２階に上がる階段の真正面に飾られた、とても大きな肖像画だった。\
+
+langen^C'était un immense portrait, accroché juste en face de l'escalier qui menait au deuxième étage.^\
+
+langjp　その迫力に、思わず足を止めてしまう…。@
+langen^Il dégageait une telle présence que je m'arrêtai net, presque malgré moi.^@
+
+br
+
+langjp　急に俺が立ち止まったので、後に続く真里亞が俺の背中に激突する。\
+
+langen^Et comme je m'étais arrêté sans prévenir, Maria, qui marchait juste derrière, me rentra droit dans le dos.^\
+
+ld l,$MAR_defA1,23
+
+
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e199:「うー？」@
+
+langen:dwave_eng 0, mar_1e199:^Uu- ?^@
+
+ld r,$BUT_majimeA1,24
+
+
+
+advchar "10"
+langjp:dwave_jp 0, but_1e320:「……あぁ悪ぃ。@:dwave_jp 0, but_1e321:…なぁ朱志香ぁ。@:dwave_jp 0, but_1e322:あんな絵、前はあったっけ？」@
+langen:dwave_eng 0, but_1e320:^... Ah, pardon.^@:dwave_eng 0, but_1e321:^ ... Hé, Jessica, dis-moi.^@:dwave_eng 0, but_1e322:^ Ce tableau, il était déjà là à l'époque ?^@
+
+br
+
+advchar "-1"
+langjp　俺はホールに掲げられた目立つ大きな肖像画を指差す。@みんなも足を止めた。\
+langen^Je pointai du doigt l'immense portrait qui dominait le hall.^@^ Les autres s'arrêtèrent à leur tour.^\
+
+
+
+cl l,24
+
+ld l,$JES_tohohoA1,23
+
+
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e175:「…あぁ、…そっか。@:dwave_jp 0, jes_1e176:戦人が来てた頃にはアレは掛けられてなかったっけ。@:dwave_jp 0, jes_1e177:いつからだったかな…。」@
+
+;＜朱志香
+langen:dwave_eng 0, jes_1e175:^... Ah, ouais... c'est vrai.^@:dwave_eng 0, jes_1e176:^ Quand tu venais encore, il était pas là, hein ?^@:dwave_eng 0, jes_1e177:^ C'était quand, déjà, qu'on l'a accroché... ?^@
+
+
+
+cl r,23
+
+ld r,$GEO_DefA1,24
+
+
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e165:「確か、/
+sl
+
+langjp:voicedelay 1000:dwave_jp 0, geo_1e166:^^……僕の記憶が正しければ、一昨年辺りだったと思うよ。」\
+
+;＜譲治
+langen:dwave_eng 0, geo_1e165:^Il me semble que...^@/
+sl
+langen:voicedelay 1000:dwave_eng 0, geo_1e166:^ si je me souviens bien, c'était il y a deux ans environ.^\
+
+
+
+cl l,24
+
+ld l,$GEN_DefA1,22
+
+
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e15:「…………左様でございます。@:dwave_jp 0, gen_1e16:一昨年の４月に、お館様が兼ねてより画家に命じて描かせていたものをあそこに展示なされたのでございます。」\
+langen:dwave_eng 0, gen_1e15:^... Tout à fait.^@:dwave_eng 0, gen_1e16:^ En avril de cette année-là, le Maître a fait accrocher ce portrait, dont il avait confié la réalisation à un peintre quelque temps auparavant.^\
+
+cl r,23
+
+ld r,$BUT_oyaA1,24
+
+
+
+advchar "10"
+langjp:dwave_jp 0, but_1e323:「あの祖父さまがねぇ。@:dwave_jp 0, but_1e324:わざわざ描かせてか…。」\
+
+langen:dwave_eng 0, but_1e323:^Grand-père a fait ça ?^@:dwave_eng 0, but_1e324:^ Lui qui a commandé un tableau exprès... Eh ben !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\portrait2.jpg",":b;bmp\background\mainbuilding\portrait2.png",22
+
+
+
+advchar "-1"
+langjp　肖像画には、この洋風屋敷に相応しい、優雅なドレスを着た気品を感じさせる女性が描かれていた。\
+
+langen^Le portrait représentait une femme à l'allure noble, vêtue d'une robe somptueuse qui semblait parfaitement à sa place dans ce manoir de style occidental.^\
+
+langjp　………歳はわからないが、目つきにやや鋭さと意志の強さを感じさせるため、若そうな印象を受けた。@
+langen^... Difficile de lui donner un âge. Mais son regard légèrement perçant et la détermination qu'on pouvait y lire lui donnaient une impression de jeunesse.^@
+
+br
+
+langjp　よく名画にあるような中年女性の余裕ある雰囲気とは違う気がする。\
+langen^Elle n'avait pas cette sérénité tranquille qu'affichent souvent les femmes d'âge mûr dans les grands portraits.^\
+
+
+langjp　この女性が普通に黒い髪だったなら、すでに亡くなって久しい祖母さまの若き日の肖像画かもしれないと思っただろう。@
+langen^Si elle avait eu les cheveux noirs, j'aurais peut-être pensé qu'il s'agissait d'un portrait de ma défunte grand-mère, peint dans sa jeunesse.^@
+
+br
+
+langjp　だが、肖像画の女性は美しい黄金の髪で、日本人的でない容姿を感じさせた。\
+langen^Mais cette femme possédait une magnifique chevelure dorée, et ses traits ne semblaient pas japonais.^\
+
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mhal_2c.jpg",":b;bmp\background\mainbuilding\mhal_2c.png",22
+
+
+
+advchar "10"
+langjp:dwave_jp 0, but_1e325:「で。@:dwave_jp 0, but_1e326:……誰だい、このご婦人はよぅ。」@
+langen:dwave_eng 0, but_1e325:^Bon, mais alors...^@:dwave_eng 0, but_1e326:^ c'est qui, cette dame ?^@
+
+br
+
+advchar "-1"
+langjp　その素朴な質問に、真里亞が、自分は知っていると言わんばかりに威勢よく答えてくれた。\
+langen^À cette question toute simple, Maria s'empressa de répondre, visiblement ravie de connaître la réponse.^\
+
+ld r,$MAR_DefA1,24
+
+
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e200:「うー！@:dwave_jp 0, mar_1e201:　真里亞知ってる。@:dwave_jp 0, mar_1e202:ベアトリーチェ！」@
+
+advchar "10"
+langjp:dwave_jp 0, but_1e327:「ベア、……何だって？」\
+
+advchar "13"
+langen:dwave_eng 0, mar_1e200:^Uu- !^@:dwave_eng 0, mar_1e201:^ Maria sait !^@:dwave_eng 0, mar_1e202:^ C'est Béatrice !^@
+advchar "10"
+langen:dwave_eng 0, but_1e327:^Béa... comment ?^\
+
+ld l,$GEO_DefA1k,23
+
+
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e167:「……ベアトリーチェ。@:dwave_jp 0, geo_1e168:魔女だよ。@:dwave_jp 0, geo_1e169:戦人くんは昔、聞かされたことない？」@
+
+;＜譲治
+langen:dwave_eng 0, geo_1e167:^... Béatrice.^@:dwave_eng 0, geo_1e168:^ C'est la sorcière.^@:dwave_eng 0, geo_1e169:^ On ne t'en avait jamais parlé quand tu venais ici ?^@
+
+advchar "10"
+langjp:dwave_jp 0, but_1e328:「魔女ぉ。@:dwave_jp 0, but_1e329:…って、/
+sl
+
+langjp:voicedelay 430:dwave_jp 0, but_1e330:^^…………この島の？」\
+
+;＜戦人
+
+langen:dwave_eng 0, but_1e328:^La sorcière... ?^@:dwave_eng 0, but_1e329:^ ... Attends une seconde...^@/
+sl
+langen:voicedelay 430:dwave_eng 0, but_1e330:^ celle de l'île ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+fr_bg ":b;fr_bg\orig\bmp\background\ship\sea_1c.jpg",":b;bmp\background\ship\sea_1c.png",22
+
+
+
+advchar "-1"
+langjp　…すでに話したと思うが、この六軒島は全周が１０ｋｍ程度の小さい島だ。@
+langjp　だが右代宮家だけが住むにしては広大だ。@
+langen^... Comme je l'ai déjà expliqué, Rokkenjima est une petite île dont le périmètre ne dépasse guère les dix kilomètres.^@
+langen^Mais pour une île habitée uniquement par la famille Ushiromiya, c'est tout de même un territoire considérable.^@
+
+br
+
+langjp　だから住めるよう整地されているのは、船着場と屋敷の周りの敷地だけで、@後はこの島が無人島だった時代から手付かずのままになっている。\
+
+langen^Seuls le débarcadère et les environs du manoir ont été aménagés pour accueillir des habitants.^@^ Tout le reste est demeuré à l'état sauvage depuis l'époque où l'île était encore déserte.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\forest_p1b.jpg",":b;bmp\background\forest\forest_p1b.png",22
+
+
+
+langjp　一切の明かりもなく電話もなく通行人もいない無人の広大な森が、@どれほど危険なものかを理解するには、都会的な常識を少し外す必要がある。@
+langen^Pour comprendre à quel point une forêt immense, sans éclairage, sans téléphone et sans personne à proximité peut être dangereuse,^@^ il faut abandonner un instant ses habitudes de citadin.^@
+
+br
+
+langjp　何しろ、万が一、森の奥深くで穴にでも落ちて捻挫したら、@泣こうが喚こうが誰も助けに来てくれないのだ。\
+
+langen^Imaginez qu'au beau milieu des bois, vous tombiez dans un trou et vous vous fouliez la cheville.^@^ Vous auriez beau pleurer, crier, appeler à l'aide de toutes vos forces... personne ne viendrait vous secourir.^\
+
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+
+
+langjp　そのまま暗くなれば電柱の一本もない森は真の暗黒に包まれる。@
+langen^Et si la nuit tombait entre-temps, cette forêt dépourvue de la moindre installation électrique serait plongée dans des ténèbres absolues.^@
+
+br
+
+langjp　また、道標があるわけでもないから迷いやすく、暗い森の中は方向感覚も見失いやすいのだ。\
+
+langen^Sans panneaux ni repères pour retrouver son chemin, il serait déjà facile de s'égarer en plein jour. Alors dans le noir, quand le moindre sens de l'orientation vous abandonne...^\
+
+
+
+langjp　現在でこそ、森というと憩いのイメージを感じるが、@文明の光が夜を駆逐するまでの前時代の人類にとって、森は海同様に文化を地理的に隔離する、地上の海同然だったのである。@
+langen^De nos jours, la forêt évoque volontiers un lieu de promenade et de repos.^@^ Mais avant que les lumières de la civilisation ne viennent repousser l'obscurité, les forêts constituaient de véritables frontières naturelles, isolant les communautés humaines aussi sûrement que les océans.^@^ Elles étaient, en quelque sorte, des mers au milieu des terres.^@
+
+
+br
+
+langjp　海に出る漁師たちが、専門的な知識を有してなお命を脅かされることもあるように。@
+langen^Même les pêcheurs les plus expérimentés peuvent perdre la vie en mer, malgré toutes leurs connaissances.^@
+
+br
+
+langjp　森に出る猟師たちにも専門的な知識が求められ、@同じく命を脅かされることもあったのだ。\
+
+langen^Il en allait de même pour les chasseurs. S'aventurer dans les profondeurs d'une forêt exigeait un savoir particulier, et même celui-ci ne suffisait pas toujours à les préserver du danger.^\
+
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_o1a.jpg",":b;bmp\background\mainbuilding\m_o1a.png",22
+
+
+
+langjp　…そんな危険な森に、子供が遊びに行ったら大変なことになるかもしれない。@
+langen^... Alors imaginez les conséquences si des enfants s'amusaient à pénétrer dans une forêt pareille.^@
+
+br
+
+langjp　そう思った親の誰か。@…祖母さまか、あるいは他でもない、祖父さまが言い出したのかもしれない。@
+langen^Sans doute est-ce ce qu'un adulte de la famille s'était dit un jour.^@^ ... Peut-être Grand-mère. Ou même Grand-père en personne.^@
+
+br
+
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+
+
+langjp　さもなくば、はるか大昔からこの島に語り継がれているのか。\
+
+langen^À moins, bien sûr, que cette histoire ne se transmette sur l'île depuis des temps bien plus anciens...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\portrait2.jpg",":b;bmp\background\mainbuilding\portrait2.png",22
+
+langjp　………森には恐ろしい魔女がいるから立ち入ってはならない。\
+
+langen^... Une terrible sorcière habite cette forêt. N'y mettez jamais les pieds.^\
+
+langjp　そんな六軒島の怪談が生まれたのである。@
+
+langjp　それが、六軒島の魔女伝説である。\
+langen^C'est ainsi qu'aurait pu naître l'une des histoires effrayantes de Rokkenjima.^@
+langen^La légende de la sorcière de Rokkenjima.^\
+
+langjp　だから、この島で魔女と言ったら、それは広大な未開の森の主を指す。@
+langen^Voilà pourquoi, sur cette île, lorsqu'on parle de la sorcière, on désigne celle qui règne sur les vastes étendues sauvages de la forêt.^@
+
+br
+
+langjp　そういえば小さかった頃、この屋敷に泊まり、風雨が窓を叩く不気味な夜には、@森の魔女が生贄を求めて彷徨っているというような話にだいぶ怯えたもんさ…。\
+
+langen^Maintenant que j'y repense, lorsque j'étais petit et que je passais la nuit dans ce manoir, il suffisait que le vent et la pluie viennent battre les fenêtres pour que ces histoires me terrifient.^@^ On racontait qu'une sorcière rôdait dans la forêt, à la recherche d'un sacrifice...^\
+
+langjp　ベアトリーチェ、/
+sl
+
+langjp^^!d800…か。\
+
+langen^Béatrice...^@/
+sl
+langen:!d800^ C'était donc son nom ?^\
+
+langjp　………兄貴に言われて記憶を探ると、確かにそんな名前だとだいぶ小さい頃に教えられた気もする。\
+
+langen^... À présent que George venait de le prononcer, un lointain souvenir me revenait. Oui, on m'avait certainement appris ce nom quand j'étais tout petit.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mhal_2c.jpg",":b;bmp\background\mainbuilding\mhal_2c.png",0
+
+ld r,$BUT_defA2,6
+
+
+
+advchar "10"
+langjp:dwave_jp 0, but_1e331:「…なるほどなぁ。@:dwave_jp 0, but_1e332:しかし、あの魔女伝説の魔女に、ベアトリーチェなんてオシャレな名前が付いてたとは、とんと忘れてたぜ。@:dwave_jp 0, but_1e333:……祖父さまめ、孫たちが信じないもんだから、わざわざ絵に描きやがったかぁ？」\
+
+;＜戦人
+
+langen:dwave_eng 0, but_1e331:^... Aaah, je vois.^@:dwave_eng 0, but_1e332:^ J'avais complètement oublié que la sorcière de cette vieille légende portait un nom aussi élégant que Béatrice.^@:dwave_eng 0, but_1e333:^ ... Alors comme ça, Grand-père en a eu assez que ses petits-enfants n'y croient pas, et il a décidé de nous la faire peindre ?!^\
+
+ld l,$JES_MajimeA1,23
+
+
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e178:「……祖父さまの妄想の中の魔女だよ。@:dwave_jp 0, jes_1e179:…この絵を掲げた頃から現実と幻想の区別が付かなくなり始めた。@:dwave_jp 0, jes_1e180:……私たちにとっては想像の中の魔女に過ぎないけど、…祖父さまにとっては、彼女はこの島に« い »る存在。@:dwave_jp 0, jes_1e181:……« い »る。@:dwave_jp 0, jes_1e182:だから、それを理解することができない私たちにもわかるよう、あの絵を描かせたって言うんだけど。@/
+
+langen:dwave_eng 0, jes_1e178:^... Cette sorcière, elle existe que dans la tête de Grand-père.^@:dwave_eng 0, jes_1e179:^ Et depuis qu'il a fait accrocher ce portrait, il commence sérieusement à plus faire la différence entre la réalité et ses délires.^@:dwave_eng 0, jes_1e180:^ ... Pour nous, c'est juste une sorcière imaginaire.^@:dwave_eng 0, jes_1e181:^ Mais pour lui... elle « existe ». Elle « existe » vraiment.^@:dwave_eng 0, jes_1e182:^ Alors il a fait peindre ce tableau pour que nous aussi, qui sommes incapables de la voir, on puisse constater qu'elle est « là ».^@/
+
+ld l,$JES_nayamuA1,80
+
+
+
+langjp:dwave_jp 0, jes_1e183:………はんッ、気持ち悪いったらありゃしないぜ。」\
+langen:dwave_eng 0, jes_1e183:^ ... Pff. Rien que d'y penser, ça me fout la chair de poule.^\
+
+cl r,23
+
+ld r,$GEN_komaruA1,24
+
+
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e17:「……………………お嬢様。@:dwave_jp 0, gen_1e18:…お館様にとっては大切な肖像画です。@:dwave_jp 0, gen_1e19:……お館様の前でそのように仰られることがございませんよう、固くお願い申し上げます。」\
+langen:dwave_eng 0, gen_1e17:^... Mademoiselle.^@:dwave_eng 0, gen_1e18:^ ... Ce portrait est extrêmement précieux aux yeux du Maître.^@:dwave_eng 0, gen_1e19:^ ... Je vous prie instamment de ne jamais tenir de tels propos en sa présence.^\
+
+ld l,$JES_odorokiA1,80
+
+
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e184:「………わかってるぜ。@:dwave_jp 0, jes_1e185:頼まれても言わねぇよ。」@
+langen:dwave_eng 0, jes_1e184:^... Ouais, je sais.^@:dwave_eng 0, jes_1e185:^ T'inquiète, j'irai pas lui dire ça en face. Même si on me le demandait !^@
+
+cl l,24
+
+
+
+advchar "-1"
+langjp　朱志香は忌々しいような目つきで肖像画を一瞥すると、そっぽを向く。\
+langen^Jessica décocha au portrait un regard plein d'amertume avant de détourner la tête.^\
+
+ld l,$GEO_MajimeA1k,24
+
+
+
+advchar "07"
+langjp:dwave_jp 0, geo_1e170:「…行こうよ。@:dwave_jp 0, geo_1e171:食堂にみんなを待たせてるよ。」@
+
+;＜譲治
+
+langen:dwave_eng 0, geo_1e170:^... Allons-y.^@:dwave_eng 0, geo_1e171:^ Tout le monde doit déjà nous attendre dans la salle à manger.^@
+
+cl r,23
+
+ld r,$MAR_defA1,24
+
+
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e203:「うー！@:dwave_jp 0, mar_1e204:　お腹空いたー！」\
+
+langen:dwave_eng 0, mar_1e203:^Uu- !^@:dwave_eng 0, mar_1e204:^ J'ai faim !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\portrait2.jpg",":b;bmp\background\mainbuilding\portrait2.png",22
+
+
+
+
+
+advchar "-1"
+langjp　……この島で、右代宮家が支配している部分などほんのわずかだ。@
+langen^... Sur cette île, les terres que contrôle réellement la famille Ushiromiya ne représentent qu'une infime partie du territoire.^@
+
+br
+
+langjp　残りの未開な部分を全て彼女、…魔女ベアトリーチェが支配しているというのなら。@
+langen^Si tout le reste, ces immenses étendues sauvages encore inexplorées, est sous la domination de Béatrice...^@
+
+br
+
+langjp　……彼女こそがこの六軒島を真に支配する存在なのだと言える。\
+langen^... alors ne pourrait-on pas dire que la véritable souveraine de Rokkenjima, c'est elle ?^\
+
+
+
+langjp　船で来る途中、洋上の鎮守の社が落雷で失われたということを知った時に感じたある種の違和感と不吉さが少しだけ蘇る。\
+
+langen^Un peu du malaise et du mauvais pressentiment que j'avais ressentis sur le bateau, en apprenant que le sanctuaire en mer avait été détruit par la foudre, refit surface.^\
+
+langjp　そしてあの時、熊沢さんは六軒島について何か不吉な話をしようとして、それを朱志香に止められたことも。@
+langen^Je me souvins aussi de Kumasawa, qui avait commencé à évoquer une histoire inquiétante à propos de Rokkenjima, avant que Jessica ne lui coupe la parole.^@
+
+br
+
+langjp　………この島の何を話そうとしたのかはわからない。\
+langen^... Je ne savais toujours pas ce qu'elle avait voulu nous raconter.^\
+
+
+
+langjp　でも、ひとつわかることがある。@
+langjp　…六軒島の支配者は、右代宮家じゃない。@
+langen^Mais une chose me paraissait désormais évidente.^@
+langen^... Les véritables maîtres de Rokkenjima, ce ne sont pas les Ushiromiya.^@
+
+br
+
+langjp　魔女、ベアトリーチェなんだ。@
+langen^C'est la sorcière, Béatrice.^@
+
+br
+
+langjp　そう。@……ここは、魔女の島なのだから。\
+langen^Oui.^@^ ... Après tout, cette île est celle de la sorcière.^\
+
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m1f_p1b.jpg",":b;bmp\background\mainbuilding\m1f_p1b.png",22
+
+
+
+advchar "13"
+langjp:dwave_jp 0, mar_1e205:「戦人ー！@:dwave_jp 0, mar_1e206:　うー、遅いー！」@
+langen:dwave_eng 0, mar_1e205:^Battler !^@:dwave_eng 0, mar_1e206:^ Uu- ! Battler est trop lent !^@
+
+br
+
+advchar "-1"
+langjp　見ればみんなはもう食堂へ向かっていた。@
+
+langjp　俺は慌ててその後を追うのだった…。\
+
+langen^Quand je sortis de mes pensées, les autres avaient déjà pris le chemin de la salle à manger.^@
+langen^Je me dépêchai de les rattraper...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",4
+
+
+
+fede 0,3000
+
+;ここはフェードアウトにしたい〜〜〜〜！
+
+
+
+langjp　食堂の大きな観音扉の前までやって来る。@
+
+langen^Nous arrivâmes devant les immenses portes à deux battants de la salle à manger.^@
+
+se1 19
+
+
+
+langjp　源次さんがノックする。\
+
+langen^Genji frappa discrètement.^\
+
+
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e20:「……お子様方をお連れいたしました。@:dwave_jp 0, gen_1e21:失礼いたします…。」@
+
+advchar "-1"
+langjp　扉が開けられ、中へ招かれる。\
+
+advchar "14"
+langen:dwave_eng 0, gen_1e20:^... J'ai conduit les jeunes gens jusqu'ici. ^@:dwave_eng 0, gen_1e21:^Avec votre permission, nous allons entrer...^@
+advchar "-1"
+langen^Les portes s'ouvrirent, et l'on nous invita à passer.^\
+
+se1 17
+
+bg white,50
+
+
+
+bgmplay 12
+
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1d.jpg",":b;bmp\background\mainbuilding\mdin_1d.png",50
+
+
+
+langjp　如何にも大金持ちーって感じの食堂には、来客に序列を思い知らせるのが目的としか思えない超長いテーブルが置かれ、@その序列に従い、もう親たちが着席していた。\
+
+langen^La salle à manger respirait le luxe à pleins poumons. En son centre s'étendait une table absurdement longue, comme si elle avait été conçue dans un seul but : rappeler à chaque invité sa place dans la hiérarchie familiale. ^@^Et nos parents, déjà installés, respectaient scrupuleusement cet ordre.^\
+
+ld l,$RUD_waraiA1,22
+
+advchar "08"
+langjp:dwave_jp 0, rud_1e98:「遅ぇぞ、ガキども。@:dwave_jp 0, rud_1e99:早く席につけよ。」@
+
+advchar "-1"
+langjp　クソ親父が着席を促す。@
+advchar "08"
+langen:dwave_eng 0, rud_1e98:^Ah, quand même ! Vous en avez mis, du temps, les morveux. ^@:dwave_eng 0, rud_1e99:^Allez, magnez-vous de vous asseoir.^@
+advchar "-1"
+langen^Voilà que mon vieux con de père nous accueillait avec toute la délicatesse dont il était capable.^@
+
+br
+
+langjp　長いテーブルの、自分たちが座る場所だけがぽっかりと空いていて、一層、遅刻した感を煽った。\
+
+langen^Le long de cette table interminable, seules nos places restaient vides. Autant dire qu'on ne pouvait pas faire plus remarqué comme entrée en retard.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1a.jpg",":b;bmp\background\mainbuilding\mdin_1a.png",22
+
+
+
+langjp　一番奥正面のいわゆるお誕生席が最上位の席、祖父さまの指定席だ。@
+langen^Tout au fond, bien en évidence, se trouvait la place d'honneur, réservée à Grand-père.^@
+
+br
+
+langjp　そこはまだ空席だった。@
+
+langjp　…もったいぶって最後に来るつもりなんだろう。\
+
+langen^Pour le moment, elle était vide.^@
+langen^... Monsieur comptait sûrement faire son entrée en dernier, histoire de bien se faire attendre.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1e.jpg",":b;bmp\background\mainbuilding\mdin_1e.png",22
+
+
+
+langjp　席順の序列は、お誕生席を正面奥に見ながら、左・右と序列が続き、序列の順位が低いほどお誕生席から遠のいていく。@
+langen^À partir de ce siège, les places étaient attribuées alternativement à gauche et à droite, selon un ordre de préséance rigoureusement établi. Plus votre rang était bas, plus vous étiez relégué loin de Grand-père.^@
+
+br
+
+langjp　つまり、お誕生席に一番近い第１列目の左席、序列第２位の席は親兄弟の長兄の蔵臼伯父さんの席。\
+langen^Ainsi, immédiatement à sa gauche se trouvait la deuxième place la plus prestigieuse, celle de l'oncle Krauss, l'aîné des quatre enfants Ushiromiya. Son prénom s'écrit 蔵臼. 蔵 se lit « kura », et 臼 « usu ». Kura, usu... Krauss. ^@^Ça veut dire quelque chose comme « entrepôt » et « mortier ». ... Décidément, les prénoms de cette famille sont une énigme à eux tout seuls.^\
+
+
+
+langjp　………伯父さんもまだ来てないようで空席だった。\
+
+langen^... Mais visiblement, l'oncle Krauss n'était pas encore arrivé non plus. Sa chaise restait vide.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1d.jpg",":b;bmp\background\mainbuilding\mdin_1d.png",0
+
+ld r,$EVA_defA1,22
+
+
+
+langjp　そしてその向かいの、第１列目の右席には、序列第３位で親兄弟の長女の絵羽伯母さんが座る。\
+langen^Juste en face, à droite de Grand-père, siégeait tante Eva, l'aînée des filles et troisième dans l'ordre de préséance.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1b.jpg",":b;bmp\background\mainbuilding\mdin_1b.png",0
+
+ld l,$RUD_defA2,23
+
+
+
+langjp　第２列目の左席は序列第４位。@
+langjp　親兄弟の３人目ということでうちのクソ親父、留弗夫が座る。@
+langen^La quatrième place se trouvait à gauche de la deuxième rangée.^@
+langen^Elle appartenait à mon vieux con de père, Rudolf, troisième enfant de la fratrie.^@
+
+br
+
+
+
+ld r,$ROS_defA1,24
+
+
+
+langjp　その向かいの第２列目右席、序列第５位は、親兄弟の末っ子の楼座叔母さんの席。\
+
+langen^En face de lui, à droite, se trouvait tante Rosa, la petite dernière de la famille, cinquième dans la hiérarchie.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1d.jpg",":b;bmp\background\mainbuilding\mdin_1d.png",22
+
+
+
+langjp　こう来れば、次は親たちの配偶者が来るだろうと思うかもしれないが、@/
+
+langen^Bon. Jusque-là, rien de bien sorcier. On pourrait donc penser que les conjoints venaient ensuite, pas vrai ? ^@/
+
+ld l,$JES_defA2,22
+
+
+
+langjpところがどっこい、次の第３列目左席、つまり序列第６位は朱志香の席だったりする。@
+langen^Eh ben non ! Raté ! La sixième place, à gauche de la troisième rangée, revenait à Jessica.^@
+
+br
+
+
+
+ld r,$GEO_hohoemiA1k,22
+
+
+
+langjp　その向かい席は譲治兄貴。@
+
+langen^Juste en face d'elle, on trouvait George.^@
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1d.jpg",":b;bmp\background\mainbuilding\mdin_1d.png",0
+
+ld l,$BUT_waraiA2,22
+
+
+
+langjp　そして朱志香の隣の席は俺で、@/
+
+langen^Et moi, j'étais placé à côté de Jessica, ^@/
+
+ld r,$MAR_niyariA1,22
+
+
+
+langjpその向かいは真里亞となる。\
+
+langen^avec Maria juste en face.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1f.jpg",":b;bmp\background\mainbuilding\mdin_1f.png",0
+
+ld l,$NAT_defA1,22
+
+
+
+langjp　そして俺の隣、つまり第５列目左席の序列第１０位まで来てようやく夏妃叔母さんなのである。@
+langen^Il fallait descendre jusqu'à la dixième place, à gauche de la cinquième rangée, pour tomber enfin sur tante Natsuhi, assise à côté de moi.^@
+
+
+br
+
+
+
+ld r,$HID_defA1,22
+
+
+
+langjp　…その向かいが秀吉伯父さんで、@/
+
+langen^... En face d'elle, c'était l'oncle Hideyoshi. ^@/
+
+cl l,22
+
+ld l,$KIR_defA1,22
+
+
+
+langjp夏妃叔母さんの隣の第６列目、一番手前の左席が霧江さんである。\
+
+langen^Puis, tout au bout de la table, à gauche de la sixième rangée, juste à côté de Natsuhi, se trouvait Kyrie.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+
+
+langjp　霧江さんの向かいの席にも食事の支度がされていたが空席だった。@
+
+langjp　序列的に言うなら、そこは楼座叔母さんの旦那さんが座るべき席だ。@
+langen^Le couvert avait également été dressé en face d'elle. Sauf que cette place était vide.^@
+langen^Si l'on suivait la logique de cette hiérarchie, elle aurait dû revenir au mari de tante Rosa.^@
+
+br
+
+langjp　……来ていないはずなのに、その席にも準備がされていた。\
+
+langen^... Étrange, quand même. Il n'était pas censé venir, et pourtant, quelqu'un avait pris la peine de lui préparer une place.^\
+
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1g.jpg",":b;bmp\background\mainbuilding\mdin_1g.png",22
+
+
+langjp　普通、序列は配偶者にも準ずる格を認めるものだが、右代宮家は独自の序列を持っていた。@
+langen^Normalement, dans ce genre de système, un époux ou une épouse bénéficie d'un rang comparable à celui de son conjoint. Mais chez les Ushiromiya, il fallait bien évidemment faire les choses autrement.^@
+
+br
+
+langjp　……多分、男尊女卑の名残だろう。@
+langjp　女の腹は借り物だとする考えに基づくと、直系の子供がもっとも序列が高く、孫が次。@
+langen^... Tout ça semblait hérité d'une mentalité patriarcale d'un autre âge, selon laquelle le ventre d'une femme n'était qu'un simple réceptacle destiné à perpétuer la lignée.^@
+langen^Autrement dit, ce qui comptait, c'était le sang. D'abord les enfants directs du chef de famille. Ensuite les petits-enfants.^@
+
+br
+
+langjp　血の繋がらない配偶者たちは一番ビリって考えになるわけだ。\
+
+langen^Et les conjoints, qui n'avaient aucun lien de sang avec les Ushiromiya ? Tout au fond de la classe. Merci d'avoir participé !^\
+
+
+
+langjp　……気の毒な話だが、その序列によるならば祖母さまが生きていたとして、@その序列は俺よりも下だということになる。@
+langen^... C'était franchement cruel. Si Grand-mère était encore en vie, elle-même serait placée derrière moi.^@
+
+br
+
+langjp　若い日には父に従い、嫁いでからは夫に従い、老いてからは子に従え。@
+langen^Une femme devait obéir à son père dans sa jeunesse, à son mari une fois mariée, puis à ses fils lorsqu'elle vieillissait.^@
+
+br
+
+langjp「女、三界に家なし」なんて言われた昔の名残だ。\
+langen^Il existait même un vieux dicton selon lequel une femme ne pouvait jamais être maîtresse de son propre sort. ... Charmante époque, vraiment.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1e.jpg",":b;bmp\background\mainbuilding\mdin_1e.png",22
+
+
+
+langjp　そんなことに思い至らない昔は、@親兄弟は親兄弟同士、いとこはいとこ同士とそれぞれのグループごとに座れて話が弾んでいいなんて思っていたが、@この歳になって再び着席順を見直してみると、何とも複雑な気持ちにさせられる…。\
+
+langen^Quand j'étais gamin, je trouvais ce plan de table plutôt pratique. Les adultes d'un côté, les cousins regroupés de l'autre : chacun pouvait bavarder avec les siens sans se prendre la tête. ^@^Mais maintenant que j'étais un peu plus grand, cette disposition avait quelque chose ^@^de franchement dérangeant...^\
+
+langjp　本家の長男に嫁ぎ、家を切り盛りする実質上のナンバー２の夏妃伯母さんが俺の右側の席、@…つまり俺より２つも序列が下だというのだから。@
+langen^Prenez tante Natsuhi, par exemple. Elle avait épousé l'aîné des Ushiromiya et, dans les faits, c'était elle qui faisait tourner toute cette immense maison. Elle en assumait les responsabilités, en gérait le quotidien, veillait à ce que tout fonctionne... ^@^Et pour la remercier, on la reléguait deux rangs derrière un gamin de dix-huit ans qui n'avait pas mis les pieds ici depuis six ans. ... Ce gamin, évidemment, c'était moi.^@
+
+br
+
+langjp　…伯母さんの胸中を察することは難しかった。@
+langen^... Je me demandais bien comment elle pouvait supporter ça.^@
+
+br
+
+langjp　なので俺は、伯母さんに謝るような仕草をしてから着席するのだった。\
+langen^Alors, juste avant de m'asseoir, je lui adressai un petit geste d'excuse, presque sans y penser.^\
+
+
+
+ld r,$NAT_DefA1,24
+
+
+
+advchar "03"
+langjp:dwave_jp 0, nat_1e20:「お久しぶりですね、戦人くん。@:dwave_jp 0, nat_1e21:ずいぶん背が伸びましたね。」@
+
+;＜夏妃
+
+langen:dwave_eng 0, nat_1e20:^Cela faisait bien longtemps, Battler. ^@:dwave_eng 0, nat_1e21:^Comme tu as grandi...^@
+
+ld l,$BUT_waraiA1,23
+
+
+
+advchar "10"
+langjp:dwave_jp 0, but_1e334:「え、ぁ、はい！@:dwave_jp 0, but_1e335:　食ったり食べたり食事したりしてたらいつの間にかこんな身長に。」\
+
+langen:dwave_eng 0, but_1e334:^Hein ? Ah, oui ! Ahaha ! ^@:dwave_eng 0, but_1e335:^Vous connaissez mon secret ? J'ai mangé, j'ai dormi, j'ai remangé... Et paf ! Me voilà avec une tête de plus !^\
+
+ld r,$NAT_WaraiA1,80
+
+
+
+advchar "03"
+langjp:dwave_jp 0, nat_1e22:「さすが男の子ね。@:dwave_jp 0, nat_1e23:身長はいくつくらいあるの？」@
+langen:dwave_eng 0, nat_1e22:^C'est bien normal pour un garçon de ton âge. ^@:dwave_eng 0, nat_1e23:^Combien mesures-tu, à présent ?^@
+
+ld l,$BUT_aseruA1,80
+
+
+
+advchar "10"
+langjp:dwave_jp 0, but_1e336:「１８０かな？@:dwave_jp 0, but_1e337:　つーか伯母さん、そこは、食べてばっかりじゃねぇかーって突っ込んでくださいよ〜ん！」
+langen:dwave_eng 0, but_1e336:^Oh, dans les un mètre quatre-vingts, je crois ! ^@:dwave_eng 0, but_1e337:^... Mais enfin, tante Natsuhi ! C'est pas ça qu'il fallait répondre ! Vous deviez me sortir un truc du genre : « T'as passé ces six dernières années à te goinfrer, ou quoi ?! »^\
+
+ld r,$NAT_defA1,80
+
+advchar "03"
+langjp:dwave_jp 0, nat_1e24:「え？@/
+
+langen:dwave_eng 0, nat_1e24:^... Hein ?^@/
+
+ld r,$NAT_tukareA2,80
+
+langjp:dwave_jp 0, nat_1e25:　……あぁ、くす、ごめんなさいね。」@
+langen:dwave_eng 0, nat_1e25:^ ... Oh... Héhé. Excuse-moi.^@
+
+br
+
+advchar "-1"
+langjp　伯母さんは遅れて笑いに付き合ってくれたが、どこが笑うべきツボか理解できてないようだった。
+langen^Elle esquissa un petit rire, avec un temps de retard. ... Ouais. Raté. Elle n'avait absolument pas compris ma blague.^\
+
+;ここで夏妃の情報閲覧が可能に〜〜〜〜〜〜
+
+mov ?r[nat][condition],1
+
+seplay 9,1060
+
+langjp　この人は夏妃（なつひ）伯母さん。@
+
+langen^Voici donc ma tante Natsuhi, 夏妃. 夏 signifie « été », et 妃 désigne une princesse ou une épouse royale. ^@^Tiens, pour une fois, un prénom qui ressemble à un vrai prénom ! Comme quoi, tout arrive chez les Ushiromiya.^@
+
+br
+
+langjp　親兄弟の長男の妻、つまり、うちの親父の兄の奥さんに当たる人だ。@
+
+langjp　朱志香の母親と言った方がわかりやすいか。@
+langen^Natsuhi est l'épouse de Krauss, l'aîné des quatre enfants, et donc la femme du grand frère de mon père.^@
+langen^... Enfin, dit comme ça, c'est compliqué pour rien. C'est la mère de Jessica, voilà.^@
+
+br
+
+langjp　…こう言っちゃ悪いが、嫌いってわけでもないが、特別好きでもない伯母さんだ。
+langen^... Je vais peut-être paraître un peu méchant, mais c'est pas que je l'aime pas. Disons plutôt que j'ai jamais vraiment su comment me comporter avec elle.^\
+
+langjp　あまり子供の輪に入ってこないし、いつも気難しそうな顔をして、親たちと難しい話をしているという印象しかない。@
+langen^Quand on était petits, elle venait rarement se mêler à nos jeux. Elle passait presque tout son temps avec les adultes, toujours l'air sévère, à parler de choses beaucoup trop sérieuses pour nous.^@
+
+br
+
+langjp　…実際、あまり言葉を交わしたことがなく、今もどう掴みを取ろうかだいぶ迷ったのだ。@
+langjp　…甲斐なく外してしまったがなー。
+langen^Alors forcément, je savais jamais trop quoi lui raconter. Là, j'avais tenté une petite plaisanterie pour détendre l'atmosphère...^@
+langen^... Et je venais de me prendre un magnifique bide.^\
+
+;introduction_flg NAT,1,scenario1_1,scenario1_1
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1g.jpg",":b;bmp\background\mainbuilding\mdin_1g.png",22
+
+langjp　テーブルの上には整然と食器が並べられていたが、まだ食事の配膳は始まっていなかった。
+langen^La table était dressée avec un soin impeccable. Assiettes, verres, couverts... tout était à sa place. Tout, sauf la nourriture.^\
+
+langjp　基本的に、上席者が着席するまでは食事は始まらない。@
+langen^Dans cette maison, pas question de commencer à manger avant que la personne la plus haut placée dans la hiérarchie ait pris son siège.^@
+
+br
+
+langjp　つまり、最上位の祖父さまが来ない限り、いつまでもお昼は始まらない。@
+langjp　前菜すら来ないわけだ。
+langen^Autrement dit, tant que Grand-père ne serait pas installé, personne ne toucherait à son déjeuner.^@
+langen^Pas même à une malheureuse entrée.^\
+
+langjp　つまりこの食堂の沈黙は、親たちが空fam腹を堪えながら祖父さまが来るのはまだかと待つものだったのである。
+langen^Et voilà comment toute une salle à manger remplie d'adultes affamés se retrouvait condamnée à attendre que le grand patron daigne enfin montrer le bout de son nez.^\
+
+langjp　ただ、俺の記憶の中の祖父さまは、こうして会食などがある時には必ず時間通りに現れたものだ。@
+langen^Pourtant, dans mes souvenirs, Grand-père était toujours ponctuel lors des repas de famille.^@
+
+br
+
+langjp　…全員が揃ってなお待たせるほど遅刻するなどということはありえない人だったはず。
+langen^Il avait beau être tyrannique, ce n'était pas son genre de faire poireauter tout le monde alors que chacun était déjà à sa place.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1d.jpg",":b;bmp\background\mainbuilding\mdin_1d.png",0
+
+ld r,$BUT_komaruA3,22
+
+advchar "10"
+langjp:dwave_jp 0, but_1e338:「遅ぇな、祖父さま。@:dwave_jp 0, but_1e339:……俺の記憶じゃ、時間に厳格な人だったと思うんだけどな。」
+langen:dwave_eng 0, but_1e338:^Tiens, Grand-père est toujours pas là ? ^@:dwave_eng 0, but_1e339:^Dans mes souvenirs, il était pourtant du genre à te passer un savon pour une minute de retard.^\
+
+ld l,$JES_TohohoA1,23
+
+advchar "04"
+langjp:dwave_jp 0, jes_1e186:「あー、６年前はそうだったかもなぁ。@:dwave_jp 0, jes_1e187:…最近はそうでもねぇよ。@:dwave_jp 0, jes_1e188:というか、もう自分の世界オンリーって感じで会食にも顔を出さねぇぜ。@:dwave_jp 0, jes_1e189:さすがに今日くらいは足並みを揃えてくれるって思ってたんだけどな。@/
+
+langen:dwave_eng 0, jes_1e186:^Ouais... y a six ans, peut-être. ^@:dwave_eng 0, jes_1e187:^Mais maintenant, c'est une autre histoire. ^@:dwave_eng 0, jes_1e188:^Il passe ses journées enfermé dans son bureau, à faire je sais pas quoi. Il descend même plus bouffer avec nous. ^@:dwave_eng 0, jes_1e189:^Franchement, je pensais qu'il ferait au moins l'effort aujourd'hui... Mais non, même pas.^@/
+
+ld l,$JES_AkuwaraiA1,80
+
+langjp:dwave_jp 0, jes_1e190:…まー、私ゃ来ない方が気楽で嬉しいけどよー。」
+langen:dwave_eng 0, jes_1e190:^ ... Enfin bon. Entre nous, moins je le vois, mieux je me porte.^\
+
+cl r,23
+
+ld r,$NAT_hisuA1,24
+
+advchar "03"
+langjp:dwave_jp 0, nat_1e26:「…朱志香！」@
+
+;＜夏妃
+langen:dwave_eng 0, nat_1e26:^... Jessica !^@
+
+br
+
+advchar "-1"
+langjp　母親の夏妃伯母さんに叱られ、朱志香は舌を出しながらそっぽを向く。
+langen^Sa mère la rappela aussitôt à l'ordre d'un ton sévère. Jessica se contenta de tirer la langue avant de détourner la tête.^\
+
+langjp　……仕方ねぇぜ。@
+
+langjp　ホストさまがいらっしゃるのを待つとするか。@
+langen^... Bon, ben, rien à faire.^@
+langen^Il ne nous restait plus qu'à attendre que le maître des lieux daigne nous honorer de sa présence.^@
+
+br
+
+langjp　時計を見ると、もうじき１２時の２０分を指そうとしていた…。
+langen^Je jetai un œil à l'horloge. ... Il allait bientôt être 12h20.^\
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",45
+
+
+
+;ここはフェードアウトにしたい〜〜〜〜〜〜
+
+
+
+fede 0,3000
+
+
+
+;wait 1000
+
+;■金蔵の書斎
+
+
+
+bgmplay 13
+
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1d.jpg",":b;bmp\background\mainbuilding\mlib_1d.png",0
+
+ld c,$KIN_fumuA1,22
+
+
+
+;ここで金蔵の情報閲覧が可能に〜〜〜〜〜〜〜〜
+
+mov ?r[kin][condition],1
+
+seplay 9,1060
+
+
+
+langjp　右代宮本家の老いた当主、右代宮金蔵（きんぞう）。@
+langen^Kinzo Ushiromiya (金蔵). Le vieux patriarche de la famille Ushiromiya. Un prénom presque prédestiné : 金蔵 peut désigner un dépôt où l'on conserve l'or et les trésors.^@
+
+br
+
+langjp　その姿は、彼の書斎にあった。
+langen^C'est dans son bureau que se trouvait le maître des lieux.^\
+
+se1 19
+
+langjp　時計は昼を指していたが彼は席を立とうとはしない。@
+langen^L'horloge indiquait déjà midi. Pourtant, il ne semblait nullement disposé à quitter son fauteuil.^@
+
+br
+
+langjp　老眼鏡を掛けながら、凝った意匠の装丁がされた古めかしい本を次々に積み上げ、それらを読みふけることに没頭している。
+langen^Ses lunettes de lecture sur le nez, il entassait autour de lui d'antiques livres aux reliures somptueuses, qu'il compulsait avec une ardeur obsessionnelle.^\
+
+se1 19
+
+langjp　それは楽しくて仕方がない、というよりは、一分一秒が惜しいような焦燥感、あるいは危機感のようなものすら感じられた。
+langen^Mais ce n'était pas le plaisir tranquille d'un érudit plongé dans ses recherches. Il émanait de lui une impatience presque maladive, une fébrilité qui trahissait une terrible angoisse... comme si chaque minute, chaque seconde qui s'écoulait le rapprochait d'une échéance fatale.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1c.jpg",":b;bmp\background\mainbuilding\mlib_1c.png",22
+
+langjp　締め切られた室内は、濃厚な埃が舞い、胡散臭い異臭を放つ薬品の臭いを混ぜこぜにした空気で澱んでいる。@
+langen^L'air du bureau, hermétiquement clos, était étouffant. La poussière y flottait en épaisses particules, mêlée aux émanations suspectes de divers produits chimiques.^@
+
+br
+
+langjp　しかもそれはどことなく甘く、重く。@
+langen^Une odeur étrangement douce... et écœurante de lourdeur.^@
+
+br
+
+langjp　まともな鼻を持つ人間なら、入って最初にやることは間違いなく窓を開けて換気することだろう。
+langen^N'importe quel être humain pourvu d'un nez en état de marche aurait commencé par ouvrir toutes les fenêtres pour aérer cette pièce.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1b.jpg",":b;bmp\background\mainbuilding\mlib_1b.png",24
+
+se1 19
+
+langjp　その書斎の扉を、さっきから叩き続ける音が繰り返されている。@
+
+langjp　その音には時折、「お父さん」という声が混じっていた。
+langen^Depuis un bon moment déjà, des coups répétés résonnaient contre la porte du bureau.^@
+langen^De temps à autre, une voix s'élevait entre deux séries de coups. ... Père...^\
+
+langjp　金蔵は大きく溜め息をつくと、手にしている古書を乱暴に閉じて卓上に叩き付ける。@
+
+langjp　それから大声で、扉を叩き続けている蔵臼に怒鳴った。
+langen^Kinzo poussa un profond soupir. Il referma violemment le vieux livre qu'il tenait et l'abattit sur son bureau.^@
+langen^Puis, à l'adresse de Krauss, qui persistait à frapper, il rugit :^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1d.jpg",":b;bmp\background\mainbuilding\mlib_1d.png",0
+
+ld c,$KIN_ikariA1,22
+
+advchar "01"
+langjp:dwave_jp 0, kin_1e74:^^!s0「やかましいッ！！/
+sl
+
+langen:dwave_eng 0, kin_1e74:^^!s0^SILENCE !!^@/
+sl
+
+quakey 4,300
+
+mov %disable_adv_clear, 1
+langjp!sd@/
+langen!sd@/
+mov %disable_adv_clear, 0
+advchar "-1"
+
+advchar "01"
+langjp:dwave_jp 0, kin_1e75:　その音を止めぬか、愚か者ッ！！！/
+sl
+langen:dwave_eng 0, kin_1e75:^ ASSEZ DE CE TAPAGE, CRÉTIN !!! ^@/
+
+se1 12
+
+quakex 3,200
+
+langjp:noclear_cw:dwave_jp 0, kin_1e76:　叩けば扉は開かれると誰が教えた！@:dwave_jp 0, kin_1e77:　その馬鹿者は磔にしたぞッ！！@:dwave_jp 0, kin_1e78:　お前もそうされたいのかッ！！」
+langen:noclear_cw:dwave_eng 0, kin_1e76:^QUI T'A DONC APPRIS QUE SI L'ON FRAPPE, ON NOUS OUVRIRA ?! ^@:dwave_eng 0, kin_1e77:^CELUI QUI A PRONONCÉ CES PAROLES, ILS L'ONT CRUCIFIÉ !! ^@:dwave_eng 0, kin_1e78:^VEUX-TU QU'ON TE RÉSERVE LE MÊME SORT ?!!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+advchar "02"
+langjp:dwave_jp 0, kla_1e1:「……お父さん。@:dwave_jp 0, kla_1e2:年に一度の親族会議の日ではありませんか。@:dwave_jp 0, kla_1e3:皆、下に集まっています。@:dwave_jp 0, kla_1e4:どうかお出で下さい。」\
+
+langen:dwave_eng 0, kla_1e1:^... Père. ^@:dwave_eng 0, kla_1e2:^Nous sommes aujourd'hui réunis pour notre conférence familiale annuelle. ^@:dwave_eng 0, kla_1e3:^Tous nos proches vous attendent en bas. ^@:dwave_eng 0, kla_1e4:^... Je vous prie de bien vouloir descendre nous rejoindre.^\
+
+advchar "-1"
+langjp　蔵臼は扉越しに父に呼びかける。@
+
+langjp　…金蔵はいつも書斎に篭りきりで、家人すらも部屋に入れることを嫌った。@
+langen^Krauss s'adressait à son père à travers la porte.^@
+langen^... Kinzo passait presque tout son temps enfermé dans son bureau. Il supportait si mal qu'on trouble sa solitude qu'il refusait même d'en laisser franchir le seuil aux membres de sa propre famille.^@
+
+br
+
+langjp　そのため、こうして廊下から言葉をかけるしかないのである…。\
+
+langen^Ils n'avaient donc d'autre choix que de lui parler depuis le couloir...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1d.jpg",":b;bmp\background\mainbuilding\mlib_1d.png",0
+
+ld c,$KIN_ikariA1,22
+
+advchar "01"
+langjp:dwave_jp 0, kin_1e79:「私に構うでないッ！！@:dwave_jp 0, kin_1e80:　皆とは何か、私をここから引き摺り出そうとする者どもなのかッ！！@:dwave_jp 0, kin_1e81:　ならば殺してしまえ！@:dwave_jp 0, kin_1e82:　バラバラにし薪にして魔女の炉にくべてしまえッ！！@:dwave_jp 0, kin_1e83:　その炉には鍋を掛けてニガヨモギを煮るがいい！@:dwave_jp 0, kin_1e84:　黙示録の煮汁はそれでも私をここから連れ出そうとする馬鹿者どもに飲ませてやれッ！@:dwave_jp 0, kin_1e85:　残りは酒に漬けるのだ！@:dwave_jp 0, kin_1e86:　あぁ、源次はどこだ！@:dwave_jp 0, kin_1e87:　源次を呼べい！！@:dwave_jp 0, kin_1e88:　苦艾の魔酒を用意させろ！@:dwave_jp 0, kin_1e89:　緑の妖精の囁きが届かぬ！！@:dwave_jp 0, kin_1e90:　あぁ、源次はどこだッ、源次を呼べぇえぇいッ！！！」\
+
+langen:dwave_eng 0, kin_1e79:^QU'ON ME LAISSE EN PAIX !! ^@:dwave_eng 0, kin_1e80:^Et d'abord, qui sont-ils, ces gens qui m'attendent ?! Une bande d'importuns venus m'arracher à mon sanctuaire ?! ^@:dwave_eng 0, kin_1e81:^ALORS TUEZ-LES !! ^@:dwave_eng 0, kin_1e82:^METTEZ-LES EN PIÈCES !! DÉMEMBREZ-LES ET JETEZ LEURS MEMBRES COMME DU BOIS DANS LE FOURNEAU DE LA SORCIÈRE !! ^@:dwave_eng 0, kin_1e83:^SUSPENDEZ-Y UN CHAUDRON ET FAITES-Y BOUILLIR DE L'ABSINTHE AMÈRE !! ^@:dwave_eng 0, kin_1e84:^QUE L'ON FASSE AVALER CE BREUVAGE APOCALYPTIQUE À TOUS LES IMBÉCILES QUI OSERAIENT ENCORE VENIR ME DÉRANGER !! ^@:dwave_eng 0, kin_1e85:^ET QUE L'ON FASSE MACÉRER LES RESTES DANS L'ALCOOL !! ^@:dwave_eng 0, kin_1e86:^AH ! OÙ EST GENJI ?! ^@:dwave_eng 0, kin_1e87:^QU'ON APPELLE GENJI !! ^@:dwave_eng 0, kin_1e88:^QU'IL ME PRÉPARE MON ABSINTHE DIABOLIQUE !! ^@:dwave_eng 0, kin_1e89:^JE N'ENTENDS PLUS LES MURMURES DE LA FÉE VERTE !! ^@:dwave_eng 0, kin_1e90:^AH ! MAIS OÙ EST-IL DONC ?! QU'ON M'AMÈNE GENJIIIIII !!!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m2f_p1c.jpg",":b;bmp\background\mainbuilding\m2f_p1c.png",22
+
+advchar "-1"
+langjp　…扉の前では、蔵臼と南條、そして源次が、出てこようとしない主を待ち続けている。\
+
+langen^... De l'autre côté de la porte, Krauss, Nanjo et Genji attendaient toujours que le maître des lieux daigne se montrer.^\
+
+ld r,$KLA_DefA1,24
+
+advchar "02"
+langjp:dwave_jp 0, kla_1e5:「ふ…。@:dwave_jp 0, kla_1e6:……すっかり嫌われてしまったようだ。@:dwave_jp 0, kla_1e7:もう私の声では何も届かんよ。」@
+
+;＜蔵臼
+langen:dwave_eng 0, kla_1e5:^Hm... ^@:dwave_eng 0, kla_1e6:^Il semblerait que mon père m'ait définitivement pris en grippe. ^@:dwave_eng 0, kla_1e7:^... Quoi que je lui dise, mes paroles ne l'atteignent plus.^@
+
+advchar "-1"
+langjp　蔵臼は、やれやれという風に肩をすくめて苦笑いをしてみせる。\
+
+langen^Krauss haussa les épaules avec un sourire résigné.^\
+
+langjp　…自分の呼びかけに父が応じるとは鼻から思ってはいない。@
+langjp　しかし長男の務めとして、形式的に声を掛けただけだ。\
+
+langen^... À vrai dire, il n'avait jamais sérieusement espéré convaincre son père de descendre.^@
+langen^Mais en sa qualité de fils aîné, il se devait au moins de lui adresser cette invitation. Une formalité parmi tant d'autres.^\
+
+
+ld l,$NAN_komaruA3,23
+
+
+
+advchar "19"
+langjp:dwave_jp 0, nan_1e30:「……金蔵さん。@:dwave_jp 0, nan_1e31:あんたの顔を見に、息子や娘や孫たちが来てるんじゃないか…。@:dwave_jp 0, nan_1e32:ちょっと顔を見せてやったらどうだね…。」\
+
+;＜南條
+
+langen:dwave_eng 0, nan_1e30:^... Kinzo... ^@:dwave_eng 0, nan_1e31:^Ce sont vos enfants et vos petits-enfants qui sont venus vous rendre visite... ^@:dwave_eng 0, nan_1e32:^Vous pourriez tout de même leur accorder quelques instants, ne serait-ce que pour leur montrer votre visage...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+advchar "01"
+langjp:dwave_jp 0, kin_1e91:^^!s0「うるさい黙れッ！！！/
+sl
+
+langen:dwave_eng 0, kin_1e91:^^!s0^ASSEZ !! LA FERME !!! ^@/
+
+se1 12
+
+quakey 3,200
+
+langjp:noclear_cw:dwave_jp 0, kin_1e92:　私に意見するというか南條ッ！！/
+
+langen:noclear_cw:dwave_eng 0, kin_1e92:^TU OSES ME DONNER DES LEÇONS, NANJO ?!! ^@/
+
+se1 7
+
+quakey 3,200
+
+langjp:noclear_cw:dwave_jp 0, kin_1e93:　貴様など呼んではおらぬ、私は源次を呼べと言ったのだ！！@:dwave_jp 0, kin_1e94:　さぁ急げ、すぐに呼べ！/
+
+langen:noclear_cw:dwave_eng 0, kin_1e93:^CE N'EST PAS TOI QUE J'AI FAIT DEMANDER !! C'EST GENJI !! GENJI, ENTENDS-TU ?! ^@:dwave_eng 0, kin_1e94:^ALORS QU'ON ME L'AMÈNE SUR-LE-CHAMP !!^@/
+sl
+
+se1 12
+
+quakey 3,200
+
+langjp^^!sd@:dwave_jp 0, kin_1e95:　時間は常に有限だ、使徒たちはすでにラッパを構えているぞ、なぜにそれがわからぬか愚かな羊どもめッ！！」
+langen^^!sd@:dwave_eng 0, kin_1e95:^ LE TEMPS NOUS EST COMPTÉ !! LES APÔTRES ONT DÉJÀ LEURS TROMPETTES AUX LÈVRES !! POURQUOI ÊTES-VOUS INCAPABLES DE COMPRENDRE CELA, BANDE DE BREBIS ÉCERVELÉES ?!!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1a.jpg",":b;bmp\background\mainbuilding\mlib_1a.png",22
+
+advchar "-1"
+langjp　金蔵が重い古書を何度も何度も卓上に叩きつける。@
+langjp　その騒々しい音が、最上級の不快を示していることは明白だった。\
+
+langen^Kinzo se mit à abattre son lourd grimoire sur son bureau, encore et encore.^@
+langen^Chaque coup résonnait comme une nouvelle explosion de fureur.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1b.jpg",":b;bmp\background\mainbuilding\mlib_1b.png",0
+
+ld c,$KIN_MajimeA1,24
+
+langjp　金蔵は老眼鏡を置くと乱暴に席を立つ。@
+
+langen^Il ôta brusquement ses lunettes et bondit hors de son fauteuil.^@
+
+langjp　そして、満場のオペラ座で歌うように、訴えるように両腕を大きく広げて怒鳴った。\
+
+langen^Puis, les bras grands ouverts, tel un ténor s'apprêtant à déclamer son ultime air devant un opéra bondé, il lança au monde entier une supplique désespérée.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",0
+
+ld c,$KIN_IkariA1,80
+
+advchar "01"
+langjp:dwave_jp 0, kin_1e96:「なぜだッ？！@:dwave_jp 0, kin_1e97:　なぜにいつも私には邪魔が入るのかッ？！@:dwave_jp 0, kin_1e98:　全てを捨てよう、全てを捧げよう、その見返りに私はひとつしか求めないというのにッ！！\
+
+langen:dwave_eng 0, kin_1e96:^POURQUOI ?! ^@:dwave_eng 0, kin_1e97:^POURQUOI FAUT-IL TOUJOURS QUE QUELQU'UN VIENNE ENTRAVER MES DESSEINS ?!! ^@:dwave_eng 0, kin_1e98:^JE SUIS PRÊT À TOUT ABANDONNER !! À TOUT SACRIFIER !! ET EN ÉCHANGE, JE NE DEMANDE QU'UNE SEULE CHOSE !! UNE SEULE !!!^\
+
+ld c,$KIN_nakuA2,80
+
+langjp:dwave_jp 0, kin_1e99:　おぉベアトリーチェ、お前の微笑みをもう一度見られるならば、私は世界中から微笑を奪い取り全てをお前に捧げようッ！！@:dwave_jp 0, kin_1e100:　おおぉ、蝗の軍団長たちよ、世界中から微笑を刈り取り収穫せッ、げほげほッ、ゲーホゲホゲホッ！！！@:dwave_jp 0, kin_1e101:　あぁ全てが汚らわしい、全てが煩わしい！！\
+
+langen:dwave_eng 0, kin_1e99:^Ô BÉATRICE !! SI JE POUVAIS CONTEMPLER TON SOURIRE ENCORE UNE FOIS, UNE SEULE, J'ARRACHERAIS TOUS LES SOURIRES DE CE MONDE POUR TE LES OFFRIR !! ^@:dwave_eng 0, kin_1e100:^Ô VOUS, COMMANDANTS DES LÉGIONS DE SAUTERELLES !! PARTEZ ! MOISSONNEZ LES SOURIRES DE LA TERRE ENTIÈRE ET RAPPORTEZ-MOI VOTRE RÉCOLTE... KHEU ! KHEU, KHEU, KHEU-KHEU !!! ^@:dwave_eng 0, kin_1e101:^AAAH !! TOUT N'EST QU'IMPURETÉ !! TOUT M'EST ODIEUX !! TOUT M'EST INSUPPORTABLE !!!^\
+
+ld c,$KIN_nakuA1,80
+
+;確認（蝗）
+langjp:dwave_jp 0, kin_1e102:　なぜこの貴重な一日に私は邪魔を受けねばならぬかッ！！@:dwave_jp 0, kin_1e103:　ゲーホゲホゲホゲホ！！@:dwave_jp 0, kin_1e104:ゴホッゴホゴホッ！！！@:dwave_jp 0, kin_1e105:　源次を呼べぇえぇぃ！！！@:dwave_jp 0, kin_1e106:　ゲーホゲホゲホ！！」\
+
+langen:dwave_eng 0, kin_1e102:^POURQUOI FAUT-IL QUE L'ON VIENNE ME TOURMENTER EN UN JOUR AUSSI PRÉCIEUX ?!! ^@:dwave_eng 0, kin_1e103:^KHEU ! KHEU-KHEU-KHEU !! ^@:dwave_eng 0, kin_1e104:^KOF ! KOF ! KOF-KOF !!! ^@:dwave_eng 0, kin_1e105:^QU'ON M'AMÈNE GENJIIIIII !!! ^@:dwave_eng 0, kin_1e106:^KHEU ! KHEU-KHEU !!!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m2f_p1c.jpg",":b;bmp\background\mainbuilding\m2f_p1c.png",0
+
+ld l,$KLA_akuwaraiA2,2
+
+advchar "02"
+langjp:dwave_jp 0, kla_1e8:「……何を怒鳴ってるのかもさっぱりだな。@:dwave_jp 0, kla_1e9:もう頭がどうにかなっているのだろう。」
+langen:dwave_eng 0, kla_1e8:^... Je serais bien incapable de dire ce qu'il raconte désormais. ^@:dwave_eng 0, kla_1e9:^... Il a décidément perdu la raison.^\
+
+ld r,$NAN_fumuA1,24
+
+advchar "19"
+langjp:dwave_jp 0, nan_1e33:「蔵臼さん…。@:dwave_jp 0, nan_1e34:実のお父さんに、そりゃああんまりじゃないかね…。」@
+
+langen:dwave_eng 0, nan_1e33:^Krauss... ^@:dwave_eng 0, nan_1e34:^Ne trouvez-vous pas ces paroles un peu cruelles envers votre propre père... ?^@
+
+ld l,$KLA_nayamuA1,80
+
+advchar "02"
+langjp:dwave_jp 0, kla_1e10:「親父はすでに死んでいる。@:dwave_jp 0, kla_1e11:……ここにいるのは、親父だったものの幻さ。@:dwave_jp 0, kla_1e12:いずれにせよ、本人にここを出る意思がない以上、どうにもならんね。」\
+
+langen:dwave_eng 0, kla_1e10:^Mon père est déjà mort. ^@:dwave_eng 0, kla_1e11:^... Ce qui se trouve derrière cette porte n'est plus que le fantôme de l'homme qu'il était autrefois. ^@:dwave_eng 0, kla_1e12:^... Quoi qu'il en soit, tant qu'il refusera lui-même de quitter son bureau, nous n'y pourrons absolument rien.^\
+
+ld r,$NAN_KomaruA3,80
+
+advchar "19"
+langjp:dwave_jp 0, nan_1e35:「…………………金蔵さん。」@
+
+advchar "-1"
+langjp　書斎からはまだ咽るセキの声が繰り返されている…。\
+
+advchar "19"
+langen:dwave_eng 0, nan_1e35:^... Kinzo...^@
+advchar "-1"
+langen^Derrière la porte, les quintes de toux du vieil homme continuaient de retentir...^\
+
+ld l,$KLA_DefA1,80
+
+advchar "02"
+langjp:dwave_jp 0, kla_1e13:「私は下に戻る。@:dwave_jp 0, kla_1e14:……郷田の自慢のランチをこれ以上、無駄に冷ましてしまうことはない。@:dwave_jp 0, kla_1e15:親類たちにとって、当家での数少ない楽しみだろうからな。@:dwave_jp 0, kla_1e16:…ふ。」\
+
+langen:dwave_eng 0, kla_1e13:^Je redescends. ^@:dwave_eng 0, kla_1e14:^... Inutile de laisser refroidir davantage le déjeuner dont Gohda est si fier. ^@:dwave_eng 0, kla_1e15:^C'est probablement l'un des rares plaisirs que nos proches trouvent encore à venir dans cette maison. ^@:dwave_eng 0, kla_1e16:^... Hm.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m2f_p1a.jpg",":b;bmp\background\mainbuilding\m2f_p1a.png",3
+
+advchar "-1"
+langjp　蔵臼は踵を返す。@
+langen^Krauss tourna les talons.^@
+
+br
+
+langjp　腕時計を見て、わかりきっていたことに無駄な時間を費やしたという悪態を態度で示して見せた。
+langen^Il consulta sa montre d'un geste agacé, manifestement contrarié d'avoir gaspillé autant de temps pour aboutir à l'échec qu'il avait prévu dès le départ.^\
+
+ld r,$KLA_akuwaraiA2,24
+
+advchar "02"
+langjp:dwave_jp 0, kla_1e17:「源次さん。@:dwave_jp 0, kla_1e18:……親父殿がお呼びだ。@:dwave_jp 0, kla_1e19:相手を頼む。」@
+langen:dwave_eng 0, kla_1e17:^Genji. ^@:dwave_eng 0, kla_1e18:^... Mon père vous demande. ^@:dwave_eng 0, kla_1e19:^Je vous laisse vous occuper de lui.^@
+
+ld l,$GEN_majimeA2,23
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e22:「………畏まりました。」\
+
+langen:dwave_eng 0, gen_1e22:^... Entendu, monsieur.^\
+
+ld r,$KLA_MajimeA1,80
+
+advchar "02"
+langjp:dwave_jp 0, kla_1e20:「南條先生。@:dwave_jp 0, kla_1e21:食事に行きましょう。@:dwave_jp 0, kla_1e22:……いつまでもここにいると、この甘い臭いで味覚までおかしくなってしまう。」@
+langen:dwave_eng 0, kla_1e20:^Docteur Nanjo. ^@:dwave_eng 0, kla_1e21:^Allons déjeuner. ^@:dwave_eng 0, kla_1e22:^... Si nous restons une minute de plus dans cette atmosphère, cette odeur douceâtre finira par nous couper jusqu'au sens du goût.^@
+
+cl r,23
+
+advchar "-1"
+langjp　蔵臼は南條を待たず、階段を下りていった。\
+
+langen^Sans même attendre Nanjo, Krauss descendit l'escalier.^\
+
+langjp　源次は、南條にも食事へ行くよう促す。@
+langen^Genji invita à son tour le médecin à rejoindre la salle à manger.^@
+
+br
+
+langjp　…南條は階下へ消える蔵臼の背中と書斎の扉を見比べると、深い溜め息をひとつ漏らすのだった。\
+
+langen^... Nanjo contempla un instant la silhouette de Krauss qui disparaissait dans l'escalier, puis la porte toujours close du bureau. Il poussa un profond soupir.^\
+
+ld r,$NAN_KomaruA3,24
+
+advchar "19"
+langjp:dwave_jp 0, nan_1e36:「……すまんが源次さん。@:dwave_jp 0, nan_1e37:頼みます。」@
+
+langen:dwave_eng 0, nan_1e36:^... Je suis désolé de vous laisser cela sur les bras, Genji... ^@:dwave_eng 0, nan_1e37:^Mais je compte sur vous.^@
+
+ld l,$GEN_defA1,80
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e23:「はい、……お任せ下さい。」@
+
+langen:dwave_eng 0, gen_1e23:^... Soyez sans inquiétude. Laissez-moi m'en charger.^@
+
+ld r,$NAN_fumuA1,80
+
+advchar "19"
+langjp:dwave_jp 0, nan_1e38:「お酒はなるべく与えないように。@:dwave_jp 0, nan_1e39:……あれは常習性が強すぎる。」
+langen:dwave_eng 0, nan_1e38:^Essayez tout de même de limiter sa consommation d'alcool autant que possible. ^@:dwave_eng 0, nan_1e39:^... Il en est devenu beaucoup trop dépendant.^\
+
+quakey 3,200
+
+advchar "01"
+langjp:dwave_jp 0, kin_1e107:「源次はまだかッ！！！@:dwave_jp 0, kin_1e108:　何者が源次を阻んでいるというのか！！@:dwave_jp 0, kin_1e109:　あぁ、源次はどこだッ、源次を呼べいッ！！！」
+langen:dwave_eng 0, kin_1e107:^GENJI N'EST TOUJOURS PAS LÀ ?!! ^@:dwave_eng 0, kin_1e108:^QUI OSE LE RETENIR ?!! ^@:dwave_eng 0, kin_1e109:^OÙ EST-IL ?! QU'ON M'AMÈNE GENJI !!! IMMÉDIATEMENT !!!^\
+
+ld l,$GEN_majimeA1,80
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e24:「さぁ、/
+sl
+
+langjp:voicedelay 690:dwave_jp 0, gen_1e25:^^……ここはお任せ下さい。」@
+
+langen:dwave_eng 0, gen_1e24:^Docteur Nanjo...^@/
+sl
+langen:voicedelay 690:dwave_eng 0, gen_1e25:^ Je vous en prie. Laissez-moi faire.^@
+
+ld r,$NAN_komaruA3,80
+
+advchar "19"
+langjp:dwave_jp 0, nan_1e40:「…うむ。@:dwave_jp 0, nan_1e41:………すみませんな。」@
+
+langen:dwave_eng 0, nan_1e40:^... Très bien. ^@:dwave_eng 0, nan_1e41:^... Merci, Genji.^@
+
+cl r,3
+
+advchar "-1"
+langjp　南條は小さく頭を下げると、階段を下りていった…。\
+
+langen^Nanjo inclina légèrement la tête, puis descendit à son tour l'escalier...^\
+
+langjp　源次はそれを見送ると、書斎の扉をノックする。\
+
+langen^Après l'avoir regardé s'éloigner, Genji frappa discrètement à la porte du bureau.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+se1 19
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1a.jpg",":b;bmp\background\mainbuilding\mlib_1a.png",22
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e26:「………お館様。@:dwave_jp 0, gen_1e27:源次でございます。」\
+
+langen:dwave_eng 0, gen_1e26:^... Maître. ^@:dwave_eng 0, gen_1e27:^C'est Genji.^\
+
+ld r,$KIN_nakuA2,24
+
+advchar "01"
+langjp:dwave_jp 0, kin_1e110:「源次かッ！！@:dwave_jp 0, kin_1e111:　何ゆえ私をこれほどに待たすのかッ！！@:dwave_jp 0, kin_1e112:　そこには誰もおるまいな？！」\
+
+langen:dwave_eng 0, kin_1e110:^GENJI ?!! ^@:dwave_eng 0, kin_1e111:^POURQUOI M'AS-TU FAIT ATTENDRE SI LONGTEMPS ?!! ^@:dwave_eng 0, kin_1e112:^TU ES BIEN SEUL, AU MOINS ?!^\
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e28:「はい。@:dwave_jp 0, gen_1e29:私だけでございます。」\
+
+langen:dwave_eng 0, gen_1e28:^Oui, Maître. ^@:dwave_eng 0, gen_1e29:^Il n'y a que moi.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1c.jpg",":b;bmp\background\mainbuilding\mlib_1c.png",23
+
+advchar "-1"
+langjp　書斎の金蔵は席に戻ると、卓上の古風なスイッチを押す。@
+
+langen^À l'intérieur du bureau, Kinzo regagna son fauteuil et pressa un vieil interrupteur installé sur son bureau.^@
+
+textoff
+
+se1 44
+
+wait 3000
+
+;扉が開く音ではなく、カギが外れる、ガチャンの音で〜〜〜
+
+langjp　…すると少しだけ遅れて、扉の施錠が開く重い音が聞こえた。\
+
+langen^... Après un court instant, un lourd déclic métallique retentit : le verrou venait de se déverrouiller.^\
+
+langjp　金蔵は自分の書斎を家人が荒らそうとしていると信じていた。@
+langen^Kinzo était persuadé que les membres de sa famille cherchaient à s'introduire dans son bureau pour y fouiller à leur guise.^@
+
+br
+
+langjp　あるいは、換気しようと誰かが窓を開けた際に彼にとっての重要な資料などが飛び散り、@それがひどく彼を不愉快にさせたのか。
+langen^Ou peut-être était-ce simplement qu'un jour, quelqu'un avait ouvert une fenêtre pour aérer, dispersant au passage des documents qu'il jugeait extrêmement précieux, ^@^et que cet incident l'avait mis dans une colère noire.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1e.jpg",":b;bmp\background\mainbuilding\mlib_1e.png",22
+
+langjp　…今では金蔵は、自分の部屋に厳重な施錠を施し、@自分の許可がなければ誰も入室できないようにして、自ら作った座敷牢に自らを閉じ込めているのだった。
+langen^... Quoi qu'il en soit, il avait fini par faire installer un système de verrouillage particulièrement robuste, empêchant quiconque de pénétrer dans son bureau sans sa permission. ^@^De sa propre volonté, il s'était enfermé dans la prison qu'il avait lui-même construite.^\
+
+langjp　もっとも信頼されている源次は比較的入室を許されているが、それも絶対ではない。@
+langjp　金蔵の機嫌が悪ければ入ることはできない。
+langen^Genji était sans doute celui à qui il accordait le plus volontiers le droit d'entrer. Mais même pour lui, ce privilège n'était jamais garanti.^@
+langen^Les mauvais jours, Kinzo lui refusait tout aussi bien l'accès.^\
+
+langjp　………それ以外の人間には、顔すら合わせようとせず、扉越しに会話をするのがせいぜい。@
+langen^... Quant aux autres, il ne prenait même plus la peine de leur montrer son visage. Au mieux pouvaient-ils espérer lui adresser quelques mots à travers la porte.^@
+
+br
+
+langjp　しかも多くの場合、それは会話として成り立たなかった。
+langen^Et encore... rares étaient les occasions où cet échange pouvait véritablement être qualifié de conversation.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+langjp　だが、それらは家人にとってさしたる問題にはならなかった。@
+langen^Mais cette situation n'était pas particulièrement gênante pour le reste de la famille.^@
+
+br
+
+langjp　気難しくなり、自らの怪しげな研究に没頭し引き篭もってくれる老いた当主の隠居に、わざわざ口を挟む理由もなかったからである。
+langen^Après tout, pourquoi se mêler des affaires d'un vieil homme devenu acariâtre, qui préférait s'enfermer dans son bureau pour se consacrer à ses inquiétantes recherches ?^\
+
+langjp　……書斎から出てこないのを幸いに、使用人たちに世話を任せきりにして、自分たちもまた、隔離しているつもりなのだったから。
+langen^... Et puisqu'il refusait d'en sortir, il était bien commode de confier l'intégralité de ses soins aux domestiques. En définitive, la famille profitait elle aussi de cet isolement. Chacun, à sa manière, contribuait à maintenir Kinzo à l'écart.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1b.jpg",":b;bmp\background\mainbuilding\mlib_1b.png",0
+
+ld l,$GEN_DefA1,0
+
+ld r,$KIN_DefA1,22
+
+ld r,$KIN_fumuA1,80
+
+advchar "01"
+langjp:dwave_jp 0, kin_1e113:「源次、いつものやつを頼む。@:dwave_jp 0, kin_1e114:私は忙しい。」@
+
+langen:dwave_eng 0, kin_1e113:^Genji. Prépare-moi ce que je prends d'habitude. ^@:dwave_eng 0, kin_1e114:^... J'ai à faire.^@
+
+ld l,$GEN_komaruA1,80
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e30:「……はい。」\
+
+langen:dwave_eng 0, gen_1e30:^... Bien, Maître.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1d.jpg",":b;bmp\background\mainbuilding\mlib_1d.png",24
+
+advchar "-1"
+langjp　源次は、書斎の一角に向かう。\
+
+langen^Genji se dirigea vers un coin du bureau.^\
+
+langjp　そこには怪しげなボトルが毒々しい色を自慢しあいながら陳列されていた。@
+langen^Une collection de bouteilles suspectes y était exposée, rivalisant les unes avec les autres de couleurs presque vénéneuses.^@
+
+br
+
+langjp　…それは実際には酒なのだが、この怪しげな室内にあっては不気味な毒物だと疑ってしまいそうになる。
+langen^... Il s'agissait pourtant bien de bouteilles d'alcool. Mais dans l'atmosphère malsaine de cette pièce, on les aurait aisément prises pour quelque assortiment de poisons.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1a.jpg",":b;bmp\background\mainbuilding\mlib_1a.png",22
+
+langjp　書斎の中は、金蔵が集めてきた奇怪なる蔵書が山を成していた。@
+langen^Partout dans le bureau s'élevaient des piles de livres plus étranges les uns que les autres, amassés au fil des années par Kinzo.^@
+
+br
+
+langjp　それらはいずれも禁じられた、あるいは呪われた、あるいは封印された奇怪なる古書や禁書たちである。\
+
+langen^Des ouvrages anciens et mystérieux. Interdits, maudits, scellés... ou du moins présentés comme tels.^\
+
+langjp　もっともそれを古書と呼べば金蔵は猛り狂いこう言うだろう。@
+langen^Mais gare à celui qui aurait eu le malheur de les qualifier de simples vieux livres. Kinzo lui aurait aussitôt hurlé au visage :^@
+
+br
+
+langjp　グリモワール（呪文書）と呼べ！@　と。
+langen^Des grimoires ! Ce sont des grimoires !!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1c.jpg",":b;bmp\background\mainbuilding\mlib_1c.png",24
+
+langjp　怪しげに溶けて奇妙な造形となった蝋燭や、黒魔術において何かの意味を持つのだろう、奇怪なオブジェクトの数々。@
+langen^Des chandelles consumées dont la cire avait pris des formes grotesques. D'innombrables objets mystérieux, sans doute chargés d'une signification particulière dans les rites de magie noire.^@
+
+br
+
+langjp　天球儀に記された星座は、今日の夜空をよく知る者が見たなら首を傾げるようなものばかりが記されている。
+langen^Sur une sphère céleste, les constellations représentées semblaient si inhabituelles que même un observateur familier du ciel nocturne aurait eu du mal à les reconnaître.^\
+
+langjp　無造作に開かれたまま置かれた古書に記されているイラストは、いずれも宗教的な神秘的なもの、@あるいは悪魔的なグロテスクなもの、そして様々な魔法陣の奇怪な図形。@
+langen^Des livres laissés ouverts au hasard dévoilaient des illustrations religieuses, des symboles mystiques, des représentations démoniaques et grotesques, ^@^ainsi que toutes sortes de cercles magiques aux tracés incompréhensibles.^@
+
+br
+
+langjp　そして何より、この部屋に充満する甘い毒の臭いは、この部屋に初めて訪れる者を、@視覚的にも嗅覚的にも、そして感覚的にも深く冒し、現実感を喪失させるに違いない…。
+langen^Et surtout, cette odeur... ce parfum douceâtre, presque toxique, qui imprégnait jusqu'au moindre recoin de la pièce. ^@^Quiconque aurait pénétré ici pour la première fois en aurait eu les sens profondément troublés. La vue, l'odorat, les impressions mêmes que dégageait le lieu... Tout semblait conspirer pour lui faire perdre jusqu'au sentiment de la réalité.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+
+langjp　そんな書斎の中で、源次はいつもの慣れた手つきで、金蔵の愛飲する酒を準備する。@
+langen^C'est dans cette étrange atmosphère que Genji, parfaitement à son aise, entreprit de préparer la boisson favorite de son maître.^@
+
+br
+
+langjp　複雑な意匠のボトルに満たされた暗緑色の不気味な液体は、酒だと教えられなければとても口に含む気にはなるまい。
+langen^Il s'empara d'une bouteille au décor ouvragé, remplie d'un liquide vert sombre à l'aspect particulièrement inquiétant. Sans savoir qu'il s'agissait d'alcool, personne n'aurait seulement songé à porter cette substance à ses lèvres.^\
+
+langjp　……それをグラスに少々注ぎ、@奇妙な形をしたスプーンに角砂糖を乗せてその上からピッチャーの水を注ぎ込む。\
+
+langen^... Il en versa une petite quantité dans un verre, ^@^plaça un morceau de sucre sur une curieuse cuillère ajourée, puis fit lentement couler dessus l'eau d'un pichet.^\
+
+langjp　不思議なことに、暗緑色の液体は透明な水が注ぎ込まれると白く白濁する。@
+langen^À mesure que l'eau limpide se mêlait au liquide vert foncé, celui-ci se troublait, prenant une teinte d'un blanc laiteux.^@
+
+br
+
+langjp　…それはまるで水と化学反応を起こしたかのような奇妙な錯覚を与え、ますますに酒だという認識を遠のかせた。@
+langen^... On aurait presque dit une réaction chimique. Difficile, devant un spectacle pareil, de se convaincre qu'il ne s'agissait que d'une boisson alcoolisée.^@
+
+br
+
+langjp　それに、金蔵が好む独自のフレーバーを加え、味を調える。
+langen^Genji y ajouta ensuite les arômes particuliers qu'affectionnait Kinzo, jusqu'à obtenir le goût désiré.^\
+
+langjp　…レシピはない。@
+langjp　飲んだ金蔵の一喜一憂によってだけ出来具合を計り、数十年かけて身につけたものである。
+langen^... Il n'existait aucune recette écrite.^@
+langen^Pendant des décennies, les seules indications dont Genji avait disposé étaient les réactions de son maître lorsqu'il goûtait sa préparation. C'est à force d'essais, de corrections et d'une patience infinie qu'il avait fini par maîtriser ce savoir-faire.^\
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1c.jpg",":b;bmp\background\mainbuilding\mlib_1c.png",23
+
+
+
+langjp　源次はそのグラスを盆に載せ、金蔵の元に向かう。@
+langjp　金蔵はいつの間にか、窓の外を眺めていた。
+langen^Genji plaça le verre sur un plateau et rejoignit Kinzo.^@
+langen^Celui-ci avait entre-temps abandonné ses livres et contemplait le paysage à travers la fenêtre.^\
+
+ld r,$GEN_DefA1,24
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e31:「………どうぞ、お館様。」@
+
+langen:dwave_eng 0, gen_1e31:^... Votre verre, Maître.^@
+
+ld l,$KIN_DefA1,23
+
+advchar "01"
+langjp:dwave_jp 0, kin_1e115:「すまん…。」@
+langen:dwave_eng 0, kin_1e115:^... Merci.^@
+
+br
+
+advchar "-1"
+langjp　ついさっきまで怒鳴り、叫び、絶叫していたのと同じ人物とは思えないくらい、金蔵は落ち着きを取り戻していた。
+langen^Kinzo avait retrouvé une sérénité si complète qu'il paraissait impossible qu'il s'agisse du même homme qui, quelques instants auparavant, hurlait des insanités à travers la porte.^\
+langjp　その男の背中には、ただグラスを傾けて窓から景色を見下ろすだけで示せる貫禄と知性が宿っていた。
+langen^De dos, un verre à la main, tandis qu'il contemplait le paysage en contrebas, sa simple silhouette dégageait une autorité et une intelligence remarquables.^\
+
+langjp　源次は、金蔵がいつでもグラスを置けるよう、@自らが生きたサイドボードであるかのように、じっとその左後方に控えていた。@
+langen^Genji demeurait immobile, légèrement en retrait sur sa gauche, prêt à recevoir le verre à la moindre sollicitation. Il se tenait si parfaitement à sa disposition qu'on aurait presque pu le prendre pour un meuble de service vivant.^@
+
+br
+
+langjp　すると金蔵は窓の外を見たまま、グラスだけを突き出した。
+langen^Soudain, sans détourner son regard de la fenêtre, Kinzo tendit son verre derrière lui.^\
+
+langjp　中身はほんの一口分ほど残っている。@
+langen^Il n'y restait qu'une petite gorgée.^@
+
+br
+
+langjp　それは源次の持つ盆に載せようという仕草ではなく、源次にグラスを譲ろうとするような仕草だった。
+langen^Mais son geste n'était pas celui d'un homme demandant à son domestique de débarrasser son verre. Non... C'était une invitation à le partager.^\
+
+ld l,$KIN_fumuA1,80
+
+advchar "01"
+langjp:dwave_jp 0, kin_1e116:「……飲め。@:dwave_jp 0, kin_1e117:…我が友よ。」@
+
+langen:dwave_eng 0, kin_1e116:^... Bois. ^@:dwave_eng 0, kin_1e117:^... Mon ami.^@
+
+ld r,$GEN_majimeA2,80
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e32:「…………………勿体無いお言葉です。」@
+
+langen:dwave_eng 0, gen_1e32:^... Vous me faites trop d'honneur, Maître.^@
+
+ld l,$KIN_waraiA2,80
+
+advchar "01"
+langjp:dwave_jp 0, kin_1e118:「私とお前の仲に儀礼はいらぬ。@:dwave_jp 0, kin_1e119:……飲め。@:dwave_jp 0, kin_1e120:友よ。」\
+
+langen:dwave_eng 0, kin_1e118:^Entre nous deux, ces cérémonies sont inutiles. ^@:dwave_eng 0, kin_1e119:^... Bois, je te prie. ^@:dwave_eng 0, kin_1e120:^... Mon ami.^\
+
+ld r,$GEN_defA1,80
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e33:「……………いただきます。」@
+langen:dwave_eng 0, gen_1e33:^... Puisque vous me le permettez.^@
+
+br
+
+advchar "-1"
+langjp　源次はうやうやしくグラスを受け取ると、舐めるようにグラスをわずかに傾ける。@
+
+langjp　それから、くっと呷った。
+langen^Genji reçut le verre avec une profonde déférence. Il le porta prudemment à ses lèvres pour en goûter une infime quantité...^@
+langen^Puis avala le reste d'un trait.^\
+
+ld l,$KIN_fumuA1,80
+
+advchar "01"
+langjp:dwave_jp 0, kin_1e121:「お前が作るのを真似ているのだが、どうにも同じ味が出ぬ。@:dwave_jp 0, kin_1e122:……お前が作る方が美味い。」\
+
+langen:dwave_eng 0, kin_1e121:^J'ai beau essayer de reproduire ta façon de le préparer, je n'arrive jamais à obtenir le même goût. ^@:dwave_eng 0, kin_1e122:^... C'est toujours meilleur lorsque c'est toi qui t'en charges.^\
+
+ld r,$GEN_komaruA1,80
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e34:「………ありがとうございます。@:dwave_jp 0, gen_1e35:お館様のご指導の賜物です。」@
+
+langen:dwave_eng 0, gen_1e34:^... Je vous remercie, Maître. ^@:dwave_eng 0, gen_1e35:^Je ne fais pourtant que mettre en pratique les enseignements que vous m'avez prodigués.^@
+
+ld l,$KIN_WaraiA2,80
+
+advchar "01"
+langjp:dwave_jp 0, kin_1e123:「ふ…。」@
+
+advchar "-1"
+langjp　金蔵は、無礼講にせよと言っても決してそうしない忠臣を鼻で笑う。@
+advchar "01"
+langen:dwave_eng 0, kin_1e123:^Hm...^@
+advchar "-1"
+langen^Kinzo eut un petit rire amusé devant cet homme qui, même lorsqu'on l'invitait à oublier les convenances, s'obstinait à respecter la plus stricte étiquette.^@
+
+br
+
+langjp　しかしそれは小馬鹿にしたものではなく、親しい友人の治らぬ癖に笑うような軽やかなものだった。\
+
+langen^Mais ce rire n'avait rien de méprisant. C'était le sourire tendre et presque complice qu'on adresse à un vieil ami dont on connaît les habitudes depuis une éternité.^\
+
+ld l,$KIN_defA1,80
+
+advchar "01"
+langjp:dwave_jp 0, kin_1e124:「………互いに老いたな。@:dwave_jp 0, kin_1e125:歳を数えることも忘れてすでに久しい。」@
+
+langen:dwave_eng 0, kin_1e124:^... Nous voilà devenus vieux, tous les deux. ^@:dwave_eng 0, kin_1e125:^Il y a bien longtemps que j'ai renoncé à compter les années...^@
+
+ld r,$GEN_MajimeA2,80
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e36:「今日まで過ごすことをお許しいただけたのも、全てお館様のお陰でございます。」@
+langen:dwave_eng 0, gen_1e36:^... Si j'ai eu le privilège de vivre jusqu'à ce jour, Maître, c'est entièrement grâce à vous.^@
+
+br
+
+advchar "-1"
+langjp　金蔵は、世辞はいらぬとでも言うように薄っすらと笑う。\
+
+langen^Kinzo esquissa un faible sourire, comme pour lui signifier qu'entre eux, les flatteries étaient bien inutiles.^\
+
+ld l,$KIN_waraiA2,80
+
+advchar "01"
+langjp:dwave_jp 0, kin_1e126:「………今日まで、本当によく私に仕えてくれた。@:dwave_jp 0, kin_1e127:……息子たちは誰もが私を変人呼ばわりした。@:dwave_jp 0, kin_1e128:大勢いた使用人も皆、私を恐れて辞めていった。@:dwave_jp 0, kin_1e129:……お前だけが、今でも私に仕えてくれる。」@
+
+langen:dwave_eng 0, kin_1e126:^... Tu m'as servi avec une fidélité exemplaire, toutes ces années. ^@:dwave_eng 0, kin_1e127:^Mes propres fils me traitent d'excentrique. ^@:dwave_eng 0, kin_1e128:^Les domestiques qui travaillaient autrefois ici ont presque tous fui, épouvantés par mes manières. ^@:dwave_eng 0, kin_1e129:^... Et pourtant, toi... toi seul es encore à mes côtés.^@
+
+ld r,$GEN_DefA1,80
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e37:「…勿体無いお言葉です。」\
+
+langen:dwave_eng 0, gen_1e37:^... Vous me faites bien trop d'honneur.^\
+
+ld l,$KIN_fukigenA1,80
+
+advchar "01"
+langjp:dwave_jp 0, kin_1e130:「………私の余命もそう長くはあるまい。@:dwave_jp 0, kin_1e131:……息子たちは私の遺産がいつ転がり込んでくるかをうろうろ待つ禿鷹ばかりだ。」@
+
+langen:dwave_eng 0, kin_1e130:^... Il ne me reste probablement plus beaucoup de temps à vivre. ^@:dwave_eng 0, kin_1e131:^Et mes enfants... Ah ! Mes enfants ! Tous autant qu'ils sont, ce ne sont que des vautours ! Ils tournent autour de ma dépouille avant même que j'aie rendu mon dernier souffle, attendant le jour où ils pourront enfin se repaître de mon héritage !^@
+
+ld r,$GEN_MajimeA2,80
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e38:「……………………。」\
+
+langen:dwave_eng 0, gen_1e38:^...^\
+
+ld l,$KIN_ikariA1,80
+
+advchar "01"
+langjp:dwave_jp 0, kin_1e132:「蔵臼の愚か者は金を湯水のように使い、１枚の金貨を得るのに２枚の金貨を捨てておる。@:dwave_jp 0, kin_1e133:それで金を稼げたなどと妄言をッ！！@:dwave_jp 0, kin_1e134:　絵羽は金の亡者だ、あやつは私を鶏か何かだと思っておる！！@:dwave_jp 0, kin_1e135:　死んだらガラにしてダシまで取る気だ！！
+langen:dwave_eng 0, kin_1e132:^Krauss, cet imbécile, dilapide ma fortune comme si elle était inépuisable !! IL JETTE DEUX PIÈCES D'OR PAR LA FENÊTRE POUR EN RÉCUPÉRER UNE SEULE !! ^@:dwave_eng 0, kin_1e133:^ET CET ABRUTI OSE APPELER ÇA FAIRE DES AFFAIRES !! ^@:dwave_eng 0, kin_1e134:^Quant à Eva, cette femme est possédée par la cupidité !! Elle me prend pour une vulgaire poule aux œufs d'or !! ^@:dwave_eng 0, kin_1e135:^Le jour où je mourrai, elle serait capable de faire bouillir jusqu'à mes os pour en extraire la dernière goutte de bouillon !!^\
+
+ld l,$KIN_nakuA2,80
+
+langjp:dwave_jp 0, kin_1e136:　留弗夫の間抜けは女遊びばかりッ！！@:dwave_jp 0, kin_1e137:　楼座はどこの馬の骨ともわからん男の赤ん坊など生みおって！！@:dwave_jp 0, kin_1e138:　朱志香は無能で無学だ！！@:dwave_jp 0, kin_1e139:　譲治には男としての器がない！@:dwave_jp 0, kin_1e140:　戦人は右代宮家の栄誉を自ら捨ておった愚か者だッ！！@:dwave_jp 0, kin_1e141:　真里亞など見るのも汚らわしいッ！！\
+
+langen:dwave_eng 0, kin_1e136:^RUDOLF, CET IDIOT, NE SONGE QU'À COURIR LES FEMMES !! ^@:dwave_eng 0, kin_1e137:^ROSA A ÉTÉ JUSQU'À METTRE AU MONDE L'ENFANT D'UN HOMME DONT ON IGNORE TOUT !! ^@:dwave_eng 0, kin_1e138:^JESSICA EST UNE IGNORANTE, UNE INCAPABLE !! ^@:dwave_eng 0, kin_1e139:^GEORGE N'A PAS LA CARRURE D'UN HOMME !! ^@:dwave_eng 0, kin_1e140:^BATTLER, LUI, A VOLONTAIREMENT RENIÉ L'HONNEUR DU NOM DES USHIROMIYA !! ^@:dwave_eng 0, kin_1e141:^ET MARIA... RIEN QUE DE VOIR CETTE GAMINE, J'EN AI LA NAUSÉE !!^\
+
+ld l,$KIN_nakuA1,80
+
+langjp:dwave_jp 0, kin_1e142:　なぜだ、なぜに右代宮の血はこうも無能なのかッ！！@:dwave_jp 0, kin_1e143:　私の築き上げた栄光をッ受け継ぐに相応しい者はおらんのかッ？！@:dwave_jp 0, kin_1e144:　あぁわかっておるとも、これがベアトリーチェの呪いであることもわかっておる！！@:dwave_jp 0, kin_1e145:　…はッ、黄金の魔女め、それが私への復讐のつもりか。\
+
+langen:dwave_eng 0, kin_1e142:^POURQUOI ?! POURQUOI LE SANG DES USHIROMIYA NE PRODUIT-IL QUE DES INCAPABLES ?!! ^@:dwave_eng 0, kin_1e143:^N'Y A-T-IL DONC PERSONNE, PARMI TOUS CES MISÉRABLES, QUI SOIT DIGNE D'HÉRITER DE LA GLOIRE QUE J'AI BÂTIE ?!! ^@:dwave_eng 0, kin_1e144:^AAAH ! MAIS JE LE SAIS !! JE SAIS PARFAITEMENT CE QUE C'EST !! LA MALÉDICTION DE BÉATRICE !! ^@:dwave_eng 0, kin_1e145:^... HA ! SORCIÈRE D'OR !! EST-CE DONC AINSI QUE TU ENTENDS TE VENGER DE MOI ?!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp:dwave_jp 0, kin_1e146:　憎みたくば憎むがよい！@:dwave_jp 0, kin_1e147:　逃げたければ逃げるがよい！！@:dwave_jp 0, kin_1e148:　逃がさぬ、逃がさぬ逃がさぬ逃がさぬわッ！！@:dwave_jp 0, kin_1e149:　お前は私の物だッ！！@:dwave_jp 0, kin_1e150:　常に私の腕の中でなくてはならん！@:dwave_jp 0, kin_1e151:　私の生涯の全てなのだ！！@:dwave_jp 0, kin_1e152:　我が鳥篭にて永遠に私に、私だけに囁き続けるのだ！！@:dwave_jp 0, kin_1e153:　ベアトリーチェ……。@:dwave_jp 0, kin_1e154:なぜに、…微笑み返してはくれぬ…。@:dwave_jp 0, kin_1e155:おおおおおぉ、おおぉおおぉぉ…！！@:dwave_jp 0, kin_1e156:　ベアトリーチェぇえぇええぇぇえぇぇ！！@:dwave_jp 0, kin_1e157:　おおおぉおおぉおぉおぉぉ……。」\
+
+langen:dwave_eng 0, kin_1e146:^SI TU VEUX ME HAÏR, HAÏS-MOI !! ^@:dwave_eng 0, kin_1e147:^SI TU VEUX FUIR, FUIS DONC !! ^@:dwave_eng 0, kin_1e148:^MAIS JE NE TE LAISSERAI PAS PARTIR !! JAMAIS !! JAMAIS, JAMAIS, JAMAIS !! ^@:dwave_eng 0, kin_1e149:^TU M'APPARTIENS !! ^@:dwave_eng 0, kin_1e150:^TA PLACE EST DANS MES BRAS !! POUR TOUJOURS !! ^@:dwave_eng 0, kin_1e151:^TU ES TOUTE MA VIE !! ^@:dwave_eng 0, kin_1e152:^DANS LA CAGE QUE J'AI PRÉPARÉE POUR TOI, TU MURMURERAS ÉTERNELLEMENT... POUR MOI !! POUR MOI SEUL !! ^@:dwave_eng 0, kin_1e153:^... Béatrice... ^@:dwave_eng 0, kin_1e154:^Pourquoi... ? ... Pourquoi ne veux-tu plus me sourire... ? ^@:dwave_eng 0, kin_1e155:^Ooooooh... Ooooh... Ooooooh... !! ^@:dwave_eng 0, kin_1e156:^BÉATRICEEEEEEEEE !!! ^@:dwave_eng 0, kin_1e157:^Ooooooh... oooooh... ooooooh...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1b.jpg",":b;bmp\background\mainbuilding\mlib_1b.png",22
+
+advchar "-1"
+langjp　それを咆哮すると、金蔵は再び咽る。@
+
+langjp　源次は盆とグラスを置くと、主人の背中をさする…。@
+langen^À peine eut-il poussé cet ultime hurlement que Kinzo fut secoué par une nouvelle quinte de toux.^@
+langen^Genji déposa le plateau et le verre, puis se mit doucement à lui frotter le dos...^@
+
+
+br
+
+langjp　源次の表情には何の変化もない。@
+
+langjp　………いつものことなのだ。\
+
+langen^Son visage ne trahissait pas la moindre émotion.^@
+
+langen^... Il avait l'habitude de ces scènes.^\
+
+ld l,$KIN_fukigenA1,22
+
+
+
+advchar "01"
+langjp:dwave_jp 0, kin_1e158:「…………ゲホン…。@:dwave_jp 0, kin_1e159:ンン。@:dwave_jp 0, kin_1e160:…………すまぬ、我が友よ。」@
+
+langen:dwave_eng 0, kin_1e158:^... Kheu... Kheu... ^@:dwave_eng 0, kin_1e159:^Hum. ^@:dwave_eng 0, kin_1e160:^... Pardonne-moi, mon ami.^@
+
+ld r,$GEN_MajimeA2,24
+
+
+
+advchar "14"
+langjp:dwave_jp 0, gen_1e39:「……………………。」\
+
+langen:dwave_eng 0, gen_1e39:^...^\
+
+advchar "-1"
+langjp　さっきまでの錯乱のような発作が収まると、再び金蔵は落ち着きを取り戻していた。@
+
+langen^Lorsque cette crise de fureur se fut enfin apaisée, Kinzo retrouva une fois de plus tout son calme.^@
+
+br
+
+langjp　…その変わり身は、まるでひとつの体に荒ぶる金蔵と落ち着きある金蔵の異なる二人が同居しているようにすら見えた。\
+langen^... C'était comme si deux hommes entièrement différents partageaient le même corps : un Kinzo dévoré par la rage et le délire, et un autre d'une sérénité presque majestueuse.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+
+
+advchar "01"
+langjp:dwave_jp 0, kin_1e161:「ゆえに。@:dwave_jp 0, kin_1e162:……私は決心した。@:dwave_jp 0, kin_1e163:…………………このままぼやけ切った余生を怠慢に過ごすことなど、もはや耐えられはせん。@:dwave_jp 0, kin_1e164:この身に、最後に賭するコインがあるならば、それを悪魔たちのルーレットに託してみたい。@:dwave_jp 0, kin_1e165:……魔法の力はいつも賭けるリスクで決まる。@:dwave_jp 0, kin_1e166:日本古来の呪術である丑の刻参りがそうであろう。@:dwave_jp 0, kin_1e167:七日間、儀式を目撃されてはならないというリスクを支払うからこそ魔力が宿る。@:dwave_jp 0, kin_1e168:困難なリスクが生じれば生じるほどに魔力は強く生じるのだ。\
+
+langen:dwave_eng 0, kin_1e161:^Voilà pourquoi... ^@:dwave_eng 0, kin_1e162:^J'ai pris ma décision. ^@:dwave_eng 0, kin_1e163:^... Je ne peux plus supporter l'idée de laisser les dernières années qui me restent s'écouler dans une pareille torpeur. ^@:dwave_eng 0, kin_1e164:^S'il me reste une dernière pièce à miser... alors je la confierai à la roulette des démons. ^@:dwave_eng 0, kin_1e165:^... Car la puissance de la magie se mesure toujours aux risques que l'on accepte de prendre. ^@:dwave_eng 0, kin_1e166:^Songe au rituel japonais de l'heure du Bœuf. ^@:dwave_eng 0, kin_1e167:^C'est précisément parce que l'officiant doit accomplir son rituel pendant sept jours sans jamais être surpris par quiconque que celui-ci acquiert sa puissance magique. ^@:dwave_eng 0, kin_1e168:^Plus le risque est difficile à surmonter, plus la magie qui en résulte est puissante !^\
+
+langjp:dwave_jp 0, kin_1e169:　神話に登場する数々の奇跡は天文学的リスクに奇跡的な低確率を得て成就した驚愕すべき魔力の結晶なのだと言える！@:dwave_jp 0, kin_1e170:　モーゼが海を割ったのは神の奇跡ではない、@:dwave_jp 0, kin_1e171:虐殺の秤に載せられ軍勢によって紅海に追い詰められた絶体絶命のリスクが奇跡の魔力を生んだのだ！@:dwave_jp 0, kin_1e172:　同じことが同じ規模で繰り返されようとも、再び海が割れることはないだろう。\
+langen:dwave_eng 0, kin_1e169:^Tous les miracles que relatent les mythes ne sont rien d'autre que la manifestation d'une magie née de risques astronomiques, lorsque se réalise une éventualité dont la probabilité était presque nulle !! ^@:dwave_eng 0, kin_1e170:^SONGE À MOÏSE !! S'il est parvenu à fendre les eaux, ce n'était pas grâce à quelque miracle accordé par Dieu !! ^@:dwave_eng 0, kin_1e171:^C'EST PARCE QU'IL ÉTAIT ACCULÉ AU BORD DE LA MER ROUGE, MENACÉ D'ÊTRE MASSACRÉ AVEC LES SIENS, QUE CE RISQUE ABSOLU A ENGENDRÉ LA PUISSANCE D'UN MIRACLE !! ^@:dwave_eng 0, kin_1e172:^Et quand bien même cette situation se reproduirait à l'identique, les eaux ne se sépareraient probablement jamais une seconde fois !^\
+
+;gggg
+langjp:dwave_jp 0, kin_1e173:　なぜならモーゼは、力ある者たちのルーレットの、阿僧祇、那由他を掛けたよりも多く存在する目の中にひとつだけ刻まれた奇跡を見事引き寄せることができたからだ。@:dwave_jp 0, kin_1e174:その天文学的確率に勝利できる力！！@:dwave_jp 0, kin_1e175:　そう、奇跡を掴み取る運気は即ち魔力なのだ！！@:dwave_jp 0, kin_1e176: 強大な魔力を得るためには絶望的なリスクを背負わねばならぬ！！@:dwave_jp 0, kin_1e177:　魔力持たぬ者はそれを賭けでなく自暴自棄と呼ぼう！\
+langen:dwave_eng 0, kin_1e173:^Car Moïse a su saisir l'unique issue miraculeuse parmi les innombrables possibilités inscrites sur la roulette des puissances supérieures !! ^@:dwave_eng 0, kin_1e174:^UNE CHANCE SUR UN NOMBRE SI COLOSSAL QU'IL DÉPASSE L'ENTENDEMENT !! ET POURTANT, IL L'A SAISIE !! ^@:dwave_eng 0, kin_1e175:^CETTE FORCE CAPABLE DE TRIOMPHER DE PROBABILITÉS ASTRONOMIQUES... VOILÀ CE QU'EST LA MAGIE !! OUI !! LA MAGIE, C'EST LE POUVOIR DE SAISIR LES MIRACLES QUE LA CHANCE NOUS OFFRE !! ^@:dwave_eng 0, kin_1e176:^ET POUR OBTENIR UNE PUISSANCE AUSSI PRODIGIEUSE, IL FAUT ACCEPTER DE MISER CE QUE L'ON N'OSERAIT JAMAIS RISQUER !! ^@:dwave_eng 0, kin_1e177:^Ceux qui ne possèdent aucune magie n'y verront qu'un acte de désespoir ! Une folie suicidaire plutôt qu'un véritable pari !!^\
+
+langjp:dwave_jp 0, kin_1e178:　しかし真に魔力ある者はその奇跡を掴み取り、神秘を成就させるのだッ！！@:dwave_jp 0, kin_1e179:　もしも私にその魔力があるならば！@:dwave_jp 0, kin_1e180:　私はその奇跡を掴み取るだろう、生涯を費やした願いを実現できるだろうッ！！」\
+langen:dwave_eng 0, kin_1e178:^MAIS CELUI QUI DÉTIENT RÉELLEMENT LA MAGIE PEUT SAISIR CETTE CHANCE IMPOSSIBLE ET ACCOMPLIR LE MIRACLE !! ^@:dwave_eng 0, kin_1e179:^ET SI JE POSSÈDE MOI-MÊME CETTE PUISSANCE... !! ^@:dwave_eng 0, kin_1e180:^ALORS JE SAISIRAI CE MIRACLE !! ET JE POURRAI ENFIN RÉALISER LE VŒU AUQUEL J'AI CONSACRÉ MA VIE ENTIÈRE !!!^\
+
+bg white,22
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1e.jpg",":b;bmp\background\mainbuilding\mlib_1e.png",22
+
+
+
+advchar "-1"
+langjp　金蔵は窓の外の天を仰ぐ。@
+
+langjp　そして天上の何者かに訴えるように両腕を広げる。\
+
+langen^Kinzo leva les yeux vers le ciel, au-delà de la fenêtre.^@
+
+langen^Il ouvrit lentement les bras, comme pour adresser une prière à quelque puissance invisible qui l'observait depuis les cieux.^\
+
+advchar "01"

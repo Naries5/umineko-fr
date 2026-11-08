@@ -1,0 +1,5000 @@
+sl
+langen^Avec tout le petit miracle de bonheur qu'elle avait fait naître^@/
+sl
+langen:!d800^... on l'avait arrachée et jetée...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1br.jpg",":b;bmp\background\forest\hill_1br.png",0  ;fixed lighting issue
+ld r,$KAS_waraiA1,26
+ld r,$KAS_AkuwaraiA3,80
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e151:「これも傑作だわ…！@:dwave_jp 0, kas_4e152:　晩御飯をクリームコロッケにする魔法？@:dwave_jp 0, kas_4e153:　あっはははははは！！@/
+langen:dwave_eng 0, kas_4e151:^Celle-là aussi est excellente... ! ^@:dwave_eng 0, kas_4e152:^Une magie pour avoir des croquettes à la crème au dîner ? ^@:dwave_eng 0, kas_4e153:^Ahahahahahaha !!^@/
+
+ld r,$KAS_AkuwaraiA2,80
+
+langjp:dwave_jp 0, kas_4e154:　……次は何？@:dwave_jp 0, kas_4e155:　ピーマンが美味しく食べられる魔法？@:dwave_jp 0, kas_4e156:　これもイカすわ、馬鹿馬鹿しい！@:dwave_jp 0, kas_4e157:　あっはっはっはっはっは…！！」\
+;＜霞
+langen:dwave_eng 0, kas_4e154:^ ... Et après ? ^@:dwave_eng 0, kas_4e155:^Une magie pour trouver les poivrons délicieux ? ^@:dwave_eng 0, kas_4e156:^Celle-là aussi est géniale, c'est tellement stupide ! ^@:dwave_eng 0, kas_4e157:^Ahahahahahahaha... !!^\
+
+;mld l,$ev2_akuwaraiA6,0
+;msp msp_l,0,0,-120
+mldt l,$ev2_akuwaraiA6,0,135
+
+print 23
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e77:「それも破いちゃいなさいよ。@:dwave_jp 0, ev2_4e78:うっふふ！！@/
+langen:dwave_eng 0, ev2_4e77:^Arrache celle-là aussi. ^@:dwave_eng 0, ev2_4e78:^Ouhuhuhu !! ^@/
+
+;mld l,$ev2_akuwaraiA4,0
+;msp msp_l,0,0,-120
+mldt l,$ev2_akuwaraiA4,0,135
+
+print 80
+
+langjp:dwave_jp 0, ev2_4e79:　どんどん破いちゃえばぁああぁあッ？！？！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e79:^Et va donc les arracher toutes, encore, encore et encoooore ?!?!^\
+
+advchar "-1"
+langjp　黒き魔女は残忍に高笑いしながら、/
+sl
+langjp^^!d700……真里亞お姉ちゃんの魔法を、次々に破かせていく……。@
+langen^La sorcière noire contemplait le spectacle en riant, ravie de voir les pages disparaître les unes après les autres.^@/
+sl
+langen:!d700^ ... et fit arracher les magies de grande sœur Maria, l'une après l'autre...^@
+br
+langjp^^!s0　幸せの魔法を、嘲笑っては、/
+sl
+langjp^^!d800……破り、/
+sl
+langjp^^!d600……捨てていく……。/
+sl
+langen^^!s0^ Elles tournaient en ridicule les magies du bonheur^@/
+sl
+langen:!d800^... les arrachaient^@/
+sl
+langen:!d600^... puis les jetaient...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+
+mcl l,0
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1cr.jpg",":b;bmp\background\forest\hill_1cr.png",24  ;fixed lighting issue
+;mld c,$RG5_ikariA2,0
+;msp msp_c,0,0,-120
+mldt c,$RG5_ikariA2,0,135
+
+se1 52
+print 99,2000,"breakup.dll/ulb"
+
+advchar "42"
+langjp:dwave_jp 0, rg5_4e361:「やめろ…、やめろ……！！@:dwave_jp 0, rg5_4e362:　マリア卿の魔法を、……汚すな…！！@:dwave_jp 0, rg5_4e363:　汚い毒素で、……汚すんじゃない…！！」\
+;＜マモン
+langen:dwave_eng 0, rg5_4e361:^Arrête... arrête... !! ^@:dwave_eng 0, rg5_4e362:^Ne... souille pas la magie de Dame MARIA... !! ^@:dwave_eng 0, rg5_4e363:^Ne la souille pas... avec ce poison immonde... !!^\
+
+advchar "-1"
+langjp　マモンが泣きながら叫ぶが、……霞に届くわけもない。\
+langen^Mammon criait à travers ses larmes, mais Kasumi ne pouvait pas entendre sa voix.^\
+
+mcl c,0
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",0  ;fixed lighting issue
+;mld r,$EV2_akuwaraiA8,0
+;msp msp_r,0,0,-120
+mldt r,$EV2_akuwaraiA8,0,135
+
+print 24
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e80:「いいじゃない、汚されちゃえばあぁ？！@:dwave_jp 0, ev2_4e81:　魔法の奇跡？@:dwave_jp 0, ev2_4e82:　幸せにする魔法？@:dwave_jp 0, ev2_4e83:　ないない、そんなのないってばぁ！@/
+langen:dwave_eng 0, ev2_4e80:^Et va donc la laisser se faire souiller ?! ^@:dwave_eng 0, ev2_4e81:^Les miracles de la magie ? ^@:dwave_eng 0, ev2_4e82:^La magie qui rend heureux ? ^@:dwave_eng 0, ev2_4e83:^Ça n'existe pas, rien de tout ça n'existe ! ^@/
+
+
+
+;mld r,$ev2_TokuiA1,0
+;msp msp_r,0,0,-120
+mldt r,$ev2_TokuiA1,0,135
+
+print 80
+
+langjp:dwave_jp 0, ev2_4e84:　痛みと苦しみはね、他人に押し付けてしか癒せないのよぅ。@:dwave_jp 0, ev2_4e85:……あんたは確か、魔法のお友達とかいうヤツだったわよねぇ？\
+langen:dwave_eng 0, ev2_4e84:^La douleur et la souffrance, tu ne peux les apaiser qu'en les imposant à quelqu'un d'autre. ^@:dwave_eng 0, ev2_4e85:^... Toi, tu étais bien l'une de ces fameuses amies magiques, non ?^\
+
+;mld r,$ev2_akuwaraiA3,0
+;msp msp_r,0,0,-120
+mldt r,$ev2_akuwaraiA3,0,135
+
+print 80
+
+langjp:dwave_jp 0, ev2_4e86:　くっくくくくく！@:dwave_jp 0, ev2_4e87:　須磨寺霞、こいつのページを開きなさい。」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e86:^Kukukukuku ! ^@:dwave_eng 0, ev2_4e87:^Kasumi Sumadera, ouvre à la page qui parle d'elle.^\
+
+mcl r,0
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1br.jpg",":b;bmp\background\forest\hill_1br.png",0  ;fixed lighting issue
+ld l,$KAS_waraiA2,24
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e158:「これは何？@:dwave_jp 0, kas_4e159:　魔法のお友達ですって。@:dwave_jp 0, kas_4e160:…………煉獄の七姉妹？@/
+langen:dwave_eng 0, kas_4e158:^C'est quoi, ça ? ^@:dwave_eng 0, kas_4e159:^Des amies magiques ? ^@:dwave_eng 0, kas_4e160:^... Les Sept Sœurs du Purgatoire ? ^@/
+
+ld l,$KAS_AkuwaraiA1,80
+
+langjp:dwave_jp 0, kas_4e161:　あっは、物騒な名前ぇ！@:dwave_jp 0, kas_4e162:　くすくす、すごい速さで飛んで、敵をやっつけてくれるんですって。@:dwave_jp 0, kas_4e163:あっははッ、縁寿、あなたこんな魔法が使えるなら、今すぐ使った方がいいんじゃない？@:dwave_jp 0, kas_4e164:　………あっはははははは。@/
+langen:dwave_eng 0, kas_4e161:^Ah, quel nom sinistre ! ^@:dwave_eng 0, kas_4e162:^Hmhm, elles peuvent voler à une vitesse incroyable et terrasser les ennemis, paraît-il. ^@:dwave_eng 0, kas_4e163:^Ahaha, Ange, si tu peux utiliser une magie pareille, tu devrais peut-être le faire tout de suite, non ? ^@:dwave_eng 0, kas_4e164:^... Ahahahahahaha. ^@/
+
+;ld l,$KAS_ikariA1,80
+
+langjp:dwave_jp 0, kas_4e165:下らない！」\
+;＜霞
+langen:dwave_eng 0, kas_4e165:^Ridicule !^\
+se1v 1006,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+advchar "-1"
+langjp　煉獄の七姉妹のことを記されたページも、無残に破かれる。@
+langen^Kasumi arracha également la page consacrée aux Sept Sœurs du Purgatoire.^@
+br
+langjp　……ページ自体はただの紙。@
+langjp　マモンの依り代というわけではない。\
+langen^La feuille n'était pourtant qu'un morceau de papier, qui ne pouvait à lui seul contenir Mammon.^@
+langen^L'existence de Mammon ne dépendait pas matériellement de l'intégrité du grimoire.^\
+
+bg white,22
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1cr.jpg",":b;bmp\background\forest\hill_1cr.png",0  ;fixed lighting issue
+;mld c,$RG5_NakuA1,0
+;msp msp_c,0,0,-120
+mldt c,$RG5_NakuA1,0,135
+
+se1 55
+print 99,3000,"breakup.dll/llb"
+
+langjp　でも、破き否定するという毒素が、マモンを内から焼く……。@
+langen^Mais la haine avec laquelle Kasumi niait son existence se changeait en une toxine anti-magie qui la brûlait de l'intérieur.^@
+br
+langjp　その熱さと痛みにマモンの表情が歪む…。\
+langen^Mammon grimaça sous une douleur que les Humains présents ne pouvaient même pas concevoir.^\
+
+;mld c,$RG5_IkariA2,0
+;msp msp_c,0,0,-120
+mldt c,$RG5_IkariA2,0,135
+print 80
+
+advchar "42"
+langjp:dwave_jp 0, rg5_4e364:「………ぐ、……………くッ、………。」@
+;＜マモン
+langen:dwave_eng 0, rg5_4e364:^Guh... ngh...^@
+
+;mld r,$sak_nakuA2,0
+;msp msp_r,0,0,-120
+mldt r,$sak_nakuA2,0,135
+
+print 24
+
+advchar "33"
+langjp:dwave_jp 0, sak_4e526:『大丈夫、マモン？！@:dwave_jp 0, sak_4e527:　しっかり……！！』@
+;＜さくたろ
+langen:dwave_eng 0, sak_4e526:^Ça va, Mammon ?! ^@:dwave_eng 0, sak_4e527:^Tiens bon... !!^@
+
+;mld c,$RG5_KomaruA2,0
+;msp msp_c,0,0,-120
+mldt c,$RG5_KomaruA2,0,135
+print 80
+
+advchar "42"
+langjp:dwave_jp 0, rg5_4e365:「……これくらい、……平気…。@:dwave_jp 0, rg5_4e366:……私より、……縁寿さまの方が、………辛い………。」\
+;＜マモン
+langen:dwave_eng 0, rg5_4e365:^... Ça... ce n'est rien... ^@:dwave_eng 0, rg5_4e366:^Ce n'est pas moi... c'est Dame Ange... qui souffre davantage...^\
+
+advchar "-1"
+langjp　しかし、マモンの表情は耐え難い苦痛と屈辱に、歪んでいる……。\
+langen^Mammon essayait de tenir bon, malgré la douleur et l'humiliation qui déformaient son visage.^\
+
+;mld r,$sak_nakuA3,0
+;msp msp_r,0,0,-120
+mldt r,$sak_nakuA3,0,135
+
+print 80
+
+advchar "33"
+langjp:dwave_jp 0, sak_4e528:『やめろ、黒き魔女……！！@:dwave_jp 0, sak_4e529:　どうして君はそんなことをするんだよ？！@:dwave_jp 0, sak_4e530:　どうして、……魔法を幸せのために使えないんだよッ！！』\
+;＜さくたろ
+langen:dwave_eng 0, sak_4e528:^Arrête, sorcière noire... !! ^@:dwave_eng 0, sak_4e529:^Pourquoi tu fais une chose pareille ?! ^@:dwave_eng 0, sak_4e530:^Pourquoi... tu ne peux pas utiliser la magie pour rendre les gens heureux ?!!^\
+
+
+;mld l,$EV2_akuwaraiA8,0
+;msp msp_l,0,0,-120
+mldt l,$EV2_akuwaraiA8,0,135
+
+print 23
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e88:「……あぁ、あんたも、魔法のお友達ね？@:dwave_jp 0, ev2_4e89:　くすくす、あんたも汚してあげるわ。@:dwave_jp 0, ev2_4e90:須磨寺霞、こいつのページも探しなさい？」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e88:^... Ah, toi aussi, tu es un ami magique, c'est ça ? ^@:dwave_eng 0, ev2_4e89:^Hmhm, je vais te souiller toi aussi. ^@:dwave_eng 0, ev2_4e90:^Kasumi Sumadera, trouve donc la page qui parle de celui-là.^\
+
+mcl a,0
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1br.jpg",":b;bmp\background\forest\hill_1br.png",0  ;fixed lighting issue
+ld c,$KAS_DefA1,23
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e166:「こっちは何？@:dwave_jp 0, kas_4e167:　何このへたくそなライオンの落書き。@:dwave_jp 0, kas_4e168:……さくたろう？@/
+langen:dwave_eng 0, kas_4e166:^Et ça, c'est quoi ? ^@:dwave_eng 0, kas_4e167:^C'est quoi ce gribouillage de lion complètement raté ? ^@:dwave_eng 0, kas_4e168:^... Sakutarō ? ^@/
+
+ld c,$KAS_akuwaraiA2,80
+
+langjp:dwave_jp 0, kas_4e169:　変な名前！@:dwave_jp 0, kas_4e170:　一番大好きなお友達だって。@:dwave_jp 0, kas_4e171:そうなの？@:dwave_jp 0, kas_4e172:　これがあんたの友達？　親友？@:dwave_jp 0, kas_4e173:　このライオンが？　ねぇねぇ？」\
+;＜霞
+langen:dwave_eng 0, kas_4e169:^Quel nom bizarre ! ^@:dwave_eng 0, kas_4e170:^Il est écrit que c'est ton ami préféré. ^@:dwave_eng 0, kas_4e171:^Vraiment ? ^@:dwave_eng 0, kas_4e172:^C'est lui, ton ami ? Ton meilleur ami ? ^@:dwave_eng 0, kas_4e173:^Ce lion ? Vraiment ?^\
+
+
+;mld r,$ev2_akuwaraiA5,0
+;msp msp_r,0,0,-120
+mldt r,$ev2_akuwaraiA5,0,135
+
+print 24
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e91:「あっはははははは！！@:dwave_jp 0, ev2_4e92:　本ッ当にヘタクソな落書きぃ。@:dwave_jp 0, ev2_4e93:こんなブサイクなライオンがあんたなのね。\
+langen:dwave_eng 0, ev2_4e91:^Ahahahahahahaha !! ^@:dwave_eng 0, ev2_4e92:^Qu'est-ce qu'il est mal dessinééé. ^@:dwave_eng 0, ev2_4e93:^Ce lion tout moche, c'est toi, hein.^\
+
+;mld r,$ev2_akuwaraiA8,0
+;msp msp_r,0,0,-120
+mldt r,$ev2_akuwaraiA8,0,135
+
+print 80
+se1v 37,90
+langjp:dwave_jp 0, ev2_4e94:　こんなのを友達にしてるなんて、右代宮真里亞って子の、頭の可哀想さに呆れて、ヘソでお茶が沸いちゃうわ〜。@:dwave_jp 0, ev2_4e95:………バッカみたいぃ。@:dwave_jp 0, ev2_4e96:ヘソ噛んで、死んじゃえばァぁああぁ……？」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e94:^Avoir un truc pareil pour ami... Rien que d'imaginer à quel point cette Maria Ushiromiya devait être dérangée, j'en ai mal au ventre tellement je ris. ^@:dwave_eng 0, ev2_4e95:^... Quelle idiote. ^@:dwave_eng 0, ev2_4e96:^Qu'elle aille donc se jeter sous un train... et qu'elle crèèèèève... ?^\
+
+;mld l,$sak_nakuA1,0
+;msp msp_l,0,0,-120
+mldt l,$sak_nakuA1,0,135
+
+print 23
+;ld c,$sak_nakuA1,80
+
+advchar "33"
+langjp:dwave_jp 0, sak_4e531:『う…りゅ……。@:dwave_jp 0, sak_4e532:………真里亞を……ばかにするな……。』@
+;＜さくたろ
+langen:dwave_eng 0, sak_4e531:^U... ryu... ^@:dwave_eng 0, sak_4e532:^Ne te moque pas... de Maria...^@
+
+;ld c,$ENJ_hanbesoA2,80
+mcl l,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1664:「………………や……め……て………。@:dwave_jp 0, enj_4e1665:…破かないで………。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1664:^A... rrê... te... ^@:dwave_eng 0, enj_4e1665:^Ne l'arrache pas...^\
+
+
+;mld r,$EV2_AkuwaraiA4,0
+;msp msp_r,0,0,-120　
+mldt r,$EV2_AkuwaraiA4,0,135
+ld c,$KAS_AkuwaraiA3,80
+
+advchar "-1"
+langjp:dwave_jp 0, "voice\99\awase0029.ogg":「「だめえ。」」\
+;＜霞・絵羽
+langen:dwave_eng 0, "voice\99\awase0029.ogg":^Pas questiooon.^\
+
+se1v 1006,100
+
+mcl a,0
+bg white,80
+
+E_MA
+bgmvol 90
+
+me2v 16,50
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　絹を裂くような音がして。@………そのページが、汚く破り取られる…。@
+langen^Un bruit strident retentit. ^@^... La page fut grossièrement déchirée et arrachée...^@
+br
+langjp^^!s0　お姉ちゃんが書いた、/
+sl
+langjp^^!d600……さくたろうの絵が、乱暴に、/
+sl
+langjp^^!d1000……真っ二つに………。/
+sl
+langen^^!s0^ Le dessin de Sakutarō... ^@/
+sl
+langen:!d600^que grande sœur Maria avait dessiné...^@/
+sl
+langen:!d1000^ fut brutalement déchiré en deux...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+textoff
+
+wait 2000
+
+mono 1
+;TODO: Maria alt outfit
+gosub *MAR_Isyou1
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\sakutaro1a.jpg",":b;bmp\background\efe\sakutaro1a.png",1
+quakey 3,300
+wait 2000
+
+fr_bg ":b;fr_bg\orig\bmp\background\rosehouse\ros_m1a.jpg",":b;bmp\background\rosehouse\ros_m1a.png",0
+ld c,$MAR_niyariA1,80
+wait 1000
+
+ld l,$SAK_waraiA1,26
+quakey 3,400
+wait 500
+
+ld c,$MAR_waraiA1,80
+wait 500
+
+cl l,0
+ld r,$SAK_waraiA3,23
+cl r,0
+ld l,$SAK_waraiA3,24
+
+cl l,0
+ld r,$SAK_waraiA3,23
+cl r,0
+ld l,$SAK_waraiA3,24
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\sakutaro2b.jpg",":b;bmp\background\efe\sakutaro2b.png",2
+wait 3000
+
+textoff
+;TODO: Maria alt outfit
+fr_bg ":b;fr_bg\orig\bmp\background\rosehouse\ros_r1b.jpg",":b;bmp\background\rosehouse\ros_r1b.png",0
+;lsp2 4,$MAR_waraiA2,450,320,200,200,0
+;lsp2 3,$SAK_waraiA1,140,400,200,200,0
+lsp_var 4,"bmp\zoom\MAR_waraiA2Z20",-360,0  ;convert to widescreen
+lsp_var 3,"bmp\zoom\SAK_waraiA1Z20",-287,0  ;convert to widescreen
+print 2
+
+wait 3000
+
+mono off
+
+;se1v 37,100
+;wait 100
+;se2v 2,100
+;se3v 37,100
+
+E_MA
+
+mono 2
+
+csp_var 4
+csp_var 3
+
+bg white,1
+;wait 500
+
+se1v 1006,100
+
+mono off
+
+bg white,42
+
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",99,5000,"breakup.dll/llb" : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",99,5000,"breakup.dll/llb"
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",2  ;fixed lighting issue
+;mld c,$EV2_akuwaraiA5,0
+;msp msp_c,0,0,-120
+mldt c,$EV2_akuwaraiA5,0,135
+
+print 24
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e98:「ヘッタクソな絵ぇ〜。@:dwave_jp 0, ev2_4e99:きゃっははははははははははは…！」@
+;＜絵羽
+langen:dwave_eng 0, ev2_4e98:^Qu'est-ce qu'il est mal dessinéééé. ^@:dwave_eng 0, ev2_4e99:^Ahahahahahahahahahahaha... !^@
+
+ld r,$KAS_akuwaraiA1,24
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e175:「お前たちも笑いなさい？@/
+langen:dwave_eng 0, kas_4e175:^Vous aussi, riez un peu. ^@/
+
+ld r,$KAS_AkuwaraiA3,80
+
+langjp:dwave_jp 0, kas_4e176:　あぁっははははははははは…！」\
+;＜霞
+langen:dwave_eng 0, kas_4e176:^Ahahahahahahahahaha... !^\
+
+advchar "-1"
+langjp　黒服たちも二人に従い、下品に笑い、@……破り捨てられたそれを、無残に踏みつけた……。\
+langen^Les hommes en noir obéirent aux deux femmes et rirent vulgairement,^@^ puis piétinèrent sans pitié les morceaux arrachés et jetés au sol...^\
+
+mcl c,0
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1cr.jpg",":b;bmp\background\forest\hill_1cr.png",0  ;fixed lighting issue
+;mld l,$sak_nakuA2,0
+;msp msp_l,0,0,-120
+mldt l,$sak_nakuA2,0,135
+
+print 24
+
+advchar "33"
+langjp:dwave_jp 0, sak_4e533:『うううぅぅううぅッ、……ひっく！@:dwave_jp 0, sak_4e534:　……うううぅうぅぅぅっ……。』@
+;＜さくたろ
+langen:dwave_eng 0, sak_4e533:^Uuuuuuuuuuuuh... snif ! ^@:dwave_eng 0, sak_4e534:^... Uuuuuuuuuuuuh...^@
+
+;mld r,$RG5_komaruA2,0
+;msp msp_r,0,0,-120
+mldt r,$RG5_komaruA2,0,135
+
+print 24
+
+advchar "42"
+langjp:dwave_jp 0, rg5_4e367:「……さくたろ、……しっかり………。」\
+;＜マモン
+langen:dwave_eng 0, rg5_4e367:^Sakutarō... tiens bon...^\
+
+;mld l,$sak_nakuA3,0
+;msp msp_l,0,0,-120
+mldt l,$sak_nakuA3,0,135
+
+print 80
+
+advchar "33"
+langjp:dwave_jp 0, sak_4e535:『ボクは…悲しくなんかないよ……。@:dwave_jp 0, sak_4e536:…ただ、……悔しい……。@:dwave_jp 0, sak_4e537:……真里亞のことを馬鹿にされて、/
+sl
+langjp:voicedelay 3200:dwave_jp 0, sak_4e538:^^………何も言えない自分が、/
+sl
+langjp:voicedelay 2390:dwave_jp 0, sak_4e539:^^……悔しいっ……。』\
+;＜さくたろ
+langen:dwave_eng 0, sak_4e535:^Je ne suis... pas triste... ^@:dwave_eng 0, sak_4e536:^C'est juste que... ça me frustre... ^@:dwave_eng 0, sak_4e537:^qu'on se moque de Maria...^@/
+sl
+langen:voicedelay 3200:dwave_eng 0, sak_4e538:^ et que je sois incapable de dire quoi que ce soit...^@/
+sl
+langen:voicedelay 2390:dwave_eng 0, sak_4e539:^ ça me frustre tellement...^\
+
+;mld r,$RG5_IkariA2,0
+;msp msp_r,0,0,-120
+mldt r,$RG5_IkariA2,0,135
+
+
+print 80
+
+advchar "42"
+langjp:dwave_jp 0, rg5_4e368:「……………………。@:dwave_jp 0, rg5_4e369:……私たちは、……視えないニンゲンには、……いないも同然…。@:dwave_jp 0, rg5_4e370:……私たちは、必要としてくれるニンゲンとしか、交流できない。@:dwave_jp 0, rg5_4e371:…………だから、………家具………。」\
+;＜マモン
+langen:dwave_eng 0, rg5_4e368:^...^@:dwave_eng 0, rg5_4e369:^ Pour les Humains qui ne peuvent pas nous « voir » ... c'est comme si nous n'existions pas... ^@:dwave_eng 0, rg5_4e370:^Nous ne pouvons communiquer qu'avec les Humains qui ont besoin de nous. ^@:dwave_eng 0, rg5_4e371:^... C'est pour ça que... nous sommes des meubles...^\
+
+advchar "-1"
+langjp　さくたろうとマモンは、……互いに支えあうようにしながら、@……すすり泣き、…崩れるようにしゃがみ込む…。\
+langen^Sakutarō et Mammon... se soutenaient l'un l'autre... ^@^puis s'accroupirent comme s'ils s'effondraient, en sanglotant...^\
+
+langjp　悔しいのは私も同じだった……。@
+langen^Leur humiliation me faisait terriblement mal, car je comprenais enfin l'affection que Maria avait placée dans ces dessins.^@
+br
+langjp　……魔法の世界の素晴らしさは、視える人間にしか、理解できない。\
+langen^Seules les personnes capables de voir la magie pouvaient reconnaître la beauté de ce monde.^\
+
+langjp　理解できない人間に説明できない。@
+langjp　だから貶される。@
+langjp　………見せることが出来れば…。@
+langen^Je ne pouvais pas faire comprendre cette beauté à des gens qui refusaient jusqu'à l'idée qu'elle puisse exister.^@
+langen^Ils préféraient se moquer de ce qu'ils ne cherchaient pas à comprendre.^@
+langen^J'aurais voulu leur montrer ce que Maria avait éprouvé en inventant ses petits miracles.^@
+br
+langjp　……でも、出来ない……。\
+langen^Mais je savais combien cette démonstration serait difficile devant une telle hostilité.^\
+
+langjp　魔法は、反魔法の毒素で満たされた、魔法を理解できないニンゲンたちの前では、@………使えないのだから……。\
+langen^Parce que devant les Humains incapables de comprendre la magie, remplis de toxine anti-magie... ^@^la magie ne peut pas être utilisée...^\
+
+mcl a,0
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",0  ;fixed lighting issue
+ld c,$KAS_akuwaraiA3,23
+
+me1v 5,50
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e177:「本当にワケがわかんないわ。@:dwave_jp 0, kas_4e178:この妄想日記、頭がおかしいとしか思えない。@:dwave_jp 0, kas_4e179:……あんたのお花畑な頭の中が垣間見えて本当に面白いわぁ。@:dwave_jp 0, kas_4e180:キモチワルイ子ぉ。」\
+;＜霞
+langen:dwave_eng 0, kas_4e177:^Je comprends vraiment rien à ce truc. ^@:dwave_eng 0, kas_4e178:^Ce journal de délires, on dirait vraiment le truc de quelqu'un qui a un sérieux problème dans la tête. ^@:dwave_eng 0, kas_4e179:^... C'est fascinant de pouvoir jeter un œil dans ton petit monde de bisounours. ^@:dwave_eng 0, kas_4e180:^Quelle gamine malsaine.^\
+
+
+;mld l,$EV2_akuwaraiA6,0
+;msp msp_l,0,0,-120
+mldt l,$EV2_akuwaraiA6,0,135
+
+print 23
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e100:「あんたも、真里亞も。@:dwave_jp 0, ev2_4e101:……そこのぬいぐるみと家具もね？@:dwave_jp 0, ev2_4e102:　ぷーっくすくすくすくす！！@:dwave_jp 0, ev2_4e103:　あっはははははははははは！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e100:^Toi comme Maria. ^@:dwave_eng 0, ev2_4e101:^... Et la peluche et le meuble qui sont là aussi, hein ? ^@:dwave_eng 0, ev2_4e102:^Pouh, hmhmhmhm !! ^@:dwave_eng 0, ev2_4e103:^Ahahahahahahahahahahaha !^\
+
+ld c,$KAS_waraiA1,80
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e181:「あぁ、可笑しいわぁ。@:dwave_jp 0, kas_4e182:あんた、友達、いないんでしょ？@:dwave_jp 0, kas_4e183:　いっつもひとりぼっちで、ぬいぐるみがお友達なんでしょ？@:dwave_jp 0, kas_4e184:　可哀想な子ぉ。@/
+langen:dwave_eng 0, kas_4e181:^Ah, c'est vraiment trop drôle. ^@:dwave_eng 0, kas_4e182:^Toi, t'as pas d'amis, pas vrai ? ^@:dwave_eng 0, kas_4e183:^T'es toujours toute seule, alors tes peluches te servent d'amis ? ^@:dwave_eng 0, kas_4e184:^Pauvre petite. ^@/
+
+ld c,$KAS_AkuwaraiA3,80
+
+langjp:dwave_jp 0, kas_4e185:うっふふふふふふふふふ…！@:dwave_jp 0, kas_4e186:　大丈夫、私にもわかるわよ。@:dwave_jp 0, kas_4e187:そういう生活、わかるもの。@:dwave_jp 0, kas_4e188:………だから私が認めてあげるわ。@:dwave_jp 0, kas_4e189:あんた、本当に可哀想な子よ？@:dwave_jp 0, kas_4e190:　うっふふふはははははははははは！」\
+langen:dwave_eng 0, kas_4e185:^Ouhuhuhuhuhuhuhuhu... ! ^@:dwave_eng 0, kas_4e186:^T'inquiète, moi aussi je comprends. ^@:dwave_eng 0, kas_4e187:^Je sais ce que c'est, une vie comme ça. ^@:dwave_eng 0, kas_4e188:^... Alors moi, je vais te le dire franchement. ^@:dwave_eng 0, kas_4e189:^T'es vraiment une pauvre petite, tu sais ? ^@:dwave_eng 0, kas_4e190:^Ouhuhuhuhahahahahahahahaha !^\
+
+csp -1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+br
+advchar "-1"
+langjp　……………あんたには、可哀想な子に、@……見えるのね。\
+langen^... Alors, à tes yeux, je ne suis donc qu'une...^@^ pauvre petite fille.^\
+
+langjp　そうでしょうよ。@
+langen^À leurs yeux, ce grimoire ne pouvait être que le journal ridicule d'une enfant solitaire.^@
+br
+langjp　お姉ちゃんの日記と魔導書は、百人が読めば、百人がきっとそういう感想を持つでしょう。@
+langen^Si cent personnes l'avaient lu sans chercher à comprendre Maria, presque toutes auraient sans doute réagi de cette façon.^@
+br
+langjp　……かつての私もそうだった。\
+langen^Autrefois, j'aurais probablement partagé leurs moqueries, incapable de reconnaître le bonheur derrière ces petites histoires.^\
+
+langjp^^!s0　でもね、/
+sl
+langjp^^!d600………真里亞お姉ちゃんは、/
+sl
+langjp^^!d900……それでもそれを、/
+sl
+langjp^^!d600……幸せな世界と呼んだの。@
+langen^^!s0^Mais tu sais^@/
+sl
+langen:!d600^... grande sœur Maria^@/
+sl
+langen:!d900^... malgré tout ça^@/
+sl
+langen:!d600^... appelait quand même ce monde un monde heureux.^@
+br
+langjp　………その魔法と、幸せを、/
+sl
+langjp^^!d900………否定しないで……。/
+sl
+langen^... Alors ne nie pas...^@/
+sl
+langen:!d900^ cette magie... ce bonheur...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",0  ;fixed lighting issue
+;mld l,$EV2_akuwaraiA2,0
+;msp msp_l,0,0,-120
+mldt l,$EV2_akuwaraiA2,0,135
+
+print 80
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e104:「頑固な子ね、あんたは。@:dwave_jp 0, ev2_4e105:……いいわ。@:dwave_jp 0, ev2_4e106:これで最後よ。@:dwave_jp 0, ev2_4e107:あんたと真里亞の信じた、本当に下らない魔法の根源を、引き裂いてあげるわよ。@/
+langen:dwave_eng 0, ev2_4e104:^Quelle enfant obstinée. ^@:dwave_eng 0, ev2_4e105:^... Très bien. ^@:dwave_eng 0, ev2_4e106:^Ce sera la dernière. ^@:dwave_eng 0, ev2_4e107:^Je vais déchirer la source même de cette magie ridicule à laquelle Maria et toi avez cru. ^@/
+
+
+;mld l,$EV2_AkuwaraiA3,0
+;msp msp_l,0,0,-120
+mldt l,$EV2_AkuwaraiA3,0,135
+
+print 80
+
+langjp:dwave_jp 0, ev2_4e108:須磨寺霞、そのページを読みなさい？」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e108:^Kasumi Sumadera, lis cette page.^\
+
+
+ld c,$KAS_akuwaraia1,80
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e191:「なぁに、このカラフルなページは……？@:dwave_jp 0, kas_4e192:　…何々？@/
+langen:dwave_eng 0, kas_4e191:^C'est quoi, cette page toute colorée... ? ^@:dwave_eng 0, kas_4e192:^... Voyons voir ?^@/
+
+ld c,$KAS_Waraia2,80
+me2v 17,60
+langjp:dwave_jp 0, kas_4e193:　………大好きなママと、/
+sl
+langjp:voicedelay 2110:dwave_jp 0, kas_4e194:^^……いつまでも仲良しでいられる魔法ぉ…？」\
+;＜霞
+langen:dwave_eng 0, kas_4e193:^ ... Une magie pour...^@/
+sl
+langen:voicedelay 2110:dwave_eng 0, kas_4e194:^ rester toujours amie avec ma maman adorée... ?^\
+
+;mld r,$sak_nakuA2,0
+;msp msp_r,0,0,-120
+mldt r,$sak_nakuA2,0,135
+
+print 24
+
+advchar "33"
+langjp:dwave_jp 0, sak_4e540:『やッ、やめてぇええええぇ！！@:dwave_jp 0, sak_4e541:　そのページだけは……！！』\
+;＜さくたろ
+langen:dwave_eng 0, sak_4e540:^N-Non, arrêêêêêêête !! ^@:dwave_eng 0, sak_4e541:^Pas cette page... !!^\
+
+mcl r,22
+ld c,$KAS_waraiA1,80
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e195:「へー。@:dwave_jp 0, kas_4e196:この魔法、すっごく簡単じゃない。@:dwave_jp 0, kas_4e197:私でもすぐ出来そうだわ。@/
+langen:dwave_eng 0, kas_4e195:^Tiens. ^@:dwave_eng 0, kas_4e196:^Cette magie est super simple, dis donc. ^@:dwave_eng 0, kas_4e197:^Même moi, je pourrais la faire tout de suite.^@/
+
+ld c,$KAS_AkuwaraiA2,80
+
+langjp:dwave_jp 0, kas_4e198:………こんなに短い呪文なら、私にだって覚えられちゃう。@:dwave_jp 0, kas_4e199:やってみようかしら。」\
+;＜霞
+langen:dwave_eng 0, kas_4e198:^ ... Une formule aussi courte, même moi je peux la retenir. ^@:dwave_eng 0, kas_4e199:^Et si j'essayais ?^\
+
+
+;mld l,$EV2_akuwaraiA2,0
+;msp msp_l,0,0,-120
+mldt l,$EV2_akuwaraiA2,0,135
+
+print 80
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e109:「くすくす、本当に簡単な呪文よねぇ？@:dwave_jp 0, ev2_4e110:　いいわよ、やってあげなさい、みんなも噴出しちゃうからぁ！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e109:^Hmhm, c'est vraiment une formule toute simple, pas vrai ? ^@:dwave_eng 0, ev2_4e110:^Vas-y, fais-la donc. Tout le monde va éclater de rire !^\
+
+advchar "-1"
+langjp　黒き魔女と霞は、心の底から馬鹿にした表情で、……口を、ひょっとこのように、尖らせ。@…………それを口にした……。\
+langen^La sorcière noire et Kasumi prirent une expression de profond mépris... puis pincèrent les lèvres en une grimace ridicule. ^@^... Et prononcèrent ces mots...^\
+
+mcl l,0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+E_MA
+
+br
+advchar "22"
+langjp:dwave_jp 0, kas_4e200:「うーうー。」\
+langen:dwave_eng 0, kas_4e200:^Uu-uu.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1br.jpg",":b;bmp\background\forest\hill_1br.png",22  ;fixed lighting issue
+
+advchar "-1"
+langjp　黒服たちがきょとんとして、それは何の真似ですかと聞く。@
+langjp　すると霞はげらげらと笑いながら答えた。\
+langen^Les hommes restèrent interdits un instant, incapables de deviner ce que ces deux femmes cherchaient à imiter.^@
+langen^Kasumi leur répondit par un rire tonitruant, ravie de tenir une nouvelle occasion de se moquer du grimoire.^\
+
+
+ld l,$KAS_akuwaraiA2,23
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e201:「これがね、呪文なんだって。@:dwave_jp 0, kas_4e202:おっかしい…！@:dwave_jp 0, kas_4e203:　あっははははははは…！！！」@
+;＜霞
+langen:dwave_eng 0, kas_4e201:^Il paraît que ça, c'est une formule magique. ^@:dwave_eng 0, kas_4e202:^C'est trop drôle... ! ^@:dwave_eng 0, kas_4e203:^Ahahahahahahahaha... !!!^@
+
+;mld r,$EV2_akuwaraiA5,0
+;msp msp_r,0,0,-120
+mldt r,$EV2_akuwaraiA5,0,135
+
+print 24
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e111:「ほら、あんたたちもやってみればぁ？@:dwave_jp 0, ev2_4e112:　うーうーうー。」@
+;＜絵羽
+langen:dwave_eng 0, ev2_4e111:^Allez, vous aussi ! Essayez donc. ^@:dwave_eng 0, ev2_4e112:^Uu-uu-uu.^@
+br
+advchar "-1"
+langjp　黒服たちもふざけた様子で、その唸り声を真似る……。\
+langen^Les hommes se mirent eux aussi à répéter ces sons, en exagérant leurs grimaces pour faire rire leur patronne.^\
+
+mset2ef 22
+
+br
+langjp　————« うーうー。 »@
+langen^« Uu-uu » avait pourtant été bien davantage qu'un simple son pour Maria.^@
+br
+langjp　それが、大好きなママと、いつまでも仲良しでいられる魔法の、呪文。\
+langen^Cette formule lui permettait de retrouver le souvenir d'une journée heureuse auprès de sa mère adorée.^\
+
+mendef 0
+
+;mld r,$EV2_akuwaraiA5,0
+;msp msp_r,0,0,-120
+mldt r,$EV2_akuwaraiA5,0,135
+
+print 22
+
+
+ld l,$KAS_akuwaraiA3,80
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e204:「何この、馬鹿みたいなの…！！@:dwave_jp 0, kas_4e205:　うーうー言うだけで家族仲がよくなるなら、世界はずっと平和だわ。@/
+langen:dwave_eng 0, kas_4e204:^Mais c'est quoi ce truc complètement débile... !! ^@:dwave_eng 0, kas_4e205:^Si dire « uu-uu » suffisait à rapprocher les familles, le monde serait en paix depuis toujours. ^@/
+
+ld l,$KAS_AkuwaraiA2,80
+
+langjp:dwave_jp 0, kas_4e206:あっはっはっはっはっは！！」\
+;＜霞
+langen:dwave_eng 0, kas_4e206:^Ahahahahahaha !!^\
+
+
+;mld r,$EV2_niramuA3,0
+;msp msp_r,0,0,-120
+mldt r,$EV2_niramuA3,0,135
+
+print 80
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e113:「うーうーうー！@:dwave_jp 0, ev2_4e114:　馬鹿な唸り声ぇ！@:dwave_jp 0, ev2_4e115:　こんなの連呼してたら頭の可哀想な子と思われるのがオチよォ！@/
+langen:dwave_eng 0, ev2_4e113:^Uu-uu-uu ! ^@:dwave_eng 0, ev2_4e114:^Quel grognement idiot ! ^@:dwave_eng 0, ev2_4e115:^À force de répéter ça, tout ce que tu gagnes, c'est que les gens te prennent pour une gamine dérangée ! ^@/
+
+;mld r,$EV2_AkuwaraiA4,0
+;msp msp_r,0,0,-120
+mldt r,$EV2_AkuwaraiA4,0,135
+
+print 80
+
+langjp:dwave_jp 0, ev2_4e116:　ばぁッかじゃない？！@/
+langen:dwave_eng 0, ev2_4e116:^T'es complètement débile, ou quoi ?! ^@/
+se1v 37,100
+langjp:dwave_jp 0, ev2_4e117:　うあっはっはっはっはっは、わーっはっはっはっはっは！！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e117:^Wahahahahahaha, waahahahahahahaha !!^\
+
+;mld c,$Sak_nakuA2,0
+;msp msp_c,0,0,-120
+mldt c,$Sak_nakuA2,0,135
+
+print 24
+
+advchar "33"
+langjp:dwave_jp 0, sak_4e542:『やめろぉおぉ……、その魔法だけは……、貶さないでぇえぇぇぇ……。』\
+;＜さくたろ
+langen:dwave_eng 0, sak_4e542:^Arrêêêête... Ne rabaisse pas... pas cette magie-là...^\
+
+mcl a,0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+fr_bg ":b;fr_bg\orig\bmp\background\efe\book1.jpg",":b;bmp\background\efe\book1.png",2
+
+advchar "-1"
+langjp　…………真里亞お姉ちゃんと楼座叔母さんの二人きりのピクニックの日。@
+langen^Tout avait commencé le jour où grande sœur Maria était partie pique-niquer avec tante Rosa.^@
+br
+langjp　それは彼女の人生の中でも五本の指に入るほどの幸せな日だったと記されている。\
+langen^Elle avait écrit dans son journal que cette journée comptait parmi les cinq plus heureuses de toute sa vie.^\
+
+langjp　そしてお姉ちゃんは、ママに習ったばかりのお歌を歌って聞かせた。\
+langen^Maria avait voulu chanter à sa mère une chanson qu'elle venait tout juste d'apprendre.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　……とても喜んでくれた。@
+langjp　でも、途中で歌詞がわからなくなって。@
+langen^Rosa en avait été ravie, et son sourire avait encouragé Maria à poursuivre.^@
+langen^Mais Maria avait oublié les paroles au milieu de sa chanson.^@
+br
+langjp　でも、こんなにもママが喜んでくれてるから、最後まで歌い続けたくて。@
+langen^Comme sa mère semblait si heureuse, elle n'avait pas voulu interrompre ce moment précieux.^@
+br
+langjp　うーうーうー、と。\
+langen^Alors, pour remplacer les paroles oubliées, elle s'était mise à chanter « Uu-uu-uu ».^\
+
+langjp　……歌詞を誤魔化して歌ったんだけど、それをママはとても喜んでくれて……。@
+langen^Rosa avait trouvé cette improvisation amusante et avait éclaté de rire avec sa fille.^@
+br
+langjp　それ以来、« うー »は彼女にとって、ママと楽しく幸せに過ごした日の、思い出の呪文となって残った。\
+langen^Depuis lors, « Uu » était resté pour Maria une formule magique capable de lui rappeler ce pique-nique heureux avec sa mère.^\
+
+langjp　最初は面白がってくれたその呪文も、さすがに聞き飽き、@楼座叔母さんは後にそれを言うと叱るようになるが、@……お姉ちゃんにとって、それはいつまでも忘れられない、楽しい日の思い出なのだ……。\
+langen^Au début, cette formule amusait Rosa. Mais elle finit bien sûr par se lasser de l'entendre, ^@^puis se mit plus tard à gronder grande sœur chaque fois qu'elle la prononçait... ^@^alors que pour grande sœur, elle restait le souvenir d'une journée heureuse qu'elle n'oublierait jamais...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\book1.jpg",":b;bmp\background\efe\book1.png",22
+
+langjp　だからそれは、多分、真里亞が生み出した魔法の中で、もっとも古い、一番最初の魔法……。@
+langen^Parmi toutes les magies de Maria, il s'agissait probablement de la plus ancienne, celle dont tout était parti.^@
+br
+langjp　霞はそのページにも爪を立てる……。\
+langen^Kasumi planta ses ongles dans cette page aussi, sans comprendre l'importance du souvenir qu'elle menaçait de déchirer.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1cr.jpg",":b;bmp\background\forest\hill_1cr.png",22  ;fixed lighting issue
+ld l,$ENJ_hanbesoA2,23
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1666:「……やめて、/
+sl
+langjp:voicedelay 1120:dwave_jp 0, enj_4e1667:^^…………破かないで……。@:dwave_jp 0, enj_4e1668:そのページだけは、/
+sl
+langjp:voicedelay 1890:dwave_jp 0, enj_4e1669:^^………許して………。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1666:^... Arrête^@/
+sl
+langen:voicedelay 1120:dwave_eng 0, enj_4e1667:^... ne la déchire pas... ^@:dwave_eng 0, enj_4e1668:^Épargne au moins...^@/
+sl
+langen:voicedelay 1890:dwave_eng 0, enj_4e1669:^ cette page...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1br.jpg",":b;bmp\background\forest\hill_1br.png",0  ;fixed lighting issue
+ld r,$KAS_waraiA2,24
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e207:「うっふふふふふふふふ！@/
+langen:dwave_eng 0, kas_4e207:^Ouhuhuhuhuhuhuhuhu ! ^@/
+
+ld r,$KAS_AkuwaraiA3,80
+
+langjp:dwave_jp 0, kas_4e208:　だめえッ！！」\
+;＜霞
+langen:dwave_eng 0, kas_4e208:^Pas question !!^\
+se1v 1006,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+wait 1000
+
+advchar "-1"
+langjp^^!s0　…………絹を裂く音が、少女の幸せな世界を、/
+sl
+langjp^^!d800消し、/
+sl
+langjp^^!d1000た。/
+sl
+langen^^!s0^... Dans un bruit strident, le monde heureux d'une petite fille... ^@/
+sl
+langen:!d800^fut... ^@/
+sl
+langen:!d1000^effacé.^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1br.jpg",":b;bmp\background\forest\hill_1br.png",26  ;fixed lighting issue
+;mld c,$EV2_akuwaraiA5,0
+;msp msp_c,0,0,-120
+mldt c,$EV2_akuwaraiA5,0,135
+
+print 24
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e118:「うーうーうー！@:dwave_jp 0, ev2_4e119:　ああっはっはっはっはっは、あーっはっはっはっは！！@:dwave_jp 0, ev2_4e120:　これがあんたらの、幸せな魔法なわけぇ？@:dwave_jp 0, ev2_4e121:　笑っちゃう笑っちゃう…！！\
+langen:dwave_eng 0, ev2_4e118:^Uu-uu-uu- ! ^@:dwave_eng 0, ev2_4e119:^Aaahahahahahahaha, aaahahahahahahaha !! ^@:dwave_eng 0, ev2_4e120:^Alors c'est çaaa, votre fameuse magie du bonheur ? ^@:dwave_eng 0, ev2_4e121:^Ça me fait mourir de rire... !!^\
+
+
+;mld c,$EV2_AkuwaraiA8,0
+;msp msp_c,0,0,-120
+mldt c,$EV2_AkuwaraiA8,0,135
+
+print 80
+
+langjp:dwave_jp 0, ev2_4e122:　幸せになる魔法なんてね、あるわけないでしょお？！@:dwave_jp 0, ev2_4e123:　魔法はね、怒りとね、憎しみで出来てるのよぅ？\
+langen:dwave_eng 0, ev2_4e122:^Une magie qui rend heureux ? Ça n'existe pas, voyons ?! ^@:dwave_eng 0, ev2_4e123:^La magie, elle se fait avec la colère et la haine, tu sais ?^\
+
+
+;mld c,$EV2_AkuwaraiA6,0
+;msp msp_c,0,0,-120
+mldt c,$EV2_AkuwaraiA6,0,135
+
+print 80
+
+langjp:dwave_jp 0, ev2_4e124:　幸せってのはね、自分の背負わされた憎悪を人に全て押し付けた時にのみ与えられる開放感を言うのよ。@:dwave_jp 0, ev2_4e125:あんたたちの言う幸せなんて、絵本の中にしか出てこないまやかしなのよッ！！」\
+langen:dwave_eng 0, ev2_4e124:^Le bonheur, c'est ce sentiment de libération qu'on ne ressent que lorsqu'on a rejeté sur quelqu'un d'autre toute la haine qu'on portait. ^@:dwave_eng 0, ev2_4e125:^Votre prétendu bonheur n'est qu'une illusion bonne pour les livres d'images !!^\
+;＜絵羽
+advchar "-1"
+langjp　霞は笑い転げながら、魔導書を地面に叩きつけ、踏み躙る。/
+sl
+langen^Kasumi jeta le grimoire à terre en riant, puis se mit à le piétiner.^@/
+
+;se1 12
+;quakey 2,600
+;se2 12
+;quakey 2,600
+;se3 12
+;quakey 2,600
+
+
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+
+
+
+;mld c,$EV2_AkuwaraiA2,0
+;msp msp_c,0,0,-120
+mldt c,$EV2_AkuwaraiA2,0,135
+
+print 80
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e126:「悔しい？@:dwave_jp 0, ev2_4e127:　ねぇ、悔しい？！@:dwave_jp 0, ev2_4e128:　幸せの白き魔女さんたちぃ？@:dwave_jp 0, ev2_4e129:　そんなに悔しかったら、見せてみればぁ？！@:dwave_jp 0, ev2_4e130:　あんたたちの魔法！！@/
+langen:dwave_eng 0, ev2_4e126:^Ça te rend folle ? ^@:dwave_eng 0, ev2_4e127:^Hein, tu enrages ?! ^@:dwave_eng 0, ev2_4e128:^Mes petites sorcières blanches du bonheur ? ^@:dwave_eng 0, ev2_4e129:^Si ça vous énerve tant que ça, alors montrez-la-moi ?! ^@:dwave_eng 0, ev2_4e130:^Votre magie !! ^@/
+
+
+;mld c,$EV2_AkuwaraiA6,0
+;msp msp_c,0,0,-120
+mldt c,$EV2_AkuwaraiA6,0,135
+
+print 80
+
+langjp:dwave_jp 0, ev2_4e131:　あるなら使って見せればいいじゃないぃ？@:dwave_jp 0, ev2_4e132:　………魔法が使えない魔女なんて魔女じゃない！！@:dwave_jp 0, ev2_4e133:　つまり本当の魔女は私たち。@:dwave_jp 0, ev2_4e134:あんたたちなんて、魔法の夢で現実から逃避しているだけの、クソガキどもなのよッ！！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e131:^Si elle existe, vous avez qu'à me la montrer, non ? ^@:dwave_eng 0, ev2_4e132:^... Une sorcière incapable d'utiliser la magie n'est pas une sorcière !! ^@:dwave_eng 0, ev2_4e133:^Donc les vraies sorcières, c'est nous. ^@:dwave_eng 0, ev2_4e134:^Vous, vous êtes juste des sales gosses qui fuient la réalité en rêvant de magie !!^\
+
+
+
+mcl c,0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+fede 0,3000
+
+wait 1000
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1669_1:^^!s1　……………じゃあ、/
+sl
+langjp:voicedelay 1410:dwave_jp 0, enj_4e1669_2:^^………魔法を私が見せることが出来たなら、/
+sl
+langjp:voicedelay 4000:^^……お姉ちゃんの魔法を、/
+sl
+langjp:voicedelay 5850:dwave_jp 0, enj_4e1669_3:^^………信じてくれるの………？/
+sl
+langen:dwave_eng 0, enj_4e1669_1:^^!s1^... Alors^@/
+sl
+langen:voicedelay 1410:dwave_eng 0, enj_4e1669_2:^... si je te montre de la magie^@/
+sl
+langen:voicedelay 4000:^... est-ce que tu... ^@/
+sl
+langen:voicedelay 5850:dwave_eng 0, enj_4e1669_3:^croiras à la magie de grande sœur... ?^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+me1v 16,50
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1br.jpg",":b;bmp\background\forest\hill_1br.png",0  ;fixed lighting issue
+;mld r,$EV2_akuwaraiA5,0
+;msp msp_r,0,0,-120
+mldt r,$EV2_akuwaraiA5,0,135
+
+print 26
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e135:「え？@:dwave_jp 0, ev2_4e136:　きゃっははははは、ええ、えぇ！！@:dwave_jp 0, ev2_4e137:　信じるわよぉ？@:dwave_jp 0, ev2_4e138:　魔法を使って見せることが出来たならねぇ〜！！@/
+langen:dwave_eng 0, ev2_4e135:^Hein ? ^@:dwave_eng 0, ev2_4e136:^Ahahahahahaha, oui, bien sûr !! ^@:dwave_eng 0, ev2_4e137:^Je te croirai, oui ? ^@:dwave_eng 0, ev2_4e138:^Si tu arrives vraiment à faire de la magie sous mes yeux !! ^@/
+
+;mld r,$EV2_NiramuA3,0
+;msp msp_r,0,0,-120
+mldt r,$EV2_NiramuA3,0,135
+
+print 80
+
+langjp:dwave_jp 0, ev2_4e139:　ならやって見ろよこのクソボケガキャぁあああぁッ！！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e139:^Alors vas-y, montre-nous, espèce de sale morveuse débiiiiile !!^\
+
+mcl r,0
+bg white,25
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",2  ;fixed lighting issue
+
+advchar "-1"
+langjp　………………………。@………。@
+langen^...^@^ ^@
+br
+langjp　私は、@……音もなく、ゆっくりと立ち上がる。@
+langjp　……体の痛みという、狭い世界の感覚は、実に下らなく感じられた……。\
+langen^Silencieusement, lentement... ^@^je me relevai.^@
+langen^Ce corps meurtri me paraissait soudain bien trop étroit pour contenir tout ce que je venais de comprendre.^\
+
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",0  ;fixed lighting issue
+ld c,$KAS_akuwaraiA2,22
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e209:「あら、まだ立てる元気はあったのねぇ、大魔女さん？@:dwave_jp 0, kas_4e210:　くすくすくす！」@
+;＜霞
+langen:dwave_eng 0, kas_4e209:^Oh, tu avais encore assez de forces pour te relever, Grande Sorcière ? ^@:dwave_eng 0, kas_4e210:^Hmhmhm !^@
+
+;mld l,$EV2_akuwaraiA3,0
+;msp msp_l,0,0,-120
+mldt l,$EV2_akuwaraiA3,0,135
+
+print 23
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e140:「立ち上がって、何をして見せるの？@:dwave_jp 0, ev2_4e141:　見せてみなさいよ、魔法ォ…！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e140:^Et maintenant que tu es debout, qu'est-ce que tu vas nous montrer ? ^@:dwave_eng 0, ev2_4e141:^Montre-nous donc ta magiiie... !^\
+
+E_A
+
+vsp msp_l,0
+;ld c,$ENJ_komaruA3,80
+mbg black,1
+
+bgm1v 94,85
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1670:「…………………魔法は、あるわ。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1670:^... La magie existe.^@
+
+vsp msp_l,1
+mcbg 22
+ld c,$KAS_ikariA1,80
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e211:「はぁ？@:dwave_jp 0, kas_4e212:　この子、何を言い出すかと思えば…！@:dwave_jp 0, kas_4e213:　あんたたち、今の聞いたぁ？！」\
+;＜霞
+langen:dwave_eng 0, kas_4e211:^Hein ? ^@:dwave_eng 0, kas_4e212:^Mais qu'est-ce qu'elle raconte, celle-là... ! ^@:dwave_eng 0, kas_4e213:^Vous avez entendu ça ?!^\
+
+
+;mld l,$EV2_IkariA2,0
+;msp msp_l,0,0,-120
+mldt l,$EV2_IkariA2,0,135
+
+print 80
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e142:「静かにッ！！！@/
+langen:dwave_eng 0, ev2_4e142:^Silence !!!^@/
+
+;mld l,$EV2_FukigenA2,0
+;msp msp_l,0,0,-120
+mldt l,$EV2_FukigenA2,0,135
+
+print 80
+
+langjp:dwave_jp 0, ev2_4e143:　…………へぇ、面白いじゃない。@:dwave_jp 0, ev2_4e144:…反魔法の毒素を理由に、あんたたちはいつも奇跡の力を拒んできた。@:dwave_jp 0, ev2_4e145:………白き魔女マリアの弟子。@:dwave_jp 0, ev2_4e146:見せてみなさいよ、魔法を…！！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e143:^ ... Hé, ça devient intéressant. ^@:dwave_eng 0, ev2_4e144:^... Vous avez toujours prétexté la toxine anti-magie pour refuser de montrer le pouvoir des miracles. ^@:dwave_eng 0, ev2_4e145:^... Disciple de la Sorcière Blanche, Dame MARIA, ^@:dwave_eng 0, ev2_4e146:^montre-moi donc ta magie... !!^\
+
+cl c,0
+ld r,$ENJ_defA1,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1671:「………………………。」\
+langen:dwave_eng 0, enj_4e1671:^...^\
+
+;mld l,$EV2_akuwaraiA2,0
+;msp msp_l,0,0,-120
+mldt l,$EV2_akuwaraiA2,0,135
+
+print 80
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e147:「……一体、どれだけの人間が、その奇跡を信じて、裏切られていったか知っている？@/
+langen:dwave_eng 0, ev2_4e147:^Tu sais seulement combien d'humains ont cru en ce miracle avant d'être trahis ?^@/
+;mld l,$EV2_TokuiA1,0
+;msp msp_l,0,0,-120
+mldt l,$EV2_TokuiA1,0,135
+
+print 80
+
+langjp:dwave_jp 0, ev2_4e148:　………くすくす。@:dwave_jp 0, ev2_4e149:誰もが信じ！@:dwave_jp 0, ev2_4e150:　誰もが裏切られて絶望した！@:dwave_jp 0, ev2_4e151:　そして、本当の魔法は、私たち黒き魔女の力でしか得られないことを知るのよ…！！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e148:^ ... Hmhm. ^@:dwave_eng 0, ev2_4e149:^Tout le monde y croit ! ^@:dwave_eng 0, ev2_4e150:^Tout le monde est trahi et sombre dans le désespoir ! ^@:dwave_eng 0, ev2_4e151:^Et ils finissent par comprendre que la véritable magie ne peut s'obtenir que par le pouvoir de nous autres, les sorcières noires... !!^\
+
+ld r,$ENJ_fumanA2,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1672:「……………憎しみを誰かにぶつけるのは、ただの罪。@:dwave_jp 0, enj_4e1673:そんなのは魔法じゃないわ。@/
+langen:dwave_eng 0, enj_4e1672:^... Déverser sa haine sur quelqu'un, ce n'est qu'un péché. ^@:dwave_eng 0, enj_4e1673:^Ça, c'est pas de la magie.^@/
+
+ld r,$ENJ_defA1,80
+langjp:dwave_jp 0, enj_4e1674:………本当の魔法を、私が見せてやる。」/
+sl
+langen:dwave_eng 0, enj_4e1674:^ ... Je vais te montrer ce qu'est la véritable magie.^@/
+se1v 2,100
+mov %disable_adv_clear, 1
+langjp:noclear_cw:
+langen:noclear_cw:
+mov %disable_adv_clear, 0
+advchar "-1"
+
+
+;mld l,$EV2_ikariA2,0
+;msp msp_l,0,0,-120
+mldt l,$EV2_ikariA2,0,135
+
+print 80
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e152:「……………こ、いつ……………、」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e152:^ ... T-Toi...^\
+
+advchar "-1"
+langjp　黒き魔女はわずかにたじろぐ。@
+langjp　しかし、霞はなおも私を嘲笑った。\
+langen^La sorcière noire recula légèrement, surprise de voir mon assurance.^@
+langen^Kasumi, elle, continuait à se moquer de moi sans comprendre ce qui avait changé.^\
+
+
+ld c,$KAS_waraiA1,23
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e214:「なら、見せて御覧なさいよ。@:dwave_jp 0, kas_4e215:それで、あんたはどの魔法を見せてくれるの？@/
+langen:dwave_eng 0, kas_4e214:^Alors vas-y, montre-moi. ^@:dwave_eng 0, kas_4e215:^Quelle magie comptes-tu donc nous faire voir ? ^@/
+
+ld c,$KAs_AkuwaraiA3,80
+
+langjp:dwave_jp 0, kas_4e216:　飴玉を降らせる魔法？@:dwave_jp 0, kas_4e217:　それともクッキーを増やす魔法？@/
+langen:dwave_eng 0, kas_4e216:^Une magie qui fait pleuvoir des bonbons ? ^@:dwave_eng 0, kas_4e217:^Ou celle qui multiplie les cookies ?^@/
+
+vsp msp_l,0
+;mcl l,0
+mbg white,1
+mcbg 0
+vsp msp_l,1
+;mld l,$EV2_IkariA1,0
+;msp msp_l,0,0,-120
+mldt l,$EV2_IkariA1,0,135
+
+ld c,$KAS_AseruA1,0
+ld r,$ENJ_Fumana1,80
+
+me1v 16,70
+
+langjp:dwave_jp 0, kas_4e218:　…………うわッ？！」@
+;＜霞
+langen:dwave_eng 0, kas_4e218:^ ... Q-Quoi ?!^@
+
+br
+advchar "-1"
+langjp　私が目を見開くと同時に、凄まじい風が巻き起こった。\
+langen^Une violente bourrasque se leva au moment où j'ouvris les yeux.^\
+
+ld c,$KAS_komaruA1,80
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e219:「なッ、……何、突然………？！」@
+;＜霞
+langen:dwave_eng 0, kas_4e219:^Q-Quoi... ? C'est quoi, tout à coup... ?!^@
+
+ld r,$ENJ_nayamuA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1675:「さぁさ、お出でなさい、煉獄の七姉妹。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1675:^Allons, venez à moi, les Sept Sœurs du Purgatoire.^@
+
+;mld l,$EV2_OdorokiA2,0
+;msp msp_l,0,0,-120
+mldt l,$EV2_OdorokiA2,0,135
+
+print 80
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e153:「………何ぃ……、」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e153:^... Quoi... ?^\
+textoff
+mcl a,0
+se1v 57,100
+bg white,1
+resettimer
+waittimer 1000
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1br.jpg",":b;bmp\background\forest\hill_1br.png",0  ;fixed lighting issue
+;ld c,$RG1_DefA1,0
+lsp_var 4,$RG1_DefA1,224,30  ;convert to widescreen
+;lsp 906,$RG6_hohoemiA1,-160,30
+;lsp 905,$RG4_akuwaraiA1,-64,30
+lsp_var 113,$RG6_hohoemiA1,-160,30
+lsp_var 112,$RG4_akuwaraiA1,-32,30  ;convert to widescreen
+
+se2v 37,90
+
+;lsp 904,$RG3_akuwaraiA2,32,30
+;lsp 903,$RG2_defA1,224,30
+lsp_var 111,$RG3_akuwaraiA2,96,30  ;convert to widescreen
+lsp_var 3,$RG2_defA1,352,30  ;convert to widescreen
+
+
+se3 37
+
+;lsp 901,$RG7_WaraiA1,320,30
+lsp_var 2,$RG7_WaraiA1,480,30  ;convert to widescreen
+
+
+se1v 52,100
+se2 55
+print 99,1000,"breakup.dll/llb"
+
+me2v 16,70
+
+advchar "-1"
+langjp　私の背後に閃光が走り、瞬時に上級家具７人が揃う。@
+langen^Un éclair jaillit derrière moi et les sept meubles de haut rang apparurent ensemble.^@
+br
+langjp　それは私の全盛期の魔力をはるかに超える力。@
+langen^La puissance magique de cette invocation dépassait largement celle dont j'avais été capable autrefois.^@
+br
+langjp　真里亞お姉ちゃんや、ベアトリーチェにさえも及ぶほどの力。\
+langen^Elle pouvait désormais rivaliser avec les pouvoirs de grande sœur Maria et de Béatrice.^\
+
+;ld c,$RG1_AkuwaraiA2,80
+lsp_var 4,$RG1_AkuwaraiA2,224,30
+print 80
+
+se1v 2,100
+advchar "38"
+langjp:dwave_jp 0, rg1_4e59:「煉獄の七姉妹、ここに…！！」\
+;＜ルシファ
+langen:dwave_eng 0, rg1_4e59:^Les Sept Sœurs du Purgatoire, présentes... !!^\
+
+csp -1
+csp_var 113
+csp_var 112
+csp_var 111
+csp_var 4
+csp_var 3
+csp_var 2
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1br.jpg",":b;bmp\background\forest\hill_1br.png",0  ;fixed lighting issue
+ld l,$ENJ_DefA1,23
+;mld r,$RG5_odorokiA3,0
+;msp msp_r,0,0,-120
+mldt r,$RG5_odorokiA3,0,135
+
+print 24
+
+advchar "42"
+langjp:dwave_jp 0, rg5_4e372:「……え、縁寿さま……！」\
+;＜マモン
+langen:dwave_eng 0, rg5_4e372:^... D-Dame Ange... !^\
+
+
+ld l,$ENJ_KomaruA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1676:^^!s1「あなたはかつて言ったわ。@:dwave_jp 0, enj_4e1677:……私に魔力と、その覚悟がないから、/
+sl
+langjp:voicedelay 3130:dwave_jp 0, enj_4e1678:^^……あなたたちを使役できなかったのだと。@/
+langen:dwave_eng 0, enj_4e1676:^^!s1^Tu l'as dit toi-même autrefois. ^@:dwave_eng 0, enj_4e1677:^... Parce que je manquais de pouvoir magique et de détermination^@/
+sl
+langen:voicedelay 3130:dwave_eng 0, enj_4e1678:^... je n'étais pas capable de vous commander, toi et tes sœurs.^@/
+
+ld l,$ENJ_NayamuA1,80
+
+langjp:dwave_jp 0, enj_4e1679:…………私をいじめるクラスメートに仕返しがしたいなんて、そんな安っぽい感情じゃない。\
+langen:dwave_eng 0, enj_4e1679:^ ... Mais cette fois, ce n'est pas pour un sentiment aussi mesquin que vouloir me venger des camarades qui me harcelaient.^\
+
+ld l,$ENJ_defA1,80
+
+langjp:dwave_jp 0, enj_4e1680:　…私は、真里亞お姉ちゃんの、………マリアージュ・ソルシエールの世界を守るために、@:dwave_jp 0, enj_4e1681:……今こそ、魔法の奇跡を見せることを命令するわ。」/
+sl
+langen:dwave_eng 0, enj_4e1680:^... Pour protéger le monde de grande sœur Maria... le monde de Mariage Sorcière, ^@:dwave_eng 0, enj_4e1681:^je vous ordonne maintenant de montrer le miracle de la magie.^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜縁寿
+
+
+;mld r,$RG5_komaruA2,0
+;msp msp_r,0,0,-120
+mldt r,$RG5_komaruA2,0,135
+
+print 80
+
+advchar "42"
+langjp:dwave_jp 0, rg5_4e373:「む、無理です…。@:dwave_jp 0, rg5_4e374:いくら何でも、これだけ大勢の毒素の前では………、」\
+;＜マモン
+langen:dwave_eng 0, rg5_4e373:^I-Impossible... ^@:dwave_eng 0, rg5_4e374:^Même nous, face à une telle concentration de toxine...^\
+
+advchar "-1"
+langjp　七姉妹たちも、かつてのあの教室のことを覚えてる。@
+langen^Les Sept Sœurs se rappelaient parfaitement leur échec dans cette salle de classe, autrefois.^@
+br
+langjp　……もしも、縁寿の命令に従えるものなら、従っていた。\
+langen^Elles auraient obéi à Ange si elles en avaient eu la possibilité.^\
+
+langjp　……しかし、……ニンゲンの濃厚な毒素の中で、魔法の奇跡を見せることは出来なかった。@
+langen^Mais la toxine anti-magie répandue par les Humains présents leur avait interdit de manifester leurs pouvoirs.^@
+br
+langjp　……そしてそれが、縁寿をひどく傷つけたことを、よく覚えているのだ……。\
+langen^Elles n'avaient jamais oublié à quel point cet échec avait blessé Ange.^\
+
+langjp　でも縁寿は、とても静かに言った。\
+langen^Cette fois, pourtant, Ange leur parla avec un calme et une confiance qu'elles ne lui connaissaient pas.^\
+
+ld l,$ENJ_fumanA2,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1682:「なら。@:dwave_jp 0, enj_4e1683:あなたたちも信じて。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1682:^Alors, ^@:dwave_eng 0, enj_4e1683:^vous aussi, croyez-y.^@
+
+;mld r,$RG5_odorokiA3,0
+;msp msp_r,0,0,-120
+mldt r,$RG5_odorokiA3,0,135
+
+print 80
+
+advchar "42"
+langjp:dwave_jp 0, rg5_4e375:「……え？」\
+;＜マモン
+langen:dwave_eng 0, rg5_4e375:^... Hein ?^\
+
+
+ld l,$ENJ_komaruA3,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1684:「…………マリアージュ・ソルシエールは人を幸せにするために生まれた。@:dwave_jp 0, enj_4e1685:…そしてそれは、黒き魔女と戦うためでもあった。\
+langen:dwave_eng 0, enj_4e1684:^... Mariage Sorcière est née pour apporter le bonheur aux gens. ^@:dwave_eng 0, enj_4e1685:^... Et aussi pour lutter contre la sorcière noire.^\
+
+ld l,$ENJ_fumanA2,80
+
+langjp:dwave_jp 0, enj_4e1686:　その創立者のひとり、原初の魔女、マリア卿が生み出した世界を否定する愚かなる黒き魔女に、@:dwave_jp 0, enj_4e1687:……その奇跡を見せ、/
+sl
+langjp:voicedelay 1410:dwave_jp 0, enj_4e1688:^^……その世界を守るために、/
+sl
+langjp:voicedelay 2050:dwave_jp 0, enj_4e1689:^^………信じて。@:dwave_jp 0, enj_4e1690:魔法を。@:dwave_jp 0, enj_4e1691:魔女を。@:dwave_jp 0, enj_4e1692:今こそ、奇跡を…！」\
+langen:dwave_eng 0, enj_4e1686:^Pour montrer ce miracle à cette pitoyable sorcière noire, ^@:dwave_eng 0, enj_4e1687:^qui nie le monde créé par l'une de ses fondatrices, la Sorcière des Origines, Dame MARIA^@/
+sl
+langen:voicedelay 1410:dwave_eng 0, enj_4e1688:^... et pour protéger ce monde^@/
+sl
+langen:voicedelay 2050:dwave_eng 0, enj_4e1689:^... croyez-y. ^@:dwave_eng 0, enj_4e1690:^À la magie. ^@:dwave_eng 0, enj_4e1691:^Aux sorcières. ^@:dwave_eng 0, enj_4e1692:^À présent, croyez au miracle... !^\
+;＜縁寿
+
+mcl a,0
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",0  ;fixed lighting issue
+ld l,$KAS_waraiA1,23
+
+advchar "-1"
+langjp　霞が黒服に指示を出すと、一人が銃を抜き、縁寿に向けて構える。\
+langen^À l'ordre de Kasumi, l'un des hommes en noir sortit son arme et braqua le canon sur Ange.^\
+
+se1 43
+textoff
+wait 1000
+
+ld l,$KAS_akuwaraiA1,80
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e220:「魔法を見せてくれるんでしょう？@:dwave_jp 0, kas_4e221:　なら見せて頂戴。@:dwave_jp 0, kas_4e222:魔法で、火の玉でも稲妻でも撃ち出して、この男を倒して見せなさいよ。@/
+langen:dwave_eng 0, kas_4e220:^Vous allez nous montrer de la magie, n'est-ce pas ? ^@:dwave_eng 0, kas_4e221:^Alors montrez-la-nous. ^@:dwave_eng 0, kas_4e222:^Avec votre magie, lancez une boule de feu, un éclair ou ce que vous voulez, et abattez cet homme sous nos yeux. ^@/
+
+ld l,$KAS_akuWaraiA2,80
+
+langjp:dwave_jp 0, kas_4e223:チャンスは一度。@:dwave_jp 0, kas_4e224:………３つ数える内にやってお見せなさい？@:dwave_jp 0, kas_4e225:　出来なければ、覚悟してもらうわよ？@:dwave_jp 0, kas_4e226:　うっふふふふふふ！」\
+;＜霞
+langen:dwave_eng 0, kas_4e223:^Vous n'avez qu'une chance. ^@:dwave_eng 0, kas_4e224:^... Montrez-nous ça avant que j'aie compté jusqu'à trois, d'accord ? ^@:dwave_eng 0, kas_4e225:^Si vous n'y arrivez pas, préparez-vous aux conséquences. ^@:dwave_eng 0, kas_4e226:^Ouhuhuhuhuhu !^\
+
+
+ld r,$ENJ_fumanA2,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1693:「………………………。@:dwave_jp 0, enj_4e1694:………………撃ちなさいよ。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1693:^...^@:dwave_eng 0, enj_4e1694:^ Tirez.^@
+br
+advchar "-1"
+langjp:dwave_jp 0, "voice\99\mafmb4012.ogg":「何だ、このガキ。@:dwave_jp 0, "voice\99\mafmb4013.ogg":へっへへ、狂ってやがるぜ。」@
+langen:dwave_eng 0, "voice\99\mafmb4012.ogg":^C'est quoi, cette gamine ? ^@:dwave_eng 0, "voice\99\mafmb4013.ogg":^Héhéhé, elle est complètement cinglée.^@
+br
+langjp　銃を向けた黒服が、縁寿の達観を笑う。\
+langen^L'homme chargé de me tenir en joue se moqua de mon calme, persuadé que la peur finirait par me faire céder.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1cr.jpg",":b;bmp\background\forest\hill_1cr.png",0  ;fixed lighting issue
+;mld l,$EV2_akuwaraiA4,0
+;msp msp_l,0,0,-120
+mldt l,$EV2_akuwaraiA4,0,135
+
+print 24
+
+me3v 5,50
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e154:「あっはははははは！！@:dwave_jp 0, ev2_4e155:　本気？！@:dwave_jp 0, ev2_4e156:　こいつ、頭の中までお花が咲いてやがるゥ！@:dwave_jp 0, ev2_4e157:　なら撃たれなさいよ、死んじゃえばぁあああぁ？！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e154:^Ahahahahahahaha !! ^@:dwave_eng 0, ev2_4e155:^Sérieusement ?! ^@:dwave_eng 0, ev2_4e156:^Cette gamine a des fleurs jusque dans le crâne ! ^@:dwave_eng 0, ev2_4e157:^Alors fais-toi tirer dessus ! Et va donc crever une bonne fooooois ?!^\
+
+;mld r,$sak_nakuA3,0
+;msp msp_r,0,0,-120
+mldt r,$sak_nakuA3,0,135
+
+
+print 24
+
+advchar "33"
+langjp:dwave_jp 0, sak_4e543:『縁寿…！！@:dwave_jp 0, sak_4e544:　……む、無理！@:dwave_jp 0, sak_4e545:　銃弾は魔法では防げないよ……！！』@
+;＜さくたろ
+langen:dwave_eng 0, sak_4e543:^Ange... !! ^@:dwave_eng 0, sak_4e544:^... I-Impossible ! ^@:dwave_eng 0, sak_4e545:^La magie ne peut pas arrêter une balle... !!^@
+
+ld c,$ENJ_DefA1,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1695:「いいえ。@:dwave_jp 0, enj_4e1696:何も恐れることはないわ。@:dwave_jp 0, enj_4e1697:…………私の魔法は、煉獄の七姉妹は、銃弾など、物ともしない。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1695:^Non. ^@:dwave_eng 0, enj_4e1696:^Il n'y a rien à craindre. ^@:dwave_eng 0, enj_4e1697:^... Face à ma magie, face aux Sept Sœurs du Purgatoire, une simple balle n'est rien.^\
+
+mcl l,24
+;mld l,$RG5_odorokiA3,0
+;msp msp_l,0,0,-120
+mldt l,$RG5_odorokiA3,0,135
+
+print 23
+
+advchar "42"
+langjp:dwave_jp 0, rg5_4e376:「え、縁寿さま………。」\
+;＜マモン
+langen:dwave_eng 0, rg5_4e376:^D-Dame Ange...^\
+
+advchar "-1"
+langjp　マモンは縁寿の絶対の信頼に、戸惑う。@
+langen^Mammon ne comprenait pas comment Ange pouvait lui accorder une confiance aussi absolue dans de telles circonstances.^@
+br
+langjp　……応えられるものなら応えたかった。@あの日にも。@
+langen^... Si elle avait pu répondre à cette confiance, elle l'aurait fait. ^@^Ce jour-là aussi.^@
+br
+langjp　でも、……何も出来なかったから、縁寿を傷つけて………。\
+langen^Elle se souvenait de son impuissance, et surtout de la blessure qu'elle avait laissée à Ange.^\
+
+mcl a,0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+se1 30
+langjp:dwave_jp 0, "voice\99\mafmb4014.ogg":「へっへへ、ガキめ。@:dwave_jp 0, "voice\99\mafmb4015.ogg":魔法が使えるってんなら、早く見せてみやがれってんだ。」@
+langjp:dwave_jp 0, "voice\99\mafma4016.ogg":「どうしたよ？@:dwave_jp 0, "voice\99\mafma4017.ogg":　早く魔法を見せてみろってんだ！！」@
+langjp:dwave_jp 0, "voice\99\mafmc4014.ogg":「ほら、遠慮はいらねぇぜ？@:dwave_jp 0, "voice\99\mafmc4015.ogg":　俺にバビョーンと！@:dwave_jp 0, "voice\99\mafmc4016.ogg":　魔法ってヤツをお見舞いしてくれよぉ！！@:dwave_jp 0, "voice\99\mafmc4017.ogg":　ひっへっへっへ！」@
+langen:dwave_eng 0, "voice\99\mafmb4014.ogg":^Héhéhé, allez, pas la peine de te retenir. ^@:dwave_eng 0, "voice\99\mafmb4015.ogg":^Si tu sais faire de la magie, montre-nous ça tout de suite.^@
+langen:dwave_eng 0, "voice\99\mafma4016.ogg":^Qu'est-ce qu'il y a ? ^@:dwave_eng 0, "voice\99\mafma4017.ogg":^On te dit de nous montrer ta magie, non ?!!^@
+langen:dwave_eng 0, "voice\99\mafmc4014.ogg":^Allez, te gêne pas ! ^@:dwave_eng 0, "voice\99\mafmc4015.ogg":^Fais-moi un grand « babyo-on » ! ^@:dwave_eng 0, "voice\99\mafmc4016.ogg":^Balance-moi ta fameuse magie !! ^@:dwave_eng 0, "voice\99\mafmc4017.ogg":^Héhéhé !^@
+br
+langjp　黒服たちが囃す。@
+langjp　しかし縁寿はただ静かに、精神を集中していく……。\
+langen^Les hommes en noir continuaient leurs provocations, impatients de découvrir comment se terminerait cette prétendue démonstration.^@
+langen^Ange, elle, ne répondit pas et concentra toute son attention sur l'invocation.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1br.jpg",":b;bmp\background\forest\hill_1br.png",0  ;fixed lighting issue
+ld l,$KAS_waraiA1,22
+;mld r,$EV2_akuwaraiA6,0
+;msp msp_r,0,0,-120
+mldt r,$EV2_akuwaraiA6,0,135
+
+print 24
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e158:「撃っちゃえばぁ？！@:dwave_jp 0, ev2_4e159:　撃ってみろって言ってるのよ向こうは！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e158:^Alors tirez, qu'est-ce que vous attendez ?! ^@:dwave_eng 0, ev2_4e159:^C'est elle-même qui vous dit de tirer !^\
+
+
+ld l,$KAS_AkuwaraiA1,80
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e227:「……この子、恐怖でもう、頭がどうかしてるんだわ。@:dwave_jp 0, kas_4e228:バイバイ、縁寿ちゃん。@:dwave_jp 0, kas_4e229:……天国で好きなだけ魔女ごっこをしてなさい。@/
+langen:dwave_eng 0, kas_4e227:^... Cette gamine a complètement perdu la tête de peur. ^@:dwave_eng 0, kas_4e228:^Adieu, Ange. ^@:dwave_eng 0, kas_4e229:^... Au paradis, tu pourras jouer à la sorcière autant que tu voudras.^@/
+
+ld l,$KAS_AkuwaraiA3,80
+
+langjp:dwave_jp 0, kas_4e230:……撃て。」\
+;＜霞
+langen:dwave_eng 0, kas_4e230:^ ... Tirez.^\
+
+advchar "-1"
+langjp:dwave_jp 0, "voice\99\mafmc4018.ogg":「へへ、いいんですか？」\
+langen:dwave_eng 0, "voice\99\mafmc4018.ogg":^Héhé, vous êtes sûre ?^\
+
+
+ld l,$KAS_ikariA1,80
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e231:「お撃ち！@:dwave_jp 0, kas_4e232:　死ね、縁寿ッ！！」@
+;＜霞
+langen:dwave_eng 0, kas_4e231:^Tirez ! ^@:dwave_eng 0, kas_4e232:^Crève, Ange !!^@
+
+;mld r,$EV2_akuwaraiA4,0
+;msp msp_r,0,0,-120
+mldt r,$EV2_akuwaraiA4,0,135
+
+print 80
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e160:「やれるもんならやってみなさいよッ、あんたの魔法をッ！！！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e160:^Si tu peux vraiment le faire, alors montre-nous cette fameuse magie !!!^\
+
+csp -1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+E_A
+se1 30
+advchar "-1"
+langjp　黒服は撃鉄を起こし、嘲笑しながら引き金を、引く。\
+langen^L'homme arma son pistolet avec un sourire moqueur, ajusta sa visée et pressa la détente.^\
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1698:「……………………………。」\
+langen:dwave_eng 0, enj_4e1698:^...^\
+;■曲停止かな
+
+textoff
+
+se1v 46,100
+se2v 1006,100
+se3v 2,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2e.jpg",":b;bmp\background\efe\blood_2e.png",1
+quakex 5,1000
+
+wait 2000
+
+advchar "-1"
+langjp　銃声が鳴り響き、/
+sl
+langjp^^!d1000………世界が、停止した。@
+;■曲変更かな
+langen^La détonation retentit sur la colline.^@/
+sl
+langen:!d1000^ ... et le monde... se figea.^@
+
+
+langjp　赤い飛沫が飛び散り、/
+sl
+langjp^^!d800………肉片が飛んだ。\
+langen^Une gerbe de sang jaillit dans l'air.^@/
+sl
+langen:!d800^ et des morceaux de chair s'envolèrent.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1cr.jpg",":b;bmp\background\forest\hill_1cr.png",0  ;fixed lighting issue
+bld c,$RG1_IkariA1,26
+;mld r,$RG5_komaruA2,0
+;msp msp_r,0,0,-120
+mldt r,$RG5_komaruA2,0,135
+
+print 24
+
+bgm1v 105,95
+
+advchar "42"
+langjp:dwave_jp 0, rg5_4e377:「…ぇ、……………あ……。」@
+;＜マモン
+langen:dwave_eng 0, rg5_4e377:^... Hein... ah...^@
+
+ld c,$RG1_akuwaraiA2,80
+
+advchar "38"
+langjp:dwave_jp 0, rg1_4e60:「何をしてるの、マモン。@:dwave_jp 0, rg1_4e61:……銃弾如き無粋な石ころを、縁寿さまに許すつもり？」@
+;＜ルシファ
+langen:dwave_eng 0, rg1_4e60:^Qu'est-ce que tu fais, Mammon ? ^@:dwave_eng 0, rg1_4e61:^... Tu comptais vraiment laisser un vulgaire caillou comme cette balle approcher Dame Ange ?^@
+br
+
+advchar "-1"
+langjp　ルシファーは、完全に銃弾を捉え、一刀のもとに、……切断していた……。\
+langen^Lucifer avait intercepté la balle et l'avait tranchée en deux d'un seul mouvement.^\
+
+bcl c,0
+mcl a,0
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",0  ;fixed lighting issue
+bld l,$RG2_AkuwaraiA1,0
+lsp 800,":a;bmp\background\efe\1a.png",0,0  ;fixed, loads PNG now
+print 22
+
+langjp　そして、……銃を撃ったはずの黒服の胸に、……握り拳大の、大穴が…。\
+langen^À la place, un trou béant s'ouvrait dans la poitrine de l'homme qui avait tiré.^\
+
+textoff
+csp 800
+print 65
+ld l,$RG2_akuWaraiA2,80
+
+advchar "39"
+langjp:dwave_jp 0, rg2_4e34:「………たまには。@:dwave_jp 0, rg2_4e35:私が一番乗りでもいいわよねぇ。」\
+;＜レヴィア
+langen:dwave_eng 0, rg2_4e34:^Pour une fois, ^@:dwave_eng 0, rg2_4e35:^ça ne fait pas de mal que j'arrive la première.^\
+
+advchar "-1"
+langjp　半身を血に染めたレヴィアタンが、冷笑を浮かべる。@
+langen^La moitié du corps de Léviathan était maculée de sang, et son sourire glaça ses propres sœurs.^@
+br
+langjp　……そして、ゆっくりと………、彼女が仕留めた哀れな獲物が、倒れる。\
+langen^Sa victime s'effondra quelques instants plus tard, sans avoir compris ce qui venait de la frapper.^\
+
+se1v 13,100
+quakey 4,800
+
+
+csp -1
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1cr.jpg",":b;bmp\background\forest\hill_1cr.png",0  ;fixed lighting issue
+
+;mld r,$RG5_odorokiA3,0
+;msp msp_r,0,0,-120
+mldt r,$RG5_odorokiA3,0,135
+
+print 24
+
+me1v 5,70
+
+advchar "42"
+langjp:dwave_jp 0, rg5_4e378:「つ、……貫いた、ニンゲンを……ッ！！！」@
+;＜マモン
+langen:dwave_eng 0, rg5_4e378:^T-Tu as... transpercé un Humain... !!!^@
+
+ld l,$RG3_OdorokiA1,23
+
+advchar "40"
+langjp:dwave_jp 0, rg3_4e56:「馬鹿ねッ！@:dwave_jp 0, rg3_4e57:　まだあんた信じてないの？！@:dwave_jp 0, rg3_4e58:　私たちの主の魔力を…！！」\
+;＜サタン
+langen:dwave_eng 0, rg3_4e56:^Idiote ! ^@:dwave_eng 0, rg3_4e57:^Tu n'y crois toujours pas ?! ^@:dwave_eng 0, rg3_4e58:^Au pouvoir magique de notre maîtresse... !!^\
+mcl r,0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",0  ;fixed lighting issue
+;mld c,$EV2_odorokiA2,0
+;msp msp_c,0,0,-120
+mldt c,$EV2_odorokiA2,0,135
+
+print 23
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e161:「ば、……か、…な………ッ？！？！@:dwave_jp 0, ev2_4e162:　これだけのニンゲンの前で、…け、顕現したって言うのッ？！？！」@
+;＜絵羽
+langen:dwave_eng 0, ev2_4e161:^I-Impossible... ?!?! ^@:dwave_eng 0, ev2_4e162:^V-Vous vous êtes matérialisées... devant autant d'Humains ?!?!^@
+
+ld r,$KAS_aseruA1,24
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e233:「な、………何よ、…何？！」\
+;＜霞
+langen:dwave_eng 0, kas_4e233:^Q-Quoi... ? Qu'est-ce que c'est ?!^\
+
+advchar "-1"
+langjp　霞たちはうろたえる…。@
+langen^Kasumi et ses hommes restèrent désemparés, incapables de comprendre ce qui venait de se produire.^@
+br
+langjp　確かに銃を撃ったはず……。@
+langen^L'homme avait pourtant bien tiré sur Ange, qui se tenait toujours debout devant eux.^@
+br
+langjp^^!s0　しかし、/
+sl
+langjp^^!d500……それは縁寿には当たらず、/
+sl
+langjp^^!d800………どうして、/
+sl
+langjp^^!d600……撃った本人が、/
+sl
+langjp^^!d400…逆に……？！/
+sl
+langen^^!s0^ Mais^@/
+sl
+langen:!d500^... la balle n'avait pas touché Ange^@/
+sl
+langen:!d800^... alors pourquoi...^@/
+sl
+langen:!d600^ celui qui avait tiré...^@/
+sl
+langen:!d400^ avait-il été blessé à sa place... ?!^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+
+mcl a,0
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1br.jpg",":b;bmp\background\forest\hill_1br.png",0  ;fixed lighting issue
+ld c,$ENJ_nayamuA1,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1699:「……これが、魔法。@/
+langen:dwave_eng 0, enj_4e1699:^... Voilà ce qu'est la magie.^@/
+
+ld c,$ENJ_fumanA2,80
+
+langjp:dwave_jp 0, enj_4e1700:……見事よ、レヴィアタン。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1700:^ ... Magnifique, Léviathan.^@
+
+se1 52
+ld5 r,$RG2_akuwaraiA2,99,1000,"breakup/dll/ulb"
+
+advchar "39"
+langjp:dwave_jp 0, rg2_4e36:「光栄の至り…！！@/
+langen:dwave_eng 0, rg2_4e36:^C'est un immense honneur... !! ^@/
+
+ld r,$RG2_akuwaraiA3,80
+
+langjp:dwave_jp 0, rg2_4e37:　我らが主に逆らう愚かなるニンゲンどもよ！@:dwave_jp 0, rg2_4e38:　今こそ平伏せ、審判の時ッ！！」\
+langen:dwave_eng 0, rg2_4e37:^Misérables Humains qui osez vous opposer à notre maîtresse ! ^@:dwave_eng 0, rg2_4e38:^Prosternez-vous ! L'heure du jugement est venue !!^\
+
+;＜レヴィア
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",0  ;fixed lighting issue
+;mld l,$EV2_odorokiA2,0
+;msp msp_l,0,0,-120
+mldt l,$EV2_odorokiA2,0,135
+
+print 23
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e163:「ど、どうして……！！！@:dwave_jp 0, ev2_4e164:　ニンゲンの世界に魔法は持ちこめないはずなのに…ッ！！@:dwave_jp 0, ev2_4e165:　魔法は視えないはずなのに、触れられないはずなのに！！@:dwave_jp 0, ev2_4e166:　……どうしてッ！！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e163:^P-Pourquoi... !!! ^@:dwave_eng 0, ev2_4e164:^Il devrait être impossible de faire entrer la magie dans le monde des Humains... !! ^@:dwave_eng 0, ev2_4e165:^La magie ne devrait ni pouvoir être « vue », ni pouvoir toucher qui que ce soit !! ^@:dwave_eng 0, ev2_4e166:^... Alors pourquoi ?!!^\
+
+
+ld r,$ENJ_DefA1,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1701:「…………これが、本当の魔法だからよ。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1701:^... Parce que ça, c'est la véritable magie.^\
+
+;mld l,$EV2_fukigenA3,0
+;msp msp_l,0,0,-120
+mldt l,$EV2_fukigenA3,0,135
+
+print 80
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e167:「……ぅ、……ぅおおおおおぉおおおおおおおお…！！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e167:^... Ugh... uuuuuuuuuuuuuuuuuuuh... !!^\
+
+mcl l,0
+cl a,0
+ld c,$KAS_komaruA1,24
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e234:「な、何をしてるのよお前たち？！@:dwave_jp 0, kas_4e235:　こッ、殺せ殺せッ！！！」\
+;＜霞
+langen:dwave_eng 0, kas_4e234:^Q-Qu'est-ce que vous fichez ?! ^@:dwave_eng 0, kas_4e235:^T-Tuez-la ! Tuez-la !!!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",23  ;fixed lighting issue
+
+advchar "-1"
+langjp^^!s1　ようやく正気に戻った黒服のひとりが銃を抜き、構、/
+sl
+langen^^!s1^L'un des hommes en noir, enfin revenu à lui, sortit son arme et la braqua, ^@/
+sl
+mov %disable_adv_clear, 1
+langjp!d1000
+langen!d1000
+mov %disable_adv_clear, 0
+
+br
+
+se1 57
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1cr.jpg",":b;bmp\background\forest\hill_1cr.png",0  ;fixed lighting issue
+ld c,$RG1_akuwaraiA3,80
+
+advchar "38"
+langjp:dwave_jp 0, rg1_4e62:「我らが主に、銃口を覗かせる無礼を、私が許すと思ったか……。@/
+langen:dwave_eng 0, rg1_4e62:^ Tu pensais vraiment que je laisserais passer l'insolence de braquer une arme sur notre maîtresse... ? ^@/
+
+;se1 52
+;cl c,99,500,"breakup.dll/ulb"
+
+langjp:dwave_jp 0, rg1_4e63:死ねっ。」/
+sl
+langen:dwave_eng 0, rg1_4e63:^Meurs.^@/
+
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜ルシファ
+
+se2v 36,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1a.jpg",":b;bmp\background\efe\blood_1a.png",1
+quakex 5,700
+
+langjp　その言葉が、引導。@
+langen^Ces mots signèrent son arrêt de mort.^@
+
+br
+langjp　……男はすでに、瞬時に傲慢の杭となったルシファーにその胸板を貫かれていたのだ。\
+langen^Lucifer avait pris la forme du Pieu de l'Orgueil et lui avait déjà transpercé la poitrine.^\
+
+se2 12
+se3v 13,90
+quakey 3,800
+
+langjp　どさり！@
+langen^Boum !^@
+br
+langjp　二人目が倒れる音は、黒服たちに、自分たちが今確かに、命を脅かされていることを理解させる…！！\
+langen^Le bruit du deuxième homme s'effondrant fit enfin comprendre aux hommes en noir qu'à cet instant précis, leur propre vie était réellement en danger... !!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1cr.jpg",":b;bmp\background\forest\hill_1cr.png",22  ;fixed lighting issue
+
+langjp:dwave_jp 0, "voice\99\mafmb4016.ogg":「う、うわあああッたたッ、助けて……！！！」/
+sl
+langen:dwave_eng 0, "voice\99\mafmb4016.ogg":^A-Aaaaaah, a-aidez-moi... !!!^@/
+quakex 3,400
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+
+
+langjp　腰を抜かした黒服が、その場から逃げ出そうと踵を返した瞬間に、@……怠惰の杭が……、\
+langen^Au moment où l'un des hommes en noir, les jambes coupées par la peur, fit volte-face pour s'enfuir... ^@^le Pieu de la Paresse...^\
+
+se1 57
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1cr.jpg",":b;bmp\background\forest\hill_1cr.png",0  ;fixed lighting issue
+ld c,$RG4_hohoemiA1,80
+
+advchar "41"
+langjp:dwave_jp 0, rg4_4e52:「…………我が主への狼藉に対する報い、これしきで済んだことに感謝せよ。@:dwave_jp 0, rg4_4e53:死ねッ！！」\
+langen:dwave_eng 0, rg4_4e52:^Remercie le ciel que ton outrage envers notre maîtresse ne te coûte que ça. ^@:dwave_eng 0, rg4_4e53:^Meurs !!^\
+
+Bld c,$RG4_akuwaraiA3,80
+
+;＜ベルフェ
+;se2 52
+;cl c,99,500,"breakup.dll/urb"
+
+bcl c,0
+
+se1v 36,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1b.jpg",":b;bmp\background\efe\blood_1b.png",1
+quakex 5,1200
+
+advchar "-1"
+langjp　右目に胡桃大の大きさの風穴が開き、頭部を砕く。@
+langen^Un trou s'ouvrit dans son œil droit et le coup lui pulvérisa le crâne.^@
+br
+langjp　返り血を浴びるベルフェゴールは、その真の力を振るえる喜びに、その表情を悪魔的に歪める…！\
+langen^Éclaboussée de sang, Belphégor tordit son visage en un sourire démoniaque, ravie de pouvoir enfin déployer toute sa puissance... !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",22  ;fixed lighting issue
+
+langjp:dwave_jp 0, "voice\99\mafma4018.ogg":「う、わぁあああ？！/
+sl
+langen:dwave_eng 0, "voice\99\mafma4018.ogg":^Ouah, aaaaaah ?! ^@/
+quakex 5,400
+langjp:noclear_cw:dwave_jp 0, "voice\99\mafma4019.ogg":　誰だ？！@:dwave_jp 0, "voice\99\mafma4020.ogg":　誰がいるんだッ？！@:dwave_jp 0, "voice\99\mafma4021.ogg":　どこにいやがるッ？！」\
+langen:noclear_cw:dwave_eng 0, "voice\99\mafma4019.ogg":^Qui est là ?! ^@:dwave_eng 0, "voice\99\mafma4020.ogg":^Qui est là ?! ^@:dwave_eng 0, "voice\99\mafma4021.ogg":^Où est-ce que vous vous cachez ?!^\
+
+langjp　黒服たちはうろたえ、四方八方に銃を向ける。@
+langjp　しかし何が起こっているのかわからない。@
+langen^Les hommes en noir, pris de panique, braquaient leurs armes dans toutes les directions.^@
+langen^Aucun d'eux ne comprenait pourtant d'où venaient ces attaques.^@
+br
+langjp　恐ろしい存在がどこかから自分たちを狙っていることだけはわかるのだが、@それがどこからかわからない…！！\
+langen^Ils savaient seulement qu'une présence terrifiante les visait depuis quelque part, ^@^mais ils étaient incapables de savoir d'où... !!^\
+
+
+;mld r,$EV2_odorokiA2,0
+;msp msp_r,0,0,-120
+mldt r,$EV2_odorokiA2,0,135
+
+print 64
+
+quakex 3,200
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e168:「馬鹿！！@:dwave_jp 0, ev2_4e169:　て、敵はあんたたちのすぐ目の前にいるわよッ！@:dwave_jp 0, ev2_4e170:　魔女の家具があんたたちを狙ってるッ！！！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e168:^Imbéciles !! ^@:dwave_eng 0, ev2_4e169:^L-L'ennemi est juste sous vos yeux ! ^@:dwave_eng 0, ev2_4e170:^Les meubles de la sorcière vous prennent pour cible !!!^\
+
+advchar "-1"
+langjp　しかし視えない…！！@
+langjp　魔法を信じられないから、視えない…！！@
+langen^Mais ils ne pouvaient pas les « voir » ... !!^@
+langen^Parce qu'ils ne croyaient pas à la magie, ils ne pouvaient pas les « voir » ... !!^@
+br
+
+mcl a,0
+se1 57
+mbg white,1
+mcbg 0
+ld c,$RG3_AkuwaraiA2,80
+
+langjp　黒き魔女が言うとおり、サタンは黒服の真正面に、不敵にも立ちはだかっている。@
+langen^Satan se tenait pourtant avec insolence devant l'un des hommes en noir, comme l'avait annoncé la sorcière noire.^@
+br
+langjp　しかし黒服にはそれがまったく視えない…！\
+langen^Mais lui était absolument incapable de la « voir » ... !^\
+
+ld c,$RG3_akuwaraiA1,80
+
+advchar "40"
+langjp:dwave_jp 0, rg3_4e59:「くすくす…！@:dwave_jp 0, rg3_4e60:　ニンゲンに私たちの姿が見えるとでも？@:dwave_jp 0, rg3_4e61:　捉えられるとでも？@/
+langen:dwave_eng 0, rg3_4e59:^Hmhm... ! ^@:dwave_eng 0, rg3_4e60:^Vous pensiez vraiment que de simples Humains pouvaient nous voir ? ^@:dwave_eng 0, rg3_4e61:^Ou même suivre nos mouvements ? ^@/
+
+ld c,$RG3_AkuwaraiA3,80
+
+langjp:dwave_jp 0, rg3_4e62:　あっはははははは、間抜けなニンゲンが！！@:dwave_jp 0, rg3_4e63:　魔法に対する畏怖を忘れたる愚かの代償を払うがいいッ！！」\
+;＜サタン
+langen:dwave_eng 0, rg3_4e62:^Ahahahahahahaha, misérables Humains stupides !! ^@:dwave_eng 0, rg3_4e63:^Payez donc le prix de votre sottise pour avoir oublié de craindre la magie !!^\
+
+;bcl l,0
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1br.jpg",":b;bmp\background\forest\hill_1br.png",0  ;fixed lighting issue
+ld r,$KAS_aseruA1,24
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e236:「ひ、ひいいいぃッ！！！/
+sl
+langen:dwave_eng 0, kas_4e236:^H-Hiiiiiiiiii !!!^@/
+quakex 3,300
+mov %disable_adv_clear, 1
+langjp:noclear_cw:/
+langen:noclear_cw:/
+mov %disable_adv_clear, 0
+advchar "-1"
+
+
+ld r,$KAS_SakebuA1,80
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e237:　何よこれ？！@:dwave_jp 0, kas_4e238:　何が起こってるの？！」@
+;＜霞
+langen:dwave_eng 0, kas_4e237:^ C'est quoi, ça ?! ^@:dwave_eng 0, kas_4e238:^Qu'est-ce qui se passe ?!^@
+
+ld l,$ENJ_komaruA3,23
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1702:「………あなたには視えない。@:dwave_jp 0, enj_4e1703:愛がないから。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1702:^... Toi, tu ne peux pas « voir ». ^@:dwave_eng 0, enj_4e1703:^Parce que tu n'as pas d'amour.^\
+
+cl r,23
+;mld r,$EV2_fukigenA3,0
+;msp msp_r,0,0,-120
+mldt r,$EV2_fukigenA3,0,135
+
+
+print 24
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e171:「……ありえないッ！！@:dwave_jp 0, ev2_4e172:　これだけのニンゲンがいて、反魔法の毒素をばらまいてるってのに、……どうして魔法が顕現できるの？！@:dwave_jp 0, ev2_4e173:　あんた、…何者なのッ？！？！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e171:^... Impossible !! ^@:dwave_eng 0, ev2_4e172:^Il y a autant d'Humains ici, ils répandent tous leur toxine anti-magie... alors comment peux-tu encore matérialiser de la magie ?! ^@:dwave_eng 0, ev2_4e173:^Toi... qu'est-ce que tu es ?!?!^\
+
+ld l,$ENJ_fumanA2,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1704:「…………魔女よ。@:dwave_jp 0, enj_4e1705:あんたと違って本物の。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1704:^... Une sorcière. ^@:dwave_eng 0, enj_4e1705:^Une vraie, contrairement à toi.^@
+
+;mld r,$EV2_odorokia2,0
+;msp msp_r,0,0,-120
+mldt r,$EV2_odorokia2,0,135
+
+print 80
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e174:「う、うおおぉおおおおお、畜生ぉおおお、このアマぁあああぁああ！！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e174:^U-Uuuuuuuuuuuuuuh, putain, salooooooope !!^\
+
+mcl r,0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1cr.jpg",":b;bmp\background\forest\hill_1cr.png",24  ;fixed lighting issue
+ld r,$ENJ_DefA1,22
+
+advchar "-1"
+langjp　四人目の犠牲者を立候補するかのように、黒服の一人が縁寿に銃を向ける。@
+langen^Un autre homme en noir braqua son pistolet sur Ange, comme s'il voulait devenir la prochaine victime.^@
+br
+langjp　……そして引き金を……。@
+langen^Il posa le doigt sur la détente et se prépara à faire feu.^@
+br
+
+langjp　縁寿は冷酷に睨み、ただ、命じる。\
+langen^Ange le regarda froidement avant de donner un nouvel ordre.^\
+
+se1 30
+
+langjp:dwave_jp 0, "voice\99\mafmc4019.ogg":「しッ、死に晒せぇえええええええぇッ！！」@
+langen:dwave_eng 0, "voice\99\mafmc4019.ogg":^C-Crèèèèèèèèèèèève !!^@
+
+ld r,$ENJ_nayamuA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1706:「次。@:dwave_jp 0, enj_4e1707:サタン。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1706:^Au suivant. ^@:dwave_eng 0, enj_4e1707:^Satan.^\
+
+se1 57
+mbg white,1
+mcbg 0
+Bld c,$RG3_akuwaraia2,80
+
+advchar "40"
+langjp:dwave_jp 0, rg3_4e64:「憤怒のサタン、すでにここにッ！！@/
+langen:dwave_eng 0, rg3_4e64:^Satan de la Colère, déjà présente !! ^@/
+
+se1 57
+mbg white,1
+mcbg 0
+bld c,$RG3_ikariA1,80
+
+langjp:dwave_jp 0, rg3_4e65:　のろまがッ！！@:dwave_jp 0, rg3_4e66:　今の縁寿さまと私たちに、銃弾如きが当たると思うかッ！！！」\
+;＜サタン
+langen:dwave_eng 0, rg3_4e65:^Espèce de limace !! ^@:dwave_eng 0, rg3_4e66:^Tu crois vraiment qu'une vulgaire balle peut encore atteindre Dame Ange ou l'une de nous ?!!!^\
+textoff
+csp -1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+se2v 57,100
+se3v 1006,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade6_2p.jpg",":b;bmp\background\efe\blade6_2p.png",1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+
+advchar "-1"
+langjp　憤怒の杭が、……黒服の放った銃弾を貫いて砕き、/
+sl
+langjp^^!d800そのまま真っ直ぐ、男の顔面を、@
+langen^Le Pieu de la Colère... transperça et pulvérisa la balle tirée par l'homme en noir... ^@/
+sl
+langen:!d800^puis poursuivit sa course droit vers le visage de l'homme...^@
+br
+bld c,$RG3_odorokiA1,80
+
+advchar "40"
+langjp:dwave_jp 0, rg3_4e67:「………己が愚かさを知り、地獄で後悔せよッ！！@/
+langen:dwave_eng 0, rg3_4e67:^Prends conscience de ta stupidité, et regrette-la en enfer !! ^@/
+
+;se3 52
+;cl c,99,500,"breakup.dll/ulb"
+
+langjp:dwave_jp 0, rg3_4e68:　死ねっ！！」\
+;＜サタン
+langen:dwave_eng 0, rg3_4e68:^Meurs !!^\
+
+csp -1
+se1v 36,100
+se2v 2,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1a.jpg",":b;bmp\background\efe\blood_1a.png",1
+quakex 6,800
+
+advchar "-1"
+langjp　凄まじい破裂音と共に、男の頭部の上半分が砕け散る。@
+langen^Le sommet du crâne de l'homme éclata sous la violence de l'impact.^@
+br
+langjp　ばらばらと飛び散る肉片と血を浴びながら、縁寿は静かに、もう一度問う。\
+langen^Ange, éclaboussée de sang et de débris, répéta sa question avec le même calme.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1cr.jpg",":b;bmp\background\forest\hill_1cr.png",0  ;fixed lighting issue
+ld c,$ENJ_NayamuA1,26
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1708:「…ねぇ、霞叔母さん。@/
+langen:dwave_eng 0, enj_4e1708:^... Dis, tante Kasumi.^@/
+
+ld c,$ENJ_defA1,80
+
+langjp:dwave_jp 0, enj_4e1709:………まだ、魔法。@:dwave_jp 0, enj_4e1710:信じる気にならないの？」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1709:^ ... Tu n'as toujours...^@:dwave_eng 0, enj_4e1710:^ pas envie de croire à la magie ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1br.jpg",":b;bmp\background\forest\hill_1br.png",0  ;fixed lighting issue
+ld r,$KAS_aseruA2,23
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e239:^^!s1「こっ、/
+sl
+langjp:voicedelay 230:dwave_jp 0, kas_4e240:^^こんな、馬鹿なこと、/
+sl
+langjp:voicedelay 1840:dwave_jp 0, kas_4e241:^^……あるわけないでしょ…！！@/
+langen:dwave_eng 0, kas_4e239:^^!s1^P-^@/
+sl
+langen:voicedelay 230:dwave_eng 0, kas_4e240:^ Ce genre de chose... ne peut pas... ^@/
+sl
+langen:voicedelay 1840:dwave_eng 0, kas_4e241:^exister... !! ^@/
+
+ld r,$KAS_SakebuA1,80
+
+langjp:dwave_jp 0, kas_4e242:　み、認めないわ…！！@:dwave_jp 0, kas_4e243:　魔法なんて、あるわけがない……！！！」/
+sl
+langen:dwave_eng 0, kas_4e242:^J-Je refuse de l'admettre... !! ^@:dwave_eng 0, kas_4e243:^La magie ne peut pas exister... !!!^@/
+sl
+mov %disable_adv_clear, 1
+langjp!sd@
+langen!sd@
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜霞
+
+;mld l,$EV2_odorokiA2,0
+;msp msp_l,0,0,-120
+mldt l,$EV2_odorokia2,0,135
+
+print 23
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e175:「えぇ、そうよ…。@:dwave_jp 0, ev2_4e176:魔法なんてあるわけがない…！！@:dwave_jp 0, ev2_4e177:　魔女なんているわけがない！！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e175:^ Oui, c'est ça... ^@:dwave_eng 0, ev2_4e176:^La magie ne peut pas exister... !! ^@:dwave_eng 0, ev2_4e177:^Les sorcières ne peuvent pas exister !!^\
+
+mcl l,0
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",0  ;fixed lighting issue
+ld r,$sak_nakuA2,0
+print 24
+
+advchar "33"
+langjp:dwave_jp 0, sak_4e546:『ま、……魔法はあるよ！！@:dwave_jp 0, sak_4e547:　魔女はいるよ……！！　うりゅー！！』\
+;＜さくたろ
+langen:dwave_eng 0, sak_4e546:^L-La magie existe !! ^@:dwave_eng 0, sak_4e547:^Les sorcières existent... !! Uryū- !!^\
+
+
+ld l,$RG5_komaruA2,23
+
+advchar "42"
+langjp:dwave_jp 0, rg5_4e379:「………そうよ。@:dwave_jp 0, rg5_4e380:魔法はあるのよ。@:dwave_jp 0, rg5_4e381:魔女はいるのよ。@/
+langen:dwave_eng 0, rg5_4e379:^... Oui. ^@:dwave_eng 0, rg5_4e380:^La magie existe. ^@:dwave_eng 0, rg5_4e381:^Les sorcières existent.^@/
+
+ld l,$RG5_OdorokiA1,80
+
+langjp:dwave_jp 0, rg5_4e382:……そして、この怒りと悲しみで満ちた世界に、幸せの世界への扉を開く鍵に出来るの…！！@:dwave_jp 0, rg5_4e383:　あんたなんかに、……それを否定させないッ！！」\
+;＜マモン
+langen:dwave_eng 0, rg5_4e382:^ ... Et dans ce monde empli de colère et de tristesse, elle peut devenir la clé qui ouvre la porte d'un monde heureux... !! ^@:dwave_eng 0, rg5_4e383:^Je ne laisserai pas... quelqu'un comme toi le nier !!^\
+
+ld r,$sak_nakuA3,80
+
+advchar "33"
+langjp:dwave_jp 0, sak_4e548:『幸せな世界への鍵は、みんなの手に握られてるんだ…！@:dwave_jp 0, sak_4e549:　それを、……奪う資格は誰にもないんだ……ッ！！』\
+;＜さくたろ
+langen:dwave_eng 0, sak_4e548:^La clé d'un monde heureux est entre les mains de chacun... ! ^@:dwave_eng 0, sak_4e549:^Personne... n'a le droit de la leur arracher... !!^\
+
+
+mld c,$ENJ_fumanA2,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1711:「それを理解できぬ哀れなニンゲンよ。@:dwave_jp 0, enj_4e1712:………そなたの人生に魔法の力があったなら、もっと違った、穏やかなものになっていただろうに。\
+langen:dwave_eng 0, enj_4e1711:^Pauvre Humaine incapable de comprendre ça. ^@:dwave_eng 0, enj_4e1712:^... Si la magie avait été présente dans ta vie, elle aurait sans doute été bien différente, bien plus paisible.^\
+
+mld c,$ENJ_NayamuA1,80
+
+langjp:dwave_jp 0, enj_4e1713:　そなたがその生涯において、本当の魔女と出会えなかったことを、/
+sl
+langjp:voicedelay 5300:dwave_jp 0, enj_4e1714:^^……私は哀れむ。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1713:^Quand je pense qu'au cours de toute ta vie, tu n'as jamais rencontré une véritable sorcière^@/
+sl
+langen:voicedelay 5300:dwave_eng 0, enj_4e1714:^... j'ai pitié de toi.^\
+
+mcl c,0
+;ld c,$KAS_aseruA2,80
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e244:「ひぃ、……ひぃいいいいいいいいいいいぃいいいッ！！！」\
+;＜霞
+langen:dwave_eng 0, kas_4e244:^Hiii... hiiiiiiiiiiiiiiiiiiiiii !!!^\
+
+advchar "-1"
+langjp　霞が金切り声のような悲鳴を上げる。@
+langen^Kasumi poussa un cri terrifié, incapable de comprendre ce qui frappait ses accompagnateurs.^@
+br
+langjp　それと同時に黒服の二人が私に組みかかり、銃を私の頭に突きつけた。\
+langen^Deux hommes se précipitèrent aussitôt vers moi et appuyèrent leurs pistolets contre ma tête.^\
+
+langjp　……目に視えぬ何者かに対し、人質にでもしているつもりなのだ。@
+langen^Ils pensaient pouvoir me prendre en otage contre un ennemi que leurs yeux ne pouvaient pas voir.^@
+br
+langjp　………こんなことは、今や武具の域にまで達した上級家具、煉獄の七姉妹に対して、まったく何の意味もない。\
+langen^Mais ils ne comprenaient toujours pas à quel point les Sept Sœurs du Purgatoire leur étaient supérieures.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",22  ;fixed lighting issue
+
+langjp:dwave_jp 0, "voice\99\mafmd4006.ogg":「畜生、どこにいやがるんだ？！@:dwave_jp 0, "voice\99\mafmd4007.ogg":　攻撃をやめねえと、このアマの命はねえぞッ！！@:dwave_jp 0, "voice\99\mafmd4008.ogg":　姿を現しやがれ！！」\
+langen:dwave_eng 0, "voice\99\mafmd4006.ogg":^Merde, où est-ce que vous vous cachez ?! ^@:dwave_eng 0, "voice\99\mafmd4007.ogg":^Si vous n'arrêtez pas d'attaquer, cette salope crève !! ^@:dwave_eng 0, "voice\99\mafmd4008.ogg":^Montrez-vous !!^\
+
+
+mld c,$RG6_waraiA1,0
+se1 52
+print 99,500,"breakup.dll/urb"
+
+advchar "43"
+langjp:dwave_jp 0, rg6_4e56:「きゃっははははははは！！@:dwave_jp 0, rg6_4e57:　何言ってんの、こいつぅ！　おいしそうな腸をしてるくせにィ。@/
+langen:dwave_eng 0, rg6_4e56:^Ahahahahahahahaha !!! ^@:dwave_eng 0, rg6_4e57:^Mais qu'est-ce qu'il raconte, celui-là ?! Alors que ses tripes ont l'air si appétissantes.^@/
+
+mld c,$RG6_AkuwaraiA2,0
+
+print 80
+
+langjp:dwave_jp 0, rg6_4e58:………縁寿さま、次は私にお任せをッ！」\
+;＜ベルゼ
+langen:dwave_eng 0, rg6_4e58:^ ... Dame Ange, laissez-moi m'occuper du prochain !^\
+
+
+ld l,$ENJ_nayamuA1,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1715:「許す。殺せ。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1715:^Je te l'accorde. Tue-le.^@
+
+;se1 57
+;mbg white,1
+;mcbg 0
+mcl c,0
+ld c,$RG6_waraiA1,1
+
+advchar "43"
+langjp:dwave_jp 0, rg6_4e59:「ありがたきッ！！　しッあわせぇえ！！@/
+langen:dwave_eng 0, rg6_4e59:^Merci infiniment !! Quel bonheuuuuur !! ^@/
+
+;se2 52
+;cl c,99,500,"breakup.dll/ulb"
+ld c,$RG6_akuwaraiA3,80
+langjp:dwave_jp 0, rg6_4e60:　死ねえッ！！！」\
+;＜ベルゼ
+langen:dwave_eng 0, rg6_4e60:^Meuuurs !!!^\
+
+se3v 36,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1b.jpg",":b;bmp\background\efe\blood_1b.png",1
+quakex 5,700
+
+advchar "-1"
+langjp　男の腹部が砕け、内臓を溢れ出させる。@
+langjp　……その凄まじい死に方に、もう一人の男は完全にパニックを起こす。\
+langen^La poitrine de l'homme éclata et ses entrailles se répandirent sur le sol.^@
+langen^Devant une mort aussi atroce, le dernier garde céda complètement à la panique.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1br.jpg",":b;bmp\background\forest\hill_1br.png",0  ;fixed lighting issue
+ld r,$RG7_akuWaraiA2,26
+
+langjp　しかし、その背中にはもう、アスモデウスの姿があって、@後から首を抱き締めて、……淫靡に微笑んでいるのだ……。\
+langen^Asmodée s'était déjà glissée derrière lui,^@^ les bras passés autour de son cou avec un sourire provocateur.^\
+
+ld r,$RG7_akuwaraiA1,80
+
+advchar "44"
+langjp:dwave_jp 0, rg7_4e42:「可愛い子。@:dwave_jp 0, rg7_4e43:……ねぇねぇ、どこを貫いてほしい？@/
+langen:dwave_eng 0, rg7_4e42:^Quel adorable garçon. ^@:dwave_eng 0, rg7_4e43:^... Dis, dis, où veux-tu que je te transperce ? ^@/
+
+ld r,$RG7_waraiA1,80
+
+langjp:dwave_jp 0, rg7_4e44:　くっくくくくくく、縁寿さま、ご希望はございますかァッ！！！」\
+langen:dwave_eng 0, rg7_4e44:^Kukukukukuku, Dame Ange, avez-vous une préférence ?!!!^\
+
+ld l,$ENJ_fumanA2,23
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1716:「頭。」@
+langen:dwave_eng 0, enj_4e1716:^La tête.^@
+
+ld r,$RG7_akuwaraiA3,80
+
+advchar "44"
+langjp:dwave_jp 0, rg7_4e45:「かしこまりました、我が主ィ！！@/
+langen:dwave_eng 0, rg7_4e45:^À vos ordres, ma maîtresse !! ^@/
+
+;se1 52
+;cl r,99,500,"breakup.dll/ulb"
+
+langjp:dwave_jp 0, rg7_4e46:　死ねッ！！」\
+langen:dwave_eng 0, rg7_4e46:^Meurs !!^\
+
+textoff
+E_MA
+se1v 2,100
+se2v 36,100
+se3v 36,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1a.jpg",":b;bmp\background\efe\blood_1a.png",1
+quakey 5,1200
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",22  ;fixed lighting issue
+wait 500
+se2 13
+quakey 3,400
+
+advchar "-1"
+langjp　最後の黒服は色欲の杭に頭部を砕かれ、@その中身を散らしながら、捻れるように倒れる。@
+langen^Le Pieu de la Luxure pulvérisa la tête du dernier homme,^@^ dont le corps s'effondra en répandant son sang sur la terre.^@
+br
+langjp　６人が血の海に倒れる凄惨なる世界に、/
+sl
+langjp^^!d1000………魔女と、ニンゲンが対峙する。\
+langen^Dans ce monde atroce où six personnes gisaient dans une mare de sang^@/
+sl
+langen:!d1000^... une sorcière et une Humaine se faisaient face.^\
+
+ld r,$ENJ_NayamuA1,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1717:「………須磨寺霞。@:dwave_jp 0, enj_4e1718:そなたの哀れなる人生に、私は心の底より同情する。@/
+langen:dwave_eng 0, enj_4e1717:^... Kasumi Sumadera. ^@:dwave_eng 0, enj_4e1718:^Du fond du cœur, je compatis à la misère de ta vie.^@/
+
+ld r,$ENJ_DefA1,80
+
+langjp:dwave_jp 0, enj_4e1719:……その埋め得ぬ心の穴を、塞げる魔法を授けても良い。@:dwave_jp 0, enj_4e1720:そなたがその魔法を信じるならば。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1719:^ ... Je pourrais t'offrir une magie capable de combler ce vide que rien n'a jamais su remplir dans ton cœur. ^@:dwave_eng 0, enj_4e1720:^À condition que tu acceptes d'y croire.^\
+
+
+ld l,$KAS_aseruA2,23
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e245:「ば、馬鹿なこと、……言わないで……！！@/
+langen:dwave_eng 0, kas_4e245:^N-Ne dis pas... n'importe quoi... !! ^@/
+
+ld l,$KAS_sakebuA1,80
+
+langjp:dwave_jp 0, kas_4e246:　こんなッ、こんなの、…私は認めないッ！！@:dwave_jp 0, kas_4e247:　ひいいぃいいいいいいいぃいい！！」/
+sl
+langen:dwave_eng 0, kas_4e246:^J-Je refuse... de reconnaître quelque chose comme ça !! ^@:dwave_eng 0, kas_4e247:^Hiiiiiiiiiiiiiiiiiiiiiiii !!^/
+quakex 3,300
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜霞
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+
+langjp　腰が抜けた霞は、じりじりと後退りしながら、@……誰かが落とした拳銃を拾う。@
+langen^Les jambes coupées, Kasumi recula peu à peu... ^@^puis ramassa un pistolet tombé au sol.^@
+
+br
+langjp　そして、震えながらそれを縁寿に向ける…。\
+langen^Elle braqua maladroitement l'arme sur Ange sans parvenir à calmer ses tremblements.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",22  ;fixed lighting issue
+;mld c,$EV2_IkariA2,0
+;msp msp_c,0,0,-120
+mldt c,$EV2_IkariA2,0,135
+
+print 24
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e178:「そうよ、霞…！@:dwave_jp 0, ev2_4e179:　その銃で撃ちなさい…！！@:dwave_jp 0, ev2_4e180:　あんたの憎しみを、銃弾に変えて放ちなさい…！！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e178:^C'est ça, Kasumi... ! ^@:dwave_eng 0, ev2_4e179:^Tire... !! ^@:dwave_eng 0, ev2_4e180:^Change toute ta haine en balle et fais feu... !!^\
+
+ld l,$KAS_aseruA2,23
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e248:「ひい、ひい…！！@:dwave_jp 0, kas_4e249:　殺してやる…、殺してやる…ッ！！@/
+langen:dwave_eng 0, kas_4e248:^Hii, hii... !! ^@:dwave_eng 0, kas_4e249:^Je vais te tuer... je vais te tuer... !! ^@/
+
+ld l,$KAS_AseruA1,80
+
+langjp:dwave_jp 0, kas_4e250:　あんたを殺さなきゃ、私の人生は報われないのよ……！！」\
+;＜霞
+langen:dwave_eng 0, kas_4e250:^Si je ne te tue pas, alors toute ma vie n'aura servi à rien... !!^\
+
+
+;mld c,$EV2_akuwaraiA7,0
+;msp msp_c,0,0,-120
+mldt c,$EV2_akuwaraiA7,0,135
+
+print 80
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e181:「そうよ、殺して！@:dwave_jp 0, ev2_4e182:　引き金を引いてぇ！！@:dwave_jp 0, ev2_4e183:　あいつにあんたのみすぼらしい今日までの全ての怒りを、悲しみを！！@:dwave_jp 0, ev2_4e184:　全部叩きつけてやるの！\
+langen:dwave_eng 0, ev2_4e181:^Oui, tue-la ! ^@:dwave_eng 0, ev2_4e182:^Appuie sur la détente !! ^@:dwave_eng 0, ev2_4e183:^Fais-lui payer toute la colère, toute la tristesse de cette vie misérable que tu as menée jusqu'ici !! ^@:dwave_eng 0, ev2_4e184:^Balance-lui tout !!^\
+
+;mld c,$EV2_fukigenA3,0
+;msp msp_c,0,0,-120
+mldt c,$EV2_fukigenA3,0,135
+
+print 80
+
+langjp:dwave_jp 0, ev2_4e185:　そうでなきゃ、あんたは痛みと苦しみから解放されないのよぉう！！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e185:^Sinon, tu ne seras jamais libérée de cette douleur, jamais de cette souffrance !!^\
+
+mcl c,0
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1cr.jpg",":b;bmp\background\forest\hill_1cr.png",0  ;fixed lighting issue
+ld r,$ENJ_komaruA1,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1721:「…………やめて、霞叔母さん。@:dwave_jp 0, enj_4e1722:……黒き魔女に耳を貸しては駄目。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1721:^... Arrête, tante Kasumi. ^@:dwave_eng 0, enj_4e1722:^... N'écoute pas ce que te souffle la sorcière noire.^@
+
+ld l,$KAS_aseruA2,23
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e251:^^!s1「殺してやる……、殺してやる……！@:dwave_jp 0, kas_4e252:　あんたの母親のせいで、/
+sl
+langjp:voicedelay 2020:dwave_jp 0, kas_4e253:^^……私の人生は、/
+sl
+langjp:voicedelay 1760:dwave_jp 0, kas_4e254:^^……滅茶苦茶……！！」/
+sl
+langen:dwave_eng 0, kas_4e251:^^!s1^ Je vais te tuer... je vais te tuer... ! ^@:dwave_eng 0, kas_4e252:^À cause de ta mère^@/
+sl
+langen:voicedelay 2020:dwave_eng 0, kas_4e253:^... toute ma vie...^@/
+sl
+langen:voicedelay 1760:dwave_eng 0, kas_4e254:^ a été un désastre... !!^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜霞
+
+
+ld r,$ENJ_komaruA2,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1723:「なら、私の魔法でその人生をこれから、少しずつ明るく穏やかなものにも出来るかもしれない。@:dwave_jp 0, enj_4e1724:あなたが魔法を信じ、心を入れ替えさえすれば、@:dwave_jp 0, enj_4e1725:あなたに新しい世界への扉を開いて上げられるの。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1723:^Alors peut-être que, dès maintenant, ma magie pourra rendre ta vie un peu plus lumineuse, un peu plus paisible. ^@:dwave_eng 0, enj_4e1724:^Si tu crois à la magie... si tu acceptes de changer, ^@:dwave_eng 0, enj_4e1725:^je pourrai t'ouvrir la porte d'un nouveau monde.^\
+
+cl l,24
+;mld l,$EV2_odorokiA2,0
+;msp msp_l,0,0,-120
+mldt l,$EV2_odorokiA2,0,135
+
+print 63
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e185_1:「そんなものはないわッ！！@:dwave_jp 0, ev2_4e185_2:　あいつの言う救いなんて、どうせおとぎ話の中だけよ！@/
+langen:dwave_eng 0, ev2_4e185_1:^Ça n'existe pas !! ^@:dwave_eng 0, ev2_4e185_2:^Le salut dont elle te parle n'existe que dans les contes de fées ! ^@/
+
+;mld l,$EV2_IkariA2,0
+;msp msp_l,0,0,-120
+mldt l,$EV2_IkariA2,0,135
+
+print 80
+
+langjp:dwave_jp 0, ev2_4e185_3:　あんたの人生はもはや死ぬまで棘まみれ…！！@:dwave_jp 0, ev2_4e185_4:　その苦痛の叫びをあいつに聞かせてやりなさい！！@:dwave_jp 0, ev2_4e185_5:　失ったものは何も取り返せないのよ…、そうでしょう？須磨寺霞ぃいいいぃ？！？！」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e185_3:^Ta vie sera couverte d'épines jusqu'à ta mort... !! ^@:dwave_eng 0, ev2_4e185_4:^Fais-lui entendre ton cri de souffrance !! ^@:dwave_eng 0, ev2_4e185_5:^Rien de ce que tu as perdu ne pourra jamais revenir... n'est-ce pas, Kasumi Sumaderaaaaaa ?!?!^\
+
+
+ld r,$ENJ_nayamuA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1726:「そうね、何も取り返せないかもしれない。@/
+langen:dwave_eng 0, enj_4e1726:^Oui. Peut-être que ce qu'on a perdu ne reviendra jamais. ^@/
+
+ld r,$ENJ_komaruA3,80
+
+langjp:dwave_jp 0, enj_4e1727:でも、きっと新しく何かを生み出すことが出来る。@:dwave_jp 0, enj_4e1728:だから霞叔母さん。@:dwave_jp 0, enj_4e1729:その銃を捨てて。@:dwave_jp 0, enj_4e1730:………霞叔母さんにも、幸せな世界を、教えてあげられるかもしれない。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1727:^Mais on peut sûrement créer quelque chose de nouveau. ^@:dwave_eng 0, enj_4e1728:^Alors, tante Kasumi, ^@:dwave_eng 0, enj_4e1729:^jette cette arme. ^@:dwave_eng 0, enj_4e1730:^... Peut-être que je pourrai te montrer, à toi aussi... un monde où tu pourrais être heureuse.^\
+
+
+mcl a,0
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1br.jpg",":b;bmp\background\forest\hill_1br.png",0  ;fixed lighting issue
+ld c,$KAS_sakebuA1,23
+
+me1v 5,90
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e260:^^!s1「ひぃ、/
+sl
+langjp:voicedelay 430:dwave_jp 0, kas_4e261:^^……ひぃいいい……！！/
+sl
+langen:dwave_eng 0, kas_4e260:^^!s1^Hii^@/
+sl
+langen:voicedelay 430:dwave_eng 0, kas_4e261:^... hiiiiiiiiii... !! ^@/
+quakey 3,300
+langjp:noclear_cw:dwave_jp 0, kas_4e262:　わ、/
+langjp:voicedelay 1250:dwave_jp 0, kas_4e263:^^………私はね、……！！@:dwave_jp 0, kas_4e264:　あんたの母親が逃げたせいで、/
+langjp:voicedelay 2190:dwave_jp 0, kas_4e265:^^………あんたの母親の許婚と、身代わりに結婚させられたのよッ…！！\
+langen:noclear_cw:dwave_eng 0, kas_4e262:^M^@/
+sl
+langen:voicedelay 1250:dwave_eng 0, kas_4e263:^... Moi, tu sais... !! ^@:dwave_eng 0, kas_4e264:^Parce que ta mère s'est enfuie^@/
+sl
+langen:voicedelay 2190:dwave_eng 0, kas_4e265:^... j'ai été forcée d'épouser son fiancé à sa place... !!^\
+
+ld c,$KAS_AseruA2,80
+
+langjp:dwave_jp 0, kas_4e266:　将来を誓い合った男がいたのよ？！@:dwave_jp 0, kas_4e267:　別れさせられたのよ？！@:dwave_jp 0, kas_4e268:　あんたの母親の代わりに嫁がされて、/
+sl
+langjp:voicedelay 3590:dwave_jp 0, kas_4e269:^^……話もろくにしたことがない男に抱かれた私の気持ちがわかるってのッ？！？！\/
+sl
+langen:dwave_eng 0, kas_4e266:^J'avais un homme avec qui j'avais juré de passer ma vie ! ^@:dwave_eng 0, kas_4e267:^Et on m'a forcée à rompre avec lui ! ^@:dwave_eng 0, kas_4e268:^Tu crois savoir ce que j'ai ressenti quand on m'a forcée à remplacer ta mère... ^@/
+sl
+langen:voicedelay 3590:dwave_eng 0, kas_4e269:^et à coucher avec un homme à qui j'avais à peine adressé la parole ?!?!^\
+
+ld c,$KAS_SakebuA1,80
+
+langjp:dwave_jp 0, kas_4e270:　殺してやりたかった！！@:dwave_jp 0, kas_4e271:　なのに姉さんは勝手に死んだわ！@:dwave_jp 0, kas_4e272:　だからあんたを殺すの！！@:dwave_jp 0, kas_4e273:　そうでなきゃ、私の棘まみれの人生は、終わらないのよぉおおおおぉ！！」/
+sl
+langen:dwave_eng 0, kas_4e270:^Je voulais la tuer !! ^@:dwave_eng 0, kas_4e271:^Et elle, elle est morte toute seule ! ^@:dwave_eng 0, kas_4e272:^Alors c'est toi que je vais tuer !! ^@:dwave_eng 0, kas_4e273:^Sinon, cette vie hérissée d'épines ne finira jamaiiiiiis !!^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜霞
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+;se1 1031
+
+langjp　……霞の瞳から、@激情の涙が零れる。\
+langen^... Des yeux de Kasumi ^@^jaillirent des larmes brûlantes, chargées de toute sa rage.^\
+
+langjp　可哀想に…。@
+langen^Je comprenais enfin combien son existence avait été marquée par la souffrance.^@
+br
+langjp　……この人の涙だって、こんなにも澄んでいて綺麗だったのだ。@
+langen^Ses larmes étaient celles d'une femme à qui l'on avait arraché son avenir.^@
+br
+langjp　でも、だからこそ、……悲しい痛みに耐え切れず、@黒き魔女の誘惑に耳を貸さざるを得なかった…。\
+langen^Elle n'avait jamais réussi à apaiser cette douleur et avait fini par écouter la sorcière noire,^@^ qui lui promettait une délivrance par la vengeance.^\
+
+
+me2v 17,85
+
+;ld c,$ENJ_komaruA3,80
+textoff
+;lsp2 4,$ENJ_komaruA3,500,350,200,200,0
+lsp_var 4,"bmp\zoom\ENJ_komaruA3Z20",140,0  ;convert to widescreen
+print 24
+
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1731:「………………可哀想に。@:dwave_jp 0, enj_4e1732:……ならばせめてあなたを、…あなたの魂を永遠に解放し、怨嗟の鎖から解き放ってあげるわ。@/
+langen:dwave_eng 0, enj_4e1731:^... La pauvre. ^@:dwave_eng 0, enj_4e1732:^... Alors, au moins, je vais te libérer... libérer ton âme pour toujours et rompre les chaînes de ta rancœur.^@/
+
+textoff
+;lsp2 4,$ENJ_KomaruA2,500,350,200,200,0
+lsp_var 4,"bmp\zoom\ENJ_komaruA2Z20",140,0  ;convert to widescreen
+print 80
+
+langjp:dwave_jp 0, enj_4e1733:………それが、今の私に出来る、唯一の施しかもしれない。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1733:^ ... C'est peut-être la seule grâce que je puisse encore t'accorder.^\
+
+
+
+;ld c,$KAS_sakebuA1,80
+textoff
+;lsp2 4,$ENJ_KomaruA2,500,350,200,200,0
+;lsp2 3,$KAS_SakebuA1,210,420,200,200,0
+lsp_var 3,"bmp\zoom\KAS_SakebuA1Z20",-187,0  ;convert to widescreen
+print 63
+
+advchar "22"
+langjp:dwave_jp 0, kas_4e274:「死ィねぇえええ、右代宮縁寿ぇえええええぇ！！！」\
+;＜霞
+langen:dwave_eng 0, kas_4e274:^Crèèèèèèèève, Ange Ushiromiyaaaaaaaaa !!!^\
+
+;ld c,$ENJ_nayamuA1,80
+csp_var 3
+csp_var 4
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1734:「さようなら、霞叔母さん。@:dwave_jp 0, enj_4e1735:………静かな世界で、ゆっくりと休んで。」@
+langen:dwave_eng 0, enj_4e1734:^Adieu, tante Kasumi. ^@:dwave_eng 0, enj_4e1735:^... Repose-toi longuement dans un monde paisible.^@
+br
+advchar "-1"
+langjp　もはや、あなたには怒りも憎しみも感じない。@
+langjp　ただただ、静かに、@魂を休ませてあげたい。\
+langen^Je ne ressentais plus ni colère ni haine à son égard.^@
+langen^Je souhaitais seulement que son âme puisse enfin trouver la paix.^\
+
+E_MA
+se1v 46,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+langjp　霞の拳銃が火を噴く。@
+langen^Le pistolet de Kasumi fit feu dans un éclair brutal.^@
+br
+langjp　その銃弾が、極限まで凍った世界でゆっくりと……、エンジェの額目指して進む。\
+langen^Dans ce monde où le temps semblait figé, la balle avançait lentement vers le front d'Ange.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",0  ;fixed lighting issue
+ld c,$ENJ_DefA1,22
+ld c,$ENJ_nayamuA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1736:「マモン。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1736:^Mammon.^@
+
+se1 57
+mbg white,1
+mcbg 0
+ld r,$RG5_odorokiA1,80
+
+advchar "42"
+langjp:dwave_jp 0, rg5_4e384:「……は、……は！！@:dwave_jp 0, rg5_4e385:　強欲のマモン、ここに…！！」\
+;＜マモン
+langen:dwave_eng 0, rg5_4e384:^... O-Oui !! ^@:dwave_eng 0, rg5_4e385:^Mammon de l'Avarice, présente... !!^\
+
+ld c,$ENJ_fumanA2,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1737:「ありがとう。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1737:^Merci.^@
+
+ld r,$RG5_odorokiA3,80
+
+advchar "42"
+langjp:dwave_jp 0, rg5_4e386:「……え？」\
+;＜マモン
+langen:dwave_eng 0, rg5_4e386:^... Hein ?^\
+
+
+ld c,$ENJ_komaruA2,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1738:「あなたたちとさくたろうに出会えたから、私は全てを理解できた。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1738:^C'est parce que je vous ai rencontrés, toi et Sakutarō, que j'ai pu tout comprendre.^@
+
+ld l,$sak_komaruA1,23
+
+advchar "33"
+langjp:dwave_jp 0, sak_4e550:『……縁寿……。』\
+;＜さくたろ
+langen:dwave_eng 0, sak_4e550:^... Ange...^\
+
+
+ld c,$ENJ_nayamuA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1739:「さくたろうは後を向いていなさい。@/
+langen:dwave_eng 0, enj_4e1739:^Sakutarō, détourne les yeux.^@/
+
+ld c,$ENJ_hanbesoA1,80
+
+langjp:dwave_jp 0, enj_4e1740:………マモン。@:dwave_jp 0, enj_4e1741:その女を解放してあげて。@:dwave_jp 0, enj_4e1742:そして、マリアージュ・ソルシエールの名誉を守れ…！！」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1740:^ ... Mammon. ^@:dwave_eng 0, enj_4e1741:^Libère cette femme. ^@:dwave_eng 0, enj_4e1742:^Et protège l'honneur de Mariage Sorcière... !!^\
+
+ld r,$RG5_odorokiA1,80
+
+advchar "42"
+langjp:dwave_jp 0, rg5_4e387:「は、………はい！！@/
+langen:dwave_eng 0, rg5_4e387:^O... oui !!^@/
+
+;ld r,$RG5_IkariA1,80
+
+langjp:dwave_jp 0, rg5_4e388:　……覚悟せよ須磨寺霞ッ！！」\
+langen:dwave_eng 0, rg5_4e388:^ ... Prépare-toi, Kasumi Sumadera !!^\
+
+me1v 28,100
+me2v 28,100
+
+se1 57
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",0  ;fixed lighting issue
+ld l,$RG5_majimeA1,0
+ld c,$KAS_SakebuA1,22
+
+advchar "-1"
+langjp　凍った世界にもかかわらず、強欲の杭は稲妻のように閃き、@………霞の背後に、もう抜けている…。\
+langen^Même dans ce monde figé, le Pieu de l'Avarice jaillit comme un éclair...^@^ et l'instant d'après, il se trouvait déjà derrière Kasumi.^\
+
+
+ld l,$RG5_OdorokiA1,80
+
+advchar "42"
+langjp:dwave_jp 0, rg5_4e389:「貴様に多少の徳があるならば、再び煉獄の山で会いまみえようぞッ！！@/
+langen:dwave_eng 0, rg5_4e389:^S'il reste en toi la moindre vertu, nous nous reverrons un jour sur la montagne du Purgatoire !!^@/
+
+;se1 52
+;cl l,99,500,"breakup.dll/urb"
+
+langjp:dwave_jp 0, rg5_4e390:　………死ねぇえええええぇッ！！！」\
+langen:dwave_eng 0, rg5_4e390:^ ... Meuuuuurs !!!^\
+
+E_A
+
+se1v 36,100
+se2v 57,100
+se3v 36,100
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1ar.jpg",":b;bmp\background\efe\blood_1ar.png",1
+quakex 6,1400
+
+;＜マモン
+
+me1v 16,50
+
+advchar "-1"
+langjp　須磨寺霞の頭部、上半分が、砕け散る。@
+langen^La partie supérieure de la tête de Kasumi Sumadera fut pulvérisée par le Pieu de l'Avarice.^@
+br
+langjp　……彼女の肉の檻が破られ、/
+sl
+langjp^^!d700……ようやく彼女は、解放されたのだった……。\
+langen^... Sa prison de chair fut brisée^@/
+sl
+langen:!d700^... et elle fut enfin libérée...^\
+
+textoff
+
+wait 2000
+
+se1 13
+quakey 3,400
+wait 500
+
+se2v 39,100
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",45
+
+wait 1000
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1br.jpg",":b;bmp\background\forest\hill_1br.png",0  ;fixed lighting issue
+ld c,$ENJ_NayamuA1,42
+ld c,$ENJ_FumanA2,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1743:「………あとは、あんたね。@:dwave_jp 0, enj_4e1744:…………黒き魔女。@:dwave_jp 0, enj_4e1745:……今となっては、あなたに絵羽伯母さんの面影を見ていることさえ、彼女に申し訳なく思うわ。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1743:^... Il ne reste plus que toi.^@:dwave_eng 0, enj_4e1744:^ ... Sorcière noire.^@:dwave_eng 0, enj_4e1745:^ Maintenant que je comprends un peu mieux tante Eva, j'ai presque honte de continuer à voir son visage dans le tien.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",0  ;fixed lighting issue
+;mld r,$EV2_akuwaraiA2,0
+;msp msp_r,0,0,-120
+mldt r,$EV2_akuwaraiA2,0,135
+
+print 24
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e186:「ふ、……ふっふふふふふ。@:dwave_jp 0, ev2_4e187:…私の姿が、未だに右代宮絵羽に見えているなら、@:dwave_jp 0, ev2_4e188:それはあんたの中で、未だに« 私 »が許せてないということだわぁ。\
+langen:dwave_eng 0, ev2_4e186:^Fu... huhuhuhuhu.^@:dwave_eng 0, ev2_4e187:^ Si je porte encore le visage d'Eva Ushiromiya à tes yeux,^@:dwave_eng 0, ev2_4e188:^ c'est qu'au fond de toi, tu n'as toujours pas réussi à me pardonner.^\
+
+;mld r,$EV2_NiramuA1,0
+;msp msp_r,0,0,-120
+mldt r,$EV2_NiramuA1,0,135
+
+print 80
+
+langjp:dwave_jp 0, ev2_4e189:　わかっているのよ、縁寿。@:dwave_jp 0, ev2_4e190:…………あんただって棘まみれの人生から解放されたくて、仕方がないのを。」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e189:^Je le sais, Ange.^@:dwave_eng 0, ev2_4e190:^ Toi aussi, tu meurs d'envie d'être délivrée de cette vie couverte d'épines.^\
+
+ld l,$ENJ_DefA1,23
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1746:「………………………………。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1746:^...^\
+
+
+;mld r,$EV2_TokuiA1,0
+;msp msp_r,0,0,-120
+mldt r,$EV2_TokuiA1,0,135
+
+print 80
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e191:「なら、……面白いことを思いついたわ。@:dwave_jp 0, ev2_4e192:私も、あんたに魔法を見せてあげる。@/
+langen:dwave_eng 0, ev2_4e191:^Alors... je viens d'avoir une idée amusante.^@:dwave_eng 0, ev2_4e192:^ Moi aussi, je vais te montrer de la magie.^@/
+
+;mld r,$EV2_AkuwaraiA8,0
+;msp msp_r,0,0,-120
+mldt r,$EV2_AkuwaraiA8,0,135
+
+print 80
+
+langjp:dwave_jp 0, ev2_4e193:………あんたを殺すのは私じゃないわ。」\
+;＜絵羽
+langen:dwave_eng 0, ev2_4e193:^ ... Mais c'est pas moi qui vais te tuer.^\
+
+mcl a,0
+
+se1 22
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",0
+ld l,$ENJ_DefA1,0
+ld r,$EV2_AkuwaraiA8,2
+
+me2v 17,70
+
+advchar "-1"
+langjp　黒き魔女は最悪の笑顔を浮かべると、@その姿を、黒い霧のように、@…あるいは大量の黒い羽虫の群に変えると、私を中心に渦を巻き始める。\
+langen^La sorcière noire afficha son sourire le plus abject,^@^ puis se dissout en une brume noire^@^ qui tourbillonna autour de moi comme une nuée d'insectes ailés.^\
+
+se1 52
+se2v 22,85
+se3v 37,100
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",99,2000,"whirl.dll/r" : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",99,2000,"whirl.dll/r"
+print 1
+
+langjp　そしてその黒い霧は少しずつ集まり、……人の姿を模っていく。\
+langen^La masse obscure se resserra progressivement jusqu'à prendre une forme humaine.^\
+
+;ld c,$ENJ_majimeA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1747:「…………………何の真似……。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1747:^... Qu'est-ce que tu fabriques... ?^\
+
+E_A
+bgm1 77
+
+
+advchar "34"
+langjp:dwave_jp 0, ev2_4e194:　うっふふふふふ！@
+langen:dwave_eng 0, ev2_4e194:^Huhuhuhuhuhu !^@
+br
+langjp:dwave_jp 0, ev2_4e195:　薄々は想像がついてるくせに！@
+langen:dwave_eng 0, ev2_4e195:^Tu vois pourtant très bien ce qui va apparaître !^@
+br
+langjp:dwave_jp 0, ev2_4e196:　あんたが、もっとも憎み、恨んだ、あの女よ！@
+langen:dwave_eng 0, ev2_4e196:^C'est la femme que tu as le plus haïe et maudite !^@
+br
+langjp:dwave_jp 0, ev2_4e197:　そして女もあなたをもっとも恨み、憎んだ…！\
+langen:dwave_eng 0, ev2_4e197:^Et c'est aussi la femme qui t'a le plus haïe, le plus maudite... !^\
+
+se2v 57,100
+se3 52
+bg white,99,3000,"breakup.dll/lrp"
+
+se1v 22,1000
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1br.jpg",":b;bmp\background\forest\hill_1br.png",0  ;fixed lighting issue
+ld5 c,$EVA_AkireA2,99,2000,"whirl.dll/l"
+
+se1v 2,100
+
+advchar "-1"
+langjp^^!s0　黒い霧が晴れると、/
+sl
+langjp^^!d900………そこには、/
+sl
+langjp^^!d1200…………在りし日の、/
+sl
+langjp^^!d600……絵羽伯母さんの姿が。/
+sl
+langen^^!s0^Quand la brume noire se dissipa^@/
+sl
+langen:!d900^... là se trouvait...^@/
+sl
+langen:!d1200^ tante Eva, telle qu'elle était autrefois^@/
+sl
+langen:!d600^... telle qu'elle était de son vivant.^@/
+sl
+mov %disable_adv_clear, 1
+langjp!sd@
+langen!sd@
+mov %disable_adv_clear, 0
+
+br
+
+me5v 5,70
+
+se1 43
+ld c,$EVA_AkireA1G,80
+
+langjp　……その手には、銃を持っていた。\
+langen^ ... Dans ses mains... elle tenait un fusil.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",24  ;fixed lighting issue
+ld r,$ENJ_defA1,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1748:「……………絵羽伯母さんは、/
+sl
+langjp:voicedelay 1240:dwave_jp 0, enj_4e1749:^^……死んだわよ。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1748:^... Tante Eva...^@/
+sl
+langen:voicedelay 1240:dwave_eng 0, enj_4e1749:^ est morte.^@
+
+ld l,$EVA_WaraiA1G,23
+
+advchar "05"
+langjp:dwave_jp 0, eva_4e116:「くすくす、お久し振りねぇ、縁寿ぇえぇ。@:dwave_jp 0, eva_4e117:……あんたを殺すために、地獄から戻ってきたわよぅ！@:dwave_jp 0, eva_4e118:　くっくっくっく！！」\
+;＜絵羽
+langen:dwave_eng 0, eva_4e116:^Hihi... ça faisait longtemps, Aaaaange. ^@:dwave_eng 0, eva_4e117:^Je suis revenue de l'enfer rien que pour te tuer ! ^@:dwave_eng 0, eva_4e118:^Kukukukuku !!^\
+
+advchar "-1"
+langjp　絵羽伯母さんは狂った笑いで私を睨む。\
+langen^Tante Eva me fusilla du regard, secouée d'un rire dément.^\
+
+ld r,$ENJ_NayamuA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1750:「でも、……あまり驚かないわ。@:dwave_jp 0, enj_4e1751:絵羽伯母さん、そういう人だったし。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1750:^Mais au fond, cela ne me surprenait presque pas.^@:dwave_eng 0, enj_4e1751:^ Tante Eva était bien capable de revenir de l'enfer uniquement pour se venger.^\
+
+
+ld l,$EVA_futekiA1G,80
+
+advchar "05"
+langjp:dwave_jp 0, eva_4e119:「私のお葬式はさぞや気分が晴れ晴れしたでしょう？@:dwave_jp 0, eva_4e120:　私も晴れ晴れしていたわよぅ、あんたの面を二度と見なくて済むようになるんだからねぇ…！@:dwave_jp 0, eva_4e121:　でもたったひとつだけ心残りがあったわ。\
+langen:dwave_eng 0, eva_4e119:^Mon enterrement t'a bien soulagée, pas vrai ? ^@:dwave_eng 0, eva_4e120:^Moi aussi, figure-toi. Je pensais ne plus jamais avoir à revoir ta sale tête... ! ^@:dwave_eng 0, eva_4e121:^Il me restait juste un regret.^\
+
+E_MA
+se1v 30,100
+se2v 2,100
+ld l,$EVA_Akireb1G,26
+
+langjp:dwave_jp 0, eva_4e122:　それがこれよッ！！」\
+;＜絵羽
+langen:dwave_eng 0, eva_4e122:^Et le voilà, juste devant moi !!^\
+
+ld r,$ENJ_defA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1752:「………私を、殺すこと？@:dwave_jp 0, enj_4e1753:　…………それが最後の遺言だったの？」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1752:^... Me tuer ? ^@:dwave_eng 0, enj_4e1753:^... C'était ta dernière volonté ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+br
+advchar "-1"
+langjp　哀れね。@
+langen^Quelle pitié.^@
+br
+langjp　……死んでもなお、@……伯母さんは苦しみから、解放されなかったのね……。\
+langen^... Même morte... ^@^tu n'as donc toujours pas réussi à te libérer de ta souffrance...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1ar.jpg",":b;bmp\background\forest\hill_1ar.png",0  ;fixed lighting issue
+ld c,$EVA_waraiA1G,26
+
+advchar "05"
+langjp:dwave_jp 0, eva_4e123:「黒き魔女の力こそが私の魔法の源泉だったわ。@/
+langen:dwave_eng 0, eva_4e123:^La magie noire a toujours été la source de ma force.^@/
+
+se1 43
+ld c,$EVA_AkireB1G,26
+
+langjp:dwave_jp 0, eva_4e124: 怒りと憎しみが、私に努力と不屈を教えてくれた。@:dwave_jp 0, eva_4e125:それはあんたの言う、現実逃避の魔法とはまったく違うの！」\
+;＜絵羽
+langen:dwave_eng 0, eva_4e124:^ La colère et la haine m'ont appris l'effort et la ténacité. ^@:dwave_eng 0, eva_4e125:^Rien à voir avec ta petite magie pour fuir la réalité !^\
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1br.jpg",":b;bmp\background\forest\hill_1br.png",0  ;fixed lighting issue
+ld r,$ENJ_fumanA1,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1754:「……あんたの言う魔法なんて、ただの八つ当たりによるストレス解消だわ。@:dwave_jp 0, enj_4e1755:……私たちの魔法は違う。@:dwave_jp 0, enj_4e1756:世界そのものを作り変えるの。@:dwave_jp 0, enj_4e1757:………あんたの性悪魔法とは、まったく格が違う。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1754:^... Ce que tu appelles magie consiste seulement à décharger ta souffrance sur quelqu'un d'autre.^@:dwave_eng 0, enj_4e1755:^ Notre magie est différente.^@:dwave_eng 0, enj_4e1756:^ Elle permet de changer le regard qu'on porte sur le monde.^@:dwave_eng 0, enj_4e1757:^ Ta magie mesquine ne saurait lui être comparée.^\
+
+
+ld l,$EVA_WaraiB1G,80
+
+advchar "05"
+langjp:dwave_jp 0, eva_4e126:「くすくす！！@:dwave_jp 0, eva_4e127:　なら、黒と白のどちらが勝つか、この場で決着をつけてあげる…！！@/
+langen:dwave_eng 0, eva_4e126:^Hihi !! ^@:dwave_eng 0, eva_4e127:^Alors réglons ça ici et maintenant. On va voir laquelle des deux vaut vraiment quelque chose : la noire ou la blanche... !! ^@/
+
+;se1 30
+ld l,$EVA_HohoemiB1G,80
+
+langjp:dwave_jp 0, eva_4e128:　死してなお、黒き魔法で復活してあんたをこうして銃口で狙える私の奇跡に、@:dwave_jp 0, eva_4e129:あんたの白き魔法はどんな奇跡で対抗を？\
+langen:dwave_eng 0, eva_4e128:^Regarde le miracle de ma magie noire : même morte, j'ai pu revenir pour te tenir en joue.^@:dwave_eng 0, eva_4e129:^ Alors ? Quel miracle ta magie blanche va-t-elle nous montrer pour rivaliser ?^\
+
+se1v 22,85
+me1v 21,80
+
+bfly1R 8
+
+ld l,$EVA_FutekiB1G,80
+
+langjp:dwave_jp 0, eva_4e130:　反魔法の毒素であなたを取り込んだわ。@:dwave_jp 0, eva_4e131:七姉妹はもう二度と呼べないわよ。@:dwave_jp 0, eva_4e132:さっきの奇跡はもう起こらない…！！」\
+;＜絵羽
+langen:dwave_eng 0, eva_4e130:^Je t'ai enfermée dans ma toxine anti-magie. ^@:dwave_eng 0, eva_4e131:^Tu ne pourras plus jamais appeler les Sept Sœurs du Purgatoire. ^@:dwave_eng 0, eva_4e132:^Le miracle de tout à l'heure ne se reproduira plus... !!^\
+
+
+ld r,$ENJ_nayamuA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1758:「……………それでも起こるから、魔法って言うんだわ。@/
+langen:dwave_eng 0, enj_4e1758:^... C'est justement lorsqu'un miracle se produit malgré l'impossible qu'on peut parler de magie.^@/
+
+ld r,$ENJ_FumanA2,80
+
+langjp:dwave_jp 0, enj_4e1759:……いいわよ。@:dwave_jp 0, enj_4e1760:マモン。私に力を貸して。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1759:^ ... Très bien. ^@:dwave_eng 0, enj_4e1760:^Mammon. Prête-moi ta force.^\
+
+textoff
+wait 1000
+
+advchar "-1"
+langjp　……しかしマモンは応えない。@現れない。@
+langen^... Mais Mammon ne répondit pas. ^@^Elle n'apparut pas.^@
+br
+
+langjp　確かに彼女が言うように、@灼熱の太陽に干上がる荒地と例えられるくらいに、反魔法の毒素が、全てを焼き尽くしている…。@
+langen^Comme Eva l'avait annoncé, ^@^la toxine anti-magie avait tout brûlé autour de moi, jusqu'à transformer le monde en terre aride desséchée sous un soleil de plomb...^@
+
+br
+langjp　………少し、辛いかもしれない。\
+langen^Ça allait peut-être être difficile.^\
+
+
+ld l,$EVA_akireb1G,80
+
+advchar "05"
+langjp:dwave_jp 0, eva_4e133:「呼び掛けても無駄よぅ。@:dwave_jp 0, eva_4e134:もう二度と！@:dwave_jp 0, eva_4e135:　煉獄の七姉妹は応えない！」\
+;＜絵羽
+langen:dwave_eng 0, eva_4e133:^Inutile de l'appeler. ^@:dwave_eng 0, eva_4e134:^Plus jamais ! ^@:dwave_eng 0, eva_4e135:^Les Sept Sœurs du Purgatoire ne répondront plus !^\
+
+ld r,$ENJ_FumanA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1761:「だから。@:dwave_jp 0, enj_4e1762:それでも呼べるから、魔法なのよね？」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1761:^Justement.^@:dwave_eng 0, enj_4e1762:^ C'est parce que je peux quand même les appeler que c'est de la magie, non ?^\
+
+
+ld l,$EVA_Ikarib1G,80
+
+advchar "05"
+langjp:dwave_jp 0, eva_4e136:「……………………。@:dwave_jp 0, eva_4e137:……哀れね、縁寿。@:dwave_jp 0, eva_4e138:さようなら。@:dwave_jp 0, eva_4e139:あんたとのささやかな日々は、そこそこに楽しかったわ。@:dwave_jp 0, eva_4e140:これでお別れよ。@/
+langen:dwave_eng 0, eva_4e136:^...^@:dwave_eng 0, eva_4e137:^ Quelle pitié, Ange. ^@:dwave_eng 0, eva_4e138:^Adieu. ^@:dwave_eng 0, eva_4e139:^Ces quelques jours avec toi auront au moins été divertissants. ^@:dwave_eng 0, eva_4e140:^Mais ça s'arrête ici.^@/
+
+ld l,$EVA_DefB1G,80
+
+langjp:dwave_jp 0, eva_4e141:……良かったわね、あんたの終着駅がここで。」\
+;＜絵羽
+langen:dwave_eng 0, eva_4e141:^ ... Tu as de la chance que ton terminus soit ici.^\
+
+
+ld r,$ENJ_NayamuA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1763:「えぇ、まったくよ。@:dwave_jp 0, enj_4e1764:気が利くわね。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1763:^Oui, tout à fait. ^@:dwave_eng 0, enj_4e1764:^Quelle délicate attention.^@
+
+ld l,$EVA_Waraib1G,80
+
+advchar "05"
+langjp:dwave_jp 0, eva_4e142:「ありがと。@:dwave_jp 0, eva_4e143:それじゃ、お別れね。」\
+;＜絵羽
+langen:dwave_eng 0, eva_4e142:^Merci bien. ^@:dwave_eng 0, eva_4e143:^Eh bien, adieu.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+me2v 28,100
+
+advchar "-1"
+langjp　銃口がゆっくりと上がって、/
+sl
+langen^Le canon du fusil s'éleva lentement dans ma direction.^@/
+sl
+se1 43
+langjp^^!d800……その奥底が覗ける。@
+langen:!d800^ ... jusqu'à ce que je puisse en regarder le fond.^@
+br
+langjp　そして、/
+sl
+langjp^^!d900………引き金がゆっくりと………。\
+langen^Puis^@/
+sl
+langen:!d900^... la détente commença lentement à...^\
+br
+
+textoff
+
+E_A
+
+cbfly 0
+
+se1v 46,100
+se2v 62,100
+se3v 60,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+langjp　その時、@……銃が、爆ぜた。\
+langen^À cet instant^@^ le fusil lui-même éclata.^\
+
+mono 2
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1br.jpg",":b;bmp\background\forest\hill_1br.png",0  ;fixed lighting issue
+ld c,$EVA_OdorokiB2G,22
+
+me1v 28,100
+
+langjp　…発砲したという意味ではない。@
+langjp　……破裂したのだ。\
+langen^Ce n'était pas une simple détonation.^@
+langen^Le canon venait de se déchirer sous la violence de l'explosion.^\
+
+ld c,$EVA_ikariB2G,22
+
+langjp　…………馬鹿、な……。@
+langen^... C'est... impossible...^@
+br
+langjp　……絵羽は呆然と、凍った空間で、/
+sl
+langjp^^!d900……破裂した銃を見ている。@
+langjp　時間が溶ければ、それらの破片は一斉に、彼女の顔面を打ちつけるだろう…。\
+langen^Eva, abasourdie dans cet espace figé^@/
+sl
+langen:!d900^... fixait le fusil qui venait d'exploser.^@
+langen^Lorsque le temps reprendrait son cours, les éclats viendraient lui fouetter le visage en même temps.^\
+
+se1 52
+bld l,$RG5_majimeA1,0
+print 99,2000,"breakup.dll/llb"
+
+advchar "42"
+langjp:dwave_jp 0, rg5_4e391:「……強欲のマモン。@:dwave_jp 0, rg5_4e392:ここに。」@
+;＜マモン
+langen:dwave_eng 0, rg5_4e391:^Mammon de l'Avarice, ^@:dwave_eng 0, rg5_4e392:^présente.^@
+
+ld c,$EVA_odorokib1G,22
+
+advchar "05"
+langjp:dwave_jp 0, eva_4e144:「……………………ばか、な…、」\
+;＜絵羽
+langen:dwave_eng 0, eva_4e144:^... C'est... impossible...^\
+
+advchar "-1"
+langjp　絵羽の背後に、マモンは立つ。@
+langen^Mammon se tenait déjà derrière Eva.^@
+br
+langjp　………すでに、私が与えた標的は、貫通している。@
+langen^Elle avait transpercé la cible que je lui avais désignée.^@
+br
+langjp　……それが、銃だった。\
+langen^Cette cible n'était autre que le fusil.^\
+
+ld r,$ENJ_defA1,22
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1765:「これで、……魔法は充分？@:dwave_jp 0, enj_4e1766:　…………絵羽伯母さん。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1765:^Alors... ça te suffit comme démonstration de magie ?^@:dwave_eng 0, enj_4e1766:^ Tante Eva.^@
+
+ld c,$EVA_IkariB2G,22
+
+advchar "05"
+langjp:dwave_jp 0, eva_4e145:^^!s1「……え、/
+sl
+langjp:voicedelay 210:dwave_jp 0, eva_4e146:^^………縁寿ぇぇ………。」/
+sl
+langen:dwave_eng 0, eva_4e145:^^!s1^ ... A-^@/
+sl
+langen:voicedelay 210:dwave_eng 0, eva_4e146:^ Aaange...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜絵羽
+
+E_A
+se1v 1006,100
+
+textoff
+wait 1500
+
+csp -1
+mono off
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+se1v 46,100
+se2v 62,100
+se3v 60,100
+
+mono 2
+
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+mono off
+
+
+langjp　そして、時間が溶ける。@
+langjp　破裂した銃の破片と火薬ガスが、彼女の顔を焼いた。@
+langjp　鋭い悲鳴が上がり、彼女は顔を覆って転げ回る……。@
+langen^Puis le temps recommença à s'écouler.^@
+langen^Les éclats du fusil et les gaz de poudre lui brûlèrent le visage.^@
+langen^Elle poussa un hurlement aigu, porta les mains à son visage et se roula au sol...^@
+br
+langjp　……哀れだった。\
+langen^C'était pitoyable.^\
+
+bgm1 82
+
+me1v 16,50
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\hill_1cr.jpg",":b;bmp\background\forest\hill_1cr.png",26  ;fixed lighting issue
+ld l,$ENJ_DefA1,2
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1767:「……運がなかったわね。@:dwave_jp 0, enj_4e1768:……これでゲームオーバーよ。@:dwave_jp 0, enj_4e1769:絵羽伯母さん。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1767:^... Pas de chance.^@:dwave_eng 0, enj_4e1768:^ ... Game Over,^@:dwave_eng 0, enj_4e1769:^ tante Eva.^\
+
+advchar "-1"
+langjp　私はマモンに合図する。@
+langjp　顔を焼かれてのた打ち回る苦しみから、すぐに解放してやるために。\
+langen^Je fis signe à Mammon.^@
+langen^... Pour la libérer au plus vite de cette douleur qui la faisait se tordre au sol, le visage brûlé.^\
+
+ld l,$ENJ_nayamuA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1770:「…………ありがとう、マモン。@:dwave_jp 0, enj_4e1771:…あの日の教室で、あなたたちの無力を罵ったことを、今こそ心の底より、そして再び謝るわ。@:dwave_jp 0, enj_4e1772:あなたたちは魔女を守るための、優秀な家具だった。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1770:^... Merci, Mammon.^@:dwave_eng 0, enj_4e1771:^ Je te demande encore pardon d'avoir autrefois méprisé votre impuissance dans ma salle de classe.^@:dwave_eng 0, enj_4e1772:^ Vous vouliez sincèrement me protéger, et j'ai refusé de le comprendre.^\
+
+ld r,$RG5_fumanA2,24
+
+advchar "42"
+langjp:dwave_jp 0, rg5_4e393:「………こちらこそ、感謝します。@/
+langen:dwave_eng 0, rg5_4e393:^... C'est à moi de vous remercier.^@/
+
+ld r,$RG5_hohoemiA1,80
+
+langjp:dwave_jp 0, rg5_4e394:……良き魔女に、良き主に最後に出会え、家具の本分を尽くせたことを、心より光栄に思います…！」\
+;＜マモン
+langen:dwave_eng 0, rg5_4e394:^ ... Je suis profondément honorée d'avoir pu rencontrer, à la fin, une bonne sorcière... un bon maître, et d'avoir enfin accompli jusqu'au bout mon devoir de meuble... !^\
+
+advchar "-1"
+langjp　マモンは理解していた。@
+langjp　これが、私が彼女に与える最後の仕事であることを。\
+langen^Mammon avait compris.^@
+langen^Que ce serait la dernière tâche qu'Ange lui confierait.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+me2v 2,50
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\sky_2a.jpg",":b;bmp\background\forest\sky_2a.png",22
+
+langjp　マモンが静かに、歩み寄る。@
+langjp　そして、彼女を見下ろす。\
+langen^Mammon s'approcha silencieusement.^@
+langen^Elle s'approcha d'Eva avant de baisser les yeux vers elle.^\
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1773:「……絵羽伯母さん。@:dwave_jp 0, enj_4e1774:今日まで付き合ってくれてありがとう。@:dwave_jp 0, enj_4e1775:これでお別れよ。@:dwave_jp 0, enj_4e1776:ハバナイスドリーム。@:dwave_jp 0, enj_4e1777:シーユーヘル。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1773:^... Tante Eva. ^@:dwave_eng 0, enj_4e1774:^Merci de m'avoir accompagnée jusqu'ici. ^@:dwave_eng 0, enj_4e1775:^C'est ici qu'on se quitte. ^@:dwave_eng 0, enj_4e1776:^Have a nice dream. ^@:dwave_eng 0, enj_4e1777:^See you in hell.^@
+
+;bg black,1
+
+advchar "05"
+langjp:dwave_jp 0, eva_4e147:^^!s0「クール。」/
+sl
+langen:dwave_eng 0, eva_4e147:^^!s0^ Cool.^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜絵羽
+
+se1v 46,100
+se2v 57,100
+se3v 36,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1a.jpg",":b;bmp\background\efe\blood_1a.png",1
+quakex 6,1400
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　そして、……その額を穿つ、軽い音が轟き渡る。\
+langen^Puis retentit un bruit léger, sec : celui de son front transpercé.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\sky_2b.jpg",":b;bmp\background\forest\sky_2b.png",2
+
+langjp　……硝煙と狂乱と、……白と黒の魔法の戦いが、終わる。\
+langen^... Et ainsi s'acheva la bataille de poudre et de folie... de magie blanche contre magie noire.^\
+
+langjp　長い、………本当に長い旅だった気がする。@
+langen^J'avais l'impression d'arriver au terme d'un voyage long... vraiment interminable.^@
+br
+langjp　そして、ゆっくりと世界が@……闇に沈んでいった………。\
+langen^Puis, lentement, le monde...^@^ s'enfonça dans les ténèbres...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",42
+
+fede 0,3000
+
+fr_bg ":b;fr_bg\orig\bmp\background\city\cit_2b.jpg",":b;bmp\background\city\cit_2b.png",2
+
+bgm1 67
+
+langjp　瞬くはずの星が、………空でなく、眼下に散らばっている。@
+langen^Les étoiles qui auraient dû scintiller... n'étaient pas dans le ciel, mais répandues sous mes pieds.^@
+br
+langjp　……真珠とルビーが白と赤の河を作っているのを認めた時。@それは、眼下に広がる広大な夜景であったと気付く…。\
+langen^... Lorsque je compris que les perles et les rubis formaient des fleuves blancs et rouges, ^@^je réalisai qu'il s'agissait du vaste paysage nocturne qui s'étendait sous mes yeux...^\
+
+me1v 16,40
+
+fr_bg ":b;fr_bg\orig\bmp\background\city\cit_2a.jpg",":b;bmp\background\city\cit_2a.png",2
+
+langjp　私はその夜景の空に、立つでも飛ぶでもなく、@……ただ漂うように、浮かんでいた。\
+langen^Je flottais au-dessus de cette mer de lumières, sans être debout ni vraiment voler... ^@^simplement portée dans les airs.^\
+
+langjp　……どこからともなく、ぱちぱちぱちと、@実に味気ない拍手が聞こえてきた。@
+langen^... De nulle part me parvinrent quelques clap, clap, clap, ^@^des applaudissements d'une platitude presque insultante.^@
+br
+langjp　わかってる。@
+langjp　……私に旅立てと命じた、/
+sl
+langjp^^!d900……ベルンカステルだ。\
+langen^Je le sais.^@
+langen^... C'est celle qui m'a ordonné de partir en voyage^@/
+sl
+langen:!d900^... Bernkastel.^\
+
+mov %play_scene,40290 : mov %r_hyouji_side,2 : mov %r_hyouji_cha_enj,enj_enj
+
+se1 52
+ld5 r,$BER_DefA1,99,2000,"breakup.dll/urb"
+
+advchar "28"
+langjp:dwave_jp 0, ber_4e103:「……………おめでとう。@:dwave_jp 0, ber_4e104:無限の魔女、エンジェ・ベアトリーチェ。@:dwave_jp 0, ber_4e105:あなたは旅路の末に、魔法の全てを理解したわ。」\
+;＜ベルン
+langen:dwave_eng 0, ber_4e103:^... Félicitations,^@:dwave_eng 0, ber_4e104:^ Sorcière Infinie, ANGE Béatrice.^@:dwave_eng 0, ber_4e105:^ Au terme de ton voyage, tu as compris ce qu'est la magie.^\
+
+
+ld l,$ENJ_nayamuA1,22
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1778:「……えぇ。@:dwave_jp 0, enj_4e1779:………私は今や、…魔法の全てを、理解した。@/
+langen:dwave_eng 0, enj_4e1778:^... Oui.^@:dwave_eng 0, enj_4e1779:^ ... Je crois que je comprends enfin ce qu'est la magie.^@/
+
+ld l,$ENJ_defA1,80
+
+langjp:dwave_jp 0, enj_4e1780:………私は、魔女よ。@:dwave_jp 0, enj_4e1781:……マリアージュ・ソルシエールが生み出した魔法世界を継承した、最後の魔女。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1780:^ ... Je suis devenue une sorcière.^@:dwave_eng 0, enj_4e1781:^ La dernière à avoir hérité du monde magique créé par Mariage Sorcière.^\
+
+
+ld r,$BER_DefA2,80
+
+advchar "28"
+langjp:dwave_jp 0, ber_4e106:「………あなたにしか、ベアトリーチェの世界を、切り裂けない。」\
+;＜ベルン
+langen:dwave_eng 0, ber_4e106:^... Toi seule peux... déchirer le monde de Béatrice.^\
+
+
+ld l,$ENJ_KomaruA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1782:「魔法を知るからこそ、………それに抵抗も覚えるわ。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1782:^C'est justement parce que j'ai appris à connaître la magie que je peux désormais lui résister.^@
+
+ld r,$BER_DefA1,80
+
+advchar "28"
+langjp:dwave_jp 0, ber_4e107:「……………………………。」\
+;＜ベルン
+langen:dwave_eng 0, ber_4e107:^...^\
+
+ld l,$ENJ_komaruA3,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1783:「……魔法は、愛と悲しみと怒りで出来ている。@:dwave_jp 0, enj_4e1784:……ベアトリーチェが、どんなに残酷な魔女であったとしても。@:dwave_jp 0, enj_4e1785:その魔法の源泉はまったく同じ。\
+langen:dwave_eng 0, enj_4e1783:^La magie naît de l'amour, de la tristesse et de la colère.^@:dwave_eng 0, enj_4e1784:^ Même dans sa cruauté, Béatrice puise son pouvoir dans les mêmes sentiments.^@:dwave_eng 0, enj_4e1785:^ C'est pour cela que je comprends désormais son monde.^\
+
+ld l,$ENJ_komaruA2,80
+
+langjp:dwave_jp 0, enj_4e1786:　………だからこそ、彼女のその世界を、本当はそっとしてあげたい。@:dwave_jp 0, enj_4e1787:……少なくとも、彼女にとってその世界は、完成しているのだから。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1786:^Et c'est justement pourquoi une part de moi voudrait laisser son monde en paix.^@:dwave_eng 0, enj_4e1787:^ Pour Béatrice, au moins, ce monde est complet.^\
+
+
+ld r,$BER_DefA2,80
+
+advchar "28"
+langjp:dwave_jp 0, ber_4e108:「…………あなたが家族を諦められるならね。」@
+;＜ベルン
+langen:dwave_eng 0, ber_4e108:^... À condition que tu puisses renoncer à ta famille.^@
+
+ld l,$ENJ_komaruA3,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1788:「…………………。@:dwave_jp 0, enj_4e1789:……そう。@:dwave_jp 0, enj_4e1790:だから申し訳ないけれど、私は戦わなければならない。@:dwave_jp 0, enj_4e1791:………家族を取り戻せるかもしれない、わずかの確率に賭けて、@:dwave_jp 0, enj_4e1792:……魔女となる旅に出たのだから。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1788:^...^@:dwave_eng 0, enj_4e1789:^ Oui. ^@:dwave_eng 0, enj_4e1790:^Alors même si ça me fait mal, je dois me battre. ^@:dwave_eng 0, enj_4e1791:^... C'est pour miser sur cette infime chance de récupérer ma famille^@:dwave_eng 0, enj_4e1792:^... que j'ai entrepris ce voyage pour devenir une sorcière.^\
+
+
+ld r,$BER_DefA1,80
+
+advchar "28"
+langjp:dwave_jp 0, ber_4e109:「ベアトリーチェを殺さない限り、あなたには孤独な世界しか存在しない。@:dwave_jp 0, ber_4e110:……それを、百億のカケラを旅した私が保証するわ。」\
+;＜ベルン
+langen:dwave_eng 0, ber_4e109:^Tant que tu ne vaincras pas Béatrice, il n'existera pour toi que des mondes où tu demeureras seule.^@:dwave_eng 0, ber_4e110:^ Je peux te le garantir, moi qui ai parcouru dix milliards de Fragments.^\
+
+
+ld l,$ENJ_DefA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1793:「…………わかってるわ。@:dwave_jp 0, enj_4e1794:……同情してる余地なんて、私にはないのよ。@:dwave_jp 0, enj_4e1795:……心を鬼にして、/
+sl
+langjp:voicedelay 1300:dwave_jp 0, enj_4e1796:^^………彼女の心を、切り裂かなくてはならない。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1793:^... Je sais. ^@:dwave_eng 0, enj_4e1794:^... Je n'ai plus le luxe de m'apitoyer sur elle. ^@:dwave_eng 0, enj_4e1795:^... Je dois endurcir mon cœur...^@/
+sl
+langen:voicedelay 1300:dwave_eng 0, enj_4e1796:^ et déchirer le sien.^\
+
+ld r,$BER_DefA2,80
+
+advchar "28"
+langjp:dwave_jp 0, ber_4e111:「……その気持ちが揺るぎ無いならよかったわ。@:dwave_jp 0, ber_4e112:同じ魔女同士、情が移って、志を挫くんじゃないかと心配したわ。」\
+;＜ベルン
+langen:dwave_eng 0, ber_4e111:^... Tant mieux si ta détermination ne faiblit pas.^@:dwave_eng 0, ber_4e112:^ Je craignais qu'entre sorcières, tu finisses par t'attacher à elle au point d'oublier ton objectif.^\
+
+advchar "-1"
+langjp　およそ表情を浮かべたことのない彼女に言われると、ちょっぴり白々しい。@
+langen^Entendre ça de la bouche de quelqu'un dont le visage n'exprimait pratiquement jamais rien avait quelque chose d'un peu hypocrite.^@
+br
+langjp　ベルンカステル。@
+langjp　……私をこの旅に誘った、謎の魔女。@………………………………。\
+langen^Bernkastel.^@
+langen^... La mystérieuse sorcière qui m'avait mise sur la route de ce voyage. ^@^...^\
+
+ld l,$ENJ_fumanA2,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1797:「私、あなたが嘘をついてたんじゃないかと、疑ってたことがあったわ。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1797:^Pendant mon voyage, je me suis vraiment demandé si tu ne m'avais pas menti.^@
+
+ld r,$BER_DefA1,80
+
+advchar "28"
+langjp:dwave_jp 0, ber_4e113:「…………………どうして？」\
+;＜ベルン
+langen:dwave_eng 0, ber_4e113:^... Pourquoi ?^\
+
+
+;ld c,$ENJ_nayamuA1,80
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1798:「……私は１９９８年の縁寿だから、家族を救っても、それは１９８６年の縁寿が救われるだけ。@:dwave_jp 0, enj_4e1799:……この私が救われるわけじゃない。@:dwave_jp 0, enj_4e1800:だから騙されていると思っていたことがあるの。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1798:^Je suis l'Ange de 1998. Même si je sauve ma famille, ce sera l'Ange de 1986 qui sera sauvée.^@:dwave_eng 0, enj_4e1799:^ Pas moi.^@:dwave_eng 0, enj_4e1800:^ Pendant un temps, j'ai donc pensé que tu m'avais envoyée ici pour rien.^\
+
+
+;ld c,$BER_DefA1,80
+
+advchar "28"
+langjp:dwave_jp 0, ber_4e114:「……………………。@:dwave_jp 0, ber_4e115:……そのとおりよ。@:dwave_jp 0, ber_4e116:私はあなたを騙したわ。」\
+;＜ベルン
+langen:dwave_eng 0, ber_4e114:^...^@:dwave_eng 0, ber_4e115:^ Exact. ^@:dwave_eng 0, ber_4e116:^Je t'ai trompée.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\city\cit_2b.jpg",":b;bmp\background\city\cit_2b.png",0
+ld c,$ENJ_DefA1,26
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1801:「……でも、今は感謝してる。@/
+langen:dwave_eng 0, enj_4e1801:^... Mais aujourd'hui, je t'en suis reconnaissante.^@/
+
+ld c,$ENJ_WaraiA2,80
+
+langjp:dwave_jp 0, enj_4e1802:………だって。@:dwave_jp 0, enj_4e1803:あなたは私に、家族の取り戻し方を、結局は教えてくれたもの。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1802:^ Parce qu'au bout du compte,^@:dwave_eng 0, enj_4e1803:^ tu m'as aidée à comprendre comment retrouver ma famille.^\
+
+cl c,0
+ld r,$ENJ_waraiA2,0
+ld l,$BER_DefA2,23
+
+advchar "28"
+langjp:dwave_jp 0, ber_4e117:「…………私は何も教えてないわ。@:dwave_jp 0, ber_4e118:……それを知ったのだとしたら、それはあなたが魔女として自ら至った境地だわ。@:dwave_jp 0, ber_4e119:それは私のそれとは違う境地。@:dwave_jp 0, ber_4e120:………私に理解は出来ないけれど、もしもそうならば、おめでとう。」\
+;＜ベルン
+langen:dwave_eng 0, ber_4e117:^... Je ne t'ai rien appris. ^@:dwave_eng 0, ber_4e118:^... Si tu as compris ça, c'est que tu es parvenue seule, en tant que sorcière, à cet état. ^@:dwave_eng 0, ber_4e119:^Un état différent du mien. ^@:dwave_eng 0, ber_4e120:^... Je ne peux pas le comprendre. Mais si c'est bien là que tu es arrivée... alors félicitations.^\
+
+
+ld r,$ENJ_defA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1804:「私はこのゲームのプレイヤーではなく、駒だと。@:dwave_jp 0, enj_4e1805:あなたは私に言ったわよね？」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1804:^Je ne suis pas une joueuse de cette partie, mais une pièce.^@:dwave_eng 0, enj_4e1805:^ C'est bien ce que tu m'avais dit ?^@
+
+ld l,$BER_DefA1,80
+
+advchar "28"
+langjp:dwave_jp 0, ber_4e121:「…………えぇ、言ったわ。」\
+;＜ベルン
+langen:dwave_eng 0, ber_4e121:^... Oui. Je l'ai dit.^\
+
+
+ld r,$ENJ_komaruA3,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1806:「その役割を、今こそ完全に理解した。@:dwave_jp 0, enj_4e1807:……………駒に、感情はいらない。@:dwave_jp 0, enj_4e1808:ただ、勝利のために、最善を尽くせばいい。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1806:^Je comprends maintenant ce que cela signifie.^@:dwave_eng 0, enj_4e1807:^ Une pièce n'a pas à se laisser détourner par ses sentiments.^@:dwave_eng 0, enj_4e1808:^ Elle doit accomplir le rôle qui lui a été confié.^\
+
+
+ld l,$BER_DefA2,80
+
+advchar "28"
+langjp:dwave_jp 0, ber_4e122:「…………えぇ。@:dwave_jp 0, ber_4e123:そのとおりよ。@:dwave_jp 0, ber_4e124:ゲームは最善手を指し合うものでしょう？@:dwave_jp 0, ber_4e125:　躊躇や戸惑いで指し手をおかしくしてたら、対戦相手も混乱するわ。」\
+;＜ベルン
+langen:dwave_eng 0, ber_4e122:^... Oui.^@:dwave_eng 0, ber_4e123:^ Exactement.^@:dwave_eng 0, ber_4e124:^ Une partie exige que chacun joue le meilleur coup possible.^@:dwave_eng 0, ber_4e125:^ Si la compassion nous empêche de jouer, plus personne ne peut mener l'affrontement à son terme.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\city\cit_2a.jpg",":b;bmp\background\city\cit_2a.png",22
+
+me2v 5,50
+
+br
+advchar "-1"
+langjp　………………ごめんね、ベアトリーチェ。@
+langen^... Pardonne-moi, Béatrice.^@
+br
+langjp　でも、恨まないで。@
+langjp　……« 右代宮縁寿 »には、まだ家族が必要なの。\
+langen^Mais... ne m'en veux pas.^@
+langen^... « Ange Ushiromiya » a encore besoin de sa famille.^\
+
+langjp　だから私にはそれを取り返すために、あなたと戦う権利がある。@
+langjp　そして、あなたは私に戦いを挑まれる義務がある。@
+langen^Alors j'ai le droit de me battre contre toi... pour la reprendre.^@
+langen^Et toi, tu as le devoir de recevoir ce défi.^@
+br
+langjp　………だから、恨まないでね。\
+langen^... Alors... ne m'en veux pas.^\
+
+langjp　その代わり。@
+langjp　もしもこのゲームに、あなたが勝ったなら。@私もそれを祝福してあげるから。\
+langen^En échange...^@
+langen^Si tu gagnes cette partie,^@^ je serai la première à t'en féliciter.^\
+
+langjp　さぁ、行こう。@
+langjp　………私という駒の、いよいよ本当の出番。@
+langen^Allez, allons-y.^@
+langen^... Pour la pièce que je suis, le moment est enfin venu d'entrer véritablement en jeu.^@
+br
+langjp　ごめんね、ベアトリーチェ。@
+langen^Pardonne-moi, Béatrice.^@
+
+E_A
+
+br
+langjp　あんたにお兄ちゃんは、譲れないのッ…！！！\
+langen^Je ne te laisserai pas prendre mon frère... !!!^\
+
+
+*umi4_19
+textoff
+
+bgm1v 106,90
+se1 22
+bg white,8
+
+mov %play_scene,40300 : mov %r_hyouji_side,1 : mov %r_hyouji_cha_ma,ma4_enj
+mov %grim_scene,411
+
+gosub *MAR_Isyou2
+gosub *BEA_Isyou1
+
+langjp　世界が真っ白に染まる……。@
+langen^Le monde fut soudain baigné d'une lumière aveuglante.^@
+br
+langjp　それは白ではない。@
+langjp　…極限まで眩い黄金の色。\
+langen^Mais cette clarté n'était pas blanche.^@
+langen^Elle était dorée, d'un éclat presque insoutenable.^\
+
+bfly1 0
+se1 52
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\garden\rose_2ap.jpg" : mov $oldnew_bg,":b;bmp\background\garden\rose_2ap.png" : if %4095 = 0 bg ":b;bmp\background\garden\rose_2ap.png",99,2000,"breakup.dll/lrb" : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\garden\rose_2ap.jpg",99,2000,"breakup.dll/lrb"
+
+
+langjp　そこは、……右代宮家の美しき薔薇庭園だった。\
+langen^Devant moi s'étendait la magnifique roseraie des Ushiromiya.^\
+
+langjp　しかし、薔薇の花は全て黄金。@
+langen^Toutes les roses y étaient faites d'or.^@
+br
+langjp　……蜜も黄金色。@それに集まる蝶たちも、また黄金。\
+langen^Jusqu'au nectar qui brillait sur leurs pétales, tout était doré.^@^ Les papillons qui venaient s'y poser semblaient faits du même métal précieux.^\
+
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_2bp.jpg",":b;bmp\background\garden\rose_2bp.png",22
+
+me1v 16,50
+
+langjp　…………ここが、黄金郷…………。@
+langen^... Alors c'est ça... la Terre d'Or...^@
+br
+langjp　マリアージュ・ソルシエールの魔女たちが、やがて導かれる約束の地…。@
+langen^La terre promise où les sorcières de Mariage Sorcière devaient un jour se retrouver...^@
+br
+langjp　そこでは全ての願いが叶い、全ての魔法と夢が生まれ出す。\
+langen^Ici, tous les vœux se réalisent, et toutes les magies et tous les rêves prennent naissance.^\
+
+textoff
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3ap.png",22
+wait 2000
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3cp.jpg",":b;bmp\background\garden\rose_3cp.png",0
+ld l,$MAR_WaraiA1,0
+ld r,$BEA_WaraiA1,22
+
+langjp　…………その、黄金の薔薇の園に、@……………二人の、そして二人だけの魔女がいた。@
+langen^... Dans cette roseraie dorée...^@^ se tenaient deux sorcières... et seulement deux.^@
+br
+langjp　私という招かれざる客人が現れ、@その不穏に天気が揺らぐ。\
+langen^Lorsque j'apparus dans ce jardin dont je n'étais pas l'invitée,^@^ le ciel lui-même sembla se troubler de ma venue.^\
+
+me2v 16,50
+
+langjp　………ざぁっと、彼女らにとって不吉な風が、黄金の薔薇をうねらせた。@
+langen^Une bourrasque fit onduler les roses dorées et dispersa leurs pétales autour de nous.^@
+br
+langjp　その風が散らす黄金の花びらによる、あまりに美し過ぎる光景は、@紛れもなくこの世ならざるものだった……。\
+langen^La beauté irréelle de ces pétales dorés emportés par le vent...^@^ ne pouvait appartenir à ce monde...^\
+
+langjp　黄金の薔薇の小道を散策していた二人は私の姿に気付き、驚く。\
+langen^Les deux sorcières qui se promenaient parmi les rosiers remarquèrent ma présence et s'arrêtèrent net.^\
+
+ld l,$MAR_OdorokiA1,80
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1315:「……縁寿……？@/
+langen:dwave_eng 0, mar_4e1315:^... Ange... ?^@/
+
+ld l,$MAR_WaraiA2,80
+
+langjp:dwave_jp 0, mar_4e1316:　………ベアト、縁寿だ……！！」@
+;＜真里亞
+langen:dwave_eng 0, mar_4e1316:^ ... Béato, c'est Ange... !!^@
+
+ld r,$BEA_fumanA3,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e886:「……………どうやってここへ…？@/
+langen:dwave_eng 0, bea_4e886:^... Comment es-tu arrivée jusqu'ici... ?^@/
+
+ld r,$BEA_majimeA1,80
+
+langjp:dwave_jp 0, bea_4e887:　………引き取られよ。@:dwave_jp 0, bea_4e888:妾はもはや、ここへは誰も招かぬのだ。」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e887:^ ... Retire-toi. ^@:dwave_eng 0, bea_4e888:^Je n'inviterai plus jamais personne ici.^\
+
+advchar "-1"
+langjp　ベアトは冷たく言い放つ。@
+langjp　………かつて不敵に嘲笑って見せた彼女とはまるで別人のよう。@
+langen^Béato prononça ces mots froidement.^@
+langen^... Elle n'avait plus rien de la femme qui, autrefois, affichait un sourire insolent et provocateur.^@
+br
+langjp　心を閉ざし、真里亞お姉ちゃんと二人だけの世界に閉じ篭っているのだ。\
+langen^Elle avait fermé son cœur... et s'était recluse dans un monde où il n'existait plus qu'elle et grande sœur Maria.^\
+
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_2cp.jpg",":b;bmp\background\garden\rose_2cp.png",22
+
+langjp　仲良しの真里亞お姉ちゃんといつまでも二人きりで、@魔法談義をしながらお茶を飲んでいられる世界。\
+langen^Un monde où elle pourrait rester éternellement seule avec sa chère grande sœur Maria, ^@^à boire du thé et parler de magie avec elle.^\
+
+langjp　……誰にも急かされず、何にも拒まれない。@
+langen^... Un monde où personne ne viendrait les presser, où rien ne viendrait les repousser.^@
+br
+langjp　傷つけるかもしれないような誰一人すらも、彼女ら以外に存在しない世界。@
+langen^Un monde où, en dehors d'elles deux, il n'existerait absolument personne qui puisse les blesser.^@
+br
+langjp　そう、それは二人にとって完成された、もはや小さな宇宙……。\
+langen^Oui. Pour elles, c'était désormais un univers minuscule, mais parfaitement achevé...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3cp.jpg",":b;bmp\background\garden\rose_3cp.png",22
+ld r,$ENJ_fumanA2,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1809:「………悪いわね。@:dwave_jp 0, enj_4e1810:……あんたに、ここに引き篭もられちゃ困るのよ。@/
+langen:dwave_eng 0, enj_4e1809:^Désolée.^@:dwave_eng 0, enj_4e1810:^ Mais je ne peux pas te laisser t'enfermer ici pour l'éternité.^@/
+
+ld r,$ENJ_FumanA1,80
+
+langjp:dwave_jp 0, enj_4e1811:………私たちは、あんたが戻ってこなきゃ、ゲームが進まないの。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1811:^ Tant que tu ne reviens pas, la partie ne pourra jamais se poursuivre.^\
+
+
+ld l,$BEA_fumanA3,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e889:「妾は飽きたから止めたと言った。@:dwave_jp 0, bea_4e890:もうゲームには戻らぬ。」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e889:^Je t'ai dit que ce jeu ne m'intéressait plus.^@:dwave_eng 0, bea_4e890:^ Je n'y retournerai pas.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3bp.jpg",":b;bmp\background\garden\rose_3bp.png",0
+ld c,$MAR_waraiA2,23
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1317:「……………ベアトはね、ずっとここで真里亞と一緒にいるの。@:dwave_jp 0, mar_4e1318:ここで一緒にお茶を飲んでね、色々な遊びを考えるの…！@/
+langen:dwave_eng 0, mar_4e1317:^... Béato restera toujours ici avec Maria. ^@:dwave_eng 0, mar_4e1318:^On boira du thé ensemble et on inventera plein de jeux... ! ^@/
+
+ld c,$MAR_WaraiA1,80
+
+langjp:dwave_jp 0, mar_4e1319:　縁寿も一緒に遊んでいいんだよ。」\
+;＜真理亞
+langen:dwave_eng 0, mar_4e1319:^Ange aussi peut jouer avec nous.^\
+
+
+cl c,0
+ld l,$MAR_waraiA1,0
+ld r,$BEA_KomaruA4,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e891:「……マリア。@:dwave_jp 0, bea_4e892:それはならぬと言ったはず。@:dwave_jp 0, bea_4e893:妾にはそなただけがいれば良い。\
+langen:dwave_eng 0, bea_4e891:^... MARIA.^@:dwave_eng 0, bea_4e892:^ Je t'avais pourtant expliqué pourquoi personne d'autre ne devait venir ici.^@:dwave_eng 0, bea_4e893:^ Je n'ai besoin que de toi.^\
+
+ld r,$BEA_hanbesoA4,80
+
+langjp:dwave_jp 0, bea_4e894:　だからそなたも、妾だけがいれば良いと、言っておくれ。」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e894:^Alors dis-moi que toi aussi, tu n'as besoin que de moi.^\
+
+ld l,$MAR_niyariA2,80
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1320:「…………………。@/
+langen:dwave_eng 0, mar_4e1320:^...^@/
+
+ld l,$MAR_WaraiA2,80
+
+langjp:dwave_jp 0, mar_4e1321:……うん。@:dwave_jp 0, mar_4e1322:……ありがとう。@:dwave_jp 0, mar_4e1323:真里亞を、そこまで必要としてくれる人は、ベアトだけだよ。@:dwave_jp 0, mar_4e1324:なら、ベアトと一緒にいる。@:dwave_jp 0, mar_4e1325:二人きりでいい。」\
+;＜真理亞
+langen:dwave_eng 0, mar_4e1321:^ Oui. ^@:dwave_eng 0, mar_4e1322:^... Merci. ^@:dwave_eng 0, mar_4e1323:^Béato est la seule personne qui ait autant besoin de Maria. ^@:dwave_eng 0, mar_4e1324:^Alors Maria restera avec Béato. ^@:dwave_eng 0, mar_4e1325:^Rien que nous deux, ça suffit.^\
+
+ld r,$BEA_hanbesoA6,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e895:「………マリア……、……すまぬ……。@:dwave_jp 0, bea_4e896:…………ありがとう………。」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e895:^... MARIA... pardonne-moi... ^@:dwave_eng 0, bea_4e896:^Merci...^\
+
+;cl r,0
+;ld c,$BEA_IiwakeA1,24
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+advchar "-1"
+langjp　ベアトは真里亞を深く抱き、@その組み合った腕の中に温かな宇宙さえ生み出していた…。@
+langen^Béato serra Maria contre elle, ^@^et jusque dans leurs bras enlacés semblait naître un univers chaud et paisible...^@
+
+br
+langjp　………多分それは、世界でもっとも小さい宇宙の誕生。@
+langjp　…互いを必要とし合う二人が生み出せる、世界でもっとも小さい宇宙…。\
+langen^C'était peut-être là le plus petit univers qui puisse exister.^@
+langen^... Un univers que deux personnes ayant besoin l'une de l'autre pouvaient engendrer à elles seules...^\
+
+langjp　それはどんなに小さくても、完成された世界。@
+langjp　…………でも、私は切り裂かなくてはならない。@…………………。\
+langen^Si petit soit-il, ce monde était complet.^@
+langen^... Mais je devais le déchirer. ^@^...^\
+
+se1v 2,100
+se2v 1006,100
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3ap.png",0
+ld r,$ENJ_NayamuA1,22
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1812:「……悪いけど。@:dwave_jp 0, enj_4e1813:………そういうわけにはいかないの。@/
+langen:dwave_eng 0, enj_4e1812:^Désolée. ^@:dwave_eng 0, enj_4e1813:^Mais je peux pas te laisser faire ça. ^@/
+
+ld r,$ENJ_KomaruA5,80
+
+langjp:dwave_jp 0, enj_4e1814:私はこの、マリアージュ・ソルシエールの黄金郷を、ぶっ壊しにやって来たわ。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1814:^Je suis venue détruire la Terre d'Or de Mariage Sorcière.^\
+
+
+ld l,$BEA_gamanA3,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e897:^^!s1「…………なぜ、/
+sl
+langjp:voicedelay 600:dwave_jp 0, bea_4e898:^^……妾の世界を、/
+sl
+langjp:voicedelay 1410:dwave_jp 0, bea_4e899:^^……壊すのか………。/
+sl
+langen:dwave_eng 0, bea_4e897:^^!s1^... Pourquoi...^@/
+sl
+langen:voicedelay 600:dwave_eng 0, bea_4e898:^ veux-tu détruire...^@/
+sl
+langen:voicedelay 1410:dwave_eng 0, bea_4e899:^ mon monde... ?^@/
+sl
+mov %disable_adv_clear, 1
+langjp!sd@/
+langen!sd@/
+mov %disable_adv_clear, 0
+advchar "-1"
+
+
+ld l,$BEA_gamanA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e900:こ、この世界が妾と真里亞以外の誰に迷惑を掛けたというのか……？！」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e900:^ C-Ce monde fait du mal à qui, à part Maria et moi... ?!^\
+
+
+ld r,$ENJ_IkariA2,1
+se1 12
+quakey 5,400
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1815:「あんたが始めて、終わらせずに放ったらかしたゲームで、@:dwave_jp 0, enj_4e1816:お兄ちゃんがずっと待たされてるッ！@:dwave_jp 0, enj_4e1817:　あんたが席に戻らなくちゃ、勝負は永遠に終わらないのよ…！！」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1815:^Tu as commencé une partie, puis tu l'as abandonnée sans la terminer,^@:dwave_eng 0, enj_4e1816:^ et mon frère attend toujours là-bas ! ^@:dwave_eng 0, enj_4e1817:^Si tu ne reprends pas ta place, ce duel ne finira jamais... !!^\
+
+
+ld l,$BEA_iiwakeA3,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e901:「………ははははは、は…！@/
+langen:dwave_eng 0, bea_4e901:^... Hahahahaha, ha... ! ^@/
+
+ld l,$BEA_futekiA2,80
+
+langjp:dwave_jp 0, bea_4e902:　あのゲームに、もはやプレイヤーはひとりもおらぬわ。@:dwave_jp 0, bea_4e903:戦人は消え去り、妾もまた消え去りここにいる。@:dwave_jp 0, bea_4e904:あのゲームはもはや終わったのだ。」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e902:^Il ne reste plus un seul joueur dans cette partie. ^@:dwave_eng 0, bea_4e903:^Battler a disparu, et moi aussi, j'ai disparu de là-bas pour venir ici. ^@:dwave_eng 0, bea_4e904:^Cette partie est déjà finie.^\
+
+
+ld r,$ENJ_komaruA4,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1818:^^!s0「終わってないッ！/
+sl
+langen:dwave_eng 0, enj_4e1818:^^!s0^C'est pas fini !^@/
+sl
+
+se1 12
+quakex 4,300
+
+langjp^^!sd@:dwave_jp 0, enj_4e1819:　あんたの始めたゲームでしょう！！@:dwave_jp 0, enj_4e1820:　最後まできっちり責任を持って終わらせなさい！@/
+langen^^!sd@:dwave_eng 0, enj_4e1819:^ C'est toi qui as commencé cette partie !! ^@:dwave_eng 0, enj_4e1820:^Alors prends-en la responsabilité jusqu'au bout et termine-la correctement ! ^@/
+
+ld r,$ENJ_KomaruA5,80
+
+langjp:dwave_jp 0, enj_4e1821:　戦人を打ち負かし、あなたが本当に望んだ世界を生み出すか！@:dwave_jp 0, enj_4e1822:　あなたが打ち負かされ、あなたの魔法に飲み込まれた全てを解放するか！！@:dwave_jp 0, enj_4e1823:　しっかり最後まで責任を取りなさいッ！！」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1821:^Soit tu bats Battler et tu crées enfin le monde que tu voulais vraiment ! ^@:dwave_eng 0, enj_4e1822:^Soit tu es vaincue et tu libères tout ce que ta magie a englouti !! ^@:dwave_eng 0, enj_4e1823:^Mais dans les deux cas, assume jusqu'au bout !!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3bp.jpg",":b;bmp\background\garden\rose_3bp.png",24
+ld c,$MAR_niyariA1,23
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1326:「……………駄目だよ、縁寿。@:dwave_jp 0, mar_4e1327:ベアトはこの世界で、真里亞と永遠に二人きりで過ごすの。@/
+langen:dwave_eng 0, mar_4e1326:^... Non, Ange. ^@:dwave_eng 0, mar_4e1327:^Béato passera l'éternité dans ce monde, seule avec Maria.^@/
+
+ld c,$MAR_OdorokiA1,80
+
+langjp:dwave_jp 0, mar_4e1328:……真里亞も、ベアトさえいれば、他には何もいらないの。@:dwave_jp 0, mar_4e1329:……ここでは全ての願いが叶う。@:dwave_jp 0, mar_4e1330:全てがある。」\
+;＜真理亞
+langen:dwave_eng 0, mar_4e1328:^ ... Maria non plus n'a besoin de rien d'autre, tant qu'elle a Béato. ^@:dwave_eng 0, mar_4e1329:^... Ici, tous les vœux se réalisent. ^@:dwave_eng 0, mar_4e1330:^Tout est ici.^\
+
+advchar "-1"
+langjp　…………この黄金郷は、真里亞お姉ちゃんとベアトリーチェの二人の想いの結晶だけで作られている。@
+langen^... Cette Terre d'Or n'existe que par les sentiments de grande sœur Maria et de Béatrice, cristallisés ensemble.^@
+br
+langjp^^!s0　……この世界からベアトを引き摺り出すには、@……この世界を、/
+sl
+langjp^^!d1000……破壊しなくてはならない………。/
+sl
+langen^^!s0^ ... Pour arracher Béato à ce monde... ^@^je vais devoir...^@/
+sl
+langen:!d1000^ le détruire...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+
+langjp　………………ベアトリーチェにとっての、最後の安らぎの世界に違いないこの黄金郷を、@………破壊する……。\
+langen^Je vais détruire cette Terre d'Or^@^... qui est sûrement le dernier refuge de Béatrice...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3ap.png",0
+ld l,$ENJ_nayamuA1,23
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1824:「お姉ちゃん。それは違う。@/
+langen:dwave_eng 0, enj_4e1824:^Grande sœur, ce n'est pas vrai.^@/
+ld l,$ENJ_KomaruA3,80
+
+langjp:dwave_jp 0, enj_4e1825:この黄金郷は嘘つきだわ。@:dwave_jp 0, enj_4e1826:お姉ちゃんの、本当に叶えたい願いを、叶えてくれていない。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1825:^ Cette Terre d'Or te ment.^@:dwave_eng 0, enj_4e1826:^ Elle ne peut pas exaucer le vœu qui compte le plus pour toi.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3cp.jpg",":b;bmp\background\garden\rose_3cp.png",0
+ld c,$MAR_fukigenA2,24
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1331:「………そんなことないよ！！@:dwave_jp 0, mar_4e1332:　ここでは何でも叶うの！@:dwave_jp 0, mar_4e1333:　見て、ここにはやさしいママだっている！！」\
+;＜真理亞
+langen:dwave_eng 0, mar_4e1331:^... C'est faux !! ^@:dwave_eng 0, mar_4e1332:^Ici, tous les vœux peuvent se réaliser ! ^@:dwave_eng 0, mar_4e1333:^Regarde, même Maman est ici, gentille !!^\
+
+textoff
+se1v 22,80
+bfly1 31
+wait 500
+se2v 22,85
+cbfly 31
+se3 52
+ld5 r,$ROS_WaraiA1,99,2000,"breakup.dll/llb"
+
+advchar "-1"
+langjp　真里亞の後に黄金の蝶が集まり、@やさしく微笑む楼座叔母さんを形作った。@
+langen^Des papillons dorés se rassemblèrent derrière Maria,^@^ et dessinèrent peu à peu la silhouette souriante de tante Rosa.^@
+br
+langjp　………そして私ににっこり微笑むと、@ざあっと黄金の花びらになって崩れ落ちる。\
+langen^... Puis elle m'adressa un doux sourire ^@^avant de s'effondrer en une pluie de pétales dorés.^\
+
+textoff
+ld r,$ROS_WaraiA2,80
+;wait 500
+se1 22
+cl r,99,3000,"breakup.dll/ulb"
+
+wait 500
+
+ld c,$MAR_akuwaraiA1,80
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1334:「ここでは何だって生み出せるの。@:dwave_jp 0, mar_4e1335:縁寿だって生み出せるよ、戦人だって、譲治お兄ちゃんだって、朱志香お姉ちゃんだって…！！\
+langen:dwave_eng 0, mar_4e1334:^Ici, on peut créer n'importe quoi. ^@:dwave_eng 0, mar_4e1335:^Ange aussi, Battler aussi, grand frère George aussi, grande sœur Jessica aussi... !!^\
+
+ld c,$MAR_WaraiA2,80
+
+langjp:dwave_jp 0, mar_4e1336:　いくらでも呼び出せるよ、みんなやさしくしてくれるよ…！！@:dwave_jp 0, mar_4e1337:　縁寿もおいでよ、一緒に遊ぼ……！！」\
+;＜真理亞
+langen:dwave_eng 0, mar_4e1336:^On peut les faire venir autant qu'on veut, et ils sont tous gentils avec nous... !! ^@:dwave_eng 0, mar_4e1337:^Viens toi aussi, Ange, jouons ensemble... !!^\
+
+br
+advchar "-1"
+langjp　…………ごめん、お姉ちゃん…………。\
+langen^... Pardon, grande sœur...^\
+
+;ld c,$ENJ_DefA1,80
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+E_MA
+advchar "11"
+langjp:dwave_jp 0, enj_4e1827:「さくたろうは……？」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1827:^Et Sakutarō... ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3ap.png",0
+ld r,$MAR_komaruA1,22
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1338:「………っ。」@
+;＜真里亞
+langen:dwave_eng 0, mar_4e1338:^... !^@
+br
+advchar "-1"
+langjp　さくたろうの名に、お姉ちゃんは窒息したような表情を浮かべる。\
+langen^À l'évocation de Sakutarō, le visage de grande sœur se crispa comme si elle venait d'étouffer.^\
+
+ld c,$BEA_komaruA3,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e905:「よせ……。@:dwave_jp 0, bea_4e906:その名を口にするな……。」@
+;＜ベアト
+langen:dwave_eng 0, bea_4e905:^Cesse... ^@:dwave_eng 0, bea_4e906:^Ne prononce pas ce nom...^@
+br
+advchar "-1"
+langjp　ベアトもまた血相を変える。@
+langjp　そして真里亞の肩を庇うように抱いた。@
+langen^Le visage de Béato changea lui aussi.^@
+langen^Elle entoura aussitôt les épaules de Maria, comme pour la protéger.^@
+br
+langjp　………未だにさくたろうの名は、お姉ちゃんの禁句なのだ。\
+langen^... Même aujourd'hui, le simple nom de Sakutarō restait interdit devant grande sœur.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3cp.jpg",":b;bmp\background\garden\rose_3cp.png",0
+ld c,$ENJ_KomaruA2,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1828:「どうして口にしちゃいけないの？@:dwave_jp 0, enj_4e1829:　真里亞お姉ちゃんの、一番の親友の名前よ。@/
+langen:dwave_eng 0, enj_4e1828:^Pourquoi n'aurais-je pas le droit de prononcer son nom ?^@:dwave_eng 0, enj_4e1829:^ C'est celui du meilleur ami de grande sœur Maria.^@/
+
+ld c,$ENJ_komaruA3,80
+
+langjp:dwave_jp 0, enj_4e1830:……どうしてその親友を、この素敵な黄金郷に招いてあげないの？@:dwave_jp 0, enj_4e1831:　どうしてこの何でも願いの叶う黄金郷では、さくたろうだけ呼び出すことが出来ないの？」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1830:^ Alors pourquoi ne pas inviter son ami le plus cher dans cette Terre d'Or ?^@:dwave_eng 0, enj_4e1831:^ Si tous les souhaits s'y réalisent, pourquoi Sakutarō est-il le seul que vous ne puissiez pas ramener ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3bp.jpg",":b;bmp\background\garden\rose_3bp.png",0
+ld l,$MAR_KomaruA1,0
+ld r,$BEA_komaruA4,23
+ld r,$BEA_KomaruA3,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e907:「そ、…それは……。@/
+langen:dwave_eng 0, bea_4e907:^C-C'est...^@/
+
+ld r,$BEA_iiwakeA2,80
+
+langjp:dwave_jp 0, bea_4e908:……良いのだぞ、マリア？@:dwave_jp 0, bea_4e909:　さくたろうのことを思い出さなくても…、」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e908:^ C'est bon, MARIA. ^@:dwave_eng 0, bea_4e909:^Tu n'es pas obligée de te souvenir de Sakutarō...^\
+
+se3v 21,85
+ld l,$MAR_sakebuA1,80
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1339:「…………さくたろは、ママに殺されたんだよッ！！！！」/
+sl
+langen:dwave_eng 0, mar_4e1339:^Sakutarō a été tué par Maman !!!!^@/
+quakey 4,400
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜真里亞
+
+textoff
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_2bp.jpg",":b;bmp\background\garden\rose_2bp.png",22
+
+se1v 22,100
+bfly1 26
+
+se2v 22,85
+cbfly 0
+print 99,2000,"breakup.dll/ulb"
+
+wait 1000
+
+langjp　真里亞お姉ちゃんがものすごい表情で激高する。@
+langen^Grande sœur Maria explosa de colère, le visage tordu par la rage.^@
+br
+langjp　その声に驚き、庭園中の蝶たちが一斉に舞い上がり、/
+sl
+langjp^^!d900……まるで花びらの台風のように吹雪いた。\
+langen^Surpris par sa voix, tous les papillons du jardin s'envolèrent d'un seul coup^@/
+sl
+langen:!d900^... tourbillonnant comme un typhon de pétales.^\
+
+;bg black,22
+;bg rose_1cP,26
+ld c,$ENJ_fumanA1,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1832:「えぇ、知ってるわ。@:dwave_jp 0, enj_4e1833:楼座叔母さんが、……大切なさくたろうのぬいぐるみを、引き裂いたわ……！！」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1832:^Oui, je sais. ^@:dwave_eng 0, enj_4e1833:^Tante Rosa... a déchiré ta précieuse peluche, Sakutarō... !!^\
+
+
+;ld c,$MAR_sakebuA1,80
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1340:^^!s0「ぎやああああああぁあああああああああああああぁああああああッ！！！」/
+sl
+langen:dwave_eng 0, mar_4e1340:^^!s0^Gyaaaaaaaaaaaaaaaaaaaaaaaaaaaaah !!!^@/
+se1v 1100,100
+se2v 1100,100
+se3v 1100,100
+
+quakey 5,700
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜真里亞
+
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3ap.png",22
+
+langjp　真里亞の絶叫が、嵐となって黄金の花びらや木の葉を乱暴に散らす。@
+langjp　それはまさに、黄金の暴風。\
+langen^Le hurlement de Maria se changea en tempête, dispersant brutalement les pétales dorés et les feuilles.^@
+langen^C'était véritablement une tempête d'or.^\
+
+ld r,$BEA_aseruA1,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e910:「やめよ…！！@:dwave_jp 0, bea_4e911:　やめよやめよやめよ…！！！@/
+langen:dwave_eng 0, bea_4e910:^Arrête... !! ^@:dwave_eng 0, bea_4e911:^Arrête, arrête, arrête... !!! ^@/
+
+;ld r,$BEA_HanbesoA2,80
+
+langjp:dwave_jp 0, bea_4e912:　なぜマリアの心の傷を再び引き裂こうとするのか…？！@:dwave_jp 0, bea_4e913:　妾と真里亞の、大切な親友の眠りを汚すなッ…！！」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e912:^Pourquoi veux-tu rouvrir la blessure de MARIA... ?! ^@:dwave_eng 0, bea_4e913:^Ne profane pas le sommeil de cet ami qui nous est si précieux, à Maria comme à moi... !!^\
+
+
+ld l,$ENJ_NayamuA1,23
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1834:「なら、どうして、その大切な親友を、あなたの魔法で蘇らせてあげないの？」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1834:^Alors pourquoi ne ressuscites-tu pas cet ami si précieux grâce à ta magie ?^@
+
+ld r,$BEA_komaruA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e914:「それが出来るものならやっている…！！@:dwave_jp 0, bea_4e915:　しかし、あのぬいぐるみは、楼座による手作りの品！@:dwave_jp 0, bea_4e916:　そのたった一つが引き裂かれた魔法的意味は、」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e914:^Si je le pouvais, je l'aurais déjà fait... !! ^@:dwave_eng 0, bea_4e915:^Mais cette peluche a été faite à la main par Rosa ! ^@:dwave_eng 0, bea_4e916:^Le sens magique de la destruction de cet exemplaire unique...^\
+
+
+ld l,$ENJ_FumanA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1835:「誤魔化さないで。@:dwave_jp 0, enj_4e1836:どうしてさくたろうが蘇らせられないか？@/
+langen:dwave_eng 0, enj_4e1835:^Ne cherche pas à détourner la question.^@:dwave_eng 0, enj_4e1836:^ Pourquoi es-tu incapable de ressusciter Sakutarō ?^@/
+
+ld l,$ENJ_NayamuA1,80
+
+langjp:dwave_jp 0, enj_4e1837:　答えはひとつだわ。@:dwave_jp 0, enj_4e1838:あなたが、本当の魔女じゃないからよ！」/
+sl
+langen:dwave_eng 0, enj_4e1837:^ Il n'y a qu'une seule réponse. ^@:dwave_eng 0, enj_4e1838:^C'est parce que tu n'es pas une vraie sorcière !^@/
+se1v 2,100
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜縁寿
+
+ld r,$BEA_odorokiA2,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e917:「………蘇らせられるとも…！！@/
+langen:dwave_eng 0, bea_4e917:^... Je peux le ressusciter... !! ^@/
+
+ld r,$BEA_IiwakeA3,80
+
+langjp:dwave_jp 0, bea_4e918:　妾の魔法でいくらでもこうして蘇らせられるとも！！@
+langen:dwave_eng 0, bea_4e918:^Avec ma magie, je peux le ressusciter autant de fois que je veux, comme ceci !! ^@/
+
+;mld c,$SAK_WaraiA1,0
+;msp msp_c,0,0,-120
+mldt c,$SAK_WaraiA1,0,135
+
+se1 52
+print 99,2000,"breakup.dll/lrB"
+
+langjp:dwave_jp 0, bea_4e919:　さくたろうでこの庭園を埋めることだって出来ようぞ…！！」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e919:^Je pourrais même remplir tout ce jardin de Sakutarō... !!^\
+se1 52
+mcl c,0
+print 99,2000,"breakup.dll/lrB"
+
+ld l,$ENJ_IkariA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1839:「えぇ、出来るでしょうね、あなたの魔法では！@:dwave_jp 0, enj_4e1840:　でも、あなたの生み出したさくたろうは決してお姉ちゃんには見えない！\
+langen:dwave_eng 0, enj_4e1839:^Oui, ta magie peut sûrement faire ça ! ^@:dwave_eng 0, enj_4e1840:^Mais grande sœur ne verra jamais les Sakutarō que tu crées !^\
+
+ld l,$ENJ_komaruA4,80
+
+langjp:dwave_jp 0, enj_4e1841:　…………どうしてかわかってるでしょう？@:dwave_jp 0, enj_4e1842:　もう一度言うわ。@:dwave_jp 0, enj_4e1843:あなたが本当の魔女でないからなのよ…！！」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1841:^... Tu sais pourquoi, pas vrai ? ^@:dwave_eng 0, enj_4e1842:^Je vais le répéter. ^@:dwave_eng 0, enj_4e1843:^C'est parce que tu n'es pas une vraie sorcière... !!^\
+
+se1v 57,100
+cbfly 0
+mbg white,1
+
+mcbg 0
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3cp.jpg",":b;bmp\background\garden\rose_3cp.png",0
+ld c,$MAR_sakebuA1,2
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1341:「やめてぇえええぇ！！@/
+langen:dwave_eng 0, mar_4e1341:^Arrêêêêêêête !! ^@/
+
+;ld c,$MAR_KomaruA1,80
+
+langjp:dwave_jp 0, mar_4e1342:　どうして縁寿はそんなひどいことばかり言うの…？！@:dwave_jp 0, mar_4e1343:　ベアトはたくさん魔法が使えるよ…！@:dwave_jp 0, mar_4e1344:　とても素敵な魔女なんだよ…！！\
+langen:dwave_eng 0, mar_4e1342:^Pourquoi tu dis toujours des choses aussi méchantes, Ange... ?! ^@:dwave_eng 0, mar_4e1343:^Béato sait faire plein de magies... ! ^@:dwave_eng 0, mar_4e1344:^C'est une sorcière merveilleuse... !!^\
+
+ld c,$MAR_komaruA1,80
+
+langjp:dwave_jp 0, mar_4e1345:　さくたろだけは蘇らせられなかったけど、……他のことなら、何だってできるの…！！@/
+langen:dwave_eng 0, mar_4e1345:^Elle n'a pas pu ressusciter Sakutarō, mais... elle peut absolument tout faire d'autre... !! ^@/
+
+;ld c,$MAR_KomaruA1,80
+
+langjp:dwave_jp 0, mar_4e1346:　だから、さくたろだけは……がまん、/
+sl
+langjp:voicedelay 3890:dwave_jp 0, mar_4e1347:^^…できるの……。」\
+;＜真理亞
+langen:dwave_eng 0, mar_4e1346:^Alors, pour Sakutarō seulement... Maria peut...^@/
+sl
+langen:voicedelay 3890:dwave_eng 0, mar_4e1347:^ prendre sur elle...^\
+
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3bp.jpg",":b;bmp\background\garden\rose_3bp.png",0
+ld r,$ENJ_komaruA3,23
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1844:「うぅん、お姉ちゃん、それは違うわ。@/
+langen:dwave_eng 0, enj_4e1844:^Non, grande sœur, ce n'est pas ça.^@/
+
+ld r,$ENJ_nayamuA1,80
+
+langjp:dwave_jp 0, enj_4e1845:………魔女に出来ないことなんてないの。@:dwave_jp 0, enj_4e1846:それが出来ない時点で。@:dwave_jp 0, enj_4e1847:ベアトリーチェは本当の魔女じゃないわ。」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1845:^ Une véritable sorcière n'est pas limitée à des miracles faciles.^@:dwave_eng 0, enj_4e1846:^ Si Béatrice en est incapable,^@:dwave_eng 0, enj_4e1847:^ elle ne peut pas prétendre posséder un pouvoir absolu.^\
+
+ld l,$MAR_komaruA1,23
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1348:「そ、それは違うよ……！！@:dwave_jp 0, mar_4e1349:　さくたろの依り代のぬいぐるみは、ママの手作りの特別なものだから、」@
+;＜真理亞
+langen:dwave_eng 0, mar_4e1348:^C-C'est faux... !! ^@:dwave_eng 0, mar_4e1349:^C'est parce que la peluche qui servait de réceptacle à Sakutarō était quelque chose de spécial, fabriqué à la main par Maman...^@
+
+ld r,$ENJ_fumanA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1848:「だから蘇らせられないの？@:dwave_jp 0, enj_4e1849:　ベアトリーチェの、あなたの魔法はそんなにも不便なの？」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1848:^Et c'est pour cela qu'elle ne peut pas le ressusciter ?^@:dwave_eng 0, enj_4e1849:^ La magie de Béatrice serait donc aussi limitée ?^\
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3ap.png",0
+ld r,$BEA_AseruA1,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e920:「く、………な、……ならば、……そなたなら、さくたろうを蘇らせられるというのか？！@/
+langen:dwave_eng 0, bea_4e920:^Ghh... A-Alors... tu prétends pouvoir ressusciter Sakutarō, toi ?! ^@/
+
+ld r,$BEA_KomaruA1,80
+
+langjp:dwave_jp 0, bea_4e921:　そなたの魔法ならばそれが出来るというのか？！」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e921:^Tu prétends que ta magie en est capable ?!^\
+
+
+ld l,$ENJ_DefA1,23
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1850:「出来るわ。」/
+sl
+langen:dwave_eng 0, enj_4e1850:^Je peux.^@/
+se1v 2,100
+mov %disable_adv_clear, 1
+langjp:noclear_cw:
+langen:noclear_cw:
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜縁寿
+
+ld r,$BEA_OdorokiA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e922:「………何だと………、」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e922:^ ... Quoi... ?^\
+
+
+ld l,$ENJ_ikariA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1851:「真里亞お姉ちゃん！！@:dwave_jp 0, enj_4e1852:　私が本当の魔法を見せてあげるわ。@:dwave_jp 0, enj_4e1853:私がさくたろうを蘇らせてあげる！！」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1851:^Grande sœur Maria !! ^@:dwave_eng 0, enj_4e1852:^Je vais te montrer ce qu'est une vraie magie. ^@:dwave_eng 0, enj_4e1853:^Moi, je vais ressusciter Sakutarō pour toi !!^\
+
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3cp.jpg",":b;bmp\background\garden\rose_3cp.png",0
+ld r,$MAR_OdorokiA1,24
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1350:^^!s1「……ほ、/
+sl
+langjp:voicedelay 570:dwave_jp 0, mar_4e1351:^^………本当……？@:dwave_jp 0, mar_4e1352:　ベアトリーチェも出来なかったんだよ……？@:dwave_jp 0, mar_4e1353:　…ほ、/
+sl
+langjp:voicedelay 400:dwave_jp 0, mar_4e1354:^^………本当に……？！」/
+sl
+langen:dwave_eng 0, mar_4e1350:^^!s1^... V-^@/
+sl
+langen:voicedelay 570:dwave_eng 0, mar_4e1351:^ Vraiment... ? ^@:dwave_eng 0, mar_4e1352:^Même Béatrice n'a pas pu le faire... tu sais... ? ^@:dwave_eng 0, mar_4e1353:^... V-^@/
+sl
+langen:voicedelay 400:dwave_eng 0, mar_4e1354:^ Vraiment... ?!^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜真理亞
+
+
+ld l,$ENJ_nayamuA1,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1854:「えぇ、出来るわ！@/
+langen:dwave_eng 0, enj_4e1854:^Oui, je peux ! ^@/
+
+ld l,$ENJ_komaruA3,80
+
+langjp:dwave_jp 0, enj_4e1855:　その代わり約束して。@:dwave_jp 0, enj_4e1856:私がさくたろうを蘇らせてあげたなら。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1855:^Mais promets-moi une chose en échange.^@:dwave_eng 0, enj_4e1856:^ Si je ressuscite Sakutarō...^@
+
+ld r,$MAR_WaraiA2,80
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1355:「うん…！」\
+;＜真理亞
+langen:dwave_eng 0, mar_4e1355:^Oui... !^\
+
+ld l,$ENJ_defA1,80
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1857:「この黄金郷から、出ていきなさい。」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1857:^... Quitte cette Terre d'Or.^@
+
+
+ld r,$MAR_odorokiA1,80
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1356:「…………ッ、」\
+;＜真里亞
+langen:dwave_eng 0, mar_4e1356:^... !^\
+
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3ap.png",0
+ld l,$BEA_aseruA1,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e923:「そ、そんなことは許さぬ…！！@:dwave_jp 0, bea_4e924:　ここは妾とマリアの世界！！@/
+langen:dwave_eng 0, bea_4e923:^J-Je ne le permettrai pas... !! ^@:dwave_eng 0, bea_4e924:^Ce monde appartient à MARIA et à moi !! ^@/
+
+;ld l,$BEA_HanbesoA2,80
+
+langjp:dwave_jp 0, bea_4e925:　マリアがいなくなったら、/
+sl
+langjp:voicedelay 1410:dwave_jp 0, bea_4e926:^^……壊れてしまう…！！」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e925:^Si MARIA s'en va^@/
+sl
+langen:voicedelay 1410:dwave_eng 0, bea_4e926:^... il s'effondrera... !!^\
+
+br
+advchar "-1"
+langjp　ニンゲンが宇宙を生み出すための最少人数は、２人。@
+langen^Le nombre minimum d'Humains nécessaire pour créer un univers est de deux.^@
+br
+langjp　それが崩れれば、世界は滅ぶ。@
+langen^Si cet équilibre s'effondre, le monde disparaît avec lui.^@
+br
+langjp　黄金郷に引き篭もった魔女を引き摺り出すには、この世界を滅ぼさなければならない…！\
+langen^Pour arracher de cette Terre d'Or la sorcière qui s'y est recluse, je dois détruire ce monde... !^\
+
+ld r,$ENJ_ikariA1,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1858:「……そう、それこそがあなたが魔女でない証拠よ。@/
+langen:dwave_eng 0, enj_4e1858:^Oui. Voilà précisément pourquoi ta magie n'est pas celle d'une véritable sorcière.^@/
+
+;ld r,$ENJ_NayamuA1,80
+
+langjp:dwave_jp 0, enj_4e1859:……本当の魔女ならね、宇宙は１人で生み出せるのよ。@/
+langen:dwave_eng 0, enj_4e1859:^ Une véritable sorcière peut faire naître son propre univers, même lorsqu'elle est seule.^@/
+
+ld r,$ENJ_komaruA4,80
+
+langjp:dwave_jp 0, enj_4e1860:マリアージュ・ソルシエール魔女同盟！@:dwave_jp 0, enj_4e1861:　……この同盟の存在自体が、あなたが魔女でないことの証になっている…！！」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1860:^ Mariage Sorcière ! ^@:dwave_eng 0, enj_4e1861:^... L'existence même de cette alliance prouve que tu n'es pas une véritable sorcière... !!^\
+
+
+ld l,$BEA_gamanA6,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e927:「い、嫌だ…！！/
+sl
+langen:dwave_eng 0, bea_4e927:^N-Non... !! ^@/
+quakey 2,200
+langjp:noclear_cw:dwave_jp 0, bea_4e928:　マリアは渡さぬ…！！@:dwave_jp 0, bea_4e929:　そなたは嫌いだ、今すぐに帰れ…！！@:dwave_jp 0, bea_4e930:　ここから出て行けぇえええぇえぇぇ！！」\
+;＜ベアト
+langen:noclear_cw:dwave_eng 0, bea_4e928:^Je ne te donnerai pas MARIA... !! ^@:dwave_eng 0, bea_4e929:^Je te déteste, va-t'en tout de suite... !! ^@:dwave_eng 0, bea_4e930:^Sors d'iciiiiiiiiiiii !!^\
+
+cl a,0
+ld c,$ENJ_komaruA5,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1862:「勝手にみんなをゲームに引き摺り込んでおいて、自分は機嫌一つで飽きたり追い出したり！！@:dwave_jp 0, enj_4e1863:　なんて自分勝手なの？@/
+langen:dwave_eng 0, enj_4e1862:^Tu entraînes les autres dans ton jeu sans leur demander leur avis, puis dès que ton humeur change, tu t'en lasses ou tu les chasses !! ^@:dwave_eng 0, enj_4e1863:^Tu te rends compte d'à quel point c'est égoïste ? ^@/
+
+ld c,$ENJ_IkariA2,80
+
+langjp:dwave_jp 0, enj_4e1864:　見なさい、ベアトリーチェ！！@:dwave_jp 0, enj_4e1865:　そして真里亞お姉ちゃん！！@:dwave_jp 0, enj_4e1866:　これが、本当の魔法なのよ………！！！」\
+;＜縁寿
+langen:dwave_eng 0, enj_4e1864:^Regarde bien, Béatrice !! ^@:dwave_eng 0, enj_4e1865:^Et toi aussi, grande sœur Maria !! ^@:dwave_eng 0, enj_4e1866:^Ça... c'est de la vraie magie... !!!^\
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3cp.jpg",":b;bmp\background\garden\rose_3cp.png",0
+ld r,$MAR_KomaruA1,24
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1357:「ほ、……本当にさくたろを蘇らせられるの…？！」\
+;＜真理亞
+langen:dwave_eng 0, mar_4e1357:^... T-Tu peux vraiment ressusciter Sakutarō... ?!^\
+
+
+ld l,$BEA_hanbesoA5,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e931:「出来るわけがない！！/
+sl
+langen:dwave_eng 0, bea_4e931:^Impossible !! ^@/
+quakey 3,300
+langjp:noclear_cw:dwave_jp 0, bea_4e932:　ここは妾と真里亞の二人だけの黄金郷…！@/
+langen:noclear_cw:dwave_eng 0, bea_4e932:^Cette Terre d'Or n'appartient qu'à Maria et moi... ! ^@/
+
+;ld l,$BEA_GamanA7,80
+
+langjp:dwave_jp 0, bea_4e933:　部外者のそなたに使える魔法などひとつもない！@:dwave_jp 0, bea_4e934:　今のそなたには、蝶一匹生み出すことさえ叶わぬわッ！！」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e933:^Une étrangère comme toi ne peut employer aucune magie ici ! ^@:dwave_eng 0, bea_4e934:^Dans ton état actuel, tu ne pourrais même pas faire naître un seul papillon !!^\
+
+ld r,$MAR_ikariA1,80
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1358:「静かにして、ベアトッ！！/
+sl
+langen:dwave_eng 0, mar_4e1358:^Tais-toi, Béato !! ^@/
+quakex 3,300
+langjp:noclear_cw:dwave_jp 0, mar_4e1359:　縁寿を邪魔しないで…！！」\
+;＜真理亞
+langen:noclear_cw:dwave_eng 0, mar_4e1359:^Ne gêne pas Ange... !!^\
+
+textoff
+
+se1v 2,100
+se2v 1006,100
+
+cbfly 0
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+fede 0,3000
+
+bfly1 0
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_2cp.jpg",":b;bmp\background\garden\rose_2cp.png",22
+
+me1v 16,40
+wait 100
+me2v 16,40
+
+wait 1000
+
+bg white,1
+
+se1v 22,70
+cbfly 0
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\garden\rose_2cp.jpg" : mov $oldnew_bg,":b;bmp\background\garden\rose_2cp.png" : if %4095 = 0 bg ":b;bmp\background\garden\rose_2cp.png",99,6000,"breakup.dll/llb" : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\garden\rose_2cp.jpg",99,6000,"breakup.dll/llb"
+
+advchar "-1"
+langjp　真里亞が叫ぶと、/
+sl
+langjp^^!d800……暴風はぴたりと止み、あたりはシンと静まり返った。@
+langen^Quand Maria cria^@/
+sl
+langen:!d800^... la tempête s'arrêta net, et le silence retomba sur les environs.^@
+br
+langjp　………吹き上げられた大量の黄金の花びらが、静かに舞い降りてくるその光景は、@……まるで、黄金の雪が降るかのように幻想的だった……。\
+langen^Les pétales dorés flottèrent un moment autour de nous,^@^ comme si une neige d'or venait de se répandre sur le jardin.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3bp.jpg",":b;bmp\background\garden\rose_3bp.png",0
+ld c,$MAR_OdorokiA1,22
+ld c,$MAR_KomaruA1,80
+
+langjp　真里亞は、まさかひょっとしての奇跡に、@無意識の内に両手を組んで祈るような仕草をしてしまう。\
+langen^Maria avait joint les mains sans même s'en rendre compte,^@^ tant l'espoir de revoir Sakutarō lui paraissait encore impossible.^\
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_1dp.jpg",":b;bmp\background\garden\rose_1dp.png",0
+ld r,$BEA_GamanA3,24
+
+langjp　……ベアトはそんな真里亞を見て、はらはらしている。@
+langen^... Béato regardait Maria avec une inquiétude grandissante.^@
+br
+langjp^^!s0　………もし万が一ということがあったなら…、/
+sl
+langjp^^!d800真里亞は、/
+sl
+langjp^^!d900……この世界は……。/
+sl
+langen^^!s0^ ... Et si, contre toute attente...^@/
+sl
+langen:!d800^ Maria...^@/
+sl
+langen:!d900^ ce monde...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　でも、……考えられない……！@
+langjp　絶対に不可能…。\
+langen^Mais... c'est impensable... !^@
+langen^Absolument impossible...^\
+
+langjp　あの、世界でたったひとつのぬいぐるみは引き裂かれて捨てられて、@糸くずさえも残っていないのだ。@
+langen^Cet unique exemplaire de la peluche avait été déchiré puis jeté,^@^ si bien qu'il n'en restait pas même un fil.^@
+br
+langjp　蘇らせるなど、絶対の絶対に不可能……！！\
+langen^La ramener était absolument, définitivement impossible... !! ^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_1dp.jpg",":b;bmp\background\garden\rose_1dp.png",0
+ld c,$BEA_gamanA3,26
+ld c,$BEA_GamanA1,80
+se1 59
+langjp　#ff0000ここは妾の黄金郷#ffffff…！@
+langen^#ff0000Ceci est ma Terre d'Or#ffffff... ! ^@
+se2 59
+langjp　#ff0000妾以外の魔法は絶対に存在できない世界#ffffff！！！\
+langen^#ff0000Un monde où aucune magie autre que la mienne ne peut absolument exister !!!#ffffff^\
+
+ld c,$BEA_gamanA6,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e935:^^!s1「で、/
+sl
+langjp:voicedelay 1060:dwave_jp 0, bea_4e936:^^……出来るものなら、/
+sl
+langjp:voicedelay 2029:dwave_jp 0, bea_4e937:^^……やってみろぉおおおお、右代宮縁寿えええぇえええええええぇええッ！！！」/
+sl
+langen:dwave_eng 0, bea_4e935:^^!s1^A-^@/
+sl
+langen:voicedelay 1060:dwave_eng 0, bea_4e936:^ ... Alors si tu en es capable^@/
+sl
+langen:voicedelay 2029:dwave_eng 0, bea_4e937:^... essaie donc, Ange Ushiromiyaaaaaaaaaaaaaaaaaa !!!^@/
+se1v 2,100
+quakey 3,300
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+E_MA
+se1 60
+se2v 2,70
+se3v 1006,100
+;se3v 62,100
+bg white,1
+
+
+;＜ベアト
+nega 1
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_1ep.jpg",":b;bmp\background\garden\rose_1ep.png",22
+
+langjp　ベアトの悲鳴のような叫びに、世界が音を失う。\
+langen^Au cri déchirant de Béato, tout bruit disparut du monde.^\
+
+se1 22
+nega 0
+bg white,8
+
+langjp　私はゆっくりと、本当の魔法を、呪文を、唱える……。\
+langen^Je commençai lentement l'incantation de cette magie que je voulais leur faire découvrir.^\
+
+textoff
+;ld c,$ENJ_nayamuA1,80
+se2 22
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",6
+lsp bgsp,sakutaro1a,0,0,0
+
+bgm1 76
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1867:「……………さぁさ、思い出して御覧なさい。@:dwave_jp 0, enj_4e1868:真里亞の親友のさくたろう。\
+langen:dwave_eng 0, enj_4e1867:^... Souviens-toi.^@:dwave_eng 0, enj_4e1868:^ Sakutarō, le meilleur ami de Maria.^\
+
+msp bgsp,0,0,50
+print 2
+
+langjp:dwave_jp 0, enj_4e1869:　………あなたがどんな姿をしていたのか、思い出して御覧なさい。\
+langen:dwave_eng 0, enj_4e1869:^Souviens-toi de ton apparence.^\
+
+msp bgsp,0,0,50
+print 2
+
+langjp:dwave_jp 0, enj_4e1870:　………あなたがどんなに愛くるしいぬいぐるみだったのか、思い出して御覧なさい。」\
+langen:dwave_eng 0, enj_4e1870:^Souviens-toi de la petite peluche que tu étais.^\
+
+;amsp bgsp,0,0,255
+set_oldnew_bg cg_sakutaro1a,sakutaro1a,1,0
+print 2
+
+csp -1
+clr_oldnew_bg
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3ap.png",0
+
+;＜縁寿
+ld l,$BEA_KomaruA4,0
+ld c,$MAR_komaruA1,22
+ld c,$MAR_OdorokiA1,80
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1360:「え、………………ぁ、…ぁ………、」@
+;＜真里亞
+langen:dwave_eng 0, mar_4e1360:^Hein... ah... ah...^@
+
+ld l,$BEA_odorokiA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e938:「………………………………ッ、」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e938:^!^\
+
+advchar "-1"
+langjp　……二人が、驚愕の表情を浮かべる。@
+langen^... Toutes deux restèrent figées de stupeur.^@
+
+cl c,64
+se1v 11,40
+quakex 2,200
+
+langjp　そして、……ベアトの肘を弾いて、真里亞が駆け出す……。\
+langen^Puis... Maria repoussa le bras de Béato et se précipita en avant...^\
+
+;ld c,$MAR_komaruA1,80
+se1v 22,85
+;bgmvol 85
+
+bg white,1
+;bg sakutaro1b,42
+set_oldnew_bg cg_sakutaro1b,sakutaro1b,1,42
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1361:「………くたろ………、@:dwave_jp 0, mar_4e1362:………さくたろぉ………！！」\
+langen:dwave_eng 0, mar_4e1361:^... kutaro... ^@:dwave_eng 0, mar_4e1362:^Sakutarō... !!^\
+
+advchar "-1"
+langjp　そして、私ごと、@………しがみつく。\
+langen^Puis^@^... elle s'agrippa à nous deux.^\
+
+;ld c,$ENJ_waraiA1,80
+;bg sakutaro1a,22
+mov %hide_bgsp2_cg,1
+set_oldnew_bg cg_sakutaro1a,sakutaro1a,1,22
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1871:「……大丈夫。@:dwave_jp 0, enj_4e1872:さくたろうは、消えないよ。@:dwave_jp 0, enj_4e1873:…………@:dwave_jp 0, sak_4e551:『うりゅ、@:dwave_jp 0, sak_4e552:真里亞。ただいま。』」/
+sl
+langen:dwave_eng 0, enj_4e1871:^... Tout va bien. ^@:dwave_eng 0, enj_4e1872:^Sakutarō... ne disparaîtra pas. ^@:dwave_eng 0, enj_4e1873:^...^@:dwave_eng 0, sak_4e551:^ Uryū-. ^@:dwave_eng 0, sak_4e552:^Maria, je suis rentré.^@/
+mov %play_scene,40310 : mov %r_hyouji_side,1 : mov %r_hyouji_cha_ma,ma4_sak
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+
+
+mld r,$MAR_nakuA1,26
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1363:^^!s1「さくたろ、/
+sl
+langjp:voicedelay 1720:dwave_jp 0, mar_4e1364:^^……さくたろ……、/
+sl
+langjp:voicedelay 1090:dwave_jp 0, mar_4e1365:^^……ううぅうううううぅ、/
+sl
+langen:dwave_eng 0, mar_4e1363:^^!s1^Sakutarō^@/
+sl
+langen:voicedelay 1720:dwave_eng 0, mar_4e1364:^ ... Sakutarō^@/
+sl
+langen:voicedelay 1090:dwave_eng 0, mar_4e1365:^ ... Uuuuuuuuuuuuuuu,^@/
+sl
+
+;se1 47
+quakey 3,800
+
+langjp:voicedelay 3890:dwave_jp 0, mar_4e1366:うわああああぁあぁうう！！/
+sl
+langen:voicedelay 3890:dwave_eng 0, mar_4e1366:^ ouaaaaaaahhhhhhh !! ^@/
+
+;se1 48
+quakex 3,800
+
+langjp:noclear_cw:dwave_jp 0, mar_4e1367:　さくたろぉおおぉ……、/
+langjp:voicedelay 3080:dwave_jp 0, mar_4e1368:^^会いたかった……、/
+langjp:voicedelay 1510:dwave_jp 0, mar_4e1369:^^…よぉぉ……………。」/
+langen:noclear_cw:dwave_eng 0, mar_4e1367:^Sakutarooooooo^@/
+sl
+langen:voicedelay 3080:dwave_eng 0, mar_4e1368:^... je voulais tellement te revoir...^@/
+sl
+langen:voicedelay 1510:dwave_eng 0, mar_4e1369:^ tellement...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+mov %hide_bgsp2_cg,0
+clr_oldnew_bg
+mcl a,0
+;bg Sakutaro2b,22
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3bp.jpg",":b;bmp\background\garden\rose_3bp.png",0
+ld c,$MAR_NakuA1,22
+
+me1v 16,65
+
+langjp^^!s0　それは紛れもなく、/
+sl
+langjp^^!d900………あの、ライオンの、/
+sl
+langjp^^!d600……さくたろうのぬいぐるみ。@
+langen^^!s0^C'était, sans le moindre doute^@/
+sl
+langen:!d900^... cette peluche en forme de lion^@/
+sl
+langen:!d600^... Sakutarō.^@
+br
+langjp　そのやわらかさを、生地も縫い目も何もかも、/
+sl
+langjp^^!d900………真里亞は忘れていた。@
+langen^La douceur du tissu, les coutures, la forme de ses petites pattes : chaque détail lui était familier.^@/
+sl
+langen:!d900^ ... Maria l'avait oublié.^@
+br
+langjp　でも、@………ぬいぐるみを抱いた瞬間に、その全てを鮮明に鮮明に思い出す……。/
+sl
+langen^Mais^@^... à l'instant même où elle serra la peluche contre elle, tous ces souvenirs lui revinrent avec une netteté saisissante...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+
+;bgmvol 95
+
+se1 52
+ld5 l,$sak_waraiA1,99,3000,"breakup.dll/urb"
+
+fedexx 95,65,0,0,0,0,1000
+
+ld l,$sak_waraiA2,80
+
+
+advchar "33"
+langjp:dwave_jp 0, sak_4e553:『うりゅ。@:dwave_jp 0, sak_4e554:真里亞、@:dwave_jp 0, sak_4e555:……ただいま。』@
+;＜さくたろ
+langen:dwave_eng 0, sak_4e553:^Uryū-. ^@:dwave_eng 0, sak_4e554:^Maria, ^@:dwave_eng 0, sak_4e555:^je suis rentré.^@
+
+ld c,$MAR_komaruA1,80
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1370:「さくたろ、さくたろ…！！@:dwave_jp 0, mar_4e1371:　体は平気なの？@:dwave_jp 0, mar_4e1372:　どこも痛くない？@:dwave_jp 0, mar_4e1373:　あんなに、……ひどいことされたのに、どこも平気なの……？！」\
+;＜真理亞
+langen:dwave_eng 0, mar_4e1370:^Sakutarō, Sakutarō... !! ^@:dwave_eng 0, mar_4e1371:^Ton corps va bien ? ^@:dwave_eng 0, mar_4e1372:^Tu n'as mal nulle part ? ^@:dwave_eng 0, mar_4e1373:^Après tout ce qu'on t'a fait d'horrible... tu n'as vraiment mal nulle part... ?!^\
+
+ld l,$sak_waraiA1,80
+se1v 3,50
+advchar "33"
+langjp:dwave_jp 0, sak_4e556:『うりゅ…！@:dwave_jp 0, sak_4e557:　縁寿が魔法で蘇らせてくれたから、全然平気なの…！』@
+;＜さくたろ
+langen:dwave_eng 0, sak_4e556:^Uryū-... ! ^@:dwave_eng 0, sak_4e557:^Ange m'a ressuscité avec sa magie, alors je vais parfaitement bien... !^@
+
+ld c,$mar_nakuA1,80
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1374:「よかった……、/
+sl
+langjp:voicedelay 1000:dwave_jp 0, mar_4e1375:^^よかった……。@:dwave_jp 0, mar_4e1376:お帰りさくたろ……、/
+sl
+langjp:voicedelay 2100:dwave_jp 0, mar_4e1377:^^ううぅううううぅッ！！」\
+;＜真理亞
+langen:dwave_eng 0, mar_4e1374:^Tu vas bien... ^@/
+sl
+langen:voicedelay 1000:dwave_eng 0, mar_4e1375:^tu vas vraiment bien... ^@:dwave_eng 0, mar_4e1376:^Bon retour, Sakutarō... ^@/
+sl
+langen:voicedelay 2100:dwave_eng 0, mar_4e1377:^Uuuuuuuuuuuuuuuuuuuuuuuu !!^\
+
+ld l,$sak_waraiA2,80
+
+advchar "33"
+langjp:dwave_jp 0, sak_4e558:『もう、真里亞といつまでも一緒だよ。@:dwave_jp 0, sak_4e559:永遠に一緒だよ。@/
+langen:dwave_eng 0, sak_4e558:^À partir de maintenant, je resterai toujours avec toi, Maria.^@:dwave_eng 0, sak_4e559:^ Pour l'éternité.^@/
+
+ld l,$SAK_NakuA1,80
+
+langjp:dwave_jp 0, sak_4e560:……だからボクを、@:dwave_jp 0, sak_4e561:離さないでね………。』\
+langen:dwave_eng 0, sak_4e560:^ ... Alors, ^@:dwave_eng 0, sak_4e561:^ne me lâche jamais, d'accord... ?^\
+
+;＜さくたろ
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+;ld c,$mar_nakuA1,80
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1378:「うん、……離さないよ……。@:dwave_jp 0, mar_4e1379:……永遠に…………………。」\
+;＜真理亞
+langen:dwave_eng 0, mar_4e1378:^Oui... je ne te lâcherai pas...^@:dwave_eng 0, mar_4e1379:^ pour l'éternité...^\
+
+advchar "-1"
+langjp　そして、さくたろうを抱き締めたまま、@涙をぼろぼろ零した瞳で私を見上げた…。\
+langen^Puis, toujours serrant Sakutarō contre elle, ^@^elle leva vers moi ses yeux ruisselants de larmes...^\
+
+textoff
+wait 2000
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3ap.png",2
+ld r,$mar_waraiA2,24
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1380:「……ありがとう、縁寿…！@:dwave_jp 0, mar_4e1381:　………縁寿の魔法はすごい……。@/
+langen:dwave_eng 0, mar_4e1380:^Merci, Ange... ! ^@:dwave_eng 0, mar_4e1381:^... La magie d'Ange est incroyable...^@/
+
+ld r,$MAR_WaraiA1,80
+
+langjp:dwave_jp 0, mar_4e1382:……どうして？@:dwave_jp 0, mar_4e1383:　どうしてさくたろうを蘇らせることが出来たの？！@:dwave_jp 0, mar_4e1384:　ベアトにも出来なかったのに…！」\
+;＜真理亞
+langen:dwave_eng 0, mar_4e1382:^ Comment ? ^@:dwave_eng 0, mar_4e1383:^Comment tu as réussi à ressusciter Sakutarō ?! ^@:dwave_eng 0, mar_4e1384:^Même Béato n'y arrivait pas... !^\
+
+
+ld l,$BEA_komaruA1,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e939:「………………ありえぬ…。@:dwave_jp 0, bea_4e940:……ありえぬ……。@/
+langen:dwave_eng 0, bea_4e939:^... Impossible... ^@:dwave_eng 0, bea_4e940:^Impossible...^@/
+
+ld l,$BEA_HanbesoA5,80
+
+langjp:dwave_jp 0, bea_4e941:……どうして？@:dwave_jp 0, bea_4e942:　……どうして妾の黄金郷で、妾以外の人間が魔法を使えるのかッ？！？！@:dwave_jp 0, bea_4e943:　こんなことは、/
+sl
+langjp:voicedelay 1540:dwave_jp 0, bea_4e944:^^………断じてありえぬ………！」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e941:^ Comment ? ^@:dwave_eng 0, bea_4e942:^... Comment quelqu'un d'autre que moi peut-il utiliser de la magie dans ma Terre d'Or ?!?! ^@:dwave_eng 0, bea_4e943:^Une chose pareille...^@/
+sl
+langen:voicedelay 1540:dwave_eng 0, bea_4e944:^ est absolument impossible... !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3bp.jpg",":b;bmp\background\garden\rose_3bp.png",0
+ld c,$ENJ_fumanA2,24
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1873_b:「何をうろたえているのよ、ベアトリーチェ。@:dwave_jp 0, enj_4e1873_c:………………これが、魔法でしょ？」\
+;＜真理亞
+langen:dwave_eng 0, enj_4e1873_b:^Pourquoi t'affoler autant, Béatrice ?^@:dwave_eng 0, enj_4e1873_c:^ C'est cela, la magie, non ?^\
+
+me2v 5,50
+
+cl c,0
+ld l,$ENJ_fumanA2,0
+ld r,$BEA_GamanA1,24
+ld r,$BEA_KomaruA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e945:「魔法のわけがない…！！@/
+langen:dwave_eng 0, bea_4e945:^Ça ne peut pas être de la magie... !! ^@/
+se1 59
+langjp:dwave_jp 0, bea_4e946:　#ff0000ここは妾の黄金郷#ffffff！！@/
+langen:dwave_eng 0, bea_4e946:^#ff0000Ceci est ma Terre d'Or !!#ffffff ^@/
+se2 59
+langjp:dwave_jp 0, bea_4e947:　#ff0000妾以外の魔法は絶対に存在できない世界#ffffff！！@:dwave_jp 0, bea_4e948:　そして妾の/
+sl
+langen:dwave_eng 0, bea_4e947:^#ff0000Un monde où aucune magie autre que la mienne ne peut absolument exister !!#ffffff ^@:dwave_eng 0, bea_4e948:^Et ma ^@/
+sl
+
+se3 59
+langjp:dwave_jp 0, bea_4e949:#ff0000魔法でさくたろうを蘇らせることは出来なかった#ffffff…！！\
+langen:dwave_eng 0, bea_4e949:^#ff0000magie n'a pas pu ressusciter Sakutarō#ffffff... !!^\
+
+ld r,$BEA_gamanA6,80
+
+langjp:dwave_jp 0, bea_4e950:　出来るはずがないのだッ！！@/
+langen:dwave_eng 0, bea_4e950:^C'est impossible !! ^@/
+se1 59
+langjp:dwave_jp 0, bea_4e951:　#ff0000そのぬいぐるみは特別なぬいぐるみ#ffffff！@/
+langen:dwave_eng 0, bea_4e951:^#ff0000Cette peluche est une peluche unique !#ffffff ^@/
+se2 59
+langjp:dwave_jp 0, bea_4e952:　#ff0000楼座が娘の誕生日のために作った、世界でたった一つの#ffffff、\
+langen:dwave_eng 0, bea_4e952:^#ff0000Rosa l'a fabriquée pour l'anniversaire de sa fille : il n'en existe qu'une seule au monde#ffffff...^\
+
+ld r,$BEA_GamanA7,80
+
+langjp:dwave_jp 0, bea_4e953:　………あ、@:dwave_jp 0, bea_4e954:………………ぅ、@:dwave_jp 0, bea_4e955:……………あ……、」\
+;＜ベアト
+langen:dwave_eng 0, bea_4e953:^Ah... ^@:dwave_eng 0, bea_4e954:^ngh... ^@:dwave_eng 0, bea_4e955:^aaah...^\
+
+
+ld l,$ENJ_nakuA1,2
+
+advchar "11"
+langjp:dwave_jp 0, enj_4e1874:「…………………ね、@:dwave_jp 0, enj_4e1875:…魔法でしょう？」@
+;＜縁寿
+langen:dwave_eng 0, enj_4e1874:^Tu vois...^@:dwave_eng 0, enj_4e1875:^ c'est cela, la magie, non ?^@
+
+ld r,$BEA_gamanA6,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_4e956:^^!s1「う、/
+sl
+langjp:voicedelay 340:dwave_jp 0, bea_4e957:^^……お……、/
+sl
+langjp:voicedelay 770:dwave_jp 0, bea_4e958:^^……あ、/
+sl
+langjp:voicedelay 1190:dwave_jp 0, bea_4e959:^^………あぁぁ、/
+sl
+langjp:voicedelay 760:dwave_jp 0, bea_4e960:^^…………ぁぁぁぁぁぁ……。」/
+sl
+langen:dwave_eng 0, bea_4e956:^^!s1^ Ngh^@/
+sl
+langen:voicedelay 340:dwave_eng 0, bea_4e957:^... oh^@/
+sl
+langen:voicedelay 770:dwave_eng 0, bea_4e958:^... ah^@/
+sl
+langen:voicedelay 1190:dwave_eng 0, bea_4e959:^... aaah^@/
+sl
+langen:voicedelay 760:dwave_eng 0, bea_4e960:^... aaaaaaah...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜ベアト
+
+bg white,42
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp^^!s0　ベアトは到底受け容れることの出来ぬ奇跡に、@………私の魔法の全てを、理解する……。@
+langen^^!s0^Devant ce miracle qu'elle était absolument incapable d'accepter... ^@^Béato comprit... toute l'étendue de ma magie...^@
+br
+langjp　そして、無邪気に戯れあう真里亞とさくたろうを見て、/
+sl
+langjp^^!d1000……私を見て、/
+sl
+langjp^^!d1000………それから、/
+sl
+langjp^^!d600………膝を落とし、/
+sl
+langjp^^!d800……両手までも地に付いて、/
+sl
+langjp^^!d1000……………泣いた。/
+sl
+langen^Elle regarda Maria et Sakutarō jouer ensemble en toute innocence^@/
+sl
+langen:!d1000^... puis me regarda^@/
+sl
+langen:!d1000^... et ensuite...^@/
+sl
+langen:!d600^ tomba à genoux^@/
+sl
+langen:!d800^... posa même les deux mains à terre^@/
+sl
+langen:!d1000^... et pleura.^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3cp.jpg",":b;bmp\background\garden\rose_3cp.png",0
+ld r,$BEA_HanbesoA6,26
+ld l,$mar_waraiA2,23
+
+advchar "13"
+langjp:dwave_jp 0, mar_4e1387:「ベアトリーチェ…！　これは本当に魔法なんだよね…？！@:dwave_jp 0, mar_4e1388:　魔法なんだよね？！@:dwave_jp 0, mar_4e1389:　ベアトリーチェ…！！！」\
+;＜真理亞
+langen:dwave_eng 0, mar_4e1387:^Béatrice... ! C'est vraiment de la magie, pas vrai... ?! ^@:dwave_eng 0, mar_4e1388:^C'est de la magie, pas vrai ?! ^@:dwave_eng 0, mar_4e1389:^Béatrice... !!!^\
+
+

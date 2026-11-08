@@ -1,0 +1,5000 @@
+mov $GEO_WaraiA1,"bmp\TATI\GEO\1\GEO_WaraiA1"          ;笑い
+mov $GEO_KomaruA1,"bmp\TATI\GEO\1\GEO_KomaruA1"          ;困る
+mov $GEO_MajimeA1,"bmp\TATI\GEO\1\GEO_MajimeA1"          ;真面目
+;mov $GEO_DefA2,"bmp\TATI\GEO\1\GEO_DefA2"          ;譲治立ち絵デフォ
+mov $GEO_AkuwaraiA1,"bmp\TATI\GEO\1\GEO_AkuwaraiA1"          ;悪笑い
+mov $GEO_AkuwaraiA1k,"bmp\TATI\GEO\1\GEO_AkuwaraiA1k"          ;悪笑い
+;mov $GEO_IkariA1,"bmp\TATI\GEO\1\GEO_IkariA1"          ;怒り
+;mov $GEO_OdorokiA1,"bmp\TATI\GEO\1\GEO_OdorokiA1"          ;驚き
+mov $GEO_DefA1k,"bmp\TATI\GEO\1\GEO_DefA1k"          ;デフォ（曇り眼鏡
+mov $GEO_NakuA1,"bmp\TATI\GEO\1\GEO_NakuA1"          ;泣く
+mov $GEO_NakuA1k,"bmp\TATI\GEO\1\GEO_NakuA1k"          ;泣く（曇り眼鏡
+mov $GEO_NakuA2,"bmp\TATI\GEO\1\GEO_NakuA2"          ;泣く２
+mov $GEO_NakuA2k,"bmp\TATI\GEO\1\GEO_NakuA2k"          ;泣く２（曇り眼鏡
+mov $GEO_HohoemiA1,"bmp\TATI\GEO\1\GEO_HohoemiA1"          ;微笑み
+mov $GEO_HohoemiA1k,"bmp\TATI\GEO\1\GEO_HohoemiA1k"          ;微笑み（曇り眼鏡
+mov $GEO_KomaruA1k,"bmp\TATI\GEO\1\GEO_KomaruA1k"          ;困る（曇り眼鏡
+mov $GEO_WaraiA1k,"bmp\TATI\GEO\1\GEO_WaraiA1k"          ;笑い（曇り眼鏡
+mov $GEO_WaraiA2,"bmp\TATI\GEO\1\GEO_WaraiA2"          ;笑い
+mov $GEO_WaraiA2k,"bmp\TATI\GEO\1\GEO_WaraiA2k"          ;笑い（曇り眼鏡
+mov $GEO_MajimeA1k,"bmp\TATI\GEO\1\GEO_MajimeA1k"          ;真面目（曇り眼鏡
+mov $GEO_MajimeA2,"bmp\TATI\GEO\1\GEO_MajimeA2"          ;真面目２
+mov $GEO_MajimeA2k,"bmp\TATI\GEO\1\GEO_MajimeA2k"          ;真面目２（曇り眼鏡
+mov $GEO_MajimeA3,"bmp\TATI\GEO\1\GEO_MajimeA3"          ;真面目３
+mov $GEO_MajimeA3k,"bmp\TATI\GEO\1\GEO_MajimeA3k"          ;真面目３（曇り眼鏡
+mov $GEO_MajimeA4,"bmp\TATI\GEO\1\GEO_MajimeA4"          ;真面目４
+mov $GEO_MajimeA4k,"bmp\TATI\GEO\1\GEO_MajimeA4k"          ;真面目４（曇り眼鏡
+mov $GEO_MajimeA5,"bmp\TATI\GEO\1\GEO_MajimeA5"          ;真面目５
+mov $GEO_MajimeA5k,"bmp\TATI\GEO\1\GEO_MajimeA5k"          ;真面目５（曇り眼鏡
+mov $GEO_KomaruA2,"bmp\TATI\GEO\1\GEO_KomaruA2"
+mov $GEO_KomaruA2k,"bmp\TATI\GEO\1\GEO_KomaruA2k"
+mov $GEO_KomaruA3,"bmp\TATI\GEO\1\GEO_KomaruA3"
+mov $GEO_KomaruA3k,"bmp\TATI\GEO\1\GEO_KomaruA3k"
+mov $GEO_KomaruA4,"bmp\TATI\GEO\1\GEO_KomaruA4"
+mov $GEO_KomaruA4k,"bmp\TATI\GEO\1\GEO_KomaruA4k"
+mov $GEO_KomaruA5,"bmp\TATI\GEO\1\GEO_KomaruA5"
+mov $GEO_KomaruA5k,"bmp\TATI\GEO\1\GEO_KomaruA5k"
+mov $GEO_NiramuA1,"bmp\TATI\GEO\1\GEO_NiramuA1"
+mov $GEO_NiramuA1k,"bmp\TATI\GEO\1\GEO_NiramuA1k"
+mov $GEO_IkariA1,"bmp\TATI\GEO\1\GEO_IkariA1"
+mov $GEO_IkariA1k,"bmp\TATI\GEO\1\GEO_IkariA1k"
+mov $GEO_IkariA2,"bmp\TATI\GEO\1\GEO_IkariA2"
+mov $GEO_IkariA2k,"bmp\TATI\GEO\1\GEO_IkariA2k"
+mov $GEO_IkariA3,"bmp\TATI\GEO\1\GEO_IkariA3"
+mov $GEO_IkariA3k,"bmp\TATI\GEO\1\GEO_IkariA3k"
+mov $GEO_IkariA4,"bmp\TATI\GEO\1\GEO_IkariA4"
+mov $GEO_IkariA4k,"bmp\TATI\GEO\1\GEO_IkariA4k"
+
+return
+
+*RUD_Isyou1
+
+mov $RUD_DefA1,"bmp\TATI\RUD\1\RUD_DefA1"          ;留弗夫立ち絵デフォ
+mov $RUD_DefA2,"bmp\TATI\RUD\1\RUD_DefA2"
+mov $RUD_WaraiA1,"bmp\TATI\RUD\1\RUD_WaraiA1"          ;笑い
+mov $RUD_AkuwaraiA1,"bmp\TATI\RUD\1\RUD_AkuwaraiA1"          ;悪笑い
+mov $RUD_KomaruA1,"bmp\TATI\RUD\1\RUD_KomaruA1"          ;困る
+mov $RUD_MajimeA1,"bmp\TATI\RUD\1\RUD_MajimeA1"          ;真面目
+mov $RUD_OdorokiA1,"bmp\TATI\RUD\1\RUD_OdorokiA1"          ;驚き
+;mov $RUD_IkariA1,"bmp\TATI\RUD\1\RUD_IkariA1"          ;怒り
+mov $RUD_NayamuA1,"bmp\TATI\RUD\1\RUD_NayamuA1"          ;悩む
+mov $RUD_AkuwaraiA2,"bmp\TATI\RUD\1\RUD_AkuwaraiA2"          ;悪笑い２
+mov $RUD_MajimeA2,"bmp\TATI\RUD\1\RUD_MajimeA2"          ;真面目２
+mov $RUD_WaraiA2,"bmp\TATI\RUD\1\RUD_WaraiA2"          ;笑い２
+
+return
+
+*KIR_Isyou1
+
+mov $KIR_DefA1,"bmp\TATI\KIR\1\KIR_DefA1"          ;霧江立ち絵デフォ
+mov $KIR_WaraiA1,"bmp\TATI\KIR\1\KIR_WaraiA1"          ;笑い
+mov $KIR_MajimeA1,"bmp\TATI\KIR\1\KIR_MajimeA1"          ;真面目
+mov $KIR_KomaruA1,"bmp\TATI\KIR\1\KIR_KomaruA1"          ;困る
+;mov $KIR_DefA2,"bmp\TATI\KIR\1\KIR_DefA2" 
+;mov $KIR_AkuwaraiA1,"bmp\TATI\KIR\1\KIR_AkuwaraiA1"          ;悪笑い
+;mov $KIR_IkariA1,"bmp\TATI\KIR\1\KIR_IkariA1"          ;怒り
+;mov $KIR_OdorokiA1,"bmp\TATI\KIR\1\KIR_OdorokiA1"          ;驚き
+mov $KIR_NayamuA1,"bmp\TATI\KIR\1\KIR_NayamuA1"          ;悩む
+mov $KIR_MajimeA2,"bmp\TATI\KIR\1\KIR_MajimeA2"          ;真面目２
+mov $KIR_WaraiA2,"bmp\TATI\KIR\1\KIR_WaraiA2"          ;笑い２
+mov $KIR_futekiA1,"bmp\TATI\KIR\1\KIR_futekiA1"          ;不敵
+
+return
+
+*BUT_Isyou1
+
+mov $BUT_DefA1,"bmp\TATI\BUT\1\BUT_DefA1"          ;戦人立ち絵デフォ
+mov $BUT_DefA2,"bmp\TATI\BUT\1\BUT_DefA2"
+mov $BUT_WaraiA1,"bmp\TATI\BUT\1\BUT_WaraiA1"          ;笑い
+mov $BUT_KomaruA1,"bmp\TATI\BUT\1\BUT_KomaruA1"          ;困る
+mov $BUT_OdorokiA1,"bmp\TATI\BUT\1\BUT_OdorokiA1"          ;驚き
+mov $BUT_MajimeA1,"bmp\TATI\BUT\1\BUT_MajimeA1"          ;真面目
+;mov $BUT_AkuwaraiA1,"bmp\TATI\BUT\1\BUT_AkuwaraiA1"          ;悪笑い
+;mov $BUT_IkariA1,"bmp\TATI\BUT\1\BUT_IkariA1"          ;怒り
+mov $BUT_NakuA1,"bmp\TATI\BUT\1\BUT_NakuA1"          ;泣く
+mov $BUT_WaraiA2,"bmp\TATI\BUT\1\BUT_WaraiA2"          ;笑い２
+mov $BUT_grope1,"bmp\TATI\BUT\1\BUT_grope1"          ;笑い２
+
+mov $BUT_OyaA1,"bmp\TATI\BUT\1\BUT_OyaA1"          ;おや？
+mov $BUT_KuyasigaruA1,"bmp\TATI\BUT\1\BUT_KuyasigaruA1"          ;悔しがる
+mov $BUT_AseruA1,"bmp\TATI\BUT\1\BUT_AseruA1"          ;焦る
+mov $BUT_OdorokiA2,"bmp\TATI\BUT\1\BUT_OdorokiA2"          ;驚き２
+mov $BUT_KomaruA2,"bmp\TATI\BUT\1\BUT_KomaruA2"          ;困る２
+mov $BUT_KomaruA3,"bmp\TATI\BUT\1\BUT_KomaruA3"          ;困る３
+mov $BUT_NayamuA1,"bmp\TATI\BUT\1\BUT_NayamuA1"          ;悩む
+mov $BUT_NayamuA2,"bmp\TATI\BUT\1\BUT_NayamuA2"          ;悩む２
+mov $BUT_NiramuA1,"bmp\TATI\BUT\1\BUT_NiramuA1"
+mov $BUT_NiramuA2,"bmp\TATI\BUT\1\BUT_NiramuA2"
+mov $BUT_NiramuA3,"bmp\TATI\BUT\1\BUT_NiramuA3"
+mov $BUT_FutekiA1,"bmp\TATI\BUT\1\BUT_FutekiA1"
+mov $BUT_NakuA2,"bmp\TATI\BUT\1\BUT_NakuA2"
+mov $BUT_NakuA3,"bmp\TATI\BUT\1\BUT_NakuA3"
+mov $BUT_FutekiA2,"bmp\TATI\BUT\1\BUT_FutekiA2"
+mov $BUT_FutekiA3,"bmp\TATI\BUT\1\BUT_FutekiA3"
+mov $BUT_MajimeA2,"bmp\TATI\BUT\1\BUT_MajimeA2"
+mov $BUT_MajimeA3,"bmp\TATI\BUT\1\BUT_MajimeA3"
+mov $BUT_MajimeA4,"bmp\TATI\BUT\1\BUT_MajimeA4"
+mov $BUT_NayamuA3,"bmp\TATI\BUT\1\BUT_NayamuA3"
+
+
+return
+
+*ROS_Isyou1
+
+mov $ROS_DefA1,"bmp\TATI\ROS\1\ROS_DefA1"          ;楼座立ち絵デフォ
+mov $ROS_WaraiA1,"bmp\TATI\ROS\1\ROS_WaraiA1"          ;笑い
+mov $ROS_IkariA1,"bmp\TATI\ROS\1\ROS_IkariA1"          ;怒り
+mov $ROS_KomaruA1,"bmp\TATI\ROS\1\ROS_KomaruA1"          ;困る
+mov $ROS_AkuwaraiA1,"bmp\TATI\ROS\1\ROS_AkuwaraiA1"          ;悪笑い
+mov $ROS_MajimeA1,"bmp\TATI\ROS\1\ROS_MajimeA1"          ;真面目
+;mov $ROS_DefA2,"bmp\TATI\ROS\1\ROS_DefA2"
+;mov $ROS_OdorokiA1,"bmp\TATI\ROS\1\ROS_OdorokiA1"          ;驚き
+mov $ROS_WaraiA2,"bmp\TATI\ROS\1\ROS_WaraiA2"          ;笑い２
+mov $ROS_KomaruA2,"bmp\TATI\ROS\1\ROS_KomaruA2"          ;困る２
+mov $ROS_KomaruA3,"bmp\TATI\ROS\1\ROS_KomaruA3"          ;困る３
+mov $ROS_NayamuA1,"bmp\TATI\ROS\1\ROS_NayamuA1"          ;悩む
+mov $ROS_KomaruA4,"bmp\TATI\ROS\1\ROS_KomaruA4"
+mov $ROS_OdorokiA1,"bmp\TATI\ROS\1\ROS_OdorokiA1"
+mov $ROS_IkariA2,"bmp\TATI\ROS\1\ROS_IkariA2"
+mov $ROS_IkariA3,"bmp\TATI\ROS\1\ROS_IkariA3"
+mov $ROS_IkariA4,"bmp\TATI\ROS\1\ROS_IkariA4"
+mov $ROS_AseruA1,"bmp\TATI\ROS\1\ROS_AseruA1"
+
+
+return
+
+*ROS_Isyou2
+
+mov $ROS_DefA1,"bmp\TATI\ROS\2\ROS_DefA1"          ;楼座立ち絵デフォ
+mov $ROS_WaraiA1,"bmp\TATI\ROS\2\ROS_WaraiA1"          ;笑い
+mov $ROS_IkariA1,"bmp\TATI\ROS\2\ROS_IkariA1"          ;怒り
+mov $ROS_KomaruA1,"bmp\TATI\ROS\2\ROS_KomaruA1"          ;困る
+mov $ROS_AkuwaraiA1,"bmp\TATI\ROS\2\ROS_AkuwaraiA1"          ;悪笑い
+mov $ROS_MajimeA1,"bmp\TATI\ROS\2\ROS_MajimeA1"          ;真面目
+;mov $ROS_DefA2,"bmp\TATI\ROS\2\ROS_DefA2"
+;mov $ROS_OdorokiA1,"bmp\TATI\ROS\2\ROS_OdorokiA1"          ;驚き
+mov $ROS_WaraiA2,"bmp\TATI\ROS\2\ROS_WaraiA2"          ;笑い２
+mov $ROS_KomaruA2,"bmp\TATI\ROS\2\ROS_KomaruA2"          ;困る２
+mov $ROS_KomaruA3,"bmp\TATI\ROS\2\ROS_KomaruA3"          ;困る３
+mov $ROS_NayamuA1,"bmp\TATI\ROS\2\ROS_NayamuA1"          ;悩む
+mov $ROS_KomaruA4,"bmp\TATI\ROS\2\ROS_KomaruA4"
+mov $ROS_OdorokiA1,"bmp\TATI\ROS\2\ROS_OdorokiA1"
+mov $ROS_IkariA2,"bmp\TATI\ROS\2\ROS_IkariA2"
+mov $ROS_IkariA3,"bmp\TATI\ROS\2\ROS_IkariA3"
+mov $ROS_IkariA4,"bmp\TATI\ROS\2\ROS_IkariA4"
+mov $ROS_AseruA1,"bmp\TATI\ROS\2\ROS_AseruA1"
+
+
+return
+
+*MAR_Isyou1
+
+mov $MAR_DefA1,"bmp\TATI\MAR\1\MAR_DefA1"          ;真里亞立ち絵デフォ
+mov $MAR_WaraiA1,"bmp\TATI\MAR\1\MAR_WaraiA1"          ;笑い
+mov $MAR_AkuwaraiA1,"bmp\TATI\MAR\1\MAR_AkuwaraiA1"          ;悪笑い
+mov $MAR_IkariA1,"bmp\TATI\MAR\1\MAR_IkariA1"          ;怒り
+mov $MAR_KomaruA1,"bmp\TATI\MAR\1\MAR_KomaruA1"          ;困る
+mov $MAR_OdorokiA1,"bmp\TATI\MAR\1\MAR_OdorokiA1"          ;驚き
+mov $MAR_MajimeA1,"bmp\TATI\MAR\1\MAR_MajimeA1"          ;真面目
+mov $MAR_NakuA1,"bmp\TATI\MAR\1\MAR_NakuA1"          ;泣く
+;mov $MAR_DefA2,"bmp\TATI\MAR\1\MAR_DefA2"
+;mov $MAR_Kuro_DefA1,"bmp\TATI\MAR\1\MAR_Kuro_DefA1"          ;黒真里亞立ち絵デフォ
+;mov $MAR_Kuro_WaraiA1,"bmp\TATI\MAR\1\MAR_Kuro_WaraiA1"          ;黒真里亞笑い
+mov $MAR_AkuwaraiA2,"bmp\TATI\MAR\1\MAR_AkuwaraiA2"          ;悪笑い２
+mov $MAR_AkuwaraiA3,"bmp\TATI\MAR\1\MAR_AkuwaraiA3"          ;悪笑い３
+mov $MAR_WaraiA2,"bmp\TATI\MAR\1\MAR_WaraiA2"          ;笑い２
+mov $MAR_NiyariA1,"bmp\TATI\MAR\1\MAR_niyariA1"          ;ニヤリ
+mov $MAR_NiyariA2,"bmp\TATI\MAR\1\MAR_niyariA2"          ;ニヤリ２
+mov $MAR_fukigenA1,"bmp\TATI\MAR\1\MAR_fukigenA1"          ;不機嫌
+mov $MAR_fukigenA2,"bmp\TATI\MAR\1\MAR_fukigenA2"          ;不機嫌２
+mov $MAR_SakebuA1,"bmp\TATI\MAR\1\MAR_SakebuA1"          ;叫ぶ
+
+return
+
+*NAN_Isyou1
+
+mov $NAN_DefA1,"bmp\TATI\NAN\1\NAN_DefA1"          ;南条立ち絵デフォ
+mov $NAN_KomaruA1,"bmp\TATI\NAN\1\NAN_KomaruA1"          ;困る
+mov $NAN_MajimeA1,"bmp\TATI\NAN\1\NAN_MajimeA1"          ;真面目
+;mov $NAN_DefA2,"bmp\TATI\NAN\1\NAN_DefA2"
+;mov $NAN_WaraiA1,"bmp\TATI\NAN\1\NAN_WaraiA1"          ;笑い
+;mov $NAN_AkuwaraiA1,"bmp\TATI\NAN\1\NAN_AkuwaraiA1"          ;悪笑い
+;mov $NAN_IkariA1,"bmp\TATI\NAN\1\NAN_IkariA1"          ;怒り
+;mov $NAN_OdorokiA1,"bmp\TATI\NAN\1\NAN_OdorokiA1"          ;驚き
+mov $NAN_MajimeA2,"bmp\TATI\NAN\1\NAN_MajimeA2"          ;真面目２
+mov $NAN_KomaruA2,"bmp\TATI\NAN\1\NAN_KomaruA2"          ;困る２
+mov $NAN_KomaruA3,"bmp\TATI\NAN\1\NAN_KomaruA3"          ;困る３
+mov $NAN_KomaruA4,"bmp\TATI\NAN\1\NAN_KomaruA4"          ;困る４
+mov $NAN_fumuA1,"bmp\TATI\NAN\1\NAN_fumuA1"          ;ふむ
+
+return
+
+*GEN_Isyou1
+
+mov $GEN_DefA1,"bmp\TATI\GEN\1\GEN_DefA1"          ;源次立ち絵デフォ
+mov $GEN_KomaruA1,"bmp\TATI\GEN\1\GEN_KomaruA1"          ;困る
+mov $GEN_MajimeA1,"bmp\TATI\GEN\1\GEN_MajimeA1"          ;真面目
+;mov $GEN_DefA2,"bmp\TATI\GEN\1\GEN_DefA2"
+;mov $GEN_WaraiA1,"bmp\TATI\GEN\1\GEN_WaraiA1"          ;笑い
+;mov $GEN_AkuwaraiA1,"bmp\TATI\GEN\1\GEN_AkuwaraiA1"          ;悪笑い
+;mov $GEN_IkariA1,"bmp\TATI\GEN\1\GEN_IkariA1"          ;怒り
+mov $GEN_OdorokiA1,"bmp\TATI\GEN\1\GEN_OdorokiA1"          ;驚き
+mov $GEN_MajimeA2,"bmp\TATI\GEN\1\GEN_MajimeA2"          ;真面目
+
+return
+
+*KUM_Isyou1
+
+mov $KUM_DefA1,"bmp\TATI\KUM\1\KUM_DefA1"          ;熊沢立ち絵デフォ
+mov $KUM_DefA2,"bmp\TATI\KUM\1\KUM_DefA2"
+mov $KUM_WaraiA1,"bmp\TATI\KUM\1\KUM_WaraiA1"          ;笑い
+mov $KUM_KomaruA1,"bmp\TATI\KUM\1\KUM_KomaruA1"          ;困る
+mov $KUM_OdorokiA1,"bmp\TATI\KUM\1\KUM_OdorokiA1"          ;驚き
+mov $KUM_MajimeA1,"bmp\TATI\KUM\1\KUM_MajimeA1"          ;真面目
+;mov $KUM_AkuwaraiA1,"bmp\TATI\KUM\1\KUM_AkuwaraiA1"          ;悪笑い
+;mov $KUM_IkariA1,"bmp\TATI\KUM\1\KUM_IkariA1"          ;怒り
+mov $KUM_WaraiA2,"bmp\TATI\KUM\1\KUM_WaraiA2"          ;笑い２
+mov $KUM_MajimeA2,"bmp\TATI\KUM\1\KUM_MajimeA2"          ;真面目２
+
+return
+
+*GOH_Isyou1
+
+mov $GOH_DefA1,"bmp\TATI\GOH\1\GOH_DefA1"          ;俊朗立ち絵デフォ
+mov $GOH_WaraiA1,"bmp\TATI\GOH\1\GOH_WaraiA1"          ;笑い
+;mov $GOH_DefA2,"bmp\TATI\GOH\1\GOH_DefA2"
+;mov $GOH_AkuwaraiA1,"bmp\TATI\GOH\1\GOH_AkuwaraiA1"          ;悪笑い
+;mov $GOH_IkariA1,"bmp\TATI\GOH\1\GOH_IkariA1"          ;怒り
+;mov $GOH_KomaruA1,"bmp\TATI\GOH\1\GOH_KomaruA1"          ;困る
+mov $GOH_OdorokiA1,"bmp\TATI\GOH\1\GOH_OdorokiA1"          ;驚き
+mov $GOH_MajimeA1,"bmp\TATI\GOH\1\GOH_MajimeA1"          ;真面目
+mov $GOH_hohoemiA1,"bmp\TATI\GOH\1\GOH_hohoemiA1"          ;微笑み
+mov $GOH_hohoemiA2,"bmp\TATI\GOH\1\GOH_hohoemiA2"          ;微笑み２
+mov $GOH_omakaseA1,"bmp\TATI\GOH\1\GOH_omakaseA1"          ;お任せください
+mov $GOH_omakaseA2,"bmp\TATI\GOH\1\GOH_omakaseA2"          ;お任せください２
+mov $GOH_omakaseA3,"bmp\TATI\GOH\1\GOH_omakaseA3"          ;お任せください３
+mov $GOH_IkariA1,"bmp\TATI\GOH\1\GOH_IkariA1"          ;怒り
+mov $GOH_IkariA2,"bmp\TATI\GOH\1\GOH_IkariA2"          ;怒り２
+mov $GOH_IiwakeA1,"bmp\TATI\GOH\1\GOH_IiwakeA1"
+mov $GOH_IiwakeA2,"bmp\TATI\GOH\1\GOH_IiwakeA2"
+mov $GOH_KomaruA1,"bmp\TATI\GOH\1\GOH_KomaruA1"
+mov $GOH_KomaruA2,"bmp\TATI\GOH\1\GOH_KomaruA2"
+mov $GOH_KomaruA3,"bmp\TATI\GOH\1\GOH_KomaruA3"
+
+return
+
+*SHA_Isyou1
+
+mov $SHA_DefA1,"bmp\TATI\SHA\1\SHA_DefA1"          ;紗音立ち絵デフォ
+mov $SHA_WaraiA1,"bmp\TATI\SHA\1\SHA_WaraiA1"          ;笑い
+mov $SHA_KomaruA1,"bmp\TATI\SHA\1\SHA_KomaruA1"          ;困る
+mov $SHA_OdorokiA1,"bmp\TATI\SHA\1\SHA_OdorokiA1"          ;驚き
+mov $SHA_MajimeA1,"bmp\TATI\SHA\1\SHA_MajimeA1"          ;真面目
+mov $SHA_HajiraiA1,"bmp\TATI\SHA\1\SHA_HajiraiA1"          ;恥らい
+;mov $SHA_DefA2,"bmp\TATI\SHA\1\SHA_DefA2"
+;mov $SHA_AkuwaraiA1,"bmp\TATI\SHA\1\SHA_AkuwaraiA1"          ;悪笑い
+;mov $SHA_IkariA1,"bmp\TATI\SHA\1\SHA_IkariA1"          ;怒り
+mov $SHA_WaraiA2,"bmp\TATI\SHA\1\SHA_WaraiA2"          ;笑い２
+mov $SHA_WaraiA3,"bmp\TATI\SHA\1\SHA_WaraiA3"          ;笑い３
+mov $SHA_MajimeA2,"bmp\TATI\SHA\1\SHA_MajimeA2"          ;真面目２
+mov $SHA_HajiraiA2,"bmp\TATI\SHA\1\SHA_HajiraiA2"          ;恥らい２
+mov $SHA_HajiraiA3,"bmp\TATI\SHA\1\SHA_HajiraiA3"          ;恥らい３
+mov $SHA_fumanA1,"bmp\TATI\SHA\1\SHA_fumanA1"          ;不満
+mov $SHA_tokuiA1,"bmp\TATI\SHA\1\SHA_tokuiA1"          ;得意
+mov $SHA_OdorokiA2,"bmp\TATI\SHA\1\SHA_OdorokiA2"          ;驚き２
+mov $SHA_MajimeA3,"bmp\TATI\SHA\1\SHA_MajimeA3"        
+mov $SHA_IkariA1,"bmp\TATI\SHA\1\SHA_IkariA1"          
+mov $SHA_IkariA2,"bmp\TATI\SHA\1\SHA_IkariA2"        
+
+
+return
+
+*KAN_Isyou1
+
+mov $KAN_DefA1,"bmp\TATI\KAN\1\KAN_DefA1"          ;嘉音立ち絵デフォ
+mov $KAN_DefA2,"bmp\TATI\KAN\1\KAN_DefA2"
+mov $KAN_IkariA1,"bmp\TATI\KAN\1\KAN_IkariA1"          ;怒り
+mov $KAN_KomaruA1,"bmp\TATI\KAN\1\KAN_KomaruA1"          ;困る
+mov $KAN_OdorokiA1,"bmp\TATI\KAN\1\KAN_OdorokiA1"          ;驚き
+mov $KAN_MajimeA1,"bmp\TATI\KAN\1\KAN_MajimeA1"          ;真面目
+;mov $KAN_WaraiA1,"bmp\TATI\KAN\1\KAN_WaraiA1"          ;笑い
+;mov $KAN_AkuwaraiA1,"bmp\TATI\KAN\1\KAN_AkuwaraiA1"          ;悪笑い
+mov $KAN_OdorokiA2,"bmp\TATI\KAN\1\KAN_OdorokiA2"          ;驚き２
+mov $KAN_NayamuA1,"bmp\TATI\KAN\1\KAN_NayamuA1"          ;悩む
+mov $KAN_FumanA1,"bmp\TATI\KAN\1\KAN_FumanA1"
+mov $KAN_FumanA2,"bmp\TATI\KAN\1\KAN_FumanA2"
+mov $KAN_IkariA2,"bmp\TATI\KAN\1\KAN_IkariA2"          ;怒り
+mov $KAN_IkariA3,"bmp\TATI\KAN\1\KAN_IkariA3"          ;怒り
+
+;偽嘉音
+mov $KA2_DefA1,"bmp\TATI\KAN\1\KA2_DefA1"          ;嘉音立ち絵デフォ
+mov $KA2_DefA2,"bmp\TATI\KAN\1\KA2_DefA2"
+mov $KA2_IkariA1,"bmp\TATI\KAN\1\KA2_IkariA1"          ;怒り
+mov $KA2_KomaruA1,"bmp\TATI\KAN\1\KA2_KomaruA1"          ;困る
+mov $KA2_OdorokiA1,"bmp\TATI\KAN\1\KA2_OdorokiA1"          ;驚き
+mov $KA2_MajimeA1,"bmp\TATI\KAN\1\KA2_MajimeA1"          ;真面目
+;mov $KA2_WaraiA1,"bmp\TATI\KAN\1\KA2_WaraiA1"          ;笑い
+;mov $KA2_AkuwaraiA1,"bmp\TATI\KAN\1\KA2_AkuwaraiA1"          ;悪笑い
+mov $KA2_OdorokiA2,"bmp\TATI\KAN\1\KA2_OdorokiA2"          ;驚き２
+mov $KA2_NayamuA1,"bmp\TATI\KAN\1\KA2_NayamuA1"          ;悩む
+mov $KA2_FumanA1,"bmp\TATI\KAN\1\KA2_FumanA1"
+mov $KA2_FumanA2,"bmp\TATI\KAN\1\KA2_FumanA2"
+mov $KA2_IkariA2,"bmp\TATI\KAN\1\KA2_IkariA2"          ;怒り
+mov $KA2_IkariA3,"bmp\TATI\KAN\1\KA2_IkariA3"          ;怒り
+
+
+mov $KA2_DefA1B,"bmp\TATI\KAN\1\KA2_DefA1B"          ;嘉音魔法の刃装備　 blade
+mov $KA2_DefA2B,"bmp\TATI\KAN\1\KA2_DefA2B"
+mov $KA2_IkariA1B,"bmp\TATI\KAN\1\KA2_IkariA1B"          ;怒り
+mov $KA2_KomaruA1B,"bmp\TATI\KAN\1\KA2_KomaruA1B"          ;困る
+mov $KA2_OdorokiA1B,"bmp\TATI\KAN\1\KA2_OdorokiA1B"          ;驚き
+mov $KA2_MajimeA1B,"bmp\TATI\KAN\1\KA2_MajimeA1B"          ;真面目
+;mov $KA2_WaraiA1B,"bmp\TATI\KAN\1\KA2_WaraiA1B"          ;笑い
+;mov $KA2_AkuwaraiA1B,"bmp\TATI\KAN\1\KA2_AkuwaraiA1B"          ;悪笑い
+mov $KA2_OdorokiA2B,"bmp\TATI\KAN\1\KA2_OdorokiA2B"          ;驚き２
+mov $KA2_NayamuA1B,"bmp\TATI\KAN\1\KA2_NayamuA1B"          ;悩む
+mov $KA2_FumanA1B,"bmp\TATI\KAN\1\KA2_FumanA1B"
+mov $KA2_FumanA2B,"bmp\TATI\KAN\1\KA2_FumanA2B"
+mov $KA2_IkariA2B,"bmp\TATI\KAN\1\KA2_IkariA2B"
+mov $KA2_IkariA3B,"bmp\TATI\KAN\1\KA2_IkariA3B"
+
+return
+
+*BEA_Isyou1
+
+mov $BEA_DefA1,"bmp\TATI\BEA\1\BEA_DefA1"          ;BEA立ち絵デフォ
+mov $BEA_DefA2,"bmp\TATI\BEA\1\BEA_DefA2"
+mov $BEA_WaraiA1,"bmp\TATI\BEA\1\BEA_WaraiA1"          ;笑い
+mov $BEA_AkuwaraiA1,"bmp\TATI\BEA\1\BEA_AkuwaraiA1"          ;悪笑い
+mov $BEA_AkuwaraiA2,"bmp\TATI\BEA\1\BEA_AkuwaraiA2"          ;悪笑い
+;mov $BEA_MajimeA1,"bmp\TATI\BEA\1\BEA_MajimeA1"          ;真面目
+mov $BEA_WaraiA2,"bmp\TATI\BEA\1\BEA_WaraiA2"          ;笑い２
+mov $BEA_futekiA1,"bmp\TATI\BEA\1\BEA_futekiA1"          ;笑い２
+
+mov $BEA_AkuwaraiA2,"bmp\TATI\BEA\1\BEA_AkuwaraiA2"          ;悪笑い
+mov $BEA_AkuwaraiA3,"bmp\TATI\BEA\1\BEA_AkuwaraiA3"          ;悪笑い
+mov $BEA_AkuwaraiA4,"bmp\TATI\BEA\1\BEA_AkuwaraiA4"          ;悪笑い
+mov $BEA_AkuwaraiA5,"bmp\TATI\BEA\1\BEA_AkuwaraiA5"          ;悪笑い
+
+mov $BEA_OdorokiA1,"bmp\TATI\BEA\1\BEA_OdorokiA1"          ;悪笑い
+mov $BEA_futekiA2,"bmp\TATI\BEA\1\BEA_futekiA2"          ;笑い２
+mov $BEA_FukigenA1,"bmp\TATI\BEA\1\BEA_FukigenA1"          ;笑い２
+mov $BEA_FukigenA2,"bmp\TATI\BEA\1\BEA_FukigenA2"          ;笑い２
+mov $BEA_FukigenA3,"bmp\TATI\BEA\1\BEA_FukigenA3"          ;笑い２
+
+mov $BEA_NayamuA1,"bmp\TATI\BEA\1\BEA_NayamuA1"          ;笑い２
+mov $BEA_AseruA1,"bmp\TATI\BEA\1\BEA_AseruA1"          ;笑い２
+
+
+mov $BEA_WaraiA3,"bmp\TATI\BEA\1\BEA_WaraiA3"          ;笑い３
+mov $BEA_KomaruA1,"bmp\TATI\BEA\1\BEA_KomaruA1"          ;困る
+mov $BEA_KomaruA2,"bmp\TATI\BEA\1\BEA_KomaruA2"          ;困る２
+mov $BEA_OdorokiA2,"bmp\TATI\BEA\1\BEA_OdorokiA2"          ;驚き２
+mov $BEA_NayamuA2,"bmp\TATI\BEA\1\BEA_NayamuA2"          ;悩む２
+mov $BEA_IiwakeA1,"bmp\TATI\BEA\1\BEA_IiwakeA1"          ;いい訳
+mov $BEA_IiwakeA2,"bmp\TATI\BEA\1\BEA_IiwakeA2"          ;いい訳２
+mov $BEA_HanbesoA1,"bmp\TATI\BEA\1\BEA_HanbesoA1"          ;半ベソ
+mov $BEA_HanbesoA2,"bmp\TATI\BEA\1\BEA_HanbesoA2"          ;半ベソ２
+mov $BEA_HanbesoA3,"bmp\TATI\BEA\1\BEA_HanbesoA3"          ;半ベソ３
+mov $BEA_HanbesoA4,"bmp\TATI\BEA\1\BEA_HanbesoA4"          ;半ベソ４
+mov $BEA_HanbesoA5,"bmp\TATI\BEA\1\BEA_HanbesoA5"          ;半ベソ５
+mov $BEA_HanbesoA6,"bmp\TATI\BEA\1\BEA_HanbesoA6"          ;半ベソ６
+
+mov $BEA_GamanA1,"bmp\TATI\BEA\1\BEA_GamanA1"          ;
+mov $BEA_GamanA2,"bmp\TATI\BEA\1\BEA_GamanA2"          ;
+mov $BEA_GamanA3,"bmp\TATI\BEA\1\BEA_GamanA3"          ;
+mov $BEA_GamanA4,"bmp\TATI\BEA\1\BEA_GamanA4"          ;
+mov $BEA_GamanA5,"bmp\TATI\BEA\1\BEA_GamanA5"          ;
+mov $BEA_GamanA6,"bmp\TATI\BEA\1\BEA_GamanA6"          ;
+mov $BEA_GamanA7,"bmp\TATI\BEA\1\BEA_GamanA7"          ;
+mov $BEA_IiwakeA3,"bmp\TATI\BEA\1\BEA_IiwakeA3"          ;
+mov $BEA_KomaruA3,"bmp\TATI\BEA\1\BEA_KomaruA3"          ;
+mov $BEA_KomaruA4,"bmp\TATI\BEA\1\BEA_KomaruA4"          ;
+mov $BEA_MajimeA1,"bmp\TATI\BEA\1\BEA_MajimeA1"          ;
+mov $BEA_MajimeA2,"bmp\TATI\BEA\1\BEA_MajimeA2"          ;
+mov $BEA_MajimeA3,"bmp\TATI\BEA\1\BEA_MajimeA3"          ;
+mov $BEA_MajimeA4,"bmp\TATI\BEA\1\BEA_MajimeA4"          ;
+mov $BEA_FumanA1,"bmp\TATI\BEA\1\BEA_FumanA1"          ;
+mov $BEA_FumanA2,"bmp\TATI\BEA\1\BEA_FumanA2"          ;
+mov $BEA_FumanA3,"bmp\TATI\BEA\1\BEA_FumanA3"          ;
+mov $BEA_NakuA1,"bmp\TATI\BEA\1\BEA_NakuA1"          ;
+mov $BEA_IkariA1,"bmp\TATI\BEA\1\BEA_IkariA1"          ;
+mov $BEA_IkariA2,"bmp\TATI\BEA\1\BEA_IkariA2"          ;
+
+return
+
+*EV2_Isyou1
+
+mov $EV2_DefA1,"bmp\TATI\EV2\1\EV2_DefA1"          ;魔女絵羽
+mov $EV2_WaraiA1,"bmp\TATI\EV2\1\EV2_WaraiA1"          ;
+mov $EV2_WaraiA2,"bmp\TATI\EV2\1\EV2_WaraiA2"          ;
+mov $EV2_HohoemiA1,"bmp\TATI\EV2\1\EV2_HohoemiA1" 
+mov $EV2_HohoemiA2,"bmp\TATI\EV2\1\EV2_HohoemiA2" 
+mov $EV2_TokuiA1,"bmp\TATI\EV2\1\EV2_TokuiA1" 
+mov $EV2_AkuwaraiA1,"bmp\TATI\EV2\1\EV2_AkuwaraiA1"          ;
+mov $EV2_AkuwaraiA2,"bmp\TATI\EV2\1\EV2_AkuwaraiA2"          ;
+mov $EV2_AkuwaraiA3,"bmp\TATI\EV2\1\EV2_AkuwaraiA3"          ;
+mov $EV2_AkuwaraiA4,"bmp\TATI\EV2\1\EV2_AkuwaraiA4"          ;
+mov $EV2_AkuwaraiA5,"bmp\TATI\EV2\1\EV2_AkuwaraiA5"          ;
+mov $EV2_AkuwaraiA6,"bmp\TATI\EV2\1\EV2_AkuwaraiA6"          ;
+mov $EV2_AkuwaraiA7,"bmp\TATI\EV2\1\EV2_AkuwaraiA7"          ;
+mov $EV2_AkuwaraiA8,"bmp\TATI\EV2\1\EV2_AkuwaraiA8"          ;
+mov $EV2_NiramuA1,"bmp\TATI\EV2\1\EV2_NiramuA1"          ;
+mov $EV2_NiramuA2,"bmp\TATI\EV2\1\EV2_NiramuA2"          ;
+mov $EV2_NiramuA3,"bmp\TATI\EV2\1\EV2_NiramuA3"          ;
+mov $EV2_KomaruA1,"bmp\TATI\EV2\1\EV2_KomaruA1"          ;
+mov $EV2_OdorokiA1,"bmp\TATI\EV2\1\EV2_OdorokiA1"          ;
+mov $EV2_OdorokiA2,"bmp\TATI\EV2\1\EV2_OdorokiA2"          ;
+mov $EV2_FukigenA1,"bmp\TATI\EV2\1\EV2_FukigenA1"          ;
+mov $EV2_FukigenA2,"bmp\TATI\EV2\1\EV2_FukigenA2"          ;
+mov $EV2_FukigenA3,"bmp\TATI\EV2\1\EV2_FukigenA3"          ;
+mov $EV2_IkariA1,"bmp\TATI\EV2\1\EV2_IkariA1"          ;
+mov $EV2_IkariA2,"bmp\TATI\EV2\1\EV2_IkariA2"          ;
+mov $EV2_KomaruA1,"bmp\TATI\EV2\1\EV2_KomaruA1"          ;
+mov $EV2_MajimeA1,"bmp\TATI\EV2\1\EV2_MajimeA1"         ;
+
+return
+
+*ENJ_Isyou1
+
+mov $ENJ_DefA1,"bmp\TATI\ENJ\1\ENJ_DefA1"          ;縁寿
+mov $ENJ_DefA2,"bmp\TATI\ENJ\1\ENJ_DefA2"          ;縁寿
+mov $ENJ_WaraiA1,"bmp\TATI\ENJ\1\ENJ_WaraiA1"          ;縁寿（
+mov $ENJ_WaraiA2,"bmp\TATI\ENJ\1\ENJ_WaraiA2"          ;縁寿
+mov $ENJ_WaraiA3,"bmp\TATI\ENJ\1\ENJ_WaraiA3"          ;縁寿
+mov $ENJ_FumanA1,"bmp\TATI\ENJ\1\ENJ_FumanA1"          ;縁寿
+mov $ENJ_FumanA2,"bmp\TATI\ENJ\1\ENJ_FumanA2"          ;縁寿
+mov $ENJ_MajimeA1,"bmp\TATI\ENJ\1\ENJ_MajimeA1"          ;縁寿
+mov $ENJ_NayamuA1,"bmp\TATI\ENJ\1\ENJ_NayamuA1"          ;縁寿
+mov $ENJ_KomaruA1,"bmp\TATI\ENJ\1\ENJ_KomaruA1"          ;縁寿
+mov $ENJ_KomaruA2,"bmp\TATI\ENJ\1\ENJ_KomaruA2"          ;縁寿
+mov $ENJ_KomaruA3,"bmp\TATI\ENJ\1\ENJ_KomaruA3"          ;縁寿
+mov $ENJ_KomaruA4,"bmp\TATI\ENJ\1\ENJ_KomaruA4"          ;縁寿
+mov $ENJ_KomaruA5,"bmp\TATI\ENJ\1\ENJ_KomaruA5"          ;縁寿
+mov $ENJ_IkariA1,"bmp\TATI\ENJ\1\ENJ_IkariA1"          ;縁寿
+mov $ENJ_IkariA2,"bmp\TATI\ENJ\1\ENJ_IkariA2"          ;縁寿
+mov $ENJ_HanbesoA1,"bmp\TATI\ENJ\1\ENJ_HanbesoA1"          ;縁寿
+mov $ENJ_HanbesoA2,"bmp\TATI\ENJ\1\ENJ_HanbesoA2"          ;縁寿
+mov $ENJ_HanbesoA3,"bmp\TATI\ENJ\1\ENJ_HanbesoA3"          ;縁寿
+mov $ENJ_NakuA1,"bmp\TATI\ENJ\1\ENJ_NakuA1"          ;縁寿
+mov $ENJ_NakuA2,"bmp\TATI\ENJ\1\ENJ_NakuA2"          ;縁寿
+
+return
+
+;＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+;第二衣装
+;＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+
+
+*NAT_Isyou2    ;夏妃Ｂ服
+
+
+
+mov $NAT_DefA1,"bmp\TATI\NAT\2\NAT_DefA1"          ;夏妃立ち絵デフォ
+mov $NAT_DefB1,"bmp\TATI\NAT\2\NAT_DefB1"          ;夏妃立ち絵デフォ
+mov $NAT_WaraiA1,"bmp\TATI\NAT\2\NAT_WaraiA1"          ;笑い
+mov $NAT_WaraiB1,"bmp\TATI\NAT\2\NAT_WaraiB1"          ;笑い
+mov $NAT_IkariA1,"bmp\TATI\NAT\2\NAT_IkariA1"          ;怒り
+mov $NAT_IkariB1,"bmp\TATI\NAT\2\NAT_IkariB1"          ;怒り
+mov $NAT_OdorokiA1,"bmp\TATI\NAT\2\NAT_OdorokiA1"          ;驚き
+mov $NAT_OdorokiB1,"bmp\TATI\NAT\2\NAT_OdorokiB1"          ;驚き
+mov $NAT_MajimeA1,"bmp\TATI\NAT\2\NAT_MajimeA1"          ;真面目
+mov $NAT_MajimeB1,"bmp\TATI\NAT\2\NAT_MajimeB1"          ;真面目
+;mov $NAT_DefA2,"bmp\TATI\NAT\2\NAT_DefA2"
+;mov $NAT_AkuwaraiA1,"bmp\TATI\NAT\2\NAT_AkuwaraiA1"          ;悪笑い
+;mov $NAT_KomaruA1,"bmp\TATI\NAT\2\NAT_KomaruA1"          ;困る
+mov $NAT_WaraiA2,"bmp\TATI\NAT\2\NAT_WaraiA2"          ;笑い２
+mov $NAT_WaraiB2,"bmp\TATI\NAT\2\NAT_WaraiB2"          ;笑い２
+mov $NAT_OdorokiA2,"bmp\TATI\NAT\2\NAT_OdorokiA2"          ;驚き２
+mov $NAT_OdorokiB2,"bmp\TATI\NAT\2\NAT_OdorokiB2"          ;驚き２
+mov $NAT_HisuA1,"bmp\TATI\NAT\2\NAT_HisuA1"          ;ヒステリー
+mov $NAT_HisuB1,"bmp\TATI\NAT\2\NAT_HisuB1"          ;ヒステリー
+mov $NAT_zutuuA1,"bmp\TATI\NAT\2\NAT_zutuuA1"          ;頭痛
+mov $NAT_zutuuB1,"bmp\TATI\NAT\2\NAT_zutuuB1"          ;頭痛
+mov $NAT_TukareA1,"bmp\TATI\NAT\2\NAT_TukareA1"          ;疲れ
+mov $NAT_TukareB1,"bmp\TATI\NAT\2\NAT_TukareB1"          ;疲れ
+mov $NAT_TukareA2,"bmp\TATI\NAT\2\NAT_TukareA2"          ;疲れ２
+mov $NAT_TukareB2,"bmp\TATI\NAT\2\NAT_TukareB2"          ;疲れ２
+
+return
+
+;■譲治私服
+*GEO_Isyou2
+
+mov $GEO_DefA1,"bmp\TATI\GEO\2\GEO_DefA1"          ;譲治立ち絵デフォ
+mov $GEO_WaraiA1,"bmp\TATI\GEO\2\GEO_WaraiA1"          ;笑い
+mov $GEO_KomaruA1,"bmp\TATI\GEO\2\GEO_KomaruA1"          ;困る
+mov $GEO_MajimeA1,"bmp\TATI\GEO\2\GEO_MajimeA1"          ;真面目
+;mov $GEO_DefA2,"bmp\TATI\GEO\2\GEO_DefA2"          ;譲治立ち絵デフォ
+;mov $GEO_AkuwaraiA1,"bmp\TATI\GEO\2\GEO_AkuwaraiA1"          ;悪笑い
+;mov $GEO_IkariA1,"bmp\TATI\GEO\2\GEO_IkariA1"          ;怒り
+;mov $GEO_OdorokiA1,"bmp\TATI\GEO\2\GEO_OdorokiA1"          ;驚き
+mov $GEO_DefA1k,"bmp\TATI\GEO\2\GEO_DefA1k"          ;デフォ（曇り眼鏡
+mov $GEO_NakuA1,"bmp\TATI\GEO\2\GEO_NakuA1"          ;泣く
+mov $GEO_NakuA1k,"bmp\TATI\GEO\2\GEO_NakuA1k"          ;泣く（曇り眼鏡
+mov $GEO_NakuA2,"bmp\TATI\GEO\2\GEO_NakuA2"          ;泣く２
+mov $GEO_NakuA2k,"bmp\TATI\GEO\2\GEO_NakuA2k"          ;泣く２（曇り眼鏡
+mov $GEO_HohoemiA1,"bmp\TATI\GEO\2\GEO_HohoemiA1"          ;微笑み
+mov $GEO_HohoemiA1k,"bmp\TATI\GEO\2\GEO_HohoemiA1k"          ;微笑み（曇り眼鏡
+mov $GEO_KomaruA1k,"bmp\TATI\GEO\2\GEO_KomaruA1k"          ;困る（曇り眼鏡
+mov $GEO_WaraiA1k,"bmp\TATI\GEO\2\GEO_WaraiA1k"          ;笑い（曇り眼鏡
+mov $GEO_WaraiA2,"bmp\TATI\GEO\2\GEO_WaraiA2"          ;笑い
+mov $GEO_WaraiA2k,"bmp\TATI\GEO\2\GEO_WaraiA2k"          ;笑い（曇り眼鏡
+mov $GEO_MajimeA1k,"bmp\TATI\GEO\2\GEO_MajimeA1k"          ;真面目（曇り眼鏡
+mov $GEO_MajimeA2,"bmp\TATI\GEO\2\GEO_MajimeA2"          ;真面目２
+mov $GEO_MajimeA2k,"bmp\TATI\GEO\2\GEO_MajimeA2k"          ;真面目２（曇り眼鏡
+mov $GEO_MajimeA3,"bmp\TATI\GEO\2\GEO_MajimeA3"          ;真面目３
+mov $GEO_MajimeA3k,"bmp\TATI\GEO\2\GEO_MajimeA3k"          ;真面目３（曇り眼鏡
+mov $GEO_KomaruA2,"bmp\TATI\GEO\2\GEO_KomaruA2"
+mov $GEO_KomaruA2k,"bmp\TATI\GEO\2\GEO_KomaruA2k"
+mov $GEO_KomaruA3,"bmp\TATI\GEO\2\GEO_KomaruA3"
+mov $GEO_KomaruA3k,"bmp\TATI\GEO\2\GEO_KomaruA3k"
+mov $GEO_KomaruA4,"bmp\TATI\GEO\2\GEO_KomaruA4"
+mov $GEO_KomaruA4k,"bmp\TATI\GEO\2\GEO_KomaruA4k"
+mov $GEO_KomaruA5,"bmp\TATI\GEO\2\GEO_KomaruA5"
+mov $GEO_KomaruA5k,"bmp\TATI\GEO\2\GEO_KomaruA5k"
+mov $GEO_IkariA1,"bmp\TATI\GEO\2\GEO_IkariA1"
+mov $GEO_IkariA1k,"bmp\TATI\GEO\2\GEO_IkariA1k"
+mov $GEO_IkariA2,"bmp\TATI\GEO\2\GEO_IkariA2"
+mov $GEO_IkariA2k,"bmp\TATI\GEO\2\GEO_IkariA2k"
+
+return
+
+
+*MAR_Isyou2    ;魔女マリア
+
+mov $MAR_DefA1,"bmp\TATI\MAR\2\MAR_DefA1"          ;真里亞立ち絵デフォ
+mov $MAR_DefA1k,"bmp\TATI\MAR\2\MAR_DefA1k"          ;デフォ影
+mov $MAR_WaraiA1,"bmp\TATI\MAR\2\MAR_WaraiA1"          ;笑い
+mov $MAR_AkuwaraiA1,"bmp\TATI\MAR\2\MAR_AkuwaraiA1"          ;悪笑い
+mov $MAR_IkariA1,"bmp\TATI\MAR\2\MAR_IkariA1"          ;怒り
+mov $MAR_KomaruA1,"bmp\TATI\MAR\2\MAR_KomaruA1"          ;困る
+mov $MAR_OdorokiA1,"bmp\TATI\MAR\2\MAR_OdorokiA1"          ;驚き
+mov $MAR_MajimeA1,"bmp\TATI\MAR\2\MAR_MajimeA1"          ;真面目
+mov $MAR_NakuA1,"bmp\TATI\MAR\2\MAR_NakuA1"          ;泣く
+;mov $MAR_DefA2,"bmp\TATI\MAR\2\MAR_DefA2"
+;mov $MAR_Kuro_DefA1,"bmp\TATI\MAR\2\MAR_Kuro_DefA1"          ;黒真里亞立ち絵デフォ
+;mov $MAR_Kuro_WaraiA1,"bmp\TATI\MAR\2\MAR_Kuro_WaraiA1"          ;黒真里亞笑い
+mov $MAR_AkuwaraiA2,"bmp\TATI\MAR\2\MAR_AkuwaraiA2"          ;悪笑い２
+mov $MAR_AkuwaraiA3,"bmp\TATI\MAR\2\MAR_AkuwaraiA3"          ;悪笑い３
+mov $MAR_WaraiA2,"bmp\TATI\MAR\2\MAR_WaraiA2"          ;笑い２
+mov $MAR_NiyariA1,"bmp\TATI\MAR\2\MAR_niyariA1"          ;ニヤリ
+mov $MAR_NiyariA2,"bmp\TATI\MAR\2\MAR_niyariA2"          ;ニヤリ２
+mov $MAR_fukigenA1,"bmp\TATI\MAR\2\MAR_fukigenA1"          ;不機嫌
+mov $MAR_fukigenA2,"bmp\TATI\MAR\2\MAR_fukigenA2"          ;不機嫌２
+mov $MAR_SakebuA1,"bmp\TATI\MAR\2\MAR_SakebuA1"          ;叫ぶ
+
+return
+
+*MAR_Isyou3    ;魔女マリア
+
+mov $MAR_DefA1,"bmp\TATI\MAR\3\MAR_DefA1"          ;真里亞立ち絵デフォ
+mov $MAR_DefA1k,"bmp\TATI\MAR\3\MAR_DefA1k"          ;デフォ影
+mov $MAR_WaraiA1,"bmp\TATI\MAR\3\MAR_WaraiA1"          ;笑い
+mov $MAR_AkuwaraiA1,"bmp\TATI\MAR\3\MAR_AkuwaraiA1"          ;悪笑い
+mov $MAR_IkariA1,"bmp\TATI\MAR\3\MAR_IkariA1"          ;怒り
+mov $MAR_KomaruA1,"bmp\TATI\MAR\3\MAR_KomaruA1"          ;困る
+mov $MAR_OdorokiA1,"bmp\TATI\MAR\3\MAR_OdorokiA1"          ;驚き
+mov $MAR_MajimeA1,"bmp\TATI\MAR\3\MAR_MajimeA1"          ;真面目
+mov $MAR_NakuA1,"bmp\TATI\MAR\3\MAR_NakuA1"          ;泣く
+;mov $MAR_DefA2,"bmp\TATI\MAR\3\MAR_DefA2"
+;mov $MAR_Kuro_DefA1,"bmp\TATI\MAR\3\MAR_Kuro_DefA1"          ;黒真里亞立ち絵デフォ
+;mov $MAR_Kuro_WaraiA1,"bmp\TATI\MAR\3\MAR_Kuro_WaraiA1"          ;黒真里亞笑い
+mov $MAR_AkuwaraiA2,"bmp\TATI\MAR\3\MAR_AkuwaraiA2"          ;悪笑い２
+mov $MAR_AkuwaraiA3,"bmp\TATI\MAR\3\MAR_AkuwaraiA3"          ;悪笑い３
+mov $MAR_WaraiA2,"bmp\TATI\MAR\3\MAR_WaraiA2"          ;笑い２
+mov $MAR_NiyariA1,"bmp\TATI\MAR\3\MAR_niyariA1"          ;ニヤリ
+mov $MAR_NiyariA2,"bmp\TATI\MAR\3\MAR_niyariA2"          ;ニヤリ２
+mov $MAR_fukigenA1,"bmp\TATI\MAR\3\MAR_fukigenA1"          ;不機嫌
+mov $MAR_fukigenA2,"bmp\TATI\MAR\3\MAR_fukigenA2"          ;不機嫌２
+mov $MAR_SakebuA1,"bmp\TATI\MAR\3\MAR_SakebuA1"          ;叫ぶ
+
+return
+
+
+
+
+
+
+;■紗音私服
+*SHA_Isyou2
+
+mov $SHA_DefA1,"bmp\TATI\SHA\2\SHA_DefA1"          ;紗音立ち絵デフォ
+mov $SHA_WaraiA1,"bmp\TATI\SHA\2\SHA_WaraiA1"          ;笑い
+mov $SHA_KomaruA1,"bmp\TATI\SHA\2\SHA_KomaruA1"          ;困る
+mov $SHA_OdorokiA1,"bmp\TATI\SHA\2\SHA_OdorokiA1"          ;驚き
+mov $SHA_MajimeA1,"bmp\TATI\SHA\2\SHA_MajimeA1"          ;真面目
+mov $SHA_HajiraiA1,"bmp\TATI\SHA\2\SHA_HajiraiA1"          ;恥らい
+;mov $SHA_DefA2,"bmp\TATI\SHA\1\SHA_DefA2"
+;mov $SHA_AkuwaraiA1,"bmp\TATI\SHA\1\SHA_AkuwaraiA1"          ;悪笑い
+;mov $SHA_IkariA1,"bmp\TATI\SHA\1\SHA_IkariA1"          ;怒り
+mov $SHA_WaraiA2,"bmp\TATI\SHA\2\SHA_WaraiA2"          ;笑い２
+mov $SHA_WaraiA3,"bmp\TATI\SHA\2\SHA_WaraiA3"          ;笑い３
+mov $SHA_MajimeA2,"bmp\TATI\SHA\2\SHA_MajimeA2"          ;真面目２
+mov $SHA_HajiraiA2,"bmp\TATI\SHA\2\SHA_HajiraiA2"          ;恥らい２
+mov $SHA_HajiraiA3,"bmp\TATI\SHA\2\SHA_HajiraiA3"          ;恥らい３
+mov $SHA_fumanA1,"bmp\TATI\SHA\2\SHA_fumanA1"          ;不満
+mov $SHA_tokuiA1,"bmp\TATI\SHA\2\SHA_tokuiA1"          ;得意
+mov $SHA_OdorokiA2,"bmp\TATI\SHA\2\SHA_OdorokiA2"          ;驚き２
+mov $SHA_MajimeA3,"bmp\TATI\SHA\2\SHA_MajimeA3"        
+mov $SHA_IkariA1,"bmp\TATI\SHA\2\SHA_IkariA1"          
+mov $SHA_IkariA2,"bmp\TATI\SHA\2\SHA_IkariA2"        
+
+
+return
+
+*KAN_Isyou2
+
+mov $KAN_DefA1,"bmp\TATI\KAN\2\KAN_DefA1"          ;嘉音立ち絵デフォ
+mov $KAN_DefA2,"bmp\TATI\KAN\2\KAN_DefA2"
+mov $KAN_IkariA1,"bmp\TATI\KAN\2\KAN_IkariA1"          ;怒り
+mov $KAN_KomaruA1,"bmp\TATI\KAN\2\KAN_KomaruA1"          ;困る
+mov $KAN_OdorokiA1,"bmp\TATI\KAN\2\KAN_OdorokiA1"          ;驚き
+mov $KAN_MajimeA1,"bmp\TATI\KAN\2\KAN_MajimeA1"          ;真面目
+;mov $KAN_WaraiA1,"bmp\TATI\KAN\1\KAN_WaraiA1"          ;笑い
+;mov $KAN_AkuwaraiA1,"bmp\TATI\KAN\1\KAN_AkuwaraiA1"          ;悪笑い
+mov $KAN_OdorokiA2,"bmp\TATI\KAN\2\KAN_OdorokiA2"          ;驚き２
+mov $KAN_NayamuA1,"bmp\TATI\KAN\2\KAN_NayamuA1"          ;悩む
+mov $KAN_FumanA1,"bmp\TATI\KAN\2\KAN_FumanA1"
+mov $KAN_FumanA2,"bmp\TATI\KAN\2\KAN_FumanA2"
+mov $KAN_IkariA2,"bmp\TATI\KAN\2\KAN_IkariA2"          ;怒り
+mov $KAN_IkariA3,"bmp\TATI\KAN\2\KAN_IkariA3"          ;怒り
+
+
+;偽嘉音
+mov $KA2_DefA1,"bmp\TATI\KAN\1\KA2_DefA1"          ;嘉音立ち絵デフォ
+mov $KA2_DefA2,"bmp\TATI\KAN\1\KA2_DefA2"
+mov $KA2_IkariA1,"bmp\TATI\KAN\1\KA2_IkariA1"          ;怒り
+mov $KA2_KomaruA1,"bmp\TATI\KAN\1\KA2_KomaruA1"          ;困る
+mov $KA2_OdorokiA1,"bmp\TATI\KAN\1\KA2_OdorokiA1"          ;驚き
+mov $KA2_MajimeA1,"bmp\TATI\KAN\1\KA2_MajimeA1"          ;真面目
+;mov $KA2_WaraiA1,"bmp\TATI\KAN\1\KA2_WaraiA1"          ;笑い
+;mov $KA2_AkuwaraiA1,"bmp\TATI\KAN\1\KA2_AkuwaraiA1"          ;悪笑い
+mov $KA2_OdorokiA2,"bmp\TATI\KAN\1\KA2_OdorokiA2"          ;驚き２
+mov $KA2_NayamuA1,"bmp\TATI\KAN\1\KA2_NayamuA1"          ;悩む
+mov $KA2_FumanA1,"bmp\TATI\KAN\1\KA2_FumanA1"
+mov $KA2_FumanA2,"bmp\TATI\KAN\1\KA2_FumanA2"
+mov $KA2_IkariA2,"bmp\TATI\KAN\1\KA2_IkariA2"          ;怒り
+mov $KA2_IkariA3,"bmp\TATI\KAN\1\KA2_IkariA3"          ;怒り
+
+
+mov $KA2_DefA1B,"bmp\TATI\KAN\1\KA2_DefA1B"          ;嘉音魔法の刃装備　 blade
+mov $KA2_DefA2B,"bmp\TATI\KAN\1\KA2_DefA2B"
+mov $KA2_IkariA1B,"bmp\TATI\KAN\1\KA2_IkariA1B"          ;怒り
+mov $KA2_KomaruA1B,"bmp\TATI\KAN\1\KA2_KomaruA1B"          ;困る
+mov $KA2_OdorokiA1B,"bmp\TATI\KAN\1\KA2_OdorokiA1B"          ;驚き
+mov $KA2_MajimeA1B,"bmp\TATI\KAN\1\KA2_MajimeA1B"          ;真面目
+;mov $KA2_WaraiA1B,"bmp\TATI\KAN\1\KA2_WaraiA1B"          ;笑い
+;mov $KA2_AkuwaraiA1B,"bmp\TATI\KAN\1\KA2_AkuwaraiA1B"          ;悪笑い
+mov $KA2_OdorokiA2B,"bmp\TATI\KAN\1\KA2_OdorokiA2B"          ;驚き２
+mov $KA2_NayamuA1B,"bmp\TATI\KAN\1\KA2_NayamuA1B"          ;悩む
+mov $KA2_FumanA1B,"bmp\TATI\KAN\1\KA2_FumanA1B"
+mov $KA2_FumanA2B,"bmp\TATI\KAN\1\KA2_FumanA2B"
+mov $KA2_IkariA2B,"bmp\TATI\KAN\1\KA2_IkariA2B"
+mov $KA2_IkariA3B,"bmp\TATI\KAN\1\KA2_IkariA3B"
+
+return
+
+
+*BEA_Isyou2
+
+mov $BEA_DefA1,"bmp\TATI\BEA\2\BEA_DefA1"          ;BEA立ち絵デフォ
+mov $BEA_DefA2,"bmp\TATI\BEA\2\BEA_DefA2"
+mov $BEA_WaraiA1,"bmp\TATI\BEA\2\BEA_WaraiA1"          ;笑い
+mov $BEA_AkuwaraiA1,"bmp\TATI\BEA\2\BEA_AkuwaraiA1"          ;悪笑い
+mov $BEA_AkuwaraiA2,"bmp\TATI\BEA\2\BEA_AkuwaraiA2"          ;悪笑い
+;mov $BEA_MajimeA1,"bmp\TATI\BEA\2\BEA_MajimeA1"          ;真面目
+mov $BEA_WaraiA2,"bmp\TATI\BEA\2\BEA_WaraiA2"          ;笑い２
+mov $BEA_futekiA1,"bmp\TATI\BEA\2\BEA_futekiA1"          ;笑い２
+
+mov $BEA_AkuwaraiA2,"bmp\TATI\BEA\2\BEA_AkuwaraiA2"          ;悪笑い
+mov $BEA_AkuwaraiA3,"bmp\TATI\BEA\2\BEA_AkuwaraiA3"          ;悪笑い
+mov $BEA_AkuwaraiA4,"bmp\TATI\BEA\2\BEA_AkuwaraiA4"          ;悪笑い
+mov $BEA_AkuwaraiA5,"bmp\TATI\BEA\2\BEA_AkuwaraiA5"          ;悪笑い
+
+mov $BEA_OdorokiA1,"bmp\TATI\BEA\2\BEA_OdorokiA1"          ;悪笑い
+mov $BEA_futekiA2,"bmp\TATI\BEA\2\BEA_futekiA2"          ;笑い２
+mov $BEA_FukigenA1,"bmp\TATI\BEA\2\BEA_FukigenA1"          ;笑い２
+mov $BEA_FukigenA2,"bmp\TATI\BEA\2\BEA_FukigenA2"          ;笑い２
+mov $BEA_FukigenA3,"bmp\TATI\BEA\2\BEA_FukigenA3"          ;笑い２
+
+mov $BEA_NayamuA1,"bmp\TATI\BEA\2\BEA_NayamuA1"          ;笑い２
+mov $BEA_AseruA1,"bmp\TATI\BEA\2\BEA_AseruA1"          ;笑い２
+
+
+mov $BEA_WaraiA3,"bmp\TATI\BEA\2\BEA_WaraiA3"          ;笑い３
+mov $BEA_KomaruA1,"bmp\TATI\BEA\2\BEA_KomaruA1"          ;困る
+mov $BEA_KomaruA2,"bmp\TATI\BEA\2\BEA_KomaruA2"          ;困る２
+mov $BEA_OdorokiA2,"bmp\TATI\BEA\2\BEA_OdorokiA2"          ;驚き２
+mov $BEA_NayamuA2,"bmp\TATI\BEA\2\BEA_NayamuA2"          ;悩む２
+mov $BEA_IiwakeA1,"bmp\TATI\BEA\2\BEA_IiwakeA1"          ;いい訳
+mov $BEA_IiwakeA2,"bmp\TATI\BEA\2\BEA_IiwakeA2"          ;いい訳２
+mov $BEA_HanbesoA1,"bmp\TATI\BEA\2\BEA_HanbesoA1"          ;半ベソ
+mov $BEA_HanbesoA2,"bmp\TATI\BEA\2\BEA_HanbesoA2"          ;半ベソ２
+mov $BEA_HanbesoA3,"bmp\TATI\BEA\2\BEA_HanbesoA3"          ;半ベソ３
+mov $BEA_HanbesoA4,"bmp\TATI\BEA\2\BEA_HanbesoA4"          ;半ベソ４
+mov $BEA_HanbesoA5,"bmp\TATI\BEA\2\BEA_HanbesoA5"          ;半ベソ５
+mov $BEA_HanbesoA6,"bmp\TATI\BEA\2\BEA_HanbesoA6"          ;半ベソ６
+
+mov $BEA_GamanA1,"bmp\TATI\BEA\2\BEA_GamanA1"          ;
+mov $BEA_GamanA2,"bmp\TATI\BEA\2\BEA_GamanA2"          ;
+mov $BEA_GamanA3,"bmp\TATI\BEA\2\BEA_GamanA3"          ;
+mov $BEA_GamanA4,"bmp\TATI\BEA\2\BEA_GamanA4"          ;
+mov $BEA_GamanA5,"bmp\TATI\BEA\2\BEA_GamanA5"          ;
+mov $BEA_GamanA6,"bmp\TATI\BEA\2\BEA_GamanA6"          ;
+mov $BEA_GamanA7,"bmp\TATI\BEA\2\BEA_GamanA7"          ;
+mov $BEA_IiwakeA3,"bmp\TATI\BEA\2\BEA_IiwakeA3"          ;
+mov $BEA_KomaruA3,"bmp\TATI\BEA\2\BEA_KomaruA3"          ;
+mov $BEA_KomaruA4,"bmp\TATI\BEA\2\BEA_KomaruA4"          ;
+mov $BEA_MajimeA1,"bmp\TATI\BEA\2\BEA_MajimeA1"          ;
+mov $BEA_MajimeA2,"bmp\TATI\BEA\2\BEA_MajimeA2"          ;
+mov $BEA_MajimeA3,"bmp\TATI\BEA\2\BEA_MajimeA3"          ;
+mov $BEA_MajimeA4,"bmp\TATI\BEA\2\BEA_MajimeA4"          ;
+mov $BEA_FumanA1,"bmp\TATI\BEA\2\BEA_FumanA1"          ;
+mov $BEA_FumanA2,"bmp\TATI\BEA\2\BEA_FumanA2"          ;
+mov $BEA_FumanA3,"bmp\TATI\BEA\2\BEA_FumanA3"          ;
+mov $BEA_NakuA1,"bmp\TATI\BEA\2\BEA_NakuA1"          ;
+mov $BEA_IkariA1,"bmp\TATI\BEA\2\BEA_IkariA1"          ;
+mov $BEA_IkariA2,"bmp\TATI\BEA\2\BEA_IkariA2"          ;
+
+return
+
+*EV2_Isyou2
+
+mov $EV2_DefA1,"bmp\TATI\EV2\2\EV2_DefA1"          ;魔女絵羽
+mov $EV2_WaraiA1,"bmp\TATI\EV2\2\EV2_WaraiA1"          ;
+mov $EV2_WaraiA2,"bmp\TATI\EV2\2\EV2_WaraiA2"          ;
+mov $EV2_HohoemiA1,"bmp\TATI\EV2\2\EV2_HohoemiA1" 
+mov $EV2_HohoemiA2,"bmp\TATI\EV2\2\EV2_HohoemiA2" 
+mov $EV2_TokuiA1,"bmp\TATI\EV2\2\EV2_TokuiA1" 
+mov $EV2_AkuwaraiA1,"bmp\TATI\EV2\2\EV2_AkuwaraiA1"          ;
+mov $EV2_AkuwaraiA2,"bmp\TATI\EV2\2\EV2_AkuwaraiA2"          ;
+mov $EV2_AkuwaraiA3,"bmp\TATI\EV2\2\EV2_AkuwaraiA3"          ;
+mov $EV2_AkuwaraiA4,"bmp\TATI\EV2\2\EV2_AkuwaraiA4"          ;
+mov $EV2_AkuwaraiA5,"bmp\TATI\EV2\2\EV2_AkuwaraiA5"          ;
+mov $EV2_AkuwaraiA6,"bmp\TATI\EV2\2\EV2_AkuwaraiA6"          ;
+mov $EV2_AkuwaraiA7,"bmp\TATI\EV2\2\EV2_AkuwaraiA7"          ;
+mov $EV2_AkuwaraiA8,"bmp\TATI\EV2\2\EV2_AkuwaraiA8"          ;
+mov $EV2_NiramuA1,"bmp\TATI\EV2\2\EV2_NiramuA1"          ;
+mov $EV2_NiramuA2,"bmp\TATI\EV2\2\EV2_NiramuA2"          ;
+mov $EV2_NiramuA3,"bmp\TATI\EV2\2\EV2_NiramuA3"          ;
+mov $EV2_KomaruA1,"bmp\TATI\EV2\2\EV2_KomaruA1"          ;
+mov $EV2_OdorokiA1,"bmp\TATI\EV2\2\EV2_OdorokiA1"          ;
+mov $EV2_OdorokiA2,"bmp\TATI\EV2\2\EV2_OdorokiA2"          ;
+mov $EV2_FukigenA1,"bmp\TATI\EV2\2\EV2_FukigenA1"          ;
+mov $EV2_FukigenA2,"bmp\TATI\EV2\2\EV2_FukigenA2"          ;
+mov $EV2_FukigenA3,"bmp\TATI\EV2\2\EV2_FukigenA3"          ;
+mov $EV2_IkariA1,"bmp\TATI\EV2\2\EV2_IkariA1"          ;
+mov $EV2_IkariA2,"bmp\TATI\EV2\2\EV2_IkariA2"          ;
+mov $EV2_KomaruA1,"bmp\TATI\EV2\2\EV2_KomaruA1"          ;
+mov $EV2_MajimeA1,"bmp\TATI\EV2\2\EV2_MajimeA1"         ;
+
+return
+
+
+
+*ENJ_Isyou2
+
+mov $ENJ_DefA1,"bmp\TATI\ENJ\2\ENJ_DefA1"          ;縁寿
+mov $ENJ_DefA2,"bmp\TATI\ENJ\2\ENJ_DefA2"          ;縁寿
+mov $ENJ_WaraiA1,"bmp\TATI\ENJ\2\ENJ_WaraiA1"          ;縁寿（
+mov $ENJ_WaraiA2,"bmp\TATI\ENJ\2\ENJ_WaraiA2"          ;縁寿
+mov $ENJ_WaraiA3,"bmp\TATI\ENJ\2\ENJ_WaraiA3"          ;縁寿
+mov $ENJ_FumanA1,"bmp\TATI\ENJ\2\ENJ_FumanA1"          ;縁寿
+mov $ENJ_FumanA2,"bmp\TATI\ENJ\2\ENJ_FumanA2"          ;縁寿
+mov $ENJ_MajimeA1,"bmp\TATI\ENJ\2\ENJ_MajimeA1"          ;縁寿
+mov $ENJ_NayamuA1,"bmp\TATI\ENJ\2\ENJ_NayamuA1"          ;縁寿
+mov $ENJ_KomaruA1,"bmp\TATI\ENJ\2\ENJ_KomaruA1"          ;縁寿
+mov $ENJ_KomaruA2,"bmp\TATI\ENJ\2\ENJ_KomaruA2"          ;縁寿
+mov $ENJ_KomaruA3,"bmp\TATI\ENJ\2\ENJ_KomaruA3"          ;縁寿
+mov $ENJ_KomaruA4,"bmp\TATI\ENJ\2\ENJ_KomaruA4"          ;縁寿
+mov $ENJ_KomaruA5,"bmp\TATI\ENJ\2\ENJ_KomaruA5"          ;縁寿
+mov $ENJ_IkariA1,"bmp\TATI\ENJ\2\ENJ_IkariA1"          ;縁寿
+mov $ENJ_IkariA2,"bmp\TATI\ENJ\2\ENJ_IkariA2"          ;縁寿
+mov $ENJ_HanbesoA1,"bmp\TATI\ENJ\2\ENJ_HanbesoA1"          ;縁寿
+mov $ENJ_HanbesoA2,"bmp\TATI\ENJ\2\ENJ_HanbesoA2"          ;縁寿
+mov $ENJ_HanbesoA3,"bmp\TATI\ENJ\2\ENJ_HanbesoA3"          ;縁寿
+mov $ENJ_NakuA1,"bmp\TATI\ENJ\2\ENJ_NakuA1"          ;縁寿
+mov $ENJ_NakuA2,"bmp\TATI\ENJ\2\ENJ_NakuA2"          ;縁寿
+
+return
+
+
+
+
+
+
+
+
+*scrolltest
+
+select "^~c4~EP1",*prescroll_ep1,"^~c4~EP1Tea",*prescroll_teatime_ep1,"^~c4~EP2",*prescroll_ep2,"^~c4~EP2Tea",*prescroll_teatime_ep2,"^~c4~EP3Tea",*prescroll_teatime_ep3,"^~c4~EP3Teab",*prescroll_teatime_ep3b,"^~c4~EP4Tea",*prescroll_teatime_ep4,"^~c4~EP4Teab",*prescroll_teatime_ep4b
+
+;***********************************************************************
+;
+;[プロジェクト]  うみねこのなく頃に
+;[ファイル概要]  サークルロゴの表示
+;[処理概要]      ソフト立ち上げ時に、サークルロゴを表示する
+;
+;***********************************************************************
+*b_sakuru_logo
+
+;mov %debagu,0
+
+;デバック用命令
+;if %debagu = 1 goto *umi1_standby
+;if %debagu = 1 goto *b_sakuru_logo_shuuryou
+
+notif %show_cg_test = 1 jumpf
+
+gosub *jump_sysdata_set1_1
+
+if %cur_language = 0 langen
+if %cur_language = 1 langjp
+
+select "^~c4~EP1",*cgprep_ep1,"^~c4~EP2",*cgprep_ep2,"^~c4~EP3",*cgprep_ep3,"^~c4~EP4",*cgprep_ep4,"^~c4~WH Test",*whtest,"^~c4~Scrolltest",*scrolltest
+
+~
+; Lecture automatique de l'opening correspondant a la progression du joueur.
+; Ne pas le rejouer lorsque reset renvoie simplement au menu titre.
+if %title_skip = 1 goto *b_sakuru_logo_skip_opening
+textoff
+mov %tmp, %lastOpeningEpisode
+if %tmp < 1 mov %tmp, 0
+if %tmp > 4 mov %tmp, 0
+if %tmp = 0 && %UMINEKOEND >= 40 mov %tmp, 4
+if %tmp = 0 && %UMINEKOEND >= 30 && %UMINEKOEND < 40 mov %tmp, 3
+if %tmp = 0 && %UMINEKOEND >= 20 && %UMINEKOEND < 30 mov %tmp, 2
+if %tmp = 0 mov %tmp, 1
+if %tmp >= 4 mpegplay "movie\umineko_op3.mpg",1
+if %tmp < 4 spoiler_play_movie "movie\umineko_op.mpg"
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+*b_sakuru_logo_skip_opening
+
+	E_B
+	E_MA
+	saveoff            ;セーブオフで、処理を高速化する。
+	erasetextwindow 0  ;テキストエフェクトを切る事で処理を高速化
+	rmode 0            ;右クリックのメニュー表示の無効化
+	textoff
+
+;スキップ用の変数が１になっていたらタイトルをスキップさせる
+if %title_skip = 1 goto *b_sakuru_logo_shuuryou
+
+;ボタンが押しっぱなしになっていたらタイトルをスキップさせる。
+isdown %tmp
+if %tmp = 1 goto *b_sakuru_logo_shuuryou
+
+;-----------------------
+;サークルロゴの表示
+   ;左右クリックで、ロゴの表示を飛ばして終了処理、タイトル画面へ進む   
+   lr_trap *b_sakuru_logo_shuuryou
+
+	btndef ""
+	btntime 2000
+	btnwait2 %tmp
+	
+	notif %tmp = -5 goto *b_sakuru_logo_shuuryou
+
+	;seplay 7,1031
+	;lsp 100,":bc;bmp\title\Circle_logo\circle_logo.png",0,0
+	;print 99,3000,"trvswave.dll/h"
+	;delay 3000
+	;csp 100
+	;print 2
+    lsp 100,":bc;bmp\title\Circle_logo\07th-mod.png",0,0
+    print 2
+    csp 100
+    delay 3000
+	lsp 101,":bc;bmp\title\Circle_logo\alchemist.png",0,0
+	print 2
+	csp 101
+	delay 3000
+	lsp 102,":bc;bmp\title\Circle_logo\07th.png",0,0
+	print 2
+	csp 102
+	delay 3000
+	csp 103
+	print 2
+	
+
+	btndef ""
+	btntime 3000
+	btnwait2 %tmp
+
+	notif %tmp = -5 mov %title_skip,1
+
+
+	; サークルロゴの表示終了処理
+	goto *b_sakuru_logo_skip_100
+
+		*b_sakuru_logo_shuuryou
+		mov %title_skip,1			;タイトルスキップON
+	*b_sakuru_logo_skip_100
+	lr_trap off				;クリックトラップの解除
+
+
+  rmode 1                              
+ ;右クリックのメニュー表示を有効にする。
+  erasetextwindow 1                     ;テキスト透過度落としをＯＮにする。
+  ;setwindow 137,16,25,20,23,23,0,2,20,1,1,#999999,0,0,853,479
+adv_default_text_speed_restore_window
+  windoweffect 50,200
+  btndef ""
+  saveoff
+  csp -1
+
+  if %title_skip = 1 goto *b_title
+
+  goto *b_title                         ;タイトル画面へ
+
+;******************************************************************************
+
+;***********************************************************************
+;
+;[プロジェクト] 	うみねこのなく頃に
+;[ファイル概要] 	タイトルの表示
+;[処理概要]		タイトル画面の表示
+;[製作]			ＢＴ
+;フラグ管理用変数　	
+;
+;***********************************************************************
+*b_title
+
+;テスト用変数
+;if %debagu = 1 mov %UMINEKOEND,50 ;クリア状態の調整
+;mov %UMINEKOEND_TIPS_FLG,3
+;mov %UMINEKOEND_FLG,0 ;新要素追加の告知フラグ
+;mov %UMINEKOEND_TIPS_FLG,2 ;TIPS新要素追加告知フラグ
+;（エンドフラグと組合せて使用する　０は非表示　数字は表示　本編中で変数を初期化する）
+;（EP1本編クリア（Ep１お茶会追加）で１を代入、お茶会のシーンで１１を０に初期化する）
+;（if %UMINEKOEND_FLG = １1 mov %UMINEKOEND_FLG,0)
+;mov %UMINEKOEND_MUSIC_FLG,1
+
+;UMINEKOENDとクリア状態
+;0　未クリア状態
+;11　Ep１本編をクリア　→　Ep1お茶会を追加　：　背景を夕焼け
+;12　Ep１お茶会クリア　→　Ep1裏お茶会の追加
+;20　Ep１裏お茶会クリア　→　Ep１Tips　：　Ep２本編の追加　：　背景を水族館へ
+
+;21　Ep２本編をクリア　→　Ep２お茶会を追加
+;22　Ep２お茶会クリア　→　Ep２裏お茶会の追加
+;30　Ep２裏お茶会クリア　→　Ep２Tips追加
+
+;シナリオの終了時にクリア変数をチェックして、変数を代入（フラグ変数も一緒に代入）
+;（if %UMINEKOEND < 11 mov %UMINEKOEND,11 : mov %UMINEKOEND_FLG,11
+
+
+;-----------------------------------------
+;各フラグ変数の初期化処理
+;-----------------------------------------
+
+mono 0
+
+;キャラの状態をリセットする
+for %tmp = 1 to cha_kazu
+	mov ?r[%tmp][condition],0
+next
+
+;右クリックシステム、選択キャラ、Tips表示をなし（０）に初期化
+mov %r_hyouji_cha,0
+mov %r_hyouji_cha_ma,0
+mov %r_hyouji_tips,0
+mov %r_for_title,0
+mov %r_tea_bea,0
+mov %r_ber_flg,0
+mov %rmordflg,off	;右クリックOFFを解除
+mov %save_on_flg,on	;セーブON命令を動作させる。
+mov %rroff,0
+
+;右クリック、お茶フラグ
+mov %r_u_tea_flg,0
+
+mov %bgm_mood_file_path_flg,0
+
+;tips配列の初期化
+for %tmp = 0 to 10
+	mov ?tips[%tmp][tips_flg],0
+next
+for %tmp = 0 to 15
+	mov ?grim[%tmp][grim_flg],0
+next
+
+;シーン変数を初期化
+mov %play_scene,0
+mov %grim_scene,0
+
+;-----------------------------------------
+
+;   Ｂｇｍスタート
+;  初期化とホワイトアウト
+E_B
+E_MA
+
+;シナリオ１クリア後とクリア前で背景、Meを変える
+if %UMINEKOEND = 0 meplay 1,2 : mov $tmp10,":b;bmp\title\bg.png"  ;convert to widescreen
+if %UMINEKOEND = 11 meplay 1,2 : mov $tmp10,":b;bmp\title\bg.png"  ;convert to widescreen
+if %UMINEKOEND = 12 meplay 1,2 : mov $tmp10,":b;bmp\title\bg.png"  ;convert to widescreen
+
+if %UMINEKOEND = 20 meplay 1,2 : mov $tmp10,aqu_i1c
+if %UMINEKOEND = 21 meplay 1,2 : mov $tmp10,aqu_i1c
+if %UMINEKOEND = 22 meplay 1,2 : mov $tmp10,aqu_i1c
+
+if %UMINEKOEND = 30 meplay 1,2 : mov $tmp10,garden_Se1a
+if %UMINEKOEND = 31 meplay 1,2 : mov $tmp10,garden_Se1a
+if %UMINEKOEND = 32 meplay 1,2 : mov $tmp10,garden_Se1a
+
+if %UMINEKOEND = 40 meplay 1,2 : mov $tmp10,portrait2
+if %UMINEKOEND = 41 meplay 1,2 : mov $tmp10,portrait2
+if %UMINEKOEND = 42 meplay 1,2 : mov $tmp10,portrait2
+if %UMINEKOEND >= 50 me1v 16,50 : mov $tmp10,":b;bmp\title\bg2.png"  ;fixed image
+
+mov %title_y,140
+
+csp -1                               ;スプライト画像の、メモリからの消去
+btndef ""                            ;ボタン画像の、メモリからの消去
+setwindow 31,16,26,20,23,23,0,2,20,1,1,#ffffff,0,0,639,479 ;utmeta-nomodify
+
+;順番に画像を表示していく（背景、ロゴ、各種ボタンの画像をメモリに読み込む）
+
+
+;Display Background
+lsph t_hane_lsp,":b;bmp\title\hana.png",577,11,150  ;convert to widescreen
+;lsph t_logo_lsp,"\bmp\title\logo.png",550,26  ;convert to widescreen
+mov $witchh4,"\bmp\title\logo.png"
+setLangString $witchh4,"a"
+lsph t_logo_lsp,$witchh4,550,26
+
+
+;----------------------
+;ボタンの配置
+
+	lsph t_btn_start_lsp,":b/2,0,3;bmp\title\title_menu\start.png",727,164  ;convert to widescreen
+	lsph t_btn_web_lsp,":b/2,0,3;bmp\title\website.png",728,453  ;convert to widescreen
+	lsph t_btn_controls_lsp,":b/2,0,3;bmp\title\title_menu\web.png",727,200  ;convert to widescreen
+
+	if %UMINEKOEND = 0 lsph t_btn_exit_lsp,":b/2,0,3;bmp\title\title_menu\exit1.png",727,236  ;convert to widescreen
+	if %UMINEKOEND = 11 lsph t_btn_exit_lsp,":b/2,0,3;bmp\title\title_menu\exit2.png",727,273  ;convert to widescreen
+	if %UMINEKOEND = 12 lsph t_btn_exit_lsp,":b/2,0,3;bmp\title\title_menu\exit3.png",727,309  ;convert to widescreen
+	if %UMINEKOEND >= 20 && %UMINEKOEND < 50 lsph t_btn_exit_lsp,":b/2,0,3;bmp\title\title_menu\exit4.png",727,345  ;convert to widescreen
+	if %UMINEKOEND >= 50 lsph t_btn_exit_lsp,":b/2,0,3;bmp\title\title_menu\exit5.png",727,380  ;convert to widescreen
+
+	;クリアフラグによってボタンの表示、非表示、EXITの高さを行う。
+	if %UMINEKOEND >= 11 lsph t_btn_tea_lsp,":b/2,0,3;bmp\title\title_menu\tea.png",727,236  ;convert to widescreen
+	if %UMINEKOEND >= 12 lsph t_btn_ura_tea_lsp,":b/2,0,3;bmp\title\title_menu\ura_tea.png",727,273  ;convert to widescreen
+	if %UMINEKOEND >= 20 lsph t_btn_tips_lsp,":b/2,0,3;bmp\title\title_menu\tips.png",727,309  ;convert to widescreen
+	if %UMINEKOEND >= 50 lsph t_btn_music_lsp,":b/2,0,3;bmp\title\title_menu\music.png",727,345  ;convert to widescreen
+
+	;新要素追加時（新要素追加のフラグ変数が所定の値になっている時には、表示するボタンを切り替える）
+	if %UMINEKOEND_FLG = 11 lsph t_btn_tea_lsp,":b/2,0,3;bmp\title\title_menu\new_tea.png",727,236  ;convert to widescreen
+	if %UMINEKOEND_FLG = 12 lsph t_btn_ura_tea_lsp,":b/2,0,3;bmp\title\title_menu\new_ura_tea.png",727,273  ;convert to widescreen
+	if %UMINEKOEND_TIPS_FLG = 1 lsph t_btn_tips_lsp,":b/2,0,3;bmp\title\title_menu\new_tips.png",727,309  ;convert to widescreen
+
+	if %UMINEKOEND_FLG = 20 lsph t_btn_start_lsp,":b/2,0,3;bmp\title\title_menu\new_start.png",727,164   ;convert to widescreen
+	if %UMINEKOEND_FLG = 21 lsph t_btn_tea_lsp,":b/2,0,3;bmp\title\title_menu\new_tea.png",727,273  ;convert to widescreen
+	if %UMINEKOEND_FLG = 22 lsph t_btn_ura_tea_lsp,":b/2,0,3;bmp\title\title_menu\new_ura_tea.png",727,309  ;convert to widescreen
+	if %UMINEKOEND_TIPS_FLG = 2 lsph t_btn_tips_lsp,":b/2,0,3;bmp\title\title_menu\new_tips.png",727,345  ;convert to widescreen
+
+	if %UMINEKOEND_FLG = 30 lsph t_btn_start_lsp,":b/2,0,3;bmp\title\title_menu\new_start.png",727,164  ;convert to widescreen
+	if %UMINEKOEND_FLG = 31 lsph t_btn_tea_lsp,":b/2,0,3;bmp\title\title_menu\new_tea.png",727,273  ;convert to widescreen
+	if %UMINEKOEND_FLG = 32 lsph t_btn_ura_tea_lsp,":b/2,0,3;bmp\title\title_menu\new_ura_tea.png",727,309  ;convert to widescreen
+	if %UMINEKOEND_TIPS_FLG = 3 lsph t_btn_tips_lsp,":b/2,0,3;bmp\title\title_menu\new_tips.png",727,345  ;convert to widescreen
+
+	if %UMINEKOEND_FLG = 40 lsph t_btn_start_lsp,":b/2,0,3;bmp\title\title_menu\new_start.png",727,164  ;convert to widescreen
+	if %UMINEKOEND_FLG = 41 lsph t_btn_tea_lsp,":b/2,0,3;bmp\title\title_menu\new_tea.png",727,273  ;convert to widescreen
+	if %UMINEKOEND_FLG = 42 lsph t_btn_ura_tea_lsp,":b/2,0,3;bmp\title\title_menu\new_ura_tea.png",727,309  ;convert to widescreen
+	if %UMINEKOEND_TIPS_FLG = 4 lsph t_btn_tips_lsp,":b/2,0,3;bmp\title\title_menu\new_tips.png",727,345  ;convert to widescreen
+	if %UMINEKOEND_MUSIC_FLG = 1 lsph t_btn_music_lsp,":b/2,0,3;bmp\title\title_menu\new_music.png",727,345  ;convert to widescreen
+
+;----------------------
+lr_trap *b_title_shunkan             ;クリックに反応して瞬間表示を行う
+
+;サークルロゴをスキップしていたたら、ここも瞬間表示にする。
+
+;瞬間表示でないのなら、順番に表示していく
+if %title_skip = 1 goto *b_title_skip_100
+   	cl a,1		;立ち絵の消去
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+	delay 2000
+
+	bg $tmp10,6
+	;vsp t_bg_lsp,1 : print 24
+	vsp t_hane_lsp,1 : print 5
+	vsp t_logo_lsp,1 : print 22
+	vsp t_btn_start_lsp,1 : print 22
+	vsp t_btn_controls_lsp,1 : print 22
+	
+	if %UMINEKOEND >= 11 vsp t_btn_tea_lsp,1 : _amsp t_btn_tea_lsp,727,236,250 : print 22  ;convert to widescreen
+	if %UMINEKOEND >= 12 vsp t_btn_ura_tea_lsp,1 : _amsp t_btn_ura_tea_lsp,727,273,250 :  print 22  ;convert to widescreen
+	if %UMINEKOEND >= 20 vsp t_btn_tips_lsp,1 : _amsp t_btn_tips_lsp,727,309,250 :  print 22  ;convert to widescreen
+	if %UMINEKOEND >= 50 vsp t_btn_music_lsp,1 : print 22
+	vsp t_btn_exit_lsp,1 : print 22
+
+	vsp t_btn_web_lsp,1 : print 22
+
+	;サブメニューのボタンは消去する
+	csp t_btn_ep1_lsp : csp t_btn_ep2_lsp : csp t_btn_ep3_lsp : csp t_btn_ep4_lsp
+	csp t_btn_ep2_unlock_lsp : csp t_btn_ep3_unlock_lsp : csp t_btn_ep4_unlock_lsp
+	csp t_btn_load_lsp
+	csp t_btn_ep1_tea_lsp : csp t_btn_ep2_tea_lsp : csp t_btn_ep3_tea_lsp : csp t_btn_ep4_tea_lsp
+	csp t_btn_ep1_tips_lsp : csp t_btn_ep2_tips_lsp : csp t_btn_ep3_tips_lsp : csp t_btn_ep4_tips_lsp
+	csp t_btn_ep1_ura_tea_lsp : csp t_btn_ep2_ura_tea_lsp : csp t_btn_ep3_ura_tea_lsp : csp t_btn_ep4_ura_tea_lsp
+        cl a,1		;立ち絵の消去
+*b_title_skip_100
+
+
+;瞬間表示なら下の処理を行う
+*b_title_shunkan
+lr_trap off
+
+	vsp t_bg_lsp,1
+	vsp t_hane_lsp,1
+	vsp t_logo_lsp,1
+	vsp t_btn_start_lsp,1
+	vsp t_btn_controls_lsp,1
+	vsp t_btn_exit_lsp,1
+	vsp t_btn_web_lsp,1
+	vsp t_btn_ep1_lsp,0
+	vsp t_btn_ep2_lsp,0
+	vsp t_btn_ep3_lsp,0
+	vsp t_btn_ep4_lsp,0
+	vsp t_btn_ep2_unlock_lsp,0
+	vsp t_btn_ep3_unlock_lsp,0
+	vsp t_btn_ep4_unlock_lsp,0
+    vsp t_btn_ep5_unlock_lsp,0
+	vsp t_btn_load_lsp,0
+	if %UMINEKOEND >= 11 vsp t_btn_tea_lsp,1 : _amsp t_btn_tea_lsp,727,236,250  ;convert to widescreen
+	if %UMINEKOEND >= 12 vsp t_btn_ura_tea_lsp,1 : _amsp t_btn_ura_tea_lsp,727,273,250  ;convert to widescreen
+	if %UMINEKOEND >= 20 vsp t_btn_tips_lsp,1 : _amsp t_btn_tips_lsp,727,309,250  ;convert to widescreen
+	if %UMINEKOEND >= 50 vsp t_btn_music_lsp,1
+
+	;サブメニューのボタンは消去する
+	;サブメニューのボタンは消去する
+	csp t_btn_ep1_lsp : csp t_btn_ep2_lsp : csp t_btn_ep3_lsp : csp t_btn_ep4_lsp
+	csp t_btn_ep2_unlock_lsp : csp t_btn_ep3_unlock_lsp : csp t_btn_ep4_unlock_lsp
+    csp t_btn_ep5_unlock_lsp
+	csp t_btn_load_lsp
+	csp t_btn_ep1_tea_lsp : csp t_btn_ep2_tea_lsp : csp t_btn_ep3_tea_lsp : csp t_btn_ep4_tea_lsp
+	csp t_btn_ep1_tips_lsp : csp t_btn_ep2_tips_lsp : csp t_btn_ep3_tips_lsp : csp t_btn_ep4_tips_lsp
+	csp t_btn_ep1_ura_tea_lsp : csp t_btn_ep2_ura_tea_lsp : csp t_btn_ep3_ura_tea_lsp : csp t_btn_ep4_ura_tea_lsp
+        cl a,1		;立ち絵の消去
+
+	bg $tmp10,1
+mov %title_skip,0 ;瞬間表示のフラグを解除
+
+
+;説明テキストの読み込み
+mov $witchh4, "bmp\title\txt_box\ep1.png"
+setLangString $witchh4, ""
+lsph t_txt_ep1_lsp,$witchh4,20,247
+
+mov $witchh4, "bmp\title\txt_box\ep2.png"
+setLangString $witchh4, ""
+lsph t_txt_ep2_lsp,$witchh4,20,247
+
+mov $witchh4, "bmp\title\txt_box\ep3.png"
+setLangString $witchh4, ""
+lsph t_txt_ep3_lsp,$witchh4,20,247
+
+mov $witchh4, "bmp\title\txt_box\ep4.png"
+setLangString $witchh4, ""
+lsph t_txt_ep4_lsp,$witchh4,20,247
+
+
+
+mov $witchh4, "bmp\title\txt_box\load.png"
+setLangString $witchh4, ""
+lsph t_txt_load_lsp,$witchh4,20,247
+
+mov $witchh4, "bmp\title\txt_box\web.png"
+setLangString $witchh4, ""
+lsph t_txt_web_lsp,$witchh4,20,247
+
+mov $witchh4, "bmp\title\txt_box\music.png"
+setLangString $witchh4, ""
+lsph t_txt_music_lsp,$witchh4,20,247
+
+mov $witchh4, "bmp\title\txt_box\start.png"
+setLangString $witchh4, ""
+lsph t_txt_start_lsp,$witchh4,20,247
+
+mov $witchh4, "bmp\title\txt_box\exit.png"
+setLangString $witchh4, ""
+lsph t_txt_exit_lsp,$witchh4,20,247
+
+mov $witchh4, "bmp\title\txt_box\warning.png"
+setLangString $witchh4, ""
+lsph t_txt_lock_lsp,$witchh4,20,247
+
+mov $witchh4, "bmp\title\txt_box\unlock.png"
+setLangString $witchh4, ""
+lsph t_txt_unlock_lsp,$witchh4,20,247
+
+
+mov $witchh4, "bmp\title\txt_box\tea.png"
+setLangString $witchh4, ""
+lsph t_txt_tea_lsp,$witchh4,20,247
+mov $witchh4, "bmp\title\txt_box\tea.png"
+setLangString $witchh4, ""
+lsph t_txt_ep1_tea_lsp,$witchh4,20,247
+mov $witchh4, "bmp\title\txt_box\tea.png"
+setLangString $witchh4, ""
+lsph t_txt_ep2_tea_lsp,$witchh4,20,247
+mov $witchh4, "bmp\title\txt_box\tea.png"
+setLangString $witchh4, ""
+lsph t_txt_ep3_tea_lsp,$witchh4,20,247
+mov $witchh4, "bmp\title\txt_box\tea.png"
+setLangString $witchh4, ""
+lsph t_txt_ep4_tea_lsp,$witchh4,20,247
+
+mov $witchh4, "bmp\title\txt_box\ura_tea.png"
+setLangString $witchh4, ""
+lsph t_txt_ura_tea_lsp,$witchh4,20,247
+mov $witchh4, "bmp\title\txt_box\ura_tea.png"
+setLangString $witchh4, ""
+lsph t_txt_ep1_ura_tea_lsp,$witchh4,20,247
+mov $witchh4, "bmp\title\txt_box\ura_tea.png"
+setLangString $witchh4, ""
+lsph t_txt_ep2_ura_tea_lsp,$witchh4,20,247
+mov $witchh4, "bmp\title\txt_box\ura_tea.png"
+setLangString $witchh4, ""
+lsph t_txt_ep3_ura_tea_lsp,$witchh4,20,247
+mov $witchh4, "bmp\title\txt_box\ura_tea.png"
+setLangString $witchh4, ""
+lsph t_txt_ep4_ura_tea_lsp,$witchh4,20,247
+
+mov $witchh4, "bmp\title\txt_box\tips.png"
+setLangString $witchh4, ""
+lsph t_txt_tips_lsp,$witchh4,20,247
+mov $witchh4, "bmp\title\txt_box\tips.png"
+setLangString $witchh4, ""
+lsph t_txt_ep1_tips_lsp,$witchh4,20,247
+mov $witchh4, "bmp\title\txt_box\tips.png"
+setLangString $witchh4, ""
+lsph t_txt_ep2_tips_lsp,$witchh4,20,247
+mov $witchh4, "bmp\title\txt_box\tips.png"
+setLangString $witchh4, ""
+lsph t_txt_ep3_tips_lsp,$witchh4,20,247
+mov $witchh4, "bmp\title\txt_box\tips.png"
+setLangString $witchh4, ""
+lsph t_txt_ep4_tips_lsp,$witchh4,20,247
+
+; ボタン定義と、ボタンクリック待ちの処理
+*b_title_botun_loop
+
+btndef ""
+
+
+exbtn_d "C80C81C82C83C84C85C86C87"
+
+exbtn t_btn_start_lsp,t_btn_start_lsp,"P82"
+exbtn t_btn_controls_lsp,t_btn_controls_lsp,"P86"
+exbtn t_btn_exit_lsp,t_btn_exit_lsp,"P81"
+exbtn t_btn_tea_lsp,t_btn_tea_lsp,"P85"
+exbtn t_btn_tips_lsp,t_btn_tips_lsp,"P84"
+exbtn t_btn_music_lsp,t_btn_music_lsp,"P83"
+exbtn t_btn_ura_tea_lsp,t_btn_ura_tea_lsp,"P80"
+
+exbtn t_btn_web_lsp,t_btn_web_lsp,""
+
+   btnwait2 %BtnRes
+
+	if %BtnRes = t_btn_start_lsp cell t_btn_start_lsp,1 : print 1:btndef "" : goto *start_sub_menu
+	if %BtnRes = t_btn_web_lsp seplay 9,1001 : menu_window : shell "http://07th-expansion.net"
+	; USAGI: replace bg white,1
+	if %BtnRes = t_btn_controls_lsp seplay 9,1001 : csp -1 : mov $witchh4,"bmp\title\manual.png" : setLangString $witchh4, "" : bg $witchh4,22: click : bg black,0 : mov %title_skip,1 : goto *b_title
+	if %BtnRes = t_btn_tea_lsp cell t_btn_tea_lsp,1 : print 1:btndef "" : goto *tea_sub_menu
+	if %BtnRes = t_btn_ura_tea_lsp cell t_btn_ura_tea_lsp,1 : print 1:btndef "" : goto *ura_tea_sub_menu
+	if %BtnRes = t_btn_tips_lsp cell t_btn_tips_lsp,1 : print 1:btndef "" : goto *tips_sub_menu
+	if %BtnRes = t_btn_exit_lsp seplay 9,18 : csp -1 : bg black,18,3000,"bmp\r_click\efe\kannon_r.bmp" : wait 3000 : end
+;xxxxrrrrvvvvzzzz
+;Taken out for the Music Box
+	if %BtnRes = t_btn_music_lsp btndef "" : goto *bgm_mode
+
+	
+goto *b_title_botun_loop
+
+;------------------------------
+;スタートを押した後のサブメニュー
+*start_sub_menu
+	btndef ""
+
+	seplay 1,51
+	;スタート以外のボタンを消して、ep1スタート、ロードの小ボタンを配置する。
+	;ep2、Unlockのボタンを配置する（注意：クリア状態で分岐）
+	;UMINEKOEND　<　20　未クリア状態、ブリンクしないEP2とUnlockボタンを表示
+	;UMINEKOEND　>=20　EP1をクリア、ブリンクありのEP2を表示する。
+
+	vsp t_btn_web_lsp,0
+	vsp t_btn_controls_lsp,0
+	vsp t_btn_tea_lsp,0
+	vsp t_btn_tips_lsp,0
+	vsp t_btn_exit_lsp,0
+	vsp t_btn_music_lsp,0
+	vsp t_btn_ura_tea_lsp,0
+
+	print 1
+
+
+
+   ;エピソード１、未クリア状態
+   ;------------------------------
+	*start_sub_menu_100
+	notif %UMINEKOEND < 20 goto *start_sub_menu_btn_100
+	
+		lsp t_btn_ep1_lsp,":bc/2,0,3;bmp\title\title_menu\ep1.png",803,200  ;convert to widescreen
+		lsp t_btn_ep2_lsp,":bc/2,0,3;bmp\title\title_menu\ep2_1.png",803,222  ;convert to widescreen
+		lsp t_btn_ep3_lsp,":bc/2,0,3;bmp\title\title_menu\ep3_1.png",803,244  ;convert to widescreen
+		lsp t_btn_ep4_lsp,":bc/2,0,3;bmp\title\title_menu\ep4_1.png",803,266  ;convert to widescreen
+		lsp t_btn_ep2_unlock_lsp,":bc/2,0,3;bmp\title\title_menu\unlock.png",727,222 ;convert to widescreen
+		lsp t_btn_ep3_unlock_lsp,":bc/2,0,3;bmp\title\title_menu\unlock.png",727,244 ;convert to widescreen
+		lsp t_btn_ep4_unlock_lsp,":bc/2,0,3;bmp\title\title_menu\unlock.png",727,266 ;convert to widescreen
+        lsp t_btn_ep5_unlock_lsp,":bc/2,0,3;bmp\title\title_menu\unlock.png",727,288 ;convert to widescreen
+		lsp t_btn_load_lsp,":bc/2,0,3;bmp\title\title_menu\load.png",803,287  ;convert to widescreen
+
+		print 85
+
+		*start_sub_menu_btn_100_loop
+		btndef ""
+
+		exbtn_d "P97,1C80C81C82C83C84C85C86C87C65C64C63C62C78C77"
+
+		exbtn t_btn_ep1_lsp,t_btn_ep1_lsp,"P65"
+		exbtn t_btn_ep2_lsp,t_btn_ep2_lsp,"P78"
+		exbtn t_btn_ep3_lsp,t_btn_ep3_lsp,"P78"
+		exbtn t_btn_ep4_lsp,t_btn_ep4_lsp,"P78"
+
+		exbtn t_btn_ep2_unlock_lsp,t_btn_ep2_unlock_lsp,"P77"
+		exbtn t_btn_ep3_unlock_lsp,t_btn_ep3_unlock_lsp,"P77"
+		exbtn t_btn_ep4_unlock_lsp,t_btn_ep4_unlock_lsp,"P77"
+        exbtn t_btn_ep5_unlock_lsp,t_btn_ep5_unlock_lsp,"P77"
+		exbtn t_btn_load_lsp,t_btn_load_lsp,"P87"
+		btnwait2 %BtnRes
+
+		if %BtnRes = t_btn_ep1_lsp mov %scenario_Number,1 : goto *umi_start
+		if %BtnRes = t_btn_ep2_lsp btndef "" : seplay 9,5 : goto *start_sub_menu_btn_100_loop ;弾かれた音を出してボタン処理へ
+		if %BtnRes = t_btn_ep3_lsp btndef "" : seplay 9,5 : goto *start_sub_menu_btn_100_loop ;弾かれた音を出してボタン処理へ
+		if %BtnRes = t_btn_ep4_lsp btndef "" : seplay 9,5 : goto *start_sub_menu_btn_100_loop ;弾かれた音を出してボタン処理へ
+
+		if %BtnRes = t_btn_ep2_unlock_lsp btndef "" : seplay 9,1001 : goto *ep2_unlock ;確認メッセージを出してアンロックする。
+		if %BtnRes = t_btn_ep3_unlock_lsp btndef "" : seplay 9,1001 : goto *ep3_unlock ;確認メッセージを出してアンロックする。
+		if %BtnRes = t_btn_ep4_unlock_lsp btndef "" : seplay 9,1001 : goto *ep4_unlock ;確認メッセージを出してアンロックする。
+        if %BtnRes = t_btn_ep5_unlock_lsp btndef "" : seplay 9,1001 : goto *ep5_unlock
+
+		if %BtnRes = t_btn_load_lsp btndef "" : seplay 9,1001 : mov %load_for_title,1 : gosub *loadmode : mov %title_skip,1 : goto *b_title
+		if %BtnRes = 0 btndef "" : seplay 9,1001 : mov %r_for_title,1 : goto *b_title_shunkan
+		if %BtnRes = -1 btndef "" : seplay 9,1001 : mov %r_for_title,1 : goto *b_title_shunkan
+		goto *start_sub_menu_btn_100_loop
+
+		;確認メッセージを出して、アンロック処理を行う
+		*ep2_unlock
+			mov $witchh4, "bmp\title\title_menu\unlock_kaku_bg.png"
+			setLangString $witchh4, ""
+			lsp unlock_bg_lsp,$witchh4,201,146
+			lsp unlock_yes_lsp,":b/2,0,3;bmp\r_click\sys_btn\yes.png",222,196
+			lsp unlock_no_lsp,":b/2,0,3;bmp\r_click\sys_btn\no.png",222,234
+			print 24
+			
+			;ボタン処理
+			*ep2_unlock_loop
+			btndef ""
+			spbtn unlock_yes_lsp,unlock_yes_lsp
+			spbtn unlock_no_lsp,unlock_no_lsp
+			btnwait2 %BtnRes   ;%bm_p
+			
+			notif %BtnRes = unlock_yes_lsp goto *ep2_unlock_100
+				;エピソード１をクリア状態にする。
+				se3 1001
+				mov %UMINEKOEND,20
+				mov %UMINEKOEND_FLG,20
+				wait 1000
+				E_A
+				se1 31
+				csp -1
+				fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+				
+				wait 2000
+				se1 25
+				mov $witchh4, TEXT006
+	setLangString $witchh4, ""
+bg $witchh4,22
+				delay 12000
+				fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+				E_A
+				goto *b_title
+			*ep2_unlock_100
+				
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep2_unlock_200
+				csp unlock_bg_lsp
+				csp unlock_yes_lsp
+				csp unlock_no_lsp
+				btndef ""
+				seplay 9,1001
+				print 1
+				goto *start_sub_menu_100
+			*ep2_unlock_200
+		goto *ep2_unlock_loop
+
+
+		;確認メッセージを出して、アンロック処理を行う
+		*ep3_unlock
+			mov $witchh4, "bmp\title\title_menu\unlock_kaku_bg.png"
+			setLangString $witchh4, ""
+			lsp unlock_bg_lsp,$witchh4,201,146
+			lsp unlock_yes_lsp,":b/2,0,3;bmp\r_click\sys_btn\yes.png",222,196
+			lsp unlock_no_lsp,":b/2,0,3;bmp\r_click\sys_btn\no.png",222,234
+			print 24
+			
+			;ボタン処理
+			*ep3_unlock_loop
+			btndef ""
+			spbtn unlock_yes_lsp,unlock_yes_lsp
+			spbtn unlock_no_lsp,unlock_no_lsp
+			btnwait2 %BtnRes   ;%bm_p
+			
+			notif %BtnRes = unlock_yes_lsp goto *ep3_unlock_100
+				;エピソード１をクリア状態にする。
+				se3 1001
+				mov %UMINEKOEND,30
+				mov %UMINEKOEND_FLG,30
+				wait 1000
+				E_A
+				se1 31
+				csp -1
+				fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+				
+				wait 2000
+				se1 25
+				mov $witchh4, TEXT006
+	setLangString $witchh4, ""
+bg $witchh4,22
+				delay 12000
+				fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+				E_A
+				goto *b_title
+			*ep3_unlock_100
+				
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep3_unlock_200
+				csp unlock_bg_lsp
+				csp unlock_yes_lsp
+				csp unlock_no_lsp
+				btndef ""
+				seplay 9,1001
+				print 1
+				goto *start_sub_menu_100
+			*ep3_unlock_200
+		goto *ep3_unlock_loop
+
+
+		;確認メッセージを出して、アンロック処理を行う
+		*ep4_unlock
+			mov $witchh4, "bmp\title\title_menu\unlock_kaku_bg.png"
+			setLangString $witchh4, ""
+			lsp unlock_bg_lsp,$witchh4,201,146
+			lsp unlock_yes_lsp,":b/2,0,3;bmp\r_click\sys_btn\yes.png",222,196
+			lsp unlock_no_lsp,":b/2,0,3;bmp\r_click\sys_btn\no.png",222,234
+			print 24
+			
+			;ボタン処理
+			*ep4_unlock_loop
+			btndef ""
+			spbtn unlock_yes_lsp,unlock_yes_lsp
+			spbtn unlock_no_lsp,unlock_no_lsp
+			btnwait2 %BtnRes   ;%bm_p
+			
+			notif %BtnRes = unlock_yes_lsp goto *ep4_unlock_100
+				;エピソード３をクリア状態にする。
+				se3 1001
+				mov %UMINEKOEND,40
+				mov %UMINEKOEND_FLG,40
+				wait 1000
+				E_A
+				se1 31
+				csp -1
+				fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+				
+				wait 2000
+				se1 25
+				mov $witchh4, TEXT006
+	setLangString $witchh4, ""
+bg $witchh4,22
+				delay 12000
+				fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+				E_A
+				goto *b_title
+			*ep4_unlock_100
+				
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep4_unlock_200
+				csp unlock_bg_lsp
+				csp unlock_yes_lsp
+				csp unlock_no_lsp
+				btndef ""
+				seplay 9,1001
+				print 1
+				goto *start_sub_menu_100
+			*ep4_unlock_200
+		goto *ep4_unlock_loop
+
+        *ep5_unlock
+			mov $witchh4, "bmp\title\title_menu\unlock_kaku_bg.png"
+			setLangString $witchh4, ""
+			lsp unlock_bg_lsp,$witchh4,201,146
+			lsp unlock_yes_lsp,":b/2,0,3;bmp\r_click\sys_btn\yes.png",222,196
+			lsp unlock_no_lsp,":b/2,0,3;bmp\r_click\sys_btn\no.png",222,234
+			print 24
+			
+			;ボタン処理
+			*ep5_unlock_loop
+			btndef ""
+			spbtn unlock_yes_lsp,unlock_yes_lsp
+			spbtn unlock_no_lsp,unlock_no_lsp
+			btnwait2 %BtnRes   ;%bm_p
+			
+			notif %BtnRes = unlock_yes_lsp goto *ep5_unlock_100
+				;エピソード３をクリア状態にする。
+				se3 1001
+				mov %UMINEKOEND,50
+				mov %UMINEKOEND_FLG,50
+                mov %UMINEKOEND_TIPS_FLG,4
+                mov %UMINEKOEND_MUSIC_FLG,1
+				wait 1000
+				E_A
+				se1 31
+				csp -1
+				fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+				
+				wait 2000
+				se1 25
+				mov $witchh4, TEXT006
+	setLangString $witchh4, ""
+bg $witchh4,22
+				delay 12000
+				fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+				E_A
+				goto *b_title
+			*ep5_unlock_100
+				
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep5_unlock_200
+				csp unlock_bg_lsp
+				csp unlock_yes_lsp
+				csp unlock_no_lsp
+				btndef ""
+				seplay 9,1001
+				print 1
+				goto *start_sub_menu_100
+			*ep5_unlock_200
+		goto *ep5_unlock_loop
+	*start_sub_menu_btn_100
+
+   ;------------------------------
+   ;エピソード１クリア､エピソード２未クリア状態
+	*start_sub_menu_200
+	notif %UMINEKOEND >= 20 goto *start_sub_menu_btn_200
+	notif %UMINEKOEND < 30 goto *start_sub_menu_btn_200
+
+		lsp t_btn_ep1_lsp,":bc/2,0,3;bmp\title\title_menu\ep1.png",803,200  ;convert to widescreen
+		lsp t_btn_ep2_lsp,":bc/2,0,3;bmp\title\title_menu\ep2_2.png",803,222  ;convert to widescreen
+		lsp t_btn_ep3_lsp,":bc/2,0,3;bmp\title\title_menu\ep3_1.png",803,244  ;convert to widescreen
+		lsp t_btn_ep4_lsp,":bc/2,0,3;bmp\title\title_menu\ep4_1.png",803,266  ;convert to widescreen
+		lsp t_btn_ep3_unlock_lsp,":bc/2,0,3;bmp\title\title_menu\unlock.png",727,244 ;convert to widescreen
+		lsp t_btn_ep4_unlock_lsp,":bc/2,0,3;bmp\title\title_menu\unlock.png",727,266 ;convert to widescreen
+        lsp t_btn_ep5_unlock_lsp,":bc/2,0,3;bmp\title\title_menu\unlock.png",727,288 ;convert to widescreen
+		lsp t_btn_load_lsp,":bc/2,0,3;bmp\title\title_menu\load.png",803,287  ;convert to widescreen
+
+
+		print 85
+
+		*start_sub_menu_btn_200_loop
+		btndef ""
+
+		exbtn_d "P97,1C80C81C82C83C84C85C86C87C65C64C63C62C78C77"
+
+		exbtn t_btn_ep1_lsp,t_btn_ep1_lsp,"P65"
+		exbtn t_btn_ep2_lsp,t_btn_ep2_lsp,"P64"
+		exbtn t_btn_ep3_lsp,t_btn_ep3_lsp,"P78"
+		exbtn t_btn_ep4_lsp,t_btn_ep4_lsp,"P78"
+		exbtn t_btn_ep3_unlock_lsp,t_btn_ep3_unlock_lsp,"P77"
+		exbtn t_btn_ep4_unlock_lsp,t_btn_ep4_unlock_lsp,"P77"
+        exbtn t_btn_ep5_unlock_lsp,t_btn_ep5_unlock_lsp,"P77"
+		exbtn t_btn_load_lsp,t_btn_load_lsp,"P87"
+
+		btnwait2 %BtnRes
+
+		if %BtnRes = t_btn_ep1_lsp mov %scenario_Number,1 : goto *umi_start
+		if %BtnRes = t_btn_ep2_lsp mov %scenario_Number,2 : goto *umi_start
+		if %BtnRes = t_btn_ep3_lsp btndef "" : seplay 9,5 : goto *start_sub_menu_btn_100_loop ;弾かれた音を出してボタン処理へ
+		if %BtnRes = t_btn_ep4_lsp btndef "" : seplay 9,5 : goto *start_sub_menu_btn_100_loop ;弾かれた音を出してボタン処理へ
+		if %BtnRes = t_btn_ep3_unlock_lsp btndef "" : seplay 9,1001 : goto *ep3_unlock_2 ;確認メッセージを出してアンロックする。
+		if %BtnRes = t_btn_ep4_unlock_lsp btndef "" : seplay 9,1001 : goto *ep4_unlock_2 ;確認メッセージを出してアンロックする。
+        if %BtnRes = t_btn_ep5_unlock_lsp btndef "" : seplay 9,1001 : goto *ep5_unlock ;確認メッセージを出してアンロックする。
+		if %BtnRes = t_btn_load_lsp btndef "" : seplay 9,1001 : mov %load_for_title,1 : gosub *loadmode : mov %title_skip,1 : goto *b_title
+		if %BtnRes = 0 btndef "" : seplay 9,1001 : mov %r_for_title,1 : goto *b_title_shunkan
+		if %BtnRes = -1 btndef "" : seplay 9,1001 : mov %r_for_title,1 : goto *b_title_shunkan
+		goto *start_sub_menu_btn_200_loop
+
+		;確認メッセージを出して、アンロック処理を行う
+		*ep3_unlock_2
+			mov $witchh4, "bmp\title\title_menu\unlock_kaku_bg.png"
+			setLangString $witchh4, ""
+			lsp unlock_bg_lsp,$witchh4,201,146
+			lsp unlock_yes_lsp,":b/2,0,3;bmp\r_click\sys_btn\yes.png",222,196
+			lsp unlock_no_lsp,":b/2,0,3;bmp\r_click\sys_btn\no.png",222,234
+			print 24
+			
+			;ボタン処理
+			*ep3_unlock_2_loop
+			btndef ""
+			spbtn unlock_yes_lsp,unlock_yes_lsp
+			spbtn unlock_no_lsp,unlock_no_lsp
+			btnwait2 %BtnRes   ;%bm_p
+			
+			notif %BtnRes = unlock_yes_lsp goto *ep3_unlock_2_100
+				;エピソード１をクリア状態にする。
+				se3 1001
+				mov %UMINEKOEND,30
+				mov %UMINEKOEND_FLG,30
+				wait 1000
+				E_A
+				se1 31
+				csp -1
+				fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+				
+				wait 2000
+				se1 25
+				mov $witchh4, TEXT006
+	setLangString $witchh4, ""
+bg $witchh4,22
+				delay 12000
+				fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+				E_A
+				goto *b_title
+			*ep3_unlock_2_100
+				
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep3_unlock_2_200
+				csp unlock_bg_lsp
+				csp unlock_yes_lsp
+				csp unlock_no_lsp
+				btndef ""
+				seplay 9,1001
+				print 1
+				goto *start_sub_menu_200
+			*ep3_unlock_2_200
+		goto *ep3_unlock_2_loop
+
+		;確認メッセージを出して、アンロック処理を行う
+		*ep4_unlock_2
+			mov $witchh4, "bmp\title\title_menu\unlock_kaku_bg.png"
+			setLangString $witchh4, ""
+			lsp unlock_bg_lsp,$witchh4,201,146
+			lsp unlock_yes_lsp,":b/2,0,3;bmp\r_click\sys_btn\yes.png",222,196
+			lsp unlock_no_lsp,":b/2,0,3;bmp\r_click\sys_btn\no.png",222,234
+			print 24
+			
+			;ボタン処理
+			*ep4_unlock_2_loop
+			btndef ""
+			spbtn unlock_yes_lsp,unlock_yes_lsp
+			spbtn unlock_no_lsp,unlock_no_lsp
+			btnwait2 %BtnRes   ;%bm_p
+			
+			notif %BtnRes = unlock_yes_lsp goto *ep4_unlock_2_100
+				;エピソード１をクリア状態にする。
+				se3 1001
+				mov %UMINEKOEND,40
+				mov %UMINEKOEND_FLG,40
+				wait 1000
+				E_A
+				se1 31
+				csp -1
+				fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+				
+				wait 2000
+				se1 25
+				mov $witchh4, TEXT006
+	setLangString $witchh4, ""
+bg $witchh4,22
+				delay 12000
+				fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+				E_A
+				goto *b_title
+			*ep4_unlock_2_100
+				
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep4_unlock_2_200
+				csp unlock_bg_lsp
+				csp unlock_yes_lsp
+				csp unlock_no_lsp
+				btndef ""
+				seplay 9,1001
+				print 1
+				goto *start_sub_menu_200
+			*ep4_unlock_2_200
+		goto *ep4_unlock_2_loop
+	*start_sub_menu_btn_200
+
+   ;------------------------------
+   ;エピソード2クリア状態
+	*start_sub_menu_300
+	notif %UMINEKOEND >= 30 goto *start_sub_menu_btn_300
+	notif %UMINEKOEND < 40 goto *start_sub_menu_btn_300
+		lsp t_btn_ep1_lsp,":bc/2,0,3;bmp\title\title_menu\ep1.png",803,200  ;convert to widescreen
+		lsp t_btn_ep2_lsp,":bc/2,0,3;bmp\title\title_menu\ep2_2.png",803,222  ;convert to widescreen
+		lsp t_btn_ep3_lsp,":bc/2,0,3;bmp\title\title_menu\ep3_2.png",803,244  ;convert to widescreen
+		lsp t_btn_ep4_lsp,":bc/2,0,3;bmp\title\title_menu\ep4_1.png",803,266  ;convert to widescreen
+		lsp t_btn_ep4_unlock_lsp,":bc/2,0,3;bmp\title\title_menu\unlock.png",727,266 ;convert to widescreen
+        lsp t_btn_ep5_unlock_lsp,":bc/2,0,3;bmp\title\title_menu\unlock.png",727,288
+		lsp t_btn_load_lsp,":bc/2,0,3;bmp\title\title_menu\load.png",803,287  ;convert to widescreen
+		print 85
+
+		*start_sub_menu_btn_300_loop
+		btndef ""
+
+		exbtn_d "P97,1C80C81C82C83C84C85C86C87C65C64C63C62C78C77"
+
+		exbtn t_btn_ep1_lsp,t_btn_ep1_lsp,"P65"
+		exbtn t_btn_ep2_lsp,t_btn_ep2_lsp,"P64"
+		exbtn t_btn_ep3_lsp,t_btn_ep3_lsp,"P63"
+		exbtn t_btn_ep4_lsp,t_btn_ep4_lsp,"P78"
+		exbtn t_btn_ep4_unlock_lsp,t_btn_ep4_unlock_lsp,"P77"
+        exbtn t_btn_ep5_unlock_lsp,t_btn_ep5_unlock_lsp,"P77"
+		exbtn t_btn_load_lsp,t_btn_load_lsp,"P87"
+
+		btnwait2 %BtnRes
+
+		if %BtnRes = t_btn_ep1_lsp mov %scenario_Number,1 : goto *umi_start
+		if %BtnRes = t_btn_ep2_lsp mov %scenario_Number,2 : goto *umi_start
+		if %BtnRes = t_btn_ep3_lsp mov %scenario_Number,3 : goto *umi_start
+		if %BtnRes = t_btn_ep4_lsp btndef "" : seplay 9,5 : goto *start_sub_menu_btn_100_loop ;弾かれた音を出してボタン処理へ
+		if %BtnRes = t_btn_ep4_unlock_lsp btndef "" : seplay 9,1001 : goto *ep4_unlock_3 ;確認メッセージを出してアンロックする。
+        if %BtnRes = t_btn_ep5_unlock_lsp btndef "" : seplay 9,1001 : goto *ep5_unlock ;確認メッセージを出してアンロックする。
+		if %BtnRes = t_btn_load_lsp btndef "" : seplay 9,1001 : mov %load_for_title,1 : gosub *loadmode : mov %title_skip,1 : goto *b_title
+		if %BtnRes = 0 btndef "" : seplay 9,1001 : mov %r_for_title,1 : goto *b_title_shunkan
+		if %BtnRes = -1 btndef "" : seplay 9,1001 : mov %r_for_title,1 : goto *b_title_shunkan
+		goto *start_sub_menu_btn_300_loop
+
+		;確認メッセージを出して、アンロック処理を行う
+		*ep4_unlock_3
+			mov $witchh4, "bmp\title\title_menu\unlock_kaku_bg.png"
+			setLangString $witchh4, ""
+			lsp unlock_bg_lsp,$witchh4,201,146
+			lsp unlock_yes_lsp,":b/2,0,3;bmp\r_click\sys_btn\yes.png",222,196
+			lsp unlock_no_lsp,":b/2,0,3;bmp\r_click\sys_btn\no.png",222,234
+			print 24
+			
+			;ボタン処理
+			*ep4_unlock_3_loop
+			btndef ""
+			spbtn unlock_yes_lsp,unlock_yes_lsp
+			spbtn unlock_no_lsp,unlock_no_lsp
+			btnwait2 %BtnRes   ;%bm_p
+			
+			notif %BtnRes = unlock_yes_lsp goto *ep4_unlock_3_100
+				;エピソード１をクリア状態にする。
+				se3 1001
+				mov %UMINEKOEND,40
+				mov %UMINEKOEND_FLG,40
+				wait 1000
+				E_A
+				se1 31
+				csp -1
+				fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+				
+				wait 2000
+				se1 25
+				mov $witchh4, TEXT006
+	setLangString $witchh4, ""
+bg $witchh4,22
+				delay 12000
+				fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+				E_A
+				goto *b_title
+			*ep4_unlock_3_100
+				
+			notif %BtnRes = unlock_no_lsp notif %BtnRes = -1 goto *ep4_unlock_3_200
+				csp unlock_bg_lsp
+				csp unlock_yes_lsp
+				csp unlock_no_lsp
+				btndef ""
+				seplay 9,1001
+				print 1
+				goto *start_sub_menu_300
+			*ep4_unlock_3_200
+		goto *ep4_unlock_3_loop
+	*start_sub_menu_btn_300
+   ;------------------------------
+   ;エピソード3クリア状態
+	*start_sub_menu_400
+	notif %UMINEKOEND >= 40 goto *start_sub_menu_btn_400
+		lsp t_btn_ep1_lsp,":bc/2,0,3;bmp\title\title_menu\ep1.png",803,200  ;convert to widescreen
+		lsp t_btn_ep2_lsp,":bc/2,0,3;bmp\title\title_menu\ep2_2.png",803,222  ;convert to widescreen
+		lsp t_btn_ep3_lsp,":bc/2,0,3;bmp\title\title_menu\ep3_2.png",803,244  ;convert to widescreen
+		lsp t_btn_ep4_lsp,":bc/2,0,3;bmp\title\title_menu\ep4_2.png",803,266  ;convert to widescreen
+        if %UMINEKOEND < 50 lsp t_btn_ep5_unlock_lsp,":bc/2,0,3;bmp\title\title_menu\unlock.png",727,288
+		lsp t_btn_load_lsp,":bc/2,0,3;bmp\title\title_menu\load.png",803,287  ;convert to widescreen
+		print 85
+
+		*start_sub_menu_btn_400_loop
+		btndef ""
+
+		exbtn_d "P97,1C80C81C82C83C84C85C86C87C65C64C63C62C78C77"
+
+		exbtn t_btn_ep1_lsp,t_btn_ep1_lsp,"P65"
+		exbtn t_btn_ep2_lsp,t_btn_ep2_lsp,"P64"
+		exbtn t_btn_ep3_lsp,t_btn_ep3_lsp,"P63"
+		exbtn t_btn_ep4_lsp,t_btn_ep4_lsp,"P62"
+        if %UMINEKOEND < 50 exbtn t_btn_ep5_unlock_lsp,t_btn_ep5_unlock_lsp,"P77"
+		exbtn t_btn_load_lsp,t_btn_load_lsp,"P87"
+
+		btnwait2 %BtnRes
+
+		if %BtnRes = t_btn_ep1_lsp mov %scenario_Number,1 : goto *umi_start
+		if %BtnRes = t_btn_ep2_lsp mov %scenario_Number,2 : goto *umi_start
+		if %BtnRes = t_btn_ep3_lsp mov %scenario_Number,3 : goto *umi_start
+		if %BtnRes = t_btn_ep4_lsp mov %scenario_Number,4 : goto *umi_start
+        if %BtnRes = t_btn_ep5_unlock_lsp btndef "" : seplay 9,1001 : goto *ep5_unlock
+		if %BtnRes = t_btn_load_lsp btndef "" : seplay 9,1001 : mov %load_for_title,1 : gosub *loadmode : mov %title_skip,1 : goto *b_title
+		if %BtnRes = 0 btndef "" : seplay 9,1001 : mov %r_for_title,1 : goto *b_title_shunkan
+		if %BtnRes = -1 btndef "" : seplay 9,1001 : mov %r_for_title,1 : goto *b_title_shunkan
+		goto *start_sub_menu_btn_400_loop
+	*start_sub_menu_btn_400
+;------------------------------
+
+;------------------------------
+;お茶会を押した後のサブメニュー
+*tea_sub_menu
+	btndef ""
+
+	;お茶会以外のボタンを消して、エピソード毎のお茶会ボタンを表示する
+	;クリアフラグに注意、１以上でep1、３以上でep2を表示して行く。
+
+	vsp t_btn_start_lsp,0
+	vsp t_btn_web_lsp,0
+	vsp t_btn_controls_lsp,0
+	;vsp t_btn_tea_lsp,0
+	vsp t_btn_tips_lsp,0
+	vsp t_btn_exit_lsp,0
+	vsp t_btn_music_lsp,0
+	vsp t_btn_ura_tea_lsp,0
+
+	seplay 1,51
+	print 1
+
+	wait 100
+
+	;お茶会ボタン上にずらす。
+	resettimer
+	msp t_btn_tea_lsp,0,-18,-100 : print 1 : waittimer 50
+	msp t_btn_tea_lsp,0,-18,0 : print 1 : waittimer 100
+	msp t_btn_tea_lsp,0,-18,0 : print 1 : waittimer 150
+	msp t_btn_tea_lsp,0,-18,100 :print 1
+	seplay 9,1001
+
+	*tea_sub_menu_100
+
+	;クリア状態によって表示するレイヤーを調整
+	if %UMINEKOEND >= 11 lsp t_btn_ep1_tea_lsp,":bc/2,0,3;bmp\title\title_menu\ep1_tea.png",803,201  ;convert to widescreen
+	if %UMINEKOEND >= 21 lsp t_btn_ep2_tea_lsp,":bc/2,0,3;bmp\title\title_menu\ep2_tea.png",803,223  ;convert to widescreen
+	if %UMINEKOEND >= 31 lsp t_btn_ep3_tea_lsp,":bc/2,0,3;bmp\title\title_menu\ep3_tea.png",803,245  ;convert to widescreen
+	if %UMINEKOEND >= 41 lsp t_btn_ep4_tea_lsp,":bc/2,0,3;bmp\title\title_menu\ep4_tea.png",803,266  ;convert to widescreen
+	print 85 ;15,10
+
+	*tea_sub_menu_btn_100_loop
+		btndef ""
+		exbtn_d "P94,1C80C81C82C83C84C86C45C44C43C42"
+
+		exbtn t_btn_ep1_tea_lsp,t_btn_ep1_tea_lsp,""
+		exbtn t_btn_ep2_tea_lsp,t_btn_ep2_tea_lsp,""
+		exbtn t_btn_ep3_tea_lsp,t_btn_ep3_tea_lsp,""
+		exbtn t_btn_ep4_tea_lsp,t_btn_ep4_tea_lsp,""
+
+		btnwait2 %BtnRes
+
+		if %BtnRes = t_btn_ep1_tea_lsp btndef "" : mov %scenario_Number,1 : csp -1 : seplay 9,17 : bg white,10 : delay 2000 : goto *teatime_1
+		if %BtnRes = t_btn_ep2_tea_lsp btndef "" : mov %scenario_Number,2 : csp -1 : seplay 9,17 : bg white,10 : delay 2000 : goto *teatime_2
+		if %BtnRes = t_btn_ep3_tea_lsp btndef "" : mov %scenario_Number,3 : csp -1 : seplay 9,17 : bg white,10 : delay 2000 : goto *teatime_3
+		if %BtnRes = t_btn_ep4_tea_lsp btndef "" : mov %scenario_Number,4 : csp -1 : seplay 9,17 : bg white,10 : delay 2000 : goto *teatime_4
+		if %BtnRes = 0 btndef "" : seplay 9,1001 : mov %r_for_title,1 : goto *b_title_shunkan
+		if %BtnRes = -1 btndef "" : seplay 9,1001 : mov %r_for_title,1 : goto *b_title_shunkan
+goto *tea_sub_menu_btn_100_loop
+;------------------------------
+
+
+;------------------------------
+;裏お茶会を押した後のサブメニュー
+*ura_tea_sub_menu
+	btndef ""
+
+	;お茶会以外のボタンを消して、エピソード毎のお茶会ボタンを表示する
+	;クリアフラグに注意、１以上でep1、３以上でep2を表示して行く。
+
+	vsp t_btn_start_lsp,0
+	vsp t_btn_web_lsp,0
+	vsp t_btn_controls_lsp,0
+	vsp t_btn_tea_lsp,0
+	vsp t_btn_tips_lsp,0
+	vsp t_btn_exit_lsp,0
+	vsp t_btn_music_lsp,0
+	;vsp t_btn_ura_tea_lsp,0
+
+	seplay 1,51
+	print 1
+
+	wait 100
+
+	;お茶会ボタン上にずらす。
+	resettimer
+	msp t_btn_ura_tea_lsp,0,-18,-100 : print 1 : waittimer 50
+	msp t_btn_ura_tea_lsp,0,-18,0 : print 1 : waittimer 100
+	msp t_btn_ura_tea_lsp,0,-18,0 : print 1 : waittimer 150
+	msp t_btn_ura_tea_lsp,0,-18,0 : print 1 : waittimer 200
+	msp t_btn_ura_tea_lsp,0,-18,50 : print 1 : waittimer 250
+	msp t_btn_ura_tea_lsp,0,-18,50 :print 1
+	seplay 9,1001
+
+	*ura_tea_sub_menu_100
+
+	;クリア状態によって表示するレイヤーを調整
+	if %UMINEKOEND >= 12 lsp t_btn_ep1_ura_tea_lsp,":bc/2,0,3;bmp\title\title_menu\ep1_ura_tea.png",803,201  ;convert to widescreen
+	if %UMINEKOEND >= 22 lsp t_btn_ep2_ura_tea_lsp,":bc/2,0,3;bmp\title\title_menu\ep2_ura_tea.png",803,223  ;convert to widescreen
+	if %UMINEKOEND >= 32 lsp t_btn_ep3_ura_tea_lsp,":bc/2,0,3;bmp\title\title_menu\ep3_ura_tea.png",803,245  ;convert to widescreen
+	if %UMINEKOEND >= 42 lsp t_btn_ep4_ura_tea_lsp,":bc/2,0,3;bmp\title\title_menu\ep4_ura_tea.png",803,267  ;convert to widescreen
+	print 85 ;15,10
+
+	*ura_tea_sub_menu_btn_100_loop
+		btndef ""
+
+		exbtn_d "P91,1C81C82C83C84C86C25C24C23C22"
+
+		exbtn t_btn_ep1_ura_tea_lsp,t_btn_ep1_ura_tea_lsp,""
+		exbtn t_btn_ep2_ura_tea_lsp,t_btn_ep2_ura_tea_lsp,""
+		exbtn t_btn_ep3_ura_tea_lsp,t_btn_ep3_ura_tea_lsp,""
+		exbtn t_btn_ep4_ura_tea_lsp,t_btn_ep4_ura_tea_lsp,""
+		btnwait2 %BtnRes
+
+		if %BtnRes = t_btn_ep1_ura_tea_lsp btndef "" : mov %scenario_Number,1 : csp -1 : seplay 9,17 : bg white,10 : delay 2000 : goto *ura_teatime_1
+		if %BtnRes = t_btn_ep2_ura_tea_lsp btndef "" : mov %scenario_Number,2 : csp -1 : seplay 9,17 : bg white,10 : delay 2000 : goto *ura_teatime_2
+		if %BtnRes = t_btn_ep3_ura_tea_lsp btndef "" : mov %scenario_Number,3 : csp -1 : seplay 9,17 : bg white,10 : delay 2000 : goto *ura_teatime_3
+		if %BtnRes = t_btn_ep4_ura_tea_lsp btndef "" : mov %scenario_Number,4 : csp -1 : seplay 9,17 : bg white,10 : delay 2000 : goto *ura_teatime_4
+		if %BtnRes = 0 btndef "" : seplay 9,1001 : mov %r_for_title,1 : goto *b_title_shunkan
+		if %BtnRes = -1 btndef "" : seplay 9,1001 : mov %r_for_title,1 : goto *b_title_shunkan
+goto *ura_tea_sub_menu_btn_100_loop
+
+;------------------------------
+
+;------------------------------
+;Tipsを押した後のサブメニュー
+*tips_sub_menu
+	btndef ""
+
+	vsp t_btn_start_lsp,0
+	vsp t_btn_web_lsp,0
+	vsp t_btn_controls_lsp,0
+	vsp t_btn_tea_lsp,0
+	;vsp t_btn_tips_lsp,0
+	vsp t_btn_exit_lsp,0
+	vsp t_btn_music_lsp,0
+	vsp t_btn_ura_tea_lsp,0
+
+	seplay 8,1001
+	print 1
+
+	wait 100
+
+	;Tipsボタン上にずらす。
+	resettimer
+	msp t_btn_tips_lsp,0,-18,-100 : print 1 : waittimer 50
+	msp t_btn_tips_lsp,0,-18,0 : print 1 : waittimer 100
+	msp t_btn_tips_lsp,0,-18,0 : print 1 : waittimer 150
+	msp t_btn_tips_lsp,0,-18,0 : print 1 : waittimer 200
+	msp t_btn_tips_lsp,0,-18,0 : print 1 : waittimer 250
+	msp t_btn_tips_lsp,0,-18,0 : print 1 : waittimer 300
+	msp t_btn_tips_lsp,0,-18,50 : print 1 : waittimer 350
+	msp t_btn_tips_lsp,0,-18,50 :print 1
+	seplay 9,1001
+
+	*tips_sub_menu_100
+
+	;クリア状態によって表示するレイヤーを調整
+	if %UMINEKOEND >= 20 lsp t_btn_ep1_tips_lsp,":bc/2,0,3;bmp\title\title_menu\ep1_tips.png",803,201  ;convert to widescreen
+	if %UMINEKOEND >= 30 lsp t_btn_ep2_tips_lsp,":bc/2,0,3;bmp\title\title_menu\ep2_tips.png",803,223  ;convert to widescreen
+	if %UMINEKOEND >= 40 lsp t_btn_ep3_tips_lsp,":bc/2,0,3;bmp\title\title_menu\ep3_tips.png",803,245  ;convert to widescreen
+	if %UMINEKOEND >= 50 lsp t_btn_ep4_tips_lsp,":bc/2,0,3;bmp\title\title_menu\ep4_tips.png",803,267  ;convert to widescreen
+	print 85 ;15,10
+
+	*tips_sub_menu_btn_100_loop
+		btndef ""
+
+		exbtn_d "P93,1C79C81C82C83C86C35C34C33C32"
+
+		exbtn t_btn_ep1_tips_lsp,t_btn_ep1_tips_lsp,""
+		exbtn t_btn_ep2_tips_lsp,t_btn_ep2_tips_lsp,""
+		exbtn t_btn_ep3_tips_lsp,t_btn_ep3_tips_lsp,""
+		exbtn t_btn_ep4_tips_lsp,t_btn_ep4_tips_lsp,""
+
+		btnwait2 %BtnRes
+		mov %r_last_language,%cur_language
+		if %BtnRes = t_btn_ep1_tips_lsp csp -1 : mov %scenario_Number,1 : seplay 9,1001 : bg black,10,200 : mov %r_hyouji,1 : mov %r_for_title,1 : gosub *rmenu_main_ep1 : mov %title_skip,1 : goto *b_title
+		if %BtnRes = t_btn_ep2_tips_lsp csp -1 : mov %scenario_Number,2 : seplay 9,1001 : bg black,10,200 : mov %r_hyouji,1 : mov %r_for_title,1 : gosub *rmenu_main_ep2 : mov %title_skip,1 : goto *b_title
+		if %BtnRes = t_btn_ep3_tips_lsp csp -1 : mov %scenario_Number,3 : seplay 9,1001 : bg black,10,200 : mov %r_hyouji,1 : mov %r_for_title,1 : gosub *rmenu_main_ep3 : mov %title_skip,1 : goto *b_title
+		if %BtnRes = t_btn_ep4_tips_lsp csp -1 : mov %scenario_Number,4 : seplay 9,1001 : bg black,10,200 : mov %r_hyouji,1 : mov %r_for_title,1 : gosub *rmenu_main_ep4 : mov %title_skip,1 : goto *b_title
+		if %BtnRes = 0 btndef "" : seplay 9,1001 : mov %r_for_title,1 : goto *b_title_shunkan
+		if %BtnRes = -1 btndef "" : seplay 9,1001 : mov %r_for_title,1 : goto *b_title_shunkan
+goto *tips_sub_menu_btn_100_loop
+
+;------------------------------
+
+
+;＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+*umi_start
+mov %m_temp1,1
+csp -1
+seplay 9,17
+bg white,10
+E_MA
+delay 2000
+
+if %scenario_Number = 1 goto *umi1_standby
+if %scenario_Number = 2 goto *umi2_standby
+if %scenario_Number = 3 goto *umi3_standby
+if %scenario_Number = 4 goto *umi4_standby
+
+;多分、シナリオ選択画面になる予定
+
+*umi1_standby
+ if %UMINEKOEND >= 11 goto *scenario_jump_q
+ gosub *jump_sysdata_set1_1
+ goto *umi1_opning
+
+*umi2_standby
+ if %UMINEKOEND >= 21 goto *scenario_jump_q
+ gosub *jump_sysdata_set1_1
+ goto *umi2_opning
+
+*umi3_standby
+ if %UMINEKOEND >= 31 goto *scenario_jump_q
+ gosub *jump_sysdata_set1_1
+ goto *umi3_opning
+
+*umi4_standby
+ if %UMINEKOEND >= 41 goto *scenario_jump_q
+ if %UMINEKOPATCH > 0 goto *scenario_jump_q
+
+;xxxxzzzzyyyytttt
+ gosub *jump_sysdata_set1_1
+ goto *umi4_opning
+
+;***********************************************************
+;
+; シナリオジャンプモード
+;
+;***********************************************************
+*scenario_jump_q
+
+;テスト用
+;mov %scenario_Number,1
+;mov %scenario_Number,2
+
+	;シナリオジャンプモード使用確認
+
+	;デバックモード
+	;if %debagu = 1:csp -1:bg black,1: goto *scenario_jump_name
+
+	csp -1
+	;時計に花飾りを表示、背景はチェス盤を使用する。
+	lsp 703,":c;bmp\r_click\black.bmp",0,0,100
+
+	lsp 701,":b;bmp\efe\hana_u.png",0,0,150
+	lsp 702,":b;bmp\efe\hana_d.png",0,414,150
+
+	;小さい時計の画像を用意する。
+	;lsp 701,":a;bmp\system\jump\clock.bmp",192,112
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\chess1.jpg",":b;bmp\background\efe\chess1.png",2
+	
+setwindow 191,16,25,20,26,26,0,2,20,1,1,#ffffff,0,0,960,540 ;utmeta-nomodify
+
+locate 0,4
+langjp^          　　　時を進める魔法が使用できます。
+langen^~c4~ Vous pouvez utiliser la magie
+langen^~c4~ pour faire avancer le temps.
+
+br
+notif %cur_language = 1 jumpf
+langjp
+select "　　　　　魔法を使用する",*scenario_jump_name,"　　　　　魔法を使用しない",*scenario_start
+~
+select "^~c4~              Utiliser la magie",*scenario_jump_name,"^~c4~           Ne pas utiliser la magie",*scenario_start
+
+;--------------------------------------------
+
+*scenario_start    ;シナリオを最初からはじめる
+
+	;開始シナリオ確認
+	if %scenario_Number = 1 gosub *jump_sysdata_set1_1 : goto *umi1_opning ;シナリオ１　基本データ収得
+	if %scenario_Number = 2 gosub *jump_sysdata_set1_1 : goto *umi2_opning ;シナリオ２　基本データ収得
+	if %scenario_Number = 3 gosub *jump_sysdata_set1_1 : goto *umi3_opning ;シナリオ３　基本データ収得
+	if %scenario_Number = 4 gosub *jump_sysdata_set1_1 : goto *umi4_opning ;シナリオ４　基本データ収得
+
+;--------------------------------------------
+
+*scenario_jump_name
+
+setwindow 191,16,22,16,24,24,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+
+;シナリオ変数によりタイトル名取得
+
+notif %scenario_Number = 1 goto *postep1jumps
+;notif %scenario_Number = 0 jumpf     ;テストモード
+;mov %scenario_Number,4 : jumpf
+
+;シナリオ１
+mov %Free1,501
+
+mov %Free2,17
+
+notif %cur_language = 1 goto *engjumpsep1
+
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Arrivée à l'aéroport de Niijima       sam. 4 oct. 1986 08:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Arrivée à Rokkenjima            sam. 4 oct. 1986 10:30" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~résidence des invités                       sam. 4 oct. 1986 12:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Salle à manger                      sam. 4 oct. 1986 13:30" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Épitaphe du portrait          sam. 4 oct. 1986 13:30" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Plage de sable                      sam. 4 oct. 1986 15:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Lettre et parapluie              sam. 4 oct. 1986 18:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Légende de l'or               sam. 4 oct. 1986 22:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Nuit de tempête               sam. 4 oct. 1986 -------" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Les six élus par la clé        dim. 5 oct. 1986 06:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Le rideau se lève sur la tragédie          dim. 5 oct. 1986 08:45" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Occulte                           dim. 5 oct. 1986 13:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Deux êtres proches            dim. 5 oct. 1986 19:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Chaufferie                      dim. 5 oct. 1986 -------" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Assiégés                         dim. 5 oct. 1986 20:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~La Sorcière d'Or                 dim. 5 oct. 1986 23:30" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Fragment de carnet dans une bouteille de vin" :inc %Free1 
+
+goto *postep1jumps
+
+*engjumpsep1
+
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Arrivée à l'aéroport de Niijima       sam. 4 oct. 1986 08:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Arrivée à Rokkenjima            sam. 4 oct. 1986 10:30" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~résidence des invités                       sam. 4 oct. 1986 12:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Salle à manger                      sam. 4 oct. 1986 13:30" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Épitaphe du portrait          sam. 4 oct. 1986 13:30" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Plage de sable                      sam. 4 oct. 1986 15:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Lettre et parapluie              sam. 4 oct. 1986 18:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Légende de l'or               sam. 4 oct. 1986 22:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Nuit de tempête               sam. 4 oct. 1986 -------" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Les six élus par la clé        dim. 5 oct. 1986 06:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Le rideau se lève sur la tragédie          dim. 5 oct. 1986 08:45" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Occulte                           dim. 5 oct. 1986 13:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Deux êtres proches            dim. 5 oct. 1986 19:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Chaufferie                      dim. 5 oct. 1986 -------" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Assiégés                         dim. 5 oct. 1986 20:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~La Sorcière d'Or                 dim. 5 oct. 1986 23:30" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Fragment de carnet dans une bouteille de vin" :inc %Free1 
+
+*postep1jumps
+
+
+
+notif %scenario_Number = 2 goto *postep2jumps
+
+
+mov %Free1,501
+
+
+mov %Free2,18
+
+notif %cur_language = 1 goto *engjumpsep2
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Meuble                " :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Utopie merveilleuse        " :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Festival culturel scolaire             " :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Préparatifs de l'échiquier          sam. 4 oct. 1986  " :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Invité d'honneur                   sam. 4 oct. 1986 10:45" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Le coup de la sorcière                sam. 4 oct. 1986 13:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Meubles et humains     sam. 4 oct. 1986 18:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Alliance                     sam. 4 oct. 1986 22:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Halloween                        dim. 5 oct. 1986 06:00" :inc %Free1 
+
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Jessica et Kanon                dim. 5 oct. 1986 06:43" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Nouvelle règle                         dim. 5 oct. 1986 06:50" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Un suspect                        dim. 5 oct. 1986 07:30" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Énigme des loups et des moutons          dim. 5 oct. 1986 13:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Preuve du diable                   dim. 5 oct. 1986 13:17" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Résistance éphémère              dim. 5 oct. 1986 18:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Capitulation                        dim. 5 oct. 1986 21:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Résurrection                     dim. 5 oct. 1986 23:30" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Le banquet de la sorcière             dim. 5 oct. 1986 23:59" :inc %Free1 
+
+goto *postep2jumps
+
+*engjumpsep2
+
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Meuble                " :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Utopie merveilleuse        " :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Festival culturel scolaire             " :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Préparatifs de l'échiquier          sam. 4 oct. 1986  " :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Invité d'honneur                   sam. 4 oct. 1986 10:45" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Le coup de la sorcière                sam. 4 oct. 1986 13:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Meubles et humains     sam. 4 oct. 1986 18:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Alliance                     sam. 4 oct. 1986 22:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Halloween                        dim. 5 oct. 1986 06:00" :inc %Free1 
+
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Jessica et Kanon                dim. 5 oct. 1986 06:43" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Nouvelle règle                         dim. 5 oct. 1986 06:50" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Un suspect                        dim. 5 oct. 1986 07:30" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Énigme des loups et des moutons          dim. 5 oct. 1986 13:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Preuve du diable                   dim. 5 oct. 1986 13:17" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Résistance éphémère              dim. 5 oct. 1986 18:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Capitulation                        dim. 5 oct. 1986 21:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Résurrection                     dim. 5 oct. 1986 23:30" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Le banquet de la sorcière             dim. 5 oct. 1986 23:59" :inc %Free1 
+*postep2jumps
+
+
+notif %scenario_Number = 3 goto *postep3jumps
+
+mov %scenario_Number,3     
+
+
+mov %Free1,501
+mov %Free2,18
+notif %cur_language = 1 goto *engjumpsep3
+
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Jeunesse                   sam. 4 oct. 1986  " :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Je suis fin prête     sam. 4 oct. 1986 14:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~La lettre de défi de la sorcière   sam. 4 oct. 1986 20:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~La possibilité d'une 19e personne     sam. 4 oct. 1986 21:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Rosa et la sorcière de la forêt                        " :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Début de la cérémonie    dim. 5 oct. 1986 00:00  " :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Madame Béatrice                   dim. 5 oct. 1986 00:21" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Virgilia                         dim. 5 oct. 1986 06:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Escarmouche                         dim. 5 oct. 1986 07:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~La clé de la Terre d'Or       dim. 5 oct. 1986 09:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Couronnement                       dim. 5 oct. 1986 10:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~La nouvelle sorcière                    dim. 5 oct. 1986 10:30" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Annonce des sacrifices            dim. 5 oct. 1986 11:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Combat à mort dans le hall  dim. 5 oct. 1986 13:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~La définition d'une sorcière        dim. 5 oct. 1986 13:30" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~La véritable magie                       dim. 5 oct. 1986 17:44" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Le tribunal de la sorcière           dim. 5 oct. 1986 18:03" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~L'illusion de la sorcière　　　　　　　　　　　　　　　　　　　　　      " :inc %Free1 
+
+goto *postep3jumps
+
+*engjumpsep3
+
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Jeunesse                   sam. 4 oct. 1986  " :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Je suis fin prête     sam. 4 oct. 1986 14:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~La lettre de défi de la sorcière   sam. 4 oct. 1986 20:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~La possibilité d'une 19e personne     sam. 4 oct. 1986 21:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Rosa et la sorcière de la forêt                        " :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Début de la cérémonie    dim. 5 oct. 1986 00:00  " :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Madame Béatrice                   dim. 5 oct. 1986 00:21" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Virgilia                         dim. 5 oct. 1986 06:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Escarmouche                         dim. 5 oct. 1986 07:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~La clé de la Terre d'Or       dim. 5 oct. 1986 09:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Couronnement                       dim. 5 oct. 1986 10:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~La nouvelle sorcière                    dim. 5 oct. 1986 10:30" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Annonce des sacrifices            dim. 5 oct. 1986 11:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Combat à mort dans le hall  dim. 5 oct. 1986 13:00" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~La définition d'une sorcière        dim. 5 oct. 1986 13:30" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~La véritable magie                       dim. 5 oct. 1986 17:44" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Le tribunal de la sorcière           dim. 5 oct. 1986 18:03" :inc %Free1 
+ mov $%Free1,":s#C7C7C7#FFFFFF^~c4~L'illusion de la sorcière　　　　　　　　　　　　　　　　　　　　　      " :inc %Free1 
+
+*postep3jumps
+
+
+
+notif %scenario_Number = 4 goto *scenario_jump
+
+	mov %scenario_Number,4     
+
+	mov %Free1,501
+
+;シナリオ４のラベル数取得
+if %UMINEKOEND >= 41 mov %Free2,19
+;xxxxyyyyzzzztttt
+if %UMINEKOEND < 41 mov %Free2,10
+
+notif %cur_language = 1 goto *engjumpsep4
+
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Le nouvel invité"			: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Ange et Maria"			: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Le futur, douze ans plus tard"			: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Vérité rouge, vérité bleue"		: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Souvenirs d'Ange"			: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Mariage Sorcière"	: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Invitation aux illusions"			: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Mon monde"				: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Sakutaro"				: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Vers l'île de la sorcière"			: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Kinzo Ushiromiya"			: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Le doux monde des sorcières"		: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Cachot"				: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Ma mission"				: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~La dernière conférence familiale"			: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Le prochain chef de famille"				: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~La cause de la tragédie"			: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Le terme du voyage"			: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Ange Ushiromiya"			: inc %Free1 
+
+
+goto *postep4jumps
+
+*engjumpsep4
+
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Le nouvel invité"			: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Ange et Maria"			: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Le futur, douze ans plus tard"			: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Vérité rouge, vérité bleue"		: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Souvenirs d'Ange"			: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Mariage Sorcière"	: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Invitation aux illusions"			: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Mon monde"				: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Sakutaro"				: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Vers l'île de la sorcière"			: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Kinzo Ushiromiya"			: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Le doux monde des sorcières"		: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Cachot"				: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Ma mission"				: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~La dernière conférence familiale"			: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Le prochain chef de famille"				: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~La cause de la tragédie"			: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Le terme du voyage"			: inc %Free1 
+	mov $%Free1,":s#C7C7C7#FFFFFF^~c4~Ange Ushiromiya"			: inc %Free1 
+
+*postep4jumps
+
+*scenario_jump
+mov %Free1,501
+
+;Ｘ軸基本値
+;mov %x,50
+mov %x,157  ;convert to widescreen
+;if %scenario_Number = 3 mov %x,50
+
+;Ｙ軸基本値
+mov %y,70
+if %scenario_Number = 2 mov %y,50
+;if %scenario_Number = 3 mov %y,157  ;convert to widescreen
+if %scenario_Number = 3 mov %y,51  ;convert to widescreen
+
+;画面配置
+;説明テキストの表示
+
+notif %cur_language = 1 jumpf
+lsp 500,":s#FFFFFF行き先をご選択くださいませ",50,20
+if %scenario_Number = 2 lsp 500,":s#FFFFFF行き先をご選択くださいませ",100,10
+~
+
+notif %cur_language = 0 jumpf
+lsp 500,":s#FFFFFF^Veuillez choisir votre destination.  ",50,20  ;;行き先をご選択くださいませ
+if %scenario_Number = 2 lsp 500,":s#FFFFFF^Veuillez choisir votre destination.  ",50,10  ;;行き先をご選択くださいませ
+~
+
+;スプライトボタンの配置（EP1〜EP3）
+;EP4は二段組にする為、別途ボタンの配置を行う。
+if %scenario_Number = 4 jumpf
+	for %Free3 = 1 to %Free2
+
+		;スプライト配置回数が　倍数なら、次の行へ
+		;スプライト配置開始
+		lsp %Free1,$%Free1,%x,%y
+
+		;ボタン化
+		spbtn %Free1,%Free3
+
+		;Ｘ値増加
+		add %y,24
+		inc %Free1
+	next
+	;戻るボタンスプライトの設置
+if %cur_language = 1 lsp rmenu_btn_Exit,":s#C7C7C7#FFFFFF戻る　　",50,%y
+
+if %cur_language = 0 lsp rmenu_btn_Exit,":s#C7C7C7#FFFFFF^Retour au menu principal  ",50,%y
+~
+
+notif %scenario_Number = 4 jumpf
+	mov %x,157 : mov %y,100  ;convert to widescreen
+	lsp 500,":s#FFFFFF^Veuillez choisir votre destination.  ",70,30
+	for %Free3 = 1 to %Free2
+		;１０以上は２列目に表示を行う。
+		if %Free3 = 11 mov %x,497 : mov %y,100  ;convert to widescreen
+		
+		;スプライト配置回数が　倍数なら、次の行へ
+		;スプライト配置開始
+		lsp %Free1,$%Free1,%x,%y
+
+		;ボタン化
+		spbtn %Free1,%Free3
+
+		;Ｘ値増加
+		add %y,35
+		inc %Free1
+	next
+	if %cur_language = 1 lsp rmenu_btn_Exit,":s#C7C7C7#FFFFFF戻る　　",70,470
+	if %cur_language = 0 lsp rmenu_btn_Exit,":s#C7C7C7#FFFFFF^Retour au menu principal  ",70,470
+	;戻るボタンスプライトの設置
+	lsp rmenu_btn_Exit,":s#C7C7C7#FFFFFF^Retour au menu principal  ",70,470
+~
+
+
+
+spbtn 499,499
+
+
+spbtn rmenu_btn_Exit,rmenu_btn_Exit
+
+amsp 703,0,0,200
+print 1
+
+*scenario_jump_btnwait
+
+;ボタン待ち
+
+     	btnwait %btnRes
+
+	if %btnRes = rmenu_btn_Exit mov %m_temp1,0: goto *b_title
+	if %btnRes = -1 mov %m_temp1,0: goto *b_title
+	if %scenario_Number = 1  goto *scenario_jump_data1
+	if %scenario_Number = 2  goto *scenario_jump_data2
+	if %scenario_Number = 3  goto *scenario_jump_data3
+	if %scenario_Number = 4  goto *scenario_jump_data4
+
+;戻るでタイトルに戻る
+
+goto *scenario_jump_btnwait   ;ボタン待ちにジャンプ
+
+;---------------------------
+
+*jump_sysdata_set1_1   ;シナリオ１-１システム設定
+
+btndef ""
+textoff
+gosub *DATA_SET
+
+csp -1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+adv_default_text_speed_restore_window
+windoweffect 50,200
+
+
+
+return
+
+*jump_sysdata_set1_2   ;シナリオ１-２システム設定
+
+;右クリックで登場人物リストが閲覧可能
+
+btndef ""
+textoff
+gosub *DATA_SET
+
+csp -1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+adv_default_text_speed_restore_window
+windoweffect 50,200
+
+
+
+return
+
+*jump_sysdata_set1_3   ;シナリオ１-３システム設定
+
+;ＴＩＰＳ閲覧可能
+
+btndef ""
+textoff
+gosub *DATA_SET
+
+csp -1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+;setwindow 137,16,25,20,23,23,0,2,20,1,1,#999999,0,0,853,479
+adv_default_text_speed_restore_window
+windoweffect 50,200
+
+
+
+return
+
+*scenario_jump_data1
+
+	if %BtnRes < 1 goto *scenario_jump_btnwait   ;ボタン待ちにジャンプ
+	if %BtnRes > 17 goto *scenario_jump_btnwait   ;ボタン待ちにジャンプ
+
+  	csp -1
+	lsp 703,":c;bmp\r_click\black.bmp",0,0,200
+	lsp2 8,":b;bmp\efe\hana_u.png",480,65,100,100,0
+	lsp2 9,":b;bmp\efe\hana_d.png",480,475,100,100,0
+	print 22
+
+  if %BtnRes = 1 gosub *scenario_jump_hiduke_1986_10_4 : clock 0,0,8,0,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_1 : gosub *jump_flg_set1_1 : goto *umi1_1  ;convert to widescreen
+  if %BtnRes = 2 gosub *scenario_jump_hiduke_1986_10_4 : clock 0,0,10,30,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_1 : gosub *jump_flg_set1_2 : goto *umi1_2  ;convert to widescreen
+  if %BtnRes = 3 gosub *scenario_jump_hiduke_1986_10_4 : clock 0,0,12,00,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_1 : gosub *jump_flg_set1_3 : goto *umi1_3  ;convert to widescreen
+  if %BtnRes = 4 gosub *scenario_jump_hiduke_1986_10_4 : clock 0,0,13,30,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_1 : gosub *jump_flg_set1_4 : goto *umi1_4  ;convert to widescreen
+  if %BtnRes = 5 gosub *scenario_jump_hiduke_1986_10_4 : clock 0,0,13,30,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_2 : gosub *jump_flg_set1_5 : goto *umi1_5  ;convert to widescreen
+  if %BtnRes = 6 gosub *scenario_jump_hiduke_1986_10_4 : clock 0,0,15,0,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : gosub *jump_flg_set1_6 : goto *umi1_6  ;convert to widescreen
+  if %BtnRes = 7 gosub *scenario_jump_hiduke_1986_10_4 : clock 0,0,18,0,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : gosub *jump_flg_set1_7 : goto *umi1_7  ;convert to widescreen
+  if %BtnRes = 8 gosub *scenario_jump_hiduke_1986_10_4 : clock 0,0,22,0,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : gosub *jump_flg_set1_8 : goto *umi1_8  ;convert to widescreen
+  if %BtnRes = 9 gosub *scenario_jump_hiduke_1986_10_4 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : gosub *jump_flg_set1_9 : goto *umi1_9
+  if %BtnRes = 10 clock 24,0,30,0,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : gosub *jump_flg_set1_10 : goto *umi1_10  ;convert to widescreen
+  if %BtnRes = 11 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,36,45,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : gosub *jump_flg_set1_11 : goto *umi1_11  ;convert to widescreen
+  if %BtnRes = 12 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,37,0,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : gosub *jump_flg_set1_12 : goto *umi1_12  ;convert to widescreen
+  if %BtnRes = 13 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,43,0,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : gosub *jump_flg_set1_13 : goto *umi1_13  ;convert to widescreen
+  if %BtnRes = 14 gosub *scenario_jump_hiduke_1986_10_5 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : gosub *jump_flg_set1_14 : goto *umi1_14
+  if %BtnRes = 15 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,44,0,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : gosub *jump_flg_set1_15 : goto *umi1_15  ;convert to widescreen
+  if %BtnRes = 16 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,47,30,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : gosub *jump_flg_set1_16 : goto *umi1_16  ;convert to widescreen
+  if %BtnRes = 17 gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : gosub *jump_flg_set1_17 : goto *umi1_17
+
+
+goto *scenario_jump_btnwait   ;ボタン待ちにジャンプ
+
+
+*scenario_jump_data2
+
+
+	if %BtnRes < 1 goto *scenario_jump_btnwait   ;ボタン待ちにジャンプ
+	if %BtnRes > 18 goto *scenario_jump_btnwait   ;ボタン待ちにジャンプ
+
+  	csp -1
+	lsp 703,":c;bmp\r_click\black.bmp",0,0,200
+	lsp2 8,":b;bmp\efe\hana_u.png",480,65,100,100,0
+	lsp2 9,":b;bmp\efe\hana_d.png",480,475,100,100,0
+	print 22
+
+  if %BtnRes = 1 gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_1 : goto *umi2_1
+  if %BtnRes = 2 gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_1 : goto *umi2_2
+  if %BtnRes = 3 gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_1 : goto *umi2_3
+  if %BtnRes = 4 gosub *scenario_jump_hiduke_1986_10_4 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_1 : goto *umi2_4
+  if %BtnRes = 5 gosub *scenario_jump_hiduke_1986_10_4 : clock 0,0,10,45,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_2 : goto *umi2_5  ;convert to widescreen
+  if %BtnRes = 6 gosub *scenario_jump_hiduke_1986_10_4 : clock 0,0,13,0,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi2_6  ;convert to widescreen
+  if %BtnRes = 7 gosub *scenario_jump_hiduke_1986_10_4 : clock 0,0,18,0,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi2_7  ;convert to widescreen
+  if %BtnRes = 8 gosub *scenario_jump_hiduke_1986_10_4 : clock 0,0,22,0,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi2_8  ;convert to widescreen
+  if %BtnRes = 9 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,30,0,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi2_9  ;convert to widescreen
+
+  if %BtnRes = 10 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,30,43,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi2_10  ;convert to widescreen
+  if %BtnRes = 11 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,30,50,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi2_11  ;convert to widescreen
+  if %BtnRes = 12 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,31,30,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi2_12  ;convert to widescreen
+  if %BtnRes = 13 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,37,00,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi2_13  ;convert to widescreen
+  if %BtnRes = 14 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,37,17,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi2_14  ;convert to widescreen
+  if %BtnRes = 15 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,42,00,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi2_15  ;convert to widescreen
+  if %BtnRes = 16 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,45,00,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi2_16  ;convert to widescreen
+  if %BtnRes = 17 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,47,30,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi2_17
+  if %BtnRes = 18 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,47,59,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi2_18  ;convert to widescreen
+
+
+*scenario_jump_data3
+
+	if %BtnRes < 1 goto *scenario_jump_btnwait   ;ボタン待ちにジャンプ
+	if %BtnRes > 18 goto *scenario_jump_btnwait   ;ボタン待ちにジャンプ
+
+  	csp -1
+	lsp 703,":c;bmp\r_click\black.bmp",0,0,200
+	lsp2 8,":b;bmp\efe\hana_u.png",480,65,100,100,0
+	lsp2 9,":b;bmp\efe\hana_d.png",480,475,100,100,0
+	print 22
+
+  if %BtnRes = 1 gosub *scenario_jump_hiduke_1986_10_4 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_1 : goto *umi3_1
+  if %BtnRes = 2 gosub *scenario_jump_hiduke_1986_10_4 : clock 0,0,14,00,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_1 : goto *umi3_2  ;convert to widescreen
+  if %BtnRes = 3 gosub *scenario_jump_hiduke_1986_10_4 : clock 0,0,20,00,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_1 : goto *umi3_3  ;convert to widescreen
+  if %BtnRes = 4 gosub *scenario_jump_hiduke_1986_10_4 : clock 0,0,21,00,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_1 : goto *umi3_4  ;convert to widescreen
+  if %BtnRes = 5 gosub *scenario_jump_hiduke_1986_10_4 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_2 : goto *umi3_5
+  if %BtnRes = 6 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,24,0,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi3_6  ;convert to widescreen
+  if %BtnRes = 7 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,24,21,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi3_7  ;convert to widescreen
+  if %BtnRes = 8 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,30,0,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi3_8  ;convert to widescreen
+  if %BtnRes = 9 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,31,0,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi3_9  ;convert to widescreen
+  if %BtnRes = 10 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,33,0,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi3_10  ;convert to widescreen
+  if %BtnRes = 11 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,34,0,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi3_11  ;convert to widescreen
+  if %BtnRes = 12 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,34,30,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi3_12  ;convert to widescreen
+  if %BtnRes = 13 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,35,00,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi3_13  ;convert to widescreen
+  if %BtnRes = 14 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,37,00,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi3_14  ;convert to widescreen
+  if %BtnRes = 15 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,37,30,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi3_15  ;convert to widescreen
+  if %BtnRes = 16 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,41,44,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi3_16  ;convert to widescreen
+  if %BtnRes = 17 gosub *scenario_jump_hiduke_1986_10_5 : clock 24,0,42,03,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi3_17  ;convert to widescreen
+  if %BtnRes = 18 gosub *scenario_jump_hiduke_1986_10_5 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi3_18
+
+
+*scenario_jump_data4
+
+	if %BtnRes < 1 goto *scenario_jump_btnwait   ;ボタン待ちにジャンプ
+	if %BtnRes > 19 goto *scenario_jump_btnwait   ;ボタン待ちにジャンプ
+
+  	csp -1
+	lsp 703,":c;bmp\r_click\black.bmp",0,0,200
+	lsp2 8,":b;bmp\efe\hana_u.png",480,65,100,100,0
+	lsp2 9,":b;bmp\efe\hana_d.png",480,475,100,100,0
+	print 22
+
+  if %BtnRes = 1 gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_1 : goto *umi4_1
+  if %BtnRes = 2 gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_1 : goto *umi4_2
+  if %BtnRes = 3 gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_1 : goto *umi4_3
+  if %BtnRes = 4 clock 0,0,14,51,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_1 : goto *umi4_4  ;convert to widescreen
+  if %BtnRes = 5 gosub *scenario_jump_hiduke_1986_10_4 : clock 0,0,18,7,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_2 : goto *umi4_5  ;convert to widescreen
+  if %BtnRes = 6 gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi4_6
+  if %BtnRes = 7 gosub *scenario_jump_exit_efe1 : gosub *scenario_jump_hiduke_1998 : gosub *jump_sysdata_set1_3 : goto *umi4_7
+  if %BtnRes = 8 gosub *scenario_jump_exit_efe1 : gosub *scenario_jump_hiduke_enj_mirai : gosub *jump_sysdata_set1_3 : goto *umi4_8
+  if %BtnRes = 9 csp -1 : csp2 -1 : bg black,2 : gosub *jump_sysdata_set1_3 : goto *umi4_9
+  if %BtnRes = 10 gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi4_10
+  if %BtnRes = 11 clock 0,0,21,48,11,0,360,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi4_11
+  if %BtnRes = 12 gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi4_12
+  if %BtnRes = 13 gosub *scenario_jump_hiduke_1986_10_4_2 : clock 0,0,22,36,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi4_13  ;convert to widescreen
+  if %BtnRes = 14 gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi4_14
+  if %BtnRes = 15 gosub *scenario_jump_hiduke_1986_10_4_2 : clock 0,0,23,0,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi4_15  ;convert to widescreen
+  if %BtnRes = 16 gosub *scenario_jump_hiduke_1986_10_4_2 : clock 0,0,23,11,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi4_16  ;convert to widescreen
+  if %BtnRes = 17 gosub *scenario_jump_hiduke_1986_10_4_2 : clock 0,0,23,47,11,0,427,240,30 : gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi4_17  ;convert to widescreen
+  if %BtnRes = 18 gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi4_18
+
+  if %BtnRes = 19 gosub *scenario_jump_exit_efe1 : gosub *jump_sysdata_set1_3 : goto *umi4_19
+
+;----------------------------------------
+
+*scenario_jump_hiduke_1986_10_4
+	csp -1
+	csp2 -1
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+	se1 29
+	mov $witchh4, oct_4_1986
+	setLangString $witchh4, ""
+	bg $witchh4,2
+	wait 1000
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+return
+
+*scenario_jump_hiduke_1986_10_4_2
+	csp -1
+	csp2 -1
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+	se1 28
+	mov $witchh4, oct_4_1986
+	setLangString $witchh4, ""
+	bg $witchh4,2
+	wait 1000
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+return
+
+*scenario_jump_hiduke_1986_10_5
+	csp -1
+	csp2 -1
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+	se1 28
+	;bg oct_5_1986,2
+	mov $witchh4, oct_5_1986
+	setLangString $witchh4, ""
+	bg $witchh4,2
+	wait 1000
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+return
+
+*scenario_jump_hiduke_1998
+	E_A
+	csp -1
+	csp2 -1
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+	se1v 29,70
+	mov $witchh4, oct_1998
+		setLangString $witchh4, ""
+	bg $witchh4,80
+	wait 4000
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+return
+
+*scenario_jump_hiduke_enj_mirai
+	E_A
+	csp -1
+	csp2 -1
+	se1v 29,70
+	mov $witchh4, ENJ_mirai01
+		setLangString $witchh4, ""
+	bg $witchh4,80
+	wait 4000
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+return
+;----------------------------------------
+
+*scenario_jump_exit_efe1
+	;ガラス割れエフェクトを使用する。
+	E_A
+	delay 1000
+	lsp2 1,":b;bmp\efe\ware.png",480,270,100,100,0
+	seplay 9,1100
+	print 1
+	delay 1000
+	
+	csp2 -1
+	csp -1
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+return
+
+;----------------------------------------
+
+;シナリオジャンプ時のキャラコンディション、フラグの管理
+*jump_flg_set1_0
+
+	;キャラ状態、Tipsの初期化
+	for %tmp = 1 to cha_kazu : mov ?r[%tmp][condition],0 : next
+	for %tmp = 0 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 0 to 11 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+return
+
+
+*jump_flg_set1_1
+	;キャラ状態、Tipsの初期化
+	for %tmp = 1 to cha_kazu : mov ?r[%tmp][condition],0 : next
+	for %tmp = 0 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 0 to 11 : mov ?grim[%tmp][grim_flg],0 : next
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+	mov ?r[but][condition],1
+	mov ?r[geo][condition],1
+	mov ?r[hid][condition],1
+	mov ?r[eva][condition],1
+	mov ?r[kir][condition],1
+	mov ?r[rud][condition],1
+	mov ?r[mar][condition],1
+	mov ?r[ros][condition],1
+return
+
+
+*jump_flg_set1_2
+	;キャラ状態、Tipsの初期化
+	for %tmp = 1 to cha_kazu : mov ?r[%tmp][condition],0 : next
+	for %tmp = 0 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 0 to 11 : mov ?grim[%tmp][grim_flg],0 : next
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+
+
+
+	mov ?r[but][condition],1
+	mov ?r[geo][condition],1
+	mov ?r[hid][condition],1
+	mov ?r[eva][condition],1
+	mov ?r[kir][condition],1
+	mov ?r[rud][condition],1
+	mov ?r[mar][condition],1
+	mov ?r[ros][condition],1
+	mov ?r[jes][condition],1
+	mov ?r[kum][condition],1
+return
+
+
+*jump_flg_set1_3
+	;キャラ状態、Tipsの初期化
+	for %tmp = 1 to 18 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 0 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 0 to 11 : mov ?grim[%tmp][grim_flg],0 : next
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+
+
+
+	mov ?r[bea][condition],0
+	mov ?r[ber][condition],0
+	mov ?r[sha][condition],0
+	mov ?r[gen][condition],0
+	mov ?r[nat][condition],0
+	mov ?r[kin][condition],0
+	mov ?r[nan][condition],0
+	mov ?r[kla][condition],0
+return
+
+
+*jump_flg_set1_4
+	;キャラ状態、Tipsの初期化
+	for %tmp = 1 to 18 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 0 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 0 to 11 : mov ?grim[%tmp][grim_flg],0 : next
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+
+
+	mov ?r[bea][condition],0
+	mov ?r[ber][condition],0
+	mov ?r[nan][condition],0
+	mov ?r[kla][condition],0
+return
+
+
+*jump_flg_set1_5
+	;キャラ状態、Tipsの初期化
+	for %tmp = 1 to 18 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 0 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 0 to 11 : mov ?grim[%tmp][grim_flg],0 : next
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+
+
+
+return
+
+
+*jump_flg_set1_6
+	;キャラ状態、Tipsの初期化
+	for %tmp = 1 to 18 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 0 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 0 to 11 : mov ?grim[%tmp][grim_flg],0 : next
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+
+
+	mov ?tips[1][tips_flg],1
+return
+
+
+*jump_flg_set1_7
+	;キャラ状態、Tipsの初期化
+	for %tmp = 1 to 18 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 0 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 0 to 11 : mov ?grim[%tmp][grim_flg],0 : next
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+	mov ?grim[9][grim_flg],1
+
+
+	mov ?tips[1][tips_flg],1
+return
+
+
+*jump_flg_set1_8
+	;キャラ状態、Tipsの初期化
+	for %tmp = 1 to 18 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 0 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 0 to 11 : mov ?grim[%tmp][grim_flg],0 : next
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+	mov ?grim[9][grim_flg],1
+
+
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+return
+
+
+*jump_flg_set1_9
+	;キャラ状態、Tipsの初期化
+	for %tmp = 1 to 18 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 0 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 0 to 11 : mov ?grim[%tmp][grim_flg],0 : next
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+	mov ?grim[9][grim_flg],1
+
+
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+return
+
+
+*jump_flg_set1_10
+	;キャラ状態、Tipsの初期化
+	for %tmp = 1 to 18 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 0 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 0 to 11 : mov ?grim[%tmp][grim_flg],0 : next
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+	mov ?grim[9][grim_flg],1
+
+
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+return
+
+
+*jump_flg_set1_11
+	;キャラ状態、Tipsの初期化
+	for %tmp = 1 to 18 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 0 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 0 to 11 : mov ?grim[%tmp][grim_flg],0 : next
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+	mov ?grim[9][grim_flg],1
+
+
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?r[kla][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[sha][condition],2
+return
+
+
+*jump_flg_set1_12
+	;キャラ状態、Tipsの初期化
+	for %tmp = 1 to 18 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 0 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 0 to 11 : mov ?grim[%tmp][grim_flg],0 : next
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+	mov ?grim[9][grim_flg],1
+
+
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?r[kla][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kin][condition],2
+return
+
+
+*jump_flg_set1_13
+	;キャラ状態、Tipsの初期化
+	for %tmp = 1 to 18 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 0 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 0 to 11 : mov ?grim[%tmp][grim_flg],0 : next
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+	mov ?grim[9][grim_flg],1
+	mov ?grim[10][grim_flg],1
+
+
+
+
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?r[kla][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kin][condition],2
+return
+
+
+*jump_flg_set1_14
+	;キャラ状態、Tipsの初期化
+	for %tmp = 1 to 18 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 0 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 0 to 11 : mov ?grim[%tmp][grim_flg],0 : next
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+	mov ?grim[9][grim_flg],1
+	mov ?grim[10][grim_flg],1
+
+
+
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?r[kla][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kin][condition],2
+	mov ?r[eva][condition],2
+	mov ?r[hid][condition],2
+return
+
+
+*jump_flg_set1_15
+	;キャラ状態、Tipsの初期化
+	for %tmp = 1 to 18 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 0 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 0 to 11 : mov ?grim[%tmp][grim_flg],0 : next
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+	mov ?grim[9][grim_flg],1
+	mov ?grim[10][grim_flg],1
+
+
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?r[kla][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kin][condition],3
+	mov ?r[eva][condition],2
+	mov ?r[hid][condition],2
+return
+
+
+*jump_flg_set1_16
+	;キャラ状態、Tipsの初期化
+	for %tmp = 1 to 18 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 0 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 0 to 11 : mov ?grim[%tmp][grim_flg],0 : next
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+	mov ?grim[9][grim_flg],1
+	mov ?grim[10][grim_flg],1
+
+
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+	mov ?tips[3][tips_flg],1
+	mov ?tips[4][tips_flg],1
+
+	mov ?r[kla][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kin][condition],3
+	mov ?r[eva][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[kan][condition],2
+return
+
+*jump_flg_set1_17
+	;キャラ状態、Tipsの初期化
+	for %tmp = 1 to 18 : mov ?r[%tmp][condition],2 : next
+	for %tmp = 0 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 0 to 11 : mov ?grim[%tmp][grim_flg],0 : next
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+	mov ?grim[9][grim_flg],1
+	mov ?grim[10][grim_flg],1
+
+	mov ?r[kin][condition],3
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+	mov ?tips[3][tips_flg],1
+	mov ?tips[4][tips_flg],1
+return
+
+
+
+
+
+;************************************************************************************
+;タイトル：*csp
+;目的　　：Ｃｓｐ文によるスプライト破棄時のカーソルのセット
+;　　　　：文章を表示するときの矢印などをスプライトを拾得する　　　　　
+;2006/03/15
+;************************************************************************************
+
+*csp
+
+ getparam %cspParam
+
+;全てのスプライト破棄であるならば、破棄後にカーソルデータを拾得
+if %cspParam = -1 _csp -1 : mcl a,0 : gosub *bcl_bladesonly : lsph TextCC1SpNum,":bl/3,160,2;Bmp\cursor0.png",0,0 : lsph TextCC2SpNum,":bl/3,160,2;Bmp\cursor1.png",0,0 : jumpf
+
+if %cspParam = -2 && %efespflg = 0 _csp -1 : mcl a,0 : gosub *bcl_bladesonly : lsph TextCC1SpNum,":bl/3,160,2;Bmp\cursor0.png",0,0 : lsph TextCC2SpNum,":bl/3,160,2;Bmp\cursor1.png",0,0 : jumpf
+
+if %cspParam = -2 && %efespflg > 0 _csp -1 : mcl a,0 : gosub *bcl_bladesonly : lsph TextCC1SpNum,":bl/3,160,2;Bmp\cursor0.png",0,0 : lsph TextCC2SpNum,":bl/3,160,2;Bmp\cursor1.png",0,0 : dllefe %efespflg,%efespflg2 : jumpf
+
+
+if %cspParam = TextCC1SpNum return
+if %cspParam = TextCC2SpNum return
+
+
+;それ以外なら、指定のスプライトを破棄する
+_csp %cspParam
+
+return
+
+~
+;現在ページをログにコピーする
+
+;if %tmordflg = 1 return
+
+ dec %BacklogNum
+ mov $%BacklogNum,$Textlog
+ inc %BacklogNum
+
+return
+
+;************************************************************************************
+;タイトル：*texton　*textoff
+;目的　　：テキスト表示エリアの背景をスプライトにする
+;　　　　：文章を表示するときの背景画像のスプライトを拾得する　　　　　
+;2007/01/19
+;************************************************************************************
+
+*texton
+
+;テキスト背景をオンにする
+vsp text_back,1
+
+;文字表示エリアを表示する
+_texton
+print 1
+
+return
+
+
+*textoff
+
+vsp text_back,0
+_textoff
+
+print 1
+
+return
+
+
+
+
+;*******************************************
+;人物紹介フラグコマンド
+;
+;*******************************************
+
+
+*introduction_flg
+
+btndef ""
+
+;if %intro_prog_flg = off jumpf       ;スプライトプログラムが動いているかの確認
+
+;mov %intro_prog_flg,off           ;スプライトプログラムのフラグをオフ
+;layermessage 10,"clear/10"           ;スプライトプログラムのスプライト消去
+;layermessage 10,"program_end/10"           ;スプライトプログラムのプログラム停止
+;csp 10
+;print 1
+
+;~
+
+ getparam %Free1,%Free2,%Free3,%Free4    ;人物、状態、コメント１、コメント２
+
+ mov %name_namber,%Free1                 ;人物紹介開始番号移動
+ mov ?condition[%Free1],%Free2           ;対象者の状態変更
+ mov %introduction_open,on               ;人物紹介システム　フラグオン
+
+mov %Free5,Kin_com1               ;コメント１変数の頭だし
+dec %Free5
+
+add %Free5,%Free1                 ;人物番号を追加して、コメント変数を確定する
+mov %%Free5,%Free3                ;コメント変数にシナリオ進行度を収納する
+
+mov %Free5,Kin_com2               ;コメント２変数の頭だし
+dec %Free5
+
+add %Free5,%Free1                 ;人物番号を追加して、コメント変数を確定する
+mov %%Free5,%Free4                ;コメント変数にシナリオ進行度を収納する
+
+;mov %intro_prog_flg,on           ;スプライトプログラムのフラグをオン
+
+ ;lsp intro,":a/5,600,1;紹介.bmp",340,380
+
+;lsp 10,"*10"
+
+
+
+;layermessage 10,"draw/10,:a;紹介2.bmp,700,390,255,0,1,1,0,-1"
+
+;layermessage 10,"program_begin/10"
+;layermessage 10,"set/10,dcenter_x=-20,acenter_x=1"
+
+;layermessage 10,"loop_begin/10,10"
+;layermessage 10,"wait/10,2.5"
+
+;layermessage 10,"loop_end/10"
+
+;layermessage 10,"set/10,dcenter_x=0,acenter_x=0"
+
+;layermessage 10,"loop_begin/10,10"
+;layermessage 10,"wait/10,3"
+
+;layermessage 10,"loop_end/10"
+
+;layermessage 10,"set/10,dcenter_x=5,acenter_x=1"
+
+;layermessage 10,"loop_begin/10,40"
+;layermessage 10,"wait/10,10"
+
+;layermessage 10,"loop_end/10"
+
+;layermessage 10,"clear/10"
+
+
+;layermessage 10,"loop_begin/10,10"
+;layermessage 10,"wait/10,1000"
+
+;layermessage 10,"loop_end/10"
+;layermessage 10,"set/10,dcenter_x=0,acenter_x=0"
+
+
+
+
+return
+
+
+
+　フェードアウト
+
+*Fade_out
+
+
+
+ lsp Fade_back,":c;bmp\black.bmp",0,0,0      ;背景指定
+ mov %Free1,256
+ mov %Fade_wait1,100    ;総合ウェイト指定
+ mov %Fade,20            ;回数指定（透過率のため256回以上不可
+
+*Fade_out_costom
+
+
+ mov %Free3,BGM_v_Chx                 ;音量の減少値
+ mov %Free4,BGM_v_Chy                 ;音量値の百倍値
+ mov %Free5,BGM_v_Ch                 ;音量値の反映値
+
+ mov %Free2,%BGM_v_Ch
+ mul %Free2,100
+ mov %Free3,%Free2
+ div %Free3,%Fade
+ mov %BGM_v_Chx,%Free3
+ mov %BGM_v_Chy,%Free2
+
+ mov %Free2,%Me_v_Ch0
+ mul %Free2,100
+ mov %Free3,%Free2
+ div %Free3,%Fade
+ mov %Me_v_Chx0,%Free3
+ mov %Me_v_Chy0,%Free2
+
+ mov %Free2,%Me_v_Ch1
+ mul %Free2,100
+ mov %Free3,%Free2
+ div %Free3,%Fade
+ mov %Me_v_Chx1,%Free3
+ mov %Me_v_Chy1,%Free2
+
+ mov %Free2,%Me_v_Ch2
+ mul %Free2,100
+ mov %Free3,%Free2
+ div %Free3,%Fade
+ mov %Me_v_Chx2,%Free3
+ mov %Me_v_Chy2,%Free2
+
+ mov %Free2,%Me_v_Ch3
+ mul %Free2,100
+ mov %Free3,%Free2
+ div %Free3,%Fade
+ mov %Me_v_Chx3,%Free3
+ mov %Me_v_Chy3,%Free2
+
+ mov %Free2,%Me_v_Ch4
+ mul %Free2,100
+ mov %Free3,%Free2
+ div %Free3,%Fade
+ mov %Me_v_Chx4,%Free3
+ mov %Me_v_Chy4,%Free2
+
+ mov %Free2,%Me_v_Ch5
+ mul %Free2,100
+ mov %Free3,%Free2
+ div %Free3,%Fade
+ mov %Me_v_Chx5,%Free3
+ mov %Me_v_Chy5,%Free2
+
+
+
+
+ div %Fade_wait1,%Fade   ;一回のウェイトの計算（総合ウェイト／回数）
+ div %Free1,%Fade        ;一回の不透過上昇値の計算（２５６／回数）
+
+
+
+ for %Free9 = 1 to %Fade
+
+  resettimer
+
+  msp Fade_back,0,0,%Free1       ;黒幕をフェード率に合わせて透過値を変化
+   mov %Free3,BGM_v_Chy
+   mov %Free5,BGM_v_Ch
+   for %Free2 = BGM_v_Chx to Me_v_Chx5
+       mov %Free4,%%Free3
+       sub %Free4,%%Free2
+       sub %%Free3,%%Free2
+       div %Free4,100
+       mov %%Free5,%Free4
+       inc %Free3
+       inc %Free5
+     next
+
+  print 1
+  bgmvol %BGM_v_Ch                     ;BGM音量を反映する
+  chvol 10,%Me_v_Ch0
+  chvol 11,%Me_v_Ch1
+  chvol 12,%Me_v_Ch2
+  chvol 13,%Me_v_Ch3
+  chvol 14,%Me_v_Ch4
+  chvol 15,%Me_v_Ch5
+
+
+  waittimer %Fade_wait1
+
+
+ next
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+gosub *E_A
+csp Fade_back
+print 1
+
+return
+
+
+;アイキャッチのカスタム
+
+;**************************************************
+;背景表示を司るのは<%eye_custom1>で
+;ロゴ表示を司るのは<%eye_custom2>です
+;
+;<%eye_efeB1>〜<%eye_efeB3>は背景表示の時のdllによるパラメーターの制御用です
+;<%eye_efeL1>〜<%eye_efeL3>はロゴ表示の時のdllによるパラメーターの制御用です
+;<%eye_waitB> <%eye_waitL>は背景、ロゴ表示速度です
+;**************************************************
+
+*eye_custom
+
+;    rmode OFF                                   ;右クリック一時使用不可
+    textoff                                     ;テキストウィンドウ消去（エフェクトはデフォルト）
+
+if %intro_prog_flg = off jumpf       ;スプライトプログラムが動いているかの確認
+
+mov %intro_prog_flg,off           ;スプライトプログラムのフラグをオフ
+layermessage 10,"clear/10"           ;スプライトプログラムのスプライト消去
+layermessage 10,"program_end/10"           ;スプライトプログラムのプログラム停止
+csp 10
+
+
+~
+
+lsp Cinema_up,":c;bmp\efe\Cinema.BMP",0,0
+lsp Cinema_down,":c;bmp\efe\Cinema.BMP",0,400
+
+;カスタム値から背景表示エフェクトを選択
+
+;普通　　　　　（上段下段に別れ左右からのみ）
+
+if %eye_custom1 = 1 print 7
+
+;クロスフェード
+
+if %eye_custom1 = 2 print 2
+
+;クロス渦巻き　（右巻き左巻き）
+
+notif %eye_custom1 = 3 jumpf
+
+ if %eye_efeB1 = 1 print 99,%eye_waitB,"whirl.dll/r"
+ if %eye_efeB1 = 2 print 99,%eye_waitB,"whirl.dll/l"
+
+
+~
+;拡散　　　　　（上下、左右、拡散集積逆拡散逆集積）
+
+notif %eye_custom1 = 4 jumpf
+
+ if %eye_efeB1 = 1 mov $Free1,"breakup.dll/u"    ;上から
+ if %eye_efeB1 = 2 mov $Free1,"breakup.dll/l"    ;下から
+
+ if %eye_efeB2 = 1 mov $Free1,$Free1+"r"    ;右から
+ if %eye_efeB2 = 2 mov $Free1,$Free1+"l"    ;左から
+
+ if %eye_efeB3 = 1 mov $Free1,$Free1+"b"    ;拡散
+ if %eye_efeB3 = 2 mov $Free1,$Free1+"p"    ;集積
+ if %eye_efeB3 = 3 mov $Free1,$Free1+"B"    ;拡散(反転)
+ if %eye_efeB3 = 4 mov $Free1,$Free1+"P"    ;集積(反転)
+
+print 99,%eye_waitB,$Free1
+~
+
+;クロス滝　　　（上下左右、右左クロス）
+
+notif %eye_custom1 = 5 jumpf
+
+ if %eye_efeB1 = 1 mov $Free1,"cascade.dll/u"    ;上から
+ if %eye_efeB1 = 2 mov $Free1,"cascade.dll/d"    ;下から
+ if %eye_efeB1 = 3 mov $Free1,"cascade.dll/r"    ;右から
+ if %eye_efeB1 = 4 mov $Free1,"cascade.dll/l"    ;左から
+
+ if %eye_efeB2 = 1 mov $Free1,$Free1+"i"    ;イン
+ if %eye_efeB2 = 2 mov $Free1,$Free1+"o"    ;アウト
+ if %eye_efeB2 = 3 mov $Free1,$Free1+"x"    ;クロス
+
+print 99,%eye_waitB,$Free1
+
+~
+
+;lsp Cinema_logo,":b;bmp\efe\Cinema_logo.png",534,360  ;convert to widescreen
+mov $witchh4,"bmp\efe\Cinema_logo.png"
+setLangString $witchh4,"a"
+lsp Cinema_logo,$witchh4,534,360
+
+
+;カスタム値からロゴ表示エフェクトを選択
+
+;普通　　　　　（上段下段に別れ左右からのみ）
+
+if %eye_custom2 = 1 print 7
+
+;クロスフェード
+
+if %eye_custom2 = 2 print 42
+
+;クロス渦巻き　（右巻き左巻き）
+
+notif %eye_custom2 = 3 jumpf
+
+ if %eye_efeL1 = 1 print 99,%eye_waitL,"whirl.dll/r"
+ if %eye_efeL1 = 2 print 99,%eye_waitL,"whirl.dll/l"
+
+
+~
+;拡散　　　　　（上下、左右、拡散集積逆拡散逆集積）
+
+notif %eye_custom2 = 4 jumpf
+
+ if %eye_efeL1 = 1 mov $Free1,"breakup.dll/u"    ;上から
+ if %eye_efeL1 = 2 mov $Free1,"breakup.dll/l"    ;下から
+
+ if %eye_efeL2 = 1 mov $Free1,$Free1+"r"    ;右から
+ if %eye_efeL2 = 2 mov $Free1,$Free1+"l"    ;左から
+
+ if %eye_efeL3 = 1 mov $Free1,$Free1+"b"    ;拡散
+ if %eye_efeL3 = 2 mov $Free1,$Free1+"p"    ;集積
+ if %eye_efeL3 = 3 mov $Free1,$Free1+"B"    ;拡散(反転)
+ if %eye_efeL3 = 4 mov $Free1,$Free1+"P"    ;集積(反転)
+
+print 99,%eye_waitL,$Free1
+~
+
+;クロス滝　　　（上下左右、右左クロス）
+
+notif %eye_custom2 = 5 jumpf
+
+ if %eye_efeL1 = 1 mov $Free1,"cascade.dll/u"    ;上から
+ if %eye_efeL1 = 2 mov $Free1,"cascade.dll/d"    ;下から
+ if %eye_efeL1 = 3 mov $Free1,"cascade.dll/r"    ;右から
+ if %eye_efeL1 = 4 mov $Free1,"cascade.dll/l"    ;左から
+
+ if %eye_efeL2 = 1 mov $Free1,$Free1+"i"    ;イン
+ if %eye_efeL2 = 2 mov $Free1,$Free1+"o"    ;アウト
+ if %eye_efeL2 = 3 mov $Free1,$Free1+"x"    ;クロス
+
+print 99,%eye_waitL,$Free1
+
+~
+
+
+resettimer
+
+
+;使用変数の初期化
+mov %eye_custom1,0
+mov %eye_custom2,0
+mov %eye_efeB1,0
+mov %eye_efeB2,0
+mov %eye_efeB3,0
+mov %eye_efeL1,0
+mov %eye_efeL2,0
+mov %eye_efeL3,0
+mov %eye_waitB,2000
+mov %eye_waitL,2000
+
+waittimer 2000
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",42
+csp -1
+print 7
+;setwindow 137,16,25,20,23,23,0,2,20,1,1,#999999,0,0,853,479
+;rmode ON
+adv_default_text_speed_restore_window
+
+
+return
+
+
+*eye_rnd
+
+ rnd %Free1,6        ;背景表示方法　現在五種類
+
+  notif %Free1 = 3 jumpf 
+
+
+  rnd2 %Free2,1,2
+
+~
+  notif %Free1 = 4 jumpf
+
+  rnd2 %Free2,1,2
+  rnd2 %Free3,1,2
+  rnd2 %Free4,1,4
+
+~  
+  notif %Free1 = 5 jumpf
+
+  rnd2 %Free2,1,4
+  rnd2 %Free3,1,3
+
+~
+mov %eye_custom1,%Free1
+mov %eye_efeB1,%Free2
+mov %eye_efeB2,%Free3
+mov %eye_efeB3,%Free4
+
+ rnd %Free1,5        ;ロゴ表示方法　現在５種類
+ inc %Free1
+
+  notif %Free1 = 3 jumpf 
+
+  rnd2 %Free2,1,2
+
+~
+  notif %Free1 = 4 jumpf
+
+  rnd2 %Free2,1,2
+  rnd2 %Free3,1,2
+  rnd2 %Free4,1,4
+
+~  
+  notif %Free1 = 5 jumpf
+
+  rnd2 %Free2,1,4
+  rnd2 %Free3,1,3
+
+~
+mov %eye_custom2,%Free1
+mov %eye_efeL1,%Free2
+mov %eye_efeL2,%Free3
+mov %eye_efeL3,%Free4
+
+rnd2 %Free1,1500,3000
+rnd2 %Free2,1500,3000
+
+mov %eye_waitB,%Free1
+mov %eye_waitL,%Free2
+
+return
+
+
+*mono
+
+ getparam %Free1       ;モノクロ値を文字変数で取る
+
+ notif %Free1 = off jumpf   ;OFFで無いならON処理へ
+
+  mov %monoflg,off
+  monocro off
+ return
+
+~
+
+ if %Free1 = 1 mov %monoflg,1 : monocro #cccccc
+ if %Free1 = 2 mov %monoflg,2 : monocro #ff4444
+
+return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+;*******************************************************************
+;タイトル：ウミネコのなく頃に
+;目的　　：音関連のシステムの構築
+;　　　　　呼び出す関数の制御
+;製作　　：2006-09-7（八咫桜）
+;修正　　：2006-010-7（八咫桜）
+;*******************************************************************
+
+;使用変数名
+
+;BGM_Play　　　　：曲名のパス収納用
+;Me_Play　　　　：ミュージックエフェクトのパス収納用
+;Se_Play　　　　：サウンドエフェクトのパス収納用
+;Me_Play_Channel：ミュージックエフェクトの再生チャンネル用
+;Se_Play_Channel：サウンドエフェクトの再生チャンネル用
+;Me_Number      ：再生するミュージックエフェクトのナンバー収納用
+;Me_s_Ch0　　　　：主音用ミュージックエフェクトのチャンネル使用フラグ
+;Me_s_Ch1        ：副音用
+;Me_s_Ch2
+;Me_s_Ch3
+;Me_s_Ch4
+;Me_s_Ch5
+;
+;Set_vol         ：指定ボリューム
+;BGM_v_Ch        ：ＢＧＭ用ボリュームフラグ
+;Me_v_Ch0　　　　：主音用ミュージックエフェクトのボリュームフラグ
+;Me_v_Ch1        ：副音用
+;Me_v_Ch2
+;Me_v_Ch3
+;Me_v_Ch4
+;Me_v_Ch5
+;Se_v_Ch1        ：サウンド用
+;Se_v_Ch2
+;Se_v_Ch3
+;
+;
+;Free1          :フリーエリア
+;Free2
+
+;****************************目的***********************************
+;ＢＧＭを再生する
+;前回より簡略化する
+;*******************************************************************
+
+;*******************************************************************
+;ＢＧＭのデータ部分
+;*******************************************************************
+
+*bgm1
+*bgmplay
+
+getparam %BGM_s_Ch
+mov %Set_vol,default_vol
+mov %BGM_Play_Channel,%BGM_s_Ch
+goto *BGM_List
+
+return
+
+*bgm1v
+*bgmplay2
+
+getparam %BGM_s_Ch,%Set_vol
+mov %BGM_Play_Channel,%BGM_s_Ch
+goto *BGM_List
+
+return
+
+
+
+;*******************************************************************
+;ＢＧＭの演奏システム部分
+;*******************************************************************
+
+*BGM_Play_Mord                        ;BGMモードの演奏部分
+
+  mov %BGM_v_Ch,%Set_vol
+  bgmvol %Set_vol
+  bgm $BGM_Play
+
+ return
+
+
+;****************************目的***********************************
+;ミュージックエフェクトをループ再生する。
+;再生チャンネルは１０〜１４
+;
+;*******************************************************************
+
+
+*me1
+
+mov %Set_vol,default_vol
+getparam %Me_Number      ;チャンネルと曲番号と取得
+
+mov %Me_Play_Channel,11
+mov %Free1,Me_s_Ch1
+mov %Free2,Me_v_Ch1
+
+goto *mesys
+
+*me1v
+
+getparam %Me_Number,%Set_vol      ;チャンネルと曲番号と取得
+
+mov %Me_Play_Channel,11
+mov %Free1,Me_s_Ch1
+mov %Free2,Me_v_Ch1
+
+goto *mesys
+
+
+
+*me2
+
+mov %Set_vol,default_vol
+getparam %Me_Number      ;チャンネルと曲番号と取得
+
+mov %Me_Play_Channel,12
+mov %Free1,Me_s_Ch2
+mov %Free2,Me_v_Ch2
+
+goto *mesys
+
+
+*me2v
+
+getparam %Me_Number,%Set_vol      ;チャンネルと曲番号と取得
+
+mov %Me_Play_Channel,12
+mov %Free1,Me_s_Ch2
+mov %Free2,Me_v_Ch2
+
+goto *mesys
+
+
+*me3
+
+mov %Set_vol,default_vol
+getparam %Me_Number      ;チャンネルと曲番号と取得
+
+mov %Me_Play_Channel,13
+mov %Free1,Me_s_Ch3
+mov %Free2,Me_v_Ch3
+
+goto *mesys
+
+*me3v
+
+getparam %Me_Number,%Set_vol      ;チャンネルと曲番号と取得
+
+mov %Me_Play_Channel,13
+mov %Free1,Me_s_Ch3
+mov %Free2,Me_v_Ch3
+
+goto *mesys
+
+
+*me4
+
+mov %Set_vol,default_vol
+getparam %Me_Number      ;チャンネルと曲番号と取得
+
+mov %Me_Play_Channel,14
+mov %Free1,Me_s_Ch4
+mov %Free2,Me_v_Ch4
+
+goto *mesys
+
+*me4v
+
+getparam %Me_Number,%Set_vol     ;チャンネルと曲番号と取得
+
+mov %Me_Play_Channel,14
+mov %Free1,Me_s_Ch4
+mov %Free2,Me_v_Ch4
+
+goto *mesys
+
+
+*me5
+
+mov %Set_vol,default_vol
+getparam %Me_Number      ;チャンネルと曲番号と取得
+
+mov %Me_Play_Channel,15
+mov %Free1,Me_s_Ch5
+mov %Free2,Me_v_Ch5
+
+goto *mesys
+
+*me5v
+
+getparam %Me_Number,%Set_vol      ;チャンネルと曲番号と取得
+
+mov %Me_Play_Channel,15
+mov %Free1,Me_s_Ch5
+mov %Free2,Me_v_Ch5
+
+goto *mesys
+
+
+
+*se1v
+
+ mov %Se_Play_Channel,1          ;チャンネルは２固定
+  dwavestop 1                    ;まだ鳴っている演奏を止める
+ getparam %Se_Number,%Set_vol      ;効果音番号と音量取得
+ goto *Se_Play_List
+
+
+
+
+*se2v
+
+ mov %Se_Play_Channel,2          ;チャンネルは３固定
+  dwavestop 2                    ;まだ鳴っている演奏を止める
+ getparam %Se_Number,%Set_vol      ;効果音番号と音量取得
+ goto *Se_Play_List
+
+
+
+
+*se3v
+
+ mov %Se_Play_Channel,3          ;チャンネルは１固定
+  dwavestop 3                    ;まだ鳴っている演奏を止める
+ getparam %Se_Number,%Set_vol      ;効果音番号と音量取得
+ goto *Se_Play_List
+
+
+
+;*******************************************************************
+;ミュージックエフェクトのデータ部分
+;*******************************************************************
+
+
+*meplay
+
+mov %Set_vol,default_vol
+getparam %Free1,%Me_Number      ;チャンネルと曲番号と取得
+
+ if %Me_Number = -1 goto *mestop  ;停止命令
+
+mov %Free2,%Free1               ;
+mov %Free3,%Free1               ;
+add %Free1,Me_s_Ch0             ;ロード時再生エリア番号を取得
+
+add %Free2,Me_v_Ch0             ;ロード時再生エリア番号を取得
+
+add %Free3,10
+mov %Me_Play_Channel,%Free3
+
+goto *mesys
+
+
+*meplay2
+
+getparam %Free1,%Me_Number,%Set_vol      ;チャンネルと曲番号と取得
+
+ if %Me_Number = -1 goto *mestop  ;停止命令
+
+mov %Free2,%Free1               ;
+mov %Free3,%Free1               ;
+add %Free1,Me_s_Ch0             ;ロード時再生エリア番号を取得
+
+add %Free2,Me_v_Ch0             ;ロード時再生エリア番号を取得
+
+add %Free3,10
+mov %Me_Play_Channel,%Free3
+
+goto *mesys
+
+
+
+*mesys     ;実行部分
+
+
+ if %Me_Number = -1 goto *mestop  ;停止命令
+
+mov %%Free1,%Me_Number          ;曲取得番号をロード時再生エリアにコピー
+mov %%Free2,%Set_vol            ;音量をロード時再生エリアにコピー
+
+
+
+gosub *Me_List
+
+goto *Me_Play_Mord
+
+return
+
+
+;この命令は、チャンネル、曲番号になります
+
+*ME_set
+
+  gosub *Me_List
+  mov %Me_v_Ch0,%Set_vol
+ goto *Me_Play_Mord
+
+
+
+
+;*****************************************************************
+;ミュージックエフェクトのシステム部分
+;*****************************************************************
+
+*Me_Play_Mord                         ;ミュージックエフェクトの演奏部分
+
+  dwavestop %Me_Play_Channel
+
+  ;dwaveload %Me_Play_Channel,$Me_Play
+  ;dwaveplayloop %Me_Play_Channel
+  dwaveloop %Me_Play_Channel,$Me_Play
+  chvol %Me_Play_Channel,%Set_vol     ;音量反映
+
+ return
+
+
+;****************************目的***********************************
+;サウンドエフェクトの再生
+;複数のチャンネルモードを用意
+;チャンネルは１、２、３（仮）とする
+;*****************************************************************
+
+;*******************************************************************
+;サウンドエフェクトのデータ部分
+;*******************************************************************
+
+*se1
+
+
+ mov %Set_vol,default_vol                 ;音量はdefault_vol（７０）固定
+ mov %Se_Play_Channel,1          ;チャンネルは１固定
+  dwavestop 1                    ;まだ鳴っている演奏を止める
+ getparam %Se_Number
+ goto *Se_Play_List
+
+*se2
+
+
+ mov %Set_vol,default_vol                 ;音量はdefault_vol（７０）固定
+ mov %Se_Play_Channel,2          ;チャンネルは１固定
+  dwavestop 2                    ;まだ鳴っている演奏を止める
+ getparam %Se_Number
+ goto *Se_Play_List
+
+*se3
+
+
+ mov %Set_vol,default_vol                 ;音量はdefault_vol（７０）固定
+ mov %Se_Play_Channel,3          ;チャンネルは１固定
+  dwavestop 3                    ;まだ鳴っている演奏を止める
+ getparam %Se_Number
+ goto *Se_Play_List
+
+*seplay
+
+ mov %Set_vol,default_vol                 ;音量はdefault_vol（７０）固定
+ getparam %Se_Play_Channel,%Se_Number      ;チャンネルと効果音番号取得
+  dwavestop %Se_Play_Channel
+ goto *Se_Play_List
+
+*seplay2
+
+ getparam %Se_Play_Channel,%Se_Number,%Set_vol      ;チャンネルと効果音番号と音量取得
+  dwavestop %Se_Play_Channel
+ goto *Se_Play_List
+
+
+
+
+
+;*******************************************************************
+;サウンドエフェクトの再生部分
+;*******************************************************************
+
+*Se_Play_Mord
+
+
+  dwaveload %Se_Play_Channel,$Se_Play
+
+  dwaveplay %Se_Play_Channel
+  chvol %Se_Play_Channel,%Set_vol     ;音量反映
+
+ return
+
+;*******************************************************************
+;音量制御
+;*******************************************************************
+*bgmvol
+
+getparam %Set_vol      ;音量取得
+
+  bgmvol_safe %Set_vol
+  mov %BGM_v_Ch,%Set_vol
+ 
+
+return
+
+*mevol
+
+getparam %Me_Play_Channel,%Set_vol      ;チャンネルと音量取得
+
+  mov %Free1,%Me_Play_Channel
+  add %Free1,Me_v_Ch0            ;ロード時再生エリア番号を取得
+  mov %%Free1,%Set_vol           ;音量をロード時再生エリアにコピー
+
+  add %Me_Play_Channel,10                  ;チャンネル値を変換
+  chvol %Me_Play_Channel,%Set_vol     ;音量反映
+
+return
+
+;********************************************************
+;音停止命令
+;*********************************************************
+
+*e_
+*erase
+*silent
+
+ getparam %Free3,%Free1      ;属性とチャンネルを取得
+
+ if %Free3 = 1 E_B
+
+ notif %Free3 = 2 jumpf
+
+;    if %Free1 > 6 mov %Free1,1
+;    if %Free1 < 0 mov %Free1,1
+
+    mov %Free2,%Free1
+    add %Free2,Me_s_Ch0
+
+    add %Free1,10
+    dwavestop %Free1
+
+  mov %%Free2,0                  ;使用チャンネルフラグを消す
+
+
+   return
+
+ ~
+ notif %Free3 = 3 jumpf
+
+    if %Free1 > 3 mov %Free1,1
+    dwavestop %Free1
+
+   return
+
+ ~
+ notif %Free3 = 0 jumpf 
+
+
+ stop
+ dwavestop 1
+ dwavestop 2
+ dwavestop 3
+ dwavestop 10
+ dwavestop 11
+ dwavestop 12
+ dwavestop 13
+ dwavestop 14
+ dwavestop 15
+ loopbgmstop
+
+  mov %BGM_s_Ch,0
+  mov %Me_s_Ch0,0                  ;使用チャンネルフラグを消す
+  mov %Me_s_Ch1,0                  ;使用チャンネルフラグを消す
+  mov %Me_s_Ch2,0                  ;使用チャンネルフラグを消す
+  mov %Me_s_Ch3,0                  ;使用チャンネルフラグを消す
+  mov %Me_s_Ch4,0                  ;使用チャンネルフラグを消す
+  mov %Me_s_Ch5,0                  ;使用チャンネルフラグを消す
+
+ dwavestop 90
+ dwavestop 91
+ dwavestop 92
+ dwavestop 93
+ dwavestop 94
+ dwavestop 95
+ dwavestop 96
+ dwavestop 97
+ dwavestop 98
+ dwavestop 99
+ dwavestop 100
+
+  bgmvol default_vol                     ;BGM音量を戻す
+  chvol 1,default_vol
+  chvol 2,default_vol
+  chvol 3,default_vol
+  chvol 10,default_vol
+  chvol 11,default_vol
+  chvol 12,default_vol
+  chvol 13,default_vol
+  chvol 14,default_vol
+  chvol 15,default_vol
+
+
+
+~
+return
+
+
+
+;*******************************************************************
+;旧命令　音の停止
+;*******************************************************************
+
+*St_BGM                          ;ＢＧＭだけ止める
+*E_C
+*E_B
+*E_B1
+
+  stop
+  loopbgmstop
+  bgmvol default_vol                    ;音量を戻す
+  mov %BGM_s_Ch,0                       ;演奏番号を破棄
+
+ return
+
+*E_B2                         ;ミュージックエフェクトの指定チャンネルだけ止める
+*E_M0
+
+  dwavestop 10
+  chvol 10,default_vol
+
+ return
+
+*E_B3                        ;ミュージックエフェクトの指定チャンネルだけ止める
+*E_M1
+
+  dwavestop 11
+  mov %Me_s_Ch1,0                  ;使用チャンネルフラグを消す
+  chvol 11,default_vol
+
+ return
+
+*E_B4                        ;ミュージックエフェクトの指定チャンネルだけ止める
+*E_M2
+
+  dwavestop 12
+  mov %Me_s_Ch2,0                  ;使用チャンネルフラグを消す
+  chvol 12,default_vol
+
+ return
+
+*E_B5                        ;ミュージックエフェクトの指定チャンネルだけ止める
+*E_M3
+
+  dwavestop 13
+  mov %Me_s_Ch3,0                  ;使用チャンネルフラグを消す
+  chvol 13,default_vol
+
+ return
+
+*E_B6                        ;ミュージックエフェクトの指定チャンネルだけ止める
+*E_M4
+
+  dwavestop 14
+  mov %Me_s_Ch4,0                  ;使用チャンネルフラグを消す
+  chvol 14,default_vol
+ return
+
+*E_M5
+
+  dwavestop 15
+  mov %Me_s_Ch5,0                  ;使用チャンネルフラグを消す
+  chvol 15,default_vol
+ return
+
+*E_S1
+
+  chvol 1,default_vol
+  dwavestop 1
+
+ return
+
+*E_S2
+
+  chvol 2,default_vol
+  dwavestop 2
+
+ return
+
+*E_S3
+
+  chvol 3,default_vol
+  dwavestop 3
+
+ return
+
+;**************************複合**********************************
+
+*St_all                     ;完全停止
+*St_a
+*E_A
+
+
+
+ stop
+ dwavestop 1
+ dwavestop 2
+ dwavestop 3
+ dwavestop 10
+ dwavestop 11
+ dwavestop 12
+ dwavestop 13
+ dwavestop 14
+ dwavestop 15
+
+ dwavestop 90
+ dwavestop 91
+ dwavestop 92
+ dwavestop 93
+ dwavestop 94
+ dwavestop 95
+ dwavestop 96
+ dwavestop 97
+ dwavestop 98
+ dwavestop 99
+ dwavestop 100
+
+ loopbgmstop
+
+  mov %BGM_s_Ch,0
+  mov %Me_s_Ch0,0                  ;使用チャンネルフラグを消す
+  mov %Me_s_Ch1,0                  ;使用チャンネルフラグを消す
+  mov %Me_s_Ch2,0                  ;使用チャンネルフラグを消す
+  mov %Me_s_Ch3,0                  ;使用チャンネルフラグを消す
+  mov %Me_s_Ch4,0                  ;使用チャンネルフラグを消す
+  mov %Me_s_Ch5,0                  ;使用チャンネルフラグを消す
+
+  bgmvol default_vol                     ;BGM音量を戻す
+  chvol 1,default_vol
+  chvol 2,default_vol
+  chvol 3,default_vol
+  chvol 10,default_vol
+  chvol 11,default_vol
+  chvol 12,default_vol
+  chvol 13,default_vol
+  chvol 14,default_vol
+  chvol 15,default_vol
+
+
+
+
+return
+
+*St_All2               ;ロード時の消音専用
+
+*E_A2
+
+
+ loopbgmstop
+ stop
+ dwavestop 1
+ dwavestop 2
+ dwavestop 3
+ dwavestop 10
+ dwavestop 11
+ dwavestop 12
+ dwavestop 13
+ dwavestop 14
+ dwavestop 15
+
+
+
+return
+
+
+*E_Me_all                  ;ミュージックエフェクトだけ完全停止
+*E_Me_a
+*E_MA
+*E_L
+
+ dwavestop 10
+ dwavestop 11
+ dwavestop 12
+ dwavestop 13
+ dwavestop 14
+ dwavestop 15
+ dwavestop 16
+
+  chvol 10,default_vol
+  chvol 11,default_vol
+  chvol 12,default_vol
+  chvol 13,default_vol
+  chvol 14,default_vol
+  chvol 15,default_vol
+  chvol 16,default_vol
+
+  mov %Me_s_Ch0,0                  ;使用チャンネルフラグを消す
+  mov %Me_s_Ch1,0                  ;使用チャンネルフラグを消す
+  mov %Me_s_Ch2,0                  ;使用チャンネルフラグを消す
+  mov %Me_s_Ch3,0                  ;使用チャンネルフラグを消す
+  mov %Me_s_Ch4,0                  ;使用チャンネルフラグを消す
+  mov %Me_s_Ch5,0                  ;使用チャンネルフラグを消す
+
+return
+
+*St_Se_all                  ;サウンドエフェクトだけ完全停止
+*St_Se_a
+*E_SE
+
+ dwavestop 1
+ dwavestop 2
+ dwavestop 3
+
+  chvol 1,100
+  chvol 2,100
+  chvol 3,100
+
+return
+
+
+
+*mestop
+
+
+mov %Free2,%Free1               ;
+add %Free2,Me_s_Ch0             ;ロード時再生エリア番号を取得
+mov %%Free2,0
+
+add %Free1,10
+mov %Me_Play_Channel,%Free1
+
+ dwavestop %Me_Play_Channel
+
+return
+
+
+
+;***************************************************************************
+;ロード時のＭｅの再生、及びDllエフェクト再生
+;製作　　：2006-09-7（八咫桜）
+;修正　　：2006-012-6（八咫桜）
+;***************************************************************************
+
+
+
+
+*Coll_system
+
+gosub *Coll_system_helper
+
+textshow
+print 1
+texton
+return
+
+;drojf - added this function so you can refresh the audio volumes without displaying text (without doing textshow, print, texton)
+*Coll_system_helper
+
+changeSprites %is_old_sprites
+
+gosub *St_All2
+
+ mov %Set_vol,%BGM_v_Ch : gosub *BGM_List
+
+ notif %Me_s_Ch0 = 0  mov %Set_vol,%Me_v_Ch0 : mov %Me_Play_Channel,10 : mov %Me_Number,%Me_s_Ch0 : gosub *Coll_ME        ;主音が使用されているかのチェック
+
+ notif %Me_s_Ch1 = 0  mov %Set_vol,%Me_v_Ch1 : mov %Me_Play_Channel,11 : mov %Me_Number,%Me_s_Ch1 : gosub *Coll_ME        ;主音が使用されているかのチェック
+
+ notif %Me_s_Ch2 = 0  mov %Set_vol,%Me_v_Ch2 : mov %Me_Play_Channel,12 : mov %Me_Number,%Me_s_Ch2 : gosub *Coll_ME        ;主音が使用されているかのチェック
+
+ notif %Me_s_Ch3 = 0  mov %Set_vol,%Me_v_Ch3 : mov %Me_Play_Channel,13 : mov %Me_Number,%Me_s_Ch3 : gosub *Coll_ME        ;主音が使用されているかのチェック
+
+ notif %Me_s_Ch4 = 0  mov %Set_vol,%Me_v_Ch4 : mov %Me_Play_Channel,14 : mov %Me_Number,%Me_s_Ch4 : gosub *Coll_ME        ;主音が使用されているかのチェック
+
+ notif %Me_s_Ch5 = 0  mov %Set_vol,%Me_v_Ch5 : mov %Me_Play_Channel,15 : mov %Me_Number,%Me_s_Ch5 : gosub *Coll_ME        ;主音が使用されているかのチェック
+
+
+if %efespflg = 0 jumpf
+gosub *dllstartdraw
+~ 
+lookbackflush
+
+return
+
+*Coll_ME
+
+  gosub *Me_List
+  dwaveload %Me_Play_Channel,$Me_Play
+  dwaveplayloop %Me_Play_Channel
+   chvol %Me_Play_Channel,%Set_vol     ;音量反映
+
+
+return
+
+
+
+;****************************************************
+;Dllエフェクトの使用命令、停止命令
+;製作　　：2006-09-7（八咫桜）
+;修正　　：2006-012-6（八咫桜）
+;****************************************************
+
+*dllefe
+
+ getparam %efespflg,%efespflg2      ;降らせる物体とエフェクト表示法を取得
+
+gosub *dllstartdraw
+
+if %efespflg2 = 3 mov %efespflg2,1 : jumpf
+;WH REMOVING RAIN, REMOVE THIS PLEASE
+if %efespflg2 = 1 print 91
+if %efespflg2 = 2 print 92
+;WH REMOVING RAIN, RE ADD THIS PLEASE
+;delay 800
+~
+
+return
+
+*dllstartdraw
+
+;WH REMOVING RAIN, RE ADD THIS PLEASE
+;lsp efesp,"*0"
+lsp efesp,":b;bmp\efe\stillrainfront.png",0,0
+lsp 950,":b;bmp\efe\stillrain.png",0,0
+
+ if %efespflg = 1 layermessage 0,"i|bmp\efe\rain1.bmp,bmp\efe\rain2.bmp,bmp\efe\rain3.bmp"	 ;画像登録
+
+
+ layermessage 0,"s|1,30,-9,0,0"
+ if %efespflg2 = 2 jumpf
+ layermessage 0,"f"
+ vsp efesp,1 
+ ~
+
+return
+
+*dllefe_off
+
+mov %efespflg,off
+layermessage 0,"x"
+csp efesp
+csp 950
+
+;print 1
+
+return
+
+
+
+;＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞＜＞
+
+*Fede
+textoff
+;パラメーター取得
+;属性、タイマー（全体時間100ミリ秒ごとで指定）
+
+getparam %Free1,%Free9
+
+ if %Free1 = 0 goto *Fede_0 ;全てフェードアウト
+ if %Free1 = 1 goto *Fede_10 ;ＢＧＭのみフェードアウト
+ if %Free1 = 10 goto *Fede_1 ;Ｍｅ全てフェードアウト
+ if %Free1 = 11 goto *Fede_11 ;Ｍｅ１のみフェードアウト
+ if %Free1 = 12 goto *Fede_11 ;Ｍｅ２のみフェードアウト
+ if %Free1 = 13 goto *Fede_11 ;Ｍｅ３のみフェードアウト
+ if %Free1 = 14 goto *Fede_11 ;Ｍｅ４のみフェードアウト
+ if %Free1 = 15 goto *Fede_11 ;Ｍｅ５のみフェードアウト
+ if %Free1 = 16 goto *Fede_0_smooth ;全てフェードアウト
+
+*Fede_0_smooth  ;全てフェードアウト
+;変化回数を１０回に固定する、変化秒は%Fede_wait10で計算
+;ウェイトタイマーは%bm_ptの変数に代入する。
+mov %bm_pt,%Free9/100
+
+mov %Free3,BGM_v_Ch
+for %Free1 = Free11 to Free17  ;各チャンネルの減少値計算を準備
+	mov %%Free1,%%Free3
+	inc %Free3
+next
+
+;之により、Free11〜Free17までがｖｏｌ減少値10ミリ単位と成る
+
+mov %Free21,%BGM_v_Ch*100
+mov %Free22,%Me_v_Ch0*100
+mov %Free23,%Me_v_Ch1*100
+mov %Free24,%Me_v_Ch2*100
+mov %Free25,%Me_v_Ch3*100
+mov %Free26,%Me_v_Ch4*100
+mov %Free27,%Me_v_Ch5*100
+
+;フェードアウト開始
+for %Free1 = 1 to 100
+	resettimer      ;内部タイマーをリセット
+	
+	;減少計算
+	 sub %Free21,%Free11
+	 sub %Free22,%Free12
+	 sub %Free23,%Free13
+	 sub %Free24,%Free14
+	 sub %Free25,%Free15
+	 sub %Free26,%Free16
+	 sub %Free27,%Free17
+
+	 mov %BGM_v_Ch,%Free21/100
+	 mov %Me_v_Ch0,%Free22/100
+	 mov %Me_v_Ch1,%Free23/100
+	 mov %Me_v_Ch2,%Free24/100
+	 mov %Me_v_Ch3,%Free25/100
+	 mov %Me_v_Ch4,%Free26/100
+	 mov %Me_v_Ch5,%Free27/100
+
+	bgmvol_safe %BGM_v_Ch
+	chvol 10,%Me_v_Ch0     ;音量反映
+	chvol 11,%Me_v_Ch1     ;音量反映
+	chvol 12,%Me_v_Ch2     ;音量反映
+	chvol 13,%Me_v_Ch3     ;音量反映
+	chvol 14,%Me_v_Ch4     ;音量反映
+	chvol 15,%Me_v_Ch5     ;音量反映
+
+	waittimer %bm_pt   ;内部タイマーウェイト
+next
+
+;ボリューム数値をロード用の値に収納　及び、音完全消去
+wait 500
+E_A
+return
+
+;対象チャンネルのｖｏｌ量計算
+
+*Fede_0  ;全てフェードアウト
+;変化回数を１０回に固定する、変化秒は%Fede_wait10で計算
+;ウェイトタイマーは%bm_ptの変数に代入する。
+mov %bm_pt,%Free9/10
+
+mov %Free3,BGM_v_Ch
+for %Free1 = Free11 to Free17  ;各チャンネルの減少値計算を準備
+	mov %%Free1,%%Free3
+	inc %Free3
+next
+
+;之により、Free11〜Free17までがｖｏｌ減少値10ミリ単位と成る
+
+mov %Free21,%BGM_v_Ch*10
+mov %Free22,%Me_v_Ch0*10
+mov %Free23,%Me_v_Ch1*10
+mov %Free24,%Me_v_Ch2*10
+mov %Free25,%Me_v_Ch3*10
+mov %Free26,%Me_v_Ch4*10
+mov %Free27,%Me_v_Ch5*10
+
+;フェードアウト開始
+for %Free1 = 1 to 10
+	resettimer      ;内部タイマーをリセット
+	
+	;減少計算
+	 sub %Free21,%Free11
+	 sub %Free22,%Free12
+	 sub %Free23,%Free13
+	 sub %Free24,%Free14
+	 sub %Free25,%Free15
+	 sub %Free26,%Free16
+	 sub %Free27,%Free17
+
+	 mov %BGM_v_Ch,%Free21/10
+	 mov %Me_v_Ch0,%Free22/10
+	 mov %Me_v_Ch1,%Free23/10
+	 mov %Me_v_Ch2,%Free24/10
+	 mov %Me_v_Ch3,%Free25/10
+	 mov %Me_v_Ch4,%Free26/10
+	 mov %Me_v_Ch5,%Free27/10
+
+	bgmvol_safe %BGM_v_Ch
+	chvol 10,%Me_v_Ch0     ;音量反映
+	chvol 11,%Me_v_Ch1     ;音量反映
+	chvol 12,%Me_v_Ch2     ;音量反映
+	chvol 13,%Me_v_Ch3     ;音量反映
+	chvol 14,%Me_v_Ch4     ;音量反映
+	chvol 15,%Me_v_Ch5     ;音量反映
+
+	waittimer %bm_pt   ;内部タイマーウェイト
+next
+
+;ボリューム数値をロード用の値に収納　及び、音完全消去
+wait 500
+E_A
+return
+
+
+*Fede_1
+;変化回数を１０回に固定する、変化秒は%Fede_wait10で計算
+;ウェイトタイマーは%bm_ptの変数に代入する。
+mov %bm_pt,%Free9/10
+
+ mov %Free3,Me_v_Ch0
+for %Free1 = Free12 to Free17  ;各チャンネルの減少値計算を準備
+	mov %%Free1,%%Free3
+	inc %Free3
+next
+
+;之により、Free11〜Free17までがｖｏｌ減少値10ミリ単位と成る
+
+mov %Free22,%Me_v_Ch0*10
+mov %Free23,%Me_v_Ch1*10
+mov %Free24,%Me_v_Ch2*10
+mov %Free25,%Me_v_Ch3*10
+mov %Free26,%Me_v_Ch4*10
+mov %Free27,%Me_v_Ch5*10
+
+;フェードアウト開始
+for %Free1 = 1 to 10
+
+	resettimer      ;内部タイマーをリセット
+	
+	;減少計算
+	sub %Free22,%Free12
+	sub %Free23,%Free13
+	sub %Free24,%Free14
+	sub %Free25,%Free15
+	sub %Free26,%Free16
+	sub %Free27,%Free17
+
+ 	mov %Me_v_Ch0,%Free22/10
+ 	mov %Me_v_Ch1,%Free23/10
+ 	mov %Me_v_Ch2,%Free24/10
+ 	mov %Me_v_Ch3,%Free25/10
+ 	mov %Me_v_Ch4,%Free26/10
+ 	mov %Me_v_Ch5,%Free27/10
+
+	   chvol 10,%Me_v_Ch0     ;音量反映
+	   chvol 11,%Me_v_Ch1     ;音量反映
+	   chvol 12,%Me_v_Ch2     ;音量反映
+	   chvol 13,%Me_v_Ch3     ;音量反映
+	   chvol 14,%Me_v_Ch4     ;音量反映
+	   chvol 15,%Me_v_Ch5     ;音量反映
+	waittimer %bm_pt   ;内部タイマーウェイト
+next
+
+;ボリューム数値をロード用の値に収納　及び、音完全消去
+wait 500
+E_MA
+return
+
+
+*Fede_10  ;BGMフェードアウト
+;変化回数を１０回に固定する、変化秒は%Fede_wait10で計算
+;ウェイトタイマーは%bm_ptの変数に代入する。
+mov %bm_pt,%Free9/10
+
+ mov %Free11,%BGM_v_Ch
+
+;之により、Free11〜Free17までがｖｏｌ減少値10ミリ単位と成る
+mov %Free21,%BGM_v_Ch*10
+
+;フェードアウト開始
+for %Free1 = 1 to 10
+	resettimer      ;内部タイマーをリセット
+	
+	;減少計算
+	sub %Free21,%Free11
+	mov %BGM_v_Ch,%Free21/10
+	bgmvol_safe %BGM_v_Ch
+	waittimer %bm_pt   ;内部タイマーウェイト
+next
+
+;ボリューム数値をロード用の値に収納　及び、音完全消去
+wait 500
+E_B
+return
+
+
+*Fede_11
+;変化回数を１０回に固定する、変化秒は%Fede_wait10で計算
+;ウェイトタイマーは%bm_ptの変数に代入する。
+mov %bm_pt,%Free9/10
+
+mov %Free3,%Free1 + Me_v_Ch0 - 10
+mov %Free12,%%Free3
+
+;之により、Free11〜Free17までがｖｏｌ減少値10ミリ単位と成る
+mov %Free22,%%Free3*10
+
+;フェードアウト開始
+for %Free19 = 1 to 10
+
+	resettimer      ;内部タイマーをリセット
+
+	;減少計算
+	sub %Free22,%Free12
+	mov %%Free3,%Free22/10
+	chvol %Free1,%%Free3     ;音量反映
+	waittimer %bm_pt   ;内部タイマーウェイト
+next
+
+;ボリューム数値をロード用の値に収納　及び、音完全消去
+
+wait 500
+sub %Free1,10
+e_ 2,%Free1
+return
+
+
+*cross1
+;ウェイト、Ｍｅ１〜５
+ getparam %Free9,%Free1,%Free2,%Free3,%Free4,%Free5
+
+;差分より、増減値を求める（プラスなら音量アップ、マイナスなら音量ダウン）
+ sub %Free1,%Me_v_Ch1 : div %Free1,10
+ sub %Free2,%Me_v_Ch2 : div %Free2,10
+ sub %Free3,%Me_v_Ch3 : div %Free3,10
+ sub %Free4,%Me_v_Ch4 : div %Free4,10
+ sub %Free5,%Me_v_Ch5 : div %Free5,10
+
+;ウェイトの計算準備
+mov %crosstimer,%Free9/10
+
+for %Free8 = 1 to 10    ;音量変更開始
+     resettimer      ;内部タイマーをリセット
+     ;ＢＧＭの音量減少
+     sub %BGM_v_Ch,%BGM_v_Ch/10
+
+     ;Ｍｅの増加計算
+	mov %Free11,Free1
+     for %Free16 = Me_v_Ch1 to Me_v_Ch5
+	notif %Free11 = 0 add %%Free16,%%Free11
+        inc %Free11
+     next
+
+     bgmvol_safe %BGM_v_Ch
+     chvol 11,%Me_v_ch1     ;音量反映
+     chvol 12,%Me_v_ch2     ;音量反映
+     chvol 13,%Me_v_ch3     ;音量反映
+     chvol 14,%Me_v_ch4     ;音量反映
+     chvol 15,%Me_v_ch5     ;音量反映
+     waittimer %crosstimer   ;内部タイマーウェイト
+  next
+  E_B
+
+	for %Free1 = Me_v_ch1 to Me_v_ch5
+   		if %%Free1 < 1 e_ 2,%Free1
+	next
+return
+
+
+*cross2
+;ウェイト、ＢＧＭ
+ getparam %Free9,%Free1
+
+;BGMの一回あたりの増減値を算出（処理回数は１０回で固定）
+sub %Free1,%BGM_v_Ch : div %Free1,10
+
+;ウェイトタイマーの算出
+mov %crosstimer,%Free9/10
+
+for %Free16 = 1 to 10
+      resettimer      ;内部タイマーをリセット
+
+     ;ＢＧＭ増減の計算
+     add %BGM_v_Ch,%Free1
+
+     ;Ｍｅの減少
+	for %Free11 = Me_v_Ch1 to Me_v_Ch5
+		notif %%Free11 = 0 sub %%Free11,%%Free11/10
+	next
+
+     bgmvol_safe %BGM_v_Ch
+     chvol 11,%Me_v_ch1     ;音量反映
+     chvol 12,%Me_v_ch2     ;音量反映
+     chvol 13,%Me_v_ch3     ;音量反映
+     chvol 14,%Me_v_ch4     ;音量反映
+     chvol 15,%Me_v_ch5     ;音量反映
+
+    waittimer %crosstimer   ;内部タイマーウェイト
+next
+
+E_MA
+if %BGM_v_Ch = 0 E_B
+return
+
+
+;命令文　（ｂｇｍ）（Ｍｅ１）（Ｍｅ２）（Ｍｅ３）（Ｍｅ４）（Ｍｅ５）（ウェイト）
+*fedeXX
+
+getparam %Fede_bgmv,%Fede_Me1v,%Fede_Me2v,%Fede_Me3v,%Fede_Me4v,%Fede_Me5v,%Fede_wait
+
+;変動なしチェック
+if %Fede_bgmv > 0 mov %Fede_bgmvflg,1
+if %Fede_Me1v > 0 mov %Fede_Me1vflg,1
+if %Fede_Me2v > 0 mov %Fede_Me2vflg,1
+if %Fede_Me3v > 0 mov %Fede_Me3vflg,1
+if %Fede_Me4v > 0 mov %Fede_Me4vflg,1
+if %Fede_Me5v > 0 mov %Fede_Me5vflg,1
+
+if %Fede_bgmv < 100 mov %Fede_bgmvflg,1
+if %Fede_Me1v < 100 mov %Fede_Me1vflg,1
+if %Fede_Me2v < 100 mov %Fede_Me2vflg,1
+if %Fede_Me3v < 100 mov %Fede_Me3vflg,1
+if %Fede_Me4v < 100 mov %Fede_Me4vflg,1
+if %Fede_Me5v < 100 mov %Fede_Me5vflg,1
+
+if %Fede_bgmv = %BGM_v_Ch mov %Fede_bgmvflg,0
+if %Fede_Me1v = %Me_v_Ch1 mov %Fede_Me1vflg,0
+if %Fede_Me2v = %Me_v_Ch2 mov %Fede_Me2vflg,0
+if %Fede_Me3v = %Me_v_Ch3 mov %Fede_Me3vflg,0
+if %Fede_Me4v = %Me_v_Ch4 mov %Fede_Me4vflg,0
+if %Fede_Me5v = %Me_v_Ch5 mov %Fede_Me5vflg,0
+
+;変動音量値算出
+
+mov %Free5,Fede_bgmvflg2 ;音量変動方向フラグ　ｏｎ＝ダウン　ｏｆｆ＝アップ
+mov %Free4,Fede_bgmv2    ;音量変動値
+mov %Free2,Fede_bgmv     ;音量指定値
+mov %Free3,bgm_v_ch      ;音量現在値
+
+ for %Free1 = Fede_bgmvflg to Fede_Me5vflg
+
+      ;変動なしフラグオンの時は飛ばす
+  if %%Free1 = 0 jumpf
+
+
+
+   if %%Free2 < %%Free3  mov %%Free4,%%Free3 : sub %%Free4,%%Free2 : mov %%Free5,on
+   if %%Free2 > %%Free3  mov %%Free4,%%Free2 : sub %%Free4,%%Free3 : mov %%Free5,off
+
+ ~
+
+inc %Free2
+inc %Free3
+inc %Free4
+inc %Free5
+  if %Free3 = Me_v_Ch0 inc %Free3
+
+next
+
+;１０ミリ単位の計算準備
+
+mov %Free3,Fede_bgmv4    ;１０ミリ用変動値
+mov %Free6,Fede_bgmv2    ;変動幅
+
+mov %Fede_bgmv3,%bgm_v_ch     ;１０ミリ用現在値
+mov %Fede_Me1v3,%Me_v_ch1
+mov %Fede_Me2v3,%Me_v_ch2
+mov %Fede_Me3v3,%Me_v_ch3
+mov %Fede_Me4v3,%Me_v_ch4
+mov %Fede_Me5v3,%Me_v_ch5
+
+mul %Fede_bgmv3,100 
+mul %Fede_Me1v3,100
+mul %Fede_Me2v3,100
+mul %Fede_Me3v3,100
+mul %Fede_Me4v3,100
+mul %Fede_Me5v3,100
+
+

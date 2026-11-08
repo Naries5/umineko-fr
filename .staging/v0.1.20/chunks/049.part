@@ -1,0 +1,5000 @@
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_r1cn.jpg",":b;bmp\background\garden\garden_r1cn.png",0
+ld r,$GEO_majimeA5,26
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e125:「……………どうして、紗音の名がここにあるんだ。」@
+;＜譲治
+langen:dwave_eng 0, geo_4e125:^Pourquoi est-ce que le nom de Shannon figure dans cette lettre ?^@
+
+ld l,$GAP_DefA1,23
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e113:「二番目の選択肢には、その者がもっとも必要とする、愛する者の名が。@/
+langen:dwave_eng 0, gap_4e113:^La deuxième proposition désigne toujours la personne que le candidat aime le plus, celle dont il ne pourrait se passer.^@/
+
+ld l,$GAP_DefA3,80
+
+langjp:dwave_jp 0, gap_4e114:……朱志香へのテストの二番には、嘉音って書かれているはずだわ。」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e114:^ Sur la lettre de Jessica, c'est certainement le nom de Kanon qui apparaît à cet endroit.^\
+
+ld r,$GEO_majimeA4k,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e126:「………この馬鹿な問題を、朱志香にも出したのかい…。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e126:^... Vous lui avez posé cette même question abominable... ?^\
+
+ld l,$GAP_WaraiA2,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e115:「くすくすくす。@:dwave_jp 0, gap_4e116:……朱志香のことなんかどうでもいいでしょう。@:dwave_jp 0, gap_4e117:今、試されているのはあなたよ。@/
+langen:dwave_eng 0, gap_4e115:^Hmhm.^@:dwave_eng 0, gap_4e116:^ Jessica n'est pas ton problème.^@:dwave_eng 0, gap_4e117:^ Pour l'instant, c'est toi qu'on examine.^@/
+
+ld l,$GAP_AkuwaraiA1,80
+
+langjp:dwave_jp 0, gap_4e118:実に簡単な三択だわ。@:dwave_jp 0, gap_4e119:他の二つのために、どれを捨てられるかということよ。@:dwave_jp 0, gap_4e120:……簡単でしょう？@:dwave_jp 0, gap_4e121:　それでも決まらないなら、コインでも貸してあげようかしら……？」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e118:^ La question est d'une simplicité enfantine.^@:dwave_eng 0, gap_4e119:^ Lequel de ces trois sacrifices es-tu prêt à consentir pour préserver les deux autres ?^@:dwave_eng 0, gap_4e120:^ Facile, non ?^@:dwave_eng 0, gap_4e121:^ Si tu n'arrives vraiment pas à te décider, je pourrais même te prêter une pièce.^\
+
+ld r,$GEO_majimeA5,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e127:「……コイン？@:dwave_jp 0, geo_4e128:　二面しかないものでどうやって三択を？」\
+;＜譲治
+langen:dwave_eng 0, geo_4e127:^... Une pièce ?^@:dwave_eng 0, geo_4e128:^ Comment départager trois possibilités avec une pièce qui n'a que deux faces ?^\
+
+cl a,0
+ld c,$GAP_akuWaraiA3,23
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e122:「自分の命を捨てられる者が、いるわけがない。@/
+langen:dwave_eng 0, gap_4e122:^Personne n'est capable de choisir volontairement sa propre mort.^@/
+
+ld c,$GAP_DefA3,80
+
+langjp:dwave_jp 0, gap_4e123:……となれば自ずと残る選択肢は２つになる。@:dwave_jp 0, gap_4e124:愛する者のために、全ての人間を諦めるか。@:dwave_jp 0, gap_4e125:ひとりでも多くを救うために、愛する者一人を諦めるか。\
+langen:dwave_eng 0, gap_4e123:^ Il n'en reste donc plus que deux.^@:dwave_eng 0, gap_4e124:^ Abandonner tous les autres pour sauver celle que tu aimes...^@:dwave_eng 0, gap_4e125:^ Ou sacrifier celle que tu aimes pour sauver tous les autres.^\
+
+ld c,$GAP_akuwaraiA2,80
+
+langjp:dwave_jp 0, gap_4e126:　どっちにも、もっともらしい大義名分が付けられるわ。@:dwave_jp 0, gap_4e127:だって、今やこの六軒島は悪魔の島ですもの。\
+langen:dwave_eng 0, gap_4e126:^Dans les deux cas, tu trouveras facilement une noble raison pour justifier ta décision.^@:dwave_eng 0, gap_4e127:^ Après tout, Rokkenjima est devenue l'île des démons.^\
+
+se1 21
+ld c,$GAP_AkuwaraiA1,80
+
+langjp:dwave_jp 0, gap_4e128:　……ニンゲンの世界の、甘ったるい馴れ合いなんて必要ないの。@:dwave_jp 0, gap_4e129:誰も責めないわ。@:dwave_jp 0, gap_4e130:あなたの心の趣くままに。@:dwave_jp 0, gap_4e131:……右代宮家の家督を継ぐに相応しい資格が自らにあるかを問いながら、\
+langen:dwave_eng 0, gap_4e128:^Ici, tu n'as plus besoin des petites conventions sentimentales dont les Humains sont si friands.^@:dwave_eng 0, gap_4e129:^ Personne ne te reprochera ton choix.^@:dwave_eng 0, gap_4e130:^ Écoute simplement ce que te dicte ton cœur.^@:dwave_eng 0, gap_4e131:^ Et demande-toi si tu es digne de diriger la famille Ushiromiya.^\
+
+ld c,$GAP_AkuwaraiA4,80
+
+langjp:dwave_jp 0, gap_4e132:　いいえ、自らが右代宮家当主であると思って選択なさい？@:dwave_jp 0, gap_4e133:　うっふふふふふふふふ……。」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e132:^Non, mieux encore. Décide comme si tu en étais déjà le chef.^@:dwave_eng 0, gap_4e133:^ Huhuhuhuhuhu...^\
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_r1an.jpg",":b;bmp\background\garden\garden_r1an.png",0
+ld r,$GEO_ikariA2,23
+ld r,$GEO_KomaruA1k,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e129:「……………………………………。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e129:^...^\
+
+textoff
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+mevol 1,70
+mevol 2,70
+
+dllefe 1,1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_o1bn.jpg",":b;bmp\background\mainbuilding\m_o1bn.png",2
+wait 2000
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+dllefe_off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+
+fedexx 0,50,50,0,0,0,2000
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1bn.jpg",":b;bmp\background\mainbuilding\mjes_1bn.png",26
+
+
+;■朱志香の部屋
+mov %play_scene,40250 : mov %r_hyouji_side,0 : mov %r_hyouji_cha,jes
+
+ld c,$JES_odorokiA1,24
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e134:「………馬鹿に………しやがってッ…………。」@
+;＜朱志香
+langen:dwave_eng 0, jes_4e134:^... Vous vous foutez de ma gueule... !!^@
+br
+advchar "-1"
+langjp　朱志香は手紙をぐしゃぐしゃにすると床に叩き付ける。\
+langen^Jessica froissa la lettre entre ses doigts et la jeta à terre.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1an.jpg",":b;bmp\background\mainbuilding\mjes_1an_lit.png",0
+ld l,$RON_akuwaraiA1,23
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e112:「お怒りはごもっともと思いますよ。@:dwave_jp 0, ron_4e113:……私も、非常にお気の毒で、それでいて実に滑稽な出題だと思います。@:dwave_jp 0, ron_4e114:……ぷっくっくっく。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e112:^Votre colère est parfaitement légitime.^@:dwave_eng 0, ron_4e113:^ À vrai dire, cette question me paraît à moi aussi d'une cruauté regrettable, mais d'un comique exquis.^@:dwave_eng 0, ron_4e114:^ Pfff... hmhmhm...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1cn.jpg",":b;bmp\background\mainbuilding\mjes_1cn.png",0
+ld r,$JES_ikariA2,24
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e135:「自分から死にたいと願う人間なんて、いるもんか。@/
+langen:dwave_eng 0, jes_4e135:^Qui voudrait crever de son plein gré ?!^@/
+
+;ld r,$JES_IkariA1,80
+
+langjp:dwave_jp 0, jes_4e136:そして、あ、…愛する人の命を見捨てて生き残りたいと思う人間なんて、いるもんか。@/
+langen:dwave_eng 0, jes_4e136:^ Et qui pourrait avoir envie de vivre après avoir laissé mourir la personne qu'il... qu'il aime ?!^@/
+;ld r,$JES_IkariA2,80
+
+langjp:dwave_jp 0, jes_4e137:……そして、……自分たちだけ良ければ、他の人間全てを見殺しに出来る人間なんて、……いるもんか…ッ…！」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e137:^ Et quel genre d'ordure serait capable de laisser massacrer tous les autres pour sauver sa peau et celle de son amoureux ?!^\
+
+ld l,$RON_defA1,23
+
+bgm1v 61,85
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e115:「いいえ、朱志香さま。@:dwave_jp 0, ron_4e116:居ても良いのでございますよ。@/
+langen:dwave_eng 0, ron_4e115:^Oh, mademoiselle Jessica.^@:dwave_eng 0, ron_4e116:^ Je vous assure que de telles personnes existent.^@/
+
+ld l,$RON_majimeA2,80
+
+langjp:dwave_jp 0, ron_4e117:ここは六軒島、悪魔の島！@:dwave_jp 0, ron_4e118:　今やニンゲンの世界から完全に切り取られ魔界にどっぷり、チーズフォンデュのように沈んでおります。@:dwave_jp 0, ron_4e119:人の世の価値観など、次の燃えないゴミの日に出してしまいますとも。\
+langen:dwave_eng 0, ron_4e117:^ N'oubliez pas où nous nous trouvons : Rokkenjima est désormais l'île des démons !^@:dwave_eng 0, ron_4e118:^ Coupée du monde des Humains, elle baigne dans l'univers démoniaque comme un morceau de pain plongé dans une fondue au fromage !^@:dwave_eng 0, ron_4e119:^ Quant aux valeurs morales du monde humain, nous pouvons les jeter avec les prochains déchets non combustibles.^\
+
+ld l,$RON_AkuwaraiA1,80
+
+langjp:dwave_jp 0, ron_4e120:　ぷっくっく！@:dwave_jp 0, ron_4e121:　ですからどうか。@:dwave_jp 0, ron_4e122:朱志香さまが心より欲するものを、順にお選び下さい。@:dwave_jp 0, ron_4e123:その結果、残ったものが、この狂った今宵に相応しき朱志香さまの回答となりましょう。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e120:^Pfff... hmhm !^@:dwave_eng 0, ron_4e121:^ Je vous invite donc à classer ces trois possibilités selon les désirs de votre cœur.^@:dwave_eng 0, ron_4e122:^ Celle qui arrivera en dernier sera le sacrifice le plus conforme à votre nature.^@:dwave_eng 0, ron_4e123:^ Voilà une réponse digne de cette nuit de folie.^\
+
+ld r,$JES_IkariA1,80
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e138:^^!s0「ふざけるなッ！！/
+sl
+langen:dwave_eng 0, jes_4e138:^^!s0^TE FOUS PAS DE MOI !!^@/
+sl
+
+se1 11
+quakey 3,500
+
+langjp^^!sd@:dwave_jp 0, jes_4e139:　こんなの、……どれも選べるものかよ！！」\
+;＜朱志香
+langen^^!sd@:dwave_eng 0, jes_4e139:^ COMMENT TU VEUX QUE JE CHOISISSE ENTRE TROIS HORREURS PAREILLES ?!!^\
+
+ld l,$RON_DefA1,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e124:「« 何れも選ばねば、上記の全てを失う »、も、@:dwave_jp 0, ron_4e125:立派な第四の選択肢でございます。@:dwave_jp 0, ron_4e126:それを選ばれるのもまた、一興でございましょう。\
+langen:dwave_eng 0, ron_4e124:^« Si vous refusez de choisir, vous perdrez les trois »...^@:dwave_eng 0, ron_4e125:^ C'est une quatrième possibilité tout à fait recevable.^@:dwave_eng 0, ron_4e126:^ Elle pourrait donner lieu à une conclusion très divertissante.^\
+
+ld l,$RON_DefA2,80
+
+langjp:dwave_jp 0, ron_4e127:　ただ、それを選び結局自らの命を落とされるなら、潔く一番の« 自分の命 »を選び、@:dwave_jp 0, ron_4e128:他の２つを救われた方が賢明かと思いますよ。@:dwave_jp 0, ron_4e129:……全ては朱志香さまの選択に委ねられます。\
+langen:dwave_eng 0, ron_4e127:^Mais puisque cette décision vous coûterait la vie, autant choisir directement la première proposition,^@:dwave_eng 0, ron_4e128:^ pour sauver ainsi les deux autres.^@:dwave_eng 0, ron_4e129:^ Enfin, vous seule pouvez décider.^\
+
+ld l,$RON_majimeA2,80
+
+langjp:dwave_jp 0, ron_4e130:　どうぞ、右代宮家の跡継ぎに相応しい回答と、その信念をお聞かせ下さいませ……！！@:dwave_jp 0, ron_4e131:　このロノウェ、お館様の血を引きし末裔に相応しき、素晴らしい回答を心より期待いたしておりますッ！！」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e130:^Je vous en prie, mademoiselle Jessica. Faites-moi entendre une réponse digne de celle qui pourrait devenir le prochain chef de famille !^@:dwave_eng 0, ron_4e131:^ Moi, Ronove, j'attends avec impatience la réponse d'une digne descendante du Maître !^\
+
+ld r,$JES_ikariA3,80
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e140:「ち、……畜生ぉおおおおぉおおおおお……。」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e140:^... M-Meeeeeeeeeeeeerde...^\
+
+textoff
+
+se1 22
+mono 1
+print 42
+
+mono off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+me1v 12,50
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",0
+ld c,$KIN_waraiA2,22
+
+;■書斎
+advchar "-1"
+langjp　その光景は、金蔵の持つ魔法の水晶玉で観察されていた。\
+langen^Kinzo observait les épreuves de ses petits-enfants à travers une boule de cristal.^\
+
+langjp　金蔵はとうとう堪え切れなくなり、両手を広げて天を仰ぎながら、割れんばかりの声で大笑いし始める……。\
+langen^La scène l'amusait prodigieusement. Il écarta les bras et éclata d'un rire à faire trembler les murs.^\
+
+
+se1v 21,90
+ld c,$KIN_AkuWaraiA2,80
+
+advchar "01"
+langjp:dwave_jp 0, kin_4e430:「ふははははははは、わあっはっはははははははははッ！！@:dwave_jp 0, kin_4e431:　何を迷うか、愚かなる孫たちよ、我が末裔たちよッ！！\
+langen:dwave_eng 0, kin_4e430:^MOUHAHAHAHAHAHAHA ! WAHAHAHAHAHAHAHAHA !!^@:dwave_eng 0, kin_4e431:^ POURQUOI HÉSITEZ-VOUS AUTANT, MES STUPIDES DESCENDANTS ?!!^\
+
+ld c,$KIN_AkuWaraiA1,80
+
+langjp:dwave_jp 0, kin_4e432:　即答できる簡単な問題ではないか。@:dwave_jp 0, kin_4e433:朝のトーストに、バターを塗るかジャムを塗るかより迷わぬ選択であるというのに！！@/
+langen:dwave_eng 0, kin_4e432:^C'est pourtant une question d'une simplicité enfantine !^@:dwave_eng 0, kin_4e433:^ Vous devriez y répondre plus facilement qu'en choisissant entre beurre et confiture sur vos tartines du matin !!^@/
+
+ld c,$KIN_WaraiA1,80
+
+langjp:dwave_jp 0, kin_4e434:　……お前たちには正しい答えがわかるか？」\
+;＜金蔵
+langen:dwave_eng 0, kin_4e434:^ ... Et vous, connaissez-vous la bonne réponse ?^\
+
+advchar "-1"
+langjp　その後で控えていたシエスタ姉妹にぎょろりと振り返る。\
+langen^Il se retourna brusquement vers les Sœurs Chiester qui attendaient derrière lui.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",0
+ld l,$S45_majimeA1,23
+
+advchar "35"
+langjp:dwave_jp 0, s45_4e14:「い、いいえいいえッ、申し訳ございません、私にはわかりません、ゴールドスミス卿！」\
+;＜４５
+langen:dwave_eng 0, s45_4e14:^N-Non, non ! Toutes mes excuses, je ne sais pas, seigneur Goldsmith !^\
+
+
+ld r,$KIN_IkariA1,24
+se2v 2,100
+quakey 3,400
+
+me2v 5,50
+
+advchar "01"
+langjp:dwave_jp 0, kin_4e435:「愚か者めッ、選べもせぬとはな、ゲームオーバーああぁあッ！！！@:dwave_jp 0, kin_4e436:　自らの生きる理由も目的も見出せん愚かなうさぎめッ…！！\
+langen:dwave_eng 0, kin_4e435:^IDIOTE !! NE PAS SAVOIR CHOISIR, C'EST GAME OVER !!^@:dwave_eng 0, kin_4e436:^ Misérable lapine ! Tu ignores jusqu'à la raison pour laquelle tu es venue au monde !!^\
+
+ld r,$KIN_fukigenA1,80
+
+langjp:dwave_jp 0, kin_4e437:　貴様など誰にも気付かれずに踏み潰されて生を終えるアリ１匹ほどの価値もないわ！！@:dwave_jp 0, kin_4e438:　死ね！潰れろ！！私が瞬きしている間に消えてなくなれッ！！@/
+langen:dwave_eng 0, kin_4e437:^Tu ne vaux même pas une fourmi qu'on écraserait sans la voir !^@:dwave_eng 0, kin_4e438:^ Va te faire piétiner et disparais avant que j'aie cligné des yeux !!^@/
+
+ld r,$KIN_defA1,80
+
+langjp:dwave_jp 0, kin_4e439:　……お前はどうか。」\
+;＜金蔵
+langen:dwave_eng 0, kin_4e439:^ ... Et toi ?^\
+
+cl l,24
+ld l,$S00_DefA1,23
+
+advchar "37"
+langjp:dwave_jp 0, s00_4e27:「……私は１番の、« 自分の命 »を生贄とするであります。@:dwave_jp 0, s00_4e28:武具は戦い、散ってこそであります。@:dwave_jp 0, s00_4e29:そして武具は、敵を打ち滅ぼし、味方を守るためにある。@:dwave_jp 0, s00_4e30:愛する者たちを守って死ねるなら本望であります。」\
+;＜００
+langen:dwave_eng 0, s00_4e27:^Je choisirais la première proposition : sacrifier ma propre vie.^@:dwave_eng 0, s00_4e28:^ Une arme existe pour combattre et, si nécessaire, tomber au combat.^@:dwave_eng 0, s00_4e29:^ Sa mission est de protéger ses alliés et d'anéantir leurs ennemis.^@:dwave_eng 0, s00_4e30:^ Si ma mort défend ceux que j'aime, je n'aurai rien à regretter.^\
+
+
+ld r,$KIN_WaraiA1,80
+
+advchar "01"
+langjp:dwave_jp 0, kin_4e440:「ほお。@:dwave_jp 0, kin_4e441:武具らしい実に見事な模範解答よ。@:dwave_jp 0, kin_4e442:即答、大いに結構。@/
+langen:dwave_eng 0, kin_4e440:^Oh !^@:dwave_eng 0, kin_4e441:^ Voilà une réponse modèle, digne d'une arme !^@:dwave_eng 0, kin_4e442:^ Et sans hésitation ! Excellent !!^@/
+
+;ld r,$KIN_akuwaraiA2,80
+
+langjp:dwave_jp 0, kin_4e443:……そう答えればニンジンが１本余計にもらえると教えられてきたのか？@:dwave_jp 0, kin_4e444:　ふっふふふふ違うよなぁああぁ？@:dwave_jp 0, kin_4e445:　それすらも違うよなぁあああぁあ…？\
+langen:dwave_eng 0, kin_4e443:^ ... On t'aurait appris à répondre ça pour gagner une carotte supplémentaire ? ^@:dwave_eng 0, kin_4e444:^Huhuhuhu... Mais non, voyons ! Ce n'est pas ça, n'est-ce paaaas ? ^@:dwave_eng 0, kin_4e445:^Ce serait encore trop simple, pas vraiiii... ?^\
+
+ld r,$KIN_ikariA1,80
+se1v 2,100
+quakey 3,400
+
+me3v 17,50
+
+langjp:dwave_jp 0, kin_4e446:　そう聞かれたらそう答えよと、お前はただ吹き込まれた通りに答えたに過ぎなぁあい！！@:dwave_jp 0, kin_4e447:　お前も今のうさぎと同じだ。@:dwave_jp 0, kin_4e448:自分の生きる理由と目的を、未だに見出せずに生きている…！！@:dwave_jp 0, kin_4e449:　生きる価値なきクズめッ…！@:dwave_jp 0, kin_4e450:　貴様など潰されて他の家畜の餌にでもなるのがお似合いよッ！！」\
+;＜金蔵
+langen:dwave_eng 0, kin_4e446:^TU NE FAIS QUE RÉCITER LA RÉPONSE QU'ON T'A FOURRÉE DANS LE CRÂNE !!^@:dwave_eng 0, kin_4e447:^ TU NE VAUX PAS MIEUX QUE CETTE AUTRE LAPINE !!^@:dwave_eng 0, kin_4e448:^ Tu vis sans avoir découvert par toi-même pourquoi tu existes !^@:dwave_eng 0, kin_4e449:^ Misérable déchet !^@:dwave_eng 0, kin_4e450:^ Tu mériterais qu'on te broie pour nourrir les bêtes !!^\
+
+ld l,$S00_komaruA1,80
+
+advchar "37"
+langjp:dwave_jp 0, s00_4e31:「……………ッ。@/
+langen:dwave_eng 0, s00_4e31:^... !^@/
+
+ld l,$S00_OdorokiA2,80
+
+langjp:dwave_jp 0, s00_4e32:…はっ！@:dwave_jp 0, s00_4e33:　か、家畜の餌、光栄であります……！」\
+;＜００
+langen:dwave_eng 0, s00_4e32:^ ... Oui !^@:dwave_eng 0, s00_4e33:^ Servir de nourriture aux animaux serait... un honneur... !^\
+
+
+ld r,$KIN_AkuWaraiA1,80
+
+me4v 19,90
+
+advchar "01"
+langjp:dwave_jp 0, kin_4e451:「違うだろぉおおおぉ？/
+sl
+langen:dwave_eng 0, kin_4e451:^MAIS NON, BON SANG ! CE N'EST PAS ÇA, HEIN ?!! ^@/
+se1v 2,100
+quakey 3,400
+langjp:noclear_cw:dwave_jp 0, kin_4e452:　もう誰も死ぬところを見たくないんだろぉおお？@:dwave_jp 0, kin_4e453:　それがなぜ認められぬのか。@:dwave_jp 0, kin_4e454:認めろよ、お前の古傷の奥の奥が未だに膿んで腐っていることを…！@:dwave_jp 0, kin_4e455:　あぁ、腐臭にて鼻が曲がりそうであるわ、愚かなる腐れうさぎめッ！！@:dwave_jp 0, kin_4e456:　お前にはこれが褒め言葉であるッ！！」\
+;＜金蔵
+langen:noclear_cw:dwave_eng 0, kin_4e452:^TU NE VEUX PLUS VOIR PERSONNE MOURIR, PAS VRAIIII ?!! ^@:dwave_eng 0, kin_4e453:^Alors pourquoi refuses-tu de l'admettre ?! ^@:dwave_eng 0, kin_4e454:^Avoue donc que cette vieille blessure, tout au fond de toi, continue de suppurer et de pourrir... ! ^@:dwave_eng 0, kin_4e455:^AH ! Cette puanteur me retourne l'estomac, misérable lapine en décomposition !! ^@:dwave_eng 0, kin_4e456:^Et de ma part, considère ça comme un compliment !!^\
+
+ld l,$S00_NakuA1,80
+
+advchar "37"
+langjp:dwave_jp 0, s00_4e34:「………あ、ありがとうございます、であります……。」\
+;＜００
+langen:dwave_eng 0, s00_4e34:^... M-Merci beaucoup... !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",0
+ld r,$S41_MajimeA1,23
+
+ld l,$KIN_FukigenA1,23
+
+advchar "01"
+langjp:dwave_jp 0, kin_4e457:「さぁて、最後のお前はどうか。@:dwave_jp 0, kin_4e458:この三択から何を選ぶ…？」@
+;＜金蔵
+langen:dwave_eng 0, kin_4e457:^Voyons maintenant la dernière !^@:dwave_eng 0, kin_4e458:^ Et toi, lequel de ces trois sacrifices choisirais-tu ?^@
+
+ld r,$S41_DefA1,80
+
+advchar "36"
+langjp:dwave_jp 0, s41_4e21:「にひ。@:dwave_jp 0, s41_4e22:迷うことなく当然、２番であります。」\
+;＜４１０
+langen:dwave_eng 0, s41_4e21:^Hinhin.^@:dwave_eng 0, s41_4e22:^ Le deuxième, évidemment. Sans hésiter.^\
+
+
+ld l,$KIN_DefA1,80
+
+advchar "01"
+langjp:dwave_jp 0, kin_4e459:「ほぉ…。@:dwave_jp 0, kin_4e460:２番か。@:dwave_jp 0, kin_4e461:« 愛する者 »を生贄に捧げることを胸を張って選べる者は多くない。@:dwave_jp 0, kin_4e462:訳を聞かせよ。」\
+;＜金蔵
+langen:dwave_eng 0, kin_4e459:^Oh... ?^@:dwave_eng 0, kin_4e460:^ Le deuxième, dis-tu ?^@:dwave_eng 0, kin_4e461:^ Rares sont ceux qui affirmeraient si fièrement sacrifier la personne qu'ils aiment.^@:dwave_eng 0, kin_4e462:^ Explique-moi donc cela !^\
+
+ld r,$S41_AkuwaraiA2,80
+
+advchar "36"
+langjp:dwave_jp 0, s41_4e23:「愛する者は、いつかいなくなるからです。@:dwave_jp 0, s41_4e24:愛する者がいなければ、傷つかないし、いなくてもいつか、また誰かを愛せるかもしれない。@/
+langen:dwave_eng 0, s41_4e23:^Parce que les gens qu'on aime finissent toujours par disparaître.^@:dwave_eng 0, s41_4e24:^ Quand on n'aime personne, on ne souffre pas. Et même si quelqu'un disparaît, on peut espérer aimer quelqu'un d'autre.^@/
+
+ld r,$S41_AkuwaraiA1,80
+
+langjp:dwave_jp 0, s41_4e25:だから。@:dwave_jp 0, s41_4e26:今、愛してる者なんて、大した価値はないのですにぇ。@:dwave_jp 0, s41_4e27:……にひ！」\
+;＜４１０
+langen:dwave_eng 0, s41_4e25:^ Alors voilà.^@:dwave_eng 0, s41_4e26:^ La personne qu'on aime aujourd'hui n'a finalement pas tant de valeur que ça, nié.^@:dwave_eng 0, s41_4e27:^ ... Hinhin !^\
+
+
+cl a,0
+
+ld c,$KIN_WaraiA2,23
+
+advchar "01"
+langjp:dwave_jp 0, kin_4e463:「くっくくくくくく。@:dwave_jp 0, kin_4e464:なるほど、それでそういう回答になるわけか、愛に傷ついたがゆえに臆病になったうさぎよ……。@:dwave_jp 0, kin_4e465:うさぎは寂しさで死ぬと聞いたが、お前の心は一体いつ殺されたというのか…？\
+langen:dwave_eng 0, kin_4e463:^Kukukukuku. ^@:dwave_eng 0, kin_4e464:^Je vois... Voilà donc ce qui te pousse à répondre ainsi, pauvre lapine devenue si craintive à force d'avoir souffert par amour... ^@:dwave_eng 0, kin_4e465:^On raconte que les lapins meurent de solitude. Mais toi, à quel moment ton cœur a-t-il donc rendu l'âme... ?^\
+
+ld c,$KIN_MajimeA1,80
+
+me5v 16,90
+
+langjp:dwave_jp 0, kin_4e466:　ならばうさぎよ、問いを変えよう。@:dwave_jp 0, kin_4e467:２番の選択肢を、« 愛する者 »ではなく、« そなたが愛した者の思い出 »に変えようではないか。\
+;＜金蔵
+langen:dwave_eng 0, kin_4e466:^Je vais modifier légèrement la question.^@:dwave_eng 0, kin_4e467:^ Remplaçons « la personne que tu aimes » par « les souvenirs de la personne que tu as aimée ».^\
+
+ld c,$KIN_waraiA2,80
+
+langjp:dwave_jp 0, kin_4e468:　……どうか。@:dwave_jp 0, kin_4e469:これでももう一度選べるかぁ？@:dwave_jp 0, kin_4e470:　何が愛してる者に大した価値はないだ、愚かなうさぎよ…！@/
+langen:dwave_eng 0, kin_4e468:^... Alors ? ^@:dwave_eng 0, kin_4e469:^Es-tu toujours capable de choisir cette proposition... ? ^@:dwave_eng 0, kin_4e470:^Et tu oses prétendre que la personne que tu aimes n'a guère de valeur, pauvre idiote... ! ^@/
+
+ld c,$KIN_IkariA1,80
+
+langjp:dwave_jp 0, kin_4e471:　自らの愛の深さにも向かい合えぬクズめッ！！/
+sl
+langen:dwave_eng 0, kin_4e471:^MISÉRABLE DÉCHET, INCAPABLE DE REGARDER EN FACE LA PROFONDEUR DE TON PROPRE AMOUR !!^@/
+se1v 2,90
+quakey 3,300
+langjp:noclear_cw:dwave_jp 0, kin_4e472:　選んでみよッ、愛した者を忘れられると、選んでみよぉおおおおおッ！！\
+langen:noclear_cw:dwave_eng 0, kin_4e472:^ VAS-Y, CHOISIS DONC !! AFFIRME QUE TU PEUX OUBLIER CELUI QUE TU AS AIMÉÉÉÉ !!^\
+
+ld c,$KIN_akuwaraiA1,80
+
+langjp:dwave_jp 0, kin_4e473:　選べるだろ？@:dwave_jp 0, kin_4e474:選べるものなぁあああぁ？@:dwave_jp 0, kin_4e475:ほおおら選べるって言ってみろよおおぉおおおおッ？！？！」\
+langen:dwave_eng 0, kin_4e473:^Tu peux le faire, n'est-ce pas ?^@:dwave_eng 0, kin_4e474:^ Tu peux abandonner ces souvenirs, HEIN ?!!^@:dwave_eng 0, kin_4e475:^ ALLEZ !! DIS-MOI QUE TU PEUX T'EN DÉBARRASSER !!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",0
+ld c,$S41_nakuA1,24
+
+advchar "36"
+langjp:dwave_jp 0, s41_4e28:「え、…え、選べるであります…。@:dwave_jp 0, s41_4e29:選べるであります…！！@:dwave_jp 0, s41_4e30:　にひ、………にひひひひひひひひひいひぃ……。」\
+;＜４１０
+langen:dwave_eng 0, s41_4e28:^J-Je peux... ^@:dwave_eng 0, s41_4e29:^Je peux choisir ça... !! ^@:dwave_eng 0, s41_4e30:^Hinhin... hinhinhinhinhinhin...^\
+
+;bg Mlib_1e,22
+ld r,$S45_majimeA1,24
+
+advchar "37"
+langjp:dwave_jp 0, s00_4e35:「ゴ、ゴールドスミス卿…！@:dwave_jp 0, s00_4e36:　それくらいでどうかお許しを……！！」\
+;＜４５
+langen:dwave_eng 0, s00_4e35:^S-Seigneur Goldsmith... !^@:dwave_eng 0, s00_4e36:^ Je vous en supplie, arrêtez... !!^\
+
+ld c,$S41_nakuA1,80
+
+advchar "36"
+langjp:dwave_jp 0, s41_4e31:「ひひぃひぃ…。@:dwave_jp 0, s41_4e32:……ひぃいいいいぃいいぃん…！！」\
+;＜４１０
+langen:dwave_eng 0, s41_4e31:^Hihiiihii... ^@:dwave_eng 0, s41_4e32:^Hiiiiiiiiiiiiiiiiin... !!^\
+
+;bg Mlib_1dN,0
+
+;ld r,$S41_OdorokiA1,0
+;ld l,$S45_KomaruA1,0
+;ld c,$KIN_FukigenA1,26
+;ld c,$KIN_IkariA1,80
+
+se1v 1006,100
+se2v 2,100
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1e.jpg",":b;bmp\background\mainbuilding\mlib_1e.png",1
+quakey 4,500
+
+advchar "01"
+langjp:dwave_jp 0, kin_4e476:「もう良いわッ、クズうさぎどもめッ！！@:dwave_jp 0, kin_4e477:　お前たちはワルギリアのところへ行き、地下牢の見張りを手伝うのだ。@:dwave_jp 0, kin_4e478:消えよ！！」\
+;＜金蔵
+langen:dwave_eng 0, kin_4e476:^ÇA SUFFIT, BANDE DE LAPINES MINABLES !!^@:dwave_eng 0, kin_4e477:^ Allez rejoindre Virgilia ! Aidez-la à surveiller les prisonniers !^@:dwave_eng 0, kin_4e478:^ DISPARAISSEZ DE MA VUE !!^\
+
+se1 52
+;cl l,0
+;cl r,99,2000,"breakup.dll/lrb"
+
+textoff
+wait 300
+se2 52
+textoff
+wait 500
+
+E_MA
+se3 52
+
+advchar "-1"
+langjp　シエスタ姉妹たちは、それぞれの心の古傷を抉られ、@逃げ出すように姿を消す。@
+langen^Les Sœurs Chiester, dont Kinzo venait de rouvrir les blessures les plus profondes,^@^ disparurent comme si elles prenaient la fuite.^@
+br
+langjp　後には、誰も聞く者はないのに金蔵がひとり、演劇を続けるかのように話を続ける…。\
+langen^Mais leur départ ne mit pas fin à son enthousiasme. Il poursuivit son discours, comme un acteur incapable de quitter la scène.^\
+
+se1v 21,85
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",23
+ld c,$KIN_WaraiA2,24
+
+advchar "01"
+langjp:dwave_jp 0, kin_4e479:「……と、このように愉快なテストなわけだ。@:dwave_jp 0, kin_4e480:実のところを言えば、これが正解という選択肢はない。@/
+langen:dwave_eng 0, kin_4e479:^Voilà ce qui rend cette épreuve si amusante !^@:dwave_eng 0, kin_4e480:^ En vérité, il n'existe aucune réponse absolument correcte.^@/
+
+ld c,$KIN_IkariA1,80
+
+langjp:dwave_jp 0, kin_4e481:^^!s1むしろ、どの答えであろうとも、/
+sl
+langjp:voicedelay 3430:dwave_jp 0, kin_4e482:^^澱みなく、/
+sl
+langjp:voicedelay 1250:dwave_jp 0, kin_4e483:^^素早くッ、/
+sl
+langjp:voicedelay 1070:dwave_jp 0, kin_4e484:^^そして確固たる信念と揺るがぬ強き自らの意志で選べるかどうかッ！！/
+sl
+langen:dwave_eng 0, kin_4e481:^^!s1^ Ce que je veux savoir, c'est si, quelle que soit la réponse choisie, ils sont capables de se décider... ^@/
+sl
+langen:voicedelay 3430:dwave_eng 0, kin_4e482:^sans la moindre hésitation,^@/
+sl
+langen:voicedelay 1250:dwave_eng 0, kin_4e483:^ rapidement,^@/
+sl
+langen:voicedelay 1070:dwave_eng 0, kin_4e484:^ et avec une conviction absolue, née d'une volonté qui leur appartient et que rien ne saurait ébranler !!^@/
+
+se1 12
+quakey 2,300
+
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+
+ld c,$KIN_akuwaraiA1,80
+
+advchar "01"
+langjp:dwave_jp 0, kin_4e485:　その理由と意思の方が重要なのだ。@:dwave_jp 0, kin_4e486:………私はそれを知りたいのだよ。@/
+langen:dwave_eng 0, kin_4e485:^Ce sont les raisons du choix, et la volonté qui le soutient, qui comptent véritablement.^@:dwave_eng 0, kin_4e486:^ Voilà ce que je veux découvrir !^@/
+
+;ld c,$KIN_WaraiA2,80
+
+langjp:dwave_jp 0, kin_4e487:あぁ、我が末裔たちよ、お前たちはどのような答えを見せてくれるのか、実に楽しみだッ！！\
+;＜金蔵
+langen:dwave_eng 0, kin_4e487:^ Ah, mes descendants ! Comme j'ai hâte de découvrir ce que vous me répondrez !!^\
+
+me1v 17,85
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1e.jpg",":b;bmp\background\mainbuilding\mlib_1e.png",25
+
+langjp:dwave_jp 0, kin_4e488:　…………んん？@:dwave_jp 0, kin_4e489:　私か？@:dwave_jp 0, kin_4e490:　くっくくくくくくく！@:dwave_jp 0, kin_4e491:　あぁ、もちろん同じ問いを突きつけられたことがあったとも。@:dwave_jp 0, kin_4e492:その悪魔の問いに見事答えたからこそ、私は黄金と名誉と、あの魔女を我が物とすることが出来たのだよ。@:dwave_jp 0, kin_4e493:私が選んだ答えはどれかぁあぁ？@:dwave_jp 0, kin_4e494:　………言うまでもないよなぁ。@:dwave_jp 0, kin_4e495:わっはっははははははははははははははははははははは…ッ！！！」\
+;＜金蔵
+langen:dwave_eng 0, kin_4e488:^... Hmmm ?^@:dwave_eng 0, kin_4e489:^ Moi ?^@:dwave_eng 0, kin_4e490:^ Kukukukuku !^@:dwave_eng 0, kin_4e491:^ Évidemment. On m'a autrefois posé exactement cette même question.^@:dwave_eng 0, kin_4e492:^ C'est en répondant brillamment à l'épreuve de ce démon...^@:dwave_eng 0, kin_4e493:^ que j'ai obtenu l'or, la gloire et jusqu'à cette sorcière elle-même !^@:dwave_eng 0, kin_4e494:^ Ai-je vraiment besoin d'en dire davantage ?^@:dwave_eng 0, kin_4e495:^ WAHAHAHAHAHAHAHAHAHAHA !!^\
+
+textoff
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",5
+
+fede 0,3000
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m2f_p1bn.jpg",":b;bmp\background\mainbuilding\m2f_p1bn.png",22
+
+me1v 13,50
+
+wait 2000
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1an.jpg",":b;bmp\background\mainbuilding\mjes_1an_lit.png",0
+ld r,$RON_DefA2,26
+
+;■朱志香の部屋
+
+ld r,$RON_Defa1,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e132:「さて。@:dwave_jp 0, ron_4e133:そろそろ答えは決まりましたでしょうか……？」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e132:^Fort bien.^@:dwave_eng 0, ron_4e133:^ Auriez-vous enfin pris votre décision ?^\
+
+ld l,$JES_komaruA2,23
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e141:「……………………………。」@
+;＜朱志香
+langen:dwave_eng 0, jes_4e141:^...^@
+br
+advchar "-1"
+langjp　朱志香は、握り潰されて床に転がる手紙をじっと見ながら、@……ずっと俯いて黙っていた。\
+langen^Jessica fixait la lettre froissée à ses pieds,^@^ la tête basse, silencieuse.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1e.jpg",":b;bmp\background\mainbuilding\mjes_1e.png",22
+
+langjp　部屋を満たすのは、風雨の音と梢の擦れるざわめきだけ。@
+langjp　それはどれだけ賑やかであっても、むしろ静寂を引き立てるのだった。\
+langen^Au-dehors, le vent sifflait, la pluie martelait les vitres et les branches s'agitaient furieusement.^@
+langen^Malgré tout ce vacarme, le silence n'en paraissait que plus pesant.^\
+
+langjp　ロノウェは朱志香の答えを待つ。@
+langjp　……しかし、朱志香は答えない。@
+langen^Ronove attendait.^@
+langen^Jessica ne répondait toujours pas.^@
+br
+langjp　それが沈思黙考なのか、思考停止なのか、ロノウェには区別がつかない。\
+langen^Était-elle plongée dans une réflexion profonde ? Ou avait-elle simplement renoncé à réfléchir ?^\
+
+langjp　……いや、…本当はわかっているのかもしれない。@
+langen^Ronove devait sans doute le savoir.^@
+br
+langjp　だが、ロノウェは、悪魔らしく意地悪に、……それを朱志香に口にするよう促す。\
+langen^Mais en bon démon, il préféra l'obliger à prononcer elle-même sa décision.^\
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1bn.jpg",":b;bmp\background\mainbuilding\mjes_1bn.png",0
+ld c,$RON_DefA1,26
+ld c,$RON_akuwaraiA1,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e134:「………どれも選べないというなら。@:dwave_jp 0, ron_4e135:……そのお命、せめて痛みがないよう、安らかに頂戴させていただきますが、…さて……？」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e134:^Si vous êtes véritablement incapable de choisir...^@:dwave_eng 0, ron_4e135:^ je peux au moins vous accorder une mort sans douleur, plus douce encore que le sommeil le plus paisible. Alors ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+;ld c,$JES_NayamuA1,80
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e142:「……………………………。@:dwave_jp 0, jes_4e143:………せよ。」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e142:^...^@:dwave_eng 0, jes_4e143:^ ... Fais-le.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1an.jpg",":b;bmp\background\mainbuilding\mjes_1an_lit.png",0
+ld c,$RON_DefA2,22
+ld c,$RON_MajimeA1,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e136:「……はい？@:dwave_jp 0, ron_4e137:　聞こえかねました。@:dwave_jp 0, ron_4e138:もう一度、お願いできますかな……？」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e136:^... Pardonnez-moi ?^@:dwave_eng 0, ron_4e137:^ Je crains de ne pas vous avoir entendue.^@:dwave_eng 0, ron_4e138:^ Pourriez-vous répéter, je vous prie ?^\
+
+advchar "-1"
+langjp　朱志香はゆっくり顔を上げて、……ロノウェの目をまっすぐ見る。@
+langjp　……どうやら答えは、決まっているようだった。\
+langen^Jessica releva lentement la tête et regarda Ronove droit dans les yeux.^@
+langen^Cette fois, elle semblait prête à répondre.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+fede 0,1000
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1cn.jpg",":b;bmp\background\mainbuilding\mjes_1cn.png",0
+ld r,$JES_tohohoA3,22
+
+bgm1 51
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e144:「…………殺せよ。」@
+;＜朱志香
+langen:dwave_eng 0, jes_4e144:^... Tue-moi.^@
+br
+advchar "-1"
+langjp　朱志香はもう一度、……はっきりとそう言った。\
+langen^Jessica répéta sa décision sans détour.^\
+
+langjp　ロノウェは、その答えを初めから想像していたのかもしれない。@
+langjp　……驚くことなく、薄く笑って頷く。\
+langen^Ronove l'avait peut-être devinée depuis longtemps.^@
+langen^Il inclina simplement la tête, sans paraître surpris.^\
+
+
+ld l,$RON_akuwaraiA1,23
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e139:「……朱志香さまなら、そのお答えを選ぶと思っておりました。@/
+langen:dwave_eng 0, ron_4e139:^Je me doutais que vous feriez ce choix, mademoiselle Jessica.^@/
+
+;ld l,$RON_AkuwaraiA1,80
+
+langjp:dwave_jp 0, ron_4e140:……さて、このテストは、どの選択肢が正解・不正解というものではありません。@:dwave_jp 0, ron_4e141:重要なのは、どのような考えを経てその答えに至ったか、という部分です。\
+langen:dwave_eng 0, ron_4e140:^ Mais sachez qu'il n'existe ici ni bonne ni mauvaise réponse.^@:dwave_eng 0, ron_4e141:^ Ce qui m'intéresse, c'est le raisonnement qui vous a conduite à cette décision.^\
+
+ld l,$RON_DefA1,80
+
+langjp:dwave_jp 0, ron_4e142:　さぁ。@:dwave_jp 0, ron_4e143:朱志香さまの、そして次期当主としての心構えをもって、それをお答え下さい。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e142:^Allons.^@:dwave_eng 0, ron_4e143:^ Expliquez-moi votre choix avec toute la conviction qui sied à Jessica Ushiromiya.^\
+
+
+;ld c,$JES_NayamuA1,80
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1e.jpg",":b;bmp\background\mainbuilding\mjes_1e.png",25
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e145:「…………別に、死にたくて一番目を選んだわけじゃないさ。@:dwave_jp 0, jes_4e146:……二番の、嘉音くんを死なせること。@:dwave_jp 0, jes_4e147:こんなの、もちろん論外。@:dwave_jp 0, jes_4e148:だから除外。@:dwave_jp 0, jes_4e149:……三番の、その他みんなの命。@:dwave_jp 0, jes_4e150:こんなのも、もちろん論外。@:dwave_jp 0, jes_4e151:だから除外。@:dwave_jp 0, jes_4e152:……そしたら、一番目の選択肢しか、残らなかった。」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e145:^C'est pas comme si j'avais envie de crever, tu sais.^@:dwave_eng 0, jes_4e146:^ La deuxième proposition, c'était laisser mourir Kanon.^@:dwave_eng 0, jes_4e147:^ Évidemment que j'allais pas choisir ça.^@:dwave_eng 0, jes_4e148:^ Alors je l'ai éliminée.^@:dwave_eng 0, jes_4e149:^ La troisième, c'était sacrifier tous les autres.^@:dwave_eng 0, jes_4e150:^ Ça non plus, j'en étais incapable.^@:dwave_eng 0, jes_4e151:^ Alors je l'ai éliminée aussi.^@:dwave_eng 0, jes_4e152:^ Au bout du compte, il restait que la première.^\
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e144:「消去法、……ですか。@:dwave_jp 0, ron_4e145:積極的にお選びになったわけではない、と……。」@
+langen:dwave_eng 0, ron_4e144:^Vous avez donc procédé par élimination.^@:dwave_eng 0, ron_4e145:^ Ce n'était pas véritablement un choix libre, n'est-ce pas ?^@
+br
+;ld c,$RON_MajimeA1,80
+;＜ロノウェ
+advchar "-1"
+langjp　ロノウェは、薄く、ふっと笑ってから目線を落とす。\
+langen^Ronove eut un léger rire avant de baisser les yeux.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　……悪魔が期待した答えがどのようなものなのか、ニンゲンには想像もつかない。@
+langen^Jessica ignorait ce qu'un démon pouvait considérer comme une réponse satisfaisante.^@
+br
+langjp　……少なくともわかるのは、ロノウェの期待するものよりは少し劣るものだったらしい、ということだ。\
+langen^Mais elle comprenait parfaitement qu'il n'était pas impressionné par la sienne.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1an.jpg",":b;bmp\background\mainbuilding\mjes_1an_lit.png",0
+ld c,$RON_DefA2,26
+ld c,$RON_majimeA1,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e146:「……悪くはありませんが、良くもない回答です。@:dwave_jp 0, ron_4e147:……６０点、というところでしょうか。@:dwave_jp 0, ron_4e148:……少し、失望しましたよ。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e146:^Ce n'est pas une mauvaise réponse. Mais elle n'est pas bonne non plus.^@:dwave_eng 0, ron_4e147:^ Je vous accorderais soixante points.^@:dwave_eng 0, ron_4e148:^ J'avoue être quelque peu déçu.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1cn.jpg",":b;bmp\background\mainbuilding\mjes_1cn.png",0
+ld r,$JES_komaruA3,24
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e153:「自信を持って選べと言っておいて、そうしてやったら失望とは、自分勝手な野郎だぜ。」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e153:^Tu m'as demandé de choisir et d'assumer ma réponse ! Maintenant que je le fais, tu te dis déçu ? T'es gonflé, toi !!^\
+
+
+ld l,$RON_AkuwaraiA1,23
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e149:「………消去法、というだけではないようですね。@:dwave_jp 0, ron_4e150:…いずれにせよ、落第点ですが、……もう少しお考えがあるようだ。@:dwave_jp 0, ron_4e151:うかがいましょう。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e149:^Il semblerait donc que votre décision ne soit pas uniquement le résultat d'une élimination.^@:dwave_eng 0, ron_4e150:^ Votre note reste insuffisante, certes, mais vous semblez avoir réfléchi davantage.^@:dwave_eng 0, ron_4e151:^ Je vous écoute.^\
+
+
+ld r,$JES_odorokiA1,80
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e154:「死にたくないさ。@:dwave_jp 0, jes_4e155:……だから一番なんて、誰だって選びたくない。@/
+langen:dwave_eng 0, jes_4e154:^J'ai pas envie de mourir.^@:dwave_eng 0, jes_4e155:^ Et je suis sûre que personne a envie de choisir la première proposition.^@/
+
+;ld r,$JES_OdorokiA1,80
+
+langjp:dwave_jp 0, jes_4e156:……人は、幸せに生きたくて、生の限りを足掻いてるんだぜ。@:dwave_jp 0, jes_4e157:だから本当は、まず一番目なんてありえないはずなんだ。」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e156:^ On veut tous vivre heureux. On s'accroche à la vie de toutes nos forces.^@:dwave_eng 0, jes_4e157:^ Alors normalement, cette première possibilité devrait même pas entrer en ligne de compte.^\
+
+
+ld l,$RON_DefA2,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e152:「………しかし、あなたは一番目の選択肢。@:dwave_jp 0, ron_4e153:自分の命を捨てることを選んだ。@:dwave_jp 0, ron_4e154:その選択肢しか、残らなかった。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e152:^Et pourtant, vous l'avez choisie.^@:dwave_eng 0, ron_4e153:^ Vous avez décidé de sacrifier votre propre vie.^@:dwave_eng 0, ron_4e154:^ Parce qu'il ne vous restait plus que cette solution.^\
+
+
+ld r,$JES_NayamuA1,80
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e158:「一応、……それぞれの選択肢を選んだ後の未来のことを、考えてみたぜ。」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e158:^J'ai quand même essayé de réfléchir à ce qui arriverait après chacun des trois choix.^\
+
+
+ld l,$RON_AkuwaraiA1,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e155:「……ほぅ。@:dwave_jp 0, ron_4e156:いかがでしたか…？」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e155:^... Oh ?^@:dwave_eng 0, ron_4e156:^ Et qu'avez-vous imaginé, mademoiselle Jessica ?^\
+
+
+;ld c,$JES_majimea1,80
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e159:「まず、………嘉音くんを、死なせてみた。@:dwave_jp 0, jes_4e160:………私は、自分の大好きな人を見捨ててまで生きる残りの生涯を想像してみた。」@
+;＜朱志香
+langen:dwave_eng 0, jes_4e159:^D'abord... j'ai imaginé laisser mourir Kanon.^@:dwave_eng 0, jes_4e160:^ J'ai essayé de me représenter ce que serait ma vie après avoir abandonné la personne que j'aime le plus au monde.^@
+
+
+;ld c,$RON_DefA1,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e157:「それはどんな生涯でしたか…？」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e157:^Et à quoi ressemblait cette existence... ?^\
+
+
+;ld c,$JES_IkariA1,80
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1e.jpg",":b;bmp\background\mainbuilding\mjes_1e.png",22
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e161:「生きるにも値しない、最低の女だった。@:dwave_jp 0, jes_4e162:いつまでも自らの選択を悔やみ、ただ後悔だけのために生きるみすぼらしい女だった。@:dwave_jp 0, jes_4e163:……大好きな人を見捨てて生きることを選んだ、最低の女なんて、私には許せない。@:dwave_jp 0, jes_4e164:……私が自ら引導を渡してやる。」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e161:^À celle d'une pauvre fille qui mériterait même pas de vivre.^@:dwave_eng 0, jes_4e162:^ Une lâche qui passerait ses journées à regretter son choix, incapable de penser à autre chose qu'à ce qu'elle aurait pu faire pour le sauver.^@:dwave_eng 0, jes_4e163:^ Une fille assez minable pour laisser mourir celui qu'elle aime juste pour sauver sa peau. Je pourrais jamais lui pardonner.^@:dwave_eng 0, jes_4e164:^ Si je devenais cette fille-là, je préférerais encore mettre moi-même un terme à sa vie.^\
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1an.jpg",":b;bmp\background\mainbuilding\mjes_1an_lit.png",0
+ld l,$RON_AkuwaraiA1,26
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e158:「ふふ、勇ましい。@:dwave_jp 0, ron_4e159:………では、三番目の選択肢も考えられたのでは？」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e158:^Huhu... Voilà qui est courageux.^@:dwave_eng 0, ron_4e159:^ Vous avez donc également envisagé la troisième possibilité ?^\
+
+
+ld r,$JES_tohohoA4,24
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e165:「……あぁ。@:dwave_jp 0, jes_4e166:私と嘉音くん以外の全員を死なせてもみた。@:dwave_jp 0, jes_4e167:……嘉音くんは、そんな私を好きになるはずはない。\
+langen:dwave_eng 0, jes_4e165:^... Ouais.^@:dwave_eng 0, jes_4e166:^ J'ai imaginé qu'on s'en sortait tous les deux, Kanon et moi, mais que tous les autres mouraient à notre place.^@:dwave_eng 0, jes_4e167:^ Sauf que Kanon pourrait jamais aimer une fille capable d'un truc pareil.^\
+
+ld r,$JES_NayamuA1,80
+
+langjp:dwave_jp 0, jes_4e168:　そして私もまた、いくら嘉音くんがいても、そのために見捨てた大勢の命が、生涯十字架となって圧し掛かってきた。@:dwave_jp 0, jes_4e169:……そしてその十字架は、嘉音くんにまで圧し掛かった。\
+langen:dwave_eng 0, jes_4e168:^Même avec lui à mes côtés, je passerais ma vie à penser à toutes ces personnes sacrifiées. Ce serait une croix à porter jusqu'à ma mort.^@:dwave_eng 0, jes_4e169:^ Et le pire, c'est que je finirais par la lui faire porter aussi.^\
+
+ld r,$JES_IkariA1,80
+
+langjp:dwave_jp 0, jes_4e170:　………私は、嘉音くんに十字架を背負わせるために、愚かな選択肢を選んだりは、しない。@:dwave_jp 0, jes_4e171:もしそんなことをする私がいたなら、………私はその未来の私を許さない。@:dwave_jp 0, jes_4e172:…その女にも、私が引導を渡してやる。」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e170:^Tu crois vraiment que je vais faire un choix aussi dégueulasse pour faire porter tout ça à Kanon ?!^@:dwave_eng 0, jes_4e171:^ Si une autre moi était capable de choisir cette troisième solution, je lui pardonnerais jamais.^@:dwave_eng 0, jes_4e172:^ Celle-là non plus, je pourrais pas la laisser vivre.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+advchar "-1"
+langjp　朱志香は思い描いたのだ。@
+langen^Jessica avait essayé d'imaginer son avenir.^@
+br
+langjp　三つの選択肢それぞれの向こうにいる未来の自分を。\
+langen^Trois vies différentes s'étaient dessinées devant elle, issues des trois sacrifices proposés.^\
+
+langjp　三人の朱志香がいた。@
+langen^Il existait trois Jessica.^@
+br
+langjp　……三人の内、二人は後悔していた。@
+langen^Dans deux de ces avenirs, elle serait rongée par des regrets dont elle ne pourrait jamais se débarrasser.^@
+br
+langjp　一人だけが、胸を張って、嘉音に微笑むことが出来た。\
+langen^Une seule pourrait regarder Kanon en face et lui sourire sans honte.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1cn.jpg",":b;bmp\background\mainbuilding\mjes_1cn.png",0
+ld c,$JES_odorokiA1,26
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e173:「……私さ、@:dwave_jp 0, jes_4e174:生意気にも、嘉音くんに説教をしたことがあるぜ。@:dwave_jp 0, jes_4e175:……自分の人生を、思い切り生きてみろ、みたいなことを。」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e173:^... Tu sais...^@:dwave_eng 0, jes_4e174:^ j'ai déjà eu le culot de faire la morale à Kanon.^@:dwave_eng 0, jes_4e175:^ Je lui ai dit qu'il devait vivre sa vie à fond, sans se retenir.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1bn.jpg",":b;bmp\background\mainbuilding\mjes_1bn.png",0
+ld l,$RON_DefA2,23
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e160:「自分の人生を思い切り生きる。@/
+langen:dwave_eng 0, ron_4e160:^Vivre pleinement sa propre vie...^@/
+
+ld l,$RON_MajimeA1,80
+
+langjp:dwave_jp 0, ron_4e161:……味わいある言葉ですね。@:dwave_jp 0, ron_4e162:それは意外に、とても難しいものです。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e161:^ C'était facile à dire.^@:dwave_eng 0, ron_4e162:^ Mais Jessica découvrait combien il était difficile de le faire elle-même.^\
+
+
+ld r,$JES_tohohoA4,24
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e176:「だからさ。@:dwave_jp 0, jes_4e177:私が胸を張って、嘉音くんに見せなきゃならないんだよ。@/
+langen:dwave_eng 0, jes_4e176:^Alors maintenant, c'est à moi de lui montrer l'exemple.^@:dwave_eng 0, jes_4e177:^ Je veux pouvoir le regarder droit dans les yeux et lui sourire.^@/
+
+ld r,$JES_defA1,80
+
+langjp:dwave_jp 0, jes_4e178:………胸を張って、お天道様を真正面から見て、思い切り笑顔でいられる生き方ってやつを。」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e178:^ Même si j'ai peur, je veux vivre la tête haute et ne jamais avoir honte devant lui.^\
+
+
+ld l,$RON_DefA2,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e163:「……あなたの自己犠牲を、嘉音は受け容れられるでしょうか？@:dwave_jp 0, ron_4e164:　あなたの身勝手な選択が、余計に彼を傷つけてしまうことには、思いが至りませんか…？」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e163:^Croyez-vous sincèrement que Kanon accepterait de vous voir sacrifier votre vie pour lui ?^@:dwave_eng 0, ron_4e164:^ Ne pensez-vous pas que cette décision pourrait lui infliger une souffrance bien plus grande encore ?^\
+
+
+ld r,$JES_tohohoA3,80
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e179:「だから、伝言を頼みたい…。」@
+;＜朱志香
+langen:dwave_eng 0, jes_4e179:^C'est justement pour ça que j'ai quelque chose à te demander.^@
+
+
+ld l,$RON_defA1,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e165:「ほぅ。@:dwave_jp 0, ron_4e166:……お聞きはしますが、何しろ私は悪魔です。@:dwave_jp 0, ron_4e167:…約束は守らないかもしれませんよ？」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e165:^Oh ?^@:dwave_eng 0, ron_4e166:^ Je suis tout disposé à vous écouter, mais n'oubliez pas que je suis un démon.^@:dwave_eng 0, ron_4e167:^ Rien ne garantit que je respecterai ma parole.^\
+
+
+ld r,$JES_waraiA1,80
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e180:「………守って！@:dwave_jp 0, jes_4e181:　約束！」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e180:^ALORS RESPECTE-LA !!^@:dwave_eng 0, jes_4e181:^ C'est tout ce que je te demande !^\
+
+advchar "-1"
+langjp　朱志香はあっけらかんと、そう言う。@
+langen^Jessica avait crié sans la moindre hésitation.^@
+br
+langjp　これから命を奪おうとする悪魔に伝言を頼み、それが裏切られると、微塵も思っていないのだ。\
+langen^Elle demandait à un démon prêt à lui prendre la vie de transmettre ses dernières paroles, sans douter qu'il le ferait.^\
+
+langjp　……その、あまりに無垢な笑顔に、ロノウェは薄く目を閉じ、肩を竦めた。\
+langen^Devant cette franchise désarmante, Ronove ferma un instant les yeux et haussa les épaules.^\
+
+ld l,$RON_akuwaraiA1,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e168:「ふっ……。@:dwave_jp 0, ron_4e169:………いいでしょう。@:dwave_jp 0, ron_4e170:それで？@:dwave_jp 0, ron_4e171:　彼に何と伝えればよろしいですか…？」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e168:^Huhuhu...^@:dwave_eng 0, ron_4e169:^ ... Soit.^@:dwave_eng 0, ron_4e170:^ Je vous écoute.^@:dwave_eng 0, ron_4e171:^ Quel message souhaitez-vous que je lui transmette ?^\
+
+;■地下牢
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+wait 2000
+
+me1v 16,50
+
+fr_bg ":b;fr_bg\orig\bmp\background\subway\pri_i1b.jpg",":b;bmp\background\subway\pri_i1b.png",2
+
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e182:『……嘉音くんの、思い切りの人生を、生きて。@/
+langen:dwave_eng 0, jes_4e182:^Dis à Kanon de vivre pleinement sa vie.^@/
+
+langjp:dwave_jp 0, jes_4e183:……うぅん、ちょっと違う。@:dwave_jp 0, jes_4e184:嘉音くんの、じゃない。@:dwave_jp 0, jes_4e185:……本当の名前は未だに教えてもらえないけど。@:dwave_jp 0, jes_4e186:本当の嘉音くんの人生を、思い切り生きて。@:dwave_jp 0, jes_4e187:………そう伝えて。』\
+;＜朱志香
+langen:dwave_eng 0, jes_4e183:^ Non, attends. C'est pas exactement ça.^@:dwave_eng 0, jes_4e184:^ Pas la vie de « Kanon ».^@:dwave_eng 0, jes_4e185:^ Il a jamais voulu me dire son vrai nom, tu sais.^@:dwave_eng 0, jes_4e186:^ Alors dis-lui de vivre pleinement la vie de celui qu'il est vraiment, pas seulement celle de Kanon.^@:dwave_eng 0, jes_4e187:^ Voilà. C'est ça que je veux lui dire.^\
+
+ld r,$KAN_OdorokiA2,2
+
+advchar "16"
+langjp:dwave_jp 0, kan_4e98:「……………お嬢…様……。」@
+;＜嘉音
+langen:dwave_eng 0, kan_4e98:^... Mademoiselle...^@
+
+ld l,$KLA_KomaruA4,23
+
+advchar "02"
+langjp:dwave_jp 0, kla_4e310:「……朱志香……、/
+sl
+langjp:voicedelay 940:dwave_jp 0, kla_4e311:^^……お前というやつは…………。」\
+;＜蔵臼
+langen:dwave_eng 0, kla_4e310:^Jessica...^@/
+sl
+langen:voicedelay 940:dwave_eng 0, kla_4e311:^ ... Quelle jeune fille étonnante...^\
+
+lsp 889,pri_i1a_sak_a,0,0
+vsp 889,1
+
+fr_bg ":b;fr_bg\orig\bmp\background\subway\pri_i1a.jpg",":b;bmp\background\subway\pri_i1a.png",0
+ld c,$WAL_waraiA1,23
+
+advchar "30"
+langjp:dwave_jp 0, wal_4e73:「ロノウェは気まぐれですから、伝言をしなかった可能性もありました。@:dwave_jp 0, wal_4e74:……幸運でしたね。@:dwave_jp 0, wal_4e75:私がこの光景を見せていて。」\
+;＜ワルギリ
+langen:dwave_eng 0, wal_4e73:^Ronove est parfois très capricieux, vous savez. Il aurait parfaitement pu refuser de transmettre ce message.^@:dwave_eng 0, wal_4e74:^ Vous avez eu de la chance.^@:dwave_eng 0, wal_4e75:^ Heureusement que je vous ai permis d'assister à cette conversation.^\
+
+lsp 889,pri_i1c_sak_a,0,0
+fr_bg ":b;fr_bg\orig\bmp\background\subway\pri_i1c.jpg",":b;bmp\background\subway\pri_i1c.png",22
+
+advchar "-1"
+langjp　鉄格子の向こうには、古ぼけた三面鏡が置かれ、……朱志香の光景が映し出されていた。@
+langen^Au-delà des barreaux se trouvait un vieux miroir à trois faces, où se reflétait la chambre de Jessica.^@
+br
+langjp　隣の鏡には、同様に譲治の光景も映し出されている。\
+langen^Un autre miroir leur montrait George.^\
+
+langjp　黄金の蝶が群れ集まって三面鏡が現れたとか、@なぜ鏡に朱志香や譲治の光景が映し出されているのか、彼らはいちいち疑問には思わなかった。@
+langen^Personne ne songea à demander comment ces miroirs avaient pu apparaître au milieu d'un essaim de papillons dorés,^@^ ni comment ils pouvaient montrer Jessica et George.^@
+br
+langjp　……大切なのは、映っている光景だったからだ。\
+langen^Les images qu'ils révélaient étaient beaucoup trop importantes.^\
+
+vsp 889,0
+fr_bg ":b;fr_bg\orig\bmp\background\subway\pri_i1b.jpg",":b;bmp\background\subway\pri_i1b.png",24
+ld c,$KLA_komaruA4,24
+
+advchar "02"
+langjp:dwave_jp 0, kla_4e312:「…………そこまで…。@:dwave_jp 0, kla_4e313:……こいつのために、/
+sl
+langjp:voicedelay 1620:dwave_jp 0, kla_4e314:^^……命をも投げ出せるというのか………。」@
+;＜蔵臼
+langen:dwave_eng 0, kla_4e312:^... À ce point...^@:dwave_eng 0, kla_4e313:^ Tu serais prête à donner ta vie...^@/
+sl
+langen:voicedelay 1620:dwave_eng 0, kla_4e314:^ pour lui... ?^@
+
+ld r,$KAN_MajimeA1,24
+
+advchar "16"
+langjp:dwave_jp 0, kan_4e99:「……………………………。@:dwave_jp 0, kan_4e100:……申し訳、……ありません…。」\
+;＜嘉音
+langen:dwave_eng 0, kan_4e99:^...^@:dwave_eng 0, kan_4e100:^ Je vous demande pardon...^\
+
+ld c,$KLA_nayamuA3,80
+
+advchar "-1"
+langjp　蔵臼は苦笑いの混じる複雑な表情で嘉音を見る。@……嘉音は目を合わせられなかった。\
+langen^Krauss se tourna vers Kanon, partagé entre plusieurs émotions.^@^ Le jeune domestique baissa la tête, incapable de soutenir son regard.^\
+
+ld r,$KAN_OdorokiA2,80
+
+advchar "16"
+langjp:dwave_jp 0, kan_4e101:「……ワルギリアさま。@:dwave_jp 0, kan_4e102:……お嬢様が命を落とされることはありません。@:dwave_jp 0, kan_4e103:……僕を殺して下さい。@:dwave_jp 0, kan_4e104:二番目の選択肢に、変えて下さい。@:dwave_jp 0, kan_4e105:……それで、全ては丸く収まるはずです。」\
+;＜嘉音
+langen:dwave_eng 0, kan_4e101:^... Dame Virgilia.^@:dwave_eng 0, kan_4e102:^ Mademoiselle Jessica ne doit pas mourir.^@:dwave_eng 0, kan_4e103:^ Je vous en supplie, prenez ma vie à sa place.^@:dwave_eng 0, kan_4e104:^ Faites en sorte que ce soit la deuxième proposition qui soit retenue.^@:dwave_eng 0, kan_4e105:^ Si vous me tuez, tout sera réglé.^\
+
+lsp 889,pri_i1a_sak_a,0,0
+vsp 889,1
+fr_bg ":b;fr_bg\orig\bmp\background\subway\pri_i1a.jpg",":b;bmp\background\subway\pri_i1a.png",0
+ld l,$WAL_DefA1,23
+ld l,$WAL_WaraiA1,80
+
+advchar "30"
+langjp:dwave_jp 0, wal_4e76:「ほっほほほほほ…。@:dwave_jp 0, wal_4e77:その願いを、私に叶えることは出来ませんよ。@:dwave_jp 0, wal_4e78:……これは朱志香の選んだ自らの選択なのですから。」\
+;＜ワルギリ
+langen:dwave_eng 0, wal_4e76:^Hohohoho...^@:dwave_eng 0, wal_4e77:^ Je crains de ne pouvoir accéder à votre demande.^@:dwave_eng 0, wal_4e78:^ Ce choix appartient à Jessica. Elle l'a pris de son propre gré.^\
+
+se1 52
+ld5 c,$S41_MajimeA1,99,1000,"breakup.dll/ulb"
+se2 52
+ld5 r,$S45_MajimeA1,99,1000,"breakup.dll/ulb"
+
+advchar "-1"
+langjp　その時、突然、空間が割れて、シエスタ姉妹が出現し、ワルギリアの胸に飛び込んだ。\
+langen^À cet instant, l'espace se fendit brusquement. Les Sœurs Chiester surgirent de la fissure et se jetèrent sur Virgilia.^\
+
+ld l,$WAL_komaruA2,0
+ld r,$S45_nakuA1,0
+ld c,$S41_nakuA2,80
+
+advchar "36"
+langjp:dwave_jp 0, s41_4e33:^^!s0「ワルギリアさまぁああぁあぁっ！/
+sl
+langen:dwave_eng 0, s41_4e33:^^!s0^DAME VIRGILIAAAAAAAA !!^@/
+sl
+
+se1 13
+quakex 4,800
+se2 13
+
+langjp^^!sd@:dwave_jp 0, s41_4e34:　ひいいぃいいいぃん！！」@
+;＜４１０
+langen^^!sd@:dwave_eng 0, s41_4e34:^ Hiiiiiiiiiiiiin !!^@
+
+;ld c,$S45_KomaruA1,80
+quakey 3,400
+advchar "35"
+langjp:dwave_jp 0, s45_4e15:「ひどいんですひどいんです、ゴールドスミス卿がひどいんですぅうぅ、うわあぁああん！」\
+;＜４５
+langen:dwave_eng 0, s45_4e15:^C'est horrib' ! C'est horrib' ! Le seigneur Goldsmith est beaucoup trop méchaaaaant ! OUAAAAAAAH !^\
+
+cl r,23
+ld r,$S00_NakuA2,24
+
+advchar "37"
+langjp:dwave_jp 0, s00_4e37:「私だって……、がんばってるのであります……。@:dwave_jp 0, s00_4e38:潰して家畜の餌とか、あんまりであります。@:dwave_jp 0, s00_4e39:……ううううううううぅうぅ！！」\
+;＜００
+langen:dwave_eng 0, s00_4e37:^Moi aussi... je fais de mon mieux... ^@:dwave_eng 0, s00_4e38:^Me faire broyer pour servir de nourriture au bétail... c'est vraiment trop cruel... ^@:dwave_eng 0, s00_4e39:^... Uuuuuuuuuuuuuuu !!^\
+
+;ld l,$WAL_KomaruA1,80
+
+advchar "-1"
+langjp　泣きじゃくるシエスタ姉妹に揉みくちゃにされ、ワルギリアは何が何だかさっぱりわからない。\
+langen^Assaillie de toutes parts par les trois Sœurs Chiester en pleurs, Virgilia ne comprenait absolument rien à ce qui lui arrivait.^\
+
+ld l,$WAL_KomaruA1,80
+
+advchar "30"
+langjp:dwave_jp 0, wal_4e79:「は、はいはい、大丈夫ですよ大丈夫ですよ、泣かないで泣かないで……。@:dwave_jp 0, wal_4e80:美味しいお紅茶を淹れてあげますからね……。@/
+langen:dwave_eng 0, wal_4e79:^Allons, allons, ce n'est rien. Tout va bien, ne pleurez plus... ^@:dwave_eng 0, wal_4e80:^Je vais vous préparer un délicieux thé, d'accord... ?^@/
+
+ld l,$WAL_FumanA1,80
+
+langjp:dwave_jp 0, wal_4e81:……お前たち、ここの見張りを任せます。@:dwave_jp 0, wal_4e82:不審な真似をしたら、すぐに知らせるのですよ…！」\
+;＜ワルギリ
+langen:dwave_eng 0, wal_4e81:^ Vous trois, je vous confie la surveillance des prisonniers. ^@:dwave_eng 0, wal_4e82:^S'ils font le moindre geste suspect, venez m'avertir immédiatement... !^\
+
+advchar "-1"
+langjp　山羊の従者たちは、互いに顔を向き合わせ、ウンウンと頷いた。\
+langen^Les serviteurs boucs échangèrent un regard et hochèrent tous la tête.^\
+
+cl a,24
+
+langjp　ワルギリアはシエスタ姉妹を伴い、立ち去っていく。@
+langen^Virgilia s'éloigna en emmenant les Sœurs Chiester avec elle.^@
+br
+langjp　階段を上がる音が聞こえたから、上の階へ行ったのだろう。\
+langen^On entendit bientôt des pas monter l'escalier. Elles avaient probablement rejoint l'étage supérieur.^\
+
+ld r,$GOA_defA1,26
+ld l,$GOA_defA1,26
+ld c,$GOA_defA1,26
+wait 1000
+
+vsp 889,0
+fr_bg ":b;fr_bg\orig\bmp\background\subway\pri_i1b.jpg",":b;bmp\background\subway\pri_i1b.png",24
+ld r,$KIR_MajimeA2,24
+
+advchar "09"
+langjp:dwave_jp 0, kir_4e298:「………チャンスだわ。@:dwave_jp 0, kir_4e299:……この山羊頭どもは頭が悪いみたい。@:dwave_jp 0, kir_4e300:……うまく騙せないかしら…。」@
+;＜霧江
+langen:dwave_eng 0, kir_4e298:^... C'est notre chance. ^@:dwave_eng 0, kir_4e299:^... Ces têtes de bouc n'ont pas l'air bien malignes. ^@:dwave_eng 0, kir_4e300:^... On pourrait peut-être réussir à les embobiner...^@
+br
+advchar "-1"
+langjp　霧江はチャンスの到来を悟るが、それでも鉄格子を破る方法は思いつかなかった……。\
+langen^Kyrie comprit qu'une occasion venait de se présenter. Mais elle ne savait toujours pas comment franchir les barreaux...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+
+langjp　三面鏡に映る朱志香は、観念するかのように、目を閉じる。@
+langen^Dans le miroir à trois faces, Jessica avait fermé les yeux comme si elle s'était résignée.^@
+br
+langjp　……両手をポケットに突っ込むその姿は、最後くらいは突っ張っていたいという、彼女なりの美学かもしれない。\
+langen^... Les deux mains dans les poches, elle semblait décidée à rester bravache jusqu'au bout. C'était peut-être sa manière à elle de partir.^\
+
+
+E_MA
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1an.jpg",":b;bmp\background\mainbuilding\mjes_1an_lit.png",22
+ld r,$JES_tohohoA4,24
+
+me1v 12,50
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e188:「…………私の言い分は以上だ。@:dwave_jp 0, jes_4e189:………殺せよ。」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e188:^... J'ai fini. ^@:dwave_eng 0, jes_4e189:^... Tue-moi.^\
+
+
+ld c,$RON_DefA2,23
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e172:「……わかりました。@:dwave_jp 0, ron_4e173:…………それでは。@:dwave_jp 0, ron_4e174:……ご安心をあなたへの死は、どんな眠りよりもやさしく、慈悲深いものにいたしますよ。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e172:^... Très bien. ^@:dwave_eng 0, ron_4e173:^... Dans ce cas... ^@:dwave_eng 0, ron_4e174:^rassurez-vous. Je vous offrirai une mort plus douce et plus miséricordieuse que le plus paisible des sommeils.^\
+
+advchar "-1"
+langjp　ロノウェは手の平を掲げながら、……ゆっくりと朱志香に近付く……。\
+langen^Ronove leva la paume de sa main et s'approcha lentement de Jessica...^\
+
+lsp 889,pri_i1c_sak_a,0,0
+vsp 889,1
+fr_bg ":b;fr_bg\orig\bmp\background\subway\pri_i1c.jpg",":b;bmp\background\subway\pri_i1c.png",1
+;ld c,$KLA_IkariA1,80
+
+me1v 16,50
+se1 12
+quakex 4,400
+se2 12
+quakey 4,500
+
+advchar "02"
+langjp:dwave_jp 0, kla_4e315:^^!s0「くそおぉおおおぉ！！@:dwave_jp 0, kla_4e316:　うお！！@:dwave_jp 0, kla_4e317:　うが！！」/
+sl
+langen:dwave_eng 0, kla_4e315:^^!s0^MERDEEEEEEE !! ^@:dwave_eng 0, kla_4e316:^UOH !! ^@:dwave_eng 0, kla_4e317:^GAAAH !!^@/
+sl
+mov %disable_adv_clear, 1
+langjp!sd@
+langen!sd@
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜蔵臼
+br
+langjp　蔵臼は娘が殺されることを察し、半狂乱になりながら鉄格子に体当たりを繰り返す。@
+langen^ Comprenant que sa fille allait mourir, Krauss se jeta contre les barreaux de tout son poids, encore et encore.^@
+br
+langjp　山羊たちは、ニンゲン風情に鉄格子が破れるはずがないと嘲笑っているように見えた。\
+langen^Les serviteurs boucs observaient ce simple humain qui croyait pouvoir briser une grille à coups d'épaule.^\
+
+langjp　確かに、蔵臼のその無駄な努力は滑稽だっただろう。@
+langen^Ses efforts leur semblaient probablement dérisoires.^@
+br
+langjp　……しかし、蔵臼は、思い切りだった。@
+langjp　朱志香の父として、彼女を救うために、思い切り、今を生きていた。\
+langen^Mais Krauss ne songeait plus à ce qui était possible ou impossible.^@
+langen^Sa fille allait mourir. Et lui, son père, ne pensait plus qu'à la sauver.^\
+
+vsp 889,0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+fr_bg ":b;fr_bg\orig\bmp\background\subway\pri_i1b.jpg",":b;bmp\background\subway\pri_i1b.png",0
+ld r,$KAN_OdorokiA2,22
+
+langjp　………嘉音は両手をぐっと握り締める。@
+langen^Kanon serra les poings.^@
+br
+langjp　自分の呪われた力を使えば、鉄格子を切り裂くことも出来るかもしれない。\
+langen^Il possédait un pouvoir qui lui permettrait peut-être de trancher cette grille.^\
+
+langjp　……しかし、山羊が３人もいる。@
+langjp　…瞬時に３人を倒すなど出来ない。@
+langjp　すぐに通報され、ワルギリアにシエスタ姉妹までもが駆けつけるだろう。\
+langen^Mais trois serviteurs boucs montaient la garde.^@
+langen^Impossible de les éliminer tous les trois en un instant.^@
+langen^L'alerte serait donnée ; Virgilia reviendrait aussitôt avec les Sœurs Chiester.^\
+
+langjp　鉄格子を破ることは出来ても、……そこまでなのだ。@……無駄なのだ。@
+langen^Même en brisant les barreaux, il ne pourrait pas s'échapper.^@^ Ce serait inutile.^@
+br
+langjp　……そういう無駄な努力を、あの魔女は嘲笑っているのをもう知っているから、@……嘉音は蔵臼の繰り返す体当たりを、ただじっと見ているしか出来ない…。\
+langen^Kanon savait déjà combien les sorcières se divertissaient des révoltes désespérées.^@^ Il ne lui restait qu'à regarder Krauss se fracasser contre les barreaux, sans pouvoir l'aider.^\
+
+lsp 889,pri_i1a_sak_a,0,0
+vsp 889,1
+fr_bg ":b;fr_bg\orig\bmp\background\subway\pri_i1a.jpg",":b;bmp\background\subway\pri_i1a.png",0
+mld l,$SHA_odorokiA1,23  ;now appears over bars
+
+advchar "15"
+langjp:dwave_jp 0, sha_4e130:「……あ、…………譲治さま……。」@
+;＜紗音
+langen:dwave_eng 0, sha_4e130:^... Ah... George...^@
+br
+advchar "-1"
+langjp　三面鏡を見ていた紗音が声をあげる。\
+langen^Shannon, qui observait le deuxième miroir, venait de laisser échapper une exclamation.^\
+
+langjp　…見れば、ずっと沈黙していた譲治が顔を上げている。@
+langjp　……譲治もどうやら、答えを決めたらしい…。\
+langen^George avait enfin relevé la tête.^@
+langen^Il semblait avoir pris sa décision.^\
+
+textoff
+
+se1 22
+mcl a,0  ;clear standing image
+vsp 889,0
+bg white,28
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+fede 0,2000
+wait 1000
+
+me1v 13,50
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_r1bn.jpg",":b;bmp\background\garden\garden_r1bn.png",0
+ld r,$GEO_MajimeA1k,2
+
+wait 1000
+
+
+;■薔薇庭園・東屋
+mov %play_scene,40250 : mov %r_hyouji_side,0 : mov %r_hyouji_cha,geo
+
+ld l,$GAP_DefA1,23
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e134:「…………決まった？@:dwave_jp 0, gap_4e135:　君の答え。」@
+;＜ガァプ
+langen:dwave_eng 0, gap_4e134:^Alors ? Tu t'es décidé ?^@:dwave_eng 0, gap_4e135:^ Quelle est ta réponse ?^@
+
+ld r,$GEO_MajimeA1,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e130:「あぁ。@:dwave_jp 0, geo_4e131:………決まったよ。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e130:^Oui.^@:dwave_eng 0, geo_4e131:^ J'ai choisi.^\
+
+
+ld l,$GAP_WaraiA2,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e136:「それは揺るぎ無い答え…？」@
+;＜ガァプ
+langen:dwave_eng 0, gap_4e136:^Et tu ne changeras plus d'avis ?^@
+
+
+ld r,$GEO_MajimeA2k,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e132:「あぁ。揺るぎ無いね。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e132:^Non. Ma décision est prise.^\
+
+
+ld l,$GAP_DefA1,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e137:「なら、聞かせてもらうわ。@/
+langen:dwave_eng 0, gap_4e137:^Dans ce cas, je t'écoute.^@/
+
+ld l,$GAP_WaraiA1,80
+
+langjp:dwave_jp 0, gap_4e138:………あぁ、ちなみに。@:dwave_jp 0, gap_4e139:朱志香はどうも« 自分の命 »を差し出すことを選んだようよ。@:dwave_jp 0, gap_4e140:まさか、優柔不断な君も、同じ答えを選んだって言うんじゃないでしょうね……？」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e138:^ Ah, avant ça.^@:dwave_eng 0, gap_4e139:^ Il paraît que Jessica a choisi de sacrifier sa propre vie.^@:dwave_eng 0, gap_4e140:^ Tu ne vas quand même pas me servir la même réponse avec tes airs d'éternel indécis ?^\
+
+ld r,$GEO_majimeA4,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e133:「……朱志香は、朱志香の答えを出したのさ。@/
+langen:dwave_eng 0, geo_4e133:^Jessica a fait son propre choix.^@/
+
+;ld r,$GEO_MajimeA2k,80
+
+langjp:dwave_jp 0, geo_4e134:……それがどの選択であろうとも、それは朱志香の答えだ。@:dwave_jp 0, geo_4e135:僕の答えに何も干渉しないよ。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e134:^ Quelles que soient ses raisons, cette décision lui appartient.^@:dwave_eng 0, geo_4e135:^ Et elle ne change absolument rien à la mienne.^\
+
+
+ld l,$GAP_defA2,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e141:「そう。@:dwave_jp 0, gap_4e142:なら改めて聞くわ。@/
+langen:dwave_eng 0, gap_4e141:^Oh ?^@:dwave_eng 0, gap_4e142:^ Très bien. Reprenons.^@/
+
+me2v 16,50
+
+langjp:dwave_jp 0, gap_4e143:…………以下に掲げる三つの内。@:dwave_jp 0, gap_4e144:二つを得るために、一つを生贄に捧げよ。@/
+langen:dwave_eng 0, gap_4e143:^ Parmi les trois propositions suivantes,^@:dwave_eng 0, gap_4e144:^ sacrifie-en une pour obtenir les deux autres.^@
+
+ld l,$GAP_akuWaraiA1,80
+
+langjp:dwave_jp 0, gap_4e145:一．自分の命。@:dwave_jp 0, gap_4e146:二．紗音の命。@
+langjp:dwave_jp 0, gap_4e147:三．それ以外の全員の命。@:dwave_jp 0, gap_4e148:………あなたが選んだのはどれ？@/
+langen:dwave_eng 0, gap_4e145:^Premièrement, ta propre vie.^@:dwave_eng 0, gap_4e146:^ Deuxièmement, celle de Shannon.^@
+langen:dwave_eng 0, gap_4e147:^Troisièmement, la vie de tous les autres.^@:dwave_eng 0, gap_4e148:^ Quelle est ta réponse ?^@/
+
+
+langjp:dwave_jp 0, gap_4e149:　まさか朱志香と同じ一番？」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e149:^ Ne me dis pas que tu choisis la première, toi aussi ?^\
+
+
+;ld c,$GEO_WaraiA2k,80
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",80
+wait 2000
+
+se1 21
+E_M2
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e136:「………違うね。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e136:^Non.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_r1cn.jpg",":b;bmp\background\garden\garden_r1cn.png",26
+ld r,$GAP_DefA3,24
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e150:「へぇ……。」@
+;＜ガァプ
+langen:dwave_eng 0, gap_4e150:^... Tiens donc.^@
+br
+advchar "-1"
+langjp　ガァプは少しだけ驚く。@
+langjp　……気弱そうな男がどうせ選ぶ選択肢はそれしかないだろうと思っていたからだ。\
+langen^Gaap ne put dissimuler sa surprise.^@
+langen^Elle avait cru qu'un garçon aussi doux choisirait naturellement de se sacrifier, comme Jessica.^\
+
+ld r,$GAP_WaraiA2,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e151:「…………………。@:dwave_jp 0, gap_4e152:……なら良かったわ。@:dwave_jp 0, gap_4e153:私にとって一番退屈な選択肢が外れてくれて良かった。@/
+langen:dwave_eng 0, gap_4e151:^...^@:dwave_eng 0, gap_4e152:^ Tant mieux.^@:dwave_eng 0, gap_4e153:^ Au moins as-tu écarté la réponse la plus ennuyeuse.^@/
+
+ld r,$GAP_AkuwaraiA1,80
+
+langjp:dwave_jp 0, gap_4e154:……じゃあ、まさかとは思うけど、……二番？@:dwave_jp 0, gap_4e155:　紗音の命を、見捨ててみせる……？」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e154:^ Alors ne me dis pas que tu as choisi la deuxième ?^@:dwave_eng 0, gap_4e155:^ Tu serais vraiment capable d'abandonner Shannon à la mort ?^\
+
+ld l,$GEO_majimeA2k,23
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e137:「………まさか。@:dwave_jp 0, geo_4e138:今夜まさに婚約指輪を贈ろうという相手を、どうして僕が？」\
+;＜譲治
+langen:dwave_eng 0, geo_4e137:^Certainement pas.^@:dwave_eng 0, geo_4e138:^ Pourquoi sacrifierais-je celle à qui je comptais offrir une bague de fiançailles ce soir même ?^\
+
+ld r,$GAP_AkuwaraiA3a,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e156:「……………………。@:dwave_jp 0, gap_4e157:………これは大胆だわ。@:dwave_jp 0, gap_4e158:それが君の答えなの……？」@
+;＜ガァプ
+langen:dwave_eng 0, gap_4e156:^...^@:dwave_eng 0, gap_4e157:^ Eh bien. Quelle audace.^@:dwave_eng 0, gap_4e158:^ C'est donc ça, ta réponse ?^@
+
+ld l,$GEO_majimeA4k,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e139:「………そうさ。@/
+langen:dwave_eng 0, geo_4e139:^Exactement.^@/
+
+ld l,$GEO_MajimeA5,80
+
+langjp:dwave_jp 0, geo_4e140:……僕の答えは、/
+sl
+langjp:voicedelay 1380:dwave_jp 0, geo_4e141:^^……/
+sl
+langen:dwave_eng 0, geo_4e140:^ J'ai choisi...^@/
+sl
+langen:voicedelay 1380:dwave_eng 0, geo_4e141:^^@/
+sl
+
+E_A
+
+langjp:dwave_jp 0, geo_4e142:三番さ。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e142:^ la troisième.^\
+
+bgm1 13
+
+advchar "-1"
+langjp　譲治が選んだのは、………三番目の選択肢。@
+langjp　……« それ以外の全員の、命 »。@
+langen^George venait de choisir de sacrifier la vie de tous les autres.^@
+langen^Tous les autres, sans exception.^@
+br
+langjp　その答えを、さすがのガァプも想像できなかった。\
+langen^Même Gaap ne s'était pas attendue à pareille réponse.^\
+
+langjp　……どうせ朱志香と同じで一番だろうと思っていたのに……。@
+langjp　だからこそ、なぜその答えに至ったのか、興味を持った。@
+langen^Elle voulait maintenant comprendre comment George était arrivé à cette conclusion.^@
+langen^Elle qui le croyait prévisible venait de se tromper sur toute la ligne.^@
+br
+langjp　……７２柱の３３位の悪魔である自分の想像を裏切る答えに、どう至ったのか。\
+langen^Comment cet homme avait-il déjoué les prévisions d'un démon des soixante-douze piliers ?^\
+
+ld r,$GAP_WaraiA2a,80
+
+me1v 12,50
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e159:「聞かせてほしいわ。@:dwave_jp 0, gap_4e160:………自分と愛する婚約者だけが無事で、それ以外の全てを犠牲に出来る境地というのを、聞かせて欲しいわ。@:dwave_jp 0, gap_4e161:……あなたも朱志香と同じで、消去法というやつ？」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e159:^Alors explique-moi ça.^@:dwave_eng 0, gap_4e160:^ Comment peux-tu sacrifier toutes les autres vies de cette île pour sauver la tienne et celle de ta fiancée ?^@:dwave_eng 0, gap_4e161:^ Tu as procédé par élimination, comme Jessica ?^\
+
+
+ld l,$GEO_majimeA1k,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e143:「違うね。@:dwave_jp 0, geo_4e144:はっきりこれしか、僕には選択肢がないのさ。」@
+;＜譲治
+langen:dwave_eng 0, geo_4e143:^Pas du tout.^@:dwave_eng 0, geo_4e144:^ Pour moi, il n'y a jamais eu qu'une seule réponse possible.^@
+
+ld r,$GAP_waraiA1,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e162:「……………自分さえ良ければいいと？@:dwave_jp 0, gap_4e163:　愛する女と引き換えに、世界を犠牲に出来ると…？」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e162:^Donc, tant que tu sauves ta peau, le reste t'est égal ?^@:dwave_eng 0, gap_4e163:^ Tu serais prêt à sacrifier le monde entier pour la femme que tu aimes ?^\
+
+
+ld l,$GEO_MajimeA5,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e145:「君は、何を言っているんだい。」@
+;＜譲治
+langen:dwave_eng 0, geo_4e145:^Mais qu'est-ce que tu racontes ?^@
+
+ld r,$GAP_AkuwaraiA3a,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e164:「…………何………。」@
+;＜ガァプ
+langen:dwave_eng 0, gap_4e164:^... Pardon ?^@
+br
+advchar "-1"
+langjp　悪魔に向かって、まるで呆れるかのように、譲治はそう言い放つ。\
+langen^George venait de répondre à un démon comme s'il venait d'entendre une absurdité.^\
+
+ld l,$GEO_majimeA4,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e146:「……僕は今夜、ここに。@:dwave_jp 0, geo_4e147:紗音を呼び出し、婚約の証である指輪を渡すつもりだった。@/
+langen:dwave_eng 0, geo_4e146:^Ce soir, ici même,^@:dwave_eng 0, geo_4e147:^ j'avais prévu de retrouver Shannon et de lui offrir une bague de fiançailles.^@/
+
+ld l,$GEO_MajimeA2k,80
+
+langjp:dwave_jp 0, geo_4e148:………僕と紗音の婚約を祝福しない者も、きっと多いだろう。@:dwave_jp 0, geo_4e149:僕は彼女との婚約を宣言することで、親族全てを敵に回すと、覚悟していた。\
+langen:dwave_eng 0, geo_4e148:^ Beaucoup de membres de ma famille refuseront certainement de bénir notre union.^@:dwave_eng 0, geo_4e149:^ En épousant une domestique, je risque de me mettre tous les Ushiromiya à dos.^\
+
+ld l,$GEO_MajimeA5k,80
+
+langjp:dwave_jp 0, geo_4e150:　僕にはあるんだよ。@:dwave_jp 0, geo_4e151:この島に訪れたその時から、………いや、違う。@:dwave_jp 0, geo_4e152:………彼女に婚約したいと打ち明けたその時からね。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e150:^Mais ça, je le savais déjà.^@:dwave_eng 0, geo_4e151:^ J'y étais préparé depuis longtemps.^@:dwave_eng 0, geo_4e152:^ Depuis le jour où je lui ai confié que je voulais l'épouser.^\
+
+
+ld r,$GAP_defA3,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e165:「…………結婚さえ出来れば、他の何もかも犠牲に出来る、と……？」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e165:^Tu veux dire que, pour épouser Shannon, tu es prêt à sacrifier tout le reste ?^\
+
+
+cl a,0
+ld c,$GEO_majimeA5,23
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e153:「結婚とは。@:dwave_jp 0, geo_4e154:……自分は生涯、妻の味方であり続けるということだ。@/
+langen:dwave_eng 0, geo_4e153:^Se marier,^@:dwave_eng 0, geo_4e154:^ c'est prendre l'engagement de rester aux côtés de la personne qu'on aime toute sa vie.^@/
+
+;ld l,$GEO_IkariA1,80
+
+langjp:dwave_jp 0, geo_4e155:………僕にはその時点で。@:dwave_jp 0, geo_4e156:……彼女のために、世界の全てを敵に回す覚悟があるんだ。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e155:^ Et cette décision, je l'ai déjà prise.^@:dwave_eng 0, geo_4e156:^ S'il le faut, je suis prêt à faire du monde entier mon ennemi pour elle.^\
+
+;■地下牢
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+E_MA
+lsp 889,pri_i1a_sak_b,0,0
+vsp 889,1
+fr_bg ":b;fr_bg\orig\bmp\background\subway\pri_i1b.jpg",":b;bmp\background\subway\pri_i1b.png",0
+ld r,$SHA_OdorokiA1,22
+
+me1v 16,50
+
+advchar "-1"
+langjp　その言葉を、三面鏡越しに、……紗音も耳にする。@
+langjp　そしてその決意を、目にする。\
+langen^À travers le miroir à trois faces, Shannon entendit chacun de ces mots.^@
+langen^Elle vit George se tenir droit devant Gaap, sans trembler.^\
+
+langjp　………紗音は確かに今夜、婚約指輪を渡される約束をしていた。@
+langen^Il lui avait promis une bague de fiançailles pour ce soir-là.^@
+br
+langjp　そしてこのような事件が起こってしまい、指輪を受け取ることが出来なかった。\
+langen^Mais avec tout ce qui s'était produit, elle n'avait pas pu la recevoir.^\
+
+langjp　しかし、今。@
+langen^Et pourtant...^@
+br
+langjp　………指輪の形を成さないだけで、/
+sl
+langjp^^!d800……それ以上の何かを、紗音は受け取る。\
+langen^À cet instant, même sans bague,^@/
+sl
+langen:!d800^ Shannon venait de recevoir quelque chose de plus précieux encore.^\
+
+vsp 889,0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　……その証拠に、/
+sl
+langjp^^!d700……ダイヤと同じ輝きの涙が一粒、/
+sl
+langjp^^!d900…零れたから。\
+langen^Et pour preuve...^@/
+sl
+langen:!d700^ une larme brillante comme un diamant^@/
+sl
+langen:!d900^ roula doucement sur sa joue.^\
+
+textoff
+;se2 1030
+;bg white,1
+;bg black,2
+
+me2v 13,0
+fedexx 70,0,50,0,0,0,3000
+
+
+;■薔薇庭園・東屋
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_r1an.jpg",":b;bmp\background\garden\garden_r1an.png",6
+ld c,$GAP_AkuWaraiA1,23
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e166:「ふ、……うふふふふふふ……！@:dwave_jp 0, gap_4e167:　それは何とも奮った答えだことね。@:dwave_jp 0, gap_4e168:………なるほど、よく考えたら、君にこれは気楽な選択肢だわ。\
+langen:dwave_eng 0, gap_4e166:^Hm... Huhuhuhuhuhu...^@:dwave_eng 0, gap_4e167:^ Quelle réponse extraordinaire !^@:dwave_eng 0, gap_4e168:^ Maintenant que j'y pense, tu n'as pas dû avoir beaucoup de mal à te décider.^\
+
+ld c,$GAP_WaraiA3,80
+
+langjp:dwave_jp 0, gap_4e169:　だって、君の両親は、第一の晩に、すでに殺されちゃってるんだもんね？@:dwave_jp 0, gap_4e170:　今さら君にとって、死んで困る人間は誰もいない。\
+langen:dwave_eng 0, gap_4e169:^Tes parents ont déjà été tués au premier crépuscule, après tout !^@:dwave_eng 0, gap_4e170:^ Il ne reste donc plus personne dont la mort puisse vraiment te poser problème.^\
+
+ld c,$GAP_AkuwaraiA4,80
+
+langjp:dwave_jp 0, gap_4e171:　はっははははははは、なるほどね、これは簡単な選択だったわ。@:dwave_jp 0, gap_4e172:あはははははははは……。」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e171:^Ahahahahahaha ! Évidemment, vu comme ça, ton choix devient plus facile !^@:dwave_eng 0, gap_4e172:^ Ahahahahahaha !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_r1bn.jpg",":b;bmp\background\garden\garden_r1bn.png",0
+ld r,$GEO_MajimeA5k,24
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e157:「何とでも言うがいい。@/
+langen:dwave_eng 0, geo_4e157:^Tu peux dire ce que tu veux.^@/
+
+ld r,$GEO_MajimeA5,80
+
+langjp:dwave_jp 0, geo_4e158:これが僕の、……そして、僕の次期当主としての覚悟と、選択だ。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e158:^ Voilà mon choix, et la détermination avec laquelle je compte devenir le prochain chef de famille Ushiromiya.^\
+
+
+advchar "-1"
+langjp　譲治の目に光る輝きは眩しく鋭い。@
+langen^Le regard de George avait changé.^@
+br
+langjp　…その中に、一瞬だけ金蔵と同じ凄みを感じ、ガァプはわずかに気圧される。\
+langen^Pendant un instant, Gaap crut retrouver chez lui la présence écrasante de Kinzo.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_r1an.jpg",":b;bmp\background\garden\garden_r1an.png",0
+ld c,$GAP_DefA1a,23
+
+me1v 5,50
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e173:「………なるほど。@:dwave_jp 0, gap_4e174:……ゴールドスミスと同じ答え、というわけ……。@/
+langen:dwave_eng 0, gap_4e173:^Je vois.^@:dwave_eng 0, gap_4e174:^ Tu as donc donné la même réponse que Goldsmith.^@/
+
+ld c,$GAP_DefA3,80
+
+langjp:dwave_jp 0, gap_4e175:……君も、あどけなさそうな顔して、……将来はとんだ悪魔になるわけね。@:dwave_jp 0, gap_4e176:……何だ、私たち、とてもうまくやれそうじゃない。\
+langen:dwave_eng 0, gap_4e175:^ Qui aurait cru qu'un visage aussi innocent cachait un démon aussi redoutable ?^@:dwave_eng 0, gap_4e176:^ Finalement, toi et moi, nous pourrions très bien nous entendre.^\
+
+ld c,$GAP_AkuwaraiA1a,80
+
+langjp:dwave_jp 0, gap_4e177:　君がゴールドスミスの後を継ぐ。@:dwave_jp 0, gap_4e178:そしてやがては私は召喚され、君に仕えることもあるかもしれない。@:dwave_jp 0, gap_4e179:……それも案外、面白いかもしれないわね。@:dwave_jp 0, gap_4e180:………ふふ。」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e177:^Tu pourrais succéder à Goldsmith.^@:dwave_eng 0, gap_4e178:^ Et peut-être qu'un jour tu m'invoqueras pour me prendre à ton service.^@:dwave_eng 0, gap_4e179:^ Voilà une perspective plus amusante que je ne l'aurais cru.^@:dwave_eng 0, gap_4e180:^ ... Huhu.^\
+
+advchar "-1"
+langjp　ガァプは譲治に対する認識を改める必要があった。@
+langen^Gaap devait revoir entièrement son jugement.^@
+br
+langjp　……この男には、外見からは想像もつかない決意と覚悟を、今この場でなく、/
+sl
+langjp^^!d900……すでに最初から背負っているのだ。\
+langen^Ce jeune homme possédait depuis longtemps une volonté que ses manières courtoises dissimulaient.^@/
+sl
+langen:!d900^ non pas depuis cet instant, mais depuis bien plus longtemps.^\
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_r1cn.jpg",":b;bmp\background\garden\garden_r1cn.png",0
+ld r,$GEO_majimeA2k,24
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e159:「僕には、今すぐ当主を継承する覚悟がある。@/
+langen:dwave_eng 0, geo_4e159:^Je suis prêt à prendre la succession dès maintenant.^@/
+
+ld r,$GEO_majimeA5,80
+
+langjp:dwave_jp 0, geo_4e160:………いや、違うね。@:dwave_jp 0, geo_4e161:君はこのテストを、当主として考えろと言った。@:dwave_jp 0, geo_4e162:だから僕は自分が当主であると前提して答えたんだ。\
+langen:dwave_eng 0, geo_4e160:^ Non. Ce n'est pas tout à fait ça.^@:dwave_eng 0, geo_4e161:^ Tu m'as demandé de réfléchir à cette question comme si j'étais déjà le chef de famille.^@:dwave_eng 0, geo_4e162:^ C'est donc ce que j'ai fait.^\
+
+ld r,$GEO_MajimeA4k,80
+
+langjp:dwave_jp 0, geo_4e163:　………いや、それすら違う。@:dwave_jp 0, geo_4e164:当主そのものとして考えた。@:dwave_jp 0, geo_4e165:……僕は今、右代宮家の当主なんだ。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e163:^Mais je peux aller plus loin.^@:dwave_eng 0, geo_4e164:^ J'ai répondu en tant que chef de famille.^@:dwave_eng 0, geo_4e165:^ À cet instant précis, c'est moi qui dirige la famille Ushiromiya.^\
+
+se1 27
+
+fede 1,500
+mbg white,1
+mcbg 42
+
+ld l,$GAP_WaraiA1a,23
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e181:「…………………………………。@:dwave_jp 0, gap_4e182:うっふふふふふ……。@:dwave_jp 0, gap_4e183:見事だわ、そこまで言えるなんてね。@/
+langen:dwave_eng 0, gap_4e181:^...^@:dwave_eng 0, gap_4e182:^ Huhuhuhuhuhu...^@:dwave_eng 0, gap_4e183:^ Magnifique ! Il fallait vraiment oser aller jusque-là.^@/
+
+ld l,$GAP_WaraiA2,80
+
+langjp:dwave_jp 0, gap_4e184:君はどうやら、かなりの大物だわ。@:dwave_jp 0, gap_4e185:……戦人と真里亞のテストはまだだけど、私は君が合格でいい気がする。\
+langen:dwave_eng 0, gap_4e184:^ Décidément, tu es beaucoup plus dangereux que tu n'en as l'air.^@:dwave_eng 0, gap_4e185:^ Battler et Maria n'ont pas encore passé leur épreuve, mais je serais tentée de te déclarer vainqueur dès maintenant.^\
+
+ld l,$GAP_waraiA3,80
+
+langjp:dwave_jp 0, gap_4e186:　…………でも、その答えが、掛け値なしの本当のものならね？」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e186:^À une condition : que tu penses sincèrement chacun des mots que tu viens de prononcer.^\
+
+ld r,$GEO_MajimeA2k,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e166:「…………僕の覚悟を、疑うというのか。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e166:^Tu doutes de ma détermination ?^\
+
+ld l,$GAP_AkuwaraiA3,80
+
+me3v 16,50
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e187:「君が選んだ選択肢を、実行できる？@:dwave_jp 0, gap_4e188:　今すぐ自らの手で、この島に存在する全ての命を生贄に捧げることが出来る……？@:dwave_jp 0, gap_4e189:　自らの手でよ…？」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e187:^Serais-tu vraiment capable de mettre ton choix à exécution ?^@:dwave_eng 0, gap_4e188:^ Pourrais-tu sacrifier de tes propres mains toutes les personnes présentes sur cette île ?^@:dwave_eng 0, gap_4e189:^ Sans demander à quelqu'un d'autre de le faire ?^\
+
+se3 21
+ld r,$GEO_niramuA1,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e167:「出来るね。@:dwave_jp 0, geo_4e168:その覚悟はあると、僕は何度も言っている。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e167:^Oui.^@:dwave_eng 0, geo_4e168:^ Je te l'ai déjà dit. Je suis prêt.^\
+
+ld l,$GAP_AkuwaraiA4a,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e190:「は、…………はははははは！@:dwave_jp 0, gap_4e191:　ならば今すぐゲストハウスに戻り、戦人と真里亞を殺しなさい！@/
+langen:dwave_eng 0, gap_4e190:^Ha... Hahahahahaha !^@:dwave_eng 0, gap_4e191:^ Alors retourne immédiatement à la résidence des invités et tue Battler et Maria !^@/
+
+
+langjp:dwave_jp 0, gap_4e192:　それが終わったら他の人質たちも連れてきてあげる。@:dwave_jp 0, gap_4e193:君の手で紗音以外の全員を、その目の前で処刑して見せるのよ！@:dwave_jp 0, gap_4e194:　出来るんでしょう？！」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e192:^ Ensuite, je t'amènerai les autres otages.^@:dwave_eng 0, gap_4e193:^ Tu les exécuteras tous toi-même, sous les yeux de Shannon. Tous, sauf elle !^@:dwave_eng 0, gap_4e194:^ Tu peux le faire, n'est-ce pas ?!^\
+
+ld r,$GEO_majimeA5k,80
+
+me4v 17,70
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e169:「^~ib~^出来るね^~ib~^。@:dwave_jp 0, geo_4e170:僕の覚悟は、君程度のそれとは、レベルが違う。」\
+;＜点処理：出来るね
+;＜譲治
+langen:dwave_eng 0, geo_4e169:^~ib~Je le peux~ib~. ^@:dwave_eng 0, geo_4e170:^Ma détermination n'a rien à voir avec la tienne.^\
+
+
+ld l,$GAP_AkuwaraiA3a,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e195:「………………………くっ。@:dwave_jp 0, gap_4e196:ならば実行しなさい！@:dwave_jp 0, gap_4e197:　全てに死を！@:dwave_jp 0, gap_4e198:　新しき右代宮家の当主として、この血塗られた儀式の遂行を…！！」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e195:^... Tch !^@:dwave_eng 0, gap_4e196:^ ALORS FAIS-LE !!^@:dwave_eng 0, gap_4e197:^ QUE TOUS MEURENT !!^@:dwave_eng 0, gap_4e198:^ En tant que nouveau chef de famille Ushiromiya, mène ce rituel sanglant jusqu'à son terme !!^\
+
+E_A
+ld r,$GEO_majimeA1k,80
+
+bgm1v 72,85
+advchar "07"
+langjp:dwave_jp 0, geo_4e171:「……了解したよ。@:dwave_jp 0, geo_4e172:実行する。@:dwave_jp 0, geo_4e173:僕は今やもう、右代宮家の当主だ。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e171:^Entendu.^@:dwave_eng 0, geo_4e172:^ Je vais le faire.^@:dwave_eng 0, geo_4e173:^ Après tout, je suis désormais le chef de famille.^\
+
+cl a,0
+ld c,$GAP_AkuwaraiA4,23
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e199:「えぇ、そうよ！@:dwave_jp 0, gap_4e200:　自らの手でその玉座を赤く染めなさい…！@:dwave_jp 0, gap_4e201:　君は悪魔たちを統べる魔界の王となる…！！」\
+;ガァプ
+langen:dwave_eng 0, gap_4e199:^Exactement !!^@:dwave_eng 0, gap_4e200:^ Baigne ton trône dans le sang !^@:dwave_eng 0, gap_4e201:^ Deviens le roi du monde démoniaque, le souverain de tous les démons !!^\
+
+advchar "-1"
+langjp　ガァプは確信する。@
+langen^Gaap était désormais convaincue.^@
+br
+langjp　この男こそ金蔵の狂気を受け継ぐに相応しい…！\
+langen^George était capable d'hériter de la folie de Kinzo.^\
+
+se3v 21,90
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",26
+
+me1v 13,0
+me2v 14,0
+me3v 18,0
+
+fedexx 85,70,70,70,0,0,3000
+
+se1v 27,100
+wait 500
+bg white,1
+
+dllefe 1,1
+fr_bg ":b;fr_bg\orig\bmp\background\forest\sky_3a.jpg",":b;bmp\background\forest\sky_3a.png",22
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e202:「吹けよ嵐、鳴らせよ雷鳴！！@:dwave_jp 0, gap_4e203:　新しき魔王の誕生を祝うがいい！！@:dwave_jp 0, gap_4e204:　悪魔の島は今っ、新しい王を迎えた…！！」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e202:^Que la tempête se déchaîne ! Que le tonnerre gronde !!^@:dwave_eng 0, gap_4e203:^ Que le monde entier célèbre la naissance du nouveau roi démon !^@:dwave_eng 0, gap_4e204:^ L'île des démons vient d'accueillir son nouveau souverain !!^\
+
+advchar "-1"
+langjp　悪魔の呼び掛けに応え、ますますに暴風は荒れ狂う。@
+langen^Comme pour répondre à sa proclamation, la tempête redoubla de violence.^@
+br
+langjp　そして巨大な稲妻が落ち、そのつんざく轟音と眩い光で一瞬だけの静寂を感じさせた……。\
+langen^Un éclair immense déchira le ciel. Son éclat illumina la roseraie tandis que le tonnerre couvrait tout autre bruit.^\
+
+se2v 27,100
+dllefe_off
+bg white,1
+wait 500
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+fedexx 85,50,0,0,0,0,2000
+wait 1000
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_r1bn.jpg",":b;bmp\background\garden\garden_r1bn.png",0
+ld c,$GEO_majimeA4,26
+ld c,$GEO_majimeA4k,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e174:「でさ。@:dwave_jp 0, geo_4e175:…………その殺害の順番だけど。@:dwave_jp 0, geo_4e176:僕が決めていいわけだよね。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e174:^Au fait.^@:dwave_eng 0, geo_4e175:^ Concernant l'ordre des exécutions...^@:dwave_eng 0, geo_4e176:^ C'est bien moi qui décide, maintenant ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_r1cn.jpg",":b;bmp\background\garden\garden_r1cn.png",0
+ld r,$GAP_waraiA1,24
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e205:「どうぞご自由に、新しき六軒島の魔王陛下。@:dwave_jp 0, gap_4e206:あなたの御心の趣くままに…！」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e205:^Mais naturellement, Votre Majesté !^@:dwave_eng 0, gap_4e206:^ Votre volonté fait loi !^\
+
+ld l,$GEO_majimeA4k,23
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e177:「………とりあえずさ。@/
+langen:dwave_eng 0, geo_4e177:^Dans ce cas...^@/
+
+ld l,$GEO_akuwaraiA1,80
+E_B
+
+langjp:dwave_jp 0, geo_4e178:その一番目が、君になるわけだけど、いいかな。」@
+;＜譲治
+langen:dwave_eng 0, geo_4e178:^ La première personne que je vais tuer, ce sera toi. Ça te convient ?^@
+
+E_A
+ld r,$GAP_DefA1a,80
+
+bgm1v 47,85
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e207:「…………………………え？」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e207:^... Hein ?^\
+
+
+me1v 16,50
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\moon_1a.jpg",":b;bmp\background\forest\moon_1b.png",22  ;fixed lighting issue
+
+advchar "-1"
+langjp　一陣の風が吹き、……譲治のジャケットを、まるでマントのように煽る。@
+langen^Une violente rafale fit battre la veste de George comme une cape.^@
+br
+langjp　それはまさに当主が羽織るマントのよう。@その貫禄を、確かに感じさせた……。\
+langen^Elle avait la prestance d'une cape de chef de famille.^@^ Et, l'espace d'un instant, George parut réellement en être un.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",29
+
+langjp　……その時、……ガァプは確かに嵐が掻き消え、真っ白で巨大な満月が空を覆ったのを見た。@
+langen^Aux yeux de Gaap, la tempête sembla s'effacer devant une immense pleine lune blanche.^@
+br
+langjp^^!s0　満月を背負う、/
+sl
+langjp^^!d500新しき当主を名乗る男が、/
+sl
+langjp^^!d800悪魔を嘲笑う。/
+sl
+langen^^!s0^ La pleine lune dans son dos,^@/
+sl
+langen:!d500^ George, qui venait de se proclamer chef de famille,^@/
+sl
+langen:!d800^ se moquait ouvertement du démon.^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_r1an.jpg",":b;bmp\background\garden\garden_r1an.png",0
+ld r,$GAP_waraiA2a,0
+ld l,$GEO_majimeA4,22
+ld l,$GEO_MajimeA4k,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e179:「右代宮家親族の全ての命さえも、……今や僕の財産だ。@:dwave_jp 0, geo_4e180:それに損害を出してくれた賠償。@:dwave_jp 0, geo_4e181:安くは済まないよ。\
+langen:dwave_eng 0, geo_4e179:^Les vies de tous les membres de la famille Ushiromiya font désormais partie de mon patrimoine.^@:dwave_eng 0, geo_4e180:^ Et toi, tu as porté atteinte à ce qui m'appartient. Tu vas donc devoir m'en dédommager.^@:dwave_eng 0, geo_4e181:^ Ça risque de te coûter très cher.^\
+
+fedexx 100,70,0,0,0,0,2000
+
+ld l,$GEO_ikariA3,80
+
+langjp:dwave_jp 0, geo_4e182:　……まさか、僕の両親に、夏妃伯母さん、留弗夫叔父さん、楼座叔母さん。@:dwave_jp 0, geo_4e183:そして源次さんの命を奪っておいて、この僕が見逃すと本気で思ってるのかい。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e182:^Tu as tué mes parents, tante Natsuhi, oncle Rudolf, tante Rosa,^@:dwave_eng 0, geo_4e183:^ et Genji aussi. Tu pensais vraiment que j'allais te laisser t'en tirer ?^\
+
+ld r,$GAP_AkuwaraiA4a,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e208:^^!s1「ほ、/
+sl
+langjp:voicedelay 610:dwave_jp 0, gap_4e209:^^………ほほォ/
+sl
+langjp:voicedelay 1460:dwave_jp 0, gap_4e210:^^…………生意気を……。」/
+sl
+langen:dwave_eng 0, gap_4e208:^^!s1^H-Ho...^@/
+sl
+langen:voicedelay 610:dwave_eng 0, gap_4e209:^ ... Hoho...^@/
+sl
+langen:voicedelay 1460:dwave_eng 0, gap_4e210:^ Quelle insolence...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜ガァプ
+
+textoff
+
+;bg black,2
+;wait 1000
+se1v 27,100
+wait 100
+se2v 27,100
+bg white,1
+
+wait 1000
+E_B
+E_MA
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1e.jpg",":b;bmp\background\mainbuilding\mjes_1e.png",42
+
+
+mov %play_scene,40250 : mov %r_hyouji_side,0 : mov %r_hyouji_cha,jes
+
+langjp　ロノウェは、その手の平を朱志香の胸に当て、心臓を停止させるつもりだった。@
+langen^Ronove s'apprêtait à poser la paume sur la poitrine de Jessica pour arrêter son cœur.^@
+
+me1v 16,50
+
+br
+langjp　しかし、その直前で、手は止まっていた……。\
+langen^Mais à l'instant où ses doigts allaient la toucher, sa main s'immobilisa.^\
+
+textoff
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+se1 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2a.jpg",":b;bmp\background\efe\blood_2a.png",1
+wait 500
+se2 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2b.jpg",":b;bmp\background\efe\blood_2b.png",1
+wait 200
+se3 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2c.jpg",":b;bmp\background\efe\blood_2c.png",1
+wait 300
+se1 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2d.jpg",":b;bmp\background\efe\blood_2d.png",1
+wait 550
+se2 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2e.jpg",":b;bmp\background\efe\blood_2e.png",1
+
+langjp^^!s0　……二人の足元の絨毯に、/
+sl
+langjp^^!d800……小さな赤い花が、ぽとりぽとりと、一輪、二輪と花開く。@
+langen^^!s0^Sur le tapis, à leurs pieds,^@/
+sl
+langen:!d800^ une petite fleur rouge apparut, puis une seconde. Les gouttes tombaient l'une après l'autre.^@
+br
+langjp　その花の種子は、/
+sl
+langjp^^!d500……高く高く、/
+sl
+langjp^^!d600…天を突くかのように高く突き上げられた、/
+sl
+langjp^^!d800………朱志香の拳から。/
+sl
+langen^Leur origine...^@/
+sl
+langen:!d500^ se trouvait bien plus haut,^@/
+sl
+langen:!d600^ au bout d'un poing levé vers le ciel :^@/
+sl
+langen:!d800^ celui de Jessica.^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+
+fede 0,1000
+
+bgm1v 98,90
+
+langjp　ロノウェの鼻が、噴出した血で真っ赤に染まり、@……その雫が絨毯に零れていたのだ。\
+langen^Le sang qui coulait du nez de Ronove lui avait teint le visage de rouge.^@^ Les gouttes tombaient sur le tapis.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1bn.jpg",":b;bmp\background\mainbuilding\mjes_1bn.png",0
+;ld c,$JES_IkariA2,22
+ld c,$JES_tohohoA3,6
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e190:「………ちなみに、さっきのは乙女としての回答な。@:dwave_jp 0, jes_4e191:……次期当主としての回答は、別だぜ。」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e190:^Au fait, la réponse de tout à l'heure, c'était celle de Jessica, une fille amoureuse.^@:dwave_eng 0, jes_4e191:^ Mais si tu veux connaître ma réponse en tant que future cheffe de famille, elle est différente.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1an.jpg",":b;bmp\background\mainbuilding\mjes_1an_lit.png",23
+ld l,$RON_akuwaraiA1,26
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e175:「お伺いしますよ……。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e175:^Je vous écoute.^\
+
+
+ld r,$JES_ikariA3,64
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e192:「……大好きな人も、家族も親族もみんなみんな！！@:dwave_jp 0, jes_4e193:　私が守る。@:dwave_jp 0, jes_4e194:私が当主なら、それは私の責務だッ！@/
+langen:dwave_eng 0, jes_4e192:^La personne que j'aime, ma famille, tous mes proches... TOUT LE MONDE !!^@:dwave_eng 0, jes_4e193:^ C'EST MOI QUI LES PROTÉGERAI !!^@:dwave_eng 0, jes_4e194:^ Si je suis la cheffe de famille, c'est mon devoir !!^@/
+
+ld r,$JES_IkariA1,80
+
+langjp:dwave_jp 0, jes_4e195:　お父さんは威張ってるだけじゃない。@:dwave_jp 0, jes_4e196:私や母さんを守ってた！！@:dwave_jp 0, jes_4e197:　……右代宮家を受け継ぐ重圧ってヤツと、……何十年も戦ってたッ！！\
+langen:dwave_eng 0, jes_4e195:^ Papa passait pas ses journées à jouer les gros bras !^@:dwave_eng 0, jes_4e196:^ Il protégeait Maman et moi !^@:dwave_eng 0, jes_4e197:^ Il s'est battu pendant des années pour porter les responsabilités de cette famille !!^\
+
+ld r,$JES_ikariA3,80
+
+langjp:dwave_jp 0, jes_4e198:　だからわかるぜ。@:dwave_jp 0, jes_4e199:……次期当主ってのはな、軽くねぇんだよ。@:dwave_jp 0, jes_4e200:……だからさ。@:dwave_jp 0, jes_4e201:捨てられるんだよ。@/
+langen:dwave_eng 0, jes_4e198:^Maintenant, je comprends ce qu'il a traversé !^@:dwave_eng 0, jes_4e199:^ Devenir chef de famille, c'est pas un titre qu'on porte pour se pavaner !^@:dwave_eng 0, jes_4e200:^ C'est une responsabilité énorme !^@:dwave_eng 0, jes_4e201:^ Et c'est justement parce que je l'ai compris...^@/
+
+;ld r,$JES_IkariA1,80
+
+langjp:dwave_jp 0, jes_4e202:……自分の命くらい、簡単に賭けられちまうんだよッ！！」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e202:^ QUE JE SUIS PRÊTE À METTRE MA PROPRE VIE EN JEU SANS LA MOINDRE HÉSITATION !!^\
+
+advchar "-1"
+langjp　朱志香は知っている。@
+langen^Jessica le savait désormais.^@
+br
+langjp　家族を守るために、父親が虚勢を張りながら孤独に戦い続けていることを知っている。@
+langen^Pendant des années, Krauss avait continué à se battre seul pour protéger sa femme et sa fille.^@
+br
+langjp　その背中が物語ってきた何かを、朱志香は理解している！\
+langen^Elle comprenait enfin ce qu'il avait essayé de lui apprendre pendant toutes ces années.^\
+
+textoff
+se1v 20,100
+se2 20
+bg white,1
+wait 700
+se3v 57,100
+se1v 2,100
+se2v 2,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2e.jpg",":b;bmp\background\efe\blood_2e.png",1
+quakex 5,600
+langjp　左ストレートが再びロノウェの顔面に打ち込まれる。@
+langjp　……その凄まじき一撃はメリケンサック使用によるものだけではない。@
+langen^Un nouveau direct du gauche s'écrasa en plein visage de Ronove.^@
+langen^Ce coup ne devait pas sa puissance au seul poing américain que portait Jessica.^@
+br
+langjp　それこそが、守るために何もかもを捨てられる者の、当主たるものの、/
+sl
+langjp^^!d700一撃。\
+langen^C'était le coup^@/
+sl
+langen:!d700^ d'une personne prête à risquer sa vie pour défendre les siens. Le coup d'une véritable cheffe de famille.^\
+
+me1v 5,50
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1an.jpg",":b;bmp\background\mainbuilding\mjes_1an_lit.png",0
+ld c,$JES_tohohoA3,80
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e203:「父さんが次期当主の資格を失ったなら。@:dwave_jp 0, jes_4e204:順当に次の当主は私が継承するぜ。@/
+langen:dwave_eng 0, jes_4e203:^Si Papa a perdu le droit de succéder au chef de famille,^@:dwave_eng 0, jes_4e204:^ alors c'est à moi que revient sa place !!^@/
+
+ld c,$JES_futekiA2,80
+
+langjp:dwave_jp 0, jes_4e205:……右代宮家当主、右代宮朱志香ッ！！/
+sl
+langen:dwave_eng 0, jes_4e205:^ CHEFFE DE LA FAMILLE USHIROMIYA : JESSICA USHIROMIYA !!^@/
+se1v 2,100
+langjp:noclear_cw:dwave_jp 0, jes_4e206:　これ以上を好きにさせるほど腑抜けちゃいねえぜッ！！」\
+;＜朱志香
+langen:noclear_cw:dwave_eng 0, jes_4e206:^ ET JE SUIS PAS ASSEZ MOLLE POUR VOUS LAISSER FAIRE CE QUE VOUS VOULEZ UNE SECONDE DE PLUS !!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1e.jpg",":b;bmp\background\mainbuilding\mjes_1e.png",25
+ld r,$RON_majimeA2,26
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e176:「…………素晴らしい回答です。@:dwave_jp 0, ron_4e177:先ほどの点数を改めましょう。@:dwave_jp 0, ron_4e178:その回答に１０点プラス。@:dwave_jp 0, ron_4e179:……見事な左ストレートに１０点プラス。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e176:^Quelle réponse magnifique.^@:dwave_eng 0, ron_4e177:^ Je vais devoir revoir votre note.^@:dwave_eng 0, ron_4e178:^ Dix points supplémentaires pour cette réponse.^@:dwave_eng 0, ron_4e179:^ Et dix autres pour ce splendide direct du gauche.^\
+
+ld l,$JES_futekiA2,26
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e207:「ってことは、あと２０点プラスで１００点満点だな？」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e207:^Ça fait vingt points de plus, hein ? Alors j'ai cent sur cent, c'est ça ?!^\
+
+se1v 20,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",66
+se2v 20,70
+wait 700
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1cn.jpg",":b;bmp\background\mainbuilding\mjes_1cn.png",1
+wait 500
+
+ld l,$RON_DefA1,65
+se2v 11,90
+quakey 3,500
+;se3v 11,70
+
+advchar "-1"
+langjp　ロノウェは後方に宙返りして飛び退くと、鼻より噴出している血を、乱暴に拭い捨てる。@
+langjp　……それは血ではなく、赤い薔薇の花びらになっていた。\
+langen^Ronove exécuta un salto arrière pour prendre ses distances, puis essuya le sang qui coulait de son nez.^@
+langen^Mais ce n'était déjà plus du sang : des pétales de roses rouges se dispersèrent dans les airs.^\
+
+ld l,$RON_akuWaraiA1,80
+
+langjp　顔の血は拭われ、……代わって、@何百年ぶりに感じたかも思い出せない歓喜に、にやりと笑う表情が現れる。\
+langen^À la place du sang, son visage affichait désormais un sourire ravi,^@^ comme s'il retrouvait une joie qu'il n'avait plus éprouvée depuis des siècles.^\
+
+
+ld l,$RON_majimeA2,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e180:「朱志香さまの覚悟。@:dwave_jp 0, ron_4e181:満点に値するかどうか、このロノウェ、試させて頂きますよ……？」@
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e180:^La détermination dont vous avez fait preuve est remarquable, mademoiselle Jessica.^@:dwave_eng 0, ron_4e181:^ Permettez-moi toutefois de vérifier si elle mérite réellement la note parfaite !^@
+
+
+ld r,$JES_IkariA1,64
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e208:「うぜえぜッ！！@:dwave_jp 0, jes_4e209:　掛かって来やがれえええぇえぇぇッ！！！」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e208:^TU ME GONFLES !!^@:dwave_eng 0, jes_4e209:^ RAMÈNE-TOI, BORDEL !!^\
+
+saveoff
+se1v 20,100
+se2v 20,100
+
+btndef ":b;bmp\background\mainbuilding\MJES_1cN.png"  ;fixed, loads PNG now
+
+mov %free1,0
+mov %free2,0
+mov %free3,854  ;convert to widescreen
+mov %free4,480
+mov %free11,0
+mov %free12,0
+mov %free13,0
+mov %free14,0
+
+for %free19 = 1 to 6
+resettimer
+add %free11,4
+add %free13,0
+add %free12,11  ;convert to widesceen
+add %free14,12
+add %free1,%free11
+add %free2,%free13 
+sub %free3,%free12
+sub %free4,%free14
+
+blt 0,0,960,540,%free1,%free2,%free3,%free4  ;convert to widescreen
+textoff
+waittimer 50
+
+next
+;bg black,1
+for %free19 = 1 to 6
+resettimer
+add %free11,4
+add %free13,16
+add %free12,10  ;convert to widescreen
+add %free14,6
+add %free1,%FREE11
+add %free2,%FREE13 
+sub %free3,%FREE12
+sub %free4,%FREE14
+
+blt 0,0,960,540,%free1,%free2,%free3,%free4  ;convert to widescreen
+textoff
+waittimer 50
+
+next
+ofscpy
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+btndef ""
+
+;wait 1000
+;bg moon_1a,22
+;wait 2000
+
+saveon
+
+se1v 27,100
+se2v 57,100
+se3v 2,100
+E_MA
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+;■薔薇庭園
+mov %play_scene,40250 : mov %r_hyouji_side,0 : mov %r_hyouji_cha,geo
+
+E_B
+bgm1 99
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_1an.jpg",":b;bmp\background\garden\rose_1an.png",0
+ld c,$GAP_AkuwaraiA4,1
+
+;se1 52
+;ld c,$GAP_AkuwaraiA4,99,2000,"breakup.dll/urb"
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e211:「おいで、奈落へ…！」/
+sl
+langen:dwave_eng 0, gap_4e211:^Viens... dans l'Abîme !^@/
+se3v 2,100
+se2v 2,100
+quakey 3,300
+mov %disable_adv_clear, 1
+langjp:noclear_cw:
+langen:noclear_cw:
+mov %disable_adv_clear, 0
+advchar "-1"
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_1bn.jpg",":b;bmp\background\garden\rose_1bn.png",0
+ld r,$GEO_IkariA1,1
+
+;＜ガァプ
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e184:「うッわ？！」\
+;＜譲治
+langen:dwave_eng 0, geo_4e184:^ Ouah ?!^\
+
+se1v 52,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",68
+
+
+advchar "-1"
+langjp　譲治の足元に突然、漆黒の落とし穴が大口を開ける。@もちろん譲治に抗えるわけもない。@
+langen^Soudain, un gouffre d'un noir absolu s'ouvrit sous les pieds de George.^@^ Il n'eut pas le temps de réagir.^@
+br
+
+saveon
+
+
+langjp　それに飲み込まれた譲治は、東屋の天井に開いた漆黒の穴から落ちてくる。@
+langen^Englouti, George fut recraché par un autre gouffre ouvert au plafond de la tonnelle.^@
+br
+
+if %is_old_sprites = 1 jumpf
+	lsp 2,c_c0402_wall,0,0
+	print 85
+	lsp 1,c_c0402_a,0,0
+	se1v 20,100
+	print 85
+~
+
+langjp　その落下してくる譲治の下腹部に、@狙い澄まされた蜂の一撃のような鋭いピンヒールによる後回し蹴りが打ち込まれる…！\
+langen^Alors qu'il chutait,^@^ le talon aiguille de Gaap, précis comme un dard, frappa violemment son bas-ventre.^\
+
+saveoff
+textoff
+
+se1v 52,70
+csp 1
+csp 2
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_r1cn.jpg",":b;bmp\background\garden\garden_r1cn.png",0
+ld4 c,$GAP_waraiA2,14,200
+;ld c,$GAP_akuwaraiA4,80
+
+;ld r,$GAP_AkuwaraiA2,99,500,"breakup.dll/urb"
+
+;se2v 57,100
+;mbg white,1
+;mcbg 0
+
+;ld c,$GAP_waraiA2,80
+
+se3v 2,100
+mbg white,1
+mcbg 0
+ld c,$GAP_akuwaraiA4,22
+
+
+;se1v 20,100
+;se2v 20,100
+;bg white,22
+;se3v 61,100
+;se1v 61,100
+;bg moon_1a,1
+
+se1v 20,70
+fr_bg ":b;fr_bg\orig\bmp\background\efe\bite.jpg",":b;bmp\background\efe\bite.png",1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",80
+wait 500
+
+;wait 200
+se2v 20,90
+wait 200
+se3v 20,100
+wait 500
+
+se1v 1005,100
+se2v 57,100
+se3v 12,100
+
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",80
+
+se1v 57,100
+se2v 2,100
+se3v 27,100
+
+
+bg white,1
+;bg black,22
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_1an.jpg",":b;bmp\background\garden\rose_1an.png",22
+;se1 13
+quakex 6,1200
+;se2v 13,85
+;quakey 5,400
+;se3v 13,100
+
+langjp　東屋から吹き飛ばされた譲治は、薔薇の茂みに飲み込まれるかと思った瞬間。@
+langen^Au moment où George, projeté hors de la tonnelle, allait être englouti par un buisson de roses...^@
+br
+se1v 52,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",68
+
+langjp　そこに再び漆黒の穴が開き譲治を飲み込む。@
+langen^Un nouveau gouffre s'ouvrit et l'avala.^@
+br
+langjp　すると今度はガァプの目の前の足元に漆黒の穴が開き、そこから無防備な譲治を吐き出す。@
+langen^Un trou noir s'ouvrit ensuite aux pieds de Gaap et recracha George, sans défense, juste devant elle.^@
+br
+langjp　……その時にはガァプはすでに次の後回し蹴りの予備動作を終えている。\
+langen^... Mais Gaap avait déjà pris son élan pour le prochain coup de pied retourné.^\
+
+textoff
+
+se2v 52,100
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_r1an.jpg",":b;bmp\background\garden\garden_r1an.png",0
+ld4 r,$GAP_waraiA1,13,300
+ld r,$GAP_AkuwaraiA4,80
+
+;br
+
+textoff
+se1v 20,70
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade2p.jpg",":b;bmp\background\efe\blade2p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,100 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,100
+se2v 20,85
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade4p.jpg",":b;bmp\background\efe\blade4p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,100 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,100
+se3v 20,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade2p.jpg",":b;bmp\background\efe\blade2p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,100 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,100
+
+wait 300
+
+;bgmvol 1
+me1v 28,100
+me2v 28,100
+me3v 28,100
+;bg black,1
+
+
+
+;lsp2 3,$GEO_IkariA2k,130,420,200,200,0
+lsp_var 3,"bmp\zoom\GEO_IkariA2kZ20",-286,0  ;convert to widescreen
+print 80
+
+;ld c,$GEO_IkariA2,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e185:「ぐッ、……これ……は…、」@
+;＜譲治
+langen:dwave_eng 0, geo_4e185:^Guh... Mais qu'est-ce que...^@
+
+textoff
+
+set_oldnew_bg cg_c0402_b,black,1,0
+;lsp2 4,$GAP_akuwaraiA3,500,350,200,200,0
+;lsp2 3,$GEO_IkariA2k,130,420,200,200,0
+lsp_var 3,"bmp\zoom\GEO_IkariA2kZ20",-286,0  ;duplicated from above to clear sprite if necessary
+lsp_var 4,"bmp\zoom\GAP_akuwaraiA3Z20",141,0  ;convert to widescreen
+print 22
+
+
+;ld c,$GAP_DefA2,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e212:「お帰りなさい。くす！」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e212:^Bon retour parmi nous ! Hmhm !^\
+
+E_MA
+;bgmvol 85
+
+textoff
+set_oldnew_bg cg_c0402_a,black,1,80
+wait 500
+
+mov %ryuu1,800
+
+se1v 2,100
+se2v 12,100
+se3v 2,100
+
+csp_var 3
+csp_var 4
+fr_bg ":b;fr_bg\orig\bmp\background\efe\bite.jpg",":b;bmp\background\efe\bite.png",1
+
+quakex 9,%ryuu1
+
+se1v 20,100
+se2v 57,100
+se3v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1b.jpg",":b;bmp\background\efe\blood_1b.png",1
+
+quakey 9,%ryuu1
+
+se1v 1100,100
+se2v 12,100
+se3v 12,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1ar.jpg",":b;bmp\background\efe\blood_1ar.png",1
+
+quakex 9,%ryuu1
+
+se1v 1006,100
+se2v 1006,100
+se3v 57,100
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_r1cn.jpg",":b;bmp\background\garden\garden_r1cn.png",1
+
+quakey 12,1500
+
+clr_oldnew_bg
+
+advchar "-1"
+langjp　右側頭部。@右脇の下。@右膝側面。@
+langen^Tempe droite.^@^ Sous l'aisselle.^@^ Genou.^@
+br
+langjp　まるで小さな竜巻のようにガァプはくるくると舞い踊りながら、@右足左足右足左足で連続回し蹴りを次々に叩き込む。@
+langen^Gaap tournoyait autour de George, enchaînant les coups de pied circulaires avec une précision presque chorégraphique.^@^ Droite, gauche, droite, gauche.^@
+br
+langjp　四連撃目は足払いとなって譲治の足を刈り取り転倒させるが、@もちろんそこに床はなく、漆黒の穴が開いていて、またしても譲治を飲み込んでしまう。\
+langen^Le quatrième coup lui faucha les jambes,^@^ mais aucun sol ne l'attendait : un nouveau gouffre l'engloutit.^\
+
+se1v 2,100
+se2v 52,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",68
+
+langjp　ガァプは再び小さい竜巻のように舞い踊る。@
+langjp　譲治もまた、再び東屋の天井より吐き出された。\
+langen^Gaap se remit à tournoyer comme une petite tornade.^@
+langen^Et George fut une nouvelle fois recraché par le plafond de la tonnelle.^\
+
+textoff
+
+se1v 2,100
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\bite.jpg",":b;bmp\background\efe\bite.png",1
+;lsp2 4,$GAP_AkuwaraiA4,500,350,200,200,0
+print 80
+lsp_var 4,"bmp\zoom\GAP_akuwaraiA4Z20",141,0  ;convert to widescreen
+
+bgmvol 1
+
+me1v 28,100
+me2v 17,100
+me3v 28,100
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e213:「………食らって噛み締めなさい、奈落の終点が一撃。@:dwave_jp 0, gap_4e214:……死ね……！！」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e213:^Allez, on va en finir. L'Abîme peut aussi se conclure en un seul coup.^@:dwave_eng 0, gap_4e214:^ ... Crève !!^\
+
+textoff
+
+csp_var 4
+
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",80
+fedexx 1,40,40,40,0,0,1000
+
+E_MA
+bgmvol 100
+if %is_old_sprites = 1 jumpf
+	lsp 2,c_c0402_lwall,0,-957
+	lsp 1,c_c0402_la,0,-957
+	for %Free1 = 1 to 50
+		msp 1,0,19
+		msp 2,0,19
+		print 1
+		next
+	set_oldnew_bg cg_c0402_a,black,1,1
+	csp 1
+	csp 2
+~
+
+se1v 2,100
+se2v 27,100
+wait 200
+se3v 27,100
+clr_oldnew_bg
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\forest\moon_1a.jpg",":b;bmp\background\forest\moon_1b.png",42  ;fixed lighting issue
+
+fede 1,2000
+
+me1v 13,50
+dllefe 1,1
+
+wait 3000
+
+advchar "-1"
+langjp　鋭き女王蜂の一撃は、昇る竜巻のように、天を刺す。@
+langen^Le coup acéré de la reine des abeilles jaillit vers le ciel comme une tornade ascendante.^@
+br
+langjp　それは天井より落下する譲治の腹部を蹴り抜いた……。\
+langen^Il frappa de plein fouet le ventre de George tandis qu'il chutait du plafond...^\
+
+;ld r,$GAP_AkuwaraiA1,26
+
+me2v 16,50
+
+langjp　そのまま、……時間が凍る。@
+langen^Et alors... le temps se figea.^@
+br
+langjp　譲治はガァプの蹴り上げた足一本で、宙に打ち止められていた……。\
+langen^George resta suspendu en plein air, retenu par la seule jambe levée de Gaap...^\
+
+dllefe_off
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_r1dn.jpg",":b;bmp\background\garden\garden_r1dn.png",2
+
+;ld l,$GEO_IkariA2k,26
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e186:「が、………ふッ………。」@
+langen:dwave_eng 0, geo_4e186:^Gah... guh...^@
+br
+advchar "-1"
+langjp　譲治は宙に縫い止められたまま、呻く……。@
+;＜譲治
+langen^Toujours cloué en l'air, George gémit...^@
+br
+langjp　そしてガァプは、譲治を足一本で吊り上げたまま、@……にやりと笑う。\
+langen^Et Gaap, qui le maintenait suspendu d'une seule jambe,^@^ esquissa un sourire.^\
+
+notif %is_old_sprites = 0 ld c,$GAP_DefA3,0
+notif %is_old_sprites = 1 lsp 1,":b;big\bmp\zoom\gap_defA1z20.png",-73,0
+print 26
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e215:「………認めてあげるわ。@:dwave_jp 0, gap_4e216:君の態度だけは一人前よ。@:dwave_jp 0, gap_4e217:でも、力が伴わなきゃ駄目だわ。@/
+langen:dwave_eng 0, gap_4e215:^Je te l'accorde.^@:dwave_eng 0, gap_4e216:^ Tes grands discours ne manquent pas d'audace.^@:dwave_eng 0, gap_4e217:^ Mais sans la force nécessaire pour les assumer, ils ne valent pas grand-chose.^@/
+
+notif %is_old_sprites = 0 ld c,$GAP_WaraiA2,0
+notif %is_old_sprites = 1 lsp 1,":b;big\bmp\zoom\gap_waraiA2z20.png",-73,0
+print 80
+
+langjp:dwave_jp 0, gap_4e218:……知ってる？@:dwave_jp 0, gap_4e219:　この世を統べるには３つの力が必要だそうよ。@:dwave_jp 0, gap_4e220:ひとつは権力。@:dwave_jp 0, gap_4e221:ひとつは財力。@:dwave_jp 0, gap_4e222:最後は何か知ってる？」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e218:^ Tu savais ?^@:dwave_eng 0, gap_4e219:^ Il faut trois formes de puissance pour régner sur le monde.^@:dwave_eng 0, gap_4e220:^ La première : le pouvoir.^@:dwave_eng 0, gap_4e221:^ La deuxième : la richesse.^@:dwave_eng 0, gap_4e222:^ Et la troisième ?^\
+
+
+;ld l,$GEO_KomaruA2,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e187:「本で読んだよ。@:dwave_jp 0, geo_4e188:……暴力、だろ……？」@
+;＜譲治
+langen:dwave_eng 0, geo_4e187:^Je crois avoir lu ça quelque part.^@:dwave_eng 0, geo_4e188:^ ... La violence ?^@
+
+
+notif %is_old_sprites = 0 ld c,$GAP_AkuWaraiA2,0
+notif %is_old_sprites = 1 lsp 1,":b;big\bmp\zoom\gap_akuwaraia1az20.png",-73,0
+print 80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e223:「正解。@:dwave_jp 0, gap_4e224:君にはそれが足りないわ。」@
+;＜ガァプ
+langen:dwave_eng 0, gap_4e223:^Exactement !^@:dwave_eng 0, gap_4e224:^ Et c'est justement ce qui te manque.^@
+br
+advchar "-1"
+langjp　ガァプはようやく譲治を解放する。@
+langen^Gaap libéra enfin George.^@
+br
+
+langjp　そのまま再び上へ蹴り上げ、もう一度回し蹴りを加えて柱に打ち付けることによって。\
+langen^Elle le projeta de nouveau vers le haut, puis lui asséna un coup de pied circulaire qui l'envoya s'écraser contre un pilier.^\
+
+saveoff
+textoff
+csp 1
+;se1 20
+;bg black,12,200
+
+
+se1v 20,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade2p.jpg",":b;bmp\background\efe\blade2p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,100 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,100
+
+se2v 20,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade4p.jpg",":b;bmp\background\efe\blade4p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,100 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,100
+
+se3v 20,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade2p.jpg",":b;bmp\background\efe\blade2p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,100 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,100
+wait 300
+
+E_M2
+se1v 2,100
+se2v 57,100
+se3v 1006,100
+
+;bg moon_1a,1
+;quakey 6,1500
+;bg black,13,300
+;se2 13
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_1an.jpg",":b;bmp\background\garden\garden_1an.png",1
+quakex 5,1200
+saveon
+
+mevol 1,70
+
+me2 12
+
+dllefe 1,1
+
+
+ld r,$GAP_waraiA1,24
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e225:「権力を伴わない王者にも、財力を伴わない王者にも、そして暴力を伴わない王者にも、人は誰も恐れない。@/
+langen:dwave_eng 0, gap_4e225:^Personne ne respecte un souverain incapable de faire usage de son pouvoir, de sa richesse ou de sa violence.^@/
+
+se1v 21,90
+ld r,$GAP_WaraiA2,80
+
+langjp:dwave_jp 0, gap_4e226:金蔵はその３つを兼ね備えたわ。@:dwave_jp 0, gap_4e227:だからこそ暴君として君臨した！@:dwave_jp 0, gap_4e228:　……君も金蔵の後継者を名乗るならば、その貫禄を見せて御覧なさい？\
+langen:dwave_eng 0, gap_4e226:^ Goldsmith possédait les trois.^@:dwave_eng 0, gap_4e227:^ Voilà pourquoi il pouvait régner en tyran !^@:dwave_eng 0, gap_4e228:^ Si tu prétends lui succéder, prouve-moi que tu en as l'étoffe !^\
+
+ld r,$GAP_AkuwaraiA4,80
+
+langjp:dwave_jp 0, gap_4e229:　……ほぉら、いつまで寝ているの？@:dwave_jp 0, gap_4e230:　立ちなさい？@/
+langen:dwave_eng 0, gap_4e229:^... Allez, tu comptes rester couché encore longtemps ? ^@:dwave_eng 0, gap_4e230:^Debout. ^@/
+langjp:dwave_jp 0, gap_4e231:　じゃないとまた、^~ib~^落ちるわよ^~ib~^？」\
+;＜ガァプ：点処理：落ちるわよ
+langen:dwave_eng 0, gap_4e231:^Sinon, tu vas encore ^^~ib~tomber~ib~^^, tu sais ?^\
+
+textoff
+
+dllefe_off
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+se1 20
+wait 200
+se2v 20,85
+wait 200
+se3v 20,100
+wait 400
+
+E_MA
+
+bgm1v 100,85
+
+se1v 1006,100
+se2v 13,100
+
+bg white,1
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1cn.jpg",":b;bmp\background\mainbuilding\mjes_1cn.png",2
+
+
+;■朱志香の部屋
+mov %play_scene,40250 : mov %r_hyouji_side,0 : mov %r_hyouji_cha,jes
+
+se3 20
+wait 400
+ld c,$RON_AkuwaraiA1,65
+se1 11
+quakey 2,200
+ld c,$RON_waraiA1,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e182:「ぷっくっくっく。@:dwave_jp 0, ron_4e183:悪くない動きですよ。@:dwave_jp 0, ron_4e184:しかし、レディには少々相応しくないかと存じますよ。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e182:^Pfff... hmhmhm...^@:dwave_eng 0, ron_4e183:^ Votre enthousiasme est admirable.^@:dwave_eng 0, ron_4e184:^ Mais votre manière de combattre manque quelque peu d'élégance.^\
+
+se1 20
+cl c,0
+set_oldnew_bg c_c0403_a,MJes_1cN,1,0
+ld l,$RON_WaraiA1,0
+ld r,$JES_ikariA3,64
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e210:「ぃ野郎ぉおおおおおぉ！！@
+langen:dwave_eng 0, jes_4e210:^VA TE FAIRE ENCULER !!^@
+
+set_oldnew_bg c_c0403_b,MJes_1cN,1,0  ;This is from a scaled image. Might disable this block.
+ld l,$RON_WaraiA1,0
+ld r,$JES_ikariA3,80
+
+langjp:dwave_jp 0, jes_4e211:　ひょろひょろと、ちょこまかと！！@:dwave_jp 0, jes_4e212:　反撃して来ねぇのかよ……、舐めてんのかッ、うぜぇヤツッ！！」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e211:^TU VAS ARRÊTER DE DANSER COMME ÇA ?!^@:dwave_eng 0, jes_4e212:^ TU COMPTES TE BATTRE OU JUSTE ME FAIRE TOURNER EN BOURRIQUE ?!^\
+
+
+
+advchar "-1"
+langjp　ロノウェは、巧みに身をかわし、飛び退り、朱志香の鉄拳をかわしているが、@自らはまだ反撃していない。@
+langen^Ronove esquivait les attaques de Jessica avec une facilité déconcertante,^@^ sans prendre la peine de riposter.^@
+
+br
+langjp　まるで、強風になびく旗のような素早い身のこなしに、朱志香の拳は触れることさえ叶わないのだ。\
+langen^Il se dérobait avec la souplesse d'un drapeau ballotté par la tempête. Ses poings ne parvenaient pas à l'effleurer.^\
+
+;bg black,22
+clr_oldnew_bg
+me2v 5,70
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1e.jpg",":b;bmp\background\mainbuilding\mjes_1e.png",22
+
+langjp　朱志香は血の燃えたぎるような感覚の中に、攻撃的冷静さを取り戻す。@
+langen^Même le sang en ébullition, Jessica retrouva ce calme agressif propre au combat.^@
+br
+langjp　個室としては広いこの部屋も、いつまでもそんな大袈裟にかわし続けるには狭い。@
+langjp　……それを冷静に理解し、拳だけでなく、足を使い始める。\
+langen^Même relativement grande, sa chambre ne permettrait pas à Ronove de reculer éternellement.^@
+langen^Jessica cessa de chercher directement à le frapper : elle commença à lui couper ses voies de retraite.^\
+
+set_oldnew_bg c_c0403_a,black,1,25
+textoff
+wait 200
+clr_oldnew_bg
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1bn.jpg",":b;bmp\background\mainbuilding\mjes_1bn.png",0
+ld l,$RON_DefA1,26
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e185:「……ほう。@:dwave_jp 0, ron_4e186:……ボクシングは腕でやるだけの内は半人前です。@:dwave_jp 0, ron_4e187:腕は熱く吼え猛る獅子のように。@:dwave_jp 0, ron_4e188:そして足は冷たく獲物を狙って追い詰める蛇のように。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e185:^Oh ?^@:dwave_eng 0, ron_4e186:^ Tant qu'un boxeur ne se sert que de ses bras, il ne maîtrise que la moitié de son art.^@:dwave_eng 0, ron_4e187:^ Ses bras doivent attaquer avec la férocité d'un lion.^@:dwave_eng 0, ron_4e188:^ Mais ses jambes doivent traquer leur proie comme un serpent.^\
+
+
+ld r,$JES_futekiA2,64
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e213:「蛇に足はねーぜ！」@
+;＜朱志香
+langen:dwave_eng 0, jes_4e213:^LES SERPENTS ONT PAS DE JAMBES, ABRUTI !!^@
+
+
+ld l,$RON_waraiA1,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e189:「ぷっくっく、確かに。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e189:^Pfff... hmhm ! En effet, voilà qui est fort bien observé.^\
+
+me2v 16,70
+
+se1v 20,100
+se2v 2,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1e.jpg",":b;bmp\background\mainbuilding\mjes_1e.png",22
+
+advchar "-1"
+langjp　朱志香はロノウェを正確なフットワークで壁際に追い詰めていく。@回り込ませない。@
+langen^Par un jeu de jambes précis, Jessica accula peu à peu Ronove contre le mur.^@^ Elle ne lui laissait aucun moyen de la contourner.^@
+br
+langjp　……ロノウェの華麗な回避は、見た目には派手だが、充分な足場がいる。@
+langjp　追い詰めればもうかわせはしない…！\
+langen^Ronove avait beau esquiver avec élégance, ses mouvements exigeaient beaucoup d'espace.^@
+langen^Une fois coincé contre le mur, il ne pourrait plus se dérober !^\
+
+langjp　朱志香は自分の装備するメリケンサックという武器の特性をよく理解していた。@
+langen^Jessica connaissait parfaitement les propriétés de l'arme qu'elle portait : un poing américain.^@
+br
+langjp　その強力な武器の特筆すべき特長は、相手に防御さえ許さない点だ。\
+langen^Et son principal avantage était redoutable : elle ne laissait même pas l'adversaire se défendre sans risque.^\
+
+langjp　腕で防ごうとも、その腕に直にダメージを与える。@
+langjp　……下手な受け方をすれば骨だって折れるだろう。@
+langen^Même en levant le bras pour bloquer, on encaissait directement le choc.^@
+langen^... Et avec une mauvaise garde, on pouvait facilement se briser un os.^@
+br
+langjp　だから追い詰める。@
+langen^Voilà pourquoi elle l'acculait.^@
+br
+langjp　逃げ場をなくし、……この悪魔を、この拳で、削り取るッ！！\
+langen^Lui ôter toute retraite... puis broyer ce démon sous ses propres poings !!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1dn.jpg",":b;bmp\background\mainbuilding\mjes_1dn.png",0
+ld c,$RON_defA1,23
+se1v 20,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1dn.jpg",":b;bmp\background\mainbuilding\mjes_1dn.png",0
+ld r,$JES_IkariA1,0
+ld l,$RON_majimeA2,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e190:「おっと…！@/
+langen:dwave_eng 0, ron_4e190:^Oh... ! ^@/
+
+E_M2
+se1 11
+quakex 2,200
+
+langjp:dwave_jp 0, ron_4e191:　おや、いつの間に。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e191:^Tiens donc... quand m'avez-vous acculé ainsi ?^\
+
+ld r,$JES_futekiA2,80
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e214:「ようやく追い詰めたぜ……？@:dwave_jp 0, jes_4e215:　みんなを捕らえている場所はどこだ。@:dwave_jp 0, jes_4e216:クソジジイのいる場所はどこだ。@:dwave_jp 0, jes_4e217:洗いざらい喋ったら、そのヒゲを毟り取るだけで勘弁してやるぜ？」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e214:^Je t'ai enfin coincé... ^@:dwave_eng 0, jes_4e215:^Où est-ce que vous retenez les autres ? ^@:dwave_eng 0, jes_4e216:^Et où se cache ce vieux con ? ^@:dwave_eng 0, jes_4e217:^Tu me racontes tout, et je me contente de t'arracher la moustache. Ça te va ?^\
+
+
+ld l,$RON_waraiA1,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e192:「それは困ります。@:dwave_jp 0, ron_4e193:これでもセットに毎朝、１時間を掛けているのですから。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e192:^Ce serait fort fâcheux. ^@:dwave_eng 0, ron_4e193:^Je consacre tout de même une heure chaque matin à la mettre en forme.^\
+
+
+ld r,$JES_IkariA1,80
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e218:「ギプスの世話になったら、それも出来ねえなッ？！」@
+;＜朱志香
+langen:dwave_eng 0, jes_4e218:^Avec les deux bras dans le plâtre, ça va devenir compliqué, hein ?!^@
+
+;ld l,$RON_OdorokiA1,80
+
+textoff
+
+se2v 10,80
+;wait 300
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1dn.jpg",":b;bmp\background\mainbuilding\mjes_1dn.png",0
+ld c,$JES_futekiA2,0
+ld l,$RON_majimeA1,1
+
+se3v 11,90
+se1v 2,90
+bg white,1
+set_oldnew_bg jes_vs_ron_a,white,1,31
+;bg MJES_1dN,0
+set_oldnew_bg jes_vs_ron_a,MJes_1dN,1,0
+ld l,$RON_odorokiA1,1
+
+quakex 4,400
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e194:「…………おっと。@:dwave_jp 0, ron_4e195:…………………ぐッ。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e194:^... Oh. ^@:dwave_eng 0, ron_4e195:^... Guh.^\
+
+advchar "-1"
+langjp　朱志香が繰り出した拳を、ロノウェは初めて腕で防ぐ。@
+langjp　余裕を装ってはいるが、かなり痛いはずだ。\
+langen^Pour la première fois, Ronove bloqua de son bras le poing lancé par Jessica.^@
+langen^Il gardait son air détaché, mais le coup avait dû lui faire sérieusement mal.^\
+
+clr_oldnew_bg
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1dn.jpg",":b;bmp\background\mainbuilding\mjes_1dn.png",0
+;cl c,0
+ld l,$RON_OdorokiA1,0
+ld r,$JES_AkuwaraiA1,63
+
+langjp　……朱志香はニヤリと笑う。@
+langen^... Jessica afficha un sourire carnassier.^@
+
+;ld l,$RON_AkuwaraiA1,80
+br
+langjp　ロノウェも同じように笑うが、わずかに引きつっている。\
+langen^Ronove lui rendit son sourire, mais le sien se crispa à peine.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1e.jpg",":b;bmp\background\mainbuilding\mjes_1e.png",0
+ld r,$RON_akuwaraiA1,26
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e196:「……なるほど。@:dwave_jp 0, ron_4e197:これは確かに痛いですね。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e196:^... Je vois. ^@:dwave_eng 0, ron_4e197:^C'est effectivement assez douloureux.^\
+
+
+ld l,$JES_ikariA1,26
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e219:「最終勧告。@/
+langen:dwave_eng 0, jes_4e219:^Dernier avertissement. ^@/
+
+ld l,$JES_futekiA2,80
+
+langjp:dwave_jp 0, jes_4e220:泣いて詫びろ。」@
+;＜朱志香
+langen:dwave_eng 0, jes_4e220:^Chiale et demande pardon.^@
+
+ld r,$RON_waraiA1,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e198:「それは出来ませんね。@:dwave_jp 0, ron_4e199:キャラが崩れます。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e198:^Je crains que cela ne me soit impossible.^@:dwave_eng 0, ron_4e199:^ Je sortirais de mon personnage.^\
+
+
+ld l,$JES_IkariA3,80
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e221:「なら、お前が崩れ落ちるといいぜ。@:dwave_jp 0, jes_4e222:釣瓶打ちだああああああぁあああッ！！！」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e221:^ALORS TU VAS FINIR PAR T'ÉCROULER !!^@:dwave_eng 0, jes_4e222:^ PRENDS ÇA !!^\
+
+
+
+se1 20
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+wait 600
+
+se1v 1006,100
+se2v 1006,100
+se3v 2,70
+wait 300
+
+se1v 1006,100
+se2v 1006,100
+se3v 2,70
+
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1e.jpg",":b;bmp\background\mainbuilding\mjes_1e.png",22
+
+advchar "-1"
+langjp　朱志香の左右の鉄拳がロノウェに打ち込まれる。@
+langen^Ses deux poings renforcés de métal s'abattirent sur Ronove.^@
+br
+langjp　しかし、そうとは思えぬ手応えとガラスを割るような音に朱志香はぎょっとする。\
+langen^Mais cette fois, un bruit cristallin, semblable à du verre brisé, retentit.^\
+
+;bg MJES_1dN,0
+set_oldnew_bg c_c0404_a,MJes_1dN,1,0
+ld c,$RON_akuwaraiA1,26
+
+langjp　朱志香の拳を、ロノウェは一見、手の平で受け止めたように見えた。@……少し違う。\
+langen^À première vue, Ronove arrêtait ses coups à mains nues.^@^ Pourtant, ce n'était pas tout à fait cela.^\
+se1v 57,100
+lsp 899,barrierbrake2,100,80  ;TODO: Check to see if these will display and line up
+print 1
+
+vsp 899,0
+print 22
+
+langjp　ロノウェが手の平を開くと、そこに紫色に薄く光る、ガラスの楯のような障壁が現れ、@紙一重のところで攻撃を止めてしまうのだ。\
+langen^Devant ses paumes se formaient deux surfaces violettes, pareilles à de fins boucliers de verre,^@^ qui interceptaient les coups avant qu'ils touchent son corps.^\
+
+textoff
+saveoff
+
+ld c,$RON_majimeA2,0
+
+vsp 899,1
+amsp 899,0,120
+se1v 57,100
+se2v 1006,100
+print 1
+vsp 899,0
+print 22
+;wait 200
+
+vsp 899,1
+amsp 899,200,100
+se1v 57,100
+se2v 1006,100
+print 1
+vsp 899,0
+print 22
+;wait 100
+
+set_oldnew_bg c_c0404_b,MJes_1dN,1,0
+ld c,$RON_akuwaraiA1,80
+
+vsp 899,1
+amsp 899,80,30
+se1v 57,100
+se2v 1006,100
+print 1
+vsp 899,0
+print 22
+;wait 100
+
+vsp 899,1
+amsp 899,130,90
+se1v 57,100
+se2v 1006,100
+print 1
+vsp 899,0
+print 22
+;wait 100
+
+;ld c,$RON_majimeA2,80
+
+saveon
+
+langjp　気を取り直し、朱志香は再び左右の鉄拳を繰り出すが、ロノウェは実に華麗な仕草で、それを全て、受け止めてしまう……。\
+langen^Jessica reprit aussitôt ses esprits et enchaîna de nouveau des deux poings, mais Ronove arrêta chaque coup avec une élégance déconcertante...^\
+
+set_oldnew_bg c_c0404_a,MJes_1dN,1,0
+ld c,$RON_DefA1,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e200:「悪魔ですので。@:dwave_jp 0, ron_4e201:この程度の魔法くらいは。@/
+langen:dwave_eng 0, ron_4e200:^Je suis un démon, après tout.^@:dwave_eng 0, ron_4e201:^ Une magie de ce niveau n'a rien d'extraordinaire pour moi.^@/
+
+ld c,$RON_majimeA2,80
+
+langjp:dwave_jp 0, ron_4e202:………それにしても、なかなかやりますね。@:dwave_jp 0, ron_4e203:ニンゲンだったら、私はここで降参だったでしょう。@:dwave_jp 0, ron_4e204:悪魔だから、まだ戦い続けることが出来る。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e202:^ Cela dit, vous vous battez remarquablement bien.^@:dwave_eng 0, ron_4e203:^ Si j'étais un Humain, j'aurais déjà été contraint de déclarer forfait.^@:dwave_eng 0, ron_4e204:^ Heureusement pour moi, ce n'est pas le cas.^\
+
+clr_oldnew_bg
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1cn.jpg",":b;bmp\background\mainbuilding\mjes_1cn.png",0
+ld r,$JES_ikariA1,24
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e223:「お、……おかしな真似を………！」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e223:^C-C'est quoi... ce tour bizarre... ?!^\
+
+
+ld l,$RON_majimeA1,23
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e205:「それで終わりですか？@/
+langen:dwave_eng 0, ron_4e205:^C'est tout ?^@/
+
+ld l,$RON_majimeA2,80
+
+langjp:dwave_jp 0, ron_4e206:　……攻撃を繰り出すばかりで、ご自身の防御が疎かではありませんか？」@
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e206:^ Vous ne pensez qu'à attaquer. Auriez-vous oublié de protéger votre propre corps ?^@
+
+ld r,$JES_OdorokiA1,80
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e224:^^!s0「え？！@/
+langen:dwave_eng 0, jes_4e224:^^!s0^ Hein ?!^@/
+
+se1v 57,100
+se2v 2,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1cn.jpg",":b;bmp\background\mainbuilding\mjes_1cn.png",0
+ld c,$RON_MajimeA2,0
+vsp 899,1
+amsp 899,120,60
+print 22
+vsp 899,0
+print 22
+
+
+langjp:dwave_jp 0, jes_4e225:　……うわッ！！」/
+sl
+langen:dwave_eng 0, jes_4e225:^ ... Ouah !!^@/
+
+se3v 12,100
+quakex 2,300
+se2 13
+quakey 5,500
+
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜朱志香
+
+langjp　ロノウェは手の平を朱志香の下腹部に、寸止めのように打ち込む。@
+langjp　朱志香は紫の楯に弾き飛ばされ、後に転がり、ベッドに頭をぶつける。\
+langen^Ronove lança la paume vers son ventre, mais arrêta le geste juste avant de la toucher.^@
+langen^La barrière violette poursuivit son mouvement et projeta Jessica en arrière, contre son lit.^\
+
+
+ld c,$RON_defA1,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e207:「ニンゲン如きに、私のシールドは破れませんよ。@:dwave_jp 0, ron_4e208:もう二度と、私の体に触れることが出来ると思わぬことです。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e207:^Un simple Humain ne peut briser mon bouclier.^@:dwave_eng 0, ron_4e208:^ Vous ne toucherez plus mon corps.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1an.jpg",":b;bmp\background\mainbuilding\mjes_1an_lit.png",23
+ld l,$JES_futekiA2,26
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e226:「……ならよ、……そのシールドごとブチ抜いてやるぜ……！！」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e226:^ALORS JE VAIS EXPLOSER TON FOUTU BOUCLIER ! ET JE T'EXPLOSERAI AVEC !!^\
+
+
+ld r,$RON_AkuWaraiA1,24
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e209:「不屈な方だ。@:dwave_jp 0, ron_4e210:その根性、なるほど、次期当主として実に相応しい。@/
+langen:dwave_eng 0, ron_4e209:^Quelle ténacité !^@:dwave_eng 0, ron_4e210:^ Cette volonté est effectivement digne d'une candidate à la succession.^@/
+
+;ld r,$RON_WaraiA1,80
+
+langjp:dwave_jp 0, ron_4e211:……もう少しお相手させていただきましょうかね。@:dwave_jp 0, ron_4e212:これも試験官の役得です。@:dwave_jp 0, ron_4e213:………ぷっくくくくくく！」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e211:^ Permettez-moi donc de prolonger encore un peu notre séance.^@:dwave_eng 0, ron_4e212:^ C'est l'un des plaisirs réservés aux examinateurs.^@:dwave_eng 0, ron_4e213:^ Pfff... hmhmhmhm !^\
+
+set_oldnew_bg c_c0403_a,MJes_1an_lit,1,0
+cl a,0
+ld c,$JES_IkariA1,23
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e227:「砕けろおおおおぉおおお、うおおおおおおおおおおぉおおッ！！」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e227:^Brise-toiiiiiiiiiiiiiiii, uoooooooooooooooooooooh !!!^\
+textoff
+
+se1v 20,100
+wait 200
+se2v 20,100
+wait 200
+se3v 20,100
+wait 200
+
+E_B
+E_MA
+
+se3v 2,100 
+se1v 27,100
+se2v 57,100
+
+clr_oldnew_bg
+bg white,1
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_1an.jpg",":b;bmp\background\garden\rose_1an.png",2
+;quakey 5,1200
+
+me1v 12,70
+
+dllefe 1,1
+
+
+mov %play_scene,40250 : mov %r_hyouji_side,0 : mov %r_hyouji_cha,geo
+
+advchar "-1"
+langjp　ガァプが譲治を見下ろし、嘲笑う。@
+langjp　譲治は薔薇庭園の園路で、水溜りに突っ伏していた。@
+langen^Gaap contempla George de haut avec un sourire satisfait.^@
+langen^Il gisait face contre terre, au milieu des flaques de la roseraie.^@
+br
+langjp　容赦なく雨は打ちつけ、天すらも嘲笑っているように見える…。\
+langen^La pluie battante détrempait ses vêtements. Chaque partie de son corps le faisait souffrir.^\
+
+me2v 5,70
+ld r,$GAP_AkuwaraiA1,24
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e232:「………あっははははははは。@:dwave_jp 0, gap_4e233:立ちなさい？@:dwave_jp 0, gap_4e234:　また落ちるわよ？」@
+;＜ガァプ
+langen:dwave_eng 0, gap_4e232:^Ahahahahaha !^@:dwave_eng 0, gap_4e233:^ Allez, debout !^@:dwave_eng 0, gap_4e234:^ Tu vas encore finir par tomber si tu restes comme ça !^@
+
+ld l,$GEO_majimeA3k,6
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e189:「………………………。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e189:^...^\
+
+advchar "-1"
+langjp　譲治はよろよろと立ち上がる。@
+langen^George se releva péniblement.^@
+br
+langjp　……精神は挫けていないようだが、肉体のダメージはかなりのもののようだった。\
+langen^Son corps avait encaissé de sérieux dégâts, mais son regard n'avait pas changé.^\
+
+ld r,$GAP_waraiA2,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e235:「命乞いなさい。@:dwave_jp 0, gap_4e236:君のしていることは、何も選ばない四番目の選択肢に同じ。@/
+langen:dwave_eng 0, gap_4e235:^Tu peux toujours me supplier.^@:dwave_eng 0, gap_4e236:^ Si tu t'obstines sans rien faire, c'est comme si tu choisissais la quatrième possibilité : le refus de décider.^@/
+
+ld r,$GAP_waraiA1,80
+
+langjp:dwave_jp 0, gap_4e237:　……君が選んだのは三番目の選択肢でしょう？@:dwave_jp 0, gap_4e238:　両手両膝を付いて詫びれば、私への非礼を許してあげるわ。\
+langen:dwave_eng 0, gap_4e237:^ Tu avais choisi la troisième, non ?^@:dwave_eng 0, gap_4e238:^ Mets-toi à genoux, demande pardon, et je fermerai les yeux sur ton insolence.^\
+
+ld r,$GAP_defA3,80
+
+langjp:dwave_jp 0, gap_4e239:　そしたら、君を地下牢へ案内してあげる。@:dwave_jp 0, gap_4e240:そこで君は、愛する紗音と非力な自分のために、他の人質たちを一人ずつ殺していくの。@/
+langen:dwave_eng 0, gap_4e239:^Ensuite, je te conduirai au cachot.^@:dwave_eng 0, gap_4e240:^ Là-bas, tu exécuteras les autres otages un à un, pour Shannon et pour sauver ta propre vie.^@/
+
+ld r,$GAP_AkuwaraiA3,80
+
+langjp:dwave_jp 0, gap_4e241:……出来るわよね？@:dwave_jp 0, gap_4e242:　その覚悟はあると、君は豪語したわ。@:dwave_jp 0, gap_4e243:……くすくすくすくす。」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e241:^ Tu peux le faire, n'est-ce pas ?^@:dwave_eng 0, gap_4e242:^ Tu t'en es vanté, pourtant.^@:dwave_eng 0, gap_4e243:^ Hmhmhmhm...^\
+
+
+ld l,$GEO_niramuA1k,80
+
+advchar "-1"
+langjp「…………………………。」@
+;＜譲治
+langen^...^@
+
+br
+langjp　譲治は返事をしない。@
+langjp　……しかしその眼差しは未だに強情に、屈服を拒んでいた。\
+langen^George ne répondit rien.^@
+langen^Mais ses yeux refusaient obstinément de céder.^\
+
+ld r,$GAP_akuWaraiA1,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e244:「……あまり強情が過ぎると、今度こそ奈落の底の底まで、落ちるわよ…？@:dwave_jp 0, gap_4e245:　くっくくくくく。」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e244:^... Si tu continues à t'obstiner, cette fois tu vas tomber jusqu'au plus profond de l'Abîme... ^@:dwave_eng 0, gap_4e245:^Kukukukukuku.^\
+
+advchar "-1"
+langjp　ガァプの強さは歴然としていた。@
+langen^La supériorité de Gaap était flagrante.^@
+br
+langjp　……それは多分、当の譲治よりも、@それを三面鏡越しに見守っている紗音たちの方が理解しているに違いなかった…。\
+langen^... Shannon et les autres, qui observaient la scène dans le miroir à trois faces, ^@^le comprenaient probablement encore mieux que George lui-même...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+dllefe_off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+
+fede 10,1000
+
+
+lsp 889,pri_i1a_sak_b,0,0
+vsp 889,1
+
+fr_bg ":b;fr_bg\orig\bmp\background\subway\pri_i1b.jpg",":b;bmp\background\subway\pri_i1b.png",24
+ld c,$SHA_OdorokiA1,26
+
+bgm1v 79,85
+
+advchar "15"
+langjp:dwave_jp 0, sha_4e131:「………譲治さま……。@:dwave_jp 0, sha_4e132:……もう、/
+sl
+langjp:voicedelay 620:dwave_jp 0, sha_4e133:^^………止めて………。@:dwave_jp 0, sha_4e134:…私なんかのために……。」@
+;＜紗音
+langen:dwave_eng 0, sha_4e131:^George...^@:dwave_eng 0, sha_4e132:^ Je vous en prie, ça suffit...^@/
+sl
+langen:voicedelay 620:dwave_eng 0, sha_4e133:^ Arrêtez...^@:dwave_eng 0, sha_4e134:^ Ne vous faites pas souffrir davantage pour quelqu'un comme moi...^@
+
+ld r,$KAN_MajimeA1,24
+
+advchar "16"
+langjp:dwave_jp 0, kan_4e106:「姉さん……。」\
+;＜嘉音
+langen:dwave_eng 0, kan_4e106:^Grande sœur...^\
+
+vsp 889,0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+lsp 889,pri_i1c_sak_a,0,0
+vsp 889,1
+fr_bg ":b;fr_bg\orig\bmp\background\subway\pri_i1c.jpg",":b;bmp\background\subway\pri_i1c.png",22
+se1 13
+quakey 3,500
+
+advchar "15"
+langjp:dwave_jp 0, sha_4e135:^^!s1「……私のことなんて、好きにならなければ、/
+sl
+langjp:voicedelay 2400:dwave_jp 0, sha_4e136:^^……譲治さまは誰とも戦わなくていいんでしょ…？@:dwave_jp 0, sha_4e137:　なら私なんて捨てて下さい……。@:dwave_jp 0, sha_4e138:忘れて下さい……。」/
+sl
+langen:dwave_eng 0, sha_4e135:^^!s1^Si vous ne m'aviez jamais aimée...^@/
+sl
+langen:voicedelay 2400:dwave_eng 0, sha_4e136:^ ... vous n'auriez pas à vous battre contre qui que ce soit, n'est-ce pas ?^@:dwave_eng 0, sha_4e137:^ Alors... abandonnez-moi.^@:dwave_eng 0, sha_4e138:^ Oubliez-moi...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜紗音
+
+vsp 889,0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　その声が譲治に届くはずもない。@
+langen^Bien sûr, sa voix ne pouvait parvenir jusqu'à George.^@
+br
+langjp　……しかし、なのに。@……譲治はそれに答えた。\
+langen^Et pourtant...^@^ George lui répondit.^\
+
+me1v 12,50
+dllefe 1,1
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_1bn.jpg",":b;bmp\background\garden\rose_1bn.png",0
+ld c,$GEO_majimeA1k,2
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e191:「嫌だね。@/
+langen:dwave_eng 0, geo_4e191:^Pas question.^@/
+
+;ld c,$GEO_IkariA1,80
+
+langjp:dwave_jp 0, geo_4e192:…………僕は、屈服しない。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e192:^ Je ne me soumettrai pas.^\
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_1an.jpg",":b;bmp\background\garden\rose_1an.png",0
+ld l,$GAP_defA2,23
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e246:「……へぇ。@:dwave_jp 0, gap_4e247:どうして……？」@
+;＜ガァプ
+langen:dwave_eng 0, gap_4e246:^... Oh ? ^@:dwave_eng 0, gap_4e247:^Pourquoi... ?^@
+
+
+ld r,$GEO_majimeA2k,24
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e193:「…………それが、僕の、覚悟だからだ。@:dwave_jp 0, geo_4e194:……僕は紗音のために、全てと戦う。@:dwave_jp 0, geo_4e195:そして全てに認めさせ、/
+sl
+langjp:voicedelay 2540:dwave_jp 0, geo_4e196:^^……全てに僕たちを祝福させる。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e193:^Parce que j'ai pris ma décision.^@:dwave_eng 0, geo_4e194:^ Pour Shannon, je suis prêt à me battre contre le monde entier.^@:dwave_eng 0, geo_4e195:^ Et je forcerai ce monde à nous accepter...^@/
+sl
+langen:voicedelay 2540:dwave_eng 0, geo_4e196:^ et à bénir notre union.^\
+
+ld l,$GAP_WaraiA1,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e248:「ねぇ、聞かせて？@:dwave_jp 0, gap_4e249:　どうしてあの紗音とかいう家具のためにそこまで言えるの？@/
+langen:dwave_eng 0, gap_4e248:^Qu'est-ce qui peut donc te pousser à aller aussi loin^@:dwave_eng 0, gap_4e249:^ pour ce meuble qu'on appelle Shannon ?^@/
+
+ld l,$GAP_AkuwaraiA1,80
+
+langjp:dwave_jp 0, gap_4e250:　………あんなの、ただの出来損ないじゃない。@:dwave_jp 0, gap_4e251:給仕ひとつ満足に出来ない、ガラクタ家具だわ。」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e250:^ Ce n'est qu'un meuble défectueux.^@:dwave_eng 0, gap_4e251:^ Un rebut incapable même d'accomplir correctement son travail.^\
+
+ld r,$GEO_majimeA5k,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e197:「…………愛する女性への暴言を、僕はそれ以上許さない。」@
+;＜譲治
+langen:dwave_eng 0, geo_4e197:^Je ne tolérerai plus que tu insultes la femme que j'aime.^@
+
+
+ld l,$GAP_waraiA3,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e252:「だったら何？@:dwave_jp 0, gap_4e253:　ひ弱なボクちゃんが、私にどう抗うというのかしら…？」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e252:^Et alors ? ^@:dwave_eng 0, gap_4e253:^Qu'est-ce qu'un pauvre petit garçon aussi frêle que toi peut bien faire contre moi... ?^\
+
+
+ld r,$GEO_majimeA1k,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e198:「人を愛するとは強さだ。@:dwave_jp 0, geo_4e199:……それを知ったから、僕は強くなれた。@/
+langen:dwave_eng 0, geo_4e198:^Aimer quelqu'un donne de la force.^@:dwave_eng 0, geo_4e199:^ C'est en le comprenant que j'ai appris à devenir plus fort.^@/
+
+ld r,$GEO_majimeA5,80
+
+langjp:dwave_jp 0, geo_4e200:………« 紗音、@:dwave_jp 0, geo_4e201:僕は君を愛している »。@:dwave_jp 0, geo_4e202:その言葉だけで、僕は何度でも立ち上がれるんだ。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e200:^ « Shannon,^@:dwave_eng 0, geo_4e201:^ je t'aime. »^@:dwave_eng 0, geo_4e202:^ Ces mots suffisent à me remettre debout, autant de fois qu'il le faudra.^\
+
+
+ld l,$GAP_AkuwaraiA3,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e254:「紗音は地下牢よ？@:dwave_jp 0, gap_4e255:　私に愛を語られても。」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e254:^Shannon est au cachot, tu sais ? ^@:dwave_eng 0, gap_4e255:^Ce n'est pas à moi qu'il faut faire ta déclaration.^\
+
+ld r,$GEO_MajimeA2,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e203:「いいや。@:dwave_jp 0, geo_4e204:伝わった。@/
+langen:dwave_eng 0, geo_4e203:^Si.^@:dwave_eng 0, geo_4e204:^ Elle m'a entendu.^@/
+
+ld r,$GEO_majimeA5,80
+
+langjp:dwave_jp 0, geo_4e205:……それが愛だからだ。@:dwave_jp 0, geo_4e206:紗音には今、僕の言葉が聞こえているよ。@:dwave_jp 0, geo_4e207:そうだと信じられることこそが、愛だ。」@
+;＜譲治
+langen:dwave_eng 0, geo_4e205:^ Parce que c'est ça, aimer quelqu'un.^@:dwave_eng 0, geo_4e206:^ Je sais que Shannon entend mes paroles.^@:dwave_eng 0, geo_4e207:^ Et si je peux y croire, c'est précisément parce que je l'aime.^@
+
+
+ld l,$GAP_AkuwaraiA4a,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e256:「………………こいつ…、……。」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e256:^... Ce type...^\
+
+;■地下牢
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+
+fede 10,1000
+
+dllefe_off
+lsp 889,pri_i1c_sak_a,0,0
+vsp 889,1
+fr_bg ":b;fr_bg\orig\bmp\background\subway\pri_i1c.jpg",":b;bmp\background\subway\pri_i1c.png",22
+;ld c,$GEO_DefA1k,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e207_1:『紗音。@:dwave_jp 0, geo_4e208:君は家具なんかじゃない。@:dwave_jp 0, geo_4e209:……家具だったとしても、世界でただひとつの、僕だけの家具だ。@:dwave_jp 0, geo_4e210:生涯、僕と寄り添って欲しい。@:dwave_jp 0, geo_4e211:……僕には君が、永遠に必要だ。』\
+;＜譲治
+langen:dwave_eng 0, geo_4e207_1:^Shannon.^@:dwave_eng 0, geo_4e208:^ Tu n'es pas un meuble.^@:dwave_eng 0, geo_4e209:^ Et même si tu en étais un, tu serais le seul meuble au monde que je voudrais avoir auprès de moi.^@:dwave_eng 0, geo_4e210:^ Je veux passer toute ma vie à tes côtés.^@:dwave_eng 0, geo_4e211:^ J'aurai besoin de toi jusqu'à mon dernier souffle.^\
+
+lsp 889,pri_i1a_sak_b,0,0
+fr_bg ":b;fr_bg\orig\bmp\background\subway\pri_i1b.jpg",":b;bmp\background\subway\pri_i1b.png",0
+ld c,$SHA_hajiraiA1,2
+
+advchar "15"
+langjp:dwave_jp 0, sha_4e139:「………じょ、……譲治さま……………。」\
+;＜紗音
+langen:dwave_eng 0, sha_4e139:^... G-George...^\
+
+
+ld l,$KIR_futekiA1,23
+
+advchar "09"
+langjp:dwave_jp 0, kir_4e301:「……妬けるわ。@:dwave_jp 0, kir_4e302:口説きならウチの人を越えたわね。」@
+;＜霧江
+langen:dwave_eng 0, kir_4e301:^J'en serais presque jalouse.^@:dwave_eng 0, kir_4e302:^ Côté déclarations, il a même surpassé mon mari.^@
+
+
+ld r,$NAN_fumuA1,24
+
+advchar "19"
+langjp:dwave_jp 0, nan_4e110:「わ、……若さですな。」\
+;＜南條
+langen:dwave_eng 0, nan_4e110:^... A-Ah... la jeunesse.^\
+
+;■薔薇庭園
+
+textoff
+
+vsp 889,0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+;wait 2000
+
+me1v 12,70
+
+dllefe 1,1
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_1an.jpg",":b;bmp\background\garden\rose_1an.png",22
+
+ld c,$GAP_AkuwaraiA4,26
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e257:「あっはははははははははは…！！@:dwave_jp 0, gap_4e258:　愛が強さ？@:dwave_jp 0, gap_4e259:　なら坊やはどうしてそんなにひ弱なの？@:dwave_jp 0, gap_4e260:　その弱さがつまり、君の愛の程度なわけね？@:dwave_jp 0, gap_4e261:　くすくすくす！@:dwave_jp 0, gap_4e262:　婚約者への愛もひ弱。@:dwave_jp 0, gap_4e263:両親の呆気ない死に様もひ弱。@:dwave_jp 0, gap_4e264:君の人生は何から何までひ弱だわぁ。」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e257:^Ahahahahahaha !^@:dwave_eng 0, gap_4e258:^ L'amour serait une force ?^@:dwave_eng 0, gap_4e259:^ Alors pourquoi es-tu si faible ?^@:dwave_eng 0, gap_4e260:^ Si ta force mesure ton amour, c'est que tu n'aimes pas beaucoup ta fiancée !^@:dwave_eng 0, gap_4e261:^ Hmhm !^@:dwave_eng 0, gap_4e262:^ Ton amour pour elle doit être bien faible !^@:dwave_eng 0, gap_4e263:^ Tes parents sont morts avec une facilité pitoyable.^@:dwave_eng 0, gap_4e264:^ Décidément, la faiblesse est une affaire de famille !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_1bn.jpg",":b;bmp\background\garden\rose_1bn.png",24
+ld r,$GEO_majimeA2k,24
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e212:「……………紗音は僕に愛と強さを教えてくれた。@/
+langen:dwave_eng 0, geo_4e212:^Shannon m'a appris ce que signifiaient l'amour et la force.^@/
+
+ld r,$GEO_majimeA1,80
+
+langjp:dwave_jp 0, geo_4e213:もし君が、僕の強さだけで紗音への愛を確かめようというのなら、/
+sl
+langjp:voicedelay 5590:dwave_jp 0, geo_4e214:^^……僕の愛を、教えよう。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e213:^ Et si tu tiens à mesurer mon amour pour elle à ma puissance...^@/
+sl
+langen:voicedelay 5590:dwave_eng 0, geo_4e214:^ alors je vais te montrer ce qu'il vaut.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_1an.jpg",":b;bmp\background\garden\rose_1an.png",0
+ld l,$GAP_WaraiA2,23
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e265:「くす、言うわね。@:dwave_jp 0, gap_4e266:……なぁるほど。@:dwave_jp 0, gap_4e267:何度も蹴り倒されて転がされ、それでも立ち上がるのが紗音からもらった強さだと。\
+langen:dwave_eng 0, gap_4e265:^Hm, tu parles bien. ^@:dwave_eng 0, gap_4e266:^... Je vois. ^@:dwave_eng 0, gap_4e267:^Donc cette force qui te permet de te relever après avoir été jeté au sol encore et encore, c'est Shannon qui te l'a donnée.^\
+
+ld l,$GAP_WaraiA3,80
+
+langjp:dwave_jp 0, gap_4e268:　なら、呆気なく殺されたあんたのお父さんとお母さんからは何をもらったの？@:dwave_jp 0, gap_4e269:　………？」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e268:^Et tes parents, eux ? Que t'ont-ils transmis, puisqu'ils se sont fait tuer si facilement ?^@:dwave_eng 0, gap_4e269:^ ... ?^\
+
+;se1v 20,100
+
+E_A
+dllefe_off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+
+advchar "-1"
+langjp　その時、停電した。@……屋外で？\
+langen^À cet instant, tout devint noir. ^@^... Une panne de courant, dehors ?^\
+
+me1v 5,0
+fedexx 0,50,0,0,0,0,2000
+
+;ld c,$GAP_ikariA1,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e270:「………ち、……違う。@:dwave_jp 0, gap_4e271:………こ、れは…………。」@
+;＜ガァプ
+langen:dwave_eng 0, gap_4e270:^... N-Non. ^@:dwave_eng 0, gap_4e271:^... C-C'est...^@
+br
+
+if %is_old_sprites = 1 jumpf
+	lsp 10,c_c0401_s,0,0
+	print 24
+~
+
+advchar "-1"
+langjp^^!s0　ガァプの視界を遮るのは、/
+sl
+langjp^^!d900……………譲治の、/
+sl
+langjp^^!d500靴の、/
+sl
+langjp^^!d800…/
+sl
+langen^^!s0^ Ce qui bouchait la vue de Gaap^@/
+sl
+langen:!d900^... c'était la semelle... ^@/
+sl
+langen:!d500^de la chaussure... ^@/
+sl
+langen:!d800^de...^@/
+sl
+
+if %is_old_sprites = 1 jumpf
+	for %Free1 = 1 to 50
+		msp 10,-10,0
+		print 1
+		waittimer 10
+		next
+	lsp 10,c_c0401_s,-536,0
+	print 1
+~
+se1v 2,100
+quakex 4,400
+
+langjp裏…。/
+sl
+langen^ George.^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+
+;ld c,$GEO_MajimeA1,80
+
+bgm1v 101,85
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e215:「…………足刀蹴り。@:dwave_jp 0, geo_4e216:鼻骨骨折。」@
+;＜譲治
+langen:dwave_eng 0, geo_4e215:^Coup de pied sabre.^@:dwave_eng 0, geo_4e216:^ Fracture du nez.^@
+br
+advchar "-1"
+langjp　それはガァプの鼻先で完全に寸止めされていた。\
+langen^Le coup s'était arrêté net juste devant le bout du nez de Gaap.^\
+
+csp 10
+;bg rose_1aN,0
+if %is_old_sprites = 1 dllefe 1,1
+set_oldnew_bg c_c0401_a,rose_1aN,1,0
+ld r,$GAP_akuwaraiA1a,0
+ld l,$GEO_MajimeA5k,26
+ld l,$GEO_majimeA5,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e217:「母さんにもらったものはこの蹴りだ。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e217:^Ce que Maman m'a transmis, c'est ce coup de pied.^\
+
+se1 20
+cl r,66
+clr_oldnew_bg
+dllefe 1,1  ;resets rain effect for new sprites
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_1bn.jpg",":b;bmp\background\garden\rose_1bn.png",25
+ld l,$GAP_ikariA1a,65
+se2 11
+quakey 3,300
+
+advchar "-1"
+langjp　ガァプは数瞬遅れて飛び退く。@
+langjp　もちろん遅過ぎる。@
+langen^Gaap bondit en arrière quelques instants trop tard.^@
+langen^Bien sûr, beaucoup trop tard.^@
+br
+langjp　譲治が止めなければ、宣言したとおりのダメージが与えられただろう。\
+langen^Si George n'avait pas retenu son coup, les dégâts auraient été exactement ceux qu'il venait d'annoncer.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_1an.jpg",":b;bmp\background\garden\rose_1an.png",24
+ld c,$GEO_ikariA3k,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e218:「そして父さんにもらったのが、/
+sl
+langjp:voicedelay 1550:dwave_jp 0, geo_4e219:^^……忍耐力。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e218:^Et ce que Papa m'a appris...^@/
+sl
+langen:voicedelay 1550:dwave_eng 0, geo_4e219:^ c'est la patience.^\
+
+me2v 16,50
+
+
+br
+advchar "-1"
+langjp　低い沸点の怒りは真に恐れるべきものではない。@
+langjp　……本当の怒りは、忍耐によって練り上げられる。\
+langen^Une colère qui éclate à la première provocation n'a rien de bien effrayant.^@
+langen^La véritable colère se construit à force d'endurer.^\
+
+ld c,$GEO_niramuA1k,80
+advchar "07"
+langjp:dwave_jp 0, geo_4e220:「………君の暴力的意思表示は理解した。@:dwave_jp 0, geo_4e221:……また、婚約者と両親への名誉毀損も理解した。@:dwave_jp 0, geo_4e222:そして、それを撤回する気がないんだね……？」\
+
+advchar "-1"
+;＜譲治
+advchar "07"
+langen:dwave_eng 0, geo_4e220:^J'ai parfaitement compris ce que tu cherchais à me faire subir.^@:dwave_eng 0, geo_4e221:^ Et j'ai entendu chaque insulte envers Shannon et mes parents.^@:dwave_eng 0, geo_4e222:^ Tu n'as toujours pas l'intention de les retirer, n'est-ce pas ?^\
+
+advchar "-1"
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_g1an.jpg",":b;bmp\background\garden\rose_g1an.png",0
+ld l,$GAP_akuwaraiA1a,23
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e272:「……こ、いつ……。」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e272:^... C-Ce type...^\
+textoff
+fedexx 85,80,80,0,0,0,1000
+
+
+;bg black,24
+;bg rose_1aN,0
+ld r,$GEO_majimeA4,24
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e223:「君の攻撃は、もう充分に理解したから。@/
+langen:dwave_eng 0, geo_4e223:^Grâce à toi, j'ai eu tout le temps d'observer tes mouvements.^@/
+
+ld r,$GEO_majimeA5k,80
+
+langjp:dwave_jp 0, geo_4e224:…………そろそろ、いいかな。反撃しても。」@
+;＜譲治
+langen:dwave_eng 0, geo_4e224:^ Je peux donc commencer à riposter.^@
+
+;bg rose_G1aN,0
+ld l,$GAP_AkuwaraiA4a,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e273:「ほっ、ほざくな、坊やの分際で……！！」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e273:^N-NE FAIS PAS LE MALIN, SALE GAMIN !!^\
+
+dllefe_off
+E_MA
+se1v 52,100
+se2v 2,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",68
+
+;wait 500
+
+advchar "-1"
+langjp　譲治の足元に漆黒の落とし穴が口を開く。@
+langen^Un gouffre d'un noir absolu s'ouvrit sous les pieds de George.^@
+
+se2v 20,85
+wait 300
+
+se3v 11,70
+wait 100
+se3v 11,85
+
+
+br
+langjp　しかし、譲治は素早く足を開き、その穴を跨ぐように立つ。@同じ手は、通用しない…！@
+langjp　上半身は微動だにしない、あまりに軽やかな身のこなしだった。\
+langen^Mais George écarta simplement les jambes et se retrouva à cheval au-dessus du gouffre.^@^ Le même piège ne fonctionnerait pas deux fois.^@
+langen^Son buste ne bougea même pas : l'esquive avait été d'une légèreté stupéfiante.^\
+
+textoff
+
+se1v 1006,100
+bg white,1
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\moon_1a.jpg",":b;bmp\background\forest\moon_1b.png",0  ;fixed lighting issue
+ld c,$GEO_ikariA3k,22
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e225:「忍耐とは、熱くならず、冷静に相手の出方を研究することだ。@:dwave_jp 0, geo_4e226:………何のために？@:dwave_jp 0, geo_4e227:　決まってるじゃないか。@:dwave_jp 0, geo_4e228:わかるかい？」@
+;＜譲治
+langen:dwave_eng 0, geo_4e225:^Être patient, c'est conserver son sang-froid et observer attentivement son adversaire.^@:dwave_eng 0, geo_4e226:^ Tu sais pourquoi ?^@:dwave_eng 0, geo_4e227:^ ...^@:dwave_eng 0, geo_4e228:^ Tu ne devines pas ?^@
+
+;ld c,$GAP_AkuwaraiA3a,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e274:「わ、わ、わかんないわよ……。」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e274:^J-J-Je vois pas...^\
+
+textoff
+me1v 5,0
+fedexx 90,70,0,0,0,0,1000
+
+mbg white,1
+se1v 2,100
+mcbg 0
+ld c,$GEO_ikariA3,22
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e229:「反撃して、きっちり借りを返し、二度とちょっかいを出したくないと思わせ、@:dwave_jp 0, geo_4e230:涙と鼻水で顔面をぐちゃぐちゃにしてそれを拭うのを忘れて@:dwave_jp 0, geo_4e231:額を地面に擦り付けて何度も謝りたくなるほどに完膚なきまでに完璧に徹ッ底的にッッ！！！@/
+langen:dwave_eng 0, geo_4e229:^Pour lui rendre chaque coup, jusqu'à ce qu'elle n'ait plus jamais envie de recommencer.^@:dwave_eng 0, geo_4e230:^ Pour lui faire regretter amèrement ses attaques.^@:dwave_eng 0, geo_4e231:^ Et pour l'amener à pleurer, à supplier pardon, le front contre le sol !^@/
+;ld c,$GEO_ikariA2,80
+langjp:dwave_jp 0, geo_4e232:　……叩きのめすためだよ。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e232:^ Voilà à quoi sert la patience.^\
+
+textoff
+saveoff
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_1bn.jpg",":b;bmp\background\garden\rose_1bn.png",22
+btndef ":b;bmp\background\garden\rose_1bN.png"  ;fixed, loads PNG now
+mov %Free1,0
+mov %Free2,0
+mov %Free3,854  ;convert to widescreen
+mov %Free4,480
+mov %Free11,0
+mov %Free12,0
+mov %Free13,0
+mov %Free14,0
+
+se1 20
+blt 0,0,960,540,%Free1,%Free2,%Free3,%Free4  ;convert to widescreen
+
+for %0 = 1 to 12
+resettimer
+add %Free11,11  ;convert to widescreen
+add %Free13,5
+add %Free12,11  ;convert to widescreen
+add %Free14,6
+add %Free1,%Free11
+add %Free2,%Free13
+sub %Free3,%Free12
+sub %Free4,%Free14
+
+blt 0,0,960,540,%Free1,%Free2,%Free3,%Free4  ;convert to widescreen
+waittimer 20
+
+next
+
+se2v 20,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",0
+btndef ":b;bmp\background\garden\rose_G1aN.png"  ;fixed, loads PNG now
+mov %Free1,0
+mov %Free2,0
+mov %Free3,854  ;convert to widescreen
+mov %Free4,480
+mov %Free11,0
+mov %Free12,0
+mov %Free13,0
+mov %Free14,0
+
+for %0 = 1 to 12
+resettimer
+add %Free11,11  ;convert to widescreen
+add %Free13,5
+add %Free12,11  ;convert to widescreen
+add %Free14,6
+sub %Free1,%Free11
+add %Free2,%Free13 
+sub %Free3,%Free12
+sub %Free4,%Free14
+
+blt 0,0,960,540,%Free1,%Free2,%Free3,%Free4  ;convert to widescreen
+waittimer 20
+
+next
+
+ofscpy
+btndef ""
+ print 1
+saveon
+
+advchar "-1"
+langjp　譲治が駆ける。@
+langen^George s'élança.^@
+br
+langjp　次々に漆黒の穴が開くが、譲治は二度とそれを踏みはしない。@
+langen^Des trous noirs s'ouvrirent les uns après les autres, mais George ne mit plus jamais le pied dedans.^@
+br
+langjp　そして、それに固執したから、ガァプは二度捉えられる…。\
+langen^Et parce que Gaap s'obstinait à employer la même technique, George réussit à la prendre une deuxième fois...^\
+
+se1v 20,100
+se2v 2,100
+set_oldnew_bg c_c0401_a,black,1,24
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e233:「………後回し蹴り。@:dwave_jp 0, geo_4e234:顎部骨折。」\
+langen:dwave_eng 0, geo_4e233:^Coup de pied retourné.^@:dwave_eng 0, geo_4e234:^ Fracture de la mâchoire.^\
+me2v 16,70
+
+;bg rose_1aN,0
+set_oldnew_bg geo_vs_gap_a,rose_1aN,1,0
+ld l,$GEO_niramuA1k,0
+ld r,$GAP_ikariA1,0
+print 22
+
+;＜譲治
+set_oldnew_bg geo_vs_gap_b,rose_1aN,1,0
+ld r,$GAP_IkariA1a,0
+print 80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e275:「……………ッッッ！」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e275:^... !!^\
+
+advchar "-1"
+langjp　それは、ガァプの繰り出したそれよりも美しく、力強く伸びる。@
+langjp　そしてもちろん、ガァプの顔面を完全に捉えつつも寸止めだった。\
+langen^Le mouvement de George était encore plus net que celui de Gaap, et bien plus puissant.^@
+langen^Et bien sûr, même s'il visait parfaitement son visage, il s'arrêta juste avant l'impact.^\
+
+langjp　この至近では落とし穴にも頼れないのだろうか。@
+langen^À cette distance, elle ne pouvait peut-être pas compter sur ses trous noirs.^@
+br
+langjp　ガァプは譲治の脛を牽制のように蹴り、@譲治がそれに対応しようとした一瞬の隙を突いて、その腹部に蹴りを狙う。\
+langen^Gaap lança d'abord un coup vers le tibia de George pour détourner son attention, ^@^puis profita de sa réaction pour envoyer un second coup de pied vers son ventre.^\
+
+clr_oldnew_bg
+textoff
+se1 20
+wait 100
+se2v 20,85
+wait 100
+se3v 20,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　それはピンヒールによる蜂の如き一撃。@
+langen^C'était une attaque de talon aiguille, aussi vive que la piqûre d'une abeille.^@
+br
+langjp　……しかしそこにはもう譲治がいなくて空を切る。\
+langen^... Mais George n'était déjà plus là, et le coup fendit le vide.^\
+
+;ld c,$GEO_MajimeA1k,80
+set_oldnew_bg c_c0401_a,black,1,25
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e235:「………上段踵落とし。@:dwave_jp 0, geo_4e236:鎖骨骨折。」@
+;＜譲治
+langen:dwave_eng 0, geo_4e235:^Coup de talon descendant.^@:dwave_eng 0, geo_4e236:^ Fracture de la clavicule.^@
+
+set_oldnew_bg geo_vs_gap_a,black,1,24
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e276:「…………んなッ、」\
+langen:dwave_eng 0, gap_4e276:^... Qu-^\
+
+textoff
+clr_oldnew_bg
+fr_bg ":b;fr_bg\orig\bmp\background\forest\moon_1a.jpg",":b;bmp\background\forest\moon_1b.png",22  ;fixed lighting issue
+
+se1v 2,100
+se2v 2,100
+mbg white,1
+mcbg 0
+ld c,$GEO_niramuA1,22
+
+ld c,$GEO_niramuA1k,2
+
+;wait 2000
+
+;ld c,$GAP_IkariA1a,80
+
+;＜ガァプ
+
+
+advchar "-1"
+langjp　ガァプの側面で。@譲治を足を振り上げたまま、冷酷にそう伝える。@
+langjp　その王者の踵が振り下ろされていたなら、鎖骨骨折では控えめが過ぎるだろう。\
+langen^Sur le flanc de Gaap, ^@^George annonça froidement son diagnostic, la jambe toujours levée.^@
+langen^Si le talon de ce souverain s'était abattu, parler d'une simple fracture de la clavicule aurait été bien trop indulgent.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+me3v 17,70
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_g1an.jpg",":b;bmp\background\garden\rose_g1an.png",0
+ld c,$GAP_AseruA1a,23
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e277:「こッいつ、/
+sl
+langjp:voicedelay 1370:dwave_jp 0, gap_4e278:^^………至近じゃ、私より強いの……？！@:dwave_jp 0, gap_4e279:　距離を……ッ、」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e277:^C-Ce type...^@/
+sl
+langen:voicedelay 1370:dwave_eng 0, gap_4e278:^ il est plus fort que moi... au corps à corps ?! ^@:dwave_eng 0, gap_4e279:^Il faut que je... prenne mes distances... !^\
+
+se1v 20,85
+fr_bg ":b;fr_bg\orig\bmp\background\forest\moon_1a.jpg",":b;bmp\background\forest\moon_1b.png",66  ;fixed lighting issue
+
+advchar "-1"
+langjp　大きく距離を取るように飛び退く。@
+langen^Elle bondit loin en arrière pour remettre une large distance entre eux.^@
+br
+langjp　後ろへ飛んで飛んで跳ねて後方宙返りまでして距離を離す。\
+langen^Elle sauta, rebondit encore, puis fit même un salto arrière pour mettre toujours plus de distance.^\
+
+se1v 20,100
+textoff
+wait 200
+se2v 20,90
+textoff
+wait 200
+se3v 20,80
+textoff
+wait 200
+se1v 20,70
+textoff
+wait 200
+se2v 20,60
+textoff
+wait 200
+se3v 20,50
+
+
+langjp　華麗なはずなのに、なぜかそれは怯えている小動物のそれによく似ていた。@
+langen^Ses mouvements auraient dû paraître élégants, et pourtant ils ressemblaient étrangement à ceux d'un petit animal effrayé.^@
+br
+langjp　距離を開けば、得意の落とし穴と蹴り技を混ぜての、自分の得意な間合いで戦える…！\
+langen^À distance, elle pourrait retrouver son terrain favori, en combinant ses trous noirs avec ses techniques de jambes... !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_1bn.jpg",":b;bmp\background\garden\garden_1bn.png",26
+ld c,$GAP_akuWaraiA1a,65
+se1 11
+quakey 3,300
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e280:「馬鹿が…、私を倒せるチャンスを三度も逃した傲慢、奈落の底で後悔なさいッ！！@/
+langen:dwave_eng 0, gap_4e280:^Idiot ! Tu as laissé passer trois occasions de me vaincre ! Tu vas le regretter !^@/
+
+ld c,$GAP_ikariA1a,1
+
+langjp:dwave_jp 0, gap_4e281:　………………えッ？」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e281:^ ... Hein ?^\
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+
+se1v 20,100
+wait 100
+se2v 20,100
+
+advchar "-1"
+langjp　華麗に後方に着地し、落とし穴を狙おうとした時、@かまいたちのような鋭い風が、ガァプの前髪を斬った。@…そう、斬った。@
+langen^Alors qu'elle venait d'atterrir avec élégance et s'apprêtait à ouvrir un nouveau trou noir, ^@^un vent tranchant comme une lame lui coupa la frange. ^@^... Oui, la coupa.^@
+br
+
+me4v 28,100
+
+;se3v 20,100
+;se1v 20,100
+;se2v 20,100
+
+langjp　それは二度。@……今度は寸止めではなく、その風圧で彼女の前髪を散らす……。\
+langen^Deux fois. ^@^... Cette fois, les coups ne s'étaient pas arrêtés juste avant l'impact : leur pression avait réellement sectionné plusieurs mèches de sa frange...^\
+
+
+se1v 2,100
+se2v 2,100
+
+bg white,1
+
+;bg garden_1aN,0
+set_oldnew_bg c_c0401_a,garden_1aN,1,0
+ld r,$GEO_niramuA1k,2
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e237:「………アルマーダ・コン・マルテーロゥ。@/
+langen:dwave_eng 0, geo_4e237:^Armada com martelo.^@/
+
+;ld r,$GEO_WaraiA1k,80
+
+langjp:dwave_jp 0, geo_4e238:……第一撃で眼底骨折。@:dwave_jp 0, geo_4e239:第二撃で脳挫傷。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e238:^ Premier coup : fracture du plancher orbital.^@:dwave_eng 0, geo_4e239:^ Deuxième coup : contusion cérébrale.^\
+
+set_oldnew_bg geo_vs_gap_b,garden_1aN,1,0
+ld l,$GAP_ikariA1a,1
+quakey 3,200
+advchar "32"
+langjp:dwave_jp 0, gap_4e282:「………………ッッッ…！！！」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e282:^... !!!^\
+
+advchar "-1"
+langjp　ガァプは呆然として言葉も出せない。@
+langen^Gaap, sidérée, en resta sans voix.^@
+br
+langjp　あれだけの間合いを譲治は瞬時に詰め、恐るべき身軽さで空中二段蹴りを放ったのだ。@
+langen^George avait comblé toute cette distance en un instant et décoché, avec une agilité terrifiante, deux coups de pied en plein vol.^@
+br
+langjp　……しかもそれは剃刀の如き切れ味と正確さで、彼女の前髪数本だけを斬って見せた。\
+langen^... Et avec la précision d'un rasoir, il n'avait coupé que quelques mèches de sa frange.^\
+
+clr_oldnew_bg
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+;fede 10,1000
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_1bn.jpg",":b;bmp\background\garden\garden_1bn.png",0
+ld c,$GEO_majimeA4k,1
+E_MA
+
+se1v 2,100
+advchar "07"
+langjp:dwave_jp 0, geo_4e240:「空手で蹴りの威力を。@/
+langen:dwave_eng 0, geo_4e240:^Le karaté m'a appris la puissance des coups de pied.^@/
+se2v 2,100
+langjp:dwave_jp 0, geo_4e241:テコンドーで速度を。@/
+langen:dwave_eng 0, geo_4e241:^ Le taekwondo, leur vitesse.^@/
+se3v 2,100
+langjp:dwave_jp 0, geo_4e242:カポエイラでは自在の間合いを学んだ。@/
+langen:dwave_eng 0, geo_4e242:^ Et la capoeira, à maîtriser les distances.^@/
+
+ld c,$GEO_majimeA5,80
+
+langjp:dwave_jp 0, geo_4e243:……母さんが色々と移り気でね。@:dwave_jp 0, geo_4e244:でも色々と特長を学べて勉強になったよ。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e243:^ ... Maman changeait souvent de discipline. ^@:dwave_eng 0, geo_4e244:^Mais grâce à ça, j'ai pu apprendre les qualités propres à chacune.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_1cn.jpg",":b;bmp\background\garden\garden_1cn.png",0
+ld r,$GAP_AkuwaraiA1a,24
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e283:「な、……なぜ当てない……？@/
+langen:dwave_eng 0, gap_4e283:^P-Pourquoi... tu ne frappes pas... ?^@/
+
+ld r,$GAP_aseruA1a,80
+
+langjp:dwave_jp 0, gap_4e284:　……私が女だからだとでも言うのかッ！！」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e284:^ ... Ne me dis pas que c'est parce que je suis une femme !!^\
+
+
+ld l,$GEO_majimeA1,24
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e245:「……君は、王者の力として３つ目に暴力と言ったね。@/
+langen:dwave_eng 0, geo_4e245:^... Tu as dit que la troisième force d'un souverain était la violence. ^@/
+
+ld l,$GEO_MajimeA1k,80
+
+langjp:dwave_jp 0, geo_4e246:君はどうやらまだ、その暴力の意味を誤解しているようだ。@:dwave_jp 0, geo_4e247:……この場合の暴力とはね、短絡的に振るわれる乱暴のことを言うんじゃない。@:dwave_jp 0, geo_4e248:………敵対すれば、無傷では済まないという、抑止のことを指すんだよ。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e246:^On dirait que tu n'as pas encore compris ce que signifie vraiment cette violence. ^@:dwave_eng 0, geo_4e247:^... Je ne parle pas de brutalité exercée sur un coup de tête. ^@:dwave_eng 0, geo_4e248:^... Je parle de dissuasion : faire comprendre que s'opposer à toi aura forcément un prix.^\
+ld r,$GAP_akuwaraiA1a,80
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e285:「抑止……、だと……。」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e285:^De la dissuasion... ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+advchar "-1"
+langjp　つまりはそういうこと。@
+langen^Voilà ce que cela signifiait.^@
+br
+langjp　これまでの譲治の攻撃が全て寸止めなのは、そういうことなのだ。\
+langen^C'était pour cette raison que toutes les attaques de George s'étaient arrêtées juste avant l'impact.^\
+
+langjp　直撃させるよりも困難とされる寸止めを、これほどまでに華麗に披露した。@
+langen^Il lui avait ainsi montré, avec une maîtrise éclatante, des coups arrêtés au dernier instant, réputés plus difficiles encore qu'un coup réellement porté.^@
+br
+langjp　…また、その何れも譲治が望んだなら、一撃でガァプを撃破しただろう。@
+langen^... Et si George l'avait voulu, chacun de ces coups aurait probablement suffi à abattre Gaap.^@
+br
+langjp　それを、敢えて、やらない。\
+langen^Mais il avait délibérément choisi de ne pas le faire.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_1bn.jpg",":b;bmp\background\garden\garden_1bn.png",0
+ld c,$GEO_majimeA5k,26
+ld c,$GEO_majimeA4,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e249:「君も言ったろ？@:dwave_jp 0, geo_4e250:　暴力は統べる力だと。@:dwave_jp 0, geo_4e251:………暴力で相手を破壊してしまったら、統べられないじゃないか。@
+langen:dwave_eng 0, geo_4e249:^Tu l'as dit toi-même, non ? ^@:dwave_eng 0, geo_4e250:^La violence est une force qui permet de régner. ^@:dwave_eng 0, geo_4e251:^... Mais si tu détruis ce sur quoi tu veux régner, il ne te reste plus rien à gouverner.^@
+
+ld c,$GEO_ikariA3k,80
+
+langjp:dwave_jp 0, geo_4e252:　王者の暴力とはね、見せるだけなんだよ。@:dwave_jp 0, geo_4e253:破壊しない。@:dwave_jp 0, geo_4e254:……屈服させて、自らの財産とするんだからね。\
+langen:dwave_eng 0, geo_4e252:^La violence d'un souverain, il suffit de la montrer. ^@:dwave_eng 0, geo_4e253:^Il ne détruit pas. ^@:dwave_eng 0, geo_4e254:^... Il soumet, puis fait de l'autre ce qui lui appartient.^\
+
+ld c,$GEO_majimeA5k,80
+
+langjp:dwave_jp 0, geo_4e255:　君に泡でも吹かれたら、みんなの捕らわれてる場所に案内させられないよ。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e255:^Si je te mets KO, je ne pourrai plus te faire me conduire jusqu'à l'endroit où tout le monde est retenu.^\
+
+me1v 5,50
+
+advchar "-1"
+langjp　ガァプは認めざるを得ない。@
+langen^Gaap dut l'admettre.^@
+br
+langjp　譲治が完璧な意味で、暴力を理解していることを認めざるを得ない…！\
+langen^Elle dut reconnaître que George comprenait parfaitement le véritable sens de la violence... !^\
+
+ld c,$GEO_majimeA5,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e256:「みんなのところへ案内してもらうよ。@:dwave_jp 0, geo_4e257:抵抗はお奨めしない。@:dwave_jp 0, geo_4e258:………もう寸止めはしないよ。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e256:^Tu vas me conduire jusqu'aux autres. ^@:dwave_eng 0, geo_4e257:^Je te déconseille de résister. ^@:dwave_eng 0, geo_4e258:^... La prochaine fois, je ne retiendrai pas mon coup.^\
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_1cn.jpg",":b;bmp\background\garden\garden_1cn.png",0
+ld r,$GAP_akuwaraiA4a,24
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e286:「…くッ！！@/
+langen:dwave_eng 0, gap_4e286:^... Tch !!^@/
+
+ld r,$GAP_WaraiA3a,80
+
+langjp:dwave_jp 0, gap_4e287:　………ごめんねリーア、あんたの兵隊、借りさせて。@/
+langen:dwave_eng 0, gap_4e287:^ ... Désolée, Virga. Je vais t'emprunter tes soldats. ^@/
+
+ld r,$GAP_AseruA1a,80
+
+langjp:dwave_jp 0, gap_4e288:私ひとりじゃ手に負えないわ、こいつッ！！」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e288:^Je peux pas gérer ce type toute seule !!^\
+
+textoff
+se1v 52,100
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",68
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_1an.jpg",":b;bmp\background\garden\garden_1an.png",22
+
+se1v 2,100
+ld c,$GOA_DefA1,65
+quakey 4,400
+
+se2v 2,100
+ld l,$GOA_DefA1,65
+quakey 4,400
+
+se3v 2,100
+ld r,$GOA_DefA1,65
+quakey 4,400
+
+wait 700
+
+me2v 17,50
+
+se1v 57,100
+ld l,$GOA_DefA1b,80
+se2v 57,100
+ld c,$GOA_DefA1b,80
+se3v 57,100
+se1v 57,100
+ld r,$GOA_DefA1b,80
+
+advchar "-1"
+langjp　空中に大きな漆黒の穴を開くと、@ドン、ズン、ドスンと、３人の屈強な山羊の従者が落ちてくる。@それらは譲治を囲んでいた。\
+langen^Un immense trou noir s'ouvrit dans les airs, ^@^et, boum, boum, BOUM, trois robustes serviteurs boucs en tombèrent. ^@^Ils encerclèrent aussitôt George.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_1bn.jpg",":b;bmp\background\garden\garden_1bn.png",0
+ld l,$GEO_majimeA1,24
+ld l,$GEO_majimeA5,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e259:「………増援かい？@:dwave_jp 0, geo_4e260:　それは僕がひ弱であることを撤回したと受け止めていいのかな。」@
+;＜譲治
+langen:dwave_eng 0, geo_4e259:^... Des renforts ? ^@:dwave_eng 0, geo_4e260:^Je peux donc considérer que tu retires ce que tu as dit sur ma faiblesse ?^@
+
+ld r,$GAP_defA3a,24
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e289:「み、……認めるわ。@:dwave_jp 0, gap_4e290:……あんたの、…ニンゲンの力を侮ってたわ……。」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e289:^J-... je l'admets. ^@:dwave_eng 0, gap_4e290:^... J'ai sous-estimé la force... d'un Humain...^\
+
+
+ld l,$GEO_akuwaraiA1k,80
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e261:「違うね。@:dwave_jp 0, geo_4e262:これが、愛を覚えた男の強さなのさ。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e261:^Non. ^@:dwave_eng 0, geo_4e262:^C'est la force d'un homme qui a appris à aimer.^\
+
+se1v 20,70
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_1cn.jpg",":b;bmp\background\garden\garden_1cn.png",24
+
+se2v 20,90
+ld c,$GAP_akuwaraiA4a,24
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e291:「ほ、ほざけ…、臭いことをしゃあしゃあとッ！！@:dwave_jp 0, gap_4e292:　さぁ、山羊たち！@:dwave_jp 0, gap_4e293:　その男を潰して肉団子にしてやりなさい！\
+langen:dwave_eng 0, gap_4e291:^N-Ne sors pas des trucs aussi gnangnan avec cet aplomb !! ^@:dwave_eng 0, gap_4e292:^Allez, les boucs ! ^@:dwave_eng 0, gap_4e293:^Écrasez-moi cet homme et réduisez-le en boulette de viande !^\
+
+ld c,$GAP_akuwaraiA1a,80
+
+langjp:dwave_jp 0, gap_4e294:　くすくす、この山羊たちは馬鹿だけど、パワーだけはあるみたいよ。@:dwave_jp 0, gap_4e295:あんたの死体、婚約者にも見分けがつかなくしてあげるわ！」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e294:^Hmhm, ces boucs sont idiots, mais côté puissance, ils ont ce qu'il faut. ^@:dwave_eng 0, gap_4e295:^Je vais te rendre si méconnaissable que même ta fiancée ne saura plus quel cadavre est le tien !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_1an.jpg",":b;bmp\background\garden\garden_1an.png",0
+ld c,$GEO_majimeA4k,23
+
+advchar "07"
+langjp:dwave_jp 0, geo_4e263:「降伏拒否、並びに継戦の意思、了解したよ。@:dwave_jp 0, geo_4e264:……以後は、君の攻撃に等しい分だけ、君に実害が及ぶことを宣言する。\
+langen:dwave_eng 0, geo_4e263:^Tu refuses de te rendre et tu veux poursuivre le combat. Très bien. ^@:dwave_eng 0, geo_4e264:^... À partir de maintenant, chaque attaque que tu porteras t'exposera à des dégâts réels équivalents.^\
+
+ld c,$GEO_majimeA5,80
+
+langjp:dwave_jp 0, geo_4e265:　僕をまだ攻撃するつもりなら、相応の損害を受けることになると、覚悟するがいいよ。」\
+;＜譲治
+langen:dwave_eng 0, geo_4e265:^Si tu comptes encore m'attaquer, sois prêt à subir le prix correspondant.^\
+
+;se1 52
+;lsp 901,magicsquare_mars5,0,0,50
+;print 8
+
+;vsp 901,0
+;bg white,1
+;vsp 901,1
+;bg garden_1aN,0
+;ld c,$GEO_DefA1,0
+;se1 57
+;print 22
+
+se1 52
+se2 57
+mbg barrier1,0
+mld c,$GEO_majimeA5,1
+
+textoff
+wait 200
+mcl c,0
+mcbg 2
+
+advchar "-1"
+langjp　譲治がそれを宣言した時、/
+sl
+langjp^^!d800……譲治の回りに、薄っすらと赤い魔法陣が浮かび上がる。@
+langen^Lorsque George prononça ces mots^@/
+sl
+langen:!d800^... un léger cercle magique rouge apparut autour de lui.^@
+br
+langjp　しかしそれは譲治には見えていないらしい。@
+langjp　しかし悪魔であるガァプには見えた。\
+langen^George, lui, ne semblait pas pouvoir le voir.^@
+langen^Mais Gaap, qui était un démon, le voyait.^\
+
+csp 901
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_1cn.jpg",":b;bmp\background\garden\garden_1cn.png",0
+ld r,$GAP_ikariA1,24
+
+advchar "32"
+langjp:dwave_jp 0, gap_4e296:「ま、……魔法？！@:dwave_jp 0, gap_4e297:　どうしてこいつが防御結界を…？！@:dwave_jp 0, gap_4e298:　しかもそれ、……反撃特化…ッ？！@/
+langen:dwave_eng 0, gap_4e296:^... D-De la magie ?! ^@:dwave_eng 0, gap_4e297:^Pourquoi ce type a-t-il une barrière défensive... ?! ^@:dwave_eng 0, gap_4e298:^Et en plus... spécialisée dans les contre-attaques ?! ^@/
+ld r,$GAP_akuwaraiA1a,80
+langjp:dwave_jp 0, gap_4e299:　それが、……あ、あんたの抑止という意味ッ……？！」\
+;＜ガァプ
+langen:dwave_eng 0, gap_4e299:^C'est donc ça... ce que tu appelais... la dissuasion ?!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+fr_bg ":b;fr_bg\orig\bmp\background\forest\moon_1a.jpg",":b;bmp\background\forest\moon_1b.png",22  ;fixed lighting issue
+
+advchar "-1"
+langjp　悪魔たちから見れば、そういう魔法だったかもしれない。@
+langen^Du point de vue des démons, c'était peut-être bien de la magie.^@
+br
+langjp　しかし譲治にしてみればそれは、決意。\
+langen^Mais pour George, ce n'était rien d'autre que sa détermination.^\
+
+langjp　これ以上の戦いを望むならば、誰であろうとも容赦しない、@そして相応の反撃を覚悟してもらうという絶対の決意。@
+langen^La détermination absolue de ne faire grâce à personne s'il fallait encore se battre,^@^ et d'obliger chaque adversaire à assumer une riposte à la hauteur de son attaque.^@
+br
+langjp　絶対の決意が、魔法になる。\
+langen^Une détermination absolue devient magie.^\
+
+set_oldnew_bg c_c0401_b,moon_1b,1,24
+textoff
+wait 100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+wait 100
+clr_oldnew_bg
+textoff
+saveoff
+mov %efe_spd2,160
+
+
+E_MA
+se1v 57,100
+se2v 57,100
+se3v 2,100
+
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1an.jpg",":b;bmp\background\mainbuilding\mjes_1an_lit.png",0
+ld c,$RON_akuwaraiA1,22
+ld c,$RON_majimeA2,80
+
+
+
+lsp 899,barrierbrake2,10,120
+;bg MJes_1an_lit,0
+;ld c,$RON_majimeA2,0
+;;print 1
+;wait 300
+;;vsp 889,0
+;;print 22
+
+for %free1 = 0 to 1
+resettimer
+;mbg white,1
+vsp 899,1
+amsp 899,347,20  ;convert to widescreen
+	print 1
+se1v 57,100
+se2v 1006,100
+vsp 899,0
+	print 80
+waittimer %efe_spd2
+resettimer
+
+;vsp 889,0
+;mbg white,1
+vsp 899,1
+amsp 899,27,100  ;convert to widescreen
+	print 1
+se1v 57,100
+se2v 1006,100
+vsp 899,0
+	print 80
+waittimer %efe_spd2
+resettimer
+
+;vsp 889,0
+;mbg white,1
+vsp 899,1
+amsp 899,72,60  ;convert to widescreen
+	print 1
+se1v 57,100
+se2v 1006,100
+vsp 899,0
+	print 80
+
+waittimer %efe_spd2
+resettimer
+
+;mbg white,1
+vsp 899,1
+amsp 899,214,200  ;convert to widescreen
+	print 1
+se1v 57,100
+se2v 1006,100
+vsp 899,0
+	print 80
+waittimer %efe_spd2
+resettimer
+
+;mbg white,1
+vsp 899,1
+amsp 899,40,150  ;convert to widescreen
+	print 1
+se1v 57,100
+se2v 1006,100
+vsp 899,0
+	print 80
+waittimer %efe_spd2
+
+next
+
+print 22
+saveon
+
+;■朱志香の部屋
+mov %play_scene,40250 : mov %r_hyouji_side,0 : mov %r_hyouji_cha,jes
+
+langjp　ロノウェは的確に、シールドで朱志香の鉄拳を防いでいた。@……しかし、違和感。@
+langen^Ronove bloquait les coups de Jessica avec son bouclier.^@^ Pourtant, quelque chose clochait.^@
+br
+langjp　確実にシールドで受け止めているはずなのに、@腕が軋み、痛むのを感じる。\
+langen^Il était certain d'arrêter entièrement les coups,^@^ et pourtant, une douleur persistante gagnait son bras.^\
+
+ld c,$RON_odorokiA1,80
+
+langjp　物理ダメージは断絶されているはず。@
+langen^Les impacts auraient dû être parfaitement annulés.^@
+br
+langjp　……しかし、鉄拳のダメージがわずかずつ腕に伝わり、蓄積しているのだ。@
+langen^Mais une infime partie de leur force traversait malgré tout le bouclier et s'accumulait dans son corps.^@
+br
+langjp　ロノウェはそれを気取られまいと平静を装う…。\
+langen^Ronove conserva son calme pour ne rien laisser paraître.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1bn.jpg",":b;bmp\background\mainbuilding\mjes_1bn.png",0
+ld r,$JES_akuwaraiA1,24
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e228:「へ、へへ…！！@:dwave_jp 0, jes_4e229:　私はバテねぇぜ。@/
+langen:dwave_eng 0, jes_4e228:^Héhé !^@:dwave_eng 0, jes_4e229:^ Moi, je suis pas près de m'essouffler !^@/
+
+ld r,$JES_futekiA2,80
+
+langjp:dwave_jp 0, jes_4e230:どうしたよオッサン。@:dwave_jp 0, jes_4e231:ちっとは堪えて来たかよ…！」@
+;＜朱志香
+langen:dwave_eng 0, jes_4e230:^ Alors, le vieux ?^@:dwave_eng 0, jes_4e231:^ Ça commence à piquer un peu ?!^@
+
+ld l,$RON_akuwaraiA1,23
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e214:「……いくら攻撃しようとも無駄ですよ。@:dwave_jp 0, ron_4e215:私のシールドはあなたには砕けないと、どうしてわからないのです？」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e214:^Vous aurez beau frapper, cela ne servira à rien.^@:dwave_eng 0, ron_4e215:^ Mon bouclier est infranchissable. Pourquoi refusez-vous de l'admettre ?^\
+
+
+ld r,$JES_tohohoA3,80
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e232:「砕けないからってよ、殴るのを止めはしないぜ。@/
+langen:dwave_eng 0, jes_4e232:^Parce que j'ai aucune raison de m'arrêter !^@/
+
+ld r,$JES_OdorokiA1,80
+
+langjp:dwave_jp 0, jes_4e233:………どんな硬い心にだって、言葉はわずかずつ響き、やがてはひびを入れることだって出来るんだ…！@:dwave_jp 0, jes_4e234:　私は信じてる！！@:dwave_jp 0, jes_4e235:　この世に無駄な努力なんて存在しないってなッ！！\
+langen:dwave_eng 0, jes_4e233:^ Même les cœurs les plus fermés finissent par laisser passer quelque chose, mot après mot.^@:dwave_eng 0, jes_4e234:^ Moi, j'y crois !^@:dwave_eng 0, jes_4e235:^ Dans ce monde, aucun effort est inutile !^\
+
+ld r,$JES_ikariA1,80
+
+langjp:dwave_jp 0, jes_4e236:　だから生きるんだろ、思いっきりッ！！@:dwave_jp 0, jes_4e237:　言葉だっていつか通じるなら、拳だって同じってことだぜ…！！@:dwave_jp 0, jes_4e238:　私の辞書には、諦めるって文字は書いちゃいねえんだぜッ！！」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e236:^C'est pour ça qu'on doit vivre à fond !^@:dwave_eng 0, jes_4e237:^ Si des mots peuvent finir par atteindre quelqu'un, mes poings finiront bien par t'atteindre aussi !^@:dwave_eng 0, jes_4e238:^ DANS MON DICTIONNAIRE, Y A PAS LE MOT « ABANDONNER » !!^\
+
+
+
+
+saveoff
+se1v 20,100
+se2v 20,100
+
+btndef ":b;bmp\background\mainbuilding\MJES_1bN.png"  ;fixed, loades PNG now.
+
+mov %free1,0
+mov %free2,0
+mov %free3,640
+mov %free4,480
+mov %free11,0
+mov %free12,0
+mov %free13,0
+mov %free14,0
+
+for %free19 = 1 to 6
+resettimer
+add %free11,5  ;convert to widescreen
+add %free13,0
+add %free12,11  ;convert to widescreen
+add %free14,12
+add %free1,%free11
+add %free2,%free13 
+sub %free3,%free12
+sub %free4,%free14
+
+blt 0,0,960,540,%free1,%free2,%free3,%free4  ;convert to widescreen
+textoff
+waittimer 50
+
+next
+;bg black,1
+for %free19 = 1 to 6
+resettimer
+add %free11,5  ;convert to widescreen
+add %free13,16
+add %free12,11  ;convert to widescreen
+add %free14,6
+add %free1,%FREE11
+add %free2,%FREE13 
+sub %free3,%FREE12
+sub %free4,%FREE14
+
+blt 0,0,960,540,%free1,%free2,%free3,%free4  ;convert to widescreen
+textoff
+waittimer 50
+
+next
+ofscpy
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+btndef ""
+
+;se2 20
+;wait 1000
+;se1v 58,100
+;bg white,1
+;se1 57
+;lsp 899,barrierbrake2,320,180
+;bg MJES_1bN,0
+;ld c,$RON_OdorokiA1,0
+;print 80
+;wait 300
+;vsp 889,0
+
+;for %free1 = 0 to 2
+
+;resettimer
+;mbg white,1
+;vsp 899,1
+;se1 57
+;amsp 899,150,130
+;mcbg 80
+;waittimer %efe_spd2
+;resettimer
+;vsp 889,0
+;mbg white,1
+;vsp 899,1
+;se1 57
+;amsp 899,60,220
+;mcbg 80
+;waittimer %efe_spd2
+;resettimer
+;vsp 889,0
+;mbg white,1
+;vsp 899,1
+;se1 57
+;amsp 899,70,10
+;mcbg 80
+;waittimer %efe_spd2
+;resettimer
+;vsp 889,0
+;mbg white,1
+;vsp 899,1
+;se1 57
+;amsp 899,120,90
+;mcbg 80
+;waittimer %efe_spd2
+;resettimer
+;vsp 889,0
+;mbg white,1
+;vsp 899,1
+;se1 57
+;amsp 899,200,180
+;mcbg 80
+;waittimer %efe_spd2
+;vsp 899,0
+
+;next
+;print 22
+;bg black,22
+
+
+
+lsp 899,barrierbrake2,13,120  ;convert to widescreen
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1an.jpg",":b;bmp\background\mainbuilding\mjes_1an_lit.png",0
+ld c,$RON_odorokiA1,0
+;print 1
+;wait 300
+;vsp 889,0
+;print 22
+
+for %free1 = 0 to 1
+resettimer
+;mbg white,1
+vsp 899,1
+amsp 899,214,20  ;convert to widescreen
+	print 1
+se1v 57,100
+se2v 1006,100
+vsp 899,0
+	print 80
+waittimer %efe_spd2
+resettimer
+
+;vsp 889,0
+;mbg white,1
+vsp 899,1
+amsp 899,27,100  ;convert to widescreen
+	print 1
+se1v 57,100
+se2v 1006,100
+vsp 899,0
+	print 80
+waittimer %efe_spd2
+resettimer
+
+;vsp 889,0
+;mbg white,1
+vsp 899,1
+amsp 899,72,60  ;convert to widescreen
+	print 1
+se1v 57,100
+se2v 1006,100
+vsp 899,0
+	print 80
+
+waittimer %efe_spd2
+resettimer
+
+;mbg white,1
+vsp 899,1
+amsp 899,214,200  ;convert to widescreen
+	print 1
+se1v 57,100
+se2v 1006,100
+vsp 899,0
+	print 80
+waittimer %efe_spd2
+resettimer
+
+;mbg white,1
+vsp 899,1
+amsp 899,40,150  ;convert to widescreen
+	print 1
+se1v 57,100
+se2v 1006,100
+vsp 899,0
+	print 80
+waittimer %efe_spd2
+
+next
+
+print 22
+
+
+
+
+saveon
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+advchar "-1"
+langjp　それは多分、嘉音に語り掛ける言葉…。@
+langen^Ses paroles s'adressaient surtout à Kanon.^@
+br
+langjp　朱志香の言葉を一見拒絶する嘉音。@
+langen^Il rejetait sans cesse ce que Jessica lui disait.^@
+br
+langjp　……だが、その頑なな心に、少しずつ染み透っているのを、朱志香は知っている。\
+langen^Mais elle savait que ses mots finissaient par atteindre ce cœur obstiné.^\
+
+langjp　そしてきっと、心が通じて、彼が自らを家具と呼んで卑下しなくなる日が来て、@……彼の新しい人生を踏み出してくれることを信じている。@
+langen^Un jour, ses sentiments l'atteindraient et il cesserait de se rabaisser en se disant meuble,^@^ pour enfin faire un pas vers une autre vie.^@
+
+br
+langjp　だから朱志香は諦めない。@へこたれない…！\
+langen^Voilà pourquoi Jessica ne pouvait pas abandonner.^@^ Elle continuerait autant qu'il le faudrait.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1cn.jpg",":b;bmp\background\mainbuilding\mjes_1cn.png",0
+ld c,$JES_futekiA2,22
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e239:「馬鹿みてえだろ？@:dwave_jp 0, jes_4e240:　男には理解できねえだろ？@/
+langen:dwave_eng 0, jes_4e239:^Ça a l'air complètement con, hein ?!^@:dwave_eng 0, jes_4e240:^ Un mec comme toi peut sûrement pas comprendre !^@/
+;ld c,$JES_AkuwaraiA1,80
+langjp:dwave_jp 0, jes_4e241:　恋する乙女ってのはな、無駄だから諦めるって考えがねぇんだぜッ！！」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e241:^ MAIS UNE FILLE AMOUREUSE SE DIT JAMAIS QUE ÇA SERT À RIEN D'ESSAYER !!^\
+
+advchar "-1"
+langjp　その時、ロノウェは確かに見る。@
+langjp　朱志香の両拳が赤く熱のような光を帯びるのを。\
+langen^À cet instant, Ronove aperçut quelque chose.^@
+langen^Une lumière rouge enveloppait les poings de Jessica, comme une chaleur incandescente.^\
+
+textoff
+;se1 20
+;wait 500
+se1v 52,100
+se2v 57,100
+mbg barrier1,0
+mld c,$JES_futekiA2,1
+
+wait 200
+mcl c,0
+mcbg 2
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mjes_1an.jpg",":b;bmp\background\mainbuilding\mjes_1an_lit.png",0
+ld r,$RON_OdorokiA1,26
+ld r,$RON_majimeA2,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e216:「………これは、……参りました。@:dwave_jp 0, ron_4e217:……エンチャントですか。@:dwave_jp 0, ron_4e218:…浸透付与とは、……厄介な。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e216:^Voilà qui est réellement surprenant.^@:dwave_eng 0, ron_4e217:^ Un enchantement ?^@:dwave_eng 0, ron_4e218:^ Une propriété de pénétration... voilà qui devient fâcheux.^\
+
+advchar "-1"
+langjp　諦めない拳と決意には、必ず成し遂げる力が宿る。@
+langen^La volonté de Jessica donnait à ses poings le pouvoir de franchir ce qu'elle refusait d'accepter.^@
+br
+langjp　それは悪魔から見れば、魔法。@
+langjp　絶対の決意が、魔法になる。\
+langen^Aux yeux d'un démon, il s'agissait de magie.^@
+langen^Une volonté absolue pouvait devenir de la magie.^\
+
+
+ld l,$JES_tohohoA3,23
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e242:「な？@:dwave_jp 0, jes_4e243:　無駄なんてことはねぇだろ？@/
+langen:dwave_eng 0, jes_4e242:^Tu vois ?!^@:dwave_eng 0, jes_4e243:^ C'ÉTAIT PAS INUTILE !!^@/
+
+ld l,$JES_futekiA1,80
+
+langjp:dwave_jp 0, jes_4e244:　…通ってんだろ、私の拳。@:dwave_jp 0, jes_4e245:腕を庇ってるぜ、オッサン。」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e244:^ Mes poings commencent à passer !^@:dwave_eng 0, jes_4e245:^ Et maintenant, tu protèges ton bras, le vieux !^\
+
+
+ld r,$RON_akuwaraiA1,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_4e219:「……………もう少し本気を出さざるを得ないようですね。@/
+langen:dwave_eng 0, ron_4e219:^Il semblerait que je doive me montrer un peu plus sérieux.^@/
+
+ld r,$RON_DefA1,80
+
+langjp:dwave_jp 0, ron_4e220:…仰るとおりのようです。@:dwave_jp 0, ron_4e221:……この世に、無駄なことなど、ない。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_4e220:^ Vous aviez raison, mademoiselle.^@:dwave_eng 0, ron_4e221:^ Dans ce monde, rien n'est inutile.^\
+
+
+
+ld l,$JES_futekiA2,80
+
+advchar "04"
+langjp:dwave_jp 0, jes_4e246:「そうさ…！@:dwave_jp 0, jes_4e247:　無駄なんて諦めたら、そこで人生が終わっちまうぜ…！@:dwave_jp 0, jes_4e248:　通じるんだよ。@:dwave_jp 0, jes_4e249:……絶対に…！！」\
+;＜朱志香
+langen:dwave_eng 0, jes_4e246:^Si tu renonces dès que tu crois qu'un effort sert à rien, ta vie s'arrête là !^@:dwave_eng 0, jes_4e247:^ Moi, je sais pas vivre autrement !^@:dwave_eng 0, jes_4e248:^ Je continuerai à essayer !^@:dwave_eng 0, jes_4e249:^ Jusqu'à y arriver !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+
+advchar "-1"
+langjp　私は馬鹿だからこんな生き方しか出来ないけど、@それでもきっと、嘉音くんの人生に、@新しい世界を教えてあげるくらいのことはいつか出来ると、……信じてる！！@
+langen^Je suis peut-être une idiote, mais je continuerai à croire qu'un jour,^@^ je pourrai montrer à Kanon^@^ qu'il existe un autre monde pour lui !^@
+br
+langjp　だからこんなところで挫けない…！！@
+langen^ALORS JE VAIS PAS CREVER ICI !!^@
+br
+langjp　絶対にお前を打ち倒しッ、@みんなを救い出してみせる！！\
+langen^JE VAIS TE METTRE À TERRE !^@^ ET JE SAUVERAI TOUT LE MONDE !!^\
+
+textoff
+
+;fedexx 50,0,0,0,0,0,2000
+
+;■地下牢
+mov %play_scene,40250 : mov %r_hyouji_side,0 : mov %r_hyouji_cha,kan
+
+lsp 889,pri_i1a_sak_b,0,0
+vsp 889,1
+fr_bg ":b;fr_bg\orig\bmp\background\subway\pri_i1b.jpg",":b;bmp\background\subway\pri_i1b.png",22
+ld c,$KLA_KomaruA2,24
+
+advchar "02"
+langjp:dwave_jp 0, kla_4e318:「くそッ！！@/
+langen:dwave_eng 0, kla_4e318:^Merde !! ^@/
+
+ld c,$KLA_IkariA1,80
+
+langjp:dwave_jp 0, kla_4e319:　何とか、隙間を……、うおおおおおぉおおおお！！」/
+sl
+langen:dwave_eng 0, kla_4e319:^Il faut que j'arrive à... créer un passage... Uoooooooooooooh !!^@/
+
+se1 32
+quakex 2,400
+
+se1v 32,85
+quakex 3,800
+mov %disable_adv_clear, 1
+langjp:noclear_cw:
+langen:noclear_cw:
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜蔵臼
+br
+langjp　蔵臼は、何とか鉄格子の間に隙間を開けようと、無駄な努力を繰り返している。\
+langen^ Krauss s'acharnait à écarter les barreaux, malgré l'apparente inutilité de ses efforts.^\
+
+csp 889
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　……無駄。@………無駄なことなどないんだ。@　無駄なことなど。\
+langen^Inutile ?^@^ Non. Rien n'était inutile.^@^ Pas tant qu'il continuait à essayer.^\
+
+lsp 889,pri_i1c_sak_a,0,0
+fr_bg ":b;fr_bg\orig\bmp\background\subway\pri_i1c.jpg",":b;bmp\background\subway\pri_i1c.png",22
+
+se1v 32,100
+se2v 2,85
+quakex 3,800
+
+se1v 32,100
+se2v 2,85
+quakex 4,800
+langjp　見張りの山羊たちが、例の黒い落とし穴に飲み込まれて消えてしまった。@
+langen^Les serviteurs boucs qui montaient la garde avaient disparu dans les trous noirs de Gaap.^@
+br
+langjp　……今は千載一遇のチャンスなのだ。@
+langen^C'était une occasion unique, peut-être la seule qui se présenterait.^@
+
+se1v 32,100
+se2v 2,100
+quakex 5,1000
+br
+langjp　今だけが鉄格子を破るチャンス……。\
+langen^C'était maintenant ou jamais.^\
+
+lsp 889,pri_i1a_sak_a,0,0
+fr_bg ":b;fr_bg\orig\bmp\background\subway\pri_i1a.jpg",":b;bmp\background\subway\pri_i1a.png",0
+mld r,$NAN_MajimeA2,24
+
+advchar "19"
+langjp:dwave_jp 0, nan_4e111:「よ、よせ、無茶だ、蔵臼さん！@:dwave_jp 0, nan_4e112:　素手でどうにかなるもんじゃない！@/
+langen:dwave_eng 0, nan_4e111:^Arrêtez, Krauss !^@:dwave_eng 0, nan_4e112:^ Vous allez vous blesser gravement !^@/
+
+;ld r,$NAN_KomaruA3,80
+
+langjp:dwave_jp 0, nan_4e113:　道具を探しましょう、無茶をするんじゃない…！」\
+;＜南條
+langen:dwave_eng 0, nan_4e113:^ Nous devrions chercher un outil ! Ne vous blessez pas pour rien !^\
+
+
+mld l,$KLA_komaruA2,23
+
+advchar "02"
+langjp:dwave_jp 0, kla_4e320:「無駄と諦めたらそれまでと、娘に言われてしまった。@/
+langen:dwave_eng 0, kla_4e320:^Ma fille vient de me rappeler une chose : si l'on cesse d'agir parce qu'on croit ses efforts inutiles, tout s'arrête.^@/
+
+;ld l,$KLA_KomaruA4,80
+
+langjp:dwave_jp 0, kla_4e321:……私の体は無理でも、小柄な紗音か嘉音が抜けられれば……！！」\
+;＜蔵臼
+langen:dwave_eng 0, kla_4e321:^ Même si je ne passe pas entre les barreaux, Shannon ou Kanon pourraient peut-être se faufiler !^\
+
+
+mld c,$KIR_majimeA2,24
+
+advchar "09"
+langjp:dwave_jp 0, kir_4e303:「……この段階に至っては、出ない知恵を絞るより行動あるのみね。@:dwave_jp 0, kir_4e304:力を合わせましょ、私もやるわ…！@:dwave_jp 0, kir_4e305:　……嘉音くん、男の子でしょ、手を貸して…！@/
+langen:dwave_eng 0, kir_4e303:^Il n'est plus temps de chercher une solution parfaite : il faut agir maintenant !^@:dwave_eng 0, kir_4e304:^ Je vais vous aider.^@:dwave_eng 0, kir_4e305:^ Kanon, tu es un garçon, non ? Viens nous donner un coup de main !^@/
+
+mld c,$KIR_MajimeA1,80
+
+langjp:dwave_jp 0, kir_4e306:　……嘉音くん？！」\
+;＜霧江
+langen:dwave_eng 0, kir_4e306:^ ... Kanon ?!^\
+
+vsp 889,0
+mcl a,0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+me5v 16,0
+
+fedexx 0,0,0,0,0,50,3000
+wait 1000
+
+lsp 889,pri_i1a_sak_b,0,0
+vsp 889,1
+fr_bg ":b;fr_bg\orig\bmp\background\subway\pri_i1b.jpg",":b;bmp\background\subway\pri_i1b.png",0
+ld r,$KAN_fumanA1,24
+
+E_B
+bgm1v 94,85
+
+advchar "16"
+langjp:dwave_jp 0, kan_4e107:「…………旦那様。@:dwave_jp 0, kan_4e108:下がってください。」@
+langen:dwave_eng 0, kan_4e107:^Monsieur Krauss.^@:dwave_eng 0, kan_4e108:^ Je vous en prie, reculez.^@
+
+ld l,$KLA_komaruA4,23
+
+advchar "02"
+langjp:dwave_jp 0, kla_4e322:「何？@:dwave_jp 0, kla_4e323:　何をする気だ……？」\
+;＜蔵臼
+langen:dwave_eng 0, kla_4e322:^Hein ?^@:dwave_eng 0, kla_4e323:^ Qu'est-ce que tu comptes faire ?^\
+
+ld r,$KAN_odorokiA2,80
+
+advchar "16"
+langjp:dwave_jp 0, kan_4e109:「……いいよね、姉さん。@:dwave_jp 0, kan_4e110:………もう一度だけ、足掻いても。」@
+;＜嘉音
+langen:dwave_eng 0, kan_4e109:^Grande sœur...^@:dwave_eng 0, kan_4e110:^ Tu crois qu'on pourrait essayer encore une fois ?^@
+
+cl l,24
+ld c,$SHA_majimeA3,23
+
+advchar "15"
+langjp:dwave_jp 0, sha_4e140:「…………うん。@:dwave_jp 0, sha_4e141:……私も、…もう一度だけ足掻くよ。@/
+langen:dwave_eng 0, sha_4e140:^Oui.^@:dwave_eng 0, sha_4e141:^ Moi aussi, je veux essayer encore une fois.^@/
+
+;ld l,$SHA_WaraiA1,80
+
+langjp:dwave_jp 0, sha_4e142:……ううん、一度だけじゃない。@:dwave_jp 0, sha_4e143:…何度でも。」\
+;＜紗音
+langen:dwave_eng 0, sha_4e142:^ Non. Pas une seule fois.^@:dwave_eng 0, sha_4e143:^ Autant de fois qu'il le faudra.^\
+
+advchar "-1"
+langjp　朱志香の声は、嘉音に届いた。@
+langjp　冷たい岩のような彼の心に、確かに浸透したのだ。@
+langen^Les paroles de Jessica avaient fini par atteindre Kanon.^@
+langen^Elles avaient traversé le mur derrière lequel il dissimulait ses sentiments.^@
+br
+langjp　そして譲治の声も、紗音に届いた。@
+langjp　彼が示す愛が強さで体現されるなら、自分も同じ形で応えなければならない。\
+langen^Et celles de George étaient parvenues jusqu'à Shannon.^@
+langen^Puisqu'il lui avait montré la force de son amour, elle devait maintenant lui répondre.^\
+
+mov %efe_spd2,160
+
+textoff
+vsp 889,0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+wait 1000
+lsp 889,pri_i1a_sak_a,0,0
+vsp 889,1
+print 24
+wait 1000
+
+E_MA
+se1 20
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade6_1r.jpg",":b;bmp\background\efe\blade6_1r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,200 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,200
+
+wait 1000
+csp -1
+se1v 57,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade6_2r.jpg",":b;bmp\background\efe\blade6_2r.png",22
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+resettimer
+se2v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade1r.jpg",":b;bmp\background\efe\blade1r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,%efe_spd2 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,%efe_spd2
+resettimer
+se3v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade2r.jpg",":b;bmp\background\efe\blade2r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,%efe_spd2 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,%efe_spd2
+resettimer
+se1v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade3r.jpg",":b;bmp\background\efe\blade3r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,%efe_spd2 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,%efe_spd2
+resettimer
+se2v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade4r.jpg",":b;bmp\background\efe\blade4r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,%efe_spd2 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,%efe_spd2
+resettimer
+se3v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade5r.jpg",":b;bmp\background\efe\blade5r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,%efe_spd2 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,%efe_spd2
+resettimer
+se1v 20,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade7_1r.jpg",":b;bmp\background\efe\blade7_1r.png",1
+;waittimer 500
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",80
+wait 500
+
+resettimer
+
+se1v 57,100
+se2v 57,100
+se3v 1006,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade7_2r.jpg",":b;bmp\background\efe\blade7_2r.png",1
+bg white,22
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+
+langjp　ものすごい金属音が鳴り響いた。@
+langen^Un fracas métallique retentit dans tout le cachot.^@
+
+se1v 39,100
+wait 300
+se2 39
+
+
+br
+langjp　………最初の一閃は鉄格子数本を横一文字に切断し、次の一閃でさらに横一文字に切断され、@鉄格子数本が刀で切られた竹の子のようにばたばたと倒れる。\
+langen^Une première entaille trancha plusieurs barreaux à l'horizontale, puis une seconde les sectionna plus bas.^@^ Les morceaux tombèrent au sol comme des tiges de bambou abattues au sabre.^\
+
+langjp　蔵臼も霧江も南條も、一体何が起こったのか、さっぱりわからない……。\
+langen^Krauss, Kyrie et Nanjo restèrent pétrifiés devant ce spectacle.^\
+
+me1v 16,0
+
+fedexx 0,50,0,0,0,0,2000
+textoff
+wait 1000
+
+fr_bg ":b;fr_bg\orig\bmp\background\subway\pri_o1a.jpg",":b;bmp\background\subway\pri_o1a.png",0
+ld c,$KAN_ikariA2,22
+
+advchar "16"
+langjp:dwave_jp 0, kan_4e111:「……南條先生。@:dwave_jp 0, kan_4e112:お屋敷へは廊下をどっちに……？」@

@@ -1,0 +1,5000 @@
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_s][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_s][itiran_y],%tmp
+
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back14.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30230
+;（蔵臼、夏妃の死亡）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[mar][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30230
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+	mov ?r[ma3_s][condition],1
+
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_s][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_s][itiran_y],%tmp
+
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back14.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30240
+;（譲治の死亡）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[mar][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[geo][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30240
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+	mov ?r[ma3_s][condition],1
+
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_s][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_s][itiran_y],%tmp
+
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back14.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30250
+;（南條の死亡）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[mar][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[geo][condition],2
+	mov ?r[nan][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30250
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+	mov ?r[ma3_s][condition],1
+
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_s][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_s][itiran_y],%tmp
+
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back14.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30260
+;（南條の死亡）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[mar][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[geo][condition],2
+	mov ?r[nan][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30260
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+	mov ?r[ma3_s][condition],1
+
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_s][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_s][itiran_y],%tmp
+
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back14.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30270
+;（戦人の死亡）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[mar][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[geo][condition],2
+	mov ?r[nan][condition],2
+	mov ?r[but][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30270
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+	mov ?r[ma3_s][condition],1
+
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_s][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_s][itiran_y],%tmp
+
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back14.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30280
+;（黄金郷）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30280
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+	mov ?r[ma3_s][condition],1
+
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_s][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_s][itiran_y],%tmp
+
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back14.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30281
+;（黄金郷）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30281
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+	mov ?r[ma3_s][condition],1
+
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_s][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_s][itiran_y],%tmp
+
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back14.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+
+
+return;---------------------------------
+*rmenu_main_ep3_scene_30282
+;（黄金郷）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30282
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+	mov ?r[ma3_s][condition],1
+
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_s][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_s][itiran_y],%tmp
+
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back14.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30283
+;（黄金郷）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30283
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+	mov ?r[ma3_s][condition],1
+
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_s][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_s][itiran_y],%tmp
+
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back14.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+
+return
+;---------------------------------
+;************************************
+
+*rmenu_main_ep3_scene_31010
+;（お茶会）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[mar][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[geo][condition],2
+	mov ?r[nan][condition],2
+	mov ?r[but][condition],2
+	mov ?r[jes][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_31010
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+
+	;キャラ状態設定
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_ber][condition],1
+	mov ?r[ma3_lam][condition],1
+
+	;表示位置の修正
+	mov ?r[ma3_bea][itiran_x],38 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+	mov ?r[ma3_ber][itiran_x],84 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[ma3_ber][itiran_y],%tmp
+	mov ?r[ma3_lam][itiran_x],130 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[ma3_lam][itiran_y],%tmp
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+
+return
+;************************************
+
+*rmenu_main_ep3_scene_31011
+;（お茶会）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[mar][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[geo][condition],2
+	mov ?r[nan][condition],2
+	mov ?r[but][condition],2
+	mov ?r[jes][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_31011
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+
+	;キャラ状態設定
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_ber][condition],1
+	mov ?r[ma3_lam][condition],1
+
+	;表示位置の修正
+	mov ?r[ma3_bea][itiran_x],38 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+	mov ?r[ma3_ber][itiran_x],84 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[ma3_ber][itiran_y],%tmp
+	mov ?r[ma3_lam][itiran_x],130 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[ma3_lam][itiran_y],%tmp
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_31020
+;（お茶会）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[mar][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[geo][condition],2
+	mov ?r[nan][condition],2
+	mov ?r[but][condition],2
+	mov ?r[jes][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_31020
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+
+	;キャラ状態設定
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_lam][condition],1
+
+	;表示位置の修正
+	mov ?r[ma3_bea][itiran_x],69 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+	mov ?r[ma3_lam][itiran_x],118 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[ma3_lam][itiran_y],%tmp
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_32010
+;（？？？）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[bea][condition],-1
+	mov ?r[eva][condition],1
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[mar][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[geo][condition],2
+	mov ?r[nan][condition],2
+	mov ?r[but][condition],2
+	mov ?r[jes][condition],2
+
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_32010
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+	mov ?r[ma3_s][condition],1
+
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_s][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_s][itiran_y],%tmp
+
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back14.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_32020
+;（？？？）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[bea][condition],-1
+	mov ?r[eva][condition],1
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[mar][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[geo][condition],2
+	mov ?r[nan][condition],2
+	mov ?r[but][condition],2
+	mov ?r[jes][condition],2
+	mov ?r[enj][condition],1
+
+	mov ?r[enj][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[enj][itiran_y],%tmp
+	mov ?r[mar][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[mar][itiran_y],%tmp
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back4.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_32020
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+	mov ?r[ma3_s][condition],1
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_s][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_s][itiran_y],%tmp
+
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back14.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_32030
+;（？？？）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[bea][condition],-1
+	mov ?r[eva][condition],1
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[mar][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[geo][condition],2
+	mov ?r[nan][condition],2
+	mov ?r[but][condition],2
+	mov ?r[jes][condition],2
+	mov ?r[enj][condition],1
+
+	mov ?r[enj][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[enj][itiran_y],%tmp
+	mov ?r[mar][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[mar][itiran_y],%tmp
+
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back4.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_32030
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+	mov ?r[ma3_s][condition],1
+	mov ?r[ma3_ber][condition],1
+
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+	mov ?r[ma3_ber][itiran_x],167 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_ber][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_s][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_s][itiran_y],%tmp
+
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back14.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_32040
+;（？？？）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[bea][condition],-1
+	mov ?r[eva][condition],1
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[mar][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[geo][condition],2
+	mov ?r[nan][condition],2
+	mov ?r[but][condition],2
+	mov ?r[jes][condition],2
+	mov ?r[enj][condition],1
+
+	mov ?r[enj][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[enj][itiran_y],%tmp
+	mov ?r[mar][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[mar][itiran_y],%tmp
+
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back4.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_32040
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+	mov ?r[ma3_s][condition],1
+	mov ?r[ma3_ber][condition],1
+	mov ?r[ma3_enj][condition],1
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+	mov ?r[ma3_ber][itiran_x],167 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_ber][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_s][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_s][itiran_y],%tmp
+
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	mov ?r[ma3_enj][itiran_x],19 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[ma3_enj][itiran_y],%tmp
+
+
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back15.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+	mov ?grim[8][grim_flg],1
+
+return
+
+;******************************************************************
+;　右クリックシステム、エピソード２　シーン変数による各変数の設定
+;******************************************************************
+
+;---------------------------------
+
+;シーン１０（沖縄のシーン、譲治と紗音を私服で表示）
+*rmenu_main_ep2_scene_10
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep2 : mov ?r[%tmp][condition],-1 : next
+	
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+	;キャラ状態設定
+	mov ?r[geo][condition],1
+	mov ?r[sha][condition],1
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+
+
+	;衣装設定
+	mov ?r[geo][r_ishou],2
+	mov ?r[sha][r_ishou],2
+
+	;表示位置の修正
+	mov ?r[geo][itiran_x],69 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[geo][itiran_y],%tmp
+	mov ?r[sha][itiran_x],118 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[sha][itiran_y],%tmp
+	mov %r_hyouji_cha,sha
+
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+return
+
+
+;シーン２０（ほこら、紗音のみを使用人服で表示）
+*rmenu_main_ep2_scene_20
+	;キャラ、Tipsフラグの初期化
+	;for %tmp = 1 to cha_kazu_ep2 : mov ?r[%tmp][condition],-1 : next
+	
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	;for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+
+	;キャラ状態設定
+	;mov ?r[sha][condition],1
+
+	;Tips設定
+	;mov ?tips[1][tips_flg],1
+
+	;表示位置の修正
+	;mov ?r[sha][itiran_x],80 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[sha][itiran_y],%tmp
+	;mov %r_hyouji_cha,sha
+
+	;キャラ一覧表示の背景を変える
+	;mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+	
+	;（全員生存、ベアト以外を通常表示）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 18 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 19 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+
+return
+
+
+;シーン３０（全員生存、ベアト以外を通常表示）
+*rmenu_main_ep2_scene_30
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 18 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 19 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+
+return
+
+;シーン４０（ベアトの登場、ベアトを含めて通常表示）
+*rmenu_main_ep2_scene_40
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	mov ?r[bea][condition],1
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+
+return
+
+;シーン４０（ベアトの登場、ベアトを含めて通常表示）
+*rmenu_main_ep2_scene_41
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	mov ?r[bea][condition],1
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+
+return
+
+
+;シーン４５（文化祭　朱志香だけを表示）
+*rmenu_main_ep2_scene_45
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep2 : mov ?r[%tmp][condition],-1 : next
+	
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;キャラ状態設定
+	mov ?r[jes][condition],1
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+
+
+	;表示位置の修正
+	mov ?r[jes][itiran_x],84 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[jes][itiran_y],%tmp
+	mov %r_hyouji_cha,jes
+
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+return
+
+;シーン４５（文化祭　朱志香だけを表示）
+*rmenu_main_ep2_scene_46
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep2 : mov ?r[%tmp][condition],-1 : next
+	
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;キャラ状態設定
+	mov ?r[jes][condition],1
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+
+
+	;表示位置の修正
+	mov ?r[jes][itiran_x],84 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[jes][itiran_y],%tmp
+	mov %r_hyouji_cha,jes
+
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+return
+
+
+;シーン５０（朱志香と嘉音だけ私服で表示）
+*rmenu_main_ep2_scene_50
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep2 : mov ?r[%tmp][condition],-1 : next
+	
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;キャラ状態設定
+	mov ?r[jes][condition],1
+	mov ?r[kan][condition],1
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+
+
+
+	;衣装設定
+	mov ?r[jes][r_ishou],2
+	mov ?r[kan][r_ishou],2
+
+	;表示位置の修正
+	mov ?r[jes][itiran_x],69 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[jes][itiran_y],%tmp
+	mov ?r[kan][itiran_x],118 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[kan][itiran_y],%tmp
+	mov %r_hyouji_cha,jes
+
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+return
+
+;シーン５０（朱志香と嘉音だけ私服で表示）
+*rmenu_main_ep2_scene_51
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep2 : mov ?r[%tmp][condition],-1 : next
+	
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;キャラ状態設定
+	mov ?r[jes][condition],1
+	mov ?r[kan][condition],1
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+
+	;衣装設定
+	mov ?r[jes][r_ishou],2
+	mov ?r[kan][r_ishou],2
+
+	;表示位置の修正
+	mov ?r[jes][itiran_x],69 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[jes][itiran_y],%tmp
+	mov ?r[kan][itiran_x],118 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[kan][itiran_y],%tmp
+	mov %r_hyouji_cha,jes
+
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+return
+
+;シーン５０（朱志香と嘉音だけ私服で表示）
+*rmenu_main_ep2_scene_52
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep2 : mov ?r[%tmp][condition],-1 : next
+	
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;キャラ状態設定
+	mov ?r[jes][condition],1
+	mov ?r[kan][condition],1
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+
+
+
+	;衣装設定
+	mov ?r[jes][r_ishou],2
+	mov ?r[kan][r_ishou],2
+
+	;表示位置の修正
+	mov ?r[jes][itiran_x],69 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[jes][itiran_y],%tmp
+	mov ?r[kan][itiran_x],118 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[kan][itiran_y],%tmp
+	mov %r_hyouji_cha,jes
+
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+return
+
+
+;シーン６０（ベアトを含めて通常表示）
+*rmenu_main_ep2_scene_60
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+
+return
+
+
+;シーン７０（ベアト来訪、ベアトの情報を２に）
+*rmenu_main_ep2_scene_70
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+
+
+	;キャラ状態設定
+	mov ?r[bea][condition],2
+return
+
+;シーン７０（ベアト来訪、ベアトの情報を２に）
+*rmenu_main_ep2_scene_71
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+
+
+
+	;キャラ状態設定
+	mov ?r[bea][condition],2
+return
+
+
+;シーン８０（蔵臼、夏妃、絵羽、秀吉、留弗夫、霧江の情報が死亡扱いに）
+*rmenu_main_ep2_scene_80
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+
+
+	;キャラ状態設定
+	mov ?r[bea][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[eva][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+return
+
+
+;シーン９０（Tips２　魔女の手紙を追加）
+*rmenu_main_ep2_scene_90
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+
+
+	;キャラ状態設定
+	mov ?r[bea][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[eva][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+return
+
+
+;シーン１００（Tips２　魔女の手紙2を追加）
+*rmenu_main_ep2_scene_100
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+	mov ?tips[3][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+
+
+	;キャラ状態設定
+	mov ?r[bea][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[eva][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+return
+
+;シーン１００（Tips２　魔女の手紙2を追加）
+*rmenu_main_ep2_scene_101
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+	mov ?tips[3][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+
+
+	;キャラ状態設定
+	mov ?r[bea][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[eva][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+return
+
+;シーン１００（Tips２　魔女の手紙2を追加）
+*rmenu_main_ep2_scene_102
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+	mov ?tips[3][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+
+
+	;キャラ状態設定
+	mov ?r[bea][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[eva][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+return
+
+
+;シーン１１０（Tips２　朱志香死亡）
+*rmenu_main_ep2_scene_110
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+	mov ?tips[3][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+
+
+	;キャラ状態設定
+	mov ?r[bea][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[eva][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[jes][condition],2
+return
+
+
+;シーン１２０（嘉音　行方不明）
+*rmenu_main_ep2_scene_120
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+	mov ?tips[3][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+
+
+	;キャラ状態設定
+	mov ?r[bea][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[eva][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[jes][condition],2
+	mov ?r[kan][condition],2
+return
+
+
+;シーン１３０（嘉音　死亡）
+*rmenu_main_ep2_scene_130
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+	mov ?tips[3][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+
+
+	;キャラ状態設定
+	mov ?r[bea][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[eva][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[jes][condition],2
+	mov ?r[kan][condition],3
+return
+
+
+;シーン１４０（南條　熊沢　死亡１）
+*rmenu_main_ep2_scene_140
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定（魔女の碑文のみ表示）
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+	mov ?tips[3][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+
+
+	;キャラ状態設定
+	mov ?r[bea][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[eva][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[jes][condition],2
+	mov ?r[kan][condition],3
+	mov ?r[nan][condition],2
+	mov ?r[kum][condition],2
+return
+
+
+;シーン１５０（TIPS魔女の手紙Ⅲ）
+*rmenu_main_ep2_scene_150
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+	mov ?tips[3][tips_flg],1
+	mov ?tips[4][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+
+
+	;キャラ状態設定
+	mov ?r[bea][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[eva][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[jes][condition],2
+	mov ?r[kan][condition],3
+	mov ?r[nan][condition],2
+	mov ?r[kum][condition],2
+return
+
+
+;シーン１６０（南條、熊沢　死亡２）
+*rmenu_main_ep2_scene_160
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+	mov ?tips[3][tips_flg],1
+	mov ?tips[4][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+
+
+	;キャラ状態設定
+	mov ?r[bea][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[eva][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[jes][condition],2
+	mov ?r[kan][condition],3
+	mov ?r[nan][condition],3
+	mov ?r[kum][condition],3
+return
+
+
+;シーン１７０（譲治・紗音・郷田、死亡）
+*rmenu_main_ep2_scene_170
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+	mov ?tips[3][tips_flg],1
+	mov ?tips[4][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+
+
+	;キャラ状態設定
+	mov ?r[bea][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[eva][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[jes][condition],2
+	mov ?r[kan][condition],3
+	mov ?r[nan][condition],3
+	mov ?r[kum][condition],3
+	mov ?r[geo][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[goh][condition],2
+return
+
+
+;シーン１８０（Ｔｉｐｓ　魔女の手紙Ⅳ）
+*rmenu_main_ep2_scene_180
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+	mov ?tips[3][tips_flg],1
+	mov ?tips[4][tips_flg],1
+	mov ?tips[5][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+
+
+	;キャラ状態設定
+	mov ?r[bea][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[eva][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[jes][condition],2
+	mov ?r[kan][condition],3
+	mov ?r[nan][condition],3
+	mov ?r[kum][condition],3
+	mov ?r[geo][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[goh][condition],2
+return
+
+;************* エピソード２　お茶会　***************
+
+;シーン１０１０（お茶会　バトラ、ベアト未登場）
+*rmenu_main_ep2_scene_1010
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],2 : next
+	for %tmp = 20 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+	mov ?tips[3][tips_flg],1
+	mov ?tips[4][tips_flg],1
+	mov ?tips[5][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+
+
+	mov ?r[bea][condition],0
+	mov ?r[but][condition],0
+	mov ?r[kan][condition],3
+	mov ?r[nan][condition],3
+	mov ?r[kum][condition],3
+return
+
+;シーン１０２０（お茶会　バトラ、ベアト未登場）
+*rmenu_main_ep2_scene_1020
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],2 : next
+	for %tmp = 20 to 21 : mov ?r[%tmp][condition],-1 : next
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+	mov ?tips[3][tips_flg],1
+	mov ?tips[4][tips_flg],1
+	mov ?tips[5][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+
+
+	mov ?r[bea][condition],1
+	mov ?r[but][condition],0
+	mov ?r[kan][condition],3
+	mov ?r[nan][condition],3
+	mov ?r[kum][condition],3
+return
+
+
+
+;************* エピソード２　裏お茶会　***************
+
+;シーン２０１０（裏お茶会、ベアトとベルンのみを表示）
+*rmenu_main_ep2_scene_2010
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep2_2 : mov ?r[%tmp][condition],-1 : next
+	
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+	mov ?tips[3][tips_flg],1
+	mov ?tips[4][tips_flg],1
+	mov ?tips[5][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+
+	;キャラ状態設定
+	mov ?r[ma_bea][condition],1
+	mov ?r[ma_ber][condition],1
+
+	;表示位置の修正
+	mov ?r[ma_bea][itiran_x],69 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[ma_bea][itiran_y],%tmp
+	mov ?r[ma_ber][itiran_x],118 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[ma_ber][itiran_y],%tmp
+	mov %r_hyouji_cha,ma_bea
+return
+
+
+;シーン２０２０（裏お茶会、ラムダ登場）
+*rmenu_main_ep2_scene_2020
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep2_2 : mov ?r[%tmp][condition],-1 : next
+	
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+	mov ?tips[3][tips_flg],1
+	mov ?tips[4][tips_flg],1
+	mov ?tips[5][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+	mov ?grim[5][grim_flg],1
+	mov ?grim[6][grim_flg],1
+	mov ?grim[7][grim_flg],1
+
+	;キャラ状態設定
+	mov ?r[ma_bea][condition],1
+	mov ?r[ma_ber][condition],1
+	mov ?r[ma_lam][condition],1
+
+	;表示位置の修正
+	mov ?r[ma_bea][itiran_x],38 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[ma_bea][itiran_y],%tmp
+	mov ?r[ma_ber][itiran_x],84 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[ma_ber][itiran_y],%tmp
+	mov ?r[ma_lam][itiran_x],130 : mov %tmp,72 : add %tmp,r_top_y : mov ?r[ma_lam][itiran_y],%tmp
+	mov %r_hyouji_cha,ma_lam
+return
+
+
+;*****************************************************************
+;つるぺったんスクリプト
+;*****************************************************************
+
+*turu_pettann
+
+skipoff
+textoff
+
+langall
+
+E_A
+mov %rmordflg,on
+;drawclear
+;erasetextwindow 0
+
+;文字スプライトの登録
+;setwindow 31,16,22,16,50,50,0,2,20,1,1,#999999,0,0,639,479  ;convert to widescreen
+setwindow 31,16,30,16,50,50,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+csp -1
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+bg white,22
+;lsp 4,":bc;bmp\pettan\bg.png",0,0
+lsp 4,c0202,0,0
+print 28
+
+
+mov %tmp,20
+;lsph %tmp,":s#ffff00ジェシー！！！",0,0 : inc %tmp
+;lsph %tmp,":s#00ffff　キャーーーーーーーー！！！",0,0 : inc %tmp
+;lsph %tmp,":s#80ff00　　　　　　　　　　　ｷﾀ━━━(ﾟ∀ﾟ)━━━!!!! ",0,0 : inc %tmp
+;lsph %tmp,":s#ff0000☆つるぺったん☆　　　　　　　　　　　ジェシ様！！！",0,0 : inc %tmp
+;lsph %tmp,":s#ffff00ジェシジェシジェシさまぁああぁああ〜〜〜〜〜〜☆",0,0 : inc %tmp
+;lsph %tmp,":s#0000ffらめぇ〜〜〜〜〜　落ちるぅ〜〜〜〜",0,0 : inc %tmp
+;lsph %tmp,":s#ffffff　　　　　　　ジェシさま最高！！！",0,0 : inc %tmp
+;lsph %tmp,":s#ff8040　お姉様ぁあああぁああ〜〜〜〜☆",0,0 : inc %tmp
+lsph %tmp,":s#ffff00 Jessie!!!",0,0 : inc %tmp
+lsph %tmp,":s#00ffff　 Kyaaaaaaaaa!!!",0,0 : inc %tmp
+lsph %tmp,":s#80ff00　     It's started━━━(ﾟ∀ﾟ)━━━!!!! ",0,0 : inc %tmp
+lsph %tmp,":s#ff0000☆TsuruPettan☆　　　　　　　　　　　Jessie-sama!!!",0,0 : inc %tmp
+lsph %tmp,":s#ffff00Jessie-Jessie-Jessie-samaaaaaa~~~~☆",0,0 : inc %tmp
+lsph %tmp,":s#0000ffRamee~~~~　Suck it~~!!!",0,0 : inc %tmp
+lsph %tmp,":s#ffffff　　　　　　　Jessie-sama is the best!!!",0,0 : inc %tmp
+lsph %tmp,":s#ff8040　Onee-samaAaaaAaa!!!!☆",0,0 : inc %tmp
+
+mov %tmp,30
+;lsph %tmp,":a;bmp\pettan\pettan.bmp",270,0 : inc %tmp
+lsph %tmp,":b;bmp\pettan\pettan.png",270,0 : inc %tmp
+;setwindow 31,16,22,16,25,25,0,2,20,1,1,#999999,0,0,639,479  ;convert to widescreen
+setwindow 31,16,30,16,25,25,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+
+lsph %tmp,":s#ff0000（Not!!!）",0,0 : inc %tmp
+lsph %tmp,":s#80ff00Title ：TsuruPettan",0,0 : inc %tmp
+lsph %tmp,":s#00ffffArtist：Silver Forest ",0,0 : inc %tmp
+
+;setwindow 31,16,22,16,50,50,0,2,20,1,1,#999999,0,0,639,479  ;convert to widescreen
+setwindow 31,16,30,16,50,50,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+mov %tmp,10
+;lsph %tmp,":s#00ffffぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ffff00　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ff8040　　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#80ff00　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#0000ffぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ff0000　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#00ffff　　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ffffff　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#00ffffPettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ffff00　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ff8040　　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#80ff00　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#0000ffPettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ff0000　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#00ffff　　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ffffff　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+
+mov %tmp,40
+;lsph %tmp,":s#ff0000　　　　( ﾟ∀ﾟ)o彡ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ffffff　( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡",0,0 : inc %tmp
+;lsph %tmp,":s#00ffff　　　( ﾟ∀ﾟ)o彡ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#80ff00( ﾟ∀ﾟ)o彡ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#0000ff　　( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡",0,0 : inc %tmp
+;lsph %tmp,":s#00ffff　　　　　　( ﾟ∀ﾟ)o彡ぺったん☆ぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ff8040　( ﾟ∀ﾟ)o彡ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ffff00　　( ﾟ∀ﾟ)o彡ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#ff0000　　　　( ﾟ∀ﾟ)o彡Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ffffff　( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡",0,0 : inc %tmp
+lsph %tmp,":s#00ffff　　　( ﾟ∀ﾟ)o彡Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#80ff00( ﾟ∀ﾟ)o彡Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#0000ff　　( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡( ﾟ∀ﾟ)o彡",0,0 : inc %tmp
+lsph %tmp,":s#00ffff　　　　　　( ﾟ∀ﾟ)o彡Pettan☆Pettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ff8040　( ﾟ∀ﾟ)o彡Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ffff00　　( ﾟ∀ﾟ)o彡Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+
+mov %tmp,50
+;setwindow 31,16,22,16,50,50,0,2,20,1,1,#999999,0,0,639,479  ;convert to widescreen
+setwindow 31,16,30,16,50,50,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+;lsph %tmp,":s#00ffffぺったん　　　ぺったん　　　餅ぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ffff00　　　　ぺったん　　　ぺったん　　　餅ぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#00ffffPettan　　　Pettan　　　MochiPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ffff00　　　　Pettan　　　Pettan　　　MochiPettan☆",0,0 : inc %tmp
+
+;setwindow 31,16,22,16,30,30,0,2,20,1,1,#999999,0,0,639,479  ;convert to widescreen
+setwindow 31,16,30,16,30,30,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+;lsph %tmp,":s#ff8040　ぺったん　　　ぺったん　　　餅ぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#80ff00　　　　　ぺったん　　　ぺったん　　　餅ぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#0000ff　　　　ぺったん　　　ぺったん　　　餅ぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ff0000　　ぺったん　　　ぺったん　　　餅ぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#ff8040　Pettan　　　Pettan　　　MochiPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#80ff00　　　　　Pettan　　　Pettan　　　MochiPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#0000ff　　　　Pettan　　　Pettan　　　MochiPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ff0000　　Pettan　　　Pettan　　　MochiPettan☆",0,0 : inc %tmp
+
+;setwindow 31,16,22,16,50,50,0,2,20,1,1,#999999,0,0,639,479  ;convert to widescreen
+setwindow 31,16,30,16,50,50,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+;lsph %tmp,":s#00ffff　ぺったん　　　ぺったん　　　餅ぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ffffffぺったん　　　ぺったん　　　餅ぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#00ffff　Pettan　　　Pettan　　　MochiPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ffffffPettan　　　Pettan　　　MochiPettan☆",0,0 : inc %tmp
+
+mov %tmp,60
+;setwindow 31,16,22,16,50,50,0,2,20,1,1,#999999,0,0,639,479  ;convert to widescreen
+setwindow 31,16,30,16,50,50,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+;lsph %tmp,":s#00ffffぺったん　　　ぺったん　　　胸ぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ffff00　　　ぺったん　　　ぺったん　　　胸ぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#00ffffPettan　　　Pettan　　　MunePettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ffff00　　　Pettan　　　Pettan　　　MunePettan☆",0,0 : inc %tmp
+
+
+;setwindow 31,16,22,16,30,30,0,2,20,1,1,#999999,0,0,639,479  ;convert to widescreen
+setwindow 31,16,30,16,30,30,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+;lsph %tmp,":s#ff8040　　　ぺったん　　　ぺったん　　　胸ぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#80ff00ぺったん　　　ぺったん　　　胸ぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#0000ff　　　　　　ぺったん　　　ぺったん　　　胸ぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ff0000　　ぺったん　　　ぺったん　　　胸ぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#ff8040　　　Pettan　　　Pettan　　　MunePettan☆",0,0 : inc %tmp
+lsph %tmp,":s#80ff00Pettan　　　Pettan　　　MunePettan☆",0,0 : inc %tmp
+lsph %tmp,":s#0000ff　　　　　　Pettan　　　Pettan　　　MunePettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ff0000　　Pettan　　　Pettan　　　MunePettan☆",0,0 : inc %tmp
+
+
+;setwindow 31,16,22,16,50,50,0,2,20,1,1,#999999,0,0,639,479  ;convert to widescreen
+setwindow 31,16,30,16,50,50,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+;lsph %tmp,":s#00ffff　　　　　ぺったん　　　ぺったん　　　胸ぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ffffffぺったん　　　ぺったん　　　胸ぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#00ffff　　　　　Pettan　　　Pettan　　　MunePettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ffffffPettan　　　Pettan　　　MunePettan☆",0,0 : inc %tmp
+
+
+mov %tmp,70
+;setwindow 31,16,22,16,25,25,0,2,20,1,1,#999999,0,0,639,479  ;convert to widescreen
+setwindow 31,16,30,16,25,25,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+;lsph %tmp,":s#ffff00　　　　　　　　許可取ってんのかよ氏ね",0,0 : inc %tmp
+;lsph %tmp,":s#ffff00　　　　　　　　　　　　　　　　↑ちゃんと取りました！",0,0 : inc %tmp
+lsph %tmp,":s#ffff00　　　　　　　　Did y'all get approval for this?",0,0 : inc %tmp
+lsph %tmp,":s#ffff00　　　　　　　　　　　　　　　　↑It was approved!",0,0 : inc %tmp
+
+lsph %tmp,":a;bmp\pettan\pettan_aa2.bmp",270,0 : inc %tmp
+
+;setwindow 31,16,22,16,50,50,0,2,20,1,1,#999999,0,0,639,479  ;convert to widescreen
+setwindow 31,16,30,16,50,50,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+;lsph %tmp,":s#ff8040　　　　全俺が萌えた！！！",0,0 : inc %tmp
+lsph %tmp,":s#ff8040　　　　I'm totally geeked out!!!",0,0 : inc %tmp
+
+;setwindow 31,16,22,16,25,25,0,2,20,1,1,#999999,0,0,639,479  ;convert to widescreen
+setwindow 31,16,30,16,25,25,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+;lsph %tmp,":s#00ffff☆　　（　＾∇＾）σ）≧∇≦）　　☆",0,0 : inc %tmp
+;lsph %tmp,":s#ff0000［←樹海］",0,0 : inc %tmp
+;lsph %tmp,":s#ff0000　　||　　　　オワタ ┗(^o^）┓三",0,0 : inc %tmp
+;lsph %tmp,":s#ff0000　　||　　　　　　　　┏┗　 三",0,0 : inc %tmp
+
+;pre fake stuff
+;lsph %tmp,":s#00ffffぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ffff00　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ff8040　　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#80ff00　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#00ffffPettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ffff00　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ff8040　　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#80ff00　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+
+mov %tmp,80
+;setwindow 31,16,22,16,30,30,0,2,20,1,1,#999999,0,0,639,479  ;convert to widescreen
+setwindow 31,16,30,16,30,30,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+;lsph %tmp,":s#ffff00ξ（・３・）ﾉ うぜぇぜ！",0,0 : inc %tmp
+;lsph %tmp,":s#ffff00　　（　へ）",0,0 : inc %tmp
+;lsph %tmp,":s#ffff00　　 く ",0,0 : inc %tmp
+
+;pre fake stuff
+;lsph %tmp,":s#00ffffぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ffff00　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ff8040　　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#00ffffPettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ffff00　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ff8040　　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+
+
+;setwindow 31,16,22,16,25,25,0,2,20,1,1,#999999,0,0,639,479  ;convert to widescreen
+setwindow 31,16,30,16,25,25,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+;lsph %tmp,":s#ff0000この早さなら言える！　朱志香は俺の嫁！！！",0,0 : inc %tmp
+;lsph %tmp,":s#ff0000　　　　　　　　　　　　　　いや、俺の嫁だ！！！",0,0 : inc %tmp
+;lsph %tmp,":s#ff0000　　　　　　　　　　　　　　　　　　　朱志香なら、俺の隣で寝ているぜ",0,0 : inc %tmp
+lsph %tmp,":s#ff0000I can say it in this speed!　Jessica is my waifu!!!",0,0 : inc %tmp
+lsph %tmp,":s#ff0000　　　　　　　　　　　　　　No, she's my waifu!!!",0,0 : inc %tmp
+lsph %tmp,":s#ff0000　　　　　　　　　　　　　　　　　　　In that case, sleep by my side, Jessica!!!",0,0 : inc %tmp
+
+;setwindow 31,16,22,16,25,25,0,2,20,1,1,#999999,0,0,639,479  ;convert to widescreen
+setwindow 31,16,30,16,25,25,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+mov %tmp,110
+;lsph %tmp,":s#ffffff＼　　　n-−、　　　＝＝",0,0 : inc %tmp
+;lsph %tmp,":s#ffffff　＼／　●　､_ ｀ヽ 　　＝＝＝",0,0 : inc %tmp
+;lsph %tmp,":s#ffffff　／＼（　●　●　| つ",0,0 : inc %tmp
+;lsph %tmp,":s#ffffff　| 　Ｘ＿入＿ノ　　ミ　　　そんな貧乳で俺様が釣られクマ——",0,0 : inc %tmp
+;lsph %tmp,":s#ffffff　、　（＿／　　　ノ　／⌒l ",0,0 : inc %tmp
+;lsph %tmp,":s#ffffff　／＼＿＿＿ノ＿／　／　　＝＝＝＝",0,0 : inc %tmp
+;lsph %tmp,":s#ffffffく　　　　　　　　　　ノ　　＝＝＝＝",0,0 : inc %tmp
+;lsph %tmp,":s#ffffff　＼　＼＿　　　　　＼",0,0 : inc %tmp
+;lsph %tmp,":s#ffffff　　＼＿＿）　　　　　＼　　　＝＝＝＝　（⌒",0,0 : inc %tmp
+;lsph %tmp,":s#ffffff　　　　＼　　＿＿＿＿　＼＿＿　　（⌒（⌒",0,0 : inc %tmp
+;lsph %tmp,":s#ffffff　　　　　＼＿＿＿）＿＿＿）（⌒　（⌒　　ズザザザ",0,0 : inc %tmp
+
+;pre fake stuff
+;lsph %tmp,":s#00ffffぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ffff00　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ff8040　　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#80ff00　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#0000ffぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ff0000　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#00ffff　　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ffffff　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#00ffffぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ffff00　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ff8040　　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#00ffffPettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ffff00　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ff8040　　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#80ff00　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#0000ffPettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ff0000　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#00ffff　　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ffffff　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#00ffffPettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ffff00　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ff8040　　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+
+mov %tmp,90
+lsph %tmp,":a;bmp\pettan\pettan_aa1.bmp",270,0 : inc %tmp
+lsph %tmp,":a;bmp\pettan\pettan_aa3.bmp",270,0 : inc %tmp
+
+;setwindow 31,16,22,16,50,50,0,2,20,1,1,#999999,0,0,639,479  ;convert to widescreen
+setwindow 31,16,30,16,50,50,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+inc %tmp
+
+;setwindow 31,16,22,16,25,25,0,2,20,1,1,#999999,0,0,639,479  ;convert to widescreen
+setwindow 31,16,30,16,25,25,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+lsph %tmp,":s#ffffff／hidden／hidden／hidden／hidden／hidden／hidden",0,0 : inc %tmp
+lsph %tmp,":s#ffffff　　　／hidden／hidden／hidden／hidden／hidden／hidden",0,0 : inc %tmp
+lsph %tmp,":s#ffffff／hidden／hidden／hidden／hidden／hidden／hidden",0,0 : inc %tmp
+lsph %tmp,":s#ffffff　　　　　　　／hidden／hidden／hidden／hidden／hidden／hidden",0,0 : inc %tmp
+lsph %tmp,":s#ffffff　　　／hidden／hidden／hidden／hidden／hidden／hidden",0,0 : inc %tmp
+lsph %tmp,":s#ffffff／hidden／hidden／hidden／hidden／hidden／hidden",0,0 : inc %tmp
+
+
+;setwindow 31,16,22,16,50,50,0,2,20,1,1,#999999,0,0,639,479  ;convert to widescreen
+setwindow 31,16,30,16,50,50,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+mov %tmp,100
+;lsph %tmp,":s#ffff00きゃーきゃーきゃーーー！！！",0,0 : inc %tmp
+;lsph %tmp,":s#00ffff　にゃり〜〜〜〜〜ん☆",0,0 : inc %tmp
+;lsph %tmp,":s#80ff00（＞０＜）★タイが曲がっていてよ★（＞０＜） ",0,0 : inc %tmp
+;lsph %tmp,":s#ff0000☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ffff00ジェシジェシジェシさまぁああぁああ〜〜〜〜〜〜☆",0,0 : inc %tmp
+;lsph %tmp,":s#0000ffらめぇ〜〜〜〜〜　落ちるぅ〜〜〜〜",0,0 : inc %tmp
+;lsph %tmp,":s#ffffff　　　　　　　ジェシさま最高！！！",0,0 : inc %tmp
+;lsph %tmp,":s#ff8040　お姉様ぁあああぁああ〜〜〜〜☆",0,0 : inc %tmp
+
+; pre fake stuff
+;lsph %tmp,":s#00ffffぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ffff00　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ff8040　　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#80ff00　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#0000ffぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ff0000　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#00ffff　　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+;lsph %tmp,":s#ffffff　ぺったん☆ぺったん☆つるぺったん☆",0,0 : inc %tmp
+lsph %tmp,":s#00ffffPettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ffff00　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ff8040　　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#80ff00　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#0000ffPettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ff0000　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#00ffff　　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+lsph %tmp,":s#ffffff　Pettan☆Pettan☆TsuruPettan☆",0,0 : inc %tmp
+
+bgmonce "BGM\tsurupeta-128.ogg"
+resettimer
+
+
+;mov %tmp1,600  ;convert to widescreen. x1.334375
+;mov %tmp2,600
+;mov %tmp4,600
+;mov %tmp5,600
+;mov %tmp6,600
+;mov %tmp7,600
+;mov %tmp8,500
+;mov %tmp9,600
+;mov %tmp11,600
+
+mov %tmp1,800
+mov %tmp2,800
+mov %tmp4,800
+mov %tmp5,800
+mov %tmp6,800
+mov %tmp7,800
+mov %tmp8,667
+mov %tmp9,800
+mov %tmp11,800
+
+
+;１６秒で区切る
+for %tmp10 = 0 to 18000 step 130
+	drawclear
+	drawsp 4,1,255,0,0
+	;drawsp 5,1,255,100,0
+
+		notif %tmp10 >= 0 goto *pettann_50
+		notif %tmp10 <= 2400 goto *pettann_50
+			drawsp 20,1,255,%tmp2,0
+			drawsp 21,1,255,%tmp2,60
+			drawsp 22,1,255,%tmp2,120
+			drawsp 23,1,255,%tmp2,180
+			drawsp 24,1,255,%tmp2,240
+			drawsp 25,1,255,%tmp2,300
+			drawsp 26,1,255,%tmp2,360
+			drawsp 27,1,255,%tmp2,420
+			;sub %tmp2,100  ;convert to widescreen
+			sub %tmp2,133
+		*pettann_50
+
+		notif %tmp10 >= 2500 goto *pettann_60
+		notif %tmp10 <= 4700 goto *pettann_60
+			drawsp 30,1,255,260,0
+			drawsp 32,1,255,370,400
+			drawsp 33,1,255,370,430
+		*pettann_60
+
+		notif %tmp10 >= 5500 goto *pettann_100
+		notif %tmp10 <= 7500 goto *pettann_100
+			drawsp 10,1,255,%tmp1,0
+			drawsp 11,1,255,%tmp1,60
+			drawsp 12,1,255,%tmp1,120
+			drawsp 13,1,255,%tmp1,180
+			drawsp 14,1,255,%tmp1,240
+			drawsp 15,1,255,%tmp1,300
+			drawsp 16,1,255,%tmp1,360
+			drawsp 17,1,255,%tmp1,420
+			;sub %tmp1,100  ;convert to widescreen
+			sub %tmp1,133
+		*pettann_100
+
+		notif %tmp10 >= 6500 goto *pettann_150
+		notif %tmp10 <= 10000 goto *pettann_150
+			drawsp 80,1,255,%tmp8,0
+			drawsp 81,1,255,%tmp8,30
+			drawsp 82,1,255,%tmp8,60
+			drawsp 83,1,255,%tmp8,120
+			drawsp 84,1,255,%tmp8,150
+			drawsp 85,1,255,%tmp8,180
+			drawsp 110,1,255,%tmp8,210
+			drawsp 111,1,255,%tmp8,235
+			drawsp 112,1,255,%tmp8,260
+			drawsp 113,1,255,%tmp8,285
+			drawsp 114,1,255,%tmp8,310
+			drawsp 115,1,255,%tmp8,335
+			drawsp 116,1,255,%tmp8,360
+			drawsp 117,1,255,%tmp8,385
+			drawsp 118,1,255,%tmp8,410
+			drawsp 119,1,255,%tmp8,435
+			drawsp 120,1,255,%tmp8,460
+
+			;sub %tmp8,60  ;convert to widescreen
+			sub %tmp8,80
+		*pettann_150
+
+
+		notif %tmp10 >= 8000 goto *pettann_200
+		notif %tmp10 <= 11000 goto *pettann_200
+			drawsp 40,1,255,%tmp4,0
+			drawsp 41,1,255,%tmp4,60
+			drawsp 42,1,255,%tmp4,120
+			drawsp 43,1,255,%tmp4,180
+			drawsp 44,1,255,%tmp4,240
+			drawsp 45,1,255,%tmp4,300
+			drawsp 46,1,255,%tmp4,360
+			drawsp 47,1,255,%tmp4,420
+			;sub %tmp4,100  ;convert to widescreen
+			sub %tmp4,133
+		*pettann_200
+
+		notif %tmp10 >= 9500 goto *pettann_250
+		notif %tmp10 <= 13000 goto *pettann_250
+			drawsp 70,1,255,%tmp7,0
+			drawsp 71,1,255,%tmp7,30
+			drawsp 72,1,255,%tmp7,55
+			drawsp 73,1,255,%tmp7,360
+			drawsp 74,1,255,%tmp7,370
+			drawsp 75,1,255,%tmp7,410
+			drawsp 76,1,255,%tmp7,435
+			drawsp 77,1,255,%tmp7,460
+			;sub %tmp7,60  ;convert to widescreen
+			sub %tmp7,80
+		*pettann_250
+
+
+		notif %tmp10 >= 11000 goto *pettann_300
+		notif %tmp10 <= 13500 goto *pettann_300
+			drawsp 50,1,255,%tmp5,0
+			drawsp 51,1,255,%tmp5,60
+			drawsp 52,1,255,%tmp5,120
+			drawsp 53,1,255,%tmp5,180
+			drawsp 54,1,255,%tmp5,240
+			drawsp 55,1,255,%tmp5,300
+			drawsp 56,1,255,%tmp5,360
+			drawsp 57,1,255,%tmp5,420
+			;sub %tmp5,100  ;convert to widescreen
+			sub %tmp5,133
+		*pettann_300
+
+		notif %tmp10 >= 12000 goto *pettann_350
+		notif %tmp10 <= 16000 goto *pettann_350
+			drawsp 90,1,255,%tmp9,0
+			drawsp 91,1,255,%tmp9,370
+			;drawsp 92,1,255,%tmp9,120
+			drawsp 93,1,255,%tmp9,170
+			drawsp 94,1,255,%tmp9,200
+			drawsp 95,1,255,%tmp9,230
+			drawsp 96,1,255,%tmp9,250
+			drawsp 97,1,255,%tmp9,280
+			drawsp 98,1,255,%tmp9,310
+			;sub %tmp9,70  ;convert to widescreen
+			sub %tmp9,93
+		*pettann_350
+
+		notif %tmp10 >= 13500 goto *pettann_400
+		notif %tmp10 <= 16000 goto *pettann_400
+			drawsp 60,1,255,%tmp6,0
+			drawsp 61,1,255,%tmp6,60
+			drawsp 62,1,255,%tmp6,120
+			drawsp 63,1,255,%tmp6,180
+			drawsp 64,1,255,%tmp6,240
+			drawsp 65,1,255,%tmp6,300
+			drawsp 66,1,255,%tmp6,360
+			drawsp 67,1,255,%tmp6,420
+			;sub %tmp6,100  ;convert to widescreen
+			sub %tmp6,133
+		*pettann_400
+
+		notif %tmp10 >= 15000 goto *pettann_500
+		notif %tmp10 <= 20000 goto *pettann_500
+			drawsp 100,1,255,%tmp11,0
+			drawsp 101,1,255,%tmp11,60
+			drawsp 102,1,255,%tmp11,120
+			drawsp 103,1,255,%tmp11,180
+			drawsp 104,1,255,%tmp11,240
+			drawsp 105,1,255,%tmp11,300
+			drawsp 106,1,255,%tmp11,360
+			drawsp 107,1,255,%tmp11,420
+			;sub %tmp11,100  ;convert to widescreen
+			sub %tmp11,133
+		*pettann_500
+
+	draw
+	waittimer %tmp10
+next
+;bg ":b;bmp\pettan\bg.png",0
+bg c0202,0
+mov %rmordflg,off
+drawclear
+csp -1
+textoff
+;setwindow 137,16,25,20,23,23,0,2,20,1,1,#999999,0,0,853,479
+adv_default_text_speed_restore_window
+windoweffect 50,200
+
+
+;bg ":b;bmp\pettan\bg.png",1
+bg c0202,1
+
+return
+
+
+*rmord_data
+
+mov %Free1,1   ;資料変数使用
+mov %Free2,1   ;ページ数変数使用
+
+lsp introduction_back,":c;bmp\black.bmp",0,0
+ print 10,200
+
+lsp left,":a/2,0,3;bmp\system\left.bmp",45,405    ;次の資料
+lsp right,":a/2,0,3;bmp\system\right.bmp",545,405    ;前の資料
+lsp introduction_sp,":a/2,0,3;bmp\system\right.bmp",295,405    ;読むボタン
+
+
+*rmord_data_page
+
+btndef ""
+
+;ページ数チェック
+
+if %Free1 = %data_pagemax csp right    ;現在資料が最大数なら右ボタン表示しない
+if %Free1 = 1 csp left                 ;現在巣量が１なら左ボタン表示しない
+
+
+;現在ページ資料パス取得
+
+ mov $Free1,"bmp\data\data"
+ itoa $Free2,%Free1
+ add $Free1,$Free2
+ add $Free1,".bmp"
+
+lsp comment_sp1,$Free1,0,0    ;資料背景
+
+
+
+spbtn left,left                          ;左ボタン
+spbtn right,right                        ;右ボタン
+spbtn introduction_sp,introduction_sp
+
+~
+
+print 1
+ *rmord_data_btnwait
+
+   btnwait2 %BtnRes
+
+  if %BtnRes = left  inc %Free1 : mov %Free2,1 : goto *rmord_data_page
+  if %BtnRes = right  dec %Free1 : mov %Free2,1 : goto *rmord_data_page
+  if %BtnRes = -1  jumpf
+  if %BtnRes = introduction_sp
+
+   goto *rmord_data_btnwait
+
+
+~
+
+csp left
+csp right
+csp introduction_sp
+csp introduction_back
+csp comment_sp1
+
+
+print 10,500
+
+goto *rmenu_csutom
+
+
+
+
+
+
+
+
+;セーブ＆ロード画面
+
+;************************************************************
+;セーブ画面
+;************************************************************
+*savemode
+
+;テスト用
+;bg M_o1b,1
+
+saveoff
+
+if %remnu_data = on  csp rmenu_databtn
+ csp rmenu_btn1
+ csp rmenu_btn2
+ csp rmenu_btn3
+
+*savemode1
+
+for %Free1 = 1 to 100
+
+ csp %Free1
+
+ next
+
+ mov %Free1,0
+ mov %Free2,0
+ mov %Free3,0
+ mov %Free4,0
+ mov %Free5,0
+ mov %Free6,0
+
+mov %savescreenshotsp,31   ;セーブデータスクリーンショットスプライト
+mov %savescreenshotspback,51   ;セーブデータスクリーンショットスプライト
+mov %saveTimesp,11
+mov %saveTextsp,21
+
+csp Page1
+csp Page2
+csp Page3
+csp Page4
+csp Page5
+csp rmenu_btn_Exit
+csp Save
+csp Load
+
+btndef ""
+
+;セーブ画面のページの初期化の有無
+;初回起動時にはページ数を１に変更
+
+ if %savemodePage = 0 mov %savemodePage,1
+ mov %savemodePageNow,%savemodePage
+
+;画面表示
+
+;背景表示
+
+
+;背景飾り
+lsp 700,":c;bmp\r_click\black.bmp",0,0,black_toukaritu
+lsp 699,":ba;bmp\system\hana_save.png",578,97,100  ;convert to widescreen
+lsp 698,":ba;bmp\system\hane_save.png",10,8,200
+
+
+;システムボタン
+mov %tmp1,146 : mov %tmp2,43
+lsp Save,":ba/2,0,3;bmp\system\save_b.png",10,%tmp1 : add %tmp1,%tmp2    ;ページ２
+lsp Load,":ba/2,0,3;bmp\system\Load.png",10,%tmp1 : add %tmp1,%tmp2
+lsp rmenu_btn_Exit,":ba/2,0,3;bmp\system\exit.png",10,%tmp1
+
+
+;ページボタン(現在のページをブリンクする）
+mov %tmp1,315 : mov %tmp2,43
+ lsp Page1,":ba/2,0,3;bmp\system\Page1.png",10,%tmp1 : add %tmp1,%tmp2   ;ページ１
+ lsp Page2,":ba/2,0,3;bmp\system\Page2.png",10,%tmp1 : add %tmp1,%tmp2    ;ページ２
+ lsp Page3,":ba/2,0,3;bmp\system\Page3.png",10,%tmp1 : add %tmp1,%tmp2    ;ページ３
+ lsp Page4,":ba/2,0,3;bmp\system\Page4.png",10,%tmp1 : add %tmp1,%tmp2    ;ページ２
+ lsp Page5,":ba/2,0,3;bmp\system\Page5.png",10,%tmp1 : add %tmp1,%tmp2    ;ページ３
+
+if %savemodePageNow = 1 lsp Page1,":ba/2,0,3;bmp\system\Page1_b.png",10,315    ;ページ１
+if %savemodePageNow = 2 lsp Page2,":ba/2,0,3;bmp\system\Page2_b.png",10,358    ;ページ２
+if %savemodePageNow = 3 lsp Page3,":ba/2,0,3;bmp\system\Page3_b.png",10,401    ;ページ３
+if %savemodePageNow = 4 lsp Page4,":ba/2,0,3;bmp\system\Page4_b.png",10,444    ;ページ２
+if %savemodePageNow = 5 lsp Page5,":ba/2,0,3;bmp\system\Page5_b.png",10,487    ;ページ３
+
+
+;セーブデータ用表示枠
+
+mov %tmp,15
+ lsp 51,":bc/2,0,3;bmp\system\savearea_w.png",239,%tmp,150 : add %tmp,121    ;セーブエリア枠１
+ lsp 52,":bc/2,0,3;bmp\system\savearea_w.png",239,%tmp,150 : add %tmp,121   ;セーブエリア枠２
+ lsp 53,":bc/2,0,3;bmp\system\savearea_w.png",239,%tmp,150 : add %tmp,121   ;セーブエリア枠３
+ lsp 54,":bc/2,0,3;bmp\system\savearea_w.png",239,%tmp,150		   ;セーブエリア枠４
+		   ;セーブエリア枠５
+
+mov %tmp,40
+ lsp 55,":bc/2,0,3;bmp\system\savearea_w.png",593,%tmp,150 : add %tmp,121   ;	convert to widescreen
+ lsp 56,":bc/2,0,3;bmp\system\savearea_w.png",593,%tmp,150 : add %tmp,121   ;セーブエリア枠６  ;convert to widescreen
+ lsp 57,":bc/2,0,3;bmp\system\savearea_w.png",593,%tmp,150 : add %tmp,121   ;セーブエリア枠７  ;convert to widescreen
+ lsp 58,":bc/2,0,3;bmp\system\savearea_w.png",593,%tmp,150   		   ;セーブエリア枠８  ;convert to widescreen
+
+
+
+
+
+*savemode2
+
+;ページ確認
+
+mov %Free1,savedataflg                  ;セーブデータグローバルエリア番号取得
+mov %Free2,%savemodePageNow
+mul %Free2,8
+sub %Free2,8
+inc %Free2
+add %Free1,%Free2            ;セーブデータエリア開始番号収得
+
+mov %Free3,%Free2                ;セーブデータ番号
+mov %savedataTime,savedataTime
+add %savedataTime,%Free3
+
+
+mov %Free5,savedataComment
+add %Free5,%Free3
+
+mov %savescreenshotsp,31   ;セーブデータスクリーンショットスプライト
+mov %savescreenshotspback,41   ;セーブデータスクリーンショットスプライト
+mov %saveTimesp,11
+mov %saveTextsp,21
+
+mov %x,257
+mov %y,32
+
+  mov %x2,257
+  mov %y2,100
+
+  mov %x3,396
+  mov %y3,60
+
+for %Free2 = 1 to 8
+
+;xy軸を取得
+
+  ;if %y > 400 mov %y,55 : mov %x,441 : mov %y2,116 : mov %y3,80 :mov %x2,441 : mov %x3,525
+  if %y > 500 mov %y,57 : mov %x,611 : mov %y2,125 : mov %y3,85 :mov %x2,611 : mov %x3,750  ;convert to widescreen
+;セーブデータを収得しているか確認する
+
+  if %%Free1 = 0 jumpf
+
+ ;セーブデータのスクリーンショットを表示する
+
+   mov $Free1,":b;screenshot\ss"
+   itoa  $Free2,%Free3
+   add $Free1,$Free2
+   add $Free1,".bmp"
+
+
+  lsp %savescreenshotsp,$Free1,%x,%y
+  lsp %savescreenshotspback,":bc;bmp\screenshot_back_wide.bmp",%x,%y  ;convert to widescreen
+
+ ;セーブデータの時間データを表示する
+
+  mov $saveTimesp2,":s/8,16,1;#FFFFFF"
+  add $saveTimesp2,$%savedataTime
+
+
+  lsp %saveTimesp,$saveTimesp2,%x2,%y2
+
+ ;セーブデータのテキストデータを表示する
+
+  mov $saveTextsp2,":s/18,18,0;#FFFFFF"
+  add $saveTextsp2,$%Free5
+
+  lsp %saveTextsp,$saveTextsp2,%x3,%y3
+
+  ~
+  inc %Free3
+  inc %Free1 
+  add %y2,121
+  add %y3,121
+  add %y,121
+  inc %savedataTime
+  inc %saveTimesp
+  inc %saveTextsp
+  inc %savescreenshotsp
+  inc %savescreenshotspback
+  inc %Free4
+  inc %Free5
+
+ next
+
+;ボタン化
+
+btndef ""
+spbtn 51,1      ;セーブエリア１
+spbtn 52,2      ;セーブエリア２
+spbtn 53,3      ;セーブエリア３
+spbtn 54,4      ;セーブエリア４
+spbtn 55,5      ;セーブエリア５
+spbtn 56,6      ;セーブエリア６
+spbtn 57,7      ;セーブエリア７
+spbtn 58,8      ;セーブエリア８
+;spbtn 49,9      ;セーブエリア９
+;spbtn 50,10      ;セーブエリア１０
+
+spbtn Page1,Page1      ;ページボタン　１〜８
+spbtn Page2,Page2      ;ページボタン　９〜１６
+spbtn Page3,Page3      ;ページボタン１７〜２４
+spbtn Page4,Page4      ;ページボタン２５〜３２
+spbtn Page5,Page5      ;ページボタン３３〜４０
+
+spbtn rmenu_btn_Exit,rmenu_btn_Exit      ;終了ボタン
+spbtn Load,Load      ;ロード画面変更ボタン
+
+print 10,200
+
+*savemode_btn_loop
+
+  btnwait2 %BtnRes
+
+;セーブデータボタンを選択
+
+   if %BtnRes = 1 goto *savemode_save
+   if %BtnRes = 2 goto *savemode_save
+   if %BtnRes = 3 goto *savemode_save
+   if %BtnRes = 4 goto *savemode_save
+   if %BtnRes = 5 goto *savemode_save
+   if %BtnRes = 6 goto *savemode_save
+   if %BtnRes = 7 goto *savemode_save
+   if %BtnRes = 8 goto *savemode_save
+   ;if %BtnRes = 9 goto *savemode_save
+   ;if %BtnRes = 10 goto *savemode_save
+
+;ページ移動ボタンを選択
+
+   if %BtnRes = Page1  mov %savemodePage,1 : seplay 9,1010 : goto *savemode1
+   if %BtnRes = Page2  mov %savemodePage,2 : seplay 9,1010 : goto *savemode1
+   if %BtnRes = Page3  mov %savemodePage,3 : seplay 9,1010 : goto *savemode1
+   if %BtnRes = Page4  mov %savemodePage,4 : seplay 9,1010 : goto *savemode1
+   if %BtnRes = Page5  mov %savemodePage,5 : seplay 9,1010 : goto *savemode1
+
+
+;システム切り替えボタンを選択
+
+   if %BtnRes = rmenu_btn_Exit goto *save_exit
+   if %BtnRes = Load seplay 9,1000 : goto *loadmode
+   if %BtnRes = -1   goto *save_exit
+
+goto *savemode_btn_loop
+
+
+*savemode_save
+
+if %savemodePageNow = 1 lsp Page1,":ba/2,0,3;bmp\system\Page1_b.png",10,280    ;ページ１
+if %savemodePageNow = 2 lsp Page2,":ba/2,0,3;bmp\system\Page2_b.png",10,318    ;ページ２
+if %savemodePageNow = 3 lsp Page3,":ba/2,0,3;bmp\system\Page3_b.png",10,356    ;ページ３
+if %savemodePageNow = 4 lsp Page4,":ba/2,0,3;bmp\system\Page4_b.png",10,394    ;ページ２
+if %savemodePageNow = 5 lsp Page5,":ba/2,0,3;bmp\system\Page5_b.png",10,432    ;ページ３
+
+;セーブ番号収得
+
+ mov %savedataNowNum,%savemodePageNow
+ mul %savedataNowNum,8
+ sub %savedataNowNum,8
+ add %savedataNowNum,%BtnRes
+
+;セーブ
+
+ savegame %savedataNowNum
+
+ mov %savedataflg,savedataflg
+ add %savedataflg,%savedataNowNum
+ mov %%savedataflg,1
+
+;スクリーンショットの保存
+mov $Free1,"screenshot\ss"
+itoa $Free2,%savedataNowNum
+add $Free1,$Free2
+add $Free1,".bmp"
+
+
+;セーブデータ番号　月　日　時　分
+savescreenshot2 $Free1
+savetime %savedataNowNum,%Morth,%Day,%Hour,%Minute
+
+;itoa2 $SaveTime,%Morth : add $SaveTime,"月"
+;itoa2 $Free1,%Day : add $SaveTime,$Free1 : add $SaveTime,"日"
+;itoa2 $Free1,%Hour : add $SaveTime,$Free1 : add $SaveTime,"時"
+;itoa2 $Free1,%Minute : add $SaveTime,$Free1 : add $SaveTime,"分"
+
+; Use abbrev. month name
+if %Morth = 1 mov $SaveTime,"Jan "
+if %Morth = 2 mov $SaveTime,"Feb "
+if %Morth = 3 mov $SaveTime,"Mar "
+if %Morth = 4 mov $SaveTime,"Apr "
+if %Morth = 5 mov $SaveTime,"May "
+if %Morth = 6 mov $SaveTime,"Jun "
+if %Morth = 7 mov $SaveTime,"Jul "
+if %Morth = 8 mov $SaveTime,"Aug "
+if %Morth = 9 mov $SaveTime,"Sep "
+if %Morth = 10 mov $SaveTime,"Oct "
+if %Morth = 11 mov $SaveTime,"Nov "
+if %Morth = 12 mov $SaveTime,"Dec "
+itoa $Free1,%Day : add $SaveTime,$Free1 : add $SaveTime,", "
+; Use 12-hour time (AM-PM)
+if %Hour = 0 mov $Free2," AM" : itoa $Free1,12
+if %Hour > 0 && %Hour < 12 mov $Free2," AM" : itoa $Free1,%Hour
+if %Hour = 12 mov $Free2," PM" : itoa $Free1,12
+if %Hour > 12 && %Hour < 24 mov $Free2," PM" : sub %Hour,12 : itoa $Free1,%Hour : add %Hour,12
+add $SaveTime,$Free1 : add $SaveTime,":"
+if %Minute < 10 add $SaveTime,"0"
+itoa $Free1,%Minute : add $SaveTime,$Free1 : add $SaveTime,$Free2
+
+
+mov %Free2,savedataTime       ;セーブデータタイムのエリア数の取得
+add %Free2,%savedataNowNum             ;保存エリアの確定
+mov $%Free2,$SaveTime
+
+;mov $%Free2,":s/8,10,1;#FFFFFF"
+;if %scenario_Number = 1 mov $%Free2,"Ｅｐ１　" : add $%Free2,$SaveTime
+;if %scenario_Number = 2 mov $%Free2,"Ｅｐ２　" : add $%Free2,$SaveTime
+;if %scenario_Number = 3 mov $%Free2,"Ｅｐ３　" : add $%Free2,$SaveTime
+;if %scenario_Number = 4 mov $%Free2,"Ｅｐ４　" : add $%Free2,$SaveTime
+if %scenario_Number = 1 mov $%Free2,"^Ep1: " : add $%Free2,$SaveTime
+if %scenario_Number = 2 mov $%Free2,"^Ep2: " : add $%Free2,$SaveTime
+if %scenario_Number = 3 mov $%Free2,"^Ep3: " : add $%Free2,$SaveTime
+if %scenario_Number = 4 mov $%Free2,"^Ep4: " : add $%Free2,$SaveTime
+ 
+
+
+;セーブデータ作成時のコメント取得
+;保存するグローバル変数の変数番号を取る
+mov %Free2,savedataComment+%savedataNowNum
+;mid $Free2,$TextlogNow,0,16
+;add $Free2,"……"
+
+;mid $Free1,$TextlogNow,0,16
+;mov $Free2,"^" : add $Free2,$Free1
+;add $Free2,"…"
+if %scenario_Number = 1 mov $Free2,"^Épisode 1 : La Légende de la Sorcière d’Or^"
+if %scenario_Number = 2 mov $Free2,"^Épisode 2 : Le Tour de la Sorcière d’Or^"
+if %scenario_Number = 3 mov $Free2,"^Épisode 3 : Le Banquet de la Sorcière d’Or^"
+if %scenario_Number = 4 mov $Free2,"^Épisode 4 : L’Alliance de la Sorcière d’Or^"
+mov $%Free2,$Free2
+
+seplay 9,1030
+
+goto *savemode1
+
+
+;***************************************************************
+;ロード画面
+*loadmode
+;***************************************************************
+
+
+ if %remnu_data = on  csp rmenu_databtn
+ csp rmenu_btn1
+ csp rmenu_btn2
+ csp rmenu_btn3
+
+*loadmode1
+
+saveoff
+
+for %Free1 = 1 to 100
+
+ csp %Free1
+
+ next
+
+ csp rmenu_btn1
+ csp rmenu_btn2
+ csp rmenu_btn3
+
+csp Page1
+csp Page2
+csp Page3
+csp Page4
+csp Page5
+csp rmenu_btn_Exit
+csp Save
+csp Load
+
+btndef ""
+
+;セーブ画面のページの初期化の有無
+;初回起動時にはページ数を１に変更
+
+ if %savemodePage = 0 mov %savemodePage,1
+ mov %savemodePageNow,%savemodePage
+
+;画面表示
+
+;背景表示
+
+;背景飾り
+lsp 700,":c;bmp\r_click\black.bmp",0,0,black_toukaritu
+lsp 699,":ba;bmp\system\hana_load.png",578,97,100  ;convert to widescreen
+lsp 698,":ba;bmp\system\hane_load.png",10,8,200
+
+
+;システムボタン
+mov %tmp1,146 : mov %tmp2,43
+if %m_temp1 == 0 skip 2
+lsp Save,":ba/2,0,3;bmp\system\save.png",10,%tmp1 : add %tmp1,%tmp2    ;ページ２
+lsp Load,":ba/2,0,3;bmp\system\Load_b.png",10,%tmp1 : add %tmp1,%tmp2 
+lsp rmenu_btn_Exit,":ba/2,0,3;bmp\system\exit.png",10,%tmp1
+
+
+;ページボタン(現在のページをブリンクする）
+mov %tmp1,315 : mov %tmp2,43
+ lsp Page1,":ba/2,0,3;bmp\system\Page1.png",10,%tmp1 : add %tmp1,%tmp2   ;ページ１
+ lsp Page2,":ba/2,0,3;bmp\system\Page2.png",10,%tmp1 : add %tmp1,%tmp2    ;ページ２
+ lsp Page3,":ba/2,0,3;bmp\system\Page3.png",10,%tmp1 : add %tmp1,%tmp2    ;ページ３
+ lsp Page4,":ba/2,0,3;bmp\system\Page4.png",10,%tmp1 : add %tmp1,%tmp2    ;ページ２
+ lsp Page5,":ba/2,0,3;bmp\system\Page5.png",10,%tmp1 : add %tmp1,%tmp2    ;ページ３
+
+if %savemodePageNow = 1 lsp Page1,":ba/2,0,3;bmp\system\Page1_b.png",10,315    ;ページ１
+if %savemodePageNow = 2 lsp Page2,":ba/2,0,3;bmp\system\Page2_b.png",10,358    ;ページ２
+if %savemodePageNow = 3 lsp Page3,":ba/2,0,3;bmp\system\Page3_b.png",10,401    ;ページ３
+if %savemodePageNow = 4 lsp Page4,":ba/2,0,3;bmp\system\Page4_b.png",10,444    ;ページ２
+if %savemodePageNow = 5 lsp Page5,":ba/2,0,3;bmp\system\Page5_b.png",10,487    ;ページ３
+
+
+;セーブデータ用表示枠
+
+mov %tmp,15
+ lsp 41,":bc/2,0,3;bmp\system\loadarea_w.png",239,%tmp,150 : add %tmp,121    ;セーブエリア枠１
+ lsp 42,":bc/2,0,3;bmp\system\loadarea_w.png",239,%tmp,150 : add %tmp,121   ;セーブエリア枠２
+ lsp 43,":bc/2,0,3;bmp\system\loadarea_w.png",239,%tmp,150 : add %tmp,121   ;セーブエリア枠３
+ lsp 44,":bc/2,0,3;bmp\system\loadarea_w.png",239,%tmp,150		   ;セーブエリア枠４
+		   ;セーブエリア枠５
+
+mov %tmp,40
+ lsp 45,":bc/2,0,3;bmp\system\loadarea_w.png",593,%tmp,150 : add %tmp,121   ;convert to widescreen
+ lsp 46,":bc/2,0,3;bmp\system\loadarea_w.png",593,%tmp,150 : add %tmp,121   ;セーブエリア枠６  ;convert to widescreen
+ lsp 47,":bc/2,0,3;bmp\system\loadarea_w.png",593,%tmp,150 : add %tmp,121   ;セーブエリア枠７  ;convert to widescreen
+ lsp 48,":bc/2,0,3;bmp\system\loadarea_w.png",593,%tmp,150   		   ;セーブエリア枠８  ;convert to widescreen
+
+
+
+
+*loadmode2
+
+;ページ確認
+
+mov %Free1,savedataflg                  ;セーブデータグローバルエリア番号取得
+mov %Free2,%savemodePageNow
+mul %Free2,8
+sub %Free2,8
+inc %Free2
+add %Free1,%Free2            ;セーブデータエリア開始番号収得
+
+
+mov %Free3,%Free2                ;セーブデータ番号
+mov %savedataTime,savedataTime
+add %savedataTime,%Free3
+
+
+mov %Free5,savedataComment
+add %Free5,%Free3
+
+mov %savescreenshotsp,31   ;セーブデータスクリーンショットスプライト
+mov %savescreenshotspback,51   ;セーブデータスクリーンショットスプライト
+
+mov %saveTimesp,11
+mov %saveTextsp,21
+
+mov %x,257
+mov %y,32
+
+  mov %x2,257
+  mov %y2,100
+
+  mov %x3,396
+  mov %y3,60
+
+
+btndef ""
+
+for %Free2 = 1 to 8
+
+	;xy軸を取得
+	;if %y > 400 mov %y,55 : mov %x,441 : mov %y2,116 : mov %y3,80 :mov %x2,441 : mov %x3,525
+	if %y > 500 mov %y,57 : mov %x,611 : mov %y2,125 : mov %y3,85 :mov %x2,611 : mov %x3,750  ;convert to widescreen
+
+	;セーブデータを収得しているか確認する
+	if %%Free1 = 0 jumpf
+
+		;セーブデータのスクリーンショットを表示する
+		mov $Free1,":bc;screenshot\ss"
+		itoa  $Free2,%Free3
+		add $Free1,$Free2
+		add $Free1,".bmp"
+
+		lsp %savescreenshotsp,$Free1,%x,%y
+		lsp %savescreenshotspback,":bc;bmp\screenshot_back_wide.bmp",%x,%y  ;convert to widescreen
+
+		;セーブデータの時間データを表示する
+		mov $saveTimesp2,":s/8,16,1;#FFFFFF"
+		add $saveTimesp2,$%savedataTime
+		lsp %saveTimesp,$saveTimesp2,%x2,%y2
+		;セーブデータのテキストデータを表示する
+
+		mov $saveTextsp2,":s/18,18,0;#FFFFFF"
+		add $saveTextsp2,$%Free5
+		lsp %saveTextsp,$saveTextsp2,%x3,%y3
+		
+		;ボタン化（データがない場合はボタンにしない）
+		mov %tmp,40 : add %tmp,%Free2
+		spbtn %tmp,%Free2
+
+  	~
+
+
+  inc %Free3
+  inc %Free1 
+  add %y2,121
+  add %y3,121
+  add %y,121
+  inc %savedataTime
+  inc %saveTimesp
+  inc %saveTextsp
+  inc %savescreenshotsp
+  inc %savescreenshotspback
+  inc %Free4
+  inc %Free5
+
+ next
+
+
+
+
+spbtn Page1,Page1      ;ページボタン　１〜８
+spbtn Page2,Page2      ;ページボタン　９〜１６
+spbtn Page3,Page3      ;ページボタン１７〜２４
+spbtn Page4,Page4      ;ページボタン２５〜３２
+spbtn Page5,Page5      ;ページボタン３３〜４０
+
+spbtn rmenu_btn_Exit,rmenu_btn_Exit      ;終了ボタン
+spbtn Save,Save      ;ロード画面変更ボタン
+
+
+print 10,200
+
+*loadmode_btn_loop
+
+  btnwait2 %BtnRes
+
+;セーブデータボタンを選択
+
+   if %BtnRes = 1 goto *loadmode_load
+   if %BtnRes = 2 goto *loadmode_load
+   if %BtnRes = 3 goto *loadmode_load
+   if %BtnRes = 4 goto *loadmode_load
+   if %BtnRes = 5 goto *loadmode_load
+   if %BtnRes = 6 goto *loadmode_load
+   if %BtnRes = 7 goto *loadmode_load
+   if %BtnRes = 8 goto *loadmode_load
+   ;if %BtnRes = 9 goto *loadmode_load
+   ;if %BtnRes = 10 goto *loadmode_load
+
+;ページ移動ボタンを選択
+
+   if %BtnRes = Page1  mov %savemodePage,1 : seplay 9,1010 : goto *loadmode1
+   if %BtnRes = Page2  mov %savemodePage,2 : seplay 9,1010 : goto *loadmode1
+   if %BtnRes = Page3  mov %savemodePage,3 : seplay 9,1010 : goto *loadmode1
+   if %BtnRes = Page4  mov %savemodePage,4 : seplay 9,1010 : goto *loadmode1
+   if %BtnRes = Page5  mov %savemodePage,5 : seplay 9,1010 : goto *loadmode1
+
+;システム切り替えボタンを選択
+
+   if %BtnRes = rmenu_btn_Exit :goto *save_exit
+   if %BtnRes = Save seplay 9,1000 : goto *savemode
+   if %BtnRes = -1   goto *save_exit
+
+goto *loadmode_btn_loop
+
+
+*loadmode_load
+
+
+
+;ロード番号収得
+
+ mov %savedataNowNum,%savemodePageNow
+ mul %savedataNowNum,8
+ sub %savedataNowNum,8
+ add %savedataNowNum,%BtnRes
+
+;ロード
+
+;右クリックからのエフェクト
+notif %load_for_title = 0 jumpf
+	;ワレエフェクトと共に黒フェード
+	E_A
+	seplay 9,1022
+	lsp 0,":b;bmp\efe\ware.png",0,0
+	print 1
+	delay 1000
+	lsp 0,":c;bmp\r_click\black.bmp",0,0
+	print 22
+	delay 2000
+~
+
+for %Free1 = 1 to 100
+
+ csp %Free1
+
+ next
+
+csp -1
+csp2 -1
+ csp rmenu_btn1
+ csp rmenu_btn2
+ csp rmenu_btn3
+
+csp Page1
+csp Page2
+csp Page3
+csp Page4
+csp Page5
+csp rmenu_btn_Exit
+csp Save
+csp Load
+
+btndef ""
+;layermessage 10,"clear/10"
+
+
+;タイトルからのエフェクト
+notif %load_for_title = 1 jumpf
+	;ワレエフェクトと共に黒フェード
+	E_A
+	seplay 9,17
+	bg white,10
+	delay 3000
+~
+
+
+mov %load_for_title,0
+
+
+ loadgame %savedataNowNum
+
+goto *loadmode2
+
+
+
+
+;セーブシステム終了
+*save_exit
+
+for %Free1 = 1 to 100
+
+ csp %Free1
+
+ next
+
+
+ csp rmenu_btn1
+ csp rmenu_btn2
+ csp rmenu_btn3
+
+csp Page1
+csp Page2
+csp Page3
+csp Page4
+csp Page5
+csp rmenu_btn_Exit
+csp Load
+csp Save
+csp 700
+csp 699
+csp 698
+
+seplay 8,1100
+
+print 1
+texton
+mov %load_for_title,0
+wait 500
+
+;セーブ、ロードから抜ける時は右クリックメニューを飛ばして
+;ゲーム画面に復帰させる。
+
+return
+
+
+
+
+
+*DATA_SET
+
+;立ち絵画像の基本ルート設定
+
+
+mov $KIN_DefA1,"bmp\TATI\KIN\1\KIN_DefA1"          ;金蔵立ち絵デフォ
+mov $KIN_WaraiA1,"bmp\TATI\KIN\1\KIN_WaraiA1"          ;笑い
+mov $KIN_IkariA1,"bmp\TATI\KIN\1\KIN_IkariA1"          ;怒り
+mov $KIN_MajimeA1,"bmp\TATI\KIN\1\KIN_MajimeA1"          ;真面目
+;mov $KIN_DefA2,"bmp\TATI\KIN\1\KIN_DefA2" 
+mov $KIN_AkuwaraiA1,"bmp\TATI\KIN\1\KIN_AkuwaraiA1"          ;悪笑い
+mov $KIN_AkuwaraiA2,"bmp\TATI\KIN\1\KIN_AkuwaraiA2"          ;悪笑い
+;mov $KIN_KomaruA1,"bmp\TATI\KIN\1\KIN_KomaruA1"          ;困る
+;mov $KIN_OdorokiA1,"bmp\TATI\KIN\1\KIN_OdorokiA1"          ;驚き
+mov $KIN_WaraiA2,"bmp\TATI\KIN\1\KIN_WaraiA2"          ;笑い
+mov $KIN_nakuA1,"bmp\TATI\KIN\1\KIN_nakuA1"          ;泣く
+mov $KIN_nakuA2,"bmp\TATI\KIN\1\KIN_nakuA2"          ;泣く２
+mov $KIN_fumuA1,"bmp\TATI\KIN\1\KIN_fumuA1"          ;ふーむ
+mov $KIN_fukigenA1,"bmp\TATI\KIN\1\KIN_fukigenA1"          ;ふーむ
+
+mov $KLA_DefA1,"bmp\TATI\KLA\1\KLA_DefA1"          ;蔵臼立ち絵デフォ
+mov $KLA_AkuwaraiA1,"bmp\TATI\KLA\1\KLA_AkuwaraiA1"          ;悪笑い
+mov $KLA_KomaruA1,"bmp\TATI\KLA\1\KLA_KomaruA1"          ;困る
+mov $KLA_KomaruA2,"bmp\TATI\KLA\1\KLA_KomaruA2"          ;困る
+mov $KLA_KomaruA3,"bmp\TATI\KLA\1\KLA_KomaruA3"          ;困る
+mov $KLA_KomaruA4,"bmp\TATI\KLA\1\KLA_KomaruA4"          ;困る
+mov $KLA_MajimeA1,"bmp\TATI\KLA\1\KLA_MajimeA1"          ;真面目
+mov $KLA_IkariA1,"bmp\TATI\KLA\1\KLA_IkariA1"          ;怒り
+;mov $KLA_DefA2,"bmp\TATI\KLA\1\KLA_DefA2"
+;mov $KLA_WaraiA1,"bmp\TATI\KLA\1\KLA_WaraiA1"          ;笑い
+;mov $KLA_OdorokiA1,"bmp\TATI\KLA\1\KLA_OdorokiA1"          ;驚き
+mov $KLA_AkuwaraiA2,"bmp\TATI\KLA\1\KLA_AkuwaraiA2"          ;悪笑い２
+mov $KLA_AkuwaraiA3,"bmp\TATI\KLA\1\KLA_AkuwaraiA3"          ;悪笑い３
+mov $KLA_MajimeA2,"bmp\TATI\KLA\1\KLA_MajimeA2"          ;真面目２
+mov $KLA_NayamuA1,"bmp\TATI\KLA\1\KLA_NayamuA1"          ;悩む
+mov $KLA_NayamuA2,"bmp\TATI\KLA\1\KLA_NayamuA2"          ;悩む
+mov $KLA_NayamuA3,"bmp\TATI\KLA\1\KLA_NayamuA3"          ;悩む
+
+mov $KLA_DefA1G,"bmp\TATI\KLA\1\KLA_DefA1G"          ;蔵臼立ち絵デフォ
+mov $KLA_AkuwaraiA1G,"bmp\TATI\KLA\1\KLA_AkuwaraiA1G"          ;悪笑い
+mov $KLA_KomaruA1G,"bmp\TATI\KLA\1\KLA_KomaruA1G"          ;困る
+mov $KLA_KomaruA2G,"bmp\TATI\KLA\1\KLA_KomaruA2G"          ;困る
+mov $KLA_KomaruA3G,"bmp\TATI\KLA\1\KLA_KomaruA3G"          ;困る
+mov $KLA_KomaruA4G,"bmp\TATI\KLA\1\KLA_KomaruA4G"          ;困る
+mov $KLA_MajimeA1G,"bmp\TATI\KLA\1\KLA_MajimeA1G"          ;真面目
+mov $KLA_IkariA1G,"bmp\TATI\KLA\1\KLA_IkariA1G"          ;怒り
+mov $KLA_AkuwaraiA2G,"bmp\TATI\KLA\1\KLA_AkuwaraiA2G"          ;悪笑い２
+mov $KLA_AkuwaraiA3G,"bmp\TATI\KLA\1\KLA_AkuwaraiA3G"          ;悪笑い３
+mov $KLA_MajimeA2G,"bmp\TATI\KLA\1\KLA_MajimeA2G"          ;真面目２
+mov $KLA_NayamuA1G,"bmp\TATI\KLA\1\KLA_NayamuA1G"          ;悩む
+mov $KLA_NayamuA2G,"bmp\TATI\KLA\1\KLA_NayamuA2G"          ;悩む
+mov $KLA_NayamuA3G,"bmp\TATI\KLA\1\KLA_NayamuA3G"          ;悩む
+
+
+mov $NAT_DefA1,"bmp\TATI\NAT\1\NAT_DefA1"          ;夏妃立ち絵デフォ
+mov $NAT_DefB1,"bmp\TATI\NAT\1\NAT_DefA1"          ;夏妃立ち絵デフォ
+mov $NAT_WaraiA1,"bmp\TATI\NAT\1\NAT_WaraiA1"          ;笑い
+mov $NAT_WaraiB1,"bmp\TATI\NAT\1\NAT_WaraiA1"          ;笑い
+mov $NAT_IkariA1,"bmp\TATI\NAT\1\NAT_IkariA1"          ;怒り
+mov $NAT_IkariB1,"bmp\TATI\NAT\1\NAT_IkariA1"          ;怒り
+mov $NAT_OdorokiA1,"bmp\TATI\NAT\1\NAT_OdorokiA1"          ;驚き
+mov $NAT_OdorokiB1,"bmp\TATI\NAT\1\NAT_OdorokiA1"          ;驚き
+mov $NAT_MajimeA1,"bmp\TATI\NAT\1\NAT_MajimeA1"          ;真面目
+mov $NAT_MajimeB1,"bmp\TATI\NAT\1\NAT_MajimeA1"          ;真面目
+;mov $NAT_DefA2,"bmp\TATI\NAT\1\NAT_DefA2"
+;mov $NAT_AkuwaraiA1,"bmp\TATI\NAT\1\NAT_AkuwaraiA1"          ;悪笑い
+;mov $NAT_KomaruA1,"bmp\TATI\NAT\1\NAT_KomaruA1"          ;困る
+mov $NAT_WaraiA2,"bmp\TATI\NAT\1\NAT_WaraiA2"          ;笑い２
+mov $NAT_WaraiB2,"bmp\TATI\NAT\1\NAT_WaraiA2"          ;笑い２
+mov $NAT_OdorokiA2,"bmp\TATI\NAT\1\NAT_OdorokiA2"          ;驚き２
+mov $NAT_OdorokiB2,"bmp\TATI\NAT\1\NAT_OdorokiA2"          ;驚き２
+mov $NAT_HisuA1,"bmp\TATI\NAT\1\NAT_HisuA1"          ;ヒステリー
+mov $NAT_HisuB1,"bmp\TATI\NAT\1\NAT_HisuA1"          ;ヒステリー
+mov $NAT_zutuuA1,"bmp\TATI\NAT\1\NAT_zutuuA1"          ;頭痛
+mov $NAT_zutuuB1,"bmp\TATI\NAT\1\NAT_zutuuA1"          ;頭痛
+mov $NAT_TukareA1,"bmp\TATI\NAT\1\NAT_TukareA1"          ;疲れ
+mov $NAT_TukareB1,"bmp\TATI\NAT\1\NAT_TukareA1"          ;疲れ
+mov $NAT_TukareA2,"bmp\TATI\NAT\1\NAT_TukareA2"          ;疲れ２
+mov $NAT_TukareB2,"bmp\TATI\NAT\1\NAT_TukareA2"          ;疲れ２
+
+mov $NAT_DefA1G,"bmp\TATI\NAT\1\NAT_DefA1G"          ;夏妃立ち絵デフォ
+mov $NAT_DefB1G,"bmp\TATI\NAT\1\NAT_DefB1G"          ;夏妃立ち絵デフォ
+mov $NAT_WaraiA1G,"bmp\TATI\NAT\1\NAT_WaraiA1G"          ;笑い
+mov $NAT_WaraiB1G,"bmp\TATI\NAT\1\NAT_WaraiB1G"          ;笑い
+mov $NAT_IkariA1G,"bmp\TATI\NAT\1\NAT_IkariA1G"          ;怒り
+mov $NAT_IkariB1G,"bmp\TATI\NAT\1\NAT_IkariB1G"          ;怒り
+mov $NAT_OdorokiA1G,"bmp\TATI\NAT\1\NAT_OdorokiA1G"          ;驚き
+mov $NAT_OdorokiB1G,"bmp\TATI\NAT\1\NAT_OdorokiB1G"          ;驚き
+mov $NAT_MajimeA1G,"bmp\TATI\NAT\1\NAT_MajimeA1G"          ;真面目
+mov $NAT_MajimeB1G,"bmp\TATI\NAT\1\NAT_MajimeB1G"          ;真面目
+;mov $NAT_DefA2,"bmp\TATI\NAT\1\NAT_DefA2"
+;mov $NAT_AkuwaraiA1,"bmp\TATI\NAT\1\NAT_AkuwaraiA1"          ;悪笑い
+;mov $NAT_KomaruA1,"bmp\TATI\NAT\1\NAT_KomaruA1"          ;困る
+mov $NAT_WaraiA2G,"bmp\TATI\NAT\1\NAT_WaraiA2G"          ;笑い２
+mov $NAT_WaraiB2G,"bmp\TATI\NAT\1\NAT_WaraiB2G"          ;笑い２
+mov $NAT_OdorokiA2G,"bmp\TATI\NAT\1\NAT_OdorokiA2G"          ;驚き２
+mov $NAT_OdorokiB2G,"bmp\TATI\NAT\1\NAT_OdorokiB2G"          ;驚き２
+mov $NAT_HisuA1G,"bmp\TATI\NAT\1\NAT_HisuA1G"          ;ヒステリー
+mov $NAT_HisuB1G,"bmp\TATI\NAT\1\NAT_HisuB1G"          ;ヒステリー
+mov $NAT_zutuuA1G,"bmp\TATI\NAT\1\NAT_zutuuA1G"          ;頭痛
+mov $NAT_zutuuB1G,"bmp\TATI\NAT\1\NAT_zutuuB1G"          ;頭痛
+mov $NAT_TukareA1G,"bmp\TATI\NAT\1\NAT_TukareA1G"          ;疲れ
+mov $NAT_TukareB1G,"bmp\TATI\NAT\1\NAT_TukareB1G"          ;疲れ
+mov $NAT_TukareA2G,"bmp\TATI\NAT\1\NAT_TukareA2G"          ;疲れ２
+mov $NAT_TukareB2G,"bmp\TATI\NAT\1\NAT_TukareB2G"          ;疲れ２
+
+
+mov $JES_DefA1,"bmp\TATI\JES\1\JES_DefA1"          ;朱志香立ち絵デフォ
+mov $JES_DefA2,"bmp\TATI\JES\1\JES_DefA2"          ;朱志香立ち絵デフォ
+mov $JES_WaraiA1,"bmp\TATI\JES\1\JES_WaraiA1"          ;笑い
+mov $JES_WaraiA1_U,"bmp\TATI\JES\2\JES_WaraiA1"          ;UNIFORM
+mov $JES_AKuwaraiA1,"bmp\TATI\JES\1\JES_AkuwaraiA1"          ;悪笑い
+mov $JES_AKuwaraiA1_U,"bmp\TATI\JES\2\JES_AkuwaraiA1"          ;UNIFORM
+mov $JES_IkariA1,"bmp\TATI\JES\1\JES_IkariA1"          ;怒り
+mov $JES_IkariA1_U,"bmp\TATI\JES\2\JES_IkariA1"          ;UNIFORM
+mov $JES_KomaruA1,"bmp\TATI\JES\1\JES_KomaruA1"          ;困る
+mov $JES_KomaruA2,"bmp\TATI\JES\1\JES_KomaruA2"          ;困る２
+mov $JES_KomaruA3,"bmp\TATI\JES\1\JES_KomaruA3"          ;困る３
+mov $JES_OdorokiA1,"bmp\TATI\JES\1\JES_OdorokiA1"          ;驚き
+mov $JES_OdorokiA1_U,"bmp\TATI\JES\2\JES_OdorokiA1"          ;UNIFORM
+mov $JES_MajimeA1,"bmp\TATI\JES\1\JES_MajimeA1"          ;真面目
+mov $JES_futekiA1,"bmp\TATI\JES\1\JES_futekiA1"          ;不敵
+mov $JES_futekiA2,"bmp\TATI\JES\1\JES_futekiA2"          ;不敵２
+mov $JES_TohohoA1,"bmp\TATI\JES\1\JES_TohohoA1"          ;とほほ
+mov $JES_TohohoA2,"bmp\TATI\JES\1\JES_TohohoA2"          ;とほほ２
+mov $JES_TohohoA2_U,"bmp\TATI\JES\2\JES_TohohoA2"          ;UNIFORM
+mov $JES_TohohoA3,"bmp\TATI\JES\1\JES_TohohoA3"          ;とほほ３
+mov $JES_TohohoA4,"bmp\TATI\JES\1\JES_TohohoA4"          ;とほほ４
+mov $JES_atyaA1,"bmp\TATI\JES\1\JES_atyaA1"          ;あちゃー
+mov $JES_WaraiA2,"bmp\TATI\JES\1\JES_WaraiA2"          ;笑い２
+mov $JES_IkariA2,"bmp\TATI\JES\1\JES_IkariA2"          ;怒り２
+mov $JES_IkariA3,"bmp\TATI\JES\1\JES_IkariA3"          ;怒り３
+mov $JES_NakuA1,"bmp\TATI\JES\1\JES_NakuA1"          ;泣く
+mov $JES_NayamuA1,"bmp\TATI\JES\1\JES_NayamuA1"          ;悩む
+
+mov $JES_NakuA2,"bmp\TATI\JES\1\JES_NakuA2"          ;泣く（半ベソ
+mov $JES_NakuA3,"bmp\TATI\JES\1\JES_NakuA3"          ;泣く（半ベソ
+mov $JES_TereruA1,"bmp\TATI\JES\1\JES_TereruA1"          ;泣く（半ベソ
+mov $JES_TereruA1_U,"bmp\TATI\JES\2\JES_TereruA1"          ;UNIFORM
+mov $JES_TereruA2,"bmp\TATI\JES\1\JES_TereruA2"          ;泣く（半ベソ
+mov $JES_TereruA2_U,"bmp\TATI\JES\2\JES_TereruA2"          ;UNIFORM
+mov $JES_NakiWaraiA1,"bmp\TATI\JES\1\JES_NakiWaraiA1"          ;泣く（半ベソ
+mov $JES_AisoWaraiA1,"bmp\TATI\JES\1\JES_AisoWaraiA1"          ;泣く（半ベソ
+mov $JES_AisoWaraiA1_U,"bmp\TATI\JES\2\JES_AisoWaraiA1"          ;UNIFORM
+mov $JES_AtyaA2,"bmp\TATI\JES\1\JES_AtyaA2"          ;泣く（半ベソ
+mov $JES_AtyaA2_U,"bmp\TATI\JES\2\JES_AtyaA2"          ;UNIFORM
+mov $JES_AtyaA3,"bmp\TATI\JES\1\JES_AtyaA3"          ;泣く（半ベソ
+mov $JES_AtyaA3_U,"bmp\TATI\JES\2\JES_AtyaA3"          ;UNIFORM
+
+
+
+mov $EVA_DefA1,"bmp\TATI\EVA\1\EVA_DefA1"          ;絵羽立ち絵デフォ
+mov $EVA_DefB1,"bmp\TATI\EVA\1\EVA_DefA1"
+mov $EVA_WaraiA1,"bmp\TATI\EVA\1\EVA_WaraiA1"          ;笑い
+mov $EVA_WaraiB1,"bmp\TATI\EVA\1\EVA_WaraiA1"          ;笑い
+mov $EVA_IkariA1,"bmp\TATI\EVA\1\EVA_IkariA1"          ;怒り
+mov $EVA_IkariB1,"bmp\TATI\EVA\1\EVA_IkariA1"          ;怒り
+mov $EVA_KomaruA1,"bmp\TATI\EVA\1\EVA_KomaruA1"          ;困る
+mov $EVA_KomaruB1,"bmp\TATI\EVA\1\EVA_KomaruA1"          ;困る
+mov $EVA_MajimeA1,"bmp\TATI\EVA\1\EVA_MajimeA1"          ;真面目
+mov $EVA_MajimeB1,"bmp\TATI\EVA\1\EVA_MajimeB1"          ;真面目
+;mov $EVA_DefA2,"bmp\TATI\EVA\1\EVA_DefA2"          ;絵羽立ち絵デフォ
+;mov $EVA_DefB2,"bmp\TATI\EVA\1\EVA_DefA2"
+;mov $EVA_AkuwaraiA1,"bmp\TATI\EVA\1\EVA_AkuwaraiA1"          ;悪笑い
+;mov $EVA_AkuwaraiB1,"bmp\TATI\EVA\1\EVA_AkuwaraiA1"          ;悪笑い
+;mov $EVA_OdorokiA1,"bmp\TATI\EVA\1\EVA_OdorokiA1"          ;驚き
+;mov $EVA_OdorokiB1,"bmp\TATI\EVA\1\EVA_OdorokiA1"          ;驚き
+mov $EVA_HohoemiA1,"bmp\TATI\EVA\1\EVA_HohoemiA1"          ;微笑み
+mov $EVA_HohoemiA2,"bmp\TATI\EVA\1\EVA_HohoemiA2"          ;微笑み２
+mov $EVA_akireA1,"bmp\TATI\EVA\1\EVA_akireA1"          ;呆れ
+mov $EVA_futekiA1,"bmp\TATI\EVA\1\EVA_futekiA1"          ;不敵
+mov $EVA_IkariA2,"bmp\TATI\EVA\1\EVA_IkariA2"          ;怒り２
+mov $EVA_KomaruA2,"bmp\TATI\EVA\1\EVA_KomaruA2"          ;困る２
+mov $EVA_KomaruA3,"bmp\TATI\EVA\1\EVA_KomaruA3"          ;困る３
+mov $EVA_futekiA1,"bmp\TATI\EVA\1\EVA_futekiA1"          ;不敵
+mov $EVA_akireA2,"bmp\TATI\EVA\1\EVA_akireA2"          ;呆れ２
+mov $EVA_AkuwaraiA1,"bmp\TATI\EVA\1\EVA_AkuwaraiA1"          ;不敵
+mov $EVA_KomaruA4,"bmp\TATI\EVA\1\EVA_KomaruA4"          ;怒り２
+mov $EVA_NakuA1,"bmp\TATI\EVA\1\EVA_NakuA1"          ;困る２
+mov $EVA_NakuA2,"bmp\TATI\EVA\1\EVA_NakuA2"          ;困る３
+mov $EVA_OdorokiA1,"bmp\TATI\EVA\1\EVA_OdorokiA1"          ;不敵
+mov $EVA_OdorokiA2,"bmp\TATI\EVA\1\EVA_OdorokiA2"          ;呆れ２
+
+
+mov $EVA_DefA1G,"bmp\TATI\EVA\1\EVA_DefA1G"          ;絵羽立ち絵デフォ
+mov $EVA_WaraiA1G,"bmp\TATI\EVA\1\EVA_WaraiA1G"          ;笑い
+mov $EVA_IkariA1G,"bmp\TATI\EVA\1\EVA_IkariA1G"          ;怒り
+mov $EVA_KomaruA1G,"bmp\TATI\EVA\1\EVA_KomaruA1G"          ;困る
+mov $EVA_MajimeA1G,"bmp\TATI\EVA\1\EVA_MajimeA1G"          ;真面目
+mov $EVA_HohoemiA1G,"bmp\TATI\EVA\1\EVA_HohoemiA1G"          ;微笑み
+mov $EVA_HohoemiA2G,"bmp\TATI\EVA\1\EVA_HohoemiA2G"          ;微笑み２
+mov $EVA_akireA1G,"bmp\TATI\EVA\1\EVA_akireA1G"          ;呆れ
+mov $EVA_futekiA1G,"bmp\TATI\EVA\1\EVA_futekiA1G"          ;不敵
+mov $EVA_IkariA2G,"bmp\TATI\EVA\1\EVA_IkariA2G"          ;怒り２
+mov $EVA_KomaruA2G,"bmp\TATI\EVA\1\EVA_KomaruA2G"          ;困る２
+mov $EVA_KomaruA3G,"bmp\TATI\EVA\1\EVA_KomaruA3G"          ;困る３
+mov $EVA_futekiA1G,"bmp\TATI\EVA\1\EVA_futekiA1G"          ;不敵
+mov $EVA_akireA2G,"bmp\TATI\EVA\1\EVA_akireA2G"          ;呆れ２
+mov $EVA_AkuwaraiA1G,"bmp\TATI\EVA\1\EVA_AkuwaraiA1G"          ;不敵
+mov $EVA_KomaruA4G,"bmp\TATI\EVA\1\EVA_KomaruA4G"          ;怒り２
+mov $EVA_NakuA1G,"bmp\TATI\EVA\1\EVA_NakuA1G"          ;困る２
+mov $EVA_NakuA2G,"bmp\TATI\EVA\1\EVA_NakuA2G"          ;困る３
+mov $EVA_OdorokiA1G,"bmp\TATI\EVA\1\EVA_OdorokiA1G"          ;不敵
+mov $EVA_OdorokiA2G,"bmp\TATI\EVA\1\EVA_OdorokiA2G"          ;呆れ２
+
+mov $EVA_DefB1G,"bmp\TATI\EVA\1\EVA_DefB1G"          ;
+mov $EVA_WaraiB1G,"bmp\TATI\EVA\1\EVA_WaraiB1G"          ;笑い
+mov $EVA_IkariB1G,"bmp\TATI\EVA\1\EVA_IkariB1G"          ;怒り
+mov $EVA_KomaruB1G,"bmp\TATI\EVA\1\EVA_KomaruB1G"          ;困る
+mov $EVA_MajimeB1G,"bmp\TATI\EVA\1\EVA_MajimeB1G"          ;真面目
+mov $EVA_HohoemiB1G,"bmp\TATI\EVA\1\EVA_HohoemiB1G"          ;微笑み
+mov $EVA_HohoemiB2G,"bmp\TATI\EVA\1\EVA_HohoemiB2G"          ;微笑み２
+mov $EVA_akireB1G,"bmp\TATI\EVA\1\EVA_akireB1G"          ;呆れ
+mov $EVA_futekiB1G,"bmp\TATI\EVA\1\EVA_futekiB1G"          ;不敵
+mov $EVA_IkariB2G,"bmp\TATI\EVA\1\EVA_IkariB2G"          ;怒り２
+mov $EVA_KomaruB2G,"bmp\TATI\EVA\1\EVA_KomaruB2G"          ;困る２
+mov $EVA_KomaruB3G,"bmp\TATI\EVA\1\EVA_KomaruB3G"          ;困る３
+mov $EVA_futekiB1G,"bmp\TATI\EVA\1\EVA_futekiB1G"          ;不敵
+mov $EVA_akireB2G,"bmp\TATI\EVA\1\EVA_akireB2G"          ;呆れ２
+mov $EVA_AkuwaraiB1G,"bmp\TATI\EVA\1\EVA_AkuwaraiB1G"          ;不敵
+mov $EVA_KomaruB4G,"bmp\TATI\EVA\1\EVA_KomaruB4G"          ;怒り２
+mov $EVA_NakuB1G,"bmp\TATI\EVA\1\EVA_NakuB1G"          ;困る２
+mov $EVA_NakuB2G,"bmp\TATI\EVA\1\EVA_NakuB2G"          ;困る３
+mov $EVA_OdorokiB1G,"bmp\TATI\EVA\1\EVA_OdorokiB1G"          ;不敵
+mov $EVA_OdorokiB2G,"bmp\TATI\EVA\1\EVA_OdorokiB2G"          ;呆れ２
+
+
+mov $HID_DefA1,"bmp\TATI\HID\1\HID_DefA1"          ;秀吉立ち絵デフォ
+mov $HID_WaraiA1,"bmp\TATI\HID\1\HID_WaraiA1"          ;笑い
+mov $HID_KomaruA1,"bmp\TATI\HID\1\HID_KomaruA1"          ;困る
+mov $HID_MajimeA1,"bmp\TATI\HID\1\HID_MajimeA1"          ;真面目
+;mov $HID_DefA2,"bmp\TATI\HID\1\HID_DefA2"          ;秀吉立ち絵デフォ
+;mov $HID_AkuwaraiA1,"bmp\TATI\HID\1\HID_AkuwaraiA1"          ;悪笑い
+;mov $HID_IkariA1,"bmp\TATI\HID\1\HID_IkariA1"          ;怒り
+;mov $HID_OdorokiA1,"bmp\TATI\HID\1\HID_OdorokiA1"          ;驚き
+mov $HID_fumuA1,"bmp\TATI\HID\1\HID_fumuA1"          ;ふーむ
+mov $HID_KomaruA2,"bmp\TATI\HID\1\HID_KomaruA2"          ;困る２
+mov $HID_MajimeA2,"bmp\TATI\HID\1\HID_MajimeA2"          ;真面目２
+mov $HID_WaraiA2,"bmp\TATI\HID\1\HID_WaraiA2"          ;笑い２
+
+mov $HID_DefA1G,"bmp\TATI\HID\1\HID_DefA1G"          ;秀吉立ち絵デフォ
+mov $HID_WaraiA1G,"bmp\TATI\HID\1\HID_WaraiA1G"          ;笑い
+mov $HID_KomaruA1G,"bmp\TATI\HID\1\HID_KomaruA1G"          ;困る
+mov $HID_MajimeA1G,"bmp\TATI\HID\1\HID_MajimeA1G"          ;真面目
+mov $HID_fumuA1G,"bmp\TATI\HID\1\HID_fumuA1G"          ;ふーむ
+mov $HID_KomaruA2G,"bmp\TATI\HID\1\HID_KomaruA2G"          ;困る２
+mov $HID_MajimeA2G,"bmp\TATI\HID\1\HID_MajimeA2G"          ;真面目２
+mov $HID_WaraiA2G,"bmp\TATI\HID\1\HID_WaraiA2G"          ;笑い２
+
+mov $GEO_DefA1,"bmp\TATI\GEO\1\GEO_DefA1"          ;譲治立ち絵デフォ
+mov $GEO_WaraiA1,"bmp\TATI\GEO\1\GEO_WaraiA1"          ;笑い
+mov $GEO_KomaruA1,"bmp\TATI\GEO\1\GEO_KomaruA1"          ;困る
+mov $GEO_MajimeA1,"bmp\TATI\GEO\1\GEO_MajimeA1"          ;真面目
+;mov $GEO_DefA2,"bmp\TATI\GEO\1\GEO_DefA2"          ;譲治立ち絵デフォ
+mov $GEO_AkuwaraiA1,"bmp\TATI\GEO\1\GEO_AkuwaraiA1"          ;悪笑い
+mov $GEO_AkuwaraiA1k,"bmp\TATI\GEO\1\GEO_AkuwaraiA1k"          ;悪笑い
+;mov $GEO_IkariA1,"bmp\TATI\GEO\1\GEO_IkariA1"          ;怒り
+;mov $GEO_OdorokiA1,"bmp\TATI\GEO\1\GEO_OdorokiA1"          ;驚き
+mov $GEO_DefA1k,"bmp\TATI\GEO\1\GEO_DefA1k"          ;デフォ（曇り眼鏡
+mov $GEO_NakuA1,"bmp\TATI\GEO\1\GEO_NakuA1"          ;泣く
+mov $GEO_NakuA1k,"bmp\TATI\GEO\1\GEO_NakuA1k"          ;泣く（曇り眼鏡
+mov $GEO_NakuA2,"bmp\TATI\GEO\1\GEO_NakuA2"          ;泣く２
+mov $GEO_NakuA2k,"bmp\TATI\GEO\1\GEO_NakuA2k"          ;泣く２（曇り眼鏡
+mov $GEO_HohoemiA1,"bmp\TATI\GEO\1\GEO_HohoemiA1"          ;微笑み
+mov $GEO_HohoemiA1k,"bmp\TATI\GEO\1\GEO_HohoemiA1k"          ;微笑み（曇り眼鏡
+mov $GEO_KomaruA1k,"bmp\TATI\GEO\1\GEO_KomaruA1k"          ;困る（曇り眼鏡
+mov $GEO_WaraiA1k,"bmp\TATI\GEO\1\GEO_WaraiA1k"          ;笑い（曇り眼鏡
+mov $GEO_WaraiA2,"bmp\TATI\GEO\1\GEO_WaraiA2"          ;笑い
+mov $GEO_WaraiA2k,"bmp\TATI\GEO\1\GEO_WaraiA2k"          ;笑い（曇り眼鏡
+mov $GEO_MajimeA1k,"bmp\TATI\GEO\1\GEO_MajimeA1k"          ;真面目（曇り眼鏡
+mov $GEO_MajimeA2,"bmp\TATI\GEO\1\GEO_MajimeA2"          ;真面目２
+mov $GEO_MajimeA2k,"bmp\TATI\GEO\1\GEO_MajimeA2k"          ;真面目２（曇り眼鏡
+mov $GEO_MajimeA3,"bmp\TATI\GEO\1\GEO_MajimeA3"          ;真面目３
+mov $GEO_MajimeA3k,"bmp\TATI\GEO\1\GEO_MajimeA3k"          ;真面目３（曇り眼鏡
+mov $GEO_MajimeA4,"bmp\TATI\GEO\1\GEO_MajimeA4"          ;真面目４
+mov $GEO_MajimeA4k,"bmp\TATI\GEO\1\GEO_MajimeA4k"          ;真面目４（曇り眼鏡
+mov $GEO_MajimeA5,"bmp\TATI\GEO\1\GEO_MajimeA5"          ;真面目５
+mov $GEO_MajimeA5k,"bmp\TATI\GEO\1\GEO_MajimeA5k"          ;真面目５（曇り眼鏡
+mov $GEO_KomaruA2,"bmp\TATI\GEO\1\GEO_KomaruA2"
+mov $GEO_KomaruA2k,"bmp\TATI\GEO\1\GEO_KomaruA2k"
+mov $GEO_KomaruA3,"bmp\TATI\GEO\1\GEO_KomaruA3"
+mov $GEO_KomaruA3k,"bmp\TATI\GEO\1\GEO_KomaruA3k"
+mov $GEO_KomaruA4,"bmp\TATI\GEO\1\GEO_KomaruA4"
+mov $GEO_KomaruA4k,"bmp\TATI\GEO\1\GEO_KomaruA4k"
+mov $GEO_KomaruA5,"bmp\TATI\GEO\1\GEO_KomaruA5"
+mov $GEO_KomaruA5k,"bmp\TATI\GEO\1\GEO_KomaruA5k"
+mov $GEO_IkariA1,"bmp\TATI\GEO\1\GEO_IkariA1"
+mov $GEO_IkariA1k,"bmp\TATI\GEO\1\GEO_IkariA1k"
+mov $GEO_IkariA2,"bmp\TATI\GEO\1\GEO_IkariA2"
+mov $GEO_IkariA2k,"bmp\TATI\GEO\1\GEO_IkariA2k"
+mov $GEO_IkariA3,"bmp\TATI\GEO\1\GEO_IkariA3"
+mov $GEO_IkariA3k,"bmp\TATI\GEO\1\GEO_IkariA3k"
+mov $GEO_IkariA4,"bmp\TATI\GEO\1\GEO_IkariA4"
+mov $GEO_IkariA4k,"bmp\TATI\GEO\1\GEO_IkariA4k"
+mov $GEO_NiramuA1,"bmp\TATI\GEO\1\GEO_NiramuA1"
+mov $GEO_NiramuA1k,"bmp\TATI\GEO\1\GEO_NiramuA1k"
+
+
+
+mov $RUD_DefA1,"bmp\TATI\RUD\1\RUD_DefA1"          ;留弗夫立ち絵デフォ
+mov $RUD_DefA2,"bmp\TATI\RUD\1\RUD_DefA2"
+mov $RUD_WaraiA1,"bmp\TATI\RUD\1\RUD_WaraiA1"          ;笑い
+mov $RUD_AkuwaraiA1,"bmp\TATI\RUD\1\RUD_AkuwaraiA1"          ;悪笑い
+mov $RUD_KomaruA1,"bmp\TATI\RUD\1\RUD_KomaruA1"          ;困る
+mov $RUD_MajimeA1,"bmp\TATI\RUD\1\RUD_MajimeA1"          ;真面目
+mov $RUD_OdorokiA1,"bmp\TATI\RUD\1\RUD_OdorokiA1"          ;驚き
+;mov $RUD_IkariA1,"bmp\TATI\RUD\1\RUD_IkariA1"          ;怒り
+mov $RUD_NayamuA1,"bmp\TATI\RUD\1\RUD_NayamuA1"          ;悩む
+mov $RUD_AkuwaraiA2,"bmp\TATI\RUD\1\RUD_AkuwaraiA2"          ;悪笑い２
+mov $RUD_MajimeA2,"bmp\TATI\RUD\1\RUD_MajimeA2"          ;真面目２
+mov $RUD_WaraiA2,"bmp\TATI\RUD\1\RUD_WaraiA2"          ;笑い２
+
+mov $RUD_DefA1G,"bmp\TATI\RUD\1\RUD_DefA1G"          ;留弗夫立ち絵デフォ
+mov $RUD_DefA2G,"bmp\TATI\RUD\1\RUD_DefA2G"
+mov $RUD_WaraiA1G,"bmp\TATI\RUD\1\RUD_WaraiA1G"          ;笑い
+mov $RUD_AkuwaraiA1G,"bmp\TATI\RUD\1\RUD_AkuwaraiA1G"          ;悪笑い
+mov $RUD_KomaruA1G,"bmp\TATI\RUD\1\RUD_KomaruA1G"          ;困る
+mov $RUD_MajimeA1G,"bmp\TATI\RUD\1\RUD_MajimeA1G"          ;真面目
+mov $RUD_OdorokiA1G,"bmp\TATI\RUD\1\RUD_OdorokiA1G"          ;驚き
+mov $RUD_NayamuA1G,"bmp\TATI\RUD\1\RUD_NayamuA1G"          ;悩む
+mov $RUD_AkuwaraiA2G,"bmp\TATI\RUD\1\RUD_AkuwaraiA2G"          ;悪笑い２
+mov $RUD_MajimeA2G,"bmp\TATI\RUD\1\RUD_MajimeA2G"          ;真面目２
+mov $RUD_WaraiA2G,"bmp\TATI\RUD\1\RUD_WaraiA2G"          ;笑い２
+
+mov $RUD_DefB1G,"bmp\TATI\RUD\1\RUD_DefB1G"          ;留弗夫立ち絵デフォ
+mov $RUD_DefB2G,"bmp\TATI\RUD\1\RUD_DefB2G"
+mov $RUD_WaraiB1G,"bmp\TATI\RUD\1\RUD_WaraiB1G"          ;笑い
+mov $RUD_AkuwaraiB1G,"bmp\TATI\RUD\1\RUD_AkuwaraiB1G"          ;悪笑い
+mov $RUD_KomaruB1G,"bmp\TATI\RUD\1\RUD_KomaruB1G"          ;困る
+mov $RUD_MajimeB1G,"bmp\TATI\RUD\1\RUD_MajimeB1G"          ;真面目
+mov $RUD_OdorokiB1G,"bmp\TATI\RUD\1\RUD_OdorokiB1G"          ;驚き
+mov $RUD_NayamuB1G,"bmp\TATI\RUD\1\RUD_NayamuB1G"          ;悩む
+mov $RUD_AkuwaraiB2G,"bmp\TATI\RUD\1\RUD_AkuwaraiB2G"          ;悪笑い２
+mov $RUD_MajimeB2G,"bmp\TATI\RUD\1\RUD_MajimeB2G"          ;真面目２
+mov $RUD_WaraiB2G,"bmp\TATI\RUD\1\RUD_WaraiB2G"          ;笑い２
+
+mov $KIR_DefB1G,"bmp\TATI\KIR\1\KIR_DefB1G"          ;霧江立ち絵デフォ
+mov $KIR_WaraiB1G,"bmp\TATI\KIR\1\KIR_WaraiB1G"          ;笑い
+mov $KIR_MajimeB1G,"bmp\TATI\KIR\1\KIR_MajimeB1G"          ;真面目
+mov $KIR_KomaruB1G,"bmp\TATI\KIR\1\KIR_KomaruB1G"          ;困る
+mov $KIR_KomaruB2G,"bmp\TATI\KIR\1\KIR_KomaruB2G"          ;困る２
+mov $KIR_NayamuB1G,"bmp\TATI\KIR\1\KIR_NayamuB1G"          ;悩む
+mov $KIR_MajimeB2G,"bmp\TATI\KIR\1\KIR_MajimeB2G"          ;真面目２
+mov $KIR_WaraiB2G,"bmp\TATI\KIR\1\KIR_WaraiB2G"          ;笑い２
+mov $KIR_futekiB1G,"bmp\TATI\KIR\1\KIR_futekiB1G"          ;不敵
+mov $KIR_SakebuB1G,"bmp\TATI\KIR\1\KIR_SakebuB1G"          ;叫ぶ
+
+
+mov $KIR_DefA1,"bmp\TATI\KIR\1\KIR_DefA1"          ;霧江立ち絵デフォ
+mov $KIR_DefA1c,"bmp\TATI\KIR\1\KIR_DefA1c"          ;霧江立ち絵デフォ
+mov $KIR_WaraiA1,"bmp\TATI\KIR\1\KIR_WaraiA1"          ;笑い
+mov $KIR_WaraiA1c,"bmp\TATI\KIR\1\KIR_WaraiA1c"          ;笑い
+mov $KIR_MajimeA1,"bmp\TATI\KIR\1\KIR_MajimeA1"          ;真面目
+mov $KIR_MajimeA1c,"bmp\TATI\KIR\1\KIR_MajimeA1c"          ;真面目
+mov $KIR_KomaruA1,"bmp\TATI\KIR\1\KIR_KomaruA1"          ;困る
+mov $KIR_KomaruA1c,"bmp\TATI\KIR\1\KIR_KomaruA1c"          ;困る
+mov $KIR_KomaruA2,"bmp\TATI\KIR\1\KIR_KomaruA2"          ;困る２
+mov $KIR_KomaruA2c,"bmp\TATI\KIR\1\KIR_KomaruA2c"          ;困る
+;mov $KIR_DefA2,"bmp\TATI\KIR\1\KIR_DefA2" 
+;mov $KIR_AkuwaraiA1,"bmp\TATI\KIR\1\KIR_AkuwaraiA1"          ;悪笑い
+;mov $KIR_IkariA1,"bmp\TATI\KIR\1\KIR_IkariA1"          ;怒り
+;mov $KIR_OdorokiA1,"bmp\TATI\KIR\1\KIR_OdorokiA1"          ;驚き
+mov $KIR_NayamuA1,"bmp\TATI\KIR\1\KIR_NayamuA1"          ;悩む
+mov $KIR_NayamuA1c,"bmp\TATI\KIR\1\KIR_NayamuA1c"          ;困る
+mov $KIR_MajimeA2,"bmp\TATI\KIR\1\KIR_MajimeA2"          ;真面目２
+mov $KIR_MajimeA2c,"bmp\TATI\KIR\1\KIR_MajimeA2c"          ;真面目
+mov $KIR_WaraiA2,"bmp\TATI\KIR\1\KIR_WaraiA2"          ;笑い２
+mov $KIR_WaraiA2c,"bmp\TATI\KIR\1\KIR_WaraiA2c"          ;真面目
+mov $KIR_futekiA1,"bmp\TATI\KIR\1\KIR_futekiA1"          ;不敵
+mov $KIR_FutekiA1c,"bmp\TATI\KIR\1\KIR_FutekiA1c"          ;真面目
+mov $KIR_SakebuA1,"bmp\TATI\KIR\1\KIR_SakebuA1"          ;叫ぶ
+mov $KIR_SakebuA1c,"bmp\TATI\KIR\1\KIR_SakebuA1c"          ;真面目
+
+
+mov $BUT_DefA1,"bmp\TATI\BUT\1\BUT_DefA1"          ;戦人立ち絵デフォ
+mov $BUT_DefA2,"bmp\TATI\BUT\1\BUT_DefA2"
+mov $BUT_WaraiA1,"bmp\TATI\BUT\1\BUT_WaraiA1"          ;笑い
+mov $BUT_KomaruA1,"bmp\TATI\BUT\1\BUT_KomaruA1"          ;困る
+mov $BUT_OdorokiA1,"bmp\TATI\BUT\1\BUT_OdorokiA1"          ;驚き
+mov $BUT_MajimeA1,"bmp\TATI\BUT\1\BUT_MajimeA1"          ;真面目
+;mov $BUT_AkuwaraiA1,"bmp\TATI\BUT\1\BUT_AkuwaraiA1"          ;悪笑い
+;mov $BUT_IkariA1,"bmp\TATI\BUT\1\BUT_IkariA1"          ;怒り
+mov $BUT_NakuA1,"bmp\TATI\BUT\1\BUT_NakuA1"          ;泣く
+mov $BUT_WaraiA2,"bmp\TATI\BUT\1\BUT_WaraiA2"          ;笑い２
+mov $BUT_grope1,"bmp\TATI\BUT\1\BUT_grope1"          ;笑い２
+
+mov $BUT_OyaA1,"bmp\TATI\BUT\1\BUT_OyaA1"          ;おや？
+mov $BUT_KuyasigaruA1,"bmp\TATI\BUT\1\BUT_KuyasigaruA1"          ;悔しがる
+mov $BUT_AseruA1,"bmp\TATI\BUT\1\BUT_AseruA1"          ;焦る
+mov $BUT_OdorokiA2,"bmp\TATI\BUT\1\BUT_OdorokiA2"          ;驚き２
+mov $BUT_OdorokiA3,"bmp\TATI\BUT\1\BUT_OdorokiA3"          ;驚き３
+mov $BUT_KomaruA2,"bmp\TATI\BUT\1\BUT_KomaruA2"          ;困る２
+mov $BUT_KomaruA3,"bmp\TATI\BUT\1\BUT_KomaruA3"          ;困る３
+mov $BUT_NayamuA1,"bmp\TATI\BUT\1\BUT_NayamuA1"          ;悩む
+mov $BUT_NayamuA2,"bmp\TATI\BUT\1\BUT_NayamuA2"          ;悩む２
+mov $BUT_NiramuA1,"bmp\TATI\BUT\1\BUT_NiramuA1"
+mov $BUT_NiramuA2,"bmp\TATI\BUT\1\BUT_NiramuA2"
+mov $BUT_NiramuA3,"bmp\TATI\BUT\1\BUT_NiramuA3"
+mov $BUT_NiramuA4,"bmp\TATI\BUT\1\BUT_NiramuA4"
+mov $BUT_FutekiA1,"bmp\TATI\BUT\1\BUT_FutekiA1"
+mov $BUT_NakuA2,"bmp\TATI\BUT\1\BUT_NakuA2"
+mov $BUT_NakuA3,"bmp\TATI\BUT\1\BUT_NakuA3"
+mov $BUT_FutekiA2,"bmp\TATI\BUT\1\BUT_FutekiA2"
+mov $BUT_FutekiA3,"bmp\TATI\BUT\1\BUT_FutekiA3"
+mov $BUT_MajimeA2,"bmp\TATI\BUT\1\BUT_MajimeA2"
+mov $BUT_MajimeA3,"bmp\TATI\BUT\1\BUT_MajimeA3"
+mov $BUT_MajimeA4,"bmp\TATI\BUT\1\BUT_MajimeA4"
+mov $BUT_MajimeA5,"bmp\TATI\BUT\1\BUT_MajimeA5"
+mov $BUT_NayamuA3,"bmp\TATI\BUT\1\BUT_NayamuA3"
+mov $BUT_NayamuA4,"bmp\TATI\BUT\1\BUT_NayamuA4"
+mov $BUT_SakebuA1,"bmp\TATI\BUT\1\BUT_SakebuA1"
+mov $BUT_SakebuA2,"bmp\TATI\BUT\1\BUT_SakebuA2"
+
+
+mov $BUT_DefB1,"bmp\TATI\BUT\1\BUT_DefB1"          ;戦人立ち絵デフォＢポーズ
+mov $BUT_DefB2,"bmp\TATI\BUT\1\BUT_DefB2"
+mov $BUT_WaraiB1,"bmp\TATI\BUT\1\BUT_WaraiB1"          ;笑い
+mov $BUT_KomaruB1,"bmp\TATI\BUT\1\BUT_KomaruB1"          ;困る
+mov $BUT_OdorokiB1,"bmp\TATI\BUT\1\BUT_OdorokiB1"          ;驚き
+mov $BUT_MajimeB1,"bmp\TATI\BUT\1\BUT_MajimeB1"          ;真面目
+;mov $BUT_AkuwaraiB1,"bmp\TATI\BUT\1\BUT_AkuwaraiB1"          ;悪笑い
+;mov $BUT_IkariB1,"bmp\TATI\BUT\1\BUT_IkariB1"          ;怒り
+mov $BUT_NakuB1,"bmp\TATI\BUT\1\BUT_NakuB1"          ;泣く
+mov $BUT_WaraiB2,"bmp\TATI\BUT\1\BUT_WaraiB2"          ;笑い２
+mov $BUT_OyaB1,"bmp\TATI\BUT\1\BUT_OyaB1"          ;おや？
+mov $BUT_KuyasigaruB1,"bmp\TATI\BUT\1\BUT_KuyasigaruB1"          ;悔しがる
+mov $BUT_AseruB1,"bmp\TATI\BUT\1\BUT_AseruB1"          ;焦る
+mov $BUT_OdorokiB2,"bmp\TATI\BUT\1\BUT_OdorokiB2"          ;驚き２
+mov $BUT_OdorokiB3,"bmp\TATI\BUT\1\BUT_OdorokiB3"          ;驚き３
+mov $BUT_KomaruB2,"bmp\TATI\BUT\1\BUT_KomaruB2"          ;困る２
+mov $BUT_KomaruB3,"bmp\TATI\BUT\1\BUT_KomaruB3"          ;困る３
+mov $BUT_NayamuB1,"bmp\TATI\BUT\1\BUT_NayamuB1"          ;悩む
+mov $BUT_NayamuB2,"bmp\TATI\BUT\1\BUT_NayamuB2"          ;悩む２
+mov $BUT_NiramuB1,"bmp\TATI\BUT\1\BUT_NiramuB1"
+mov $BUT_NiramuB2,"bmp\TATI\BUT\1\BUT_NiramuB2"
+mov $BUT_NiramuB3,"bmp\TATI\BUT\1\BUT_NiramuB3"
+mov $BUT_NiramuB4,"bmp\TATI\BUT\1\BUT_NiramuB4"
+mov $BUT_FutekiB1,"bmp\TATI\BUT\1\BUT_FutekiB1"
+mov $BUT_NakuB2,"bmp\TATI\BUT\1\BUT_NakuB2"
+mov $BUT_NakuB3,"bmp\TATI\BUT\1\BUT_NakuB3"
+mov $BUT_FutekiB2,"bmp\TATI\BUT\1\BUT_FutekiB2"
+mov $BUT_FutekiB3,"bmp\TATI\BUT\1\BUT_FutekiB3"
+mov $BUT_MajimeB2,"bmp\TATI\BUT\1\BUT_MajimeB2"
+mov $BUT_MajimeB3,"bmp\TATI\BUT\1\BUT_MajimeB3"
+mov $BUT_MajimeB4,"bmp\TATI\BUT\1\BUT_MajimeB4"
+mov $BUT_MajimeB5,"bmp\TATI\BUT\1\BUT_MajimeB5"
+mov $BUT_NayamuB3,"bmp\TATI\BUT\1\BUT_NayamuB3"
+mov $BUT_NayamuB4,"bmp\TATI\BUT\1\BUT_NayamuB4"
+mov $BUT_SakebuB1,"bmp\TATI\BUT\1\BUT_SakebuB1"
+mov $BUT_SakebuB2,"bmp\TATI\BUT\1\BUT_SakebuB2"
+
+
+
+mov $ROS_DefA1,"bmp\TATI\ROS\1\ROS_DefA1"          ;楼座立ち絵デフォ
+mov $ROS_WaraiA1,"bmp\TATI\ROS\1\ROS_WaraiA1"          ;笑い
+mov $ROS_IkariA1,"bmp\TATI\ROS\1\ROS_IkariA1"          ;怒り
+mov $ROS_KomaruA1,"bmp\TATI\ROS\1\ROS_KomaruA1"          ;困る
+mov $ROS_AkuwaraiA1,"bmp\TATI\ROS\1\ROS_AkuwaraiA1"          ;悪笑い
+mov $ROS_MajimeA1,"bmp\TATI\ROS\1\ROS_MajimeA1"          ;真面目
+;mov $ROS_DefA2,"bmp\TATI\ROS\1\ROS_DefA2"
+;mov $ROS_OdorokiA1,"bmp\TATI\ROS\1\ROS_OdorokiA1"          ;驚き
+mov $ROS_WaraiA2,"bmp\TATI\ROS\1\ROS_WaraiA2"          ;笑い２
+mov $ROS_KomaruA2,"bmp\TATI\ROS\1\ROS_KomaruA2"          ;困る２
+mov $ROS_KomaruA3,"bmp\TATI\ROS\1\ROS_KomaruA3"          ;困る３
+mov $ROS_NayamuA1,"bmp\TATI\ROS\1\ROS_NayamuA1"          ;悩む
+mov $ROS_KomaruA4,"bmp\TATI\ROS\1\ROS_KomaruA4"
+mov $ROS_OdorokiA1,"bmp\TATI\ROS\1\ROS_OdorokiA1"
+mov $ROS_IkariA2,"bmp\TATI\ROS\1\ROS_IkariA2"
+mov $ROS_IkariA3,"bmp\TATI\ROS\1\ROS_IkariA3"
+mov $ROS_IkariA4,"bmp\TATI\ROS\1\ROS_IkariA4"
+mov $ROS_AseruA1,"bmp\TATI\ROS\1\ROS_AseruA1"
+
+
+mov $ROS_DefA1G,"bmp\TATI\ROS\1\ROS_DefA1G"          ;楼座立ち絵デフォ
+mov $ROS_WaraiA1G,"bmp\TATI\ROS\1\ROS_WaraiA1G"          ;笑い
+mov $ROS_IkariA1G,"bmp\TATI\ROS\1\ROS_IkariA1G"          ;怒り
+mov $ROS_KomaruA1G,"bmp\TATI\ROS\1\ROS_KomaruA1G"          ;困る
+mov $ROS_AkuwaraiA1G,"bmp\TATI\ROS\1\ROS_AkuwaraiA1G"          ;悪笑い
+mov $ROS_MajimeA1G,"bmp\TATI\ROS\1\ROS_MajimeA1G"          ;真面目
+;mov $ROS_DefA2G,"bmp\TATI\ROS\1\ROS_DefA2G"
+;mov $ROS_OdorokiA1G,"bmp\TATI\ROS\1\ROS_OdorokiA1G"          ;驚き
+mov $ROS_WaraiA2G,"bmp\TATI\ROS\1\ROS_WaraiA2G"          ;笑い２
+mov $ROS_KomaruA2G,"bmp\TATI\ROS\1\ROS_KomaruA2G"          ;困る２
+mov $ROS_KomaruA3G,"bmp\TATI\ROS\1\ROS_KomaruA3G"          ;困る３
+mov $ROS_NayamuA1G,"bmp\TATI\ROS\1\ROS_NayamuA1G"          ;悩む
+mov $ROS_KomaruA4G,"bmp\TATI\ROS\1\ROS_KomaruA4G"
+mov $ROS_OdorokiA1G,"bmp\TATI\ROS\1\ROS_OdorokiA1G"
+mov $ROS_IkariA2G,"bmp\TATI\ROS\1\ROS_IkariA2G"
+mov $ROS_IkariA3G,"bmp\TATI\ROS\1\ROS_IkariA3G"
+mov $ROS_IkariA4G,"bmp\TATI\ROS\1\ROS_IkariA4G"
+mov $ROS_AseruA1G,"bmp\TATI\ROS\1\ROS_AseruA1G"
+
+mov $ROS_DefB1G,"bmp\TATI\ROS\1\ROS_DefB1G"          ;楼座立ち絵デフォ
+mov $ROS_WaraiB1G,"bmp\TATI\ROS\1\ROS_WaraiB1G"          ;笑い
+mov $ROS_IkariB1G,"bmp\TATI\ROS\1\ROS_IkariB1G"          ;怒り
+mov $ROS_KomaruB1G,"bmp\TATI\ROS\1\ROS_KomaruB1G"          ;困る
+mov $ROS_AkuwaraiB1G,"bmp\TATI\ROS\1\ROS_AkuwaraiB1G"          ;悪笑い
+mov $ROS_MajimeB1G,"bmp\TATI\ROS\1\ROS_MajimeB1G"          ;真面目
+;mov $ROS_DefB2G,"bmp\TATI\ROS\1\ROS_DefB2G"
+;mov $ROS_OdorokiB1G,"bmp\TATI\ROS\1\ROS_OdorokiB1G"          ;驚き
+mov $ROS_WaraiB2G,"bmp\TATI\ROS\1\ROS_WaraiB2G"          ;笑い２
+mov $ROS_KomaruB2G,"bmp\TATI\ROS\1\ROS_KomaruB2G"          ;困る２
+mov $ROS_KomaruB3G,"bmp\TATI\ROS\1\ROS_KomaruB3G"          ;困る３
+mov $ROS_NayamuB1G,"bmp\TATI\ROS\1\ROS_NayamuB1G"          ;悩む
+mov $ROS_KomaruB4G,"bmp\TATI\ROS\1\ROS_KomaruB4G"
+mov $ROS_OdorokiB1G,"bmp\TATI\ROS\1\ROS_OdorokiB1G"
+mov $ROS_IkariB2G,"bmp\TATI\ROS\1\ROS_IkariB2G"
+mov $ROS_IkariB3G,"bmp\TATI\ROS\1\ROS_IkariB3G"
+mov $ROS_IkariB4G,"bmp\TATI\ROS\1\ROS_IkariB4G"
+mov $ROS_AseruB1G,"bmp\TATI\ROS\1\ROS_AseruB1G"
+
+mov $MAR_DefA1,"bmp\TATI\MAR\1\MAR_DefA1"          ;真里亞立ち絵デフォ
+mov $MAR_DefA1k,"bmp\TATI\MAR\1\MAR_DefA1k"  ;真っ黒真里亞立ち絵デフォ
+mov $MAR_WaraiA1,"bmp\TATI\MAR\1\MAR_WaraiA1"          ;笑い
+mov $MAR_AkuwaraiA1,"bmp\TATI\MAR\1\MAR_AkuwaraiA1"          ;悪笑い
+mov $MAR_IkariA1,"bmp\TATI\MAR\1\MAR_IkariA1"          ;怒り
+mov $MAR_KomaruA1,"bmp\TATI\MAR\1\MAR_KomaruA1"          ;困る
+mov $MAR_OdorokiA1,"bmp\TATI\MAR\1\MAR_OdorokiA1"          ;驚き
+mov $MAR_MajimeA1,"bmp\TATI\MAR\1\MAR_MajimeA1"          ;真面目
+mov $MAR_NakuA1,"bmp\TATI\MAR\1\MAR_NakuA1"          ;泣く
+;mov $MAR_DefA2,"bmp\TATI\MAR\1\MAR_DefA2"
+;mov $MAR_Kuro_DefA1,"bmp\TATI\MAR\1\MAR_Kuro_DefA1"          ;黒真里亞立ち絵デフォ
+;mov $MAR_Kuro_WaraiA1,"bmp\TATI\MAR\1\MAR_Kuro_WaraiA1"          ;黒真里亞笑い
+mov $MAR_AkuwaraiA2,"bmp\TATI\MAR\1\MAR_AkuwaraiA2"          ;悪笑い２
+mov $MAR_AkuwaraiA3,"bmp\TATI\MAR\1\MAR_AkuwaraiA3"          ;悪笑い３
+mov $MAR_WaraiA2,"bmp\TATI\MAR\1\MAR_WaraiA2"          ;笑い２
+mov $MAR_NiyariA1,"bmp\TATI\MAR\1\MAR_niyariA1"          ;ニヤリ
+mov $MAR_NiyariA2,"bmp\TATI\MAR\1\MAR_niyariA2"          ;ニヤリ２
+mov $MAR_fukigenA1,"bmp\TATI\MAR\1\MAR_fukigenA1"          ;不機嫌
+mov $MAR_fukigenA2,"bmp\TATI\MAR\1\MAR_fukigenA2"          ;不機嫌２
+mov $MAR_SakebuA1,"bmp\TATI\MAR\1\MAR_SakebuA1"          ;叫ぶ
+
+
+
+;真里亞、猫耳バージョン
+mov $MAR_DefA1N,"bmp\TATI\MAR\1\MAR_DefA1N"          ;真里亞立ち絵デフォ
+mov $MAR_DefA1kN,"bmp\TATI\MAR\1\MAR_DefA1kN"  ;真っ黒真里亞立ち絵デフォ
+mov $MAR_WaraiA1N,"bmp\TATI\MAR\1\MAR_WaraiA1N"          ;笑い
+mov $MAR_AkuwaraiA1N,"bmp\TATI\MAR\1\MAR_AkuwaraiA1N"          ;悪笑い
+mov $MAR_IkariA1N,"bmp\TATI\MAR\1\MAR_IkariA1N"          ;怒り
+mov $MAR_KomaruA1N,"bmp\TATI\MAR\1\MAR_KomaruA1N"          ;困る
+mov $MAR_OdorokiA1N,"bmp\TATI\MAR\1\MAR_OdorokiA1N"          ;驚き
+mov $MAR_MajimeA1N,"bmp\TATI\MAR\1\MAR_MajimeA1N"          ;真面目
+mov $MAR_NakuA1N,"bmp\TATI\MAR\1\MAR_NakuA1N"          ;泣く
+mov $MAR_AkuwaraiA2N,"bmp\TATI\MAR\1\MAR_AkuwaraiA2N"          ;悪笑い２
+mov $MAR_AkuwaraiA3N,"bmp\TATI\MAR\1\MAR_AkuwaraiA3N"          ;悪笑い３
+mov $MAR_WaraiA2N,"bmp\TATI\MAR\1\MAR_WaraiA2N"          ;笑い２
+mov $MAR_NiyariA1N,"bmp\TATI\MAR\1\MAR_niyariA1N"          ;ニヤリ
+mov $MAR_NiyariA2N,"bmp\TATI\MAR\1\MAR_niyariA2N"          ;ニヤリ２
+mov $MAR_fukigenA1N,"bmp\TATI\MAR\1\MAR_fukigenA1N"          ;不機嫌
+mov $MAR_fukigenA2N,"bmp\TATI\MAR\1\MAR_fukigenA2N"          ;不機嫌２
+mov $MAR_SakebuA1N,"bmp\TATI\MAR\1\MAR_SakebuA1N"          ;叫ぶ
+
+
+mov $NAN_DefA1,"bmp\TATI\NAN\1\NAN_DefA1"          ;南条立ち絵デフォ
+mov $NAN_KomaruA1,"bmp\TATI\NAN\1\NAN_KomaruA1"          ;困る
+mov $NAN_MajimeA1,"bmp\TATI\NAN\1\NAN_MajimeA1"          ;真面目
+;mov $NAN_DefA2,"bmp\TATI\NAN\1\NAN_DefA2"
+;mov $NAN_WaraiA1,"bmp\TATI\NAN\1\NAN_WaraiA1"          ;笑い
+;mov $NAN_AkuwaraiA1,"bmp\TATI\NAN\1\NAN_AkuwaraiA1"          ;悪笑い
+;mov $NAN_IkariA1,"bmp\TATI\NAN\1\NAN_IkariA1"          ;怒り
+;mov $NAN_OdorokiA1,"bmp\TATI\NAN\1\NAN_OdorokiA1"          ;驚き
+mov $NAN_MajimeA2,"bmp\TATI\NAN\1\NAN_MajimeA2"          ;真面目２
+mov $NAN_KomaruA2,"bmp\TATI\NAN\1\NAN_KomaruA2"          ;困る２
+mov $NAN_KomaruA3,"bmp\TATI\NAN\1\NAN_KomaruA3"          ;困る３
+mov $NAN_KomaruA4,"bmp\TATI\NAN\1\NAN_KomaruA4"          ;困る４
+mov $NAN_fumuA1,"bmp\TATI\NAN\1\NAN_fumuA1"          ;ふむ
+
+
+mov $GEN_DefA1,"bmp\TATI\GEN\1\GEN_DefA1"          ;源次立ち絵デフォ
+mov $GEN_KomaruA1,"bmp\TATI\GEN\1\GEN_KomaruA1"          ;困る
+mov $GEN_MajimeA1,"bmp\TATI\GEN\1\GEN_MajimeA1"          ;真面目
+;mov $GEN_DefA2,"bmp\TATI\GEN\1\GEN_DefA2"
+;mov $GEN_WaraiA1,"bmp\TATI\GEN\1\GEN_WaraiA1"          ;笑い
+;mov $GEN_AkuwaraiA1,"bmp\TATI\GEN\1\GEN_AkuwaraiA1"          ;悪笑い
+;mov $GEN_IkariA1,"bmp\TATI\GEN\1\GEN_IkariA1"          ;怒り
+mov $GEN_OdorokiA1,"bmp\TATI\GEN\1\GEN_OdorokiA1"          ;驚き
+mov $GEN_MajimeA2,"bmp\TATI\GEN\1\GEN_MajimeA2"          ;真面目２
+
+
+
+
+mov $KUM_DefA1,"bmp\TATI\KUM\1\KUM_DefA1"          ;熊沢立ち絵デフォ
+mov $KUM_DefA2,"bmp\TATI\KUM\1\KUM_DefA2"
+mov $KUM_WaraiA1,"bmp\TATI\KUM\1\KUM_WaraiA1"          ;笑い
+mov $KUM_KomaruA1,"bmp\TATI\KUM\1\KUM_KomaruA1"          ;困る
+mov $KUM_OdorokiA1,"bmp\TATI\KUM\1\KUM_OdorokiA1"          ;驚き
+mov $KUM_MajimeA1,"bmp\TATI\KUM\1\KUM_MajimeA1"          ;真面目
+;mov $KUM_AkuwaraiA1,"bmp\TATI\KUM\1\KUM_AkuwaraiA1"          ;悪笑い
+;mov $KUM_IkariA1,"bmp\TATI\KUM\1\KUM_IkariA1"          ;怒り
+mov $KUM_WaraiA2,"bmp\TATI\KUM\1\KUM_WaraiA2"          ;笑い２
+mov $KUM_MajimeA2,"bmp\TATI\KUM\1\KUM_MajimeA2"          ;真面目２
+
+mov $GOH_DefA1,"bmp\TATI\GOH\1\GOH_DefA1"          ;俊朗立ち絵デフォ
+mov $GOH_WaraiA1,"bmp\TATI\GOH\1\GOH_WaraiA1"          ;笑い
+;mov $GOH_DefA2,"bmp\TATI\GOH\1\GOH_DefA2"
+;mov $GOH_AkuwaraiA1,"bmp\TATI\GOH\1\GOH_AkuwaraiA1"          ;悪笑い
+;mov $GOH_IkariA1,"bmp\TATI\GOH\1\GOH_IkariA1"          ;怒り
+;mov $GOH_KomaruA1,"bmp\TATI\GOH\1\GOH_KomaruA1"          ;困る
+mov $GOH_OdorokiA1,"bmp\TATI\GOH\1\GOH_OdorokiA1"          ;驚き
+mov $GOH_MajimeA1,"bmp\TATI\GOH\1\GOH_MajimeA1"          ;真面目
+mov $GOH_hohoemiA1,"bmp\TATI\GOH\1\GOH_hohoemiA1"          ;微笑み
+mov $GOH_hohoemiA2,"bmp\TATI\GOH\1\GOH_hohoemiA2"          ;微笑み２
+mov $GOH_omakaseA1,"bmp\TATI\GOH\1\GOH_omakaseA1"          ;お任せください
+mov $GOH_omakaseA2,"bmp\TATI\GOH\1\GOH_omakaseA2"          ;お任せください２
+mov $GOH_omakaseA3,"bmp\TATI\GOH\1\GOH_omakaseA3"          ;お任せください３
+mov $GOH_IkariA1,"bmp\TATI\GOH\1\GOH_IkariA1"          ;怒り
+mov $GOH_IkariA2,"bmp\TATI\GOH\1\GOH_IkariA2"          ;怒り２
+mov $GOH_IiwakeA1,"bmp\TATI\GOH\1\GOH_IiwakeA1"
+mov $GOH_IiwakeA2,"bmp\TATI\GOH\1\GOH_IiwakeA2"
+mov $GOH_KomaruA1,"bmp\TATI\GOH\1\GOH_KomaruA1"
+mov $GOH_KomaruA2,"bmp\TATI\GOH\1\GOH_KomaruA2"
+mov $GOH_KomaruA3,"bmp\TATI\GOH\1\GOH_KomaruA3"
+
+
+mov $SHA_DefA1,"bmp\TATI\SHA\1\SHA_DefA1"          ;紗音立ち絵デフォ
+mov $SHA_WaraiA1,"bmp\TATI\SHA\1\SHA_WaraiA1"          ;笑い
+mov $SHA_KomaruA1,"bmp\TATI\SHA\1\SHA_KomaruA1"          ;困る
+mov $SHA_OdorokiA1,"bmp\TATI\SHA\1\SHA_OdorokiA1"          ;驚き
+mov $SHA_MajimeA1,"bmp\TATI\SHA\1\SHA_MajimeA1"          ;真面目
+mov $SHA_HajiraiA1,"bmp\TATI\SHA\1\SHA_HajiraiA1"          ;恥らい
+;mov $SHA_DefA2,"bmp\TATI\SHA\1\SHA_DefA2"
+;mov $SHA_AkuwaraiA1,"bmp\TATI\SHA\1\SHA_AkuwaraiA1"          ;悪笑い
+;mov $SHA_IkariA1,"bmp\TATI\SHA\1\SHA_IkariA1"          ;怒り
+mov $SHA_WaraiA2,"bmp\TATI\SHA\1\SHA_WaraiA2"          ;笑い２
+mov $SHA_WaraiA3,"bmp\TATI\SHA\1\SHA_WaraiA3"          ;笑い３
+mov $SHA_MajimeA2,"bmp\TATI\SHA\1\SHA_MajimeA2"          ;真面目２
+mov $SHA_HajiraiA2,"bmp\TATI\SHA\1\SHA_HajiraiA2"          ;恥らい２
+mov $SHA_HajiraiA3,"bmp\TATI\SHA\1\SHA_HajiraiA3"          ;恥らい３
+mov $SHA_fumanA1,"bmp\TATI\SHA\1\SHA_fumanA1"          ;不満
+mov $SHA_tokuiA1,"bmp\TATI\SHA\1\SHA_tokuiA1"          ;得意
+mov $SHA_OdorokiA2,"bmp\TATI\SHA\1\SHA_OdorokiA2"          ;驚き２
+mov $SHA_MajimeA3,"bmp\TATI\SHA\1\SHA_MajimeA3"        
+mov $SHA_IkariA1,"bmp\TATI\SHA\1\SHA_IkariA1"          
+mov $SHA_IkariA2,"bmp\TATI\SHA\1\SHA_IkariA2"        
+
+
+
+mov $KAN_DefA1,"bmp\TATI\KAN\1\KAN_DefA1"          ;嘉音立ち絵デフォ
+mov $KAN_DefA2,"bmp\TATI\KAN\1\KAN_DefA2"
+mov $KAN_IkariA1,"bmp\TATI\KAN\1\KAN_IkariA1"          ;怒り
+mov $KAN_KomaruA1,"bmp\TATI\KAN\1\KAN_KomaruA1"          ;困る
+mov $KAN_OdorokiA1,"bmp\TATI\KAN\1\KAN_OdorokiA1"          ;驚き
+mov $KAN_MajimeA1,"bmp\TATI\KAN\1\KAN_MajimeA1"          ;真面目
+;mov $KAN_WaraiA1,"bmp\TATI\KAN\1\KAN_WaraiA1"          ;笑い
+;mov $KAN_AkuwaraiA1,"bmp\TATI\KAN\1\KAN_AkuwaraiA1"          ;悪笑い
+mov $KAN_OdorokiA2,"bmp\TATI\KAN\1\KAN_OdorokiA2"          ;驚き２
+mov $KAN_NayamuA1,"bmp\TATI\KAN\1\KAN_NayamuA1"          ;悩む
+mov $KAN_FumanA1,"bmp\TATI\KAN\1\KAN_FumanA1"
+mov $KAN_FumanA2,"bmp\TATI\KAN\1\KAN_FumanA2"
+mov $KAN_IkariA2,"bmp\TATI\KAN\1\KAN_IkariA2"          ;怒り
+mov $KAN_IkariA3,"bmp\TATI\KAN\1\KAN_IkariA3"          ;怒り
+
+
+mov $KAN_DefA1B,"bmp\TATI\KAN\1\KAN_DefA1B"          ;嘉音魔法の刃装備　 blade
+mov $KAN_DefA2B,"bmp\TATI\KAN\1\KAN_DefA2B"
+mov $KAN_IkariA1B,"bmp\TATI\KAN\1\KAN_IkariA1B"          ;怒り
+mov $KAN_KomaruA1B,"bmp\TATI\KAN\1\KAN_KomaruA1B"          ;困る
+mov $KAN_OdorokiA1B,"bmp\TATI\KAN\1\KAN_OdorokiA1B"          ;驚き
+mov $KAN_MajimeA1B,"bmp\TATI\KAN\1\KAN_MajimeA1B"          ;真面目
+;mov $KAN_WaraiA1B,"bmp\TATI\KAN\1\KAN_WaraiA1B"          ;笑い
+;mov $KAN_AkuwaraiA1B,"bmp\TATI\KAN\1\KAN_AkuwaraiA1B"          ;悪笑い
+mov $KAN_OdorokiA2B,"bmp\TATI\KAN\1\KAN_OdorokiA2B"          ;驚き２
+mov $KAN_NayamuA1B,"bmp\TATI\KAN\1\KAN_NayamuA1B"          ;悩む
+mov $KAN_FumanA1B,"bmp\TATI\KAN\1\KAN_FumanA1B"
+mov $KAN_FumanA2B,"bmp\TATI\KAN\1\KAN_FumanA2B"
+mov $KAN_IkariA2B,"bmp\TATI\KAN\1\KAN_IkariA2B"
+mov $KAN_IkariA3B,"bmp\TATI\KAN\1\KAN_IkariA3B"
+
+
+;偽嘉音
+mov $KA2_DefA1,"bmp\TATI\KAN\1\KA2_DefA1"          ;嘉音立ち絵デフォ
+mov $KA2_DefA2,"bmp\TATI\KAN\1\KA2_DefA2"
+mov $KA2_IkariA1,"bmp\TATI\KAN\1\KA2_IkariA1"          ;怒り
+mov $KA2_KomaruA1,"bmp\TATI\KAN\1\KA2_KomaruA1"          ;困る
+mov $KA2_OdorokiA1,"bmp\TATI\KAN\1\KA2_OdorokiA1"          ;驚き
+mov $KA2_MajimeA1,"bmp\TATI\KAN\1\KA2_MajimeA1"          ;真面目
+;mov $KA2_WaraiA1,"bmp\TATI\KAN\1\KA2_WaraiA1"          ;笑い
+;mov $KA2_AkuwaraiA1,"bmp\TATI\KAN\1\KA2_AkuwaraiA1"          ;悪笑い
+mov $KA2_OdorokiA2,"bmp\TATI\KAN\1\KA2_OdorokiA2"          ;驚き２
+mov $KA2_NayamuA1,"bmp\TATI\KAN\1\KA2_NayamuA1"          ;悩む
+mov $KA2_FumanA1,"bmp\TATI\KAN\1\KA2_FumanA1"
+mov $KA2_FumanA2,"bmp\TATI\KAN\1\KA2_FumanA2"
+mov $KA2_IkariA2,"bmp\TATI\KAN\1\KA2_IkariA2"          ;怒り
+mov $KA2_IkariA3,"bmp\TATI\KAN\1\KA2_IkariA3"          ;怒り
+
+
+mov $KA2_DefA1B,"bmp\TATI\KAN\1\KA2_DefA1B"          ;嘉音魔法の刃装備　 blade
+mov $KA2_DefA2B,"bmp\TATI\KAN\1\KA2_DefA2B"
+mov $KA2_IkariA1B,"bmp\TATI\KAN\1\KA2_IkariA1B"          ;怒り
+mov $KA2_KomaruA1B,"bmp\TATI\KAN\1\KA2_KomaruA1B"          ;困る
+mov $KA2_OdorokiA1B,"bmp\TATI\KAN\1\KA2_OdorokiA1B"          ;驚き
+mov $KA2_MajimeA1B,"bmp\TATI\KAN\1\KA2_MajimeA1B"          ;真面目
+;mov $KA2_WaraiA1B,"bmp\TATI\KAN\1\KA2_WaraiA1B"          ;笑い
+;mov $KA2_AkuwaraiA1B,"bmp\TATI\KAN\1\KA2_AkuwaraiA1B"          ;悪笑い
+mov $KA2_OdorokiA2B,"bmp\TATI\KAN\1\KA2_OdorokiA2B"          ;驚き２
+mov $KA2_NayamuA1B,"bmp\TATI\KAN\1\KA2_NayamuA1B"          ;悩む
+mov $KA2_FumanA1B,"bmp\TATI\KAN\1\KA2_FumanA1B"
+mov $KA2_FumanA2B,"bmp\TATI\KAN\1\KA2_FumanA2B"
+mov $KA2_IkariA2B,"bmp\TATI\KAN\1\KA2_IkariA2B"
+mov $KA2_IkariA3B,"bmp\TATI\KAN\1\KA2_IkariA3B"
+
+
+
+
+mov $BEA_DefA1,"bmp\TATI\BEA\1\BEA_DefA1"          ;BEA立ち絵デフォ
+mov $BEA_DefA2,"bmp\TATI\BEA\1\BEA_DefA2"
+mov $BEA_WaraiA1,"bmp\TATI\BEA\1\BEA_WaraiA1"          ;笑い
+mov $BEA_AkuwaraiA1,"bmp\TATI\BEA\1\BEA_AkuwaraiA1"          ;悪笑い
+;mov $BEA_MajimeA1,"bmp\TATI\BEA\1\BEA_MajimeA1"          ;真面目
+mov $BEA_WaraiA2,"bmp\TATI\BEA\1\BEA_WaraiA2"          ;笑い２
+mov $BEA_futekiA1,"bmp\TATI\BEA\1\BEA_futekiA1"          ;笑い２
+
+
+mov $BEA_AkuwaraiA2,"bmp\TATI\BEA\1\BEA_AkuwaraiA2"          ;悪笑い
+mov $BEA_AkuwaraiA3,"bmp\TATI\BEA\1\BEA_AkuwaraiA3"          ;悪笑い
+mov $BEA_AkuwaraiA4,"bmp\TATI\BEA\1\BEA_AkuwaraiA4"          ;悪笑い
+mov $BEA_AkuwaraiA5,"bmp\TATI\BEA\1\BEA_AkuwaraiA5"          ;悪笑い
+
+mov $BEA_OdorokiA1,"bmp\TATI\BEA\1\BEA_OdorokiA1"          ;驚き
+mov $BEA_futekiA2,"bmp\TATI\BEA\1\BEA_futekiA2"          ;不敵２
+mov $BEA_FukigenA1,"bmp\TATI\BEA\1\BEA_FukigenA1"          ;不機嫌１
+mov $BEA_FukigenA2,"bmp\TATI\BEA\1\BEA_FukigenA2"          ;不機嫌２
+mov $BEA_FukigenA3,"bmp\TATI\BEA\1\BEA_FukigenA3"          ;不機嫌３
+mov $BEA_NayamuA1,"bmp\TATI\BEA\1\BEA_NayamuA1"          ;悩む
+mov $BEA_AseruA1,"bmp\TATI\BEA\1\BEA_AseruA1"          ;焦る
+
+mov $BEA_WaraiA3,"bmp\TATI\BEA\1\BEA_WaraiA3"          ;笑い３
+mov $BEA_KomaruA1,"bmp\TATI\BEA\1\BEA_KomaruA1"          ;困る
+mov $BEA_KomaruA2,"bmp\TATI\BEA\1\BEA_KomaruA2"          ;困る２
+mov $BEA_OdorokiA2,"bmp\TATI\BEA\1\BEA_OdorokiA2"          ;驚き２
+mov $BEA_NayamuA2,"bmp\TATI\BEA\1\BEA_NayamuA2"          ;悩む２
+mov $BEA_IiwakeA1,"bmp\TATI\BEA\1\BEA_IiwakeA1"          ;いい訳
+mov $BEA_IiwakeA2,"bmp\TATI\BEA\1\BEA_IiwakeA2"          ;いい訳２
+mov $BEA_HanbesoA1,"bmp\TATI\BEA\1\BEA_HanbesoA1"          ;半ベソ
+mov $BEA_HanbesoA2,"bmp\TATI\BEA\1\BEA_HanbesoA2"          ;半ベソ２
+mov $BEA_HanbesoA3,"bmp\TATI\BEA\1\BEA_HanbesoA3"          ;半ベソ３
+mov $BEA_HanbesoA4,"bmp\TATI\BEA\1\BEA_HanbesoA4"          ;半ベソ４
+mov $BEA_HanbesoA5,"bmp\TATI\BEA\1\BEA_HanbesoA5"          ;半ベソ５
+mov $BEA_HanbesoA6,"bmp\TATI\BEA\1\BEA_HanbesoA6"          ;半ベソ６
+
+mov $BEA_GamanA1,"bmp\TATI\BEA\1\BEA_GamanA1"          ;
+mov $BEA_GamanA2,"bmp\TATI\BEA\1\BEA_GamanA2"          ;
+mov $BEA_GamanA3,"bmp\TATI\BEA\1\BEA_GamanA3"          ;
+mov $BEA_GamanA4,"bmp\TATI\BEA\1\BEA_GamanA4"          ;
+mov $BEA_GamanA5,"bmp\TATI\BEA\1\BEA_GamanA5"          ;
+mov $BEA_GamanA6,"bmp\TATI\BEA\1\BEA_GamanA6"          ;
+mov $BEA_GamanA7,"bmp\TATI\BEA\1\BEA_GamanA7"          ;
+mov $BEA_IiwakeA3,"bmp\TATI\BEA\1\BEA_IiwakeA3"          ;
+mov $BEA_KomaruA3,"bmp\TATI\BEA\1\BEA_KomaruA3"          ;
+mov $BEA_KomaruA4,"bmp\TATI\BEA\1\BEA_KomaruA4"          ;
+mov $BEA_MajimeA1,"bmp\TATI\BEA\1\BEA_MajimeA1"          ;
+mov $BEA_MajimeA2,"bmp\TATI\BEA\1\BEA_MajimeA2"          ;
+mov $BEA_MajimeA3,"bmp\TATI\BEA\1\BEA_MajimeA3"          ;
+mov $BEA_MajimeA4,"bmp\TATI\BEA\1\BEA_MajimeA4"          ;
+mov $BEA_WaraiA4,"bmp\TATI\BEA\1\BEA_WaraiA4"          ;
+mov $BEA_FumanA1,"bmp\TATI\BEA\1\BEA_FumanA1"          ;
+mov $BEA_FumanA2,"bmp\TATI\BEA\1\BEA_FumanA2"          ;
+mov $BEA_FumanA3,"bmp\TATI\BEA\1\BEA_FumanA3"          ;
+mov $BEA_NakuA1,"bmp\TATI\BEA\1\BEA_NakuA1"          ;
+mov $BEA_IkariA1,"bmp\TATI\BEA\1\BEA_IkariA1"          ;
+mov $BEA_IkariA2,"bmp\TATI\BEA\1\BEA_IkariA2"          ;
+
+
+
+
+mov $BER_DefA1,"bmp\TATI\BER\1\BER_DefA1"          ;ベルン立ち絵デフォ
+mov $BER_DefA2,"bmp\TATI\BER\1\BER_DefA2"
+mov $BER_AkuwaraiA1,"bmp\TATI\BER\1\BER_AkuwaraiA1"
+
+
+mov $LAM_AkuwaraiA1,"bmp\TATI\LAM\1\LAM_AkuwaraiA1"          ;ラムダデルタ立ち絵
+mov $LAM_AkuwaraiA2,"bmp\TATI\LAM\1\LAM_AkuwaraiA2"
+mov $LAM_AkuwaraiA3,"bmp\TATI\LAM\1\LAM_AkuwaraiA3"
+mov $LAM_AkuwaraiA4,"bmp\TATI\LAM\1\LAM_AkuwaraiA4"
+mov $LAM_OdorokiA1,"bmp\TATI\LAM\1\LAM_OdorokiA1"
+mov $LAM_AkuwaraiA5,"bmp\TATI\LAM\1\LAM_AkuwaraiA5"
+mov $LAM_AkuwaraiA6,"bmp\TATI\LAM\1\LAM_AkuwaraiA6"
+mov $LAM_FutekiA1,"bmp\TATI\LAM\1\LAM_FutekiA1"          ;ラムダデルタ立ち絵
+mov $LAM_FutekiA2,"bmp\TATI\LAM\1\LAM_FutekiA2"
+mov $LAM_FutekiA3,"bmp\TATI\LAM\1\LAM_FutekiA3"
+mov $LAM_OdorokiA2,"bmp\TATI\LAM\1\LAM_OdorokiA2"
+
+mov $GOA_DefA1,"bmp\TATI\GOA\1\GOA_DefA1"          ;山羊の従者
+mov $GOA_DefA1B,"bmp\TATI\GOA\1\GOA_DefA1B"          ;刃装備
+
+mov $RG1_DefA1,"bmp\TATI\RG1\1\RG1_DefA1"          ;七姉妹
+mov $RG1_HohoemiA1,"bmp\TATI\RG1\1\RG1_HohoemiA1"
+mov $RG1_HohoemiA2,"bmp\TATI\RG1\1\RG1_HohoemiA2"
+mov $RG1_WaraiA1,"bmp\TATI\RG1\1\RG1_WaraiA1"
+mov $RG1_WaraiA2,"bmp\TATI\RG1\1\RG1_WaraiA2"
+mov $RG1_WaraiA3,"bmp\TATI\RG1\1\RG1_WaraiA3"
+mov $RG1_WaraiA4,"bmp\TATI\RG1\1\RG1_WaraiA4"
+mov $RG1_AkuwaraiA1,"bmp\TATI\RG1\1\RG1_AkuwaraiA1"
+mov $RG1_AkuwaraiA2,"bmp\TATI\RG1\1\RG1_AkuwaraiA2"
+
+mov $RG1_AkuwaraiA3,"bmp\TATI\RG1\1\RG1_AkuwaraiA3"
+mov $RG1_AkuwaraiA4,"bmp\TATI\RG1\1\RG1_AkuwaraiA4"
+mov $RG1_MajimeA1,"bmp\TATI\RG1\1\RG1_MajimeA1"
+mov $RG1_FumanA1,"bmp\TATI\RG1\1\RG1_FumanA1"
+mov $RG1_FumanA2,"bmp\TATI\RG1\1\RG1_FumanA2"
+mov $RG1_KomaruA1,"bmp\TATI\RG1\1\RG1_KomaruA1"          ;
+mov $RG1_KomaruA2,"bmp\TATI\RG1\1\RG1_KomaruA2"          ;
+mov $RG1_KomaruA3,"bmp\TATI\RG1\1\RG1_KomaruA3"          ;
+mov $RG1_OdorokiA1,"bmp\TATI\RG1\1\RG1_OdorokiA1"          ;
+mov $RG1_OdorokiA2,"bmp\TATI\RG1\1\RG1_OdorokiA2"          ;
+mov $RG1_OdorokiA3,"bmp\TATI\RG1\1\RG1_OdorokiA3"          ;
+mov $RG1_IkariA1,"bmp\TATI\RG1\1\RG1_IkariA1"          ;
+mov $RG1_IkariA2,"bmp\TATI\RG1\1\RG1_IkariA2"          ;
+mov $RG1_NakuA1,"bmp\TATI\RG1\1\RG1_NakuA1"          ;
+
+
+mov $RG2_DefA1,"bmp\TATI\RG2\1\RG2_DefA1"          ;七姉妹
+mov $RG2_HohoemiA1,"bmp\TATI\RG2\1\RG2_HohoemiA1"
+mov $RG2_HohoemiA2,"bmp\TATI\RG2\1\RG2_HohoemiA2"
+mov $RG2_WaraiA1,"bmp\TATI\RG2\1\RG2_WaraiA1"
+mov $RG2_WaraiA2,"bmp\TATI\RG2\1\RG2_WaraiA2"
+mov $RG2_WaraiA3,"bmp\TATI\RG2\1\RG2_WaraiA3"
+mov $RG2_WaraiA4,"bmp\TATI\RG2\1\RG2_WaraiA4"
+mov $RG2_AkuwaraiA1,"bmp\TATI\RG2\1\RG2_AkuwaraiA1"
+mov $RG2_AkuwaraiA2,"bmp\TATI\RG2\1\RG2_AkuwaraiA2"
+
+mov $RG2_AkuwaraiA3,"bmp\TATI\RG2\1\RG2_AkuwaraiA3"
+mov $RG2_AkuwaraiA4,"bmp\TATI\RG2\1\RG2_AkuwaraiA4"
+mov $RG2_MajimeA1,"bmp\TATI\RG2\1\RG2_MajimeA1"
+mov $RG2_FumanA1,"bmp\TATI\RG2\1\RG2_FumanA1"
+mov $RG2_FumanA2,"bmp\TATI\RG2\1\RG2_FumanA2"
+mov $RG2_KomaruA1,"bmp\TATI\RG2\1\RG2_KomaruA1"          ;
+mov $RG2_KomaruA2,"bmp\TATI\RG2\1\RG2_KomaruA2"          ;
+mov $RG2_KomaruA3,"bmp\TATI\RG2\1\RG2_KomaruA3"          ;
+mov $RG2_OdorokiA1,"bmp\TATI\RG2\1\RG2_OdorokiA1"          ;
+mov $RG2_OdorokiA2,"bmp\TATI\RG2\1\RG2_OdorokiA2"          ;
+mov $RG2_OdorokiA3,"bmp\TATI\RG2\1\RG2_OdorokiA3"          ;
+mov $RG2_IkariA1,"bmp\TATI\RG2\1\RG2_IkariA1"          ;
+mov $RG2_IkariA2,"bmp\TATI\RG2\1\RG2_IkariA2"          ;
+mov $RG2_NakuA1,"bmp\TATI\RG2\1\RG2_NakuA1"          ;
+
+
+mov $RG3_DefA1,"bmp\TATI\RG3\1\RG3_DefA1"          ;七姉妹
+mov $RG3_HohoemiA1,"bmp\TATI\RG3\1\RG3_HohoemiA1"
+mov $RG3_HohoemiA2,"bmp\TATI\RG3\1\RG3_HohoemiA2"
+mov $RG3_WaraiA1,"bmp\TATI\RG3\1\RG3_WaraiA1"
+mov $RG3_WaraiA2,"bmp\TATI\RG3\1\RG3_WaraiA2"
+mov $RG3_WaraiA3,"bmp\TATI\RG3\1\RG3_WaraiA3"
+mov $RG3_WaraiA4,"bmp\TATI\RG3\1\RG3_WaraiA4"
+mov $RG3_AkuwaraiA1,"bmp\TATI\RG3\1\RG3_AkuwaraiA1"
+mov $RG3_AkuwaraiA2,"bmp\TATI\RG3\1\RG3_AkuwaraiA2"
+
+mov $RG3_AkuwaraiA3,"bmp\TATI\RG3\1\RG3_AkuwaraiA3"
+mov $RG3_AkuwaraiA4,"bmp\TATI\RG3\1\RG3_AkuwaraiA4"
+mov $RG3_MajimeA1,"bmp\TATI\RG3\1\RG3_MajimeA1"
+mov $RG3_FumanA1,"bmp\TATI\RG3\1\RG3_FumanA1"
+mov $RG3_FumanA2,"bmp\TATI\RG3\1\RG3_FumanA2"
+mov $RG3_KomaruA1,"bmp\TATI\RG3\1\RG3_KomaruA1"          ;
+mov $RG3_KomaruA2,"bmp\TATI\RG3\1\RG3_KomaruA2"          ;
+mov $RG3_KomaruA3,"bmp\TATI\RG3\1\RG3_KomaruA3"          ;
+mov $RG3_OdorokiA1,"bmp\TATI\RG3\1\RG3_OdorokiA1"          ;
+mov $RG3_OdorokiA2,"bmp\TATI\RG3\1\RG3_OdorokiA2"          ;
+mov $RG3_OdorokiA3,"bmp\TATI\RG3\1\RG3_OdorokiA3"          ;
+mov $RG3_IkariA1,"bmp\TATI\RG3\1\RG3_IkariA1"          ;
+mov $RG3_IkariA2,"bmp\TATI\RG3\1\RG3_IkariA2"          ;
+mov $RG3_NakuA1,"bmp\TATI\RG3\1\RG3_NakuA1"          ;
+
+
+mov $RG4_DefA1,"bmp\TATI\RG4\1\RG4_DefA1"          ;七姉妹
+mov $RG4_HohoemiA1,"bmp\TATI\RG4\1\RG4_HohoemiA1"
+mov $RG4_HohoemiA2,"bmp\TATI\RG4\1\RG4_HohoemiA2"
+mov $RG4_WaraiA1,"bmp\TATI\RG4\1\RG4_WaraiA1"
+mov $RG4_WaraiA2,"bmp\TATI\RG4\1\RG4_WaraiA1"
+mov $RG4_WaraiA3,"bmp\TATI\RG4\1\RG4_WaraiA1"
+mov $RG4_WaraiA4,"bmp\TATI\RG4\1\RG4_WaraiA1"
+mov $RG4_AkuwaraiA1,"bmp\TATI\RG4\1\RG4_AkuwaraiA1"
+mov $RG4_AkuwaraiA2,"bmp\TATI\RG4\1\RG4_AkuwaraiA2"
+
+mov $RG4_AkuwaraiA3,"bmp\TATI\RG4\1\RG4_AkuwaraiA3"
+mov $RG4_AkuwaraiA4,"bmp\TATI\RG4\1\RG4_AkuwaraiA4"
+mov $RG4_FumanA1,"bmp\TATI\RG4\1\RG4_FumanA1"
+mov $RG4_FumanA2,"bmp\TATI\RG4\1\RG4_FumanA2"
+mov $RG4_KomaruA1,"bmp\TATI\RG4\1\RG4_KomaruA1"          ;
+mov $RG4_KomaruA2,"bmp\TATI\RG4\1\RG4_KomaruA2"          ;
+mov $RG4_KomaruA3,"bmp\TATI\RG4\1\RG4_KomaruA3"          ;
+mov $RG4_OdorokiA1,"bmp\TATI\RG4\1\RG4_OdorokiA1"          ;
+mov $RG4_OdorokiA2,"bmp\TATI\RG4\1\RG4_OdorokiA2"          ;
+mov $RG4_OdorokiA3,"bmp\TATI\RG4\1\RG4_OdorokiA3"          ;
+mov $RG4_IkariA1,"bmp\TATI\RG4\1\RG4_IkariA1"          ;
+mov $RG4_IkariA2,"bmp\TATI\RG4\1\RG4_IkariA2"          ;
+mov $RG4_NakuA1,"bmp\TATI\RG4\1\RG4_NakuA1"          ;
+
+
+mov $RG5_DefA1,"bmp\TATI\RG5\1\RG5_DefA1"          ;七姉妹
+mov $RG5_HohoemiA1,"bmp\TATI\RG5\1\RG5_HohoemiA1"
+mov $RG5_HohoemiA2,"bmp\TATI\RG5\1\RG5_HohoemiA2"
+mov $RG5_WaraiA1,"bmp\TATI\RG5\1\RG5_WaraiA1"
+mov $RG5_WaraiA2,"bmp\TATI\RG5\1\RG5_WaraiA2"
+mov $RG5_WaraiA3,"bmp\TATI\RG5\1\RG5_WaraiA3"
+mov $RG5_WaraiA4,"bmp\TATI\RG5\1\RG5_WaraiA4"
+mov $RG5_AkuwaraiA1,"bmp\TATI\RG5\1\RG5_AkuwaraiA1"
+mov $RG5_AkuwaraiA2,"bmp\TATI\RG5\1\RG5_AkuwaraiA2"
+
+mov $RG5_AkuwaraiA3,"bmp\TATI\RG5\1\RG5_AkuwaraiA3"
+mov $RG5_AkuwaraiA4,"bmp\TATI\RG5\1\RG5_AkuwaraiA4"
+mov $RG5_MajimeA1,"bmp\TATI\RG5\1\RG5_MajimeA1"
+mov $RG5_FumanA1,"bmp\TATI\RG5\1\RG5_FumanA1"
+mov $RG5_FumanA2,"bmp\TATI\RG5\1\RG5_FumanA2"
+mov $RG5_KomaruA1,"bmp\TATI\RG5\1\RG5_KomaruA1"          ;
+mov $RG5_KomaruA2,"bmp\TATI\RG5\1\RG5_KomaruA2"          ;
+mov $RG5_KomaruA3,"bmp\TATI\RG5\1\RG5_KomaruA3"          ;
+mov $RG5_OdorokiA1,"bmp\TATI\RG5\1\RG5_OdorokiA1"          ;
+mov $RG5_OdorokiA2,"bmp\TATI\RG5\1\RG5_OdorokiA2"          ;
+mov $RG5_OdorokiA3,"bmp\TATI\RG5\1\RG5_OdorokiA3"          ;
+mov $RG5_IkariA1,"bmp\TATI\RG5\1\RG5_IkariA1"          ;
+mov $RG5_IkariA2,"bmp\TATI\RG5\1\RG5_IkariA2"          ;
+mov $RG5_NakuA1,"bmp\TATI\RG5\1\RG5_NakuA1"          ;
+
+
+mov $RG6_DefA1,"bmp\TATI\RG6\1\RG6_DefA1"          ;七姉妹
+mov $RG6_HohoemiA1,"bmp\TATI\RG6\1\RG6_HohoemiA1"
+mov $RG6_HohoemiA2,"bmp\TATI\RG6\1\RG6_HohoemiA2"
+mov $RG6_WaraiA1,"bmp\TATI\RG6\1\RG6_WaraiA1"
+mov $RG6_WaraiA2,"bmp\TATI\RG6\1\RG6_WaraiA2"
+mov $RG6_WaraiA3,"bmp\TATI\RG6\1\RG6_WaraiA3"
+mov $RG6_WaraiA4,"bmp\TATI\RG6\1\RG6_WaraiA4"
+mov $RG6_AkuwaraiA1,"bmp\TATI\RG6\1\RG6_AkuwaraiA1"
+mov $RG6_AkuwaraiA2,"bmp\TATI\RG6\1\RG6_AkuwaraiA2"
+
+
+mov $RG6_AkuwaraiA3,"bmp\TATI\RG6\1\RG6_AkuwaraiA3"
+mov $RG6_AkuwaraiA4,"bmp\TATI\RG6\1\RG6_AkuwaraiA4"
+mov $RG6_MajimeA1,"bmp\TATI\RG6\1\RG6_MajimeA1"
+mov $RG6_FumanA1,"bmp\TATI\RG6\1\RG6_FumanA1"
+mov $RG6_FumanA2,"bmp\TATI\RG6\1\RG6_FumanA2"
+mov $RG6_KomaruA1,"bmp\TATI\RG6\1\RG6_KomaruA1"          ;
+mov $RG6_KomaruA2,"bmp\TATI\RG6\1\RG6_KomaruA2"          ;
+mov $RG6_KomaruA3,"bmp\TATI\RG6\1\RG6_KomaruA3"          ;
+mov $RG6_OdorokiA1,"bmp\TATI\RG6\1\RG6_OdorokiA1"          ;
+mov $RG6_OdorokiA2,"bmp\TATI\RG6\1\RG6_OdorokiA2"          ;
+mov $RG6_OdorokiA3,"bmp\TATI\RG6\1\RG6_OdorokiA3"          ;
+mov $RG6_IkariA1,"bmp\TATI\RG6\1\RG6_IkariA1"          ;
+mov $RG6_IkariA2,"bmp\TATI\RG6\1\RG6_IkariA2"          ;
+mov $RG6_NakuA1,"bmp\TATI\RG6\1\RG6_NakuA1"          ;
+
+
+mov $RG7_DefA1,"bmp\TATI\RG7\1\RG7_DefA1"          ;七姉妹
+mov $RG7_HohoemiA1,"bmp\TATI\RG7\1\RG7_HohoemiA1"
+mov $RG7_HohoemiA2,"bmp\TATI\RG7\1\RG7_HohoemiA2"
+mov $RG7_WaraiA1,"bmp\TATI\RG7\1\RG7_WaraiA1"
+mov $RG7_WaraiA2,"bmp\TATI\RG7\1\RG7_WaraiA2"
+mov $RG7_WaraiA3,"bmp\TATI\RG7\1\RG7_WaraiA3"
+mov $RG7_WaraiA4,"bmp\TATI\RG7\1\RG7_WaraiA4"
+mov $RG7_AkuwaraiA1,"bmp\TATI\RG7\1\RG7_AkuwaraiA1"
+mov $RG7_AkuwaraiA2,"bmp\TATI\RG7\1\RG7_AkuwaraiA2"
+
+mov $RG7_AkuwaraiA3,"bmp\TATI\RG7\1\RG7_AkuwaraiA3"
+mov $RG7_AkuwaraiA4,"bmp\TATI\RG7\1\RG7_AkuwaraiA4"
+mov $RG7_MajimeA1,"bmp\TATI\RG7\1\RG7_MajimeA1"
+mov $RG7_FumanA1,"bmp\TATI\RG7\1\RG7_FumanA1"
+mov $RG7_FumanA2,"bmp\TATI\RG7\1\RG7_FumanA2"
+mov $RG7_KomaruA1,"bmp\TATI\RG7\1\RG7_KomaruA1"          ;
+mov $RG7_KomaruA2,"bmp\TATI\RG7\1\RG7_KomaruA2"          ;
+mov $RG7_KomaruA3,"bmp\TATI\RG7\1\RG7_KomaruA3"          ;
+mov $RG7_OdorokiA1,"bmp\TATI\RG7\1\RG7_OdorokiA1"          ;
+mov $RG7_OdorokiA2,"bmp\TATI\RG7\1\RG7_OdorokiA2"          ;
+mov $RG7_OdorokiA3,"bmp\TATI\RG7\1\RG7_OdorokiA3"          ;
+mov $RG7_IkariA1,"bmp\TATI\RG7\1\RG7_IkariA1"          ;
+mov $RG7_IkariA2,"bmp\TATI\RG7\1\RG7_IkariA2"          ;
+mov $RG7_NakuA1,"bmp\TATI\RG7\1\RG7_NakuA1"          ;
+
+
+mov $WAL_DefA1,"bmp\TATI\WAL\1\WAL_DefA1"          ;ワルギリア
+mov $WAL_DefA2,"bmp\TATI\WAL\1\WAL_DefA2"
+mov $WAL_WaraiA1,"bmp\TATI\WAL\1\WAL_WaraiA1"
+mov $WAL_WaraiA2,"bmp\TATI\WAL\1\WAL_WaraiA2"
+mov $WAL_KomaruA1,"bmp\TATI\WAL\1\WAL_KomaruA1"
+mov $WAL_KomaruA2,"bmp\TATI\WAL\1\WAL_KomaruA2"
+mov $WAL_majimeA1,"bmp\TATI\WAL\1\WAL_MajimeA1"
+mov $WAL_OdorokiA1,"bmp\TATI\WAL\1\WAL_OdorokiA1"
+mov $WAL_IkariA1,"bmp\TATI\WAL\1\WAL_IkariA1"
+mov $WAL_IkariA2,"bmp\TATI\WAL\1\WAL_IkariA2"
+mov $WAL_FumanA1,"bmp\TATI\WAL\1\WAL_FumanA1"
+mov $WAL_AkuwaraiA1,"bmp\TATI\WAL\1\WAL_AkuwaraiA1"
+mov $WAL_AkuwaraiA2,"bmp\TATI\WAL\1\WAL_AkuwaraiA2"
+
+mov $EV2_DefA1,"bmp\TATI\EV2\1\EV2_DefA1"          ;魔女絵羽
+mov $EV2_WaraiA1,"bmp\TATI\EV2\1\EV2_WaraiA1"          ;
+mov $EV2_WaraiA2,"bmp\TATI\EV2\1\EV2_WaraiA2"          ;
+mov $EV2_HohoemiA1,"bmp\TATI\EV2\1\EV2_HohoemiA1" 
+mov $EV2_HohoemiA2,"bmp\TATI\EV2\1\EV2_HohoemiA2" 
+mov $EV2_TokuiA1,"bmp\TATI\EV2\1\EV2_TokuiA1" 
+mov $EV2_AkuwaraiA1,"bmp\TATI\EV2\1\EV2_AkuwaraiA1"          ;
+mov $EV2_AkuwaraiA2,"bmp\TATI\EV2\1\EV2_AkuwaraiA2"          ;
+mov $EV2_AkuwaraiA3,"bmp\TATI\EV2\1\EV2_AkuwaraiA3"          ;
+mov $EV2_AkuwaraiA4,"bmp\TATI\EV2\1\EV2_AkuwaraiA4"          ;
+mov $EV2_AkuwaraiA5,"bmp\TATI\EV2\1\EV2_AkuwaraiA5"          ;
+mov $EV2_AkuwaraiA6,"bmp\TATI\EV2\1\EV2_AkuwaraiA6"          ;
+mov $EV2_AkuwaraiA7,"bmp\TATI\EV2\1\EV2_AkuwaraiA7"          ;
+mov $EV2_AkuwaraiA8,"bmp\TATI\EV2\1\EV2_AkuwaraiA8"          ;
+mov $EV2_NiramuA1,"bmp\TATI\EV2\1\EV2_NiramuA1"          ;
+mov $EV2_NiramuA2,"bmp\TATI\EV2\1\EV2_NiramuA2"          ;
+mov $EV2_NiramuA3,"bmp\TATI\EV2\1\EV2_NiramuA3"          ;
+mov $EV2_KomaruA1,"bmp\TATI\EV2\1\EV2_KomaruA1"          ;
+mov $EV2_OdorokiA1,"bmp\TATI\EV2\1\EV2_OdorokiA1"          ;
+mov $EV2_OdorokiA2,"bmp\TATI\EV2\1\EV2_OdorokiA2"          ;
+mov $EV2_FukigenA1,"bmp\TATI\EV2\1\EV2_FukigenA1"          ;
+mov $EV2_FukigenA2,"bmp\TATI\EV2\1\EV2_FukigenA2"          ;
+mov $EV2_FukigenA3,"bmp\TATI\EV2\1\EV2_FukigenA3"          ;
+mov $EV2_IkariA1,"bmp\TATI\EV2\1\EV2_IkariA1"          ;
+mov $EV2_IkariA2,"bmp\TATI\EV2\1\EV2_IkariA2"          ;
+mov $EV2_KomaruA1,"bmp\TATI\EV2\1\EV2_KomaruA1"          ;
+mov $EV2_MajimeA1,"bmp\TATI\EV2\1\EV2_MajimeA1"         ;
+
+mov $RON_DefA1,"bmp\TATI\RON\1\RON_DefA1"          ;ロノウェ
+mov $RON_DefA2,"bmp\TATI\RON\1\RON_DefA2"          ;
+mov $RON_WaraiA1,"bmp\TATI\RON\1\RON_WaraiA1"          ;
+mov $RON_WaraiA2,"bmp\TATI\RON\1\RON_WaraiA2"          ;
+mov $RON_AkuwaraiA1,"bmp\TATI\RON\1\RON_AkuwaraiA1"          ;
+mov $RON_MajimeA1,"bmp\TATI\RON\1\RON_MajimeA1"          ;
+mov $RON_MajimeA2,"bmp\TATI\RON\1\RON_MajimeA2"          ;
+mov $RON_OdorokiA1,"bmp\TATI\RON\1\RON_OdorokiA1"          ;
+mov $RON_OdorokiA2,"bmp\TATI\RON\1\RON_OdorokiA2"          ;
+
+mov $S45_DefA1,"bmp\TATI\S45\1\S45_DefA1"          ;シエスタ４５
+mov $S45_DefA2,"bmp\TATI\S45\1\S45_DefA2"          ;シエスタ４５
+mov $S45_OdorokiA1,"bmp\TATI\S45\1\S45_OdorokiA1"          ;シエスタ４５
+mov $S45_KomaruA1,"bmp\TATI\S45\1\S45_KomaruA1"          ;シエスタ４５
+mov $S45_MajimeA1,"bmp\TATI\S45\1\S45_MajimeA1"          ;シエスタ４５
+mov $S45_NakuA1,"bmp\TATI\S45\1\S45_NakuA1"          ;シエスタ４５
+
+mov $S41_DefA1,"bmp\TATI\S41\1\S41_DefA1"          ;シエスタ４１
+mov $S41_AkuwaraiA1,"bmp\TATI\S41\1\S41_AkuwaraiA1"          ;シエスタ４１
+mov $S41_AkuwaraiA2,"bmp\TATI\S41\1\S41_AkuwaraiA2"          ;シエスタ４１
+mov $S41_MajimeA1,"bmp\TATI\S41\1\S41_MajimeA1"          ;シエスタ４１
+mov $S41_OdorokiA1,"bmp\TATI\S41\1\S41_OdorokiA1"          ;シエスタ４１
+mov $S41_NakuA1,"bmp\TATI\S41\1\S41_NakuA1"          ;シエスタ４１
+mov $S41_NakuA2,"bmp\TATI\S41\1\S41_NakuA2"          ;シエスタ４１
+
+mov $ENJ_DefA1,"bmp\TATI\ENJ\1\ENJ_DefA1"          ;縁寿
+mov $ENJ_DefA2,"bmp\TATI\ENJ\1\ENJ_DefA2"          ;縁寿
+mov $ENJ_WaraiA1,"bmp\TATI\ENJ\1\ENJ_WaraiA1"          ;縁寿（
+mov $ENJ_WaraiA2,"bmp\TATI\ENJ\1\ENJ_WaraiA2"          ;縁寿
+mov $ENJ_WaraiA3,"bmp\TATI\ENJ\1\ENJ_WaraiA3"          ;縁寿
+mov $ENJ_FumanA1,"bmp\TATI\ENJ\1\ENJ_FumanA1"          ;縁寿
+mov $ENJ_FumanA2,"bmp\TATI\ENJ\1\ENJ_FumanA2"          ;縁寿
+mov $ENJ_MajimeA1,"bmp\TATI\ENJ\1\ENJ_MajimeA1"          ;縁寿
+mov $ENJ_NayamuA1,"bmp\TATI\ENJ\1\ENJ_NayamuA1"          ;縁寿
+mov $ENJ_KomaruA1,"bmp\TATI\ENJ\1\ENJ_KomaruA1"          ;縁寿
+mov $ENJ_KomaruA2,"bmp\TATI\ENJ\1\ENJ_KomaruA2"          ;縁寿
+mov $ENJ_KomaruA3,"bmp\TATI\ENJ\1\ENJ_KomaruA3"          ;縁寿
+mov $ENJ_KomaruA4,"bmp\TATI\ENJ\1\ENJ_KomaruA4"          ;縁寿
+mov $ENJ_KomaruA5,"bmp\TATI\ENJ\1\ENJ_KomaruA5"          ;縁寿
+mov $ENJ_IkariA1,"bmp\TATI\ENJ\1\ENJ_IkariA1"          ;縁寿
+mov $ENJ_IkariA2,"bmp\TATI\ENJ\1\ENJ_IkariA2"          ;縁寿
+mov $ENJ_HanbesoA1,"bmp\TATI\ENJ\1\ENJ_HanbesoA1"          ;縁寿
+mov $ENJ_HanbesoA2,"bmp\TATI\ENJ\1\ENJ_HanbesoA2"          ;縁寿
+mov $ENJ_HanbesoA3,"bmp\TATI\ENJ\1\ENJ_HanbesoA3"          ;縁寿
+mov $ENJ_NakuA1,"bmp\TATI\ENJ\1\ENJ_NakuA1"          ;縁寿
+mov $ENJ_NakuA2,"bmp\TATI\ENJ\1\ENJ_NakuA2"          ;縁寿
+
+mov $OKO_DefA1,"bmp\TATI\OKO\1\OKO_DefA1"          ;小此木
+mov $OKO_WaraiA1,"bmp\TATI\OKO\1\OKO_WaraiA1"          ;小此木
+mov $OKO_WaraiA2,"bmp\TATI\OKO\1\OKO_WaraiA2"          ;小此木
+mov $OKO_AkuwaraiA1,"bmp\TATI\OKO\1\OKO_AkuwaraiA1"          ;小此木
+
+mov $KAS_DefA1,"bmp\TATI\KAS\1\KAS_DefA1"          ;須磨寺霞
+mov $KAS_WaraiA1,"bmp\TATI\KAS\1\KAS_WaraiA1"          ;須磨寺霞
+mov $KAS_WaraiA2,"bmp\TATI\KAS\1\KAS_WaraiA2"          ;須磨寺霞
+mov $KAS_AkuwaraiA1,"bmp\TATI\KAS\1\KAS_AkuwaraiA1"          ;須磨寺霞
+mov $KAS_AkuwaraiA2,"bmp\TATI\KAS\1\KAS_AkuwaraiA2"          ;須磨寺霞
+mov $KAS_AkuwaraiA3,"bmp\TATI\KAS\1\KAS_AkuwaraiA3"          ;須磨寺霞
+mov $KAS_KomaruA1,"bmp\TATI\KAS\1\KAS_KomaruA1"          ;須磨寺霞
+mov $KAS_IkariA1,"bmp\TATI\KAS\1\KAS_IkariA1"          ;須磨寺霞
+mov $KAS_AseruA1,"bmp\TATI\KAS\1\KAS_AseruA1"          ;須磨寺霞
+mov $KAS_AseruA2,"bmp\TATI\KAS\1\KAS_AseruA2"          ;須磨寺霞
+mov $KAS_SakebuA1,"bmp\TATI\KAS\1\KAS_SakebuA1"          ;須磨寺霞
+
+mov $AMA_DefA1,"bmp\TATI\AMA\1\AMA_DefA1"          ;天草十三
+mov $AMA_DefA2,"bmp\TATI\AMA\1\AMA_DefA2"          ;天草十三
+mov $AMA_AkuwaraiA1,"bmp\TATI\AMA\1\AMA_AkuwaraiA1"          ;天草十三
+mov $AMA_MajimeA1,"bmp\TATI\AMA\1\AMA_MajimeA1"          ;天草十三
+
+mov $SAK_DefA1,"bmp\TATI\SAK\1\SAK_DefA1"          ;さくたろ
+mov $SAK_WaraiA1,"bmp\TATI\SAK\1\SAK_WaraiA1"          ;さくたろ
+mov $SAK_WaraiA2,"bmp\TATI\SAK\1\SAK_WaraiA2"          ;さくたろ
+mov $SAK_WaraiA3,"bmp\TATI\SAK\1\SAK_WaraiA3"          ;さくたろ
+mov $SAK_OdorokiA1,"bmp\TATI\SAK\1\SAK_OdorokiA1"          ;さくたろ
+mov $SAK_KomaruA1,"bmp\TATI\SAK\1\SAK_KomaruA1"          ;さくたろ
+mov $SAK_KomaruA2,"bmp\TATI\SAK\1\SAK_KomaruA2"          ;さくたろ
+mov $SAK_NakuA1,"bmp\TATI\SAK\1\SAK_NakuA1"          ;さくたろ
+mov $SAK_NakuA2,"bmp\TATI\SAK\1\SAK_NakuA2"          ;さくたろ
+mov $SAK_NakuA3,"bmp\TATI\SAK\1\SAK_NakuA3"          ;さくたろ
+
+mov $PRO_DefA1,"bmp\TATI\PRO\1\PRO_DefA1"          ;教授
+mov $PRO_WaraiA1,"bmp\TATI\PRO\1\PRO_WaraiA1"          ;教授
+mov $PRO_MajimeA1,"bmp\TATI\PRO\1\PRO_MajimeA1"          ;教授
+mov $PRO_MajimeA2,"bmp\TATI\PRO\1\PRO_MajimeA2"          ;教授
+mov $PRO_KomaruA1,"bmp\TATI\PRO\1\PRO_KomaruA1"          ;教授
+mov $PRO_OdorokiA1,"bmp\TATI\PRO\1\PRO_OdorokiA1"          ;教授
+
+mov $S00_DefA1,"bmp\TATI\S00\1\S00_DefA1"          ;シエスタ００
+mov $S00_MajimeA1,"bmp\TATI\S00\1\S00_MajimeA1"          ;シエスタ００
+mov $S00_MajimeA2,"bmp\TATI\S00\1\S00_MajimeA2"          ;シエスタ００
+mov $S00_OdorokiA1,"bmp\TATI\S00\1\S00_OdorokiA1"          ;シエスタ００
+mov $S00_OdorokiA2,"bmp\TATI\S00\1\S00_OdorokiA2"          ;シエスタ００
+mov $S00_KomaruA1,"bmp\TATI\S00\1\S00_KomaruA1"          ;シエスタ００
+mov $S00_NakuA1,"bmp\TATI\S00\1\S00_NakuA1"          ;シエスタ００
+mov $S00_NakuA2,"bmp\TATI\S00\1\S00_NakuA2"          ;シエスタ００
+
+mov $GAP_DefA1,"bmp\TATI\GAP\1\GAP_DefA1"          ;ガァプ
+mov $GAP_DefA1a,"bmp\TATI\GAP\1\GAP_DefA1a"          ;ガァプ
+mov $GAP_DefA2,"bmp\TATI\GAP\1\GAP_DefA2"          ;ガァプ
+mov $GAP_DefA2a,"bmp\TATI\GAP\1\GAP_DefA2a"          ;ガァプ
+mov $GAP_DefA3,"bmp\TATI\GAP\1\GAP_DefA3"          ;ガァプ
+mov $GAP_DefA3a,"bmp\TATI\GAP\1\GAP_DefA3a"          ;ガァプ
+mov $GAP_WaraiA1,"bmp\TATI\GAP\1\GAP_WaraiA1"          ;ガァプ
+mov $GAP_WaraiA1a,"bmp\TATI\GAP\1\GAP_WaraiA1a"          ;ガァプ
+mov $GAP_WaraiA2,"bmp\TATI\GAP\1\GAP_WaraiA2"          ;ガァプ
+mov $GAP_WaraiA2a,"bmp\TATI\GAP\1\GAP_WaraiA2a"          ;ガァプ
+mov $GAP_WaraiA3,"bmp\TATI\GAP\1\GAP_WaraiA3"          ;ガァプ
+mov $GAP_WaraiA3a,"bmp\TATI\GAP\1\GAP_WaraiA3a"          ;ガァプ
+mov $GAP_AkuwaraiA1,"bmp\TATI\GAP\1\GAP_AkuwaraiA1"          ;ガァプ
+mov $GAP_AkuwaraiA1a,"bmp\TATI\GAP\1\GAP_AkuwaraiA1a"          ;ガァプ
+mov $GAP_AkuwaraiA2,"bmp\TATI\GAP\1\GAP_AkuwaraiA2"          ;ガァプ
+mov $GAP_AkuwaraiA2a,"bmp\TATI\GAP\1\GAP_AkuwaraiA2a"          ;ガァプ
+mov $GAP_AkuwaraiA3,"bmp\TATI\GAP\1\GAP_AkuwaraiA3"          ;ガァプ
+mov $GAP_AkuwaraiA3a,"bmp\TATI\GAP\1\GAP_AkuwaraiA3a"          ;ガァプ
+mov $GAP_AkuwaraiA4,"bmp\TATI\GAP\1\GAP_AkuwaraiA4"          ;ガァプ
+mov $GAP_AkuwaraiA4a,"bmp\TATI\GAP\1\GAP_AkuwaraiA4a"          ;ガァプ
+mov $GAP_AkuwaraiA5,"bmp\TATI\GAP\1\GAP_AkuwaraiA5"          ;ガァプ
+mov $GAP_AseruA1,"bmp\TATI\GAP\1\GAP_AseruA1"          ;ガァプ
+mov $GAP_AseruA1a,"bmp\TATI\GAP\1\GAP_AseruA1a"          ;ガァプ
+mov $GAP_IkariA1,"bmp\TATI\GAP\1\GAP_IkariA1"          ;ガァプ
+mov $GAP_IkariA1a,"bmp\TATI\GAP\1\GAP_IkariA1a"          ;ガァプ
+
+mov $NA2_DefA1,"bmp\TATI\NA2\1\NA2_DefA1"          ;南条息子
+mov $NA2_DefA2,"bmp\TATI\NA2\1\NA2_DefA2"          ;南条息子
+mov $NA2_DefA3,"bmp\TATI\NA2\1\NA2_DefA3"          ;南条息子
+mov $NA2_MajimeA1,"bmp\TATI\NA2\1\NA2_MajimeA1"          ;南条息子
+mov $NA2_MajimeA2,"bmp\TATI\NA2\1\NA2_MajimeA2"          ;南条息子
+mov $NA2_MajimeA3,"bmp\TATI\NA2\1\NA2_MajimeA3"          ;南条息子
+
+mov $KU2_DefA1,"bmp\TATI\KU2\1\KU2_DefA1"          ;熊沢息子
+mov $KU2_WaraiA1,"bmp\TATI\KU2\1\KU2_WaraiA1"          ;熊沢息子
+mov $KU2_MajimeA1,"bmp\TATI\KU2\1\KU2_MajimeA1"          ;熊沢息子
+
+mov $KAW_DefA1,"bmp\TATI\KAW\1\KAW_DefA1"          ;川畑船長
+mov $KAW_DefA2,"bmp\TATI\KAW\1\KAW_DefA2"          ;川畑船長
+mov $KAW_WaraiA1,"bmp\TATI\KAW\1\KAW_WaraiA1"          ;川畑船長
+mov $KAW_NayamuA1,"bmp\TATI\KAW\1\KAW_NayamuA1"          ;川畑船長
+mov $KAW_KomaruA1,"bmp\TATI\KAW\1\KAW_KomaruA1"          ;川畑船長
+
+return
+
+
+
+
+
+;立ち絵画像の衣装変更のルート設定
+
+*KIN_Isyou1
+
+
+mov $KIN_DefA1,"bmp\TATI\KIN\1\KIN_DefA1"          ;金蔵立ち絵デフォ
+mov $KIN_WaraiA1,"bmp\TATI\KIN\1\KIN_WaraiA1"          ;笑い
+mov $KIN_IkariA1,"bmp\TATI\KIN\1\KIN_IkariA1"          ;怒り
+mov $KIN_MajimeA1,"bmp\TATI\KIN\1\KIN_MajimeA1"          ;真面目
+;mov $KIN_DefA2,"bmp\TATI\KIN\1\KIN_DefA2" 
+mov $KIN_AkuwaraiA1,"bmp\TATI\KIN\1\KIN_AkuwaraiA1"          ;悪笑い（EP4暫定
+mov $KIN_AkuwaraiA2,"bmp\TATI\KIN\1\KIN_AkuwaraiA2"          ;悪笑い（EP4暫定
+;mov $KIN_KomaruA1,"bmp\TATI\KIN\1\KIN_KomaruA1"          ;困る
+;mov $KIN_OdorokiA1,"bmp\TATI\KIN\1\KIN_OdorokiA1"          ;驚き
+mov $KIN_WaraiA2,"bmp\TATI\KIN\1\KIN_WaraiA2"          ;笑い
+mov $KIN_nakuA1,"bmp\TATI\KIN\1\KIN_nakuA1"          ;泣く
+mov $KIN_nakuA2,"bmp\TATI\KIN\1\KIN_nakuA2"          ;泣く２
+mov $KIN_fumuA1,"bmp\TATI\KIN\1\KIN_fumuA1"          ;ふーむ
+mov $KIN_fukigenA1,"bmp\TATI\KIN\1\KIN_fukigenA1"          ;ふーむ
+
+return
+
+*KLA_Isyou1
+
+mov $KLA_DefA1,"bmp\TATI\KLA\1\KLA_DefA1"          ;蔵臼立ち絵デフォ
+mov $KLA_AkuwaraiA1,"bmp\TATI\KLA\1\KLA_AkuwaraiA1"          ;悪笑い
+mov $KLA_KomaruA1,"bmp\TATI\KLA\1\KLA_KomaruA1"          ;困る
+mov $KLA_MajimeA1,"bmp\TATI\KLA\1\KLA_MajimeA1"          ;真面目
+mov $KLA_IkariA1,"bmp\TATI\KLA\1\KLA_IkariA1"          ;怒り
+;mov $KLA_DefA2,"bmp\TATI\KLA\1\KLA_DefA2"
+;mov $KLA_WaraiA1,"bmp\TATI\KLA\1\KLA_WaraiA1"          ;笑い
+;mov $KLA_OdorokiA1,"bmp\TATI\KLA\1\KLA_OdorokiA1"          ;驚き
+mov $KLA_AkuwaraiA2,"bmp\TATI\KLA\1\KLA_AkuwaraiA2"          ;悪笑い２
+mov $KLA_AkuwaraiA3,"bmp\TATI\KLA\1\KLA_AkuwaraiA3"          ;悪笑い３
+mov $KLA_MajimeA2,"bmp\TATI\KLA\1\KLA_MajimeA2"          ;真面目２
+mov $KLA_NayamuA1,"bmp\TATI\KLA\1\KLA_NayamuA1"          ;悩む
+
+return
+
+*NAT_Isyou1
+
+
+mov $NAT_DefA1,"bmp\TATI\NAT\1\NAT_DefA1"          ;夏妃立ち絵デフォ
+mov $NAT_DefB1,"bmp\TATI\NAT\1\NAT_DefA1"          ;夏妃立ち絵デフォ
+mov $NAT_WaraiA1,"bmp\TATI\NAT\1\NAT_WaraiA1"          ;笑い
+mov $NAT_WaraiB1,"bmp\TATI\NAT\1\NAT_WaraiA1"          ;笑い
+mov $NAT_IkariA1,"bmp\TATI\NAT\1\NAT_IkariA1"          ;怒り
+mov $NAT_IkariB1,"bmp\TATI\NAT\1\NAT_IkariA1"          ;怒り
+mov $NAT_OdorokiA1,"bmp\TATI\NAT\1\NAT_OdorokiA1"          ;驚き
+mov $NAT_OdorokiB1,"bmp\TATI\NAT\1\NAT_OdorokiA1"          ;驚き
+mov $NAT_MajimeA1,"bmp\TATI\NAT\1\NAT_MajimeA1"          ;真面目
+mov $NAT_MajimeB1,"bmp\TATI\NAT\1\NAT_MajimeA1"          ;真面目
+;mov $NAT_DefA2,"bmp\TATI\NAT\1\NAT_DefA2"
+;mov $NAT_AkuwaraiA1,"bmp\TATI\NAT\1\NAT_AkuwaraiA1"          ;悪笑い
+;mov $NAT_KomaruA1,"bmp\TATI\NAT\1\NAT_KomaruA1"          ;困る
+mov $NAT_WaraiA2,"bmp\TATI\NAT\1\NAT_WaraiA2"          ;笑い２
+mov $NAT_WaraiB2,"bmp\TATI\NAT\1\NAT_WaraiA2"          ;笑い２
+mov $NAT_OdorokiA2,"bmp\TATI\NAT\1\NAT_OdorokiA2"          ;驚き２
+mov $NAT_OdorokiB2,"bmp\TATI\NAT\1\NAT_OdorokiA2"          ;驚き２
+mov $NAT_HisuA1,"bmp\TATI\NAT\1\NAT_HisuA1"          ;ヒステリー
+mov $NAT_HisuB1,"bmp\TATI\NAT\1\NAT_HisuA1"          ;ヒステリー
+mov $NAT_zutuuA1,"bmp\TATI\NAT\1\NAT_zutuuA1"          ;頭痛
+mov $NAT_zutuuB1,"bmp\TATI\NAT\1\NAT_zutuuA1"          ;頭痛
+mov $NAT_TukareA1,"bmp\TATI\NAT\1\NAT_TukareA1"          ;疲れ
+mov $NAT_TukareB1,"bmp\TATI\NAT\1\NAT_TukareA1"          ;疲れ
+mov $NAT_TukareA2,"bmp\TATI\NAT\1\NAT_TukareA2"          ;疲れ２
+mov $NAT_TukareB2,"bmp\TATI\NAT\1\NAT_TukareA2"          ;疲れ２
+
+return
+
+*JES_Isyou1
+
+mov $JES_DefA1,"bmp\TATI\JES\1\JES_DefA1"          ;朱志香立ち絵デフォ
+mov $JES_DefA2,"bmp\TATI\JES\1\JES_DefA2"          ;朱志香立ち絵デフォ
+mov $JES_WaraiA1,"bmp\TATI\JES\1\JES_WaraiA1"          ;笑い
+mov $JES_WaraiA1_U,"bmp\TATI\JES\2\JES_WaraiA1"          ;UNIFORM
+mov $JES_AKuwaraiA1,"bmp\TATI\JES\1\JES_AkuwaraiA1"          ;悪笑い
+mov $JES_AKuwaraiA1_U,"bmp\TATI\JES\2\JES_AkuwaraiA1"          ;UNIFORM
+mov $JES_IkariA1,"bmp\TATI\JES\1\JES_IkariA1"          ;怒り
+mov $JES_IkariA1_U,"bmp\TATI\JES\2\JES_IkariA1"          ;UNIFORM
+mov $JES_KomaruA1,"bmp\TATI\JES\1\JES_KomaruA1"          ;困る
+mov $JES_OdorokiA1,"bmp\TATI\JES\1\JES_OdorokiA1"          ;驚き
+mov $JES_OdorokiA1_U,"bmp\TATI\JES\2\JES_OdorokiA1"          ;UNIFORM
+mov $JES_MajimeA1,"bmp\TATI\JES\1\JES_MajimeA1"          ;真面目
+mov $JES_futekiA1,"bmp\TATI\JES\1\JES_futekiA1"          ;不敵
+mov $JES_TohohoA1,"bmp\TATI\JES\1\JES_TohohoA1"          ;とほほ
+mov $JES_TohohoA2,"bmp\TATI\JES\1\JES_TohohoA2"          ;とほほ２
+mov $JES_TohohoA2_U,"bmp\TATI\JES\2\JES_TohohoA2"          ;UNIFORM
+mov $JES_atyaA1,"bmp\TATI\JES\1\JES_atyaA1"          ;あちゃー
+mov $JES_WaraiA2,"bmp\TATI\JES\1\JES_WaraiA2"          ;笑い２
+mov $JES_IkariA2,"bmp\TATI\JES\1\JES_IkariA2"          ;怒り２
+mov $JES_NakuA1,"bmp\TATI\JES\1\JES_NakuA1"          ;泣く
+mov $JES_NayamuA1,"bmp\TATI\JES\1\JES_NayamuA1"          ;悩む
+
+mov $JES_NakuA2,"bmp\TATI\JES\1\JES_NakuA2"          ;泣く（半ベソ
+mov $JES_NakuA3,"bmp\TATI\JES\1\JES_NakuA3"          ;泣く（半ベソ
+mov $JES_TereruA1,"bmp\TATI\JES\1\JES_TereruA1"          ;泣く（半ベソ
+mov $JES_TereruA1_U,"bmp\TATI\JES\2\JES_TereruA1"          ;UNIFORM
+mov $JES_TereruA2,"bmp\TATI\JES\1\JES_TereruA2"          ;泣く（半ベソ
+mov $JES_TereruA2_U,"bmp\TATI\JES\2\JES_TereruA2"          ;UNIFORM
+mov $JES_NakiWaraiA1,"bmp\TATI\JES\1\JES_NakiWaraiA1"          ;泣く（半ベソ
+mov $JES_AisoWaraiA1,"bmp\TATI\JES\1\JES_AisoWaraiA1"          ;泣く（半ベソ
+mov $JES_AisoWaraiA1_U,"bmp\TATI\JES\2\JES_AisoWaraiA1"          ;UNIFORM
+mov $JES_AtyaA2,"bmp\TATI\JES\1\JES_AtyaA2"          ;泣く（半ベソ
+mov $JES_AtyaA2_U,"bmp\TATI\JES\2\JES_AtyaA2"          ;UNIFORM
+mov $JES_AtyaA3,"bmp\TATI\JES\1\JES_AtyaA3"          ;泣く（半ベソ
+mov $JES_AtyaA3_U,"bmp\TATI\JES\2\JES_AtyaA3"          ;UNIFORM
+
+
+return
+
+*EVA_Isyou1
+
+mov $EVA_DefA1,"bmp\TATI\EVA\1\EVA_DefA1"          ;絵羽立ち絵デフォ
+mov $EVA_DefB1,"bmp\TATI\EVA\1\EVA_DefA1"
+mov $EVA_WaraiA1,"bmp\TATI\EVA\1\EVA_WaraiA1"          ;笑い
+mov $EVA_WaraiB1,"bmp\TATI\EVA\1\EVA_WaraiA1"          ;笑い
+mov $EVA_IkariA1,"bmp\TATI\EVA\1\EVA_IkariA1"          ;怒り
+mov $EVA_IkariB1,"bmp\TATI\EVA\1\EVA_IkariA1"          ;怒り
+mov $EVA_KomaruA1,"bmp\TATI\EVA\1\EVA_KomaruA1"          ;困る
+mov $EVA_KomaruB1,"bmp\TATI\EVA\1\EVA_KomaruA1"          ;困る
+mov $EVA_MajimeA1,"bmp\TATI\EVA\1\EVA_MajimeA1"          ;真面目
+mov $EVA_MajimeB1,"bmp\TATI\EVA\1\EVA_MajimeB1"          ;真面目
+;mov $EVA_DefA2,"bmp\TATI\EVA\1\EVA_DefA2"          ;絵羽立ち絵デフォ
+;mov $EVA_DefB2,"bmp\TATI\EVA\1\EVA_DefA2"
+;mov $EVA_AkuwaraiA1,"bmp\TATI\EVA\1\EVA_AkuwaraiA1"          ;悪笑い
+;mov $EVA_AkuwaraiB1,"bmp\TATI\EVA\1\EVA_AkuwaraiA1"          ;悪笑い
+;mov $EVA_OdorokiA1,"bmp\TATI\EVA\1\EVA_OdorokiA1"          ;驚き
+;mov $EVA_OdorokiB1,"bmp\TATI\EVA\1\EVA_OdorokiA1"          ;驚き
+mov $EVA_HohoemiA1,"bmp\TATI\EVA\1\EVA_HohoemiA1"          ;微笑み
+mov $EVA_HohoemiA2,"bmp\TATI\EVA\1\EVA_HohoemiA2"          ;微笑み２
+mov $EVA_akireA1,"bmp\TATI\EVA\1\EVA_akireA1"          ;呆れ
+mov $EVA_futekiA1,"bmp\TATI\EVA\1\EVA_futekiA1"          ;不敵
+mov $EVA_IkariA2,"bmp\TATI\EVA\1\EVA_IkariA2"          ;怒り２
+mov $EVA_KomaruA2,"bmp\TATI\EVA\1\EVA_KomaruA2"          ;困る２
+mov $EVA_KomaruA3,"bmp\TATI\EVA\1\EVA_KomaruA3"          ;困る３
+mov $EVA_futekiA1,"bmp\TATI\EVA\1\EVA_futekiA1"          ;不敵
+mov $EVA_akireA2,"bmp\TATI\EVA\1\EVA_akireA2"          ;呆れ２
+mov $EVA_AkuwaraiA1,"bmp\TATI\EVA\1\EVA_AkuwaraiA1"          ;不敵
+mov $EVA_KomaruA4,"bmp\TATI\EVA\1\EVA_KomaruA4"          ;怒り２
+mov $EVA_NakuA1,"bmp\TATI\EVA\1\EVA_NakuA1"          ;困る２
+mov $EVA_NakuA2,"bmp\TATI\EVA\1\EVA_NakuA2"          ;困る３
+mov $EVA_OdorokiA1,"bmp\TATI\EVA\1\EVA_OdorokiA1"          ;不敵
+mov $EVA_OdorokiA2,"bmp\TATI\EVA\1\EVA_OdorokiA2"          ;呆れ２
+
+
+mov $EVA_DefA1G,"bmp\TATI\EVA\1\EVA_DefA1"          ;絵羽立ち絵デフォ
+mov $EVA_WaraiA1G,"bmp\TATI\EVA\1\EVA_WaraiA1G"          ;笑い
+mov $EVA_IkariA1G,"bmp\TATI\EVA\1\EVA_IkariA1G"          ;怒り
+mov $EVA_KomaruA1G,"bmp\TATI\EVA\1\EVA_KomaruA1G"          ;困る
+mov $EVA_MajimeA1G,"bmp\TATI\EVA\1\EVA_MajimeA1G"          ;真面目
+mov $EVA_HohoemiA1G,"bmp\TATI\EVA\1\EVA_HohoemiA1G"          ;微笑み
+mov $EVA_HohoemiA2G,"bmp\TATI\EVA\1\EVA_HohoemiA2G"          ;微笑み２
+mov $EVA_akireA1G,"bmp\TATI\EVA\1\EVA_akireA1G"          ;呆れ
+mov $EVA_futekiA1G,"bmp\TATI\EVA\1\EVA_futekiA1G"          ;不敵
+mov $EVA_IkariA2G,"bmp\TATI\EVA\1\EVA_IkariA2G"          ;怒り２
+mov $EVA_KomaruA2G,"bmp\TATI\EVA\1\EVA_KomaruA2G"          ;困る２
+mov $EVA_KomaruA3G,"bmp\TATI\EVA\1\EVA_KomaruA3G"          ;困る３
+mov $EVA_futekiA1G,"bmp\TATI\EVA\1\EVA_futekiA1G"          ;不敵
+mov $EVA_akireA2G,"bmp\TATI\EVA\1\EVA_akireA2G"          ;呆れ２
+mov $EVA_AkuwaraiA1G,"bmp\TATI\EVA\1\EVA_AkuwaraiA1G"          ;不敵
+mov $EVA_KomaruA4G,"bmp\TATI\EVA\1\EVA_KomaruA4G"          ;怒り２
+mov $EVA_NakuA1G,"bmp\TATI\EVA\1\EVA_NakuA1G"          ;困る２
+mov $EVA_NakuA2G,"bmp\TATI\EVA\1\EVA_NakuA2G"          ;困る３
+mov $EVA_OdorokiA1G,"bmp\TATI\EVA\1\EVA_OdorokiA1G"          ;不敵
+mov $EVA_OdorokiA2G,"bmp\TATI\EVA\1\EVA_OdorokiA2G"          ;呆れ２
+
+
+mov $EVA_WaraiB1G,"bmp\TATI\EVA\1\EVA_WaraiB1G"          ;笑い
+mov $EVA_IkariB1G,"bmp\TATI\EVA\1\EVA_IkariB1G"          ;怒り
+mov $EVA_KomaruB1G,"bmp\TATI\EVA\1\EVA_KomaruB1G"          ;困る
+mov $EVA_MajimeB1G,"bmp\TATI\EVA\1\EVA_MajimeB1G"          ;真面目
+mov $EVA_HohoemiB1G,"bmp\TATI\EVA\1\EVA_HohoemiB1G"          ;微笑み
+mov $EVA_HohoemiB2G,"bmp\TATI\EVA\1\EVA_HohoemiB2G"          ;微笑み２
+mov $EVA_akireB1G,"bmp\TATI\EVA\1\EVA_akireB1G"          ;呆れ
+mov $EVA_futekiB1G,"bmp\TATI\EVA\1\EVA_futekiB1G"          ;不敵
+mov $EVA_IkariB2G,"bmp\TATI\EVA\1\EVA_IkariB2G"          ;怒り２
+mov $EVA_KomaruB2G,"bmp\TATI\EVA\1\EVA_KomaruB2G"          ;困る２
+mov $EVA_KomaruB3G,"bmp\TATI\EVA\1\EVA_KomaruB3G"          ;困る３
+mov $EVA_futekiB1G,"bmp\TATI\EVA\1\EVA_futekiB1G"          ;不敵
+mov $EVA_akireB2G,"bmp\TATI\EVA\1\EVA_akireB2G"          ;呆れ２
+mov $EVA_AkuwaraiB1G,"bmp\TATI\EVA\1\EVA_AkuwaraiB1G"          ;不敵
+mov $EVA_KomaruB4G,"bmp\TATI\EVA\1\EVA_KomaruB4G"          ;怒り２
+mov $EVA_NakuB1G,"bmp\TATI\EVA\1\EVA_NakuB1G"          ;困る２
+mov $EVA_NakuB2G,"bmp\TATI\EVA\1\EVA_NakuB2G"          ;困る３
+mov $EVA_OdorokiB1G,"bmp\TATI\EVA\1\EVA_OdorokiB1G"          ;不敵
+mov $EVA_OdorokiB2G,"bmp\TATI\EVA\1\EVA_OdorokiB2G"          ;呆れ２
+
+return
+
+*HID_Isyou1
+
+mov $HID_DefA1,"bmp\TATI\HID\1\HID_DefA1"          ;秀吉立ち絵デフォ
+mov $HID_WaraiA1,"bmp\TATI\HID\1\HID_WaraiA1"          ;笑い
+mov $HID_KomaruA1,"bmp\TATI\HID\1\HID_KomaruA1"          ;困る
+mov $HID_MajimeA1,"bmp\TATI\HID\1\HID_MajimeA1"          ;真面目
+;mov $HID_DefA2,"bmp\TATI\HID\1\HID_DefA2"          ;秀吉立ち絵デフォ
+;mov $HID_AkuwaraiA1,"bmp\TATI\HID\1\HID_AkuwaraiA1"          ;悪笑い
+;mov $HID_IkariA1,"bmp\TATI\HID\1\HID_IkariA1"          ;怒り
+;mov $HID_OdorokiA1,"bmp\TATI\HID\1\HID_OdorokiA1"          ;驚き
+mov $HID_fumuA1,"bmp\TATI\HID\1\HID_fumuA1"          ;ふーむ
+mov $HID_KomaruA2,"bmp\TATI\HID\1\HID_KomaruA2"          ;困る２
+mov $HID_MajimeA2,"bmp\TATI\HID\1\HID_MajimeA2"          ;真面目２
+mov $HID_WaraiA2,"bmp\TATI\HID\1\HID_WaraiA2"          ;笑い２
+
+return
+
+*GEO_Isyou1
+
+mov $GEO_DefA1,"bmp\TATI\GEO\1\GEO_DefA1"          ;譲治立ち絵デフォ

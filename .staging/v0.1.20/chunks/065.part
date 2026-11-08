@@ -1,0 +1,5000 @@
+
+*r_cha_ros_ep4
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha][condition] = 0 return
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\ros"
+if ?r[%r_hyouji_cha][condition] = 2 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\ros_d"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ros_1.png"
+if ?r[%r_hyouji_cha][condition] = 2 mov $r_txt_path,"bmp\r_click\text\cha\ep4\ros_2.png"
+
+return
+
+;------------------------------
+
+
+*r_cha_mar_ep4
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha][condition] = 0 return
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\mar"
+if ?r[%r_hyouji_cha][condition] = 2 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\mar_d"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\mar_1.png"
+if ?r[%r_hyouji_cha][condition] = 2 mov $r_txt_path,"bmp\r_click\text\cha\ep4\mar_2.png"
+
+return
+
+;------------------------------
+
+
+*r_cha_nan_ep4
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha][condition] = 0 return
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\nan"
+if ?r[%r_hyouji_cha][condition] = 2 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\nan_d"
+if ?r[%r_hyouji_cha][condition] = 3 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\nan_d2"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\nan_1.png"
+if ?r[%r_hyouji_cha][condition] = 2 mov $r_txt_path,"bmp\r_click\text\cha\ep4\nan_2.png"
+if ?r[%r_hyouji_cha][condition] = 3 mov $r_txt_path,"bmp\r_click\text\cha\ep4\nan_3.png"
+
+return
+
+;------------------------------
+
+
+*r_cha_sha_ep4
+
+;状態、進行によってコメントを変える
+mov ?r[%r_hyouji_cha][tati_x],430
+if ?r[%r_hyouji_cha][condition] = 0 return
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\sha"
+if ?r[%r_hyouji_cha][condition] = 2 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\sha_d"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\sha_1.png"
+if ?r[%r_hyouji_cha][condition] = 2 mov $r_txt_path,"bmp\r_click\text\cha\ep4\sha_2.png"
+
+;コンディションによってアイコンを変更する。
+lspnewold sha_btn_lsp,$?r[%r_hyouji_cha][?r[%r_hyouji_cha][condition]],"/2,0,3",?r[%r_hyouji_cha][itiran_x],?r[%r_hyouji_cha][itiran_y]
+
+;衣装チェンジがされた場合は私服に変更する。
+if ?r[%r_hyouji_cha][r_ishou] = 2 && ?r[%r_hyouji_cha][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\sha2" : mov ?r[%r_hyouji_cha][tati_x],430 : lspnewold sha_btn_lsp,"bmp\r_click\cha_btn\ep4\sha_l2","/2,0,3",?r[%r_hyouji_cha][itiran_x],?r[%r_hyouji_cha][itiran_y]
+
+
+
+return
+
+;------------------------------
+
+
+*r_cha_kan_ep4
+
+;状態、進行によってコメントを変える
+mov ?r[%r_hyouji_cha][tati_x],460
+if ?r[%r_hyouji_cha][condition] = 0 return
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\kan"
+if ?r[%r_hyouji_cha][condition] = 2 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\kan_d"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\kan_1.png"
+if ?r[%r_hyouji_cha][condition] = 2 mov $r_txt_path,"bmp\r_click\text\cha\ep4\kan_2.png"
+
+;コンディションによってアイコンを変更する。
+lspnewold kan_btn_lsp,$?r[%r_hyouji_cha][?r[%r_hyouji_cha][condition]],"/2,0,3",?r[%r_hyouji_cha][itiran_x],?r[%r_hyouji_cha][itiran_y]
+
+;衣装チェンジがされた場合は私服に変更する。
+if ?r[%r_hyouji_cha][r_ishou] = 2 && ?r[%r_hyouji_cha][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\kan2" : mov ?r[%r_hyouji_cha][tati_x],440 : lspnewold kan_btn_lsp,"bmp\r_click\cha_btn\ep4\kan_l2","/2,0,3",?r[%r_hyouji_cha][itiran_x],?r[%r_hyouji_cha][itiran_y]
+
+
+return
+
+;------------------------------
+
+
+*r_cha_goh_ep4
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha][condition] = 0 return
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\goh"
+if ?r[%r_hyouji_cha][condition] = 2 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\goh_d"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\goh_1.png"
+if ?r[%r_hyouji_cha][condition] = 2 mov $r_txt_path,"bmp\r_click\text\cha\ep4\goh_2.png"
+
+return
+
+;------------------------------
+
+
+*r_cha_kum_ep4
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha][condition] = 0 return
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\kum"
+if ?r[%r_hyouji_cha][condition] = 2 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\kum_d"
+if ?r[%r_hyouji_cha][condition] = 3 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\kum_d2"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\kum_1.png"
+if ?r[%r_hyouji_cha][condition] = 2 mov $r_txt_path,"bmp\r_click\text\cha\ep4\kum_2.png"
+if ?r[%r_hyouji_cha][condition] = 3 mov $r_txt_path,"bmp\r_click\text\cha\ep4\kum_3.png"
+
+return
+
+;------------------------------
+
+*r_cha_bea_ep4
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha][condition] = 0 return
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\bea" : mov ?r[bea][tati_x],380
+if ?r[%r_hyouji_cha][condition] = 2 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\bea_d" : mov ?r[bea][tati_x],380
+
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep2_2\bea_1.png"
+if ?r[%r_hyouji_cha][condition] = 2 mov $r_txt_path,"bmp\r_click\text\cha\bea_2.png"
+return
+
+;------------------------------
+
+*r_cha_ber_ep4
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha][condition] = 0 return
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\ber"
+if ?r[%r_hyouji_cha][condition] = 2 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\ber_d"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ber_1.png"
+if ?r[%r_hyouji_cha][condition] = 2 mov $r_txt_path,"bmp\r_click\text\cha\ep4\ber_2.png"
+
+return
+
+;------------------------------
+
+*r_cha_lam_ep4
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha][condition] = 0 return
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\lam"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4\lam_1.png"
+
+return
+
+;------------------------------
+
+*r_cha_enj_ep4
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha][condition] = 0 return
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\enj"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep3\enj_1.png"
+
+;衣装チェンジがされた場合は私服に変更する。
+if ?r[%r_hyouji_cha][r_ishou] = 2 && ?r[%r_hyouji_cha][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4\enj_2" : mov ?r[%r_hyouji_cha][tati_x],440 : lspnewold enj_btn_lsp,"bmp\r_click\cha_btn\ep4\enj_l2","/2,0,3",?r[%r_hyouji_cha][itiran_x],?r[%r_hyouji_cha][itiran_y]
+
+return
+
+;------------------------------
+;**************************************************************
+; 右クリック、Tipsボタンの表示
+;**************************************************************
+*r_tips_botann_ep4
+
+	for %tmp2 = kin_btn_lsp to enj_btn_lsp : csp %tmp2 :next
+	for %tmp2 = tips1_lsp to tips1_lsp : csp %tmp2 :next
+	csp r_tips_txt_lsp
+	csp tips_next_lsp
+	csp tips_back_lsp
+	csp r_cha_back_lsp
+	vsp r_hana_lsp,1
+
+	;背景黒枠の表示
+	lsp r_tips1_back_lsp,r_tips1_back,13,34,150
+
+	;tipsの表示（tipsナンバーによって表示するtipsの数を変化
+	mov %tmp,13 : 	mov %tmp1,34
+
+	notif ?tips[1][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_1
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips1_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+	notif ?tips[2][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_2
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips2_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+	notif ?tips[3][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_3
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips3_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+	notif ?tips[4][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_4
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips4_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+	notif ?tips[5][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_5
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips5_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+	notif ?tips[6][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_6
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips6_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+	notif ?tips[7][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_7
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips7_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+
+return
+
+;**************************************************************
+;**************************************************************
+; 右クリック、Tipsボタンの表示
+;**************************************************************
+;**************************************************************
+*r_grim_botann_ep4
+
+	for %tmp2 = kin_btn_lsp to enj_btn_lsp : csp %tmp2 :next
+	for %tmp2 = tips1_lsp to tips7_lsp : csp %tmp2 :next
+	csp r_tips_txt_lsp
+	csp tips_next_lsp
+	csp tips_back_lsp
+	csp r_cha_back_lsp
+	vsp r_hana_lsp,1
+
+	;背景黒枠の表示
+	lsp r_tips1_back_lsp,r_tips1_back,13,34,150
+
+	;tipsの表示（tipsナンバーによって表示するtipsの数を変化
+	mov %tmp,13 : 	mov %tmp1,34
+
+	if ?grim[1][grim_flg] = 1 lsp grim1_lsp,r_grim1,%tmp,%tmp1 : add %tmp,91
+	if ?grim[2][grim_flg] = 1 lsp grim2_lsp,r_grim2,%tmp,%tmp1 : sub %tmp,91 : add %tmp1,36
+	if ?grim[3][grim_flg] = 1 lsp grim3_lsp,r_grim3,%tmp,%tmp1 : add %tmp,91
+	if ?grim[4][grim_flg] = 1 lsp grim4_lsp,r_grim4,%tmp,%tmp1 : sub %tmp,91 : add %tmp1,36
+	if ?grim[5][grim_flg] = 1 lsp grim5_lsp,r_grim5,%tmp,%tmp1 : add %tmp,91
+	if ?grim[6][grim_flg] = 1 lsp grim6_lsp,r_grim6,%tmp,%tmp1 : sub %tmp,91 : add %tmp1,36
+	if ?grim[7][grim_flg] = 1 lsp grim7_lsp,r_grim7,%tmp,%tmp1 : add %tmp,91
+	if ?grim[8][grim_flg] = 1 lsp grim8_lsp,r_grim8,%tmp,%tmp1 : sub %tmp,91 : add %tmp1,36
+	if ?grim[9][grim_flg] = 1 lsp grim9_lsp,r_grim9,%tmp,%tmp1 : add %tmp,91
+	if ?grim[10][grim_flg] = 1 lsp grim10_lsp,r_grim10,%tmp,%tmp1 : sub %tmp,91 : add %tmp1,36
+	if ?grim[11][grim_flg] = 1 lsp grim11_lsp,r_grim11,%tmp,%tmp1 : add %tmp,91
+	if ?grim[12][grim_flg] = 1 lsp grim12_lsp,r_grim12,%tmp,%tmp1
+
+
+return
+
+;**************************************************************
+
+
+;**************************************************************
+; 右クリック、キャラ一覧の表示
+;**************************************************************
+*r_cha_botann_ep4
+	
+	;tips用ボタンの削除
+	mov %tmp,tips1_lsp : add %tmp,%tips_kazu
+	for %tmp2 = tips1_lsp to %tmp : csp %tmp2 :next
+	for %tmp2 = grim1_lsp to grim14_lsp : csp %tmp2 :next
+	csp grim_next_lsp
+	csp grim_back_lsp
+	csp tips_next_lsp
+	csp tips_back_lsp
+	csp r_tips_txt_lsp
+	csp r_grim_txt_lsp
+	vsp r_hana_lsp,1
+
+
+	
+	;背景の表示
+	lsp r_cha_back_lsp,$r_cha_back,13,34
+
+	;キャラアイコンの表示(コンディションによって表示を変える)
+	mov %tmp,kin_btn_lsp
+	for %tmp2 = 1 to cha_kazu_ep4
+		if ?r[%tmp2][condition] = -1 jumpf ;コンデション−１は完全に非表示
+			lspnewold %tmp,$?r[%tmp2][?r[%tmp2][condition]],"/2,0,3",?r[%tmp2][itiran_x],?r[%tmp2][itiran_y]
+			
+			;衣装が絵に応じてキャラアイコンを変える
+			if %tmp2 = enj && ?r[%tmp2][condition] = 1 && ?r[%tmp2][r_ishou] = 2 lspnewold enj_btn_lsp,"bmp\r_click\cha_btn\ep4\enj_l2","/2,0,3",?r[%tmp2][itiran_x],?r[%tmp2][itiran_y]
+			;if %tmp2 = geo && ?r[%tmp2][condition] = 1 && ?r[%tmp2][r_ishou] = 2 lspnewold geo_btn_lsp,"bmp\r_click\cha_btn\ep4\geo_l2","/2,0,3",?r[%tmp2][itiran_x],?r[%tmp2][itiran_y]
+			;if %tmp2 = kan && ?r[%tmp2][condition] = 1 && ?r[%tmp2][r_ishou] = 2 lspnewold kan_btn_lsp,"bmp\r_click\cha_btn\ep4\kan_l2","/2,0,3",?r[%tmp2][itiran_x],?r[%tmp2][itiran_y]
+		~
+		inc %tmp
+	next
+
+	;現在表示しているキャラを表示
+	gosub *r_cha_hyouji_ep4
+
+return
+
+;キャラ一覧、個別キャラごとの変更。
+*r_cha_botann_kobetu_ep4
+	csp tips_next_lsp
+	csp tips_back_lsp
+	csp r_tips_txt_lsp
+	vsp r_hana_lsp,1
+	
+	mov %tmp,kin_btn_lsp : add %tmp,%r_hyouji_cha : dec %tmp
+	lspnewold %tmp,$?r[%r_hyouji_cha][?r[%r_hyouji_cha][condition]],"/2,0,3",?r[%r_hyouji_cha][itiran_x],?r[%r_hyouji_cha][itiran_y]
+return
+;**************************************************************
+
+
+
+;**************************************************************
+; 裏お茶会用のチェック
+;**************************************************************
+*t_tyekku_ep4
+
+goto *rmenu_botann_saisettei_ep4
+
+;**************************************************************
+
+
+
+;**************************************************************
+; 右クリック、タイトルバック機能
+; 確認メッセージを出して、処理を行う。
+;**************************************************************
+*rmenu_title_back_ep4
+
+	;確認メッセージの表示
+	mov $witchh4, title_back_bg
+	setRLangString $witchh4, ""
+lsp title_back_bg_lsp,$witchh4,216,192,230
+	lsp title_back_yes_lsp,title_back_yes,242,242
+	lsp title_back_no_lsp,title_back_no,242,286
+	print 1
+
+	btndef ""
+	
+	spbtn title_back_yes_lsp,title_back_yes_lsp
+	spbtn title_back_no_lsp,title_back_no_lsp
+	
+	*rmenu_title_back_btn_lp_ep4
+
+	btnwait2 %tmp
+	
+	notif %tmp = title_back_yes_lsp jumpf
+		btndef ""
+		csp -1
+		E_A
+		mov %title_skip,1
+		seplay 9,18
+		mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",18,3000,"bmp\r_click\efe\kannon_r.bmp" : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",18,3000,"bmp\r_click\efe\kannon_r.bmp"
+		delay 3000
+		texton
+		
+		reset
+	~
+
+	if %tmp = title_back_no_lsp csp title_back_bg_lsp : csp title_back_yes_lsp :csp title_back_no_lsp : seplay 9,1000 : goto *rmenu_sai_hyouji_ep4
+	if %tmp = 0 csp title_back_bg_lsp : csp title_back_yes_lsp :csp title_back_no_lsp goto *rmenu_sai_hyouji_ep4
+	if %tmp = -1 csp title_back_bg_lsp : csp title_back_yes_lsp :csp title_back_no_lsp goto *rmenu_sai_hyouji_ep4
+	
+	
+	goto *rmenu_title_back_btn_lp_ep4
+
+;**************************************************************
+
+;*********************************************************
+;右クリックメニュー　EP４_２　魔女サイド
+;2008/06/9　作成
+;*********************************************************
+
+;----------------------------------------
+;右クリックシステム、メインメニュー
+
+*rmenu_main_ep4_2
+btndef ""
+
+;テスト用
+;mov %r_hyouji_cha_ma,ma_bea
+;mov %UMINEKOEND,4
+mov %r_hyouji,0 ;メニュー表示（０はキャラ一覧、１はtips）
+;mov %tips_flg,6 ;tips取得数
+;mov %r_u_tea_flg,1
+;mov %play_scene,2000
+
+
+;キャラの状態、コンデション、コメントの更新等は配列を使用
+gosub *bt_ep4_2_def
+
+;初期化
+mov $r_txt_path,"bmp\r_click\text\txt_def.png"
+
+csp r_clear_lsp
+csp r_sprite_lsp
+csp r_language_lsp
+csp r_system_lsp
+csp r_change_lsp
+
+textoff
+monocro off
+mov %load_for_title,0
+mov %r_side,1
+mov %r_u_tea_flg,0
+mov %r_s556_flg,0
+mov %r_hyouji_side,1
+
+;キャラの衣装変数を初期化（デフォルト→１にする）
+for %tmp = 1 to cha_kazu_ep4_2
+	mov ?r[%tmp][r_ishou],1
+next
+
+;チェック、コンディションデフォルト設定
+for %tmp = 1 to cha_kazu_ep4_2
+	mov ?r[%tmp][condition],-1
+next
+
+;Tipsフラグ設定
+for %tmp = 1 to 10
+	mov ?tips[%tmp][tips_flg],0
+next
+for %tmp = 1 to 14
+	mov ?grim[%tmp][grim_flg],0
+next
+
+mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+
+if %r_for_title = 1 jumpf
+	if %play_scene = 40001 gosub *rmenu_main_ep4_2_scene_40001
+	if %play_scene = 40005 gosub *rmenu_main_ep4_2_scene_40005
+	if %play_scene < 40090 && %play_scene >= 40010 gosub *rmenu_main_ep4_2_scene_40005
+	if %play_scene = 40090 gosub *rmenu_main_ep4_2_scene_40090
+	if %play_scene = 40100 gosub *rmenu_main_ep4_2_scene_40100
+	if %play_scene >= 40110 && %play_scene <= 40140 gosub *rmenu_main_ep4_2_scene_40110
+	if %play_scene = 40150 gosub *rmenu_main_ep4_2_scene_40150
+	if %play_scene = 40160 gosub *rmenu_main_ep4_2_scene_40160
+	if %play_scene = 40170 gosub *rmenu_main_ep4_2_scene_40170
+	if %play_scene = 40175 gosub *rmenu_main_ep4_2_scene_40170
+	if %play_scene = 40180 gosub *rmenu_main_ep4_2_scene_40180
+	if %play_scene = 40190 gosub *rmenu_main_ep4_2_scene_40180
+	if %play_scene = 40200 gosub *rmenu_main_ep4_2_scene_40200
+	if %play_scene = 40210 gosub *rmenu_main_ep4_2_scene_40210
+	if %play_scene >= 40220 && %play_scene <= 40270 gosub *rmenu_main_ep4_2_scene_40220
+	if %play_scene = 40280 gosub *rmenu_main_ep4_2_scene_40280
+	if %play_scene = 40290 gosub *rmenu_main_ep4_2_scene_40280
+	if %play_scene = 40300 gosub *rmenu_main_ep4_2_scene_40300
+	if %play_scene = 40310 gosub *rmenu_main_ep4_2_scene_40310
+	if %play_scene = 40320 gosub *rmenu_main_ep4_2_scene_40320
+	if %play_scene >= 40330 && %play_scene <= 40440 gosub *rmenu_main_ep4_2_scene_40330
+	if %play_scene >= 40450 gosub *rmenu_main_ep4_2_scene_40450
+
+;Grimoire section
+	mov %tmp2,%grim_scene
+	sub %tmp2,400
+	if %tmp2 > 11 mov %tmp2,11
+	; this add is for grim tip 0
+	add %tmp2,1
+
+	for %tmp = 1 to %tmp2 : mov ?grim[%tmp][grim_flg],1 : next
+
+~
+
+;コンディションチェック、コンディションが−１の場合は、%r_hyouji_cha_maを０に
+if ?r[%r_hyouji_cha_ma][condition]= -1 mov %r_hyouji_cha_ma,0
+
+;背景を暗くする。
+lsp r_black_lsp,":c;bmp\r_click\black.bmp",0,0,black_toukaritu
+
+;タイトルから入って来た時にはキャラを全員liveで背景はランダムは蝶の画像をランダムで表示
+;シーン番号に３０００を代入。
+;Tips新要素告知フラグが立っている場合はそれをOFFにする。
+notif %r_for_title = 1 goto *rmenu_main_100_ep4_2
+	for %tmp = 1 to cha_kazu_ep4_2
+		mov ?r[%tmp][condition],1
+	next
+
+	for %tmp = 1 to 10
+		mov ?tips[%tmp][tips_flg],1
+	next
+	for %tmp = 1 to 14
+		mov ?grim[%tmp][grim_flg],1
+	next
+
+	gosub *bgm_mode_rnd_bg_majo
+	mov $r_bg_path,$tmp
+	lsp r_bg_lsp,$r_bg_path,0,0
+
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_2_7.png"
+
+	mov %r_hyouji_cha_ma,ma4_bea
+	mov %play_scene,43000
+	amsp r_black_lsp,0,0,0
+
+	;新規要素追加のフラグ解除変数
+	if %UMINEKOEND_TIPS_FLG <= 4 mov %UMINEKOEND_TIPS_FLG,0
+*rmenu_main_100_ep4_2
+
+
+*rmenu_sai_hyouji_ep4_2
+	textoff
+	btndef ""
+
+	;システムボタンの表示
+	mov %tmp,13 : mov %tmp1,292
+
+	;タイトルから入った場合で、キャラ一覧表示の時はnextボタンを表示
+	notif %r_hyouji = 0 csp r_next_lsp : add %tmp1,17 : jumpf
+	if %play_scene = 40450 csp r_next_lsp : add %tmp1,17 : jumpf
+		mov %tmp2,%tmp : add %tmp2,127
+		sub %tmp1,4
+		lsp r_next_lsp,r_next,%tmp2,%tmp1 : add %tmp1,21
+	~
+	;tipsボタンか、キャラ表示か
+	if %r_u_tea_flg =1 jumpf
+		if %r_hyouji = 0 csp r_char_lsp :lsp r_tips_lsp,r_tips,%tmp,%tmp1 : add %tmp1,36
+		;if %r_hyouji = 1 csp r_tips_lsp : lsp r_grim_lsp,r_grim,%tmp,%tmp1 : add %tmp1,36
+		if %r_hyouji = 1 csp r_tips_lsp : lsp r_char_lsp,r_char,%tmp,%tmp1 : add %tmp1,36
+		if %r_hyouji = 2 csp r_grim_lsp : lsp r_char_lsp,r_char,%tmp,%tmp1 : add %tmp1,36
+	~
+	if %r_u_tea_flg =1 mov %r_hyouji,0 : add %tmp1,36
+	
+
+	;タイトルから入った場合はセーブボタンは表示しない。
+	if %r_for_title = 1 jumpf
+		lsp r_save_lsp,r_save,%tmp,%tmp1 : mov %tmp2,%tmp : add %tmp2,98
+		lsp r_load_lsp,r_load,%tmp2,%tmp1 :add %tmp1,36
+		lsp r_blog_lsp,r_blog,%tmp,%tmp1 : add %tmp1,36
+	~
+
+	;タイトル画面の場合は、liveボタンをつける
+	;（NEXTボタンを設置する為、全体的に17ピクセル下に表示する）
+	notif %r_for_title = 1 jumpf
+		;選択しているキャラのコンディションによって切り替え
+		lsp r_exec_lsp,r_exec,%tmp,%tmp1 : add %tmp1,36
+		lsp r_resu_lsp,r_resu,%tmp,%tmp1 : add %tmp1,36
+	~
+
+if %4095 = 0 mov $tmp2,r_innewold_old
+if %4095 != 0 mov $tmp2,r_innewold
+lsp r_inlang_lsp,$tmp2,250,8
+
+	if %is_old_sprites = 1 mov $tmp2,r_innewold_old
+	if %is_old_sprites != 1 mov $tmp2,r_innewold
+	lsp r_innewold_lsp,$tmp2,124,8
+
+	;タイトルから入った場合はep移動ボタンを表示
+	notif %r_for_title = 1 jumpf
+		;現在いるエピソードのボタンを赤でブリンク（画像は表示するがボタン化はしない）
+		;シナリオクリアフラグに注意、2以上でEP1、４以上でEP2のボタンを表示
+		if %UMINEKOEND >= 20 lsp r_ep1_lsp,r_ep1,%tmp,510 : mov %tmp2,%tmp : add %tmp2,63
+		if %UMINEKOEND >= 30 lsp r_ep2_lsp,r_ep2,%tmp2,510 : add %tmp2,63
+		if %UMINEKOEND >= 40 lsp r_ep3_lsp,r_ep3,%tmp2,510 : add %tmp2,63
+		if %UMINEKOEND >= 50 lsp r_ep4_lsp,r_ep4,%tmp2,510 : add %tmp2,63
+		cell r_ep4_lsp,1 
+
+		;衣装変更があるキャラを表示していてコンデションが通常なら、衣装チェンジボタンを表示
+		;（キャラ表示ルーチンで対応？）
+		if %r_hyouji > 0 jumpf ;Tips表示ならスキップ
+		;if %r_hyouji_cha_ma = ma3_ev2 && ?r[ma3_ev2][condition] = 1 lsp r_change_lsp,r_change,643,508
+		;if %r_hyouji_cha_ma = sha && ?r[sha][condition] = 1 lsp r_change_lsp,r_change,643,508
+		;if %r_hyouji_cha_ma = kan && ?r[kan][condition] = 1 lsp r_change_lsp,r_change,643,508
+	~
+
+	lsp r_title_lsp,r_title,%tmp,%tmp1 : add %tmp1,36
+	lsp r_exit_lsp,r_exit,%tmp,%tmp1 : add %tmp1,36
+
+	if %r_hyouji = 0 gosub *r_cha_botann_ep4_2
+	if %r_hyouji = 1 gosub *r_tips_botann_ep4_2
+	if %r_hyouji = 2 gosub *r_grim_botann_ep4_2
+
+
+	;中央説明テキスト
+	lsp r_txt_lsp,":b;bmp\r_click\text\txt_def2.png",211,34
+
+	;華飾り
+	lsp r_hana_lsp,r_hana,578,97  ;convert to widescreen
+
+	;最後に選択したキャラ、tipsに自動的にあわせる
+	if %r_hyouji = 0 gosub *r_cha_hyouji_ep4_2
+	if %r_hyouji = 1 gosub *r_tips_hyouji_ep4_2
+	if %r_hyouji = 2 gosub *r_grim_hyouji_ep4_2
+
+	if %r_side_change = 2 se1v 52,100 : print 99,1500,"whirl.dll/l" : mov %r_side_change,0
+	print 1
+
+*rmenu_botann_saisettei_ep4_2
+
+	;ボタンの再設定
+	btndef ""
+
+	if ?r_cha_text[4][%r_hyouji_cha_ma][1] < 2 mov %cha_page_mode,0 : jumpf
+
+		notif ?r_cha_text[4][%r_hyouji_cha_ma][1] = %cha_text_page spbtn cha_next_lsp,cha_next_lsp
+		notif %cha_text_page = 1 spbtn cha_back_lsp,cha_back_lsp
+		mov %cha_page_mode,1
+	~
+
+		if ?r_cha_text[4][%r_hyouji_cha_ma][1] = %cha_text_page csp cha_next_lsp
+		if %cha_text_page = 1	csp cha_back_lsp
+	
+	spbtn r_char_lsp,r_char_lsp
+	spbtn r_tips_lsp,r_tips_lsp
+	spbtn r_grim_lsp,r_grim_lsp
+	spbtn r_save_lsp,r_save_lsp
+	spbtn r_load_lsp,r_load_lsp
+	spbtn r_exec_lsp,r_exec_lsp
+	spbtn r_resu_lsp,r_resu_lsp
+	spbtn r_blog_lsp,r_blog_lsp
+	spbtn r_title_lsp,r_title_lsp
+	spbtn r_exit_lsp,r_exit_lsp
+
+
+	if ?tips[1][tips_flg] = 1 notif %r_hyouji_tips = 1 spbtn tips1_lsp,tips1_lsp
+	if ?tips[2][tips_flg] = 1 notif %r_hyouji_tips = 2 spbtn tips2_lsp,tips2_lsp
+	if ?tips[3][tips_flg] = 1 notif %r_hyouji_tips = 3 spbtn tips3_lsp,tips3_lsp
+	if ?tips[4][tips_flg] = 1 notif %r_hyouji_tips = 4 spbtn tips4_lsp,tips4_lsp
+	if ?tips[5][tips_flg] = 1 notif %r_hyouji_tips = 5 spbtn tips5_lsp,tips5_lsp
+	if ?tips[6][tips_flg] = 1 notif %r_hyouji_tips = 6 spbtn tips6_lsp,tips6_lsp
+	if ?tips[7][tips_flg] = 1 notif %r_hyouji_tips = 7 spbtn tips7_lsp,tips7_lsp
+
+	if ?grim[1][grim_flg] = 1 notif %r_hyouji_grim = 1 spbtn grim1_lsp,grim1_lsp
+	if ?grim[2][grim_flg] = 1 notif %r_hyouji_grim = 2 spbtn grim2_lsp,grim2_lsp
+	if ?grim[3][grim_flg] = 1 notif %r_hyouji_grim = 3 spbtn grim3_lsp,grim3_lsp
+	if ?grim[4][grim_flg] = 1 notif %r_hyouji_grim = 4 spbtn grim4_lsp,grim4_lsp
+	if ?grim[5][grim_flg] = 1 notif %r_hyouji_grim = 5 spbtn grim5_lsp,grim5_lsp
+	if ?grim[6][grim_flg] = 1 notif %r_hyouji_grim = 6 spbtn grim6_lsp,grim6_lsp
+	if ?grim[7][grim_flg] = 1 notif %r_hyouji_grim = 7 spbtn grim7_lsp,grim7_lsp
+	if ?grim[8][grim_flg] = 1 notif %r_hyouji_grim = 8 spbtn grim8_lsp,grim8_lsp
+	if ?grim[9][grim_flg] = 1 notif %r_hyouji_grim = 9 spbtn grim9_lsp,grim9_lsp
+	if ?grim[10][grim_flg] = 1 notif %r_hyouji_grim = 10 spbtn grim10_lsp,grim10_lsp
+	if ?grim[11][grim_flg] = 1 notif %r_hyouji_grim = 11 spbtn grim11_lsp,grim11_lsp
+	if ?grim[12][grim_flg] = 1 notif %r_hyouji_grim = 12 spbtn grim12_lsp,grim12_lsp
+
+	spbtn tips_next_lsp,tips_next_lsp
+	spbtn tips_back_lsp,tips_back_lsp
+	spbtn grim_next_lsp,grim_next_lsp
+	spbtn grim_back_lsp,grim_back_lsp
+
+
+	mov %tmp,ma4_lam_btn_lsp : add %tmp,cha_kazu_ep4_2
+	
+	mov %tmp3,1
+	for %tmp2 = ma4_lam_btn_lsp to %tmp
+		if ?r[%tmp3][condition] >= 1 spbtn %tmp2,%tmp2
+		inc %tmp3
+	next
+
+;	spbtn r_inlang_lsp,r_inlang_lsp
+	spbtn r_innewold_lsp,r_innewold_lsp : spbtn r_inlang_lsp,r_inlang_lsp
+
+	;NEXT、EP、changeのボタン化
+	spbtn r_next_lsp,r_next_lsp
+	spbtn r_ep1_lsp,r_ep1_lsp
+	spbtn r_ep2_lsp,r_ep2_lsp
+	spbtn r_ep3_lsp,r_ep3_lsp
+	;spbtn r_ep4_lsp,r_ep4_lsp
+	spbtn r_change_lsp,r_change_lsp
+
+*rmenu_custom_btlp_ep4_2
+
+	btnwait2 %BtnRes
+
+	if %BtnRes = r_char_lsp mov %r_hyouji,0 : seplay 9,1000 : goto *rmenu_sai_hyouji_ep4_2
+	if %BtnRes = r_tips_lsp mov %r_hyouji,1 : seplay 9,1000 : goto *rmenu_sai_hyouji_ep4_2
+	if %BtnRes = r_grim_lsp mov %r_hyouji,2 : seplay 9,1000 : goto *rmenu_sai_hyouji_ep4_2
+	
+	notif %BtnRes = r_exec_lsp jumpf
+
+		;選択キャラがシエスタで、尚且つ５５６なら、状態を死亡に変化させる。
+		if %r_hyouji_cha_ma = ma4_s && %r_s_hyouji = 4 mov %r_s556_flg,1 : seplay 9,1100 : goto *rmenu_custom_btlp_100_ep4_2
+
+		;選択されているキャラを一段悪化させる（コンディションがエンドまで来ているのなら処理を飛ばす）
+		;コンディションが０以下（未登場なら状態を変化させない）
+		if %r_killeveryone = 1 goto *rmenu_custom_btlp_50_ep4_2
+		if %r_hyouji_cha_ma = 0 goto *rmenu_custom_btlp_50_ep4_2
+		if ?r[%r_hyouji_cha_ma][condition] >= ?r[%r_hyouji_cha_ma][condition_end]  goto *rmenu_custom_btlp_100_ep4_2
+		if ?r[%r_hyouji_cha_ma][condition] <= 0 goto *rmenu_custom_btlp_100_ep4_2
+			mov %tmp,?r[%r_hyouji_cha_ma][condition] : inc %tmp : mov ?r[%r_hyouji_cha_ma][condition],%tmp
+			seplay 9,1100
+
+		goto *rmenu_custom_btlp_100_ep4_2
+		*rmenu_custom_btlp_50_ep4_2
+
+			;キャラ全員の状態を悪化させる。
+			for %tmp = 1 to cha_kazu_ep4_2
+				if ?r[%tmp][condition] >= ?r[%tmp][condition_end]  goto *rmenu_custom_btlp_90_ep4_2
+				if ?r[%tmp][condition] <= 0 goto *rmenu_custom_btlp_90_ep4_2
+					mov %tmp2,?r[%tmp][condition] : inc %tmp2 : mov ?r[%tmp][condition],%tmp2
+				*rmenu_custom_btlp_90_ep4_2
+			next
+			seplay 9,1100
+		*rmenu_custom_btlp_100_ep4_2
+
+		;メニュー表示がTIPSなら、キャラに変更してしまう
+		if %r_hyouji = 1 csp r_grim_lsp : mov %r_hyouji,0 : goto *rmenu_sai_hyouji_ep4_2
+		if %r_hyouji = 2 csp r_char_lsp : mov %r_hyouji,0 : goto *rmenu_sai_hyouji_ep4_2
+		gosub *r_cha_botann_ep4_2
+		print 1
+
+		goto *rmenu_botann_saisettei_ep4_2
+	~
+
+	notif %BtnRes = r_resu_lsp jumpf
+		
+		;選択キャラがシエスタで、尚且つ５５６なら、状態を死亡に変化させる。
+		if %r_hyouji_cha_ma = ma4_s && %r_s_hyouji = 4 mov %r_s556_flg,2 : seplay 9,1021 : goto *rmenu_custom_btlp_200_ep4_2
+		if %r_hyouji_cha_ma = ma4_s goto *rmenu_botann_saisettei_ep4_2
+
+		if %r_killeveryone = 1 goto *rmenu_custom_btlp_150_ep4_2
+		if %r_hyouji_cha_ma = 0 goto *rmenu_custom_btlp_150_ep4_2
+		;選択されているキャラを一段回復させる（コンディションがエンドまで来ているのなら処理を飛ばす、０は処理を飛ばす）
+		if ?r[%r_hyouji_cha_ma][condition] <= 1 goto *rmenu_custom_btlp_200_ep4_2
+			mov %tmp,?r[%r_hyouji_cha_ma][condition] : dec %tmp : mov ?r[%r_hyouji_cha_ma][condition],%tmp
+			seplay 9,1021
+
+		goto *rmenu_custom_btlp_200_ep4_2
+		*rmenu_custom_btlp_150_ep4_2
+		
+			;キャラ全員の状態を悪化させる。
+			for %tmp = 1 to cha_kazu_ep4_2
+				if ?r[%tmp][condition] <= 1 goto *rmenu_custom_btlp_190_ep4_2
+					mov %tmp2,?r[%tmp][condition] : dec %tmp2 : mov ?r[%tmp][condition],%tmp2
+				*rmenu_custom_btlp_190_ep4_2
+			next
+			seplay 9,1023
+		*rmenu_custom_btlp_200_ep4_2
+
+		;メニュー表示がTIPSなら、キャラに変更してしまう
+		if %r_hyouji = 1 csp r_grim_lsp : mov %r_hyouji,0 : goto *rmenu_sai_hyouji_ep4_2
+		if %r_hyouji = 2 csp r_char_lsp : mov %r_hyouji,0 : goto *rmenu_sai_hyouji_ep4_2
+		gosub *r_cha_botann_ep4_2
+		print 22
+
+	goto *rmenu_botann_saisettei_ep4_2
+	~
+
+	if %BtnRes = 0 && %cha_page_mode = 1 mov %r_killeveryone,1 : goto *rmenu_botann_saisettei_ep4_2
+	if %BtnRes = 0 mov %r_killeveryone,1 : goto *rmenu_botann_saisettei_ep4_2
+	if %BtnRes = r_save_lsp gosub *r_gazou_shokika_ep4_2 : seplay 9,1000 : gosub *savemode :goto *r_exit2_ep4_2
+	if %BtnRes = r_load_lsp gosub *r_gazou_shokika_ep4_2 : seplay 9,1000 : gosub *loadmode :goto *r_exit2_ep4_2
+	if %BtnRes = r_blog_lsp gosub *r_gazou_shokika_ep4_2 : seplay 9,1000 : gosub *text_cw_lookback : goto *rmenu_main_ep4_2
+	if %BtnRes = r_title_lsp seplay 9,1000 : goto *rmenu_title_back_ep4_2
+	if %BtnRes = r_exit_lsp goto *r_exit_ep4_2
+	if %BtnRes = -1 goto *r_exit_ep4_2                ;右クリックで抜ける
+	if %BtnRes = -10 goto *r_exit_ep4_2               ;ＥＳＣで抜ける
+
+	notif %BtnRes = r_inlang_lsp jumpf
+		toggleBackgrounds
+		goto *rmenu_sai_hyouji_ep4_2
+	~
+
+	notif %BtnRes = r_innewold_lsp jumpf
+		toggleSprites
+		goto *rmenu_sai_hyouji_ep4_2
+	~
+
+	;エピソード移動ボタン（押されたボタンによって、EP１のTips、EP２のTipsを移動する）
+	notif %BtnRes = r_ep1_lsp jumpf
+		;各変数の初期化
+		mov %r_hyouji_cha,0
+		mov %r_side,0
+		;mov %r_hyouji,1
+		mov %r_hyouji_tips,0
+		mov %tips_page,1
+		mov %r_hyouji_grim,0
+		mov %grim_page,1
+			lsp 0,":b;bmp\efe\ware.png",0,0
+			E_A
+			seplay 9,1100
+			print 1
+			delay 10
+			csp 0
+			mov %r_side_change,2
+		gosub *r_gazou_shokika_ep2_2
+		goto *rmenu_main_ep1
+	~
+
+	;エピソード移動ボタン（押されたボタンによって、魔女空間に移動する）
+	notif %BtnRes = r_ep2_lsp jumpf
+		;各変数の初期化
+		mov %r_hyouji_cha,0
+		mov %r_side,1
+		;mov %r_hyouji,0
+		mov %r_hyouji_tips,0
+		mov %tips_page,1
+		mov %r_hyouji_grim,0
+		mov %grim_page,1
+			lsp 0,":b;bmp\efe\ware.png",0,0
+			E_A
+			seplay 9,1100
+			print 1
+			delay 10
+			csp 0
+			mov %r_side_change,2
+		gosub *r_gazou_shokika_ep4_2
+		goto *rmenu_main_ep2_2
+	~
+
+	notif %BtnRes = r_ep3_lsp jumpf
+		;各変数の初期化
+		mov %r_hyouji_cha,0
+		mov %r_side,1
+		;mov %r_hyouji,0
+		mov %r_hyouji_tips,0
+		mov %tips_page,1
+		mov %r_hyouji_grim,0
+		mov %grim_page,1
+			lsp 0,":b;bmp\efe\ware.png",0,0
+			E_A
+			seplay 9,1100
+			print 1
+			delay 10
+			csp 0
+			mov %r_side_change,2
+		gosub *r_gazou_shokika_ep4_2
+		goto *rmenu_main_ep3_2
+	~
+
+	;NEXTボタン（人間サイド、魔女サイドの切替）
+	notif %BtnRes = r_next_lsp goto *r_next_btn_skip_100_ep4_2
+			;各変数の初期化
+			mov %r_side,0
+			mov %r_hyouji,0
+				lsp 0,":b;bmp\efe\ware.png",0,0
+				seplay 9,1100
+				print 1
+				delay 10
+				csp 0
+				mov %cha_text_page,1
+			if %play_scene >= 40010 mov %r_side_change,1 : gosub *r_gazou_shokika_ep4_3 : goto *rmenu_main_ep4_3
+			if %play_scene < 40010 mov %r_side_change,2 : gosub *r_gazou_shokika_ep4_3 : goto *rmenu_main_ep4
+	*r_next_btn_skip_100_ep4_2
+
+	;衣装チェンジボタン（衣装のチェンジ出来るキャラはコンディションを１に初期化して、衣装チェンジを行う）
+	notif %BtnRes = r_change_lsp jumpf
+		mov ?r[%r_hyouji_cha_ma][condition],1
+
+		if ?r[%r_hyouji_cha_ma][r_ishou] = 1 mov ?r[%r_hyouji_cha_ma][r_ishou],2 : goto *r_change_lsp_100_ep4_2
+		if ?r[%r_hyouji_cha_ma][r_ishou] = 2 mov ?r[%r_hyouji_cha_ma][r_ishou],1 : goto *r_change_lsp_100_ep4_2
+		*r_change_lsp_100_ep4_2
+
+		gosub *r_cha_hyouji_ep4_2
+		seplay 9,1001
+		print 1
+	~
+
+	if %BtnRes = cha_next_lsp inc %cha_text_page :  mov %cha_page_flg,%r_hyouji_cha_ma : gosub *r_cha_hyouji_ep4_2 : seplay 9,1001 : print 1 : jumpf
+	if %BtnRes = cha_back_lsp dec %cha_text_page :  mov %cha_page_flg,%r_hyouji_cha_ma : gosub *r_cha_hyouji_ep4_2 : seplay 9,1001 : print 1 : jumpf
+
+	;キャラアイコンが押された場合、それぞれのキャラへとジャンプする
+	if %BtnRes = ma4_lam_btn_lsp mov %r_hyouji_cha_ma,ma4_lam : gosub *character_icon_selected_ep4_2
+	if %BtnRes = ma4_ber_btn_lsp mov %r_hyouji_cha_ma,ma4_ber : gosub *character_icon_selected_ep4_2
+	if %BtnRes = ma4_bea_btn_lsp mov %r_hyouji_cha_ma,ma4_bea : gosub *character_icon_selected_ep4_2
+	if %BtnRes = ma4_mar_btn_lsp mov %r_hyouji_cha_ma,ma4_mar : gosub *character_icon_selected_ep4_2
+	if %BtnRes = ma4_enj_btn_lsp mov %r_hyouji_cha_ma,ma4_enj : gosub *character_icon_selected_ep4_2
+	if %BtnRes = ma4_kin_btn_lsp mov %r_hyouji_cha_ma,ma4_kin : gosub *character_icon_selected_ep4_2
+	if %BtnRes = ma4_sak_btn_lsp mov %r_hyouji_cha_ma,ma4_sak : gosub *character_icon_selected_ep4_2
+	if %BtnRes = ma4_wal_btn_lsp mov %r_hyouji_cha_ma,ma4_wal : gosub *character_icon_selected_ep4_2
+	if %BtnRes = ma4_ron_btn_lsp mov %r_hyouji_cha_ma,ma4_ron : gosub *character_icon_selected_ep4_2
+	if %BtnRes = ma4_gap_btn_lsp mov %r_hyouji_cha_ma,ma4_gap : gosub *character_icon_selected_ep4_2
+	if %BtnRes = ma4_s_btn_lsp mov %r_hyouji_cha_ma,ma4_s : gosub *character_icon_selected_ep4_2
+	if %BtnRes = ma4_rg_btn_lsp mov %r_hyouji_cha_ma,ma4_rg : gosub *character_icon_selected_ep4_2
+	if %BtnRes = ma4_goa_btn_lsp mov %r_hyouji_cha_ma,ma4_goa : gosub *character_icon_selected_ep4_2
+
+~
+
+	;Tipsが押された場合、Tips表示処理に飛ぶ
+	notif %BtnRes = tips1_lsp jumpf
+		notif %r_hyouji_tips = 1 mov %tips_page,1
+		mov %r_hyouji_tips,1
+		gosub *r_tips_hyouji_ep4_2
+		goto *rmenu_botann_saisettei_ep4_2
+	~
+	notif %BtnRes = tips2_lsp jumpf
+		notif %r_hyouji_tips = 2 mov %tips_page,1
+		mov %r_hyouji_tips,2
+		gosub *r_tips_hyouji_ep4_2
+		goto *rmenu_botann_saisettei_ep4_2
+	~
+	notif %BtnRes = tips3_lsp jumpf
+		notif %r_hyouji_tips = 3 mov %tips_page,1
+		mov %r_hyouji_tips,3
+		gosub *r_tips_hyouji_ep4_2
+		goto *rmenu_botann_saisettei_ep4_2
+	~
+	notif %BtnRes = tips4_lsp jumpf
+		notif %r_hyouji_tips = 4 mov %tips_page,1
+		mov %r_hyouji_tips,4
+		gosub *r_tips_hyouji_ep4_2
+		goto *rmenu_botann_saisettei_ep4_2
+	~
+	notif %BtnRes = tips5_lsp jumpf
+		notif %r_hyouji_tips = 5 mov %tips_page,1
+		mov %r_hyouji_tips,5
+		gosub *r_tips_hyouji_ep4_2
+		goto *rmenu_botann_saisettei_ep4_2
+	~
+	notif %BtnRes = tips6_lsp jumpf
+		notif %r_hyouji_tips = 6 mov %tips_page,1
+		mov %r_hyouji_tips,6
+		gosub *r_tips_hyouji_ep4_2
+		goto *rmenu_botann_saisettei_ep4_2
+	~
+	notif %BtnRes = tips7_lsp jumpf
+		notif %r_hyouji_tips = 7 mov %tips_page,1
+		mov %r_hyouji_tips,7
+		gosub *r_tips_hyouji_ep4_2
+		goto *rmenu_botann_saisettei_ep4_2
+	~
+
+	;NEXT､Backが押された場合はそのページを表示する。
+	if %BtnRes = tips_next_lsp inc %tips_page : gosub *r_tips_hyouji_ep4_2 : goto *rmenu_botann_saisettei_ep4_2
+	if %BtnRes = tips_back_lsp dec %tips_page : gosub *r_tips_hyouji_ep4_2 : goto *rmenu_botann_saisettei_ep4_2
+
+;***************************************************************
+	;Tipsが押された場合、Tips表示処理に飛ぶ
+	notif %BtnRes = grim1_lsp jumpf
+		notif %r_hyouji_grim = 1 mov %grim_page,1
+		mov %r_hyouji_grim,1
+		gosub *r_grim_hyouji_ep4_2
+		goto *rmenu_botann_saisettei_ep4_2
+	~
+	notif %BtnRes = grim2_lsp jumpf
+		notif %r_hyouji_grim = 2 mov %grim_page,1
+		mov %r_hyouji_grim,2
+		gosub *r_grim_hyouji_ep4_2
+		goto *rmenu_botann_saisettei_ep4_2
+	~
+	notif %BtnRes = grim3_lsp jumpf
+		notif %r_hyouji_grim = 3 mov %grim_page,1
+		mov %r_hyouji_grim,3
+		gosub *r_grim_hyouji_ep4_2
+		goto *rmenu_botann_saisettei_ep4_2
+	~
+	notif %BtnRes = grim4_lsp jumpf
+		notif %r_hyouji_grim = 4 mov %grim_page,1
+		mov %r_hyouji_grim,4
+		gosub *r_grim_hyouji_ep4_2
+		goto *rmenu_botann_saisettei_ep4_2
+	~
+	notif %BtnRes = grim5_lsp jumpf
+		notif %r_hyouji_grim = 5 mov %grim_page,1
+		mov %r_hyouji_grim,5
+		gosub *r_grim_hyouji_ep4_2
+		goto *rmenu_botann_saisettei_ep4_2
+	~
+	notif %BtnRes = grim6_lsp jumpf
+		notif %r_hyouji_grim = 6 mov %grim_page,1
+		mov %r_hyouji_grim,6
+		gosub *r_grim_hyouji_ep4_2
+		goto *rmenu_botann_saisettei_ep4_2
+	~
+	notif %BtnRes = grim7_lsp jumpf
+		notif %r_hyouji_grim = 7 mov %grim_page,1
+		mov %r_hyouji_grim,7
+		gosub *r_grim_hyouji_ep4_2
+		goto *rmenu_botann_saisettei_ep4_2
+	~
+	notif %BtnRes = grim8_lsp jumpf
+		notif %r_hyouji_grim = 8 mov %grim_page,1
+		mov %r_hyouji_grim,8
+		gosub *r_grim_hyouji_ep4_2
+		goto *rmenu_botann_saisettei_ep4_2
+	~
+	notif %BtnRes = grim9_lsp jumpf
+		notif %r_hyouji_grim = 9 mov %grim_page,1
+		mov %r_hyouji_grim,9
+		gosub *r_grim_hyouji_ep4_2
+		goto *rmenu_botann_saisettei_ep4_2
+	~
+	notif %BtnRes = grim10_lsp jumpf
+		notif %r_hyouji_grim = 10 mov %grim_page,1
+		mov %r_hyouji_grim,10
+		gosub *r_grim_hyouji_ep4_2
+		goto *rmenu_botann_saisettei_ep4_2
+	~
+	notif %BtnRes = grim11_lsp jumpf
+		notif %r_hyouji_grim = 11 mov %grim_page,1
+		mov %r_hyouji_grim,11
+		gosub *r_grim_hyouji_ep4_2
+		goto *rmenu_botann_saisettei_ep4_2
+	~
+	notif %BtnRes = grim12_lsp jumpf
+		notif %r_hyouji_grim = 12 mov %grim_page,1
+		mov %r_hyouji_grim,12
+		gosub *r_grim_hyouji_ep4_2
+		goto *rmenu_botann_saisettei_ep4_2
+	~
+	if %BtnRes = grim_next_lsp inc %grim_page : gosub *r_grim_hyouji_ep4_2 : goto *rmenu_botann_saisettei_ep4_2
+	if %BtnRes = grim_back_lsp dec %grim_page : gosub *r_grim_hyouji_ep4_2 : goto *rmenu_botann_saisettei_ep4_2
+
+
+
+
+goto *rmenu_botann_saisettei_ep4_2
+
+;********************************************************************************
+; 画像初期化ルーチン
+*r_gazou_shokika_ep4_2
+	for %tmp = 100 to r_used_lsp : csp %tmp next
+	csp r_bg_lsp
+	csp r_black_lsp
+return
+;********************************************************************************
+
+
+;********************************************************************************
+; 右クリックシステムを抜ける処理
+*r_exit_ep4_2
+	btndef ""
+	gosub *r_gazou_shokika_ep4_2
+	csp r_bg_lsp
+	csp r_black_lsp
+	seplay 9,1100
+	print 1
+	texton
+	if %monoflg = 1 mono 1
+	if %monoflg = 2 mono 2
+
+return ;右クリックシステムを抜ける
+
+;-------------------------------------
+; 右クリックシステムを抜ける処理割れるエフェクトなし
+*r_exit2_ep4_2
+	btndef ""
+	gosub *r_gazou_shokika_ep4_2
+	csp r_bg_lsp
+	csp r_black_lsp
+	print 1
+	texton
+	if %monoflg = 1 mono 1
+	if %monoflg = 2 mono 2
+return ;右クリックシステムを抜ける
+
+;********************************************************************************
+
+
+;********************************************************************************
+;Tipsの表示、それぞれTipsの表示処理に飛ぶ
+*r_tips_hyouji_ep4_2
+
+	csp cha_next_lsp
+	csp cha_back_lsp
+
+	notif %r_hyouji_tips = 0 jumpf
+		mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+		csp cha_lsp
+		csp r_cha_txt_lsp
+			mov $witchh4, $r_txt_path
+	setRLangString $witchh4, ""
+	lsp r_txt_lsp,$witchh4,211,34
+		print 1
+		return
+	~
+
+	mov %r_hyouji,1
+
+	;フラグがないtipsを選択されていたら、tipsに０を入れてスキップさせる。
+	if ?tips[%r_hyouji_tips][tips_flg] = 0 mov %r_hyouji_tips,0 : mov %tips_page,1 : return
+
+	;mov %r_hyouji_cha_ma,0 ;tispの表示を０（なしにする）
+	;衣装替え、チェンジボタンの消去
+	csp r_change_lsp
+
+	;tips表示数のチェック、ページ数が０なら１に最大ページ数を超えていたら最大ページ数に
+	if %tips_page <= 0 mov %tips_page,1
+	if %tips_page > ?tips[%r_hyouji_tips][tips_page_max] mov %tips_page,?tips[%r_hyouji_tips][tips_page_max]
+	
+	;次のページがある場合はNextを２ページ以降ならBackのボタンを表示
+	vsp r_hana_lsp,0
+	csp tips_next_lsp
+	csp tips_back_lsp
+	mov %tmp,r_top_y : add %tmp,424
+	if %tips_page < ?tips[%r_hyouji_tips][tips_page_max] lsp tips_next_lsp,tips_next,653,%tmp
+	if %tips_page > 1 lsp tips_back_lsp,tips_back,603,%tmp
+
+
+	;肖像画の碑文
+	notif %r_hyouji_tips = 1 goto *tips_ep4_2_1
+		cell tips1_lsp,1
+		if %tips_page = 1 mov $r_tips_txt_path,"bmp\r_click\text\tips\ep4\1_1.png"
+	*tips_ep4_2_1
+
+	notif %r_hyouji_tips = 2 goto *tips_ep4_2_2
+		cell tips2_lsp,1
+		if %tips_page = 1 mov $r_tips_txt_path,"bmp\r_click\text\tips\ep4\2_1.png"
+	*tips_ep4_2_2
+
+	notif %r_hyouji_tips = 3 goto *tips_ep4_2_3
+		cell tips3_lsp,1
+		if %tips_page = 1 mov $r_tips_txt_path,"bmp\r_click\text\tips\ep4\3_1.png"
+	*tips_ep4_2_3
+
+	notif %r_hyouji_tips = 4 goto *tips_ep4_2_4
+		if %tips_page = 1 mov $r_tips_txt_path,"bmp\r_click\text\tips\ep4\4_1.png"
+		cell tips4_lsp,1
+	*tips_ep4_2_4
+
+	notif %r_hyouji_tips = 5 goto *tips_ep4_2_5
+		cell tips5_lsp,1
+		if %tips_page = 1 mov $r_tips_txt_path,"bmp\r_click\text\tips\ep4\5_1.png"
+	*tips_ep4_2_5
+
+	notif %r_hyouji_tips = 6 goto *tips_ep4_2_6
+		cell tips6_lsp,1
+		if %tips_page = 1 mov $r_tips_txt_path,"bmp\r_click\text\tips\ep4\6_1.png"
+	*tips_ep4_2_6
+
+	notif %r_hyouji_tips = 7 goto *tips_ep4_2_7
+		cell tips7_lsp,1
+		if %tips_page = 1 mov $r_tips_txt_path,"bmp\r_click\text\tips\ep4\7_1.png"
+	*tips_ep4_2_7
+
+	csp cha_lsp
+	csp r_cha_txt_lsp
+	mov $witchh4, $r_tips_txt_path
+	setRLangString $witchh4, ""
+	lsp r_tips_txt_lsp,$witchh4,211,34
+	seplay 9,1010
+	print 1
+return
+
+;********************************************************************************
+;Grimoireの表示、それぞれGrimoireの表示処理にfly
+*r_grim_hyouji_ep4_2
+
+	csp cha_next_lsp
+	csp cha_back_lsp
+	csp r_tips_txt_lsp
+	csp tips_next_lsp
+	csp tips_back_lsp
+
+	notif %r_hyouji_grim = 0 jumpf
+		mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+		csp cha_lsp
+		csp r_cha_txt_lsp
+			mov $witchh4, $r_txt_path
+	setRLangString $witchh4, ""
+	lsp r_txt_lsp,$witchh4,211,34
+		if %r_side_change = 0 print 1
+		return
+	~
+	mov %r_hyouji,2
+
+	;フラグがないtipsを選択されていたら、tipsに０を入れてスキップさせる。
+	if ?grim[%r_hyouji_grim][grim_flg] = 0 mov %r_hyouji_grim,0 : mov %grim_page,1 : return
+
+	;mov %r_hyouji_cha,0 ;tispの表示を０（なしにする）
+	csp r_change_lsp
+
+	;tips表示数のチェック、ページ数が０なら１に最大ページ数を超えていたら最大ページ数に
+	if %grim_page <= 0 mov %grim_page,1
+	if %grim_page > ?grim[%r_hyouji_grim][grim_page_max] mov %grim_page,?grim[%r_hyouji_grim][grim_page_max]
+	
+	;次のページがある場合はNextを２ページ以降ならBackのボタンを表示
+	vsp r_hana_lsp,0
+	csp grim_next_lsp
+	csp grim_back_lsp
+	mov %tmp,r_top_y : add %tmp,377
+	if %grim_page < ?grim[%r_hyouji_grim][grim_page_max] lsp grim_next_lsp,tips_next,653,%tmp
+	if %grim_page > 1 lsp grim_back_lsp,tips_back,603,%tmp
+
+
+;肖像画の碑文
+	notif %r_hyouji_grim = 1 goto *grim_ep4_2_1
+		cell grim1_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\n0_1.png"
+		if %grim_page = 2 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\n0_2.png"
+		if %grim_page = 3 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\n0_3.png"
+		if %grim_page = 4 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\n0_4.png"
+		if %grim_page = 5 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\n0_5.png"
+	*grim_ep4_2_1
+	notif %r_hyouji_grim = 2 goto *grim_ep4_2_2
+		cell grim2_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n1_1.png"
+	*grim_ep4_2_2
+	notif %r_hyouji_grim = 3 goto *grim_ep4_2_3
+		cell grim3_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n2_1.png"
+	*grim_ep4_2_3
+	notif %r_hyouji_grim = 4 goto *grim_ep4_2_4
+		cell grim4_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n3_1.png"
+	*grim_ep4_2_4
+	notif %r_hyouji_grim = 5 goto *grim_ep4_2_5
+		cell grim5_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n4_1.png"
+	*grim_ep4_2_5
+	notif %r_hyouji_grim = 6 goto *grim_ep4_2_6
+		cell grim6_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n5_1.png"
+	*grim_ep4_2_6
+	notif %r_hyouji_grim = 7 goto *grim_ep4_2_7
+		cell grim7_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n6_1.png"
+	*grim_ep4_2_7
+	notif %r_hyouji_grim = 8 goto *grim_ep4_2_8
+		cell grim8_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n7_1.png"
+	*grim_ep4_2_8
+	notif %r_hyouji_grim = 9 goto *grim_ep4_2_9
+		cell grim9_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n8_1.png"
+	*grim_ep4_2_9
+	notif %r_hyouji_grim = 10 goto *grim_ep4_2_10
+		cell grim10_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n9_1.png"
+	*grim_ep4_2_10
+	notif %r_hyouji_grim = 11 goto *grim_ep4_2_11
+		cell grim11_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n10_1.png"
+	*grim_ep4_2_11
+	notif %r_hyouji_grim = 12 goto *grim_ep4_2_12
+		cell grim12_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n11_1.png"
+	*grim_ep4_2_12
+
+
+	csp cha_lsp
+	csp r_cha_txt_lsp
+	lsp r_grim_txt_lsp,$r_grim_txt_path,211,34
+	seplay 9,1010
+	print 1
+return
+
+;********************************************************************************
+
+
+
+;********************************************************************************
+;キャラの立ち絵、テキストの表示、それぞれのキャラ毎に処理を行う
+*r_cha_hyouji_ep4_2
+
+	if %r_hyouji_cha_ma = 0 return
+	mov %r_hyouji,0
+	;mov %tips_page ,1
+	;mov %r_hyouji_tips,0 ;tispの表示を０（なしにする）
+	csp r_tips_txt_lsp
+	csp tips_next_lsp
+	csp tips_back_lsp
+	csp r_grim_txt_lsp
+	csp grim_next_lsp
+	csp grim_back_lsp
+	vsp r_hana_lsp,1
+	csp cha_next_lsp
+	csp cha_back_lsp
+
+	if %cha_text_page > ?r_cha_text[4][%r_hyouji_cha_ma][1] mov %cha_text_page,1
+	notif %cha_page_flg = %r_hyouji_cha_ma mov %cha_text_page,1
+
+	;タイトル画面から入っていて、所定のキャラならチェンジボタンを表示する、それ以外ならボタンを消去
+	csp r_change_lsp
+	notif %r_for_title = 1 jumpf
+		;衣装変更があるキャラを表示している場合は、チェンジボタンを表示
+		;（キャラ表示ルーチンで対応？）
+		;if %r_hyouji_cha_ma = ma3_ev2 lsp r_change_lsp,r_change,643,508
+	~
+
+	;キャラアイコンが押された場合、それぞれのキャラへとジャンプする
+	if %r_hyouji_cha_ma = ma4_lam : gosub *r_cha_lam_ep4_2
+	if %r_hyouji_cha_ma = ma4_ber : gosub *r_cha_ber_ep4_2
+	if %r_hyouji_cha_ma = ma4_bea : gosub *r_cha_bea_ep4_2
+	if %r_hyouji_cha_ma = ma4_mar : gosub *r_cha_mar_ep4_2
+	if %r_hyouji_cha_ma = ma4_enj : gosub *r_cha_enj_ep4_2
+	if %r_hyouji_cha_ma = ma4_kin : gosub *r_cha_kin_ep4_2
+	if %r_hyouji_cha_ma = ma4_sak : gosub *r_cha_sak_ep4_2
+	if %r_hyouji_cha_ma = ma4_wal : gosub *r_cha_wal_ep4_2
+	if %r_hyouji_cha_ma = ma4_ron : gosub *r_cha_ron_ep4_2
+	if %r_hyouji_cha_ma = ma4_gap : gosub *r_cha_gap_ep4_2
+	if %r_hyouji_cha_ma = ma4_s : gosub *r_cha_s_ep4_2
+	if %r_hyouji_cha_ma = ma4_rg : gosub *r_cha_rg_ep4_2
+ 	if %r_hyouji_cha_ma = ma4_goa : gosub *r_cha_goa_ep4_2
+
+	if ?r_cha_text[4][%r_hyouji_cha_ma][1] > %cha_text_page	lsp cha_next_lsp,tips_next,200,407
+	if %cha_text_page > 1	lsp cha_back_lsp,tips_back,250,407
+
+	;(表示処理）
+	mov %witchh5, %r_hyouji_cha_ma;
+	showchartiptachi
+		mov $witchh4, $r_txt_path
+	setRLangString $witchh4, ""
+	lsp r_cha_txt_lsp,$witchh4,211,34
+
+return
+
+;********************************************************************************
+
+
+
+
+;********************************************************************************
+
+;*******************************************************
+;　■キャラ情報表示
+;
+;　　キャラ立ち絵
+;　　コメント１（名前、年齢など変化しない、しにくい部分）
+;　　コメント２（現在状況等、状況によって変化するところ）
+;　　キャラクター切り替えボタン　←→
+;
+;*******************************************************
+
+;******************************************
+;キャラの立ち絵の表示
+;キャラ毎の細かいルーチンへの移動。
+;******************************************
+;------------------------------
+*r_cha_lam_ep4_2
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_ma][condition] = 0 return
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\lam"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_ma][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_2\lam_1.png"
+return
+;------------------------------
+*r_cha_ber_ep4_2
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_ma][condition] = 0 return
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\ber"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_ma][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_2\ber_1.png"
+return
+;------------------------------
+*r_cha_bea_ep4_2
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_ma][condition] = 0 return
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\bea"
+if ?r[%r_hyouji_cha_ma][condition] = 2 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\bea"
+
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_ma][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep2_2\bea_1.png"
+if ?r[%r_hyouji_cha_ma][condition] = 2 mov $r_txt_path,"bmp\r_click\text\cha\ep4_2\bea_2.png"
+return
+;------------------------------
+*r_cha_mar_ep4_2
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_ma][condition] = 0 return
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\mar" : mov ?r[ma4_mar][tati_x],380
+if ?r[%r_hyouji_cha_ma][condition] = 2 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\mar_2" : mov ?r[ma4_mar][tati_x],410
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_ma][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep2_2\mar_1.png"
+if ?r[%r_hyouji_cha_ma][condition] = 2 mov $r_txt_path,"bmp\r_click\text\cha\ep4_2\mar_2.png"
+return
+;------------------------------
+*r_cha_enj_ep4_2
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_ma][condition] = 0 return
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\enj"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_ma][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_2\enj_1.png"
+return
+;------------------------------
+*r_cha_kin_ep4_2
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_ma][condition] = 0 return
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\kin"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_ma][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_2\kin_1.png"
+
+return
+;------------------------------
+*r_cha_sak_ep4_2
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_ma][condition] = 0 return
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\sak"
+if ?r[%r_hyouji_cha_ma][condition] = 2 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\sak_d"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_ma][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_2\sak_1.png"
+if ?r[%r_hyouji_cha_ma][condition] = 2 mov $r_txt_path,"bmp\r_click\text\cha\ep4_2\sak_2.png"
+return
+;------------------------------
+*r_cha_wal_ep4_2
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_ma][condition] = 0 return
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\wal"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_ma][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep3_2\wal_1.png"
+
+return
+;------------------------------
+*r_cha_ron_ep4_2
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_ma][condition] = 0 return
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\ron"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_ma][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep3_2\ron_1.png"
+
+return
+;------------------------------
+*r_cha_gap_ep4_2
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_ma][condition] = 0 return
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\gap"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_ma][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_2\gap_1.png"
+return
+;------------------------------
+*r_cha_s_ep4_2
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_ma][condition] = 0 return
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\s45"
+
+;変化フラグが１、２の場合は５５６の特殊処理を入れる
+if %r_s556_flg = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_2\s55_2.png" : mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\s55_d" : mov %r_s556_flg,0 : return
+if %r_s556_flg = 2 mov $r_txt_path,"bmp\r_click\text\cha\ep4_2\s55_1.png" : mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\s55" : set_achievement "UMI46" : mov %r_s556_flg,0 : return
+
+;ランダムで姉妹の内、一人を表示
+if %r_for_title = 0 rnd2 %r_s_hyouji,1,3
+if %r_for_title = 1 rnd2 %r_s_hyouji,1,4
+
+if ?r[%r_hyouji_cha_ma][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if %r_s_hyouji = 1 && ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep3_2\s45_1.png" : mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\s45"
+if %r_s_hyouji = 2 && ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep3_2\s41_1.png" : mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\s41"
+if %r_s_hyouji = 3 && ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_2\s00_1.png" : mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\s00"
+if %r_s_hyouji = 4 && ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_2\s55_2.png" : mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\s55_d"
+return
+;------------------------------
+*r_cha_rg_ep4_2
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_ma][condition] = 0 return
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\lam"
+
+;ランダムで７姉妹の内、一人を表示
+rnd2 %ran,1,7
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_ma][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if %ran = 1 && ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep3_2\rg1_1.png" : mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\rg1"
+if %ran = 2 && ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep3_2\rg2_1.png" : mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\rg2"
+if %ran = 3 && ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep3_2\rg3_1.png" : mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\rg3"
+if %ran = 4 && ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep3_2\rg4_1.png" : mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\rg4"
+if %ran = 5 && ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep3_2\rg5_1.png" : mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\rg5"
+if %ran = 6 && ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep3_2\rg6_1.png" : mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\rg6"
+if %ran = 7 && ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep3_2\rg7_1.png" : mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\rg7"
+return
+;------------------------------
+*r_cha_goa_ep4_2
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_ma][condition] = 0 return
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_2\goa"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_ma][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_ma][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep3_2\goa_1.png"
+
+
+return
+;------------------------------
+
+;**************************************************************
+; 右クリック、Tipsボタンの表示
+;**************************************************************
+*r_tips_botann_ep4_2
+
+	for %tmp2 = ma4_lam_btn_lsp to ma4_goa_btn_lsp : csp %tmp2 :next
+	for %tmp2 = tips1_lsp to tips1_lsp : csp %tmp2 :next
+	csp r_tips_txt_lsp
+	csp tips_next_lsp
+	csp tips_back_lsp
+	csp r_cha_back_lsp
+	vsp r_hana_lsp,1
+
+	;背景黒枠の表示
+	lsp r_tips1_back_lsp,r_tips1_back,13,34,150
+
+	;tipsの表示（tipsナンバーによって表示するtipsの数を変化
+	mov %tmp,13 : 	mov %tmp1,34
+
+	notif ?tips[1][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_1
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips1_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+	notif ?tips[2][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_2
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips2_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+	notif ?tips[3][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_3
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips3_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+	notif ?tips[4][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_4
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips4_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+	notif ?tips[5][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_5
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips5_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+	notif ?tips[6][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_6
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips6_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+	notif ?tips[7][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_7
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips7_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+
+return
+
+;**************************************************************
+
+*r_grim_botann_ep4_2
+
+	for %tmp2 = kin_btn_lsp to enj_btn_lsp : csp %tmp2 :next
+	for %tmp2 = tips1_lsp to tips7_lsp : csp %tmp2 :next
+	csp r_tips_txt_lsp
+	csp tips_next_lsp
+	csp tips_back_lsp
+	csp r_cha_back_lsp
+	vsp r_hana_lsp,1
+
+	;背景黒枠の表示
+	lsp r_tips1_back_lsp,r_tips1_back,13,34,150
+
+	;tipsの表示（tipsナンバーによって表示するtipsの数を変化
+	mov %tmp,13 : 	mov %tmp1,34
+	if ?grim[1][grim_flg] = 1 lsp grim1_lsp,r_grim1,%tmp,%tmp1 : add %tmp,91
+	if ?grim[2][grim_flg] = 1 lsp grim2_lsp,r_grim2,%tmp,%tmp1 : sub %tmp,91 : add %tmp1,36
+	if ?grim[3][grim_flg] = 1 lsp grim3_lsp,r_grim3,%tmp,%tmp1 : add %tmp,91
+	if ?grim[4][grim_flg] = 1 lsp grim4_lsp,r_grim4,%tmp,%tmp1 : sub %tmp,91 : add %tmp1,36
+	if ?grim[5][grim_flg] = 1 lsp grim5_lsp,r_grim5,%tmp,%tmp1 : add %tmp,91
+	if ?grim[6][grim_flg] = 1 lsp grim6_lsp,r_grim6,%tmp,%tmp1 : sub %tmp,91 : add %tmp1,36
+	if ?grim[7][grim_flg] = 1 lsp grim7_lsp,r_grim7,%tmp,%tmp1 : add %tmp,91
+	if ?grim[8][grim_flg] = 1 lsp grim8_lsp,r_grim8,%tmp,%tmp1 : sub %tmp,91 : add %tmp1,36
+	if ?grim[9][grim_flg] = 1 lsp grim9_lsp,r_grim9,%tmp,%tmp1 : add %tmp,91
+	if ?grim[10][grim_flg] = 1 lsp grim10_lsp,r_grim10,%tmp,%tmp1 : sub %tmp,91 : add %tmp1,36
+	if ?grim[11][grim_flg] = 1 lsp grim11_lsp,r_grim11,%tmp,%tmp1 : add %tmp,91
+	if ?grim[12][grim_flg] = 1 lsp grim12_lsp,r_grim12,%tmp,%tmp1
+
+return
+
+;**************************************************************
+; 右クリック、キャラ一覧の表示
+;**************************************************************
+*r_cha_botann_ep4_2
+	
+	;tips用ボタンの削除
+	mov %tmp,tips1_lsp : add %tmp,%tips_kazu
+	for %tmp2 = tips1_lsp to %tmp : csp %tmp2 :next
+	for %tmp2 = grim1_lsp to grim14_lsp : csp %tmp2 :next
+	csp grim_next_lsp
+	csp grim_back_lsp
+	csp tips_next_lsp
+	csp tips_back_lsp
+	csp r_tips_txt_lsp
+	csp r_grim_txt_lsp
+	vsp r_hana_lsp,1
+
+
+	
+	;背景の表示
+	lsp r_cha_back_lsp,$r_cha_back,13,34
+
+	;キャラアイコンの表示(コンディションによって表示を変える)
+	mov %tmp,ma4_lam_btn_lsp
+	for %tmp2 = 1 to cha_kazu_ep4_2
+		if ?r[%tmp2][condition] = -1 jumpf ;コンデション−１は完全に非表示
+			lspnewold %tmp,$?r[%tmp2][?r[%tmp2][condition]],"/2,0,3",?r[%tmp2][itiran_x],?r[%tmp2][itiran_y]
+
+			;衣装によってキャラアイコンの表示を切り替える
+			;if %tmp2 = ma3_ev2 && ?r[%tmp2][condition] = 1 && ?r[%tmp2][r_ishou] = 2 lspnewold ma3_ev2_btn_lsp,"bmp\r_click\cha_btn\ep4_2\ev2_l2","/2,0,3",?r[%tmp2][itiran_x],?r[%tmp2][itiran_y]
+			;if %tmp2 = geo && ?r[%tmp2][condition] = 1 && ?r[%tmp2][r_ishou] = 2 lspnewold geo_btn_lsp,"bmp\r_click\cha_btn\ep2\geo_l2","/2,0,3",?r[%tmp2][itiran_x],?r[%tmp2][itiran_y]
+			;if %tmp2 = kan && ?r[%tmp2][condition] = 1 && ?r[%tmp2][r_ishou] = 2 lspnewold kan_btn_lsp,"bmp\r_click\cha_btn\ep2\kan_l2","/2,0,3",?r[%tmp2][itiran_x],?r[%tmp2][itiran_y]
+
+		~
+		inc %tmp
+	next
+
+	;現在表示しているキャラを表示
+	gosub *r_cha_hyouji_ep4_2
+
+return
+
+;キャラ一覧、個別キャラごとの変更。
+*r_cha_botann_kobetu_ep4_2
+	csp tips_next_lsp
+	csp tips_back_lsp
+	csp r_tips_txt_lsp
+	vsp r_hana_lsp,1
+	
+	mov %tmp,kin_btn_lsp : add %tmp,%r_hyouji_cha_ma : dec %tmp
+	lspnewold %tmp,$?r[%r_hyouji_cha_ma][?r[%r_hyouji_cha_ma][condition]],"/2,0,3",?r[%r_hyouji_cha_ma][itiran_x],?r[%r_hyouji_cha_ma][itiran_y]
+return
+;**************************************************************
+
+
+;**************************************************************
+; 右クリック、タイトルバック機能
+; 確認メッセージを出して、処理を行う。
+;**************************************************************
+*rmenu_title_back_ep4_2
+
+	;確認メッセージの表示
+	mov $witchh4, title_back_bg
+	setRLangString $witchh4, ""
+lsp title_back_bg_lsp,$witchh4,216,192,230
+	lsp title_back_yes_lsp,title_back_yes,242,242
+	lsp title_back_no_lsp,title_back_no,242,286
+	print 1
+
+	btndef ""
+	
+	spbtn title_back_yes_lsp,title_back_yes_lsp
+	spbtn title_back_no_lsp,title_back_no_lsp
+	
+	*rmenu_title_back_btn_lp_ep4_2
+
+	btnwait2 %tmp
+	
+	notif %tmp = title_back_yes_lsp jumpf
+		btndef ""
+		csp -1
+		E_A
+		mov %title_skip,1
+		seplay 9,18
+		mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",18,3000,"bmp\r_click\efe\kannon_r.bmp" : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",18,3000,"bmp\r_click\efe\kannon_r.bmp"
+		delay 3000
+		texton
+		
+		reset
+	~
+
+	if %tmp = title_back_no_lsp csp title_back_bg_lsp : csp title_back_yes_lsp :csp title_back_no_lsp : seplay 9,1000 : goto *rmenu_sai_hyouji_ep4_2
+	if %tmp = 0 csp title_back_bg_lsp : csp title_back_yes_lsp :csp title_back_no_lsp goto *rmenu_sai_hyouji_ep4_2
+	if %tmp = -1 csp title_back_bg_lsp : csp title_back_yes_lsp :csp title_back_no_lsp goto *rmenu_sai_hyouji_ep4_2
+	
+	
+	goto *rmenu_title_back_btn_lp_ep4_2
+
+;**************************************************************
+
+;*********************************************************
+;右クリックメニュー　EP４_３　縁寿サイド
+;*********************************************************
+
+;----------------------------------------
+;右クリックシステム、メインメニュー
+
+*rmenu_main_ep4_3
+btndef ""
+
+;テスト用
+;mov %r_hyouji_cha_enj,ma_bea
+;mov %UMINEKOEND,4
+mov %r_hyouji,0 ;メニュー表示（０はキャラ一覧、１はtips）
+;mov %tips_flg,6 ;tips取得数
+;mov %r_u_tea_flg,1
+;mov %play_scene,2000
+
+
+;キャラの状態、コンデション、コメントの更新等は配列を使用
+gosub *bt_ep4_3_def
+
+if %r_side_change = 1 lsp 0,":c;bmp\r_click\black.bmp",0,0 : wait 300 : print 10,300 : csp 0
+
+;初期化
+mov $r_txt_path,"bmp\r_click\text\txt_def.png"
+mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+
+csp r_clear_lsp
+csp r_sprite_lsp
+csp r_language_lsp
+csp r_system_lsp
+csp r_change_lsp
+
+textoff
+monocro off
+mov %load_for_title,0
+mov %r_side,1
+mov %r_u_tea_flg,0
+mov %r_hyouji_side,2
+
+;キャラの衣装変数を初期化（デフォルト→１にする）
+for %tmp = 1 to cha_kazu_ep4_3
+	mov ?r[%tmp][r_ishou],1
+next
+
+;チェック、コンディションデフォルト設定
+for %tmp = 1 to cha_kazu_ep4_3 : mov ?r[%tmp][condition],-1 : next
+
+;Tipsフラグ設定
+for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+;キャラ一覧表示の背景を変える
+mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+
+if %r_for_title = 1 jumpf
+	if %play_scene = 40000 gosub *rmenu_main_ep4_3_scene_40000
+	if %play_scene > 40000 && %play_scene < 40010 gosub *rmenu_main_ep4_2_scene_40000
+	if %play_scene = 40010 gosub *rmenu_main_ep4_3_scene_40010
+	if %play_scene = 40020 gosub *rmenu_main_ep4_3_scene_40020
+	if %play_scene = 40030 gosub *rmenu_main_ep4_3_scene_40030
+	if %play_scene = 40040 gosub *rmenu_main_ep4_3_scene_40040
+	if %play_scene = 40050 gosub *rmenu_main_ep4_3_scene_40050
+	if %play_scene = 40060 gosub *rmenu_main_ep4_3_scene_40060
+	if %play_scene = 40070 gosub *rmenu_main_ep4_3_scene_40070
+	if %play_scene >= 40080 && %play_scene <= 40110 gosub *rmenu_main_ep4_3_scene_40080
+	if %play_scene = 40120 gosub *rmenu_main_ep4_3_scene_40120
+	if %play_scene = 40130 gosub *rmenu_main_ep4_3_scene_40130
+	if %play_scene >= 40140 && %play_scene <= 40170 gosub *rmenu_main_ep4_3_scene_40140
+	if %play_scene >= 40175 && %play_scene <= 40220 gosub *rmenu_main_ep4_3_scene_40175
+	if %play_scene = 40230 gosub *rmenu_main_ep4_3_scene_40230
+	if %play_scene = 40240 gosub *rmenu_main_ep4_3_scene_40240
+	if %play_scene >= 40250 && %play_scene <= 40280 gosub *rmenu_main_ep4_3_scene_40250
+	if %play_scene = 40290 gosub *rmenu_main_ep4_3_scene_40290
+	if %play_scene >= 40300 && %play_scene <= 40500 gosub *rmenu_main_ep4_3_scene_40250
+
+;Grimoire section
+	mov %tmp2,%grim_scene
+	sub %tmp2,400
+	if %tmp2 > 11 mov %tmp2,11
+	; this add is for grim tip 0
+	add %tmp2,1
+
+	for %tmp = 1 to %tmp2 : mov ?grim[%tmp][grim_flg],1 : next
+~
+
+;コンディションが１以上でないキャラが指定されている場合、キャラ指定を０に変更する。
+if ?r[%r_hyouji_cha_enj][condition] <= 0 mov %r_hyouji_cha_enj,0
+
+;背景を暗くする。
+lsp r_black_lsp,":c;bmp\r_click\black.bmp",0,0,black_toukaritu
+
+;タイトルから入って来た時にはキャラを全員liveで背景はランダムは蝶の画像をランダムで表示
+;シーン番号に３０００を代入。
+;Tips新要素告知フラグが立っている場合はそれをOFFにする。
+notif %r_for_title = 1 goto *rmenu_main_100_ep4_3
+	for %tmp = 1 to cha_kazu_ep4_3
+		mov ?r[%tmp][condition],1
+	next
+	mov ?r[enj_ber][condition],-1
+
+	for %tmp = 1 to 10
+		mov ?tips[%tmp][tips_flg],1
+	next
+	for %tmp = 1 to 14
+		mov ?grim[%tmp][grim_flg],1
+	next
+
+	gosub *bgm_mode_rnd_bg_1998
+	mov $r_bg_path,$tmp
+	lsp r_bg_lsp,$r_bg_path,0,0
+
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_3_7.png"
+
+	mov %r_hyouji_cha_enj,enj_enj
+	mov %play_scene,43000
+	amsp r_black_lsp,0,0,0
+
+	;新規要素追加のフラグ解除変数
+	if %UMINEKOEND_TIPS_FLG <= 4 mov %UMINEKOEND_TIPS_FLG,0
+*rmenu_main_100_ep4_3
+
+*rmenu_sai_hyouji_ep4_3
+	textoff
+	btndef ""
+
+	;システムボタンの表示
+	mov %tmp,13 : mov %tmp1,292
+
+	;タイトルから入った場合で、キャラ一覧表示の時はnextボタンを表示
+	notif %r_hyouji = 0 csp r_next_lsp : add %tmp1,17 : jumpf
+		mov %tmp2,%tmp : add %tmp2,127
+		sub %tmp1,4
+		lsp r_next_lsp,r_next,%tmp2,%tmp1 : add %tmp1,21
+	~
+	;tipsボタンか、キャラ表示か
+	if %r_u_tea_flg =1 jumpf
+		if %r_hyouji = 0 csp r_char_lsp :lsp r_tips_lsp,r_tips,%tmp,%tmp1 : add %tmp1,36
+		;if %r_hyouji = 1 csp r_tips_lsp : lsp r_grim_lsp,r_grim,%tmp,%tmp1 : add %tmp1,36
+		if %r_hyouji = 1 csp r_tips_lsp : lsp r_char_lsp,r_char,%tmp,%tmp1 : add %tmp1,36
+		if %r_hyouji = 2 csp r_grim_lsp : lsp r_char_lsp,r_char,%tmp,%tmp1 : add %tmp1,36
+	~
+	if %r_u_tea_flg =1 mov %r_hyouji,0 : add %tmp1,36
+	
+
+	;タイトルから入った場合はセーブボタンは表示しない。
+	if %r_for_title = 1 jumpf
+		lsp r_save_lsp,r_save,%tmp,%tmp1 : mov %tmp2,%tmp : add %tmp2,98
+		lsp r_load_lsp,r_load,%tmp2,%tmp1 :add %tmp1,36
+		lsp r_blog_lsp,r_blog,%tmp,%tmp1 : add %tmp1,36
+	~
+
+	;タイトル画面の場合は、liveボタンをつける
+	;（NEXTボタンを設置する為、全体的に17ピクセル下に表示する）
+	notif %r_for_title = 1 jumpf
+		;選択しているキャラのコンディションによって切り替え
+		lsp r_exec_lsp,r_exec,%tmp,%tmp1 : add %tmp1,36
+		lsp r_resu_lsp,r_resu,%tmp,%tmp1 : add %tmp1,36
+	~
+
+if %4095 = 0 mov $tmp2,r_innewold_old
+if %4095 != 0 mov $tmp2,r_innewold
+lsp r_inlang_lsp,$tmp2,250,8
+
+	if %is_old_sprites = 1 mov $tmp2,r_innewold_old
+	if %is_old_sprites != 1 mov $tmp2,r_innewold
+	lsp r_innewold_lsp,$tmp2,124,8
+
+	;タイトルから入った場合はep移動ボタンを表示
+	notif %r_for_title = 1 jumpf
+		;現在いるエピソードのボタンを赤でブリンク（画像は表示するがボタン化はしない）
+		;シナリオクリアフラグに注意、2以上でEP1、４以上でEP2のボタンを表示
+		if %UMINEKOEND >= 20 lsp r_ep1_lsp,r_ep1,%tmp,510 : mov %tmp2,%tmp : add %tmp2,63
+		if %UMINEKOEND >= 30 lsp r_ep2_lsp,r_ep2,%tmp2,510 : add %tmp2,63
+		if %UMINEKOEND >= 40 lsp r_ep3_lsp,r_ep3,%tmp2,510 : add %tmp2,63
+		if %UMINEKOEND >= 50 lsp r_ep4_lsp,r_ep4,%tmp2,510 : add %tmp2,63
+		cell r_ep4_lsp,1 
+
+		;衣装変更があるキャラを表示していてコンデションが通常なら、衣装チェンジボタンを表示
+		;（キャラ表示ルーチンで対応？）
+		if %r_hyouji > 0 jumpf ;Tips表示ならスキップ
+		if %r_hyouji_cha_enj = enj_enj && ?r[enj_enj][condition] = 1 lsp r_change_lsp,r_change,643,508
+		;if %r_hyouji_cha_enj = sha && ?r[sha][condition] = 1 lsp r_change_lsp,r_change,643,508
+		;if %r_hyouji_cha_enj = kan && ?r[kan][condition] = 1 lsp r_change_lsp,r_change,643,508
+	~
+
+	lsp r_title_lsp,r_title,%tmp,%tmp1 : add %tmp1,36
+	lsp r_exit_lsp,r_exit,%tmp,%tmp1 : add %tmp1,36
+
+	if %r_hyouji = 0 gosub *r_cha_botann_ep4_3
+	if %r_hyouji = 1 gosub *r_tips_botann_ep4_3
+	if %r_hyouji = 2 gosub *r_grim_botann_ep4_3
+
+
+	;中央説明テキスト
+	lsp r_txt_lsp,":b;bmp\r_click\text\txt_def2.png",211,34
+
+	;華飾り
+	lsp r_hana_lsp,":b;bmp\r_click\hana2_back.png",578,97  ;convert to widescreen
+
+	;最後に選択したキャラ、tipsに自動的にあわせる
+	if %r_hyouji = 0 gosub *r_cha_hyouji_ep4_3
+	if %r_hyouji = 1 gosub *r_tips_hyouji_ep4_3
+	if %r_hyouji = 2 gosub *r_grim_hyouji_ep4_3
+
+	if %r_side_change = 1 print 10,500 : mov %r_side_change,0
+	if %r_side_change = 2 print 99,1500,"breakup.dll/urB" : mov %r_side_change,0
+	;if %r_side_change = 2 se1v 52,100 : print 99,1500,"whirl.dll/l" : mov %r_side_change,0
+	print 1
+
+*rmenu_botann_saisettei_ep4_3
+
+	;衣装チェンジボタンの再設定
+	csp r_change_lsp
+	notif %r_for_title = 1 jumpf
+		;衣装変更があるキャラを表示していてコンデションが通常なら、衣装チェンジボタンを表示
+		;（キャラ表示ルーチンで対応？）
+		if %r_hyouji > 0 jumpf ;Tips表示ならスキップ
+			if %r_hyouji_cha_enj = enj_enj && ?r[enj_enj][condition] = 1 lsp r_change_lsp,r_change,643,508
+	~
+	print 1
+
+	;ボタンの再設定
+	btndef ""
+
+	if ?r_cha_text[4][%r_hyouji_cha_enj][2] < 2 mov %cha_page_mode,0 : jumpf
+
+		notif ?r_cha_text[4][%r_hyouji_cha_enj][2] = %cha_text_page spbtn cha_next_lsp,cha_next_lsp
+		notif %cha_text_page = 1 spbtn cha_back_lsp,cha_back_lsp
+		mov %cha_page_mode,1
+	~
+
+		if ?r_cha_text[4][%r_hyouji_cha_enj][2] = %cha_text_page csp cha_next_lsp
+		if %cha_text_page = 1	csp cha_back_lsp
+	
+	spbtn r_char_lsp,r_char_lsp
+	spbtn r_tips_lsp,r_tips_lsp
+	spbtn r_grim_lsp,r_grim_lsp
+	spbtn r_save_lsp,r_save_lsp
+	spbtn r_load_lsp,r_load_lsp
+	spbtn r_exec_lsp,r_exec_lsp
+	spbtn r_resu_lsp,r_resu_lsp
+	spbtn r_blog_lsp,r_blog_lsp
+	spbtn r_title_lsp,r_title_lsp
+	spbtn r_exit_lsp,r_exit_lsp
+
+	if ?tips[1][tips_flg] = 1 notif %r_hyouji_tips = 1 spbtn tips1_lsp,tips1_lsp
+	if ?tips[2][tips_flg] = 1 notif %r_hyouji_tips = 2 spbtn tips2_lsp,tips2_lsp
+	if ?tips[3][tips_flg] = 1 notif %r_hyouji_tips = 3 spbtn tips3_lsp,tips3_lsp
+	if ?tips[4][tips_flg] = 1 notif %r_hyouji_tips = 4 spbtn tips4_lsp,tips4_lsp
+	if ?tips[5][tips_flg] = 1 notif %r_hyouji_tips = 5 spbtn tips5_lsp,tips5_lsp
+	if ?tips[6][tips_flg] = 1 notif %r_hyouji_tips = 6 spbtn tips6_lsp,tips6_lsp
+	if ?tips[7][tips_flg] = 1 notif %r_hyouji_tips = 7 spbtn tips7_lsp,tips7_lsp
+
+	if ?grim[1][grim_flg] = 1 notif %r_hyouji_grim = 1 spbtn grim1_lsp,grim1_lsp
+	if ?grim[2][grim_flg] = 1 notif %r_hyouji_grim = 2 spbtn grim2_lsp,grim2_lsp
+	if ?grim[3][grim_flg] = 1 notif %r_hyouji_grim = 3 spbtn grim3_lsp,grim3_lsp
+	if ?grim[4][grim_flg] = 1 notif %r_hyouji_grim = 4 spbtn grim4_lsp,grim4_lsp
+	if ?grim[5][grim_flg] = 1 notif %r_hyouji_grim = 5 spbtn grim5_lsp,grim5_lsp
+	if ?grim[6][grim_flg] = 1 notif %r_hyouji_grim = 6 spbtn grim6_lsp,grim6_lsp
+	if ?grim[7][grim_flg] = 1 notif %r_hyouji_grim = 7 spbtn grim7_lsp,grim7_lsp
+	if ?grim[8][grim_flg] = 1 notif %r_hyouji_grim = 8 spbtn grim8_lsp,grim8_lsp
+	if ?grim[9][grim_flg] = 1 notif %r_hyouji_grim = 9 spbtn grim9_lsp,grim9_lsp
+	if ?grim[10][grim_flg] = 1 notif %r_hyouji_grim = 10 spbtn grim10_lsp,grim10_lsp
+	if ?grim[11][grim_flg] = 1 notif %r_hyouji_grim = 11 spbtn grim11_lsp,grim11_lsp
+	if ?grim[12][grim_flg] = 1 notif %r_hyouji_grim = 12 spbtn grim12_lsp,grim12_lsp
+
+
+	spbtn tips_next_lsp,tips_next_lsp
+	spbtn tips_back_lsp,tips_back_lsp
+	spbtn grim_next_lsp,grim_next_lsp
+	spbtn grim_back_lsp,grim_back_lsp
+
+
+	mov %tmp,enj_eva_btn_lsp : add %tmp,cha_kazu_ep4_3
+	
+	mov %tmp3,1
+	for %tmp2 = enj_eva_btn_lsp to %tmp
+		if ?r[%tmp3][condition] >= 1 spbtn %tmp2,%tmp2
+		inc %tmp3
+	next
+
+;	spbtn r_inlang_lsp,r_inlang_lsp
+	spbtn r_innewold_lsp,r_innewold_lsp : spbtn r_inlang_lsp,r_inlang_lsp
+
+	;NEXT、EP、changeのボタン化
+	spbtn r_next_lsp,r_next_lsp
+	spbtn r_ep1_lsp,r_ep1_lsp
+	spbtn r_ep2_lsp,r_ep2_lsp
+	spbtn r_ep3_lsp,r_ep3_lsp
+	;spbtn r_ep4_lsp,r_ep4_lsp
+	spbtn r_change_lsp,r_change_lsp
+
+*rmenu_custom_btlp_ep4_3
+
+	btnwait2 %BtnRes
+
+	if %BtnRes = r_char_lsp mov %r_hyouji,0 : seplay 9,1000 : goto *rmenu_sai_hyouji_ep4_3
+	if %BtnRes = r_tips_lsp mov %r_hyouji,1 : seplay 9,1000 : goto *rmenu_sai_hyouji_ep4_3
+	if %BtnRes = r_grim_lsp mov %r_hyouji,2 : seplay 9,1000 : goto *rmenu_sai_hyouji_ep4_3
+	
+	notif %BtnRes = r_exec_lsp jumpf
+
+		;選択されているキャラを一段悪化させる（コンディションがエンドまで来ているのなら処理を飛ばす）
+		;コンディションが０以下（未登場なら状態を変化させない）
+		if %r_hyouji_cha_enj = 0 goto *rmenu_custom_btlp_50_ep4_3
+		if %r_killeveryone = 1 goto *rmenu_custom_btlp_50_ep4_3
+		if ?r[%r_hyouji_cha_enj][condition] >= ?r[%r_hyouji_cha_enj][condition_end]  goto *rmenu_custom_btlp_100_ep4_3
+		if ?r[%r_hyouji_cha_enj][condition] <= 0 goto *rmenu_custom_btlp_100_ep4_3
+			mov %tmp,?r[%r_hyouji_cha_enj][condition] : inc %tmp : mov ?r[%r_hyouji_cha_enj][condition],%tmp
+			seplay 9,1100
+
+		goto *rmenu_custom_btlp_100_ep4_3
+		*rmenu_custom_btlp_50_ep4_3
+			;キャラ全員の状態を悪化させる。
+			for %tmp = 1 to cha_kazu_ep4_2
+				if ?r[%tmp][condition] >= ?r[%tmp][condition_end]  goto *rmenu_custom_btlp_90_ep4_3
+				if ?r[%tmp][condition] <= 0 goto *rmenu_custom_btlp_90_ep4_3
+					mov %tmp2,?r[%tmp][condition] : inc %tmp2 : mov ?r[%tmp][condition],%tmp2
+				*rmenu_custom_btlp_90_ep4_3
+			next
+			seplay 9,1100
+		*rmenu_custom_btlp_100_ep4_3
+
+		;メニュー表示がTIPSなら、キャラに変更してしまう
+		if %r_hyouji = 1 csp r_grim_lsp : mov %r_hyouji,0 : goto *rmenu_sai_hyouji_ep4_3
+		if %r_hyouji = 2 csp r_char_lsp : mov %r_hyouji,0 : goto *rmenu_sai_hyouji_ep4_3
+		gosub *r_cha_botann_ep4_3
+		print 1
+
+		goto *rmenu_botann_saisettei_ep4_3
+	~
+
+	notif %BtnRes = r_resu_lsp jumpf
+		
+		if %r_hyouji_cha_enj = 0 goto *rmenu_custom_btlp_150_ep4_3
+		if %r_killeveryone = 1 goto *rmenu_custom_btlp_150_ep4_3
+		;選択されているキャラを一段回復させる（コンディションがエンドまで来ているのなら処理を飛ばす、０は処理を飛ばす）
+		if ?r[%r_hyouji_cha_enj][condition] <= 1 goto *rmenu_custom_btlp_200_ep4_3
+			mov %tmp,?r[%r_hyouji_cha_enj][condition] : dec %tmp : mov ?r[%r_hyouji_cha_enj][condition],%tmp
+			seplay 9,1021
+
+		goto *rmenu_custom_btlp_200_ep4_3
+		*rmenu_custom_btlp_150_ep4_3
+			;キャラ全員の状態を悪化させる。
+			for %tmp = 1 to cha_kazu_ep4_3
+				if ?r[%tmp][condition] <= 1 goto *rmenu_custom_btlp_190_ep4_3
+					mov %tmp2,?r[%tmp][condition] : dec %tmp2 : mov ?r[%tmp][condition],%tmp2
+				*rmenu_custom_btlp_190_ep4_3
+			next
+			seplay 9,1023
+		*rmenu_custom_btlp_200_ep4_3
+
+		;メニュー表示がTIPSなら、キャラに変更してしまう
+		if %r_hyouji = 1 csp r_grim_lsp : mov %r_hyouji,0 : goto *rmenu_sai_hyouji_ep4_3
+		if %r_hyouji = 2 csp r_char_lsp : mov %r_hyouji,0 : goto *rmenu_sai_hyouji_ep4_3
+		gosub *r_cha_botann_ep4_3
+		print 22
+
+	goto *rmenu_botann_saisettei_ep4_3
+	~
+
+	if %BtnRes = 0 && %cha_page_mode = 1 mov %r_killeveryone,1 : goto *rmenu_botann_saisettei_ep4_3
+	if %BtnRes = 0 mov %r_killeveryone,1 : goto *rmenu_botann_saisettei_ep4_3
+	if %BtnRes = r_save_lsp gosub *r_gazou_shokika_ep4_3 : seplay 9,1000 : gosub *savemode :goto *r_exit2_ep4_3
+	if %BtnRes = r_load_lsp gosub *r_gazou_shokika_ep4_3 : seplay 9,1000 : gosub *loadmode :goto *r_exit2_ep4_3
+	if %BtnRes = r_blog_lsp gosub *r_gazou_shokika_ep4_3 : seplay 9,1000 : gosub *text_cw_lookback : goto *rmenu_main_ep4_3
+	if %BtnRes = r_title_lsp seplay 9,1000 : goto *rmenu_title_back_ep4_3
+	if %BtnRes = r_exit_lsp goto *r_exit_ep4_3
+	if %BtnRes = -1 goto *r_exit_ep4_3                ;右クリックで抜ける
+	if %BtnRes = -10 goto *r_exit_ep4_3               ;ＥＳＣで抜ける
+
+	notif %BtnRes = r_inlang_lsp jumpf
+		toggleBackgrounds
+		goto *rmenu_sai_hyouji_ep4_3
+	~
+
+	notif %BtnRes = r_innewold_lsp jumpf
+		toggleSprites
+		goto *rmenu_sai_hyouji_ep4_3
+	~
+
+	;エピソード移動ボタン（押されたボタンによって、EP１のTips、EP２のTipsを移動する）
+	notif %BtnRes = r_ep1_lsp jumpf
+		;各変数の初期化
+		mov %r_hyouji_cha,0
+		mov %r_side,0
+		mov %r_hyouji,1
+		mov %r_hyouji_tips,0
+		mov %tips_page,1
+		mov %r_hyouji_grim,0
+		mov %grim_page,1
+
+			lsp 0,":b;bmp\efe\ware.png",0,0
+			E_A
+			seplay 9,1100
+			print 1
+			delay 10
+			csp 0
+			mov %r_side_change,1
+		gosub *r_gazou_shokika_ep4_3
+		goto *rmenu_main_ep1
+	~
+
+	;エピソード移動ボタン（押されたボタンによって、魔女空間に移動する）
+	notif %BtnRes = r_ep2_lsp jumpf
+		;各変数の初期化
+		mov %r_hyouji_cha,0
+		mov %r_side,1
+		mov %r_hyouji,1
+		mov %r_hyouji_tips,0
+		mov %tips_page,1
+		mov %r_hyouji_grim,0
+		mov %grim_page,1
+
+			lsp 0,":b;bmp\efe\ware.png",0,0
+			E_A
+			seplay 9,1100
+			print 1
+			delay 10
+			csp 0
+			mov %r_side_change,1
+		gosub *r_gazou_shokika_ep4_3
+		goto *rmenu_main_ep2
+	~
+
+	notif %BtnRes = r_ep3_lsp jumpf
+		;各変数の初期化
+		mov %r_hyouji_cha,0
+		mov %r_side,1
+		mov %r_hyouji,1
+		mov %r_hyouji_tips,0
+		mov %tips_page,1
+		mov %r_hyouji_grim,0
+		mov %grim_page,1
+
+			lsp 0,":b;bmp\efe\ware.png",0,0
+			E_A
+			seplay 9,1100
+			print 1
+			delay 10
+			csp 0
+			mov %r_side_change,1
+		gosub *r_gazou_shokika_ep4_3
+		goto *rmenu_main_ep3
+	~
+
+	;NEXTボタン（人間サイド、魔女サイドの切替）
+	notif %BtnRes = r_next_lsp jumpf
+		;各変数の初期化
+		mov %r_side,0
+		mov %r_hyouji,0
+			lsp 0,":b;bmp\efe\ware.png",0,0
+			seplay 9,1100
+			print 1
+			delay 10
+			csp 0
+			mov %cha_text_page,1
+			mov %r_side_change,1
+		mov %r_hyouji_side,0
+		gosub *r_gazou_shokika_ep4_3
+		goto *rmenu_main_ep4
+	~
+
+
+	;衣装チェンジボタン（衣装のチェンジ出来るキャラはコンディションを１に初期化して、衣装チェンジを行う）
+	notif %BtnRes = r_change_lsp jumpf
+		mov ?r[%r_hyouji_cha_enj][condition],1
+
+		if ?r[%r_hyouji_cha_enj][r_ishou] = 1 mov ?r[%r_hyouji_cha_enj][r_ishou],2 : goto *r_change_lsp_100_ep4_3
+		if ?r[%r_hyouji_cha_enj][r_ishou] = 2 mov ?r[%r_hyouji_cha_enj][r_ishou],1 : goto *r_change_lsp_100_ep4_3
+		*r_change_lsp_100_ep4_3
+
+		gosub *r_cha_hyouji_ep4_3
+		seplay 9,1001
+		print 1
+	~
+
+	if %BtnRes = cha_next_lsp inc %cha_text_page :  mov %cha_page_flg,%r_hyouji_cha_enj : gosub *character_icon_selected_ep4_3 : jumpf
+	if %BtnRes = cha_back_lsp dec %cha_text_page :  mov %cha_page_flg,%r_hyouji_cha_enj : gosub *character_icon_selected_ep4_3 : jumpf
+
+	;キャラアイコンが押された場合、それぞれのキャラへとジャンプする
+	if %BtnRes = enj_eva_btn_lsp mov %r_hyouji_cha_enj,enj_eva : gosub *character_icon_selected_ep4_3        ;金蔵
+	if %BtnRes = enj_oko_btn_lsp mov %r_hyouji_cha_enj,enj_oko : gosub *character_icon_selected_ep4_3        ;戦人
+	if %BtnRes = enj_kas_btn_lsp mov %r_hyouji_cha_enj,enj_kas : gosub *character_icon_selected_ep4_3        ;真里亞
+ 	if %BtnRes = enj_enj_btn_lsp mov %r_hyouji_cha_enj,enj_enj : gosub *character_icon_selected_ep4_3        ;源氏
+	if %BtnRes = enj_ama_btn_lsp mov %r_hyouji_cha_enj,enj_ama : gosub *character_icon_selected_ep4_3        ;紗音
+	if %BtnRes = enj_sak_btn_lsp mov %r_hyouji_cha_enj,enj_sak : gosub *character_icon_selected_ep4_3        ;嘉音
+	if %BtnRes = enj_mar_btn_lsp mov %r_hyouji_cha_enj,enj_mar : gosub *character_icon_selected_ep4_3        ;嘉音
+	if %BtnRes = enj_rg_btn_lsp mov %r_hyouji_cha_enj,enj_rg : gosub *character_icon_selected_ep4_3        ;ベアトリーチェ
+	if %BtnRes = enj_pro_btn_lsp mov %r_hyouji_cha_enj,enj_pro : gosub *character_icon_selected_ep4_3        ;ベルンカステル
+	if %BtnRes = enj_mas_btn_lsp mov %r_hyouji_cha_enj,enj_mas : gosub *character_icon_selected_ep4_3        ;ラムダデルタ
+	if %BtnRes = enj_sab_btn_lsp mov %r_hyouji_cha_enj,enj_sab : gosub *character_icon_selected_ep4_3        ;姉妹
+	if %BtnRes = enj_kwa_btn_lsp mov %r_hyouji_cha_enj,enj_kwa : gosub *character_icon_selected_ep4_3        ;姉妹
+	if %BtnRes = enj_ber_btn_lsp mov %r_hyouji_cha_enj,enj_ber : gosub *character_icon_selected_ep4_3        ;姉妹
+
+~
+
+
+	;Tipsが押された場合、Tips表示処理に飛ぶ
+	notif %BtnRes = tips1_lsp jumpf
+		notif %r_hyouji_tips = 1 mov %tips_page,1
+		mov %r_hyouji_tips,1
+		gosub *r_tips_hyouji_ep4_3
+		goto *rmenu_botann_saisettei_ep4_3
+	~
+	notif %BtnRes = tips2_lsp jumpf
+		notif %r_hyouji_tips = 2 mov %tips_page,1
+		mov %r_hyouji_tips,2
+		gosub *r_tips_hyouji_ep4_3
+		goto *rmenu_botann_saisettei_ep4_3
+	~
+	notif %BtnRes = tips3_lsp jumpf
+		notif %r_hyouji_tips = 3 mov %tips_page,1
+		mov %r_hyouji_tips,3
+		gosub *r_tips_hyouji_ep4_3
+		goto *rmenu_botann_saisettei_ep4_3
+	~
+	notif %BtnRes = tips4_lsp jumpf
+		notif %r_hyouji_tips = 4 mov %tips_page,1
+		mov %r_hyouji_tips,4
+		gosub *r_tips_hyouji_ep4_3
+		goto *rmenu_botann_saisettei_ep4_3
+	~
+	notif %BtnRes = tips5_lsp jumpf
+		notif %r_hyouji_tips = 5 mov %tips_page,1
+		mov %r_hyouji_tips,5
+		gosub *r_tips_hyouji_ep4_3
+		goto *rmenu_botann_saisettei_ep4_3
+	~
+	notif %BtnRes = tips6_lsp jumpf
+		notif %r_hyouji_tips = 6 mov %tips_page,1
+		mov %r_hyouji_tips,6
+		gosub *r_tips_hyouji_ep4_3
+		goto *rmenu_botann_saisettei_ep4_3
+	~
+
+	notif %BtnRes = tips7_lsp jumpf
+		notif %r_hyouji_tips = 7 mov %tips_page,1
+		mov %r_hyouji_tips,7
+		gosub *r_tips_hyouji_ep4_3
+		goto *rmenu_botann_saisettei_ep4_3
+	~
+
+	;NEXT､Backが押された場合はそのページを表示する。
+	if %BtnRes = tips_next_lsp inc %tips_page : gosub *r_tips_hyouji_ep4_3 : goto *rmenu_botann_saisettei_ep4_3
+	if %BtnRes = tips_back_lsp dec %tips_page : gosub *r_tips_hyouji_ep4_3 : goto *rmenu_botann_saisettei_ep4_3
+
+;***************************************************************
+	;Tipsが押された場合、Tips表示処理に飛ぶ
+	notif %BtnRes = grim1_lsp jumpf
+		notif %r_hyouji_grim = 1 mov %grim_page,1
+		mov %r_hyouji_grim,1
+		gosub *r_grim_hyouji_ep4_3
+		goto *rmenu_botann_saisettei_ep4_3
+	~
+	notif %BtnRes = grim2_lsp jumpf
+		notif %r_hyouji_grim = 2 mov %grim_page,1
+		mov %r_hyouji_grim,2
+		gosub *r_grim_hyouji_ep4_3
+		goto *rmenu_botann_saisettei_ep4_3
+	~
+	notif %BtnRes = grim3_lsp jumpf
+		notif %r_hyouji_grim = 3 mov %grim_page,1
+		mov %r_hyouji_grim,3
+		gosub *r_grim_hyouji_ep4_3
+		goto *rmenu_botann_saisettei_ep4_3
+	~
+	notif %BtnRes = grim4_lsp jumpf
+		notif %r_hyouji_grim = 4 mov %grim_page,1
+		mov %r_hyouji_grim,4
+		gosub *r_grim_hyouji_ep4_3
+		goto *rmenu_botann_saisettei_ep4_3
+	~
+	notif %BtnRes = grim5_lsp jumpf
+		notif %r_hyouji_grim = 5 mov %grim_page,1
+		mov %r_hyouji_grim,5
+		gosub *r_grim_hyouji_ep4_3
+		goto *rmenu_botann_saisettei_ep4_3
+	~
+	notif %BtnRes = grim6_lsp jumpf
+		notif %r_hyouji_grim = 6 mov %grim_page,1
+		mov %r_hyouji_grim,6
+		gosub *r_grim_hyouji_ep4_3
+		goto *rmenu_botann_saisettei_ep4_3
+	~
+	notif %BtnRes = grim7_lsp jumpf
+		notif %r_hyouji_grim = 7 mov %grim_page,1
+		mov %r_hyouji_grim,7
+		gosub *r_grim_hyouji_ep4_3
+		goto *rmenu_botann_saisettei_ep4_3
+	~
+	notif %BtnRes = grim8_lsp jumpf
+		notif %r_hyouji_grim = 8 mov %grim_page,1
+		mov %r_hyouji_grim,8
+		gosub *r_grim_hyouji_ep4_3
+		goto *rmenu_botann_saisettei_ep4_3
+	~
+	notif %BtnRes = grim9_lsp jumpf
+		notif %r_hyouji_grim = 9 mov %grim_page,1
+		mov %r_hyouji_grim,9
+		gosub *r_grim_hyouji_ep4_3
+		goto *rmenu_botann_saisettei_ep4_3
+	~
+	notif %BtnRes = grim10_lsp jumpf
+		notif %r_hyouji_grim = 10 mov %grim_page,1
+		mov %r_hyouji_grim,10
+		gosub *r_grim_hyouji_ep4_3
+		goto *rmenu_botann_saisettei_ep4_3
+	~
+	notif %BtnRes = grim11_lsp jumpf
+		notif %r_hyouji_grim = 11 mov %grim_page,1
+		mov %r_hyouji_grim,11
+		gosub *r_grim_hyouji_ep4_3
+		goto *rmenu_botann_saisettei_ep4_3
+	~
+	notif %BtnRes = grim12_lsp jumpf
+		notif %r_hyouji_grim = 12 mov %grim_page,1
+		mov %r_hyouji_grim,12
+		gosub *r_grim_hyouji_ep4_3
+		goto *rmenu_botann_saisettei_ep4_3
+	~
+
+	if %BtnRes = grim_next_lsp inc %grim_page : gosub *r_grim_hyouji_ep4_3 : goto *rmenu_botann_saisettei_ep4_3
+	if %BtnRes = grim_back_lsp dec %grim_page : gosub *r_grim_hyouji_ep4_3 : goto *rmenu_botann_saisettei_ep4_3
+
+
+goto *rmenu_botann_saisettei_ep4_3
+
+;********************************************************************************
+; 画像初期化ルーチン
+*r_gazou_shokika_ep4_3
+	for %tmp = 100 to r_used_lsp : csp %tmp next
+	csp r_bg_lsp
+	csp r_black_lsp
+return
+;********************************************************************************
+
+
+;********************************************************************************
+; 右クリックシステムを抜ける処理
+*r_exit_ep4_3
+	btndef ""
+	gosub *r_gazou_shokika_ep4_3
+	csp r_bg_lsp
+	csp r_black_lsp
+	seplay 9,1100
+	print 1
+	texton
+	if %monoflg = 1 mono 1
+	if %monoflg = 2 mono 2
+
+return ;右クリックシステムを抜ける
+
+;-------------------------------------
+; 右クリックシステムを抜ける処理割れるエフェクトなし
+*r_exit2_ep4_3
+	btndef ""
+	gosub *r_gazou_shokika_ep4_3
+	csp r_bg_lsp
+	csp r_black_lsp
+	print 1
+	texton
+	if %monoflg = 1 mono 1
+	if %monoflg = 2 mono 2
+return ;右クリックシステムを抜ける
+
+;********************************************************************************
+
+
+;********************************************************************************
+;Tipsの表示、それぞれTipsの表示処理に飛ぶ
+*r_tips_hyouji_ep4_3
+
+	csp cha_next_lsp
+	csp cha_back_lsp
+	notif %r_hyouji_tips = 0 jumpf
+		mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+		csp cha_lsp
+		csp r_cha_txt_lsp
+			mov $witchh4, $r_txt_path
+	setRLangString $witchh4, ""
+	lsp r_txt_lsp,$witchh4,211,34
+		print 1
+		return
+	~
+
+	mov %r_hyouji,1
+
+	;フラグがないtipsを選択されていたら、tipsに０を入れてスキップさせる。
+	if ?tips[%r_hyouji_tips][tips_flg] = 0 mov %r_hyouji_tips,0 : mov %tips_page,1 : return
+
+	;mov %r_hyouji_cha_enj,0 ;tispの表示を０（なしにする）
+	;衣装替え、チェンジボタンの消去
+	csp r_change_lsp
+
+	;tips表示数のチェック、ページ数が０なら１に最大ページ数を超えていたら最大ページ数に
+	if %tips_page <= 0 mov %tips_page,1
+	if %tips_page > ?tips[%r_hyouji_tips][tips_page_max] mov %tips_page,?tips[%r_hyouji_tips][tips_page_max]
+	
+	;次のページがある場合はNextを２ページ以降ならBackのボタンを表示
+	vsp r_hana_lsp,0
+	csp tips_next_lsp
+	csp tips_back_lsp
+	mov %tmp,r_top_y : add %tmp,424
+	if %tips_page < ?tips[%r_hyouji_tips][tips_page_max] lsp tips_next_lsp,tips_next,653,%tmp
+	if %tips_page > 1 lsp tips_back_lsp,tips_back,603,%tmp
+
+
+	;肖像画の碑文
+	notif %r_hyouji_tips = 1 goto *tips_ep4_3_1
+		cell tips1_lsp,1
+		if %tips_page = 1 mov $r_tips_txt_path,"bmp\r_click\text\tips\ep4\1_1.png"
+	*tips_ep4_3_1
+
+	notif %r_hyouji_tips = 2 goto *tips_ep4_3_2
+		cell tips2_lsp,1
+		if %tips_page = 1 mov $r_tips_txt_path,"bmp\r_click\text\tips\ep4\2_1.png"
+	*tips_ep4_3_2
+
+	notif %r_hyouji_tips = 3 goto *tips_ep4_3_3
+		cell tips3_lsp,1
+		if %tips_page = 1 mov $r_tips_txt_path,"bmp\r_click\text\tips\ep4\3_1.png"
+	*tips_ep4_3_3
+
+	notif %r_hyouji_tips = 4 goto *tips_ep4_3_4
+		if %tips_page = 1 mov $r_tips_txt_path,"bmp\r_click\text\tips\ep4\4_1.png"
+		cell tips4_lsp,1
+	*tips_ep4_3_4
+
+	notif %r_hyouji_tips = 5 goto *tips_ep4_3_5
+		cell tips5_lsp,1
+		if %tips_page = 1 mov $r_tips_txt_path,"bmp\r_click\text\tips\ep4\5_1.png"
+	*tips_ep4_3_5
+
+	notif %r_hyouji_tips = 6 goto *tips_ep4_3_6
+		cell tips6_lsp,1
+		if %tips_page = 1 mov $r_tips_txt_path,"bmp\r_click\text\tips\ep4\6_1.png"
+	*tips_ep4_3_6
+
+	notif %r_hyouji_tips = 7 goto *tips_ep4_3_7
+		cell tips7_lsp,1
+		if %tips_page = 1 mov $r_tips_txt_path,"bmp\r_click\text\tips\ep4\7_1.png"
+	*tips_ep4_3_7
+
+	csp cha_lsp
+	csp r_cha_txt_lsp
+	mov $witchh4, $r_tips_txt_path
+	setRLangString $witchh4, ""
+	lsp r_tips_txt_lsp,$witchh4,211,34
+	seplay 9,1010
+	print 1
+return
+
+;********************************************************************************
+;Grimoireの表示、それぞれGrimoireの表示処理にfly
+*r_grim_hyouji_ep4_3
+
+	csp cha_next_lsp
+	csp cha_back_lsp
+	csp r_tips_txt_lsp
+	csp tips_next_lsp
+	csp tips_back_lsp
+
+	notif %r_hyouji_grim = 0 jumpf
+		mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+		csp cha_lsp
+		csp r_cha_txt_lsp
+			mov $witchh4, $r_txt_path
+	setRLangString $witchh4, ""
+	lsp r_txt_lsp,$witchh4,211,34
+		if %r_side_change = 0 print 1
+		return
+	~
+	mov %r_hyouji,2
+
+	;フラグがないtipsを選択されていたら、tipsに０を入れてスキップさせる。
+	if ?grim[%r_hyouji_grim][grim_flg] = 0 mov %r_hyouji_grim,0 : mov %grim_page,1 : return
+
+	;mov %r_hyouji_cha,0 ;tispの表示を０（なしにする）
+	csp r_change_lsp
+
+	;tips表示数のチェック、ページ数が０なら１に最大ページ数を超えていたら最大ページ数に
+	if %grim_page <= 0 mov %grim_page,1
+	if %grim_page > ?grim[%r_hyouji_grim][grim_page_max] mov %grim_page,?grim[%r_hyouji_grim][grim_page_max]
+	
+	;次のページがある場合はNextを２ページ以降ならBackのボタンを表示
+	vsp r_hana_lsp,0
+	csp grim_next_lsp
+	csp grim_back_lsp
+	mov %tmp,r_top_y : add %tmp,377
+	if %grim_page < ?grim[%r_hyouji_grim][grim_page_max] lsp grim_next_lsp,tips_next,653,%tmp
+	if %grim_page > 1 lsp grim_back_lsp,tips_back,603,%tmp
+
+
+;肖像画の碑文
+	notif %r_hyouji_grim = 1 goto *grim_ep4_3_1
+		cell grim1_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\n0_1.png"
+		if %grim_page = 2 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\n0_2.png"
+		if %grim_page = 3 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\n0_3.png"
+		if %grim_page = 4 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\n0_4.png"
+		if %grim_page = 5 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\n0_5.png"
+	*grim_ep4_3_1
+	notif %r_hyouji_grim = 2 goto *grim_ep4_3_2
+		cell grim2_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n1_1.png"
+	*grim_ep4_3_2
+	notif %r_hyouji_grim = 3 goto *grim_ep4_3_3
+		cell grim3_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n2_1.png"
+	*grim_ep4_3_3
+	notif %r_hyouji_grim = 4 goto *grim_ep4_3_4
+		cell grim4_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n3_1.png"
+	*grim_ep4_3_4
+	notif %r_hyouji_grim = 5 goto *grim_ep4_3_5
+		cell grim5_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n4_1.png"
+	*grim_ep4_3_5
+	notif %r_hyouji_grim = 6 goto *grim_ep4_3_6
+		cell grim6_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n5_1.png"
+	*grim_ep4_3_6
+	notif %r_hyouji_grim = 7 goto *grim_ep4_3_7
+		cell grim7_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n6_1.png"
+	*grim_ep4_3_7
+	notif %r_hyouji_grim = 8 goto *grim_ep4_3_8
+		cell grim8_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n7_1.png"
+	*grim_ep4_3_8
+	notif %r_hyouji_grim = 9 goto *grim_ep4_3_9
+		cell grim9_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n8_1.png"
+	*grim_ep4_3_9
+	notif %r_hyouji_grim = 10 goto *grim_ep4_3_10
+		cell grim10_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n9_1.png"
+	*grim_ep4_3_10
+	notif %r_hyouji_grim = 11 goto *grim_ep4_3_11
+		cell grim11_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n10_1.png"
+	*grim_ep4_3_11
+	notif %r_hyouji_grim = 12 goto *grim_ep4_3_12
+		cell grim12_lsp,1
+		if %grim_page = 1 mov $r_grim_txt_path,":a;bmp\r_click\text\notes\ep4n11_1.png"
+	*grim_ep4_3_12
+
+	csp cha_lsp
+	csp r_cha_txt_lsp
+	lsp r_grim_txt_lsp,$r_grim_txt_path,211,34
+	seplay 9,1010
+	print 1
+return
+
+;********************************************************************************
+
+
+
+;********************************************************************************
+;キャラの立ち絵、テキストの表示、それぞれのキャラ毎に処理を行う
+*r_cha_hyouji_ep4_3
+
+	if %r_hyouji_cha_enj = 0 return
+	mov %r_hyouji,0
+	;mov %tips_page ,1
+	;mov %r_hyouji_tips,0 ;tispの表示を０（なしにする）
+	csp r_tips_txt_lsp
+	csp tips_next_lsp
+	csp tips_back_lsp
+	csp r_grim_txt_lsp
+	csp grim_next_lsp
+	csp grim_back_lsp
+	vsp r_hana_lsp,1
+	csp cha_next_lsp
+	csp cha_back_lsp
+
+	if %cha_text_page > ?r_cha_text[4][%r_hyouji_cha_enj][2] mov %cha_text_page,1
+	notif %cha_page_flg = %r_hyouji_cha_enj mov %cha_text_page,1
+
+	;タイトル画面から入っていて、所定のキャラならチェンジボタンを表示する、それ以外ならボタンを消去
+	csp r_change_lsp
+	notif %r_for_title = 1 jumpf
+		;衣装変更があるキャラを表示している場合は、チェンジボタンを表示
+		;（キャラ表示ルーチンで対応？）
+		;if %r_hyouji_cha_enj = ma3_ev2 lsp r_change_lsp,r_change,643,508
+	~
+
+	;キャラアイコンが押された場合、それぞれのキャラへとジャンプする
+	if %r_hyouji_cha_enj = enj_eva : gosub *r_cha_eva_ep4_3        ;金蔵
+	if %r_hyouji_cha_enj = enj_oko : gosub *r_cha_oko_ep4_3        ;戦人
+	if %r_hyouji_cha_enj = enj_kas : gosub *r_cha_kas_ep4_3        ;真里亞
+ 	if %r_hyouji_cha_enj = enj_enj : gosub *r_cha_enj_ep4_3        ;源氏
+	if %r_hyouji_cha_enj = enj_ama : gosub *r_cha_ama_ep4_3        ;紗音
+	if %r_hyouji_cha_enj = enj_sak : gosub *r_cha_sak_ep4_3        ;嘉音
+	if %r_hyouji_cha_enj = enj_mar : gosub *r_cha_mar_ep4_3        ;嘉音
+	if %r_hyouji_cha_enj = enj_rg : gosub *r_cha_rg_ep4_3        ;bea
+	if %r_hyouji_cha_enj = enj_pro : gosub *r_cha_pro_ep4_3        ;ber
+	if %r_hyouji_cha_enj = enj_mas : gosub *r_cha_mas_ep4_3        ;lam
+	if %r_hyouji_cha_enj = enj_sab : gosub *r_cha_sab_ep4_3        ;rg
+	if %r_hyouji_cha_enj = enj_kwa : gosub *r_cha_kwa_ep4_3        ;rg
+	if %r_hyouji_cha_enj = enj_ber : gosub *r_cha_ber_ep4_3        ;rg
+
+	if ?r_cha_text[4][%r_hyouji_cha_enj][2] > %cha_text_page	lsp cha_next_lsp,tips_next,200,407
+	if %cha_text_page > 1	lsp cha_back_lsp,tips_back,250,407
+
+	;(表示処理）
+	mov %witchh5, %r_hyouji_cha_enj;
+	showchartiptachi
+		mov $witchh4, $r_txt_path
+	setRLangString $witchh4, ""
+	lsp r_cha_txt_lsp,$witchh4,211,34
+return
+;********************************************************************************
+
+
+
+
+;********************************************************************************
+
+;*******************************************************
+;　■キャラ情報表示
+;
+;　　キャラ立ち絵
+;　　コメント１（名前、年齢など変化しない、しにくい部分）
+;　　コメント２（現在状況等、状況によって変化するところ）
+;　　キャラクター切り替えボタン　←→
+;
+;*******************************************************
+
+;******************************************
+;キャラの立ち絵の表示
+;キャラ毎の細かいルーチンへの移動。
+;******************************************
+
+;------------------------------
+*r_cha_eva_ep4_3
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_enj][condition] = 0 return
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\eva"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_enj][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_3\eva_1.png"
+
+
+return
+;------------------------------
+
+*r_cha_oko_ep4_3
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_enj][condition] = 0 return
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\oko"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_enj][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_3\oko_1.png"
+
+return
+
+;------------------------------
+
+*r_cha_kas_ep4_3
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_enj][condition] = 0 return
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\kas"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_enj][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_3\kas_1.png"
+
+
+return
+
+;------------------------------
+
+*r_cha_enj_ep4_3
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_enj][condition] = 0 return
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\enj"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_enj][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_3\enj_1.png"
+
+mov ?r[%r_hyouji_cha_enj][tati_x],440
+;衣装チェンジがされた場合は私服に変更する。
+if ?r[%r_hyouji_cha_enj][r_ishou] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\enj" : mov ?r[%r_hyouji_cha_enj][tati_x],440 : lspnewold enj_enj_btn_lsp,"bmp\r_click\cha_btn\ep4_3\enj_l","/2,0,3",?r[%r_hyouji_cha_enj][itiran_x],?r[%r_hyouji_cha_enj][itiran_y]
+if ?r[%r_hyouji_cha_enj][r_ishou] = 2 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\enj_2" : mov ?r[%r_hyouji_cha_enj][tati_x],415 : lspnewold enj_enj_btn_lsp,"bmp\r_click\cha_btn\ep4_3\enj_l2","/2,0,3",?r[%r_hyouji_cha_enj][itiran_x],?r[%r_hyouji_cha_enj][itiran_y]
+
+return
+
+;------------------------------
+
+*r_cha_ama_ep4_3
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_enj][condition] = 0 return
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\ama"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_enj][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_3\ama_1.png"
+
+
+return
+
+;------------------------------
+*r_cha_sak_ep4_3
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_enj][condition] = 0 return
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\sak"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_enj][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_3\sak_1.png"
+
+return
+;------------------------------
+*r_cha_mar_ep4_3
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_enj][condition] = 0 return
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\mar"
+if ?r[%r_hyouji_cha_enj][condition] = 2 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\mar_2"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_enj][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_2\mar_2.png"
+if ?r[%r_hyouji_cha_enj][condition] = 2 mov $r_txt_path,"bmp\r_click\text\cha\ep4_2\mar_2.png"
+
+return
+;------------------------------
+*r_cha_rg_ep4_3
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_enj][condition] = 0 return
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\lam"
+
+
+;ランダムで７姉妹の内、一人を表示
+rnd2 %ran,1,7
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_enj][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if %ran = 1 && ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep3_2\rg1_1.png" : mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\rg1"
+if %ran = 2 && ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep3_2\rg2_1.png" : mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\rg2"
+if %ran = 3 && ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep3_2\rg3_1.png" : mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\rg3"
+if %ran = 4 && ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep3_2\rg4_1.png" : mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\rg4"
+if %ran = 5 && ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_3\rg5_1.png" : mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\rg5"
+if %ran = 6 && ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep3_2\rg6_1.png" : mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\rg6"
+if %ran = 7 && ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep3_2\rg7_1.png" : mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\rg7"
+
+return
+;------------------------------
+*r_cha_pro_ep4_3
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_enj][condition] = 0 return
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\pro"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_enj][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_3\pro_1.png"
+
+return
+;------------------------------
+*r_cha_mas_ep4_3
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_enj][condition] = 0 return
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\mas"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_enj][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_3\mas_1.png"
+
+return
+;------------------------------
+*r_cha_sab_ep4_3
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_enj][condition] = 0 return
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\sab"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_enj][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_3\sab_1.png"
+
+return
+;------------------------------
+*r_cha_kwa_ep4_3
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_enj][condition] = 0 return
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\kwa"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_enj][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_3\kwa_1.png"
+
+return
+;------------------------------
+*r_cha_ber_ep4_3
+
+;状態、進行によってコメントを変える
+if ?r[%r_hyouji_cha_enj][condition] = 0 return
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_cha_tati_path,"bmp\r_click\cha_tati\ep4_3\ber"
+
+;(状態に応じたテキスト文を表示）
+if ?r[%r_hyouji_cha_enj][condition] = 0 mov $r_txt_path,"bmp\r_click\text\txt_def2.png"
+if ?r[%r_hyouji_cha_enj][condition] = 1 mov $r_txt_path,"bmp\r_click\text\cha\ep4_2\ber_1.png"
+
+return
+;------------------------------
+
+;**************************************************************
+; 右クリック、Tipsボタンの表示
+;**************************************************************
+*r_tips_botann_ep4_3
+
+	for %tmp2 = enj_eva_btn_lsp to enj_ber_btn_lsp : csp %tmp2 :next
+	for %tmp2 = tips1_lsp to tips1_lsp : csp %tmp2 :next
+	csp r_tips_txt_lsp
+	csp tips_next_lsp
+	csp tips_back_lsp
+	csp r_cha_back_lsp
+	vsp r_hana_lsp,1
+
+	;背景黒枠の表示
+	lsp r_tips1_back_lsp,r_tips1_back,13,34,150
+
+	;tipsの表示（tipsナンバーによって表示するtipsの数を変化
+	mov %tmp,13 : 	mov %tmp1,34
+
+	notif ?tips[1][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_1
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips1_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+	notif ?tips[2][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_2
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips2_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+	notif ?tips[3][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_3
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips3_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+	notif ?tips[4][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_4
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips4_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+	notif ?tips[5][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_5
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips5_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+	notif ?tips[6][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_6
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips6_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+	notif ?tips[7][tips_flg] = 1 jumpf
+		mov $witchh4, r_tips_4_7
+		setRLangString $witchh4, "/2,0,3"
+		lsp tips7_lsp,$witchh4,%tmp,%tmp1
+		add %tmp1,36
+	~
+
+return
+
+;**************************************************************
+*r_grim_botann_ep4_3
+
+	for %tmp2 = kin_btn_lsp to enj_btn_lsp : csp %tmp2 :next
+	for %tmp2 = tips1_lsp to tips7_lsp : csp %tmp2 :next
+	csp r_tips_txt_lsp
+	csp tips_next_lsp
+	csp tips_back_lsp
+	csp r_cha_back_lsp
+	vsp r_hana_lsp,1
+
+	;背景黒枠の表示
+	lsp r_tips1_back_lsp,r_tips1_back,13,34,150
+
+	;tipsの表示（tipsナンバーによって表示するtipsの数を変化
+	mov %tmp,13 : 	mov %tmp1,34
+	if ?grim[1][grim_flg] = 1 lsp grim1_lsp,r_grim1,%tmp,%tmp1 : add %tmp,91
+	if ?grim[2][grim_flg] = 1 lsp grim2_lsp,r_grim2,%tmp,%tmp1 : sub %tmp,91 : add %tmp1,36
+	if ?grim[3][grim_flg] = 1 lsp grim3_lsp,r_grim3,%tmp,%tmp1 : add %tmp,91
+	if ?grim[4][grim_flg] = 1 lsp grim4_lsp,r_grim4,%tmp,%tmp1 : sub %tmp,91 : add %tmp1,36
+	if ?grim[5][grim_flg] = 1 lsp grim5_lsp,r_grim5,%tmp,%tmp1 : add %tmp,91
+	if ?grim[6][grim_flg] = 1 lsp grim6_lsp,r_grim6,%tmp,%tmp1 : sub %tmp,91 : add %tmp1,36
+	if ?grim[7][grim_flg] = 1 lsp grim7_lsp,r_grim7,%tmp,%tmp1 : add %tmp,91
+	if ?grim[8][grim_flg] = 1 lsp grim8_lsp,r_grim8,%tmp,%tmp1 : sub %tmp,91 : add %tmp1,36
+	if ?grim[9][grim_flg] = 1 lsp grim9_lsp,r_grim9,%tmp,%tmp1 : add %tmp,91
+	if ?grim[10][grim_flg] = 1 lsp grim10_lsp,r_grim10,%tmp,%tmp1 : sub %tmp,91 : add %tmp1,36
+	if ?grim[11][grim_flg] = 1 lsp grim11_lsp,r_grim11,%tmp,%tmp1 : add %tmp,91
+	if ?grim[12][grim_flg] = 1 lsp grim12_lsp,r_grim12,%tmp,%tmp1
+
+return
+
+
+;**************************************************************
+; 右クリック、キャラ一覧の表示
+;**************************************************************
+*r_cha_botann_ep4_3
+	
+	;tips用ボタンの削除
+	mov %tmp,tips1_lsp : add %tmp,%tips_kazu
+	for %tmp2 = tips1_lsp to %tmp : csp %tmp2 :next
+	for %tmp2 = grim1_lsp to grim14_lsp : csp %tmp2 :next
+	csp grim_next_lsp
+	csp grim_back_lsp
+	csp tips_next_lsp
+	csp tips_back_lsp
+	csp r_tips_txt_lsp
+	csp r_grim_txt_lsp
+	vsp r_hana_lsp,1
+
+
+	
+	;背景の表示
+	lsp r_cha_back_lsp,$r_cha_back,13,34
+
+	;キャラアイコンの表示(コンディションによって表示を変える)
+	mov %tmp,enj_eva_btn_lsp
+	for %tmp2 = 1 to cha_kazu_ep4_3
+		if ?r[%tmp2][condition] = -1 jumpf ;コンデション−１は完全に非表示
+			lspnewold %tmp,$?r[%tmp2][?r[%tmp2][condition]],"/2,0,3",?r[%tmp2][itiran_x],?r[%tmp2][itiran_y]
+
+			;衣装によってキャラアイコンの表示を切り替える
+			;if %tmp2 = enj_enj && ?r[%tmp2][r_ishou] = 2 lspnewold enj_enj_btn_lsp,"bmp\r_click\cha_btn\ep4_3\enj_l2","/2,0,3",?r[%tmp2][itiran_x],?r[%tmp2][itiran_y]
+			;if %tmp2 = geo && ?r[%tmp2][condition] = 1 && ?r[%tmp2][r_ishou] = 2 lspnewold geo_btn_lsp,"bmp\r_click\cha_btn\ep2\geo_l2","/2,0,3",?r[%tmp2][itiran_x],?r[%tmp2][itiran_y]
+			;if %tmp2 = kan && ?r[%tmp2][condition] = 1 && ?r[%tmp2][r_ishou] = 2 lspnewold kan_btn_lsp,"bmp\r_click\cha_btn\ep2\kan_l2","/2,0,3",?r[%tmp2][itiran_x],?r[%tmp2][itiran_y]
+			if %tmp2 = enj_enj && ?r[%tmp2][r_ishou] = 2 : lspnewold enj_enj_btn_lsp,"bmp\r_click\cha_btn\ep4_3\enj_l2","/2,0,3",?r[%tmp2][itiran_x],?r[%tmp2][itiran_y]
+			if %tmp2 = enj_enj && ?r[%tmp2][r_ishou] = 1 : lspnewold enj_enj_btn_lsp,"bmp\r_click\cha_btn\ep4_3\enj_l","/2,0,3",?r[%tmp2][itiran_x],?r[%tmp2][itiran_y]
+		~
+		inc %tmp
+	next
+
+	;現在表示しているキャラを表示
+	gosub *r_cha_hyouji_ep4_3
+
+return
+
+;キャラ一覧、個別キャラごとの変更。
+*r_cha_botann_kobetu_ep4_3
+	csp tips_next_lsp
+	csp tips_back_lsp
+	csp r_tips_txt_lsp
+	vsp r_hana_lsp,1
+	
+	mov %tmp,kin_btn_lsp : add %tmp,%r_hyouji_cha_enj : dec %tmp
+	lspnewold %tmp,$?r[%r_hyouji_cha_enj][?r[%r_hyouji_cha_enj][condition]],"/2,0,3",?r[%r_hyouji_cha_enj][itiran_x],?r[%r_hyouji_cha_enj][itiran_y]
+return
+;**************************************************************
+
+
+;**************************************************************
+; 右クリック、タイトルバック機能
+; 確認メッセージを出して、処理を行う。
+;**************************************************************
+*rmenu_title_back_ep4_3
+
+	;確認メッセージの表示
+	mov $witchh4, title_back_bg
+	setRLangString $witchh4, ""
+lsp title_back_bg_lsp,$witchh4,216,192,230
+	lsp title_back_yes_lsp,title_back_yes,242,242
+	lsp title_back_no_lsp,title_back_no,242,286
+	print 1
+
+	btndef ""
+	
+	spbtn title_back_yes_lsp,title_back_yes_lsp
+	spbtn title_back_no_lsp,title_back_no_lsp
+	
+	*rmenu_title_back_btn_lp_ep4_3
+
+	btnwait2 %tmp
+	
+	notif %tmp = title_back_yes_lsp jumpf
+		btndef ""
+		csp -1
+		E_A
+		mov %title_skip,1
+		seplay 9,18
+		mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",18,3000,"bmp\r_click\efe\kannon_r.bmp" : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",18,3000,"bmp\r_click\efe\kannon_r.bmp"
+		delay 3000
+		texton
+		
+		reset
+	~
+
+	if %tmp = title_back_no_lsp csp title_back_bg_lsp : csp title_back_yes_lsp :csp title_back_no_lsp : seplay 9,1000 : goto *rmenu_sai_hyouji_ep4_3
+	if %tmp = 0 csp title_back_bg_lsp : csp title_back_yes_lsp :csp title_back_no_lsp goto *rmenu_sai_hyouji_ep4_3
+	if %tmp = -1 csp title_back_bg_lsp : csp title_back_yes_lsp :csp title_back_no_lsp goto *rmenu_sai_hyouji_ep4_3
+	
+	
+	goto *rmenu_title_back_btn_lp_ep4_3
+
+;**************************************************************
+;******************************************************************
+;　右クリックシステム、エピソード４　シーン変数による各変数の設定
+;******************************************************************
+;---------------------------------
+
+;シーン０（ゲーム開始時）
+*rmenu_main_ep4_3_scene_40000
+	mov ?r[enj_eva][condition],1
+	mov ?r[enj_enj][condition],1
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_3_0.png"
+return
+;---------------------------------
+*rmenu_main_ep4_2_scene_40001
+	mov ?r[ma4_enj][condition],1
+	mov ?r[ma4_ber][condition],1
+
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+
+	mov ?r[ma4_enj][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma4_enj][itiran_y],%tmp
+	mov ?r[ma4_ber][itiran_x],118 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma4_ber][itiran_y],%tmp
+return
+;---------------------------------
+*rmenu_main_ep4_2_scene_40005
+	mov ?r[ma4_ber][condition],1
+	mov ?r[ma4_lam][condition],1
+	mov ?r[ma4_enj][condition],1
+	mov ?r[ma4_mar][condition],1
+	mov ?r[ma4_bea][condition],1
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_2_0.png"
+return
+;---------------------------------
+*rmenu_main_ep4_3_scene_40030
+	for %tmp = 1 to cha_kazu_ep4_3 : mov ?r[%tmp][condition],-1 : next
+	mov ?r[enj_enj][condition],1
+	mov ?r[enj_eva][condition],1
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_3_0.png"
+return
+;---------------------------------
+*rmenu_main_ep4_3_scene_40040
+	for %tmp = 1 to cha_kazu_ep4_3 : mov ?r[%tmp][condition],-1 : next
+	mov ?r[enj_enj][condition],1
+	mov ?r[enj_eva][condition],1
+	mov ?r[enj_oko][condition],1
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_3_1.png"
+return
+;---------------------------------
+*rmenu_main_ep4_3_scene_40050
+	for %tmp = 1 to cha_kazu_ep4_3 : mov ?r[%tmp][condition],-1 : next
+	mov ?r[enj_enj][condition],1
+	mov ?r[enj_eva][condition],1
+	mov ?r[enj_oko][condition],1
+	mov ?r[enj_kas][condition],1
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_3_2.png"
+return
+;---------------------------------
+*rmenu_main_ep4_3_scene_40060
+	for %tmp = 1 to cha_kazu_ep4_3 : mov ?r[%tmp][condition],-1 : next
+	mov ?r[enj_enj][condition],1
+	mov ?r[enj_eva][condition],1
+	mov ?r[enj_oko][condition],1
+	mov ?r[enj_kas][condition],1
+	mov ?r[enj_ama][condition],1
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_3_3.png"
+return
+;---------------------------------
+*rmenu_main_ep4_3_scene_40070
+	for %tmp = 1 to cha_kazu_ep4_3 : mov ?r[%tmp][condition],-1 : next
+	mov ?r[enj_enj][condition],1
+	mov ?r[enj_eva][condition],1
+	mov ?r[enj_oko][condition],1
+	mov ?r[enj_kas][condition],1
+	mov ?r[enj_ama][condition],1
+	mov ?r[enj_ber][condition],1
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_3_3.png"
+return
+;---------------------------------
+*rmenu_main_ep4_3_scene_40080
+	for %tmp = 1 to cha_kazu_ep4_3 : mov ?r[%tmp][condition],-1 : next
+	mov ?r[enj_enj][condition],1
+	mov ?r[enj_eva][condition],1
+	mov ?r[enj_oko][condition],1
+	mov ?r[enj_kas][condition],1
+	mov ?r[enj_ama][condition],1
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_3_3.png"
+return
+;---------------------------------
+*rmenu_main_ep4_2_scene_40090
+	mov ?r[ma4_ber][condition],1
+	mov ?r[ma4_lam][condition],1
+	mov ?r[ma4_enj][condition],1
+	mov ?r[ma4_mar][condition],1
+	mov ?r[ma4_bea][condition],1
+	mov ?r[ma4_kin][condition],1
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_2_1.png"
+return
+;---------------------------------
+*rmenu_main_ep4_2_scene_40100
+	mov ?r[ma4_ber][condition],1
+	mov ?r[ma4_lam][condition],1
+	mov ?r[ma4_enj][condition],1
+	mov ?r[ma4_mar][condition],1
+	mov ?r[ma4_bea][condition],1
+	mov ?r[ma4_kin][condition],1
+	mov ?r[ma4_sak][condition],1
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_2_2.png"
+return
+;---------------------------------
+*rmenu_main_ep4_2_scene_40110
+	mov ?r[ma4_ber][condition],1
+	mov ?r[ma4_lam][condition],1
+	mov ?r[ma4_enj][condition],1
+	mov ?r[ma4_mar][condition],1
+	mov ?r[ma4_bea][condition],1
+	mov ?r[ma4_kin][condition],1
+	mov ?r[ma4_sak][condition],1
+	mov ?r[ma4_mar][condition],2
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_2_2.png"
+return
+;---------------------------------
+*rmenu_main_ep4_3_scene_40120
+	for %tmp = 1 to cha_kazu_ep4_3 : mov ?r[%tmp][condition],-1 : next
+	mov ?r[enj_enj][condition],1
+	mov ?r[enj_eva][condition],1
+	mov ?r[enj_oko][condition],1
+	mov ?r[enj_kas][condition],1
+	mov ?r[enj_ama][condition],1
+	mov ?r[enj_pro][condition],1
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_3_3.png"
+return
+;---------------------------------
+*rmenu_main_ep4_3_scene_40130
+	for %tmp = 1 to cha_kazu_ep4_3 : mov ?r[%tmp][condition],-1 : next
+	mov ?r[enj_enj][condition],1
+	mov ?r[enj_eva][condition],1
+	mov ?r[enj_oko][condition],1
+	mov ?r[enj_kas][condition],1
+	mov ?r[enj_ama][condition],1
+	mov ?r[enj_pro][condition],1
+	mov ?r[enj_mar][condition],1
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_3_5.png"
+return
+;---------------------------------
+*rmenu_main_ep4_3_scene_40140
+	for %tmp = 1 to cha_kazu_ep4_3 : mov ?r[%tmp][condition],-1 : next
+	mov ?r[enj_enj][condition],1
+	mov ?r[enj_eva][condition],1
+	mov ?r[enj_oko][condition],1
+	mov ?r[enj_kas][condition],1
+	mov ?r[enj_ama][condition],1
+	mov ?r[enj_pro][condition],1
+	mov ?r[enj_mar][condition],1
+	mov ?r[enj_rg][condition],1
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_3_6.png"
+return
+;---------------------------------
+*rmenu_main_ep4_2_scene_40150
+
+	mov ?r[ma4_lam][condition],1
+	mov ?r[ma4_enj][condition],1
+
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+
+	mov ?r[ma4_lam][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma4_lam][itiran_y],%tmp
+	mov ?r[ma4_enj][itiran_x],118 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma4_enj][itiran_y],%tmp
+return
+;---------------------------------
+*rmenu_main_ep4_2_scene_40160
+	mov ?r[ma4_ber][condition],1
+	mov ?r[ma4_lam][condition],1
+	mov ?r[ma4_enj][condition],1
+	mov ?r[ma4_mar][condition],1
+	mov ?r[ma4_bea][condition],1
+	mov ?r[ma4_kin][condition],1
+	mov ?r[ma4_sak][condition],1
+	mov ?r[ma4_mar][condition],2
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_2_2.png"
+return
+;---------------------------------
+*rmenu_main_ep4_2_scene_40170
+	mov ?r[ma4_ber][condition],1
+	mov ?r[ma4_lam][condition],1
+	mov ?r[ma4_enj][condition],1
+	mov ?r[ma4_mar][condition],1
+	mov ?r[ma4_bea][condition],1
+	mov ?r[ma4_kin][condition],1
+	mov ?r[ma4_sak][condition],2
+	mov ?r[ma4_mar][condition],2
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_2_2.png"
+return
+;---------------------------------
+*rmenu_main_ep4_3_scene_40175
+	for %tmp = 1 to cha_kazu_ep4_3 : mov ?r[%tmp][condition],-1 : next
+	mov ?r[enj_enj][condition],1 : 	mov ?r[enj_eva][condition],1
+	mov ?r[enj_oko][condition],1 : 	mov ?r[enj_kas][condition],1
+	mov ?r[enj_ama][condition],1 : 	mov ?r[enj_pro][condition],1
+	mov ?r[enj_mar][condition],1 : 	mov ?r[enj_rg][condition],1
+	mov ?r[enj_sak][condition],1
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_3_7.png"
+return
+;---------------------------------
+*rmenu_main_ep4_2_scene_40180
+	mov ?r[ma4_ber][condition],1
+	mov ?r[ma4_lam][condition],1
+	mov ?r[ma4_enj][condition],1
+	mov ?r[ma4_mar][condition],1
+	mov ?r[ma4_bea][condition],1
+	mov ?r[ma4_kin][condition],1
+	mov ?r[ma4_sak][condition],2
+	mov ?r[ma4_mar][condition],2
+	mov ?r[ma4_s][condition],1	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_2_4.png"
+return
+;---------------------------------
+*rmenu_main_ep4_scene_40190
+return
+;---------------------------------
+*rmenu_main_ep4_2_scene_40200
+	mov ?r[ma4_ber][condition],1
+	mov ?r[ma4_lam][condition],1
+	mov ?r[ma4_enj][condition],1
+	mov ?r[ma4_mar][condition],1
+	mov ?r[ma4_bea][condition],1
+	mov ?r[ma4_kin][condition],1
+	mov ?r[ma4_sak][condition],2
+	mov ?r[ma4_mar][condition],2
+	mov ?r[ma4_s][condition],1	
+	mov ?r[ma4_ron][condition],1
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_2_5.png"
+return
+;---------------------------------
+*rmenu_main_ep4_2_scene_40210
+	mov ?r[ma4_ber][condition],1
+	mov ?r[ma4_lam][condition],1
+	mov ?r[ma4_enj][condition],1
+	mov ?r[ma4_mar][condition],1
+	mov ?r[ma4_bea][condition],1
+	mov ?r[ma4_kin][condition],1
+	mov ?r[ma4_sak][condition],2
+	mov ?r[ma4_mar][condition],2
+	mov ?r[ma4_s][condition],1	
+	mov ?r[ma4_ron][condition],1
+	mov ?r[ma4_wal][condition],1
+	mov ?r[ma4_goa][condition],1
+	mov ?r[ma4_rg][condition],1
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_2_6.png"
+return
+;---------------------------------
+*rmenu_main_ep4_2_scene_40220
+	mov ?r[ma4_ber][condition],1 : 	mov ?r[ma4_lam][condition],1 : mov ?r[ma4_enj][condition],1
+	mov ?r[ma4_mar][condition],1 : 	mov ?r[ma4_bea][condition],1 : mov ?r[ma4_kin][condition],1
+	mov ?r[ma4_sak][condition],2 : 	mov ?r[ma4_mar][condition],2 : mov ?r[ma4_s][condition],1	
+	mov ?r[ma4_ron][condition],1 : 	mov ?r[ma4_wal][condition],1 : mov ?r[ma4_goa][condition],1
+	mov ?r[ma4_rg][condition],1
+	mov ?r[ma4_gap][condition],1
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_2_7.png"
+return
+;---------------------------------
+*rmenu_main_ep4_3_scene_40230
+	for %tmp = 1 to cha_kazu_ep4_3 : mov ?r[%tmp][condition],-1 : next
+	mov ?r[enj_enj][condition],1 : mov ?r[enj_eva][condition],1
+	mov ?r[enj_oko][condition],1 : mov ?r[enj_kas][condition],1
+	mov ?r[enj_ama][condition],1 : mov ?r[enj_pro][condition],1
+	mov ?r[enj_mar][condition],1 : mov ?r[enj_rg][condition],1
+	mov ?r[enj_sak][condition],1 : mov ?r[enj_mas][condition],1
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_3_7.png"
+return
+;---------------------------------
+*rmenu_main_ep4_3_scene_40240
+	for %tmp = 1 to cha_kazu_ep4_3 : mov ?r[%tmp][condition],-1 : next
+	mov ?r[enj_enj][condition],1 : mov ?r[enj_eva][condition],1
+	mov ?r[enj_oko][condition],1 : mov ?r[enj_kas][condition],1
+	mov ?r[enj_ama][condition],1 : mov ?r[enj_pro][condition],1
+	mov ?r[enj_mar][condition],1 : mov ?r[enj_rg][condition],1
+	mov ?r[enj_sak][condition],1 : mov ?r[enj_mas][condition],1
+	mov ?r[enj_sab][condition],1
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_3_7.png"
+return
+;---------------------------------
+*rmenu_main_ep4_3_scene_40250
+	for %tmp = 1 to cha_kazu_ep4_3 : mov ?r[%tmp][condition],-1 : next
+	mov ?r[enj_enj][condition],1 : mov ?r[enj_eva][condition],1
+	mov ?r[enj_oko][condition],1 : mov ?r[enj_kas][condition],1
+	mov ?r[enj_ama][condition],1 : mov ?r[enj_pro][condition],1
+	mov ?r[enj_mar][condition],1 : mov ?r[enj_rg][condition],1
+	mov ?r[enj_sak][condition],1 : mov ?r[enj_mas][condition],1
+	mov ?r[enj_sab][condition],1 : mov ?r[enj_kwa][condition],1
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_3_7.png"
+return
+;---------------------------------
+*rmenu_main_ep4_scene_40260
+	mov ?r[geo][condition],2
+return
+;---------------------------------
+*rmenu_main_ep4_scene_40270
+	mov ?r[geo][condition],2
+	mov ?r[but][condition],-1
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back16.png"
+return
+;---------------------------------
+*rmenu_main_ep4_2_scene_40280
+
+	mov ?r[ma4_bea][condition],1
+	mov ?r[ma4_mar][condition],2
+
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+
+	mov ?r[ma4_mar][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma4_mar][itiran_y],%tmp
+	mov ?r[ma4_bea][itiran_x],118 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma4_bea][itiran_y],%tmp
+return
+;---------------------------------
+*rmenu_main_ep4_3_scene_40290
+	for %tmp = 1 to cha_kazu_ep4_3 : mov ?r[%tmp][condition],-1 : next
+	mov ?r[enj_enj][condition],1 : mov ?r[enj_eva][condition],1
+	mov ?r[enj_oko][condition],1 : mov ?r[enj_kas][condition],1
+	mov ?r[enj_ama][condition],1 : mov ?r[enj_pro][condition],1
+	mov ?r[enj_mar][condition],1 : mov ?r[enj_rg][condition],1
+	mov ?r[enj_sak][condition],1 : mov ?r[enj_mas][condition],1
+	mov ?r[enj_sab][condition],1 : mov ?r[enj_kwa][condition],1
+	mov ?r[enj_ber][condition],1
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_3_7.png"
+return
+;---------------------------------
+*rmenu_main_ep4_2_scene_40300
+
+	mov ?r[ma4_enj][condition],1
+	mov ?r[ma4_bea][condition],1
+	mov ?r[ma4_mar][condition],2
+
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+
+	mov ?r[ma4_enj][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma4_enj][itiran_y],%tmp
+	mov ?r[ma4_mar][itiran_x],118 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma4_mar][itiran_y],%tmp
+	mov ?r[ma4_bea][itiran_x],167 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma4_bea][itiran_y],%tmp
+return
+;---------------------------------
+*rmenu_main_ep4_2_scene_40310
+	mov ?r[ma4_enj][condition],1
+	mov ?r[ma4_sak][condition],1
+	mov ?r[ma4_bea][condition],1
+	mov ?r[ma4_mar][condition],2
+
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+
+	mov ?r[ma4_enj][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma4_enj][itiran_y],%tmp
+	mov ?r[ma4_sak][itiran_x],69 : mov %tmp,55 : add %tmp,r_top_y : mov ?r[ma4_sak][itiran_y],%tmp
+	mov ?r[ma4_mar][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma4_mar][itiran_y],%tmp
+	mov ?r[ma4_bea][itiran_x],167 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma4_bea][itiran_y],%tmp
+return
+;---------------------------------
+*rmenu_main_ep4_2_scene_40320
+	mov ?r[ma4_enj][condition],1
+	mov ?r[ma4_bea][condition],1
+
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+
+	mov ?r[ma4_enj][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma4_enj][itiran_y],%tmp
+	mov ?r[ma4_bea][itiran_x],118 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma4_bea][itiran_y],%tmp
+return
+;---------------------------------
+*rmenu_main_ep4_2_scene_40330
+	mov ?r[ma4_ber][condition],1 : 	mov ?r[ma4_lam][condition],1 : mov ?r[ma4_enj][condition],1
+	mov ?r[ma4_mar][condition],1 : 	mov ?r[ma4_bea][condition],1 : mov ?r[ma4_kin][condition],1
+	mov ?r[ma4_sak][condition],1 : 	mov ?r[ma4_mar][condition],2 : mov ?r[ma4_s][condition],1	
+	mov ?r[ma4_ron][condition],1 : 	mov ?r[ma4_wal][condition],1 : mov ?r[ma4_goa][condition],1
+	mov ?r[ma4_rg][condition],1
+	mov ?r[ma4_gap][condition],1
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\ba4_2_7.png"
+return
+;---------------------------------
+*rmenu_main_ep4_scene_40350
+	mov ?r[geo][condition],2
+	mov ?r[eva][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[gen][condition],2
+return
+;---------------------------------
+*rmenu_main_ep4_scene_40360
+	mov ?r[geo][condition],2
+	mov ?r[eva][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[nat][condition],2
+	mov ?r[hid][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[mar][condition],2
+return
+;---------------------------------
+*rmenu_main_ep4_scene_40370
+	mov ?r[geo][condition],2 : mov ?r[eva][condition],2
+	mov ?r[rud][condition],2 : mov ?r[ros][condition],2
+	mov ?r[nat][condition],2 : mov ?r[hid][condition],2
+	mov ?r[gen][condition],2 : mov ?r[mar][condition],2
+	mov ?r[jes][condition],2
+return
+;---------------------------------
+*rmenu_main_ep4_scene_40380
+	mov ?r[geo][condition],2 : mov ?r[eva][condition],2
+	mov ?r[rud][condition],2 : mov ?r[ros][condition],2
+	mov ?r[nat][condition],2 : mov ?r[hid][condition],2
+	mov ?r[gen][condition],2 : mov ?r[mar][condition],2
+	mov ?r[jes][condition],2 : mov ?r[kir][condition],2
+return
+;---------------------------------
+*rmenu_main_ep4_scene_40390
+	mov ?r[geo][condition],2 : mov ?r[eva][condition],2
+	mov ?r[rud][condition],2 : mov ?r[ros][condition],2
+	mov ?r[nat][condition],2 : mov ?r[hid][condition],2
+	mov ?r[gen][condition],2 : mov ?r[mar][condition],2
+	mov ?r[jes][condition],2 : mov ?r[kir][condition],2
+	mov ?r[kla][condition],2 
+return
+;---------------------------------
+*rmenu_main_ep4_scene_40400
+	mov ?r[geo][condition],2 : mov ?r[eva][condition],2
+	mov ?r[rud][condition],2 : mov ?r[ros][condition],2
+	mov ?r[nat][condition],2 : mov ?r[hid][condition],2
+	mov ?r[gen][condition],2 : mov ?r[mar][condition],2
+	mov ?r[jes][condition],2 : mov ?r[kir][condition],2
+	mov ?r[kla][condition],2
+	mov ?r[nan][condition],2 : mov ?r[sha][condition],2
+return
+;---------------------------------
+*rmenu_main_ep4_scene_40410
+	mov ?r[geo][condition],2 : mov ?r[eva][condition],2
+	mov ?r[rud][condition],2 : mov ?r[ros][condition],2
+	mov ?r[nat][condition],2 : mov ?r[hid][condition],2
+	mov ?r[gen][condition],2 : mov ?r[mar][condition],2
+	mov ?r[jes][condition],2 : mov ?r[kir][condition],2
+	mov ?r[kla][condition],2 : mov ?r[sha][condition],2
+	mov ?r[nan][condition],2 : mov ?r[kin][condition],2
+return
+;---------------------------------
+*rmenu_main_ep4_scene_40420
+	mov ?r[geo][condition],2 : mov ?r[eva][condition],2
+	mov ?r[rud][condition],2 : mov ?r[ros][condition],2
+	mov ?r[nat][condition],2 : mov ?r[hid][condition],2
+	mov ?r[gen][condition],2 : mov ?r[mar][condition],2
+	mov ?r[jes][condition],2 : mov ?r[kir][condition],2
+	mov ?r[kla][condition],2 : mov ?r[sha][condition],2
+	mov ?r[nan][condition],2 : mov ?r[kin][condition],2
+	mov ?r[goh][condition],2 : mov ?r[kum][condition],2
+return
+;---------------------------------
+*rmenu_main_ep4_scene_40430
+	mov ?r[geo][condition],2 : mov ?r[eva][condition],2
+	mov ?r[rud][condition],2 : mov ?r[ros][condition],2
+	mov ?r[nat][condition],2 : mov ?r[hid][condition],2
+	mov ?r[gen][condition],2 : mov ?r[mar][condition],2
+	mov ?r[jes][condition],2 : mov ?r[kir][condition],2
+	mov ?r[kla][condition],2 : mov ?r[sha][condition],2
+	mov ?r[nan][condition],2 : mov ?r[kin][condition],2
+	mov ?r[goh][condition],2 : mov ?r[kum][condition],2
+	mov ?r[kan][condition],2
+return
+;---------------------------------
+*rmenu_main_ep4_scene_40440
+	mov ?r[geo][condition],2 : mov ?r[eva][condition],2
+	mov ?r[rud][condition],2 : mov ?r[ros][condition],2
+	mov ?r[nat][condition],2 : mov ?r[hid][condition],2
+	mov ?r[gen][condition],2 : mov ?r[mar][condition],2
+	mov ?r[jes][condition],2 : mov ?r[kir][condition],2
+	mov ?r[kla][condition],2 : mov ?r[sha][condition],2
+	mov ?r[nan][condition],2 : mov ?r[kin][condition],2
+	mov ?r[goh][condition],2 : mov ?r[kum][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[but][condition],1
+	mov ?r[bea][condition],1
+	mov ?r[bea][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[bea][itiran_y],%tmp
+
+	;キャラ一覧表示の背景を変える
+	;mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+return
+;---------------------------------
+*rmenu_main_ep4_2_scene_40450
+	mov ?r[ma4_lam][condition],1
+	mov ?r[ma4_ber][condition],1
+
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+
+	mov ?r[ma4_lam][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma4_lam][itiran_y],%tmp
+	mov ?r[ma4_ber][itiran_x],118 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma4_ber][itiran_y],%tmp
+return
+;---------------------------------
+;******************************************************************
+;　右クリックシステム、エピソード３　シーン変数による各変数の設定
+;******************************************************************
+
+;メモ
+ ;シーン変数の入力　mov %play_scene,30030
+;登場　seplay2 9,1060,70
+;死亡　seplay2 9,1061,70
+;Tips入手　seplay2 9,1062,70
+
+;mov %r_hyouji_cha,0
+;mov %r_hyouji_tips,1
+;mov %tips_page,1
+
+;---------------------------------
+
+;シーン１０（ゲーム開始時）
+*rmenu_main_ep3_scene_30000
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],-1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+return
+
+;シーン１０（ゲーム開始時　魔女サイド）
+*rmenu_main_ep3_2_scene_30000
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30010
+*rmenu_main_ep3_scene_30020
+*rmenu_main_ep3_scene_30030
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 18 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 19 to 22 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+return
+
+;シーン１０（ゲーム開始時　魔女サイド）
+*rmenu_main_ep3_2_scene_30010
+*rmenu_main_ep3_2_scene_30020
+*rmenu_main_ep3_2_scene_30030
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],69 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],118 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back10.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30021
+*rmenu_main_ep3_scene_30031
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 18 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 19 to 22 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+return
+
+;シーン１０（ゲーム開始時　魔女サイド）
+*rmenu_main_ep3_2_scene_30021
+*rmenu_main_ep3_2_scene_30031
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],69 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],118 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back10.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30022
+*rmenu_main_ep3_scene_30032
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 18 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 19 to 22 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+
+return
+
+;シーン１０（ゲーム開始時　魔女サイド）
+*rmenu_main_ep3_2_scene_30022
+*rmenu_main_ep3_2_scene_30032
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],69 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],118 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back10.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30035
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+return
+
+;シーン１０（ゲーム開始時　魔女サイド）
+*rmenu_main_ep3_2_scene_30035
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],69 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],118 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back10.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30040
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+return
+
+;シーン１０（ゲーム開始時　魔女サイド）
+*rmenu_main_ep3_2_scene_30040
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],69 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],118 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back10.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+return
+
+
+;---------------------------------
+*rmenu_main_ep3_scene_30050
+*rmenu_main_ep3_scene_30060
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30050
+*rmenu_main_ep3_2_scene_30060
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back11.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+return
+
+;---------------------------------
+*rmenu_main_ep3_scene_30070
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30070
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back12.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30071
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30071
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back12.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30080
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30080
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back12.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+
+;---------------------------------
+*rmenu_main_ep3_scene_30090
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30090
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back12.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+
+;---------------------------------
+*rmenu_main_ep3_scene_30100
+*rmenu_main_ep3_scene_30110
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30100
+*rmenu_main_ep3_2_scene_30110
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back12.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30120
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30120
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back13.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30130
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30130
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+	mov ?r[ma3_lam][condition],1
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+	mov ?r[ma3_lam][itiran_x],118 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_lam][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back13.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30140
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30140
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+	mov ?r[ma3_lam][condition],1
+	mov ?r[ma3_ber][condition],1
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+	mov ?r[ma3_lam][itiran_x],118 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_lam][itiran_y],%tmp
+	mov ?r[ma3_ber][itiran_x],167 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_ber][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back13.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30150
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30150
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back13.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30160
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30160
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back13.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30170
+;（楼座、真里亞の死亡）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[mar][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30170
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back13.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30180
+;（楼座、真里亞の死亡）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[mar][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30180
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back13.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30181
+;（楼座、真里亞の死亡）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[mar][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30181
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back13.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+
+return
+
+;---------------------------------
+*rmenu_main_ep3_scene_30190
+;（シエスタ姉妹の追加）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[mar][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30190
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+	mov ?r[ma3_s][condition],1
+
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_s][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_s][itiran_y],%tmp
+
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back14.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30200
+;（シエスタ姉妹の追加）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[mar][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30200
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+	mov ?r[ma3_s][condition],1
+
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_s][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_s][itiran_y],%tmp
+
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back14.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30210
+;（留弗夫、霧江、秀吉の死亡）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[mar][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[hid][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30210
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+	mov ?r[ma3_s][condition],1
+
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+
+	mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+	mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+	mov ?r[ma3_s][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_s][itiran_y],%tmp
+
+	mov ?r[ma3_ron][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+	mov ?r[ma3_rg][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+	mov ?r[ma3_goa][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+	
+	;キャラ一覧表示の背景を変える
+	mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back14.png"
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+return
+;---------------------------------
+*rmenu_main_ep3_scene_30220
+;（留弗夫、霧江、秀吉の死亡）
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to 19 : mov ?r[%tmp][condition],1 : next
+	for %tmp = 20 to cha_kazu_ep3 : mov ?r[%tmp][condition],-1 : next
+
+	mov ?r[kin][condition],2
+	mov ?r[gen][condition],2
+	mov ?r[sha][condition],2
+	mov ?r[kan][condition],2
+	mov ?r[goh][condition],2
+	mov ?r[kum][condition],2
+	mov ?r[ros][condition],2
+	mov ?r[mar][condition],2
+	mov ?r[rud][condition],2
+	mov ?r[kir][condition],2
+	mov ?r[hid][condition],2
+
+	;Tipsフラグ設定
+	for %tmp = 1 to 10 : mov ?tips[%tmp][tips_flg],0 : next
+	for %tmp = 1 to 14 : mov ?grim[%tmp][grim_flg],0 : next
+
+
+	;Tips設定
+	mov ?tips[1][tips_flg],1
+	mov ?tips[2][tips_flg],1
+
+	mov ?grim[1][grim_flg],1
+	mov ?grim[2][grim_flg],1
+	mov ?grim[3][grim_flg],1
+	mov ?grim[4][grim_flg],1
+return
+
+;（魔女サイド）
+*rmenu_main_ep3_2_scene_30220
+	;キャラ、Tipsフラグの初期化
+	for %tmp = 1 to cha_kazu_ep3_2 : mov ?r[%tmp][condition],-1 : next
+	;mov ?r[enj][condition],-1
+
+	mov ?r[ma3_bea][condition],1
+	mov ?r[ma3_rg][condition],1
+	mov ?r[ma3_goa][condition],1
+	mov ?r[ma3_ron][condition],1
+	mov ?r[ma3_wal][condition],1
+	mov ?r[ma3_ev2][condition],1
+	mov ?r[ma3_s][condition],1
+
+
+	mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+

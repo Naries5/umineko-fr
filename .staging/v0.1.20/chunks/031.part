@@ -1,0 +1,5000 @@
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+dllefe_off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",80
+
+fedexx 0,40,40,0,0,0,3000
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_r1an.jpg",":b;bmp\background\guesthouse\g2f_r1an.png",0
+ld l,$BUT_defA1,0
+ld r,$JES_defA1,24
+wait 3000
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g1f_p1bn.jpg",":b;bmp\background\guesthouse\g1f_p1bn.png",24
+wait 2000
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g1f_r1bn.jpg",":b;bmp\background\guesthouse\g1f_r1bn.png",0
+ld r,$KAN_MajimeA1,23
+wait 3000
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g1f_r1ar.jpg",":b;bmp\background\guesthouse\g1f_r1ar.png",0
+ld l,$GEN_komaruA1,24
+wait 3000
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+fedexx 0,70,70,0,0,0,3000
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_r1bn.jpg",":b;bmp\background\garden\garden_r1bn.png",0
+ld l,$SHA_hajiraiA1,0
+ld r,$GEO_komaruA5k,26
+wait 3000
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+dllefe 1,1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_o1an.jpg",":b;bmp\background\mainbuilding\m_o1an.png",2
+wait 3000
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_o1bn.jpg",":b;bmp\background\mainbuilding\m_o1bn.png",2
+wait 10000
+
+se2 27
+se3 21
+wait 500
+mevol 1,40
+mevol 2,40
+bg white,1
+dllefe_off
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\portrait2.jpg",":b;bmp\background\mainbuilding\portrait2.png",42
+
+wait 10000
+
+;時計の音
+
+bgmplay 23
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1fn.jpg",":b;bmp\background\mainbuilding\mdin_1fn.png",2
+wait 4000
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1an.jpg",":b;bmp\background\mainbuilding\mdin_1an.png",0
+ld c,$KLA_DefA1,23
+wait 2000
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1cn.jpg",":b;bmp\background\mainbuilding\mdin_1cn.png",0
+ld r,$RUD_MajimeA1,24
+wait 2000
+ld l,$KIR_MajimeA1,23
+wait 2000
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1bn.jpg",":b;bmp\background\mainbuilding\mdin_1bn.png",0
+ld r,$EVA_WaraiA1,24
+wait 2000
+ld l,$NAT_ZutuuA1,23
+wait 2000
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mdin_1dn.jpg",":b;bmp\background\mainbuilding\mdin_1dn.png",0
+ld r,$HID_fumuA1,0
+ld l,$ROS_NayamuA1,24
+wait 2000
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",5
+wait 2000
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mkit_1bn.jpg",":b;bmp\background\mainbuilding\mkit_1bn.png",0
+ld l,$GOH_HohoemiA1,2
+wait 2000
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m1f_p1cn.jpg",":b;bmp\background\mainbuilding\m1f_p1cn.png",2
+wait 2000
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+wait 3000
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg",":b;bmp\background\mainbuilding\mlib_1bn.png",0
+ld c,$KIN_FumuA1,2
+wait 1000
+ld c,$KIN_MajimeA1,80
+wait 3000
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",5
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\ment_1bn.jpg",":b;bmp\background\mainbuilding\ment_1bn.png",2
+wait 4000
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mhal_2cn.jpg",":b;bmp\background\mainbuilding\mhal_2cn.png",2
+wait 8000
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\portrait2.jpg",":b;bmp\background\mainbuilding\portrait2.png",2
+wait 8000
+
+ld5 r,$BEA_akuwaraiA1,99,3000,"breakup.dll/lrp"
+
+set_achievement "UMI32"
+
+;▲第５アイキャッチ　１０月４日（土）２３時５９分〜２４時００分
+eye2 23,59,24,00,1,0,360,480,120
+
+
+*umi3_6
+
+mov %play_scene,30060 ;シーン変数の入力
+mov %grim_scene,303
+
+E_A
+;■金蔵の書斎
+
+me1 13
+me2 14
+
+textoff
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+dllefe 1,1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_o1an.jpg",":b;bmp\background\mainbuilding\m_o1an.png",26
+wait 4000
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+dllefe_off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",80
+
+fedexx 0,40,0,0,0,0,4000
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",22
+wait 2000
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",0
+ld c,$KIN_fumuA1,24
+
+advchar "01"
+langjp:dwave_jp 0, kin_3e96:「………………………さて。@:dwave_jp 0, kin_3e97:この度のゲームはどう転ぶのか。@:dwave_jp 0, kin_3e98:…委ねるもよし、抗うもよし。@:dwave_jp 0, kin_3e99:……いずれにせよ、わしに残されたわずかの命を賭すに値する、実に楽しい宴よ。」\
+;＜金蔵
+langen:dwave_eng 0, kin_3e96:^... Eh bien. ^@:dwave_eng 0, kin_3e97:^Voyons donc de quel côté tombera cette partie. ^@:dwave_eng 0, kin_3e98:^... S'en remettre au destin ou lutter jusqu'au bout... peu m'importe. ^@:dwave_eng 0, kin_3e99:^... Dans les deux cas, voilà un banquet digne du peu de vie qu'il me reste à miser.^\
+
+se1 21
+advchar "-1"
+langjp　金蔵は薄暗い書斎で、時折、稲光に照らされながら、@ぶつぶつと独り言を口走っては、それにひとり、笑う。\
+langen^Dans son bureau plongé dans l'ombre, parfois déchiré par la lumière des éclairs, ^@^Kinzo marmonnait seul... puis riait de ses propres paroles.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1e.jpg",":b;bmp\background\mainbuilding\mlib_1e.png",25
+
+langjp　机の上に置かれた、凝った意匠の施されたアンティークの時計は、@重なっていた２本の針を右に傾かせ、ずらし始めている。@
+langen^Sur son bureau, une vieille horloge richement ouvragée ^@^laissait lentement ses deux aiguilles jusque-là superposées se séparer vers la droite.^@
+br
+langjp　２４を数えた時の刻みが０に戻り、再びそれを数え直していた…。\
+langen^Après avoir compté jusqu'à vingt-quatre, l'indicateur retombait à zéro... puis recommençait son cycle.^\
+
+textoff
+bgm1v 13,0
+
+fedexx 70,0,0,0,0,0,3000
+
+
+advchar "01"
+langjp:dwave_jp 0, kin_3e100:「……時の刻みとは残酷なものよ。@:dwave_jp 0, kin_3e101:２４を数えるために一日を掛けて辿り着き、そして再び０に戻る。@:dwave_jp 0, kin_3e102:……２３時５９分までは確かに数えただろう。@:dwave_jp 0, kin_3e103:しかし、２４時に辿り着くことはできたのだろうか？@:dwave_jp 0, kin_3e104:　……辿り着けず、再び０時に戻ったと考えれば、それは何とも虚しいことよ。」\
+langen:dwave_eng 0, kin_3e100:^... Le temps est une chose cruelle. ^@:dwave_eng 0, kin_3e101:^Il lui faut une journée entière pour atteindre vingt-quatre... et aussitôt, il retombe à zéro. ^@:dwave_eng 0, kin_3e102:^... Jusqu'à 23h59, il compte encore. ^@:dwave_eng 0, kin_3e103:^Mais atteint-il jamais réellement vingt-quatre heures ? ^@:dwave_eng 0, kin_3e104:^... S'il revient à 00h00 sans jamais connaître cet instant, alors toute cette marche n'est que vanité.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+advchar "-1"
+langjp　いや、それこそが人の生涯か。@
+langjp　完全な２４を目指して生き、そこに辿り着いた刹那、０に戻る。@
+langen^Peut-être est-ce là, au fond, le destin de toute vie humaine.^@
+langen^On passe son existence à viser ce parfait vingt-quatre... puis, à l'instant même où l'on croit l'atteindre, tout retombe à zéro.^@
+br
+langjp　故人は２４に辿り着けたと人々は讃えるだろうが、それは断じて２４ではない。@
+langen^Les vivants loueront le défunt en disant qu'il a atteint vingt-quatre. Mais non. Jamais.^@
+br
+langjp　………所詮は、０なのだ。\
+langen^... À la fin, il ne reste que zéro.^\
+
+
+advchar "01"
+langjp:dwave_jp 0, kin_3e105:「わしは違うぞ。@:dwave_jp 0, kin_3e106:……わしは生きて２４に辿り着く。@:dwave_jp 0, kin_3e107:そここそが黄金郷。@:dwave_jp 0, kin_3e108:…ベアトリーチェの住処なのだから。」\
+langen:dwave_eng 0, kin_3e105:^Moi, ce sera différent. ^@:dwave_eng 0, kin_3e106:^... J'atteindrai vingt-quatre de mon vivant. ^@:dwave_eng 0, kin_3e107:^C'est là que se trouve la Terre de l'Or. ^@:dwave_eng 0, kin_3e108:^... C'est là que Béatrice m'attend.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",22
+
+advchar "-1"
+langjp　金蔵は先ほどからずっと、タロットカードを弄っていた。@
+langen^Depuis un bon moment déjà, Kinzo manipulait ses cartes de tarot.^@
+br
+langjp　そして己の勝負運を占っては、その結果が気に入らない度にやり直しているように見えた。\
+langen^Il semblait y chercher un présage favorable... puis recommençait chaque fois que le résultat ne lui plaisait pas.^\
+
+langjp　タロット占いでもっとも禁じられている行為は、同じことを二度占うことである。@
+langen^Or, l'un des interdits les plus fondamentaux du tarot consiste précisément à ne jamais poser deux fois la même question.^@
+br
+langjp　それは占いの結果に対する冒涜であり、@タロットを通じて神託を与えてくれる、人より上位の存在への冒涜ともなるのである。\
+langen^Ce serait insulter le résultat de la divination... ^@^et, au-delà de lui, les êtres supérieurs qui sont censés transmettre leurs oracles à travers les cartes.^\
+langjp　しかし、金蔵は知っている。@
+langen^Kinzo, évidemment, le savait parfaitement.^@
+br
+langjp　タロットが二度占ってはならないのは、これが単なる乱数発生器でしかないため、@二度占えば異なる結果が出るのは当然だからだ。@
+langen^Mais il savait aussi pourquoi cet interdit existait : le tarot n'était, au fond, qu'un générateur de hasard. ^@^Si l'on recommençait, il était naturel d'obtenir un autre résultat.^@
+br
+langjp　……だから、タロットの結果に神秘性を持たせるために、二度の占いを禁じているに過ぎないのだ。\
+langen^... Alors, pour préserver l'apparence de mystère, on décrétait simplement qu'un second tirage était interdit.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　…しかし、だからといって金蔵がタロット占いを馬鹿にしているわけではない。@
+langjp　金蔵の解釈によるタロット占いは、まったく別のやり方だった。@
+langen^Cela ne voulait pas dire pour autant que Kinzo méprisait le tarot.^@
+langen^Simplement, sa manière de s'en servir n'avait rien de conventionnel.^@
+br
+langjp　それは、自分の得たい最高の結果が出るまで、一切の妥協なく、@何度も何度もタロットを繰り返すことだ。\
+langen^Il recommençait encore et encore, ^@^sans le moindre compromis, jusqu'à obtenir exactement le résultat qu'il désirait.^\
+
+
+langjp　最高の結果がどの程度のものかの定義にもよるが、@厳密な意味での最高の結果を求めたなら、@それは単なる算数的奇跡を求める運のルーレットと同じになる。@
+langen^Tout dépendait bien sûr de ce qu'on appelait le « meilleur » résultat. ^@^Mais si l'on exigeait la combinaison parfaite au sens strict, ^@^alors le tarot devenait simplement une roulette où l'on attendait qu'un miracle mathématique finisse par se produire.^@
+br
+langjp　……しかし、数字の奇跡こそを魔力の根源とする金蔵にとって、それは充分、魔法の儀式となり得た。\
+langen^... Et pour Kinzo, qui voyait précisément dans ces miracles de probabilité la source de la magie, cela suffisait à faire de ce geste un rituel.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg",":b;bmp\background\mainbuilding\mlib_1bn.png",22
+
+langjp　つまり、@自分の望む結果が完全に出るまで、延々とタロットを繰り返すその手間と信念、心の気持ちが祈祷に通じ、@それが天に届いた時、結果となって昇華されるという、金蔵独自の魔法解釈だ。@
+langen^À ses yeux, ^@^recommencer inlassablement jusqu'à ce que les cartes donnent enfin le résultat souhaité, y consacrer son temps, sa conviction et tout son désir... ^@^tout cela revenait à transformer sa volonté en prière. ^@^Et lorsque cette prière finissait par atteindre le ciel, le résultat obtenu devenait le miracle lui-même.^@
+br
+langjp　だから、金蔵が扱っているタロットは、世間一般のタロットとまったく同じものだったが、@そのやり方がまったく異なっていたのだ…。\
+langen^Les cartes de Kinzo étaient donc les mêmes que celles de n'importe quel jeu de tarot. ^@^Ce qui changeait, c'était entièrement sa façon de les utiliser...^\
+textoff
+
+se1v 27,40
+wait 500
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg",":b;bmp\background\mainbuilding\mlib_1bn.png",2
+ld r,$KIN_FumuA1,24
+
+advchar "01"
+langjp:dwave_jp 0, kin_3e109:「……………………………。@:dwave_jp 0, kin_3e110:…今宵は、……思い通りにならぬな。」@
+langen:dwave_eng 0, kin_3e109:^...^@:dwave_eng 0, kin_3e110:^ Ce soir... rien ne veut se plier à ma volonté.^@
+br
+advchar "-1"
+langjp　金蔵は一度手を止める。\
+langen^Kinzo finit par arrêter sa main.^\
+
+langjp　…なかなか思い通りの結果が出ないようだった。@
+langen^... Il n'arrivait décidément pas à obtenir le résultat qu'il voulait.^@
+br
+langjp　それどころか、そうそう出るはずのない悪いカードが繰り返し現れ、@金蔵の求める奇跡を妨害し続けていた。\
+langen^Pire encore : des cartes de mauvais augure, qui n'auraient jamais dû revenir aussi souvent, apparaissaient tirage après tirage... ^@^comme si elles s'obstinaient à repousser le miracle qu'il exigeait.^\
+
+ld r,$KIN_fukigenA1,80
+
+advchar "01"
+langjp:dwave_jp 0, kin_3e111:「………………ふ。@:dwave_jp 0, kin_3e112:…そういうことなのか。」@
+langen:dwave_eng 0, kin_3e111:^... Hm. ^@:dwave_eng 0, kin_3e112:^... Voilà donc ce que cela signifie.^@
+br
+advchar "-1"
+langjp　普段とは違う流れに、金蔵は何かの神託を得たらしい。@
+langen^Dans cette anomalie, Kinzo sembla soudain lire un message.^@
+br
+langjp　しかし、不吉なカードたちが机の上に散らばる様を見る限り、その神託が良き報せであるとは考え難かった…。\
+langen^Mais à voir toutes ces cartes funestes éparpillées sur son bureau, difficile d'imaginer que ce message annonçait quoi que ce soit de bon...^\
+
+ld r,$KIN_fumuA1,80
+
+langjp　金蔵はしばらくの間、固く目を閉じ、何かを思案した。\
+langen^Kinzo ferma les yeux et resta longtemps immobile, plongé dans ses pensées.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+se1 21
+;bg white,1
+;bg black,22
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1e.jpg",":b;bmp\background\mainbuilding\mlib_1e.png",2
+se2v 53,50
+
+langjp　そして雷鳴に何かを決断し、受話器を取りダイヤルする。@
+langen^Puis un coup de tonnerre retentit. Kinzo prit sa décision, saisit le téléphone et composa un numéro.^@
+br
+advchar "01"
+langjp:dwave_jp 0, kin_3e113:「…………わしだ。@:dwave_jp 0, kin_3e114:源次はおるか。至急だ。」\
+langen:dwave_eng 0, kin_3e113:^... C'est moi. ^@:dwave_eng 0, kin_3e114:^Genji est-il là ? Qu'il vienne immédiatement.^\
+
+
+
+textoff
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",5
+
+fede 0,3000
+wait 1000
+
+me1 13
+me2 14
+
+dllefe 1,1
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_1cn.jpg",":b;bmp\background\garden\garden_1cn.png",26
+wait 2000
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",26
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_o1an.jpg",":b;bmp\background\mainbuilding\m_o1an.png",22
+ld c,$SHA_HajiraiA1,4
+
+;■お屋敷の玄関前（外）
+advchar "15"
+langjp:dwave_jp 0, sha_3e15:「………………はぁ。」@
+langen:dwave_eng 0, sha_3e15:^... Haaa...^@
+br
+advchar "-1"
+langjp　紗音は玄関前で、冷えた空気に火照った顔を冷ましていた。\
+langen^Devant l'entrée du manoir, Shannon laissait l'air froid calmer ses joues encore brûlantes.^\
+
+langjp　…譲治からの求婚は、/
+sl
+langjp^^!d700……きっといつかあるだろうと思っていた。\
+langen^... La demande en mariage de George... ^@/
+sl
+langen:!d700^quelque part, elle avait toujours su que ce jour finirait par venir.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_o1bn.jpg",":b;bmp\background\mainbuilding\m_o1bn.png",25
+
+langjp　心の準備はなかったわけではない。@
+langjp　そして、応える形で頷いてしまった。@
+langen^Ce n'était pas comme si elle n'avait jamais réfléchi à cette possibilité.^@
+langen^Et pourtant, au moment décisif, elle avait simplement hoché la tête.^@
+br
+langjp　若さゆえの無謀だったのだろうか？@
+langjp　もっと将来のことは真剣に考えた方が？@
+langen^Avait-elle répondu trop vite, emportée par l'émotion ?^@
+langen^N'aurait-elle pas dû prendre davantage de temps pour penser sérieusement à son avenir ?^@
+br
+langjp　即答したせいで、むしろ安っぽい女だなんて思われはしなかったろうか。\
+langen^Et si George la trouvait légère, maintenant, parce qu'elle avait accepté sans la moindre hésitation ?^\
+langjp　…せめて明日の朝まで保留したほうが、真剣に考えてる雰囲気をアピールできただろうか。@
+langen^... Elle aurait peut-être dû lui demander jusqu'au lendemain matin. Au moins, elle aurait eu l'air d'y avoir vraiment réfléchi.^@
+br
+langjp　譲治に、もう指輪をもらった後の今になって、@ああすれば良かったこうすれば良かったと、紗音はひとりもじもじと照れ隠しを続けているのだった。\
+langen^Mais maintenant que George lui avait déjà donné la bague, ^@^Shannon ne pouvait plus que rougir toute seule en imaginant cent façons dont elle aurait pu mieux réagir.^\
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",26
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_o1an.jpg",":b;bmp\background\mainbuilding\m_o1an.png",22
+
+langjp　そこへ、ばたばたと水溜りを踏み散らしながら駆けてくる足音を聞く。@
+langen^C'est alors qu'elle entendit des pas arriver en courant, éclaboussant les flaques à chaque foulée.^@
+br
+langjp　紗音はすぐに浮かれた気持ちを追い出した。\
+langen^Son petit nuage de bonheur disparut aussitôt.^\
+
+ld r,$SHA_OdorokiA2,24
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e16:「……源次さま？@:dwave_jp 0, sha_3e17:　嘉音くんも…！@:dwave_jp 0, sha_3e18:　す、すみません、すぐに戻らなくてその…、」@
+langen:dwave_eng 0, sha_3e16:^... Genji ? ^@:dwave_eng 0, sha_3e17:^Kanon aussi... ! ^@:dwave_eng 0, sha_3e18:^P-Pardonnez-moi, je n'aurais pas dû rester absente aussi longtemps, je...^@
+br
+advchar "-1"
+langjp　譲治との逢瀬に時間を割きすぎたことを叱られるに違いないと、身を固くした。\
+langen^Elle se raidit, certaine qu'ils venaient la réprimander pour avoir passé trop de temps avec George.^\
+
+ld l,$GEN_majimeA1,23
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e8:「紗音。@:dwave_jp 0, gen_3e9:お館様が至急、書斎へ来るようにとの仰せだ。@:dwave_jp 0, gen_3e10:急ぐぞ。」@
+langen:dwave_eng 0, gen_3e8:^Shannon. ^@:dwave_eng 0, gen_3e9:^Le Maître exige que nous le rejoignions immédiatement dans son bureau. ^@:dwave_eng 0, gen_3e10:^Nous devons nous dépêcher.^@
+
+ld r,$SHA_KomaruA1,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e19:「……え？@:dwave_jp 0, sha_3e20:　は、はい、かしこまりました…！@:dwave_jp 0, sha_3e21:　一体、何事なの…？」\
+langen:dwave_eng 0, sha_3e19:^... Hein ? ^@:dwave_eng 0, sha_3e20:^O-Oui, tout de suite... ! ^@:dwave_eng 0, sha_3e21:^Mais... qu'est-ce qui se passe... ?^\
+
+ld c,$KAN_FumanA1,23
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e1:「不吉な予感がするってさ。@:dwave_jp 0, kan_3e2:……自分で儀式を起こしておいて、都合のいい話さ。」\
+;＜嘉音
+langen:dwave_eng 0, kan_3e1:^Il dit qu'il a un mauvais pressentiment. ^@:dwave_eng 0, kan_3e2:^... C'est quand même pratique, venant de celui qui a lancé ce rituel lui-même.^\
+
+ld l,$GEN_DefA1,24
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e11:「郷田に気取られぬよう、裏から入る。@/
+langen:dwave_eng 0, gen_3e11:^Nous passerons par l'arrière, sans attirer l'attention de Gohda. ^@/
+
+;se1 20
+cl l,64
+
+langjp:dwave_jp 0, gen_3e12:足音に気をつけろ。」@
+;＜源次
+langen:dwave_eng 0, gen_3e12:^Et pas un bruit.^@
+
+ld c,$KAN_DefA2,23
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e3:「はい。@:dwave_jp 0, kan_3e4:………姉さん、注意して。@:dwave_jp 0, kan_3e5:姉さんは賑やかだから。」\
+;＜嘉音
+langen:dwave_eng 0, kan_3e3:^Oui. ^@:dwave_eng 0, kan_3e4:^... Grande sœur, fais attention. ^@:dwave_eng 0, kan_3e5:^Tes pas s'entendent beaucoup trop.^\
+
+;se1 20
+cl c,64
+
+advchar "-1"
+langjp　嘉音は特に、気配を殺せるように出来ている。@
+langen^Kanon, lui, savait presque entièrement effacer sa présence.^@
+br
+langjp　…例えるならば猫。@
+langjp　誰にも気取られることなく、いつの間にかそこにいて、いつの間にか立ち去ることができる。@
+langen^... Un vrai chat.^@
+langen^Il pouvait être là avant même qu'on remarque son arrivée, puis repartir sans laisser la moindre trace de sa présence.^@
+br
+langjp　だから例え、水溜りを踏むことになろうとも、@その音は水溜りを叩く雨音よりも遥かに小さい…。\
+langen^Même lorsqu'il marchait dans une flaque, ^@^le bruit de son pas restait plus faible que celui des gouttes de pluie qui y tombaient...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+langjp　源次もまた、そういう力を持ち合わせていた。@
+langjp　…いや、本来、家具とまで呼ばれる使用人はそうあるべきなのだ。@
+langen^Genji possédait la même discrétion.^@
+langen^... Ou plutôt, c'était ainsi que devait se comporter tout domestique digne d'être appelé un meuble.^@
+br
+langjp　家人が机や戸棚に対して何の気配も感じないように、使用人もそうであり、@彼らが必要とする時にさりげなく現れるのが最大の美徳なのだ。\
+langen^De même qu'un maître ne remarque pas constamment la présence d'une table ou d'une armoire, ^@^un domestique devait savoir disparaître du décor... puis apparaître naturellement à l'instant précis où l'on avait besoin de lui.^\
+
+;se1 20
+se1 21
+
+langjp　そこへ行くと、紗音の足音はまだ自己主張が強い。@
+langen^À côté d'eux, les pas de Shannon avaient encore beaucoup trop de présence.^@
+br
+langjp　…彼女なりに足音を潜めているつもりだが、@嘉音たちのそれに比べれば、なるほど、賑やかとは言い得ていた…。\
+langen^... Elle faisait pourtant tout son possible pour marcher silencieusement, ^@^mais à côté de Kanon et Genji... oui, elle paraissait presque bruyante.^\
+
+langjp　やがて裏口に辿り着き、３人は屋敷の中に入った。\
+langen^Ils atteignirent enfin l'entrée de service et se glissèrent tous les trois à l'intérieur du manoir.^\
+
+se1 17
+
+dllefe_off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",80
+
+me3v 12,0
+
+fedexx 0,0,0,40,0,0,4000
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m1f_p1bn.jpg",":b;bmp\background\mainbuilding\m1f_p1bn.png",4
+langjp　すぐに、………何かを感じた気がした。@
+langen^Dès qu'ils furent à l'intérieur... quelque chose leur parut différent.^@
+br
+langjp　嗅覚とは違うけれど、…鼻の奥底で感じるような、@……勘とでも言えばいいのか、形容し難い感覚が、いつもと違う何かを知覚した。\
+langen^Ce n'était pas une odeur. Plutôt une sensation tout au fond du nez... ^@^une sorte d'instinct impossible à mettre en mots, qui leur disait que quelque chose, ici, n'était plus comme d'habitude.^\
+
+ld r,$KAN_OdorokiA1,24
+advchar "16"
+langjp:dwave_jp 0, kan_3e6:「…………源次さま。」@
+;＜嘉音
+langen:dwave_eng 0, kan_3e6:^... Genji.^@
+
+ld l,$GEN_MajimeA1,23
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e13:「…うむ。急ぐぞ。」\
+;＜源次
+langen:dwave_eng 0, gen_3e13:^... Oui. Dépêchons-nous.^\
+
+se1 21
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",64
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mhal_2an.jpg",":b;bmp\background\mainbuilding\mhal_2an.png",64
+
+advchar "-1"
+langjp　その知覚は、緊迫した何かが迫っていることを感じさせる。@
+langen^Cette sensation n'annonçait rien de bon. Quelque chose de grave approchait.^@
+br
+langjp　３人はそれを理解し、足音を殺したまま、階段を駆け上がり金蔵の書斎を目指した。\
+langen^Ils le comprirent tous les trois et gravirent l'escalier en courant, toujours sans faire de bruit, droit vers le bureau de Kinzo.^\
+
+textoff
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mhal_2bn.jpg",":b;bmp\background\mainbuilding\mhal_2bn.png",65
+wait 1000
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m2f_p1cn.jpg",":b;bmp\background\mainbuilding\m2f_p1cn.png",22
+
+langjp　階段を駆け上がると、…金蔵の書斎特有の甘い毒の臭いが鼻を突く。\
+langen^À l'étage, l'odeur douce et toxique propre au bureau de Kinzo leur saisit aussitôt le nez.^\
+
+ld c,$GEN_OdorokiA1,24
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e14:「…………………む。」@
+;＜源次
+langen:dwave_eng 0, gen_3e14:^... Hum.^@
+
+ld l,$SHA_odorokiA2,23
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e22:「いかがなさいましたか、源次さま…。」@
+;＜紗音
+langen:dwave_eng 0, sha_3e22:^Qu'y a-t-il, Genji... ?^@
+
+ld r,$KAN_IkariA2,64
+se2 26
+advchar "16"
+langjp:dwave_jp 0, kan_3e7:「……結界が、死んでいる。」@
+;＜嘉音
+langen:dwave_eng 0, kan_3e7:^... La barrière... est morte.^@
+
+ld l,$SHA_OdorokiA1,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e23:「え？@:dwave_jp 0, sha_3e24:　……………あ。」\
+;＜紗音
+langen:dwave_eng 0, sha_3e23:^Hein ? ^@:dwave_eng 0, sha_3e24:^... Ah.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_door2.jpg",":b;bmp\background\mainbuilding\m_door2kin.png",22
+
+advchar "-1"
+langjp　嘉音に言われて、書斎の扉を見る。@
+langjp　そのドアノブには、サソリの紋様が刻まれている。@
+langen^Shannon regarda aussitôt la porte du bureau.^@
+langen^Un scorpion était gravé sur la poignée.^@
+br
+langjp　強力な魔除けだ。@
+langjp　金蔵の身を守る、最後の結界。@
+langen^Ce symbole formait un puissant talisman.^@
+langen^La toute dernière barrière protégeant Kinzo.^@
+
+;se1 24
+se1v 27,40
+
+langjp　それが破られていた。\
+langen^Et elle avait été brisée.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_door1.jpg",":b;bmp\background\mainbuilding\m_door1kin.png",22
+
+langjp　もちろん、見た目にはそのドアノブに何の変化もない。@
+langjp　しかし、人には知覚できぬものを理解できる彼らには、その劇的変化が理解できた…。\
+langen^À l'œil nu, la poignée n'avait pourtant absolument pas changé.^@
+langen^Mais eux pouvaient percevoir ce qui échappait aux humains. ^@^Et ils comprirent aussitôt l'ampleur de ce qui venait de se produire...^\
+
+ld r,$GEN_OdorokiA1,24
+se1 19
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e15:「……お館様。@:dwave_jp 0, gen_3e16:お館様…！@/
+langen:dwave_eng 0, gen_3e15:^Maître. ^@:dwave_eng 0, gen_3e16:^Maître... ! ^@/
+
+se1 19
+
+langjp:dwave_jp 0, gen_3e17:　源次でございます。@:dwave_jp 0, gen_3e18:ここをお開け下さい。」@
+langen:dwave_eng 0, gen_3e17:^C'est Genji. ^@:dwave_eng 0, gen_3e18:^Je vous en prie, ouvrez-nous.^@
+br
+advchar "-1"
+langjp　源次が数度ノックしてそう声を掛けるが、書斎から返事はなかった。\
+langen^Genji frappa plusieurs fois en appelant son maître. Aucune réponse ne vint du bureau.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m2f_p1cn.jpg",":b;bmp\background\mainbuilding\m2f_p1cn.png",24
+ld r,$GEN_DefA1,22
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e19:「紗音、背中を守れ。@:dwave_jp 0, gen_3e20:嘉音、室内を探れ。」@
+langen:dwave_eng 0, gen_3e19:^Shannon, couvre nos arrières. ^@:dwave_eng 0, gen_3e20:^Kanon, inspecte la pièce.^@
+
+ld c,$KAN_OdorokiA2,0
+ld l,$SHA_MajimeA3,24
+
+advchar "-1"
+langjp:dwave_jp 0, "voice\99\awase0014.ogg":「「はい…！」」\
+langen:dwave_eng 0, "voice\99\awase0014.ogg":^Oui... !^\
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+me1v 16,0
+fedexx 0,50,0,0,0,0,3000
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_door1.jpg",":b;bmp\background\mainbuilding\m_door1kin.png",22
+ld r,$KAN_IkariA2,24
+
+langjp　嘉音は扉に耳を当て、書斎の中の気配を探る。@
+langen^Kanon posa l'oreille contre la porte et chercha la moindre présence à l'intérieur.^@
+br
+langjp　紗音は扉に注視する二人の背中を守るため、背を合わせるように逆を向き、不測の事態に備えた。\
+langen^Pendant que les deux hommes se concentraient sur le bureau, Shannon leur tourna le dos et surveilla le couloir, prête au moindre mouvement.^\
+
+ld r,$KAN_KomaruA1,80
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e9:「…………お館様はいらっしゃられるはずです。@:dwave_jp 0, kan_3e10:…ですが、静か過ぎます。」\
+langen:dwave_eng 0, kan_3e9:^... Le Maître devrait être là. ^@:dwave_eng 0, kan_3e10:^... Mais c'est trop silencieux.^\
+
+ld l,$GEN_MajimeA1,23
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e21:「ご無事だということか。」@
+langen:dwave_eng 0, gen_3e21:^Tu penses donc qu'il va bien ?^@
+br
+ld r,$KAN_odorokiA2,80
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e11:「いいえ。@:dwave_jp 0, kan_3e12:^~ib~^静かが過ぎます^~ib~^。」@
+;＜点処理：静かが過ぎます
+langen:dwave_eng 0, kan_3e11:^Non.^@:dwave_eng 0, kan_3e12:^~ib~ C'est beaucoup trop silencieux~ib~.^@
+
+cl l,24
+ld l,$SHA_komaruA1,23
+br
+advchar "15"
+langjp:dwave_jp 0, sha_3e26:「…まさか、…………そんな。」\
+;＜紗音
+langen:dwave_eng 0, sha_3e26:^... Non... ce n'est pas possible...^\
+
+cl a,24
+ld c,$GEN_OdorokiA1,24
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e22:「お館様。@:dwave_jp 0, gen_3e23:扉を失礼させていただきます。」@
+langen:dwave_eng 0, gen_3e22:^Maître. ^@:dwave_eng 0, gen_3e23:^Veuillez me pardonner d'ouvrir sans votre permission.^@
+br
+
+se1 31
+
+advchar "-1"
+langjp　源次は懐より、黄金の鍵を取り出す。@
+langjp　金蔵が持つ以外に、唯一存在する書斎の鍵だ。\
+langen^Genji sortit de sa poche une clé dorée.^@
+langen^En dehors de celle de Kinzo, c'était l'unique autre clé du bureau.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m_door2.jpg",":b;bmp\background\mainbuilding\m_door2kin.png",22
+se1 25
+
+langjp　鍵穴にそれを刺し、重い手応えで捻る。@
+langjp　……一見、それは確かに厳重な施錠を示した。\
+langen^Il l'introduisit dans la serrure. Le mécanisme résista lourdement lorsqu'il la tourna.^@
+langen^... Pour un humain, cette résistance semblait bien confirmer que la porte était solidement verrouillée.^\
+
+langjp　しかし、結界が破られているということは、@魔力ある者にとって、この扉はすでに開きっぱなしと同じ意味だ…。@
+langen^Mais puisque la barrière magique était déjà brisée, ^@^pour un être capable d'user de magie, cette porte n'était plus différente d'une porte laissée grande ouverte.^@
+langjp　ゴトリと重い音がして、^~ib~^人間にとっても^~ib~^、扉が開かれたことを示す。\
+;＜点処理：人間にとっても
+langen^Un lourd déclic retentit. À présent, la porte venait de s'ouvrir ~ib~même pour les humains~ib~.^\
+
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e24:「……失礼いたします。」@
+;＜源次
+langen:dwave_eng 0, gen_3e24:^... Veuillez nous excuser.^@
+
+se1 17
+bg white,10
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+br
+advchar "-1"
+langjp　源次はうやうやしく頭を下げながら、@そして嘉音は緊張感を張り巡らせながら、@そして紗音はおろおろとしながら書斎へ入る…。\
+langen^Genji entra le premier en s'inclinant profondément. ^@^Kanon le suivit, tous ses sens en alerte. ^@^Shannon, elle, avançait avec une inquiétude qu'elle ne parvenait plus à cacher... ^@^Tous trois pénétrèrent dans le bureau.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",0
+ld c,$KIN_fumuA1,26
+
+E_A
+langjp　金蔵の姿はすぐに見つけられた。@
+langen^Ils repérèrent Kinzo immédiatement.^@
+
+me1 11
+
+langjp　……応接ソファーに背を向けるようにして座っていた。\
+langen^... Il était assis sur l'un des canapés du salon, le dos tourné vers eux.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",0
+ld l,$GEN_MajimeA1,23
+ld l,$GEN_KomaruA1,80
+
+langjp　源次はその向かいに座る人物に気付き、再び頭を深々と下げる。\
+langen^Puis Genji aperçut la personne assise en face de lui... et s'inclina de nouveau, encore plus profondément.^\
+
+ld r,$KAN_OdorokiA1,24
+
+langjp　嘉音もその人物に気付き、@/
+langen^Kanon la vit lui aussi^@/
+
+ld r,$KAN_odorokiA2,80
+
+langjp……彼は頭を下げなかった。@
+langen^... mais lui ne s'inclina pas.^@
+langjp　両手を広げて紗音の前に出て、その背で庇った。@
+langen^Au contraire, il écarta les bras et se plaça aussitôt devant Shannon, comme pour lui faire rempart de son corps.^@
+br
+langjp　だから紗音はもう、その人物の顔を見なくてもおおよその想像がついた…。\
+langen^À ce seul geste, Shannon comprit presque immédiatement qui se trouvait là... sans même voir son visage.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+E_A
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",24
+ld r,$GEn_DefA1,24
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e25:「…お越しでございましたか。@/
+langen:dwave_eng 0, gen_3e25:^... Vous êtes donc venue, ^@/
+
+bgm1 61
+langjp:dwave_jp 0, gen_3e26:ベアトリーチェさま。」@
+;＜源次
+langen:dwave_eng 0, gen_3e26:^Béatrice.^@
+
+ld l,$BEA_DefA2,3
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e764:「源次か。@:dwave_jp 0, bea_3e765:なかなかに早いな。@/
+langen:dwave_eng 0, bea_3e764:^Genji. ^@:dwave_eng 0, bea_3e765:^Toujours aussi prompt, à ce que je vois. ^@/
+
+ld l,$BEA_WaraiA1,80
+
+langjp:dwave_jp 0, bea_3e766:やはり家具は、主の呼び掛けに素早く応える方が良い。@:dwave_jp 0, bea_3e767:こやつとは大違いだ。」\
+;＜ベアト
+langen:dwave_eng 0, bea_3e766:^Voilà au moins un meuble qui sait accourir dès que son maître l'appelle. ^@:dwave_eng 0, bea_3e767:^Certains feraient bien d'en prendre de la graine.^\
+
+ld r,$GEN_MajimeA2,80
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e27:「……………………。@:dwave_jp 0, gen_3e28:……ロノウェさまもお越しでしたか。」@
+langen:dwave_eng 0, gen_3e27:^...^@:dwave_eng 0, gen_3e28:^ Ronove est également ici.^@
+br
+advchar "-1"
+langjp　ベアトリーチェの右後ろの何もないはずの薄暗闇に、源次が会釈する。\
+langen^Genji inclina légèrement la tête vers l'obscurité, juste derrière Béatrice, sur sa droite... là où il n'aurait pourtant dû y avoir personne.^\
+
+langjp　そこに誰かがいるようには、嘉音にも紗音にも、思えなかった。@
+langen^Ni Kanon ni Shannon ne percevaient la moindre présence à cet endroit.^@
+br
+langjp　……しかし、暗闇はすぐに答え、源次の眼力を讃えた…。\
+langen^... Mais les ténèbres lui répondirent aussitôt, comme pour saluer son regard exercé...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg",":b;bmp\background\mainbuilding\mlib_1bn.png",23
+se1 52
+ld5 r,$RON_akuWaraiA1,99,2000,"breakup.dll/llp"
+
+advchar "31"
+langjp:dwave_jp 0, ron_3e260:「相変わらず、さすがです。@:dwave_jp 0, ron_3e261:だいぶの久し振りになりますね。@:dwave_jp 0, ron_3e262:………それにしても老けましたね。@:dwave_jp 0, ron_3e263:それだけの齢を重ねましたか。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_3e260:^Toujours aussi remarquable, Genji. ^@:dwave_eng 0, ron_3e261:^Voilà bien longtemps que nous ne nous étions vus. ^@:dwave_eng 0, ron_3e262:^... Vous avez pris de l'âge, dites-moi. ^@:dwave_eng 0, ron_3e263:^Tant d'années se sont donc écoulées ?^\
+
+ld l,$GEN_DefA1,23
+advchar "14"
+langjp:dwave_jp 0, gen_3e29:「充実した日々を過ごしております。@:dwave_jp 0, gen_3e30:…ロノウェさまにおかれましても、ますます充実されておりますよう、お見受けいたします。」\
+;＜源次
+langen:dwave_eng 0, gen_3e29:^J'ai eu la chance de connaître des années bien remplies. ^@:dwave_eng 0, gen_3e30:^... Et à vous voir, Ronove, j'ai l'impression qu'elles vous ont également fort bien réussi.^\
+
+
+ld r,$RON_DefA1,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_3e264:「えぇ。@:dwave_jp 0, ron_3e265:お陰様です。@/
+langen:dwave_eng 0, ron_3e264:^En effet. ^@:dwave_eng 0, ron_3e265:^Je ne saurais m'en plaindre.^@/
+
+ld r,$RON_WaraiA2,80
+
+langjp:dwave_jp 0, ron_3e266:………そして紗音も久し振りですね。@:dwave_jp 0, ron_3e267:君はずいぶんと美しくなった。@:dwave_jp 0, ron_3e268:そして、ずいぶんと強くなったようですね。@:dwave_jp 0, ron_3e269:良いことです。」\
+langen:dwave_eng 0, ron_3e266:^ ... Shannon. Cela faisait longtemps, toi aussi. ^@:dwave_eng 0, ron_3e267:^Tu es devenue une très belle jeune femme. ^@:dwave_eng 0, ron_3e268:^Et, semble-t-il, bien plus forte qu'autrefois. ^@:dwave_eng 0, ron_3e269:^C'est une excellente chose.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",0
+ld l,$SHA_MajimeA3,23
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e27:「…………ありがとうございます。」@
+;＜紗音
+langen:dwave_eng 0, sha_3e27:^... Merci beaucoup.^@
+
+ld r,$KAN_OdorokiA1,24
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e13:「……姉さん、あいつは一体…。」\
+;＜嘉音
+langen:dwave_eng 0, kan_3e13:^... Grande sœur. C'est qui, ce type... ?^\
+
+cl l,24
+ld l,$RON_akuwaraiA1,23
+
+advchar "31"
+langjp:dwave_jp 0, ron_3e270:「嘉音くんとは、会うのは初めてになりますね。@:dwave_jp 0, ron_3e271:……私は、ベアトリーチェさまの家具頭を任されております、ロノウェと申します。@:dwave_jp 0, ron_3e272:……源次さんの古い馴染みですよ。@:dwave_jp 0, ron_3e273:あなたと同じに、私も家具です。@:dwave_jp 0, ron_3e274:仕える主は異なりますが。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_3e270:^Nous ne nous étions encore jamais rencontrés, Kanon. ^@:dwave_eng 0, ron_3e271:^Je me nomme Ronove. Je suis le meuble en chef au service de Béatrice. ^@:dwave_eng 0, ron_3e272:^... Genji et moi sommes de vieilles connaissances. ^@:dwave_eng 0, ron_3e273:^Et tout comme toi, je suis un meuble. ^@:dwave_eng 0, ron_3e274:^Nous ne servons simplement pas le même maître.^\
+
+ld r,$KAN_odorokiA2,80
+
+advchar "-1"
+langjp　嘉音の表情からは決して緊張の色は消えない。@
+langjp　……家具は仕える主が違えば、やさしくも残酷にも如何様にでもなる。@
+langen^Kanon ne relâcha pas sa garde une seule seconde.^@
+langen^... Un meuble pouvait se montrer doux ou cruel selon le maître qu'il servait. Tout dépendait de celui qui tenait sa laisse.^@
+br
+langjp　…彼が嫌悪するベアトリーチェに仕える家具だと名乗ったならば、@彼もまた嫌悪すべき存在に違いないのだ…。\
+langen^... Et puisqu'il se présentait comme un meuble au service de cette Béatrice qu'il haïssait, ^@^Kanon n'avait aucune raison de le considérer autrement que comme un ennemi.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",24
+ld c,$BEA_AkuwaraiA1,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e768:「くっくっくっく！@:dwave_jp 0, bea_3e769:　妾もすっかり嫌われたものだ。@:dwave_jp 0, bea_3e770:坊主憎ければ袈裟まで何とかとはよく言ったものよ。」@
+langen:dwave_eng 0, bea_3e768:^Kukukuku ! ^@:dwave_eng 0, bea_3e769:^Eh bien, me voilà profondément détestée. ^@:dwave_eng 0, bea_3e770:^Comme on dit : qui hait le moine hait jusqu'à sa robe.^@
+br
+advchar "-1"
+langjp　ベアトリーチェは、嘉音の嫌悪感に満ちたその顔を露骨に嘲笑う…。\
+langen^Béatrice se mit à rire ouvertement en voyant la haine peinte sur le visage de Kanon...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　そして嘉音はようやく知った。@
+langen^C'est là que Kanon comprit enfin ce qu'il avait sous les yeux.^@
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\chess1.jpg",":b;bmp\background\efe\chess1.png",22
+
+langjp　ベアトリーチェと金蔵は応接ソファーに向かい合い、チェスを興じていたのだ。\
+langen^Béatrice et Kinzo étaient assis face à face dans le salon... et jouaient aux échecs.^\
+
+langjp　しかし、金蔵は微動だにしない。@
+langjp　両手で自らの頭を抱え、固く目を瞑り…、次の手を黙考しているのだ。@
+langen^Kinzo, pourtant, ne bougeait plus.^@
+langen^La tête prise entre les mains, les yeux fermés à s'en faire mal... il réfléchissait en silence à son prochain coup.^@
+br
+langjp　……いや、苦悩しているのか…。\
+langen^... Non. À le voir ainsi, il avait plutôt l'air de chercher désespérément une issue...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",26
+ld l,$SHA_KomaruA1,23
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e28:「………お館様………。」\
+;＜紗音
+langen:dwave_eng 0, sha_3e28:^Maître...^\
+
+ld r,$BEA_akuwaraiA1,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e771:「妾が金蔵に伝えたのは２つ。@:dwave_jp 0, bea_3e772:良い報せと悪い報せだった。@/
+langen:dwave_eng 0, bea_3e771:^J'ai apporté deux nouvelles à Kinzo. ^@:dwave_eng 0, bea_3e772:^Une bonne... et une mauvaise.^@/
+
+ld r,$BEA_futekiA2,80
+
+langjp:dwave_jp 0, bea_3e773:……良い報せは、儀式を終えずして妾と再会できる幸運を得たこと。@:dwave_jp 0, bea_3e774:悪い報せは、金蔵が儀式の一番最初の生贄に選ばれてしまったことだ。\
+langen:dwave_eng 0, bea_3e773:^ ... La bonne, c'est qu'il a eu la chance de me revoir avant même que le rituel ne s'achève. ^@:dwave_eng 0, bea_3e774:^La mauvaise... c'est que Kinzo a été choisi comme tout premier sacrifice.^\
+
+ld r,$BEA_AkuwaraiA2,80
+
+langjp:dwave_jp 0, bea_3e775:　くっくっくっく！@:dwave_jp 0, bea_3e776:　こればかりは妾にもどうしようもない。@:dwave_jp 0, bea_3e777:実に気まぐれにルーレットにて決めたのだから。」\
+;＜ベアト
+langen:dwave_eng 0, bea_3e775:^Kukukuku ! ^@:dwave_eng 0, bea_3e776:^Même moi, je n'y peux rien. ^@:dwave_eng 0, bea_3e777:^La roulette en a décidé ainsi, dans toute sa délicieuse inconstance.^\
+
+cl l,24
+ld l,$KAN_IkariA1,23
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e14:「…う、嘘を吐け。@:dwave_jp 0, kan_3e15_b:ただの快楽殺人者のくせに……。」@
+;＜嘉音
+langen:dwave_eng 0, kan_3e14:^... M-Menteuse. ^@:dwave_eng 0, kan_3e15_b:^Tu n'es qu'une meurtrière qui prend plaisir à tuer...^@
+
+ld c,$SHA_komaruA1,24
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e29:「よして、嘉音くん……。」\
+;＜紗音
+langen:dwave_eng 0, sha_3e29:^Arrête, Kanon...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",22
+;ld r,$KIN_fukigenA1,24
+ld l,$BEA_futekiA1,3
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e778:「……さて、金蔵。@:dwave_jp 0, bea_3e779:そろそろ負けを認める気になったのか？@:dwave_jp 0, bea_3e780:　……くっくっく、これにて、妾との長きに亘る勝負は決着だな？」@
+langen:dwave_eng 0, bea_3e778:^Alors, Kinzo. ^@:dwave_eng 0, bea_3e779:^Tu es enfin prêt à reconnaître ta défaite ? ^@:dwave_eng 0, bea_3e780:^... Kukuku. Après toutes ces années, notre longue partie touche enfin à sa fin.^@
+
+ld r,$KIN_fukigenA1,80
+
+advchar "01"
+langjp:dwave_jp 0, kin_3e115:「……………………………。」\
+;＜金蔵
+langen:dwave_eng 0, kin_3e115:^...^\
+
+advchar "-1"
+langjp　ぱっと見る限り、混迷したチェス盤を一望しただけでは戦局は見えない。@
+langen^Un simple coup d'œil à l'échiquier, encombré de pièces, ne permettait pas de comprendre la situation.^@
+br
+langjp　…しかし、金蔵の苦悩とベアトリーチェの悪意ある余裕を見る限り、@すでにそれは決しているように見えた…。\
+langen^... Mais entre l'angoisse de Kinzo et la tranquillité cruelle de Béatrice, ^@^l'issue, elle, semblait déjà décidée...^\
+
+ld r,$KIN_WaraiA2,80
+
+advchar "01"
+langjp:dwave_jp 0, kin_3e116:「…………是非もなし…。@:dwave_jp 0, kin_3e117:…これもまた一興か。」@
+;＜金蔵
+langen:dwave_eng 0, kin_3e116:^Ainsi soit-il... ^@:dwave_eng 0, kin_3e117:^Après tout, voilà encore une façon de finir la partie.^@
+ld l,$BEA_WaraiA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e781:「妾もだ。@:dwave_jp 0, bea_3e782:……そなたとの勝負に決着がつくことは、万感の思いあれど、もはや恩讐を越える。@/
+langen:dwave_eng 0, bea_3e781:^Je ressens la même chose. ^@:dwave_eng 0, bea_3e782:^... Voir enfin notre affrontement prendre fin remue bien des choses en moi. Mais nous avons depuis longtemps dépassé l'amour comme la rancœur.^@/
+
+ld l,$BEA_DefA1,80
+
+langjp:dwave_jp 0, bea_3e783:…楽しかったぞ。@:dwave_jp 0, bea_3e784:退屈しない数十年であった…！」\
+langen:dwave_eng 0, bea_3e783:^ ... Je me suis amusée, Kinzo. ^@:dwave_eng 0, bea_3e784:^Grâce à toi, ces quelques décennies n'auront pas été ennuyeuses... !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+
+advchar "-1"
+langjp　ベアトリーチェがクイーンを進め、最後の一手を指す。@
+langen^Béatrice avança sa dame et posa le dernier coup.^@
+br
+langjp　……それで、/
+sl
+langjp^^!d700決まりだった。\
+langen^... Cette fois... ^@/
+sl
+langen:!d700^la partie était décidée.^\
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1e.jpg",":b;bmp\background\mainbuilding\mlib_1e.png",22
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e785:「チェックメイト。@:dwave_jp 0, bea_3e786:………これが妾からそなたへの手向けだ。@:dwave_jp 0, bea_3e787:心置きなく、/
+sl
+langjp:voicedelay 1690:dwave_jp 0, bea_3e788:^^…眠れ。」\
+langen:dwave_eng 0, bea_3e785:^Échec et mat. ^@:dwave_eng 0, bea_3e786:^... Considère ceci comme mon ultime hommage. ^@:dwave_eng 0, bea_3e787:^Sans regret^@/
+sl
+langen:voicedelay 1690:dwave_eng 0, bea_3e788:^... dors.^\
+
+se1 21
+
+advchar "01"
+langjp:dwave_jp 0, kin_3e118:^^!s1「ふっふっふ、/
+sl
+langjp:voicedelay 1850:dwave_jp 0, kin_3e119:^^……ふっはっはっは、/
+sl
+langjp:voicedelay 2400:dwave_jp 0, kin_3e120:^^はぁっ/
+sl
+langjp^^!d200はっ/
+sl
+langjp^^!d200はっ/
+sl
+langjp^^!d200はっ/
+sl
+langjp^^!d200はっ/
+sl
+langjp^^!d200はっ/
+sl
+langjp^^!d200はッ！！」/
+sl
+langen:dwave_eng 0, kin_3e118:^^!s1^Héhéhé...^@/
+sl
+langen:voicedelay 1850:dwave_eng 0, kin_3e119:^ Mouhahahaha... ^@/
+sl
+langen:voicedelay 2400:dwave_eng 0, kin_3e120:^Haaah^@/
+sl
+langen:!d500^ ha^@/
+sl
+langen:!d500^ ha^@/
+sl
+langen:!d500^ ha^@/
+sl
+langen:!d500^ ha^@/
+sl
+langen:!d500^ ha^@/
+sl
+langen:!d500^ ha !!^@/
+sl
+mov %disable_adv_clear, 1
+langjp!sd@
+langen!sd@
+mov %disable_adv_clear, 0
+
+br
+advchar "-1"
+langjp　金蔵はがばっと立ち上がると、満場の客座に向かって両手を広げるオペラ歌手のように振る舞い、@…まるで百年の計を成し遂げたかのように笑う。\
+langen^ Kinzo se redressa brusquement et ouvrit les bras comme un chanteur d'opéra devant une salle comble^@^... puis éclata de rire comme s'il venait enfin d'achever le grand dessein de toute une vie.^\
+
+if %is_old_sprites = 1 mono 2  ;applies filter only if sprites are old
+set_oldnew_bg kinzo_fire_a,Mlib_1e,1,0
+print 6
+
+fedexx 100,0,0,0,0,0,3000
+
+langjp　その笑いが、/
+sl
+langjp^^!d600……紅蓮を吹く。@
+langen^Et de ce rire...^@/
+sl
+langen:!d600^ jaillit une flamme écarlate.^@
+
+se2v 2,100
+se3 55
+set_oldnew_bg kinzo_fire_b,Mlib_1e,1,22
+br
+langjp　紅蓮の炎が内より溢れ出し、@口、耳、鼻を問わずに吹き出して、たちまちの内にその身を業火で包んだ…。\
+langen^Des flammes rouges débordèrent de l'intérieur de son corps,^@^ jaillissant de sa bouche, de ses oreilles, de son nez... avant de l'engloutir tout entier dans un brasier infernal.^\
+
+
+se2v 21,100
+set_oldnew_bg kinzo_fire_a,Mlib_1e,1,22
+
+langjp　しかし金蔵は笑い続ける。@
+langen^Mais Kinzo continua de rire.^@
+
+se2v 2,100
+se3v 55,70
+set_oldnew_bg kinzo_fire_b,Mlib_1e,1,22
+wait 1000
+se2v 2,100
+se1v 55,100
+set_oldnew_bg kinzo_fire_a,Mlib_1e,1,22
+
+langjp　笑えば笑うほどに、全身から業火が噴出し、その身を焼き焦がしていく…。@
+langen^Plus il riait, plus le feu jaillissait de son corps, dévorant et carbonisant sa chair...^@
+br
+langjp　その炎は眩しい灯りとなり、@室内の様々な魔法具を煌々と照らして、その歪な影絵を壁に踊らせて見せた。\
+langen^La pièce s'embrasa d'une lumière aveuglante. ^@^Les innombrables instruments magiques du bureau projetèrent alors sur les murs des ombres difformes qui se mirent à danser.^\
+
+langjp　…その影絵はまるで、燃え盛る金蔵に狂喜する地獄の亡者たちにも見えた…。@
+langen^... On aurait dit une foule de damnés de l'enfer, fous de joie devant Kinzo en train de brûler...^@
+br
+langjp^^!s0　そしてそれは、/
+sl
+langjp^^!d400魔女と契約を交わし、/
+sl
+langjp^^!d600その契約を終えた者が辿る、/
+sl
+langjp^^!d500…極めて正当な末路だった…。/
+sl
+langen^^!s0^ Et^@/
+sl
+langen:!d400^ pour un homme qui avait conclu un pacte avec une sorcière,^@/
+sl
+langen:!d600^ cette fin était on ne peut plus appropriée...^@/
+sl
+langen:!d500^ presque trop fidèle aux termes du contrat.^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+clr_oldnew_bg
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+mono off
+
+langjp　しばらくの間、猛火の中で吼えるように笑い続けた後、@まるで糸の切れた操り人形のように、金蔵はばたりと倒れる。/
+sl
+langen^Après avoir hurlé de rire un long moment au milieu des flammes,^@^ Kinzo s'écroula soudain, comme un pantin dont on venait de couper les fils.^@/
+
+se1v 39,90
+quakey 5,1000
+
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+
+langjp　あれほど燃え盛っていた炎は、まるでもう全てを焼き尽くしたかのように消え、@後には焼け爛れ、目を背けたくなるような遺体が残されただけだった…。\
+langen^Les flammes, si violentes un instant plus tôt, s'éteignirent comme si elles avaient tout dévoré,^@^ ne laissant derrière elles qu'un cadavre calciné, atrocement brûlé... au point de donner envie de détourner les yeux.^\
+
+me1v 5,0
+fedexx 0,40,0,0,0,0,5000
+textoff
+wait 2000
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg",":b;bmp\background\mainbuilding\mlib_1bn.png",26
+ld l,$KAN_odorokiA2,3
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e16:「…………………惨い…。」@
+;＜嘉音
+langen:dwave_eng 0, kan_3e16:^... C'est immonde...^@
+
+ld r,$BEA_AkuwaraiA2,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e789:「ふ。@:dwave_jp 0, bea_3e790:お前が言うか。@:dwave_jp 0, bea_3e791:相応しい死に方だと思っているくせに…。」\
+;＜ベアト
+langen:dwave_eng 0, bea_3e789:^Hm. ^@:dwave_eng 0, bea_3e790:^C'est toi qui dis ça ? ^@:dwave_eng 0, bea_3e791:^Alors qu'au fond, tu trouves toi-même que cette mort lui allait à merveille...^\
+
+ld l,$KAN_ikariA1,80
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e17:「……なぜお前が姿を現している…？@:dwave_jp 0, kan_3e18:　僕たちに何か用だとでも言うのか…。」@
+;＜嘉音
+langen:dwave_eng 0, kan_3e17:^Pourquoi t'es venue jusqu'ici... ? ^@:dwave_eng 0, kan_3e18:^Tu veux quelque chose de nous... ?^@
+
+ld c,$SHA_majimeA3,23
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e30:「よして嘉音くん。@:dwave_jp 0, sha_3e31:……ベアトリーチェさまを挑発しては駄目。」\
+;＜紗音
+langen:dwave_eng 0, sha_3e30:^Kanon, arrête... ^@:dwave_eng 0, sha_3e31:^Ne la provoque pas.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",0
+ld r,$RON_AkuwaraiA1,24
+
+advchar "31"
+langjp:dwave_jp 0, ron_3e275:「すっかり怯えさせてしまいましたね。@:dwave_jp 0, ron_3e276:ぷっくっくっく。」@
+;＜ロノウェ
+langen:dwave_eng 0, ron_3e275:^Vous les avez complètement terrifiés, Mademoiselle. ^@:dwave_eng 0, ron_3e276:^Pfff... hmhmhm.^@
+
+ld l,$BEA_AkuwaraiA1,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e792:「妾はつくづく、嘉音とは仲良くなれぬようだ。@:dwave_jp 0, bea_3e793:そう嫌いでもないというのにな…？」\
+;＜ベアト
+langen:dwave_eng 0, bea_3e792:^Décidément, Kanon et moi ne sommes pas faits pour nous entendre. ^@:dwave_eng 0, bea_3e793:^Et pourtant... je ne le déteste pas tant que ça.^\
+
+
+
+advchar "-1"
+langjp　ベアトリーチェはニコリと、あるいはニヤリと微笑む。@
+langen^Béatrice sourit. Difficile de dire si c'était avec douceur... ou avec malice.^@
+br
+langjp　嘉音は乱暴に視線を逸らし、あからさまな不快感を示した。@
+langen^Kanon détourna sèchement les yeux, affichant sans la moindre gêne tout le dégoût qu'elle lui inspirait.^@
+br
+langjp　…その仕草は、彼の思惑とは異なり、魔女とその執事を笑わせた。\
+langen^... Ce qui, contrairement à ce qu'il voulait, fit rire la sorcière et son majordome.^\
+
+cl r,24
+ld r,$GEN_DefA1,23
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e31:「嘉音。@:dwave_jp 0, gen_3e32:……ベアトリーチェさまの御前であるぞ。@:dwave_jp 0, gen_3e33:言葉遣いに気をつけなさい。」@
+;＜源次
+langen:dwave_eng 0, gen_3e31:^Kanon. ^@:dwave_eng 0, gen_3e32:^... Tu es devant Béatrice. ^@:dwave_eng 0, gen_3e33:^Surveille ton langage.^@
+
+ld l,$BEA_futekiA2,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e794:「あぁ、構わぬぞ源次。@:dwave_jp 0, bea_3e795:好きに言わせてやれ。@:dwave_jp 0, bea_3e796:妾は寛大である。」\
+;＜ベアト
+langen:dwave_eng 0, bea_3e794:^Oh, laisse donc, Genji. ^@:dwave_eng 0, bea_3e795:^Qu'il dise ce qu'il veut. ^@:dwave_eng 0, bea_3e796:^Je suis magnanime.^\
+
+cl r,23
+ld r,$KAN_odorokiA1,24
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e19:「……何が寛大だ…！」@
+;＜嘉音
+langen:dwave_eng 0, kan_3e19:^... Magnanime, toi... ?!^@
+
+ld l,$BEA_futekiA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e797:「妾は死に行く者には、いつだって寛大である。@:dwave_jp 0, bea_3e798:くっくっくっく…！」\
+;＜ベアト
+langen:dwave_eng 0, bea_3e797:^Je le suis toujours avec ceux qui vont mourir. ^@:dwave_eng 0, bea_3e798:^Kukukuku... !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+me2v 12,40
+
+advchar "-1"
+langjp　その薄気味悪い笑いに、嘉音ははっとする…。@
+langjp　ベアトリーチェがここにいるのは、金蔵の命を奪うだけではないのだ。@
+langen^À ces mots, Kanon comprit enfin ce que signifiait réellement sa présence ici.^@
+langen^Béatrice n'était pas venue seulement pour prendre la vie de Kinzo.^@
+br
+langjp　第一の晩に必要な生贄は６人。@
+langjp　金蔵だけではまだまだ足りないのだ。@
+langjp　…そしてそこへ、自分たちがのこのこと訪れている…。\
+langen^Le premier crépuscule réclamait six sacrifices.^@
+langen^Kinzo, à lui seul, n'en faisait qu'un.^@
+langen^... Et eux trois venaient justement de se présenter devant elle de leur plein gré...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",0
+ld r,$BEA_waraiA1,22
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e799:「くっくくくくく！@:dwave_jp 0, bea_3e800:　安心せよ、嘉音。@:dwave_jp 0, bea_3e801:……そなたらがここに訪れたから生贄に選ばれるのではない。@/
+langen:dwave_eng 0, bea_3e799:^Kukukukuku ! ^@:dwave_eng 0, bea_3e800:^Rassure-toi, Kanon. ^@:dwave_eng 0, bea_3e801:^... Ce n'est pas parce que vous êtes venus ici que vous serez choisis comme sacrifices.^@/
+
+ld r,$BEA_AkuwaraiA5,80
+
+E_A
+
+langjp:dwave_jp 0, bea_3e802:……生贄に選ばれているからこそ、ここに呼ばれているんじゃあないか…！」\
+langen:dwave_eng 0, bea_3e802:^ ... C'est parce que vous aviez déjà été choisis que vous avez été appelés ici... !^\
+
+ld l,$KAN_IkariA1,23
+bgm1 40
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e20:「………何だと………！」\
+;＜嘉音
+langen:dwave_eng 0, kan_3e20:^... Quoi... ?!^\
+
+advchar "-1"
+langjp　勘のいい彼らはすぐに察した…。@
+langen^Ils comprirent tous presque aussitôt.^@
+br
+langjp　第一の晩に必要な生贄は６人。@
+langjp　金蔵の１人に、あといくつを加えたら６人になるのか。@
+langen^Le premier crépuscule réclamait six sacrifices.^@
+langen^Kinzo en faisait déjà un. Combien en manquait-il pour arriver à six ?^@
+br
+langjp　……この屋敷で５人という数字は、彼らにとって真っ先に使用人の人数を想起させた…。\
+langen^... Dans ce manoir, le nombre cinq leur fit immédiatement penser aux cinq domestiques présents...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",23
+ld r,$GEN_defA1,24
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e34:「……………それが、お望みですか。」@
+;＜源次
+langen:dwave_eng 0, gen_3e34:^Est-ce là votre volonté ?^@
+
+ld l,$BEA_defA1,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e803:「うむ。@:dwave_jp 0, bea_3e804:…感謝せよ、家具どもよ。@/
+langen:dwave_eng 0, bea_3e803:^Oui. ^@:dwave_eng 0, bea_3e804:^... Rendez-moi grâce, meubles. ^@/
+
+ld l,$BEA_futekiA1,80
+
+langjp:dwave_jp 0, bea_3e805:そなたたちの苦難の日々は今宵、ようやく終わりを迎えた。@:dwave_jp 0, bea_3e806:それを告げに訪れた妾に感謝せよ。」\
+;＜ベアト
+langen:dwave_eng 0, bea_3e805:^Cette nuit, vos longues années de souffrance vont enfin prendre fin. ^@:dwave_eng 0, bea_3e806:^Rendez grâce à celle qui est venue vous l'annoncer.^\
+
+ld r,$GEN_KomaruA1,80
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e35:「………かしこまりました。@:dwave_jp 0, gen_3e36:それをお望みでしたら。」@
+langen:dwave_eng 0, gen_3e35:^... Très bien. ^@:dwave_eng 0, gen_3e36:^Si telle est votre volonté.^@
+
+cl l,24
+ld l,$KAN_OdorokiA1,23
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e21:「…げ、/
+sl
+langjp:voicedelay 280:dwave_jp 0, kan_3e22:^^……源次さま…。」@
+;＜嘉音
+langen:dwave_eng 0, kan_3e21:^... G-^@/
+sl
+langen:voicedelay 280:dwave_eng 0, kan_3e22:^ Genji...^@
+br
+advchar "-1"
+langjp　魔女の伝える無情の宣告にも、源次は眉一つ動かさず、いつもの仕草で頷く。\
+langen^Même devant cette condamnation à mort, Genji ne bougea pas un sourcil. Il acquiesça simplement, comme toujours.^\
+
+ld r,$GEN_majimeA1,80
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e37:「お館様亡き後は、ベアトリーチェさまが我等の主。@:dwave_jp 0, gen_3e38:その求めに応じるのが、我等の最後の務めだ。\
+langen:dwave_eng 0, gen_3e37:^Maintenant que le Maître n'est plus, Béatrice devient notre maîtresse. ^@:dwave_eng 0, gen_3e38:^Répondre à sa demande sera notre dernier devoir.^\
+
+ld r,$GEN_DefA1,80
+
+langjp:dwave_jp 0, gen_3e39:　……紗音。@:dwave_jp 0, gen_3e40:嘉音。@:dwave_jp 0, gen_3e41:今日までよく仕えた。@:dwave_jp 0, gen_3e42:その労苦もこれにて終わりだ。」\
+langen:dwave_eng 0, gen_3e39:^... Shannon. ^@:dwave_eng 0, gen_3e40:^Kanon. ^@:dwave_eng 0, gen_3e41:^Vous avez bien servi jusqu'à aujourd'hui. ^@:dwave_eng 0, gen_3e42:^Vos peines s'arrêtent ici.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",0
+ld l,$RON_akuwaraiA1,24
+
+advchar "31"
+langjp:dwave_jp 0, ron_3e277:「……源次はさすがですね。@:dwave_jp 0, ron_3e278:同じ家具として、あなたを誇りに思いますよ。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_3e277:^... Comme toujours, vous êtes admirable, Genji. ^@:dwave_eng 0, ron_3e278:^En tant que meuble moi aussi, je suis fier de vous.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",0
+ld r,$SHA_majimeA3,22
+ld l,$GEN_MajimeA2,23
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e43:「紗音。@:dwave_jp 0, gen_3e44:……異論はないか。」@
+;＜源次
+langen:dwave_eng 0, gen_3e43:^Shannon. ^@:dwave_eng 0, gen_3e44:^... Tu n'as rien à y redire ?^@
+
+ld r,$SHA_fumanA1,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e32:「……はい。」\
+;＜紗音
+langen:dwave_eng 0, sha_3e32:^... Non.^\
+
+ld l,$GEN_DefA1,80
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e45:「………譲治さまに指輪を贈られたそうだな。@:dwave_jp 0, gen_3e46:それでもなお、未練はないか。」@
+langen:dwave_eng 0, gen_3e45:^... J'ai appris que George t'avait offert une bague. ^@:dwave_eng 0, gen_3e46:^Même après cela... tu ne regrettes rien ?^@
+
+ld r,$SHA_ikariA1,80
+advchar "15"
+langjp:dwave_jp 0, sha_3e33:「はい。@:dwave_jp 0, sha_3e34:……家具の身に過ぎた幸福でした。@:dwave_jp 0, sha_3e35:…指輪を頂戴しただけで、私の想いはすでに達せられております。」\
+langen:dwave_eng 0, sha_3e33:^... Non. ^@:dwave_eng 0, sha_3e34:^Ce bonheur était déjà bien trop grand pour un meuble comme moi. ^@:dwave_eng 0, sha_3e35:^... Rien que recevoir cette bague a suffi à combler mon cœur.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1e.jpg",":b;bmp\background\mainbuilding\mlib_1e.png",22
+
+advchar "-1"
+langjp　紗音は、源次に比べるとまだ達観の境地には達していなかった。@
+langen^Shannon n'avait pas encore atteint le détachement absolu de Genji.^@
+br
+langjp　本当はまだ心の中に未練があっただろう。@
+langjp　…想い人の譲治と、もう少し温かな時間を過ごしたかっただろう。\
+langen^Bien sûr qu'il lui restait encore des regrets.^@
+langen^... Elle aurait voulu passer encore un peu de temps auprès de George, dans cette chaleur qu'elle venait à peine de connaître.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　……でも、それから自分を、解き放つ。@
+langjp　深く静かな吐息をひとつ零した後には、淡白な表情を浮かべた彼女がいた。@
+langen^Mais elle inspira profondément... puis laissa partir ce désir avec son souffle.^@
+langen^Quand elle releva les yeux, son visage était redevenu calme. Presque détaché.^@
+br
+advchar "14"
+langjp:dwave_jp 0, gen_3e47:「……………それで良い。」\
+;＜源次
+langen:dwave_eng 0, gen_3e47:^... C'est bien.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",0
+ld l,$BEA_DefA1,0
+ld r,$RON_DefA2,6
+ld r,$RON_majimeA1,80
+advchar "31"
+langjp:dwave_jp 0, ron_3e279:「紗音がそこまでの落ち着きを得るとは、少し驚きでした。@:dwave_jp 0, ron_3e280:あなたも家具として達観したようですね。」@
+;＜ロノウェ
+langen:dwave_eng 0, ron_3e279:^Je ne pensais pas te voir un jour aussi sereine, Shannon. ^@:dwave_eng 0, ron_3e280:^Il semble que toi aussi, tu sois parvenue à ce détachement propre aux meubles.^@
+
+ld l,$BEA_akuwaraiA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e807:「惚れた男と夜も共にできず、少しは悔し涙を零さんのか。@:dwave_jp 0, bea_3e808:退屈な女よ。」\
+;＜ベアト
+langen:dwave_eng 0, bea_3e807:^Même pas quelques larmes à l'idée de ne jamais passer une nuit avec l'homme dont tu es amoureuse ? ^@:dwave_eng 0, bea_3e808:^Quelle femme ennuyeuse.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg",":b;bmp\background\mainbuilding\mlib_1bn.png",0
+ld r,$SHA_fumanA1,23
+ld r,$SHA_MajimeA3,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e36:「…………。@:dwave_jp 0, sha_3e37:………ベアトリーチェさま如きに、この気持ちはわかりません。@:dwave_jp 0, sha_3e38:……私たちの命をご所望でしたら、どうぞお受け取り下さい。@:dwave_jp 0, sha_3e39:私たちは謹んでそのお勤めを全うします。」\
+;＜紗音
+langen:dwave_eng 0, sha_3e36:^...^@:dwave_eng 0, sha_3e37:^ Quelqu'un comme vous ne pourrait pas comprendre ce que je ressens, Béatrice. ^@:dwave_eng 0, sha_3e38:^... Si vous voulez nos vies, prenez-les. ^@:dwave_eng 0, sha_3e39:^Nous accomplirons jusqu'au bout le devoir qui est le nôtre.^\
+
+ld l,$GEN_DefA1,23
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e48:「……それでいい。@:dwave_jp 0, gen_3e49:よくぞ言ったな…。」\
+;＜源次
+langen:dwave_eng 0, gen_3e48:^... C'est bien. ^@:dwave_eng 0, gen_3e49:^Tu as bien parlé.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",0
+ld r,$RON_waraiA2,24
+
+advchar "31"
+langjp:dwave_jp 0, ron_3e281:「ぷっくっくっく。@:dwave_jp 0, ron_3e282:ベアトリーチェさまの苦手なタイプのようで。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_3e281:^Pfff... hmhmhm. ^@:dwave_eng 0, ron_3e282:^Voilà précisément le genre de personne que Mademoiselle supporte le moins.^\
+
+ld l,$BEA_fukigena1,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e809:「最近、こやつめはだいぶ達観しよった。@:dwave_jp 0, bea_3e810:…どうも前回、苛め過ぎたようだ。@:dwave_jp 0, bea_3e811:それを言ったら戦人もか？@/
+langen:dwave_eng 0, bea_3e809:^Ces derniers temps, elle est devenue terriblement détachée. ^@:dwave_eng 0, bea_3e810:^... J'ai dû trop la malmener la dernière fois. ^@:dwave_eng 0, bea_3e811:^À ce compte-là, Battler aussi commence à me faire le même coup.^@/
+
+ld l,$BEA_futekiA2,80
+
+langjp:dwave_jp 0, bea_3e812:　…ふーむ。@:dwave_jp 0, bea_3e813:妾はまだぬるいのか？@:dwave_jp 0, bea_3e814:　それとも追い詰め方が下手なのか？@:dwave_jp 0, bea_3e815:　何れにせよ、面白みのないヤツよ。\
+langen:dwave_eng 0, bea_3e812:^ ... Hmm. ^@:dwave_eng 0, bea_3e813:^Serais-je encore trop tendre ? ^@:dwave_eng 0, bea_3e814:^Ou simplement mauvaise pour acculer mes proies ? ^@:dwave_eng 0, bea_3e815:^Dans un cas comme dans l'autre... quelle fille ennuyeuse.^\
+
+ld l,$BEA_AkuwaraiA2,80
+se1 21
+langjp:dwave_jp 0, bea_3e816:　………しかし、お前はまだ妾を楽しませてくれそうだよなぁ？@:dwave_jp 0, bea_3e817:　嘉音ぉぉん？」\
+;＜ベアト
+langen:dwave_eng 0, bea_3e816:^... Toi, en revanche, tu devrais encore pouvoir me divertir un peu... ^@:dwave_eng 0, bea_3e817:^Kanoooon ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg",":b;bmp\background\mainbuilding\mlib_1bn.png",0
+ld l,$KAN_fumanA1,63
+ld r,$SHA_OdorokiA1,24
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e40:「…………嘉音くん…。」@
+;＜紗音
+langen:dwave_eng 0, sha_3e40:^... Kanon...^@
+
+ld l,$KAN_ikariA2,80
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e23:「………………。」\
+;＜嘉音
+langen:dwave_eng 0, kan_3e23:^...^\
+advchar "-1"
+langjp　達観の境地に達した二人に比べ、…嘉音の表情には苦々しい苦悶が浮かぶ。@
+langen^À côté de Genji et Shannon, déjà résignés, le visage de Kanon était déformé par une amertume douloureuse.^@
+
+br
+langjp　唐突に現れた魔女に、終焉を告げられて、何の未練もなく受け容れるには、@嘉音はまだまだ若かった…。\
+langen^Il était encore trop jeune pour qu'une sorcière surgisse devant lui, lui annonce sa fin... et qu'il l'accepte sans le moindre regret.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",24
+ld r,$BEA_futekiA2,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e818:「……嘉音。@:dwave_jp 0, bea_3e819:妾は退屈を何より嫌う。@:dwave_jp 0, bea_3e820:そして、お前を除く二人が素直に死を受け容れるもので、面白くない。@:dwave_jp 0, bea_3e821:……だからそなたには、妾の期待を裏切らないでもらいたいものだ。」@
+langen:dwave_eng 0, bea_3e818:^... Kanon. ^@:dwave_eng 0, bea_3e819:^Je hais l'ennui plus que tout. ^@:dwave_eng 0, bea_3e820:^Et les deux autres acceptent leur mort si gentiment que ça en devient assommant. ^@:dwave_eng 0, bea_3e821:^... Alors toi, au moins, tâche de ne pas me décevoir.^@
+
+ld l,$KAN_IkariA3,23
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e24:「…………僕を慰み者にしようというのか…。」\
+langen:dwave_eng 0, kan_3e24:^... Tu veux faire de moi ton jouet... ?^\
+
+advchar "-1"
+langjp　嘉音は、自らが挑発されていることを自覚する。@
+langjp　…だが、どのような怒りに駆られたところで、相手は魔女。@自分は家具。@勝ち目など元よりない。@
+langen^Kanon comprenait parfaitement qu'elle cherchait à le faire réagir.^@
+langen^... Mais peu importait sa colère : en face de lui se tenait une sorcière. ^@^Et lui n'était qu'un meuble. ^@^Il n'avait, dès le départ, aucune chance de gagner.^@
+
+br
+langjp　それでも魔女は、自分が悪足掻きをして、のた打ち回ることに期待し、@それを楽しもうとしている…。\
+langen^C'était justement ce qu'elle voulait : le regarder lutter pour rien, se débattre, souffrir,^@^ et s'en divertir.^\
+
+langjp　……それを思えば、腸が煮えくり返るほど悔しい。@
+langjp　姉たちのように、敢えて抵抗しないことによって、魔女を拍子抜けさせるのも、@唯一魔女に報いることができる一矢なのか…。\
+langen^Cette pensée seule lui faisait bouillir le sang.^@
+langen^Alors peut-être que le seul moyen de lui rendre le coup était précisément de ne pas lutter,^@^ de mourir comme Genji et Shannon sans lui offrir le spectacle qu'elle attendait... ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+fede 0,2000
+
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",24
+ld r,$BEA_akuwaraiA1,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e822:「煉獄の七姉妹が長女、ルシファー。@:dwave_jp 0, bea_3e823:出でよ。」\
+;＜ベアト
+langen:dwave_eng 0, bea_3e822:^Lucifer, l'aînée des Sept Sœurs du Purgatoire. ^@:dwave_eng 0, bea_3e823:^Parais.^\
+se1 52
+ld5 l,$RG1_DefA1,99,1500,"breakup.dll/lrp"
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e41:「……傲慢のルシファー、ここに。」\
+langen:dwave_eng 0, rg1_3e41:^... Lucifer de l'Orgueil, présente.^\
+
+ld r,$BEA_WaraiA1,80
+me1v 16,40
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e824:「嘉音。@:dwave_jp 0, bea_3e825:家具に魔女と戦えというのも酷な話よ。@:dwave_jp 0, bea_3e826:そなたがいくら怒りに駆られようとも、勝算のない戦いでは希望も持てまい。@:dwave_jp 0, bea_3e827:無論、勝ち目のない戦いでは妾も退屈というもの。\
+langen:dwave_eng 0, bea_3e824:^Kanon. ^@:dwave_eng 0, bea_3e825:^Il serait cruel d'exiger d'un meuble qu'il affronte une sorcière. ^@:dwave_eng 0, bea_3e826:^Aussi furieux sois-tu, impossible d'espérer quoi que ce soit d'un combat où tu n'as aucune chance. ^@:dwave_eng 0, bea_3e827:^Et un combat gagné d'avance m'ennuierait tout autant.^\
+
+ld r,$BEA_FutekiA1,80
+se2v 27,40
+langjp:dwave_jp 0, bea_3e828:　……ならば家具は家具。@:dwave_jp 0, bea_3e829:家具同士で決着をつけてはどうか？@:dwave_jp 0, bea_3e830:　それならば勝てる希望も持てるであろう…？」\
+langen:dwave_eng 0, bea_3e828:^... Alors, meuble contre meuble. ^@:dwave_eng 0, bea_3e829:^Pourquoi ne pas régler ça entre vous ? ^@:dwave_eng 0, bea_3e830:^Là, tu pourrais au moins rêver de gagner... non ?^\
+
+ld l,$RG1_fumanA1,80
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e42:「………………。@:dwave_jp 0, rg1_3e43:…恐れながらベアトリーチェさま。@:dwave_jp 0, rg1_3e44:私がそのような出来損ないの家具に劣るようなことがありましょうか？@/
+langen:dwave_eng 0, rg1_3e42:^...^@:dwave_eng 0, rg1_3e43:^ Avec tout le respect que je vous dois, Béatrice... ^@:dwave_eng 0, rg1_3e44:^vous pensez vraiment que je pourrais perdre contre un meuble aussi raté ? ^@/
+
+ld l,$RG1_AkuwaraiA2,80
+
+langjp:dwave_jp 0, rg1_3e45:　こんな可愛い子に、私が万一にも負けるようなことなど…。@:dwave_jp 0, rg1_3e46:うっふふふふふふふふふふふ。」\
+;＜ルシファー
+langen:dwave_eng 0, rg1_3e45:^Comme si je pouvais perdre contre un garçon aussi mignon... ^@:dwave_eng 0, rg1_3e46:^Ouhuhuhuhuhuhuhuhuhuhu.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",0
+ld r,$KAN_odorokiA2,23
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e25:「……………………………く。」\
+langen:dwave_eng 0, kan_3e25:^... Kh.^\
+
+ld l,$BEA_AkuwaraiA1,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e831:「我が家具、煉獄の七杭を打ち破って見せよ。@:dwave_jp 0, bea_3e832:見事打ち破って見せたなら、/
+sl
+langjp:voicedelay 2440:dwave_jp 0, bea_3e833:^^………そうだな。@/
+langen:dwave_eng 0, bea_3e831:^Prouve donc que tu peux vaincre mes meubles, les Sept Pieux du Purgatoire. ^@:dwave_eng 0, bea_3e832:^Si tu parviens à triompher^@/
+sl
+langen:voicedelay 2440:dwave_eng 0, bea_3e833:^... voyons voir. ^@/
+
+
+ld l,$BEA_futekiA1,80
+
+langjp:dwave_jp 0, bea_3e834:１３人の生贄を逃れることのできる５人をそなたに自由に決めさせてやろう。@:dwave_jp 0, bea_3e835:そなたの推薦する５人を、妾は無条件にて黄金郷に迎え入れる。@:dwave_jp 0, bea_3e836:…それならばどうか。」\
+langen:dwave_eng 0, bea_3e834:^Je te laisserai choisir toi-même les cinq personnes qui échapperont aux treize sacrifices. ^@:dwave_eng 0, bea_3e835:^Les cinq noms que tu me donneras seront accueillis sans condition à la Terre d'Or. ^@:dwave_eng 0, bea_3e836:^... Alors ?^\
+
+me2v 17,70
+
+advchar "-1"
+langjp　嘉音は、自分が挑発されていることを理解している。@
+langjp　……しかし、魔女の出す条件はあまりに誘惑的だった。\
+langen^Kanon savait qu'elle le tentait exprès.^@
+langen^... Et pourtant, l'offre de la sorcière était terriblement séduisante.^\
+
+langjp　嘉音にとって、魔女たちが執り行おうとしている邪悪な儀式は、@それ自体が今更どうこうというものではない。@
+langen^À ce stade, le rituel maléfique que la sorcière préparait n'était presque plus le problème principal pour Kanon.^@
+br
+langjp　……むしろ、生き残って黄金郷へ招かれ、@…そこでベアトリーチェによって願いを叶えてもらえることの方が重要な意味を持っていた…。\
+langen^... Ce qui comptait, c'était de survivre, d'atteindre la Terre d'Or...^@^ et d'y obtenir de Béatrice ce qu'il désirait plus que tout.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1e.jpg",":b;bmp\background\mainbuilding\mlib_1e.png",25
+se1 21
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e837:「そなたは家具は嫌だと泣いたなぁ…？@:dwave_jp 0, bea_3e838:　そなたの望み、叶えてやろうぞ。@:dwave_jp 0, bea_3e839:枕を濡らしてまで望んだ、人間の体を与えてやろうぞ。@:dwave_jp 0, bea_3e840:どうだぁ…？@:dwave_jp 0, bea_3e841:　そうすれば朱志香とも結ばれるぞ？@:dwave_jp 0, bea_3e842:　おぉ、丁度良い。@:dwave_jp 0, bea_3e843:黄金郷へ招ける５人に朱志香とそなたを推薦すれば良い。\
+langen:dwave_eng 0, bea_3e837:^Tu as pleuré parce que tu ne voulais plus être un meuble, pas vrai... ? ^@:dwave_eng 0, bea_3e838:^Très bien. Je vais exaucer ton vœu. ^@:dwave_eng 0, bea_3e839:^Je te donnerai ce corps humain que tu as tant désiré, celui pour lequel tu as mouillé ton oreiller de larmes. ^@:dwave_eng 0, bea_3e840:^Alors... ça te tente ? ^@:dwave_eng 0, bea_3e841:^Avec ça, tu pourrais enfin être avec Jessica. ^@:dwave_eng 0, bea_3e842:^Oh ! Mais voilà qui tombe à merveille. ^@:dwave_eng 0, bea_3e843:^Choisis simplement Jessica et toi parmi les cinq élus de la Terre d'Or.^\
+
+langjp:dwave_jp 0, bea_3e844:　……自分だけが幸せになることに抵抗があるならば、@:dwave_jp 0, bea_3e845:さらに紗音と、その想い人である譲治を加えれば良い。@:dwave_jp 0, bea_3e846:義理があるならばさらに源次も加えれば良い。@:dwave_jp 0, bea_3e847:ほぅ！@:dwave_jp 0, bea_3e848:　これで５人だ。@:dwave_jp 0, bea_3e849:充分ではないか、嘉音。@:dwave_jp 0, bea_3e850:………これだけのご褒美があれば、……くっくくくくく！@:dwave_jp 0, bea_3e851:　そなたは妾を退屈させはしないよなぁぁ…？」\
+langen:dwave_eng 0, bea_3e844:^... Et si l'idée d'être le seul heureux te gêne,^@:dwave_eng 0, bea_3e845:^ ajoute Shannon et George, l'homme qu'elle aime. ^@:dwave_eng 0, bea_3e846:^Tu te sens redevable envers Genji ? Ajoute-le aussi. ^@:dwave_eng 0, bea_3e847:^Oh ! ^@:dwave_eng 0, bea_3e848:^Voilà exactement cinq personnes. ^@:dwave_eng 0, bea_3e849:^C'est largement suffisant, non, Kanon ? ^@:dwave_eng 0, bea_3e850:^... Avec une récompense pareille... kukukukuku ! ^@:dwave_eng 0, bea_3e851:^... tu ne vas quand même pas m'ennuyer, hein... ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg",":b;bmp\background\mainbuilding\mlib_1bn.png",0
+ld r,$KAN_FumanA1,26
+ld l,$SHA_IkariA1,23
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e41:「……どうせ戯れよ。@:dwave_jp 0, sha_3e42:耳を貸す必要はない。」@
+;＜紗音
+langen:dwave_eng 0, sha_3e41:^... Elle joue avec toi. ^@:dwave_eng 0, sha_3e42:^Ne l'écoute pas.^@
+
+ld r,$KAN_OdorokiA1,80
+
+E_MA
+E_B
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e26:「ぼ、……僕は嫌だ。@/
+langen:dwave_eng 0, kan_3e26:^M-Moi... je veux pas. ^@/
+
+bgm1 51
+
+langjp:dwave_jp 0, kan_3e27:姉さんはそれでいいの？！」@
+langen:dwave_eng 0, kan_3e27:^Grande sœur... toi, ça te va vraiment ?!^@
+br
+advchar "-1"
+langjp　その言葉に、ベアトリーチェは邪悪な笑みを隠せない。\
+langen^À cette question, Béatrice ne parvint même plus à cacher son sourire mauvais.^\
+
+ld r,$KAN_IkariA1,80
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e28:「僕は嫌だ。@:dwave_jp 0, kan_3e29:幸せになりたい！@:dwave_jp 0, kan_3e30:　家具なんてもう嫌だ。@:dwave_jp 0, kan_3e31:人間になって、……普通の恋がしたい…！@:dwave_jp 0, kan_3e32:　僕も姉さんのように、…海が青いってことを知りたいんだ！」\
+langen:dwave_eng 0, kan_3e28:^Moi, ça me va pas ! ^@:dwave_eng 0, kan_3e29:^Je veux être heureux ! ^@:dwave_eng 0, kan_3e30:^J'en ai marre d'être un meuble ! ^@:dwave_eng 0, kan_3e31:^Je veux devenir humain... je veux pouvoir aimer quelqu'un normalement... ! ^@:dwave_eng 0, kan_3e32:^Moi aussi, comme toi, grande sœur... je veux savoir que la mer est bleue !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",0
+ld c,$RG1_DefA1,0
+ld l,$RON_akuwaraiA1,24
+ld l,$RON_waraiA2,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_3e283:「…………若いですね。@:dwave_jp 0, ron_3e284:羨ましい。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_3e283:^... Ah, la jeunesse. ^@:dwave_eng 0, ron_3e284:^Je vous envie.^\
+
+ld r,$BEA_WaraiA2,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e852:「だから若者は好きなのだ。@/
+langen:dwave_eng 0, bea_3e852:^Voilà pourquoi j'aime tant les jeunes.^@/
+
+ld r,$BEA_futekiA1,80
+E_A
+langjp:dwave_jp 0, bea_3e853:……源次、紗音は下がれ。@:dwave_jp 0, bea_3e854:嘉音、ルシファーは前へ。」@
+;＜ベアト
+langen:dwave_eng 0, bea_3e853:^ ... Genji, Shannon, reculez. ^@:dwave_eng 0, bea_3e854:^Kanon, Lucifer... en avant.^@
+
+ld c,$RG1_hohoemiA1,80
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e47:「仰せのままに。」\
+;＜ルシファ
+langen:dwave_eng 0, rg1_3e47:^À vos ordres.^\
+se1 52
+cl c,99,1500,"breakup.dll/urb"
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",0
+ld l,$KAN_NayamuA1,23
+se2 52
+ld5 r,$RG1_DefA1,99,1500,"breakup.dll/lrp"
+ld l,$KAN_FumanA1,80
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e33:「…………………………。」@
+;＜嘉音
+langen:dwave_eng 0, kan_3e33:^...^@
+
+ld r,$RG1_hohoemiA1,80
+
+bgm1v 52,20
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e48:「…うふふふふふふふふふふ。@/
+langen:dwave_eng 0, rg1_3e48:^Ouhuhuhuhuhuhuhuhuhuhu. ^@/
+
+ld r,$RG1_fumanA2,80
+
+langjp:dwave_jp 0, rg1_3e49:気に入らないわぁ。@:dwave_jp 0, rg1_3e50:…ベアトリーチェさまは無理でも、@:dwave_jp 0, rg1_3e51:私にだったら勝てるかもしれないという見下しが、/
+sl
+langjp:voicedelay 3690:dwave_jp 0, rg1_3e52:^^……最高に気に入らないわぁ。」\
+;＜ルシファ
+langen:dwave_eng 0, rg1_3e49:^Je déteste ça. ^@:dwave_eng 0, rg1_3e50:^... Ce regard que tu me lances,^@:dwave_eng 0, rg1_3e51:^ comme si Béatrice était intouchable, mais que moi... moi, tu pouvais peut-être me battre.^@/
+sl
+langen:voicedelay 3690:dwave_eng 0, rg1_3e52:^ ... Je déteste ça plus que tout.^\
+
+advchar "-1"
+langjp　ルシファーにとって、それは恐らく屈辱的なことなのだろう。@
+langen^Pour Lucifer, cette seule idée devait être une humiliation insupportable.^@
+br
+langjp　…しかし同時に、この可愛らしい獲物を独り占めできる幸運にも喜びを感じていた…。\
+langen^... Et en même temps, elle se réjouissait de la chance d'avoir cette adorable petite proie rien que pour elle.^\
+ld l,$KAN_IkariA3,80
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e34:「………来い、魔女の家具。@:dwave_jp 0, kan_3e35:………いつまでも僕を見くびることができると思うな…！」\
+
+langen:dwave_eng 0, kan_3e34:^... Viens, meuble de la sorcière. ^@:dwave_eng 0, kan_3e35:^... Continue à me prendre de haut. Tu verras combien de temps ça tiendra... !^\
+textoff
+
+ld l,$KAN_ikariA2,0
+ld r,$RG1_hohoemiA1,80
+
+
+fedexx 80,0,0,0,0,0,4000
+
+se1v 6,20
+cl l,1
+wait 100
+se2v 6,20
+cl r,1
+wait 100
+	mov %ryuu2,200
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",66
+se3v 6,20
+wait %ryuu2
+se1v 6,20
+ld l,$KAN_fumanA2,1
+wait %ryuu2
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg",":b;bmp\background\mainbuilding\mlib_1bn.png",66
+se3v 6,20
+wait %ryuu2
+se2v 6,20
+ld r,$RG1_defA1,1
+wait %ryuu2
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",0
+ld l,$KAN_ikariA2,64
+wait %ryuu2
+se1v 57,100
+ld l,$KAN_ikariA2B,1
+wait %ryuu2
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg",":b;bmp\background\mainbuilding\mlib_1bn.png",0
+ld r,$RG1_hohoemiA1,63
+wait %ryuu2
+se2v 57,100
+Bld r,$RG1_hohoemiA1,1
+wait %ryuu2
+wait 800
+
+
+Bld r,$RG1_akuwaraiA2,2
+wait 2000
+
+bcl r,0
+ld r,$RG1_akuwaraiA2,80
+se1v 57,100
+Bld r,$RG1_akuwaraiA2,1
+
+bcl r,0
+ld r,$RG1_akuwaraiA2,80
+se2v 57,100
+Bld r,$RG1_akuwaraiA2,1
+
+bcl r,0
+ld r,$RG1_akuwaraiA2,80
+se1v 57,100
+se3v 57,100
+Bld r,$RG1_akuwaraiA2,1
+
+wait 2000
+
+bcl a,0  ;fixed issue where blade does not fade with sprite
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",42
+
+
+mov %efe_spd2,160
+
+resettimer
+se1v 58,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade5p.jpg",":b;bmp\background\efe\blade5p.png",80
+waittimer 400
+
+resettimer
+se2v 58,100
+;bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade4p.jpg",":b;bmp\background\efe\blade4p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se3v 58,100
+;bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade3p.jpg",":b;bmp\background\efe\blade3p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se1v 58,100
+;bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade2p.jpg",":b;bmp\background\efe\blade2p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se3v 58,100
+se2v 58,100
+;bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade1p.jpg",":b;bmp\background\efe\blade1p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+
+se1v 57,100
+se2v 57,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade7_2r.jpg",":b;bmp\background\efe\blade7_2r.png",22
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",0
+bld r,$RG1_odorokiA2,2
+wait 1000
+Bld r,$RG1_ikariA1,22
+
+wait 1000
+
+bcl r,0
+;bg black,22
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",0
+ld l,$KAN_fumanA2B,22
+wait 1000
+
+ld l,$KAN_fumanA2,80
+se1v 57,100
+ld l,$KAN_ikariA2B,1
+
+ld l,$KAN_ikariA2,80
+se2v 57,100
+ld l,$KAN_ikariA2B,1
+
+ld l,$KAN_ikariA2,80
+se3v 57,100
+se1v 57,100
+ld l,$KAN_ikariA2B,1
+
+wait 1000
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",0
+bld r,$RG1_ikariA1,23
+;wait 1000
+bld r,$RG1_odorokiA1,80
+quakex 5,500
+wait 500
+
+bcl r,0
+bg white,1
+
+resettimer
+se1v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade1p.jpg",":b;bmp\background\efe\blade1p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se2v 58,80
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade2r.jpg",":b;bmp\background\efe\blade2r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se3v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade2p.jpg",":b;bmp\background\efe\blade2p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se2v 58,90
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade3r.jpg",":b;bmp\background\efe\blade3r.png",1
+wait 200
+
+resettimer
+se1v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade5p.jpg",":b;bmp\background\efe\blade5p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se2v 58,80
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade1r.jpg",":b;bmp\background\efe\blade1r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se3v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade4p.jpg",":b;bmp\background\efe\blade4p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se1v 57,100
+se2v 57,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade6_2r.jpg",":b;bmp\background\efe\blade6_2r.png",22
+wait 100
+
+
+mov %play_scene,30050 ;シーン変数の入力
+
+mset
+mld r,$BEA_akuWaraiA5,24
+
+;■メタ視
+advchar "27"
+langjp:dwave_jp 0, bea_3e855:「さぁさ、戦人ぁ。@:dwave_jp 0, bea_3e856:楽しい見世物の時間であるぞ？@:dwave_jp 0, bea_3e857:　くっくっくっく！」@
+;＜ベアト
+langen:dwave_eng 0, bea_3e855:^Allons, Battler ! ^@:dwave_eng 0, bea_3e856:^Le spectacle va commencer. Tu ne voudrais quand même pas rater ça ? ^@:dwave_eng 0, bea_3e857:^Kukukuku !^@
+
+mld l,$BUT_odorokiA2,23
+
+advchar "10"
+langjp:dwave_jp 0, but_3e592:「………くそ。@:dwave_jp 0, but_3e593:また、おかしなことになりやがった…。@:dwave_jp 0, but_3e594:魔法バトルなんて認めてたまるかよ…！」\
+;＜戦人
+langen:dwave_eng 0, but_3e592:^... Merde. ^@:dwave_eng 0, but_3e593:^Ça repart encore dans un délire impossible... ^@:dwave_eng 0, but_3e594:^Pas question que j'accepte un combat magique comme preuve de quoi que ce soit... !^\
+
+mov %efe_spd2,160
+for %ryuu1 = 1 to 2
+
+	wait 100
+
+	resettimer
+	se1v 58,100
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\blade1p.jpg",":b;bmp\background\efe\blade1p.png",1
+	mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+	waittimer %efe_spd2
+
+	resettimer
+	se2v 58,80
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\blade2r.jpg",":b;bmp\background\efe\blade2r.png",1
+	mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+	waittimer %efe_spd2
+
+	resettimer
+	se3v 58,100
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\blade2p.jpg",":b;bmp\background\efe\blade2p.png",1
+	mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+	waittimer %efe_spd2
+
+	se2v 58,90
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\blade3r.jpg",":b;bmp\background\efe\blade3r.png",1
+;	bg black,10,50
+	wait 200
+
+	resettimer
+	se1v 58,100
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\blade5p.jpg",":b;bmp\background\efe\blade5p.png",1
+	mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+	waittimer %efe_spd2
+
+	resettimer
+	se2v 58,80
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\blade1r.jpg",":b;bmp\background\efe\blade1r.png",1
+	mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+	waittimer %efe_spd2
+
+	resettimer
+	se3v 58,100
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\blade4p.jpg",":b;bmp\background\efe\blade4p.png",1
+	mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+	waittimer %efe_spd2
+
+	se1v 57,100
+	se2v 57,100
+	bg white,1
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\blade6_2r.jpg",":b;bmp\background\efe\blade6_2r.png",22
+next
+
+se3v 57,100
+se2v 57,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade6_2p.jpg",":b;bmp\background\efe\blade6_2p.png",22
+wait 100
+
+mld r,$BEA_futekiA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e858:「ほらほら、目を瞑らずにちゃんと見ろよォ。@:dwave_jp 0, bea_3e859:ほらほら、ほらほら！@:dwave_jp 0, bea_3e860:　魔法だよォ家具だよォ、@:dwave_jp 0, bea_3e861:そなたがどんなに妾や魔法の存在を否定しようとも、/
+sl
+langjp:voicedelay 5120:dwave_jp 0, bea_3e862:^^ほらほら、ほらほらほらほらァ！\
+langen:dwave_eng 0, bea_3e858:^Regarde ! Regarde bien ! Surtout, détourne pas les yeux ! ^@:dwave_eng 0, bea_3e859:^Regarde ! Regarde ! Regarde !! ^@:dwave_eng 0, bea_3e860:^De la magie ! Des meubles ! ^@:dwave_eng 0, bea_3e861:^Tu peux me nier, moi et ma magie, autant que tu veux,^@/
+sl
+langen:voicedelay 5120:dwave_eng 0, bea_3e862:^ regarde, regarde, regarde, regarde, regarde donc !!^\
+
+mld r,$BEA_AkuwaraiA2,80
+
+langjp:dwave_jp 0, bea_3e863:　こうして目の前でブォンブォンカキンカキンやられちゃあ、台無しだよなぁああぁ？@:dwave_jp 0, bea_3e864:　ほらほらほらほら、/
+sl
+langjp:voicedelay 2910:dwave_jp 0, bea_3e865:^^もう思考なんて止めちまえよォ、@:dwave_jp 0, bea_3e866:魔法はあるんだって！@:dwave_jp 0, bea_3e867:　これはファンタジーなんだッて！@/
+langen:dwave_eng 0, bea_3e863:^Tout ça se passe juste sous ton nez ! Ce serait dommage de ne pas en profiter, tu croooois pas ? ^@:dwave_eng 0, bea_3e864:^Regarde, regarde, regarde,^@/
+sl
+langen:voicedelay 2910:dwave_eng 0, bea_3e865:^ arrête de réfléchir ! ^@:dwave_eng 0, bea_3e866:^La magie existe ! ^@:dwave_eng 0, bea_3e867:^C'est de la fantasy, bordel !^@/
+
+langjp:dwave_jp 0, bea_3e868:^^!s1　目を閉じるなよ、/
+sl
+langjp:voicedelay 1830:dwave_jp 0, bea_3e869:^^しっかり見ろよ、/
+sl
+langjp:voicedelay 2050:dwave_jp 0, bea_3e870:^^ほらほらほらほらほらァ！！」/
+sl
+langen:dwave_eng 0, bea_3e868:^^!s1^ Ne ferme pas les yeux, ^@/
+sl
+langen:voicedelay 1830:dwave_eng 0, bea_3e869:^regarde bien, ^@/
+sl
+langen:voicedelay 2050:dwave_eng 0, bea_3e870:^regarde, regarde, regarde, regaaarde !!^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+
+mld l,$BUT_kuyasigaruA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_3e595:「畜生、畜生畜生畜生…。@:dwave_jp 0, but_3e596:魔女を認めない、魔法を認めない…！@:dwave_jp 0, but_3e597:　でも、こんなにあからさまにやられちまったら、何だって言やぁいいんだ？！@:dwave_jp 0, but_3e598:　……………くそ、くそくそくそ！」\
+langen:dwave_eng 0, but_3e595:^Merde... merde, merde, merde... ^@:dwave_eng 0, but_3e596:^Je reconnaîtrai ni les sorcières ni la magie... ! ^@:dwave_eng 0, but_3e597:^Mais quand elle me balance ça directement sous les yeux, qu'est-ce que j'suis censé répondre ?! ^@:dwave_eng 0, but_3e598:^... Merde... merde, merde !!^\
+
+mld r,$BEA_AkuwaraiA4,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e871:「ほらぁ、目を背けるなよ、しっかり見ろよォオオォ？？@:dwave_jp 0, bea_3e872:　魔法はあるんだよ、ファンタジーなんだよ、推理ごっことか止めちまえよ。@/
+langen:dwave_eng 0, bea_3e871:^Allez, détourne pas les yeux ! Regarde-moi ça comme il faaaaut, hein ?? ^@:dwave_eng 0, bea_3e872:^La magie existe ! C'est de la fantasy ! Alors arrête donc de jouer au petit détective ! ^@/
+
+mld r,$BEA_AkuwaraiA5,80
+
+langjp:dwave_jp 0, bea_3e873:知ってんだよ、モノを考えンの本当は苦手なんだろォ？？@:dwave_jp 0, bea_3e874:　止めちまえ止めちまえェエ、くっくっくっく！@:dwave_jp 0, bea_3e875:　ほらほらどうせファンタジーどうせファンタジー、くっひひひゃひゃっひゃっひゃっひゃっひゃっひゃあぁああぁ！！」\
+langen:dwave_eng 0, bea_3e873:^Je le sais, moi : réfléchir, ça a jamais été ton fort, pas vrai ?? ^@:dwave_eng 0, bea_3e874:^Alors arrête ! Arrête donc de réfléchir ! Kukukuku ! ^@:dwave_eng 0, bea_3e875:^Regarde, regarde ! C'est de la fantasy, forcément de la fantasy ! Kuhihihyahyahhyahhyahhyahhyahhyaaaaaah !!^\
+mcl a,0
+mbg black,1
+
+advchar "10"
+langjp:dwave_jp 0, but_3e599:「うるせえうるせえぇうるせええぇえええぇ…！！！/
+sl
+langen:dwave_eng 0, but_3e599:^Ta gueule, ta gueule, ta gueule, ta gueeeeeule... !!! ^@/
+
+quakey 8,600
+
+langjp:noclear_cw:dwave_jp 0, but_3e600:　俺に話し掛けるんじゃねええぇええぇ…！！」\
+langen:noclear_cw:dwave_eng 0, but_3e600:^Arrête de me parler, bordeeeeel... !!^\
+mov %efe_spd2,200
+bg white,0
+mcbg 0
+mendef 1
+
+resettimer
+se2v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade3r.jpg",":b;bmp\background\efe\blade3r.png",22
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se3v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade6_2p.jpg",":b;bmp\background\efe\blade6_2p.png",1
+waittimer 100
+resettimer
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se1v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade6_2r.jpg",":b;bmp\background\efe\blade6_2r.png",1
+waittimer 100
+resettimer
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+bg white,1
+se1v 57,100
+
+;Kanon battle CG
+bg c_c0203_lwall,1
+lsp bgsp,c_c0203_la,-670,0,255
+for %Free1 = 1 to 11
+	resettimer
+	msp bgsp,55,0,0
+	print 1
+	waittimer 16
+	next
+for %Free1 = 1 to 7
+	resettimer
+	msp bgsp,20,0,0
+	print 1
+	waittimer 16
+	next
+for %Free1 = 1 to 11
+	resettimer
+	msp bgsp,55,0,0
+	print 1
+	waittimer 16
+	next
+csp bgsp
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",22
+
+;se1 52
+;ld r,$RG1_AkuwaraiA1,99,1500,"breakup.dll/lrp"
+mov %play_scene,30060 ;シーン変数の入力
+
+bld r,$RG1_ikariA1,26
+bcl r,0
+ld r,$RG1_ikariA1,2
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e53:「………こいつ、意地になっちゃってぇ。@:dwave_jp 0, rg1_3e54:…私になら勝てるなんて思いあがりをしたことを、今すぐ床に這いつくばって謝ってごらんなさい…？@:dwave_jp 0, rg1_3e54_1:　そうしたら、特別に許してあげてもいいわよぅ…？\
+langen:dwave_eng 0, rg1_3e53:^... Il s'entête, le petit. ^@:dwave_eng 0, rg1_3e54:^... Allez. Mets-toi à quatre pattes et excuse-toi d'avoir été assez arrogant pour croire que tu pouvais me battre... ? ^@:dwave_eng 0, rg1_3e54_1:^Si tu le fais gentiment, je pourrais même te pardonner... ?^\
+
+ld r,$RG1_akuwaraiA1,80
+
+langjp:dwave_jp 0, rg1_3e55:　生きながら生皮を剥がして、@:dwave_jp 0, rg1_3e56:絶命するまで全身を鞭打ってのた打ち回らすのを、特別に許してあげてもいいわよぅ。@:dwave_jp 0, rg1_3e57:ふっふふふふふふふふふふ！\
+langen:dwave_eng 0, rg1_3e55:^Je pourrais même t'épargner d'être écorché vif^@:dwave_eng 0, rg1_3e56:^ et fouetté de la tête aux pieds jusqu'à ce que tu crèves en te tordant par terre. ^@:dwave_eng 0, rg1_3e57:^Huhuhuhuhuhuhu !^\
+
+textoff
+;bg Mlib_1dN,0
+ld r,$RG1_AkuwaraiA2,80
+;se1v 57,100
+;bld r,$RG1_AkuwaraiA2,1
+;wait 1000
+
+langjp:dwave_jp 0, rg1_3e58:　可愛い子なんだから、謝っちゃいなさいよ…。@:dwave_jp 0, rg1_3e59:　そうしたら、あなただけは、最高にステキな気分の中で、やさしくやさしく逝かせてアゲル……。」\
+;＜ルシファ
+langen:dwave_eng 0, rg1_3e58:^T'es mignon, alors excuse-toi... ^@:dwave_eng 0, rg1_3e59:^Et toi seul, je te ferai partir tout doucement... dans le plus délicieux des plaisirs...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg",":b;bmp\background\mainbuilding\mlib_1bn.png",0
+ld l,$KAN_fumanA1B,23
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e36:「黙れ、魔女の家具。@:dwave_jp 0, kan_3e37:…お前と問答するつもりはない。」\
+;＜嘉音
+langen:dwave_eng 0, kan_3e36:^Tais-toi, meuble de la sorcière. ^@:dwave_eng 0, kan_3e37:^... J'ai rien à te dire.^\
+
+ld r,$RG1_ikariA1,24
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e60:「わっ、……私なんか眼中にないと言うのね…？@/
+langen:dwave_eng 0, rg1_3e60:^Q-Quoi... ? Je ne mérite même pas que tu me regardes... ? ^@/
+
+se1v 57,100
+mbg white,1
+bld r,$RG1_odorokiA2,0
+mcbg 80
+
+langjp:dwave_jp 0, rg1_3e61:　ふっふふふふふふふふふッ、気に入らないわぁ、畏怖を感じないその眼っ、@/
+langen:dwave_eng 0, rg1_3e61:^Huhuhuhuhuhuhu... je déteste ces yeux... ce regard qui n'a même pas peur de moi...^@/
+
+bld r,$RG1_odorokiA1,80
+
+langjp:dwave_jp 0, rg1_3e62:本当に気に入らないわぁああッ！！」\
+
+langen:dwave_eng 0, rg1_3e62:^ Je le déteste vraiiiiiment !!^\
+
+mov %efe_spd2,160
+
+bcl r,0
+bg white,1
+
+resettimer
+se2v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade2p.jpg",":b;bmp\background\efe\blade2p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se3v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade3r.jpg",":b;bmp\background\efe\blade3r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se1v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade4r.jpg",":b;bmp\background\efe\blade4r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se2v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade1r.jpg",":b;bmp\background\efe\blade1r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se3v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade6_2p.jpg",":b;bmp\background\efe\blade6_2p.png",1
+wait 200
+bg white,1
+
+resettimer
+se1v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade1r.jpg",":b;bmp\background\efe\blade1r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se2v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade3p.jpg",":b;bmp\background\efe\blade3p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se3v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade2r.jpg",":b;bmp\background\efe\blade2r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+bg white,1
+
+resettimer
+se1v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade4p.jpg",":b;bmp\background\efe\blade4p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+se2v 20,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade6_1r.jpg",":b;bmp\background\efe\blade6_1r.png",1
+wait 100
+se3v 57,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade6_2r.jpg",":b;bmp\background\efe\blade6_2r.png",2
+wait 200
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",0
+ld r,$SHA_odorokiA2,0
+ld l,$GEN_DefA1,22
+ld r,$SHA_KomaruA1,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e43:「…………嘉音くん……………。」@
+;＜紗音
+langen:dwave_eng 0, sha_3e43:^... Kanon...^@
+
+ld l,$GEn_MajimeA2,80
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e50:「………………………。」\
+;＜源次
+langen:dwave_eng 0, gen_3e50:^...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",0
+ld l,$RON_DefA1,0
+ld r,$BEA_WaraiA1,24
+ld r,$BEA_AkuwaraiA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e876:「……あやつ、サタンの時よりも筋がいいではないか。」@
+;＜ベアト
+langen:dwave_eng 0, bea_3e876:^Tiens donc. Il se débrouille mieux que lorsqu'il affrontait Satan.^@
+
+ld l,$RON_AkuwaraiA1,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_3e285:「だから人間は恐ろしいのです。@:dwave_jp 0, ron_3e286:たまに魔女にまでなり、悪魔を執事扱いにしたりいたしますよ。」@
+;＜ロノウェ
+langen:dwave_eng 0, ron_3e285:^C'est précisément pour cela que les humains sont terrifiants. ^@:dwave_eng 0, ron_3e286:^Il leur arrive même de devenir sorcières... et de réduire des démons au rang de majordomes.^@
+
+ld r,$BEA_AkuwaraiA2,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e877:「ぷっくっくっくっく！@:dwave_jp 0, bea_3e878:　妾はどちらを応援すれば良いというのか。」\
+;＜ベアト
+langen:dwave_eng 0, bea_3e877:^Pfff... hmhmhm ! ^@:dwave_eng 0, bea_3e878:^Mais alors... lequel des deux suis-je censée encourager ?^\
+
+mov %efe_spd2,160
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",63
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg",":b;bmp\background\mainbuilding\mlib_1bn.png",0
+
+resettimer
+se2v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade1r.jpg",":b;bmp\background\efe\blade1r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se3v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade2p.jpg",":b;bmp\background\efe\blade2p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se1v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade3r.jpg",":b;bmp\background\efe\blade3r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+se2v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade4p.jpg",":b;bmp\background\efe\blade4p.png",1
+wait 200
+bg white,1
+
+resettimer
+se3v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade5r.jpg",":b;bmp\background\efe\blade5r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se1v 20,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade6_1p.jpg",":b;bmp\background\efe\blade6_1p.png",1
+waittimer 500
+
+resettimer
+se2v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade6_2p.jpg",":b;bmp\background\efe\blade6_2p.png",1
+waittimer 400
+bg white,1
+
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",22
+bld c,$RG1_odorokiA1,24
+bcl c,0
+ld c,$RG1_odorokiA1,22
+
+
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e63:「…こいつっ、/
+sl
+langjp:voicedelay 1090:dwave_jp 0, rg1_3e64:^^………私と互角に渡り合うと言うの…！」@
+;＜ルシファ
+langen:dwave_eng 0, rg1_3e63:^... Tu...^@/
+sl
+langen:voicedelay 1090:dwave_eng 0, rg1_3e64:^ tu oses prétendre pouvoir lutter à armes égales avec moi... ?!^@
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",0
+ld l,$KAN_DefA2B,23
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e38:「………僕を見くびるな。@:dwave_jp 0, kan_3e39:お前にその驕りがある限り、僕には決して勝てない。」\
+;＜嘉音
+langen:dwave_eng 0, kan_3e38:^... Me sous-estime pas. ^@:dwave_eng 0, kan_3e39:^Tant que ton arrogance t'aveuglera comme ça, tu pourras jamais me battre.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",0
+ld c,$RG1_OdorokiA1,24
+se1v 57,100
+bld c,$RG1_OdorokiA1,1
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e65:「わ、私が、/
+sl
+langjp:voicedelay 2110:dwave_jp 0, rg1_3e66:^^…この、煉獄の七姉妹が長女、ルシファーを指して、決して勝てないと？！@/
+langen:dwave_eng 0, rg1_3e65:^M-Moi... ^@/
+sl
+langen:voicedelay 2110:dwave_eng 0, rg1_3e66:^Tu oses dire à Lucifer, l'aînée des Sept Sœurs du Purgatoire, qu'elle ne pourra jamais te vaincre ?! ^@/
+
+bld c,$RG1_IkariA1,80
+
+langjp:dwave_jp 0, rg1_3e67:　こ、この、思いあがりがっ！！」\
+langen:dwave_eng 0, rg1_3e67:^E-Espèce de petit prétentieux !!^\
+
+textoff
+
+	for %ryuu1 = 1 to 4
+	se1v 57,100
+	mbg white,1
+	mcbg 80
+	next
+
+bcl c,0
+
+wait 500
+mov %efe_spd2,160
+
+resettimer
+se1v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade1p.jpg",":b;bmp\background\efe\blade1p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se2v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade2r.jpg",":b;bmp\background\efe\blade2r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se3v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade3p.jpg",":b;bmp\background\efe\blade3p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se1v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade4r.jpg",":b;bmp\background\efe\blade4r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se2v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade5p.jpg",":b;bmp\background\efe\blade5p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se3v 20,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade6_1r.jpg",":b;bmp\background\efe\blade6_1r.png",1
+waittimer 500
+
+resettimer
+se1v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade6_2r.jpg",":b;bmp\background\efe\blade6_2r.png",1
+waittimer 400
+
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",0
+;lsp bgsp,$KAN_FumanA2,120,0
+lsp_var 1,$KAN_FumanA2,120,0
+print 22
+wait 200
+
+bg white,1
+se1v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",0
+;lsp bgsp,$KAN_IkariA2B,-208,0
+lsp_var 1,$KAN_IkariA2B,-208,0
+print 1
+wait 200
+
+se1 20
+;csp bgsp
+csp_var 1
+print 1
+wait 200
+bg white,10,10
+
+resettimer
+se1v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade1r.jpg",":b;bmp\background\efe\blade1r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se2v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade2p.jpg",":b;bmp\background\efe\blade2p.png",1
+wait 100
+
+resettimer
+bg white,1
+se3v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade3r.jpg",":b;bmp\background\efe\blade3r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se1v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade4r.jpg",":b;bmp\background\efe\blade4r.png",1
+wait 100
+
+resettimer
+bg white,1
+se2v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade5p.jpg",":b;bmp\background\efe\blade5p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se3v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade3r.jpg",":b;bmp\background\efe\blade3r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se1v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade2r.jpg",":b;bmp\background\efe\blade2r.png",1
+wait 100
+
+resettimer
+bg white,1
+se2v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade1p.jpg",":b;bmp\background\efe\blade1p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se3v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade5r.jpg",":b;bmp\background\efe\blade5r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se1v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade4r.jpg",":b;bmp\background\efe\blade4r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+bg white,1
+se2v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade3p.jpg",":b;bmp\background\efe\blade3p.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se3v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade2r.jpg",":b;bmp\background\efe\blade2r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se1v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade6_1p.jpg",":b;bmp\background\efe\blade6_1p.png",1
+wait 200
+
+resettimer
+bg white,1
+se2v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade3r.jpg",":b;bmp\background\efe\blade3r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se3v 58,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade4r.jpg",":b;bmp\background\efe\blade4r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,50 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,50
+waittimer %efe_spd2
+
+resettimer
+se1v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade6_2r.jpg",":b;bmp\background\efe\blade6_2r.png",1
+waittimer 400
+
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",0
+bld r,$RG1_IkariA1,22
+;wait 500
+
+resettimer
+se3v 57,100
+bcl r,0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade7_2r.jpg",":b;bmp\background\efe\blade7_2r.png",1
+waittimer 400
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",0
+bld r,$RG1_IkariA1,80
+
+E_A
+se1v 57,100
+se2v 1100,100
+se3v 1100,100
+bcl r,0
+ld5 r,$RG1_IkariA1,99,1000,"breakup.dll/lrB"
+
+se1v 57,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",0
+ld l,$KAN_IkariA2B,0
+ld r,$RG1_OdorokiA1,80
+
+
+
+langjp:dwave_jp 0, rg1_3e68:「…なッ………………、」\
+;＜ルシファ
+langen:dwave_eng 0, rg1_3e68:^... Qu...^\
+
+me1v 5,40
+advchar "-1"
+langjp　嘉音には、死に物狂いでも生き残り、人間になりたいという強い願いがあった。@
+langjp　でもルシファーには、軽く遊んでやろうという気持ち以上に強いものは、何もなかった。\
+langen^Kanon, lui, se battait avec tout ce qu'il avait pour survivre et devenir humain.^@
+langen^Lucifer, elle, n'avait rien de plus fort en elle que l'envie de jouer avec sa proie.^\
+
+langjp　……だから、それが必然の結果になって現れる。@その結果を示せるのが、人の力。@…心の力。\
+langen^... Alors l'issue finit forcément par refléter cette différence. ^@^Voilà jusqu'où peut aller la force d'un humain. ^@^... La force de son cœur.^\
+
+ld l,$KAN_FumanA1,80
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e40:「……………これまでだ。@:dwave_jp 0, kan_3e41:お前は僕に、決して勝てない。」@
+langen:dwave_eng 0, kan_3e40:^... C'est fini. ^@:dwave_eng 0, kan_3e41:^Tu peux pas me battre.^@
+
+se1v 57,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",0
+ld r,$RG1_OdorokiA1,0
+cl l,0
+mld l,$KAN_IkariA2B,80
+
+br
+advchar "-1"
+langjp　嘉音の腕より閃く赤き軌跡が真っ直ぐに伸び、@……ルシファーの喉元を指し、顎の先端をぴったりと捉えていた…。\
+langen^La traînée rouge jaillie du bras de Kanon s'arrêta net sous la gorge de Lucifer... ^@^exactement contre la pointe de son menton.^\
+
+ld r,$RG1_IkariA1,80
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e69:「な、/
+sl
+langjp:voicedelay 230:dwave_jp 0, rg1_3e70:^^……何よこれぇ…？！@:dwave_jp 0, rg1_3e71:　この私が、/
+sl
+langjp:voicedelay 1200:dwave_jp 0, rg1_3e72:^^……こんなの、何かの間違いよっ…。」@
+langen:dwave_eng 0, rg1_3e69:^Q-^@/
+sl
+langen:voicedelay 230:dwave_eng 0, rg1_3e70:^ Qu'est-ce que... ?! ^@:dwave_eng 0, rg1_3e71:^Comment ai-je pu...^@/
+sl
+langen:voicedelay 1200:dwave_eng 0, rg1_3e72:^ C'est impossible... Il y a forcément une erreur...^@
+br
+advchar "-1"
+langjp　歯軋りをしながら悔しがりながら、目の前の現実を拒否しようとする。@
+langjp　…しかし、どんなに彼女が自らを優位であると信じようとも、目の前の事実は変わらない。\
+langen^Lucifer grinça des dents. Elle refusait encore d'accepter ce qui venait de se passer.^@
+langen^... Mais elle avait beau se croire supérieure, le résultat sous ses yeux, lui, ne changerait pas.^\
+
+mcl a,0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+E_A
+bgm1 40
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",0
+ld r,$BEA_DefA1,24
+ld r,$BEA_defA2,80
+
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e879:「ほぉ。@:dwave_jp 0, bea_3e880:…やるな、嘉音。@:dwave_jp 0, bea_3e881:見事だ、妾を退屈させなかった。@/
+langen:dwave_eng 0, bea_3e879:^Oh ? ^@:dwave_eng 0, bea_3e880:^... Pas mal, Kanon. ^@:dwave_eng 0, bea_3e881:^Magnifique. Tu ne m'as pas ennuyée.^@/
+
+ld r,$BEA_AkuwaraiA1,80
+
+langjp:dwave_jp 0, bea_3e882:……それに比べ、妾の家具の何と情けないことか。@:dwave_jp 0, bea_3e883:くっくっくっく！」@
+;＜ベアト
+langen:dwave_eng 0, bea_3e882:^ ... Comparé à toi, mon propre meuble fait vraiment pitié. ^@:dwave_eng 0, bea_3e883:^Kukukuku !^@
+
+ld l,$RON_akuwaraiA1,23
+
+advchar "31"
+langjp:dwave_jp 0, ron_3e287:「……ルシファー。@:dwave_jp 0, ron_3e288:お嬢様を退屈させていますよ？@:dwave_jp 0, ron_3e289:　やはりあなたには荷が勝ちすぎた相手でしたか…？」\
+langen:dwave_eng 0, ron_3e287:^... Lucifer. ^@:dwave_eng 0, ron_3e288:^Vous ennuyez Mademoiselle, vous savez ? ^@:dwave_eng 0, ron_3e289:^Cet adversaire était donc vraiment trop difficile pour vous... ?^\
+
+ld r,$BEA_AkuwaraiA2,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e884:「失望するぞ、七杭の長女ォ？@:dwave_jp 0, bea_3e885:　くっひひひひひひひひひひひ…！」\
+langen:dwave_eng 0, bea_3e884:^Tu me déçois, aînée des Sept Pieux... ^@:dwave_eng 0, bea_3e885:^Kuhihihihihihihihihihi... !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg",":b;bmp\background\mainbuilding\mlib_1bn.png",0
+ld c,$RG1_odorokiA1,23
+advchar "-1"
+langjp　それはわからぬ者には単なる詰りでしかない。@
+langjp　しかし、魔女に仕える家具には、その詰りの裏側にどれほどの辛辣な仕打ちが約束され、@そして語ることを端折っているのか理解できる…。\
+langen^Pour un humain, ça n'aurait ressemblé qu'à une remarque moqueuse.^@
+langen^Mais les meubles au service d'une sorcière savaient exactement ce qui se cachait derrière ces mots...^@^ et quel genre de punition Béatrice n'avait même pas besoin de décrire.^\
+
+ld c,$RG1_IkariA1,80
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e73:「ぅうぅぅぅぅぅぅぅぅっ！！@:dwave_jp 0, rg1_3e74:　この、……出来損ない家具があああああぁあぁッ！！！」\
+langen:dwave_eng 0, rg1_3e73:^Uuuuuuuuuuuuuuh !! ^@:dwave_eng 0, rg1_3e74:^Espèce de... meuble raaaaaaaté !!!^\
+se1 52
+cl c,99,1000,"breakup.dll/urb"
+
+advchar "-1"
+langjp　彼女は吼えた。@…最後のプライドを投げ出し、自らの人の姿を弾かせ、真の姿を曝け出す。@
+langen^Elle hurla. ^@^... Jetant aux orties son dernier reste de fierté, elle fit éclater son apparence humaine et révéla sa véritable forme.^@
+br
+langjp　それは、部屋中の壁に乱反射して飛び交う、悪魔の杭の姿…。\
+langen^Un pieu démoniaque, ricochant à une vitesse folle sur les murs de la pièce...^\
+
+se2v 21,70
+se3v 27,70
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1e.jpg",":b;bmp\background\mainbuilding\mlib_1e.png",22
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e75:「よくも私にここまで恥をかかせたなっ！！@:dwave_jp 0, rg1_3e76:　殺すっ殺す殺す殺す！！@:dwave_jp 0, rg1_3e77:　このノロマが！@:dwave_jp 0, rg1_3e78:　私の姿をもはや追うこともできないくせにっ！！@:dwave_jp 0, rg1_3e79:　もう遊ばないよ、本気で怒ったわよっ、お前の心臓を一撃で貫いてやるよっ！！@:dwave_jp 0, rg1_3e80:　ぶっすりざっくり貫いて、真っ赤な血の噴水を天井にまで届かせてやるよっ！！@:dwave_jp 0, rg1_3e81:　死ねぇええええええええええぇええええぇえぇッ！！」\
+langen:dwave_eng 0, rg1_3e75:^Comment t'as osé m'humilier comme ça ?!! ^@:dwave_eng 0, rg1_3e76:^Je vais te tuer ! Te tuer, te tuer, te tuer !! ^@:dwave_eng 0, rg1_3e77:^Espèce de larve !! ^@:dwave_eng 0, rg1_3e78:^T'arrives même plus à suivre mes mouvements !! ^@:dwave_eng 0, rg1_3e79:^J'en ai fini de jouer ! Là, je suis vraiment en colère ! Je vais te transpercer le cœur d'un seul coup !! ^@:dwave_eng 0, rg1_3e80:^Je vais te traverser de part en part et faire gicler ton sang jusqu'au plafond !! ^@:dwave_eng 0, rg1_3e81:^Meeeeeeeeeeeeeeeeeeeeeeeeeeurs !!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",0
+ld l,$GEN_OdorokiA1,0
+ld c,$SHA_OdorokiA1,1
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e44:「か、嘉音くん………ッ！！」\
+;＜紗音
+langen:dwave_eng 0, sha_3e44:^K-Kanon... !!^\
+
+E_B
+E_MA
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",0
+btndef ":b;bmp\background\mainbuilding\Mlib_1cN.png"  ;fixed, uses PNG now
+
+resettimer
+se1v 40,100
+blt 0,0,960,540,75,100,160,90
+print 1
+waittimer 100
+resettimer
+se2v 41,100
+blt 0,0,960,540,150,200,160,90
+print 1
+waittimer 90
+resettimer
+se3v 42,100
+blt 0,0,960,540,390,0,160,90
+print 1
+waittimer 80
+resettimer
+se1v 40,100
+blt 0,0,960,540,75,300,160,90
+print 1
+waittimer 70
+resettimer
+se2v 41,100
+blt 0,0,960,540,0,10,160,90
+print 1
+waittimer 60
+resettimer
+se3v 42,100
+blt 0,0,960,540,187,1950,160,90
+print 1
+waittimer 50
+resettimer
+se1v 40,100
+blt 0,0,960,540,375,50,160,90
+print 1
+waittimer 40
+
+resettimer
+se2v 40,100
+blt 0,0,960,540,150,100,160,90
+print 1
+waittimer 30
+resettimer
+se3v 41,100
+blt 0,0,960,540,150,200,160,90
+print 1
+waittimer 50
+resettimer
+se1v 42,100
+blt 0,0,960,540,15,0,160,90
+print 1
+waittimer 40
+resettimer
+se2v 40,100
+blt 0,0,960,540,56,300,214,120
+print 1
+waittimer 40
+resettimer
+se3v 41,100
+blt 0,0,960,540,0,120,16,90
+print 1
+waittimer 40
+resettimer
+se1v 42,100
+blt 0,0,960,540,187,195,160,90
+print 1
+waittimer 40
+resettimer
+se2v 40,100
+blt 0,0,960,540,67,50,534,300
+print 1
+waittimer 150
+ofscpy
+se1v 36,100
+btndef ""
+;bg blood_1a,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+
+wait 2000
+se2v 37,100
+wait 1500
+se3v 38,100
+wait 2000
+
+
+advchar "-1"
+langjp　人の目では捉えることの出来ない領域にまで踏み込んだ速度で、@ルシファーは存分に撹乱した後に、嘉音のその心臓に喰らい付く…。\
+langen^Après l'avoir désorienté à une vitesse que l'œil humain ne pouvait même plus suivre, ^@^Lucifer fondit droit sur le cœur de Kanon...^\
+
+me1v 12,40
+;se1 38
+
+langjp　ルシファーは確かに感じたその甘い舌触りに、嘉音の血を確信した。@
+langen^Quand elle sentit cette douce saveur sur sa langue, Lucifer reconnut sans hésiter le sang de Kanon.^@
+br
+langjp　…しかし、すぐに気付く。@
+langjp　…彼女は嘉音の心臓を貫けたわけではないのだ…。\
+langen^... Puis elle comprit.^@
+langen^... Ce n'était pas son cœur qu'elle avait transpercé.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",26
+ld c,$BEA_futekiA2,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e886:「…………ほぉ。@:dwave_jp 0, bea_3e887:くっくっくっく！」@
+;＜ベアト
+langen:dwave_eng 0, bea_3e886:^... Oh ? ^@:dwave_eng 0, bea_3e887:^Kukukuku !^@
+
+ld l,$RON_WaraiA2,23
+
+advchar "31"
+langjp:dwave_jp 0, ron_3e290:「これだから人間は恐ろしい。@:dwave_jp 0, ron_3e291:…紅茶はいかがですかな？」@
+;＜ロノウェ
+langen:dwave_eng 0, ron_3e290:^Voilà pourquoi les humains sont terrifiants. ^@:dwave_eng 0, ron_3e291:^... Un peu de thé, Mademoiselle ?^@
+
+ld c,$BEA_AkuwaraiA3,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e888:「今は良い。@:dwave_jp 0, bea_3e889:紅茶もいらぬほどに、面白い…！」\
+;＜ベアト
+langen:dwave_eng 0, bea_3e888:^Pas maintenant. ^@:dwave_eng 0, bea_3e889:^C'est tellement amusant que je peux même me passer de thé... !^\
+
+se3 21
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg",":b;bmp\background\mainbuilding\mlib_1bn.png",0
+ld r,$SHA_OdorokiA1,23
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e45:「……か、/
+sl
+langjp:voicedelay 780:dwave_jp 0, sha_3e46:^^…………嘉音くん…………。」\
+;＜紗音
+langen:dwave_eng 0, sha_3e45:^... Ka-^@/
+sl
+langen:voicedelay 780:dwave_eng 0, sha_3e46:^ ... Kanon...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+textoff
+se1 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2a.jpg",":b;bmp\background\efe\blood_2a.png",1
+wait 800
+se1v 35,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2b.jpg",":b;bmp\background\efe\blood_2b.png",1
+wait 800
+se2v 35,60
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2c.jpg",":b;bmp\background\efe\blood_2c.png",1
+wait 800
+se3 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2d.jpg",":b;bmp\background\efe\blood_2d.png",1
+wait 400
+se1 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2e.jpg",":b;bmp\background\efe\blood_2e.png",1
+wait 2000
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e42:「驕ったな……。@:dwave_jp 0, kan_3e43:……だから、お前は僕に勝てないんだ……。」\
+;＜嘉音
+langen:dwave_eng 0, kan_3e42:^Ton arrogance t'a encore perdue... ^@:dwave_eng 0, kan_3e43:^C'est pour ça que tu peux pas me battre...^\
+
+advchar "-1"
+langjp　床をボタボタと溢れる血が汚す。@
+langen^Le sang tombait à grosses gouttes, souillant le sol.^@
+br
+langjp　…その血は確かに嘉音の血だが、/
+sl
+langjp^^!d800……胸からは流れていなかった。@
+langen^... C'était bien le sang de Kanon^@/
+sl
+langen:!d800^... mais il ne venait pas de sa poitrine.^@
+br
+langjp　嘉音は心臓を守る代わりに、自らの左手を捧げたのだ…。\
+langen^Pour sauver son cœur, Kanon avait sacrifié sa main gauche...^\
+
+textoff
+
+wait 1000
+
+
+bgm1v 55,0
+fedexx 70,0,0,0,0,0,4000
+
+
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1e.jpg",":b;bmp\background\mainbuilding\mlib_1e.png",22
+
+langjp　ルシファーは傲慢だった。@
+langen^Lucifer avait été arrogante.^@
+br
+langjp　自らを追い詰めるほどの相手であることを理解する時間が与えられていたはずなのに、@それでもなお、取るに足らない相手だと驕った。@油断した。@
+langen^Elle avait eu tout le temps de comprendre que cet adversaire pouvait la pousser dans ses retranchements,^@^ et malgré ça, elle avait continué à le traiter comme un moins que rien. ^@^Elle s'était relâchée.^@
+br
+langjp　……だから予告通りに心臓を貫こうとその胸を狙ってしまった。\
+langen^... Alors, fidèle à sa propre menace, elle avait foncé droit sur sa poitrine pour lui transpercer le cœur.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　彼女が傲慢だったからこそ、予告した以外の部位を狙おうなどと思わなかった。@
+langen^Parce qu'elle était orgueilleuse, elle n'avait même pas envisagé de frapper ailleurs que là où elle avait annoncé son attaque.^@
+br
+langjp　…いや、少しは思ったかもしれない。@
+langjp　…しかし、他を狙うことは彼女のプライドが許さなかった。@
+langen^... Ou plutôt, l'idée lui avait peut-être traversé l'esprit.^@
+langen^Mais sa fierté lui interdisait de dévier d'un seul centimètre.^@
+br
+langjp　なぜなら彼女は、/
+sl
+langjp^^!d800………傲慢のルシファーだったから。\
+langen^Parce qu'elle était...^@/
+sl
+langen:!d800^ Lucifer de l'Orgueil.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",22
+
+langjp　嘉音は苦痛に堪えながら、@左手に深々と突き刺さり貫いている悪魔の杭を、右手でしっかりと握り締め、@…引き抜く……。@
+langen^Kanon, serrant les dents contre la douleur, ^@^empoigna de la main droite le pieu enfoncé profondément dans sa main gauche... ^@^et tira.^@
+br
+
+se1 38
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1b.jpg",":b;bmp\background\efe\blood_1b.png",25
+
+langjp　骨を抉る音と、さらに血が零れる音が聞こえた。@紗音は思わず目を背ける。@
+langen^Le bruit du métal raclant l'os se mêla à celui du sang qui se remit à couler. ^@^Shannon détourna les yeux malgré elle.^@
+br
+langjp　抜いた手の甲には、はっきりと向こうを覗くことが出来るほどの無惨な風穴が残されていた…。\
+langen^Quand le pieu sortit enfin, il laissa dans sa main un trou affreux, assez large pour voir au travers...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",22
+ld c,$KAN_IkariA2,6
+
+langjp　苦痛に満ちた表情を浮かべる嘉音だが、/
+sl
+langjp^^!d600……今この瞬間。@彼は間違いなく、勝利していた。\
+langen^Le visage de Kanon était déformé par la douleur^@/
+sl
+langen:!d600^... mais à cet instant précis,^@^ il avait incontestablement gagné.^\
+
+se1v 1100,100
+ld5 r,$RG1_nakuA1,99,1000,"breakup.dll/llB"
+se2v 27,40
+ld r,$RG1_ikariA1,2
+
+langjp　右腕で握り締めた悪魔の杭が、再びルシファーの姿に戻る…。@
+langen^Le pieu démoniaque qu'il tenait dans sa main droite reprit alors la forme de Lucifer...^@
+br
+langjp　それはちょうど、嘉音が彼女の喉を握り締めている形になった。\
+langen^et, dans cette position, ses doigts se refermèrent directement autour de sa gorge.^\
+
+ld r,$RG1_odorokiA2,80
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e82:^^!s1「………が、/
+sl
+langen:dwave_eng 0, rg1_3e82:^^!s1^... Ga^@/
+sl
+quakex 3,300
+langjp:voicedelay 350:dwave_jp 0, rg1_3e83:^^…………ぐ、/
+sl
+langen:voicedelay 350:dwave_eng 0, rg1_3e83:^... gh^@/
+sl
+quakey 3,300
+langjp:voicedelay 230:dwave_jp 0, rg1_3e84:^^………………っ…、」/
+sl
+langen:voicedelay 230:dwave_eng 0, rg1_3e84:^...^@/
+sl
+mov %disable_adv_clear, 1
+langjp!sd
+langen!sd
+mov %disable_adv_clear, 0
+advchar "-1"
+
+wait 1000
+ld r,$RG1_nakuA1,1
+quakey 2,400
+mov %disable_adv_clear, 1
+langjp:noclear_cw:
+langen:noclear_cw:
+mov %disable_adv_clear, 0
+
+
+ld c,$KAN_ikariA3,80
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e44:「…僕の勝ちだ。@:dwave_jp 0, kan_3e45:………ベアトリーチェ。」\
+langen:dwave_eng 0, kan_3e44:^ J'ai gagné. ^@:dwave_eng 0, kan_3e45:^Béatrice.^\
+
+advchar "-1"
+langjp　嘉音は喉を握り締める力を、決して手加減はしなかった。@
+langen^Kanon ne retint absolument pas sa force en serrant la gorge de Lucifer.^@
+br
+langjp　……一度はついた勝負を、彼女が重ねて挑んだのだ。@
+langjp　嘉音に手心を加える義理はない。\
+langen^Après tout, c'était elle qui avait refusé d'accepter une défaite déjà évidente.^@
+langen^Kanon ne lui devait aucune pitié.^\
+
+cl r,65
+se1 13
+quakey 4,800
+
+langjp　しかしそれでも、嘉音は魔女の家具を解放した。@
+langjp　……彼の甘いヒューマニズムか、家具同士の憐れみか、@それとも魔女への最後の敬意かはわからない。@
+langen^Et pourtant... il finit par la lâcher.^@
+langen^... Était-ce par humanisme naïf ? Par compassion entre meubles ? ^@^Ou par un dernier respect envers la sorcière ? Impossible de le savoir.^@
+br
+langjp　何れにせよ、解放されたルシファーは床に突っ伏し、@嘔吐するような仕草をしながら、喉の苦しみに呻いていた…。\
+langen^Libérée, Lucifer s'effondra face contre terre, ^@^prise de haut-le-cœur et gémissant en se tenant la gorge...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",0
+ld r,$RON_DefA1,24
+ld r,$RON_waraiA2,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_3e292:「お見事ですよ、嘉音。@:dwave_jp 0, ron_3e293:……あなたの奮闘により、金蔵の研究の正しさがひとつ、実証されました。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_3e292:^Très impressionnant, Kanon. ^@:dwave_eng 0, ron_3e293:^... Grâce à votre combat, vous venez de démontrer la justesse de l'une des recherches de Kinzo.^\
+
+advchar "-1"
+langjp　ロノウェがパチパチと手を叩く。@
+langen^Ronove se mit à applaudir tranquillement.^@
+br
+langjp　…左手に、塞ぐこともできぬほどの傷を負って、辛い勝利を収めた嘉音にとっては、白々しくしか感じられない。\
+langen^... Pour Kanon, qui venait d'arracher cette victoire au prix d'un trou béant dans la main gauche, ces applaudissements sonnaient presque comme une insulte.^\
+
+ld l,$BEA_futekiA2,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e890:「……人の心はあらゆる可能性を秘める、か。@:dwave_jp 0, bea_3e891:………いやはや、これだから人間は恐ろしい！@/
+langen:dwave_eng 0, bea_3e890:^... Le cœur humain renferme toutes les possibilités, hein ? ^@:dwave_eng 0, bea_3e891:^... Ah, décidément ! Voilà pourquoi les humains sont si terrifiants ! ^@/
+
+ld l,$BEA_AkuWaraiA3,80
+
+langjp:dwave_jp 0, bea_3e892:　天晴れであるぞ嘉音。@:dwave_jp 0, bea_3e893:そなたは勝利した。@:dwave_jp 0, bea_3e894:見事だ！」\
+langen:dwave_eng 0, bea_3e892:^Splendide, Kanon. ^@:dwave_eng 0, bea_3e893:^Tu as gagné. ^@:dwave_eng 0, bea_3e894:^Magnifique !^\
+
+me1v 5,90
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2d.jpg",":b;bmp\background\efe\blood_2d.png",22
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e46:「……はぁ、/
+sl
+langjp:voicedelay 830:dwave_jp 0, kan_3e47:^^……はぁ、/
+sl
+langjp:voicedelay 1000:dwave_jp 0, kan_3e48:^^……はぁ……。」\
+;＜嘉音
+langen:dwave_eng 0, kan_3e46:^... Haaah^@/
+sl
+langen:voicedelay 830:dwave_eng 0, kan_3e47:^... haaah^@/
+sl
+langen:voicedelay 1000:dwave_eng 0, kan_3e48:^... haaah...^\
+
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e47:「大丈夫？！@:dwave_jp 0, sha_3e48:　嘉音くん……。」@
+;＜紗音
+langen:dwave_eng 0, sha_3e47:^Kanon, ça va ?! ^@:dwave_eng 0, sha_3e48:^... Kanon...^@
+br
+advchar "-1"
+langjp　紗音が駆け寄り、ハンカチで鮮血を迸らせ続けている左手を包む。\
+langen^Shannon accourut et enveloppa d'un mouchoir sa main gauche, dont le sang continuait de jaillir.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",26
+ld r,$BEA_futekiA1,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e895:「見事であるぞ、嘉音！@:dwave_jp 0, bea_3e896:　実に見事である。@:dwave_jp 0, bea_3e897:妾も少しは番狂わせを期待した。@:dwave_jp 0, bea_3e898:それを裏切らぬとは、そなたは誠に素晴らしき家具であるぞ。@:dwave_jp 0, bea_3e899:くっくっくっく！@:dwave_jp 0, bea_3e900:　見直した。@:dwave_jp 0, bea_3e901:正直、見直したぞ！」\
+;＜ベアト
+langen:dwave_eng 0, bea_3e895:^Magnifique, Kanon ! ^@:dwave_eng 0, bea_3e896:^Vraiment magnifique. ^@:dwave_eng 0, bea_3e897:^J'espérais justement une petite surprise. ^@:dwave_eng 0, bea_3e898:^Et tu ne m'as pas déçue. Quel merveilleux meuble tu fais ! ^@:dwave_eng 0, bea_3e899:^Kukukuku ! ^@:dwave_eng 0, bea_3e900:^Je te revois sous un tout autre jour. ^@:dwave_eng 0, bea_3e901:^Oui, sincèrement !^\
+
+ld l,$KAN_odorokiA2,6
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e49:「や、……約束を忘れてはいないだろうな…、/
+sl
+langjp:voicedelay 4070:dwave_jp 0, kan_3e50:^^ベアトリーチェ…。」\
+;＜嘉音
+; left off on purpose
+langen:dwave_eng 0, kan_3e49:^... T-T'as pas oublié ta promesse, hein^
+sl
+langen:voicedelay 4070:dwave_eng 0, kan_3e50:^... Béatrice... ?^\
+
+ld r,$BEA_DefA2,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e902:「うむ。@:dwave_jp 0, bea_3e903:もちろん忘れてはおらぬぞ。@:dwave_jp 0, bea_3e904:魔女も悪魔も非道ではある。@:dwave_jp 0, bea_3e905:だがしかし契約に限っては人間など及ばぬほどに高潔だ。\
+langen:dwave_eng 0, bea_3e902:^Oui. ^@:dwave_eng 0, bea_3e903:^Je n'ai rien oublié. ^@:dwave_eng 0, bea_3e904:^Les sorcières et les démons sont cruels, c'est vrai. ^@:dwave_eng 0, bea_3e905:^Mais lorsqu'il s'agit d'un contrat, nous sommes bien plus scrupuleux que les humains.^\
+
+ld r,$BEA_futekiA2,80
+
+langjp:dwave_jp 0, bea_3e906:　妾は反故にはせぬ。@:dwave_jp 0, bea_3e907:そなたが勝利したなら、@:dwave_jp 0, bea_3e908:１３人の生贄を逃れることができる５人を自由に決める権利を保証した。」\
+;＜ベアト
+langen:dwave_eng 0, bea_3e906:^Je ne reviens jamais sur un marché. ^@:dwave_eng 0, bea_3e907:^Si tu gagnais,^@:dwave_eng 0, bea_3e908:^ je t'ai promis le droit de choisir librement les cinq personnes qui échapperaient aux treize sacrifices.^\
+
+cl a,24
+E_MA
+ld c,$RG1_OdorokiA1,26
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e85:「……ベ、ベアトリーチェさまっ。@:dwave_jp 0, rg1_3e86:私はまだ、敗れたわけではっ…、/
+sl
+langjp:voicedelay 2140:dwave_jp 0, rg1_3e87:^^ひぎッ！！」/
+sl
+langen:dwave_eng 0, rg1_3e85:^... B-Béatrice, ^@:dwave_eng 0, rg1_3e86:^ce n'est pas comme si j'avais per... ^@/
+sl
+langen:voicedelay 2140:dwave_eng 0, rg1_3e87:^Higi !!^@/
+
+;TODO: Insert custom zoom sprite for RG1
+se1 20
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",14,200 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",14,200
+se2 12
+se3 13
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1e.jpg",":b;bmp\background\mainbuilding\mlib_1e.png",0
+if %is_old_sprites = 1 jumpf
+lsp2 1,":b;big\bmp\zoom\RG1_OdorokiA1ZR20.png",427,240,125,125,0
+~
+print 1
+quakey 5,500
+
+mov %disable_adv_clear, 1
+langjp:noclear_cw:
+langen:noclear_cw:
+mov %disable_adv_clear, 0
+advchar "-1"
+
+br
+langjp　ベアトリーチェが煙管をくるりと回すと、ルシファーにだけ天地が逆転する。@
+langen^ Béatrice fit tournoyer sa pipe. Et, pour Lucifer seule, le ciel et la terre s'inversèrent.^@
+
+for %Free1 = 1 to 18
+	resettimer
+	msp2 1,0,0,0,0,10,0
+	print 1
+	waittimer 16
+	next
+resettimer
+
+langjp　……だからひどく当然の結果として、彼女は天井に« 墜落 »した。\
+langen^... Alors, avec une logique aussi simple que cruelle, Lucifer « tomba » vers le plafond.^\
+
+for %Free1 = 1 to 10
+	resettimer
+	msp2 1,0,-75,0,0,0,0
+	print 1
+	waittimer 16
+	next
+resettimer
+se2v 12,100
+quakey 8,800
+
+langjp　床に立つ者にとって、天井はそう高くは感じない。@
+langjp　…しかし、真っ逆さまに頭から墜ちる者は、そうは感じまい…。\
+langen^Depuis le sol, un plafond ne paraît pas particulièrement haut.^@
+langen^... Mais quand on y tombe la tête la première, tout à l'envers, l'impression doit être assez différente...^\
+
+csp 1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",0
+ld r,$RON_waraiA2,26
+
+advchar "31"
+langjp:dwave_jp 0, ron_3e294:「お嬢様。@:dwave_jp 0, ron_3e295:さすがにやり過ぎでは。」@
+;＜ロノウェ
+langen:dwave_eng 0, ron_3e294:^Mademoiselle... ^@:dwave_eng 0, ron_3e295:^ne pensez-vous pas que vous allez un peu loin ?^@
+
+ld l,$BEA_waraiA2,26
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e909:「くっくくくく！@:dwave_jp 0, bea_3e910:　それもそうであるな。@:dwave_jp 0, bea_3e911:許してやるか。」\
+;＜ベアト
+langen:dwave_eng 0, bea_3e909:^Kukukukuku ! ^@:dwave_eng 0, bea_3e910:^Tu n'as pas tort. ^@:dwave_eng 0, bea_3e911:^Très bien, pardonnons-lui.^\
+se3v 22,50
+advchar "-1"
+langjp　もう一度ベアトリーチェは煙管を回す。@
+langen^Béatrice fit de nouveau tournoyer sa pipe.^@
+
+
+langjp　すると彼女に掛けられた魔法は解かれた。@
+langen^Le sort qui pesait sur Lucifer fut alors dissipé.^@
+br
+langjp　……だからひどく当然の結果として、彼女は床に、再び極めて正当に« 墜落 »した。\
+langen^... Et, avec la même logique impitoyable, elle « tomba » une seconde fois, cette fois jusqu'au sol.^\
+
+
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",13,200 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",13,200
+lsp2 2,":c;bmp\background\mainbuilding\Mlib_1bN.png",427,240,512,386,0,255  ;fixed, uses PNG, also convert to widescreen
+
+if %is_old_sprites = 1 lsp2 1,":r;bmp\placeholder.png",427,240,100,100,0
+lsp2 1,":b;big\bmp\zoom\RG1_OdorokiA1ZR20.png",427,240,100,100,0
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",0
+print 1
+
+  dwaveload 1,"SE\A5_10315.WAV"
+  dwaveplay 1
+
+
+for %Free2 = 1 to 80
+ resettimer
+ msp2 2,0,-3,12,8,12
+ msp2 1,0,-3,12,8,12
+ print 1
+ waittimer 10
+next
+
+csp2 1
+csp2 2
+
+;wait 100
+e_ 2,1
+;wait 300
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1e.jpg",":b;bmp\background\mainbuilding\mlib_1e.png",1
+se1v 13,100
+se2v 12,100
+quakey 8,800
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",6
+ld c,$RG1_nakuA1,6
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e88:^^!s1「…………く、/
+sl
+langjp:voicedelay 740:dwave_jp 0, rg1_3e89:^^…………ぅ、/
+sl
+langjp:voicedelay 310:dwave_jp 0, rg1_3e90:^^…ベアトリーチェさま、/
+sl
+langjp:voicedelay 1260:dwave_jp 0, rg1_3e91:^^…お、…お許しを…………。」/
+sl
+langen:dwave_eng 0, rg1_3e88:^^!s1^... Ngh...^@/
+sl
+langen:voicedelay 740:dwave_eng 0, rg1_3e89:^ gh... ^@/
+sl
+langen:voicedelay 310:dwave_eng 0, rg1_3e90:^Béatrice^@/
+sl
+langen:voicedelay 1260:dwave_eng 0, rg1_3e91:^... p-pardonnez-moi...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜ルシファ
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",24
+ld r,$BEA_defA2,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e912:「何を怯えておるか。@:dwave_jp 0, bea_3e913:妾はもはや許したぞ？@:dwave_jp 0, bea_3e914:　くっくっく！@/
+langen:dwave_eng 0, bea_3e912:^Pourquoi tu trembles comme ça ? ^@:dwave_eng 0, bea_3e913:^Je t'ai déjà pardonné, voyons. ^@:dwave_eng 0, bea_3e914:^Kukukuku ! ^@/
+
+ld r,$BEA_AkuwaraiA5,80
+
+langjp:dwave_jp 0, bea_3e915:　さて嘉音。@:dwave_jp 0, bea_3e916:続けようではないか。」@
+langen:dwave_eng 0, bea_3e915:^Bon, Kanon. ^@:dwave_eng 0, bea_3e916:^On continue ?^@
+
+ld l,$KAN_odorokiA1,23
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e51:「………何をだ。@:dwave_jp 0, kan_3e52:…まさか彼女に止めを刺せとでも言うつもりなのか…！」\
+langen:dwave_eng 0, kan_3e51:^... Continuer quoi ? ^@:dwave_eng 0, kan_3e52:^... Tu vas quand même pas me demander de l'achever... ?!^\
+
+ld r,$BEA_AkuwaraiA2,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e917:「あぁ、違う違うゥ。@:dwave_jp 0, bea_3e918:まだ終わっちゃいないだろがァ？」@
+langen:dwave_eng 0, bea_3e917:^Ah, non, non. ^@:dwave_eng 0, bea_3e918:^On n'a pas encore fini, tu sais ?^@
+
+ld l,$KAN_ikariA1,80
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e53:「………何をだ。@:dwave_jp 0, kan_3e54:…はぐらかすな…！！」\
+langen:dwave_eng 0, kan_3e53:^... Quoi, alors ? ^@:dwave_eng 0, kan_3e54:^... Arrête de tourner autour du pot... !!^\
+
+cl a,0
+ld c,$BEA_waraiA2,22
+E_A
+advchar "27"
+langjp:dwave_jp 0, bea_3e919:「妾は確かにそなたと約束したぞ？@:dwave_jp 0, bea_3e920:/
+sl
+langen:dwave_eng 0, bea_3e919:^Je t'ai pourtant fait une promesse très précise, non ? ^@:dwave_eng 0, bea_3e920:^Si tu parvenais à vaincre mes meubles... ^@/
+sl
+
+bgm1 31
+advchar "-1"
+langjp　妾の家具、^~ib~^煉獄の七杭^~ib~^を打ち破ったなら、となぁああぁ？\
+langen^~ib~les Sept Pieux du Purgatoire~ib~^^, n'est-ce paaaaaas ?^\
+
+ld c,$BEA_AkuwaraiA2,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e921:　さぁさお出でなさい、煉獄の七杭。@:dwave_jp 0, bea_3e922:不甲斐なき長女の６人の妹たち！」\
+;＜点処理：煉獄の七杭
+langen:dwave_eng 0, bea_3e921:^Allez, venez donc, Sept Pieux du Purgatoire ! ^@:dwave_eng 0, bea_3e922:^Vous six, les petites sœurs de cette lamentable aînée !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+advchar "-1"
+langjp:dwave_jp 0, "voice\99\awase0015.ogg":「「「「「「きゃっははははははははははははははッ！！」」」」」」/
+sl
+langen:dwave_eng 0, "voice\99\awase0015.ogg":^Kyah hahahahahahahahahahahahaha !!^@/
+voicewait 2750
+;se1 37 ;laugh effects removed because there is already a voiced laughing line above
+;wait 500
+;se2v 37,100
+;wait 200
+;se3v 37,100
+;se1 37
+;wait 500
+;se2v 37,100
+;wait 200
+;se1v 37,100
+;se3v 37,100
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg",":b;bmp\background\mainbuilding\mlib_1bn.png",24
+
+;lsp 899,$RG7_hohoemiA1,-160,0
+lsp_var 113,$RG7_hohoemiA1,-160,0
+se2 52
+print 99,500,"breakup.dll/lrp"
+
+;lsp 898,$RG6_akuwaraiA1,-64,0
+lsp_var 112,$RG6_akuwaraiA1,-32,0  ;convert to widescreen
+se1 52
+print 99,500,"breakup.dll/lrp"
+
+;lsp 897,$RG5_akuwaraiA2,32,0
+lsp_var 111,$RG5_akuwaraiA2,96,0  ;convert to widescreen
+se3 52
+print 99,500,"breakup.dll/lrp"
+
+;lsp 896,$RG4_defA1,128,0
+lsp_var 4,$RG4_defA1,224,0  ;convert to widescreen
+se2 52
+print 99,500,"breakup.dll/lrp"
+
+;lsp 895,$RG3_fumanA1,224,0
+lsp_var 3,$RG3_fumanA1,352,0  ;convert to widescreen
+se1 52
+print 99,500,"breakup.dll/lrp"
+
+;lsp 894,$RG2_hohoemiA1,320,0
+lsp_var 2,$RG2_hohoemiA1,480,0  ;convert to widescreen
+se3 52
+print 99,500,"breakup.dll/lrp"
+
+
+langjp　空間が黄色い笑い声と共に爆ぜ、@黄金の飛沫を飛び散らせながら、煉獄の七姉妹の残り６人が姿を現す…。\
+langen^L'espace éclata avec leurs rires aigus, ^@^et les six autres Sœurs du Purgatoire surgirent au milieu d'une gerbe dorée...^\
+
+
+langjp　左腕を捧げてようやく１人を倒せた七杭の姉妹が、全員揃う…。@
+langen^Les sept Sœurs étaient maintenant réunies. Et Kanon avait dû sacrifier sa main gauche rien que pour en vaincre une seule...^@
+br
+langjp　嘉音は今になって、魔女の勝負に乗った浅はかさを悔いる。@
+langjp　…魔女のゲームが対等であるなどと思いこんだ自分が、愚かだった……！\
+langen^Ce fut seulement là qu'il comprit à quel point il avait été naïf d'accepter le marché de la sorcière.^@
+langen^... Croire qu'un jeu proposé par une sorcière pouvait être équitable... quelle stupidité.^\
+
+csp_var 2
+csp_var 3
+csp_var 4
+csp_var 111
+csp_var 112
+csp_var 113
+csp -1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",23
+ld r,$RG7_AkuwaraiA1,24
+
+advchar "44"
+langjp:dwave_jp 0, rg7_3e12:「…………ダッサぁ。@:dwave_jp 0, rg7_3e13:お姉様、どうして床に這いつくばってるのぉ？」@
+;＜アスモ
+langen:dwave_eng 0, rg7_3e12:^... La hoooonte. ^@:dwave_eng 0, rg7_3e13:^Grande sœur, pourquoi tu rampes par terre comme ça ?^@
+
+
+ld c,$RG1_komaruA1,6
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e92:「お、…お前たち……………、@/
+langjp:voicedelay 2320:dwave_jp 0, rg1_3e93:^^ぐ……。」/
+sl
+;＜ルシファ
+langen:dwave_eng 0, rg1_3e92:^V-Vous autres... ^@/
+langen:voicedelay 2320:dwave_eng 0, rg1_3e93:^ngh...^@/
+ld c,$RG1_ikariA1,80
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+
+ld l,$RG5_fumanA2,24
+
+advchar "42"
+langjp:dwave_jp 0, rg5_3e8:「だからお姉様は駄目なのよ。@/
+langen:dwave_eng 0, rg5_3e8:^Voilà pourquoi tu ne sers à rien, grande sœur. ^@/
+
+ld l,$RG5_akuwaraiA2,80
+
+langjp:dwave_jp 0, rg5_3e9:長女を偉そうに名乗るくせに、上っ面だけなのよ。」\
+;＜マモン
+langen:dwave_eng 0, rg5_3e9:^Tu te pavanais tellement avec ton titre d'aînée... et au fond, c'était juste du vent.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg",":b;bmp\background\mainbuilding\mlib_1bn.png",0
+ld r,$RG3_fumanA1,23
+
+advchar "40"
+langjp:dwave_jp 0, rg3_3e12:「えぇ、まったく！@:dwave_jp 0, rg3_3e13:　ルシファーお姉様一人の醜態が私たちへの評価を下げるのよ！@:dwave_jp 0, rg3_3e14:　恥を知りなさいな！@:dwave_jp 0, rg3_3e15:　この未熟者が！」@
+;＜サタン
+langen:dwave_eng 0, rg3_3e12:^Exactement ! ^@:dwave_eng 0, rg3_3e13:^Quand Lucifer se ridiculise comme ça, c'est nous toutes qu'elle fait passer pour des incapables ! ^@:dwave_eng 0, rg3_3e14:^Aie un peu honte ! ^@:dwave_eng 0, rg3_3e15:^Espèce d'amatrice !^@
+
+ld l,$RG1_odorokiA2,22
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e94:「……………く、………ぐ……。」\
+;＜ルシファ
+langen:dwave_eng 0, rg1_3e94:^... Ngh... gh...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",0
+ld r,$KAN_OdorokiA2,24
+ld l,$RG6_fumanA2,23
+
+advchar "43"
+langjp:dwave_jp 0, rg6_3e9:「嘉音くぅん、すごいすごい。@/
+langen:dwave_eng 0, rg6_3e9:^Kanooon, bravo, bravo ! ^@/
+ld l,$RG6_akuwaraiA2,80
+
+langjp:dwave_jp 0, rg6_3e10:でも、いい気にならないことよ？@:dwave_jp 0, rg6_3e11:　ルシファーお姉様なんて、威張ってるだけで、姉妹の中じゃ大したことないんだからぁ。」\
+;＜ベルゼ
+langen:dwave_eng 0, rg6_3e10:^Mais prends pas trop la grosse tête, hein ? ^@:dwave_eng 0, rg6_3e11:^Lucifer fait beaucoup de bruit, mais entre nous... c'est pas vraiment la plus forte.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg",":b;bmp\background\mainbuilding\mlib_1bn.png",0
+ld r,$RG4_defA1,24
+
+advchar "41"
+langjp:dwave_jp 0, rg4_3e10:「…だからルシファー姉は何もしなくていいといつも言っている。@:dwave_jp 0, rg4_3e11:お姉様は威張ってだけいればいい。@/
+langen:dwave_eng 0, rg4_3e10:^... C'est pour ça que je lui dis toujours de ne rien faire. ^@:dwave_eng 0, rg4_3e11:^Grande sœur n'a qu'à rester là et faire l'importante. ^@/
+
+ld r,$RG4_hohoemiA1,80
+
+langjp:dwave_jp 0, rg4_3e12:荒事は全て、優秀な私たちで片付けるのだから。」\
+;＜ベルフェ
+langen:dwave_eng 0, rg4_3e12:^Nous, les compétentes, on se charge du travail difficile.^\
+
+
+ld l,$RG2_AkuwaraiA1,26
+
+advchar "39"
+langjp:dwave_jp 0, rg2_3e15:「お姉様、どうするぅ？@:dwave_jp 0, rg2_3e16:　私たちはお姉様のプライドを尊重して、@:dwave_jp 0, rg2_3e17:そのボロボロの体で再び挑むのを期待して、手出しをしないつもりなんだけれど…。\
+langen:dwave_eng 0, rg2_3e15:^Alors, tu fais quoi maintenant ? ^@:dwave_eng 0, rg2_3e16:^Par respect pour ton immense fierté,^@:dwave_eng 0, rg2_3e17:^ on pensait rester gentiment à l'écart et te regarder le défier encore une fois avec ton corps en miettes...^\
+
+ld l,$RG2_AkuwaraiA2,80
+
+langjp:dwave_jp 0, rg2_3e18:　……でも、嘉音くんは強いわよねぇ？@:dwave_jp 0, rg2_3e19:　今のお姉様じゃ、もうどう足掻いても勝ち目はないわよねぇ…？」\
+;＜レヴィア
+langen:dwave_eng 0, rg2_3e18:^Mais Kanon est fort, hein ? ^@:dwave_eng 0, rg2_3e19:^Dans ton état, t'as plus aucune chance, même en te débattant comme une folle... pas vrai ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1e.jpg",":b;bmp\background\mainbuilding\mlib_1e.png",22
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e95:「……お、/
+sl
+langjp:voicedelay 1120:dwave_jp 0, rg1_3e96:^^………お前たちぃ…………、」/
+sl
+langen:dwave_eng 0, rg1_3e95:^V-^@/
+sl
+langen:voicedelay 1120:dwave_eng 0, rg1_3e96:^ Vous autres...^@/
+
+quakex 3,300
+
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜ルシファ
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",0
+ld c,$BEA_WaraiA1,24
+ld c,$BEA_defA2,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e923:「くっくっくっく！@:dwave_jp 0, bea_3e924:　やれやれ、いつも賑やかな姉妹たちであるな。@:dwave_jp 0, bea_3e925:今は仲違いをしている場合か。@/
+langen:dwave_eng 0, bea_3e923:^Kukukukuku ! ^@:dwave_eng 0, bea_3e924:^Allons, allons... toujours aussi bruyantes, toutes les sept. ^@:dwave_eng 0, bea_3e925:^C'est vraiment le moment de vous chamailler ? ^@/
+
+ld c,$BEA_FutekiA1,80
+
+langjp:dwave_jp 0, bea_3e926:そなたらは７人揃ってこその煉獄の七姉妹であろうが。@:dwave_jp 0, bea_3e927:仲良くして妾の仕事を遂行せよ。@:dwave_jp 0, bea_3e928:迅速にな？」\
+langen:dwave_eng 0, bea_3e926:^Vous n'êtes les Sept Sœurs du Purgatoire que lorsque vous êtes toutes les sept réunies. ^@:dwave_eng 0, bea_3e927:^Alors faites la paix et accomplissez le travail que je vous ai confié. ^@:dwave_eng 0, bea_3e928:^Et vite. Compris ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",23
+ld r,$RG2_akuwaraiA1,24
+
+advchar "39"
+langjp:dwave_jp 0, rg2_3e20:「ねぇ、ルシファーお姉様ぁ。@:dwave_jp 0, rg2_3e21:私たち妹の力が借りたいならぁ。@:dwave_jp 0, rg2_3e22:言ってよ？@:dwave_jp 0, rg2_3e23:　お姉様の口から助けを求める言葉が聞きたいの。」\
+;＜レヴィア
+langen:dwave_eng 0, rg2_3e20:^Dis, grande sœur Lucifer... ^@:dwave_eng 0, rg2_3e21:^si tu veux l'aide de tes adorables petites sœurs, ^@:dwave_eng 0, rg2_3e22:^tu peux nous le demander, tu sais ? ^@:dwave_eng 0, rg2_3e23:^On veut l'entendre sortir de ta bouche.^\
+
+;ld l,$RG1_IkariA1,23
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e97:「く、…………私を、これ以上愚弄する気かぁ………！」\
+;＜ルシファ
+langen:dwave_eng 0, rg1_3e97:^Ngh... Vous voulez m'humilier encore davantage... ?!^\
+ld r,$RG2_akuwaraiA2,80
+
+advchar "39"
+langjp:dwave_jp 0, rg2_3e24:^^!s1「« 愚かで。/
+sl
+langjp:voicedelay 850:dwave_jp 0, rg2_3e25:^^ひ弱で。/
+sl
+langjp:voicedelay 960:dwave_jp 0, rg2_3e26:^^見苦しくて。/
+sl
+langjp:voicedelay 1200:dwave_jp 0, rg2_3e27:^^情けなァい！/
+sl
+langen:dwave_eng 0, rg2_3e24:^^!s1^Moi, l'idiote, ^@/
+sl
+langen:voicedelay 850:dwave_eng 0, rg2_3e25:^frêle, ^@/
+sl
+langen:voicedelay 960:dwave_eng 0, rg2_3e26:^pitoyable, ^@/
+sl
+langen:voicedelay 1200:dwave_eng 0, rg2_3e27:^et si misérable...^@/
+sl
+se1v 37,100
+quakey 3,300
+
+langjp:voicedelay 1550:dwave_jp 0, rg2_3e28:^^　この長女のルシファーを、どうか妹の皆様、お助け下さぁい »って。/
+sl
+langjp^^!sd@:dwave_jp 0, rg2_3e29:……ねぇ、聞かせてよぅ。@:dwave_jp 0, rg2_3e30:それを聞かせてくれたら助けてあげる。@:dwave_jp 0, rg2_3e31:それでいいわよねぇ？@:dwave_jp 0, rg2_3e32:　みんなぁ？！」\
+;＜レヴィア
+langen:voicedelay 1550:dwave_eng 0, rg2_3e28:^ moi, Lucifer, l'aînée, je supplie mes adorables petites sœurs de bien vouloir me sauver.^@/
+sl
+langen^^!sd@:dwave_eng 0, rg2_3e29:^ ... Allez, fais-nous entendre ça. ^@:dwave_eng 0, rg2_3e30:^Si tu le dis, on viendra t'aider. ^@:dwave_eng 0, rg2_3e31:^Ça vous va, les filles ?! ^@:dwave_eng 0, rg2_3e32:^Hein ?!^\
+
+ld l,$RG1_odorokiA2,80
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e98:「……お前たちっ………、/
+sl
+langjp:voicedelay 1120:dwave_jp 0, rg1_3e99:^^………お、/
+sl
+langjp:voicedelay 310:dwave_jp 0, rg1_3e100:^^……おのれぇえぇ……。」\
+langen:dwave_eng 0, rg1_3e98:^... Maudites...^@/
+sl
+langen:voicedelay 1120:dwave_eng 0, rg1_3e99:^ sa-^@/
+sl
+langen:voicedelay 310:dwave_eng 0, rg1_3e100:^ ... sales garces...^\
+
+
+advchar "-1"
+langjp　煉獄の七姉妹たちは、口々に不甲斐ないと姉を詰る。@罵る。@
+langen^Les six cadettes se mirent à accabler leur aînée, chacune rivalisant pour la traiter d'incapable. ^@^Elles l'insultaient sans relâche.^@
+br
+langjp　…それは、ついさっきまで命をやり取りしていた嘉音にとってすら、正視に耐えない…。\
+langen^... Même Kanon, qui jouait sa vie contre elle quelques instants plus tôt, ne supportait pas de regarder.^\
+
+ld l,$RG1_IkariA1,80
+ld l,$RG1_odorokiA1,80
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e101:「わ、わたっ、/
+sl
+langjp:voicedelay 1500:dwave_jp 0, rg1_3e102:^^……私が、/
+sl
+langjp:voicedelay 1110:dwave_jp 0, rg1_3e103:^^……そのようなことを、/
+sl
+langjp:voicedelay 1620:dwave_jp 0, rg1_3e104:^^……口にできるものかぁ……っ。」\
+langen:dwave_eng 0, rg1_3e101:^Ja-...^@/
+sl
+langen:voicedelay 1500:dwave_eng 0, rg1_3e102:^ jamais je... ^@/
+sl
+langen:voicedelay 1110:dwave_eng 0, rg1_3e103:^ne pourrais dire... ^@/
+sl
+langen:voicedelay 1620:dwave_eng 0, rg1_3e104:^une chose pareille...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",0
+ld r,$BEA_AkuwaraiA1,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e929:「早くせよ。@:dwave_jp 0, bea_3e930:どうせお前一人では埒が明かぬわ。@:dwave_jp 0, bea_3e931:早く七姉妹にて嘉音を討て。」@
+;＜ベアト
+langen:dwave_eng 0, bea_3e929:^Dépêche-toi. ^@:dwave_eng 0, bea_3e930:^De toute façon, toute seule, tu n'arriveras à rien. ^@:dwave_eng 0, bea_3e931:^Appelez-vous toutes les sept et abattez Kanon.^@
+
+ld l,$RON_akuwaraiA1,23
+
+advchar "31"
+langjp:dwave_jp 0, ron_3e296:「ぷっくっくっく…。@:dwave_jp 0, ron_3e297:そら、どうしましたか、ルシファー？@:dwave_jp 0, ron_3e298:　お嬢様の命令ですよ？」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_3e296:^Pfff... hmhmhm... ^@:dwave_eng 0, ron_3e297:^Eh bien, Lucifer ? ^@:dwave_eng 0, ron_3e298:^Vous avez entendu Mademoiselle. C'est un ordre.^\
+
+cl a,23
+ld c,$KAN_odorokiA2,23
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e49:「…………ひどい。」\
+;＜紗音
+langen:dwave_eng 0, sha_3e49:^... C'est horrible.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg",":b;bmp\background\mainbuilding\mlib_1bn.png",23
+;ld c,$RG1_IkariA1,23
+
+advchar "-1"
+langjp　ルシファーは何度も歯軋りを繰り返し、妹たちに呪いの言葉を投げ掛けた後、@……………わなわなと震えながら、/
+sl
+langjp^^!d800……妹たちの要望に応じる…。\
+langen^Lucifer serra les dents, maudit ses sœurs entre deux sanglots... ^@^puis se mit à trembler de tout son corps... ^@/
+sl
+langen:!d800^avant de finir par céder à ce qu'elles exigeaient.^\
+
+ld c,$RG1_odorokiA2,6
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e105:「…お、…………愚かで、@:dwave_jp 0, rg1_3e106:……ひ弱で、@:dwave_jp 0, rg1_3e107:………見苦しくて…。@:dwave_jp 0, rg1_3e108:…ぅうッ…！」@
+;＜ルシファー
+langen:dwave_eng 0, rg1_3e105:^... Mo-moi, l'idiote...^@:dwave_eng 0, rg1_3e106:^ la faible...^@:dwave_eng 0, rg1_3e107:^ la pitoyable...^@:dwave_eng 0, rg1_3e108:^ ngh... !^@
+
+ld l,$RG5_AkuwaraiA2,23
+
+advchar "42"
+langjp:dwave_jp 0, rg5_3e10:「情けなぁい！！」/
+sl
+langen:dwave_eng 0, rg5_3e10:^Et la honte de la famille !!^@/
+quakex 3,300
+
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+
+
+cl l,22
+ld c,$RG1_fumanA2,80
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e109:^^!s1「な、…情けない、/
+sl
+langjp:voicedelay 2480:dwave_jp 0, rg1_3e110:^^……この長女ルシファーを、/
+sl
+langjp:voicedelay 2920:dwave_jp 0, rg1_3e111:^^……どうか、@/
+langen:dwave_eng 0, rg1_3e109:^^!s1^E-Et si misérable^@/
+sl
+langen:voicedelay 2480:dwave_eng 0, rg1_3e110:^... moi, Lucifer, l'aînée des sœurs^@/
+sl
+langen:voicedelay 2920:dwave_eng 0, rg1_3e111:^... je vous en supplie...^@/
+ld c,$RG1_odorokiA2,80
+langjp:voicedelay 740:dwave_jp 0, rg1_3e112:^^………ううううぅうううぅッ！！@/
+langen:voicedelay 740:dwave_eng 0, rg1_3e112:^ ouiiiiiiiiiiiiiiiiiiin !! ^@/
+ld c,$RG1_nakuA1,80
+langjp:dwave_jp 0, rg1_3e113:　うわああぁあああぁぁあぁぁぁ…！！」/
+sl
+langen:dwave_eng 0, rg1_3e113:^Ouaaaaaaaaaaaaaaaaaah... !!^@/
+sl
+voicewait 4970
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1e.jpg",":b;bmp\background\mainbuilding\mlib_1e.png",25
+se1 13
+quakey 4,700
+mov %disable_adv_clear, 1
+langjp!sd
+langen!sd
+mov %disable_adv_clear, 0
+advchar "-1"
+
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+
+
+se2 37
+textoff
+wait 200
+se3v 37,100
+textoff
+wait 50
+se1 37
+textoff
+wait 200
+se2v 37,100
+
+langjp　屈辱の言葉を口にすることに、とうとう耐え切れなくなり、@…傲慢の名を持つ彼女は泣き崩れる。@
+langen^Incapable d'endurer plus longtemps cette humiliation,^@^ celle qui portait le nom d'Orgueil finit par s'effondrer en larmes.^@
+br
+langjp　しかし６人の妹たちは、冷酷にくすくす笑い続けるのだった。\
+langen^Ses six petites sœurs, elles, continuaient à glousser sans la moindre pitié.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+fede 0,3000
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",26
+ld r,$RG7_fumanA1,24
+
+me1v 16,50
+
+advchar "44"
+langjp:dwave_jp 0, rg7_3e14:「ちょっとー！@:dwave_jp 0, rg7_3e15:　泣いて誤魔化さないでー！@:dwave_jp 0, rg7_3e16:　まだ言い切ってないぃー！」@
+;＜アスモ
+langen:dwave_eng 0, rg7_3e14:^Hééé ! ^@:dwave_eng 0, rg7_3e15:^Essaie pas de t'en tirer en pleurant ! ^@:dwave_eng 0, rg7_3e16:^T'as même pas fini ta phraaaase !^@
+
+ld l,$RG4_akuwaraiA1,23
+
+advchar "41"
+langjp:dwave_jp 0, rg4_3e13:「もう充分だろう。@/
+langen:dwave_eng 0, rg4_3e13:^Ça suffit maintenant. ^@/
+
+ld l,$RG4_hohoemiA1,80
+
+langjp:dwave_jp 0, rg4_3e14:さぁ姉妹たち、我等の力を見せてやろう。」\
+;＜ベルフェ
+langen:dwave_eng 0, rg4_3e14:^Allez, mes sœurs. Montrons-lui ce que nous valons toutes ensemble.^\
+
+ld c,$RG5_AkuwaraiA2,24
+
+advchar "42"
+langjp:dwave_jp 0, rg5_3e11:「私は全部聞かなきゃ満足しないわよぅ？！@:dwave_jp 0, rg5_3e12:　ほらほらお姉様、続けてよぉ！」\
+;＜マモン
+langen:dwave_eng 0, rg5_3e11:^Moi, je serai pas satisfaite tant que j'aurai pas tout entendu, d'accord ?! ^@:dwave_eng 0, rg5_3e12:^Allez, grande sœur, continuuuue !^\
+
+cl a,0
+ld r,$RG3_odorokiA1,24
+E_A
+bgm1 46
+advchar "40"
+langjp:dwave_jp 0, rg3_3e16:「もう充分よ！@:dwave_jp 0, rg3_3e17:　さぁ、この屈辱は姉妹全員の屈辱！@:dwave_jp 0, rg3_3e18:　生かして帰しはしないわよッ！」\
+;＜サタン
+langen:dwave_eng 0, rg3_3e16:^Ça suffit ! ^@:dwave_eng 0, rg3_3e17:^Son humiliation est la nôtre à toutes ! ^@:dwave_eng 0, rg3_3e18:^Il sortira pas d'ici vivant !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg",":b;bmp\background\mainbuilding\mlib_1bn.png",0
+ld l,$RG2_akuwaraiA1,23
+
+advchar "39"
+langjp:dwave_jp 0, rg2_3e33:「さぁて、哀れな家具をどのように遊んでやろうかしら。@:dwave_jp 0, rg2_3e34:素敵な提案はあるぅ？」@
+;＜レヴィア
+langen:dwave_eng 0, rg2_3e33:^Alooors... comment on va jouer avec ce pauvre petit meuble ? ^@:dwave_eng 0, rg2_3e34:^Quelqu'un a une bonne idée ?^@
+
+ld r,$RG6_hohoemiA1,24
+
+advchar "43"
+langjp:dwave_jp 0, rg6_3e12:「はぁい、はい！@:dwave_jp 0, rg6_3e13:　ベルゼはぁ、仲良く七人でぇ、嘉音くんをわけっこしたらいいと思いまーす！」\
+;＜ベルゼ
+langen:dwave_eng 0, rg6_3e12:^Moi, moi ! ^@:dwave_eng 0, rg6_3e13:^Belzééé pense qu'on devrait gentiment se partager Kanon entre nous sept !^\
+
+cl l,24
+ld l,$RG4_hohoemiA1,23
+
+advchar "41"
+langjp:dwave_jp 0, rg4_3e15:「良い提案だな。@:dwave_jp 0, rg4_3e16:……それでなら、姉妹でみんな仲良しだ。」@
+;＜ベルフェ
+langen:dwave_eng 0, rg4_3e15:^Bonne idée. ^@:dwave_eng 0, rg4_3e16:^... Comme ça, aucune de nous ne sera jalouse.^@
+
+
+cl r,23
+ld r,$RG5_AkuwaraiA2,24
+
+advchar "42"
+langjp:dwave_jp 0, rg5_3e13:「なら私、頭部ね！@:dwave_jp 0, rg5_3e14:　手足や内臓はあんたらにあげるわー！」\
+;＜マモン
+langen:dwave_eng 0, rg5_3e13:^Alors moi, je prends la tête ! ^@:dwave_eng 0, rg5_3e14:^Je vous laisse les bras, les jambes et les entrailles !^\
+
+ld c,$RG2_nakuA1,23
+
+advchar "39"
+langjp:dwave_jp 0, rg2_3e35:「やだやだ、駄目ぇえええぇ！！@:dwave_jp 0, rg2_3e36:　私が頭なのぉー！！」@
+;＜レヴィア
+langen:dwave_eng 0, rg2_3e35:^Non, non, nooooon !! ^@:dwave_eng 0, rg2_3e36:^C'est moiiii qui veux la têêête !!^@
+
+cl l,23
+ld l,$RG3_fumanA2,23
+
+advchar "40"
+langjp:dwave_jp 0, rg3_3e19:「そんな約束、意味があるわけないでしょ？！@:dwave_jp 0, rg3_3e20:　早い者勝ちに決まってるわ！」\
+;＜サタン
+langen:dwave_eng 0, rg3_3e19:^Cette promesse ne vaut rien du tout, voyons ?! ^@:dwave_eng 0, rg3_3e20:^Première arrivée, première servie !^\
+
+cl r,23
+ld r,$RG7_AkuwaraiA1,24
+
+advchar "44"
+langjp:dwave_jp 0, rg7_3e17:「くひひひひ！！@:dwave_jp 0, rg7_3e18:　どんな殺され方がいいか、嘉音くんも提案があったら教えてね？@:dwave_jp 0, rg7_3e19:　七姉妹で飛びっきりの殺し方をしてあげる！」\
+;＜アスモ
+langen:dwave_eng 0, rg7_3e17:^Kuhihihihi !! ^@:dwave_eng 0, rg7_3e18:^Kanon, si tu as une préférence pour ta façon de mourir, dis-le-nous, d'accord ? ^@:dwave_eng 0, rg7_3e19:^Les Sept Sœurs vont te préparer une mort vraiment exceptionnelle !^\
+
+me1v 5,50
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",0
+ld c,$KAN_IkariA1,23
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e55:「………………………くそ……。」\
+;＜嘉音
+langen:dwave_eng 0, kan_3e55:^... Merde...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",24
+ld c,$RG1_IkariA1,23
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e114:「……くぅうううぅっ！！/
+sl
+langen:dwave_eng 0, rg1_3e114:^Grrrrrrrrr !! ^@/
+quakey 3,300
+
+langjp:noclear_cw:dwave_jp 0, rg1_3e115:　ここまで恥をかかせたんだものっ！！@:dwave_jp 0, rg1_3e116:　八つ裂きでも足りない！！@:dwave_jp 0, rg1_3e117:　百裂きにしてくれるッ！！@/
+langen:noclear_cw:dwave_eng 0, rg1_3e115:^Après m'avoir humiliée à ce point !! ^@:dwave_eng 0, rg1_3e116:^Vous découper en huit morceaux ne suffirait même pas !! ^@:dwave_eng 0, rg1_3e117:^Je vais vous tailler en cent morceaux !! ^@/
+
+ld c,$RG1_odorokiA1,80
+
+langjp:dwave_jp 0, rg1_3e118:　行くよ、お前たちッ！！」\
+;＜ルシファ
+langen:dwave_eng 0, rg1_3e118:^On y va, les filles !!^\
+
+;se1 52
+;lsp 898,$RG6_HohoemiA1,0,180
+;lsp 899,$RG7_AkuwaraiA1,226,180
+;ld r,$RG4_HohoemiA1,0
+;ld l,$RG5_AkuwaraiA2,0
+;lsp 901,$RG2_AkuwaraiA1,0,-120
+;lsp 902,$RG3_AkuwaraiA2,226,-120
+;print 99,2000,"breakup.dll/urb"
+
+
+;lsp 899,$RG7_hohoemiA1,-160,0
+;lsp 898,$RG6_akuwaraiA1,-64,0
+;lsp 897,$RG5_akuwaraiA2,32,0
+;lsp 896,$RG4_defA1,128,0
+;lsp 895,$RG3_fumanA1,224,0
+;lsp 894,$RG2_hohoemiA1,320,0
+
+lsp_var 113,$RG7_hohoemiA1,-160,0  ;convert to widescreen
+lsp_var 112,$RG6_akuwaraiA1,-32,0  ;convert to widescreen
+lsp_var 111,$RG5_akuwaraiA2,96,0  ;convert to widescreen
+lsp_var 4,$RG4_defA1,224,0  ;convert to widescreen
+lsp_var 3,$RG3_fumanA1,352,0  ;convert to widescreen
+lsp_var 2,$RG2_hohoemiA1,480,0  ;convert to widescreen
+
+ld c,$RG1_odorokiA1,0
+
+se1v 57,100
+se2v 57,100
+print 99,1000,"breakup.dll/llB"
+;wait 1000
+
+se1 37
+wait 500
+se2v 37,100
+wait 200
+se3v 37,100
+se1 37
+wait 500
+se2v 37,100
+wait 200
+se1v 37,100
+se3v 37,100
+
+
+
+
+
+advchar "-1"
+langjp:dwave_jp 0, "voice\99\awase0016.ogg":「「「「「「はぁい、お姉様ぁッ！@:dwave_jp 0, "voice\99\awase0017.ogg":　きゃっはははははははッ！！」」」」」」\
+langen:dwave_eng 0, "voice\99\awase0016.ogg":^Ouuui, grande sœur ! ^@:dwave_eng 0, "voice\99\awase0017.ogg":^Ahahahahahahaha !!^\
+
+csp_var 113
+csp_var 112
+csp_var 111
+csp_var 4
+csp_var 3
+csp_var 2
+csp -1
+se1v 57,100
+se2v 57,100
+cl a,99,1000,"breakup.dll/lrb"
+
+langjp　７人の姿が一斉に爆ぜる。@
+langjp　遊ぶ気も驕る気も何もない。@
+langjp　今度こそ主の命令に純粋に従う。@
+langen^Les sept silhouettes s'élancèrent à l'unisson.^@
+langen^Cette fois, fini de jouer, fini de fanfaronner.^@
+langen^Elles allaient simplement exécuter l'ordre de leur maîtresse.^@
+br
+langjp　…嘉音を討て。迅速に！\
+langen^... Abattez Kanon. Et vite !^\
+
+E_MA
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",0
+btndef ":b;bmp\background\mainbuilding\Mlib_1bN.png"  ;fixed, uses PNG now
+
+resettimer
+se1v 40,100
+blt 0,0,960,540,100,100,160,90  ;convert to widescreen
+print 1
+waittimer 100
+resettimer
+se2v 41,100
+blt 0,0,960,540,200,200,160,90  ;convert to widescreen
+print 1
+waittimer 90
+resettimer
+se3v 42,100
+blt 0,0,960,540,520,0,160,90  ;convert to widescreen
+print 1
+waittimer 80
+resettimer
+se1v 40,100
+blt 0,0,960,540,100,300,160,90 ;convert to widescreen
+print 1
+waittimer 70
+resettimer
+se2v 41,100
+blt 0,0,960,540,0,10,160,90  ;convert to widescreen
+print 1
+waittimer 60
+resettimer
+se3v 42,100
+blt 0,0,960,540,250,1950,160,90  ;convert to widescreen
+print 1
+waittimer 50
+resettimer
+se1v 40,100
+blt 0,0,960,540,500,50,160,90  ;convert to widescreen
+print 1
+waittimer 40
+
+resettimer
+se2v 40,100
+blt 0,0,960,540,200,100,160,90  ;convert to widescreen
+print 1
+waittimer 30
+resettimer
+se3v 41,100
+blt 0,0,960,540,200,200,160,90  ;convert to widescreen
+print 1
+waittimer 50
+resettimer
+se1v 42,100
+blt 0,0,960,540,20,0,160,90  ;convert to widescreen
+print 1
+waittimer 40
+resettimer
+se2v 40,100
+blt 0,0,960,540,100,300,214,120  ;convert to widescreen
+print 1
+waittimer 40
+resettimer
+se3v 41,100
+blt 0,0,960,540,0,120,16,90  ;convert to widescreen
+print 1
+waittimer 40
+resettimer
+se1v 42,100
+blt 0,0,960,540,250,195,160,90  ;convert to widescreen
+print 1
+waittimer 40
+resettimer
+se2v 40,100
+blt 0,0,960,540,90,50,534,300  ;convert to widesceen
+print 1
+waittimer 150
+ofscpy
+btndef ""
+
+;bg blood_1a,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+
+
+
+langjp　七姉妹たちは目にも留まらぬ速度で室内を跳ね回り、嘉音をどう殺そうかと吟味する。@
+langen^Les Sept Sœurs bondissaient à travers la pièce à une vitesse que l'œil pouvait à peine suivre, cherchant comment achever Kanon.^@
+br
+langjp　残酷なくすくす笑いと、ちょっかいを出すように時折かする彼女らが嘉音を苛む。\
+langen^Leurs ricanements cruels et leurs attaques qui ne faisaient encore que l'effleurer n'étaient qu'une manière de le torturer.^\
+
+se1 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2a.jpg",":b;bmp\background\efe\blood_2a.png",1
+wait 800
+se2 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2b.jpg",":b;bmp\background\efe\blood_2b.png",1
+wait 800
+se3 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2c.jpg",":b;bmp\background\efe\blood_2c.png",1
+
+langjp　…腕、肩、頬などが、チリチリとかすられ、削られ、@彼の体は次第に赤い一文字の模様が次々刻まれていく…。\
+langen^... Ses bras, ses épaules et ses joues étaient tour à tour effleurés, entaillés,^@^ et des traits rouges se multipliaient peu à peu sur son corps...^\
+
+;bg Mlib_1bN,22
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+
+langjp　その時、紗音が彼の背中に駆け寄り、その身を少しでも庇おうと抱きついた。\
+langen^À cet instant, Shannon se précipita derrière lui et l'enlaça, couvrant son corps du sien autant qu'elle le pouvait.^\
+
+E_A
+se3v 57,70
+se1v 36,70
+se2v 58,70
+
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",0
+lsp 901,barrier,0,0
+print 42
+
+
+wait 2000
+
+se1v 57,100
+se2v 55,100
+se3v 36,100
+mono off
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg" : mov $oldnew_bg,":b;bmp\background\mainbuilding\mlib_1bn.png" : if %4095 = 0 bg ":b;bmp\background\mainbuilding\mlib_1bn.png",99,3000,"breakup.dll/llB" : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1bn.jpg",99,3000,"breakup.dll/llB"
+
+langjp　それと同時に、天より射した一条の光のような、赤き円筒が二人を包む。@
+langjp　その円筒は、嘉音を苛む邪悪たちを弾き返した…。\
+langen^Au même instant, un cylindre de lumière rouge descendit autour d'eux et les enveloppa.^@
+langen^La barrière repoussa les êtres maléfiques qui tourmentaient Kanon...^\
+
+csp -1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",24
+
+bgm1 45
+
+ld r,$RG2_OdorokiA1,24
+
+advchar "39"
+langjp:dwave_jp 0, rg2_3e39:「何ぃー！！@:dwave_jp 0, rg2_3e40:　ずーるいー！@:dwave_jp 0, rg2_3e41:　あんたは関係ないでしょぉー！」@
+;＜レヴィア
+langen:dwave_eng 0, rg2_3e39:^Quoiii ?!! ^@:dwave_eng 0, rg2_3e40:^C'est pas juuuste ! ^@:dwave_eng 0, rg2_3e41:^Ça ne te regarde paaas !^@
+
+ld l,$RG7_AkuwaraiA1,23
+
+advchar "44"
+langjp:dwave_jp 0, rg7_3e22:「きっとこれはアレよ。@:dwave_jp 0, rg7_3e23:私たちと一緒に遊びたいのよぅ。」@
+;＜アスモ
+langen:dwave_eng 0, rg7_3e22:^Ah, je sais ! ^@:dwave_eng 0, rg7_3e23:^Elle veut jouer avec nous, elle aussi.^@
+
+cl r,23
+ld r,$RG5_hohoemiA1,24
+
+advchar "42"
+langjp:dwave_jp 0, rg5_3e17:「きゃっは！@:dwave_jp 0, rg5_3e18:　なら私がもらうわー！@:dwave_jp 0, rg5_3e19:　いぃただきぃ！！」\
+;＜マモン
+langen:dwave_eng 0, rg5_3e17:^Aha ! ^@:dwave_eng 0, rg5_3e18:^Alors, je la prends ! ^@:dwave_eng 0, rg5_3e19:^Elle est à moiii !!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",0
+ld r,$BEA_DefA2,24
+ld l,$RG1_fumanA1,23
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e119:「ベアトリーチェさまっ。@:dwave_jp 0, rg1_3e120:紗音を私たちの獲物にしても…？」@
+;＜ルシファ
+langen:dwave_eng 0, rg1_3e119:^Béatrice, ^@:dwave_eng 0, rg1_3e120:^on peut prendre Shannon comme proie elle aussi... ?^@
+
+ld r,$BEA_FutekiA2,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e932:「ん？@:dwave_jp 0, bea_3e933:　あー、構わんぞ好きにしろ。@:dwave_jp 0, bea_3e934:お前たちの悪食には嘉音ひとりでは足らなかろうしな。」\
+;＜ベアト
+langen:dwave_eng 0, bea_3e932:^Hm ? ^@:dwave_eng 0, bea_3e933:^Ah, peu m'importe. Faites comme bon vous semble. ^@:dwave_eng 0, bea_3e934:^Kanon seul ne suffirait sans doute pas à satisfaire vos appétits dépravés.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",23
+ld l,$RG4_fumanA2,23
+
+advchar "41"
+langjp:dwave_jp 0, rg4_3e19:「ありがたき幸せ。@/
+langen:dwave_eng 0, rg4_3e19:^Nous vous en sommes infiniment reconnaissantes. ^@/
+ld l,$RG4_akuwaraiA1,80
+langjp:dwave_jp 0, rg4_3e20:さぁ、しゃしゃり出てきたことを後悔させてやろう！」@
+;＜ベルフェ
+langen:dwave_eng 0, rg4_3e20:^Faisons-lui regretter d'être venue se mêler de nos affaires !^@
+
+ld r,$RG6_AkuwaraiA3,24
+
+advchar "43"
+langjp:dwave_jp 0, rg6_3e16:「どっちがどっちか、わからないくらいの肉片にして、@:dwave_jp 0, rg6_3e17:混ぜて混ぜてミンチにしてハンバーグにしてあげるぅ！」\
+;＜ベルゼ
+langen:dwave_eng 0, rg6_3e16:^Je vais vous réduire en morceaux au point qu'on ne saura même plus qui était qui, ^@:dwave_eng 0, rg6_3e17:^puis tout mélanger, tout hacher et faire de vous de beaux steaks !^\
+
+ld c,$RG3_ikariA1,24
+
+advchar "40"
+langjp:dwave_jp 0, rg3_3e23:「馬鹿ね、それよりあの結界を破る方が先でしょうが！@:dwave_jp 0, rg3_3e24:　食い意地より先に仕事しなさいッ！」@
+;＜サタン
+langen:dwave_eng 0, rg3_3e23:^Idiote, on devrait commencer par briser cette barrière ! ^@:dwave_eng 0, rg3_3e24:^Fais ton travail avant de penser à te goinfrer !^@
+
+ld l,$RG4_AkuwaraiA2,0
+ld r,$RG6_AkuwaraiA2,80
+se1v 37,100
+
+advchar "-1"
+langjp:dwave_jp 0, "voice\99\awase0018.ogg":「「「「はぁい、お姉様ぁッ！！」」」」\
+langen:dwave_eng 0, "voice\99\awase0018.ogg":^Ouuui, grande sœur !!^\
+
+textoff
+cl a,0
+se1 52
+print 99,1000,"breakup.dll/lrb"
+;wait 1000
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+lsp 901,barrier,0,0
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",0
+
+;Shannon CG Battle
+;Not going to implement as PC has its own barrier break effects
+;if %is_old_sprites = 1 jumpf
+;	lsp 801,c_c0204_wall,0,0,255
+;	lsp 800,c_c0204_b,0,0,255
+;~
+ld c,$SHA_majimeA3,22
+
+langjp　七姉妹は、ひどく当然の最初の作業として、紗音が生み出した結界を破り始める。@
+langen^Comme si c'était la chose la plus naturelle du monde, les Sept Sœurs commencèrent par s'attaquer à la barrière de Shannon.^@
+br
+langjp　…確かに紗音の結界は非常に強力だ。@
+langjp　ベアトリーチェが、一目置くほどの力はある。@
+langen^... La barrière de Shannon était redoutablement puissante.^@
+langen^Assez pour que Béatrice elle-même reconnaisse sa valeur.^@
+br
+langjp　…脆弱な家具ならば、触れただけで塵にされてしまうほどに強力で、@深々と根を下ろす大樹のように磐石だ。\
+langen^... Elle était assez puissante pour réduire un meuble fragile en poussière au simple contact, ^@^et aussi solide qu'un arbre profondément enraciné.^\
+
+langjp　しかし、どんな大樹も、いつかは斧と鋸に屈する。@
+langjp　七姉妹たちにとって紗音の結界を« 切り倒す »のは、面倒ではあっても不可能なことではないのだ。\
+langen^Mais même un grand arbre finit par tomber sous les coups de hache et de scie.^@
+langen^Pour les Sept Sœurs, « abattre » la barrière de Shannon était pénible, pas impossible.^\
+
+fedexx 100,0,0,0,0,0,2000
+
+mov %Free9,1 ;チャンネル選択
+
+mov %Free11,-150   :mov %Free21,-100
+mov %Free12,-30   :mov %Free22,-50
+mov %Free13,90   :mov %Free23,0
+mov %Free14,210   :mov %Free24,50
+mov %Free15,330   :mov %Free25,100
+mov %Free16,450   :mov %Free26,150
+
+;lsp 950,barrierbrake1,-150,-100
+;lsph 951,barrierbrake1,-30,-50
+;lsph 952,barrierbrake1,90,0
+;lsph 953,barrierbrake1,210,50
+;lsph 954,barrierbrake1,330,100
+;lsph 955,barrierbrake1,450,150
+
+lsp 950,barrierbrake1,%Free11,%Free21
+lsph 951,barrierbrake1,%Free12,%Free22
+lsph 952,barrierbrake1,%Free13,%Free23
+lsph 953,barrierbrake1,%Free14,%Free24
+lsph 954,barrierbrake1,%Free15,%Free25
+lsph 955,barrierbrake1,%Free16,%Free26
+
+mov %Free11,490   :mov %Free21,-100
+mov %Free12,370   :mov %Free22,-50
+mov %Free13,250   :mov %Free23,0
+mov %Free14,130   :mov %Free24,50
+mov %Free15,10   :mov %Free25,100
+mov %Free16,-110   :mov %Free26,150
+
+
+lsph 850,barrierbrake1,%Free11,%Free21
+lsph 851,barrierbrake1,%Free12,%Free22
+lsph 852,barrierbrake1,%Free13,%Free23
+lsph 853,barrierbrake1,%Free14,%Free24
+lsph 854,barrierbrake1,%Free15,%Free25
+lsph 855,barrierbrake1,%Free16,%Free26
+
+;改造点２−１後ろのbrakeを多段表示させる
+
+; print 1
+mov %Free2,848
+mov %Free3,944
+mov %Free4,840
+mov %Free8,100
+mov %Free5,2
+
+for %Free1 = 950 to 970
+
+	resettimer
+
+	if %Free1 < 956 vsp %Free1,1
+	if %Free2 > 849 && %Free2 < 856 vsp %Free2,1
+	if %Free3 > 949 && %Free3 < 956 vsp %Free3,1
+	if %Free4 > 849 && %Free4 < 856 vsp %Free4,1
+
+	if %Free9 = 1 se1v 57,100
+	if %Free9 = 2 se2v 57,100
+	if %Free9 = 3 se3v 57,100 : mov %Free9,0
+
+	print 1
+	vsp %free1,0
+	if %Free2 > 849 vsp %free2,0
+	if %Free3 > 949 vsp %free3,0
+	if %Free4 > 849 vsp %free4,0
+
+	notif %Free5 = 3 jumpf
+		mov %Free5,0
+		lsp 799,white1,0,0
+		print 1
+		csp 799
+	~
+
+	print 10,%Free8
+
+	if %Free4 = 855 break
+
+	sub %Free8,2
+
+	inc %Free9
+	inc %Free2
+	inc %Free3
+	inc %Free4
+	inc %Free5
+	waittimer 190
+next
+
+textoff
+wait 2000
+
+langjp　甲虫が跳ね回って飛び回るような音が、さらに激しくなって部屋を満たす。@
+langen^Le bourdonnement sec, pareil à celui de coléoptères bondissant et volant en tous sens, enfla jusqu'à remplir la pièce.^@
+br
+langjp　赤い結界を斧で鋸で、いや、今やチェーンソーのように切り刻み、侵食していく…。\
+langen^Elles taillaient et rongeaient la barrière rouge comme à la hache, à la scie... non, à présent comme à la tronçonneuse...^\
+
+
+mov %Free9,1 ;チャンネル選択
+
+mov %Free11,-150   :mov %Free21,50
+mov %Free12,-30   :mov %Free22,48
+mov %Free13,90   :mov %Free23,46
+mov %Free14,210   :mov %Free24,46
+mov %Free15,330   :mov %Free25,48
+mov %Free16,450   :mov %Free26,50
+
+lsp 950,barrierbrake1,%Free11,%Free21
+lsph 951,barrierbrake1,%Free12,%Free22
+lsph 952,barrierbrake1,%Free13,%Free23
+lsph 953,barrierbrake1,%Free14,%Free24
+lsph 954,barrierbrake1,%Free15,%Free25
+lsph 955,barrierbrake1,%Free16,%Free26
+
+mov %Free11,490   :mov %Free21,100
+mov %Free12,370   :mov %Free22,50
+mov %Free13,250   :mov %Free23,0
+mov %Free14,130   :mov %Free24,-50
+mov %Free15,10   :mov %Free25,-100
+mov %Free16,-110   :mov %Free26,-150
+
+
+lsph 850,barrierbrake1,%Free11,%Free21
+lsph 851,barrierbrake1,%Free12,%Free22
+lsph 852,barrierbrake1,%Free13,%Free23
+lsph 853,barrierbrake1,%Free14,%Free24
+lsph 854,barrierbrake1,%Free15,%Free25
+lsph 855,barrierbrake1,%Free16,%Free26
+
+
+mov %Free2,848
+mov %Free3,944
+mov %Free4,840
+mov %Free6,936
+mov %Free7,832
+
+mov %Free8,100
+mov %Free5,0
+
+
+ for %Free1 = 950 to 975
+
+ resettimer
+
+ if %Free1 < 956 vsp %Free1,1
+ if %Free2 > 849 && %Free2 < 856 vsp %Free2,1
+ if %Free3 > 949 && %Free3 < 956 vsp %Free3,1
+ if %Free4 > 849 && %Free4 < 856 vsp %Free4,1
+ if %Free6 > 949 && %Free6 < 956 vsp %Free6,1
+ if %Free7 > 849 && %Free7 < 856 vsp %Free7,1
+
+ if %Free9 = 1 se1v 57,100
+ if %Free9 = 2 se2v 57,100
+ if %Free9 = 3 se3v 57,100 : mov %Free9,0
+
+ print 1
+ vsp %free1,0
+ if %Free2 > 849 vsp %free2,0
+ if %Free3 > 949 vsp %free3,0
+ if %Free4 > 849 vsp %free4,0
+ if %Free6 > 949 vsp %free6,0
+ if %Free7 > 849 vsp %free7,0
+
+ notif %Free5 = 2 jumpf
+mov %Free5,0
+lsp 799,white1,0,0
+print 1
+csp 799
+
+~
+
+ print 10,%Free8
+
+if %Free7 = 855 break
+
+ sub %Free8,2
+
+inc %Free9
+inc %Free2
+inc %Free3
+inc %Free4
+inc %Free5
+inc %Free6
+inc %Free7
+
+ waittimer 190
+
+ next
+
+
+;wait 2000
+fedexx 70,0,0,0,0,0,2000
+
+
+;lsp 902,$RON_DefA2,-100,0
+lsp_var 111,$RON_DefA2,-100,0
+print 23
+
+advchar "31"
+langjp:dwave_jp 0, ron_3e299:「…………愚かな。@:dwave_jp 0, ron_3e300:君の結界ではその子たちを防ぎきれないことは知っていたでしょうに。@:dwave_jp 0, ron_3e301:なぜ…。」@
+;＜ロノウェ
+langen:dwave_eng 0, ron_3e299:^... Quelle imprudence. ^@:dwave_eng 0, ron_3e300:^Vous saviez pourtant que votre barrière ne pourrait pas contenir ces enfants jusqu'au bout. ^@:dwave_eng 0, ron_3e301:^Pourquoi... ?^@
+
+ld c,$SHA_ikariA1,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e50:「………見過ごせないからです。」@
+;＜紗音
+langen:dwave_eng 0, sha_3e50:^... Parce que je ne pouvais pas rester sans rien faire.^@
+br
+advchar "-1"
+langjp　紗音は、もう精根が尽き果ててすっかり床に崩れ落ちてしまった嘉音を庇いながら、毅然と言い返す。\
+langen^Tout en protégeant Kanon, qui, à bout de forces, s'était complètement effondré sur le sol, Shannon leur répondit sans trembler.^\
+
+csp_var 112
+;csp 902
+print 24
+;lsp 903,$BEA_AkuwaraiA2,180,0
+lsp_var 112, $BEA_AkuwaraiA2, 330, 0 ;convert to widescreen - fix off-screen sprite
+
+print 24
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e935:「しゃしゃり出なければ、眠るような死を与えてやったのに。@:dwave_jp 0, bea_3e936:なぜわざわざ七姉妹の前に身を晒すのか。@/
+langen:dwave_eng 0, bea_3e935:^Si tu étais restée en dehors de ça, je t'aurais offert une mort aussi douce que le sommeil. ^@:dwave_eng 0, bea_3e936:^Pourquoi donc t'offrir volontairement aux Sept Sœurs ?^@/
+
+;lsp 903,$BEA_AkuwaraiA5,180,0
+lsp_var 112, $BEA_AkuwaraiA5, 330, 0 ;convert to widescreen - fix off-screen sprite
+print 80
+
+langjp:dwave_jp 0, bea_3e937:……死は同じではないぞ？@:dwave_jp 0, bea_3e938:　苛烈な死は、死して尚、苛むぞ？@/
+langen:dwave_eng 0, bea_3e937:^ ... Toutes les morts ne sont pas les mêmes, tu sais ? ^@:dwave_eng 0, bea_3e938:^Une mort atroce peut continuer à te faire souffrir même après ta mort. ^@/
+se1v 37,100
+langjp:dwave_jp 0, bea_3e939:　くっくくくくくくく！」\
+langen:dwave_eng 0, bea_3e939:^Kukukukukuku !^\
+
+ld c,$SHA_fumanA1,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e51:「…………どうぞ、お好きなように。@:dwave_jp 0, sha_3e52:あなたがしたいことを好きにするように、私もしたいことを好きにしたまでです。」\
+;＜紗音
+langen:dwave_eng 0, sha_3e51:^... Faites comme bon vous semble. ^@:dwave_eng 0, sha_3e52:^Vous faites ce que vous voulez. Moi aussi, j'ai simplement fait ce que je voulais.^\
+
+;lsp 903,$BEA_FukigenA1,180,0
+lsp_var 112, $BEA_FukigenA1, 330, 0 ;convert to widescreen - fix off-screen sprite
+print 80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e940:「……………………。@:dwave_jp 0, bea_3e941:……ふぅむ。@:dwave_jp 0, bea_3e942:どうにもそなたはこのところ面白みに欠けるな？@:dwave_jp 0, bea_3e943:　恋というヤツは、達するかどうかの辺りが一番面白い。\
+langen:dwave_eng 0, bea_3e940:^...^@:dwave_eng 0, bea_3e941:^ Hmmm. ^@:dwave_eng 0, bea_3e942:^Décidément, tu es devenue bien ennuyeuse ces derniers temps. ^@:dwave_eng 0, bea_3e943:^En amour, le meilleur moment, c'est encore celui où l'on ne sait pas si ça va aboutir.^\
+
+;lsp 903,$BEA_futekiA2,180,0
+lsp_var 112, $BEA_futekiA2, 330, 0 ;convert to widescreen - fix off-screen sprite
+print 80
+
+langjp:dwave_jp 0, bea_3e944:　達してしまった後の女は、さながら産卵を終えたシャケの如しか？@:dwave_jp 0, bea_3e945:　そなたにはもう飽きた。」\
+langen:dwave_eng 0, bea_3e944:^Une femme qui l'a déjà atteint ne ressemble-t-elle pas à un saumon ayant fini de pondre ? ^@:dwave_eng 0, bea_3e945:^Je me suis déjà lassée de toi.^\
+
+ld c,$SHA_IkariA1,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e53:「ありがとう。@:dwave_jp 0, sha_3e54:魔女から聞ける言葉で、もっとも嬉しい言葉です。」\
+langen:dwave_eng 0, sha_3e53:^Merci... beaucoup. ^@:dwave_eng 0, sha_3e54:^De toutes les paroles qu'une sorcière pouvait m'adresser, aucune ne pouvait me rendre plus heureuse.^\
+
+csp_var 112
+csp -1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",0
+ld r,$BEA_futekiA2,24
+ld r,$BEA_AkuwaraiA2,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e946:「……ふっふふふふひひははは。@:dwave_jp 0, bea_3e947:なら、せめて最後に、妾を思いっきり喜ばせる死に方をして見せろよ。@/
+langen:dwave_eng 0, bea_3e946:^... Hehehehihihahaha. ^@:dwave_eng 0, bea_3e947:^Alors, au moins pour finir, montre-moi une mort qui saura me réjouir pleinement. ^@/
+
+ld r,$BEA_AkuwaraiA3,80
+
+langjp:dwave_jp 0, bea_3e948:七姉妹よ、聞こえたな？！@:dwave_jp 0, bea_3e949:　紗音の殺し方、お前たちの残虐の限りを見せてみよ！！」\
+langen:dwave_eng 0, bea_3e948:^Sept Sœurs, vous avez entendu ?! ^@:dwave_eng 0, bea_3e949:^Pour tuer Shannon, montrez-moi toute l'étendue de votre cruauté !!^\
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+lsp 901,barrier,0,0
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",23
+;lsp 902,$GEN_DefA1,180,0
+lsp_var 111,$GEN_DefA1,240,0  ;convert to widescreen
+print 24
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e51:「……………紗音…。」@
+;＜源次
+langen:dwave_eng 0, gen_3e51:^... Shannon...^@
+
+ld l,$SHA_fumanA1,23
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e55:「……申し訳ございません。@:dwave_jp 0, sha_3e56:やはり私には、源次さまの高みには至れませんでした。」\
+;＜紗音
+langen:dwave_eng 0, sha_3e55:^Je vous demande pardon. ^@:dwave_eng 0, sha_3e56:^Finalement, je n'ai pas réussi à atteindre les hauteurs qui sont les vôtres, Genji.^\
+
+csp_var 111
+;csp 902
+ld r,$KAN_fumanA1,24
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e56:「………姉さんは馬鹿だ…。@:dwave_jp 0, kan_3e57:僕なんか放っておけば、…姉さんまでひどい目に遭うことは…。」@
+;＜嘉音
+langen:dwave_eng 0, kan_3e56:^... Tu es idiote, grande sœur... ^@:dwave_eng 0, kan_3e57:^Si tu m'avais simplement abandonné, grande sœur... tu n'aurais pas eu à subir une fin aussi horrible...^@
+
+ld l,$SHA_majimeA3,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e57:「うぅん、いいの。@:dwave_jp 0, sha_3e58:…譲治さまに指輪をもらって、女として生きられた。@:dwave_jp 0, sha_3e59:あなたを庇って、姉として生きられた。@:dwave_jp 0, sha_3e60:私の生は、全てこれで未練なく全うした。」\
+;＜紗音
+langen:dwave_eng 0, sha_3e57:^Non, tout va bien. ^@:dwave_eng 0, sha_3e58:^... George m'a offert une bague, et j'ai pu vivre en tant que femme. ^@:dwave_eng 0, sha_3e59:^Je t'ai protégé, et j'ai pu vivre en tant que sœur. ^@:dwave_eng 0, sha_3e60:^Ainsi, j'ai pleinement accompli ma vie, sans le moindre regret.^\
+
+cl r,23
+;lsp 902,$BEA_odorokiA1,150,0
+lsp_var 111,$BEA_odorokiA1,200,0  ;convert to widescreen
+
+print 23
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e950:「……んんんんぁあああぁあああぁあぁ、イライラするぜェ。@:dwave_jp 0, bea_3e951:その達観が本当にイラつくぜぇえぇ？！@:dwave_jp 0, bea_3e952:　だから家具なんだよ、お前からは人間の臭いがしねぇえんだよぉおおお！！\
+langen:dwave_eng 0, bea_3e950:^... Nnnngyaaaaaaaaaaahhhh, tu me tapes sur les nerfs. ^@:dwave_eng 0, bea_3e951:^Ce détachement m'exaspère vraiment !! ^@:dwave_eng 0, bea_3e952:^Voilà pourquoi tu n'es qu'un meuble ! Tu ne dégages même pas la moindre odeur d'êêêêtre humain !!^\
+
+;lsp 902,$BEA_AkuwaraiA4,150,0
+lsp_var 111,$BEA_AkuwaraiA4,200,0  ;convert to widescreen
+print 80
+
+langjp:dwave_jp 0, bea_3e953:　妾を見ろよ、妾こそ人間だろぉが？！@:dwave_jp 0, bea_3e954:　家具のくせに、妾よりも完成されたかのような、達観したかのようなことを言うんじゃねええええぇえええぇッ！！」\
+langen:dwave_eng 0, bea_3e953:^Regarde-moi, ~ib~moi~ib~, je suis humaine, non ?! ^@:dwave_eng 0, bea_3e954:^Ne parle pas comme si tu étais plus accomplie que moi, comme si tu avais tout compris, espèce de meuuuuuuuuuuuble !!^\
+
+ld l,$SHA_IkariA1,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e61:「…………醜い。@:dwave_jp 0, sha_3e62:その未練が、あなたの正体なの？」\
+;＜紗音
+langen:dwave_eng 0, sha_3e61:^... Quelle laideur. ^@:dwave_eng 0, sha_3e62:^Cet attachement... est-ce donc là ta véritable nature ?^\
+
+;lsp 902,$BEA_odorokiA1,150,0
+lsp_var 111,$BEA_odorokiA1,200,0  ;convert to widescreen
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e955:「未練じゃねぇえええぇえ、それが生きるってもんだッ！！/
+sl
+langen:dwave_eng 0, bea_3e955:^C'est pas de l'attachemeeeeeent, c'est ça, vivre !! ^@/
+quakey 5,500
+langjp:noclear_cw:dwave_jp 0, bea_3e956:　指輪もらったから死んでもいいとかッ！@:dwave_jp 0, bea_3e957:　あああぁ理解できねぇ、さっぱりがっかり愕然呆然ッ、全然駄目だぜええええぇえ！！」@
+langen:noclear_cw:dwave_eng 0, bea_3e956:^Une bague, et ça y est, tu peux mourir heureuse ?! ^@:dwave_eng 0, bea_3e957:^Aaaaaah, j'comprends rien ! C'est nul, décevant, affligeant, consternant... c'est complètement nuuuuuuuuuul !!^@
+
+;lsp 903,$RON_DefA1,-100,0
+lsp_var 112,$RON_DefA1,-100,0
+
+print 23
+advchar "31"
+langjp:dwave_jp 0, ron_3e302:「……お嬢様、少し品がないかと。」\
+;＜ロノウェ
+langen:dwave_eng 0, ron_3e302:^... Mademoiselle, voilà qui manque quelque peu de tenue.^\
+
+csp_var 112
+;csp 903
+print 24
+;lsp 902,$BEA_aseruA1,100,0
+lsp_var 111,$BEA_aseruA1,134,0  ;convert to widescreen
+
+print 80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e958:「うるさいわ家具がッ！！@/
+langen:dwave_eng 0, bea_3e958:^La ferme, espèce de meuble !! ^@/
+
+;lsp 902,$BEA_AkuwaraiA2,100,0
+lsp_var 111,$BEA_AkuwaraiA2,134,0  ;convert to widescreen
+
+print 80
+
+langjp:dwave_jp 0, bea_3e959:　紗音ぉおおおんん、楽に死なせてもらえると思うなよぉおおおおぉ？！@:dwave_jp 0, bea_3e960:　舌を噛むなら今の内だぁあああッ！！」\
+langen:dwave_eng 0, bea_3e959:^Shannoooooon, ne crois pas que je vais te laisser mourir paisiblemeeeent ?! ^@:dwave_eng 0, bea_3e960:^Si tu veux te mordre la laaaangue, c'est maintenant ou jamais !!^\
+
+ld l,$SHA_MajimeA3,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e63:「…………憐れね。@:dwave_jp 0, sha_3e64:もしも私の眼にあなたのその姿が映って、それが見えるなら。@:dwave_jp 0, sha_3e65:己が醜さに慄くといい。」\
+langen:dwave_eng 0, sha_3e63:^... Tu me fais pitié. ^@:dwave_eng 0, sha_3e64:^Si tu arrives à voir ton reflet dans mes yeux, ^@:dwave_eng 0, sha_3e65:^alors regarde bien ta propre laideur... et tremble.^\
+
+;lsp 902,$BEA_odorokiA1,100,0
+lsp_var 111,$BEA_odorokiA1,134,0 ;convert to widescreen
+
+print 80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e961:「安心しろよ、@:dwave_jp 0, bea_3e962:てめェはそれよりさらに滅茶苦茶グチャグチャに生きながら醜く潰してやるからよぉおおおおおおおッ！！！」\
+langen:dwave_eng 0, bea_3e961:^Rassure-toi,^@:dwave_eng 0, bea_3e962:^ je vais te broyer vivante jusqu'à te rendre encore plus affreuse et méconnaissaaaaable !!!^\
+
+csp_var 111
+;csp 902
+ld r,$GEN_majimeA2,4
+
+advchar "-1"
+langjp　その時、………赤き結界に、源次がすっと入った。@
+langen^À cet instant... Genji entra calmement dans la barrière rouge.^@
+langjp　その結界は敵意を持たない者には障壁とならないのだろうか。@
+langen^La barrière ne semblait pas repousser ceux qui ne nourrissaient aucune hostilité.^@
+br
+langjp　そして源次は、…そっと紗音を後から抱き締め、/
+sl
+langjp^^!d800……右手で彼女の目を覆う。\
+langen^Puis... Genji prit doucement Shannon par-derrière... ^@/
+sl
+langen:!d800^et lui couvrit les yeux de sa main droite.^\
+
+ld l,$SHA_fumanA1,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e66:「…………源次さま…。」@
+langen:dwave_eng 0, sha_3e66:^... Genji...^@
+
+ld r,$GEN_KomaruA1,80
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e52:「もう充分だ…。@:dwave_jp 0, gen_3e53:………先に休みなさい。」@
+langen:dwave_eng 0, gen_3e52:^Tu en as assez fait... ^@:dwave_eng 0, gen_3e53:^Va te reposer la première.^@
+
+ld l,$SHA_WaraiA3,80
+
+advchar "15"
+langjp:dwave_jp 0, sha_3e67:「…………はい。@:dwave_jp 0, sha_3e68:………ありがとうございます、源次さま…。」@
+langen:dwave_eng 0, sha_3e67:^... Oui. ^@:dwave_eng 0, sha_3e68:^... Merci, Genji...^@
+
+ld r,$GEN_defA1,80
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e54:「………うむ。」\
+langen:dwave_eng 0, gen_3e54:^Bien.^\
+
+csp -1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",5
+
+advchar "-1"
+langjp　それから源次は、左手を、彼女の鎖骨の辺りにやさしく押し当てる…。@
+langjp　……すると、その左手を押し当てたところから、/
+sl
+langjp^^!d800……真紅の染みがやさしく広がる。\
+langen^Puis Genji posa doucement sa main gauche contre sa clavicule...^@
+langen^Alors, à l'endroit où sa main reposait... ^@/
+sl
+langen:!d800^une tache écarlate se répandit doucement.^\
+
+fede 0,3000
+
+textoff
+bg white,2
+mono 2
+print 18,3000,"bmp\efe\blood_2a_efe.bmp"
+wait 500
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+mono off
+br
+langjp　源次がその手を離すと、/
+sl
+langjp^^!d500………そこには真っ赤な鮮血が湧き出していた。@
+langen^Quand Genji retira sa main^@/
+sl
+langen:!d500^... du sang frais, d'un rouge éclatant, se mit à en suinter.^@
+langjp　それは最初の一瞬だけ、真紅の薔薇模様にも見えた…。\
+langen^Durant un bref instant seulement, cela sembla dessiner une rose écarlate...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+textoff
+se1 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2a.jpg",":b;bmp\background\efe\blood_2a.png",1
+wait 800
+se1v 35,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2b.jpg",":b;bmp\background\efe\blood_2b.png",1
+wait 800
+se2v 35,60
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2c.jpg",":b;bmp\background\efe\blood_2c.png",1
+wait 800
+se3 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2d.jpg",":b;bmp\background\efe\blood_2d.png",1
+wait 800
+se1 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2e.jpg",":b;bmp\background\efe\blood_2e.png",1
+wait 2000
+
+
+langjp　そして紗音の目を覆っていた右手を離すと、/
+sl
+langjp^^!d800………紗音は眠るような安らかな表情を浮かべていて。@
+langen^Puis, lorsqu'il retira la main droite qui lui couvrait les yeux^@/
+sl
+langen:!d800^... son visage était paisible, comme si elle dormait.^@
+br
+langjp^^!s0　……そして、ふわりと、/
+sl
+langjp^^!d600…音もなく倒れて、/
+sl
+langjp^^!d700………眠った。/
+sl
+langen^^!s0^ ... Puis elle s'affaissa doucement^@/
+sl
+langen:!d600^... sans un bruit^@/
+sl
+langen:!d700^... et s'endormit.^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+bgm1v 57,50
+
+langjp　もう、悪意ある魔女やその家具たちが、どれほどの邪悪で彼女を苛もうとも、@決して届かない世界へ、彼女の魂は送られていた…。\
+langen^Son âme avait déjà rejoint un monde hors de portée de la sorcière malveillante et de ses meubles,^@^ quelles que soient les atrocités qu'ils auraient voulu lui infliger...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1e.jpg",":b;bmp\background\mainbuilding\mlib_1e.png",22
+
+langjp　ベアトリーチェと七姉妹たちはその光景に呆然とする。@
+langen^Béatrice et les Sept Sœurs restèrent interdites devant cette scène.^@
+langjp　…ロノウェだけが笑みの中に神妙なものを浮かべていた。@
+langen^... Seul Ronove laissait percer une gravité inhabituelle derrière son sourire.^@
+br
+langjp　そして源次は床にうずくまる嘉音に屈み込む。\
+langen^Puis Genji se pencha vers Kanon, recroquevillé sur le sol.^\
+
+;lsp 901,barrier,0,0
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",0
+ld r,$GEN_MajimeA2,26
+ld r,$GEN_defA1,80
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e55:「………よく頑張った。@:dwave_jp 0, gen_3e56:お前ももう休むといい。」@
+langen:dwave_eng 0, gen_3e55:^... Tu as bien tenu. ^@:dwave_eng 0, gen_3e56:^Toi aussi, repose-toi maintenant.^@
+
+ld l,$KAN_NayamuA1,23
+
+advchar "16"
+langjp:dwave_jp 0, kan_3e58:「……………………………。@/
+langen:dwave_eng 0, kan_3e58:^...^@/
+
+ld l,$KAN_majimeA1,80
+
+langjp:dwave_jp 0, kan_3e59:…………はい。@:dwave_jp 0, kan_3e60:ありがとうございます、源次さま。」\
+langen:dwave_eng 0, kan_3e59:^ Oui. ^@:dwave_eng 0, kan_3e60:^Merci, Genji.^\
+
+csp -1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",5
+
+advchar "-1"
+langjp　源次は紗音にそうしたように、嘉音の目を手でやさしく覆った後、@もう片方の手で、同じように鎖骨の辺りをやさしく覆う。@
+langen^Comme il l'avait fait pour Shannon, il couvrit doucement les yeux de Kanon d'une main,^@^ puis posa délicatement l'autre près de sa clavicule.^@
+br
+langjp　……そしてその手を、まるで羽を思わせる軽さで取り払うと、/
+sl
+langjp^^!d800…そこには真紅の薔薇模様が。\
+langen^... Et lorsqu'il retira sa main avec la légèreté d'une plume^@/
+sl
+langen:!d800^... une rose écarlate apparut.^\
+
+textoff
+bg white,2
+mono 2
+print 18,2000,"bmp\efe\blood_2a_efe.bmp"
+wait 400
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+mono off
+
+langjp　でもその薔薇模様はすぐに真っ赤な溢れ出す血の染みと化す…。\
+langen^Mais cette rose se transforma bientôt en une tache de sang rouge vif qui ne cessait de s'étendre...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",24
+ld r,$RG1_ikariA1,24
+
+advchar "38"
+langjp:dwave_jp 0, rg1_3e121:「な、/
+sl
+langjp:voicedelay 220:dwave_jp 0, rg1_3e122:^^…………何よ、それぇ……。」@
+;＜ルシファ
+langen:dwave_eng 0, rg1_3e121:^Qu-^@/
+sl
+langen:voicedelay 220:dwave_eng 0, rg1_3e122:^ Qu'est-ce que... c'est que ça... ?^@
+
+ld l,$BEA_fukigenA1,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e963:「……つまらぬヤツ。@:dwave_jp 0, bea_3e964:…生命の風船は、針にて突き、威勢よく割るから面白いのだろうが。」\
+;＜ベアト
+langen:dwave_eng 0, bea_3e963:^... Quel rabat-joie. ^@:dwave_eng 0, bea_3e964:^... Un ballon de vie, c'est justement amusant parce qu'on le crève d'un coup d'aiguille et qu'il éclate avec panache.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1dn.jpg",":b;bmp\background\mainbuilding\mlib_1dn.png",0
+ld r,$RON_waraiA2,24
+ld r,$RON_akuWaraiA1,80
+
+advchar "31"
+langjp:dwave_jp 0, ron_3e303:「見事です、源次。@:dwave_jp 0, ron_3e304:…………それでこそ、家具です。」@
+;＜ロノウェ
+langen:dwave_eng 0, ron_3e303:^Remarquable, Genji. ^@:dwave_eng 0, ron_3e304:^... Voilà un véritable meuble.^@
+
+ld l,$GEN_DefA1,23
+
+advchar "14"
+langjp:dwave_jp 0, gen_3e57:「……ありがとうございます。@/
+langen:dwave_eng 0, gen_3e57:^... Merci.^@/
+
+ld l,$GEN_komaruA1,80
+
+langjp:dwave_jp 0, gen_3e58:…それではベアトリーチェさま、ロノウェさま。@:dwave_jp 0, gen_3e59:これを以って私の最後のお勤めとし、お暇をさせていただきます。」\
+langen:dwave_eng 0, gen_3e58:^ ... Sur ce, Béatrice, Ronove. ^@:dwave_eng 0, gen_3e59:^Que ceci soit mon dernier service. Permettez-moi à présent de prendre congé.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1cn.jpg",":b;bmp\background\mainbuilding\mlib_1cn.png",23
+ld c,$BEA_komaruA1,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e965:「…………ち。@:dwave_jp 0, bea_3e966:妾の楽しみを勝手に奪いおって。@/
+langen:dwave_eng 0, bea_3e965:^... Tss. ^@:dwave_eng 0, bea_3e966:^Tu m'as encore volé mon plaisir sans me demander mon avis. ^@/
+
+ld c,$BEA_AseruA1,80
+
+langjp:dwave_jp 0, bea_3e967:この二人をギッタギタのグッチャグチャにしたかった分、@:dwave_jp 0, bea_3e968:そなたがそれを代わるのであろうなぁ？？」@
+;＜ベアト
+langen:dwave_eng 0, bea_3e967:^Toute la violence que je comptais leur faire subir,^@:dwave_eng 0, bea_3e968:^ tu vas la prendre à leur place, j'imagine ??^@
+br
+advchar "-1"
+langjp　ベアトリーチェは不満の表情を向けるが、@ロノウェは安らぎを感じさせる笑顔で、静かに源次に告げた。\
+langen^Béatrice lui lança un regard franchement contrarié,^@^ mais Ronove parla calmement à Genji, avec son éternel sourire tranquille.^\
+
+ld r,$RON_waraiA2,24
+
+advchar "31"
+langjp:dwave_jp 0, ron_3e305:「ご苦労でした。@:dwave_jp 0, ron_3e306:あなたは私の最高の僕です。@:dwave_jp 0, ron_3e307:……これまでの労をねぎらうに値する安らかな眠りを、あなたへの最後の褒美として取らせましょう。」@
+langen:dwave_eng 0, ron_3e305:^Vous avez bien servi. ^@:dwave_eng 0, ron_3e306:^Vous êtes le meilleur des serviteurs que j'aie eus. ^@:dwave_eng 0, ron_3e307:^... Pour dernière récompense, accordons-vous un sommeil paisible, à la hauteur de tous les efforts que vous avez fournis jusqu'ici.^@
+
+ld c,$BEA_OdorokiA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e969:「ちょっ？！@:dwave_jp 0, bea_3e970:　おいッ勝手な真似を…！」\
+;＜ベアト
+langen:dwave_eng 0, bea_3e969:^Quoi ?! ^@:dwave_eng 0, bea_3e970:^Hé ! Ne décide pas ça tout seul... !^\
+
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+se1 2
+advchar "-1"
+langjp　ロノウェがパチリと指を鳴らすと、@……源次がもしも操り人形だったなら、その糸が切れて崩れ落ちたと錯覚するくらいに、@…あっさりと、だけれどもやさしく。@
+langen^Lorsque Ronove claqua des doigts^@^... Genji s'effondra comme une marionnette dont on venait de couper les fils. ^@^... Simplement, doucement.^@
+br
+langjp　彼は床に、崩れ落ちて、魔女たちには呼び戻せない眠りに落ちた…。\
+langen^Il s'affaissa sur le sol et sombra dans un sommeil dont aucune sorcière ne pourrait jamais le rappeler...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1e.jpg",":b;bmp\background\mainbuilding\mlib_1e.png",22
+se1 13
+quakey 3,500
+
+br
+langjp　それは、彼が紗音たちに与えた眠りと同じくらいに、やさしさに溢れたものであった…。\
+langen^Ce sommeil était empli de la même douceur que celui qu'il avait offert à Shannon et Kanon...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+fede 0,3000
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mlib_1an.jpg",":b;bmp\background\mainbuilding\mlib_1an.png",26
+ld r,$BEA_komaruA1,24
+
+me1v 12,40
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e971:「……何だよォ、ロノウェぇ。@:dwave_jp 0, bea_3e972:……拍子抜けでつまらぬぞ。」@
+langen:dwave_eng 0, bea_3e971:^... C'était quoi, ça, Ronove ? ^@:dwave_eng 0, bea_3e972:^... Tu m'as coupé tout mon plaisir. Quel ennui.^@
+
+ld l,$RON_WaraiA2,23
+
+advchar "31"
+langjp:dwave_jp 0, ron_3e308:「お嬢様は偉大なる大魔女ではございませんか。@:dwave_jp 0, ron_3e309:この程度、気に留めるほどにもございませんよ。@/
+langen:dwave_eng 0, ron_3e308:^Vous êtes pourtant une Grande Sorcière, Mademoiselle. ^@:dwave_eng 0, ron_3e309:^Une broutille pareille ne mérite certainement pas que vous vous en préoccupiez.^@/
+
+ld l,$RON_akuwaraiA1,80
+
+langjp:dwave_jp 0, ron_3e310:　……紗音ごときの挑発で頭に血を上らせるなど、らしくもない。」\
+langen:dwave_eng 0, ron_3e310:^ ... Vous échauffer à ce point pour une simple provocation de Shannon ne vous ressemble pas.^\
+
+ld r,$BEA_AseruA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_3e973:「………………………。@:dwave_jp 0, bea_3e974:…ふん。」\
+langen:dwave_eng 0, bea_3e973:^...^@:dwave_eng 0, bea_3e974:^ Hmph.^\
+
+se1 52
+cl r,99,2000,"breakup.dll/ulb"
+
+advchar "-1"
+langjp　ベアトリーチェは何が気に入らないのだろうか。@
+langjp　…紗音の言葉の棘が、今もなお抜けないというのか。\
+langen^Qu'est-ce qui avait bien pu piquer Béatrice à ce point ?^@
+langen^... Les paroles de Shannon lui étaient-elles restées plantées comme une épine ?^\
+
+ld l,$RON_waraiA2,80
+
+langjp　ロノウェは、人間と女の心の複雑さを嘆くように薄く笑うと、七姉妹たちに行けと命じる。@
+langen^Ronove esquissa un sourire, comme s'il soupirait devant la complexité des humains et du cœur des femmes, puis ordonna aux Sept Sœurs de partir.^@
+br
+langjp　……何しろ、第一の晩の生贄はまだ２人残っているのだから。@
+langen^... Après tout, il restait encore deux sacrifices à offrir pour achever le premier crépuscule.^@
+br
+langjp　七姉妹たちは狂喜して姿を消すのだった…。\
+langen^Les Sept Sœurs disparurent, ivres de joie...^\
+
+textoff
+wait 2000
+
+;▲第６アイキャッチ　１０月５日（日）０時１７分〜０時２１分
+
+eye1 0,17,0,21,1,0,510,340,25
+
+
+
+*umi3_7
+
+mov %play_scene,30060 ;シーン変数の入力
+mov %grim_scene,303
+
+E_A
+;■屋敷。夜の見回りをしている郷田。
+
+me1v 13,50
+me2v 5,50
+
+textoff
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m1f_p1cn.jpg",":b;bmp\background\mainbuilding\m1f_p1cn.png",6
+wait 2000
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",5
+wait 1000
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m1f_p1dn.jpg",":b;bmp\background\mainbuilding\m1f_p1dn.png",0
+ld c,$GOH_majimeA1,4
+
+langjp　郷田は、夜の見回りをしていた。@
+langen^Gohda faisait sa ronde de nuit.^@
+br
+langjp　そもそも、六軒島には右代宮家以外は存在しない。@
+langjp　だから戸締りやその確認には、それほど意味があるわけではない。\
+langen^Après tout, personne ne vivait sur Rokkenjima en dehors de la famille Ushiromiya.^@
+langen^Dans ces conditions, vérifier portes et fenêtres chaque soir n'avait pas vraiment de sens.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+
+langjp　しかし、夏妃がそれを無用心だと咎めて以来、夜回りは使用人たちの日課に組み込まれた。@
+langen^Cependant, depuis que Natsuhi avait reproché aux domestiques leur imprudence, les rondes nocturnes étaient devenues une tâche quotidienne des domestiques.^@
+br
+langjp　……そもそも、夏妃が夜回りを命じたのは、時折起こった、魔女騒動のせいだった。\
+langen^... À l'origine, si Natsuhi avait ordonné ces rondes, c'était justement à cause de ces fameuses histoires de sorcière qui éclataient de temps à autre.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\portrait2.jpg",":b;bmp\background\mainbuilding\portrait2.png",8
+
+langjp　この島に出入りする者なら誰もが知る、森の魔女ベアトリーチェの伝説。@
+langjp　それはこの島独自の怪談として根付いていた。@
+langen^Tous ceux qui travaillaient sur l'île connaissaient l'histoire de Béatrice, la sorcière de la forêt.^@
+langen^À force, elle était devenue la légende de fantômes propre à Rokkenjima.^@
+se1v 27,40
+br
+langjp　だから時折、誰もいないはずの屋敷内に、不気味な音や人影が…、@というような話は、自然と起こったものだった。\
+langen^Il n'était donc pas rare d'entendre parler d'un bruit étrange, ou d'une silhouette aperçue dans le manoir alors qu'il n'était censé y avoir personne...^@^ Le genre d'histoires qui se créaient toutes seules.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",5
+langjp　しかし、それが少々騒ぎを大きくし過ぎて夏妃の耳にも届き、@不審者が出入りしているのではないかと騒がれたのだ。@
+langen^Cependant, ces histoires avaient fini par prendre assez d'ampleur pour arriver aux oreilles de Natsuhi,^@^ qui s'était mise à craindre qu'un intrus ne rôde réellement dans le manoir.^@
+br
+langjp　何でも、使用人全員を叩き起こして、屋敷中を確認させるという大騒ぎもあったという。\
+langen^On racontait même qu'elle avait un jour tiré tous les domestiques du lit pour leur faire fouiller le manoir de fond en comble.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mhal_2cn.jpg",":b;bmp\background\mainbuilding\mhal_2cn.png",4
+
+langjp　これらの魔女騒ぎについては、何れも郷田がやって来る前のことなので、@郷田は古参の使用人たちから聞かされただけだ。@
+langen^Comme toutes ces histoires de sorcière remontaient à une époque antérieure à son arrivée,^@^ Gohda n'en avait entendu parler que par les anciens domestiques.^@
+br
+langjp　この手の怪談はどこの職場にもある。@
+langjp　かつて郷田が勤めていたホテルにだって、レストランにだって、@その手の怪談は事欠かなかったものだ。\
+langen^Après tout, ce genre d'histoire de fantômes existait partout.^@
+langen^Même les hôtels et les restaurants où Gohda avait autrefois travaillé en regorgeaient.^\
+
+langjp　だから、この島でその話を聞かされた時、@あぁここにもやっぱりそういうものがあるんだなと苦笑したものだ。@
+langen^Lorsqu'il avait entendu ces histoires sur l'île,^@^ il avait simplement souri en se disant : « Ah, ils ont donc ce genre de légendes ici aussi. »^@
+br
+langjp　苦笑はするが、それを蔑ろにしないのが、郷に入りては郷に従えというもの。@
+langjp　郷田も上辺は合わせたが、内心は子供だましだと思っていたものだ。@……最初は。\
+langen^En façade, Gohda avait joué le jeu, comme il se devait.^@
+langen^Gohda s'y prêtait en apparence, mais au fond de lui, il n'y voyait qu'une histoire bonne à effrayer les enfants. ^@^... Du moins, au début.^\
+
+ld r,$GOH_IiwakeA1,24
+
+advchar "17"
+langjp:dwave_jp 0, goh_3e13:「…………これは確かに不気味ですね。@:dwave_jp 0, goh_3e14:なるほど、過去の使用人たちが、色々と騒ぎたくなる気持ちもわかるものです。」\
+;＜郷田
+langen:dwave_eng 0, goh_3e13:^... C'est vrai que cet endroit est sinistre. ^@:dwave_eng 0, goh_3e14:^Je comprends mieux pourquoi les anciens domestiques finissaient par s'emballer avec ces histoires.^\
+
+advchar "-1"
+langjp　こんな不気味な夜の夜回りで、@もしも閉め忘れた窓から入るそよ風がレースのカーテンを揺らしたなら、@幽霊を見たと信じたくなる気持ちを充分に理解できた。\
+langen^Au cours d'une ronde par une nuit aussi inquiétante,^@^ il comprenait parfaitement que l'on puisse croire avoir vu un fantôme en apercevant un rideau de dentelle onduler sous la brise d'une fenêtre restée ouverte.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",5
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\portrait2.jpg",":b;bmp\background\mainbuilding\portrait2.png",22
+
+advchar "17"
+langjp:dwave_jp 0, goh_3e15:「肖像画の魔女を馬鹿にすると、祟りがあるか。@:dwave_jp 0, goh_3e16:……大怪我をして辞めた使用人もいるらしいし。@:dwave_jp 0, goh_3e17:…怪我は勘弁だなぁ。@:dwave_jp 0, goh_3e18:俺もこの歳だ。@:dwave_jp 0, goh_3e19:二度とこんな厚遇の職場にゃ恵まれねぇだろうよ…。@:dwave_jp 0, goh_3e20:あー。@:dwave_jp 0, goh_3e21:肖像画の魔女さま。@:dwave_jp 0, goh_3e22:真面目に働きますんで、ひとつ穏便に頼みます。」\
+langen:dwave_eng 0, goh_3e15:^Alors comme ça, se moquer de la sorcière du portrait attirerait sa malédiction... ^@:dwave_eng 0, goh_3e16:^Un domestique aurait même quitté son poste après avoir été grièvement blessé. ^@:dwave_eng 0, goh_3e17:^... Très peu pour moi, les grosses blessures. ^@:dwave_eng 0, goh_3e18:^J'ai passé l'âge de prendre des risques. ^@:dwave_eng 0, goh_3e19:^Je ne retrouverai probablement jamais un emploi avec d'aussi bonnes conditions... ^@:dwave_eng 0, goh_3e20:^Ah. ^@:dwave_eng 0, goh_3e21:^Madame la sorcière du portrait... ^@:dwave_eng 0, goh_3e22:^je fais mon travail sérieusement, alors soyez gentille et laissez-moi tranquille.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mhal_2cn.jpg",":b;bmp\background\mainbuilding\mhal_2cn.png",2
+
+advchar "-1"
+langjp　郷田は神社でそうするように、肖像画に向かって手を合わせて拝む仕草をする…。\
+langen^Comme il l'aurait fait dans un sanctuaire, Gohda joignit les mains et adressa une prière au portrait...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+E_A
+se1v 39,40
+wait 5000
+
+me1v 16,50
+
+langjp　その時、…何か音が聞こえた気がした。@
+langen^À cet instant... il crut entendre quelque chose.^@
+br
+langjp　厨房？@　金物か何かが床に落ちる音だったろうか。\
+langen^La cuisine... ? ^@^On aurait dit quelque chose en métal qui tombait par terre.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m1f_p2bn.jpg",":b;bmp\background\mainbuilding\m1f_p2bn.png",22
+
+langjp　まさかネズミかゴキブリでも出て、食器を落としたのだろうか。@いやいやまさか。@普段から清潔は徹底している！@
+langen^Une souris ? Un cafard qui aurait fait tomber de la vaisselle ? ^@^Non, non, impossible. ^@^Impossible, il veillait toujours à une propreté irréprochable !^@
+br
+langjp　郷田はとにかく音の正体を確かめようと厨房へ入った。\
+langen^Gohda entra tout de même dans la cuisine pour voir d'où venait ce bruit.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+E_A
+se1 15
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mkit_1cn.jpg",":b;bmp\background\mainbuilding\mkit_1cn.png",26
+
+langjp　厨房の明かりをつける。@
+langjp　……すると不思議な音が聞こえた。\
+langen^Il alluma la lumière de la cuisine.^@
+langen^... Alors, il entendit un bruit étrange.^\
+
+langjp　カタカタカタカタカタカタ。@
+langen^Clac clac clac clac clac clac.^@
+br
+langjp　……料理人である郷田は、その音が圧力鍋か何かが蓋を震わせる音のように感じた。\
+langen^... Pour un cuisinier comme Gohda, ce cliquetis ressemblait immédiatement au couvercle d'un autocuiseur qui tremblait.^\
+
+me1 11
+
+langjp　まさか、人のいない厨房で鍋をかけているわけもない。@
+langjp　仮にガスを使っていたとして、その側を離れるなど、何と物騒な。@
+langen^Personne n'aurait laissé quelque chose sur le feu en quittant la cuisine.^@
+langen^Et laisser le gaz allumé sans surveillance aurait été d'une imprudence folle.^@
+br
+langjp　…郷田は念のため、ガス台の回りを点検することにする…。\
+langen^... Par précaution, Gohda décida d'inspecter les alentours de la cuisinière...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",3
+wait 2000
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mkit_1an.jpg",":b;bmp\background\mainbuilding\mkit_1an.png",2
+ld l,$GOH_komaruA1,23
+
+advchar "17"
+langjp:dwave_jp 0, goh_3e23:「……………何ですか、これは…。」\
+langen:dwave_eng 0, goh_3e23:^Qu'est-ce que c'est que ça... ?^\
+
+advchar "-1"
+langjp　すると、ガス台の脇に、/
+sl
+langjp^^!d800…確かに想像の通りに圧力鍋が置かれていた。@
+langen^Alors, à côté de la cuisinière^@/
+sl
+langen:!d800^... un autocuiseur se trouvait bel et bien là, exactement comme il l'avait imaginé.^@
+br
+langjp　しかしそれは火をかけられてはいない。@
+langjp　…にもかかわらず、蓋をカタカタ言わせている…。\
+langen^Pourtant, le feu n'était pas allumé.^@
+langen^... Malgré tout, le couvercle continuait de claquer...^\
+
+ld l,$GOH_KomaruA2,80
+
+langjp　何かが発酵してガスでも出している？@
+langjp　…まさか。@……じゃあネズミでも入ってるとか？@
+langjp　…まさか、馬鹿馬鹿しい…。\
+langen^Quelque chose aurait fermenté à l'intérieur et produit du gaz... ?^@
+langen^... Non, impossible. ^@^... Une souris, peut-être, ou quelque chose du genre ?^@
+langen^... Ridicule. Complètement ridicule...^\
+
+langjp　郷田は、人前では体格どおりの豪胆そうな性格を装っているが、@……実際は、案外臆病な一面も持っていた。@
+langen^Devant les autres, Gohda se donnait des airs d'homme courageux, à la hauteur de sa carrure... ^@^mais il possédait en réalité un côté étonnamment craintif.^@
+br
+langjp　その中に何が入っているのか、恐ろしくて、迂闊に確かめられない…。\
+langen^Rien que d'imaginer ce qui pouvait se cacher à l'intérieur le terrifiait. Impossible de l'ouvrir à la légère...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+langjp　彼は臆病にも、…近くのすりこぎを取り、@それで圧力鍋の側面を、コン！/
+sl
+langjp^^!d800と少し強く叩いてみた。\
+langen^Pris d'un petit accès de panique... il attrapa un pilon en bois à portée de main, ^@^et donna un bon coup sur le flanc de l'autocuiseur. ^@/
+sl
+langen:!d800^Un peu plus fort qu'il ne l'avait prévu.^\
+
+langjp　すると、カタカタ言わせていた音はぴたりと止まる。@
+langen^Aussitôt, le claquement s'interrompit net.^@
+br
+langjp　…止まって安心のはずなのだが、@…叩いたら止めた、という点がかえって不気味で、その中身の正体をさらに疑わせた…。\
+langen^... Il aurait dû être rassuré que le bruit se soit arrêté... ^@^mais justement, qu'il se soit arrêté au moment où il avait frappé rendait le tout encore plus inquiétant. Qu'est-ce qu'il y avait là-dedans... ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mkit_1bn.jpg",":b;bmp\background\mainbuilding\mkit_1bn.png",0
+ld c,$GOH_KomaruA1,23
+
+advchar "17"
+langjp:dwave_jp 0, goh_3e24:「…………ん、…ごくり。@:dwave_jp 0, goh_3e25:………この世に、怪奇現象なんて存在しませんとも。@:dwave_jp 0, goh_3e26:えぇ、そんな魔女も魔法も、そんなもの存在するわけがない。@:dwave_jp 0, goh_3e27:全ての現象は科学的に説明できるんです。@:dwave_jp 0, goh_3e28:……オバケも魔女もいてたまるもんですか…！」\
+langen:dwave_eng 0, goh_3e24:^... Hum... ^@:dwave_eng 0, goh_3e25:^Les phénomènes surnaturels, ça n'existe pas. ^@:dwave_eng 0, goh_3e26:^Oui. Les sorcières, la magie... ce sont des absurdités. ^@:dwave_eng 0, goh_3e27:^Tout phénomène a une explication scientifique. ^@:dwave_eng 0, goh_3e28:^... Les fantômes et les sorcières n'existent pas... !^\
+
+advchar "-1"
+langjp　自分を勇気付けるように何度もそれを繰り返す。@
+langjp　…その言葉の意味するところと逆に見えるのが、何とも滑稽だった。\
+langen^Il se répétait ça surtout pour se donner du courage.^@
+langen^... Ce qui, vu son état, produisait exactement l'effet inverse et le rendait presque comique.^\
+
+ld c,$GOH_IkariA1,80
+
+advchar "17"
+langjp:dwave_jp 0, goh_3e29:「何が魔女だ、何が魔法だ祟りだ…。@:dwave_jp 0, goh_3e30:……そら、/
+sl
+langjp:voicedelay 2160:^^……正体を見せてみろ…！@/
+advchar "17"
+langen:dwave_eng 0, goh_3e29:^Des sorcières, de la magie, des malédictions... n'importe quoi. ^@:dwave_eng 0, goh_3e30:^... Allez^@/
+sl
+langen:voicedelay 2160:^... montre-moi ce que tu es vraiment... ! ^@/
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+E_A
+
+advchar "17"
+langjp:dwave_jp 0, goh_3e31:　っそりゃ！」@
+langen:dwave_eng 0, goh_3e31:^A-Allez !^@
+br
+advchar "-1"
+langjp　圧力鍋の蓋を、……取り払う。\
+langen^... Il retira le couvercle de l'autocuiseur.^\
+
+langjp^^!s0　そこに晒されるのは、/
+sl
+langjp^^!d1000…ピカピカに磨かれた銀色の鍋底。/
+sl
+langen^^!s0^Et ce qui apparut alors... ^@/
+sl
+langen:!d1000^ce fut le fond argenté de la marmite, étincelant de propreté.^@/
+sl
+mov %disable_adv_clear, 1
+langjp!sd@
+langen!sd@
+mov %disable_adv_clear, 0
+
+br
+langjp　……彼が想像した、恐ろしい何かはまったく存在しなかった。\
+langen^ ... Aucune des horreurs qu'il avait imaginées ne se trouvait à l'intérieur.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mkit_1bn.jpg",":b;bmp\background\mainbuilding\mkit_1bn.png",26
+
+me1v 12,50
+
+ld r,$GOH_KomaruA1,26
+
+advchar "17"
+langjp:dwave_jp 0, goh_3e32:「……………ふぅ。@/
+langen:dwave_eng 0, goh_3e32:^... Ouf.^@/
+
+ld r,$GOH_IiwakeA2,80
+

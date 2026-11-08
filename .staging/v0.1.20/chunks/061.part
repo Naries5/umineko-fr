@@ -1,0 +1,5000 @@
+	mov ?bgmm[%3801][bm_t],157000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Surrounding" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],99		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],478000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^death" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],98		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],149000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^hibuta" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],100		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],239000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^m_stampede" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],101		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],296000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Victima_P" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],102		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],192000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Revolt" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],103		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],216000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"煉獄凶狂葬曲" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],104		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],169000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Happy_Maria!" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],105		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],352000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^dive_to_emergency" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],106		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],115000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^dir" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],108		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],568000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^dreamenddischarger" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],107		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],336000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"エンドレスナイン" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],109		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],168000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^discode" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],110		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],106000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"くるり" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+return
+
+;-------------------
+;ＯＰ等は変数にパスを入れる
+	;ファイルへのパスの取得サブルーチン
+	*bgm_mode_path_shutoku
+		add %3802,400
+		mov ?bgmm[%3801][bm_pa],%3802
+		mov %BGM_s_Ch,?bgmm[%3801][bm_c]
+		mov %bgm_mood_file_path_flg,1
+		gosub *BGM_List
+		mov $%3802,$BGM_Play
+	return
+	;-------------------
+;-------------------
+
+
+;***********************************************************************
+;ＢＧＭモード、各曲ごとの処理、表示ルーチン
+;***********************************************************************
+
+*bgm_mode_kururi
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k ;: print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,1
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\kururi1.bmp"
+
+	trap *bgm_mode_renngoku_kururi_1000
+
+	lsp 510,$tmp,0,0
+	print 99,2000,"whirl.dll/l"
+	delay 2000
+	
+	*bgm_mode_renngoku_kururi_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : くるり [About Face]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 1:46^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_discode
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,1
+	if %ran2 = 1 : add $tmp,"bmp\title\bg2.bmp"
+
+	trap *bgm_mode_discode_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 6
+	delay 3000
+	
+	*bgm_mode_discode_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ｄｉｓｃｏｄｅ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : sunny,xaki,cap,pyon,佐倉かなえ [Sakura Kanae]^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Chant : 佐倉かなえ [Sakura Kanae]^",%bgm_x,%bgm_y3
+
+         
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_dreamenddischarger
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,9
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\dreamend1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\dreamend2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\dreamend5.bmp"
+	if %ran2 = 4 : add $tmp,"bgm_mode\ss\dreamend8.bmp"
+	if %ran2 = 5 : add $tmp,"bgm_mode\ss\dreamend9.bmp"
+	if %ran2 = 6 : add $tmp,"bgm_mode\ss\dreamend10.bmp"
+	if %ran2 = 7 : add $tmp,"bgm_mode\ss\dreamend13.bmp"
+	if %ran2 = 8 : add $tmp,"bgm_mode\ss\dreamend14.bmp"
+	if %ran2 = 9 : add $tmp,"bgm_mode\ss\dreamend15.bmp"
+	trap *bgm_mode_dreamenddischarger_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 28
+	delay 2000
+	
+	*bgm_mode_dreamenddischarger_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : dreamenddischarger^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｚｔｓ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 9:28^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_e_nain
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,8
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\e_nain1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\e_nain2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\e_nain3.bmp"
+	if %ran2 = 4 : add $tmp,"bgm_mode\ss\e_nain4.bmp"
+	if %ran2 = 5 : add $tmp,"bgm_mode\ss\e_nain5.bmp"
+	if %ran2 = 6 : add $tmp,"bgm_mode\ss\e_nain6.bmp"
+	if %ran2 = 7 : add $tmp,"bgm_mode\ss\e_nain7.bmp"
+	if %ran2 = 8 : add $tmp,"bgm_mode\ss\e_nain8.bmp"
+
+	trap *bgm_mode_e_nain_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 28
+	delay 2000
+	
+	*bgm_mode_e_nain_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : エンドレスナイン [Endless Nine]",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 5:36^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+*bgm_mode_dir
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,8
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\dir1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\dir2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\dir3.bmp"
+	if %ran2 = 4 : add $tmp,"bgm_mode\ss\dir4.bmp"
+	if %ran2 = 5 : add $tmp,"bgm_mode\ss\dir5.bmp"
+	if %ran2 = 6 : add $tmp,"bgm_mode\ss\dir6.bmp"
+	if %ran2 = 7 : add $tmp,"bgm_mode\ss\dir7.bmp"
+	if %ran2 = 8 : add $tmp,"bgm_mode\ss\dir8.bmp"
+
+	trap *bgm_mode_dir_1000
+
+	lsp 510,r_white,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 22
+	delay 2000
+	
+	*bgm_mode_dir_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : dir^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 1:56^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_dive_to_emergency
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,5
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\dive1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\dive2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\dive3.bmp"
+	if %ran2 = 4 : add $tmp,"bgm_mode\ss\dive4.bmp"
+	if %ran2 = 5 : add $tmp,"bgm_mode\ss\dive5.bmp"
+
+	trap *bgm_mode_dive_to_emergency_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 28
+	delay 2000
+	
+	*bgm_mode_dive_to_emergency_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : dive_to_emergency^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｚｔｓ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 5:52^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_h_maria_uta
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,1
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\h_m_uta.bmp"
+
+	trap *bgm_mode_h_maria_uta_1000
+
+	lsp 510,r_white,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 6
+	delay 3000
+	
+	*bgm_mode_h_maria_uta_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Ｈａｐｐｙ　Ｍａｒｉａ！^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ラック眼力、E.Kida、ナカオボウシ、ますだ麻美",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Chant : 木野寧 [Kino Nei]^",%bgm_x,%bgm_y3
+
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_renngoku_kyousou
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,1
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\kyousou1.bmp"
+
+	trap *bgm_mode_renngoku_kyousou_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 28
+	delay 2000
+	
+	*bgm_mode_renngoku_kyousou_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 煉獄凶狂葬曲^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^         [The Dark and Crazed Requiem of Purgatory]^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Artiste : 北大路瑞希（グラサンねこ） [Kitaouji Mizuki]^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_Revolt
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,3
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\revolt1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\revolt2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\revolt5.bmp"
+
+	trap *bgm_mode_Revolt_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 28
+	delay 2000
+	
+	*bgm_mode_Revolt_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Revolt^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:12^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_Victima
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,7
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\vp1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\vp2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\vp3.bmp"
+;	if %ran2 = 4 : add $tmp,"bgm_mode\ss\vp4.bmp"
+	if %ran2 = 4 : add $tmp,"bgm_mode\ss\vp5.bmp"
+	if %ran2 = 5 : add $tmp,"bgm_mode\ss\vp6.bmp"
+	if %ran2 = 6 : add $tmp,"bgm_mode\ss\vp7.bmp"
+	if %ran2 = 7 : add $tmp,"bgm_mode\ss\vp8.bmp"
+
+	trap *bgm_mode_Victima_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 26
+	delay 2000
+	
+	*bgm_mode_Victima_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Victima_propiciatoria^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ＳＢ　ＹＵＮＥ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 4:56^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_mortal
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,3
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\mortal1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\mortal2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\mortal3.bmp"
+
+	trap *bgm_mode_mortal_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 28
+	delay 2000
+	
+	*bgm_mode_mortal_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : mortal_stampede^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:59^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_hibuta
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,1
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\hibuta1.bmp"
+
+	trap *bgm_mode_hibuta_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 6
+	delay 3000
+	
+	*bgm_mode_hibuta_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : HIBUTA [Launch]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ラック眼力 [Luck Ganriki]^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:29^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_death
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,1
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\death1.bmp"
+	;if %ran2 = 4 : add $tmp,"bgm_mode\ss\death2.bmp"
+	;if %ran2 = 3 : add $tmp,"bgm_mode\ss\death3.bmp"
+
+	trap *bgm_mode_death_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 28
+	delay 3000
+	
+	*bgm_mode_death_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : death(from_stupefaction)^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｚｔｓ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 7:59^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_Surrounding
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,1
+	if %ran2 = 1 : add $tmp,Sky_1a
+
+	trap *bgm_mode_Surrounding_1000
+
+	lsp 510,r_white,0,0 : print 22 : delay 500
+	lsp 510,$tmp,0,0
+	print 8
+	delay 3000
+	
+	*bgm_mode_Surrounding_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Surrounding^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : Ｐｒｅ−ｈｏｌｄｅｒ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:37^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_kuonn
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,2
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\kuon.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\kuon2.bmp"
+
+	trap *bgm_mode_kuonn_1000
+
+	lsp 510,r_black,0,0 : print 22 : delay 500
+	lsp 510,$tmp,0,0
+	print 2
+	delay 3000
+	
+	*bgm_mode_kuonn_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 久遠 [Eternity]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:24^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_over
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,3
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\over1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\over2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\over3.bmp"
+
+	trap *bgm_mode_over_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 28
+	delay 2000
+	
+	*bgm_mode_over_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : over^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:22^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+*bgm_mode_gc19
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,3
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\gc-19_1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\gc-19_2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\gc-19_3.bmp"
+
+	trap *bgm_mode_gc19_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 26
+	delay 2000
+	
+	*bgm_mode_gc19_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Like_the_gale^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : 北大路瑞希（グラサンねこ） [Kitaouji Mizuki]^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:54^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_f1_02
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,2
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\f_style1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\f_style2.bmp"
+
+	trap *bgm_mode_f1_02_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 2
+	delay 3000
+	
+	*bgm_mode_f1_02_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : F Style^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : Ｐｒｅ−ｈｏｌｄｅｒ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:49^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_mclock
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,2
+	if %ran2 = 1 : add $tmp,car_i3a
+	;if %ran2 = 2 : add $tmp,car_i1a
+	if %ran2 = 2 : add $tmp,car_i1a
+
+	trap *bgm_mode_mclock_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 26
+	delay 2000
+	
+	*bgm_mode_mclock_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Monochrome Clock^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : Ｍ．Ｚａｋｋｙ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:00^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_apathy
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,11
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\apathy1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\apathy2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\apathy3.bmp"
+	if %ran2 = 4 : add $tmp,Sakutaro2a
+	if %ran2 = 5 : add $tmp,"bgm_mode\ss\apathy5.bmp"
+	if %ran2 = 6 : add $tmp,Sakutaro2b
+	if %ran2 = 7 : add $tmp,"bgm_mode\ss\apathy7.bmp"
+	if %ran2 = 8 : add $tmp,"bgm_mode\ss\apathy8.bmp"
+	if %ran2 = 9 : add $tmp,"bgm_mode\ss\apathy9.bmp"
+	if %ran2 = 10 : add $tmp,"bgm_mode\ss\apathy10.bmp"
+	if %ran2 = 11 : add $tmp,"bgm_mode\ss\apathy11.bmp"
+
+	trap *bgm_mode_apathy_1000
+
+	lsp 510,r_white,0,0 : print 22 : delay 1500
+	lsp 510,$tmp,0,0
+	print 2
+	delay 3000
+	
+	*bgm_mode_apathy_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : apathy^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｚｔｓ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 4:16^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_forest
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,1
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\forest1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\forest2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\forest3.bmp"
+	if %ran2 = 4 : add $tmp,"bgm_mode\ss\forest4.bmp"
+	trap *bgm_mode_forest_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 2
+	delay 3000
+	
+	*bgm_mode_forest_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 神秘の森 [Mystic Forest]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : Ｒｙｕ−Ｇａ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:45^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_mdoramu
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,6
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\sak1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\sak2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\sak3.bmp"
+	if %ran2 = 4 : add $tmp,"bgm_mode\ss\sak4.bmp"
+	if %ran2 = 5 : add $tmp,Sakutaro2a
+	if %ran2 = 6 : add $tmp,Sakutaro2b
+
+	trap *bgm_mode_mdoramu_1000
+
+	lsp 510,r_white,0,0 : print 22 : delay 300
+	lsp 510,$tmp,0,0
+	print 8
+	delay 3000
+	
+	*bgm_mode_mdoramu_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : さくたろうの頑張り物語 [Sakutarou's Adventure]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 1:56^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_fs2
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,2
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\Parallel1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\Parallel2.bmp"
+
+	trap *bgm_mode_fs2_1000
+
+	lsp 510,r_white,0,0 : print 22 : delay 1500
+	lsp 510,$tmp,0,0
+	print 2
+	delay 3000
+	
+	*bgm_mode_fs2_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Parallel^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : Ｐｒｅ−ｈｏｌｄｅｒ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 4:11^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+*bgm_mode_org_kui
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,6
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\org_kui_1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\org_kui_2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\org_kui_3.bmp"
+	if %ran2 = 4 : add $tmp,"bgm_mode\ss\org_kui_4.bmp"
+	if %ran2 = 5 : add $tmp,"bgm_mode\ss\org_kui_5.bmp"
+	if %ran2 = 6 : add $tmp,"bgm_mode\ss\org_kui_6.bmp"
+
+	trap *bgm_mode_org_kui_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 2
+	delay 3000
+	
+	*bgm_mode_org_kui_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 599_million_ruins^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ラック眼力 [Luck Ganriki]^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 1:32^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_happy_maria
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,5
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\happy_maria1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\happy_maria2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\happy_maria3.bmp"
+	if %ran2 = 4 : add $tmp,"bgm_mode\ss\happy_maria4.bmp"
+	if %ran2 = 5 : add $tmp,"bgm_mode\ss\happy_maria5.bmp"
+
+	trap *bgm_mode_happy_maria_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 28
+	delay 4000
+	
+	*bgm_mode_happy_maria_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Happy_Maria!(Instrumental)^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ラック眼力 [Luck Ganriki]^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:49^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+;胡散の香りに、魔女サイドのランダム立ち絵を入れる（別途サブルーチンを作成）
+;ドミネータに追加
+*bgm_mode_hidamari
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,1
+	if %ran2 = 1 : add $tmp,Sehal_1a
+
+	trap *bgm_mode_hidamari_1000
+
+	lsp 510,r_white,0,0 : print 22
+	lsp 510,$tmp,0,0
+	lsp 509,$WAL_defA1,0,0 : tati_x_get 509,c : amsp 509,%x,0
+	print 8
+	delay 3000
+	
+	*bgm_mode_hidamari_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+	lsp 509,$WAL_defA1,0,0 : tati_x_get 509,c : amsp 509,%x,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ひだまり [In the Sun]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:13^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_org_remake
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	rnd2 %ran2,1,2
+	if %ran2 = 1 : add $tmp,G1F_S1aP
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\org.bmp"
+
+	trap *bgm_mode_org_remake_1000
+
+	notif %ran2 = 1 jumpf
+		lsp 510,r_black,0,0 : print 22
+		lsp 510,$tmp,0,0
+		lsp 509,$BEA_defA1,0,0 : tati_x_get 509,c : amsp 509,%x,0
+		print 26
+		delay 3000
+	~
+	notif %ran2 = 2 jumpf
+		lsp 510,r_black,0,0 : print 22
+		lsp 510,$tmp,0,0
+		print 22
+		delay 3000
+	~
+	
+	*bgm_mode_org_remake_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+	if %ran2 = 1 lsp 509,$BEA_defA1,0,0 : tati_x_get 509,c : amsp 509,%x,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ロウソクたちが踊る [The Candles Dance]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ラック眼力 [Luck Ganriki]^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:22^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_Haruka
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	rnd2 %ran,1,4
+	notif %ran = 1 jumpf
+		mov $tmp,":c;" 
+		rnd2 %ran2,1,1
+		if %ran2 = 1 : add $tmp,G_o1bN
+
+		trap *bgm_mode_Haruka_1000
+
+		lsp 510,r_black,0,0 : print 22
+		lsp 509,$EV2_WaraiA1,0,0 : tati_x_get 509,c : amsp 509,%x,0
+		print 2
+		delay 3000
+	
+		*bgm_mode_Haruka_1000
+		trap off
+
+		lsp 510,r_black,0,0
+		lsp 509,$EV2_WaraiA1,0,0 : tati_x_get 509,c : amsp 509,%x,0
+	~
+
+	notif %ran <> 1 jumpf
+		mov $tmp,":c;" 
+		rnd2 %ran2,1,6
+		if %ran2 = 1 : add $tmp,forest_P2a
+		if %ran2 = 2 : add $tmp,forest_P2b
+		if %ran2 = 3 : add $tmp,Se_o1a
+		if %ran2 = 4 : add $tmp,garden_Se2b
+		if %ran2 = 5 : add $tmp,garden_Se2c
+		if %ran2 = 6 : add $tmp,"bgm_mode\ss\haruka1.bmp"
+
+		trap *bgm_mode_Haruka_2000
+
+		lsp 510,r_white,0,0 : print 22 : delay 1500
+		lsp 510,$tmp,0,0
+		print 2
+		delay 3000
+	
+		*bgm_mode_Haruka_2000
+		trap off
+
+		lsp 510,$tmp,0,0
+	~
+
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Ｈａｒｕｋａ [Distant]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｐｒｅ−ｈｏｌｄｅｒ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:14^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_psy_chorus_mx
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,3
+	if %ran2 = 1 : add $tmp,text010c
+	if %ran2 <> 1 : mov $tmp,":c;bgm_mode\ss\psy.bmp"
+
+	trap *bgm_mode_psy_chorus_mx_1000
+
+	notif %ran2 = 1 jumpf
+		lsp 510,r_black,0,0 : print 22
+		lsp 510,$tmp,0,0
+		print 2
+	~
+	if %ran2 = 1 jumpf
+		lsp 510,r_white,0,0 : print 22 : delay 1500
+		lsp 510,$tmp,0,0
+		print 8
+	~
+	delay 3000
+	
+	*bgm_mode_psy_chorus_mx_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ｐｓｙ−ｃｈｏｒｕｓ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｘａｋｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 7:46^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_far
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,6
+	if %ran2 = 1 : add $tmp,Se_o1a
+	if %ran2 = 2 : add $tmp,garden_Se1a
+	if %ran2 = 3 : add $tmp,garden_Se1c
+	if %ran2 = 4 : add $tmp,garden_Se2a
+	if %ran2 = 5 : add $tmp,garden_Se2b
+	if %ran2 = 6 : add $tmp,garden_Se2c
+
+	rnd2 %ran3,1,7
+	if %ran3 = 1 :mov $tmp2,$BEA_WaraiA1
+	if %ran3 = 2 :mov $tmp2,$BEA_WaraiA2
+	if %ran3 = 3 :mov $tmp2,$BEA_WaraiA3
+	if %ran3 = 4 :mov $tmp2,$BEA_WaraiA4
+	if %ran3 = 5 :mov $tmp2,$BEA_fukigenA2
+	if %ran3 = 6 :mov $tmp2,$BEA_nayamuA1
+	if %ran3 = 7 :mov $tmp2,$BEA_nayamuA2
+
+	trap *bgm_mode_far_1000
+
+	lsp 510,r_white,0,0 : print 22 : delay 1500
+	lsp 510,$tmp,0,0
+	lsp 509,$tmp2,0,0 : tati_x_get 509,r : amsp 509,%x,0
+	print 2
+	delay 3000
+	
+	*bgm_mode_far_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+	lsp 509,$tmp2,0,0 : tati_x_get 509,r : amsp 509,%x,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ｆａｒ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｚｔｓ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:10^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_akaikutu2
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	rnd2 %ran2,1,8
+	if %ran2 = 1 : mov $tmp,":c;BMP\background\efe\Armor7b.bmp"
+	if %ran2 = 2 : mov $tmp,":bc;BMP\background\efe\javelin1.png"
+	if %ran2 = 3 : mov $tmp,":bc;BMP\background\efe\javelin1d.png"
+	if %ran2 = 4 : mov $tmp,":c;BMP\background\efe\tower3.bmp"
+	if %ran2 = 5 : mov $tmp,":c;BMP\background\efe\tower2R.bmp"
+	if %ran2 = 6 : mov $tmp,":c;bgm_mode\ss\akaikutu1.bmp"
+	if %ran2 = 7 : mov $tmp,":c;bgm_mode\ss\akaikutu2.bmp"
+	if %ran2 = 8 : mov $tmp,":c;bgm_mode\ss\akaikutu3.bmp"
+
+	trap *bgm_mode_akaikutu2_1000
+
+	;lsp 510,r_black,0,0 : print 22
+	lsp 510,r_white,0,0 : print 1 : delay 10
+	lsp 510,$tmp,0,0
+	print 28
+	delay 3000
+	
+	*bgm_mode_akaikutu2_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : あかいくつ偽 [Fake Red Shoes]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : −４５^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 4:04^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_mother
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,8
+	if %ran2 = 1 : add $tmp,Se_o1a
+	if %ran2 = 2 : add $tmp,garden_Se1a
+	if %ran2 = 3 : add $tmp,garden_Se1c
+	if %ran2 = 4 : add $tmp,garden_Se2a
+	if %ran2 = 5 : add $tmp,garden_Se2b
+	if %ran2 = 6 : add $tmp,garden_Se2c
+	if %ran2 = 7 : add $tmp,forest_P2a
+	if %ran2 = 8 : add $tmp,forest_P2b
+
+	rnd2 %ran3,1,4
+	if %ran3 = 1 :mov $tmp2,$BEA_WaraiA2
+	if %ran3 = 2 :mov $tmp2,$BEA_WaraiA3
+	if %ran3 = 3 :mov $tmp2,$BEA_fukigenA3
+	if %ran3 = 4 :mov $tmp2,$BEA_nayamuA1
+	if %ran3 = 5 :mov $tmp2,$BEA_komaruA2
+	if %ran3 = 6 :mov $tmp2,$BEA_odorokiA2
+
+	trap *bgm_mode_mother_1000
+
+	lsp 510,r_white,0,0 : print 22 : delay 1500
+	lsp 510,$tmp,0,0
+	lsp 509,$tmp2,0,0 : tati_x_get 509,c : amsp 509,%x,0
+	print 2
+	delay 3000
+	
+	*bgm_mode_mother_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+	lsp 509,$tmp2,0,0 : tati_x_get 509,c : amsp 509,%x,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ｍｏｔｈｅｒ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:17^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_haze
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,2
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\haze1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\haze2.bmp"
+
+	trap *bgm_mode_haze_1000
+
+	lsp 510,r_white,0,0 : print 22 : delay 1500
+	lsp 510,$tmp,0,0
+	print 2
+	delay 3000
+	
+	*bgm_mode_haze_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ｈａｚｅ",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｚｔｓ",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 5:28^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_ennkan
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,11
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\ennkan1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\ennkan2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\ennkan3.bmp"
+	if %ran2 = 4 : add $tmp,"bgm_mode\ss\ennkan4.bmp"
+	if %ran2 = 5 : add $tmp,"bgm_mode\ss\ennkan5.bmp"
+	if %ran2 = 6 : add $tmp,"bgm_mode\ss\ennkan6.bmp"
+	if %ran2 = 7 : add $tmp,"bgm_mode\ss\dread_grave.bmp"
+	if %ran2 = 8 : add $tmp,"bgm_mode\ss\dread2_1.bmp"
+	if %ran2 = 9 : add $tmp,"bgm_mode\ss\dread2_2.bmp"
+	if %ran2 = 10 : add $tmp,"bgm_mode\ss\dread2_3.bmp"
+	if %ran2 = 11 : add $tmp,"bgm_mode\ss\dread2_4.bmp"
+
+	trap *bgm_mode_ennkan_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 28
+	delay 2000
+	
+	*bgm_mode_ennkan_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 踊る煙管 [Dancing Pipe]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 4:05^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_dread_grave2
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,14
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\ennkan1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\ennkan2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\ennkan3.bmp"
+	if %ran2 = 4 : add $tmp,"bgm_mode\ss\ennkan4.bmp"
+	if %ran2 = 5 : add $tmp,"bgm_mode\ss\ennkan5.bmp"
+	if %ran2 = 6 : add $tmp,"bgm_mode\ss\ennkan6.bmp"
+	if %ran2 = 7 : add $tmp,"bgm_mode\ss\dread_grave.bmp"
+	if %ran2 = 8 : add $tmp,"bgm_mode\ss\dread2_1.bmp"
+	if %ran2 = 9 : add $tmp,"bgm_mode\ss\dread2_2.bmp"
+	if %ran2 = 10 : add $tmp,"bgm_mode\ss\dread2_3.bmp"
+	if %ran2 = 11 : add $tmp,"bgm_mode\ss\dread2_4.bmp"
+	if %ran2 = 12 : add $tmp,"bgm_mode\ss\tubasa1.bmp"
+	if %ran2 = 13 : add $tmp,"bgm_mode\ss\tubasa3.bmp"
+	if %ran2 = 14 : add $tmp,"bgm_mode\ss\tubasa5.bmp"
+
+	trap *bgm_mode_dread_grave2_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 28
+	delay 2000
+	
+	*bgm_mode_dread_grave2_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Dread_of_the_grave-More_fear-^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ＳＢ　ＹＵＮＥ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 6:07^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_orugan_2okuban
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,1
+	if %ran2 = 1 : add $tmp,G1F_S1bP
+
+	trap *bgm_mode_orugan_2okuban_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	lsp 509,$BEA_NayamuA2,0,0 : tati_x_get 509,c : amsp 509,%x,0
+	print 6
+	delay 3000
+	
+	*bgm_mode_orugan_2okuban_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+	lsp 509,$BEA_NayamuA2,0,0 : tati_x_get 509,c : amsp 509,%x,0
+
+;      lsp bgm_title_lsp,":s#FFFFFF【Title 】　オルガン小曲　第２億番　ハ短調",%bgm_x,%bgm_y1
+;      lsp bgm_sakka_lsp,":s#FFFFFF【Artist】　ラック眼力",%bgm_x,%bgm_y2
+;      lsp bgm_time_lsp,":s#FFFFFF【Time　】　１：３４",%bgm_x,%bgm_y3
+       lsp bgm_title_lsp,":s#FFFFFF^ Titre : オルガン小曲　第２億番　ハ短調^",%bgm_x,%bgm_y1
+       lsp bgm_sakka_lsp,":s#FFFFFF^          [Organ Short #200 Million in C Minor]^",%bgm_x,%bgm_y2
+       lsp bgm_time_lsp,":s#FFFFFF^ Artiste : ラック眼力 [Luck Ganriki]   Durée : 1:34^",%bgm_x,%bgm_y3
+  
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_rhythm_changer_mx
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,4
+	if %ran2 = 1 : mov $tmp,Glob_1aN
+	if %ran2 = 2 : mov $tmp,Glob_1bN
+	if %ran2 = 3 : mov $tmp,Glob_1cN
+	if %ran2 = 4 : mov $tmp,Glob_1dN
+
+	trap *bgm_mode_rhythm_changer_mx_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 2
+	delay 3000
+	
+	*bgm_mode_rhythm_changer_mx_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : rhythm-changer^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｘａｋｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:53^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_happiness_omake
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,1
+	if %ran2 = 1 : add $tmp,portrait4
+
+	trap *bgm_mode_happiness_omake_1000
+
+	lsp 510,r_white,0,0 : print 2 : delay 1500
+	lsp 510,$tmp,0,0
+	print 6
+	delay 5000
+	
+	*bgm_mode_happiness_omake_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : happiness_of_marionette(short)^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:00^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+*bgm_mode_happiness
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	rnd2 %ran3,1,2
+	notif %ran3 = 1 jumpf
+		mov $tmp,":c;" 
+		rnd2 %ran2,1,1
+		if %ran2 = 1 : add $tmp,Mhal_1b
+
+		trap *bgm_mode_happiness_1000
+
+		lsp 510,r_white,0,0 : print 22 : delay 1500
+		lsp 510,$tmp,0,0
+		lsp 509,butterfly_4sp1,0,0
+		gosub *EV2_isyou2
+		lsp 508,$EV2_WaraiA2,0,0 : tati_x_get 508,c : amsp 508,%x,0
+		;lsp 508,$EV2_HohoemiA1,0,0 : tati_x_get 508,c : amsp 508,%x,0
+		print 8
+		delay 3000
+	
+		*bgm_mode_happiness_1000
+		trap off	
+
+		lsp 510,$tmp,0,0
+		lsp 509,butterfly_4sp1,0,0
+		gosub *EV2_isyou2
+		lsp 508,$EV2_WaraiA2,0,0 : tati_x_get 508,c : amsp 508,%x,0
+		print 8
+		gosub *EV2_isyou1
+	~
+
+	if %ran3 = 1 jumpf
+		mov $tmp,":c;" 
+		rnd2 %ran2,1,18
+		if %ran2 = 1 : add $tmp,"bgm_mode\ss\happ1.bmp"
+		if %ran2 = 2 : add $tmp,"bgm_mode\ss\happ2.bmp"
+		if %ran2 = 3 : add $tmp,"bgm_mode\ss\happ3.bmp"
+		if %ran2 = 4 : add $tmp,"bgm_mode\ss\happ4.bmp"
+		if %ran2 = 5 : add $tmp,"bgm_mode\ss\happ5.bmp"
+		if %ran2 = 6 : add $tmp,"bgm_mode\ss\happ6.bmp"
+		if %ran2 = 7 : add $tmp,"bgm_mode\ss\happ7.bmp"
+		if %ran2 = 8 : add $tmp,"bgm_mode\ss\happ8.bmp"
+		if %ran2 = 9 : add $tmp,"bgm_mode\ss\happ9.bmp"
+		if %ran2 = 10 : add $tmp,"bgm_mode\ss\happ10.bmp"
+		if %ran2 = 11 : add $tmp,"bgm_mode\ss\happ11.bmp"
+		if %ran2 = 12 : add $tmp,"bgm_mode\ss\happ12.bmp"
+		if %ran2 = 13 : add $tmp,"bgm_mode\ss\happ13.bmp"
+		if %ran2 = 14 : add $tmp,"bgm_mode\ss\happ14.bmp"
+		if %ran2 = 15 : add $tmp,"bgm_mode\ss\happ15.bmp"
+		if %ran2 = 16 : add $tmp,"bgm_mode\ss\happ16.bmp"
+		if %ran2 = 17 : add $tmp,"bgm_mode\ss\happ17.bmp"
+		if %ran2 = 18 : add $tmp,"bgm_mode\ss\happ18.bmp"
+
+		trap *bgm_mode_happiness_2000
+
+		lsp 510,r_white,0,0 : print 22 : delay 1000
+		lsp 510,$tmp,0,0
+		print 8
+		delay 2000
+
+		*bgm_mode_happiness_2000
+
+		trap off	
+		lsp 510,$tmp,0,0
+	~
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : happiness_of_marionette^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:19^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_tuki_usagi
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	rnd2 %ran3,1,10
+	notif %ran3 <= 2 goto *bgm_mode_tuki_usagi_100
+		mov $tmp,":c;" 
+		rnd2 %ran2,1,5
+		if %ran2 = 1 : add $tmp,"bgm_mode\ss\usagi1.bmp"
+		if %ran2 = 2 : add $tmp,"bgm_mode\ss\usagi2.bmp"
+		if %ran2 = 3 : add $tmp,"bgm_mode\ss\usagi3.bmp"
+		if %ran2 = 4 : add $tmp,"bgm_mode\ss\usagi4.bmp"
+		if %ran2 = 5 : add $tmp,"bgm_mode\ss\usagi5.bmp"
+
+		trap *bgm_mode_tuki_usagi_1000
+
+		lsp 510,r_black,0,0 : print 22
+		lsp 510,$tmp,0,0
+		print 26
+		delay 2000
+	
+		*bgm_mode_tuki_usagi_1000
+		trap off	
+
+		lsp 510,$tmp,0,0
+	*bgm_mode_tuki_usagi_100
+
+	notif %ran3 >= 3 goto *bgm_mode_tuki_usagi_200
+		gosub *bgm_mode_rnd_siesuta ;立ち絵のランダム配置
+		mov $tmp,":c;" 
+		rnd2 %ran2,1,6
+		if %ran2 = 1 : add $tmp,system5
+		if %ran2 = 2 : add $tmp,homing6
+		if %ran2 = 3 : add $tmp,moon_1a
+		if %ran2 = 4 : add $tmp,Mhal_1aN
+		if %ran2 = 5 : add $tmp,sky_3a
+		if %ran2 = 6 : add $tmp,butterfly_3a
+
+		trap *bgm_mode_tuki_usagi_2000
+		lsp 510,r_black,0,0 : print 22
+		lsp 510,$tmp,0,0
+		lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+		lsp 508,$tmp2,0,0 : tati_x_get 508,c : amsp 508,%x,0
+		lsp 507,$tmp3,0,0 : tati_x_get 507,r : amsp 507,%x,0
+		print 26
+		delay 3000
+
+		*bgm_mode_tuki_usagi_2000
+		trap off	
+
+		lsp 510,$tmp,0,0
+		lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+		lsp 508,$tmp2,0,0 : tati_x_get 508,c : amsp 508,%x,0
+		lsp 507,$tmp3,0,0 : tati_x_get 507,r : amsp 507,%x,0
+	*bgm_mode_tuki_usagi_200
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 月うさぎの舞踏 [Dance of the Moon Rabbits]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:34^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_melting_away
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,2
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\melting1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\melting2.bmp"
+
+	trap *bgm_mode_melting_away_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 6
+	delay 3000
+	
+	*bgm_mode_melting_away_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Melting_away^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:01^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_soul_of_soul
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,3
+	if %ran2 = 1 : add $tmp,butterfly_2a
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\soul_of_soul2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\soul_of_soul3.bmp"
+
+	trap *bgm_mode_soul_of_soul_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 2
+	delay 3000
+	
+	*bgm_mode_soul_of_soul_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : soul_of_soul^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:10^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_miragecoordinator
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,5
+	if %ran2 <= 4 : add $tmp,"bgm_mode\ss\mira.bmp"
+	if %ran2 = 5 : add $tmp,"bgm_mode\ss\mira2.bmp"
+
+	trap *bgm_mode_miragecoordinator_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 28
+	delay 3000
+	
+	*bgm_mode_miragecoordinator_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : miragecoordinator^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｚｔｓ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 7:15^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_prison
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,1
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\prison1.bmp"
+	trap *bgm_mode_prison_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 26
+	delay 3000
+	
+	*bgm_mode_prison_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ｐｒｉｓｏｎ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:56^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+*bgm_mode_umare
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,4
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\umare1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\umare2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\umare3.bmp"
+	if %ran2 = 4 : add $tmp,"bgm_mode\ss\umare4.bmp"
+
+	trap *bgm_mode_umare_1000
+
+	lsp 510,r_white,0,0 : print 22 : delay 1000
+	lsp 510,$tmp,0,0
+	print 8
+	delay 3000
+	
+	*bgm_mode_umare_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+
+;      lsp bgm_title_lsp,":s#FFFFFF^ Title: 生まれてきてくれてありがとう [Thanks for Being Born]^",%bgm_x,%bgm_y1
+;      lsp bgm_sakka_lsp,":s#FFFFFF^ Artist: ｄａｉ^",%bgm_x,%bgm_y2
+;      lsp bgm_time_lsp,":s#FFFFFF^ Time: 3:10^",%bgm_x,%bgm_y3
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 生まれてきてくれてありがとう^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^         [Thanks for Being Born]^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Artiste : ｄａｉ    Durée : 3:10^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+*bgm_mode_tubasa
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,7
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\tubasa1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\tubasa2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\tubasa3.bmp"
+	if %ran2 = 4 : add $tmp,"bgm_mode\ss\tubasa4.bmp"
+	if %ran2 = 5 : add $tmp,"bgm_mode\ss\tubasa5.bmp"
+	if %ran2 = 6 : add $tmp,"bgm_mode\ss\tubasa6.bmp"
+	if %ran2 = 7 : add $tmp,"bgm_mode\ss\tubasa7.bmp"
+
+	trap *bgm_mode_tubasa_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 28
+	delay 2500
+	
+	*bgm_mode_tubasa_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 翼 [Wings]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:42^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+*bgm_mode_siturakuenn
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,9
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\tubasa1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\tubasa2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\tubasa3.bmp"
+	if %ran2 = 4 : add $tmp,"bgm_mode\ss\tubasa4.bmp"
+	if %ran2 = 5 : add $tmp,"bgm_mode\ss\tubasa5.bmp"
+	if %ran2 = 6 : add $tmp,"bgm_mode\ss\tubasa6.bmp"
+	if %ran2 = 7 : add $tmp,"bgm_mode\ss\tubasa7.bmp"
+	if %ran2 = 8 : add $tmp,"bgm_mode\ss\situ1.bmp"
+	if %ran2 = 9 : add $tmp,"bgm_mode\ss\situ2.bmp"
+
+	trap *bgm_mode_siturakuenn_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 26
+	delay 2000
+	
+	*bgm_mode_siturakuenn_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 失楽園 [Lost Paradise]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 4:00^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+*bgm_mode_wingless
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,2
+	if %ran2 = 1 : mov $tmp,cit_2a
+	if %ran2 = 2 : mov $tmp,cit_2b
+
+	trap *bgm_mode_wingless_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 6
+	delay 2000
+	
+	*bgm_mode_wingless_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ｗｉｎｇｌｅｓｓ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｚｔｓ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:41^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+*bgm_mode_activepain
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,1
+	if %ran2 = 1 : mov $tmp,cit_2a
+
+	trap *bgm_mode_activepain_1000
+
+	lsp 510,r_white,0,0 : print 1 : delay 200
+	lsp 510,$tmp,0,0
+	print 28
+	delay 3000
+	
+	*bgm_mode_activepain_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ａｃｔｉｖｅｐａｉｎ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｓｕｎｎｙ、ｘａｋｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Chant : 本木咲黒 [Motoki Zakuro]^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_Dread_grave_rhythm
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,2
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\d_g_r1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\d_g_r2.bmp"
+
+	trap *bgm_mode_Dread_grave_rhythm_1000
+
+	lsp 510,r_white,0,0 : print 22 : wait 100
+	lsp 510,$tmp,0,0
+	print 28
+	delay 2000
+	
+	*bgm_mode_Dread_grave_rhythm_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Dread_of_the_grave-rhythm_ver-^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ＳＢ　ＹＵＮＥ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:46^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+;------------------------
+;EP3追加分
+*bgm_mode_me_tokei
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	rnd2 %ran2,1,4
+	if %ran2 = 1 : add $tmp,Mhal_1aN
+	if %ran2 = 2 : add $tmp,Mhal_2aN
+	if %ran2 = 3 : add $tmp,Mhal_2bN
+	if %ran2 = 4 : add $tmp,Mhal_2cN
+
+	;ランダムに鳴らす時計の種類を変更する。
+	rnd2 %ran3,1,3
+	if %ran3 = 1 : meplay2 1,11,70 : mov ?bgmm[%bm_p][bm_t],36000
+	if %ran3 = 2 : meplay2 1,15,70 : mov ?bgmm[%bm_p][bm_t],42000
+	if %ran3 = 3 : meplay2 1,19,70 : mov ?bgmm[%bm_p][bm_t],36000
+
+	trap *bgm_mode_me_tokei_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 22
+
+	delay 5000
+
+	*bgm_mode_me_tokei_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Ｍｅ：時計 [Clock]^",%bgm_x,%bgm_y1
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+;------------------------
+
+
+
+;------------------------
+   ;オープニングの演奏（ムービーなのでここだけ特殊処理、ムービーの流れている間は操作不可）
+   *bgm_mode_op
+	mono 0
+	E_A
+	lsp 0,":c;bmp\r_click\black.bmp",0,0
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+      ;通常演奏で、リピートがオンになっている時のみ、一曲リピート
+	if %bm_m = 10 mov %bm_m,0
+	notif %bm_m = 0 goto *bgm_mode_op_sk
+	notif %bm_rpi = 1 goto *bgm_mode_op_sk
+		;movie "movie\umineko_op.mpg",click,loop
+		mpegplay "movie\umineko_op.mpg",1
+		gosub *bgm_mode_k
+		gosub *bgm_mode_h2
+		fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+		mov %BtnRes,bgm_btn_stop
+		goto *bgm_mode_100
+	*bgm_mode_op_sk
+	
+      ;ランダム演奏時の設定、演奏曲にチェック、演奏数をプラス１
+      if %bm_m = 2 mov ?bgmm[%bm_p][bm_r],1 : inc %bm_rnd_kazu
+      
+	;movie "movie\umineko_op.mpg",click
+	mpegplay "movie\umineko_op.mpg",1
+	
+	mov %bm_pt,0
+
+	gosub *bgm_mode_k
+	gosub *bgm_mode_h2
+
+	if %bgm_mood_demo = 1 lsp 0,":c;bmp\r_click\black.bmp",0,0
+
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+	delay 1500
+	mov %bgm_mood_tyokuzenn_op_fede_skip,0
+
+   gettimer %3801:sub %bm_pt,%3801;曲の残り時間を入力
+   goto *bgm_mode_btn_lp   
+
+;------------------------
+   ;オープニングの演奏（ムービーなのでここだけ特殊処理、ムービーの流れている間は操作不可）
+   *bgm_mode_op2
+	mono 0
+	E_A
+	lsp 0,":c;bmp\r_click\black.bmp",0,0
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+      ;通常演奏で、リピートがオンになっている時、一曲リピート
+	if %bm_m = 10 mov %bm_m,0
+	notif %bm_m = 0 goto *bgm_mode_op2_sk
+	notif %bm_rpi = 1 goto *bgm_mode_op2_sk
+		;movie "movie\umineko_op2.avi",click,loop
+		mpegplay "movie\umineko_op2.mpg",1
+		gosub *bgm_mode_k
+		gosub *bgm_mode_h2
+		fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+		mov %BtnRes,bgm_btn_stop
+		goto *bgm_mode_100
+	*bgm_mode_op2_sk
+
+
+      ;ランダム演奏時の設定、演奏曲にチェック、演奏数をプラス１
+      if %bm_m = 2 mov ?bgmm[%bm_p][bm_r],1 : inc %bm_rnd_kazu
+      
+      ;movie "movie\umineko_op2.avi",click
+      mpegplay "movie\umineko_op2.mpg",1
+	
+	mov %bm_pt,0
+	
+	gosub *bgm_mode_k
+	gosub *bgm_mode_h2
+	if %bgm_mood_demo = 1 lsp 0,":c;bmp\r_click\black.bmp",0,0
+      fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+      delay 1500
+	mov %bgm_mood_tyokuzenn_op_fede_skip,0
+
+   gettimer %3801:sub %bm_pt,%3801;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+;------------------------
+   ;オープニングの演奏（ムービーなのでここだけ特殊処理、ムービーの流れている間は操作不可）
+   *bgm_mode_op3
+	mono 0
+	E_A
+	lsp 0,":c;bmp\r_click\black.bmp",0,0
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+      ;通常演奏で、リピートがオンになっている時、一曲リピート
+	if %bm_m = 10 mov %bm_m,0
+	notif %bm_m = 0 goto *bgm_mode_op3_sk
+	notif %bm_rpi = 1 goto *bgm_mode_op3_sk
+		;movie "movie\umineko_op3.mpg",click,loop
+		mpegplay "movie\umineko_op3.mpg",1
+		gosub *bgm_mode_k
+		gosub *bgm_mode_h2
+		fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+		mov %BtnRes,bgm_btn_stop
+		goto *bgm_mode_100
+	*bgm_mode_op3_sk
+
+      ;ランダム演奏時の設定、演奏曲にチェック、演奏数をプラス１
+      if %bm_m = 2 mov ?bgmm[%bm_p][bm_r],1 : inc %bm_rnd_kazu
+      
+      ;movie "movie\umineko_op3.mpg",click
+      mpegplay "movie\umineko_op3.mpg",1
+	
+	mov %bm_pt,0
+	
+	gosub *bgm_mode_k
+	gosub *bgm_mode_h2
+	if %bgm_mood_demo = 1 lsp 0,":c;bmp\r_click\black.bmp",0,0
+      fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+      delay 1500
+	mov %bgm_mood_tyokuzenn_op_fede_skip,0
+
+   gettimer %3801:sub %bm_pt,%3801;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+;------------------------
+
+*bgm_mode_sample_u3
+	
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" : add $tmp,mlib_1cN
+	trap *bgm_sample_u3_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	lsp 509,$nan_fumuA1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+	lsp 508,$kin_waraiA2,0,0: tati_x_get 508,r : amsp 508,%x,0
+	print 6
+	delay 3000
+		
+	*bgm_sample_u3_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+	lsp 509,$nan_fumuA1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+	lsp 508,$kin_waraiA2,0,0 : tati_x_get 508,r : amsp 508,%x,0
+
+	lsp bgm_title_lsp,":s#FFFFFF^ Titre : 透百合 [Sukashiyuri]^",%bgm_x,%bgm_y1
+	lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : スミイ酸 [Sumiisan]^",%bgm_x,%bgm_y2
+	lsp bgm_time_lsp,":s#FFFFFF^ Durée : 4:49^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp   
+
+;------------------------
+
+*bgm_mode_natunotobira
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	gosub *bgm_mode_rnd_tati1 ;立ち絵のランダム配置
+	gosub *bgm_mode_rnd_bg1   ;背景をランダムで配置
+	
+	trap *bgm_mode_natunotobira_1000
+	lsp 510,r_white,0,0 : print 28
+	lsp 510,$tmp,0,0
+	lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+	lsp 508,$tmp2,0,0 : tati_x_get 508,c : amsp 508,%x,0
+	lsp 507,$tmp3,0,0 : tati_x_get 507,r : amsp 507,%x,0
+	print 6
+	delay 3000
+
+	*bgm_mode_natunotobira_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+	lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+	lsp 508,$tmp2,0,0 : tati_x_get 508,c : amsp 508,%x,0
+	lsp 507,$tmp3,0,0 : tati_x_get 507,r : amsp 507,%x,0
+
+	lsp bgm_title_lsp,":s#FFFFFF^ Titre : 夏の扉 [Doorway of Summer]^",%bgm_x,%bgm_y1
+	lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+	lsp bgm_time_lsp,":s#FFFFFF^ Durée : 1:57^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_hane
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	rnd2 %ran,1,3
+	
+	notif %ran > 1 jumpf
+		mov $tmp,":c;" : add $tmp,beach_2b
+		trap *bgm_mode_hane_1000
+
+		lsp 510,r_white,0,0 : print 22
+		lsp 510,$tmp,0,0 : print 26
+		delay 2000
+		
+		*bgm_mode_hane_1000
+		trap off
+
+		lsp 510,$tmp,0,0
+	~
+
+	notif %ran = 1 jumpf
+		mov $tmp,":c;" : add $tmp,sea_1A
+		trap *bgm_mode_hane_2000
+
+		;何回かに1回は船のシーンを完全再現
+		lsp 510,r_white,0,0 : print 22
+		lsp 510,$tmp,0,0 : print 22
+	
+		meplay2 2,3,100
+		for %tmp = 1 to 8 : quakey 3,500 : next
+		lsp 509,$but_odorokiA2,0,0 : tati_x_get 509,c : amsp 509,%x,0
+		print 26
+		setwindow 40,385,30,3,100,100,0,2,20,1,1,#ffffff,0,0,610,495 ;utmeta-nomodify
+;		lsp 508,":s#FF0000ら、らめぇ〜〜〜落ちるぅうぅうぅ！！",640,50
+		lsp 508,":s#FF0000^S-Stop iii-t, I'll faaaaaaallll!!^",640,50
+		for %tmp = 1 to 70
+			msp 508,-40,0 : print 1
+			wait 100
+		next
+		delay 2000
+		
+		*bgm_mode_hane_2000
+		trap off
+	
+		lsp 509,$but_odorokiA2,0,0 : tati_x_get 509,c : amsp 509,%x,0
+		lsp 510,$tmp,0,0
+		setwindow 40,385,30,3,22,22,0,2,20,1,1,#ffffff,0,0,610,495 ;utmeta-nomodify
+	~
+
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ＨＡＮＥ [Feathers]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 1:34^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_ride_on
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	rnd2 %ran2,1,2
+	notif %ran2 = 1 goto *bgm_mode_ride_on_2000
+		trap *bgm_mode_ride_on_1000
+		mov %free1,8000
+		lsp 510,r_black,0,0 : print 24
+		mov $tmp,":c;" : add $tmp,OP0101 : lsp 510,$tmp,0,0 : print 2
+		delay %free1
+		delay 2000
+		lsp 510,r_white,0,0 : print 24
+		mov $tmp,":c;" : add $tmp,OP0102 : lsp 510,$tmp,0,0 : print 2
+		delay %free1
+		lsp 510,r_white,0,0 : print 24
+		mov $tmp,":c;" : add $tmp,OP0103 : lsp 510,$tmp,0,0 : print 2
+		delay %free1
+		lsp 510,r_white,0,0 : print 24
+		mov $tmp,":c;" : add $tmp,OP0104 : lsp 510,$tmp,0,0 : print 2
+		delay %free1
+		lsp 510,r_white,0,0 : print 24
+		mov $tmp,":c;" : add $tmp,OP0105 : lsp 510,$tmp,0,0 : print 2
+		delay %free1
+		lsp 510,r_white,0,0 : print 24
+		mov $tmp,":c;" : add $tmp,OP0106 : lsp 510,$tmp,0,0 : print 2
+		delay %free1
+		lsp 510,r_white,0,0 : print 24
+		mov $tmp,":c;" : add $tmp,OP0107 : lsp 510,$tmp,0,0 : print 2
+		delay %free1
+		lsp 510,r_white,0,0 : print 24
+		mov $tmp,OP0108 : lsp 510,$tmp,0,0 : print 2
+		delay 3000
+		bg white,2
+		
+		*bgm_mode_ride_on_1000
+		trap off	
+
+		mov $tmp,OP0108 : lsp 510,$tmp,0,0
+	*bgm_mode_ride_on_2000
+
+
+	notif %ran2 = 2 goto *bgm_mode_ride_on_4000
+		trap *bgm_mode_ride_on_3000
+		mov %free1,8000
+		lsp 510,r_black,0,0 : print 24
+		mov $tmp,":c;" : add $tmp,OP0201 : lsp 510,$tmp,0,0 : print 2
+		delay %free1
+		delay 2000
+		lsp 510,r_white,0,0 : print 24
+		mov $tmp,":c;" : add $tmp,OP0202 : lsp 510,$tmp,0,0 : print 2
+		delay %free1
+		lsp 510,r_white,0,0 : print 24
+		mov $tmp,":c;" : add $tmp,OP0203 : lsp 510,$tmp,0,0 : print 2
+		delay %free1
+		lsp 510,r_white,0,0 : print 24
+		mov $tmp,":c;" : add $tmp,OP0204 : lsp 510,$tmp,0,0 : print 2
+		delay %free1
+		lsp 510,r_white,0,0 : print 24
+		mov $tmp,":c;" : add $tmp,OP0205 : lsp 510,$tmp,0,0 : print 2
+		delay %free1
+		lsp 510,r_white,0,0 : print 24
+		mov $tmp,":c;" : add $tmp,OP0206 : lsp 510,$tmp,0,0 : print 2
+		delay %free1
+		lsp 510,r_white,0,0 : print 24
+		mov $tmp,":c;" : add $tmp,OP0207 : lsp 510,$tmp,0,0 : print 2
+		delay %free1
+		lsp 510,r_white,0,0 : print 24
+		mov $tmp,":c;" : add $tmp,OP0208 : lsp 510,$tmp,0,0 : print 2
+		delay 3000
+		bg white,2
+		
+		*bgm_mode_ride_on_3000
+		trap off	
+
+		mov $tmp,":c;" : add $tmp,OP0208 : lsp 510,$tmp,0,0
+	*bgm_mode_ride_on_4000
+
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Ｒｉｄｅ　ｏｎ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:07^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+	delay 6000
+      fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_sea
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	gosub *bgm_mode_rnd_tati1 ;立ち絵のランダム配置
+	gosub *bgm_mode_rnd_bg1   ;背景をランダムで配置
+
+	trap *bgm_mode_sea_1000
+
+	lsp 510,r_white,0,0 : print 28
+	lsp 510,$tmp,0,0
+	lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+	lsp 508,$tmp2,0,0 : tati_x_get 508,c : amsp 508,%x,0
+	lsp 507,$tmp3,0,0 : tati_x_get 507,r : amsp 507,%x,0
+	print 6
+	delay 3000
+	
+	*bgm_mode_sea_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+	lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+	lsp 508,$tmp2,0,0 : tati_x_get 508,c : amsp 508,%x,0
+	lsp 507,$tmp3,0,0 : tati_x_get 507,r : amsp 507,%x,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ｓｅａ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 0:45^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_kurayaminotoki
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,12
+	if %ran2 = 1 : add $tmp,G_o1bN
+	if %ran2 = 2 : add $tmp,G_o1cN
+	if %ran2 = 3 : add $tmp,M_o1aN
+	if %ran2 = 4 : add $tmp,M_o1bN
+	if %ran2 = 5 : add $tmp,Mdin_1fN
+	if %ran2 = 6 : add $tmp,M2F_P1bN
+	if %ran2 = 7 : add $tmp,M1F_P1bN
+	if %ran2 = 8 : add $tmp,Mhal_2cN
+	if %ran2 = 9 : add $tmp,garden_1cN
+	if %ran2 = 10 : add $tmp,garden_1aN
+	if %ran2 = 11 : add $tmp,garden_1bN
+	if %ran2 = 12 : add $tmp,M_door2
+
+	trap *bgm_mode_kurayaminotoki_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 6
+	delay 3000
+	
+	*bgm_mode_kurayaminotoki_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 暗闇の刻 [Hour of Darkness]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｐｒｅ−ｈｏｌｄｅｒ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 1:16^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_q_Sample17
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+
+	gosub *bgm_mode_rnd_bg_mhal ;メインホールの背景をランダムで選択する。
+
+	trap *bgm_mode_q_Sample17_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 6
+	delay 5000
+		
+	*bgm_mode_q_Sample17_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Ｎｏｖｅｌｅｔｔｅ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : スミイ酸 [Sumiisan]",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 5:32^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_hope
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	;バラ園の背景をランダムで
+	rnd2 %ran,1,5
+		if %ran = 1 add $tmp,rose_1a
+		if %ran = 2 add $tmp,rose_1b
+		if %ran = 3 add $tmp,rose_G1d
+		if %ran = 4 add $tmp,beach_2a
+		if %ran = 5 add $tmp,Sky_1a
+		
+	trap *bgm_mode_hope_1000
+
+	lsp 510,r_white,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 6
+	delay 4000
+		
+	*bgm_mode_hope_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ｈｏｐｅ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:59^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_siroikage
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" : add $tmp,rose_G1b
+
+	trap *bgm_mode_siroikage_1000
+
+	lsp 510,r_white,0,0 : print 22
+	lsp 510,$tmp,0,0
+	lsp 509,$kan_defA1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+	print 6
+	delay 4000
+		
+	*bgm_mode_siroikage_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+	lsp 509,$kan_defA1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 白い影 [White Shadow]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 1:23^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_u_Sample21
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	gosub *bgm_mode_rnd_bg_mhal ;背景をランダムで表示（メインホール）
+
+	~
+		rnd2 %ran,NAT_DefA1,NAT_TukareB2
+	if %ran = nat_hisuA1 jumpb
+	if %ran = nat_hisuB1 jumpb
+	if %ran = nat_majimeA1 jumpb
+	if %ran = nat_majimeB1 jumpb
+	if %ran = nat_odorokiA2 jumpb
+	if %ran = nat_odorokiB2 jumpb
+	if %ran = nat_odorokiA1 jumpb
+	if %ran = nat_odorokiB1 jumpb
+	if %ran = nat_ikariA1 jumpb
+	if %ran = nat_ikariB1 jumpb
+		mov $tmp1,$%ran
+
+	trap *bgm_mode_u_Sample21_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	lsp 509,$tmp1,0,0 : tati_x_get 509,c : amsp 509,%x,0
+	print 6
+	delay 7000
+		
+	*bgm_mode_u_Sample21_1000
+	trap off	
+
+	lsp 509,$tmp1,0,0 : tati_x_get 509,c : amsp 509,%x,0
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : てくてく [Steady Pace]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : スミイ酸 [Sumiisan]^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 4:20^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_towering
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	;５回に一回、朱志香と紗音のレアバージョン
+	rnd2 %ran,1,5
+;mov %ran,3
+	notif %ran > 3 jumpf
+		mov $tmp,":c;" : add $tmp,Sky_2a
+
+		trap *bgm_mode_towering_1000
+
+		lsp 510,r_white,0,0 : print 22
+		lsp 510,$tmp,0,0
+		print 28
+		delay 4000
+		
+		*bgm_mode_towering_1000
+		trap off	
+
+		lsp 510,$tmp,0,0
+	~
+
+	notif %ran = 1 jumpf
+		mov $tmp,":c;" : add $tmp,Sky_1a
+
+		trap *bgm_mode_towering_2000
+
+		lsp 510,r_white,0,0 : print 22
+		lsp 510,$tmp,0,0
+		print 28
+
+		;紗音を中央に、朱志香を右画面外から、左へ抜けさせる、紗音ビックリ!!!
+		lsp 509,$sha_tokuiA1,0,0 : tati_x_get 509,c : amsp 509,%x,0 : print 26
+		lsp 508,$jes_waraiA2,640,0
+		setwindow 40,385,30,3,100,100,0,2,20,1,1,#ffffff,0,0,610,495 ;utmeta-nomodify
+		;lsp 507,":s#FFFFFFほええーん☆",640,50
+
+		for %tmp = 1 to 140
+			;msp 507,-10,0
+			if %tmp <= 10 msp 508,-10,10
+			if %tmp > 10 && %tmp <= 20 msp 508,-10,-10
+			if %tmp > 20 && %tmp <= 30 msp 508,-10,10
+			if %tmp > 30 && %tmp <= 40 msp 508,-10,-10
+			if %tmp > 40 && %tmp <= 50 msp 508,-10,10
+			if %tmp > 50 && %tmp <= 60 msp 508,-10,-10
+			if %tmp > 60 && %tmp <= 70 msp 508,-10,10
+			if %tmp > 70 && %tmp <= 80 msp 508,-10,-10
+			if %tmp > 80 && %tmp <= 90 msp 508,-10,10
+			if %tmp > 90 && %tmp <= 100 msp 508,-10,-10
+			if %tmp > 100 && %tmp <= 110 msp 508,-10,-10
+			if %tmp > 110 && %tmp <= 120 msp 508,-10,-10
+			if %tmp > 120 && %tmp <= 130 msp 508,-10,-10
+			if %tmp > 130 && %tmp <= 140 msp 508,-10,-10
+			if %tmp = 20 lsp 509,$sha_odorokiA2,0,0 : tati_x_get 509,c : amsp 509,%x,0
+			print 1
+			delay 100
+		next
+
+		delay 1000
+		
+		*bgm_mode_towering_2000
+		trap off	
+
+		lsp 510,$tmp,0,0
+		lsp 509,$sha_odorokiA2,0,0 : tati_x_get 509,c : amsp 509,%x,0
+		setwindow 40,385,30,3,22,22,0,2,20,1,1,#ffffff,0,0,610,495 ;utmeta-nomodify
+		mov %bgm_mood_sha_hoe_flg,1
+	~
+
+
+	notif %ran = 2 jumpf
+		mov $tmp,":c;" : add $tmp,Sky_1a
+
+		trap *bgm_mode_towering_3000
+
+		lsp 510,r_white,0,0 : print 22
+		lsp 510,$tmp,0,0
+		print 28
+
+		;紗音を中央に、譲冶を右画面外から、左へ抜けさせる、紗音ビックリ!!!
+		lsp 509,$sha_defA1,0,0 : tati_x_get 509,c : amsp 509,%x,0 : print 26
+		lsp 508,$geo_waraiA2k,640,0
+		setwindow 40,385,30,3,100,100,0,2,20,1,1,#ffffff,0,0,610,495 ;utmeta-nomodify
+		;lsp 507,":s#FFFFFFほええーん☆",640,50
+
+		for %tmp = 1 to 140
+			;msp 507,-10,0
+			if %tmp <= 10 msp 508,-10,10
+			if %tmp > 10 && %tmp <= 20 msp 508,-10,-10
+			if %tmp > 20 && %tmp <= 30 msp 508,-10,10
+			if %tmp > 30 && %tmp <= 40 msp 508,-10,-10
+			if %tmp > 40 && %tmp <= 50 msp 508,-10,10
+			if %tmp > 50 && %tmp <= 60 msp 508,-10,-10
+			if %tmp > 60 && %tmp <= 70 msp 508,-10,10
+			if %tmp > 70 && %tmp <= 80 msp 508,-10,-10
+			if %tmp > 80 && %tmp <= 90 msp 508,-10,10
+			if %tmp > 90 && %tmp <= 100 msp 508,-10,-10
+			if %tmp > 100 && %tmp <= 110 msp 508,-10,-10
+			if %tmp > 110 && %tmp <= 120 msp 508,-10,-10
+			if %tmp > 120 && %tmp <= 130 msp 508,-10,-10
+			if %tmp > 130 && %tmp <= 140 msp 508,-10,-10
+			if %tmp = 20 lsp 509,$sha_odorokiA2,0,0 : tati_x_get 509,c : amsp 509,%x,0
+			print 1
+			delay 100
+		next
+
+		delay 1000
+		
+		*bgm_mode_towering_3000
+		trap off	
+
+		lsp 510,$tmp,0,0
+		lsp 509,$sha_odorokiA2,0,0 : tati_x_get 509,c : amsp 509,%x,0
+		setwindow 40,385,30,3,22,22,0,2,20,1,1,#ffffff,0,0,610,495 ;utmeta-nomodify
+		mov %bgm_mood_sha_hoe_flg,1
+	~
+
+	notif %ran = 3 jumpf
+		mov $tmp,":c;" : add $tmp,Sky_1a
+
+		trap *bgm_mode_towering_4000
+
+		lsp 510,r_white,0,0 : print 22
+		lsp 510,$tmp,0,0
+		print 28
+		
+		if %bgm_mood_sha_hoe_flg = 0 goto *bgm_mode_towering_4000
+
+		;紗音を中央に、譲冶を右画面外から、左へ抜けさせる、紗音ビックリ!!!
+		lsp 508,$sha_odorokiA2,0,0 : tati_x_get 508,r : amsp 508,%x,0 : print 26
+		setwindow 40,385,30,3,100,100,0,2,20,1,1,#ffffff,0,0,610,495 ;utmeta-nomodify
+		lsp 507,":s#FFFFFF・・・・・・・・・",240,50 print 22
+		delay 1000
+		lsp 508,$sha_hajiraiA2,0,0 : tati_x_get 508,r : amsp 508,%x,0 : print 22
+		lsp 507,":s#FFFFFFほ、ほえぇー☆",200,50 print 22
+
+		for %tmp = 1 to 110
+			msp 507,-10,0
+			if %tmp <= 10 msp 508,-10,10
+			if %tmp > 10 && %tmp <= 20 msp 508,-10,-10
+			if %tmp > 20 && %tmp <= 30 msp 508,-10,10
+			if %tmp > 30 && %tmp <= 40 msp 508,-10,-10
+			if %tmp > 40 && %tmp <= 50 msp 508,-10,10
+			if %tmp > 50 && %tmp <= 60 msp 508,-10,-10
+			if %tmp > 60 && %tmp <= 70 msp 508,-10,10
+			if %tmp > 70 && %tmp <= 80 msp 508,-10,-10
+			if %tmp > 80 && %tmp <= 90 msp 508,-10,10
+			if %tmp > 90 && %tmp <= 100 msp 508,-10,-10
+			if %tmp > 100 && %tmp <= 110 msp 508,-10,-10
+
+			print 1
+			delay 100
+		next
+		
+		*bgm_mode_towering_4000
+		trap off	
+
+		lsp 510,$tmp,0,0
+		csp 507
+		setwindow 40,385,30,3,22,22,0,2,20,1,1,#ffffff,0,0,610,495 ;utmeta-nomodify
+	~
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Towering_cloud_in_summer^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 1:48^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_t_Sample20
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	gosub *bgm_mode_rnd_bg_mhal ;背景をランダムで表示（メインホール）
+	
+	rnd2 %ran,SHA_DefA1,SHA_OdorokiA2
+	mov $tmp1,$%ran
+
+
+	trap *bgm_mode_t_Sample20_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	lsp 509,$tmp1,0,0 : tati_x_get 509,c : amsp 509,%x,0
+	print 2
+	delay 5000
+		
+	*bgm_mode_t_Sample20_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+	lsp 509,$tmp1,0,0 : tati_x_get 509,c : amsp 509,%x,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 月夜 [Moonlit Night]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : スミイ酸 [Sumiisan]^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:26^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_sample_u4
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	rnd2 %ran2,1,4
+
+	notif %ran2 > 1 jumpf
+		gosub *bgm_mode_rnd_tati_siyounin ;立ち絵のランダム配置
+		gosub *bgm_mode_rnd_bg_mhal ;背景をランダムで表示（メインホール）
+
+		trap *bgm_mode_sample_u4_1000
+	
+		lsp 510,r_white,0,0 : print 22
+		lsp 510,$tmp,0,0
+		lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+		lsp 508,$tmp2,0,0 : tati_x_get 508,c : amsp 508,%x,0
+		lsp 507,$tmp3,0,0 : tati_x_get 507,r : amsp 507,%x,0
+		print 6
+		delay 3000
+		
+		*bgm_mode_sample_u4_1000
+		trap off	
+		
+		lsp 510,$tmp,0,0
+		lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+		lsp 508,$tmp2,0,0 : tati_x_get 508,c : amsp 508,%x,0
+		lsp 507,$tmp3,0,0 : tati_x_get 507,r : amsp 507,%x,0
+	~
+
+	notif %ran2 = 1 jumpf
+		mov $tmp,":c;" : add $tmp,Mlib_1d
+
+		trap *bgm_mode_sample_u4_2000
+
+		lsp 510,r_black,0,0 : print 22
+		lsp 510,$tmp,0,0
+		lsp 509,$kin_fumuA1,0,0 : tati_x_get 509,c : amsp 509,%x,0
+		print 6
+		delay 4000
+		
+		*bgm_mode_sample_u4_2000
+		trap off	
+
+		lsp 510,$tmp,0,0
+		lsp 509,$kin_fumuA1,0,0 : tati_x_get 509,c : amsp 509,%x,0
+	~
+
+
+      	lsp bgm_title_lsp,":s#FFFFFF^ Titre : 薔薇 [Rose]^",%bgm_x,%bgm_y1
+      	lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : スミイ酸 [Sumiisan]^",%bgm_x,%bgm_y2
+      	lsp bgm_time_lsp,":s#FFFFFF^ Durée : 8:41^",%bgm_x,%bgm_y3
+     
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_rinnsi
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	rnd2 %ran,1,2
+	notif %ran = 1 jumpf
+		trap *bgm_mode_rinnsi_1000
+
+		lsp 510,":c;bmp\background\mainbuilding\portrait1.bmp",0,-825
+		for %Free1 = 1 to 412
+			msp 510,0,2
+			print 1
+			wait 30
+		next
+		delay 6000
+		
+		*bgm_mode_rinnsi_1000
+		trap off	
+
+		lsp 510,":c;bmp\background\mainbuilding\portrait1.bmp",0,-1
+	~
+
+	notif %ran = 2 jumpf
+		gosub *bgm_mode_rnd_tati_4kyoudai
+		mov $tmp,":c;" : add $tmp,M1F_S1b
+
+		trap *bgm_mode_rinnsi_2000
+
+		lsp 510,r_black,0,0 : print 22
+		lsp 510,$tmp,0,0
+		lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+		lsp 508,$tmp2,0,0 : tati_x_get 508,c : amsp 508,%x,0
+		lsp 507,$tmp3,0,0 : tati_x_get 507,r : amsp 507,%x,0
+		print 2
+		delay 3000
+
+		*bgm_mode_rinnsi_2000
+		trap off
+
+		lsp 510,$tmp,0,0
+		lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+		lsp 508,$tmp2,0,0 : tati_x_get 508,c : amsp 508,%x,0
+		lsp 507,$tmp3,0,0 : tati_x_get 507,r : amsp 507,%x,0
+
+	~
+
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 隣死 [At Death's Door]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : プレコ [Pureco]^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:13^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_rennsakairou
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+
+	rnd2 %ran,1,6
+	if %ran = 1 add $tmp,M1F_P1dN
+	if %ran = 2 add $tmp,M2F_P1aN
+	if %ran = 3 add $tmp,M2F_P1bN
+	if %ran = 4 add $tmp,Ment_1aN
+	if %ran = 5 add $tmp,Mhal_2cN
+	if %ran = 6 add $tmp,portrait2
+
+	trap *bgm_mode_rennsakairou_1000
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 6
+	delay 3000
+
+	*bgm_mode_rennsakairou_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+	lsp bgm_title_lsp,":s#FFFFFF^ Titre : 煉沙回廊 [Corridor of Purgatory's Sands]^",%bgm_x,%bgm_y1
+	lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : プレコ [Pureco]^",%bgm_x,%bgm_y2
+	lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:00^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_fortitude
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	gosub *bgm_mode_rnd_bg_mhal2   ;背景をランダムで配置
+	rnd2 %ran2,1,4
+	if %ran2 = 1 mov $tmp,":c;" : add $tmp,rose_1b
+
+	trap *bgm_mode_fortitude_1000
+	lsp 510,r_black,0,0 : print 28
+	lsp 510,$tmp,0,0
+	print 6
+	delay 3000
+
+	*bgm_mode_fortitude_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+	lsp bgm_title_lsp,":s#FFFFFF^ Titre : Ｆｏｒｔｉｔｕｄｅ^",%bgm_x,%bgm_y1
+	lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : 荒井英理也 [Arai Eriya]^",%bgm_x,%bgm_y2
+	lsp bgm_time_lsp,":s#FFFFFF^ Durée : 5:05^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_witch_cenba
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	;gosub *bgm_mode_rnd_bg_soto_n   ;建物外背景をランダムで配置
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,8
+	if %ran2 = 1 : add $tmp,G_o1bN
+	if %ran2 = 2 : add $tmp,G_o1cN
+	if %ran2 = 3 : add $tmp,M_o1aN
+	if %ran2 = 4 : add $tmp,M_o1bN
+	if %ran2 = 5 : add $tmp,Mlib_1cN
+	if %ran2 = 6 : add $tmp,Mlib_1aN
+	if %ran2 = 7 : add $tmp,Mlib_1bN
+	if %ran2 = 8 : add $tmp,Mlib_1dN
+
+	
+	;外の背景は、雨を降らせる。
+	notif %ran2 <= 4 jumpf
+		meplay2 1,12,70
+		lsp 509,"*0",0,0
+		layermessage 0,"i|bmp\efe\rain1.bmp,bmp\efe\rain2.bmp,bmp\efe\rain3.bmp"
+		layermessage 0,"s|1,30,-9,0,0"
+	~
+
+	trap *bgm_mode_witch_cenba_1000
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 22
+
+	delay 5000
+
+	*bgm_mode_witch_cenba_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+	lsp bgm_title_lsp,":s#FFFFFF^ Titre : witch_in_gold(cembalo)^",%bgm_x,%bgm_y1
+	lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｚｔｓ^",%bgm_x,%bgm_y2
+	lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:41^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_sasoi
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	;gosub *bgm_mode_rnd_bg_soto_n   ;建物外背景をランダムで配置
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,8
+	if %ran2 = 1 : add $tmp,G_o1bN
+	if %ran2 = 2 : add $tmp,G_o1cN
+	if %ran2 = 3 : add $tmp,M_o1aN
+	if %ran2 = 4 : add $tmp,M_o1bN
+	if %ran2 = 5 : add $tmp,Mdin_1fN
+	if %ran2 = 6 : add $tmp,M2F_P1bN
+	if %ran2 = 7 : add $tmp,M1F_P1bN
+	if %ran2 = 8 : add $tmp,Mhal_2cN
+
+	
+	;外の背景は、雨を降らせ、風も入れる
+	notif %ran2 <= 4 jumpf
+		meplay2 1,12,70
+		meplay2 2,5,70
+		lsp 509,"*0",0,0
+		layermessage 0,"i|bmp\efe\rain1.bmp,bmp\efe\rain2.bmp,bmp\efe\rain3.bmp"
+		layermessage 0,"s|1,30,-9,0,0"
+	~
+
+	trap *bgm_mode_sasoi_1000
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 22
+
+	delay 5000
+
+	*bgm_mode_sasoi_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+	lsp bgm_title_lsp,":s#FFFFFF^ Titre : 誘い [Lure]^",%bgm_x,%bgm_y1
+	lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｐｒｅ−ｈｏｌｄｅｒ^",%bgm_x,%bgm_y2
+	lsp bgm_time_lsp,":s#FFFFFF^ Durée : 1:39^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_yomiage
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	rnd2 %ran3,1,2
+	notif %ran3 = 1 goto *bgm_mode_yomiage_100
+		gosub *bgm_mode_rnd_yomiage ;立ち絵のランダム配置
+		mov $tmp,":c;" 
+		rnd2 %ran2,1,3
+		if %ran2 = 1 : add $tmp,Mdin_1dN
+		if %ran2 = 2 : add $tmp,Mdin_1eN
+		if %ran2 = 3 : add $tmp,Mdin_1fN
+	*bgm_mode_yomiage_100
+
+	notif %ran3 = 2 goto *bgm_mode_yomiage_200
+		gosub *bgm_mode_rnd_yomiage2 ;立ち絵のランダム配置
+		mov $tmp,":c;" 
+		rnd2 %ran2,1,4
+		if %ran2 = 1 : add $tmp,Different_spiral_1a
+		if %ran2 = 2 : add $tmp,G1F_S1aP
+		if %ran2 = 3 : add $tmp,G1F_S1bP
+		if %ran2 = 4 : add $tmp,G1F_S1cP
+	*bgm_mode_yomiage_200
+
+	trap *bgm_mode_yomiage_1000
+	lsp 510,r_white,0,0 : print 22
+	lsp 510,$tmp,0,0
+	lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+	lsp 508,$tmp2,0,0 : tati_x_get 508,c : amsp 508,%x,0
+	lsp 507,$tmp3,0,0 : tati_x_get 507,r : amsp 507,%x,0
+	print 26
+	delay 4000
+
+	*bgm_mode_yomiage_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+	lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+	lsp 508,$tmp2,0,0 : tati_x_get 508,c : amsp 508,%x,0
+	lsp 507,$tmp3,0,0 : tati_x_get 507,r : amsp 507,%x,0
+
+	lsp bgm_title_lsp,":s#FFFFFF^ Titre : 胡散の香り [Fishy Aroma]^",%bgm_x,%bgm_y1
+	lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ラック眼力 [Luck Ganriki]^",%bgm_x,%bgm_y2
+	lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:13^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_stupefaction
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+
+	rnd2 %ran,1,3
+	if %ran = 1 add $tmp,M1F_P1dN
+	if %ran = 2 add $tmp,M2F_P1aN
+	if %ran = 3 add $tmp,M1F_P1aN
+
+	;3は嵐の音を入れる。
+	if %ran = 3 meplay2 1,13,40
+
+	trap *bgm_mode_stupefaction_1000
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 6
+	delay 3000
+
+	*bgm_mode_stupefaction_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+	lsp bgm_title_lsp,":s#FFFFFF^ Titre : ｓｔｕｐｅｆａｃｔｉｏｎ^",%bgm_x,%bgm_y1
+	lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｚｔｓ^",%bgm_x,%bgm_y2
+	lsp bgm_time_lsp,":s#FFFFFF^ Durée : 5:08^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_h_sample8
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	rnd2 %ran3,1,2
+	notif %ran3 = 1 goto *bgm_mode_h_sample8_2000
+		mov $tmp,":c;"
+		add $tmp,garden_R1aN
+	
+		;紗音（左）、譲冶を右に表示
+		rnd2 %ran,1,6
+			if %ran = 1 mov $tmp1,$sha_waraiA1
+			if %ran = 2 mov $tmp1,$sha_waraiA2
+			if %ran = 3 mov $tmp1,$sha_waraiA3
+			if %ran = 4 mov $tmp1,$sha_hajiraiA1
+			if %ran = 5 mov $tmp1,$sha_hajiraiA2
+			if %ran = 6 mov $tmp1,$sha_hajiraiA3
+
+		rnd2 %ran2,1,7
+			if %ran2 = 1 mov $tmp2,$geo_defA1
+			if %ran2 = 2 mov $tmp2,$geo_defA1k
+			if %ran2 = 3 mov $tmp2,$geo_hohoemiA1
+			if %ran2 = 4 mov $tmp2,$geo_hohoemiA1k
+			if %ran2 = 5 mov $tmp2,$geo_waraiA1
+			if %ran2 = 6 mov $tmp2,$geo_waraiA1k
+			if %ran2 = 7 mov $tmp2,$geo_waraiA2
+
+		trap *bgm_mode_h_sample8_1000
+	
+		lsp 510,r_white,0,0 : print 22
+		lsp 510,$tmp,0,0
+
+		lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+		lsp 508,$tmp2,0,0 : tati_x_get 508,r : amsp 508,%x,0
+		print 8
+		delay 4000
+
+		*bgm_mode_h_sample8_1000
+		trap off	
+
+		lsp 510,$tmp,0,0
+		lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+		lsp 508,$tmp2,0,0 : tati_x_get 508,r : amsp 508,%x,0
+
+		lsp bgm_title_lsp,":s#FFFFFF^ Titre : Ｐｒａｉｓｅ^",%bgm_x,%bgm_y1
+		lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : スミイ酸 [Sumiisan]^",%bgm_x,%bgm_y2
+		lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:26^",%bgm_x,%bgm_y3
+      
+      		gosub *bgm_mode_h2
+      		print 2
+   		gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+	*bgm_mode_h_sample8_2000
+
+	notif %ran3 = 2 goto *bgm_mode_h_sample8_4000
+		;水族館をランダムで
+		mov $tmp,":c;" 
+		rnd2 %ran2,1,6
+		if %ran2 = 1 : add $tmp,aqu_i1a
+		if %ran2 = 2 : add $tmp,aqu_i1b
+		if %ran2 = 3 : add $tmp,aqu_i1c
+		if %ran2 = 4 : add $tmp,aqu_i2a
+		if %ran2 = 5 : add $tmp,aqu_i2b
+		if %ran2 = 6 : add $tmp,aqu_i2c
+	
+		gosub *SHA_isyou2
+        	gosub *GEO_isyou2
+		;譲治（左）、紗音を右に表示
+		rnd2 %ran,1,6
+			if %ran = 1 mov $tmp2,$sha_waraiA1
+			if %ran = 2 mov $tmp2,$sha_waraiA2
+			if %ran = 3 mov $tmp2,$sha_waraiA3
+			if %ran = 4 mov $tmp2,$sha_hajiraiA1
+			if %ran = 5 mov $tmp2,$sha_hajiraiA2
+			if %ran = 6 mov $tmp2,$sha_hajiraiA3
+
+		rnd2 %ran2,1,11
+			if %ran2 = 1 mov $tmp1,$geo_defA1
+			if %ran2 = 2 mov $tmp1,$geo_defA1k
+			if %ran2 = 3 mov $tmp1,$geo_hohoemiA1
+			if %ran2 = 4 mov $tmp1,$geo_hohoemiA1k
+			if %ran2 = 5 mov $tmp1,$geo_waraiA1
+			if %ran2 = 6 mov $tmp1,$geo_waraiA1k
+			if %ran2 = 7 mov $tmp1,$geo_waraiA2
+			if %ran2 = 8 mov $tmp1,$geo_komaruA3
+			if %ran2 = 9 mov $tmp1,$geo_komaruA3k
+			if %ran2 = 10 mov $tmp1,$geo_komaruA5
+			if %ran2 = 11 mov $tmp1,$geo_komaruA5k
+
+		trap *bgm_mode_h_sample8_3000
+	
+		lsp 510,r_white,0,0 : print 22
+		lsp 510,$tmp,0,0
+		lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+		lsp 508,$tmp2,0,0 : tati_x_get 508,r : amsp 508,%x,0
+		print 8
+		delay 4000
+
+		*bgm_mode_h_sample8_3000
+		trap off	
+
+		lsp 510,$tmp,0,0
+		lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+		lsp 508,$tmp2,0,0 : tati_x_get 508,r : amsp 508,%x,0
+
+		lsp bgm_title_lsp,":s#FFFFFF^ Titre : Ｐｒａｉｓｅ^",%bgm_x,%bgm_y1
+		lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : スミイ酸 [Sumiisan]^",%bgm_x,%bgm_y2
+		lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:26^",%bgm_x,%bgm_y3      
+      		gosub *bgm_mode_h2
+      		print 2
+      		gosub *SHA_isyou1
+      		gosub *GEO_isyou1
+	*bgm_mode_h_sample8_4000
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_c_sample3
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	add $tmp,garden_R1bN
+	
+	;紗音（左）、譲冶を右に表示
+	mov $tmp1,$sha_hajiraiA1
+	mov $tmp2,$geo_majimeA1
+
+	trap *bgm_mode_c_sample3_1000
+	
+	lsp 510,r_white,0,0 : print 22
+	lsp 510,$tmp,0,0
+
+	lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+	lsp 508,$tmp2,0,0 : tati_x_get 508,r : amsp 508,%x,0
+	print 8
+	delay 4000
+
+	mov $tmp1,$sha_hajiraiA3
+	mov $tmp2,$geo_hohoemiA1
+	lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+	lsp 508,$tmp2,0,0 : tati_x_get 508,r : amsp 508,%x,0
+	print 22
+	delay 2000
+	
+	*bgm_mode_c_sample3_1000
+	trap off
+
+	mov $tmp1,$sha_hajiraiA3
+	mov $tmp2,$geo_hohoemiA1
+	lsp 510,$tmp,0,0
+	lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+	lsp 508,$tmp2,0,0 : tati_x_get 508,r : amsp 508,%x,0
+
+	lsp bgm_title_lsp,":s#FFFFFF^ Titre : Ｐａｓｓ",%bgm_x,%bgm_y1
+	lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : スミイ酸 [Sumiisan]^",%bgm_x,%bgm_y2
+	lsp bgm_time_lsp,":s#FFFFFF^ Durée : 4:42^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_sample_u5
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	add $tmp,Mhal_2cN
+
+	trap *bgm_mode_sample_u5_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 6
+	delay 70000
+
+	mov $tmp,":c;"
+	add $tmp,portrait2
+	lsp 510,$tmp,0,0
+	print 8
+	delay 18000
+		
+	*bgm_mode_sample_u5_1000
+	trap off	
+
+	mov $tmp,":c;"
+	add $tmp,portrait2
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ａｇｅｈａ [Swallowtail Butterfly]",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : スミイ酸 [Sumiisan]^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 1:32^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_goldenslaughterer
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	rnd2 %ran,1,1
+	
+	notif %ran = 1 jumpf
+		mov $tmp,":c;"
+		add $tmp,warehous_o2a
+
+		trap *bgm_mode_goldenslaughterer_1000
+
+		lsp 510,r_black,0,0 : print 22
+		lsp 510,$tmp,0,0
+		lsp 509,$nat_odorokiA2,0,0 : tati_x_get 509,l : amsp 509,%x,0
+		lsp 508,$jes_ikariA1,0,0 : tati_x_get 508,r : amsp 508,%x,0
+		print 28
+		delay 4000
+
+		*bgm_mode_goldenslaughterer_1000
+		trap off	
+
+		lsp 510,$tmp,0,0
+		lsp 509,$nat_odorokiA2,0,0 : tati_x_get 509,l : amsp 509,%x,0
+		lsp 508,$jes_ikariA1,0,0 : tati_x_get 508,r : amsp 508,%x,0
+	~
+
+	notif %ran = 2 jumpf
+		mov $tmp,":c;"
+		add $tmp,M1F_S1dN
+
+		trap *bgm_mode_goldenslaughterer_2000
+
+		lsp 510,r_black,0,0 : print 22
+		lsp 510,$tmp,0,0
+		lsp 509,$MAR_DefA1k,0,0 : tati_x_get 509,c : amsp 509,%x,0
+		print 46
+		delay 5000
+
+		*bgm_mode_goldenslaughterer_2000
+		trap off	
+
+		lsp 510,$tmp,0,0
+		lsp 509,$MAR_DefA1k,0,0 : tati_x_get 509,c : amsp 509,%x,0
+	~
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ｇｏｌｄｅｎｓｌａｕｇｈｔｅｒｅｒ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｚｔｓ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 7:02^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+*bgm_mode_worldend_solo
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+	
+	rnd2 %ran,1,3
+
+	notif %ran > 1 jumpf
+		rnd2 %ran2,1,2
+		mov $tmp,":c;"
+		add $tmp,warehous_i1d
+		
+		trap *bgm_mode_worldend_solo_1000
+
+		lsp 510,r_black,0,0 : print 22
+		lsp 510,$tmp,0,0
+		if %ran2 = 1 lsp 509,$geo_nakuA2k,0,0 : tati_x_get 509,r : amsp 509,%x,0
+		if %ran2 = 2 lsp 509,$kan_majimeA1,0,0 : tati_x_get 509,c : amsp 509,%x,0
+		print 6
+		delay 4000
+
+		*bgm_mode_worldend_solo_1000
+		trap off	
+
+		lsp 510,$tmp,0,0
+		if %ran2 = 1 lsp 509,$geo_nakuA2k,0,0 : tati_x_get 509,r : amsp 509,%x,0
+		if %ran2 = 2 lsp 509,$kan_majimeA1,0,0 : tati_x_get 509,c : amsp 509,%x,0
+	~
+
+	notif %ran = 1 jumpf
+
+		mov $tmp,":c;"
+		add $tmp,rose_G1d
+		mono 1
+		
+		trap *bgm_mode_worldend_solo_2000
+
+		lsp 510,r_black,0,0 : print 22
+		lsp 510,$tmp,0,0
+		lsp 509,$jes_waraiA1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+		lsp 508,$sha_odorokiA2,0,0 : tati_x_get 508,r : amsp 508,%x,0
+		print 6
+		delay 4000
+
+		*bgm_mode_worldend_solo_2000
+		trap off	
+
+		lsp 510,$tmp,0,0
+		lsp 509,$jes_waraiA1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+		lsp 508,$sha_tokuiA1,0,0 : tati_x_get 508,r : amsp 508,%x,0
+	~
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ｗｏｒｌｄｅｎｄ(bp)^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｚｔｓ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:52^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_eganomajo
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	add $tmp,M1F_S1bR
+
+	trap *bgm_mode_eganomajo_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	lsp 509,$but_nayamuA1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+	lsp 508,$jes_nayamuA1,0,0 : tati_x_get 508,c : amsp 508,%x,0
+	lsp 507,$geo_majimeA3,0,0 : tati_x_get 507,r : amsp 507,%x,0
+	print 6
+	delay 4000
+
+	*bgm_mode_eganomajo_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+	lsp 509,$but_nayamuA1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+	lsp 508,$jes_nayamuA1,0,0 : tati_x_get 508,c : amsp 508,%x,0
+	lsp 507,$geo_majimeA3,0,0 : tati_x_get 507,r : amsp 507,%x,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 絵画の魔女 [Witch of the Painting]",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｐｒｅ−ｈｏｌｄｅｒ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:28^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_suspicion
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	rnd2 %ran,1,2
+	
+	notif %ran = 1 jumpf
+		mov $tmp,":c;"
+		add $tmp,M1F_S1dR
+
+		trap *bgm_mode_suspicion_1000
+
+		lsp 510,r_black,0,0 : print 22
+		lsp 510,$tmp,0,0
+
+		print 22
+		delay 1000
+
+		*bgm_mode_suspicion_1000
+		trap off	
+
+		lsp 510,$tmp,0,0
+	~
+
+	notif %ran = 2 jumpf
+		mov $tmp,":c;"
+		add $tmp,M1F_S1cN
+
+		trap *bgm_mode_suspicion_2000
+
+		lsp 510,r_black,0,0 : print 22
+		lsp 510,$tmp,0,0
+		lsp 509,$but_majimeA1,0,0 : tati_x_get 509,r : amsp 509,%x,0
+		print 22
+		delay 1000
+
+		*bgm_mode_suspicion_2000
+		trap off	
+
+		lsp 510,$tmp,0,0
+		lsp 509,$but_majimeA1,0,0 : tati_x_get 509,r : amsp 509,%x,0
+	~
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ｓｕｓｐｉｃｉｏｎ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｚｔｓ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 4:24",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_kizuoto
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	add $tmp,M1F_S1aR
+
+	trap *bgm_mode_kizuoto_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	lsp 509,$NAT_MajimeA1G,0,0 : tati_x_get 509,c : amsp 509,%x,0
+	print 28
+	delay 1000
+
+	*bgm_mode_kizuoto_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+	lsp 509,$NAT_MajimeA1G,0,0 : tati_x_get 509,c : amsp 509,%x,0
+
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 痕音 [Scar Sound]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｐｒｅ−ｈｏｌｄｅｒ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:48^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_toitume
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	;mov $tmp,":c;"
+	;add $tmp,M1F_S1bR
+
+	trap *bgm_mode_toitume_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 509,$but_nayamuA2,0,0 : tati_x_get 509,r : amsp 509,%x,0
+	print 3
+	delay 2000
+
+	*bgm_mode_toitume_1000
+	trap off	
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 509,$but_nayamuA2,0,0 : tati_x_get 509,r : amsp 509,%x,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Ｃｏｒｅ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 1:48^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_m_darkness
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	add $tmp,M1F_S1bR
+
+	trap *bgm_mode_m_darkness_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	lsp 509,$but_nayamuA1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+	lsp 508,$jes_nayamuA1,0,0 : tati_x_get 508,c : amsp 508,%x,0
+	lsp 507,$geo_majimeA3,0,0 : tati_x_get 507,r : amsp 507,%x,0
+	print 6
+	delay 4000
+
+	*bgm_mode_m_darkness_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+	lsp 509,$but_nayamuA1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+	lsp 508,$jes_nayamuA1,0,0 : tati_x_get 508,c : amsp 508,%x,0
+	lsp 507,$geo_majimeA3,0,0 : tati_x_get 507,r : amsp 507,%x,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Ｍｉｎｕｔｅ　ｄａｒｋｎｅｓｓ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : プレコ [Pureco]^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:12^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_m_u2_tipica1
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	rnd2 %ran,1,2
+	notif %ran = 1 jumpf
+		mov $tmp,":c;"
+		add $tmp,M1F_S1bN
+
+		trap *bgm_mode_m_u2_tipica1_1000
+
+		lsp 510,r_black,0,0 : print 22
+		lsp 510,$tmp,0,0
+		lsp 509,$NAT_IkariB1G,0,0 : tati_x_get 509,l : amsp 509,%x,0
+		lsp 508,$EVA_IkariA2,0,0 : tati_x_get 508,r : amsp 508,%x,0
+		print 26
+		delay 3000
+
+		*bgm_mode_m_u2_tipica1_1000
+		trap off	
+
+		lsp 510,$tmp,0,0
+		lsp 509,$NAT_IkariB1G,0,0 : tati_x_get 509,l : amsp 509,%x,0
+		lsp 508,$EVA_IkariA2,0,0 : tati_x_get 508,r : amsp 508,%x,0
+	~
+	notif %ran = 2 jumpf
+		trap *bgm_mode_m_u2_tipica1_2000
+
+		lsp 510,r_black,0,0 : print 22
+		lsp 510,":c;bgm_mode\ss\nighteye.bmp",0,0
+		print 26
+		delay 3000
+
+		*bgm_mode_m_u2_tipica1_2000
+		trap off	
+
+		lsp 510,":c;bgm_mode\ss\nighteye.bmp",0,0
+	~
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ｎｉｇｈｔｅｙｅｓ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : あきやまうに [U2 Akiyama]^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:02^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_closed_My_Heart
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	add $tmp,Mhal_2aN
+
+	trap *bgm_mode_closed_My_Heart_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 6
+	delay 4000
+
+	*bgm_mode_closed_My_Heart_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Ｃｌｏｓｅｄ　Ｍｙ　Ｈｅａｒｔ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｐｒｅ−ｈｏｌｄｅｒ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:56^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_requiem
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	add $tmp,butterfly_3a
+
+	trap *bgm_mode_requiem_1000
+
+	lsp 510,r_black,0,0 : print 2
+	delay 5000
+	lsp 510,$tmp,0,0
+	print 18,5000,":c;bmp\r_click\efe\kannon_r.bmp"
+	delay 10000
+
+	lsp 510,r_black,0,0
+	print 18,5000,":c;bmp\r_click\efe\kannon_r.bmp"
+
+	*bgm_mode_requiem_1000
+	trap off	
+
+	lsp 510,r_black,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Ｒｅｑｕｉｅｍ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:51^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_mind_2
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	rnd2 %ran,1,2
+
+	notif %ran = 1 jumpf
+		mov $tmp,":c;"
+		add $tmp,M1F_S1bN
+
+		trap *bgm_mode_mind_2_1000
+
+		lsp 510,r_black,0,0 : print 22
+		lsp 510,$tmp,0,0
+		lsp 509,$KIR_majimeA1,0,0 : tati_x_get 509,c : amsp 509,%x,0
+		mono 1
+
+		print 6
+		delay 4000
+
+		*bgm_mode_mind_2_1000
+		trap off	
+
+		lsp 510,$tmp,0,0
+		lsp 509,$KIR_majimeA1,0,0 : tati_x_get 509,c : amsp 509,%x,0
+		mono 1
+	~
+
+	notif %ran = 2 jumpf
+		mov $tmp,":c;"
+		add $tmp,chess1
+
+		trap *bgm_mode_mind_2_2000
+
+		lsp 510,r_black,0,0 : print 22
+		lsp 510,$tmp,0,0
+		mono 1
+		print 6
+		delay 4000
+
+		*bgm_mode_mind_2_2000
+		trap off	
+
+		lsp 510,$tmp,0,0
+		mono 1
+	~
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ｍｉｎｄ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｄａｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 0:57^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_worldend
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	add $tmp,portrait2
+
+	trap *bgm_mode_worldend_1000
+
+	lsp 510,r_white,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 8
+	delay 5000
+
+	*bgm_mode_worldend_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Ｗｏｒｌｄｅｎｄ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｚｔｓ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 5:36^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_play
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":a;bmp\r_click\text\tips\1_2.bmp"
+
+	trap *bgm_mode_play_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,100,50
+	print 6
+	delay 6000
+	lsp 510,r_black,0,0
+	print 2
+
+	*bgm_mode_play_1000
+	trap off	
+
+	
+	lsp 510,r_black,0,0
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ｐｌａｙ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｚｔｓ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:29^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_system0
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	add $tmp,Mlib_1aN
+
+	trap *bgm_mode_system0_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	lsp 509,$NAT_IkariB1G,0,0 : tati_x_get 509,c : amsp 509,%x,0
+	print 28
+	delay 30000
+
+	*bgm_mode_system0_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+	lsp 509,$NAT_IkariB1G,0,0 : tati_x_get 509,c : amsp 509,%x,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : システム零 [System 0]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : −４５^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:26^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_voiceless
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	add $tmp,M2F_R1dN
+
+	trap *bgm_mode_voiceless_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 6
+	delay 6000
+
+	*bgm_mode_voiceless_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Ｖｏｉｃｅｌｅｓｓ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｚｔｓ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 4:10^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_deadangle
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	add $tmp,butterfly_1a
+
+	trap *bgm_mode_deadangle_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 44
+	delay 4000
+
+	mov $tmp,":c;"
+	add $tmp,butterfly_3a
+	lsp 510,$tmp,0,0
+	print 44
+
+	*bgm_mode_deadangle_1000
+	trap off
+	
+	mov $tmp,":c;"
+	add $tmp,butterfly_3a
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ｄｅａｄ　ａｎｇｌｅ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｚｔｓ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 6:37^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_orugann
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	add $tmp,G1F_S1a
+
+	trap *bgm_mode_orugann_1000
+
+	lsp 510,r_white,0,0 : print 22
+	lsp 510,$tmp,0,0
+	lsp 509,$bea_defA1,0,0 : tati_x_get 509,r : amsp 509,%x,0
+	print 6
+	delay 5000
+
+	*bgm_mode_orugann_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+	lsp 509,$bea_defA1,0,0 : tati_x_get 509,r : amsp 509,%x,0
+;wwww
+;wwww
+;      lsp bgm_title_lsp,":s#FFFFFF^ Title: オルガン小曲　第６億番　ハ短調 [Organ Short #600 Million in C Minor]^",%bgm_x,%bgm_y1
+;      lsp bgm_sakka_lsp,":s#FFFFFF^ Artist: ラック眼力 [Luck Ganriki]^",%bgm_x,%bgm_y2
+;      lsp bgm_time_lsp,":s#FFFFFF^ Time: 1:33^",%bgm_x,%bgm_y3
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : オルガン小曲　第６億番　ハ短調^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^          [Organ Short #600 Million in C Minor]^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Artiste : ラック眼力 [Luck Ganriki]   Durée : 1:33^",%bgm_x,%bgm_y3
+
+
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_rougoku
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	add $tmp,Mhal_2cN
+
+	trap *bgm_mode_rougoku_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	lsp 509,$but_odorokiA1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+	lsp 508,$bea_waraiA2,0,0 : tati_x_get 508,r : amsp 508,%x,0
+	print 28
+	delay 6000
+
+	*bgm_mode_rougoku_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+	lsp 509,$but_odorokiA1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+	lsp 508,$bea_waraiA2,0,0 : tati_x_get 508,r : amsp 508,%x,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 牢獄ＳＴＲＩＰ [Prison Strip]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : −４５^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 4:17^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_ed
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	btndef "bmp\background\efe\end_1a.jpg"                   ;スクロール画像を読みこむ
+	lsph 510,r_black,0,0 
+	gosub *bgm_play
+	trap *bgm_mode_ed_1000
+	vsp 510,1 : print 1
+
+      blt 0,0,640,480,0,0,640,480 ;高速描画処理　座標０
+      fr_bg ":b;fr_bg\orig\bmp\background\efe\end_1b.jpg",":b;bmp\background\efe\end_1b.png",0                 ;最後の背景を裏側に表示
+      waittimer 40                ;
+	gosub *bgm_ep1_scroll                   ;スクロール実行本体
+
+	delay 1000
+	prnumclear                              ;数値ラベル設定クリア
+	ofscpy
+	lsp 510,end_1b,0,0
+	print 42
+
+	*bgm_mode_ed_1000
+	trap off
+
+	lsp 510,end_1b,0,0
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Ｂｒｉｎｇ　Ｔｈｅ　Ｆａｔｅ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : 土井宏紀 [Doi Hironori]^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 4:39^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 42
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+
+goto *bgm_mode_botann_teigi
+
+
+*bgm_mode_gc_01
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	rnd2 %ran,1,1
+	notif %ran = 1 jumpf
+		;mov $tmp,":c;bmp\background\efe\Different_space_1a.bmp"
+		mov $tmp,":c;"
+		add $tmp,Different_space_1a
+
+		trap *bgm_mode_gc_01_1000
+
+		lsp 510,r_black,0,0 : print 22
+		lsp 510,$tmp,0,0
+		print 6
+		delay 5000
+
+		*bgm_mode_gc_01_1000
+		trap off	
+
+		lsp 510,$tmp,0,0
+	~
+
+;String Quartet #1 in G Major
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 弦楽四重奏曲第１番ト長調-I.Allegro^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^            [String Quartet #1 in G Major - I. Allegro]^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Artiste : 北大路瑞希（グラサンねこ） [Kitaouji Mizuki]^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_me_arasi
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	rnd2 %ran2,1,7
+	if %ran2 = 1 : add $tmp,G_o1bN
+	if %ran2 = 2 : add $tmp,G_o1cN
+	if %ran2 = 3 : add $tmp,M_o1aN
+	if %ran2 = 4 : add $tmp,M_o1bN
+	if %ran2 = 5 : add $tmp,garden_1cN
+	if %ran2 = 6 : add $tmp,garden_1aN
+	if %ran2 = 7 : add $tmp,rose_G1aN
+
+	meplay2 1,13,70
+
+	lsp 509,"*0",0,0
+	layermessage 0,"i|bmp\efe\rain1.bmp,bmp\efe\rain2.bmp,bmp\efe\rain3.bmp"
+	layermessage 0,"s|1,30,-9,0,0"
+
+
+	trap *bgm_mode_me_arasi_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 22
+
+	delay 5000
+
+	*bgm_mode_me_arasi_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Ｍｅ：嵐 [Storm]",%bgm_x,%bgm_y1
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 0:40^",%bgm_x,%bgm_y2
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_cage
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	;バラ園の背景をランダムで
+	rnd2 %ran,1,1
+	if %ran = 1 add $tmp,Sky_1a
+		
+	trap *bgm_mode_cage_1000
+
+	lsp 510,r_white,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 6
+	delay 10000
+		
+	*bgm_mode_cage_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : ｃａｇｅ^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｚｔｓ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:58^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_ougon_no_kage
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	rnd2 %ran3,1,3
+	notif %ran3 = 1 goto *bgm_mode_ougon_no_kage_100
+		gosub *bgm_mode_rnd_yomiage ;立ち絵のランダム配置
+		mov $tmp,":c;" 
+		rnd2 %ran2,1,3
+		if %ran2 = 1 : add $tmp,Mdin_1dN
+		if %ran2 = 2 : add $tmp,Mdin_1eN
+		if %ran2 = 3 : add $tmp,Mdin_1fN
+	*bgm_mode_ougon_no_kage_100
+
+	notif %ran3 = 2 goto *bgm_mode_ougon_no_kage_200
+		gosub *bgm_mode_rnd_yomiage2 ;立ち絵のランダム配置
+		mov $tmp,":c;" 
+		rnd2 %ran2,1,4
+		if %ran2 = 1 : add $tmp,Different_spiral_1a
+		if %ran2 = 2 : add $tmp,G1F_S1aP
+		if %ran2 = 3 : add $tmp,G1F_S1bP
+		if %ran2 = 4 : add $tmp,G1F_S1cP
+	*bgm_mode_ougon_no_kage_200
+
+	notif %ran3 = 3 goto *bgm_mode_ougon_no_kage_300
+		gosub *bgm_mode_rnd_yomiage3 ;立ち絵のランダム配置
+		mov $tmp,":c;" 
+		rnd2 %ran2,1,4
+		if %ran2 = 1 : add $tmp,Different_spiral_1a
+		if %ran2 = 2 : add $tmp,Different_space_1a
+		if %ran2 = 3 : add $tmp,Different_space_1b
+		if %ran2 = 4 : add $tmp,Different_space_1c
+	*bgm_mode_ougon_no_kage_300
+
+		trap *bgm_mode_ougon_no_kage_1000
+		lsp 510,r_white,0,0 : print 22
+		lsp 510,$tmp,0,0
+		lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+		lsp 508,$tmp2,0,0 : tati_x_get 508,c : amsp 508,%x,0
+		lsp 507,$tmp3,0,0 : tati_x_get 507,r : amsp 507,%x,0
+		print 26
+		delay 4000
+
+		*bgm_mode_ougon_no_kage_1000
+		trap off	
+
+		lsp 510,$tmp,0,0
+		lsp 509,$tmp1,0,0 : tati_x_get 509,l : amsp 509,%x,0
+		lsp 508,$tmp2,0,0 : tati_x_get 508,c : amsp 508,%x,0
+		lsp 507,$tmp3,0,0 : tati_x_get 507,r : amsp 507,%x,0
+
+		lsp bgm_title_lsp,":s#FFFFFF^ Titre : 金色の嘲笑 [Golden Sneer]^",%bgm_x,%bgm_y1
+		lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ラック眼力 [Luck Ganriki]^",%bgm_x,%bgm_y2
+		lsp bgm_time_lsp,":s#FFFFFF^ Durée : 5:50^",%bgm_x,%bgm_y3
+
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_sasorinoharawata
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	;ホールに蝶を重ねた画像
+	rnd2 %ran,1,1
+		if %ran = 1 add $tmp,Mhal_1aN
+		
+	trap *bgm_mode_sasorinoharawata_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	lsp 509,butterfly_4sp1R,0,0
+
+	print 6
+	delay 4000
+		
+	*bgm_mode_sasorinoharawata_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : サソリのハラワタ [Scorpion Entrails]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ラック眼力 [Luck Ganriki]^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:22^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_sy
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	;ホールに蝶を重ねた画像
+	rnd2 %ran,1,1
+	if %ran = 1 add $tmp,butterfly_3a
+		
+	trap *bgm_mode_sy_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+
+	lsp 509,$GOA_DefA1,0,0
+	tati_x_get 509,c : amsp 509,%x,0
+
+	print 6
+	delay 6000
+		
+	*bgm_mode_sy_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+	lsp 509,$GOA_DefA1,0,0
+	tati_x_get 509,c : amsp 509,%x,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 終焉_VerC [Life's End]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : pre-holder^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:39^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_where
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	;ホールに蝶を重ねた画像
+	rnd2 %ran,1,1
+	if %ran = 1 add $tmp,butterfly_3a
+		
+	trap *bgm_mode_where_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+
+	lsp 509,$GOA_DefA1B,0,0
+	lsp 508,$KAN_IkariA2B,0,0
+
+	tati_x_get 509,r : amsp 509,%x,0
+	tati_x_get 508,l : amsp 508,%x,0
+
+	print 6
+	delay 6000
+		
+	*bgm_mode_where_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+	lsp 509,$GOA_DefA1B,0,0
+	lsp 508,$KAN_IkariA2B,0,0
+
+	tati_x_get 509,r : amsp 509,%x,0
+	tati_x_get 508,l : amsp 508,%x,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : where^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : pre-holder^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:55^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_Answer
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	;ホールに蝶を重ねた画像
+	rnd2 %ran,1,1
+	if %ran = 1 add $tmp,G1F_S1cP
+		
+	trap *bgm_mode_Answer_1000
+
+	lsp 510,r_white,0,0 : print 1 :wait 10
+	lsp 510,$tmp,0,0
+
+	lsp 508,$BEA_AkuwaraiA1,0,0
+	lsp 509,$BUT_OdorokiA1,0,0
+
+	tati_x_get 509,l : amsp 509,%x,0
+	tati_x_get 508,r : amsp 508,%x,0
+
+	print 6
+	delay 6000
+		
+	*bgm_mode_Answer_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+	lsp 508,$BEA_AkuwaraiA1,0,0
+	lsp 509,$BUT_OdorokiA1,0,0
+
+	tati_x_get 509,l : amsp 509,%x,0
+	tati_x_get 508,r : amsp 508,%x,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Answer^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : dai^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 1:41^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_Answer_short
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	;ホールに蝶を重ねた画像
+	rnd2 %ran,1,1
+	if %ran = 1 add $tmp,chess1
+		
+	trap *bgm_mode_Answer_short_1000
+
+	lsp 510,r_white,0,0 : print 1 :wait 10
+	lsp 510,$tmp,0,0
+
+	;lsp 508,$BEA_AkuwaraiA1,0,0
+	;lsp 509,$BUT_OdorokiA1,0,0
+
+	;tati_x_get 509,l : amsp 509,%x,0
+	;tati_x_get 508,r : amsp 508,%x,0
+
+	print 6
+	delay 6000
+		
+	*bgm_mode_Answer_short_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+	;lsp 508,$BEA_AkuwaraiA1,0,0
+	;lsp 509,$BUT_OdorokiA1,0,0
+	;tati_x_get 509,l : amsp 509,%x,0
+	;tati_x_get 508,r : amsp 508,%x,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Answer_short^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : dai^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 1:02^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_Read_Dread
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	;ホールに蝶を重ねた画像
+	rnd2 %ran,1,4
+		if %ran = 1 add $tmp,Pumpkin2
+		if %ran = 2 add $tmp,"bgm_mode\ss\red1.bmp"
+		if %ran = 3 add $tmp,"bgm_mode\ss\red2.bmp"
+		if %ran = 4 add $tmp,"bgm_mode\ss\red3.bmp"
+
+	trap *bgm_mode_Read_Dread_1000
+
+	lsp 510,r_white,0,0 : print 1 :wait 10
+	lsp 510,$tmp,0,0
+	print 26
+	delay 4000
+		
+	*bgm_mode_Read_Dread_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Red_Dread^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : Ryu-Ga^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:43^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_sirabe_oche
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	;バラ園の背景をランダムで
+	rnd2 %ran,1,1
+	if %ran = 1 add $tmp,portrait3
+		
+	trap *bgm_mode_sirabe_oche_1000
+
+	lsp 510,r_black,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 6
+	delay 6000
+		
+	*bgm_mode_sirabe_oche_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 旋律（シラベ）inst.ver [Melody]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｓｕｎｎｙ、ｃａｐ、ｘａｋｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 8:05^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_Dread_grave
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;" 
+	rnd2 %ran2,1,12
+	if %ran2 = 1 : add $tmp,"bgm_mode\ss\ennkan1.bmp"
+	if %ran2 = 2 : add $tmp,"bgm_mode\ss\ennkan2.bmp"
+	if %ran2 = 3 : add $tmp,"bgm_mode\ss\ennkan3.bmp"
+	if %ran2 = 4 : add $tmp,"bgm_mode\ss\ennkan4.bmp"
+	if %ran2 = 5 : add $tmp,"bgm_mode\ss\ennkan5.bmp"
+	if %ran2 = 6 : add $tmp,"bgm_mode\ss\ennkan6.bmp"
+	if %ran2 = 7 : add $tmp,"bgm_mode\ss\dread_grave.bmp"
+	if %ran2 = 8 : add $tmp,"bgm_mode\ss\dread2_1.bmp"
+	if %ran2 = 9 : add $tmp,"bgm_mode\ss\dread2_2.bmp"
+	if %ran2 = 10 : add $tmp,"bgm_mode\ss\dread2_3.bmp"
+	if %ran2 = 11 : add $tmp,"bgm_mode\ss\dread2_4.bmp"
+	if %ran2 = 12 : add $tmp,"bgm_mode\ss\dread2_6.bmp"
+		
+	trap *bgm_mode_Dread_grave_1000
+
+	lsp 510,r_white,0,0 : print 1 :wait 10
+	lsp 510,$tmp,0,0
+
+	print 1
+	delay 3000
+		
+	*bgm_mode_Dread_grave_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Dread_of_the_grave^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ＳＢ　ＹＵＮＥ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 6:04^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_moon
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	rnd2 %ran2,1,2
+	notif %ran2 = 1 goto *bgm_mode_moon_2000
+		mov $tmp,":c;"
+		rnd2 %ran,1,1
+		if %ran = 1 add $tmp,MJES_1bN
+		
+		trap *bgm_mode_moon_1000
+
+		lsp 510,r_black,0,0 : print 22
+		lsp 510,$tmp,0,0
+
+		lsp 508,$JES_NakuA3,0,0,128
+		lsp 509,$KAN_NayamuA1,0,0,128
+
+		tati_x_get 509,c : amsp 509,%x,0,128
+		tati_x_get 508,r : amsp 508,%x,0,128
+
+		print 6
+		delay 6000
+		
+		*bgm_mode_moon_1000
+		trap off	
+
+		lsp 510,$tmp,0,0
+		lsp 508,$JES_NakuA3,0,0,128
+		lsp 509,$KAN_NayamuA1,0,0,128
+
+		tati_x_get 509,c : amsp 509,%x,0,128
+		tati_x_get 508,r : amsp 508,%x,0,128
+	*bgm_mode_moon_2000
+
+	notif %ran2 = 2 goto *bgm_mode_moon_4000
+		mov $tmp,":c;"
+		rnd2 %ran,1,1
+		if %ran = 1 add $tmp,"bgm_mode\ss\moon1.bmp"
+		
+		trap *bgm_mode_moon_3000
+
+		lsp 510,r_black,0,0 : print 22
+		lsp 510,$tmp,0,0
+
+		print 6
+		delay 6000
+		
+		*bgm_mode_moon_3000
+		trap off	
+
+		lsp 510,$tmp,0,0
+	*bgm_mode_moon_4000
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : moon^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : dai^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 2:52^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+*bgm_mode_Worldenddominator
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	rnd2 %ran,1,12
+	if %ran = 1 add $tmp,"bgm_mode\ss\w_end1.bmp"
+	if %ran = 2 add $tmp,"bgm_mode\ss\w_end2.bmp"
+	if %ran = 3 add $tmp,"bgm_mode\ss\w_end3.bmp"
+	if %ran = 4 add $tmp,"bgm_mode\ss\w_end4.bmp"
+	if %ran = 5 add $tmp,"bgm_mode\ss\w_end5.bmp"
+	if %ran = 6 add $tmp,"bgm_mode\ss\w_end6.bmp"
+	if %ran = 7 add $tmp,"bgm_mode\ss\w_end7.bmp"
+	if %ran = 8 add $tmp,"bgm_mode\ss\w_end8.bmp"
+	if %ran = 9 add $tmp,"bgm_mode\ss\w_end1.bmp"
+	if %ran = 10 add $tmp,"bgm_mode\ss\w_end2.bmp"
+	if %ran = 11 add $tmp,"bgm_mode\ss\w_end2.bmp"
+	if %ran = 12 add $tmp,"bgm_mode\ss\w_end2.bmp"
+		
+	trap *bgm_mode_Worldenddominator_1000
+
+	lsp 510,r_black,0,0 : print 1 : wait 10
+	lsp 510,$tmp,0,0
+	print 28
+	delay 3000
+		
+	*bgm_mode_Worldenddominator_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Worldend_dominator^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｚｔｓ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 7:37^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_ririana
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	rnd2 %ran,1,3
+	if %ran = 1 add $tmp,"bgm_mode\ss\ririana1.bmp"
+	if %ran = 2 add $tmp,"bgm_mode\ss\ririana2.bmp"
+	if %ran = 3 add $tmp,"bgm_mode\ss\ririana3.bmp"
+		
+	trap *bgm_mode_ririana_1000
+
+	lsp 510,r_white,0,0 : print 1 : wait 10
+	lsp 510,$tmp,0,0
+	print 2
+	delay 6000
+		
+	*bgm_mode_ririana_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 黒のリリアナ [Black Lilliana]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : あきやまうに [U2 Akiyama]^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 5:19^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_turu_pettan
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	;ホールに蝶を重ねた画像
+	rnd2 %ran,1,1
+	if %ran = 1 add $tmp,"bmp\pettan\bg.bmp"
+		
+	trap *bgm_mode_turu_pettan_1000
+
+	lsp 510,r_white,0,0 : print 1 :wait 10
+	lsp 510,$tmp,0,0
+
+	print 28
+	delay 5000
+		
+	*bgm_mode_turu_pettan_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : つるぺったん（short.ver) [Tsuru Pettan]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : Silver_Forest^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 1:54^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+
+*bgm_mode_kiyuusoku
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	rnd2 %ran,1,2
+	if %ran = 1 add $tmp,"bgm_mode\ss\kyuusoku1.bmp"
+	if %ran = 2 add $tmp,"bgm_mode\ss\kyuusoku2.bmp"
+		
+	trap *bgm_mode_kiyuusoku_1000
+
+	lsp 510,r_white,0,0 : print 22
+	lsp 510,$tmp,0,0
+	print 2
+	delay 6000
+		
+	*bgm_mode_kiyuusoku_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 休息 [Rest]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : Ryu-Ga^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 1:30^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_hakujitunohate
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	rnd2 %ran,1,2
+	if %ran = 1 add $tmp,"bgm_mode\ss\hakujitumunohate1.bmp"
+	if %ran = 2 add $tmp,"bgm_mode\ss\hakujitumunohate2.bmp"
+		
+	trap *bgm_mode_hakujitunohate_1000
+
+	lsp 510,r_white,0,0 : print 2
+	lsp 510,$tmp,0,0
+	print 10
+	delay 6000
+		
+	*bgm_mode_hakujitunohate_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 白日夢の果て [Daydream's End]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ラック眼力 [Luck Ganriki]^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Chorus: 木野寧 [Kino Nei]",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_sirabe_vocal
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	rnd2 %ran,1,1
+	if %ran = 1 add $tmp,"bmp\background\efe\butterfly_4a.bmp"
+
+	trap *bgm_mode_sirabe_vocal_1000
+
+	lsp 510,r_black,0,0 : print 2
+	lsp 510,$tmp,0,0
+	print 2
+	delay 6000
+	
+	*bgm_mode_sirabe_vocal_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : 旋律（シラベ） [Melody]^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : ｓｕｎｎｙ、ｃａｐ、ｘａｋｉ^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Chant : 木村 圭見 [Kimura Kazumi]^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 2
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+*bgm_mode_Over_the_sky
+	if %bgm_mood_demo = 1 goto *demo_hyouji
+	gosub *bgm_mode_k : print 22
+	gosub *bgm_play
+
+	mov $tmp,":c;"
+	rnd2 %ran,1,1
+	if %ran = 1 add $tmp,"bgm_mode\ss\time_as_go1.bmp"
+		
+	trap *bgm_mode_Over_the_sky_1000
+
+	lsp 510,r_white,0,0 : print 2
+	lsp 510,$tmp,0,0
+	print 48
+	delay 6000
+		
+	*bgm_mode_Over_the_sky_1000
+	trap off	
+
+	lsp 510,$tmp,0,0
+
+      lsp bgm_title_lsp,":s#FFFFFF^ Titre : Over_the_sky^",%bgm_x,%bgm_y1
+      lsp bgm_sakka_lsp,":s#FFFFFF^ Artiste : pre-holder^",%bgm_x,%bgm_y2
+      lsp bgm_time_lsp,":s#FFFFFF^ Durée : 3:31^",%bgm_x,%bgm_y3
+      
+      gosub *bgm_mode_h2
+      print 22
+   gettimer %3801:sub %bm_pt,%3801 ;曲の残り時間を入力
+goto *bgm_mode_btn_lp
+
+
+
+;***********　立ち位置の座標を取得して、%xの変数に代入するルーチン
+*tati_x_get
+	;(スプライト番号、立ち位置）
+	getparam %x_get_tmp1,%x_get_tmp2
+	
+	getspsize %x_get_tmp1,%x_get_tmp3,%x_get_tmp4,%x_get_tmp5
+	
+	if %x_get_tmp2 = l div %x_get_tmp3,2 : mov %x,160 : sub %x,%x_get_tmp3
+	if %x_get_tmp2 = c div %x_get_tmp3,2 : mov %x,360 : sub %x,%x_get_tmp3
+	if %x_get_tmp2 = r div %x_get_tmp3,2 : mov %x,480 : sub %x,%x_get_tmp3
+
+return
+
+;***************************************************************
+
+
+
+
+
+
+;***********************************************
+*bgm_ep1_scroll                   ;スクロール実行本体
+
+skipoff
+;resettimer
+
+blt 0,0,640,480,0, 1,640,480:waittimer 45
+blt 0,0,640,480,0, 2,640,480:waittimer 90
+blt 0,0,640,480,0, 3,640,480:waittimer 136
+blt 0,0,640,480,0, 4,640,480:waittimer 181
+blt 0,0,640,480,0, 5,640,480:waittimer 227
+blt 0,0,640,480,0, 6,640,480:waittimer 272
+blt 0,0,640,480,0, 7,640,480:waittimer 318
+blt 0,0,640,480,0, 8,640,480:waittimer 363
+blt 0,0,640,480,0, 9,640,480:waittimer 409
+blt 0,0,640,480,0, 10,640,480:waittimer 454
+blt 0,0,640,480,0, 11,640,480:waittimer 500
+blt 0,0,640,480,0, 12,640,480:waittimer 545
+blt 0,0,640,480,0, 13,640,480:waittimer 591
+blt 0,0,640,480,0, 14,640,480:waittimer 636
+blt 0,0,640,480,0, 15,640,480:waittimer 682
+blt 0,0,640,480,0, 16,640,480:waittimer 727
+blt 0,0,640,480,0, 17,640,480:waittimer 773
+blt 0,0,640,480,0, 18,640,480:waittimer 818
+blt 0,0,640,480,0, 19,640,480:waittimer 863
+blt 0,0,640,480,0, 20,640,480:waittimer 909
+blt 0,0,640,480,0, 21,640,480:waittimer 954
+blt 0,0,640,480,0, 22,640,480:waittimer 1000
+blt 0,0,640,480,0, 23,640,480:waittimer 1045
+blt 0,0,640,480,0, 24,640,480:waittimer 1091
+blt 0,0,640,480,0, 25,640,480:waittimer 1136
+blt 0,0,640,480,0, 26,640,480:waittimer 1182
+blt 0,0,640,480,0, 27,640,480:waittimer 1227
+blt 0,0,640,480,0, 28,640,480:waittimer 1273
+blt 0,0,640,480,0, 29,640,480:waittimer 1318
+blt 0,0,640,480,0, 30,640,480:waittimer 1364

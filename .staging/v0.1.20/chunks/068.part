@@ -1,0 +1,2483 @@
+;†改造部分
+;div %Fede_wait,100    ;１００ミリセコンド用ウェイト回数
+;変化回数を１０回に固定する、変化秒は%Fede_wait10で計算
+;ウェイトタイマーは%bm_ptの変数に代入する。
+mov %bm_pt,%Fede_wait/10
+
+ for %Free1 = Fede_bgmvflg to Fede_Me5vflg
+
+      ;変動なしフラグオンの時は飛ばす
+  if %%Free1 = 0 jumpf
+
+    mov %%Free3,%%Free6
+    mul %%Free3,100
+    div %%Free3,10
+
+  ~
+
+ inc %Free3
+ inc %Free4
+ inc %Free6
+
+next
+
+;音量変動実行式
+
+for %Free9 = 1 to 10
+
+resettimer      ;内部タイマーをリセット
+
+mov %Free2,Fede_bgmv3   ;１０ミリ用現在値
+mov %Free3,Fede_bgmv4   ;１０ミリ用変動値
+mov %Free5,Fede_bgmvflg2
+mov %Free6,Free11    ;演奏用音量値
+
+
+;変動計算
+  ;変動なしフラグオン時は飛ばす
+  for %Free1 = Fede_bgmvflg to Fede_Me5vflg
+
+   if %%Free1 = 0 jumpf
+
+     if %%Free5 = on  sub %%Free2,%%Free3
+     if %%Free5 = off add %%Free2,%%Free3
+
+     mov %%Free6,%%Free2
+
+     div %%Free6,100
+
+   ~
+
+  inc %Free2
+  inc %Free3
+  inc %Free5
+  inc %Free6
+
+  next
+
+;変動実行部分
+
+  if %Fede_bgmvflg = 1  bgmvol_safe %Free11
+  if %Fede_Me1vflg = 1 chvol 11,%Free12     ;音量反映
+  if %Fede_Me2vflg = 1 chvol 12,%Free13      ;音量反映
+  if %Fede_Me3vflg = 1 chvol 13,%Free14      ;音量反映
+  if %Fede_Me4vflg = 1 chvol 14,%Free15      ;音量反映
+  if %Fede_Me5vflg = 1 chvol 15,%Free16      ;音量反映
+
+waittimer %bm_pt   ;内部タイマーウェイト
+
+next
+
+;ボリューム数値をロード用の値に収納
+
+  if %Fede_bgmvflg = 1 bgmvol_safe %Fede_bgmv : mov %bgm_v_ch,%Fede_bgmv
+  if %Fede_Me1vflg = 1 chvol 11,%Fede_Me1v : mov %Me_v_Ch1,%Fede_Me1v     ;音量反映
+  if %Fede_Me2vflg = 1 chvol 12,%Fede_Me2v : mov %Me_v_Ch2,%Fede_Me2v      ;音量反映
+  if %Fede_Me3vflg = 1 chvol 13,%Fede_Me3v : mov %Me_v_Ch3,%Fede_Me3v      ;音量反映
+  if %Fede_Me4vflg = 1 chvol 14,%Fede_Me4v : mov %Me_v_Ch4,%Fede_Me4v      ;音量反映
+  if %Fede_Me5vflg = 1 chvol 15,%Fede_Me5v : mov %Me_v_Ch5,%Fede_Me5v      ;音量反映
+
+ for %Free1 = Fede_bgmv to Fede_Me5v4
+
+  mov %%Free1,0
+
+ next
+
+return
+
+
+*flg_set
+ getparam %Free1,%Free2,%Free3
+
+;%Free1 = Flag title
+;%Free2 = Flag display position (upper right, lower left, etc.)
+;%Free3 = Flag starting count
+
+;Select flag title (RK: Are these even used?)
+ if %Free1 = 1 mov $flg_passT,":b;bmp\efe\number\flg_titel1.bmp" : jumpf  ;Loser flag
+ if %Free1 = 2 mov $flg_passT,":b;bmp\efe\number\flg_titel1.bmp" : jumpf  ;Death flag
+ if %Free1 = 3 mov $flg_passT,":b;bmp\efe\number\flg_titel1.bmp" : jumpf  ;Generic flag
+
+;If selection is out of bounds...
+
+ mov $flg_passT,":b;bmp\efe\number\flg_titel1.bmp"
+
+~
+
+;Sprite positions
+
+ if %Free2 = 1 mov %flg_sp_x,510 : mov %flg_sp_y,0 : mov %flg_number_tx,744 : mov %flg_number_ty,0 : mov %flg_number_ox,789 : mov %flg_number_oy,0 : jumpf  ;Upper Right
+ 
+ if %Free2 = 2 mov %flg_sp_x,510 : mov %flg_sp_y,360 : mov %flg_number_tx,744 : mov %flg_number_ty,410 : mov %flg_number_ox,789 : mov %flg_number_oy,410 : jumpf  ;Lower Right
+ 
+ if %Free2 = 3 mov %flg_sp_x,0 : mov %flg_sp_y,0 : mov %flg_number_tx,0 : mov %flg_number_ty,0 : mov %flg_number_ox,45 : mov %flg_number_oy,0 : jumpf  ;Upper Left
+ 
+ if %Free2 = 4 mov %flg_sp_x,0 : mov %flg_sp_y,360 : mov %flg_number_tx,0 : mov %flg_number_ty,410 : mov %flg_number_ox,45 : mov %flg_number_oy,410 : jumpf  ;Lower Left
+
+;If selection is out of bounds...
+ mov %flg_sp_x,0
+ mov %flg_sp_y,360
+ mov flg_number_tx,0
+ mov flg_number_ty,420
+ mov flg_number_ox,65
+ mov flg_number_oy,420
+
+~
+
+;Calculate 10s place
+
+mov %flg_number_t,%Free3
+div %flg_number_t,10
+
+ if %flg_number_t = 0 mov $flg_pass10,":b;bmp\efe\number\0.png" : jumpf
+ if %flg_number_t = 1 mov $flg_pass10,":b;bmp\efe\number\1.png" : jumpf
+ if %flg_number_t = 2 mov $flg_pass10,":b;bmp\efe\number\2.png" : jumpf
+ if %flg_number_t = 3 mov $flg_pass10,":b;bmp\efe\number\3.png" : jumpf
+ if %flg_number_t = 4 mov $flg_pass10,":b;bmp\efe\number\4.png" : jumpf
+ if %flg_number_t = 5 mov $flg_pass10,":b;bmp\efe\number\5.png" : jumpf
+ if %flg_number_t = 6 mov $flg_pass10,":b;bmp\efe\number\6.png" : jumpf
+ if %flg_number_t = 7 mov $flg_pass10,":b;bmp\efe\number\7.png" : jumpf
+ if %flg_number_t = 8 mov $flg_pass10,":b;bmp\efe\number\8.png" : jumpf
+ if %flg_number_t = 9 mov $flg_pass10,":b;bmp\efe\number\9.png" : jumpf
+
+mov $flg_pass10,""
+
+~
+
+;Calculate 1s place
+
+mov %flg_number_o,%Free3
+mod %flg_number_o,10
+
+ if %flg_number_o = 0 mov $flg_pass1,":b;bmp\efe\number\0.png" : jumpf
+ if %flg_number_o = 1 mov $flg_pass1,":b;bmp\efe\number\1.png" : jumpf
+ if %flg_number_o = 2 mov $flg_pass1,":b;bmp\efe\number\2.png" : jumpf
+ if %flg_number_o = 3 mov $flg_pass1,":b;bmp\efe\number\3.png" : jumpf
+ if %flg_number_o = 4 mov $flg_pass1,":b;bmp\efe\number\4.png" : jumpf
+ if %flg_number_o = 5 mov $flg_pass1,":b;bmp\efe\number\5.png" : jumpf
+ if %flg_number_o = 6 mov $flg_pass1,":b;bmp\efe\number\6.png" : jumpf
+ if %flg_number_o = 7 mov $flg_pass1,":b;bmp\efe\number\7.png" : jumpf
+ if %flg_number_o = 8 mov $flg_pass1,":b;bmp\efe\number\8.png" : jumpf
+ if %flg_number_o = 9 mov $flg_pass1,":b;bmp\efe\number\9.png" : jumpf
+
+mov $flg_pass1,":b;bmp\efe\"
+
+~
+
+;Set title
+;lsph flg_sp1,$flg_passT,%flg_sp_x,%flg_sp_y  ;Ah, here it is. Disabled of course.
+lsph flg_sp2,$flg_pass10,%flg_number_tx,%flg_number_ty
+lsph flg_sp3,$flg_pass1,%flg_number_ox,%flg_number_oy
+
+return
+
+
+*flg_p
+
+ inc %flg_number_o
+
+ if %flg_number_o = 1 mov $flg_pass1,":b;bmp\efe\number\1.png" : jumpf
+ if %flg_number_o = 2 mov $flg_pass1,":b;bmp\efe\number\2.png" : jumpf
+ if %flg_number_o = 3 mov $flg_pass1,":b;bmp\efe\number\3.png" : jumpf
+ if %flg_number_o = 4 mov $flg_pass1,":b;bmp\efe\number\4.png" : jumpf
+ if %flg_number_o = 5 mov $flg_pass1,":b;bmp\efe\number\5.png" : jumpf
+ if %flg_number_o = 6 mov $flg_pass1,":b;bmp\efe\number\6.png" : jumpf
+ if %flg_number_o = 7 mov $flg_pass1,":b;bmp\efe\number\7.png" : jumpf
+ if %flg_number_o = 8 mov $flg_pass1,":b;bmp\efe\number\8.png" : jumpf
+ if %flg_number_o = 9 mov $flg_pass1,":b;bmp\efe\number\9.png" : jumpf
+
+;Carry over
+ mov $flg_pass1,":b;bmp\efe\number\0.png"
+ mov %flg_number_o,0
+ inc %flg_number_t
+
+ if %flg_number_t = 1 mov $flg_pass10,":b;bmp\efe\number\1.png"
+ if %flg_number_t = 2 mov $flg_pass10,":b;bmp\efe\number\2.png"
+ if %flg_number_t = 3 mov $flg_pass10,":b;bmp\efe\number\3.png"
+ if %flg_number_t = 4 mov $flg_pass10,":b;bmp\efe\number\4.png"
+ if %flg_number_t = 5 mov $flg_pass10,":b;bmp\efe\number\5.png"
+ if %flg_number_t = 6 mov $flg_pass10,":b;bmp\efe\number\6.png"
+ if %flg_number_t = 7 mov $flg_pass10,":b;bmp\efe\number\7.png"
+ if %flg_number_t = 8 mov $flg_pass10,":b;bmp\efe\number\8.png"
+ if %flg_number_t = 9 mov $flg_pass10,":b;bmp\efe\number\9.png"
+ if %flg_number_t = 10 mov $flg_pass10,":b;bmp\efe\number\0.png" : mov %flg_number_t,0
+
+lsp flg_sp2,$flg_pass10,%flg_number_tx,%flg_number_ty
+
+~
+erasetextwindow 0
+
+;vsp flg_sp1,1
+notif %flg_number_t = 0 vsp flg_sp2,1 :jumpf
+
+csp flg_sp2
+
+~
+lsp flg_sp3,$flg_pass1,%flg_number_ox,%flg_number_oy
+
+
+;Sound effect
+se1 70
+
+
+print 1
+erasetextwindow 1
+
+return
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+*BGM_List                      ;ミュージックデータパス一覧
+
+  if %BGM_s_Ch = 0    return                          ;無音のときは処理を抜ける
+
+  if %BGM_s_Ch = 1    mov $BGM_Play,"bgm\tsubaki.ogg"
+  if %BGM_s_Ch = 2    mov $BGM_Play,"bgm\natsu_no_tobira.ogg"
+  if %BGM_s_Ch = 3    mov $BGM_Play,"bgm\HANE.ogg"
+  if %BGM_s_Ch = 4    mov $BGM_Play,"bgm\ride_on.ogg"
+  if %BGM_s_Ch = 5    mov $BGM_Play,"bgm\sea.ogg"
+  if %BGM_s_Ch = 6    mov $BGM_Play,"bgm\kurayami_no_toki.ogg";元はwav
+  if %BGM_s_Ch = 7    mov $BGM_Play,"bgm\novelette.ogg"
+  if %BGM_s_Ch = 8    mov $BGM_Play,"bgm\hope(Ver1.00).ogg"
+  if %BGM_s_Ch = 9    mov $BGM_Play,"bgm\shiroi_kage.ogg"
+  if %BGM_s_Ch = 10   mov $BGM_Play,"bgm\tekuteku.ogg"
+  if %BGM_s_Ch = 11   mov $BGM_Play,"bgm\Towering cloud in summer.ogg"
+  if %BGM_s_Ch = 12   mov $BGM_Play,"bgm\slowmotion.ogg"
+  if %BGM_s_Ch = 13   mov $BGM_Play,"bgm\shika_long.ogg"
+  if %BGM_s_Ch = 14   mov $BGM_Play,"bgm\rinshi_mu.ogg";元はwav
+  if %BGM_s_Ch = 15   mov $BGM_Play,"bgm\rensa_kairo_mu.ogg";元はwav
+  if %BGM_s_Ch = 16   mov $BGM_Play,"bgm\Fortitude.ogg";この曲のマスターは、同名のwavファイル。どうやら、巨大なwavの再生は何かの不具合を引き起こす模様。
+  if %BGM_s_Ch = 17   mov $BGM_Play,"bgm\10_witch_in_gold_cenba.ogg"
+  if %BGM_s_Ch = 18   mov $BGM_Play,"bgm\izanai.ogg";元はwav
+  if %BGM_s_Ch = 19   mov $BGM_Play,"bgm\hankou_no_yokokujou_yomiage.ogg";元はwav
+  if %BGM_s_Ch = 20   mov $BGM_Play,"bgm\02_stupefaction.ogg";怖い曲
+  if %BGM_s_Ch = 21   mov $BGM_Play,"bgm\M4.ogg"
+  if %BGM_s_Ch = 22   mov $BGM_Play,"bgm\sakura.ogg"
+  if %BGM_s_Ch = 23   mov $BGM_Play,"bgm\ageha.ogg"
+  if %BGM_s_Ch = 24   mov $BGM_Play,"bgm\rahu_goldenslaughterer.ogg"
+  if %BGM_s_Ch = 25   mov $BGM_Play,"bgm\11b_worldend_solo.ogg"
+  if %BGM_s_Ch = 26   mov $BGM_Play,"bgm\kaiga_no_majo.ogg"
+  if %BGM_s_Ch = 27   mov $BGM_Play,"bgm\09_suspicion.ogg";推理曲
+  if %BGM_s_Ch = 28   mov $BGM_Play,"bgm\kizuoto.ogg"
+  if %BGM_s_Ch = 29   mov $BGM_Play,"bgm\toitsume.ogg"
+  if %BGM_s_Ch = 30   mov $BGM_Play,"bgm\minute darkness.ogg"
+  if %BGM_s_Ch = 31   mov $BGM_Play,"bgm\u2_nighteyes.ogg"
+  if %BGM_s_Ch = 32   mov $BGM_Play,"bgm\Closed My Heart.ogg"
+  if %BGM_s_Ch = 33   mov $BGM_Play,"bgm\requiem.ogg"
+  if %BGM_s_Ch = 34   mov $BGM_Play,"bgm\mind_2.ogg"
+  if %BGM_s_Ch = 35   mov $BGM_Play,"bgm\11a_worldend.ogg"
+  if %BGM_s_Ch = 36   mov $BGM_Play,"bgm\03_play.ogg"
+  if %BGM_s_Ch = 37   mov $BGM_Play,"bgm\system0.ogg"
+  if %BGM_s_Ch = 38   mov $BGM_Play,"bgm\07_voiceless.ogg"
+  if %BGM_s_Ch = 39   mov $BGM_Play,"bgm\08_deadangle.ogg"
+  if %BGM_s_Ch = 40   mov $BGM_Play,"bgm\organ_shokyoku_rokuoku_hachi.ogg"
+  if %BGM_s_Ch = 41   mov $BGM_Play,"bgm\rougoku.ogg"
+  if %BGM_s_Ch = 42   mov $BGM_Play,"bgm\gc-01.ogg"
+  if %BGM_s_Ch = 43   mov $BGM_Play,"bgm\00_cage_take3.ogg";ここからＥＰ２
+  if %BGM_s_Ch = 44   mov $BGM_Play,"bgm\ougon_no_kage.ogg"
+  if %BGM_s_Ch = 45   mov $BGM_Play,"bgm\sasorinoharawata.ogg"
+  if %BGM_s_Ch = 46   mov $BGM_Play,"bgm\sy.ogg"
+  if %BGM_s_Ch = 47   mov $BGM_Play,"bgm\Answer.ogg"
+  if %BGM_s_Ch = 48   mov $BGM_Play,"bgm\Answer_short.ogg"
+  if %BGM_s_Ch = 49   mov $BGM_Play,"bgm\sirabe_oche.ogg"
+  if %BGM_s_Ch = 50   mov $BGM_Play,"bgm\Red Dread.ogg"
+  if %BGM_s_Ch = 51   mov $BGM_Play,"bgm\moon.ogg"
+  if %BGM_s_Ch = 52   mov $BGM_Play,"bgm\where-02.ogg"
+  if %BGM_s_Ch = 53   mov $BGM_Play,"bgm\Dread of the grave.ogg"
+  if %BGM_s_Ch = 54   mov $BGM_Play,"bgm\worldenddominator.ogg"
+  if %BGM_s_Ch = 55   mov $BGM_Play,"bgm\u2_kuro_no_ririana.ogg"
+  if %BGM_s_Ch = 56   mov $BGM_Play,"bgm\kyuusoku.ogg"
+  if %BGM_s_Ch = 57   mov $BGM_Play,"bgm\hakujitsumo_no_hate_age.ogg"
+  if %BGM_s_Ch = 58   mov $BGM_Play,"bgm\sirabe_mx.ogg"
+  if %BGM_s_Ch = 59   mov $BGM_Play,"bgm\As time goes by.ogg"
+  if %BGM_s_Ch = 60   mov $BGM_Play,"bgm\hidamari.ogg";ここからＥＰ３
+  if %BGM_s_Ch = 61   mov $BGM_Play,"bgm\rousokutachi_ga_odoru.ogg"
+  if %BGM_s_Ch = 62   mov $BGM_Play,"bgm\Haruka.ogg"
+  if %BGM_s_Ch = 63   mov $BGM_Play,"bgm\psy-chorus.ogg"
+  if %BGM_s_Ch = 64   mov $BGM_Play,"bgm\far.ogg"
+  if %BGM_s_Ch = 65   mov $BGM_Play,"bgm\akaikutsu.ogg"
+  if %BGM_s_Ch = 66   mov $BGM_Play,"bgm\mother.ogg"
+  if %BGM_s_Ch = 67   mov $BGM_Play,"bgm\haze.ogg"
+  if %BGM_s_Ch = 68   mov $BGM_Play,"bgm\odoru_kimuchi.ogg"
+  if %BGM_s_Ch = 69   mov $BGM_Play,"bgm\Dread of the grave -More fear-.ogg"
+  if %BGM_s_Ch = 70   mov $BGM_Play,"bgm\organ_shokyoku_nioku_hachi.ogg"
+  if %BGM_s_Ch = 71   mov $BGM_Play,"bgm\rhythm-changer.ogg"
+  if %BGM_s_Ch = 72   mov $BGM_Play,"bgm\happiness of  marionette_omake.ogg"
+  if %BGM_s_Ch = 73   mov $BGM_Play,"bgm\happiness of marionette.ogg"
+  if %BGM_s_Ch = 74   mov $BGM_Play,"bgm\moon_usagi_no_butou.ogg"
+  if %BGM_s_Ch = 75   mov $BGM_Play,"bgm\Melting away.ogg"
+  if %BGM_s_Ch = 76   mov $BGM_Play,"bgm\soul of soul.ogg"
+  if %BGM_s_Ch = 77   mov $BGM_Play,"bgm\miragecoordinator.ogg"
+  if %BGM_s_Ch = 78   mov $BGM_Play,"bgm\prison.ogg"
+  if %BGM_s_Ch = 79   mov $BGM_Play,"bgm\umaretekitekurete_arigatou.ogg"
+  if %BGM_s_Ch = 80   mov $BGM_Play,"bgm\tsubasa.ogg"
+  if %BGM_s_Ch = 81   mov $BGM_Play,"bgm\shitsurakuen.ogg"
+  if %BGM_s_Ch = 82   mov $BGM_Play,"bgm\wingless.ogg"
+  if %BGM_s_Ch = 83   mov $BGM_Play,"bgm\activepain.ogg"
+  if %BGM_s_Ch = 84   mov $BGM_Play,"bgm\Dread of the grave -rhythm ver-.ogg"
+
+;EP4追加
+  if %BGM_s_Ch = 85   mov $BGM_Play,"bgm\kuon.ogg"
+  if %BGM_s_Ch = 86   mov $BGM_Play,"bgm\over.ogg"
+  if %BGM_s_Ch = 87   mov $BGM_Play,"bgm\Like the gale.ogg"
+  if %BGM_s_Ch = 88   mov $BGM_Play,"bgm\F Style.ogg"
+  if %BGM_s_Ch = 89   mov $BGM_Play,"bgm\Monochrome Clock.ogg"
+  if %BGM_s_Ch = 90   mov $BGM_Play,"bgm\apathy.ogg"
+  if %BGM_s_Ch = 91   mov $BGM_Play,"bgm\shinpi_no_mori.ogg"
+  if %BGM_s_Ch = 92   mov $BGM_Play,"bgm\sakutarou_no_ganbari_monogatari.ogg"
+  if %BGM_s_Ch = 93   mov $BGM_Play,"bgm\Parallel.ogg"
+  if %BGM_s_Ch = 94   mov $BGM_Play,"bgm\F Style.ogg"
+  if %BGM_s_Ch = 95   mov $BGM_Play,"bgm\599 million ruins.ogg"
+  if %BGM_s_Ch = 96   mov $BGM_Play,"bgm\maria_utanasi_mx.ogg"
+  if %BGM_s_Ch = 97   mov $BGM_Play,"bgm\Surrounding.ogg"
+  if %BGM_s_Ch = 98   mov $BGM_Play,"bgm\hibuta.ogg"
+  if %BGM_s_Ch = 99   mov $BGM_Play,"bgm\death(from stupefaction).ogg"
+  if %BGM_s_Ch = 100   mov $BGM_Play,"bgm\mortal stampede.ogg"
+  if %BGM_s_Ch = 101   mov $BGM_Play,"bgm\Victima_propiciatoria.ogg"
+  if %BGM_s_Ch = 102   mov $BGM_Play,"bgm\Revolt.ogg"
+  if %BGM_s_Ch = 103   mov $BGM_Play,"bgm\rengokukyoukyousoukyoku.ogg"
+  if %BGM_s_Ch = 104   mov $BGM_Play,"bgm\happy_maria_uta_m.ogg"
+  if %BGM_s_Ch = 105   mov $BGM_Play,"bgm\26_dive to emergency.ogg"
+  if %BGM_s_Ch = 106   mov $BGM_Play,"bgm\dir.ogg"
+  if %BGM_s_Ch = 107   mov $BGM_Play,"bgm\endless_nine.ogg"
+  if %BGM_s_Ch = 108   mov $BGM_Play,"bgm\dreamenddischarger.ogg"
+  if %BGM_s_Ch = 109   mov $BGM_Play,"bgm\discode1c.ogg"	;ディスコード
+  if %BGM_s_Ch = 110   mov $BGM_Play,"bgm\kururi.ogg"
+
+;  if %BGM_s_Ch = 111   mov $BGM_Play,"bgm\dreamenddischarger.ogg"
+;  if %BGM_s_Ch = 112   mov $BGM_Play,"bgm\dreamenddischarger.ogg"
+;  if %BGM_s_Ch = 113   mov $BGM_Play,"bgm\dreamenddischarger.ogg"
+;  if %BGM_s_Ch = 114   mov $BGM_Play,"bgm\dreamenddischarger.ogg"
+
+
+
+
+  if %BGM_s_Ch = 1000   mov $BGM_Play,"bgm\tsurupeta-128.ogg" ;つるぺったん
+
+
+	;BGMを鳴らさずファイルパスを取得する為の命令
+	if %bgm_mood_file_path_flg = 1 mov %bgm_mood_file_path_flg,0 : return
+
+goto *BGM_Play_Mord
+
+
+
+
+*Me_List                      ;ミュージックエフェクトデータパス一覧
+
+
+  if %Me_Number =  1   mov $Me_Play,"ME\A1_03052.WAV"     ;飛行機のエンジン音（プロペラ△
+  if %Me_Number =  2   mov $Me_Play,"ME\A3_05051.WAV"     ;港の音△カモメ付き
+  if %Me_Number =  3   mov $Me_Play,"ME\A3_05045.WAV"     ;嵐の岸辺の音
+  if %Me_Number =  4   mov $Me_Play,"ME\A1_03055.WAV"     ;船のエンジン音△
+  if %Me_Number =  5   mov $Me_Play,"ME\A3_01005.WAV"     ;風の音△
+  if %Me_Number =  6   mov $Me_Play,"ME\A3_02012.WAV"     ;嵐の音△
+  if %Me_Number =  7   mov $Me_Play,"ME\A5_01033.WAV"     ;雨の音△
+  if %Me_Number =  8   mov $Me_Play,"ME\A1_12222.WAV"     ;古時計の秒針
+;  if %Me_Number =  9   mov $Me_Play,"ME\A5_08234.WAV"     ;柱時計
+;  if %Me_Number = 10   mov $Me_Play,"ME\A5_14445.WAV"     ;街の音△
+  if %Me_Number = 11   mov $Me_Play,"ME\clock_loop_l4.WAV" ;時計の音
+  if %Me_Number = 12   mov $Me_Play,"ME\rain_2.WAV" ;雨の音○ 静かめ。
+  if %Me_Number = 13   mov $Me_Play,"ME\Rain4_Long.WAV" ;雨の音雷鳴混じり○
+  if %Me_Number = 14   mov $Me_Play,"ME\STORM2.WAV" ;暴風の音○
+  if %Me_Number = 15   mov $Me_Play,"ME\strange_clock.wav" ;時計の音深い。○
+  if %Me_Number = 16   mov $Me_Play,"ME\A5_14446.wav" ;幽霊のような風
+  if %Me_Number = 17   mov $Me_Play,"ME\storm_flanger.wav" ;嵐フランジャー
+  if %Me_Number = 18   mov $Me_Play,"ME\wind_flanger_1.wav";風フランジャー
+  if %Me_Number = 19   mov $Me_Play,"ME\clock_flanger_3.wav";時計フランジャー
+  if %Me_Number = 20   mov $Me_Play,"ME\boiler_room.wav" ;重く低い機械音
+  if %Me_Number = 21   mov $Me_Play,"ME\flangefemale.wav" ;不気味な赤ん坊声
+  if %Me_Number = 22   mov $Me_Play,"ME\dark_phone_bell_far.wav";電話
+  if %Me_Number = 23   mov $Me_Play,"ME\dark_phone_bell.wav" ;電話音（大）
+  if %Me_Number = 24   mov $Me_Play,"ME\gaya_0.wav" ;がやがや
+  if %Me_Number = 25   mov $Me_Play,"ME\in_car_3.WAV" ;電車、がたんごとん。
+  if %Me_Number = 26   mov $Me_Play,"ME\cave_water_drop.wav" ;洞窟の水滴　ピチョン
+  if %Me_Number = 27   mov $Me_Play,"ME\cave_water_flow.wav" ;洞窟の水流　サラサラ
+
+;EP4追加
+  if %Me_Number = 28   mov $Me_Play,"ME\breaking_wind.wav"	;壊れた風の音
+  if %Me_Number = 29   mov $Me_Play,"ME\city_traffic.WAV" ;クラクション系
+  if %Me_Number = 30   mov $Me_Play,"ME\city_traffic_2.WAV" ;走行音系
+
+  if %Me_Number = 31   mov $Me_Play,"ME\cave_water_drop.wav" ;
+  if %Me_Number = 32   mov $Me_Play,"ME\cave_water_drop.wav" ;
+  if %Me_Number = 33   mov $Me_Play,"ME\cave_water_drop.wav" ;
+  if %Me_Number = 34   mov $Me_Play,"ME\cave_water_drop.wav" ;
+
+
+  ;時計用効果音
+  if %Me_Number = 1050 mov $Me_Play,"sys_se\clock_ticking.wav"     ;時計、針の進む音
+  if %Me_Number = 1051 mov $Me_Play,"sys_se\neji.wav"     ;時計、針の巻き戻る音
+  if %Me_Number = 1052 mov $Me_Play,"sys_se\grandfather_clock_bell.WAV"     ;時計、１２時の鐘
+  if %Me_Number = 1053 mov $Me_Play,"sys_se\grandfather_clock_bell_2.WAV"     ;時計、１２時の鐘
+
+ return
+
+
+
+
+
+*Se_Play_List
+
+if %Se_Number =  1 mov $Se_Play,"SE\A5_06196.WAV"     ;タイトル
+if %Se_Number =  2 mov $Se_Play,"SE\A5_02047.WAV"     ;エンド
+if %Se_Number =  3 mov $Se_Play,"SE\A1_16258.WAV"     ;ぴゅーん（コミカル
+if %Se_Number =  4 mov $Se_Play,"SE\A1_17270.WAV"     ;きゅぴーん（閃く
+if %Se_Number =  5 mov $Se_Play,"SE\A5_08263.WAV"     ;しゃきーん
+if %Se_Number =  6 mov $Se_Play,"SE\A1_07130.WAV"     ;叩く（対物軽く
+if %Se_Number =  7 mov $Se_Play,"SE\A1_07131.WAV"     ;叩く（対物早く
+if %Se_Number =  8 mov $Se_Play,"SE\A1_07132.WAV"     ;叩く（対物鈍く
+if %Se_Number =  9 mov $Se_Play,"SE\A1_07133.WAV";ピュン。軽い。
+if %Se_Number = 10 mov $Se_Play,"SE\A5_04105.WAV"     ;叩く（対人
+if %Se_Number = 11 mov $Se_Play,"SE\A5_04107.WAV"     ;叩く（対人
+if %Se_Number = 12 mov $Se_Play,"SE\A5_10316.WAV"     ;打撃音
+if %Se_Number = 13 mov $Se_Play,"SE\A5_10317.WAV"     ;倒れる
+if %Se_Number = 14 mov $Se_Play,"SE\A1_21333.WAV"     ;足音（近づく
+if %Se_Number = 15 mov $Se_Play,"SE\A5_01023.WAV"     ;ドアを閉める（屋敷）
+if %Se_Number = 16 mov $Se_Play,"SE\heavy_door_closing_2.wav";ドアを開ける（屋敷）
+if %Se_Number = 17 mov $Se_Play,"SE\A5_07201.WAV"     ;大扉を開ける（屋敷）
+if %Se_Number = 18 mov $Se_Play,"SE\A5_07202.WAV"     ;大扉を閉める（屋敷）
+if %Se_Number = 19 mov $Se_Play,"SE\knock_2.wav"     ;ノック　イマイチ・軽い
+if %Se_Number = 20 mov $Se_Play,"SE\A5_10315.WAV"     ;ぶぉん！（スイング音
+if %Se_Number = 21 mov $Se_Play,"SE\distant_thunder_2.wav"     ;遠雷ゴロゴロ…。
+if %Se_Number = 22 mov $Se_Play,"SE\horror.wav"     ;黄金の蝶々ME
+if %Se_Number = 23 mov $Se_Play,"SE\clock_grand_fathers3.wav";大時計初日終了ME・長いよー！se51はそこだけ切り抜いてあるので便利です。
+if %Se_Number = 24 mov $Se_Play,"SE\07_se_umi.wav"  ;グロいME
+if %Se_Number = 25 mov $Se_Play,"SE\A6_24636.WAV"   ;カギ開けの音
+if %Se_Number = 26 mov $Se_Play,"SE\05_se_umi.wav"  ;不思議不気味ME
+if %Se_Number = 27 mov $Se_Play,"SE\thunder_3.wav"     ;落雷！　ドーン！
+if %Se_Number = 28 mov $Se_Play,"SE\SE4.WAV"     ;静かなる低音ME
+if %Se_Number = 29 mov $Se_Play,"ME\dark_phone_bell_far.wav";黒電話・目覚しME
+if %Se_Number = 30 mov $Se_Play,"SE\reload_fast.WAV";リロード速い！
+if %Se_Number = 31 mov $Se_Play,"SE\keychain.wav"     ;カチャリ
+if %Se_Number = 32 mov $Se_Play,"SE\kusari.WAV"     ;扉を開けようとして鎖
+if %Se_Number = 33 mov $Se_Play,"SE\02se_umi.wav"  ;怖い物発見系ME
+if %Se_Number = 34 mov $Se_Play,"SE\01se_umi.wav"  ;怖い物衝撃！ME
+if %Se_Number = 35 mov $Se_Play,"SE\blood_4.wav"     ;血ぼた
+if %Se_Number = 36 mov $Se_Play,"SE\clash.wav"     ;煉獄の七杭
+if %Se_Number = 37 mov $Se_Play,"SE\ahaha.wav"     ;ハッハハハハ！
+if %Se_Number = 38 mov $Se_Play,"SE\lowclick.wav"  ;ゴポリ、グリ…
+if %Se_Number = 39 mov $Se_Play,"SE\dropped_hatchet.wav";ガランガラーン
+if %Se_Number = 40 mov $Se_Play,"SE\metal_pipe_hit.wav" ;コーン
+if %Se_Number = 41 mov $Se_Play,"SE\metal_pipe_hit_b.wav";キーン
+if %Se_Number = 42 mov $Se_Play,"SE\metal_pipe_hit_c.wav";カーン
+if %Se_Number = 43 mov $Se_Play,"SE\reload_slow.wav";リロードゆっくり！
+if %Se_Number = 44 mov $Se_Play,"SE\autolock_5.wav";書斎のオートロック
+if %Se_Number = 45 mov $Se_Play,"SE\03se_umi.wav";残酷衝撃…！！ME
+if %Se_Number = 46 mov $Se_Play,"SE\raihuru3d.wav";ライフル発砲！
+if %Se_Number = 47 mov $Se_Play,"SE\B1.WAV";バネの音：プイン
+if %Se_Number = 48 mov $Se_Play,"SE\B5.WAV";バネの音：ポヨン
+if %Se_Number = 49 mov $Se_Play,"SE\shutter_echo_1.wav";シャッター開ける
+if %Se_Number = 50 mov $Se_Play,"SE\shutter_close_echo_1.wav";閉める
+if %Se_Number = 51 mov $Se_Play,"SE\bell1.wav";24時の鐘の音
+if %Se_Number = 52 mov $Se_Play,"SE\teleport_1.wav";テレポート
+if %Se_Number = 53 mov $Se_Play,"SE\lift_phone_receiver.wav";受話器を取る
+if %Se_Number = 54 mov $Se_Play,"SE\applause.wav";パチパチわーわー！
+if %Se_Number = 55 mov $Se_Play,"SE\mouhatsu.wav";ジュウ！　肉を焼く音。
+if %Se_Number = 56 mov $Se_Play,"SE\Z1.wav";メタ空間展開
+if %Se_Number = 57 mov $Se_Play,"SE\barrier_tenkai_3.wav";軌跡の剣の展開
+if %Se_Number = 58 mov $Se_Play,"SE\tsubazeriai.wav";剣戟の音１
+if %Se_Number = 59 mov $Se_Play,"SE\barrier_tenkai_2.wav";ベアト赤宣言
+
+if %Se_Number = 60 mov $Se_Play,"SE\heavy_impact_1.wav";
+if %Se_Number = 61 mov $Se_Play,"SE\heavy_impact_2.wav";
+if %Se_Number = 62 mov $Se_Play,"SE\heavy_impact_3.wav";
+if %Se_Number = 63 mov $Se_Play,"SE\impact.wav";
+if %Se_Number = 64 mov $Se_Play,"SE\B4.wav";
+if %Se_Number = 65 mov $Se_Play,"SE\B_long.wav";
+
+if %Se_Number = 66 mov $Se_Play,"SE\approaching_barrage.wav";
+if %Se_Number = 67 mov $Se_Play,"SE\04_se_umi.wav";怖い系SE
+
+if %Se_Number = 68 mov $Se_Play,"SE\car_sudden_stop.wav";
+if %Se_Number = 69 mov $Se_Play,"SE\school_bell.wav";
+if %Se_Number = 70 mov $Se_Play,"SE\pinpon_2.WAV";
+if %Se_Number = 71 mov $Se_Play,"SE\24_chime.wav";
+
+if %Se_Number = 72 mov $Se_Play,"SE\AAAAA.wav";
+if %Se_Number = 73 mov $Se_Play,"SE\AAAAA.wav";
+if %Se_Number = 74 mov $Se_Play,"SE\AAAAA.wav";
+if %Se_Number = 75 mov $Se_Play,"SE\AAAAA.wav";
+if %Se_Number = 76 mov $Se_Play,"SE\AAAAA.wav";
+
+
+
+;システム用効果音（錠前系の音）
+if %Se_Number = 1000 mov $Se_Play,"sys_se\zyosys7.WAV"  ;ボタンを押す音１
+if %Se_Number = 1001 mov $Se_Play,"sys_se\zyosys1.WAV"  ;ボタンを押す音２
+
+if %Se_Number = 1005 mov $Se_Play,"sys_se\zyosys3.WAV"  ;キャンセル音
+if %Se_Number = 1006 mov $Se_Play,"sys_se\ZS1.WAV"  	;EXIT音（ガラスが割れる音（小）に差替える）
+
+if %Se_Number = 1010 mov $Se_Play,"sys_se\page.wav"     ;ページをめくる音
+
+if %Se_Number = 1020 mov $Se_Play,"sys_se\ZS1.WAV"     ;一人死ぬ（ガラスが割れる音（小）に差替える）
+if %Se_Number = 1021 mov $Se_Play,"sys_se\one_re.wav"     ;一人生き返る（ワインを注ぐ音等？）
+if %Se_Number = 1022 mov $Se_Play,"sys_se\ZS1.WAV"     ;全員死ぬ
+if %Se_Number = 1023 mov $Se_Play,"sys_se\Z2.wav"     ;全員生き返る
+
+if %Se_Number = 1030 mov $Se_Play,"sys_se\mizu_d.wav"     ;セーブ音（水の落ちる音）
+if %Se_Number = 1031 mov $Se_Play,"sys_se\mizu_d2.wav"     ;セーブ音（水の落ちる音）
+
+if %Se_Number = 1040 mov $Se_Play,"sys_se\da_kane.wav"     ;スタート音（鐘の音、後で短い物に差替える））
+
+
+;時計用効果音
+if %Se_Number = 1050 mov $Se_Play,"sys_se\clock_ticking.wav"     ;時計、針の進む音
+if %Se_Number = 1051 mov $Se_Play,"sys_se\neji.wav"     ;時計、針の巻き戻る音
+if %Se_Number = 1052 mov $Se_Play,"sys_se\da_kane2.wav"     ;時計、１２時の鐘
+
+
+;右クリック、キャラ追加時、Tips入手時の効果音
+if %Se_Number = 1060 mov $Se_Play,"sys_se\KT1.wav"		;キャラの追加（明るいバージョン）
+if %Se_Number = 1061 mov $Se_Play,"sys_se\mizu_ijou.wav"     ;キャラの状態変化（暗いバージョン）
+if %Se_Number = 1062 mov $Se_Play,"sys_se\KT1.wav"	     ;Tips入手A
+if %Se_Number = 1063 mov $Se_Play,"sys_se\mizu_ijou.wav"     ;Tips入手B
+
+
+;ガラスの割れる音（ランダム用、1100番の効果音が指定された、ランダムでガラスの割れる音を返す）
+notif %Se_Number = 1100 jumpf
+	rnd2 %ran,1,6
+	if %ran = 1 mov $Se_Play,"sys_se\ZS1.WAV"
+	if %ran = 2 mov $Se_Play,"sys_se\ZS2.WAV"
+	if %ran = 3 mov $Se_Play,"sys_se\ZS3.WAV"
+	if %ran = 4 mov $Se_Play,"sys_se\ZS4.WAV"
+	if %ran = 5 mov $Se_Play,"sys_se\ZS5.WAV"
+	if %ran = 6 mov $Se_Play,"sys_se\ZS6.WAV"
+~
+
+
+ goto *Se_Play_Mord
+
+
+
+
+
+
+
+
+*update_backlog
+
+if %cur_read_lang = 0 jumpf
+if %TextCC12Flug = 1 && %jpbacklogTotalNum < jpBacklogpageMax inc %jpbacklogTotalNum
+~
+notif %cur_read_lang = 0 jumpf
+if %TextCC12Flug = 1 && %backlogTotalNum < BacklogpageMax inc %backlogTotalNum
+~
+
+if %TextCC12Flug = 1 getlog $Textlog,0 : gosub *text_tagsave
+
+return
+
+
+
+
+
+*text_cw ;テキストクリックシステム
+;現在のテキストを取得（セーブデータで使用）
+gettext $textlognow
+
+getcursorpos %x,%y ;テキストのx軸とy軸の拾得
+ispage %Textcc12Flug ;クリック待ちか、改ページか
+isskip %BtnRes
+getreadlang %cur_read_lang
+
+add %x, 5
+add %y, 5
+
+erasetextwindow 0
+
+mov %tmordflg,%Textcc12Flug
+
+if %BtnRes = 3 saveoff : goto *Text_cw_next2
+if %cur_read_lang = %cur_language jumpf
+gosub *update_backlog
+goto *Text_cw_next_wh
+~
+
+if %TextCC12Flug = 0 amsp TextCC1SpNum,%x,%y:vsp TextCC1SpNum,1
+if %TextCC12Flug = 1 amsp TextCC2SpNum,%x,%y:vsp TextCC2SpNum,1
+print 1
+
+btndef clear
+;getenter
+
+*Text_cwlp
+
+saveoff
+
+;mov %BtnRes,99 ;仮　テキスト異常スキップ対策
+delay 100
+
+gettab
+getfunction
+textbtnwait %BtnRes
+if %BtnRes = -21 toggleSprites : goto *text_cw
+if %BtnRes = -22 toggleBackgrounds : goto *text_cw
+
+if %BtnRes = 0 goto *Text_cw_next
+if %BtnRes = -3 goto *Text_cw_next
+if %BtnRes = -11 goto *Text_cw_next
+if %BtnRes = -20 toggleLanguage : savegame 15 : loadgame 15
+if %BtnRes = -19 goto *Text_cw_next
+
+if %BtnRes = -1 && %rmordflg = 0 gosub *text_cw_rclk : goto *Text_cw
+if %BtnRes = -10 && %rmordflg = 0 gosub *text_cw_rclk : goto *Text_cw
+
+if %BtnRes = -2 gosub *text_cw_lookback : goto *Text_cw
+
+
+goto *text_cwlp
+
+*Text_cw_next
+
+vsp TextCC1SpNum,0 : vsp TextCC2SpNum,0
+print 1
+
+*Text_cw_next2
+
+if %tmordflg = 0 jumpf
+gosub *update_backlog
+~
+
+*Text_cw_next_wh
+
+texec
+erasetextwindow 1
+
+; For ADV Mode, check if text clearing required
+check_new_page_required
+
+
+return 
+
+
+*Text_cw_rclk
+
+btndef ""
+
+
+;if %intro_prog_flg = off jumpf       ;スプライトプログラムが動いているかの確認
+
+;mov %intro_prog_flg,off           ;スプライトプログラムのフラグをオフ
+;layermessage 10,"clear/10"           ;スプライトプログラムのスプライト消去
+;layermessage 10,"program_end/10"           ;スプライトプログラムのプログラム停止
+;csp 10
+
+~
+
+;セーブ画面に入る前にセーブデータ用スクリーンショット画像を取得
+getscreenshot 241,135
+texthide     ;テキストを隠す
+
+vsp TextCC1SpNum,0 : vsp TextCC2SpNum,0
+print 1
+gosub *rmenu_csutom
+
+
+;取得していたスクリーンショットの破棄
+deletescreenshot
+textshow
+
+return
+
+; The below is a copy of the *update_backlog subroutine, but runs on clickwaits instead of page waits
+*clear_text_and_save_backlog
+    ; drojf - removed click/page wait (%TextCC12Flug) check, as we're going to 
+    ; force the text to clear every time, which is equivalent to a page wait
+    ;if %TextCC12Flug == 1 jumpf
+        gettext $Textlog
+        len %len_temp_variable, $Textlog
+
+        ; don't save if no text being displayed, otherwise end up with blank backlog pages
+        if %len_temp_variable == 0 jumpf
+            if %cur_read_lang != 0 && %jpbacklogTotalNum < jpBacklogpageMax inc %jpbacklogTotalNum
+            if %cur_read_lang == 0 && %backlogTotalNum < BacklogpageMax inc %backlogTotalNum
+            gosub *text_tagsave
+    ;~
+
+    textclear
+return
+
+*text_tagsave
+
+if %cur_read_lang = 0 jumpf
+;現在ページをログにコピーする
+ mov $%jpBacklogNum,$Textlog
+ ; QOL voice replay: save last voice from this JP history page
+ mov %3900,5050 : add %3900,%jpBacklogNum : sub %3900,jpBacklogpage1
+ mov $%3900,$5091
+ mov $5091,""
+
+;ログの現在登録位置の増加
+
+ if %jpBacklogNum = jpBacklogpageMax mov %jpBacklogNum,jpBacklogpage0  ;ログ位置が最大値であった場合
+ inc %jpBacklogNum
+~
+notif %cur_read_lang = 0 jumpf
+;現在ページをログにコピーする
+ mov $%BacklogNum,$Textlog
+ ; QOL voice replay: save last voice from this FR history page
+ mov %3900,5000 : add %3900,%BacklogNum : sub %3900,Backlogpage1
+ mov $%3900,$5090
+ mov $5090,""
+
+;ログの現在登録位置の増加
+
+ if %BacklogNum = BacklogpageMax mov %BacklogNum,Backlogpage0  ;ログ位置が最大値であった場合
+ inc %BacklogNum
+~
+
+return
+
+*text_cw_lookback
+
+if %cur_read_lang = 0 jumpf
+if %jpbacklogTotalNum < 1 return
+ vsp TextCC1SpNum,0
+ vsp TextCC2SpNum,0
+textoff
+ print 1
+ mov %jpbackloglook,jpBacklogNum
+
+ ;バックログ表示画面指定
+
+  ;表示ページの初期化
+   mov %jpReadbacklogpage,1
+
+  ;ログの頭だし
+
+   mov %jpbackloglook,%jpBacklogNum
+   dec %jpbackloglook
+   if %jpbackloglook < jpBacklogpage1 mov %jpbackloglook,jpBacklogpageMax
+~
+
+notif %cur_read_lang = 0 jumpf
+if %backlogTotalNum < 1 return
+ vsp TextCC1SpNum,0
+ vsp TextCC2SpNum,0
+textoff
+ print 1
+ mov %backloglook,BacklogNum
+
+ ;バックログ表示画面指定
+
+  ;表示ページの初期化
+   mov %Readbacklogpage,1
+
+  ;ログの頭だし
+
+   mov %backloglook,%BacklogNum
+   dec %backloglook
+   if %backloglook < Backlogpage1 mov %backloglook,BacklogpageMax
+~
+
+*text_cw_lookback2
+notif %cur_read_lang = 0 goto *text_cw_lookback2_jp
+
+btndef ""
+  ;ボタン配置
+
+; normal backlog - covers full screen
+if %advMode != 0 jumpf
+   lsp backscreen,":a;bmp\introduction_back1_wide.bmp",0,0  ;convert to widescreen
+   lsp backlogupbtn,":b;bmp\system\UONCUR.png",0,0     ;座標は仮  ;convert to widescreen
+   lsp backlogdownbtn,":b;bmp\system\DONCUR.png",0,515  ;convert to widescreen
+~
+
+; adv backlog - uses adv textbox and only covers bottom part of screen
+if %advMode == 0 jumpf
+   if %textboxType == 0 lsp backscreen,":b;textbox\normal\-1.png",47,315  ;convert to widescreen
+   if %textboxType == 1 lsp backscreen,":b;textbox\black\-1.png",47,315  ;convert to widescreen
+   if %textboxType == 2 lsp backscreen,":b;textbox\clean\-1.png",47,315
+   lsp backlogupbtn,":b;bmp\system\UONCUR.png",47,355     ;座標は仮  ;convert to widescreen
+   lsp backlogdownbtn,":b;bmp\system\DONCUR.png",47,500  ;convert to widescreen
+~
+
+  ;ボタンセット
+
+  ;テキストセット
+itoa $Free1,%backloglook          ;ログ表示
+
+if %advMode == 0 logsp backlogtext,$%backloglook,168,72,#FFFFaa  ;convert to widescreen
+if %advMode != 0 logsp backlogtext,$%backloglook,147,738,#FFFFaa  ;convert to widescreen
+; Click the displayed history text to replay its last recorded voice.
+spbtn backlogtext,backlogtext
+
+  ;現在表示の最大値最低値の判定
+
+  if %backlogTotalNum = 1 vsp backlogdownbtn,0 : vsp backlogupbtn,0 : jumpf
+
+  if %Readbacklogpage = %backlogTotalNum    spbtn backlogdownbtn,backlogdownbtn : vsp backlogupbtn,0 : jumpf
+  if %Readbacklogpage = mini    spbtn backlogupbtn,backlogupbtn : vsp backlogdownbtn,0 : jumpf
+  if %Readbacklogpage = Max    spbtn backlogdownbtn,backlogdownbtn : vsp backlogupbtn,0 : jumpf
+
+
+   spbtn backlogupbtn,backlogupbtn
+   spbtn backlogdownbtn,backlogdownbtn
+
+~
+
+  ;表示
+  print 1
+
+  ;入力受付
+
+   *backlogbtn
+    btnwait2 %BtnRes
+    if %BtnRes = backlogtext gosub *voice_history_replay_fr : goto *backlogbtn
+
+    if %BtnRes = backlogupbtn &&  %Readbacklogpage < MAX && %Readbacklogpage < %backlogTotalNum inc %Readbacklogpage : dec %backloglook : goto *text_cw_lookback3
+
+    if %BtnRes = backlogdownbtn & %Readbacklogpage > mini & %Readbacklogpage <= %backlogTotalNum dec %Readbacklogpage : inc %backloglook : goto *text_cw_lookback3
+
+    if %BtnRes = -2 & %Readbacklogpage < Max & %Readbacklogpage < %backlogTotalNum inc %Readbacklogpage : dec %backloglook : goto *text_cw_lookback3
+    if %BtnRes = -3 & %Readbacklogpage > mini dec %Readbacklogpage : inc %backloglook : goto *text_cw_lookback3
+
+    if %BtnRes = -3 & %Readbacklogpage <= mini jumpf
+    if %BtnRes = -1 jumpf                 ;右クリックで抜ける
+    if %BtnRes = -10 jumpf                 ;ＥＳＣで抜ける
+    if %BtnRes = 0 jumpf                 ;空打ちで抜ける
+
+   goto *backlogbtn
+
+~
+
+   mov %tmordflg,0    ;テキスト表示モード切替
+
+csp backlogupbtn
+csp backlogdownbtn
+csp backscreen
+csp backlogtext
+repaint
+
+texton
+print 1
+return
+
+
+*text_cw_lookback2_jp
+
+btndef ""
+  ;ボタン配置
+
+; normal backlog - covers full screen
+if %advMode != 0 jumpf
+   lsp backscreen,":a;bmp\introduction_back1_wide.bmp",0,0  ;convert to widescreen
+   lsp backlogupbtn,":b;bmp\system\UONCUR.png",0,0     ;座標は仮  ;convert to widescreen
+   lsp backlogdownbtn,":b;bmp\system\DONCUR.png",0,515  ;convert to widescreen
+~
+
+; adv backlog - uses adv textbox and only covers bottom part of screen
+if %advMode == 0 jumpf
+   if %textboxType == 0 lsp backscreen,":b;textbox\normal\-1.png",47,315  ;convert to widescreen
+   if %textboxType == 1 lsp backscreen,":b;textbox\black\-1.png",47,315  ;convert to widescreen
+   if %textboxType == 2 lsp backscreen,":b;textbox\clean\-1.png",47,315
+   lsp backlogupbtn,":b;bmp\system\UONCUR.png",47,355     ;座標は仮  ;convert to widescreen
+   lsp backlogdownbtn,":b;bmp\system\DONCUR.png",47,500  ;convert to widescreen
+~
+
+  ;ボタンセット
+
+  ;テキストセット
+itoa $Free1,%jpbackloglook          ;ログ表示
+
+if %advMode == 0 logsp backlogtext,$%jpbackloglook,168,72,#FFFFaa  ;convert to widescreen
+if %advMode != 0 logsp backlogtext,$%jpbackloglook,147,738,#FFFFaa  ;convert to widescreen
+spbtn backlogtext,backlogtext
+
+  ;現在表示の最大値最低値の判定
+
+  if %jpbacklogTotalNum = 1 vsp backlogdownbtn,0 : vsp backlogupbtn,0 : jumpf
+
+  if %jpReadbacklogpage = %jpbacklogTotalNum    spbtn backlogdownbtn,backlogdownbtn : vsp backlogupbtn,0 : jumpf
+  if %jpReadbacklogpage = mini    spbtn backlogupbtn,backlogupbtn : vsp backlogdownbtn,0 : jumpf
+  if %jpReadbacklogpage = Max    spbtn backlogdownbtn,backlogdownbtn : vsp backlogupbtn,0 : jumpf
+
+
+   spbtn backlogupbtn,backlogupbtn
+   spbtn backlogdownbtn,backlogdownbtn
+
+~
+
+  ;表示
+  print 1
+
+  ;入力受付
+
+   *backlogbtn_jp
+    btnwait2 %BtnRes
+    if %BtnRes = backlogtext gosub *voice_history_replay_jp : goto *backlogbtn_jp
+
+    if %BtnRes = backlogupbtn &&  %jpReadbacklogpage < MAX && %jpReadbacklogpage < %jpbacklogTotalNum inc %jpReadbacklogpage : dec %jpbackloglook : goto *text_cw_lookback3_jp
+
+    if %BtnRes = backlogdownbtn & %jpReadbacklogpage > mini & %jpReadbacklogpage <= %jpbacklogTotalNum dec %jpReadbacklogpage : inc %jpbackloglook : goto *text_cw_lookback3_jp
+
+    if %BtnRes = -2 & %jpReadbacklogpage < Max & %jpReadbacklogpage < %jpbacklogTotalNum inc %jpReadbacklogpage : dec %jpbackloglook : goto *text_cw_lookback3_jp
+    if %BtnRes = -3 & %jpReadbacklogpage > mini dec %jpReadbacklogpage : inc %jpbackloglook : goto *text_cw_lookback3_jp
+
+    if %BtnRes = -3 & %jpReadbacklogpage <= mini jumpf
+    if %BtnRes = -1 jumpf                 ;右クリックで抜ける
+    if %BtnRes = -10 jumpf                 ;ＥＳＣで抜ける
+    if %BtnRes = 0 jumpf                 ;空打ちで抜ける
+
+   goto *backlogbtn_jp
+
+~
+
+   mov %tmordflg,0    ;テキスト表示モード切替
+
+csp backlogupbtn
+csp backlogdownbtn
+csp backscreen
+csp backlogtext
+repaint
+texton
+print 1
+return
+
+
+
+; QOL experimental: one replayable voice per history page (last one).
+*voice_history_replay_fr
+    mov %3900,5000 : add %3900,%backloglook : sub %3900,Backlogpage1
+    if $%3900 != "" _dwave 0,$%3900
+return
+
+*voice_history_replay_jp
+    mov %3900,5050 : add %3900,%jpbackloglook : sub %3900,jpBacklogpage1
+    if $%3900 != "" _dwave 0,$%3900
+return
+
+;ログのループ対応
+*text_cw_lookback3
+
+ if %backloglook <  Backlogpage1 mov %backloglook,BacklogpageMax
+ if %backloglook >  BacklogpageMax mov %backloglook,Backlogpage1
+
+goto *text_cw_lookback2
+
+*text_cw_lookback3_jp
+
+ if %jpbackloglook <  jpBacklogpage1 mov %jpbackloglook,jpBacklogpageMax
+ if %jpbackloglook >  jpBacklogpageMax mov %jpbackloglook,jpBacklogpage1
+
+goto *text_cw_lookback2_jp
+
+;*********************************************************
+;右クリックカスタムシステム
+;右クリックで最初に現れる関数
+;*********************************************************
+
+;*rmenu_csutom     ;右クリック画面表示
+
+  ; FR OPTIONS TEST V1 removed: this legacy menu is not reached via right click
+
+*fr_options_classic
+  textoff
+  mov %tmordflg,1
+
+;  *rmenu_custom_spset
+
+  if %remnu_data = on lsp rmenu_databtn,":a;bmp\system\Menu_data.bmp",180,122
+
+   lsp rmenu_back,":a;bmp\system\c.bmp",0,0
+   lsp rmenu_btn1,":c/3,0,3;bmp\Menu_TipsAll.BMP",180,186
+   lsp rmenu_btn2,":c/3,0,3;bmp\Menu_save.bmp",180,250
+   lsp rmenu_btn3,":c/3,0,3;bmp\Menu_load.bmp",180,314
+   lsp rmenu_btn_Exit,":c/3,0,3;bmp\Exit.bmp",180,378
+
+   print 4,500
+
+;  *rmenu_custom_btset
+
+   btndef ""
+
+  if %remnu_data = on   spbtn rmenu_databtn,rmenu_databtn
+   spbtn rmenu_btn1,rmenu_btn1
+   spbtn rmenu_btn2,rmenu_btn2
+   spbtn rmenu_btn3,rmenu_btn3
+   spbtn rmenu_btn_Exit,rmenu_btn_Exit
+
+; *rmenu_custom_btlp
+
+  btnwait2 %BtnRes
+
+    if %BtnRes = rmenu_databtn goto *rmord_data
+    if %BtnRes = rmenu_btn1 goto *rmord_introduction
+;    if %BtnRes = rmenu_btn2 goto *rmord_save
+    if %BtnRes = rmenu_btn2 goto *savemode
+    if %BtnRes = rmenu_btn3 goto *loadmode
+
+    if %BtnRes = rmenu_btn_Exit goto *rmord_cls     ;Ｅｘｉｔボタンで背景消去
+    if %BtnRes = -1 jumpf                 ;右クリックで抜ける
+    if %BtnRes = -10 jumpf                 ;ＥＳＣで抜ける
+
+;  goto *rmenu_custom_btlp
+
+~
+;mov %tmordflg,0
+
+   if %remnu_data = on csp rmenu_databtn
+csp rmenu_back
+csp rmenu_btn1
+csp rmenu_btn2
+csp rmenu_btn3
+csp rmenu_btn_Exit
+
+print 4,500
+
+texton
+
+return
+
+
+
+
+*YATA_r_def
+
+;全キャラの初期化
+
+	for %Free1 = 1 to 40
+		mov ?r_cha_text[2][%free1][1],1
+		mov ?r_cha_text[3][%free1][1],1
+		mov ?r_cha_text[4][%free1][1],1
+		mov ?r_cha_text[4][%free1][2],1
+	next
+	
+
+	mov %cha_text_page,1	;ページ設定
+
+return
+
+;*****************************************
+;背景の鑑賞
+;***************************************
+*rmord_cls
+
+   if %remnu_data = on vsp rmenu_databtn,0
+vsp rmenu_back,0
+vsp rmenu_btn1,0
+vsp rmenu_btn2,0
+vsp rmenu_btn3,0
+vsp rmenu_btn_Exit,0
+
+print 10,500
+
+textoff
+click
+
+   if %remnu_data = on  vsp rmenu_databtn,1
+vsp rmenu_back,1
+vsp rmenu_btn1,1
+vsp rmenu_btn2,1
+vsp rmenu_btn3,1
+vsp rmenu_btn_Exit,1
+
+print 10,200
+  goto *rmenu_custom_btlp
+
+;************************************************
+;セーブデータ作成
+;************************************************
+
+*rmord_save
+
+btndef ""
+;背景表示
+lsp introduction_back,":c;bmp\black.bmp",0,0
+
+systemcall save
+
+csp introduction_back
+print 1
+
+ goto *rmenu_custom_btset
+
+*rmord_load
+
+btndef ""
+;背景表示
+lsp introduction_back,":c;bmp\black.bmp",0,0
+
+systemcall load
+
+csp introduction_back
+print 1
+
+ goto *rmenu_custom_btset
+
+
+;*************************************
+;文章表示前の割り込みルーチン
+*pretext
+	textspeed %4094
+	if %save_on_flg = on saveon
+    check_new_page_required
+return
+;*************************************
+
+
+*cgprep_ep1
+select "^~c4~EP1_1",*cgprep_ep1_1,"^~c4~EP1_2",*cgprep_ep1_2,"^~c4~EP1_3",*cgprep_ep1_3,"^~c4~EP1_4",*cgprep_ep1_4,"^~c4~EP1_5",*cgprep_ep1_5
+
+*cgprep_ep2
+select "^~c4~EP2_1",*cgprep_ep2_1,"^~c4~EP2_2",*cgprep_ep2_2,"^~c4~EP2_3",*cgprep_ep2_3
+
+*cgprep_EP3
+select "^~c4~EP3_1",*cgprep_EP3_1,"^~c4~EP3_2",*cgprep_EP3_2,"^~c4~EP3_3",*cgprep_EP3_3,"^~c4~EP3_4",*cgprep_EP3_4,"^~c4~EP3_5",*cgprep_EP3_5
+
+*cgprep_EP4
+select "^~c4~EP4_1",*cgprep_EP4_1
+
+
+*cgprep_ep1_1
+goto *cgtest_ep1_1
+
+*cgprep_ep1_2
+goto *cgtest_ep1_2
+
+*cgprep_ep1_3
+bgmplay 19
+meplay2 1,13,50
+meplay2 2,17,40
+goto *cgtest_ep1_3
+
+*cgprep_ep1_4
+meplay2 1,20,70
+goto *cgtest_ep1_4
+
+*cgprep_ep1_5
+goto *cgtest_ep1_5
+
+*cgprep_ep1_6
+goto *cgtest_ep1_6
+
+
+*cgprep_ep2_1
+fr_bg ":b;fr_bg\orig\bmp\background\garden\garden_1c.jpg",":b;bmp\background\garden\garden_1c.png",24
+goto *cgtest_ep2_1
+
+*cgprep_ep2_2
+bgm1v 51,90
+me1v 12,40
+goto *cgtest_ep2_2
+
+*cgprep_ep2_3
+bgm1 54
+me1v 21,60
+goto *cgtest_ep2_3
+
+
+*cgprep_ep3_1
+bgm1v 63,70
+goto *cgtest_ep3_1
+
+*cgprep_ep3_2
+goto *cgtest_ep3_2
+
+*cgprep_ep3_3
+bgm1v 73,90
+gosub *EV2_Isyou2
+
+goto *cgtest_ep3_3
+
+*cgprep_ep3_4
+bgm1 54
+goto *cgtest_ep3_4
+
+*cgprep_ep3_5
+me1v 5,70
+bgm1 82
+goto *cgtest_ep3_5
+
+
+*cgprep_ep4_1
+bgm1v 106,85
+me1v 5,50
+goto *cgtest_ep4_1
+
+
+
+*check_game
+menu_waveon
+;shadedistance 2,2
+;mov %UMINEKOEND,50
+mov %ispatched,0
+mov %UMINEKOPATCH,0
+; chrono: Go ahead, make this a 1. Not quite enough of them to really use,
+; but they almost work.
+if %4092 != 20261014 mov %4092,20261014 : mov %4094,25 : saveglobal
+mov %show_cgs,1 ; CG activees : option temporairement retiree
+mov %show_cg_test,0
+mov %hide_new_sprites,0
+mov %in_r_click_menu,0
+
+if %shownlangselect = 1 goto *postlangselect
+fr_bg ":b;fr_bg\orig\bmp\background\forest\beach_2b.jpg",":b;bmp\background\forest\beach_2b.png",0
+
+*langselect_btnloop
+	mov %witchh1,362
+	mov %witchh2,169
+	lsp title_main_language_back_lsp,title_main_language_back,%witchh1,%witchh2 
+	add %witchh1,20
+	add %witchh2,111
+	lsp title_main_english_lsp,title_main_english,%witchh1,%witchh2
+	add %witchh1,111
+	add %witchh2,1
+
+	lsp title_main_japanese_lsp,title_main_japanese,%witchh1,%witchh2
+	print 9
+
+	btndef ""
+
+	spbtn title_main_english_lsp,title_main_english_lsp
+	spbtn title_main_japanese_lsp,title_main_japanese_lsp
+	btnwait2 %BtnRes
+
+	notif %BtnRes = title_main_english_lsp jumpf
+		changeLanguage 0
+		goto *postlangselect
+	~
+	notif %BtnRes = title_main_japanese_lsp jumpf
+		changeLanguage 1
+		goto *postlangselect
+	~
+	goto *langselect_btnloop
+*postlangselect
+mov %shownlangselect,1
+csp title_main_english_lsp
+csp title_main_japanese_lsp
+csp title_main_language_back_lsp
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+
+; If any 'remembered' settings need to be added, do it here.
+if %seventh_state > 0 jumpf
+    setwindow 75,36,35,20,15,15,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+    fr_bg ":b;fr_bg\orig\bmp\background\forest\beach_2b.jpg",":b;bmp\background\forest\beach_2b.png",9
+    mov %voiceVolume, 57
+    mov %musicVolume, 30
+    seventh_change_voice_level 0
+
+    ^Remarque :@
+    br
+    ^Le réglage du volume de la musique et des voix a été ajouté au bouton « Options » du menu clic droit.^@
+    ^Si le volume général est trop faible, réglez le volume de votre système.^@
+    br
+    ^REMARQUE : le jeu utilise différents niveaux de volume pour la musique au cours de la partie.^@
+    ^Vous devrez peut-être l'ajuster plusieurs fois pour obtenir le volume souhaité.^@
+    ^REMARQUE 2 : les vidéos sont toujours lues avec un volume de 55 ; évitez donc de régler les deux volumes trop bas^@
+    br
+    ^Volume des voix : /
+    %voiceVolume /
+    ^(sur 70)^@
+    ^Volume de la musique : /
+    %musicVolume /
+    ^(sur 70)^@
+    ^Le volume de la musique et des voix est limité à 70 afin d'éviter la saturation.^@
+    ^- Cet écran ne sera affiché qu'une seule fois - ^/
+        
+        *seventh_state_0_loop
+        select "^Cliquez ICI pour quitter",*seventh_state_0_finished
+        goto *seventh_state_0_loop
+        *seventh_state_0_finished
+        btndef ""
+
+    mov %seventh_state, 1
+    fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",9
+~
+
+; If any 'remembered' settings need to be added, do it here.
+if %seventh_state > 2 jumpf
+    setwindow 75,36,45,20,15,15,0,2,20,1,1,#FFFFFF,0,0,960,540 ;utmeta-nomodify
+    lsp title_main_english_lsp, ":bc;en\bmp\title\nvl_vs_adv.png", 100, 250
+    fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",9
+
+    ^Sélection du mode ADV :@
+    br
+    ^07th-Mod ajoute la prise en charge du mode ADV (mode avec boîte de dialogue ; voir l'image ci-dessous).^@
+    br
+    ^Vous pourrez changer de mode ADV plus tard : faites un clic droit pour ouvrir le menu du mod, puis cliquez sur « Options »^
+    ^Faites-le après avoir lancé une partie, lorsque le jeu attend un clic.^@
+    br
+
+*seventh_state_1_loop
+        select "^> Choisir le mode ADV (boîte de dialogue)",*seventh_state_1_adv_mode, "^> Choisir le mode NVL",*seventh_state_1_finished
+        goto *seventh_state_1_loop
+
+*seventh_state_1_adv_mode
+    mov %advMode, 1
+    goto *seventh_state_1_finished
+
+*seventh_state_1_finished
+        btndef ""
+        mov %seventh_state, 3
+        csp title_main_english_lsp
+        fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",9
+~
+
+; If any 'remembered' settings need to be added, do it here.
+if %seventh_state > 3 jumpf
+    fr_bg ":b;fr_bg\orig\bmp\background\forest\beach_2b.jpg",":b;bmp\background\forest\beach_2b.png",9
+
+
+    textspeed 0
+
+*seventh_state_2_loop
+    ^Activez ou désactivez l’ombre portée ici. Sélectionnez « Quitter » lorsque vous avez terminé.^
+    ^Vous pourrez aussi modifier l’ombre portée plus tard depuis le menu du mod.^
+
+    select "^> Activer/désactiver l’ombre portée",*seventh_state_2_toggle, "^> Quitter",*seventh_state_2_finished
+    goto *seventh_state_2_loop
+
+*seventh_state_2_toggle
+    toggle_dropshadow
+    goto *seventh_state_2_loop
+
+*seventh_state_2_finished
+        btndef ""
+        mov %seventh_state, 4
+        fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",9
+~
+
+if %movieSpoilerLevel > 0 jumpf
+^Les génériques d’ouverture PS3 des épisodes 1 à 3 peuvent contenir des spoilers.^@
+^L’équipe de 07th-Mod a recréé le générique d’ouverture du jeu original avec les sprites PS3.^@
+^Souhaitez-vous utiliser ce générique recréé ?^@
+^Vous pourrez modifier ce choix plus tard dans le menu des options.^@
+br
+
+        select "^Lire le remake du générique original pour les épisodes 1 à 3", *seventh_state_1_old_movies, "^Lire les vidéos PS3 (peuvent contenir des spoilers)", *seventh_state_1_new_movies
+        btndef ""
+
+        *seventh_state_1_old_movies
+            mov %movieSpoilerLevel, 1
+            saveglobal
+            jumpf
+
+        *seventh_state_1_new_movies
+            mov %movieSpoilerLevel, 2
+            saveglobal
+            jumpf
+~
+if %seventh_state < 5 mov %textboxType, 2 : mov %seventh_state, 5 : saveglobal ;boîte de dialogue noire sans logo par défaut (une seule fois)
+return
+
+
+
+
+*toggleLanguage
+if %cur_language = 1 jumpf
+	changeLanguage 1
+	return
+~
+changeLanguage 0
+return
+
+*changeLanguage
+getparam %witchh1
+mov %cur_language, %witchh1
+
+notif %cur_language = 1 jumpf
+showlangjp
+~
+if %cur_language = 1 jumpf
+showlangen
+~
+
+return
+
+*setLangString
+	getparam $witchh5, $witchh6
+
+	mov $witchh4, ":b"
+	add $witchh4, $witchh6
+
+	notif %cur_language = 1 jumpf
+	add $witchh4, ";"
+	~
+	notif %cur_language = 0 jumpf
+	add $witchh4, ";en\"
+	~
+	add $witchh4, $witchh5
+return
+
+*setRLangString
+	getparam $witchh5, $witchh6
+
+	mov $witchh4, ":b"
+	add $witchh4, $witchh6
+
+	notif %r_last_language = 1 jumpf
+	add $witchh4, ";"
+	~
+	notif %r_last_language = 0 jumpf
+	add $witchh4, ";en\"
+	~
+	add $witchh4, $witchh5
+return
+
+*set_text_bg
+	getparam $witchh11
+	mov %text_bg,1
+	mov $text_bg,$witchh11
+return
+
+*clr_text_bg
+	mov %text_bg,0
+return
+
+; 'set_oldnew_bg' is meant to be used to display either a CG image or a fallback BG image
+; It's called 'set old new bg' because it's meant to either use the old or new style bg
+; depending on the %show_cgs, but in this script %show_cgs is always forced to 1
+; so the 'new' image (first argument) is always used.
+;
+; set_oldnew_bg [NEW_BG][OLD_BG][MODE][PRINT_EFFECT]
+;
+; Example usage: set_oldnew_bg e0301_a, Mdin_1b, 1, 23
+; NEW_BG: $witchh11 - The CG to display if CGs are enabled (NOTE: this function always has CGs enabled)
+; OLD_BG: $witchh12 - The fallback BG to display if CGs are disabled (This never happens)
+; MODE: %witchh13:
+;  - If 0: doesn't hide sprites when CG shown
+;  - If any other value: hides sprites
+;  - Additionally, if 2, uses the 'breakup' effect to display the CG
+;  - witchh13 is not used if CGs are disabled
+; PRINT_EFFECT: %witchh14 - The effect to use when displaying the BG and CG?
+*set_oldnew_bg
+	getparam $witchh11,$witchh12,%witchh13,%witchh14
+
+	; Someone has forced show_cgs to always be 1 whenever this function is called
+	; FR MOD SAFE: %show_cgs is user-toggleable
+
+	; Decide whether to hide sprites based on value of %witchh13
+	mov %witchh15,1
+	if %witchh13 = 0 mov %witchh15,0
+
+	; ------------ If "show_cgs" is enabled ------------
+	notif %show_cgs = 1 jumpf
+
+	; This line hides sprites while CG is displayed, until clr_oldnew_bg is called
+	mov %hide_new_sprites,%witchh15
+
+	; Display the BG
+	; FR MOD: CG independent from OG/PS3 background selector
+	mov %oldnew_bg,0
+	mov $oldnew_bg, ":b;big\" : add $oldnew_bg,$witchh11 : add $oldnew_bg,".png"
+	bg $oldnew_bg,0
+
+	; Print the BG (either breakup effect or %witchh14 (4th arg) effect)
+	if %witchh13 = 2 print 99,2000,"breakup.dll/lrp"
+	notif %witchh13 = 2 print %witchh14
+	~
+
+	; ---- If "show_cgs" is NOT enabled, just display the regular background ($witchh12/2nd arg) ----
+	if %show_cgs = 1 jumpf
+		bg $witchh12,%witchh14
+	~
+return
+
+*clr_oldnew_bg
+	mov %oldnew_bg,0
+	mov %hide_new_sprites,0
+return
+
+
+
+*lspnewold
+getparam %witchh1,$witchh2,$witchh3,%witchh4,%witchh5
+lspnewold_trans %witchh1,$witchh2,$witchh3,%witchh4,%witchh5,255,0
+
+return
+
+*lspnewold_trans
+getparam %witchh1,$witchh2,$witchh3,%witchh4,%witchh5,%witchh6,%witchh7
+	mov $meta_tmp7, ":b"
+	add $meta_tmp7, $witchh3
+	add $meta_tmp7, ";"
+	add $meta_tmp7, $witchh2
+	add $meta_tmp7, ".png"
+
+	notif %is_old_sprites = 0 jumpf
+	mov $witchh10, ":b"
+	add $witchh10, $witchh3
+	add $witchh10, ";big\"
+	add $witchh10, $witchh2
+	add $witchh10, ".png"
+	~
+	if %is_old_sprites = 0 jumpf
+	mov $witchh10, $meta_tmp7
+	~
+
+	; Only apply sprite hiding if outside the r_click menu to prevent character portraits disappearing
+	if %in_r_click_menu = 0 && %hide_new_sprites = 1 mov $witchh10,":r;bmp\placeholder.png"
+
+	notif %witchh7 = 0 jumpf
+		lsp %witchh1,$witchh10,%witchh4,%witchh5,%witchh6
+		return
+	~
+
+	notif %is_old_sprites = 0 jumpf
+		lsp %witchh1,$meta_tmp7,%witchh4,%witchh5,%witchh6
+		getspsize %witchh1,%meta_tmp4,%meta_tmp6,%meta_tmp7
+		;画像の幅/4　で画像中心からの幅が求められるので（立ち位置のX座標からその幅を引く）
+		div %meta_tmp4,4
+
+		lsp %witchh1,$witchh10,%witchh4,%witchh5,%witchh6
+		getspsize %witchh1,%meta_tmp5,%meta_tmp6,%meta_tmp7
+		;画像の幅/4　で画像中心からの幅が求められるので（立ち位置のX座標からその幅を引く）
+		div %meta_tmp5,4
+
+		mov %meta_tmp6,%witchh4
+		add %meta_tmp6,%meta_tmp4
+		sub %meta_tmp6,%meta_tmp5
+		_amsp %witchh1,%meta_tmp6,0
+
+	~
+	notif %is_old_sprites = 1 jumpf
+		lsp %witchh1,$witchh10,%witchh4,%witchh5,%witchh6
+	~
+return
+
+
+
+*lsp2newold_trans
+getparam %witchh1,$witchh2,$witchh3,%witchh4,%witchh5,%witchh6,%witchh7,%witchh8
+	notif %is_old_sprites = 0 jumpf
+	mov $witchh10, ":b"
+	add $witchh10, $witchh3
+	add $witchh10, ";big\"
+	add $witchh10, $witchh2
+	add $witchh10, ".png"
+	~
+	if %is_old_sprites = 0 jumpf
+	mov $witchh10, ":b"
+	add $witchh10, $witchh3
+	add $witchh10, ";"
+	add $witchh10, $witchh2
+	add $witchh10, ".png"
+	mov $witchh11, $witchh2
+	add $witchh11, ".png"
+
+	fileexist %witchh12, $witchh11
+	if %witchh12 = 1 jumpf
+	mov $witchh10, ":"
+	add $witchh10, $witchh3
+	add $witchh10, ";"
+	add $witchh10, $witchh2
+	add $witchh10, ".bmp"
+	~
+	say $witchh10
+	lsp2 %witchh1,$witchh10,%witchh4,%witchh5,%witchh6,%witchh7,%witchh8
+return
+
+
+*lsp_var_center
+	getparam %witchh14,$witchh7,%witchh8,%witchh9
+
+	lsp_var_inner %witchh14,$witchh7,%witchh8,%witchh9,255,1
+return
+
+*lsp_var_trans_center
+getparam %witchh14,$witchh7,%witchh8,%witchh9,%witchh10
+lsp_var_inner %witchh14,$witchh7,%witchh8,%witchh9,%witchh10, 1
+return
+
+*lsp_var
+getparam %witchh14,$witchh7,%witchh8,%witchh9
+lsp_var_inner %witchh14,$witchh7,%witchh8,%witchh9,255, 0
+
+return
+
+*lsp_var_trans
+getparam %witchh14,$witchh7,%witchh8,%witchh9,%witchh10
+lsp_var_inner %witchh14,$witchh7,%witchh8,%witchh9,%witchh10, 0
+return
+
+*lsp_var_inner
+getparam %witchh14,$witchh7,%witchh8,%witchh9,%witchh10,%witchh11
+
+mov %witchh15, 800
+add %witchh15,%witchh14
+
+lspnewold_trans %witchh15,$witchh7,"",%witchh8,%witchh9,%witchh10,%witchh11
+
+
+
+notif %witchh14 = 1 jumpf
+mov %varlsp1, 1
+mov $varlsp1, $witchh7
+mov %varlspx1, %witchh8
+mov %varlspy1, %witchh9
+mov %varlsptrans1, %witchh10
+mov %varlspcenter1, %witchh11
+~
+
+notif %witchh14 = 2 jumpf
+mov %varlsp2, 1
+mov $varlsp2, $witchh7
+mov %varlspx2, %witchh8
+mov %varlspy2, %witchh9
+mov %varlsptrans2, %witchh10
+mov %varlspcenter2, %witchh11
+~
+
+notif %witchh14 = 3 jumpf
+mov %varlsp3, 1
+mov $varlsp3, $witchh7
+mov %varlspx3, %witchh8
+mov %varlspy3, %witchh9
+mov %varlsptrans3, %witchh10
+mov %varlspcenter3, %witchh11
+~
+
+notif %witchh14 = 4 jumpf
+mov %varlsp4, 1
+mov $varlsp4, $witchh7
+mov %varlspx4, %witchh8
+mov %varlspy4, %witchh9
+mov %varlsptrans4, %witchh10
+mov %varlspcenter4, %witchh11
+
+~
+
+notif %witchh14 = 111 jumpf
+mov %varlsp111, 1
+mov $varlsp111, $witchh7
+mov %varlspx111, %witchh8
+mov %varlspy111, %witchh9
+mov %varlsptrans111, %witchh10
+mov %varlspcenter111, %witchh11
+~
+
+notif %witchh14 = 112 jumpf
+mov %varlsp112, 1
+mov $varlsp112, $witchh7
+mov %varlspx112, %witchh8
+mov %varlspy112, %witchh9
+mov %varlsptrans112, %witchh10
+mov %varlspcenter112, %witchh11
+~
+
+notif %witchh14 = 113 jumpf
+mov %varlsp113, 1
+mov $varlsp113, $witchh7
+mov %varlspx113, %witchh8
+mov %varlspy113, %witchh9
+mov %varlsptrans113, %witchh10
+mov %varlspcenter113, %witchh11
+~
+
+return
+
+*csp_var
+getparam %witchh1
+
+mov %witchh5, 800
+add %witchh5,%witchh1
+csp %witchh5
+
+notif %witchh1 = 1 jumpf
+mov %varlsp1, 0
+~
+notif %witchh1 = 2 jumpf
+mov %varlsp2, 0
+~
+notif %witchh1 = 3 jumpf
+mov %varlsp3, 0
+~
+notif %witchh1 = 4 jumpf
+mov %varlsp4, 0
+~
+notif %witchh1 = 111 jumpf
+mov %varlsp111, 0
+~
+notif %witchh1 = 112 jumpf
+mov %varlsp112, 0
+~
+notif %witchh1 = 113 jumpf
+mov %varlsp113, 0
+~
+
+return
+
+
+
+
+*lsp2_var
+getparam %witchh14,$witchh7,%witchh8,%witchh9,%witchh10,%witchh11,%witchh12
+
+lsp2newold_trans %witchh14,$witchh7,"",%witchh8,%witchh9,%witchh10,%witchh11,%witchh12
+
+
+notif %witchh14 = 2 jumpf
+mov %var2lsp2, 1
+mov $var2lsp2, $witchh7
+mov %var2lspx2, %witchh8
+mov %var2lspy2, %witchh9
+mov %var2lspscalex2, %witchh10
+mov %var2lspscaley2, %witchh11
+mov %var2lsptrans2, %witchh12
+~
+
+notif %witchh14 = 3 jumpf
+mov %var2lsp3, 1
+mov $var2lsp3, $witchh7
+mov %var2lspx3, %witchh8
+mov %var2lspy3, %witchh9
+mov %var2lspscalex3, %witchh10
+mov %var2lspscaley3, %witchh11
+mov %var2lsptrans3, %witchh12
+~
+
+notif %witchh14 = 4 jumpf
+mov %var2lsp4, 1
+mov $var2lsp4, $witchh7
+mov %var2lspx4, %witchh8
+mov %var2lspy4, %witchh9
+mov %var2lspscalex4, %witchh10
+mov %var2lspscaley4, %witchh11
+mov %var2lsptrans4, %witchh12
+~
+
+notif %witchh14 = 5 jumpf
+mov %var2lsp5, 1
+mov $var2lsp5, $witchh7
+mov %var2lspx5, %witchh8
+mov %var2lspy5, %witchh9
+mov %var2lspscalex5, %witchh10
+mov %var2lspscaley5, %witchh11
+mov %var2lsptrans5, %witchh12
+~
+
+notif %witchh14 = 6 jumpf
+mov %var2lsp6, 1
+mov $var2lsp6, $witchh7
+mov %var2lspx6, %witchh8
+mov %var2lspy6, %witchh9
+mov %var2lspscalex6, %witchh10
+mov %var2lspscaley6, %witchh11
+mov %var2lsptrans6, %witchh12
+~
+
+return
+
+*csp2_var
+getparam %witchh1
+
+csp2 %witchh5
+
+notif %witchh1 = 2 jumpf
+mov %var2lsp2, 0
+~
+notif %witchh1 = 3 jumpf
+mov %var2lsp3, 0
+~
+notif %witchh1 = 4 jumpf
+mov %var2lsp4, 0
+~
+notif %witchh1 = 5 jumpf
+mov %var2lsp5, 0
+~
+notif %witchh1 = 6 jumpf
+mov %var2lsp6, 0
+~
+
+return
+*fr_bg
+getparam $witchh10,$witchh11,%witchh12 : mov %oldnew_bg,1 : mov $oldnew_bg_old,$witchh10 : mov $oldnew_bg,$witchh11 : mov $witchh13,$witchh10 : if %4095 = 0 mov $witchh13,$witchh11
+bg $witchh13,%witchh12 : return
+bg $witchh10,%witchh12 : return
+*toggleBackgrounds
+mov %witchh1,1 : sub %witchh1,%4095 : mov %4095,%witchh1
+changeSprites %is_old_sprites : return
+*displayOldNewBg
+
+notif %4095 = 0 jumpf
+if %hide_bgsp2_cg = 1 vsp bgsp2,0
+
+mov $witchh12, $oldnew_bg
+; FR MOD SAFE: direct stored background path
+; FR MOD SAFE: direct stored background path
+~
+if %4095 = 0 jumpf
+mov $witchh12, $oldnew_bg_old
+if %hide_bgsp2_cg = 1 vsp bgsp2,1
+
+~
+bg $witchh12,0
+
+return
+
+*toggleSprites
+if %is_old_sprites = 1 jumpf
+	changeSprites 1
+	return
+~
+changeSprites 0
+return
+
+*changeSprites
+getparam %witchh1
+
+mov %is_old_sprites, %witchh1
+
+tachistate %witchh7,%witchh8,%witchh9
+
+; This is to switch language background images when we fucking need to
+notif %text_bg = 1 goto *post_lang_bg_load
+	notif %cur_language = 1 jumpf
+	;is japanese
+	mov $witchh12, ":b;"
+	add $witchh12, $text_bg
+	~
+
+	if %cur_language = 1 jumpf
+	mov $witchh12, ":b;en\"
+	add $witchh12, $text_bg
+	~
+	bg $witchh12,0
+*post_lang_bg_load
+
+notif %oldnew_bg = 1 goto *post_oldnew_bg_load
+	gosub *displayOldNewBg
+*post_oldnew_bg_load
+
+notif %text_mbg = 1 goto *post_lang_mbg_load
+	notif %cur_language = 1 jumpf
+	;is japanese
+	mov $witchh12, ":bc;"
+	add $witchh12, $text_mbg
+	~
+
+	if %cur_language = 1 jumpf
+	mov $witchh12, ":bc;en\"
+	add $witchh12, $text_mbg
+	~
+	mbg $witchh12,0
+*post_lang_mbg_load
+
+
+notif %witchh7 = 1 jumpf
+ld l,$last_l,0
+~
+notif %witchh8 = 1 jumpf
+ld c,$last_c,0
+~
+notif %witchh9 = 1 jumpf
+ld r,$last_r,0
+~
+
+
+notif %meta_l_on = 1 jumpf
+say %last_meta_l_trans
+mldt l,$last_meta_l,0,%last_meta_l_trans
+~
+notif %meta_c_on = 1 jumpf
+mldt c,$last_meta_c,0,%last_meta_c_trans
+~
+notif %meta_r_on = 1 jumpf
+mldt r,$last_meta_r,0,%last_meta_r_trans
+~
+
+notif %metab_l_on = 1 jumpf
+blade_draw l
+~
+notif %metab_c_on = 1 jumpf
+blade_draw c
+~
+notif %metab_r_on = 1 jumpf
+blade_draw r
+~
+
+notif %varlsp1 = 1 jumpf
+lspnewold_trans 801,$varlsp1,"",%varlspx1,%varlspy1,%varlsptrans1,%varlspcenter1
+~
+
+notif %varlsp2 = 1 jumpf
+lspnewold_trans 802,$varlsp2,"",%varlspx2,%varlspy2,%varlsptrans2,%varlspcenter2
+~
+
+notif %varlsp3 = 1 jumpf
+lspnewold_trans 803,$varlsp3,"",%varlspx3,%varlspy3,%varlsptrans3,%varlspcenter3
+~
+
+notif %varlsp4 = 1 jumpf
+lspnewold_trans 804,$varlsp4,"",%varlspx4,%varlspy4,%varlsptrans4,%varlspcenter4
+~
+
+notif %varlsp111 = 1 jumpf
+lspnewold_trans 911,$varlsp111,"",%varlspx111,%varlspy111,%varlsptrans111,%varlspcenter111
+~
+
+notif %varlsp112 = 1 jumpf
+lspnewold_trans 912,$varlsp112,"",%varlspx112,%varlspy112,%varlsptrans112,%varlspcenter112
+~
+
+notif %varlsp113 = 1 jumpf
+lspnewold_trans 913,$varlsp113,"",%varlspx113,%varlspy113,%varlsptrans113,%varlspcenter113
+~
+
+
+
+notif %var2lsp2 = 2 jumpf
+lsp2newold_trans 2,$var2lsp2,"",%var2lspx2,%var2lspy2,%var2lspscalex2,%var2lspscaley2,%var2lsptrans1
+~
+
+notif %var2lsp3 = 3 jumpf
+lsp2newold_trans 3,$var2lsp3,"",%var2lspx3,%var2lspy3,%var2lspscalex3,%var2lspscaley3,%var2lsptrans3
+~
+
+notif %var2lsp4 = 4 jumpf
+lsp2newold_trans 4,$var2lsp4,"",%var2lspx4,%var2lspy4,%var2lspscalex4,%var2lspscaley4,%var2lsptrans4
+~
+
+notif %var2lsp5 = 5 jumpf
+lsp2newold_trans 5,$var2lsp5,"",%var2lspx5,%var2lspy5,%var2lspscalex5,%var2lspscaley5,%var2lsptrans5
+~
+
+notif %var2lsp6 = 6 jumpf
+lsp2newold_trans 6,$var2lsp6,"",%var2lspx6,%var2lspy6,%var2lspscalex6,%var2lspscaley6,%var2lsptrans6
+~
+
+print 1
+
+return
+
+; params $witchh2
+; uses $witchh12, $witchh10, $witchh11
+*ld_inner
+
+	notif %is_old_sprites = 1 goto *ld_inner_postold
+	mov $witchh12, ":b;"
+	add $witchh12, $witchh2
+	add $witchh12, ".png"
+	mov $witchh10, $witchh2
+	add $witchh10, ".png"
+
+	fileexist %witchh11, $witchh10
+	if %witchh11 = 1 goto *ld_inner_postold
+		mov $witchh12, ":a;"
+		add $witchh12, $witchh2
+		add $witchh12, ".bmp"
+	*ld_inner_postold
+
+	if %is_old_sprites = 1 jumpf
+	mov $witchh12, ":b;big\"
+	add $witchh12, $witchh2
+	add $witchh12, ".png"
+	~
+return
+
+*ld
+	getparam %witchh1,$witchh2,%witchh3  ;Position (l left, c center, r right), standing picture, effect
+
+	gosub *ld_inner
+
+	mov $witchh15,$witchh12
+	mov %witchh16,%witchh3
+	if %hide_new_sprites = 1 mov $witchh15,":r;bmp\placeholder.png" : mov %witchh16,1
+
+	;左の画像が前に来るようにする。
+	notif %witchh1 = l jumpf
+	_ld l,$witchh15,%witchh3 : mov $last_l, $witchh2
+	~
+	if %witchh1 = c _ld c,$witchh15,%witchh16 : mov $last_c, $witchh2
+	if %witchh1 = r _ld r,$witchh15,%witchh16 : mov $last_r, $witchh2
+
+return
+
+*ld4
+	getparam %witchh1,$witchh2,%witchh3,%witchh5  ;立ち絵位置（l左　C中央　ｒ右）、立ち絵、表示方法
+	gosub *ld_inner
+
+	mov $witchh15,$witchh12
+	if %hide_new_sprites = 1 mov $witchh15,":r;bmp\placeholder.png"
+
+	;左の画像が前に来るようにする。
+	if %witchh1 = l _ld l,$witchh15,%witchh3,%witchh5 : mov $last_l, $witchh2
+	if %witchh1 = c _ld c,$witchh15,%witchh3,%witchh5 : mov $last_c, $witchh2
+	if %witchh1 = r _ld r,$witchh15,%witchh3,%witchh5 : mov $last_r, $witchh2
+
+return
+
+*ld5
+	getparam %witchh1,$witchh2,%witchh3,%witchh5,$witchh6  ;立ち絵位置（l左　C中央　ｒ右）、立ち絵、表示方法
+	gosub *ld_inner
+
+	;左の画像が前に来るようにする。
+
+	mov $witchh15,$witchh12
+	if %hide_new_sprites = 1 mov $witchh15,":r;bmp\placeholder.png"
+
+
+	if %witchh1 = l _ld l,$witchh15,%witchh3,%witchh5,$witchh6 : mov $last_l, $witchh2
+	if %witchh1 = c _ld c,$witchh15,%witchh3,%witchh5,$witchh6 : mov $last_c, $witchh2
+	if %witchh1 = r _ld r,$witchh15,%witchh3,%witchh5,$witchh6 : mov $last_r, $witchh2
+
+return
+
+*showchartiptachi
+	;(表示処理）
+	notif %is_old_sprites = 1 jumpf
+	mov $witchh4, ":ba;"
+	add $witchh4, $r_cha_tati_path
+	add $witchh4, ".png"
+	lsp cha_lsp,$witchh4,?r[%witchh5][tati_x],0
+	~
+	if %is_old_sprites = 1 jumpf
+	mov $witchh4, ":ba;big\"
+	add $witchh4, $r_cha_tati_path
+	add $witchh4, ".png"
+	lsp cha_lsp,$witchh4,363,-6
+	~
+return
+
+*set_achievement
+	getparam $witchh14
+
+steamsetachieve $witchh14
+
+;fixing some that failed to trigger
+mov %achieve_31,1
+mov %achieve_41,1
+
+if $witchh14 == "UMI1" mov %achieve_1,1
+if $witchh14 == "UMI2" mov %achieve_2,1
+if $witchh14 == "UMI3" mov %achieve_3,1
+if $witchh14 == "UMI4" mov %achieve_4,1
+if $witchh14 == "UMI5" mov %achieve_5,1
+if $witchh14 == "UMI21" mov %achieve_21,1
+if $witchh14 == "UMI22" mov %achieve_22,1
+if $witchh14 == "UMI23" mov %achieve_23,1
+if $witchh14 == "UMI24" mov %achieve_24,1
+if $witchh14 == "UMI25" mov %achieve_25,1
+if $witchh14 == "UMI31" mov %achieve_31,1
+if $witchh14 == "UMI32" mov %achieve_32,1
+if $witchh14 == "UMI33" mov %achieve_33,1
+if $witchh14 == "UMI34" mov %achieve_34,1
+if $witchh14 == "UMI35" mov %achieve_35,1
+if $witchh14 == "UMI41" mov %achieve_41,1
+if $witchh14 == "UMI42" mov %achieve_42,1
+if $witchh14 == "UMI43" mov %achieve_43,1
+if $witchh14 == "UMI44" mov %achieve_44,1
+if $witchh14 == "UMI45" mov %achieve_45,1
+if $witchh14 == "UMI46" mov %achieve_46,1
+
+if %achieve_1 == 1 && %achieve_2 == 1 && %achieve_3 == 1 && %achieve_4 == 1 && %achieve_5 == 1 && %achieve_21 == 1 && %achieve_22 == 1 && %achieve_23 == 1 && %achieve_24 == 1 && %achieve_25 == 1 && %achieve_31 == 1 && %achieve_32 == 1 && %achieve_33 == 1 && %achieve_34 == 1 && %achieve_35 == 1 && %achieve_41 == 1 && %achieve_42 == 1 && %achieve_43 == 1 && %achieve_44 == 1 && %achieve_45 == 1 && %achieve_46 == 1 steamsetachieve "UMI47"
+
+
+return
+
+*mpegplay_custom_vol
+	getparam $witchh2,%witchh10,%witchh11
+
+	;force volume - witchh11 not used for bgmvol after this line 
+	_bgmvol %witchh11
+
+	;play the movie
+	fileexist %witchh11,$witchh2 + ".mpg"
+	if %witchh11 = 1 _mpegplay $witchh2 + ".mpg",%witchh10
+	if %witchh11 = 0 _mpegplay $witchh2,%witchh10
+
+	;restore the volume
+	bgmvol_safe %BGM_v_Ch
+
+return
+
+*mpegplay
+    getparam $witchh2,%witchh10
+    mpegplay_custom_vol $witchh2,%witchh10,55
+return
+
+*chvol
+    getparam %witchh6,%witchh7
+    mov %witchh7, %witchh7 * %musicVolume / volY
+    if %witchh7 > 100  mov %witchh7, 100
+    if %witchh7 < 0    mov %witchh7, 0
+    _chvol %witchh6, %witchh7
+return
+
+*bgmvol_safe
+    getparam %witchh7
+    mov %witchh7, %witchh7 * %musicVolume / volY
+    if %witchh7 > 100  mov %witchh7, 100
+    if %witchh7 < 0    mov %witchh7, 0
+    _bgmvol %witchh7
+return
+
+*seventh_change_voice_level
+    getparam %witchh7
+
+    ;get sum of parameter and voice volume, then limit it to 0-60
+    add %witchh7, %voiceVolume
+    if %witchh7 > 70  mov %witchh7, 70
+    if %witchh7 < 0   mov %witchh7, 0
+
+    mov %voiceVolume, %witchh7
+    voicevol %voiceVolume
+return
+
+;if cur_language == 1 (japanese) then don't play the voice
+*dwave_eng
+    getparam %witchh7,$witchh11
+    if %cur_language == 1 jumpf
+        _dwave %witchh7,$witchh11
+        mov $5090,$witchh11
+        gettimer %last_voice_play_time
+    ~
+return
+
+*dwave_jp
+    getparam %witchh7,$witchh11
+    if %cur_language == 0 jumpf
+        _dwave %witchh7,$witchh11
+        mov $5091,$witchh11
+        gettimer %last_voice_play_time
+    ~
+return
+
+*dwave
+    getparam %witchh7,$witchh11
+    _dwave %witchh7,$witchh11
+    gettimer %last_voice_play_time
+return
+
+;%witchh20 = time when last voice was played
+;%witchh6  = current time
+;%witchh6 - %witchh20 = time passed since last voice played
+;%witchh7  = prev voice length
+;the zero length text delay forces the text to appear immediately on a user click.
+;without it, the text display just freezes until the delay is over.  
+*voicedelay
+    getparam %witchh7
+    gettimer %witchh6 
+
+    getreadlang %cur_read_lang
+    if %cur_read_lang != %cur_language return
+
+    if (%witchh6 - %last_voice_play_time) >= (%witchh7 + VOICE_DELAY_PADDING) jumpf
+    mov %disable_adv_clear, 1
+^!d0^/
+    mov %disable_adv_clear, 0
+        delay (%witchh7 + VOICE_DELAY_PADDING - (%witchh6 - %last_voice_play_time))
+    ~
+return
+
+;same as above, but user cannot click to skip the delay
+*voicewait
+    getparam %witchh7
+    gettimer %witchh6
+
+    if (%witchh6 - %last_voice_play_time) >= (%witchh7 + VOICE_DELAY_PADDING) jumpf
+    mov %disable_adv_clear, 1
+^!d0^/
+    mov %disable_adv_clear, 0
+        wait (%witchh7 + VOICE_DELAY_PADDING - (%witchh6 - %last_voice_play_time))
+    ~
+return
+
+
+;spolier level 0 - user has not yet been asked about spoilers
+;spoiler level 1 - play the old movies
+;spoiler level 2 - play the PS3 movies
+;$witchh3 is the movie filename as input argument
+;%Free1 indicates whether the movie file exists on disk
+
+*spoiler_play_movie
+    getparam $witchh3
+
+    if %movieSpoilerLevel == 2 jumpf
+        add $witchh3, ".old.mpg"
+    ~
+
+    fileexist %Free1, $witchh3
+    if %Free1 == 1 mpegplay $witchh3, 1 : return
+
+^Attention : vidéo introuvable !\
+return
+
+;this function overloads the 'br' command (it does line break/carriage-return)
+;execute br only in normal mode
+*br
+    if %advMode == 0 _br : return
+    if %adv_call_state == 0 _br : return
+return
+
+;NOTE: some logic is placed in the callback *pretext and *text_cw
+*check_new_page_required
+    gosub *is_new_page_required
+
+    if %x == 1 gosub *clear_text_and_save_backlog
+return
+
+;Sets %x to 1 if new page is required, 0 otherwise
+*is_new_page_required
+    ;if last call was adv_mode_off, then don't check if new page required
+    if %advMode == 0 jumpf
+    if %adv_call_state == 0 jumpf
+
+    ; if text wrapping disabled, take no action
+    if %disable_adv_clear == 1 jumpf
+
+    ; if in English mode and see Japanese or vice versa, take no action
+    getreadlang %cur_read_lang
+    if %cur_read_lang != %cur_language jumpf
+
+    ; get pixel coords of NEXT character printed
+    getcursorpos %x, %y
+
+    ; 73 and 368 are x and y offset of text window, 29 is text height (all in pixels)
+    mov %x, 100*(%x-73)/(960-73)
+    mov %y, (%y-368)/29
+
+    ; x contains percentage of way across the screen
+    ; y contains the line number (starting from 0!)
+
+    ; for now, just clear if more than 2 lines on screen
+    if %y <= 1 jumpf 
+    
+    ; if all checks pass, new page is required
+    mov %x, 1
+    return
+    
+    ; no new page required
+    ~
+    mov %x, 0
+return
+
+*adv_mode_on
+mov %adv_call_state, 1
+*adv_mode_on_no_call_state
+if %advMode == 0 return
+
+fileexist %witchh12, "fonts/adv/face0.otf"
+if %witchh12 == 1 jumpf
+    ^ADV Fonts missing! Disabling ADV mode
+    mov %advMode, 0
+    return
+~
+
+fileexist %witchh12, "textbox\normal\-1.png"
+if %witchh12 == 1 jumpf
+    ^ADV textbox missing! Disabling ADV mode
+    mov %advMode, 0
+    return
+~
+
+;reset adv mode variables each time adv mode enabled
+pmapfont 0, "fonts/adv/face0.otf"
+pmapfont 1, "fonts/adv/face1.otf"
+pmapfont 2, "fonts/adv/face2.otf"
+pmapfont 3, "fonts/adv/face3.otf"
+
+setwindow 73,368,32,17,24,24,0,0,20,1,1,":b;textbox\normal\-1.png",47,315 ;utmeta-nomodify
+
+if %textboxType != 1 jumpf
+setwindow 73,368,32,17,24,24,0,0,20,1,1,":b;textbox\black\-1.png",47,315 ;utmeta-nomodify
+~
+if %textboxType != 2 jumpf
+setwindow 73,368,32,17,24,24,0,0,20,1,1,":b;textbox\clean\-1.png",47,315 ;utmeta-nomodify
+~
+
+advchar $adv_char_id
+return
+
+*adv_mode_off
+mov %adv_call_state, 0
+*adv_mode_off_no_call_state
+pmapfont 0, "fonts/face0.otf"
+pmapfont 1, "fonts/face1.otf"
+pmapfont 2, "fonts/face2.otf"
+pmapfont 3, "fonts/face3.otf"
+setwindow 84,36,31,20,26,26,0,2,20,1,1,#999999,0,0,960,540 ;utmeta-nomodify
+return
+
+;This function resets the text speed to the defaults.
+;It disables ADV mode temporarily, then sets default text speed, then turns ADV back on
+;Only to be used when the screen is fully black, otherwise you can see the screen flashing.
+*adv_default_text_speed_restore_window
+mov %adv_call_state, 1 ;the default behavior is to be in a ADV region
+^!sd
+
+textoff
+
+if %advMode == 0 gosub *adv_mode_off_no_call_state : return
+if %advMode != 0 gosub *adv_mode_on_no_call_state  : return
+return
+
+*advchar
+    getparam $adv_char_id
+
+    ; if named textbox not enabled or not an ADV section, this function just returns
+    if %advMode == 0 return
+    if %adv_call_state == 0 return
+
+    ; the image -1.png is the no-named textbox
+    if $adv_char_id == "00" mov $adv_char_id, "-1"
+    if $adv_char_id == "99" mov $adv_char_id, "-1"
+
+    ; calculate the filename
+    mov $Free29, ":b;textbox\normal\"
+
+    if %textboxType != 1 jumpf
+    mov $Free29, ":b;textbox\black\"
+    ~
+    
+    if %textboxType != 2 jumpf
+    mov $Free29, ":b;textbox\clean\"
+    ~
+
+    add $Free29, $adv_char_id
+    add $Free29, ".png"
+
+    ; only update the window if it is different to the current one. Clear page immediately.
+    if $Free26 != $Free29   setwindow2 $Free29 : mov $Free26,$Free29 : gosub *clear_text_and_save_backlog
+return
+
+
+; To calculate the image offset as a function of time:
+;
+; Y = -(IMAGE_HEIGHT - WINDOW_HEIGHT)/T_SCROLL * t
+;
+; Note1: The time from gettimer (%Free3) is in milliseconds, so divide by 1000 to get seconds
+; Note2: The input to the amsp function (like all other functions) must be divided by 2 due to this version of ponscripter's special scaling factor
+; Note3: be careful numbers don't get too large or too small during calculation (because the image height is so big!)
+*credits_scroll
+    ;IMAGE_PATH, MUSIC_PATH, T_SCROLL - (eg ":b;bg\eve_last1.png"), ("bgm\umineko_c_finalmix_01.ogg" or "" to play nothing), (scroll time in SECONDS)
+    getparam $Free1, $Free2, %Free1, %Free4
+
+    ;Prepare for scroll - turn off text - black out screen - clear sprites
+    textoff
+    fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+    csp -1
+
+    ;load the image to be scrolled. Should load the image before running as it adds a couple secs delay
+    ; Reset ms tick count to 0 for gettimer
+    lsp bgsp,$Free1,0,0
+    getspsize bgsp,%meta_tmp5,%meta_tmp6 ;sprite no, out sprite w, out sprite h
+    resettimer
+
+    mov %meta_tmp6, %meta_tmp6 + %Free4
+
+    if $Free2 != "" bgmonce $Free2
+
+    *ura8_loop
+        ;get time in milliseconds since resettimer was called into %Free3
+        gettimer %Free3
+
+        ;finished once %Free1 seconds has elapsed
+        if %Free3 > (%Free1 * 1000) goto *ura8_finished
+
+        ;calculate Y position of image to be scrolled (see function comment)
+        mov %Free2, -(%meta_tmp6/2-1080/2)*10/%Free1*(%Free3/10)/100/10 + %Free4/2
+
+        ;move sprite to expected position
+        ;save last sprite position so we know if the image actually needs to be moved
+        ;update screen
+        if %Free2 == %Free6 goto *ura8_loop
+            amsp bgsp,0,%Free2,255
+            mov %Free6, %Free2
+            print 1
+
+    goto *ura8_loop
+
+    *ura8_finished
+
+    ;should insert a fade to black here if not handled externally
+return
+
+*force_set_all_achievements
+    textclear
+    ^ Configuration des succès de l’Épisode 1...
+    steamsetachieve "UMI1"
+    delay 1200
+    steamsetachieve "UMI2"
+    delay 800
+    steamsetachieve "UMI3"
+    delay 1000
+    steamsetachieve "UMI4"
+    delay 800
+    steamsetachieve "UMI5"
+    delay 1150
+    ^ Configuration des succès de l’Épisode 2...
+    steamsetachieve "UMI21"
+    delay 1200
+    steamsetachieve "UMI22"
+    delay 1150
+    steamsetachieve "UMI23"
+    delay 1000
+    steamsetachieve "UMI24"
+    delay 1150
+    steamsetachieve "UMI25"
+    delay 1150
+    ^ Configuration des succès de l’Épisode 3...
+    steamsetachieve "UMI31"
+    delay 1150
+    steamsetachieve "UMI32"
+    delay 800
+    steamsetachieve "UMI33"
+    delay 1000
+    steamsetachieve "UMI34"
+    delay 1150
+    steamsetachieve "UMI35"
+    delay 1200
+    ^ Configuration des succès de l’Épisode 4...
+    steamsetachieve "UMI41"
+    delay 800
+    steamsetachieve "UMI42"
+    delay 1150
+    steamsetachieve "UMI43"
+    delay 1000
+    steamsetachieve "UMI44"
+    delay 1200
+    steamsetachieve "UMI45"
+    delay 800
+    steamsetachieve "UMI46"
+    delay 1150
+    steamsetachieve "UMI47"
+    ^ Configuration des succès terminée
+return
+
+*sl
+    gosub *is_new_page_required
+    if %x == 0 return
+
+    if %disable_adv_clear == 1 jumpf
+
+    ;If %disable_adv_clear is disabled, enable it, emit a \, then disable it
+    mov %disable_adv_clear, 1
+\
+    mov %disable_adv_clear, 0
+    return
+
+    ;If %disable_adv_clear is already enabled, just emit a \
+    ~
+\
+return
+
+*noclear_cw
+    mov %disable_adv_clear, 1
+@/
+    mov %disable_adv_clear, 0
+return
+
+*update_dropshadow
+    if %dropShadow == 0 shadedistance 3,3
+    if %dropShadow != 0 shadedistance 1,1
+return
+
+*toggle_dropshadow
+    if %dropShadow == 0 mov %dropShadow, 1 : update_dropshadow : return
+    if %dropShadow != 0 mov %dropShadow, 0 : update_dropshadow : return
+return

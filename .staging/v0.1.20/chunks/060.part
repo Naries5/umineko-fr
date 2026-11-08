@@ -1,0 +1,5000 @@
+mov %0,3900
+numalias tmp,%0 : inc %0 ;作業用変数
+numalias tmp1,%0 : inc %0 ;作業用変数
+numalias tmp2,%0 : inc %0 ;作業用変数
+numalias tmp3,%0 : inc %0 ;作業用変数
+numalias tmp4,%0 : inc %0 ;作業用変数
+numalias tmp5,%0 : inc %0 ;作業用変数
+numalias tmp6,%0 : inc %0 ;作業用変数
+numalias tmp7,%0 : inc %0 ;作業用変数
+numalias tmp8,%0 : inc %0 ;作業用変数
+numalias tmp9,%0 : inc %0 ;作業用変数
+numalias tmp10,%0 : inc %0 ;作業用変数
+numalias tmp11,%0 : inc %0 ;作業用変数
+numalias tmp12,%0 : inc %0 ;作業用変数
+numalias tmp13,%0 : inc %0 ;作業用変数
+numalias tmp14,%0 : inc %0 ;作業用変数
+numalias tmp15,%0 : inc %0 ;作業用変数
+numalias tmp16,%0 : inc %0 ;作業用変数
+
+numalias ran,%0 : inc %0 ;作業用変数
+numalias ran1,%0 : inc %0 ;作業用変数
+numalias ran2,%0 : inc %0 ;作業用変数
+numalias ran3,%0 : inc %0 ;作業用変数
+numalias ran4,%0 : inc %0 ;作業用変数
+numalias ran5,%0 : inc %0 ;作業用変数
+
+numalias meta_tmp1,%0 : inc %0 ;メタ視処理用_作業用変数
+numalias meta_tmp2,%0 : inc %0 ;メタ視処理用_作業用変数
+numalias meta_tmp3,%0 : inc %0 ;メタ視処理用_作業用変数
+numalias meta_tmp4,%0 : inc %0 ;メタ視処理用_作業用変数
+numalias meta_tmp5,%0 : inc %0 ;メタ視処理用_作業用変数
+numalias meta_tmp6,%0 : inc %0 ;メタ視処理用_作業用変数
+numalias meta_tmp7,%0 : inc %0 ;メタ視処理用_作業用変数
+numalias meta_tmp8,%0 : inc %0 ;メタ視処理用_作業用変数
+
+numalias efe_spd1,%0 : inc %0 ;エフェクトスピード用変数
+numalias efe_spd2,%0 : inc %0 ;エフェクトスピード用変数
+
+numalias debag_save_no,%0 : inc %0 ;デバッグ用セーブ変数
+numalias debag_save_count,%0 : inc %0 ;カウント
+mov %debag_save_count,0
+numalias debag_load_no,%0 : inc %0 ;デバッグロード用の変数を保持
+
+numalias msp_l,883		;メタ世界、左立ち絵スプライト番号
+numalias msp_c,884		;メタ世界、真ん中立ち絵スプライト番号
+numalias msp_r,885		;メタ世界、右立ち絵スプライト番号
+numalias msp_bg,886		;メタ世界、背景スプライト番号
+
+numalias msp_hana_d,887	;メタ世界、華模様下　スプライト番号
+numalias msp_hana_u,888	;メタ世界、華模様上　スプライト番号
+numalias msp_kuro,889	;メタ世界、黒幕　スプライト番号
+
+numalias x_get_tmp1,%0 : inc %0 ;作業用変数
+numalias x_get_tmp2,%0 : inc %0 ;作業用変数
+numalias x_get_tmp3,%0 : inc %0 ;作業用変数
+numalias x_get_tmp4,%0 : inc %0 ;作業用変数
+numalias x_get_tmp5,%0 : inc %0 ;作業用変数
+
+numalias is_old_sprites,%0 : inc %0 ;作業用変数
+numalias cur_language,%0 : inc %0 ;作業用変数
+
+numalias cur_read_lang,%0 : inc %0 ;作業用変数
+
+numalias shownlangselect,%0 : inc %0 ;作業用変数
+
+numalias fry_tmp1,%0 : inc %0 ;バタフライ処理用_作業用変数
+numalias fry_tmp2,%0 : inc %0
+
+numalias l,1 ;メタ視処理用_作業用変数
+numalias c,2 ;メタ視処理用_作業用変数
+;numalias r,3 ;メタ視処理用_作業用変数
+numalias a,4 ;メタ視処理用_作業用変数
+stralias white,"white" ;メタ視処理用_作業用変数
+stralias black,"black" ;メタ視処理用_作業用変数
+
+;時計用の変数指定ルーチン
+numalias clock_moto_h,%0 : inc %0 ;進む前の　時
+numalias clock_moto_m,%0 : inc %0 ;進む前の　分
+numalias clock_h,%0 : inc %0 ;現在の時
+numalias clock_m,%0 : inc %0 ;現在の分
+
+;日をまたぐ時の処理、元々の進む時間をここに代入する。
+numalias clock_tmp_h,%0 : inc %0 
+numalias clock_tmp_m,%0 : inc %0 
+
+;１回の処理あたりに進む角度
+numalias clock_kakudo_h,%0 : inc %0 
+numalias clock_kakudo_m,%0 : inc %0 
+
+numalias clock_x,%0 : inc %0 ;時計の針、中心座標Ｘ
+numalias clock_y,%0 : inc %0 ;時計の針、中心座標Ｙ
+numalias clock_kakudai,%0 : inc %0 ;時計の拡大率
+
+numalias clock_reverse,%0 : inc %0 ;時計の進む方向、0は順方向、1は逆方向
+
+numalias clock_iti_flg,%0 : inc %0 ;時計の位置確認、テストルーチンフラグ
+
+;作業用
+numalias tmp_h,%0 : inc %0 ;短針表示角度等
+numalias tmp_m,%0 : inc %0 ;長針表示角度等
+numalias tmp_sub,%0 : inc %0 ;元の時間と進む時間との差分（分数）
+
+numalias clock_lsp,100 ;時計表示用スプライト番号
+numalias clock_h_lsp,99 ;時計表示用スプライト番号
+numalias clock_m_lsp,98 ;時計表示用スプライト番号
+numalias clock_c_lsp,97 ;時計表示用スプライト番号
+
+;時計の進む速さ（基本は１分　1000ミリ秒？　倍数を入力）
+numalias clock_speed,%0 : inc %0
+
+;画像パス
+stralias clock,":a;bmp\clock\clock.bmp"  ;時計
+stralias clock_h,":a;bmp\clock\clock_h.bmp"  ;時計_短針
+stralias clock_m,":a;bmp\clock\clock_m.bmp"  ;時計_長針
+stralias clock_c,":a;bmp\clock\clock_c.bmp"  ;時計_中心
+
+;SEへのパス
+stralias clock_kane,"bmp\clock\kane.wav"  ;時計_鐘
+stralias clock_byou,"bmp\clock\byou.wav"  ;時計_短針
+
+;黒と白のエフェクト
+stralias r_black,":c;bmp\r_click\black.bmp"
+stralias r_white,":c;bmp\r_click\white.bmp"
+
+
+numalias debagu,%0 : inc %0 ;デバック用変数
+
+;タイトル画面表示関連
+numalias title_skip,%0 : inc %0
+numalias UMINEKOEND_FLG,%0 : inc %0 ;新要素追加の告知、チェック変数
+numalias UMINEKOEND_TIPS_FLG,%0 : inc %0 ;Tips新要素追加告知、チェック変数
+
+
+;----------------------------------
+
+;右クリックシステム用変数宣言
+
+;システムボタン
+
+;tipsボタンのパスの入力（1シナリオ1番目のtipsは　tips1_1.bmp　と表記）
+	;ep1
+	stralias r_tips_1_1,"bmp\r_click\tips_btn\tips1_1.png"
+	stralias r_tips_1_2,"bmp\r_click\tips_btn\tips1_2.png"
+	stralias r_tips_1_3,"bmp\r_click\tips_btn\tips1_3.png"
+	stralias r_tips_1_4,"bmp\r_click\tips_btn\tips1_4.png"
+	stralias r_tips_1_5,"bmp\r_click\tips_btn\tips1_5.png"
+	stralias r_tips_1_6,"bmp\r_click\tips_btn\tips1_6.png"
+	stralias r_tips_1_7,"bmp\r_click\tips_btn\tips1_7.png"
+
+
+	;Grmoir
+	stralias r_grim1,":a/2,0,3;bmp\r_click\notes_btn\notes_1.bmp"
+	stralias r_grim2,":a/2,0,3;bmp\r_click\notes_btn\notes_2.bmp"
+	stralias r_grim3,":a/2,0,3;bmp\r_click\notes_btn\notes_3.bmp"
+	stralias r_grim4,":a/2,0,3;bmp\r_click\notes_btn\notes_4.bmp"
+	stralias r_grim5,":a/2,0,3;bmp\r_click\notes_btn\notes_5.bmp"
+	stralias r_grim6,":a/2,0,3;bmp\r_click\notes_btn\notes_6.bmp"
+	stralias r_grim7,":a/2,0,3;bmp\r_click\notes_btn\notes_7.bmp"
+	stralias r_grim8,":a/2,0,3;bmp\r_click\notes_btn\notes_8.bmp"
+	stralias r_grim9,":a/2,0,3;bmp\r_click\notes_btn\notes_9.bmp"
+	stralias r_grim10,":a/2,0,3;bmp\r_click\notes_btn\notes_10.bmp"
+	stralias r_grim11,":a/2,0,3;bmp\r_click\notes_btn\notes_11.bmp"
+	stralias r_grim12,":a/2,0,3;bmp\r_click\notes_btn\notes_12.bmp"
+	stralias r_grim13,":a/2,0,3;bmp\r_click\notes_btn\notes_13.bmp"
+	stralias r_grim14,":a/2,0,3;bmp\r_click\notes_btn\notes_14.bmp"
+
+
+	;ep2
+	stralias r_tips_2_1,"bmp\r_click\tips_btn\tips2_1.png"
+	stralias r_tips_2_2,"bmp\r_click\tips_btn\tips2_2.png"
+	stralias r_tips_2_3,"bmp\r_click\tips_btn\tips2_3.png"
+	stralias r_tips_2_4,"bmp\r_click\tips_btn\tips2_4.png"
+	stralias r_tips_2_5,"bmp\r_click\tips_btn\tips2_5.png"
+	stralias r_tips_2_6,"bmp\r_click\tips_btn\tips2_6.png"
+	stralias r_tips_2_7,"bmp\r_click\tips_btn\tips2_7.png"
+
+	;ep3
+	stralias r_tips_3_1,"bmp\r_click\tips_btn\tips3_1.png"
+	stralias r_tips_3_2,"bmp\r_click\tips_btn\tips3_2.png"
+	stralias r_tips_3_3,"bmp\r_click\tips_btn\tips3_3.png"
+	stralias r_tips_3_4,"bmp\r_click\tips_btn\tips3_4.png"
+	stralias r_tips_3_5,"bmp\r_click\tips_btn\tips3_5.png"
+	stralias r_tips_3_6,"bmp\r_click\tips_btn\tips3_6.png"
+	stralias r_tips_3_7,"bmp\r_click\tips_btn\tips3_7.png"
+
+	;ep4
+	stralias r_tips_4_1,"bmp\r_click\tips_btn\tips4_1.png"
+	stralias r_tips_4_2,"bmp\r_click\tips_btn\tips4_2.png"
+	stralias r_tips_4_3,"bmp\r_click\tips_btn\tips4_3.png"
+	stralias r_tips_4_4,"bmp\r_click\tips_btn\tips4_4.png"
+	stralias r_tips_4_5,"bmp\r_click\tips_btn\tips4_5.png"
+	stralias r_tips_4_6,"bmp\r_click\tips_btn\tips4_6.png"
+	stralias r_tips_4_7,"bmp\r_click\tips_btn\tips4_7.png"
+
+
+;tips、ページ送りボタンのパス入力
+stralias tips_next,":bc/2,0,3;bmp\r_click\tips_btn\tips_next.png"
+stralias tips_back,":bc/2,0,3;bmp\r_click\tips_btn\tips_back.png"
+
+;タイトルバック、確認メッセージ用
+stralias title_back_yes,":b/2,0,3;bmp\r_click\sys_btn\yes.png"
+stralias title_back_no,":b/2,0,3;bmp\r_click\sys_btn\no.png"
+stralias title_back_bg,"bmp\r_click\sys_btn\title_bg.png"
+
+
+
+numalias tips,60			;ティップス用の配列を設定
+dim ?tips[10][5]			;一次元はティップス番号　二次元は各種フラグなど
+mov %0,0
+numalias tips_page_max,%0 : inc %0		;そのtipsのページ数
+numalias tips_flg,%0 : inc %0		;tipsを手に入れたかどうかのチェック変数
+
+numalias grim,62
+dim ?grim[15][5]			;一次元はティップス番号　二次元は各種フラグなど
+mov %0,0
+numalias grim_page_max,%0 : inc %0		;そのtipsのページ数
+numalias grim_flg,%0 : inc %0		;tipsを手に入れたかどうかのチェック変数
+
+
+mov %0,100
+
+numalias title_back_yes_lsp,%0 : inc %0
+numalias title_back_no_lsp,%0 : inc %0
+numalias title_back_bg_lsp,%0 : inc %0
+
+
+numalias tips1_lsp,%0 : inc %0
+numalias tips2_lsp,%0 : inc %0
+numalias tips3_lsp,%0 : inc %0
+numalias tips4_lsp,%0 : inc %0
+numalias tips5_lsp,%0 : inc %0
+numalias tips6_lsp,%0 : inc %0
+numalias tips7_lsp,%0 : inc %0
+
+numalias grim1_lsp,%0 : inc %0
+numalias grim2_lsp,%0 : inc %0
+numalias grim3_lsp,%0 : inc %0
+numalias grim4_lsp,%0 : inc %0
+numalias grim5_lsp,%0 : inc %0
+numalias grim6_lsp,%0 : inc %0
+numalias grim7_lsp,%0 : inc %0
+numalias grim8_lsp,%0 : inc %0
+numalias grim9_lsp,%0 : inc %0
+numalias grim10_lsp,%0 : inc %0
+numalias grim11_lsp,%0 : inc %0
+numalias grim12_lsp,%0 : inc %0
+numalias grim13_lsp,%0 : inc %0
+numalias grim14_lsp,%0 : inc %0
+
+numalias grim_next_lsp,%0 : inc %0
+numalias grim_back_lsp,%0 : inc %0
+
+numalias tips_next_lsp,%0 : inc %0
+numalias tips_back_lsp,%0 : inc %0
+
+numalias cha_page_mode,%0 : inc %0
+numalias cha_text_page,%0 : inc %0	;現在表示しているキャラテキストページ
+numalias cha_next_lsp,%0 : inc %0
+numalias cha_back_lsp,%0 : inc %0
+numalias cha_page_flg,%0 : inc %0
+
+
+;システムボタンのパスの入力
+stralias r_char,":b/2,0,3;bmp\r_click\sys_btn\cha.png" ;キャラクター一覧表示
+stralias r_tips,":b/2,0,3;bmp\r_click\sys_btn\tips.png" ;Tipsの一覧表示
+stralias r_save,":b/2,0,3;bmp\r_click\sys_btn\save.png" ;セーブ＆ロード
+stralias r_load,":b/2,0,3;bmp\r_click\sys_btn\load.png" ;セーブ＆ロード
+stralias r_blog,":b/2,0,3;bmp\r_click\sys_btn\log.png" ;バックログ
+stralias r_exec,":b/2,0,3;bmp\r_click\sys_btn\execute.png" ;死亡
+stralias r_grim,":b/2,0,3;bmp\r_click\sys_btn\grimoire_btn.png" ;死亡
+stralias r_resu,":b/2,0,3;bmp\r_click\sys_btn\resur.png" ;復活
+stralias r_title,":b/2,0,3;bmp\r_click\sys_btn\title.png" ;ウィンドクリアー
+stralias r_exit,":b/2,0,3;bmp\r_click\sys_btn\exit.png"
+
+stralias r_next,":b/2,0,3;bmp\r_click\sys_btn\cha_next.png"	;キャラ一覧_切替
+stralias r_change,":b/2,0,3;bmp\r_click\sys_btn\change.png"	;衣装切替ボタン
+stralias r_inlang,":bc/2,0,3;bmp\r_click\sys_btn\r_en.png"		;ep1のTipsへ
+stralias r_inlang_en,":bc/2,0,3;bmp\r_click\sys_btn\r_jp.png"		;ep1のTipsへ
+stralias r_innewold,":bc/2,0,3;bmp\r_click\sys_btn\r_orig.png"		;ep1のTipsへ
+stralias r_innewold_old,":bc/2,0,3;bmp\r_click\sys_btn\r_new.png"		;ep1のTipsへ
+stralias r_ep1,":bc/2,0,3;bmp\r_click\sys_btn\ep1.png"		;ep1のTipsへ
+stralias r_ep2,":bc/2,0,3;bmp\r_click\sys_btn\ep2.png"		;ep2のTipsへ
+stralias r_ep3,":bc/2,0,3;bmp\r_click\sys_btn\ep3.png"		;ep3のTipsへ
+stralias r_ep4,":bc/2,0,3;bmp\r_click\sys_btn\ep4.png"		;ep4のTipsへ
+
+stralias title_main_english,":b/2,0,3;bmp\title\english_textbutton.png"
+stralias title_main_japanese,":b/2,0,3;bmp\title\japanese_textbutton.png"
+stralias title_main_language_back,":b;bmp\title\selectlangback.png"
+
+
+numalias r_char_lsp,%0 : inc %0
+numalias r_tips_lsp,%0 : inc %0
+numalias r_grim_lsp,%0 : inc %0
+numalias r_save_lsp,%0 : inc %0
+numalias r_load_lsp,%0 : inc %0
+numalias r_blog_lsp,%0 : inc %0
+numalias r_exec_lsp,%0 : inc %0
+numalias r_resu_lsp,%0 : inc %0
+numalias r_title_lsp,%0 : inc %0
+numalias r_exit_lsp,%0 : inc %0
+
+numalias r_next_lsp,%0 : inc %0
+numalias r_change_lsp,%0 : inc %0
+numalias r_ep1_lsp,%0 : inc %0
+numalias r_ep2_lsp,%0 : inc %0
+numalias r_ep3_lsp,%0 : inc %0
+numalias r_ep4_lsp,%0 : inc %0
+numalias r_inlang_lsp,%0 : inc %0
+numalias r_innewold_lsp,%0 : inc %0
+numalias r_killeveryone,%0 : inc %0
+numalias r_last_language,%0 : inc %0
+
+
+numalias title_main_english_lsp,%0 : inc %0
+numalias title_main_japanese_lsp,%0 : inc %0
+numalias title_main_language_back_lsp,%0 : inc %0
+
+;キャラ一覧のボタン用スプライト番号
+mov %tmp10,%0 ;魔女空間とでスプライト番号を共用する。
+numalias kin_btn_lsp,%0 : inc %0
+numalias kla_btn_lsp,%0 : inc %0
+numalias nat_btn_lsp,%0 : inc %0
+numalias jes_btn_lsp,%0 : inc %0
+numalias eva_btn_lsp,%0 : inc %0
+numalias hid_btn_lsp,%0 : inc %0
+numalias geo_btn_lsp,%0 : inc %0
+numalias rud_btn_lsp,%0 : inc %0
+numalias kir_btn_lsp,%0 : inc %0
+numalias but_btn_lsp,%0 : inc %0
+numalias ros_btn_lsp,%0 : inc %0
+numalias mar_btn_lsp,%0 : inc %0
+numalias nan_btn_lsp,%0 : inc %0
+numalias gen_btn_lsp,%0 : inc %0
+numalias kum_btn_lsp,%0 : inc %0
+numalias goh_btn_lsp,%0 : inc %0
+numalias sha_btn_lsp,%0 : inc %0
+numalias kan_btn_lsp,%0 : inc %0
+numalias bea_btn_lsp,%0 : inc %0
+numalias ber_btn_lsp,%0 : inc %0
+numalias lam_btn_lsp,%0 : inc %0
+numalias enj_btn_lsp,%0 : inc %0
+mov %tmp11,%0
+
+
+mov %0,%tmp10
+numalias ma_bea_btn_lsp,%0 : inc %0
+numalias ma_ber_btn_lsp,%0 : inc %0
+numalias ma_lam_btn_lsp,%0 : inc %0
+numalias ma_rg_btn_lsp,%0 : inc %0
+numalias ma_kin_btn_lsp,%0 : inc %0
+numalias ma_gen_btn_lsp,%0 : inc %0
+numalias ma_sha_btn_lsp,%0 : inc %0
+numalias ma_kan_btn_lsp,%0 : inc %0
+numalias ma_mar_btn_lsp,%0 : inc %0
+numalias ma_but_btn_lsp,%0 : inc %0
+
+mov %0,%tmp10
+numalias ma3_bea_btn_lsp,%0 : inc %0
+numalias ma3_ber_btn_lsp,%0 : inc %0
+numalias ma3_lam_btn_lsp,%0 : inc %0
+numalias ma3_rg_btn_lsp,%0 : inc %0
+numalias ma3_goa_btn_lsp,%0 : inc %0
+numalias ma3_wal_btn_lsp,%0 : inc %0
+numalias ma3_ron_btn_lsp,%0 : inc %0
+numalias ma3_ev2_btn_lsp,%0 : inc %0
+numalias ma3_enj_btn_lsp,%0 : inc %0
+numalias ma3_s_btn_lsp,%0 : inc %0
+
+mov %0,%tmp10
+numalias ma4_lam_btn_lsp,%0 : inc %0
+numalias ma4_ber_btn_lsp,%0 : inc %0
+numalias ma4_bea_btn_lsp,%0 : inc %0
+numalias ma4_mar_btn_lsp,%0 : inc %0
+numalias ma4_enj_btn_lsp,%0 : inc %0
+numalias ma4_kin_btn_lsp,%0 : inc %0
+numalias ma4_sak_btn_lsp,%0 : inc %0
+numalias ma4_wal_btn_lsp,%0 : inc %0
+numalias ma4_ron_btn_lsp,%0 : inc %0
+numalias ma4_gap_btn_lsp,%0 : inc %0
+numalias ma4_s_btn_lsp,%0 : inc %0
+numalias ma4_rg_btn_lsp,%0 : inc %0
+numalias ma4_goa_btn_lsp,%0 : inc %0
+
+mov %0,%tmp10
+numalias enj_eva_btn_lsp,%0 : inc %0
+numalias enj_oko_btn_lsp,%0 : inc %0
+numalias enj_kas_btn_lsp,%0 : inc %0
+numalias enj_enj_btn_lsp,%0 : inc %0
+numalias enj_ama_btn_lsp,%0 : inc %0
+numalias enj_sak_btn_lsp,%0 : inc %0
+numalias enj_mar_btn_lsp,%0 : inc %0
+numalias enj_rg_btn_lsp,%0 : inc %0
+numalias enj_pro_btn_lsp,%0 : inc %0
+numalias enj_mas_btn_lsp,%0 : inc %0
+numalias enj_sab_btn_lsp,%0 : inc %0
+numalias enj_kwa_btn_lsp,%0 : inc %0
+numalias enj_ber_btn_lsp,%0 : inc %0
+
+
+mov %0,%tmp11
+numalias r_cha_txt_lsp,%0 : inc %0 ;キャラコメントテキスト用
+
+;立ち絵用、スプライト番号
+numalias cha_lsp,%0 : inc %0
+
+;飾り背景
+stralias r_hana,":b;bmp\r_click\hana_back.png" ;右下、花模様
+;stralias r_cha_back,":bc;bmp\r_click\cha_btn\cha_back.png" ;キャラ一覧表示の黒背景
+stralias r_tips1_back,":c;bmp\r_click\tips_btn\tips1_back.bmp" ;tips用黒背景
+numalias r_tips_txt_lsp,%0 : inc %0
+numalias r_grim_txt_lsp,%0 : inc %0
+numalias r_hana_lsp,%0 : inc %0
+numalias r_txt_lsp,%0 : inc %0
+numalias r_cha_back_lsp,%0 : inc %0
+numalias r_cha_back,%0 : inc %0	;キャラ一覧表示、背景画像へのパス
+
+numalias r_tips1_back_lsp,%0 : inc %0
+
+;右クリック入る前のボタンメニュー表示用
+numalias r_system_lsp,%0 : inc %0
+numalias r_clear_lsp,%0 : inc %0
+numalias r_sprite_lsp,%0 : inc %0
+numalias r_language_lsp,%0 : inc %0
+
+
+numalias r_used_lsp,%0 ;何番までスプライトを使用したかを保持する（背景画像は除く、保持しない）
+
+numalias r_black_lsp,%0 : inc %0 ;明るさを落す処理
+numalias r_bg_lsp,%0     ;背景用スプライト番号
+
+
+
+
+;キャラの状態、管理変数
+numalias r,61
+dim ?r[30][16]
+numalias r_cha_text,63
+dim ?r_cha_text[8][50][5]
+
+mov %1,6 ;0〜5までは状態をいれる為の変数
+numalias tati_x,%1 : inc %1	 ;立ち絵の表示位置、Ｘ座標
+
+numalias itiran_x,%1 : inc %1	 ;一覧表示アイコン位置、Ｘ座標
+numalias itiran_y,%1 : inc %1	 ;一覧表示アイコン位置、Ｙ座標
+
+numalias condition,%1 : inc %1		 ;キャラの状態
+numalias condition_end,%1 : inc %1	 ;キャラのコンディションの末端数（０から始るので実質+1）
+numalias r_ishou,%1 : inc %1	 ;キャラの衣装フラグ（0〜）
+
+;numalias coment,%1 : inc %1		 ;表示コメント
+
+;システム用変数
+mov %0,2300
+
+;------------------------
+;右クリック関連
+
+numalias clear_flg,%0 : inc %0 ;シナリオクリアのフラグ（後で変更する可能性大）
+numalias r_for_title,%0 : inc %0 ;タイトルメニューから入って来たかどうかを判断
+numalias r_hyouji,%0 : inc %0 ;メニュー表示（０はキャラ一覧、１はtips）2 is grm
+numalias r_tea_bea,%0 : inc %0 ;表お茶会用のフラグ
+numalias r_u_tea_flg,%0 : inc %0 ;Uお茶フラグ
+numalias r_ber_flg,%0 : inc %0 ;Uお茶、Ber登場フラグ
+
+numalias r_hyouji_cha,%0 : inc %0 ;表示キャラをキャラ番号で保持
+numalias r_hyouji_cha_ma,%0 : inc %0 ;表示キャラをキャラ番号で保持（魔女サイド）
+numalias r_hyouji_cha_enj,%0 : inc %0 ;表示キャラをキャラ番号で保持（縁寿編）
+
+numalias r_hyouji_grim,%0 : inc %0
+numalias r_grim_txt_path,%0 : inc %0;チップステキスト文画像へのパス
+numalias r_hyouji_tips,%0 : inc %0 ;表示tips番号を保持
+
+numalias r_txt_path,%0 : inc %0 ;テキスト文画像へのパス
+numalias r_tips_txt_path,%0 : inc %0 ;チップステキスト文画像へのパス
+
+numalias r_cha_tati_path,%0 : inc %0 ;表示キャラ、キャラの画像パス
+numalias r_bg_path,%0 : inc %0 ;背景画像のパス
+
+numalias tips_page,%0 : inc %0 ;各Tipsの表示ページ数を記録
+numalias tips_kazu,%0 : inc %0 ;各Tipsの数を記録
+numalias grim_page,0
+numalias grim_kazu,0
+
+;エピソード２よりの追加変数
+numalias play_ep,%0 : inc %0	;プレイ中のエピソードの番号を保持
+numalias play_scene,%0 : inc %0	;シーン番号の保持、シーンに応じて右クリックのメニューを変更する。
+mov %play_scene,0
+numalias r_side,%0 : inc %0	;表示サイドのチェック（0、人間、１、魔女）
+
+numalias r_side_change,%0 : inc %0	;表示サイドの切替チェック、表示切替の処理を入れる。
+mov %r_side_change,0
+
+numalias r_hyouji_side,%0 : inc %0	;表示サイドの保持（0人間　１魔女　２縁寿編）
+mov %r_hyouji_side,0
+numalias grim_scene,%0 : inc %0	;stores the scene number for the grimoire
+mov %grim_scene,0
+
+numalias scene_tea,200		;シーン定数（表お茶会）
+numalias scene_back_tea,300	;シーン定数（裏お茶会）
+
+
+
+;キャラ一覧用変数（主に文字変数にパスを入力）
+numalias kin_btn,%0 : inc %0
+numalias kla_btn,%0 : inc %0
+numalias nat_btn,%0 : inc %0
+numalias jes_btn,%0 : inc %0
+numalias eva_btn,%0 : inc %0
+numalias hid_btn,%0 : inc %0
+numalias geo_btn,%0 : inc %0
+numalias rud_btn,%0 : inc %0
+numalias kir_btn,%0 : inc %0
+numalias but_btn,%0 : inc %0
+numalias ros_btn,%0 : inc %0
+numalias mar_btn,%0 : inc %0
+numalias nan_btn,%0 : inc %0
+numalias gen_btn,%0 : inc %0
+numalias kum_btn,%0 : inc %0
+numalias goh_btn,%0 : inc %0
+numalias sha_btn,%0 : inc %0
+numalias kan_btn,%0 : inc %0
+numalias bea_btn,%0 : inc %0
+numalias ber_btn,%0 : inc %0
+numalias lam_btn,%0 : inc %0
+numalias enj_btn,%0 : inc %0
+numalias rg_btn,%0 : inc %0
+
+
+;キャラの総数
+numalias cha_kazu,20
+
+;EP2　キャラの総数
+numalias cha_kazu_ep2,21
+
+;EP3　キャラの総数
+numalias cha_kazu_ep3,22
+
+;EP4　人間サイド_キャラの総数
+numalias cha_kazu_ep4,22
+
+;人間と魔女サイドの切替
+numalias r_ma_side,%0 : inc %0	;人間と魔女サイドの切替
+
+;--------------------
+;ＥＰ２_魔女サイドは別途変数を入れていく
+;ラムダ（仮）
+mov %1,1
+numalias ma_bea,%1 : inc %1
+numalias ma_ber,%1 : inc %1
+numalias ma_lam,%1 : inc %1
+numalias ma_rg,%1 : inc %1
+numalias ma_kin,%1 : inc %1
+numalias ma_gen,%1 : inc %1
+numalias ma_sha,%1 : inc %1
+numalias ma_kan,%1 : inc %1
+numalias ma_mar,%1 : inc %1
+numalias ma_but,%1
+
+;EP2　魔女サイド　キャラの総数
+numalias cha_kazu_ep2_2,%1
+;--------------------
+numalias r_ma_side_ep3,%0 : inc %0	;人間と魔女サイドの切替
+;魔女サイドは別途変数を入れていく（EP3用）
+;魔女サイドは別途変数を入れていく
+mov %1,1
+numalias ma3_bea,%1 : inc %1
+numalias ma3_ber,%1 : inc %1
+numalias ma3_lam,%1 : inc %1
+numalias ma3_rg,%1 : inc %1
+numalias ma3_goa,%1 : inc %1
+numalias ma3_wal,%1 : inc %1
+numalias ma3_ron,%1 : inc %1
+numalias ma3_ev2,%1 : inc %1
+numalias ma3_enj,%1 : inc %1
+numalias ma3_s,%1
+
+;EP3　魔女サイド　キャラの総数
+numalias cha_kazu_ep3_2,%1
+;--------------------
+
+numalias r_ma_side_ep4,%0 : inc %0	;人間と魔女サイドの切替
+numalias r_s_hyouji,%0 : inc %0		;表示シエスタを保持する変数
+numalias r_s556_flg,%0 : inc %0		;シエスタ５５６、状態変化フラグ
+mov %r_s556_flg,0
+
+;魔女サイドは別途変数を入れていく（EP4用）
+;魔女サイドは別途変数を入れていく
+mov %1,1
+numalias ma4_lam,%1 : inc %1
+numalias ma4_ber,%1 : inc %1
+numalias ma4_bea,%1 : inc %1
+numalias ma4_mar,%1 : inc %1
+numalias ma4_enj,%1 : inc %1
+numalias ma4_kin,%1 : inc %1
+numalias ma4_sak,%1 : inc %1
+numalias ma4_wal,%1 : inc %1
+numalias ma4_ron,%1 : inc %1
+numalias ma4_gap,%1 : inc %1
+numalias ma4_s,%1 : inc %1
+numalias ma4_rg,%1 : inc %1
+numalias ma4_goa,%1
+
+;EP4　魔女サイド　キャラの総数
+numalias cha_kazu_ep4_2,%1
+;--------------------
+;縁寿編（1998年編は別途変数を入れていく（EP4用））
+numalias r_enj_side_ep4,%0 : inc %0
+
+mov %1,1
+numalias enj_eva,%1 : inc %1
+numalias enj_oko,%1 : inc %1
+numalias enj_kas,%1 : inc %1
+numalias enj_enj,%1 : inc %1
+numalias enj_ama,%1 : inc %1
+numalias enj_sak,%1 : inc %1
+numalias enj_mar,%1 : inc %1
+numalias enj_rg,%1 : inc %1
+numalias enj_pro,%1 : inc %1
+numalias enj_mas,%1 : inc %1
+numalias enj_sab,%1 : inc %1
+numalias enj_kwa,%1 : inc %1
+numalias enj_ber,%1
+
+;キャラの総数
+numalias cha_kazu_ep4_3,%1
+;--------------------
+
+;右クリックシステム、上余白
+numalias r_top_y,30
+
+;右クリックシステムボタン、Ｙ座標（上余白＋２２８ピクセル）
+mov %tmp,r_top_y : add %tmp,228
+numalias r_menu_top_y,%tmp
+
+
+;------------------------
+
+
+;----------------------------------------
+;セーブロードシステム用
+
+;mov %0,100
+;numalias b_save,%0 : inc %0
+;numalias b_load,%0 : inc %0
+;numalias b_rmenu_btn_Exit,%0 : inc %0
+numalias load_for_title,%0 : inc %0 ;タイトルからロードに入ったかのチェック
+mov %load_for_title,0
+numalias black_toukaritu,150 ;黒幕透過率
+
+numalias debag_save_flg,%0 : inc %0 ;自動セーブ用のフラグ変数（デフォは０にする）
+
+
+;----------------------------------------
+;タイトル画面ようスプライト番号
+
+mov %0,100
+numalias t_bg_lsp,%0 : dec %0		;100
+numalias t_hane_lsp,%0 : dec %0		;99
+numalias t_logo_lsp,%0 : dec %0		;98
+numalias t_btn_start_lsp,%0 : dec %0	;97
+numalias t_btn_controls_lsp,%0 : dec %0	;96
+numalias t_btn_exit_lsp,%0 : dec %0	;95
+numalias t_btn_tea_lsp,%0 : dec %0	;94
+numalias t_btn_tips_lsp,%0 : dec %0	;93
+numalias t_btn_music_lsp,%0 : dec %0	;92
+numalias t_btn_ura_tea_lsp,%0 : dec %0	;91
+numalias t_btn_load_lsp,%0 : dec %0	;90
+
+
+numalias t_txt_bg_lsp,%0 : dec %0	;89
+dec %0	;88
+numalias t_txt_load_lsp,%0 : dec %0	;87
+numalias t_txt_web_lsp,%0 : dec %0	;86
+numalias t_txt_tea_lsp,%0 : dec %0	;85
+numalias t_txt_tips_lsp,%0 : dec %0	;84
+numalias t_txt_music_lsp,%0 : dec %0	;83
+
+numalias t_txt_start_lsp,%0 : dec %0	;82
+numalias t_txt_exit_lsp,%0 : dec %0	;81
+numalias t_txt_ura_tea_lsp,%0 : dec %0	;80
+dec %0
+
+numalias t_txt_lock_lsp,%0 : dec %0	;78
+numalias t_txt_unlock_lsp,%0 : dec %0	;77
+
+numalias t_btn_web_lsp,%0 : dec %0	;96
+
+mov %0,70
+numalias t_btn_ep1_lsp,%0 : dec %0	;70
+numalias t_btn_ep2_lsp,%0 : dec %0	;69
+numalias t_btn_ep3_lsp,%0 : dec %0	;68
+numalias t_btn_ep4_lsp,%0 : dec %0	;67
+
+mov %0,65
+numalias t_txt_ep1_lsp,%0 : dec %0	;65
+numalias t_txt_ep2_lsp,%0 : dec %0	;64
+numalias t_txt_ep3_lsp,%0 : dec %0	;63
+numalias t_txt_ep4_lsp,%0 : dec %0	;62
+
+mov %0,60
+numalias t_btn_ep1_lock_lsp,%0 : dec %0	;60
+numalias t_btn_ep2_lock_lsp,%0 : dec %0	;59
+numalias t_btn_ep3_lock_lsp,%0 : dec %0	;58
+numalias t_btn_ep4_lock_lsp,%0 : dec %0	;57
+
+mov %0,55
+numalias t_btn_ep1_unlock_lsp,%0 : dec %0	;55
+numalias t_btn_ep2_unlock_lsp,%0 : dec %0	;54
+numalias t_btn_ep3_unlock_lsp,%0 : dec %0	;53
+numalias t_btn_ep4_unlock_lsp,%0 : dec %0	;52
+numalias t_btn_ep5_unlock_lsp,%0 : dec %0   ;51
+
+mov %0,50
+numalias t_btn_ep1_tea_lsp,%0 : dec %0	;50
+numalias t_btn_ep2_tea_lsp,%0 : dec %0	;49
+numalias t_btn_ep3_tea_lsp,%0 : dec %0	;48
+numalias t_btn_ep4_tea_lsp,%0 : dec %0	;47
+
+mov %0,45
+numalias t_txt_ep1_tea_lsp,%0 : dec %0	;65
+numalias t_txt_ep2_tea_lsp,%0 : dec %0	;64
+numalias t_txt_ep3_tea_lsp,%0 : dec %0	;63
+numalias t_txt_ep4_tea_lsp,%0 : dec %0	;62
+
+mov %0,40
+numalias t_btn_ep1_tips_lsp,%0 : dec %0	;60
+numalias t_btn_ep2_tips_lsp,%0 : dec %0	;59
+numalias t_btn_ep3_tips_lsp,%0 : dec %0	;58
+numalias t_btn_ep4_tips_lsp,%0 : dec %0	;58
+
+mov %0,35
+numalias t_txt_ep1_tips_lsp,%0 : dec %0	;60
+numalias t_txt_ep2_tips_lsp,%0 : dec %0	;59
+numalias t_txt_ep3_tips_lsp,%0 : dec %0	;59
+numalias t_txt_ep4_tips_lsp,%0 : dec %0	;59
+
+mov %0,30
+numalias t_btn_ep1_ura_tea_lsp,%0 : dec %0	;60
+numalias t_btn_ep2_ura_tea_lsp,%0 : dec %0	;59
+numalias t_btn_ep3_ura_tea_lsp,%0 : dec %0	;59
+numalias t_btn_ep4_ura_tea_lsp,%0 : dec %0	;59
+
+mov %0,25
+numalias t_txt_ep1_ura_tea_lsp,%0 : dec %0	;60
+numalias t_txt_ep2_ura_tea_lsp,%0 : dec %0	;59
+numalias t_txt_ep3_ura_tea_lsp,%0 : dec %0	;59
+numalias t_txt_ep4_ura_tea_lsp,%0 : dec %0	;59
+
+mov %0,10
+numalias unlock_bg_lsp,%0 : dec %0	;10
+numalias unlock_yes_lsp,%0 : dec %0	;9
+numalias unlock_no_lsp,%0 : dec %0	;8
+
+;----------------------------------------
+
+return
+
+;*************************************************
+
+
+;*************************************************
+;　ゲーム開始時、変数の初期化
+;*************************************************
+
+*bt_def2
+return
+
+;*************************************************
+
+
+;*************************************************
+;　EP１用、変数の初期化
+;*************************************************
+
+*bt_ep1_def
+
+;配列に数字を入力、数字の文字変数にパスを入力
+mov %tmp10,2400
+
+for %tmp11 = 1 to cha_kazu
+	for %tmp12 = 0 to 5
+		mov ?r[%tmp11][%tmp12],%tmp10 : inc %tmp10
+	next
+next
+
+;配列にパスを入力（キャラごとの状態変化数分入力）
+
+mov ?r[kin][condition_end],3 ;0〜3 なので実質４となる。
+mov $?r[kin][0],"bmp\r_click\cha_btn\non"
+mov $?r[kin][1],"bmp\r_click\cha_btn\kin_l"
+mov $?r[kin][2],"bmp\r_click\cha_btn\kin_m"
+mov $?r[kin][3],"bmp\r_click\cha_btn\kin_d"
+
+mov ?r[kla][condition_end],2
+mov $?r[kla][0],"bmp\r_click\cha_btn\non"
+mov $?r[kla][1],"bmp\r_click\cha_btn\kla_l"
+mov $?r[kla][2],"bmp\r_click\cha_btn\kla_d"
+
+mov ?r[nat][condition_end],2
+mov $?r[nat][0],"bmp\r_click\cha_btn\non"
+mov $?r[nat][1],"bmp\r_click\cha_btn\nat_l"
+mov $?r[nat][2],"bmp\r_click\cha_btn\nat_d"
+
+mov ?r[jes][condition_end],2
+mov $?r[jes][0],"bmp\r_click\cha_btn\non"
+mov $?r[jes][1],"bmp\r_click\cha_btn\jes_l"
+mov $?r[jes][2],"bmp\r_click\cha_btn\jes_d"
+
+mov ?r[eva][condition_end],2
+mov $?r[eva][0],"bmp\r_click\cha_btn\non"
+mov $?r[eva][1],"bmp\r_click\cha_btn\eva_l"
+mov $?r[eva][2],"bmp\r_click\cha_btn\eva_d"
+
+mov ?r[hid][condition_end],2
+mov $?r[hid][0],"bmp\r_click\cha_btn\non"
+mov $?r[hid][1],"bmp\r_click\cha_btn\hid_l"
+mov $?r[hid][2],"bmp\r_click\cha_btn\hid_d"
+
+mov ?r[geo][condition_end],2
+mov $?r[geo][0],"bmp\r_click\cha_btn\non"
+mov $?r[geo][1],"bmp\r_click\cha_btn\geo_l"
+mov $?r[geo][2],"bmp\r_click\cha_btn\geo_d"
+
+mov ?r[rud][condition_end],2
+mov $?r[rud][0],"bmp\r_click\cha_btn\non"
+mov $?r[rud][1],"bmp\r_click\cha_btn\rud_l"
+mov $?r[rud][2],"bmp\r_click\cha_btn\rud_d"
+
+mov ?r[kir][condition_end],2
+mov $?r[kir][0],"bmp\r_click\cha_btn\non"
+mov $?r[kir][1],"bmp\r_click\cha_btn\kir_l"
+mov $?r[kir][2],"bmp\r_click\cha_btn\kir_d"
+
+mov ?r[but][condition_end],2
+mov $?r[but][0],"bmp\r_click\cha_btn\non"
+mov $?r[but][1],"bmp\r_click\cha_btn\but_l"
+mov $?r[but][2],"bmp\r_click\cha_btn\but_d"
+
+mov ?r[ros][condition_end],2
+mov $?r[ros][0],"bmp\r_click\cha_btn\non"
+mov $?r[ros][1],"bmp\r_click\cha_btn\ros_l"
+mov $?r[ros][2],"bmp\r_click\cha_btn\ros_d"
+
+mov ?r[mar][condition_end],2
+mov $?r[mar][0],"bmp\r_click\cha_btn\non"
+mov $?r[mar][1],"bmp\r_click\cha_btn\mar_l"
+mov $?r[mar][2],"bmp\r_click\cha_btn\mar_d"
+
+mov ?r[nan][condition_end],2
+mov $?r[nan][0],"bmp\r_click\cha_btn\non"
+mov $?r[nan][1],"bmp\r_click\cha_btn\nan_l"
+mov $?r[nan][2],"bmp\r_click\cha_btn\nan_d"
+
+mov ?r[gen][condition_end],2
+mov $?r[gen][0],"bmp\r_click\cha_btn\non"
+mov $?r[gen][1],"bmp\r_click\cha_btn\gen_l"
+mov $?r[gen][2],"bmp\r_click\cha_btn\gen_d"
+
+mov ?r[kum][condition_end],2
+mov $?r[kum][0],"bmp\r_click\cha_btn\non"
+mov $?r[kum][1],"bmp\r_click\cha_btn\kum_l"
+mov $?r[kum][2],"bmp\r_click\cha_btn\kum_d"
+
+mov ?r[goh][condition_end],2
+mov $?r[goh][0],"bmp\r_click\cha_btn\non"
+mov $?r[goh][1],"bmp\r_click\cha_btn\goh_l"
+mov $?r[goh][2],"bmp\r_click\cha_btn\goh_d"
+
+mov ?r[sha][condition_end],2
+mov $?r[sha][0],"bmp\r_click\cha_btn\non"
+mov $?r[sha][1],"bmp\r_click\cha_btn\sha_l"
+mov $?r[sha][2],"bmp\r_click\cha_btn\sha_d"
+
+mov ?r[kan][condition_end],2
+mov $?r[kan][0],"bmp\r_click\cha_btn\non"
+mov $?r[kan][1],"bmp\r_click\cha_btn\kan_l"
+mov $?r[kan][2],"bmp\r_click\cha_btn\kan_d"
+
+mov ?r[bea][condition_end],2
+mov $?r[bea][0],"bmp\r_click\cha_btn\non"
+mov $?r[bea][1],"bmp\r_click\cha_btn\bea_l"
+mov $?r[bea][2],"bmp\r_click\cha_btn\bea_d"
+
+mov ?r[ber][condition_end],2
+mov $?r[ber][0],"bmp\r_click\cha_btn\non"
+mov $?r[ber][1],"bmp\r_click\cha_btn\ber_l"
+mov $?r[ber][2],"bmp\r_click\cha_btn\ber_d"
+
+
+;一覧表示の座標を入力
+;numalias itiran_x,%tmp11 : inc %tmp11	 ;一覧表示アイコン位置、Ｘ座標
+;numalias itiran_y,%tmp11 : inc %tmp11	 ;一覧表示アイコン位置、Ｙ座標
+mov ?r[kin][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[kin][itiran_y],%tmp
+mov ?r[kla][itiran_x],69 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[kla][itiran_y],%tmp
+mov ?r[nat][itiran_x],118 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[nat][itiran_y],%tmp
+mov ?r[jes][itiran_x],167 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[jes][itiran_y],%tmp
+
+mov ?r[nan][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[nan][itiran_y],%tmp
+mov ?r[eva][itiran_x],69 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[eva][itiran_y],%tmp
+mov ?r[hid][itiran_x],118 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[hid][itiran_y],%tmp
+mov ?r[geo][itiran_x],167 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[geo][itiran_y],%tmp
+
+mov ?r[rud][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[rud][itiran_y],%tmp
+mov ?r[kir][itiran_x],118 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[kir][itiran_y],%tmp
+mov ?r[but][itiran_x],167 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[but][itiran_y],%tmp
+
+mov ?r[gen][itiran_x],19 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[gen][itiran_y],%tmp
+mov ?r[ros][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ros][itiran_y],%tmp
+mov ?r[mar][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[mar][itiran_y],%tmp
+
+mov ?r[sha][itiran_x],19 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[sha][itiran_y],%tmp
+mov ?r[kan][itiran_x],69 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[kan][itiran_y],%tmp
+mov ?r[goh][itiran_x],118 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[goh][itiran_y],%tmp
+mov ?r[kum][itiran_x],167 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[kum][itiran_y],%tmp
+
+mov ?r[bea][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[bea][itiran_y],%tmp
+mov ?r[ber][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ber][itiran_y],%tmp
+
+
+;キャラの立ち位置、X座標を入力
+mov ?r[kin][tati_x],380
+mov ?r[kla][tati_x],425
+mov ?r[nat][tati_x],430
+mov ?r[jes][tati_x],420
+mov ?r[nan][tati_x],425
+mov ?r[eva][tati_x],440
+mov ?r[hid][tati_x],415
+mov ?r[geo][tati_x],435
+mov ?r[rud][tati_x],455
+mov ?r[kir][tati_x],455
+mov ?r[but][tati_x],455
+mov ?r[gen][tati_x],455
+mov ?r[ros][tati_x],445
+mov ?r[mar][tati_x],390
+mov ?r[sha][tati_x],430
+mov ?r[kan][tati_x],460
+mov ?r[goh][tati_x],450
+mov ?r[kum][tati_x],440
+mov ?r[bea][tati_x],380
+mov ?r[ber][tati_x],430
+
+
+mov ?tips[1][tips_page_max],3 ;肖像画の碑文
+mov ?tips[2][tips_page_max],6 ;魔女の手紙
+mov ?tips[3][tips_page_max],1 ;魔女の手紙Ⅱ
+mov ?tips[4][tips_page_max],1 ;魔女の手紙Ⅲ
+mov ?tips[5][tips_page_max],4 ;魔女の棋譜
+mov ?tips[6][tips_page_max],1 ;ウィンチェスターＭ1894
+mov ?tips[7][tips_page_max],1 ;煉獄の七杭
+;mmmm
+mov ?grim[1][grim_page_max],5 ;intro/suffixes				pro
+mov ?grim[2][grim_page_max],1 ;western names			pro
+mov ?grim[3][grim_page_max],1 ;namunamunamu			pro
+mov ?grim[4][grim_page_max],1 ;Jessicanessnesssness		1
+mov ?grim[5][grim_page_max],1 ;torii, tutelary god		1
+mov ?grim[6][grim_page_max],1 ;yakitori				2
+mov ?grim[7][grim_page_max],1 ;kotatsu				3
+mov ?grim[8][grim_page_max],1 ;kikurage			4
+mov ?grim[9][grim_page_max],1 ;sogakishi			6
+mov ?grim[10][grim_page_max],1 ;inari shrine/kitsunesama	12
+mov ?grim[11][grim_page_max],1 ;kakera				ura_tea
+
+;;also  Krauss=Muska
+;;	Jessica's speech
+
+mov %tips_kazu,7
+mov %grim_kazu,11
+
+return
+
+;*************************************************
+
+
+
+;*************************************************
+;　ep2用、変数の初期化
+;*************************************************
+*bt_ep2_def
+
+;配列に数字を入力、数字の文字変数にパスを入力
+mov %tmp10,2400
+
+for %tmp11 = 1 to cha_kazu_ep2
+	for %tmp12 = 0 to 6
+		mov ?r[%tmp11][%tmp12],%tmp10 : inc %tmp10
+	next
+next
+
+;配列にパスを入力（キャラごとの状態変化数分入力）
+
+mov ?r[kin][condition_end],2 ;0〜3 なので実質４となる。
+mov $?r[kin][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[kin][1],"bmp\r_click\cha_btn\ep2\kin_l"
+mov $?r[kin][2],"bmp\r_click\cha_btn\ep2\kin_d"
+
+mov ?r[kla][condition_end],2
+mov $?r[kla][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[kla][1],"bmp\r_click\cha_btn\ep2\kla_l"
+mov $?r[kla][2],"bmp\r_click\cha_btn\ep2\kla_d"
+
+mov ?r[nat][condition_end],2
+mov $?r[nat][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[nat][1],"bmp\r_click\cha_btn\ep2\nat_l"
+mov $?r[nat][2],"bmp\r_click\cha_btn\ep2\nat_d"
+
+mov ?r[jes][condition_end],2
+mov $?r[jes][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[jes][1],"bmp\r_click\cha_btn\ep2\jes_l"
+mov $?r[jes][2],"bmp\r_click\cha_btn\ep2\jes_d"
+
+mov ?r[eva][condition_end],2
+mov $?r[eva][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[eva][1],"bmp\r_click\cha_btn\ep2\eva_l"
+mov $?r[eva][2],"bmp\r_click\cha_btn\ep2\eva_d"
+
+mov ?r[hid][condition_end],2
+mov $?r[hid][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[hid][1],"bmp\r_click\cha_btn\ep2\hid_l"
+mov $?r[hid][2],"bmp\r_click\cha_btn\ep2\hid_d"
+
+mov ?r[geo][condition_end],2
+mov $?r[geo][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[geo][1],"bmp\r_click\cha_btn\ep2\geo_l"
+mov $?r[geo][2],"bmp\r_click\cha_btn\ep2\geo_d"
+
+mov ?r[rud][condition_end],2
+mov $?r[rud][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[rud][1],"bmp\r_click\cha_btn\ep2\rud_l"
+mov $?r[rud][2],"bmp\r_click\cha_btn\ep2\rud_d"
+
+mov ?r[kir][condition_end],2
+mov $?r[kir][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[kir][1],"bmp\r_click\cha_btn\ep2\kir_l"
+mov $?r[kir][2],"bmp\r_click\cha_btn\ep2\kir_d"
+
+mov ?r[but][condition_end],2
+mov $?r[but][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[but][1],"bmp\r_click\cha_btn\ep2\but_l"
+mov $?r[but][2],"bmp\r_click\cha_btn\ep2\but_d"
+
+mov ?r[ros][condition_end],2
+mov $?r[ros][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[ros][1],"bmp\r_click\cha_btn\ep2\ros_l"
+mov $?r[ros][2],"bmp\r_click\cha_btn\ep2\ros_d"
+
+mov ?r[mar][condition_end],2
+mov $?r[mar][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[mar][1],"bmp\r_click\cha_btn\ep2\mar_l"
+mov $?r[mar][2],"bmp\r_click\cha_btn\ep2\mar_d"
+
+mov ?r[nan][condition_end],3
+mov $?r[nan][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[nan][1],"bmp\r_click\cha_btn\ep2\nan_l"
+mov $?r[nan][2],"bmp\r_click\cha_btn\ep2\nan_d"
+mov $?r[nan][3],"bmp\r_click\cha_btn\ep2\nan_d"
+
+mov ?r[gen][condition_end],2
+mov $?r[gen][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[gen][1],"bmp\r_click\cha_btn\ep2\gen_l"
+mov $?r[gen][2],"bmp\r_click\cha_btn\ep2\gen_d"
+
+mov ?r[kum][condition_end],3
+mov $?r[kum][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[kum][1],"bmp\r_click\cha_btn\ep2\kum_l"
+mov $?r[kum][2],"bmp\r_click\cha_btn\ep2\kum_d"
+mov $?r[kum][3],"bmp\r_click\cha_btn\ep2\kum_d"
+
+
+mov ?r[goh][condition_end],2
+mov $?r[goh][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[goh][1],"bmp\r_click\cha_btn\ep2\goh_l"
+mov $?r[goh][2],"bmp\r_click\cha_btn\ep2\goh_d"
+
+mov ?r[sha][condition_end],2
+mov $?r[sha][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[sha][1],"bmp\r_click\cha_btn\ep2\sha_l"
+mov $?r[sha][2],"bmp\r_click\cha_btn\ep2\sha_d"
+
+mov ?r[kan][condition_end],3
+mov $?r[kan][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[kan][1],"bmp\r_click\cha_btn\ep2\kan_l"
+mov $?r[kan][2],"bmp\r_click\cha_btn\ep2\kan_m"
+mov $?r[kan][3],"bmp\r_click\cha_btn\ep2\kan_d"
+
+mov ?r[bea][condition_end],3
+mov $?r[bea][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[bea][1],"bmp\r_click\cha_btn\ep2\bea_l"
+mov $?r[bea][2],"bmp\r_click\cha_btn\ep2\bea_l2"
+mov $?r[bea][3],"bmp\r_click\cha_btn\ep2\bea_d"
+
+mov ?r[ber][condition_end],2
+mov $?r[ber][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[ber][1],"bmp\r_click\cha_btn\ep2\ber_l"
+mov $?r[ber][2],"bmp\r_click\cha_btn\ep2\ber_d"
+
+mov ?r[lam][condition_end],1
+mov $?r[lam][0],"bmp\r_click\cha_btn\ep2\non"
+mov $?r[lam][1],"bmp\r_click\cha_btn\ep2\lam_l"
+mov $?r[lam][2],"bmp\r_click\cha_btn\ep2\lam_d"
+
+
+;一覧表示の座標を入力
+;numalias itiran_x,%tmp11 : inc %tmp11	 ;一覧表示アイコン位置、Ｘ座標
+;numalias itiran_y,%tmp11 : inc %tmp11	 ;一覧表示アイコン位置、Ｙ座標
+mov ?r[kin][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[kin][itiran_y],%tmp
+mov ?r[kla][itiran_x],69 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[kla][itiran_y],%tmp
+mov ?r[nat][itiran_x],118 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[nat][itiran_y],%tmp
+mov ?r[jes][itiran_x],167 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[jes][itiran_y],%tmp
+
+mov ?r[nan][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[nan][itiran_y],%tmp
+mov ?r[eva][itiran_x],69 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[eva][itiran_y],%tmp
+mov ?r[hid][itiran_x],118 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[hid][itiran_y],%tmp
+mov ?r[geo][itiran_x],167 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[geo][itiran_y],%tmp
+
+mov ?r[rud][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[rud][itiran_y],%tmp
+mov ?r[kir][itiran_x],118 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[kir][itiran_y],%tmp
+mov ?r[but][itiran_x],167 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[but][itiran_y],%tmp
+
+mov ?r[gen][itiran_x],19 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[gen][itiran_y],%tmp
+mov ?r[ros][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ros][itiran_y],%tmp
+mov ?r[mar][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[mar][itiran_y],%tmp
+
+mov ?r[sha][itiran_x],19 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[sha][itiran_y],%tmp
+mov ?r[kan][itiran_x],69 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[kan][itiran_y],%tmp
+mov ?r[goh][itiran_x],118 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[goh][itiran_y],%tmp
+mov ?r[kum][itiran_x],167 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[kum][itiran_y],%tmp
+
+mov ?r[bea][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[bea][itiran_y],%tmp
+;mov ?r[ber][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ber][itiran_y],%tmp
+
+
+;キャラの立ち位置、X座標を入力
+mov ?r[kin][tati_x],380
+mov ?r[kla][tati_x],425
+mov ?r[nat][tati_x],430
+mov ?r[jes][tati_x],420
+mov ?r[nan][tati_x],425
+mov ?r[eva][tati_x],440
+mov ?r[hid][tati_x],415
+mov ?r[geo][tati_x],435
+mov ?r[rud][tati_x],455
+mov ?r[kir][tati_x],455
+mov ?r[but][tati_x],455
+mov ?r[gen][tati_x],455
+mov ?r[ros][tati_x],445
+mov ?r[mar][tati_x],390
+mov ?r[sha][tati_x],430
+mov ?r[kan][tati_x],460
+mov ?r[goh][tati_x],450
+mov ?r[kum][tati_x],440
+mov ?r[bea][tati_x],380
+mov ?r[ber][tati_x],430
+mov ?r[lam][tati_x],420
+
+
+mov ?tips[1][tips_page_max],3 ;肖像画の碑文
+mov ?tips[2][tips_page_max],6 ;魔女の手紙
+mov ?tips[3][tips_page_max],1 ;魔女の手紙Ⅱ
+mov ?tips[4][tips_page_max],1 ;魔女の手紙Ⅲ
+mov ?tips[5][tips_page_max],1 ;魔女の手紙Ⅳ
+mov ?tips[6][tips_page_max],4 ;魔女の棋譜
+mov ?tips[7][tips_page_max],1 ;黄金蝶のブローチ
+
+
+mov ?grim[1][grim_page_max],5 ;intro		pro
+mov ?grim[2][grim_page_max],1 ;tsundora		3
+mov ?grim[3][grim_page_max],1 ;boku/omg		3
+mov ?grim[4][grim_page_max],2 ;tsurupettan	3
+mov ?grim[5][grim_page_max],1 ;devil's proof	7
+mov ?grim[6][grim_page_max],1 ;locus		10
+mov ?grim[7][grim_page_max],1 ;42		11
+
+mov %tips_kazu,7
+mov %grim_kazu,7
+
+return
+
+;*************************************************
+
+
+;*************************************************
+;　ep2_2（魔女サイドメニュー、変数の初期化）
+;*************************************************
+*bt_ep2_2_def
+
+;配列に数字を入力、数字の文字変数にパスを入力
+mov %tmp10,2400
+
+for %tmp11 = 1 to cha_kazu_ep2_2
+	for %tmp12 = 0 to 6
+		mov ?r[%tmp11][%tmp12],%tmp10 : inc %tmp10
+	next
+next
+
+;配列にパスを入力（キャラごとの状態変化数分入力）
+
+mov ?r[ma_kin][condition_end],1 ;0〜3 なので実質４となる。
+mov $?r[ma_kin][1],"bmp\r_click\cha_btn\ep2_2\kin_l"
+
+mov ?r[ma_but][condition_end],1
+mov $?r[ma_but][1],"bmp\r_click\cha_btn\ep2_2\but_l"
+
+mov ?r[ma_mar][condition_end],1
+mov $?r[ma_mar][1],"bmp\r_click\cha_btn\ep2_2\mar_l"
+
+mov ?r[ma_gen][condition_end],1
+mov $?r[ma_gen][1],"bmp\r_click\cha_btn\ep2_2\gen_l"
+
+mov ?r[ma_sha][condition_end],1
+mov $?r[ma_sha][1],"bmp\r_click\cha_btn\ep2_2\sha_l"
+
+mov ?r[ma_kan][condition_end],1
+mov $?r[ma_kan][1],"bmp\r_click\cha_btn\ep2_2\kan_l"
+
+mov ?r[ma_bea][condition_end],1
+mov $?r[ma_bea][1],"bmp\r_click\cha_btn\ep2_2\bea_l"
+
+mov ?r[ma_ber][condition_end],1
+mov $?r[ma_ber][1],"bmp\r_click\cha_btn\ep2_2\ber_l"
+
+mov ?r[ma_lam][condition_end],1
+mov $?r[ma_lam][1],"bmp\r_click\cha_btn\ep2_2\lam_l"
+
+mov ?r[ma_rg][condition_end],1
+mov $?r[ma_rg][1],"bmp\r_click\cha_btn\ep2_2\rg_l"
+
+
+;一覧表示の座標を入力
+;numalias itiran_x,%tmp11 : inc %tmp11	 ;一覧表示アイコン位置、Ｘ座標
+;numalias itiran_y,%tmp11 : inc %tmp11	 ;一覧表示アイコン位置、Ｙ座標
+mov ?r[ma_bea][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma_bea][itiran_y],%tmp
+mov ?r[ma_rg][itiran_x],69 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma_rg][itiran_y],%tmp
+
+mov ?r[ma_ber][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma_ber][itiran_y],%tmp
+mov ?r[ma_kin][itiran_x],69 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma_kin][itiran_y],%tmp
+mov ?r[ma_but][itiran_x],118 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma_but][itiran_y],%tmp
+mov ?r[ma_mar][itiran_x],167 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma_mar][itiran_y],%tmp
+
+mov ?r[ma_lam][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma_lam][itiran_y],%tmp
+mov ?r[ma_gen][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma_gen][itiran_y],%tmp
+
+mov ?r[ma_sha][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma_sha][itiran_y],%tmp
+
+mov ?r[ma_kan][itiran_x],69 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[ma_kan][itiran_y],%tmp
+
+
+
+;キャラの立ち位置、X座標を入力
+mov ?r[ma_kin][tati_x],380
+mov ?r[ma_but][tati_x],455
+mov ?r[ma_gen][tati_x],455
+mov ?r[ma_mar][tati_x],390
+mov ?r[ma_sha][tati_x],430
+mov ?r[ma_kan][tati_x],460
+mov ?r[ma_bea][tati_x],380
+mov ?r[ma_ber][tati_x],430
+mov ?r[ma_lam][tati_x],410
+mov ?r[ma_rg][tati_x],420
+
+mov ?tips[1][tips_page_max],3 ;肖像画の碑文
+mov ?tips[2][tips_page_max],6 ;魔女の手紙
+mov ?tips[3][tips_page_max],1 ;魔女の手紙Ⅱ
+mov ?tips[4][tips_page_max],1 ;魔女の手紙Ⅲ
+mov ?tips[5][tips_page_max],1 ;魔女の手紙Ⅳ
+mov ?tips[6][tips_page_max],4 ;魔女の棋譜
+mov ?tips[7][tips_page_max],1 ;黄金蝶のブローチ
+
+mov ?grim[1][grim_page_max],5 ;intro		pro
+mov ?grim[2][grim_page_max],1 ;tsundora		3
+mov ?grim[3][grim_page_max],1 ;boku/omg		3
+mov ?grim[4][grim_page_max],2 ;tsurupettan	3
+mov ?grim[5][grim_page_max],1 ;devil's proof	7
+mov ?grim[6][grim_page_max],1 ;locus		10
+mov ?grim[7][grim_page_max],1 ;42		11
+
+mov %tips_kazu,7
+mov %grim_kazu,7
+
+return
+
+;*************************************************
+
+
+
+
+
+;*************************************************
+;　ep3用、変数の初期化
+;*************************************************
+*bt_ep3_def
+
+;配列に数字を入力、数字の文字変数にパスを入力
+mov %tmp10,2400
+
+for %tmp11 = 1 to cha_kazu_ep3
+	for %tmp12 = 0 to 6
+		mov ?r[%tmp11][%tmp12],%tmp10 : inc %tmp10
+	next
+next
+
+;配列にパスを入力（キャラごとの状態変化数分入力）
+
+mov ?r[kin][condition_end],2
+mov $?r[kin][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[kin][1],"bmp\r_click\cha_btn\ep3\kin_l"
+mov $?r[kin][2],"bmp\r_click\cha_btn\ep3\kin_d"
+
+mov ?r[kla][condition_end],2
+mov $?r[kla][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[kla][1],"bmp\r_click\cha_btn\ep3\kla_l"
+mov $?r[kla][2],"bmp\r_click\cha_btn\ep3\kla_d"
+
+mov ?r[nat][condition_end],2
+mov $?r[nat][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[nat][1],"bmp\r_click\cha_btn\ep3\nat_l"
+mov $?r[nat][2],"bmp\r_click\cha_btn\ep3\nat_d"
+
+mov ?r[jes][condition_end],2
+mov $?r[jes][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[jes][1],"bmp\r_click\cha_btn\ep3\jes_l"
+mov $?r[jes][2],"bmp\r_click\cha_btn\ep3\jes_d"
+
+mov ?r[eva][condition_end],1
+mov $?r[eva][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[eva][1],"bmp\r_click\cha_btn\ep3\eva_l"
+mov $?r[eva][2],"bmp\r_click\cha_btn\ep3\eva_d"
+
+mov ?r[hid][condition_end],2
+mov $?r[hid][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[hid][1],"bmp\r_click\cha_btn\ep3\hid_l"
+mov $?r[hid][2],"bmp\r_click\cha_btn\ep3\hid_d"
+
+mov ?r[geo][condition_end],2
+mov $?r[geo][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[geo][1],"bmp\r_click\cha_btn\ep3\geo_l"
+mov $?r[geo][2],"bmp\r_click\cha_btn\ep3\geo_d"
+
+mov ?r[rud][condition_end],2
+mov $?r[rud][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[rud][1],"bmp\r_click\cha_btn\ep3\rud_l"
+mov $?r[rud][2],"bmp\r_click\cha_btn\ep3\rud_d"
+
+mov ?r[kir][condition_end],2
+mov $?r[kir][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[kir][1],"bmp\r_click\cha_btn\ep3\kir_l"
+mov $?r[kir][2],"bmp\r_click\cha_btn\ep3\kir_d"
+
+mov ?r[but][condition_end],2
+mov $?r[but][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[but][1],"bmp\r_click\cha_btn\ep3\but_l"
+mov $?r[but][2],"bmp\r_click\cha_btn\ep3\but_d"
+
+mov ?r[ros][condition_end],2
+mov $?r[ros][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[ros][1],"bmp\r_click\cha_btn\ep3\ros_l"
+mov $?r[ros][2],"bmp\r_click\cha_btn\ep3\ros_d"
+
+mov ?r[mar][condition_end],2
+mov $?r[mar][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[mar][1],"bmp\r_click\cha_btn\ep3\mar_l"
+mov $?r[mar][2],"bmp\r_click\cha_btn\ep3\mar_d"
+
+mov ?r[nan][condition_end],2
+mov $?r[nan][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[nan][1],"bmp\r_click\cha_btn\ep3\nan_l"
+mov $?r[nan][2],"bmp\r_click\cha_btn\ep3\nan_d"
+
+mov ?r[gen][condition_end],2
+mov $?r[gen][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[gen][1],"bmp\r_click\cha_btn\ep3\gen_l"
+mov $?r[gen][2],"bmp\r_click\cha_btn\ep3\gen_d"
+
+mov ?r[kum][condition_end],2
+mov $?r[kum][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[kum][1],"bmp\r_click\cha_btn\ep3\kum_l"
+mov $?r[kum][2],"bmp\r_click\cha_btn\ep3\kum_d"
+
+mov ?r[goh][condition_end],2
+mov $?r[goh][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[goh][1],"bmp\r_click\cha_btn\ep3\goh_l"
+mov $?r[goh][2],"bmp\r_click\cha_btn\ep3\goh_d"
+
+mov ?r[sha][condition_end],2
+mov $?r[sha][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[sha][1],"bmp\r_click\cha_btn\ep3\sha_l"
+mov $?r[sha][2],"bmp\r_click\cha_btn\ep3\sha_d"
+
+mov ?r[kan][condition_end],2
+mov $?r[kan][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[kan][1],"bmp\r_click\cha_btn\ep3\kan_l"
+mov $?r[kan][2],"bmp\r_click\cha_btn\ep3\kan_d"
+
+mov ?r[bea][condition_end],2
+mov $?r[bea][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[bea][1],"bmp\r_click\cha_btn\ep3\bea_l"
+mov $?r[bea][2],"bmp\r_click\cha_btn\ep3\bea_d"
+
+mov ?r[ber][condition_end],2
+mov $?r[ber][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[ber][1],"bmp\r_click\cha_btn\ep3\ber_l"
+mov $?r[ber][2],"bmp\r_click\cha_btn\ep3\ber_d"
+
+mov ?r[lam][condition_end],1
+mov $?r[lam][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[lam][1],"bmp\r_click\cha_btn\ep3\lam_l"
+
+mov ?r[enj][condition_end],1
+mov $?r[enj][0],"bmp\r_click\cha_btn\ep3\non"
+mov $?r[enj][1],"bmp\r_click\cha_btn\ep3\enj_l"
+
+
+;一覧表示の座標を入力
+;numalias itiran_x,%tmp11 : inc %tmp11	 ;一覧表示アイコン位置、Ｘ座標
+;numalias itiran_y,%tmp11 : inc %tmp11	 ;一覧表示アイコン位置、Ｙ座標
+mov ?r[kin][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[kin][itiran_y],%tmp
+mov ?r[kla][itiran_x],69 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[kla][itiran_y],%tmp
+mov ?r[nat][itiran_x],118 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[nat][itiran_y],%tmp
+mov ?r[jes][itiran_x],167 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[jes][itiran_y],%tmp
+
+mov ?r[nan][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[nan][itiran_y],%tmp
+mov ?r[eva][itiran_x],69 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[eva][itiran_y],%tmp
+mov ?r[hid][itiran_x],118 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[hid][itiran_y],%tmp
+mov ?r[geo][itiran_x],167 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[geo][itiran_y],%tmp
+
+mov ?r[rud][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[rud][itiran_y],%tmp
+mov ?r[kir][itiran_x],118 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[kir][itiran_y],%tmp
+mov ?r[but][itiran_x],167 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[but][itiran_y],%tmp
+
+mov ?r[gen][itiran_x],19 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[gen][itiran_y],%tmp
+mov ?r[ros][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ros][itiran_y],%tmp
+mov ?r[mar][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[mar][itiran_y],%tmp
+
+mov ?r[sha][itiran_x],19 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[sha][itiran_y],%tmp
+mov ?r[kan][itiran_x],69 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[kan][itiran_y],%tmp
+mov ?r[goh][itiran_x],118 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[goh][itiran_y],%tmp
+mov ?r[kum][itiran_x],167 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[kum][itiran_y],%tmp
+
+mov ?r[bea][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[bea][itiran_y],%tmp
+;mov ?r[ber][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ber][itiran_y],%tmp
+mov ?r[enj][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[enj][itiran_y],%tmp
+
+
+;キャラの立ち位置、X座標を入力
+mov ?r[kin][tati_x],380
+mov ?r[kla][tati_x],425
+mov ?r[nat][tati_x],430
+mov ?r[jes][tati_x],420
+mov ?r[nan][tati_x],425
+mov ?r[eva][tati_x],440
+mov ?r[hid][tati_x],415
+mov ?r[geo][tati_x],435
+mov ?r[rud][tati_x],455
+mov ?r[kir][tati_x],455
+mov ?r[but][tati_x],455
+mov ?r[gen][tati_x],455
+mov ?r[ros][tati_x],445
+mov ?r[mar][tati_x],390
+mov ?r[sha][tati_x],430
+mov ?r[kan][tati_x],460
+mov ?r[goh][tati_x],450
+mov ?r[kum][tati_x],440
+mov ?r[bea][tati_x],380
+mov ?r[ber][tati_x],430
+mov ?r[lam][tati_x],420
+mov ?r[enj][tati_x],440
+
+mov ?tips[1][tips_page_max],3 ;肖像画の碑文
+mov ?tips[2][tips_page_max],1 ;魔女の手紙
+mov ?tips[3][tips_page_max],4 ;魔女の棋譜
+mov ?tips[4][tips_page_max],1 ;
+mov ?tips[5][tips_page_max],1 ;
+mov ?tips[6][tips_page_max],1 ;
+
+mov ?grim[1][grim_page_max],5 ;intro/stuff		1
+mov ?grim[2][grim_page_max],1 ;ore/watashi		1
+mov ?grim[3][grim_page_max],1 ;give up and die		1
+mov ?grim[4][grim_page_max],1 ;lines in English		2
+mov ?grim[5][grim_page_max],1 ;merute			7
+mov ?grim[6][grim_page_max],1 ;Valkyria			8
+mov ?grim[7][grim_page_max],1 ;Riddle of the Epitaph	10
+mov ?grim[8][grim_page_max],1 ;pinning			14
+mov ?grim[9][grim_page_max],1 ;don't use katakana?!	18
+mov ?grim[10][grim_page_max],1 ;naniwa-bushis		18
+mov ?grim[11][grim_page_max],1 ;galge			18
+mov ?grim[12][grim_page_max],1 ;ebaaah			ura tea
+mov ?grim[13][grim_page_max],1 ;The Names of Witches	final tips only
+
+mov %tips_kazu,6
+mov %grim_kazu,13
+
+return
+
+;*************************************************
+
+;*************************************************
+;　ep3_2（魔女サイドメニュー、変数の初期化）
+;*************************************************
+*bt_ep3_2_def
+
+;配列に数字を入力、数字の文字変数にパスを入力
+mov %tmp10,2400
+
+for %tmp11 = 1 to cha_kazu_ep3_2
+	for %tmp12 = 0 to 6
+		mov ?r[%tmp11][%tmp12],%tmp10 : inc %tmp10
+	next
+next
+
+;配列にパスを入力（キャラごとの状態変化数分入力）
+mov ?r[ma3_bea][condition_end],1
+mov $?r[ma3_bea][1],"bmp\r_click\cha_btn\ep3_2\bea_l"
+
+mov ?r[ma3_ber][condition_end],1
+mov $?r[ma3_ber][1],"bmp\r_click\cha_btn\ep3_2\ber_l"
+
+mov ?r[ma3_lam][condition_end],1
+mov $?r[ma3_lam][1],"bmp\r_click\cha_btn\ep3_2\lam_l"
+
+mov ?r[ma3_rg][condition_end],1
+mov $?r[ma3_rg][1],"bmp\r_click\cha_btn\ep3_2\rg_l"
+
+mov ?r[ma3_goa][condition_end],1
+mov $?r[ma3_goa][1],"bmp\r_click\cha_btn\ep3_2\goa_l"
+
+mov ?r[ma3_wal][condition_end],1
+mov $?r[ma3_wal][1],"bmp\r_click\cha_btn\ep3_2\wal_l"
+
+mov ?r[ma3_ron][condition_end],1
+mov $?r[ma3_ron][1],"bmp\r_click\cha_btn\ep3_2\ron_l"
+
+mov ?r[ma3_ev2][condition_end],1
+mov $?r[ma3_ev2][1],"bmp\r_click\cha_btn\ep3_2\ev2_l"
+
+mov ?r[ma3_enj][condition_end],1
+mov $?r[ma3_enj][1],"bmp\r_click\cha_btn\ep3_2\enj_l"
+
+mov ?r[ma3_s][condition_end],1
+mov $?r[ma3_s][1],"bmp\r_click\cha_btn\ep3_2\s_l"
+
+
+;一覧表示の座標を入力
+mov ?r[ma3_wal][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_wal][itiran_y],%tmp
+mov ?r[ma3_lam][itiran_x],118 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_lam][itiran_y],%tmp
+mov ?r[ma3_ber][itiran_x],167 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma3_ber][itiran_y],%tmp
+
+mov ?r[ma3_bea][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma3_bea][itiran_y],%tmp
+
+mov ?r[ma3_ev2][itiran_x],19 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_ev2][itiran_y],%tmp
+mov ?r[ma3_s][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma3_s][itiran_y],%tmp
+
+mov ?r[ma3_ron][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_ron][itiran_y],%tmp
+mov ?r[ma3_rg][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_rg][itiran_y],%tmp
+mov ?r[ma3_goa][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma3_goa][itiran_y],%tmp
+
+mov ?r[ma3_enj][itiran_x],19 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[ma3_enj][itiran_y],%tmp
+
+;キャラ一覧表示の背景を変える
+mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back15.png"
+
+;キャラの立ち位置、X座標を入力
+mov ?r[ma3_bea][tati_x],380
+mov ?r[ma3_ber][tati_x],430
+mov ?r[ma3_lam][tati_x],410
+mov ?r[ma3_rg][tati_x],420
+
+mov ?r[ma3_goa][tati_x],380
+mov ?r[ma3_wal][tati_x],360
+mov ?r[ma3_ron][tati_x],420
+mov ?r[ma3_ev2][tati_x],400
+mov ?r[ma3_enj][tati_x],440
+mov ?r[ma3_s][tati_x],420
+
+
+
+mov ?grim[1][grim_page_max],5 ;intro/stuff		1
+mov ?grim[2][grim_page_max],1 ;ore/watashi		1
+mov ?grim[3][grim_page_max],1 ;give up and die		1
+mov ?grim[4][grim_page_max],1 ;lines in English		2
+mov ?grim[5][grim_page_max],1 ;merute			7
+mov ?grim[6][grim_page_max],1 ;Valkyria			8
+mov ?grim[7][grim_page_max],1 ;Riddle of the Epitaph	10
+mov ?grim[8][grim_page_max],1 ;pinning			14
+mov ?grim[9][grim_page_max],1 ;don't use katakana?!	18
+mov ?grim[10][grim_page_max],1 ;naniwa-bushis		18
+mov ?grim[11][grim_page_max],1 ;galge			18
+mov ?grim[12][grim_page_max],1 ;ebaaah			ura tea
+mov ?grim[13][grim_page_max],1 ;The Names of Witches	final tips only
+
+mov %tips_kazu,6
+mov %grim_kazu,13
+
+return
+
+;*************************************************
+
+
+;*************************************************
+;　ep4用、変数の初期化
+;*************************************************
+*bt_ep4_def
+
+;配列に数字を入力、数字の文字変数にパスを入力
+mov %tmp10,2400
+
+for %tmp11 = 1 to cha_kazu_ep4
+	for %tmp12 = 0 to 6
+		mov ?r[%tmp11][%tmp12],%tmp10 : inc %tmp10
+	next
+next
+
+;配列にパスを入力（キャラごとの状態変化数分入力）
+
+mov ?r[kin][condition_end],2
+mov $?r[kin][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[kin][1],"bmp\r_click\cha_btn\ep4\kin_l"
+mov $?r[kin][2],"bmp\r_click\cha_btn\ep4\kin_d"
+
+mov ?r[kla][condition_end],2
+mov $?r[kla][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[kla][1],"bmp\r_click\cha_btn\ep4\kla_l"
+mov $?r[kla][2],"bmp\r_click\cha_btn\ep4\kla_d"
+
+mov ?r[nat][condition_end],2
+mov $?r[nat][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[nat][1],"bmp\r_click\cha_btn\ep4\nat_l"
+mov $?r[nat][2],"bmp\r_click\cha_btn\ep4\nat_d"
+
+mov ?r[jes][condition_end],2
+mov $?r[jes][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[jes][1],"bmp\r_click\cha_btn\ep4\jes_l"
+mov $?r[jes][2],"bmp\r_click\cha_btn\ep4\jes_d"
+
+mov ?r[eva][condition_end],2
+mov $?r[eva][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[eva][1],"bmp\r_click\cha_btn\ep4\eva_l"
+mov $?r[eva][2],"bmp\r_click\cha_btn\ep4\eva_d"
+
+mov ?r[hid][condition_end],2
+mov $?r[hid][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[hid][1],"bmp\r_click\cha_btn\ep4\hid_l"
+mov $?r[hid][2],"bmp\r_click\cha_btn\ep4\hid_d"
+
+mov ?r[geo][condition_end],2
+mov $?r[geo][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[geo][1],"bmp\r_click\cha_btn\ep4\geo_l"
+mov $?r[geo][2],"bmp\r_click\cha_btn\ep4\geo_d"
+
+mov ?r[rud][condition_end],2
+mov $?r[rud][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[rud][1],"bmp\r_click\cha_btn\ep4\rud_l"
+mov $?r[rud][2],"bmp\r_click\cha_btn\ep4\rud_d"
+
+mov ?r[kir][condition_end],2
+mov $?r[kir][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[kir][1],"bmp\r_click\cha_btn\ep4\kir_l"
+mov $?r[kir][2],"bmp\r_click\cha_btn\ep4\kir_d"
+
+mov ?r[but][condition_end],2
+mov $?r[but][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[but][1],"bmp\r_click\cha_btn\ep4\but_l"
+mov $?r[but][2],"bmp\r_click\cha_btn\ep4\but_d"
+
+mov ?r[ros][condition_end],2
+mov $?r[ros][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[ros][1],"bmp\r_click\cha_btn\ep4\ros_l"
+mov $?r[ros][2],"bmp\r_click\cha_btn\ep4\ros_d"
+
+mov ?r[mar][condition_end],2
+mov $?r[mar][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[mar][1],"bmp\r_click\cha_btn\ep4\mar_l"
+mov $?r[mar][2],"bmp\r_click\cha_btn\ep4\mar_d"
+
+mov ?r[nan][condition_end],2
+mov $?r[nan][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[nan][1],"bmp\r_click\cha_btn\ep4\nan_l"
+mov $?r[nan][2],"bmp\r_click\cha_btn\ep4\nan_d"
+
+mov ?r[gen][condition_end],2
+mov $?r[gen][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[gen][1],"bmp\r_click\cha_btn\ep4\gen_l"
+mov $?r[gen][2],"bmp\r_click\cha_btn\ep4\gen_d"
+
+mov ?r[kum][condition_end],2
+mov $?r[kum][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[kum][1],"bmp\r_click\cha_btn\ep4\kum_l"
+mov $?r[kum][2],"bmp\r_click\cha_btn\ep4\kum_d"
+
+mov ?r[goh][condition_end],2
+mov $?r[goh][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[goh][1],"bmp\r_click\cha_btn\ep4\goh_l"
+mov $?r[goh][2],"bmp\r_click\cha_btn\ep4\goh_d"
+
+mov ?r[sha][condition_end],2
+mov $?r[sha][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[sha][1],"bmp\r_click\cha_btn\ep4\sha_l"
+mov $?r[sha][2],"bmp\r_click\cha_btn\ep4\sha_d"
+
+mov ?r[kan][condition_end],2
+mov $?r[kan][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[kan][1],"bmp\r_click\cha_btn\ep4\kan_l"
+mov $?r[kan][2],"bmp\r_click\cha_btn\ep4\kan_d"
+
+mov ?r[bea][condition_end],2
+mov $?r[bea][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[bea][1],"bmp\r_click\cha_btn\ep4\bea_l"
+mov $?r[bea][2],"bmp\r_click\cha_btn\ep4\bea_d"
+
+mov ?r[ber][condition_end],2
+mov $?r[ber][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[ber][1],"bmp\r_click\cha_btn\ep4\ber_l"
+mov $?r[ber][2],"bmp\r_click\cha_btn\ep4\ber_d"
+
+mov ?r[lam][condition_end],1
+mov $?r[lam][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[lam][1],"bmp\r_click\cha_btn\ep4\lam_l"
+
+mov ?r[enj][condition_end],1
+mov $?r[enj][0],"bmp\r_click\cha_btn\ep4\non"
+mov $?r[enj][1],"bmp\r_click\cha_btn\ep4\enj_l"
+
+
+;一覧表示の座標を入力
+;numalias itiran_x,%tmp11 : inc %tmp11	 ;一覧表示アイコン位置、Ｘ座標
+;numalias itiran_y,%tmp11 : inc %tmp11	 ;一覧表示アイコン位置、Ｙ座標
+mov ?r[kin][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[kin][itiran_y],%tmp
+mov ?r[kla][itiran_x],69 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[kla][itiran_y],%tmp
+mov ?r[nat][itiran_x],118 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[nat][itiran_y],%tmp
+mov ?r[jes][itiran_x],167 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[jes][itiran_y],%tmp
+
+mov ?r[nan][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[nan][itiran_y],%tmp
+mov ?r[eva][itiran_x],69 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[eva][itiran_y],%tmp
+mov ?r[hid][itiran_x],118 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[hid][itiran_y],%tmp
+mov ?r[geo][itiran_x],167 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[geo][itiran_y],%tmp
+
+mov ?r[rud][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[rud][itiran_y],%tmp
+mov ?r[kir][itiran_x],118 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[kir][itiran_y],%tmp
+mov ?r[but][itiran_x],167 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[but][itiran_y],%tmp
+
+mov ?r[gen][itiran_x],19 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[gen][itiran_y],%tmp
+mov ?r[ros][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ros][itiran_y],%tmp
+mov ?r[mar][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[mar][itiran_y],%tmp
+
+mov ?r[sha][itiran_x],19 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[sha][itiran_y],%tmp
+mov ?r[kan][itiran_x],69 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[kan][itiran_y],%tmp
+mov ?r[goh][itiran_x],118 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[goh][itiran_y],%tmp
+mov ?r[kum][itiran_x],167 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[kum][itiran_y],%tmp
+
+mov ?r[bea][itiran_x],-200 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[bea][itiran_y],%tmp
+mov ?r[ber][itiran_x],-200 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ber][itiran_y],%tmp
+mov ?r[enj][itiran_x],-200 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[enj][itiran_y],%tmp
+
+
+;キャラの立ち位置、X座標を入力
+mov ?r[kin][tati_x],380
+mov ?r[kla][tati_x],425
+mov ?r[nat][tati_x],430
+mov ?r[jes][tati_x],420
+mov ?r[nan][tati_x],425
+mov ?r[eva][tati_x],440
+mov ?r[hid][tati_x],415
+mov ?r[geo][tati_x],435
+mov ?r[rud][tati_x],455
+mov ?r[kir][tati_x],455
+mov ?r[but][tati_x],455
+mov ?r[gen][tati_x],455
+mov ?r[ros][tati_x],445
+mov ?r[mar][tati_x],390
+mov ?r[sha][tati_x],430
+mov ?r[kan][tati_x],460
+mov ?r[goh][tati_x],450
+mov ?r[kum][tati_x],440
+mov ?r[bea][tati_x],380
+mov ?r[ber][tati_x],430
+mov ?r[lam][tati_x],420
+mov ?r[enj][tati_x],440
+
+mov ?tips[1][tips_page_max],1 ;
+mov ?tips[2][tips_page_max],1 ;
+mov ?tips[3][tips_page_max],1 ;
+mov ?tips[4][tips_page_max],1 ;
+mov ?tips[5][tips_page_max],1 ;
+mov ?tips[6][tips_page_max],1 ;
+mov ?tips[7][tips_page_max],1 ;
+mov %tips_kazu,7
+
+mov ?grim[1][grim_page_max],5 ;intro/stuff		1
+mov ?grim[2][grim_page_max],1 ;lines in English		1
+mov ?grim[3][grim_page_max],1 ;Shotoku Taishi		2
+mov ?grim[4][grim_page_max],1 ;`Demon' Kasumi		3
+mov ?grim[5][grim_page_max],1 ;Vessel			5
+mov ?grim[6][grim_page_max],1 ;Rifle/teppou		8
+mov ?grim[7][grim_page_max],1 ;shiritori		8
+mov ?grim[8][grim_page_max],1 ;110			13
+mov ?grim[9][grim_page_max],1 ;kyukyukyu		16
+mov ?grim[10][grim_page_max],1 ;IME			16
+mov ?grim[11][grim_page_max],1 ;Loser Flags		16
+mov ?grim[12][grim_page_max],1 ;Minmeishobou		16
+
+mov %grim_kazu,12
+
+return
+
+;*************************************************
+
+
+
+;*************************************************
+;　ep4_2（魔女サイドメニュー、変数の初期化）
+;*************************************************
+*bt_ep4_2_def
+
+;配列に数字を入力、数字の文字変数にパスを入力
+mov %tmp10,2400
+
+for %tmp11 = 1 to cha_kazu_ep4_2
+	for %tmp12 = 0 to 6
+		mov ?r[%tmp11][%tmp12],%tmp10 : inc %tmp10
+	next
+next
+
+;配列にパスを入力（キャラごとの状態変化数分入力）
+mov ?r[ma4_lam][condition_end],1
+mov $?r[ma4_lam][1],"bmp\r_click\cha_btn\ep4_2\lam_l"
+
+mov ?r[ma4_ber][condition_end],1
+mov $?r[ma4_ber][1],"bmp\r_click\cha_btn\ep4_2\ber_l"
+
+mov ?r[ma4_bea][condition_end],2
+mov $?r[ma4_bea][1],"bmp\r_click\cha_btn\ep4_2\bea_l"
+mov $?r[ma4_bea][2],"bmp\r_click\cha_btn\ep4_2\bea_l"
+
+mov ?r[ma4_mar][condition_end],2
+mov $?r[ma4_mar][1],"bmp\r_click\cha_btn\ep4_2\mar_l"
+mov $?r[ma4_mar][2],"bmp\r_click\cha_btn\ep4_2\mar_l2"
+
+mov ?r[ma4_enj][condition_end],1
+mov $?r[ma4_enj][1],"bmp\r_click\cha_btn\ep4_2\enj_l"
+
+mov ?r[ma4_kin][condition_end],1
+mov $?r[ma4_kin][1],"bmp\r_click\cha_btn\ep4_2\kin_l"
+
+mov ?r[ma4_sak][condition_end],2
+mov $?r[ma4_sak][1],"bmp\r_click\cha_btn\ep4_2\sak_l"
+mov $?r[ma4_sak][2],"bmp\r_click\cha_btn\ep4_2\sak_d"
+
+mov ?r[ma4_wal][condition_end],1
+mov $?r[ma4_wal][1],"bmp\r_click\cha_btn\ep4_2\wal_l"
+
+mov ?r[ma4_ron][condition_end],1
+mov $?r[ma4_ron][1],"bmp\r_click\cha_btn\ep4_2\ron_l"
+
+mov ?r[ma4_gap][condition_end],1
+mov $?r[ma4_gap][1],"bmp\r_click\cha_btn\ep4_2\gap_l"
+
+mov ?r[ma4_s][condition_end],1
+mov $?r[ma4_s][1],"bmp\r_click\cha_btn\ep4_2\s_l"
+
+mov ?r[ma4_rg][condition_end],1
+mov $?r[ma4_rg][1],"bmp\r_click\cha_btn\ep4_2\rg_l"
+
+mov ?r[ma4_goa][condition_end],1
+mov $?r[ma4_goa][1],"bmp\r_click\cha_btn\ep4_2\goa_l"
+
+;一覧表示の座標を入力
+mov ?r[ma4_lam][itiran_x],69 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma4_lam][itiran_y],%tmp
+mov ?r[ma4_ber][itiran_x],167 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[ma4_ber][itiran_y],%tmp
+
+mov ?r[ma4_bea][itiran_x],69 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma4_bea][itiran_y],%tmp
+mov ?r[ma4_mar][itiran_x],118 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma4_mar][itiran_y],%tmp
+mov ?r[ma4_enj][itiran_x],167 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[ma4_enj][itiran_y],%tmp
+
+mov ?r[ma4_kin][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma4_kin][itiran_y],%tmp
+mov ?r[ma4_sak][itiran_x],118 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[ma4_sak][itiran_y],%tmp
+
+mov ?r[ma4_wal][itiran_x],19 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma4_wal][itiran_y],%tmp
+mov ?r[ma4_ron][itiran_x],69 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma4_ron][itiran_y],%tmp
+mov ?r[ma4_gap][itiran_x],118 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma4_gap][itiran_y],%tmp
+mov ?r[ma4_s][itiran_x],167 : mov %tmp,161 : add %tmp,r_top_y : mov ?r[ma4_s][itiran_y],%tmp
+
+mov ?r[ma4_rg][itiran_x],19 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[ma4_rg][itiran_y],%tmp
+mov ?r[ma4_goa][itiran_x],69 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[ma4_goa][itiran_y],%tmp
+
+;キャラ一覧表示の背景を変える
+mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back15.png"
+
+;キャラの立ち位置、X座標を入力
+mov ?r[ma4_lam][tati_x],410
+mov ?r[ma4_ber][tati_x],430
+mov ?r[ma4_bea][tati_x],380
+mov ?r[ma4_mar][tati_x],390
+mov ?r[ma4_enj][tati_x],440
+mov ?r[ma4_kin][tati_x],380
+mov ?r[ma4_sak][tati_x],380
+mov ?r[ma4_wal][tati_x],360
+mov ?r[ma4_ron][tati_x],420
+mov ?r[ma4_gap][tati_x],415
+mov ?r[ma4_s][tati_x],420
+mov ?r[ma4_rg][tati_x],420
+mov ?r[ma4_goa][tati_x],380
+
+mov ?tips[1][tips_page_max],1 ;肖像画の碑文
+mov ?tips[2][tips_page_max],1 ;魔女の手紙
+mov ?tips[3][tips_page_max],1 ;魔女の棋譜
+mov ?tips[4][tips_page_max],1 ;
+mov ?tips[5][tips_page_max],1 ;
+mov ?tips[6][tips_page_max],1 ;
+mov ?tips[7][tips_page_max],1 ;
+mov %tips_kazu,7
+
+mov ?grim[1][grim_page_max],5 ;intro/stuff		1
+mov ?grim[2][grim_page_max],1 ;lines in English		1
+mov ?grim[3][grim_page_max],1 ;Shotoku Taishi		2
+mov ?grim[4][grim_page_max],1 ;`Demon' Kasumi		3
+mov ?grim[5][grim_page_max],1 ;Vessel			5
+mov ?grim[6][grim_page_max],1 ;Rifle/teppou		8
+mov ?grim[7][grim_page_max],1 ;shiritori		8
+mov ?grim[8][grim_page_max],1 ;110			13
+mov ?grim[9][grim_page_max],1 ;kyukyukyu		16
+mov ?grim[10][grim_page_max],1 ;IME			16
+mov ?grim[11][grim_page_max],1 ;Loser Flags		16
+mov ?grim[12][grim_page_max],1 ;Minmeishobou		16
+
+mov %grim_kazu,12
+
+return
+
+;*************************************************
+
+
+
+;*************************************************
+;　ep4_3（縁寿編_サイドメニュー、変数の初期化）
+;*************************************************
+*bt_ep4_3_def
+
+;配列に数字を入力、数字の文字変数にパスを入力
+mov %tmp10,2400
+
+for %tmp11 = 1 to cha_kazu_ep4_3
+	for %tmp12 = 0 to 6
+		mov ?r[%tmp11][%tmp12],%tmp10 : inc %tmp10
+	next
+next
+
+;配列にパスを入力（キャラごとの状態変化数分入力）
+mov ?r[enj_eva][condition_end],1
+mov $?r[enj_eva][1],"bmp\r_click\cha_btn\ep4_3\eva_d"
+
+mov ?r[enj_oko][condition_end],1
+mov $?r[enj_oko][1],"bmp\r_click\cha_btn\ep4_3\oko_l"
+
+mov ?r[enj_kas][condition_end],1
+mov $?r[enj_kas][1],"bmp\r_click\cha_btn\ep4_3\kas_l"
+
+mov ?r[enj_enj][condition_end],1
+mov $?r[enj_enj][1],"bmp\r_click\cha_btn\ep4_3\enj_l"
+
+mov ?r[enj_ama][condition_end],1
+mov $?r[enj_ama][1],"bmp\r_click\cha_btn\ep4_3\ama_l"
+
+mov ?r[enj_sak][condition_end],1
+mov $?r[enj_sak][1],"bmp\r_click\cha_btn\ep4_3\sak_l"
+
+mov ?r[enj_mar][condition_end],1
+mov $?r[enj_mar][1],"bmp\r_click\cha_btn\ep4_3\mar_l"
+mov $?r[enj_mar][2],"bmp\r_click\cha_btn\ep4_3\mar_l2"
+
+mov ?r[enj_rg][condition_end],1
+mov $?r[enj_rg][1],"bmp\r_click\cha_btn\ep4_3\rg_l"
+
+mov ?r[enj_pro][condition_end],1
+mov $?r[enj_pro][1],"bmp\r_click\cha_btn\ep4_3\pro_l"
+
+mov ?r[enj_mas][condition_end],1
+mov $?r[enj_mas][1],"bmp\r_click\cha_btn\ep4_3\mas_l"
+
+mov ?r[enj_sab][condition_end],1
+mov $?r[enj_sab][1],"bmp\r_click\cha_btn\ep4_3\sab_l"
+
+mov ?r[enj_kwa][condition_end],1
+mov $?r[enj_kwa][1],"bmp\r_click\cha_btn\ep4_3\kwa_l"
+
+mov ?r[enj_ber][condition_end],1
+mov $?r[enj_ber][1],"bmp\r_click\cha_btn\ep4_3\ber_l"
+
+;一覧表示の座標を入力
+mov ?r[enj_eva][itiran_x],118 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[enj_eva][itiran_y],%tmp
+mov ?r[enj_oko][itiran_x],167 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[enj_oko][itiran_y],%tmp
+
+mov ?r[enj_kas][itiran_x],19 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[enj_kas][itiran_y],%tmp
+mov ?r[enj_enj][itiran_x],118 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[enj_enj][itiran_y],%tmp
+mov ?r[enj_ama][itiran_x],167 : mov %tmp,62 : add %tmp,r_top_y : mov ?r[enj_ama][itiran_y],%tmp
+
+mov ?r[enj_sak][itiran_x],69 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[enj_sak][itiran_y],%tmp
+mov ?r[enj_mar][itiran_x],118 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[enj_mar][itiran_y],%tmp
+mov ?r[enj_rg][itiran_x],167 : mov %tmp,112 : add %tmp,r_top_y : mov ?r[enj_rg][itiran_y],%tmp
+
+mov ?r[enj_pro][itiran_x],19 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[enj_pro][itiran_y],%tmp
+mov ?r[enj_mas][itiran_x],69 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[enj_mas][itiran_y],%tmp
+mov ?r[enj_sab][itiran_x],118 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[enj_sab][itiran_y],%tmp
+mov ?r[enj_kwa][itiran_x],167 : mov %tmp,211 : add %tmp,r_top_y : mov ?r[enj_kwa][itiran_y],%tmp
+
+mov ?r[enj_ber][itiran_x],19 : mov %tmp,13 : add %tmp,r_top_y : mov ?r[enj_ber][itiran_y],%tmp
+
+;キャラ一覧表示の背景を変える
+mov $r_cha_back,":bc;bmp\r_click\cha_btn\cha_back3.png"
+
+;キャラの立ち位置、X座標を入力
+mov ?r[enj_eva][tati_x],440
+mov ?r[enj_oko][tati_x],380
+mov ?r[enj_kas][tati_x],380
+mov ?r[enj_enj][tati_x],440
+mov ?r[enj_ama][tati_x],430
+mov ?r[enj_sak][tati_x],380
+mov ?r[enj_mar][tati_x],410
+mov ?r[enj_rg][tati_x],420
+mov ?r[enj_pro][tati_x],380
+mov ?r[enj_mas][tati_x],377
+mov ?r[enj_sab][tati_x],380
+mov ?r[enj_kwa][tati_x],380
+mov ?r[enj_ber][tati_x],430
+
+mov ?tips[1][tips_page_max],1
+mov ?tips[2][tips_page_max],1
+mov ?tips[3][tips_page_max],1
+mov ?tips[4][tips_page_max],1
+mov ?tips[5][tips_page_max],1
+mov ?tips[6][tips_page_max],1
+mov ?tips[7][tips_page_max],1
+mov %tips_kazu,7
+
+mov ?grim[1][grim_page_max],5 ;intro/stuff		1
+mov ?grim[2][grim_page_max],1 ;lines in English		1
+mov ?grim[3][grim_page_max],1 ;Shotoku Taishi		2
+mov ?grim[4][grim_page_max],1 ;`Demon' Kasumi		3
+mov ?grim[5][grim_page_max],1 ;Vessel			5
+mov ?grim[6][grim_page_max],1 ;Rifle/teppou		8
+mov ?grim[7][grim_page_max],1 ;shiritori		8
+mov ?grim[8][grim_page_max],1 ;110			13
+mov ?grim[9][grim_page_max],1 ;kyukyukyu		16
+mov ?grim[10][grim_page_max],1 ;IME			16
+mov ?grim[11][grim_page_max],1 ;Loser Flags		16
+mov ?grim[12][grim_page_max],1 ;Minmeishobou		16
+
+mov %grim_kazu,12
+
+return
+
+;*************************************************
+;***********************************************************************
+;
+;うみねこのなく頃に
+;ＢＧＭ、試聴モード(変数３７００、３８００番台使用）
+;
+;***********************************************************************
+*bgm_mode
+
+;***【初期化処理】******************************************************
+
+   E_A                                 ;現在演奏中の曲をストップする
+   setwindow 31,16,22,16,22,22,0,2,20,1,1,#ffffff,0,0,639,479 ;utmeta-nomodify
+   textclear
+   rmode 0                              ;右クリックメニューの無効化
+   erasetextwindow 0                    
+   csp -1                               ;スプライト画像の、メモリからの消去
+   btndef ""                            ;ボタン画像の、メモリからの消去
+   ;print 10,1000                        ;画像の消去
+
+   ;衣装の初期化
+   gosub *SHA_isyou1
+   gosub *GEO_isyou1
+   gosub *KAN_isyou1
+   gosub *bea_isyou1
+   gosub *EV2_isyou1
+   gosub *ENJ_isyou1
+   gosub *MAR_isyou1
+
+   ;観音フェードで
+   seplay 9,17
+   bg white,18,1200,":c;Bmp\Efe\1.bmp"
+   wait 500
+
+;print 1
+
+   mov %bm_m,0
+   mov %bm_p,10                          ;最初に流れる曲の番号
+   mov %bm_rnd_kazu,0
+   mov %bm_rpi,1
+   mov %bm_stop,0
+   mov %bgm_kowai_skip,0
+   mov %bgm_mood_1min,0
+   mov %bgm_mood_demo,0
+   mov %bgm_mood_file_path_flg,0
+   mov %bgm_mood_tyokuzenn_op_fede_skip,0
+   mov %bgm_mood_page,1		;曲一覧ページ数
+   if %UMINEKOEND_MUSIC_FLG = 1 mov %UMINEKOEND_MUSIC_FLG,0	;新規追加告知フラグ
+
+   mov %bgm_mood_demo_zennkai_nagasita_op,3
+
+   bgmvol 70 : mov %BGM_v_Ch,70
+   
+   mov %bgm_max2,116 		;アンビエントも含めた曲数（登録数＋６）
+   mov %3801,%bgm_max2 - 5
+
+   mov %bgm_mood_turu_pettan_no,94		;ツルペッタンの番号（重複欠番の９４を当てる）
+   mov %bgm_mood_op_no,%3801 : inc %3801	;ムービーの番号（デモモードで使用）
+   mov %bgm_mood_op2_no,%3801 : inc %3801	;ムービーの番号（デモモードで使用）
+   mov %bgm_mood_op3_no,%3801 : inc %3801	;ムービーの番号（デモモードで使用）
+
+   mov %bgm_mood_ed_no,%3801 : inc %3801	;EDの番号（デモモードでは演奏を行わない）
+   mov %bgm_mood_me1_no,%3801 : inc %3801	;MEの番号
+   mov %bgm_mood_me2_no,%3801 : inc %3801	;MEの番号
+   mov %bgm_mood_me1_btn_no,0	;MEの(ファイルパス数字変数）
+   mov %bgm_mood_me2_btn_no,0	;MEの(ファイルパス数字変数）
+
+
+   mov %bgm_mood_demo_kaisuu,0	;デモモード時、一定回数毎にOPを流す為の変数。
+   
+   ;ランダムチェック変数の初期化
+   for %3801 = 0 to %bgm_max2
+      mov ?bgmm[%3801][bm_r],0
+   next
+
+;***【データ入力】******************************************************
+;データを順番に入力、曲の順番を入れ替える時は、順序をそのまま入れ替える
+gosub *bgm_mode_bgm_date_input
+
+;製作中一時変更点
+mov %bm_pt,?bgmm[%bm_p][bm_t]
+bgm $?bgmm[%bm_p][bm_pa]
+;delay 500
+
+mov $tmp,":c;" : add $tmp,Mhal_1b
+lsp 510,$tmp,0,0
+;bg black,22 ;18,1000,":c;Bmp\Efe\1.bmp"
+
+lsp 499,":c;bmp\r_click\black.bmp",0,0,120
+;print 22
+
+;setwindow 40,16,22,16,26,26,0,2,20,1,1,#ffffff,0,0,639,479
+;lsp 50,":s#FFFFFF演奏したい曲を選んでクリックして下さい",60,11
+print 22
+
+setwindow 31,16,22,16,16,16,0,2,20,1,1,#ffffff,0,0,639,479 ;utmeta-nomodify
+
+;文字スプライトを作成してボタン化する
+;４列、１５行で固定
+mov %3805,301
+mov %3807,101
+mov %3806,10 ;曲一覧の、一番上の高さ
+
+
+
+mov %3801,25 : mov %3802,%3806 : mov %3803,0 : mov %3804,19
+lsp %3805,":s#B7B7B7#FF1D1D$4001",%3801,%3802 : lsph %3807,":s#FFFFFF$4001",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4002",%3801,%3802 : lsph %3807,":s#FFFFFF$4002",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4003",%3801,%3802 : lsph %3807,":s#FFFFFF$4003",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4004",%3801,%3802 : lsph %3807,":s#FFFFFF$4004",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4005",%3801,%3802 : lsph %3807,":s#FFFFFF$4005",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4006",%3801,%3802 : lsph %3807,":s#FFFFFF$4006",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4007",%3801,%3802 : lsph %3807,":s#FFFFFF$4007",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4008",%3801,%3802 : lsph %3807,":s#FFFFFF$4008",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4009",%3801,%3802 : lsph %3807,":s#FFFFFF$4009",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4010",%3801,%3802 : lsph %3807,":s#FFFFFF$4010",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4011",%3801,%3802 : lsph %3807,":s#FFFFFF$4011",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4012",%3801,%3802 : lsph %3807,":s#FFFFFF$4012",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4013",%3801,%3802 : lsph %3807,":s#FFFFFF$4013",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4014",%3801,%3802 : lsph %3807,":s#FFFFFF$4014",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4015",%3801,%3802 : lsph %3807,":s#FFFFFF$4015",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+
+
+mov %3801,175 : mov %3802,%3806 : mov %3803,0
+lsp %3805,":s#B7B7B7#FF1D1D$4016",%3801,%3802 : lsph %3807,":s#FFFFFF$4016",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4017",%3801,%3802 : lsph %3807,":s#FFFFFF$4017",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4018",%3801,%3802 : lsph %3807,":s#FFFFFF$4018",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4019",%3801,%3802 : lsph %3807,":s#FFFFFF$4019",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4020",%3801,%3802 : lsph %3807,":s#FFFFFF$4020",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4021",%3801,%3802 : lsph %3807,":s#FFFFFF$4021",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4022",%3801,%3802 : lsph %3807,":s#FFFFFF$4022",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4023",%3801,%3802 : lsph %3807,":s#FFFFFF$4023",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4024",%3801,%3802 : lsph %3807,":s#FFFFFF$4024",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4025",%3801,%3802 : lsph %3807,":s#FFFFFF$4025",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4026",%3801,%3802 : lsph %3807,":s#FFFFFF$4026",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4027",%3801,%3802 : lsph %3807,":s#FFFFFF$4027",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4028",%3801,%3802 : lsph %3807,":s#FFFFFF$4028",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4029",%3801,%3802 : lsph %3807,":s#FFFFFF$4029",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4030",%3801,%3802 : lsph %3807,":s#FFFFFF$4030",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+
+
+mov %3801,330 : mov %3802,%3806 : mov %3803,0
+lsp %3805,":s#B7B7B7#FF1D1D$4031",%3801,%3802 : lsph %3807,":s#FFFFFF$4031",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4032",%3801,%3802 : lsph %3807,":s#FFFFFF$4032",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4033",%3801,%3802 : lsph %3807,":s#FFFFFF$4033",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4034",%3801,%3802 : lsph %3807,":s#FFFFFF$4034",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4035",%3801,%3802 : lsph %3807,":s#FFFFFF$4035",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4036",%3801,%3802 : lsph %3807,":s#FFFFFF$4036",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4037",%3801,%3802 : lsph %3807,":s#FFFFFF$4037",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4038",%3801,%3802 : lsph %3807,":s#FFFFFF$4038",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4039",%3801,%3802 : lsph %3807,":s#FFFFFF$4039",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4040",%3801,%3802 : lsph %3807,":s#FFFFFF$4040",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4041",%3801,%3802 : lsph %3807,":s#FFFFFF$4041",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4042",%3801,%3802 : lsph %3807,":s#FFFFFF$4042",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4043",%3801,%3802 : lsph %3807,":s#FFFFFF$4043",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4044",%3801,%3802 : lsph %3807,":s#FFFFFF$4044",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4045",%3801,%3802 : lsph %3807,":s#FFFFFF$4045",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+
+
+mov %3801,480 : mov %3802,%3806 : mov %3803,0
+lsp %3805,":s#B7B7B7#FF1D1D$4046",%3801,%3802 : lsph %3807,":s#FFFFFF$4046",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4047",%3801,%3802 : lsph %3807,":s#FFFFFF$4047",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4048",%3801,%3802 : lsph %3807,":s#FFFFFF$4048",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4049",%3801,%3802 : lsph %3807,":s#FFFFFF$4049",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4050",%3801,%3802 : lsph %3807,":s#FFFFFF$4050",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4051",%3801,%3802 : lsph %3807,":s#FFFFFF$4051",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4052",%3801,%3802 : lsph %3807,":s#FFFFFF$4052",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4053",%3801,%3802 : lsph %3807,":s#FFFFFF$4053",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4054",%3801,%3802 : lsph %3807,":s#FFFFFF$4054",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4055",%3801,%3802 : lsph %3807,":s#FFFFFF$4055",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4056",%3801,%3802 : lsph %3807,":s#FFFFFF$4056",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4057",%3801,%3802 : lsph %3807,":s#FFFFFF$4057",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4058",%3801,%3802 : lsph %3807,":s#FFFFFF$4058",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4059",%3801,%3802 : lsph %3807,":s#FFFFFF$4059",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4060",%3801,%3802 : lsph %3807,":s#FFFFFF$4060",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+
+
+;２ページ目に移行
+mov %3801,25 : mov %3802,%3806 : mov %3803,0
+lsph %3805,":s#B7B7B7#FF1D1D$4061",%3801,%3802 : lsph %3807,":s#FFFFFF$4061",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4062",%3801,%3802 : lsph %3807,":s#FFFFFF$4062",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4063",%3801,%3802 : lsph %3807,":s#FFFFFF$4063",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4064",%3801,%3802 : lsph %3807,":s#FFFFFF$4064",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4065",%3801,%3802 : lsph %3807,":s#FFFFFF$4065",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4066",%3801,%3802 : lsph %3807,":s#FFFFFF$4066",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4067",%3801,%3802 : lsph %3807,":s#FFFFFF$4067",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4068",%3801,%3802 : lsph %3807,":s#FFFFFF$4068",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4069",%3801,%3802 : lsph %3807,":s#FFFFFF$4069",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4070",%3801,%3802 : lsph %3807,":s#FFFFFF$4070",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4071",%3801,%3802 : lsph %3807,":s#FFFFFF$4071",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4072",%3801,%3802 : lsph %3807,":s#FFFFFF$4072",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4073",%3801,%3802 : lsph %3807,":s#FFFFFF$4073",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4074",%3801,%3802 : lsph %3807,":s#FFFFFF$4074",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4075",%3801,%3802 : lsph %3807,":s#FFFFFF$4075",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+
+
+mov %3801,175 : mov %3802,%3806 : mov %3803,0
+lsph %3805,":s#B7B7B7#FF1D1D$4076",%3801,%3802 : lsph %3807,":s#FFFFFF$4076",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4077",%3801,%3802 : lsph %3807,":s#FFFFFF$4077",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4078",%3801,%3802 : lsph %3807,":s#FFFFFF$4078",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4079",%3801,%3802 : lsph %3807,":s#FFFFFF$4079",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4080",%3801,%3802 : lsph %3807,":s#FFFFFF$4080",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4081",%3801,%3802 : lsph %3807,":s#FFFFFF$4081",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4082",%3801,%3802 : lsph %3807,":s#FFFFFF$4082",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4083",%3801,%3802 : lsph %3807,":s#FFFFFF$4083",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4084",%3801,%3802 : lsph %3807,":s#FFFFFF$4084",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4085",%3801,%3802 : lsph %3807,":s#FFFFFF$4085",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4086",%3801,%3802 : lsph %3807,":s#FFFFFF$4086",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4087",%3801,%3802 : lsph %3807,":s#FFFFFF$4087",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4088",%3801,%3802 : lsph %3807,":s#FFFFFF$4088",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4089",%3801,%3802 : lsph %3807,":s#FFFFFF$4089",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsph %3805,":s#B7B7B7#FF1D1D$4090",%3801,%3802 : lsph %3807,":s#FFFFFF$4090",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+
+
+mov %3801,330 : mov %3802,%3806 : mov %3803,0
+lsp %3805,":s#B7B7B7#FF1D1D$4091",%3801,%3802 : lsph %3807,":s#FFFFFF$4091",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4092",%3801,%3802 : lsph %3807,":s#FFFFFF$4092",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4093",%3801,%3802 : lsph %3807,":s#FFFFFF$4093",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4094",%3801,%3802 : lsph %3807,":s#FFFFFF$4094",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4095",%3801,%3802 : lsph %3807,":s#FFFFFF$4095",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4096",%3801,%3802 : lsph %3807,":s#FFFFFF$4096",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4097",%3801,%3802 : lsph %3807,":s#FFFFFF$4097",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4098",%3801,%3802 : lsph %3807,":s#FFFFFF$4098",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4099",%3801,%3802 : lsph %3807,":s#FFFFFF$4099",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4100",%3801,%3802 : lsph %3807,":s#FFFFFF$4100",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4101",%3801,%3802 : lsph %3807,":s#FFFFFF$4101",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4102",%3801,%3802 : lsph %3807,":s#FFFFFF$4102",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4103",%3801,%3802 : lsph %3807,":s#FFFFFF$4103",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4104",%3801,%3802 : lsph %3807,":s#FFFFFF$4104",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4105",%3801,%3802 : lsph %3807,":s#FFFFFF$4105",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+
+
+mov %3801,485 : mov %3802,%3806 : mov %3803,0
+
+lsp %3805,":s#B7B7B7#FF1D1D$4106",%3801,%3802 : lsph %3807,":s#FFFFFF$4106",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4107",%3801,%3802 : lsph %3807,":s#FFFFFF$4107",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4108",%3801,%3802 : lsph %3807,":s#FFFFFF$4108",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4109",%3801,%3802 : lsph %3807,":s#FFFFFF$4109",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4110",%3801,%3802 : lsph %3807,":s#FFFFFF$4110",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4111",%3801,%3802 : lsph %3807,":s#FFFFFF$4111",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4112",%3801,%3802 : lsph %3807,":s#FFFFFF$4112",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4113",%3801,%3802 : lsph %3807,":s#FFFFFF$4113",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4114",%3801,%3802 : lsph %3807,":s#FFFFFF$4114",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4115",%3801,%3802 : lsph %3807,":s#FFFFFF$4115",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+lsp %3805,":s#B7B7B7#FF1D1D$4116",%3801,%3802 : lsph %3807,":s#FFFFFF$4116",%3801,%3802 : add %3802,%3804 : inc %3805 : inc %3807
+
+
+
+*bgm_mode_mini_skip
+
+;各システムボタンの配置
+;mov %3801,30
+mov %3802,442
+mov %3803,422
+mov %3804,444
+
+
+
+mov $witchh4, "bgm_mode\ensou_w.png"
+setLangString $witchh4, ""
+lsp bgm_ennsou_lsp,$witchh4,40,%3802
+mov $witchh4, "bgm_mode\ensou_btn.png"
+setLangString $witchh4, "/2,0,3"
+lsph bgm_btn_ennsou_lsp,$witchh4,40,%3802
+
+mov $witchh4, "bgm_mode\all_w.png"
+setLangString $witchh4, ""
+lsph bgm_zennkyoku_lsp,$witchh4,90,%3803
+mov $witchh4, "bgm_mode\all_btn.png"
+setLangString $witchh4, "/2,0,3"
+lsp bgm_btn_zennkyoku_lsp,$witchh4,90,%3803
+
+mov $witchh4, "bgm_mode\rnd_w.png"
+setLangString $witchh4, ""
+lsph bgm_ranndamu_lsp,$witchh4,90,%3804
+mov $witchh4, "bgm_mode\rnd_btn.png"
+setLangString $witchh4, "/2,0,3"
+lsp bgm_btn_ranndamu_lsp,$witchh4,90,%3804
+
+mov $witchh4, "bgm_mode\stop_btn.png"
+setLangString $witchh4, "/2,0,3"
+lsp bgm_btn_stop_lsp,$witchh4,198,%3802
+
+mov $witchh4, "bgm_mode\r_1_w.png"
+setLangString $witchh4, ""
+mov $witchh6,$witchh4
+lsp bgm_rpi_lsp,$witchh4,240,%3802
+mov $witchh4, "bgm_mode\r_1.png"
+setLangString $witchh4, "/2,0,3"
+mov $witchh7,$witchh4
+lsph bgm_btn_rpi_lsp,$witchh4,240,%3802
+
+mov $witchh4, "bgm_mode\r_a_w.png"
+setLangString $witchh4, ""
+mov $witchh8,$witchh4
+mov $witchh4, "bgm_mode\r_a.png"
+setLangString $witchh4, "/2,0,3"
+mov $witchh9,$witchh4
+
+mov $witchh4, "bgm_mode\min_w.png"
+setLangString $witchh4, ""
+lsph bgm_min_lsp,$witchh4,343,%3803
+mov $witchh4, "bgm_mode\min_btn.png"
+setLangString $witchh4, "/2,0,3"
+lsp bgm_btn_min_lsp,$witchh4,343,%3803
+
+mov $witchh4, "bgm_mode\demo_w.png"
+setLangString $witchh4, ""
+lsph bgm_demo_lsp,$witchh4,343,%3804
+mov $witchh4, "bgm_mode\demo_btn.png"
+setLangString $witchh4, "/2,0,3"
+lsp bgm_btn_demo_lsp,$witchh4,343,%3804
+
+
+mov $witchh4, "bgm_mode\ko_skip_w.png"
+setLangString $witchh4, ""
+lsph bgm_kowai_skip_lsp,$witchh4,425,%3803
+mov $witchh4, "bgm_mode\ko_skip_btn.png"
+setLangString $witchh4, "/2,0,3"
+lsp bgm_btn_kowai_skip_lsp,$witchh4,425,%3803
+
+mov $witchh4, "bgm_mode\kowai_w.png"
+setLangString $witchh4, ""
+lsph bgm_kowai_only_lsp,$witchh4,425,%3804
+mov $witchh4, "bgm_mode\kowai_btn.png"
+setLangString $witchh4, "/2,0,3"
+lsp bgm_btn_kowai_only_lsp,$witchh4,425,%3804
+
+mov $witchh4, "bgm_mode\modoru_btn.png"
+setLangString $witchh4, "/2,0,3"
+lsp bgm_btn_title_lsp,$witchh4,570,%3802 ;タイトルに戻る
+
+mov $witchh4, "bgm_mode\next_btn.png"
+setLangString $witchh4, "/2,0,3"
+lsp bgm_btn_next_lsp,$witchh4,510,302 ;曲一覧ネクストボタン
+mov $witchh4, "bgm_mode\back_btn.png"
+setLangString $witchh4, "/2,0,3"
+lsph bgm_btn_back_lsp,$witchh4,15,302 ;曲一覧バックボタン
+
+
+
+
+;ウィンドウの表示
+lsp bgm_window_lsp,":ba;bgm_mode\window.png",2,365,230
+;print 22
+
+
+;** ボタンの設定と処理ルーチン***************************************
+*bgm_mode_botann_teigi
+
+btndef ""
+
+notif %bgm_mood_page = 1 goto *bgm_mode_botann_teigi_100
+	;ボタン、表示と非表示の調整
+	for %tmp = 301 to 360 : vsp %tmp,1 : next
+	for %tmp = 361 to 450 : vsp %tmp,0 : next
+	vsp bgm_btn_next_lsp,1
+	vsp bgm_btn_back_lsp,0
+	print 22
+	
+	;１ページ目　１〜６０曲まで表示、ＮＥＸＴボタンを表示
+	exbtn_d "P301,0P302,0P303,0P304,0P305,0P306,0P307,0P308,0P309,0P310,0P311,0P312,0P313,0P314,0P315,0P316,0P317,0P318,0P319,0P320,0P321,0P322,0P323,0P324,0P325,0P326,0P327,0P328,0P329,0P330,0P331,0P332,0P333,0P334,0P335,0P336,0P337,0P338,0P339,0P340,0P341,0P342,0P343,0P344,0P345,0P346,0P347,0P348,0P349,0P350,0P351,0P352,0P353,0P354,0P355,0P356,0P357,0P358,0P359,0P360,0"
+
+	mov %3801,301 : mov %3802,1
+	exbtn %3801,%3802,"P301,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P302,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P303,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P304,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P305,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P306,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P307,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P308,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P309,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P310,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P311,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P312,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P313,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P314,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P315,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P316,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P317,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P318,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P319,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P320,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P321,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P322,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P323,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P324,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P325,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P326,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P327,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P328,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P329,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P330,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P331,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P332,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P333,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P334,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P335,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P336,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P337,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P338,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P339,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P340,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P341,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P342,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P343,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P344,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P345,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P346,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P347,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P348,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P349,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P350,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P351,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P352,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P353,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P354,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P355,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P356,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P357,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P358,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P359,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P360,1" : inc %3801 : inc %3802
+	exbtn bgm_btn_next_lsp,bgm_btn_next,"P21,1"
+*bgm_mode_botann_teigi_100
+
+notif %bgm_mood_page = 2 goto *bgm_mode_botann_teigi_200
+	;ボタン、表示と非表示の調整
+	for %tmp = 301 to 360 : vsp %tmp,0 : next
+	for %tmp = 361 to 450 : vsp %tmp,1 : next
+	vsp bgm_btn_next_lsp,0
+	vsp bgm_btn_back_lsp,1
+	print 22
+
+	;２ページ目　６１〜８０曲まで表示、ＢＡＣＫボタンを表示
+	exbtn_d "P361,0P362,0P363,0P364,0P365,0P366,0P367,0P368,0P369,0P370,0P371,0P372,0P373,0P374,0P375,0P376,0P377,0P378,0P379,0P380,0P381,0P382,0P383,0P384,0P385,0P386,0P387,0P388,0P389,0P390,0P391,0P392,0P393,0P394,0P395,0P396,0P397,0P398,0P399,0P400,0P401,0P402,0P403,0P404,0P405,0P406,0P407,0P408,0P409,0P410,0P411,0P412,0P413,0P414,0P415,0P416,0"
+
+	mov %3801,361 : mov %3802,61
+	exbtn %3801,%3802,"P361,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P362,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P363,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P364,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P365,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P366,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P367,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P368,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P369,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P370,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P371,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P372,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P373,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P374,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P375,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P376,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P377,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P378,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P379,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P380,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P381,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P382,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P383,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P384,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P385,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P386,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P387,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P388,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P389,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P390,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P391,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P392,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P393,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P394,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P395,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P396,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P397,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P398,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P399,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P400,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P401,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P402,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P403,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P404,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P405,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P406,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P407,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P408,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P409,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P410,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P411,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P412,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P413,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P414,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P415,1" : inc %3801 : inc %3802
+	exbtn %3801,%3802,"P416,1" : inc %3801 : inc %3802
+	exbtn bgm_btn_back_lsp,bgm_btn_back,"P20,1"
+*bgm_mode_botann_teigi_200
+
+
+exbtn bgm_btn_ennsou_lsp,bgm_btn_ennsou,"P39,1" 	;演奏
+
+;ボタンのオン、オフで、定義を切り替える
+exbtn bgm_btn_zennkyoku_lsp,bgm_btn_zennkyoku,"P37,1" 	;全曲演奏
+exbtn bgm_btn_ranndamu_lsp,bgm_btn_ranndamu,"P35,1" 	;気まぐれ演奏
+
+exbtn bgm_btn_stop_lsp,bgm_btn_stop,"P33,1" 		;ストップ
+
+exbtn bgm_btn_rpi_lsp,bgm_btn_rpi,"P32,1" 		;繰り返し演奏
+
+exbtn bgm_btn_min_lsp,bgm_btn_min,"P30,1" 		;１分モード
+exbtn bgm_btn_demo_lsp,bgm_btn_demo,"P28,1" 	;デモモード
+
+exbtn bgm_btn_kowai_skip_lsp,bgm_btn_kowai_skip,"P26,1" ;怖い曲を飛ばす
+exbtn bgm_btn_kowai_only_lsp,bgm_btn_kowai_only,"P24,1" ;怖い曲だけ演奏
+
+exbtn bgm_btn_title_lsp,bgm_btn_title,"P22,1" 		;タイトルへ戻る
+
+
+;ED演奏時はスキップ
+if %bm_p = %bgm_mood_ed_no goto *bgm_mode_btn_lp
+
+*bgm_mode_btn_lp_0
+   ;ランダム、順番演奏の為に時間制限ボタンを使用する。	
+   getbtntimer %bm_pt2
+   sub %bm_pt,%bm_pt2
+   
+*bgm_mode_btn_lp
+   if %bm_pt < 0 mov %bm_pt,0
+   notif %bm_p = 0 btntime %bm_pt
+   if %bm_stop = 0 btntime 10000
+   if %bm_p = 0 btntime 10000
+   btnwait2 %BtnRes
+
+;時間切れの処理、ループ、次の曲に、ランダム
+notif %BtnRes <= -5 goto *bgm_mode_100
+
+   ;演奏停止中は、ボタン待ち
+   if %bm_stop = 0 goto *bgm_mode_btn_lp
+   
+   ;【演奏＋リピート】　一曲リピート 
+   if %bm_rpi=1 if %bm_m = 0 mov %bm_pt,?bgmm[%bm_p][bm_t]: goto *bgm_mode_btn_lp
+   
+   ;演奏のみなら、停止処理
+   if %bm_rpi=0 if %bm_m = 0 mov %BtnRes,bgm_btn_stop : goto *bgm_mode_100 
+   
+   ;順演奏
+   notif %bm_m = 1 goto *bgm_mode_10
+	;演奏している曲が一番最後なら、リピートのオンオフを確認
+	if %bm_rpi = 1 && %bm_p >= %bgm_max2 mov %BtnRes,1 : goto *bgm_mode_play_kyokunitobu
+	if %bm_p < %bgm_max2 mov %BtnRes,%bm_p : inc %BtnRes : goto *bgm_mode_play_kyokunitobu
+      
+      ;リピートがオフならストップを入力する。
+      mov %BtnRes,bgm_btn_stop : goto *bgm_mode_100 
+   *bgm_mode_10
+   
+   ;ランダム演奏
+   notif %bm_m = 2 goto *bgm_mode_20
+      ;ランダムに次の曲へ
+
+;テスト
+;notif %bgm_mood_demo = 1 jumpf
+;	if %bm_p = %bgm_max2 mov %BtnRes,1 : goto *bgm_mode_play_kyokunitobu
+;	mov %BtnRes,%bm_p : inc %BtnRes : goto *bgm_mode_play_kyokunitobu
+;      
+;~
+
+      ;曲数がマックスなら、リピートのオン、オフを確認
+      notif %bm_rnd_kazu >= %bgm_max2 goto *bgm_mode_25
+         if %bm_rpi = 1 gosub *bgm_r_shokika
+	 if %bm_rpi = 0 mov %BtnRes,bgm_btn_stop : goto *bgm_mode_100 
+      *bgm_mode_25
+      
+      ;演奏されていない曲数から、ランダムで何番目を演奏するか算出
+      mov %3803,%bgm_max2 : sub %3803,%bm_rnd_kazu
+      rnd2 %3802,1,%3803
+	
+	notif %bgm_mood_demo = 1 goto *bgm_mode_26
+		;デモモード時は決まった回数に一度、オープニングを流す。
+		notif %bgm_mood_demo_kaisuu >= 8 jumpf
+			mov %bgm_mood_demo_kaisuu,0
+			;交互に曲を流す
+			if %bgm_mood_demo_zennkai_nagasita_op = 1 mov %bgm_mood_demo_zennkai_nagasita_op,2 : mov %BtnRes,2 : goto *bgm_mode_play_kyokunitobu
+			if %bgm_mood_demo_zennkai_nagasita_op = 2 mov %bgm_mood_demo_zennkai_nagasita_op,3 : mov %BtnRes,3 : goto *bgm_mode_play_kyokunitobu
+			if %bgm_mood_demo_zennkai_nagasita_op = 3 mov %bgm_mood_demo_zennkai_nagasita_op,1 : mov %BtnRes,1 : goto *bgm_mode_play_kyokunitobu
+		~
+		inc %bgm_mood_demo_kaisuu
+      	*bgm_mode_26
+	
+      ;何番目かを決定したら、1からチェックして、演奏されていない曲を演奏する
+      for %3803 = 1 to %bgm_max2
+        if ?bgmm[%3803][bm_r] = 0 dec %3802 : if %3802 = 0 mov %BtnRes,%3803 :break  
+      next
+      goto *bgm_mode_play_kyokunitobu
+   *bgm_mode_20
+   
+   ;リピート演奏への切り替え
+   notif %bm_m = 10 goto *bgm_mode_50
+      mov %bm_m,0
+      bgm $?bgmm[%bm_p][bm_pa]
+      mov %bm_pt,?bgmm[%bm_p][bm_t] ;曲の時間を入力
+      goto *bgm_mode_btn_lp
+   *bgm_mode_50
+*bgm_mode_100
+
+
+;0と-1、デモモードの時はデモモードを抜ける処理を行う。
+notif %bgm_mood_demo = 1 goto *bgm_mode_demo_kaijo_skip
+	notif %BtnRes = -1 jumpf
+		csp 0
+		csp 1
+		vsp bgm_demo_lsp,0
+		print 1
+		mov %bgm_mood_demo,0
+		mov %BtnRes,bgm_btn_stop
+		goto *bgm_mode_100
+	~
+	notif %BtnRes = 0 jumpf
+		csp 0
+		csp 1
+		vsp bgm_demo_lsp,0
+		print 1
+		mov %bgm_mood_demo,0
+		mov %BtnRes,bgm_btn_stop
+		goto *bgm_mode_100
+	~
+
+*bgm_mode_demo_kaijo_skip
+
+
+if %BtnRes = -1 goto *bgm_mode_end ;エンド処理
+if %BtnRes = 0 goto *bgm_mode_btn_lp_0
+
+;ページ数、次のページを押されたら曲一覧を次のページに移動
+notif %BtnRes = bgm_btn_next goto *bgm_mode_next_100
+	if %bgm_mood_page = 1 mov %bgm_mood_page,2 : for %tmp = 101 to 250 : vsp %tmp,0 : next : goto *bgm_mode_botann_teigi
+	if %bgm_mood_page = 2 mov %bgm_mood_page,1 : for %tmp = 101 to 250 : vsp %tmp,0 : next : goto *bgm_mode_botann_teigi
+*bgm_mode_next_100
+
+;ページ数、前のページを押されたら曲一覧を前のページに移動
+notif %BtnRes = bgm_btn_back goto *bgm_mode_back_100
+	if %bgm_mood_page = 1 mov %bgm_mood_page,2 : for %tmp = 101 to 250 : vsp %tmp,0 : next : goto *bgm_mode_botann_teigi
+	if %bgm_mood_page = 2 mov %bgm_mood_page,1 : for %tmp = 101 to 250 : vsp %tmp,0 : next : goto *bgm_mode_botann_teigi
+*bgm_mode_back_100
+
+
+;演奏
+notif %BtnRes = bgm_btn_ennsou goto *bgm_mode_150
+   ;他のパネルの設定に従って演奏を行う
+      ;ランダムモードがＯＮの時は、曲番号をランダムに変化
+      if %bm_m = 2 rnd2 %bm_p,1,%bgm_max2
+   ;曲番号を入力して、演奏ルーチンに飛ぶ 
+   if %bm_p <= 0 mov %bm_p,1
+   mov %BtnRes,%bm_p
+   goto *bgm_mode_play_kyokunitobu_0
+*bgm_mode_150
+
+
+;リピートのオン、オフ
+notif %BtnRes = bgm_btn_rpi goto *bgm_mode_200
+   ;リピートがオンになっているのならオフ、オフならオンに
+	notif %bm_rpi=1 goto *bgm_mode_210
+
+		;一曲、全曲、リピートボタンの変更
+		if %bm_m = 0 vsp bgm_rpi_lsp,0 : lsp bgm_btn_rpi_lsp,$witchh7,240,442
+		if %bm_m = 1 vsp bgm_rpi_lsp,0 : lsp bgm_btn_rpi_lsp,$witchh9,240,442
+		if %bm_m = 2 vsp bgm_rpi_lsp,0 : lsp bgm_btn_rpi_lsp,$witchh9,240,442
+
+		mov %bm_rpi,0
+		vsp bgm_rpi_lsp,0
+		print 1
+		goto *bgm_mode_btn_lp_0
+	*bgm_mode_210
+
+	;一曲、全曲、リピートボタンの変更
+	if %bm_m = 0 vsp bgm_btn_rpi_lsp,0 : lsp bgm_rpi_lsp,$witchh6,240,442
+	if %bm_m = 1 vsp bgm_btn_rpi_lsp,0 : lsp bgm_rpi_lsp,$witchh8,240,442
+	if %bm_m = 2 vsp bgm_btn_rpi_lsp,0 : lsp bgm_rpi_lsp,$witchh8,240,442
+
+   mov %bm_rpi,1
+   vsp bgm_rpi_lsp,1 : print 1
+   ;通常演奏なら、%bm_mを10に設定（BGMONCEで演奏されていた物を、BGMに変える為）
+   if %bm_m = 0 mov %bm_m,10
+   goto *bgm_mode_btn_lp_0
+*bgm_mode_200
+
+
+;順次演奏のオン、オフ
+notif %BtnRes = bgm_btn_zennkyoku goto *bgm_mode_300
+   ;オンならオフに、オフならオンにする
+   notif %bm_m = 1 goto *bgm_mode_350
+	mov %bm_m,0
+
+	;リピートボタンの変更
+	if %bm_rpi=1 vsp bgm_btn_rpi_lsp,0 : lsp bgm_rpi_lsp,$witchh6,240,442 : lsp bgm_btn_rpi_lsp,$witchh7,240,442
+	if %bm_rpi=0 vsp bgm_rpi_lsp,0 : lsp bgm_btn_rpi_lsp,$witchh7,240,442
+
+      vsp bgm_zennkyoku_lsp,0: print 1
+      ;リピートがオンなら10を入力（BGMONCEで演奏されていた物を、BGMに変える為）
+      if %bm_rpi = 1 mov %bm_m,10
+      goto *bgm_mode_btn_lp_0
+   *bgm_mode_350
+
+	;リピートボタンの変更
+;original
+	if %bm_rpi=1 vsp bgm_btn_rpi_lsp,0 : lsp bgm_rpi_lsp,$witchh8,240,442 : lsp bgm_btn_rpi_lsp,$witchh9,240,442
+	if %bm_rpi=0 vsp bgm_rpi_lsp,0 : lsp bgm_btn_rpi_lsp,$witchh9,240,442
+   
+   mov %bm_m,1
+   vsp bgm_zennkyoku_lsp,1
+   vsp bgm_ranndamu_lsp,0
+   print 1
+
+   ;演奏されていないのなら、自動的に演奏をスタートする。
+   notif %bm_stop = 0 jumpf
+		mov %BtnRes,bgm_btn_ennsou
+		goto *bgm_mode_100
+   ~
+   goto *bgm_mode_btn_lp_0
+*bgm_mode_300
+
+
+;ランダム演奏のオン、オフ
+notif %BtnRes = bgm_btn_ranndamu goto *bgm_mode_400
+
+   notif %bm_m = 2 goto *bgm_mode_450
+	mov %bm_m,0
+	;リピートボタンの変更
+	if %bm_rpi=1 vsp bgm_btn_rpi_lsp,0 : lsp bgm_rpi_lsp,$witchh6,240,442 : lsp bgm_btn_rpi_lsp,$witchh7,240,442
+	if %bm_rpi=0 vsp bgm_rpi_lsp,0 : lsp bgm_btn_rpi_lsp,$witchh7,240,442
+
+      vsp bgm_ranndamu_lsp,0 : print 1
+      ;リピートがオンなら10を入力（BGMONCEで演奏されていた物を、BGMに変える為）
+      if %bm_rpi = 1 mov %bm_m,10
+      goto *bgm_mode_btn_lp_0
+   *bgm_mode_450
+   
+	mov %bm_m,2
+	;リピートボタンの変更
+
+	if %bm_rpi=1 vsp bgm_btn_rpi_lsp,0 : lsp bgm_rpi_lsp,$witchh8,240,442 : lsp bgm_btn_rpi_lsp,$witchh9,240,442
+	if %bm_rpi=0 vsp bgm_rpi_lsp,0 : lsp bgm_btn_rpi_lsp,$witchh9,240,442
+
+   vsp bgm_zennkyoku_lsp,0
+   vsp bgm_ranndamu_lsp,1
+   print 1
+   
+   gosub *bgm_r_shokika
+   
+   ;演奏中なら現在の曲をチェック変数に入力
+   notif %bm_stop = 0 mov ?bgmm[%bm_p][bm_r],1 : mov %bm_rnd_kazu,0 : goto *bgm_mode_btn_lp_0
+   
+   ;演奏されていないのなら、自動的に演奏をスタートする。
+   if %bm_stop = 0 mov %BtnRes,bgm_btn_ennsou : goto *bgm_mode_100
+*bgm_mode_400
+
+
+;メドレーボタンのオン、オフ
+notif %BtnRes = bgm_btn_min goto *bgm_mode_1min_skip
+
+	;ON
+	notif %bgm_mood_1min = 0 goto *bgm_mode_1min_10
+		mov %bgm_mood_1min,1
+		vsp bgm_min_lsp,1
+		print 1
+
+		;曲が演奏されていなければ演奏を行う(この時､単曲再生なら､全曲再生にする｡
+		notif %bm_stop = 0 jumpf
+			if %bm_m <> 0 mov %BtnRes,bgm_btn_ennsou : goto *bgm_mode_100
+			if %bm_m = 0 mov %BtnRes,bgm_btn_zennkyoku : goto *bgm_mode_100
+		~
+		
+		;曲が演奏中ならば、その曲はすぐにフェードアウトさせてしまう。
+		;単曲演奏中ならば、順次演奏に変更
+		if %bm_m = 0 vsp bgm_zennkyoku_lsp,1 : vsp bgm_ranndamu_lsp,0 : print 1 : mov %bm_m,1
+		mov %bm_pt,0 : goto *bgm_mode_btn_lp
+		goto *bgm_mode_btn_lp_0
+	*bgm_mode_1min_10
+
+	;OFF
+	if %bgm_mood_1min = 1 mov %bgm_mood_1min,0 : vsp bgm_min_lsp,0 :print 1 :goto *bgm_mode_btn_lp
+*bgm_mode_1min_skip
+
+
+;デモモードのオン、オフ
+notif %BtnRes = bgm_btn_demo goto *bgm_mode_demo_skip
+	;ON
+	notif %bgm_mood_demo = 0 goto *bgm_mode_demo_10
+		mov %bgm_mood_demo,1
+		vsp bgm_demo_lsp,1
+		print 1
+		
+		;デモ演奏用のルーチンに飛ぶ
+		;goto *bgm_demo_play
+
+		;演奏、ランダム、繰り返しを自動的にONに
+		vsp bgm_rpi_lsp,1 : mov %bm_rpi,1
+		vsp bgm_min_lsp,0 : mov %bgm_mood_1min,0
+		;vsp bgm_kowai_skip_lsp,0 : 
+		;vsp bgm_kowai_only_lsp,0 : mov %bgm_kowai_skip,0
+		print 1
+
+		;曲が演奏されていなければ演奏を行う(この時､気まぐれ再生にする）
+		notif %bm_stop = 0 jumpf
+			if %bm_m = 2 mov %BtnRes,bgm_btn_ennsou : goto *bgm_mode_100
+			if %bm_m <> 2 mov %BtnRes,bgm_btn_ranndamu : goto *bgm_mode_100
+		~
+		;曲が演奏されていればランダム演奏を行う
+		mov %bm_pt,0
+		if %bm_m <> 2 vsp bgm_zennkyoku_lsp,0 : vsp bgm_ranndamu_lsp,1 : print 1 : mov %bm_m,2
+		mov %bm_pt,0 : goto *bgm_mode_btn_lp
+		goto *bgm_mode_btn_lp_0
+	*bgm_mode_demo_10
+
+	notif %bgm_mood_demo = 1 goto *bgm_mode_demo_20
+		csp 0
+		vsp bgm_demo_lsp,0
+		print 1
+		mov %bgm_mood_demo,0
+		mov %BtnRes,bgm_btn_stop
+		goto *bgm_mode_100
+	*bgm_mode_demo_20
+*bgm_mode_demo_skip
+
+
+
+;演奏停止処理
+notif %BtnRes = bgm_btn_stop goto *bgm_mode_stop
+   *bgm_mode_stop100
+   ;fede 0,2000
+   E_A
+   textclear
+	csp bgm_title_lsp : csp bgm_sakka_lsp : csp bgm_time_lsp : vsp bgm_ennsou_lsp,0
+	mov %tmp,100 : add %tmp,%bm_p : vsp %tmp,0
+	print 1
+   mov %bm_stop,0
+   vsp bgm_ennsou_lsp,0
+   ;vsp bgm_zennkyoku_lsp,0
+   ;vsp bgm_ranndamu_lsp,0
+   print 1 
+   
+   gosub *bgm_r_shokika
+   mov %bm_rnd_kazu,0
+   goto *bgm_mode_btn_lp
+*bgm_mode_stop
+
+
+;怖い曲は飛ばすのチェック
+notif %BtnRes = bgm_btn_kowai_skip goto *bgm_mode500
+   notif %bgm_kowai_skip <= 0 goto *bgm_mode550
+      mov %bgm_kowai_skip,1
+	vsp bgm_kowai_skip_lsp,1
+	vsp bgm_kowai_only_lsp,0
+	print 1
+      goto *bgm_mode_btn_lp_0
+   *bgm_mode550
+   
+   mov %bgm_kowai_skip,0
+   vsp bgm_kowai_skip_lsp,0
+   vsp bgm_kowai_only_lsp,0 : print 1
+   gosub *bgm_r_shokika
+   goto *bgm_mode_btn_lp_0
+*bgm_mode500
+
+
+;怖い曲だけ演奏のチェック
+notif %BtnRes = bgm_btn_kowai_only goto *bgm_mode600
+   notif %bgm_kowai_skip >= 0 goto *bgm_mode650
+      mov %bgm_kowai_skip,-1
+	vsp bgm_kowai_skip_lsp,0
+	vsp bgm_kowai_only_lsp,1
+	print 1
+      goto *bgm_mode_btn_lp_0
+   *bgm_mode650
+   
+   mov %bgm_kowai_skip,0
+   vsp bgm_kowai_only_lsp,0
+   vsp bgm_kowai_skip_lsp,0 : print 1
+   gosub *bgm_r_shokika
+   goto *bgm_mode_btn_lp_0
+*bgm_mode600
+
+;タイトルへ戻る
+if %BtnRes = bgm_btn_title goto *bgm_mode_end
+
+
+;-------------------------------
+
+;上記該当以外は、曲の選択扱い
+*bgm_mode_play_kyokunitobu_0
+
+vsp bgm_ennsou_lsp,1 :print 1 ;演奏ボタンをＯＮにする。
+
+;曲を選択して、尚且つランダムモードの場合は初期化を行う
+if %bm_m = 2 gosub *bgm_r_shokika
+
+
+*bgm_mode_play_kyokunitobu
+
+;演奏する曲の曲番号を保持する
+mov %bm_p,%BtnRes
+
+;ボタン番号を曲番号に変換
+mov %BtnRes,?bgmm[%BtnRes][bm_c]
+
+;怖い曲はスキップにチェックが入っている場合、怖い曲は演奏した事にする
+notif %bgm_kowai_skip = 1 goto *bgm_mode_kowai_skip
+   if ?bgmm[%bm_p][bm_k] = 0 goto *bgm_mode_kowai_skip 
+      ;スキップ処理
+      ;ランダム演奏時の設定、演奏曲にチェック、演奏数をプラス１
+      if %bm_m = 2 mov ?bgmm[%bm_p][bm_r],1 : inc %bm_rnd_kazu
+      
+      ;通常演奏で、リピートがオンになっている時、演奏の停止処理
+      if %bm_m = 0 if %bm_rpi = 1 goto *bgm_mode_stop100
+   
+	;曲の時間に０を入れて、演奏中のフラグ変数をONにして次の処理に移る
+	mov %bm_pt,0
+	mov %bm_stop,1
+	goto *bgm_mode_btn_lp
+*bgm_mode_kowai_skip
+
+;怖い曲だけ演奏にチェック（-1が代入）されている場合、怖くない曲は演奏した事
+notif %bgm_kowai_skip = -1 goto *bgm_mode_kowakunai_skip
+   if ?bgmm[%bm_p][bm_k] = 1 goto *bgm_mode_kowakunai_skip
+      ;スキップ処理
+      ;ランダム演奏時の設定、演奏曲にチェック、演奏数をプラス１
+      if %bm_m = 2 mov ?bgmm[%bm_p][bm_r],1 : inc %bm_rnd_kazu
+      
+      ;通常演奏で、リピートがオンになっている時、演奏の停止処理
+      if %bm_m = 0 if %bm_rpi = 1 goto *bgm_mode_stop100
+   
+	;曲の時間に０を入れて、演奏中のフラグ変数をONにして次の処理に移る
+	mov %bm_pt,0
+	mov %bm_stop,1
+	goto *bgm_mode_btn_lp
+*bgm_mode_kowakunai_skip
+
+
+;デモモードでは、ＥＤ、アンビエントを流さない
+notif %bgm_mood_demo = 1 goto *bgm_mode_ed_skip
+   notif %BtnRes = %bgm_mood_ed_no goto *bgm_mode_ed_skip_100
+      ;スキップ処理
+      ;ランダム演奏時の設定、演奏曲にチェック、演奏数をプラス１
+      if %bm_m = 2 mov ?bgmm[%bm_p][bm_r],1 : inc %bm_rnd_kazu
+      
+      ;通常演奏で、リピートがオンになっている時、演奏の停止処理
+      if %bm_m = 0 if %bm_rpi = 1 goto *bgm_mode_stop100
+   
+      ;曲の時間に０を入れて、次の処理に移る
+      mov %bm_pt,0
+      goto *bgm_mode_btn_lp
+   *bgm_mode_ed_skip_100
+
+   notif %BtnRes = %bgm_mood_me1_no goto *bgm_mode_ed_skip
+      ;スキップ処理
+      ;ランダム演奏時の設定、演奏曲にチェック、演奏数をプラス１
+      if %bm_m = 2 mov ?bgmm[%bm_p][bm_r],1 : inc %bm_rnd_kazu
+      
+      ;通常演奏で、リピートがオンになっている時、演奏の停止処理
+      if %bm_m = 0 if %bm_rpi = 1 goto *bgm_mode_stop100
+   
+	;曲の時間に０を入れて、演奏中のフラグ変数をONにして次の処理に移る
+	mov %bm_pt,0
+	mov %bm_stop,1
+	goto *bgm_mode_btn_lp
+*bgm_mode_ed_skip
+
+
+;作曲者名などの情報を表示する座標を変数に格
+mov %bgm_x,30	;Ｘ座標
+mov %bgm_y1,335	;Ｙ座標(曲タイトル)
+mov %bgm_y2,360	;Ｙ座標(曲タイトル)
+mov %bgm_y3,385	;Ｙ座標(曲タイトル)
+
+;101〜450までのスプライト(ブリンクさせている曲のタイトルのブリンクを外す）
+for %tmp = 101 to 250
+	vsp %tmp,0
+next
+
+;直前の曲がＯＰムービーだった場合はフェードをスキップする。
+if %bgm_mood_tyokuzenn_op_fede_skip >= 1 jumpf
+	;メドレーモードでストップからの演奏でなければここでフェードアウト命令を入れる。
+	if %bgm_mood_1min = 1 notif %bm_stop = 0 fede 0,3000 : wait 1000
+
+	;デモモードでストップからの演奏でなければここでフェードアウト命令を入れる。
+	if %bgm_mood_demo = 1 notif %bm_stop = 0 fede 0,2000 : wait 1000
+~
+mov %bgm_mood_tyokuzenn_op_fede_skip,0
+
+
+
+;演奏のオン、オフ変数をオンに
+mov %bm_stop,1
+
+;それぞれの曲のルーチンに飛ぶ
+if %BtnRes = 1 goto *bgm_mode_sample_u3
+if %BtnRes = 2 goto *bgm_mode_natunotobira
+if %BtnRes = 3 goto *bgm_mode_hane
+if %BtnRes = 4 goto *bgm_mode_ride_on
+if %BtnRes = 5 goto *bgm_mode_sea
+if %BtnRes = 6 goto *bgm_mode_kurayaminotoki
+if %BtnRes = 7 goto *bgm_mode_q_Sample17
+if %BtnRes = 8 goto *bgm_mode_hope
+if %BtnRes = 9 goto *bgm_mode_siroikage
+if %BtnRes = 10 goto *bgm_mode_u_Sample21
+if %BtnRes = 11 goto *bgm_mode_towering
+if %BtnRes = 12 goto *bgm_mode_t_Sample20
+
+if %BtnRes = 13 goto *bgm_mode_sample_u4
+if %BtnRes = 14 goto *bgm_mode_rinnsi
+if %BtnRes = 15 goto *bgm_mode_rennsakairou
+if %BtnRes = 16 goto *bgm_mode_fortitude
+if %BtnRes = 17 goto *bgm_mode_witch_cenba
+if %BtnRes = 18 goto *bgm_mode_sasoi
+if %BtnRes = 19 goto *bgm_mode_yomiage
+if %BtnRes = 20 goto *bgm_mode_stupefaction
+if %BtnRes = 21 goto *bgm_mode_h_sample8
+if %BtnRes = 22 goto *bgm_mode_c_sample3
+if %BtnRes = 23 goto *bgm_mode_sample_u5
+if %BtnRes = 24 goto *bgm_mode_goldenslaughterer
+if %BtnRes = 25 goto *bgm_mode_worldend_solo
+if %BtnRes = 26 goto *bgm_mode_eganomajo
+if %BtnRes = 27 goto *bgm_mode_suspicion
+if %BtnRes = 28 goto *bgm_mode_kizuoto
+if %BtnRes = 29 goto *bgm_mode_toitume
+if %BtnRes = 30 goto *bgm_mode_m_darkness
+if %BtnRes = 31 goto *bgm_mode_m_u2_tipica1
+
+if %BtnRes = 32 goto *bgm_mode_closed_My_Heart
+if %BtnRes = 33 goto *bgm_mode_requiem
+if %BtnRes = 34 goto *bgm_mode_mind_2
+if %BtnRes = 35 goto *bgm_mode_worldend
+if %BtnRes = 36 goto *bgm_mode_play
+if %BtnRes = 37 goto *bgm_mode_system0
+if %BtnRes = 38 goto *bgm_mode_voiceless
+if %BtnRes = 39 goto *bgm_mode_deadangle
+if %BtnRes = 40 goto *bgm_mode_orugann
+if %BtnRes = 41 goto *bgm_mode_rougoku
+if %BtnRes = 42 goto *bgm_mode_gc_01
+
+;EP2追加分
+if %BtnRes = 43 goto *bgm_mode_cage
+if %BtnRes = 44 goto *bgm_mode_ougon_no_kage
+if %BtnRes = 45 goto *bgm_mode_sasorinoharawata
+if %BtnRes = 46 goto *bgm_mode_sy
+if %BtnRes = 47 goto *bgm_mode_Answer
+if %BtnRes = 48 goto *bgm_mode_Answer_short
+if %BtnRes = 49 goto *bgm_mode_sirabe_oche
+if %BtnRes = 50 goto *bgm_mode_Read_Dread
+if %BtnRes = 51 goto *bgm_mode_moon
+if %BtnRes = 52 goto *bgm_mode_where
+if %BtnRes = 53 goto *bgm_mode_Dread_grave
+if %BtnRes = 54 goto *bgm_mode_Worldenddominator
+if %BtnRes = 55 goto *bgm_mode_ririana
+if %BtnRes = 56 goto *bgm_mode_kiyuusoku
+if %BtnRes = 57 goto *bgm_mode_hakujitunohate
+if %BtnRes = 58 goto *bgm_mode_sirabe_vocal
+if %BtnRes = 59 goto *bgm_mode_Over_the_sky
+
+;EP3追加分
+if %BtnRes = 60 goto *bgm_mode_hidamari
+if %BtnRes = 61 goto *bgm_mode_org_remake
+if %BtnRes = 62 goto *bgm_mode_Haruka
+if %BtnRes = 63 goto *bgm_mode_psy_chorus_mx
+if %BtnRes = 64 goto *bgm_mode_far
+if %BtnRes = 65 goto *bgm_mode_akaikutu2
+if %BtnRes = 66 goto *bgm_mode_mother
+if %BtnRes = 67 goto *bgm_mode_haze
+if %BtnRes = 68 goto *bgm_mode_ennkan
+if %BtnRes = 69 goto *bgm_mode_dread_grave2
+if %BtnRes = 70 goto *bgm_mode_orugan_2okuban
+if %BtnRes = 71 goto *bgm_mode_rhythm_changer_mx
+if %BtnRes = 72 goto *bgm_mode_happiness_omake
+if %BtnRes = 73 goto *bgm_mode_happiness
+if %BtnRes = 74 goto *bgm_mode_tuki_usagi
+if %BtnRes = 75 goto *bgm_mode_melting_away
+if %BtnRes = 76 goto *bgm_mode_soul_of_soul
+if %BtnRes = 77 goto *bgm_mode_miragecoordinator
+if %BtnRes = 78 goto *bgm_mode_prison
+if %BtnRes = 79 goto *bgm_mode_umare
+if %BtnRes = 80 goto *bgm_mode_tubasa
+if %BtnRes = 81 goto *bgm_mode_siturakuenn
+if %BtnRes = 82 goto *bgm_mode_wingless
+if %BtnRes = 83 goto *bgm_mode_activepain
+if %BtnRes = 84 goto *bgm_mode_Dread_grave_rhythm
+if %BtnRes = 85 goto *bgm_mode_kuonn
+if %BtnRes = 86 goto *bgm_mode_over
+if %BtnRes = 87 goto *bgm_mode_gc19
+if %BtnRes = 88 goto *bgm_mode_f1_02
+if %BtnRes = 89 goto *bgm_mode_mclock
+if %BtnRes = 90 goto *bgm_mode_apathy
+if %BtnRes = 91 goto *bgm_mode_forest
+if %BtnRes = 92 goto *bgm_mode_mdoramu
+if %BtnRes = 93 goto *bgm_mode_fs2
+if %BtnRes = 95 goto *bgm_mode_org_kui
+if %BtnRes = 96 goto *bgm_mode_happy_maria
+if %BtnRes = 97 goto *bgm_mode_Surrounding
+if %BtnRes = 98 goto *bgm_mode_hibuta
+if %BtnRes = 99 goto *bgm_mode_death
+if %BtnRes = 100 goto *bgm_mode_mortal
+if %BtnRes = 101 goto *bgm_mode_Victima
+if %BtnRes = 102 goto *bgm_mode_Revolt
+if %BtnRes = 103 goto *bgm_mode_renngoku_kyousou
+if %BtnRes = 104 goto *bgm_mode_h_maria_uta
+if %BtnRes = 105 goto *bgm_mode_dive_to_emergency
+if %BtnRes = 106 goto *bgm_mode_dir
+if %BtnRes = 107 goto *bgm_mode_e_nain
+if %BtnRes = 108 goto *bgm_mode_dreamenddischarger
+if %BtnRes = 109 goto *bgm_mode_discode
+if %BtnRes = 110 goto *bgm_mode_kururi
+
+if %BtnRes = %bgm_mood_turu_pettan_no goto *bgm_mode_turu_pettan
+if %BtnRes = %bgm_mood_op_no goto *bgm_mode_op
+if %BtnRes = %bgm_mood_op2_no goto *bgm_mode_op2
+if %BtnRes = %bgm_mood_op3_no goto *bgm_mode_op3
+if %BtnRes = %bgm_mood_ed_no goto *bgm_mode_ed
+if %BtnRes = %bgm_mood_me1_no goto *bgm_mode_me_arasi
+if %BtnRes = %bgm_mood_me2_no goto *bgm_mode_me_tokei
+
+goto *bgm_mode_btn_lp
+;***********************************************************************
+
+
+; 曲の一覧を消すルーチン
+*bgm_mode_k
+
+layermessage 0,"x"
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",0
+
+;101〜450までのスプライトを隠す。
+for %tmp = 101 to 450
+	vsp %tmp,0
+next
+
+for %tmp = 40 to 20 step -1
+	vsp %tmp,0
+next
+
+vsp 499,0
+
+mono 0
+
+csp 0 : csp 1
+csp 10 : csp 11 : csp 12 : csp 13 : csp 14 : csp 15 : csp 16
+csp 500 : csp 501 : csp 502 : csp 503 : csp 504 : csp 505 : csp 506: csp 507: csp 508: csp 509: csp 510
+csp bgm_title_lsp : csp bgm_sakka_lsp : csp bgm_time_lsp
+textclear
+setwindow 40,385,30,3,22,22,0,2,20,1,1,#ffffff,0,0,610,495 ;utmeta-nomodify
+return
+
+;-----------------------------------
+
+*bgm_mode_k2
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",0
+csp 0 : csp 1
+csp 10 : csp 11 : csp 12 : csp 13 : csp 14 : csp 15 : csp 16
+csp 500 : csp 501 : csp 502 : csp 503 : csp 504 : csp 505 : csp 506: csp 507: csp 508: csp 509: csp 510
+csp bgm_title_lsp : csp bgm_sakka_lsp : csp bgm_time_lsp
+textclear
+setwindow 40,385,30,3,22,22,0,2,20,1,1,#ffffff,0,0,610,495 ;utmeta-nomodify
+return
+
+;-----------------------------------
+
+; 曲の一覧を表示するルーチン
+*bgm_mode_h2
+
+;演奏されている曲に、曲の一覧ページを合わせる。
+;if %bm_p >= 1 && %bm_p <=52 mov %bgm_mood_page,1
+;if %bm_p >= 53 mov %bgm_mood_page,2
+
+if %bgm_mood_page = 1 for %tmp = 301 to 360 : vsp %tmp,1 : next : vsp bgm_btn_next_lsp,1
+if %bgm_mood_page = 2 for %tmp = 361 to 450 : vsp %tmp,1 : next : vsp bgm_btn_back_lsp,1
+vsp 499,1
+
+;演奏中の曲は白くブリンクさせる
+if %bgm_mood_page = 1 && %bm_p <= 60 mov %tmp,100 : add %tmp,%bm_p : vsp %tmp,1
+if %bgm_mood_page = 2 && %bm_p >= 61 mov %tmp,100 : add %tmp,%bm_p : vsp %tmp,1
+
+for %tmp = 40 to 22 step -1
+	vsp %tmp,1
+next
+
+;フラグの立っていないメニューはOFF（白いブリンクを解除する）
+if %bm_m = 0 vsp bgm_zennkyoku_lsp,0 : vsp bgm_ranndamu_lsp,0
+if %bm_m = 1 vsp bgm_zennkyoku_lsp,1 : vsp bgm_ranndamu_lsp,0
+if %bm_m = 2 vsp bgm_zennkyoku_lsp,0 : vsp bgm_ranndamu_lsp,1
+
+if %bm_rpi = 0 vsp bgm_rpi_lsp,0
+if %bgm_mood_1min = 0 vsp bgm_min_lsp,0
+if %bgm_mood_demo = 0 vsp bgm_demo_lsp,0
+
+if %bgm_kowai_skip = 0 vsp bgm_kowai_skip_lsp,0 : vsp bgm_kowai_only_lsp,0
+if %bgm_kowai_skip = 1 vsp bgm_kowai_skip_lsp,1 : vsp bgm_kowai_only_lsp,0
+if %bgm_kowai_skip = -1 vsp bgm_kowai_skip_lsp,0 : vsp bgm_kowai_only_lsp,1
+
+;演奏中の曲は白くブリンクさせる
+if %bgm_mood_page = 1 && %bm_p <= 60 mov %tmp,100 : add %tmp,%bm_p : vsp %tmp,1
+if %bgm_mood_page = 2 && %bm_p >= 61 mov %tmp,100 : add %tmp,%bm_p : vsp %tmp,1
+return
+
+;---------------------------------
+
+;ランダムモード、演奏曲チェック初期化ルーチン
+*bgm_r_shokika
+   ;現在演奏している以外の曲のチェック変数を初期化する。
+   for %3810 = 1 to %bgm_max2
+      mov ?bgmm[%3810][bm_r],0
+   next
+   mov %bm_rnd_kazu,0
+return
+
+;-----------------------------------
+
+;** 各ＢＧＭを演奏、情報を表示***************************************
+   
+   ;演奏ルーチン
+   *bgm_play
+      if %bm_m = 10 mov %bm_m,0
+
+	E_A
+
+	;曲の時間を入力
+	mov %bm_pt,?bgmm[%bm_p][bm_t]
+
+	;ボリュームを７０に固定
+	bgmvol 70 : mov %BGM_v_Ch,70
+	
+	;メドレーモードがＯＮの場合は56000-3000ミリ秒を入力
+	if %bgm_mood_1min = 1 if ?bgmm[%bm_p][bm_t] > 60000 mov %bm_pt,53000
+
+	;デモモードがＯＮの場合は15000-4000ミリ秒を入力
+	if %bgm_mood_demo = 1 mov %bm_pt,11000
+	
+	;環境音なら演奏はなし演奏処理をスキップ
+	if %bm_p = %bgm_mood_me1_btn_no jumpf
+      
+      ;通常演奏で、リピートがオンになっている時のみ、一曲リピート
+      if %bm_m = 0 if %bm_rpi = 1 bgm $?bgmm[%bm_p][bm_pa] : resettimer : return
+      
+      ;ランダム演奏時の設定、演奏曲にチェック、演奏数をプラス１
+      if %bm_m = 2 mov ?bgmm[%bm_p][bm_r],1 : inc %bm_rnd_kazu
+      
+      bgmonce $?bgmm[%bm_p][bm_pa]
+      
+
+	~
+	resettimer
+      add %bm_pt,4000 ;無音状態の時間
+   return
+
+
+;***********************************************************************
+;デモモード用、ＣＧの表示
+*demo_hyouji
+	mono 0
+
+	;ゲームロゴを常に表示
+
+	rnd2 %tmp,1,266
+
+	mov $tmp,":c;bgm_mode\demo_pv\"
+	
+	itoa $tmp2,%tmp
+	
+	add $tmp,$tmp2
+	add $tmp,".jpg"
+
+	gosub *bgm_play
+
+	;環境音はここで改めて演奏する。
+	if %bm_p = %bgm_mood_me1_btn_no meplay2 1,13,70
+
+	;lsp 0,":b;bmp\efe\Cinema_logo2.png",524,350  ;convert to widesreen
+	mov $witchh4,"bmp\efe\Cinema_logo2.png"
+	setLangString $witchh4,"a"
+	lsp 0,$witchh4,524,350
+	lsp 1,$tmp,0,0 : print 22
+
+goto *bgm_mode_btn_lp
+
+;***********************************************************************
+;ランダム表情システム
+;ランダムにキャラ、表情を配置するシステム
+
+;-------------------------
+
+*bgm_mode_rnd_tati1
+;真里亞、ジェシカ、譲治、バトラを配置
+;（%tmp1　ｌ　%tmp2　ｃ　%tmp3　ｒ　%tmp10　キャラ番号）
+
+;-------------------------------------------
+
+;立ち位置
+for %tmp15 = 1 to 3
+	
+	~
+	rnd2 %ran,1,4
+	if %tmp15 = 2 if %ran = %tmp1 jumpb
+	if %tmp15 = 3 if %ran = %tmp1 jumpb
+	if %tmp15 = 3 if %ran = %tmp2 jumpb
+
+	if %tmp15 = 1 mov %tmp1,%ran
+	if %tmp15 = 2 mov %tmp2,%ran
+
+	;バトラ
+	notif %ran = 1 goto *bgm_mode_tati1_100
+		;表情の決定
+		~
+		rnd2 %tmp,BUT_DefA1,BUT_FutekiA1
+		if %tmp = BUT_kuyasigaruA1 jumpb
+		if %tmp = BUT_NakuA1 jumpb
+		if %tmp = BUT_NiramuA1 jumpb
+		if %tmp = BUT_NiramuA2 jumpb
+		if %tmp = BUT_NiramuA3 jumpb
+		if %tmp15 = 1 mov %tmp11,but :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,but :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,but :mov $tmp3,$%tmp
+	*bgm_mode_tati1_100
+
+	;ジェシカ
+	notif %ran = 2 goto *bgm_mode_tati1_200
+		;表情の決定
+		~
+		rnd2 %tmp,JES_DefA1,JES_AtyaA3
+		if %tmp = JES_NakuA1 jumpb
+		if %tmp = JES_IkariA2 jumpb
+		if %tmp = JES_NakuA2 jumpb
+		if %tmp = JES_NakuA3 jumpb
+		if %tmp15 = 1 mov %tmp11,jes :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,jes :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,jes :mov $tmp3,$%tmp
+	*bgm_mode_tati1_200
+
+	;譲治
+	notif %ran = 3 goto *bgm_mode_tati1_300
+		;表情の決定
+		~
+		rnd2 %tmp,GEO_DefA1,GEO_KomaruA5k
+		if %tmp = GEO_nakuA1 jumpb
+		if %tmp = GEO_nakuA1k jumpb
+		if %tmp = GEO_nakuA2 jumpb
+		if %tmp = GEO_nakuA2k jumpb
+		if %tmp15 = 1 mov %tmp11,geo :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,geo :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,geo :mov $tmp3,$%tmp
+	*bgm_mode_tati1_300
+
+	;マリア
+	notif %ran = 4 goto *bgm_mode_tati1_400
+		;表情の決定
+		~
+		rnd2 %tmp,1,8
+		if %tmp = 1 mov $tmp4,$MAR_DefA1
+		if %tmp = 2 mov $tmp4,$MAR_waraiA1
+		if %tmp = 3 mov $tmp4,$MAR_waraiA2
+		if %tmp = 4 mov $tmp4,$MAR_niyariA1
+		if %tmp = 5 mov $tmp4,$MAR_niyariA2
+		if %tmp = 6 mov $tmp4,$MAR_odorokiA1
+		if %tmp = 7 mov $tmp4,$MAR_fukigenA1
+		if %tmp = 8 mov $tmp4,$MAR_fukigenA2
+		if %tmp15 = 1 mov %tmp11,mar :mov $tmp1,$tmp4
+		if %tmp15 = 2 mov %tmp12,mar :mov $tmp2,$tmp4
+		if %tmp15 = 3 mov %tmp13,mar :mov $tmp3,$tmp4
+	*bgm_mode_tati1_400
+next
+
+return
+
+;***********************************************************************
+*bgm_mode_rnd_tati_siyounin
+;キャラのランダム配置（使用人）
+;（%tmp1　ｌ　%tmp2　ｃ　%tmp3　ｒ　%tmp10　キャラ番号）
+
+
+for %tmp15 = 1 to 3
+	
+	~
+	rnd2 %ran,1,5
+	if %tmp15 = 2 if %ran = %tmp1 jumpb
+	if %tmp15 = 3 if %ran = %tmp1 jumpb
+	if %tmp15 = 3 if %ran = %tmp2 jumpb
+
+	if %tmp15 = 1 mov %tmp1,%ran
+	if %tmp15 = 2 mov %tmp2,%ran
+
+
+	;源次
+	notif %ran = 1 goto *bgm_mode_rnd_tati_siyounin_100
+		;表情の決定
+		~
+		rnd2 %tmp,GEN_DefA1,GEN_MajimeA2
+		if %tmp15 = 1 mov %tmp11,gen :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,gen :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,gen :mov $tmp3,$%tmp
+	*bgm_mode_rnd_tati_siyounin_100
+
+
+	;紗音
+	notif %ran = 2 goto *bgm_mode_rnd_tati_siyounin_200
+		;表情の決定
+		~
+		rnd2 %tmp,SHA_DefA1,SHA_OdorokiA2
+		if %tmp15 = 1 mov %tmp11,sha :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,sha :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,sha :mov $tmp3,$%tmp
+	*bgm_mode_rnd_tati_siyounin_200
+
+
+	;嘉音
+	notif %ran = 3 goto *bgm_mode_rnd_tati_siyounin_300
+		;表情の決定
+		~
+		rnd2 %tmp,KAN_DefA1,KAN_NayamuA1
+		if %tmp = KAN_IkariA1 jumpb
+		if %tmp15 = 1 mov %tmp11,kan :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,kan :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,kan :mov $tmp3,$%tmp
+	*bgm_mode_rnd_tati_siyounin_300
+
+
+	;郷田
+	notif %ran = 4 goto *bgm_mode_rnd_tati_siyounin_400
+		;表情の決定
+		~
+		rnd2 %tmp,GOH_DefA1,GOH_KomaruA3
+		if %tmp = GOH_IkariA2 jumpb
+		if %tmp15 = 1 mov %tmp11,goh :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,goh :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,goh :mov $tmp3,$%tmp
+	*bgm_mode_rnd_tati_siyounin_400
+
+
+	;熊沢
+	notif %ran = 5 goto *bgm_mode_rnd_tati_siyounin_500
+		;表情の決定
+		~
+		rnd2 %tmp,KUM_DefA1,KUM_WaraiA2
+		if %tmp15 = 1 mov %tmp11,goh :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,goh :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,goh :mov $tmp3,$%tmp
+	*bgm_mode_rnd_tati_siyounin_500
+
+next
+
+return
+
+;--------------------------------------------------
+
+*bgm_mode_rnd_tati_4kyoudai
+;キャラのランダム配置（４人兄弟）
+;（%tmp1　ｌ　%tmp2　ｃ　%tmp3　ｒ　%tmp10　キャラ番号）
+
+
+for %tmp15 = 1 to 3
+	
+	~
+	rnd2 %ran,1,4
+	if %tmp15 = 2 if %ran = %tmp1 jumpb
+	if %tmp15 = 3 if %ran = %tmp1 jumpb
+	if %tmp15 = 3 if %ran = %tmp2 jumpb
+
+	if %tmp15 = 1 mov %tmp1,%ran
+	if %tmp15 = 2 mov %tmp2,%ran
+
+
+	;蔵臼
+	notif %ran = 1 goto *bgm_mode_rnd_tati_4kyoudai_100
+		;表情の決定
+		~
+		rnd2 %tmp,KLA_DefA1,KLA_NayamuA1
+		if %tmp15 = 1 mov %tmp11,kla :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,kla :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,kla :mov $tmp3,$%tmp
+	*bgm_mode_rnd_tati_4kyoudai_100
+
+
+	;絵羽
+	notif %ran = 2 goto *bgm_mode_rnd_tati_4kyoudai_200
+		;表情の決定
+		~
+		rnd2 %tmp,EVA_DefA1,EVA_futekiA1
+		if %tmp = EVA_DefB1 jumpb
+		if %tmp = EVA_WaraiB1 jumpb
+		if %tmp = EVA_IkariB1 jumpb
+		if %tmp = EVA_KomaruB1 jumpb
+		if %tmp = EVA_MajimeB1 jumpb
+
+		if %tmp15 = 1 mov %tmp11,eva :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,eva :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,eva :mov $tmp3,$%tmp
+	*bgm_mode_rnd_tati_4kyoudai_200
+
+
+	;留弗夫
+	notif %ran = 3 goto *bgm_mode_rnd_tati_4kyoudai_300
+		;表情の決定
+		~
+		rnd2 %tmp,RUD_DefA1,RUD_WaraiA2
+		if %tmp15 = 1 mov %tmp11,rud :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,rud :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,rud :mov $tmp3,$%tmp
+	*bgm_mode_rnd_tati_4kyoudai_300
+
+
+	;楼座
+	notif %ran = 4 goto *bgm_mode_rnd_tati_4kyoudai_400
+		;表情の決定
+		~
+		rnd2 %tmp,ROS_DefA1,ROS_AseruA1
+		if %tmp = ros_waraiA1 jumpb
+		if %tmp = ros_waraiA2 jumpb
+		if %tmp15 = 1 mov %tmp11,ros :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,ros :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,ros :mov $tmp3,$%tmp
+	*bgm_mode_rnd_tati_4kyoudai_400
+
+next
+
+return
+
+;----------------------------------
+
+*bgm_mode_rnd_yomiage
+;キャラのランダム配置（真里亞、使用人と金蔵を除く全員））
+;（%tmp1　ｌ　%tmp2　ｃ　%tmp3　ｒ　%tmp10　キャラ番号）
+
+for %tmp15 = 1 to 3
+	
+	~
+	rnd2 %ran,1,12
+	if %tmp15 = 2 if %ran = %tmp1 jumpb
+	if %tmp15 = 3 if %ran = %tmp1 jumpb
+	if %tmp15 = 3 if %ran = %tmp2 jumpb
+
+	if %tmp15 = 1 mov %tmp1,%ran
+	if %tmp15 = 2 mov %tmp2,%ran
+
+
+	;バトラ
+	notif %ran = 1 goto *bgm_mode_rnd_yomiage_100
+		;表情の決定
+		~
+		rnd2 %tmp,BUT_DefA1,BUT_FutekiA1
+		if %tmp = BUT_kuyasigaruA1 jumpb
+		if %tmp = BUT_NakuA1 jumpb
+		if %tmp = BUT_NiramuA1 jumpb
+		if %tmp = BUT_NiramuA2 jumpb
+		if %tmp = BUT_NiramuA3 jumpb
+		if %tmp15 = 1 mov %tmp11,but :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,but :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,but :mov $tmp3,$%tmp
+	*bgm_mode_rnd_yomiage_100
+
+
+	;ジェシカ
+	notif %ran = 2 goto *bgm_mode_rnd_yomiage_200
+		;表情の決定
+		~
+		rnd2 %tmp,JES_DefA1,JES_AtyaA3
+		if %tmp = JES_NakuA1 jumpb
+		if %tmp = JES_IkariA2 jumpb
+		if %tmp = JES_NakuA2 jumpb
+		if %tmp = JES_NakuA3 jumpb
+		if %tmp15 = 1 mov %tmp11,jes :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,jes :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,jes :mov $tmp3,$%tmp
+	*bgm_mode_rnd_yomiage_200
+
+
+	;譲治
+	notif %ran = 3 goto *bgm_mode_rnd_yomiage_300
+		;表情の決定
+		~
+		rnd2 %tmp,GEO_DefA1,GEO_KomaruA5k
+		if %tmp = GEO_nakuA1 jumpb
+		if %tmp = GEO_nakuA1k jumpb
+		if %tmp = GEO_nakuA2 jumpb
+		if %tmp = GEO_nakuA2k jumpb
+		if %tmp15 = 1 mov %tmp11,geo :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,geo :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,geo :mov $tmp3,$%tmp
+	*bgm_mode_rnd_yomiage_300
+
+
+	;マリア
+	notif %ran = 4 goto *bgm_mode_tati1_350
+		;表情の決定
+		~
+		rnd2 %tmp,1,8
+		if %tmp = 1 mov $tmp4,$MAR_DefA1
+		if %tmp = 2 mov $tmp4,$MAR_waraiA1
+		if %tmp = 3 mov $tmp4,$MAR_waraiA2
+		if %tmp = 4 mov $tmp4,$MAR_niyariA1
+		if %tmp = 5 mov $tmp4,$MAR_niyariA2
+		if %tmp = 6 mov $tmp4,$MAR_odorokiA1
+		if %tmp = 7 mov $tmp4,$MAR_fukigenA1
+		if %tmp = 8 mov $tmp4,$MAR_fukigenA2
+		if %tmp15 = 1 mov %tmp11,mar :mov $tmp1,$tmp4
+		if %tmp15 = 2 mov %tmp12,mar :mov $tmp2,$tmp4
+		if %tmp15 = 3 mov %tmp13,mar :mov $tmp3,$tmp4
+	*bgm_mode_tati1_350
+
+
+	;蔵臼
+	notif %ran = 5 goto *bgm_mode_rnd_yomiage_400
+		;表情の決定
+		~
+		rnd2 %tmp,KLA_DefA1,KLA_NayamuA1
+		if %tmp15 = 1 mov %tmp11,kla :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,kla :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,kla :mov $tmp3,$%tmp
+	*bgm_mode_rnd_yomiage_400
+
+
+	;夏妃
+	notif %ran = 6 goto *bgm_mode_rnd_yomiage_500
+		;表情の決定
+		~
+		rnd2 %tmp,NAT_DefA1,NAT_TukareB2
+		if %tmp15 = 1 mov %tmp11,nat :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,nat :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,nat :mov $tmp3,$%tmp
+	*bgm_mode_rnd_yomiage_500
+
+
+	;絵羽
+	notif %ran = 7 goto *bgm_mode_rnd_yomiage_600
+		;表情の決定
+		~
+		rnd2 %tmp,EVA_DefA1,EVA_futekiA1
+		if %tmp = EVA_DefB1 jumpb
+		if %tmp = EVA_WaraiB1 jumpb
+		if %tmp = EVA_IkariB1 jumpb
+		if %tmp = EVA_KomaruB1 jumpb
+		if %tmp = EVA_MajimeB1 jumpb
+
+		if %tmp15 = 1 mov %tmp11,eva :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,eva :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,eva :mov $tmp3,$%tmp
+	*bgm_mode_rnd_yomiage_600
+
+	;秀吉
+	notif %ran = 8 goto *bgm_mode_rnd_yomiage_700
+		;表情の決定
+		~
+		rnd2 %tmp,HID_DefA1,HID_WaraiA2
+		if %tmp15 = 1 mov %tmp11,hid :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,hid :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,hid :mov $tmp3,$%tmp
+	*bgm_mode_rnd_yomiage_700
+
+
+	;留弗夫
+	notif %ran = 9 goto *bgm_mode_rnd_yomiage_800
+		;表情の決定
+		~
+		rnd2 %tmp,RUD_DefA1,RUD_WaraiA2
+		if %tmp15 = 1 mov %tmp11,rud :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,rud :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,rud :mov $tmp3,$%tmp
+	*bgm_mode_rnd_yomiage_800
+
+	;霧江
+	notif %ran = 10 goto *bgm_mode_rnd_yomiage_900
+		;表情の決定
+		~
+		rnd2 %tmp,KIR_DefA1,KIR_WaraiA2
+		if %tmp15 = 1 mov %tmp11,kir :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,kir :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,kir :mov $tmp3,$%tmp
+	*bgm_mode_rnd_yomiage_900
+
+	;楼座
+	notif %ran = 11 goto *bgm_mode_rnd_yomiage_1000
+		;表情の決定
+		~
+		rnd2 %tmp,ROS_DefA1,ROS_AseruA1
+		if %tmp = ROS_IkariA2 jumpb
+		if %tmp = ROS_IkariA3 jumpb
+		if %tmp = ROS_IkariA4 jumpb
+		if %tmp15 = 1 mov %tmp11,ros :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,ros :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,ros :mov $tmp3,$%tmp
+	*bgm_mode_rnd_yomiage_1000
+
+
+	;南條
+	notif %ran = 12 goto *bgm_mode_rnd_yomiage_1100
+		;表情の決定
+		~
+		rnd2 %tmp,NAN_DefA1,NAN_fumuA1
+		if %tmp15 = 1 mov %tmp11,nan :mov $tmp1,$%tmp
+		if %tmp15 = 2 mov %tmp12,nan :mov $tmp2,$%tmp
+		if %tmp15 = 3 mov %tmp13,nan :mov $tmp3,$%tmp
+	*bgm_mode_rnd_yomiage_1100
+
+next
+
+return
+
+;***********************************************************************
+*bgm_mode_rnd_yomiage2
+;キャラのランダム配置（戦人、ベアト、ロノウェ）
+;（%tmp1　ｌ　%tmp2　ｃ　%tmp3　ｒ　%tmp10　キャラ番号）
+
+for %tmp15 = 1 to 3
+	
+	~
+	rnd2 %ran,1,3
+	if %tmp15 = 2 if %ran = %tmp1 jumpb
+	if %tmp15 = 3 if %ran = %tmp1 jumpb
+	if %tmp15 = 3 if %ran = %tmp2 jumpb
+
+	if %tmp15 = 1 mov %tmp1,%ran
+	if %tmp15 = 2 mov %tmp2,%ran
+
+	;バトラ
+	notif %ran = 1 goto *bgm_mode_rnd_yomiage2_100
+		;表情の決定
+		rnd2 %tmp,BUT_DefA1,BUT_NayamuA3
+		if %tmp15 = 1 mov $tmp1,$%tmp
+		if %tmp15 = 2 mov $tmp2,$%tmp
+		if %tmp15 = 3 mov $tmp3,$%tmp
+	*bgm_mode_rnd_yomiage2_100
+
+	;ベアト
+	notif %ran = 2 goto *bgm_mode_rnd_yomiage2_200
+		;表情の決定
+		rnd2 %tmp,BEA_DefA1,BEA_WaraiA4
+		if %tmp15 = 1 mov $tmp1,$%tmp
+		if %tmp15 = 2 mov $tmp2,$%tmp
+		if %tmp15 = 3 mov $tmp3,$%tmp
+	*bgm_mode_rnd_yomiage2_200
+
+	;ロノウェ
+	notif %ran = 3 goto *bgm_mode_rnd_yomiage2_300
+		;表情の決定
+		rnd2 %tmp,RON_DefA1,RON_OdorokiA2
+		if %tmp15 = 1 mov $tmp1,$%tmp
+		if %tmp15 = 2 mov $tmp2,$%tmp
+		if %tmp15 = 3 mov $tmp3,$%tmp
+	*bgm_mode_rnd_yomiage2_300
+next
+return
+;***********************************************************************
+*bgm_mode_rnd_yomiage3
+;キャラのランダム配置（ベアト、ベルン、ラムダ）
+;（%tmp1　ｌ　%tmp2　ｃ　%tmp3　ｒ　%tmp10　キャラ番号）
+
+for %tmp15 = 1 to 3
+	
+	~
+	rnd2 %ran,1,3
+	if %tmp15 = 2 if %ran = %tmp1 jumpb
+	if %tmp15 = 3 if %ran = %tmp1 jumpb
+	if %tmp15 = 3 if %ran = %tmp2 jumpb
+
+	if %tmp15 = 1 mov %tmp1,%ran
+	if %tmp15 = 2 mov %tmp2,%ran
+
+	;ベルン
+	notif %ran = 1 goto *bgm_mode_rnd_yomiage3_100
+		;表情の決定
+		rnd2 %tmp,BER_DefA1,BER_DefA2
+		if %tmp15 = 1 mov $tmp1,$%tmp
+		if %tmp15 = 2 mov $tmp2,$%tmp
+		if %tmp15 = 3 mov $tmp3,$%tmp
+	*bgm_mode_rnd_yomiage3_100
+
+	;ベアト
+	notif %ran = 2 goto *bgm_mode_rnd_yomiage3_200
+		;表情の決定
+		rnd2 %tmp,BEA_DefA1,BEA_WaraiA4
+		if %tmp15 = 1 mov $tmp1,$%tmp
+		if %tmp15 = 2 mov $tmp2,$%tmp
+		if %tmp15 = 3 mov $tmp3,$%tmp
+	*bgm_mode_rnd_yomiage3_200
+
+	;ラムダ
+	notif %ran = 3 goto *bgm_mode_rnd_yomiage3_300
+		;表情の決定
+		rnd2 %tmp,LAM_AkuwaraiA1,LAM_OdorokiA1
+		if %tmp15 = 1 mov $tmp1,$%tmp
+		if %tmp15 = 2 mov $tmp2,$%tmp
+		if %tmp15 = 3 mov $tmp3,$%tmp
+	*bgm_mode_rnd_yomiage3_300
+next
+return
+;***********************************************************************
+;***********************************************************************
+*bgm_mode_rnd_siesuta
+;キャラのランダム配置（シエスタ姉妹）
+;（%tmp1　ｌ　%tmp2　ｃ　%tmp3　ｒ　%tmp10　キャラ番号）
+
+for %tmp15 = 1 to 3
+	
+	~
+	rnd2 %ran,1,3
+	if %tmp15 = 2 if %ran = %tmp1 jumpb
+	if %tmp15 = 3 if %ran = %tmp1 jumpb
+	if %tmp15 = 3 if %ran = %tmp2 jumpb
+
+	if %tmp15 = 1 mov %tmp1,%ran
+	if %tmp15 = 2 mov %tmp2,%ran
+
+	;００
+	notif %ran = 1 goto *bgm_mode_rnd_siesuta_100
+		;表情の決定
+		rnd2 %tmp,S00_DefA1,S00_KomaruA1
+		if %tmp15 = 1 mov $tmp1,$%tmp
+		if %tmp15 = 2 mov $tmp2,$%tmp
+		if %tmp15 = 3 mov $tmp3,$%tmp
+	*bgm_mode_rnd_siesuta_100
+
+	;４５
+	notif %ran = 2 goto *bgm_mode_rnd_siesuta_200
+		;表情の決定
+		rnd2 %tmp,S45_DefA1,S45_MajimeA1
+		if %tmp15 = 1 mov $tmp1,$%tmp
+		if %tmp15 = 2 mov $tmp2,$%tmp
+		if %tmp15 = 3 mov $tmp3,$%tmp
+	*bgm_mode_rnd_siesuta_200
+
+	;４１０
+	notif %ran = 3 goto *bgm_mode_rnd_siesuta_300
+		;表情の決定
+		rnd2 %tmp,S41_DefA1,S41_OdorokiA1
+		if %tmp15 = 1 mov $tmp1,$%tmp
+		if %tmp15 = 2 mov $tmp2,$%tmp
+		if %tmp15 = 3 mov $tmp3,$%tmp
+	*bgm_mode_rnd_siesuta_300
+next
+return
+;***********************************************************************
+
+;背景をランダムで配置
+*bgm_mode_rnd_bg1
+	mov $tmp,":b;"
+
+	rnd2 %tmp,1,14
+	if %tmp = 1 add $tmp,"bmp\background\ship\ship_P1a.png"
+	if %tmp = 2 add $tmp,"bmp\background\ship\ship_P1b.png"
+	if %tmp = 3 add $tmp,"bmp\background\ship\ship_S2a.png"
+	if %tmp = 4 add $tmp,"bmp\background\ship\ship_S2b.png"
+	if %tmp = 5 add $tmp,"bmp\background\garden\rose_1a.png"
+	if %tmp = 6 add $tmp,"bmp\background\garden\rose_1b.png"
+	if %tmp = 7 add $tmp,"bmp\background\garden\rose_G1d.png"
+	if %tmp = 8 add $tmp,"bmp\background\guesthouse\G1F_S2a.png"
+	if %tmp = 9 add $tmp,"bmp\background\guesthouse\G2F_R1a.png"
+	if %tmp = 10 add $tmp,"bmp\background\guesthouse\G2F_R1c.png"
+	if %tmp = 11 add $tmp,"bmp\background\beach\Sky_2a.png"
+	if %tmp = 12 add $tmp,"bmp\background\beach\Sky_1a.png"
+	if %tmp = 13 add $tmp,"bmp\background\beach\beach_2a.png"
+	if %tmp = 14 add $tmp,"bmp\background\beach\beach_2b.png"
+
+return
+
+;---------------------------------------------
+;背景をランダムで表示（メインホール）
+*bgm_mode_rnd_bg_mhal
+	mov $tmp,":b;"
+
+	rnd2 %ran,1,6
+	
+	if %ran = 1 add $tmp,"bmp\background\mainbuilding\Mhal_1c.png"
+	if %ran = 2 add $tmp,"bmp\background\mainbuilding\Mhal_2a.png"
+	if %ran = 3 add $tmp,"bmp\background\mainbuilding\Mdin_1e.png"
+	if %ran = 4 add $tmp,"bmp\background\mainbuilding\Mlib_1e.png"
+	if %ran = 5 add $tmp,"bmp\background\mainbuilding\MNAT_1c.png"
+	if %ran = 6 add $tmp,"bmp\background\mainbuilding\M2F_P1c.png"
+
+return
+
+;---------------------------------------------
+;背景をランダムで表示（メインホール）
+*bgm_mode_rnd_bg_mhal2
+	mov $tmp,":b;"
+
+	rnd2 %ran,1,13
+	
+	if %ran = 1 add $tmp,"bmp\background\mainbuilding\Mhal_1c.png"
+	if %ran = 2 add $tmp,"bmp\background\mainbuilding\Mhal_2a.png"
+	if %ran = 3 add $tmp,"bmp\background\mainbuilding\Mdin_1e.png"
+	if %ran = 4 add $tmp,"bmp\background\mainbuilding\Mlib_1e.png"
+	if %ran = 5 add $tmp,"bmp\background\mainbuilding\MNAT_1c.png"
+	if %ran = 6 add $tmp,"bmp\background\mainbuilding\M2F_P1c.png"
+	if %ran = 7 add $tmp,"bmp\background\mainbuilding\M1F_P2b.png"
+	if %ran = 8 add $tmp,"bmp\background\mainbuilding\M1F_S1a.png"
+	if %ran = 9 add $tmp,"bmp\background\mainbuilding\M1F_S1c.png"
+	if %ran = 10 add $tmp,"bmp\background\mainbuilding\M1F_S2a.png"
+	if %ran = 11 add $tmp,"bmp\background\mainbuilding\Mlib_1b.png"
+	if %ran = 12 add $tmp,"bmp\background\mainbuilding\Mlib_1c.png"
+	if %ran = 13 add $tmp,"bmp\background\mainbuilding\Mlib_1d.png"
+
+return
+
+;---------------------------------------------
+;背景を魔女の空間をランダムで表示
+*bgm_mode_rnd_bg_majo
+	mov $tmp,":b;"
+	rnd2 %ran,1,4
+	;if %ran = 1 add $tmp,"bmp\background\efe\butterfly_1a.png"
+	;if %ran = 2 add $tmp,"bmp\background\efe\butterfly_3a.png"
+	if %ran = 1 add $tmp,"bmp\background\efe\Different_spiral_1a.png"
+	if %ran = 2 add $tmp,"bmp\background\efe\Different_space_1a.png"
+	if %ran = 3 add $tmp,"bmp\background\efe\Different_space_1b.png"
+	if %ran = 4 add $tmp,"bmp\background\efe\Different_space_1c.png"
+	;if %ran = 7 add $tmp,"bmp\background\efe\butterfly_3a.png"
+	;if %ran = 7 add $tmp,"bmp\background\efe\butterfly_4a.png"
+return
+;***********************************************************************
+;背景をランダムに1998年編にする。
+*bgm_mode_rnd_bg_1998
+	mov $tmp,":b;"
+	rnd2 %ran,1,8
+	if %ran = 1 add $tmp,"bmp\background\city\HOT_R1a.png"
+	if %ran = 2 add $tmp,"bmp\background\efe\HOT_R1b.png"
+	if %ran = 3 add $tmp,"bmp\background\efe\HOT_R1c.png"
+	if %ran = 4 add $tmp,"bmp\background\efe\BUI_R1a.png"
+	if %ran = 5 add $tmp,"bmp\background\efe\BUI_R1b.png"
+	if %ran = 6 add $tmp,"bmp\background\efe\BUI_R1c.png"
+	if %ran = 7 add $tmp,"bmp\background\efe\BUI_R1d.png"
+	if %ran = 8 add $tmp,"bmp\background\efe\BUI_o1a.png"
+return
+;***********************************************************************
+
+*bgm_mode_end ;エンド処理
+   ;各設定の初期化
+   csp -1                               ;スプライト画像の、メモリからの消去
+   btndef ""                            ;ボタン画像の、メモリからの消去
+                             ;立ち絵の消去
+   ;setwindow 137,16,25,20,23,23,0,2,20,1,1,#999999,0,0,853,479
+adv_default_text_speed_restore_window
+   windoweffect 50,200
+   erasetextwindow 1
+   rmode 1
+   mono 0
+                                    ;右クリックメニューの有効化
+	E_A
+	seplay 9,1006
+	print 1
+   	cl a,1
+	texton
+	if %monoflg = 1 mono 1
+	if %monoflg = 2 mono 2
+	wait 1000
+   mov %title_skip,1
+reset
+;goto *b_title
+;***********************************************************************
+;***********************************************************************
+;ＢＧＭ、曲のデータ入力サブルーチン
+;***********************************************************************
+*bgm_mode_bgm_date_input
+
+mov %3801,0
+
+inc %3801 
+; OPムービー
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],%bgm_mood_op_no	;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],100000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Umineko/ver.A" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	add %3802,400
+	mov ?bgmm[%3801][bm_pa],%3802
+	mov $%3802,"movie\umineko_op.mpg"
+
+
+;inc %3801 
+; OPムービー2
+;	mov %3802,3600 : add %3802,%3801
+;	mov ?bgmm[%3801][bm_c],%bgm_mood_op2_no	;曲の割り当て番号（チャンネル）
+;	mov ?bgmm[%3801][bm_t],100000		;曲の長さ
+;	add %3802,400
+;	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Umineko/ver.B" ;曲名
+;	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+;	add %3802,400
+;	mov ?bgmm[%3801][bm_pa],%3802
+;	mov $%3802,"movie\umineko_op2.avi"
+
+inc %3801 
+; OPムービー3
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],%bgm_mood_op3_no	;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],100000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Umineko/ver.C" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	add %3802,400
+	mov ?bgmm[%3801][bm_pa],%3802
+	mov $%3802,"movie\umineko_op3.mpg"
+
+; １
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],1		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],289000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^透百合" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],2		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],117000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"夏の扉" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],3		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],94000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"ＨＡＮＥ" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],4		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],187000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"Ｒｉｄｅ　ｏｎ" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],5		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],45000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"Ｓｅａ" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],6		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],76000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"◆暗闇の刻" ;曲名
+	mov ?bgmm[%3801][bm_k],1		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],7		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],332000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Novelette" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],8		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],199000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"ｈｏｐｅ" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],9		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],83000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"白い影" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],10		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],260000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"てくてく" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],11		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],108000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^T_c_in_summer" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],12		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],206000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"月夜" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],13		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],521000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"薔薇" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],14		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],193000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"◆隣死" ;曲名
+	mov ?bgmm[%3801][bm_k],1		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],15		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],180000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"◆煉沙回廊" ;曲名
+	mov ?bgmm[%3801][bm_k],1		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],16		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],305000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Fortitude" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],19		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],161000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^w_in_gold(cembalo)" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],18		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],99000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"◆誘い" ;曲名
+	mov ?bgmm[%3801][bm_k],1		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],19		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],193000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"胡散の香り" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],20		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],289000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^◆stupefaction" ;曲名
+	mov ?bgmm[%3801][bm_k],1		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],21		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],146000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"Ｐｒａｉｓｅ" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],22		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],282000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"Ｐａｓｓ" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],23		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],92000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"ａｇｅｈａ" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],24		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],422000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^goldenslaughterer" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],25		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],192000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^worldend(bp)" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],26		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],148000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"◆絵画の魔女" ;曲名
+	mov ?bgmm[%3801][bm_k],1		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   ;環境音
+   inc %3801
+	mov %bgm_mood_me2_btn_no,%3801
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],%bgm_mood_me2_no	;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],36000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"◆Ｍｅ：時計" ;曲名
+	mov ?bgmm[%3801][bm_k],1		;怖い曲かどうかのチェック
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],27		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],308000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^suspicion" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],28		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],168000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"痕音" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],29		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],108000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Ｃｏｒｅ" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],30		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],132000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^minute_darkness" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],31		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],182000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^nighteyes" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],36		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],196000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Closed_My_Heart" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],33		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],191000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Requiem" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],34		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],57000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"ｍｉｎｄ" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],35		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],336000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^worldend" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],36		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],149000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"◆ｐｌａｙ" ;曲名
+	mov ?bgmm[%3801][bm_k],1		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],37		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],206000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"システム零" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],38		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],250000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^voiceless" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],39		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],397000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^dead_angle" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   ;環境音
+   inc %3801
+	mov %bgm_mood_me1_btn_no,%3801
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],%bgm_mood_me1_no	;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],40000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"◆Ｍｅ：嵐" ;曲名
+	mov ?bgmm[%3801][bm_k],1		;怖い曲かどうかのチェック
+	;gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],%bgm_mood_ed_no	;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],281000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Bring_The_Fate" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	add %3802,400
+	mov ?bgmm[%3801][bm_pa],%3802
+	mov $%3802,"bgm\umineko_c_finalmix_01.ogg"
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],40		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],93000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"オルガン〜６億番" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],41		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],257000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"牢獄ＳＴＲＩＰ" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],42		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],124000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"弦楽〜　第１番〜" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+
+;ＥＰ２
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],43		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],238000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"ｃａｇｅ" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],94 ;%bgm_mood_turu_pettan_no	;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],114000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"つるぺったん" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	add %3802,400
+	mov ?bgmm[%3801][bm_pa],%3802 : mov $%3802,"bgm\tsurupeta-128.ogg"
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],49		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],485000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^旋律(inst.ver)" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],47		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],101000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Answer" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],44		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],350000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"金色の嘲笑" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],45		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],202000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"サソリのハラワタ" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],46		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],159000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^終焉_VerC" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],52		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],235000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^where" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],51		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],192000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^moon" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],48		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],62000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Answer_short" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],53		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],364000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^D_of_the_grave" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],50		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],163000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Red_Dread^" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],54		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],457000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Worldenddominator" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],55		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],319000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"黒のリリアナ" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],56		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],90000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"休息" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],57		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],102000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"白日夢の果て" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],58		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],485000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^旋律（シラベ）" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],59		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],211000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Over_the_sky" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+;EP3追加分
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],60		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],211000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"ひだまり" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],61		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],211000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"ロウソクたちが踊る" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],62		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],194000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Haruka" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],63		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],466000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^psy-chorus" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],64		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],190000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^far" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],65		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],244000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"あかいくつ偽" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],66		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],137000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^mother" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],67		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],368000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^haze" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],68		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],245000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"踊る煙管" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],69		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],367000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^D_g_-More_fear-" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],70		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],94000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"オルガン小曲〜" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],71		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],233000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^rhythm-changer" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],72		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],120000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^h_of_m_omake" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],73		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],139000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^h_of_m" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],74		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],154000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"月うさぎの舞踏" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],75		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],181000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Melting_away" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],76		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],130000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^soul_of_soul" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],78		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],196000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^prison" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],79		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],190000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"生まれてきて〜" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],80		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],162000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"翼" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],81		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],240000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"失楽園" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],82		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],221000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^wingless" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],84		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],226000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^D_g-rhythm-" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],77		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],435000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^miragecoordinator " ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],83		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],131000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^activepain" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+;EP4追加分
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],93		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],251000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Parallel" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],88		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],169000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^F_Style" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],96		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],169000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Happy_Maria!(Inst)" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],95		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],92000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^599_million_ruins" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],91		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],165000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"神秘の森" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],89		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],120000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^M_Clock" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],90		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],256000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^apathy" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],87		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],234000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^Like_the_gale" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],86		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],142000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"^over" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+		;add %3802,400
+		;mov ?bgmm[%3801][bm_pa],%3802
+		;mov $%3802,"bgm\over.ogg"
+
+
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],85		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],144000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"久遠" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],92		;曲の割り当て番号（チャンネル）
+	mov ?bgmm[%3801][bm_t],116000		;曲の長さ
+	add %3802,400
+	mov ?bgmm[%3801][bm_n],%3802 : mov $%3802,"さくたろうの〜" ;曲名
+	mov ?bgmm[%3801][bm_k],0		;怖い曲かどうかのチェック
+	gosub *bgm_mode_path_shutoku		;ファイルへのパスの取得
+
+   inc %3801 
+	mov %3802,3600 : add %3802,%3801
+	mov ?bgmm[%3801][bm_c],97		;曲の割り当て番号（チャンネル）

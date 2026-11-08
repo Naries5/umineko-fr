@@ -1,0 +1,5000 @@
+mono off
+
+;bg "bmp\background\efe\EP4last09.png",10,2000
+mov $witchh4, "bmp\background\efe\EP4last09.png"
+	setLangString $witchh4, ""
+bg $witchh4,10,2000
+
+wait 500
+
+se1v 1006,100
+se2v 36,100
+
+mono off
+
+bg white,1
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",0
+
+msetef 0,0
+mld r,$BEA_nayamuA1,2
+
+se1v 2,100
+mld r,$BEA_akuwaraiA4,1
+
+langjp:dwave_jp 0, bea_9e425:「ならば良し！！@:dwave_jp 0, bea_9e426:　始めようぞ、戦人…！！@:dwave_jp 0, bea_9e427:　さぁ、魔女狩りの時間だ…！！@:dwave_jp 0, bea_9e428:　妾を追ってみろ、追い詰めてみろ、殺してみろッ、妾はそなたに期待しているッ！！@:dwave_jp 0, bea_9e429:　妹の最期がそなたに何を与えたのか、それを妾に見せてみよ…！！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e425:^À la bonne heure !! ^@:dwave_eng 0, bea_9e426:^Commençons, Battler... !! ^@:dwave_eng 0, bea_9e427:^L'heure de la chasse à la sorcière a sonné... !! ^@:dwave_eng 0, bea_9e428:^Traque-moi, accule-moi, tue-moi ! J'attends beaucoup de toi !! ^@:dwave_eng 0, bea_9e429:^Montre-moi ce que la fin de ta petite sœur a fait naître en toi... !!^\
+
+se1 20
+textoff
+wait 1000
+
+mld l,$BUT_sakebuB1,1
+
+advchar "10"
+langjp:dwave_jp 0, but_9e286:^^!s0「上等だあああぁあああああぁあああああああッ！！！」/
+sl
+langen:dwave_eng 0, but_9e286:^^!s0^AVEC PLAISIIIIIIIIIIIIIIIIIIIIIR !!!^@/
+
+se2v 2,100
+quakey 5,500
+
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜戦人
+
+csp -1
+bg white,28
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+
+langjp　……戦人の叫びが世界を真っ白な光で焼く。@
+langen^... Le cri de Battler consuma le monde dans une lumière d'un blanc aveuglant.^@
+br
+langjp　そして、眩しさの中に目を開けると、……二人の姿は薔薇庭園にあった……。\
+langen^Et lorsqu'ils rouvrirent les yeux dans cet éblouissement... ils se tenaient tous deux dans la roseraie.^\
+
+me5v 16,50
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_2ap.jpg",":b;bmp\background\garden\rose_2apr.png",6  ;fixed lighting issue
+
+fedexx 0,0,0,0,0,50,2000
+E_B
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+se1 22
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",22  ;fixed lighting issue
+ld c,$BEA_defA2,24
+
+E_MA
+bgm1 108
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e430:「………先手はどちらから？」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e430:^... Qui ouvre la partie ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0
+ld r,$BUT_FutekiA2,24
+
+advchar "10"
+langjp:dwave_jp 0, but_9e287:「俺だ。」\
+;＜戦人
+langen:dwave_eng 0, but_9e287:^Moi.^\
+
+ld l,$BEA_FutekiA2,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e431:「潔し。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e431:^Sans hésiter. Voilà qui me plaît.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_2bp.jpg",":b;bmp\background\garden\rose_2bpr.png",22  ;fixed lighting issue
+
+advchar "-1"
+langjp　美しい薔薇の花びらが舞う、薔薇庭園。@
+langen^La roseraie, où dansaient de magnifiques pétales de roses.^@
+br
+langjp　その薔薇の花びらの色は、赤。\
+langen^Ces pétales... étaient rouges.^\
+
+
+langjp　それはつまり、この美しき薔薇庭園に二人が対峙していることこそが、/
+sl
+langjp^^!d1000赤き、唯一の真実だという、証なのか、訴えなのか。@
+langen^Leur face-à-face, au cœur de cette splendide roseraie...^@/
+sl
+langen:!d1000^ était-il la preuve, ou bien la revendication, qu'il n'existe qu'une seule vérité, et qu'elle est rouge ?^@
+br
+langjp　………だからきっと、薔薇は赤い。\
+langen^... C'est sans doute pour cela que les roses sont rouges.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　しかし、薔薇の花言葉は、情熱。@
+langen^Pourtant, dans le langage des fleurs... la rose signifie la passion.^@
+br
+langjp　……真実ではない。@
+langen^... Et non la vérité.^@
+br
+langjp　真実を花言葉とするのは、勿忘草。@
+langen^La fleur de la vérité, c'est le myosotis.^@
+br
+langjp　その花は、……青い。\
+langen^Et cette fleur-là... est bleue.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",26  ;fixed lighting issue
+ld c,$BUT_majimeA4,24
+
+advchar "10"
+langjp:dwave_jp 0, but_9e288:「俺の青き真実で、全てを穿つ。@:dwave_jp 0, but_9e289:………全ての、一番最初から。@/
+langen:dwave_eng 0, but_9e288:^Ma vérité bleue va tout transpercer.^@:dwave_eng 0, but_9e289:^ ... Absolument tout, depuis le tout début.^@/
+
+;ld c,$BUT_MajimeA3,80
+
+langjp:dwave_jp 0, but_9e290:一番最初のゲームから始めるぜ！」\
+;＜戦人
+langen:dwave_eng 0, but_9e290:^ Je commence par la toute première partie !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld r,$BEA_AkuwaraiA1,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e432:「良かろう。@:dwave_jp 0, bea_9e433:そなたのお手並みを拝見しよう。@:dwave_jp 0, bea_9e434:…来い。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e432:^Soit.^@:dwave_eng 0, bea_9e433:^ Voyons donc de quoi tu es capable.^@:dwave_eng 0, bea_9e434:^ ... Viens.^\
+
+
+ld l,$BUT_niramuA4,23
+
+advchar "10"
+langjp:dwave_jp 0, but_9e291:「行くぜ………。@:dwave_jp 0, but_9e292:すでに宣言済みだがもう一度言う。@:dwave_jp 0, but_9e293:……こいつは前回のゲームの南條先生の殺人だけじゃないぜ。@:dwave_jp 0, but_9e294:一番最初からのあらゆるゲームのあらゆる場面を切り裂ける…！！\
+langen:dwave_eng 0, but_9e291:^C'est parti...^@:dwave_eng 0, but_9e292:^ Je l'ai déjà dit, mais je le répète.^@:dwave_eng 0, but_9e293:^ Cette hypothèse ne vaut pas seulement pour le meurtre du docteur Nanjo dans la partie précédente.^@:dwave_eng 0, but_9e294:^ Elle peut transpercer chaque scène de chaque partie, depuis le tout début... !!^\
+
+monocro #0000ff
+
+se1v 1006,100
+se2v 57,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+monocro off
+
+se3v 66,100
+se2v 2,100
+bg bullet2d,1
+
+langjp:dwave_jp 0, but_9e295:　#5decff右代宮金蔵はすでに死亡している！@/
+langen:dwave_eng 0, but_9e295:^#5decffKinzo Ushiromiya est déjà mort ! ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e296:　よって島の本当の人数は１７人！@/
+langen:dwave_eng 0, but_9e296:^Le vrai nombre de personnes sur l'île est donc de dix-sept ! ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e297:　そこに未知の人物Ｘが加わることで１８人となっている。@/
+langen:dwave_eng 0, but_9e297:^Ajoutons-y une personne inconnue X, et on arrive à dix-huit. ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e298:この人物Ｘの存在の仮定によって、１７人全員にアリバイがあっても犯行は可能になる。@/
+langen:dwave_eng 0, but_9e298:^Si cette personne X existe, le crime reste possible même si les dix-sept autres ont tous un alibi. ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e299:これにより、人間の数１８人を満たしつつ、にもかかわらず、一見、１８人全員にアリバイがあっても、犯人Ｘの存在と犯行は可能になる！！#ffffff」\
+;＜戦人
+langen:dwave_eng 0, but_9e299:^Autrement dit, on retombe bien sur dix-huit personnes, et même si, en apparence, les dix-huit ont toutes un alibi, le coupable X peut exister et commettre les crimes !!#ffffff^\
+
+textoff
+
+monocro #0000ff
+
+se3v 66,100
+se1v 57,100
+se2v 2,100
+
+bg white,1
+
+monocro off
+
+bg bullet2d,22
+
+advchar "-1"
+langjp　エピソード１のあらゆる殺人は、未知の人物Ｘの仮定で打ち破れる。\
+langen^Tous les meurtres de l'Épisode 1 tombent dès lors qu'on suppose l'existence d'une personne inconnue X.^\
+
+langjp　また、金蔵がレシートで封印された密室から蒸発したとする謎も、@初めからそこに金蔵はいなかったと大胆に仮定することによって、説明が可能になる。\
+langen^Même le mystère de Kinzo volatilisé d'une chambre close scellée par le reçu peut s'expliquer...^@^ si l'on ose supposer qu'il ne s'y trouvait tout simplement pas depuis le début.^\
+
+langjp　ベアトが赤き真実でこれに反論しない以上、@エピソード１の魔女幻想は、完全に打ち破られている。@
+langen^Tant que Béato ne réfute pas cela par la vérité rouge, ^@^l'illusion de la sorcière de l'Épisode 1 est entièrement brisée.^@
+br
+langjp　………青き真実は有効だ。\
+langen^... Cette vérité bleue est valide.^\
+
+textoff
+monocro #0000ff
+se1v 57,100
+se2v 36,100
+bg white,1
+;bg black,2
+fr_bg ":b;fr_bg\orig\bmp\background\efe\stake1a.jpg",":b;bmp\background\efe\stake1a.png",2
+monocro off
+print 22
+langjp　戦人の放った青き真実の楔が、ベアトの右足の甲に鋭く突き刺さる。@
+langen^Le pieu de vérité bleue lancé par Battler se ficha violemment dans le pied droit de Béato.^@
+br
+textoff
+se1 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2a.jpg",":b;bmp\background\efe\blood_2a.png",1
+
+langjp　……そこより溢れ出す赤き血は、彼女の赤き真実での抗弁なのか…。\
+langen^... Le sang rouge qui s'en échappait était-il la riposte de sa vérité rouge... ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld c,$BEA_iiwakeA3,26
+
+langjp　ベアトは自らを否定する青き真実の楔の、耐え難き苦痛に片方の瞼を硬く瞑って堪える。\
+langen^Béato ferma un œil de toutes ses forces pour endurer la douleur insoutenable de ce pieu bleu qui niait jusqu'à son existence.^\
+
+ld c,$BEA_GamanA4,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e435:「ふむ、悪くない。@:dwave_jp 0, bea_9e436:……だが、まだまだ妾は否定されてはおらぬ、殺されてはおらぬ。@:dwave_jp 0, bea_9e437:……この程度では、足りぬわ。@:dwave_jp 0, bea_9e438:………続くゲームではそれだけで説明できぬ謎があるぞ？」\
+;ベアト
+langen:dwave_eng 0, bea_9e435:^Hmm, pas mal.^@:dwave_eng 0, bea_9e436:^ Mais tu ne m'as encore ni niée, ni tuée.^@:dwave_eng 0, bea_9e437:^ Il en faudra bien davantage.^@:dwave_eng 0, bea_9e438:^ Certaines énigmes des parties suivantes résistent à ton hypothèse, sais-tu ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld r,$BUT_majimeA2,24
+
+advchar "10"
+langjp:dwave_jp 0, but_9e300:「……どの謎だ。」\
+;＜戦人
+langen:dwave_eng 0, but_9e300:^... Lesquelles ?^\
+
+ld l,$BEA_futekiA2,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e439:「第２のゲームの終盤で。@:dwave_jp 0, bea_9e440:譲治が郷田と紗音を引きつれ、夏妃の部屋に立て篭もり、殺された。@:dwave_jp 0, bea_9e441:夏妃の部屋を開錠した鍵は室内に閉じ込められ、残る全ての開錠可能な鍵は楼座の手にあった。@:dwave_jp 0, bea_9e442:犯人Ｘが存在しようとも、密室構築は不可能なはず。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e439:^Vers la fin de la deuxième partie,^@:dwave_eng 0, bea_9e440:^ George se barricada avec Gohda et Shannon dans la chambre de Natsuhi, où ils furent tués.^@:dwave_eng 0, bea_9e441:^ La clé de cette chambre était enfermée à l'intérieur, et toutes les autres clés capables de l'ouvrir se trouvaient entre les mains de Rosa.^@:dwave_eng 0, bea_9e442:^ Même avec ton coupable X, cette chambre close est impossible à construire.^\
+
+textoff
+fr_bg ":b;fr_bg\orig\bmp\background\efe\stake1a.jpg",":b;bmp\background\efe\stake1a.png",22
+wait 300
+monocro #0000ff
+se1v 57,70
+fr_bg ":b;fr_bg\orig\bmp\background\efe\stake1b.jpg",":b;bmp\background\efe\stake1b.png",0
+mbg white,1
+mcbg 0
+monocro off
+print 22
+quakex 5,700
+se2 57
+
+advchar "-1"
+langjp　ベアトを貫く青き楔がぶるぶると震える。@
+langjp　対抗するベアトがそれを、押し出そうと抗っているのだ。\
+langen^Le pieu bleu planté dans Béato se mit à trembler.^@
+langen^Béato résistait, et luttait pour l'expulser hors d'elle.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;reload BG
+ld r,$BUT_komaruA3,23
+
+advchar "10"
+langjp:dwave_jp 0, but_9e301:「いいや、俺の青き真実は揺るがない。@:dwave_jp 0, but_9e302:犯人Ｘがマスターキーを入手していれば、あれは密室でも何でもないんだ。」\
+langen:dwave_eng 0, but_9e301:^Non, ma vérité bleue tient bon.^@:dwave_eng 0, but_9e302:^ Si le coupable X avait obtenu un passe-partout, cette chambre n'avait plus rien de clos.^\
+
+ld l,$BEA_AkuwaraiA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e443:「いいや、入手は不可能だぞ。@/
+langen:dwave_eng 0, bea_9e443:^Non, il ne pouvait pas en obtenir. ^@/
+se1 59
+langjp:dwave_jp 0, bea_9e444:#ff0000マスターキー全ては楼座が管理した！#ffffff」\
+langen:dwave_eng 0, bea_9e444:^#ff0000Tous les passe-partout étaient sous le contrôle de Rosa !#ffffff^\
+
+textoff
+
+se1v 1006,100
+mbg BLADE7_2R,1
+mbg black,80
+
+monocro #0000ff
+
+se2v 57,100
+mbg white,1
+monocro off
+mcbg 2
+
+
+ld r,$BUT_OdorokiA1,1
+
+advchar "10"
+langjp:dwave_jp 0, but_9e303:「だが、楼座叔母さんが共犯であったなら何の意味もない！@/
+langen:dwave_eng 0, but_9e303:^Ça veut rien dire, si tante Rosa était complice ! ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e304:#5decff　楼座叔母さんは犯人Ｘに何らかの方法で鍵を渡し、密室殺人を幇助した！@/
+langen:dwave_eng 0, but_9e304:^#5decffTante Rosa a remis une clé au coupable X, d'une manière ou d'une autre, et l'a aidé à commettre le meurtre en chambre close ! ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e305:　そしてその後、同様の方法で鍵を回収したんだ！#ffffff@/
+langen:dwave_eng 0, but_9e305:^Et ensuite, elle a récupéré la clé de la même manière !#ffffff ^@/
+
+ld r,$BUT_futekiA3,80
+
+langjp:dwave_jp 0, but_9e306:　甘いぜ、ベアト！！@:dwave_jp 0, but_9e307:　こんなのは当時の俺もすでに推理しているッ！」\
+langen:dwave_eng 0, but_9e306:^Trop facile, Béato !!^@:dwave_eng 0, but_9e307:^ J'avais déjà sorti cette hypothèse à l'époque !^\
+
+ld l,$BEA_WaraiA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e445:「……くっくっく…、そうであったな……。@/
+langen:dwave_eng 0, bea_9e445:^... Kukukuku... C'est vrai, tu l'avais déjà fait...^@/
+
+textoff
+monocro #0000ff
+fr_bg ":b;fr_bg\orig\bmp\background\efe\stake1a.jpg",":b;bmp\background\efe\stake1a.png",22
+se1v 57,100
+wait 100
+se2v 57,100
+
+bg white,1
+wait 200
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+monocro off
+se3v 36,100
+;bg blood_2e,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\stake1b.jpg",":b;bmp\background\efe\stake1b.png",1
+quakex 5,700
+
+langjp:dwave_jp 0, bea_9e446:…ッぐああぉッ…！！！@:dwave_jp 0, bea_9e447:　………ぐ、……く、」\
+langen:dwave_eng 0, bea_9e446:^ ... Guaaaah... !!! ^@:dwave_eng 0, bea_9e447:^... Guh... kh...^\
+
+me1v 5,90
+me2v 17,90
+
+advchar "-1"
+langjp　輝きを少しずつ失い、抜けるかに見えたその楔は、@戦人に重ねられた青き真実によって再び強い青を取り戻し、ベアトの足に再び食い込むように捻じ込まれた。\
+langen^Le pieu bleu, qui perdait peu à peu son éclat et semblait sur le point de céder...^@^ retrouva soudain un bleu intense sous la nouvelle vérité bleue de Battler... et se vrilla de plus belle dans le pied de Béato.^\
+
+langjp　その苦痛に、ベアトは苦悶の声を漏らす。\
+langen^Sous la douleur, Béato laissa échapper un gémissement d'agonie.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_2bp.jpg",":b;bmp\background\garden\rose_2bpr.png",22  ;fixed lighting issue
+ld c,$BEA_AseruA1,26
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e448:^^!s1「…………ぐ、……ぉ……。@:dwave_jp 0, bea_9e449:…………まだだ…。@:dwave_jp 0, bea_9e450:まだ堪えぬわ……。@/
+langen:dwave_eng 0, bea_9e448:^^!s1^... Guh... ngh... ^@:dwave_eng 0, bea_9e449:^Pas encore... ^@:dwave_eng 0, bea_9e450:^Ce n'est pas assez pour me faire plier... ^@/
+
+ld c,$BEA_komaruA1,80
+
+langjp:dwave_jp 0, bea_9e451:まだだ、/
+sl
+langjp:voicedelay 1790:dwave_jp 0, bea_9e452:^^………まだだぁああ！！」/
+sl
+langen:dwave_eng 0, bea_9e451:^Pas encore^@/
+sl
+langen:voicedelay 1790:dwave_eng 0, bea_9e452:^... pas encooooooore !!^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜ベアト
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld l,$BUT_majimeA3,24
+se1v 2,100
+E_MA
+advchar "10"
+langjp:dwave_jp 0, but_9e308:「さらに続けて第３のゲームだ。@:dwave_jp 0, but_9e309:六連結の連鎖密室、楼座叔母さんと真里亞の殺人、親父たちのホールでの死亡、蔵臼伯父さんと夏妃伯母さんの殺人、@その全ては/
+sl
+langen:dwave_eng 0, but_9e308:^Passons à la troisième partie.^@:dwave_eng 0, but_9e309:^ Les six chambres closes reliées en chaîne, les meurtres de tante Rosa et de Maria, la mort de Papa et des autres dans le hall, ceux de l'oncle Krauss et de tante Natsuhi...^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e311:#5decff絵羽伯母さんを犯人に仮定することで説明可能だ。#ffffff\
+langen:dwave_eng 0, but_9e311:^ #5decfftout ça s'explique si l'on suppose que tante Eva était la coupable.#ffffff^\
+
+ld l,$BUT_futekiA2,80
+
+langjp:dwave_jp 0, but_9e312:　これは当時すでに論破済み。@:dwave_jp 0, but_9e313:それに対しお前がエヴァを通して出題してきた最後の難題、@/
+langen:dwave_eng 0, but_9e312:^Ça, c'était déjà réglé à l'époque.^@:dwave_eng 0, but_9e313:^ Quant à la dernière énigme que tu m'as lancée par l'intermédiaire d'EVA,^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e314:#5decff南條先生殺しも１８人目の未知の人物Ｘで説明可能。#ffffff@:dwave_jp 0, but_9e315:これで第３のゲームまで全て打ち破ったぞ！！！　反論はあるかッ！」\
+;＜戦人
+langen:dwave_eng 0, but_9e314:^ #5decffle meurtre du docteur Nanjo s'explique par une dix-huitième personne inconnue X.#ffffff ^@:dwave_eng 0, but_9e315:^Et voilà toute la troisième partie en miettes !!! T'as quelque chose à répondre ?!^\
+
+
+ld r,$BEA_fukigenA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e453:「ぐ、ぅ…！！@:dwave_jp 0, bea_9e454:　……む、無論……！@/
+langen:dwave_eng 0, bea_9e453:^Guh, aah... !! ^@:dwave_eng 0, bea_9e454:^... B-Bien sûr... ! ^@/
+
+;ld r,$BEA_GamanA3,80
+
+langjp:dwave_jp 0, bea_9e455:　この程度で、……堪えはせぬわ……っ！@/
+langen:dwave_eng 0, bea_9e455:^Ce n'est pas avec si peu... que tu me feras plier... !^@/
+
+ld r,$BEA_AseruA1,80
+
+langjp:dwave_jp 0, bea_9e456:　ならば、ゲストハウスからの譲治の失踪はどう説明するというのか？@:dwave_jp 0, bea_9e457:　赤き真実を追加しよう。@/
+langen:dwave_eng 0, bea_9e456:^ Alors, comment expliques-tu la disparition de George de la résidence des invités ?^@:dwave_eng 0, bea_9e457:^ J'ajoute une vérité rouge.^@/
+se1 59
+langjp:dwave_jp 0, bea_9e458:#ff0000譲治はゲストハウスの階段を降りてはおらぬ。#ffffff@:dwave_jp 0, bea_9e459:窓から飛び去ったのだ！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e458:^#ff0000 George n'a pas descendu l'escalier de la résidence des invités.#ffffff ^@:dwave_eng 0, bea_9e459:^Il s'est envolé par la fenêtre !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+mono 1
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g2f_p1bn.jpg",":b;bmp\background\guesthouse\g2f_p1bn.png",0
+ld c,$GEO_majimeA1k,22
+cl c,0
+se1 52
+print 99,2000,"breakup.dll/urb"
+
+advchar "-1"
+langjp　第３のゲームの終盤にて、譲治がゲストハウス２階より忽然と姿を消す。\
+langen^Vers la fin de la troisième partie, George s'était volatilisé du premier étage de la résidence des invités.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+fr_bg ":b;fr_bg\orig\bmp\background\guesthouse\g1f_p1bn.jpg",":b;bmp\background\guesthouse\g1f_p1bn.png",0
+ld r,$EVA_MajimeA1G,26
+
+langjp　１階にいた絵羽は誰も降りてこなかったと証言するが、@青き真実により、蔵臼たちの死体を外へ運び出していたなら、その隙にこっそりと１階に下りて脱出した可能性があった。\
+langen^Eva, qui se trouvait au rez-de-chaussée, affirmait que personne n'était descendu, ^@^mais selon la vérité bleue, George avait pu se glisser en bas et s'enfuir pendant qu'elle sortait les cadavres de Krauss et de Natsuhi.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+mono off
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_2bp.jpg",":b;bmp\background\garden\rose_2bpr.png",22  ;fixed lighting issue
+
+langjp　しかしベアトはそれを赤き真実を追加することで否定してみせた。@
+langen^Mais Béato avait balayé cette possibilité en ajoutant une vérité rouge.^@
+br
+langjp　一階への階段を下りずに外へ出るには、窓から出る他ない。@しかし窓は全て内側から施錠されていた…！\
+langen^Pour sortir sans emprunter l'escalier menant au rez-de-chaussée, il ne restait que les fenêtres. ^@^Or elles étaient toutes verrouillées de l'intérieur... !^\
+
+
+ld r,$BUT_FutekiA3,24
+
+advchar "10"
+langjp:dwave_jp 0, but_9e316:「だから何だ。@:dwave_jp 0, but_9e317:お前の言葉通りだぜ。@:dwave_jp 0, but_9e318:窓から飛び去ったんだろ？@:dwave_jp 0, but_9e319:　下へ飛び降りても芝生じゃわからないし、あの大雨だ。@:dwave_jp 0, but_9e320:多少の痕跡なんて消えちまう。」\
+;＜戦人
+langen:dwave_eng 0, but_9e316:^Et alors ?^@:dwave_eng 0, but_9e317:^ C'est exactement ce que tu viens de dire.^@:dwave_eng 0, but_9e318:^ Il est passé par la fenêtre, non ?^@:dwave_eng 0, but_9e319:^ En bas, c'est de la pelouse, alors aucune trace visible s'il a sauté. Et avec ce déluge...^@:dwave_eng 0, but_9e320:^ la moindre empreinte a été effacée.^\
+
+ld l,$BEA_iiwakeA3,23
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e460:「赤き真実を繰り返す。@/
+langen:dwave_eng 0, bea_9e460:^Je répète la vérité rouge. ^@/
+se1 59
+langjp:dwave_jp 0, bea_9e461:#ff0000外部へ通ずる窓も扉も全て内側より施錠されていたぞ。#ffffff@/
+langen:dwave_eng 0, bea_9e461:^« #ff0000Toutes les fenêtres et toutes les portes donnant sur l'extérieur étaient verrouillées de l'intérieur. #ffffff^@/
+se2 59
+langjp:dwave_jp 0, bea_9e462:#ff0000しかもそれらの施錠は全て、外側からは不可能！#ffffff@:dwave_jp 0, bea_9e463:　譲治には施錠する術はない…！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e462:^#ff0000Et aucune d'entre elles ne pouvait être verrouillée depuis l'extérieur !#ffffff » ^@:dwave_eng 0, bea_9e463:^George n'avait aucun moyen de les refermer à clé... !^\
+
+se1 20
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld c,$BUT_majimeA2,24
+
+advchar "10"
+langjp:dwave_jp 0, but_9e321:「青き真実を繰り返す。@:dwave_jp 0, but_9e322:当時の俺も言っているぜ。@/
+langen:dwave_eng 0, but_9e321:^Je répète ma vérité bleue.^@:dwave_eng 0, but_9e322:^ Je l'avais déjà sortie à l'époque.^@/
+
+ld c,$BUT_OdorokiB1,80
+se1v 2,100
+langjp:dwave_jp 0, but_9e323:#5decffならば譲治の兄貴が窓より脱出後、誰かがそれを施錠すればいい！#ffffff@:dwave_jp 0, but_9e324:　何も難しいことはないッ！！」\
+;＜戦人
+langen:dwave_eng 0, but_9e323:^#5decff Alors il suffit que quelqu'un ait verrouillé la fenêtre après que George s'est échappé !#ffffff ^@:dwave_eng 0, but_9e324:^Rien de compliqué là-dedans !!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\stake1a.jpg",":b;bmp\background\efe\stake1a.png",22
+monocro #0000ff
+se1v 57,100
+bg white,1
+;bg black,2
+fr_bg ":b;fr_bg\orig\bmp\background\efe\stake1b.jpg",":b;bmp\background\efe\stake1b.png",2
+monocro off
+
+se2v 36,100
+se3v 55,100
+
+;ld c,$BEA_KomaruA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e464:「ぐおッぉああぁああぁ…！！@/
+langen:dwave_eng 0, bea_9e464:^Guaaaaaaaah... !! ^@/
+
+;ld c,$BEA_GamanA3,80
+
+langjp:dwave_jp 0, bea_9e465:　ぐぅう……、この程度では、……足掻けぬか、足掻けぬか……。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e465:^Guuuh... Même ça... je ne puis donc pas m'en défaire... ?^\
+
+textoff
+se1 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2a.jpg",":b;bmp\background\efe\blood_2a.png",1
+wait 1000
+se2 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2c.jpg",":b;bmp\background\efe\blood_2c.png",1
+
+advchar "-1"
+langjp　ベアトの足に打ち込まれた青き楔は抜けない。@
+langjp　ますますに強い青で、偽りの魔女を焼く……。\
+langen^Le pieu bleu, profondément planté dans son pied, refusait de céder.^@
+langen^Et d'un bleu toujours plus ardent, il consumait la fausse sorcière...^\
+
+textoff
+se1 57
+monocro #0000ff
+bg white,1
+wait 1000
+monocro off
+se2v 55,100
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg" : mov $oldnew_bg,":b;bmp\background\garden\rose_3apr.png" : mov $witchh12,$oldnew_bg_old
+bg $witchh12,99,3000,"breakup.dll/lrb"  ;fixed lighting issue
+ld c,$BUT_MajimeA3,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e325:「第３のゲームまでの全てにおいて、青き真実は未だ揺るがない。@:dwave_jp 0, but_9e326:……なら、お前が魔女であることを証明する唯一のゲームは、……今回の第４のゲームだけってことになる。」\
+;＜戦人
+langen:dwave_eng 0, but_9e325:^Jusqu'à la troisième partie, pas une seule de mes vérités bleues n'a été ébranlée.^@:dwave_eng 0, but_9e326:^ Il ne te reste donc plus qu'une partie pour prouver que tu es une sorcière : la quatrième.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld r,$BEA_gamanA4,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e466:「……妾が赤き真実にて反撃していない以上、そういうことになろう。@:dwave_jp 0, bea_9e467:この度のゲームでのみ、魔女を証明せねばなるまいな。@/
+langen:dwave_eng 0, bea_9e466:^... Puisque je n'ai pas riposté par la vérité rouge, il faut croire que oui.^@:dwave_eng 0, bea_9e467:^ C'est avec cette seule partie que je devrai prouver l'existence de la sorcière.^@/
+
+ld r,$BEA_iiwakeA3,80
+
+langjp:dwave_jp 0, bea_9e468:………よかろう。@:dwave_jp 0, bea_9e469:存分に来るが良い。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e468:^ ... Soit. ^@:dwave_eng 0, bea_9e469:^Viens, et ne retiens pas tes coups.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld c,$BUT_odorokiA1,23
+se3v 2,100
+me1v 5,90
+
+advchar "10"
+langjp:dwave_jp 0, but_9e327:「食堂の６人殺しについて不審な点はない。@/
+langen:dwave_eng 0, but_9e327:^Le meurtre des six personnes de la salle à manger n'a rien de mystérieux. ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e328:#5decff１８人目のＸが銃を乱射してみんなを殺した。@/
+langen:dwave_eng 0, but_9e328:^#5decffLa dix-huitième personne X a mitraillé la pièce et tué tout le monde. ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e329:落とし穴については、実際に落とし穴が本当に隠されていた可能性もあるし、@/
+langen:dwave_eng 0, but_9e329:^Quant aux trappes, il se peut très bien qu'elles aient réellement été cachées là, ^@/
+se3v 2,100
+langjp:dwave_jp 0, but_9e330:霧江さんの仮説である、瞬時に昏倒させる毒矢の発射装置Ｘの仮定でも説明可能。@/
+langen:dwave_eng 0, but_9e330:^mais on peut aussi les expliquer par l'hypothèse de Kyrie : un dispositif X qui tire des fléchettes empoisonnées capables d'assommer quelqu'un sur-le-champ. ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e331:譲治の兄貴、朱志香、そして地下牢から脱出したメンバーの殺害も、食堂と同じで銃によるもの。#ffffff@:dwave_jp 0, but_9e332:不審な点はない！\
+langen:dwave_eng 0, but_9e331:^Les meurtres de George, de Jessica et des évadés du cachot ont eux aussi été commis par arme à feu, comme dans la salle à manger.#ffffff ^@:dwave_eng 0, but_9e332:^Rien d'étrange là-dedans !^\
+
+ld c,$BUT_MajimeA4,80
+
+langjp:dwave_jp 0, but_9e333:　だがわかってるぜ、反撃があるんだろ？@:dwave_jp 0, but_9e334:　来いよッ！！」\
+;＜戦人
+langen:dwave_eng 0, but_9e333:^Mais je sais que t'as encore une riposte en réserve, pas vrai ?^@:dwave_eng 0, but_9e334:^ Allez, vas-y !!^\
+
+se1 20
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld r,$BEA_FukigenA1,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e470:「そなたの最大の刃である１８人目のＸは、金蔵がすでに死んでいるとの仮説に立脚している。@:dwave_jp 0, bea_9e471:そう来ることは妾もわかっていた。@:dwave_jp 0, bea_9e472:だから、金蔵を書斎より出した。@:dwave_jp 0, bea_9e473:その金蔵を、親族会議の全員が迎えたぞ？@/
+langen:dwave_eng 0, bea_9e470:^Ta meilleure arme, cette dix-huitième personne X, repose sur l'hypothèse que Kinzo était déjà mort.^@:dwave_eng 0, bea_9e471:^ Je savais que tu en viendrais là.^@:dwave_eng 0, bea_9e472:^ C'est pourquoi j'ai fait sortir Kinzo de son bureau.^@:dwave_eng 0, bea_9e473:^ Et toute la conférence familiale l'a accueilli, n'est-ce pas ?^@/
+
+;ld r,$BEA_AkuwaraiA2,80
+se1 59
+langjp:dwave_jp 0, bea_9e474:　#ff0000親族会議に居合わせた全員が、金蔵の存在を認めた！#ffffff」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e474:^#ff0000 Tous ceux qui assistaient à la conférence familiale ont reconnu la présence de Kinzo !#ffffff^\
+
+E_MA
+se1v 57,100
+se2v 2,100
+se3v 27,100
+mbg BLADE6_2R,1
+mcbg 2
+
+;se2 20
+;cl a,23
+
+ld l,$BUT_nayamuA4,23
+
+advchar "10"
+langjp:dwave_jp 0, but_9e335:「そうだな。@:dwave_jp 0, but_9e336:だが祖父さまはずっと死線を彷徨って寝込んでいた重病人ってことになってるぜ？@:dwave_jp 0, but_9e337:　やつれてて別人に見えちまっても、みんな気にしないかもな？\
+langen:dwave_eng 0, but_9e335:^C'est vrai.^@:dwave_eng 0, but_9e336:^ Mais Grand-père était censé être un grand malade, cloué au lit depuis des lustres entre la vie et la mort, non ?^@:dwave_eng 0, but_9e337:^ S'il était si décharné qu'on aurait dit un autre homme, personne n'y aurait trouvé à redire, tu crois pas ?^\
+
+textoff
+se1 20
+wait 200
+se2 20
+wait 200
+se1 20
+wait 500
+
+monocro #0000ff
+se2v 2,100
+mbg white,1
+mcbg 0
+monocro off
+
+ld l,$BUT_majimeB4,2
+
+langjp:dwave_jp 0, but_9e338:　俺はこう返す。@/
+langen:dwave_eng 0, but_9e338:^Alors je te réponds ceci. ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e339:#5decffその祖父さまは別人の替え玉だ。@/
+langen:dwave_eng 0, but_9e339:^#5decffCe Grand-père-là était une doublure. ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e340:親族たちが祖父さまと見間違えた別人だ！#ffffff」\
+;＜戦人
+langen:dwave_eng 0, but_9e340:^Un autre homme, que la famille a pris pour Grand-père !#ffffff^\
+
+se1v 57,100
+mbg BLADE6_2R,1
+mcbg 0
+
+ld r,$BEA_iiwakeA3,2
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e475:「ならば妾はこう返す。@/
+langen:dwave_eng 0, bea_9e475:^Alors je te réponds ceci. ^@/
+se2 59
+langjp:dwave_jp 0, bea_9e476:#ff0000全ての人物は右代宮金蔵を見間違わない。@/
+langen:dwave_eng 0, bea_9e476:^#ff0000Personne ne peut prendre quelqu'un d'autre pour Kinzo Ushiromiya.#ffffff ^@/
+se3 59
+langjp:dwave_jp 0, bea_9e477:いかなる変装であったとしても、右代宮金蔵を見間違わない！#ffffff」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e477:^#ff0000Quel que soit le déguisement utilisé, personne ne peut prendre quelqu'un d'autre pour Kinzo Ushiromiya !#ffffff^\
+
+monocro #0000ff
+se1v 57,100
+mbg white,1
+cl r,0
+mcbg 0
+monocro off
+
+ld l,$BUT_futekiA2,2
+
+advchar "10"
+langjp:dwave_jp 0, but_9e341:「ならばこう返す。@/
+langen:dwave_eng 0, but_9e341:^Alors je te réponds ceci. ^@/
+
+se2v 2,100
+langjp:dwave_jp 0, but_9e342:#5decffお前は第１のゲーム時では、５本以上存在することになっていたマスターキーの本数を、第２のゲーム時に赤き真実で５本と宣言することで、@/
+langen:dwave_eng 0, but_9e342:^#5decffDans la première partie, il pouvait y avoir plus de cinq passe-partout. Mais dans la deuxième, tu as déclaré en vérité rouge qu'il y en avait cinq, ^@/
+se3v 2,100
+langjp:dwave_jp 0, but_9e343:以後のゲームの設定変更を行なっている。@/
+langen:dwave_eng 0, but_9e343:^et tu as ainsi modifié les paramètres des parties suivantes. ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e344:同じことで、第４のゲームにおいて、金蔵の生死の設定が変更されている可能性がある。\
+langen:dwave_eng 0, but_9e344:^De la même manière, il est possible que la quatrième partie ait changé le fait que Kinzo soit vivant ou mort.#ffffff^\
+
+ld l,$BUT_odorokiB1,80
+se1v 2,100
+langjp:dwave_jp 0, but_9e345:　よって、第４のゲームの金蔵の存在をもって、それ以前のゲームでの金蔵の存在を証明することにはならない…！@/
+langen:dwave_eng 0, but_9e345:^#5decffAutrement dit, la présence de Kinzo dans la quatrième partie ne prouve en rien sa présence dans les parties précédentes... ! ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e346:　よって、食堂での６人殺しは、祖父さまが自ら執行したと仮定しても何の矛盾も生じない！#ffffff」\
+;＜戦人
+
+langen:dwave_eng 0, but_9e346:^Donc, même en supposant que Grand-père ait lui-même commis les six meurtres de la salle à manger, il n'y a aucune contradiction !#ffffff^\
+
+se1v 57,100
+se2v 1006,100
+mbg BLADE6_2R,1
+mcbg 0
+
+ld l,$BUT_odorokiA1,0
+ld r,$BEA_iiwakeA1,2
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e478:「ならばこう返そうぞ。@/
+langen:dwave_eng 0, bea_9e478:^Alors je te réponds ceci. ^@/
+se1 59
+langjp:dwave_jp 0, bea_9e479:#ff0000４つのゲーム開始時の金蔵の生死設定は全て同一である。@/
+langen:dwave_eng 0, bea_9e479:^#ff0000Que Kinzo soit vivant ou mort, il l'est de la même façon au début des quatre parties. ^@/
+se2 59
+langjp:dwave_jp 0, bea_9e480:第４のゲームのみ設定が異なることはない…！#ffffff」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e480:^Il n'existe aucune différence de paramètres propre à la seule quatrième partie... !#ffffff^\
+
+se1 20
+textoff
+wait 500
+
+cl a,0
+se2v 2,100
+mbg white,1
+mcbg 0
+notif %is_old_sprites = 0 ld l,$BUT_OdorokiB1,0  ;only display this sprite if using old sprites
+print 2
+if %is_old_sprites = 1 jumpf
+	lsp 882,c_e0103_wall,0,0
+	print 64
+	lsp 881,c_e0103_a,0,0
+	print 83
+~
+
+advchar "10"
+langjp:dwave_jp 0, but_9e347:「復唱要求。@:dwave_jp 0, but_9e348:« 各ゲームの開始時に金蔵は生存している »！」/
+sl
+langen:dwave_eng 0, but_9e347:^Demande de répétition.^@:dwave_eng 0, but_9e348:^ « Kinzo était vivant au début de chaque partie » !^@/
+
+se1v 2,100
+quakex 4,500
+
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜戦人
+
+se2v 57,100
+csp 882 : csp 881
+mbg white,1
+mcbg 0
+
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg" : mov $oldnew_bg,":b;bmp\background\garden\rose_3apr.png" : mov $witchh12,$oldnew_bg_old
+bg $witchh12,2  ;fixed lighting issue
+me3v 16,70
+
+ld r,$BEA_gamanA4,65
+se1 11
+quakey 2,200
+advchar "27"
+langjp:dwave_jp 0, bea_9e481:「復唱拒否。@:dwave_jp 0, bea_9e482:答えぬよ、戦人。@:dwave_jp 0, bea_9e483:妾はそなたに望まれて赤き真実を答えはせぬ…！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e481:^Je refuse de répéter. ^@:dwave_eng 0, bea_9e482:^Je ne répondrai pas, Battler. ^@:dwave_eng 0, bea_9e483:^Ce n'est pas parce que tu l'exiges que je te donnerai la vérité rouge... !^\
+
+se1 20
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld l,$BUT_majimeA4,24
+
+advchar "10"
+langjp:dwave_jp 0, but_9e349:「……クソ、……ジジイめ、俺の前に立ち塞がりやがる…！！@:dwave_jp 0, but_9e350:　我が最愛の魔女ベアトリーチェを守るために、体を張ってやがるってのかぁ？！」\
+;＜戦人
+langen:dwave_eng 0, but_9e349:^... Merde... ce vieux salaud me barre encore la route... !!^@:dwave_eng 0, but_9e350:^ Tu vas vraiment te jeter devant les coups pour protéger ta sorcière adorée, ta Béatrice ?!^\
+
+me1v 17,90
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld r,$BEA_KomaruA3,23
+;gggg
+E_M3
+
+se1v 2,100
+se2v 52,100
+mbg white,1
+mcbg 0
+
+;mld c,$KIN_DefA1,0
+;msp msp_c,0,0,-120
+mldt c,$KIN_DefA1,0,135
+
+print 2
+
+advchar "-1"
+langjp　ゆらりと、クソジジイが姿を現す。@
+langen^Lentement, le vieux salaud apparut.^@
+br
+langjp　……へっ、背中にベアトを庇って、ナイトさま気取りってわけかよ…！\
+langen^... Hé, alors comme ça tu planques Béato derrière ton dos et tu te prends pour un chevalier... ?!^\
+
+
+;ld c,$KIN_waraiA2,80
+;mld c,$KIN_WaraiA2,0
+;msp msp_c,0,0,-120
+mldt c,$KIN_WaraiA2,0,135
+
+print 80
+
+advchar "01"
+langjp:dwave_jp 0, kin_9e1:「くっくくくくくく、戦人よ。@:dwave_jp 0, kin_9e2:お前にこのわしが超えられるかな…？\
+langen:dwave_eng 0, kin_9e1:^Kukukukukuku, Battler.^@:dwave_eng 0, kin_9e2:^ Seras-tu seulement capable de me surpasser... ?^\
+
+se1v 2,100
+se3v 27,100 
+
+mbg white,1
+mcbg 0
+;ld c,$KIN_akuwaraiA1,80
+;mld c,$KIN_akuwaraiA1,0
+;msp msp_c,0,0,-120
+mldt c,$KIN_akuwaraiA1,0,135
+
+print 22
+
+langjp:dwave_jp 0, kin_9e3:　至らせぬ、至らせはせぬよ、……黄金の魔女の高みにはなぁあああぁ？！@:dwave_jp 0, kin_9e4:　ふっはははははははははは！！@:dwave_jp 0, kin_9e5:　お前の浅はかな推理など、私ひとりを超えることも出来ぬわッ！@:dwave_jp 0, kin_9e6:　死ねぃ！！！」\
+;＜金蔵
+langen:dwave_eng 0, kin_9e3:^Tu ne l'atteindras pas, jamais je ne te laisserai atteindre... les hauteurs de la Sorcière d'Orrrrrrrrr ?! ^@:dwave_eng 0, kin_9e4:^Mouhahahahahahahahahaha !! ^@:dwave_eng 0, kin_9e5:^Tes raisonnements superficiels ne suffiront même pas à venir à bout de moi seul ! ^@:dwave_eng 0, kin_9e6:^Meurs !!!^\
+
+me2v 28,100
+
+se2v 66,85
+se3 20
+textoff
+wait 100
+se1v 20,100
+
+mcl c,0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",9
+
+set_oldnew_bg dragon_b,black,1,2
+wait 500
+set_oldnew_bg dragon_a,black,2,0
+wait 500
+set_oldnew_bg dragon_c,black,2,0
+
+
+advchar "-1"
+langjp　金蔵の漆黒のローブが世界を飲み込むかのように広がり、@俺を一口に飲み込もうとする巨大な黒竜の顎となって襲い掛かる。@
+langen^La robe d'un noir de jais de Kinzo se déploya comme pour engloutir le monde, ^@^et se changea en la gueule d'un immense dragon noir qui fondit sur moi pour m'avaler d'une seule bouchée.^@
+br
+langjp　……その黒竜の咆哮の前に、俺は低く呼吸を落ち着け、浅く目を閉じる……。\
+langen^... Face au rugissement du dragon noir, je ralentis mon souffle et fermai à demi les yeux...^\
+
+;ld c,$KIN_IkariA1,22
+
+advchar "01"
+langjp:dwave_jp 0, kin_9e7:「お前なぞ一息に飲み込んでくれるわッ！！@:dwave_jp 0, kin_9e8:　消え去れ、未熟者めええぇえぇッ！！！」/
+sl
+langen:dwave_eng 0, kin_9e7:^Je vais t'avaler d'une seule bouchée !! ^@:dwave_eng 0, kin_9e8:^Disparais, misérable blanc-beeeeeeeeeec !!!^@/
+se1v 36,100
+quakex 4,500
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜金蔵
+
+E_MA
+se3 20
+
+clr_oldnew_bg
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_2bp.jpg",":b;bmp\background\garden\rose_2bpr.png",0  ;fixed lighting issue
+ld l,$BUT_futekiA2,23
+
+advchar "10"
+langjp:dwave_jp 0, but_9e351:「…………黙りな、死に損ないの亡霊め。」\
+;＜戦人
+langen:dwave_eng 0, but_9e351:^... La ferme, fantôme qui refuse de crever.^\
+
+
+;mld r,$KIN_fukigenA1,0
+;msp msp_r,0,0,-120
+mldt r,$KIN_fukigenA1,0,135
+
+print 24
+
+advchar "01"
+langjp:dwave_jp 0, kin_9e9:「ほぅ、わしを亡霊呼ばわりしてみせるか。@:dwave_jp 0, kin_9e10:あくまでもわしはすでに死んでおるとする仮説を貫くか！！@:dwave_jp 0, kin_9e11:　それがお前の命取りよ！！@:dwave_jp 0, kin_9e12:　第４のゲームの第一の晩にて、闇に飲み込まれて消え去るが良いッ！！」\
+;＜金蔵
+langen:dwave_eng 0, kin_9e9:^Oh ? Tu oses me traiter de fantôme ?^@:dwave_eng 0, kin_9e10:^ Tu t'obstines donc jusqu'au bout à prétendre que je suis déjà mort !!^@:dwave_eng 0, kin_9e11:^ C'est cette hypothèse qui causera ta perte !!^@:dwave_eng 0, kin_9e12:^ Laisse-toi engloutir par les ténèbres du premier crépuscule de la quatrième partie, et disparais !!^\
+
+se1v 66,100
+
+mcl a,0
+;mbg black,29
+set_oldnew_bg dragon_c,black,1,22
+textoff
+wait 1500
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",29
+
+advchar "-1"
+langjp　黒竜の巨大な口が、顎が、牙が、戦人を丸呑みにする…！！！@
+langjp　その刹那、戦人が一気に目を開く！\
+langen^L'immense gueule du dragon noir, ses mâchoires, ses crocs... engloutirent Battler tout entier... !!!^@
+langen^À cet instant précis, Battler ouvrit brusquement les yeux !^\
+
+se2v 2,100
+mbg white,1
+mcbg 0
+clr_oldnew_bg
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_2bp.jpg",":b;bmp\background\garden\rose_2bpr.png",0  ;reload BG
+ld l,$BUT_futekiA3,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e352:「ありがとうよ、ベアトリーチェ。@:dwave_jp 0, but_9e353:お前の第３のゲームが俺の反撃の足掛かりとなる。」\
+;＜戦人
+langen:dwave_eng 0, but_9e352:^Merci, Béatrice.^@:dwave_eng 0, but_9e353:^ Ta troisième partie va me servir de tremplin pour contre-attaquer.^\
+
+;mcl r,0
+se1 20
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld r,$BEA_fukigenA1,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e484:「何っ…？」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e484:^Quoi... ?^\
+
+
+ld l,$BUT_FutekiA2,65
+se1 11
+quakey 2,200
+
+advchar "10"
+langjp:dwave_jp 0, but_9e354:「あばよクソジジイ。@:dwave_jp 0, but_9e355:こいつでお別れだぜ。@:dwave_jp 0, but_9e356:………俺は金蔵死亡説が第４のゲームでも主張できる根拠として、以下の仮説を提唱する！」\
+langen:dwave_eng 0, but_9e354:^Adieu, vieux salaud.^@:dwave_eng 0, but_9e355:^ Cette fois, on se quitte pour de bon.^@:dwave_eng 0, but_9e356:^ Pour soutenir que Kinzo est mort jusque dans la quatrième partie, j'avance l'hypothèse suivante !^\
+
+;ld l,$BUT_OdorokiB1,80
+;se1 2
+;mbg white,1
+;mcbg 80
+
+se1 20
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+mov %hide_bgsp2_cg,1
+;bg rose_2bn,0
+set_oldnew_bg dragon_c,rose_2bpr,1,0
+;mld c,$KIN_akuwaraiA1,0
+;msp msp_c,0,0,-120
+mldt c,$KIN_akuwaraiA1,0,135
+
+print 23
+
+advchar "01"
+langjp:dwave_jp 0, kin_9e13:「よかろう、存分に来るが良い、我が末裔よッ！！」\
+langen:dwave_eng 0, kin_9e13:^Fort bien ! Viens, et ne retiens pas tes coups, mon descendant !!^\
+
+csp -1
+clr_oldnew_bg
+mov %hide_bgsp2_cg,0
+se2v 27,100
+se3v 66,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",29
+wait 1000
+
+monocro #0000ff
+
+se1v 57,100
+bg white,1
+monocro off
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",2  ;fixed lighting issue
+ld l,$BUT_MajimeB4,65
+se1 11
+quakey 2,200
+
+advchar "10"
+langjp:dwave_jp 0, but_9e357:「行くぜ、クソジジイ！！@/
+langen:dwave_eng 0, but_9e357:^J'arrive, vieux salaud !! ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e358:#5decff　金蔵の名は右代宮家当主の称号として引き継がれているという仮説だ！@/
+langen:dwave_eng 0, but_9e358:^#5decffMon hypothèse, c'est que le nom « Kinzo » se transmet comme un titre, celui du chef de la famille Ushiromiya ! ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e359:　右代宮金蔵はすでに死んでいる。@/
+langen:dwave_eng 0, but_9e359:^Kinzo Ushiromiya était déjà mort. ^@/
+se3v 2,100
+langjp:dwave_jp 0, but_9e360:そして« その名 »を誰かが継承した！@/
+langen:dwave_eng 0, but_9e360:^Et quelqu'un a hérité de « ce nom » ! ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e361:　全員が承認した！！@/
+langen:dwave_eng 0, but_9e361:^Tout le monde l'a accepté !! ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e362:　それにより、« 親族会議に居合わせた全員が、金蔵の存在を認めた »！！\
+langen:dwave_eng 0, but_9e362:^Voilà pourquoi « tous ceux qui assistaient à la conférence familiale ont reconnu la présence de Kinzo » !!#ffffff^\
+
+cl l,0
+ld c,$BUT_odorokiA1,23
+
+monocro #0000ff
+se1v 57,100
+mbg white,1
+monocro off
+mcbg 0
+
+ld c,$BUT_odorokiB1,2
+se1v 2,100
+langjp:dwave_jp 0, but_9e363:　祖父さまの変装をする必要さえもないのさ。@/
+langen:dwave_eng 0, but_9e363:^#5decffPas besoin que quelqu'un se déguise en Grand-père. ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e364:一同が新しい« 金蔵 »を認めたのだから！@/
+langen:dwave_eng 0, but_9e364:^Tout le monde avait reconnu le nouveau « Kinzo » ! ^@/
+se3v 2,100
+langjp:dwave_jp 0, but_9e365:　よって« 見間違えるわけもない »！！@/
+langen:dwave_eng 0, but_9e365:^Donc « personne n'a pris quelqu'un d'autre pour Kinzo » !! ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e366:　以上の仮説が否定されない限りッ、お前が死んでいるという事実はッ、変わらない！！！#ffffff\
+langen:dwave_eng 0, but_9e366:^Tant que cette hypothèse n'est pas réfutée, rien ne changera le fait que t'es mort !!!#ffffff^\
+
+me1v 28,100
+
+se1 11
+cl c,66
+
+se2 20
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_1a.jpg",":b;bmp\background\garden\rose_3apr.png",24  ;EP4 BG OG / PS3 F2
+
+ld l,$BUT_MajimeA4,65
+se1 11
+quakey 2,200
+
+langjp:dwave_jp 0, but_9e367:　これでトドメだぜ。@:dwave_jp 0, but_9e368:クソジジイ、お前に復唱要求だ。@/
+langen:dwave_eng 0, but_9e367:^Et maintenant, le coup de grâce.^@:dwave_eng 0, but_9e368:^ Vieux salaud, demande de répétition.^@/
+
+notif %is_old_sprites = 0 ld l,$BUT_futekiB2,80  ;only display this sprite if using old sprites
+if %is_old_sprites = 1 jumpf
+	lsp 882,c_e0103_wall,0,0
+	print 64
+	lsp 881,c_e0103_a,0,0
+	print 83
+~
+
+langjp:dwave_jp 0, but_9e369:« 全人物の中で、異なる複数の名前を持つ人物は存在しない »！！」/
+sl
+langen:dwave_eng 0, but_9e369:^ « Parmi tous les personnages, aucun ne porte plusieurs noms différents » !!^@/
+se1v 2,100
+se2v 57,100
+quakex 4,500
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜戦人
+csp -1
+mov %hide_bgsp2_cg,1
+;bg rose_3cN,0
+set_oldnew_bg dragon_c,rose_3apr,1,0
+;mld c,$KIN_fukigenA1,0
+;msp msp_c,0,0,-120
+mldt c,$KIN_fukigenA1,0,135
+
+print 24
+textoff
+wait 1000
+
+se1v 36,100
+
+monocro #0000ff
+mbg white,1
+monocro off
+mcbg 0
+
+;mld c,$KIN_akuwaraiA1,0
+;msp msp_c,0,0,-120
+mldt c,$KIN_akuwaraiA1,0,135
+
+print 22
+
+advchar "01"
+langjp:dwave_jp 0, kin_9e14:「で、…出来、ぬ…………！！@:dwave_jp 0, kin_9e15:　ぐ、ぐおおおおおおおおおおおおぉおおおおおおおおッ！！」\
+;＜金蔵
+langen:dwave_eng 0, kin_9e14:^Je... ne... peux... pas... !! ^@:dwave_eng 0, kin_9e15:^Gah, guoooooooooooooooooooooh !!^\
+
+mcl c,0
+clr_oldnew_bg
+mov %hide_bgsp2_cg,0
+se3 20
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld r,$BUT_NiramuA1,24
+
+advchar "10"
+langjp:dwave_jp 0, but_9e370:「安らかに眠りな、クソジジイ。@:dwave_jp 0, but_9e371:感謝しろよ、お前、やっと死ねたんだぜ。@:dwave_jp 0, but_9e372:こいつが引導だ、食らってくたばりなッ！！\
+langen:dwave_eng 0, but_9e370:^Repose en paix, vieux salaud.^@:dwave_eng 0, but_9e371:^ Tu peux me remercier, tu vas enfin pouvoir mourir.^@:dwave_eng 0, but_9e372:^ Voilà ton dernier adieu. Prends ça et crève !!^\
+
+monocro #0000ff
+
+se1v 2,100
+se2v 57,100
+mbg white,1
+monocro off
+mcbg 0
+ld r,$BUT_futekiA3,2
+se1v 2,100
+langjp:dwave_jp 0, but_9e373:　#5decff右代宮金蔵はすでに死亡しているッ！@/
+langen:dwave_eng 0, but_9e373:^#5decffKinzo Ushiromiya est déjà mort ! ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e374:　そうさ、あんたは気の毒だよな、その死体が見つかる場合、いつも丸焼けだ。@/
+langen:dwave_eng 0, but_9e374:^Ouais, faut presque te plaindre : chaque fois qu'on retrouve ton cadavre, il est carbonisé. ^@/
+se3v 2,100
+langjp:dwave_jp 0, but_9e375:それは、死後が経過している死体であることを悟られないための工作なのさ！！@/
+langen:dwave_eng 0, but_9e375:^C'était une mise en scène, pour cacher que ce cadavre était mort depuis un bon moment déjà !! ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e376:　そしてその名を誰かが受け継いだ！！@/
+langen:dwave_eng 0, but_9e376:^Et quelqu'un a hérité de ce nom !! ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e377:　以上の仮説で« てめえ »は死亡しているにもかかわらず、« 金蔵 »は親族会議に登場することが出来るッ！！！\
+langen:dwave_eng 0, but_9e377:^Avec cette hypothèse, même si « toi » t'es mort, « Kinzo » peut très bien apparaître à la conférence familiale !!!#ffffff^\
+
+se1 20
+textoff
+wait 700
+
+monocro #0000ff
+
+cl a,0
+
+se1v 2,100
+se2v 57,100
+mbg white,1
+monocro off
+mcbg 0
+
+notif %is_old_sprites = 0 ld l,$BUT_odorokiB1,2  ;only display this sprite if using old sprites
+if %is_old_sprites = 1 jumpf
+	lsp 882,c_e0103_wall,0,0
+	print 64
+	lsp 881,c_e0103_a,0,0
+	print 83
+~
+
+langjp:dwave_jp 0, but_9e378:　どうだよ、これでッ、チェックメイトだああぁあああ！！#ffffff」\
+;＜戦人
+langen:dwave_eng 0, but_9e378:^#5decffAlors, qu'est-ce que tu dis de ça ? Échec et maaaaaaaaaaaat !!#ffffff^\
+
+
+csp -1
+;bg black,1
+set_oldnew_bg dragon_c,black,1,1
+monocro #0000ff
+se1v 66,100
+se2v 2,100
+se3v 2,100
+
+bg bullet1d,2
+
+se2v 46,100
+bg white,1
+bg bullet1d,80
+
+for %ryuu1=1 to 4
+	resettimer
+	se2v 46,100
+	se3v 46,100
+	bg white,1
+	waittimer 90
+	
+	se3v 46,100
+	bg bullet1d,1
+	waittimer 180
+
+	se2v 46,100
+	bg bullet1d,1
+	waittimer 270
+next
+
+;wait 80
+bg white,1
+se1v 46,100
+se2v 27,100
+se3v 46,100
+monocro off
+;bg black,22
+set_oldnew_bg dragon_d,black,1,22
+
+advchar "-1"
+langjp　青い何十本もの杭が金蔵の亡霊を穿つ。@
+langjp　その凄まじき破壊力は、二度と亡霊に再起を許さない……！！\
+langen^Des dizaines de pieux bleus transpercèrent le fantôme de Kinzo.^@
+langen^Leur terrible puissance de destruction ne lui laisserait plus jamais l'occasion de se relever... !!^\
+
+advchar "01"
+langjp:dwave_jp 0, kin_9e16:「……ベ、……アト、リーチェ………、」\
+;＜金蔵
+langen:dwave_eng 0, kin_9e16:^... Bé... a... trice...^\
+
+se1v 2,100
+se3v 36,100
+monocro #0000ff
+mbg white,1
+monocro off
+mcbg 0
+clr_oldnew_bg
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_2bp.jpg",":b;bmp\background\garden\rose_2bpr.png",0  ;fixed lighting issue
+ld l,$BUT_futekiB2,0
+lsp 899,":a;bmp\background\efe\1g.png",0,0  ;fixed, loads PNG now
+print 42
+;ld c,$KIN_nakuA1,80
+
+
+
+textoff
+csp 899
+print 65
+
+E_MA
+
+se1v 13,100
+se2v 39,100
+
+quakey 4,1000
+se3v 13,100
+se1v 27,100
+
+wait 1000
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",25
+;bg Moon_1a,22
+set_oldnew_bg dragon_a,moon_1b,1,22
+;ld c,$BEA_NayamuA1,24
+
+me1v 16,70
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e485:「………金蔵…。@:dwave_jp 0, bea_9e486:今日までありがとう。@:dwave_jp 0, bea_9e487:……安らかに、…眠れ……。@:dwave_jp 0, bea_9e488:そなたとの日々は、……忘れぬ………。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e485:^... Kinzo... ^@:dwave_eng 0, bea_9e486:^Merci pour tout. ^@:dwave_eng 0, bea_9e487:^... Repose... en paix... ^@:dwave_eng 0, bea_9e488:^Je n'oublierai pas... les jours passés à tes côtés...^\
+textoff
+set_oldnew_bg dragon_d,moon_1b,1,22
+wait 1000
+se1 22
+bg white,2
+wait 1000
+se2 52
+;bg moon_1a,99,4000,"breakup.dll/lrb"
+set_oldnew_bg dragon_a,moon_1b,2,0
+
+advchar "-1"
+langjp　黒き竜の影とともに、黄金の花びらを散らしながら霧散して、@……右代宮金蔵は黄金色の旋風となってその姿を消した……。@
+langen^Se dissipant avec l'ombre du dragon noir dans une pluie de pétales dorés... ^@^Kinzo Ushiromiya se changea en un tourbillon d'or et disparut...^@
+br
+langjp　死してなお、愛した女のために、戦った。@
+langen^Même mort, il avait continué à se battre pour la femme qu'il aimait.^@
+br
+langjp　……お前の愛と狂気は、紛れもなく、本物だったぜ……！\
+langen^... Ton amour et ta folie, eux au moins, étaient bien réels... !^\
+
+E_MA
+clr_oldnew_bg
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_2bp.jpg",":b;bmp\background\garden\rose_2bpr.png",0  ;fixed lighting issue
+ld r,$BEA_AseruA1,2
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e489:「……………く、…………戦人…………。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e489:^... Kh... Battler...^\
+
+
+ld l,$BUT_NiramuA1,23
+
+advchar "10"
+langjp:dwave_jp 0, but_9e379:「恨むな。@:dwave_jp 0, but_9e380:……死者は眠らせろ。@:dwave_jp 0, but_9e381:起こすな。@:dwave_jp 0, but_9e382:……次こそ、お前だぜ。@:dwave_jp 0, but_9e383:これでお前も最後だ。」\
+;＜戦人
+langen:dwave_eng 0, but_9e379:^Ne m'en veux pas.^@:dwave_eng 0, but_9e380:^ Laisse les morts dormir.^@:dwave_eng 0, but_9e381:^ Ne les réveille pas.^@:dwave_eng 0, but_9e382:^ Et maintenant, c'est ton tour.^@:dwave_eng 0, but_9e383:^ Pour toi aussi, c'est terminé.^\
+
+advchar "-1"
+langjp　ベアトの足を貫く青き楔は未だ抜けない…。@
+langjp　ベアトは死期を悟る…。\
+langen^Le pieu bleu planté dans le pied de Béato refusait toujours de céder...^@
+langen^Elle sentit sa mort approcher...^\
+
+ld l,$BUT_niramuA4,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e384:「お前にはずいぶんと付き合ったぜ。@:dwave_jp 0, but_9e385:お前の遊び相手としての義理は充分果たしたはずだ。@:dwave_jp 0, but_9e386:……だが、そろそろお片付けの時間だぜ。@:dwave_jp 0, but_9e387:家で寂しがり屋の妹が待ってるんだ。\
+langen:dwave_eng 0, but_9e384:^Je me suis assez prêté à tes jeux.^@:dwave_eng 0, but_9e385:^ J'ai largement rempli mon devoir de compagnon de jeu.^@:dwave_eng 0, but_9e386:^ Mais il est temps de ranger les jouets.^@:dwave_eng 0, but_9e387:^ J'ai une petite sœur qui se sent seule et qui m'attend à la maison.^\
+
+se1v 2,100
+mbg white,1
+mcbg 0
+ld l,$BUT_majimeA4,22
+
+langjp:dwave_jp 0, but_9e388:　……家族揃って、お暇させてもらうぜ…！！」\
+;＜戦人
+langen:dwave_eng 0, but_9e388:^... Alors ma famille et moi, on va prendre congé... !!^\
+
+E_MA
+se3 20
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_2bp.jpg",":b;bmp\background\garden\rose_2bpr.png",0  ;fixed lighting issue
+ld c,$BEA_iiwakeA3,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e490:「……ならば殺せ。@:dwave_jp 0, bea_9e491:……ならば妾を殺してみせよ！@:dwave_jp 0, bea_9e492:　……逃げも隠れもせぬ、今や避けることも叶わぬわッ！！@:dwave_jp 0, bea_9e493:　来いいいいいぃいいいい右代宮戦人ぁああああああああああッ！！！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e490:^... Alors tue-moi. ^@:dwave_eng 0, bea_9e491:^... Alors essaie donc de me tuer ! ^@:dwave_eng 0, bea_9e492:^... Je ne fuirai pas, je ne me cacherai pas, et je ne peux même plus esquiver !! ^@:dwave_eng 0, bea_9e493:^Viiiiiiiiiiiiiiiiiiiiens, Battler Ushiromiyaaaaaaaaaaaaaaa !!!^\
+
+se1 20
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_2bp.jpg",":b;bmp\background\garden\rose_2bpr.png",0  ;fixed lighting issue
+ld l,$BUT_OdorokiA1,23
+
+advchar "10"
+langjp:dwave_jp 0, but_9e389:「おうッ！！@:dwave_jp 0, but_9e390:　金蔵死亡説による１８人目のＸにより、残り全てを貫く！\
+langen:dwave_eng 0, but_9e389:^Compte là-dessus !!^@:dwave_eng 0, but_9e390:^ Avec la dix-huitième personne X, que rend possible la mort de Kinzo, je vais transpercer tout le reste !^\
+
+monocro #0000ff
+se1v 2,100
+mbg white,1
+mcbg 0
+monocro off
+
+ld l,$BUT_majimeB4,2
+
+langjp:dwave_jp 0, but_9e391:　#5decff第４のゲームにおける譲治の兄貴と朱志香の死もＸが犯人で説明できる！！@/
+langen:dwave_eng 0, but_9e391:^#5decffLa mort de George et celle de Jessica dans la quatrième partie s'expliquent aussi par le coupable X !! ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e392:　地下牢から逃げて殺された５人も、園芸倉庫の２人も、最後の真里亞も！@/
+langen:dwave_eng 0, but_9e392:^Les cinq évadés du cachot qui ont été tués, les deux de la remise de la roseraie, et même Maria à la fin ! ^@/
+se3v 2,100
+langjp:dwave_jp 0, but_9e393:　全て１８人目のＸで説明できる！！@/
+langen:dwave_eng 0, but_9e393:^Tout s'explique par la dix-huitième personne X !! ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e394:　何もおかしなことはないッ！！#ffffff\
+langen:dwave_eng 0, but_9e394:^Il n'y a strictement rien d'étrange là-dedans !!#ffffff^\
+
+cl a,0
+
+monocro #0000ff
+se1v 2,100
+se2v 57,100
+se3v 27,100
+mbg white,1
+mcbg 0
+monocro off
+
+ld c,$BUT_odorokiA1,2
+
+langjp:dwave_jp 0, but_9e395:　以上にて全てのゲームにおける犯人の説明を人間にて完了するッ！！@:dwave_jp 0, but_9e396:　ベアトリーチェ、……これで、チェックメイトだぁああああああああああああぁああッ！！」\
+;＜戦人
+langen:dwave_eng 0, but_9e395:^Et voilà : les crimes des quatre parties, tous expliqués par des humains !!^@:dwave_eng 0, but_9e396:^ Béatrice... cette fois, c'est échec et maaaaaaaaaaaat !!^\
+
+textoff
+
+me1v 28,100
+
+se3v 66,100
+
+monocro #0000ff
+bg white,2
+
+se1v 57,100
+bg white,1
+monocro off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\bullet2a.jpg",":b;bmp\background\efe\bullet2a.png",22
+
+monocro #0000ff
+
+se2v 57,100
+bg white,1
+monocro off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\bullet2b.jpg",":b;bmp\background\efe\bullet2b.png",22
+
+
+se1v 36,100
+bg white,1
+;bg bullet_1a,10,120
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\stake1a.jpg" : mov $oldnew_bg,":b;bmp\background\efe\stake1a.png" : if %4095 = 0 bg ":b;bmp\background\efe\stake1a.png",10,120 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\stake1a.jpg",10,120
+
+se2v 36,100
+bg white,1
+;bg bullet_1b,10,120
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\stake1b.jpg" : mov $oldnew_bg,":b;bmp\background\efe\stake1b.png" : if %4095 = 0 bg ":b;bmp\background\efe\stake1b.png",10,120 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\stake1b.jpg",10,120
+
+se1v 36,100
+bg white,1
+;bg bullet_1c,10,120
+bg stake2,10,120
+
+se2v 36,100
+bg white,1
+;bg bullet_1d,10,120
+bg stake3,10,120
+
+se1v 36,100
+bg white,1
+;bg bullet_1e,10,120
+bg stake4,10,120
+
+wait 500
+
+E_B
+E_MA
+se1v 36,100
+se2v 27,100
+se3v 27,100
+
+bg white,1
+
+monocro off
+
+;bg black,22
+;se1 57
+;resettimer
+;bg homing6BS,1
+;;bg white,80
+;waittimer 200
+;se2 57
+;resettimer
+;bg homing6BSR,1
+;waittimer 200
+;;bg white,80
+;se3v 57,100
+;bg homing7BS,1
+;bg white,22
+;se1v 36,100
+
+wait 2000
+
+me1v 16,50
+;bg Moon_1a,42
+bg stake5,10,120
+
+
+;bg blood_2e,1
+;quakex 4,1000
+
+;ld c,$BEA_KomaruA1,80
+
+se3v 39,100
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e494:「う、……うおおおああああああぁああああぁああぁあああぁ……ぁ…ッ、」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e494:^Uu... uaaaaaaaaaaaaaaaaaaaaaah... ah... !^\
+
+quakey 3,900
+
+advchar "-1"
+langjp　避けられぬベアトの胸に、何本もの青い杭が打ち込まれ、串刺しにする……。@
+langen^Incapable d'esquiver, Béato reçut en pleine poitrine plusieurs pieux bleus qui la transpercèrent de part en part...^@
+br
+langjp　ベアトはその杭を握り、何とか引き抜こうとする…。\
+langen^Elle agrippa les pieux et tenta désespérément de les arracher...^\
+
+
+;ld c,$BEA_IiwakeA2,80
+
+bgm1 25
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e495:^^!s1　………あぁぁぁ、/
+sl
+langjp:voicedelay 1690:dwave_jp 0, bea_9e496:^^……食らっちまったぁ……、/
+sl
+langjp:voicedelay 2000:dwave_jp 0, bea_9e497:^^………痛ぇよォ………。@
+langen:dwave_eng 0, bea_9e495:^^!s1^... Aaaaaaahhh^@/
+sl
+langen:voicedelay 1690:dwave_eng 0, bea_9e496:^... je m'les suis priiiis...^@/
+sl
+langen:voicedelay 2000:dwave_eng 0, bea_9e497:^ Ça fait un mal de chieeeen...^@
+br
+langjp:dwave_jp 0, bea_9e498:　…こりゃ、………死ぬな………。@
+langjp:dwave_jp 0, bea_9e499:　……こいつを引き抜かなきゃ、/
+sl
+langjp:voicedelay 2009:dwave_jp 0, bea_9e500:^^………死んじまう……。@
+langen:dwave_eng 0, bea_9e498:^Je vais... crever comme ça...^@
+langen:dwave_eng 0, bea_9e499:^Si je ne les retire pas^@/
+sl
+langen:voicedelay 2009:dwave_eng 0, bea_9e500:^... je vais mourir...^@
+br
+langjp:dwave_jp 0, bea_9e501:　痛いのは嫌だ……、/
+sl
+langjp:voicedelay 3120:dwave_jp 0, bea_9e502:^^……辛いのは、/
+sl
+langjp:voicedelay 1840:dwave_jp 0, bea_9e503:^^………嫌……だ………。/
+sl
+langen:dwave_eng 0, bea_9e501:^Je déteste avoir mal...^@/
+sl
+langen:voicedelay 3120:dwave_eng 0, bea_9e502:^ Souffrir...^@/
+sl
+langen:voicedelay 1840:dwave_eng 0, bea_9e503:^ je déteste... ça...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+
+langjp　ベアトは両手でしっかりと、……青い杭の一本を握り締める。\
+langen^Des deux mains... Béato empoigna fermement l'un des pieux bleus.^\
+
+monocro #0000ff
+se1v 55,100
+bg white,99,2000,"breakup.dll/lrb"
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+monocro off
+print 1
+
+langjp　……当然、青き真実の魔女を否定する力が彼女の両手を焼く。@
+langen^... Bien entendu, le pouvoir de la vérité bleue, qui niait la sorcière, lui brûla les mains.^@
+br
+langjp　…その苦痛に涙さえ隠せず、ベアトは吼え猛りながら、渾身の力で杭を引き抜こうとする……。\
+langen^... Incapable de retenir ses larmes sous la douleur, Béato hurla en essayant d'arracher le pieu de toutes ses forces...^\
+
+se1 55
+
+monocro #0000ff
+bg white,1
+monocro off
+;bg bullet_1e,2
+bg stake5,2
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e504:　これが抜けなきゃ、………死んでしまう………。@
+langen:dwave_eng 0, bea_9e504:^Si je n'arrive pas à l'arracher... je vais mourir...^@
+br
+langjp:dwave_jp 0, bea_9e505:　……これが、………最後の反撃……………。\
+langen:dwave_eng 0, bea_9e505:^Voici... ma dernière contre-attaque...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",22  ;fixed lighting issue
+ld r,$BEA_GamanA1,26
+
+langjp:dwave_jp 0, bea_9e506:「なら戦人……。@:dwave_jp 0, bea_9e507:……我が魔法の数々を、………どう、説明するのか……。@:dwave_jp 0, bea_9e508:………一番最初に登場したのは、……第２のゲームにおいて、妾が真里亞のカボチャのマシュマロを直してやった時だ。@:dwave_jp 0, bea_9e509:この時、楼座はその魔法を確かに目撃している。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e506:^Alors, Battler...^@:dwave_eng 0, bea_9e507:^ comment expliques-tu mes nombreux tours de magie... ?^@:dwave_eng 0, bea_9e508:^ Le tout premier eut lieu dans la deuxième partie, lorsque j'ai réparé le marshmallow-citrouille de Maria.^@:dwave_eng 0, bea_9e509:^ Rosa a bel et bien été témoin de cette magie.^\
+
+mset2ef 22
+
+advchar "-1"
+langjp　確かにあの時、楼座は黄金の蝶たちが群れ集まり、魔法の奇跡でマシュマロを直すところを目撃している。\
+langen^En effet, ce jour-là, Rosa avait vu les papillons dorés se rassembler et réparer le marshmallow par un miracle de magie.^\
+
+mendef 22
+
+ld r,$BEA_GamanA3,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e510:「……くっくくく…。@:dwave_jp 0, bea_9e511:……楼座ひとりの目撃では信憑性がないであろう…？@:dwave_jp 0, bea_9e512:　だから妾はその目撃者を極限まで増やしたのだ。@:dwave_jp 0, bea_9e513:……それこそが、……今回のゲームよ……。\
+langen:dwave_eng 0, bea_9e510:^... Kukukuku...^@:dwave_eng 0, bea_9e511:^ Le seul témoignage de Rosa ne serait guère crédible, n'est-ce pas... ?^@:dwave_eng 0, bea_9e512:^ Voilà pourquoi j'ai multiplié les témoins autant qu'il était possible.^@:dwave_eng 0, bea_9e513:^ Et c'est précisément à cela que servait cette partie...^\
+
+ld r,$BEA_IiwakeA3,80
+
+langjp:dwave_jp 0, bea_9e514:　我が眷属たちの召喚！@:dwave_jp 0, bea_9e515:　そして魔法による虐殺！@:dwave_jp 0, bea_9e516:　それらの全てを大勢の人間たちに目撃させた…！！@:dwave_jp 0, bea_9e517:　それこそが……、我が魔法の存在する証明…！！@/
+langjp:dwave_jp 0, bea_9e518: これを、……どう説明するのか、右代宮戦人ぁあああぁあああぁぁぁ………！！！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e514:^L'invocation de mes familiers !^@:dwave_eng 0, bea_9e515:^ Les massacres accomplis par magie !^@:dwave_eng 0, bea_9e516:^ J'ai fait en sorte qu'une foule de gens en soient témoins... !!^@:dwave_eng 0, bea_9e517:^ Et cela prouve que ma magie existe... !!^@/
+langen:dwave_eng 0, bea_9e518:^ Comment expliques-tu ça, Battler Ushiromiyaaaaaaaaaaaaaaaaaaa... ?!!!^\
+
+textoff
+
+ld l,$BUT_nayamuA1,2
+wait 1000
+
+ld l,$BUT_nayamuA4,22
+E_MA
+advchar "10"
+langjp:dwave_jp 0, but_9e397:「………ステイルメイト。」@
+;＜戦人
+langen:dwave_eng 0, but_9e397:^... Pat.^@
+
+ld r,$BEA_gamanA2,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e519:「……………な、……にィ……。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e519:^... Qu-Quoi... ?^\
+
+
+ld l,$BUT_oyaA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e398:「« 魔法があるから魔法はある »、@:dwave_jp 0, but_9e399:そういう論法には出来ないってのが、俺たちのブラウン管裁判のルールのはずだぜ。」\
+;＜戦人
+langen:dwave_eng 0, but_9e398:^« La magie existe parce que la magie existe ».^@:dwave_eng 0, but_9e399:^ Les règles de notre procès du tube cathodique interdisent justement ce genre de raisonnement, non ?^\
+
+
+ld r,$BEA_GamanA3,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e520:「………そ、……う…だったな………。@:dwave_jp 0, bea_9e521:……く、………くく、…ぐ…。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e520:^... C'est... bien vrai... ^@:dwave_eng 0, bea_9e521:^Kh... kuku... guh...^\
+
+se1 2
+
+ld l,$BUT_nayamuA4,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e400:「誰が！！@/
+langen:dwave_eng 0, but_9e400:^Peu importe qui^@/
+se2 2
+langjp:dwave_jp 0, but_9e401:　何人！！@/
+langen:dwave_eng 0, but_9e401:^ et combien de personnes^@/
+se3 2
+langjp:dwave_jp 0, but_9e402:　魔法を目撃しようとも！@:dwave_jp 0, but_9e403:　それは魔法の存在の証明にはならないッ！！\
+langen:dwave_eng 0, but_9e402:^ ont vu de la magie, ^@:dwave_eng 0, but_9e403:^ça ne prouvera jamais que la magie existe !!^\
+
+ld l,$BUT_oyaA1,80
+
+langjp:dwave_jp 0, but_9e404:　俺はお前が見せてきた全ての魔法の、存在するしないの如何にかかわらず、その全てを無視して、ニンゲンで説明することが出来る。@:dwave_jp 0, but_9e405:それは俺の不可侵の権利である。@:dwave_jp 0, but_9e406:……違ったか？」\
+;＜戦人
+langen:dwave_eng 0, but_9e404:^Que les prodiges que tu m'as montrés soient réels ou non, j'ai le droit de tous les ignorer et de les expliquer par des humains.^@:dwave_eng 0, but_9e405:^ C'est un droit inviolable.^@:dwave_eng 0, but_9e406:^ Je me trompe ?^\
+
+monocro #0000ff
+
+se1 57
+bg white,1
+monocro off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+advchar "-1"
+langjp　その言葉で、青き杭が一層に眩しい光を放ち、私の手を弾き飛ばす。@
+langen^À ces mots, les pieux bleus s'embrasèrent d'une lumière plus éclatante encore et repoussèrent mes mains.^@
+
+se3 55
+
+br
+advchar "27"
+langjp:dwave_jp 0, bea_9e522:^^!s1　……やはり、/
+sl
+langjp:voicedelay 1120:dwave_jp 0, bea_9e523:^^………抜けぬか………、/
+sl
+langjp:voicedelay 1050:dwave_jp 0, bea_9e524:^^…………ぐぅ………。/
+sl
+langen:dwave_eng 0, bea_9e522:^^!s1^ ... Comme je m'en doutais...^@/
+sl
+langen:voicedelay 1120:dwave_eng 0, bea_9e523:^ je n'arrive pas à les arracher...^@/
+sl
+langen:voicedelay 1050:dwave_eng 0, bea_9e524:^ guuuh...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\forest\moon_1a.jpg",":b;bmp\background\forest\moon_1b.png",22  ;fixed lighting issue
+
+langjp　今の戦人に、個別に魔法を引き合いに出して説明を求めたとしても、如何なる手を用いてでも全てを否定してしまうだろう。@
+langen^Battler, tel qu'il est maintenant, nierait tout par n'importe quel moyen, même si je lui citais un à un mes tours de magie en exigeant des explications.^@
+
+br
+langjp　……楼座に見せたマシュマロの魔法だけに限らず、…魔法の奇跡の全てを。\
+langen^... Pas seulement le marshmallow réparé sous les yeux de Rosa... mais tous les miracles de la magie.^\
+
+langjp　マシュマロ程度を如何にして直したかを問い合わねば、もはや妾は魔女であると主張さえ出来ぬのか…。@
+langen^En suis-je donc réduite à devoir lui demander comment j'ai réparé un vulgaire marshmallow pour pouvoir encore prétendre être une sorcière... ?^@
+br
+langjp　そのような瑣末を争わねばならぬほどに、劣勢……。\
+langen^Me voilà si acculée que je dois me battre pour de telles broutilles...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+fede 10,1000
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e525:　妾は、@………無理かも知れぬ………。\
+langen:dwave_eng 0, bea_9e525:^Pour moi, c'est peut-être...^@^ impossible...^\
+
+langjp:dwave_jp 0, bea_9e526:　……わかっている…。@
+langen:dwave_eng 0, bea_9e526:^Je le sais...^@
+br
+langjp:dwave_jp 0, bea_9e527:　元より、勝ちの無きゲームだったのだ。@
+langjp:dwave_jp 0, bea_9e528:　…なれば、いつか敗れる日が来るのは当然のこと。\
+langen:dwave_eng 0, bea_9e527:^Depuis le début, cette partie ne m'offrait aucune victoire possible.^@
+langen:dwave_eng 0, bea_9e528:^Il était donc naturel qu'un jour, je finisse par être vaincue.^\
+
+langjp:dwave_jp 0, bea_9e529:^^!s1　妾は、戦人に敗れるためだけに、/
+sl
+langjp:voicedelay 3960:dwave_jp 0, bea_9e530:^^今日までを、/
+sl
+langjp:voicedelay 1070:dwave_jp 0, bea_9e531:^^………戦ってきたというのか………。/
+sl
+langen:dwave_eng 0, bea_9e529:^^!s1^Moi... était-ce uniquement pour être vaincue par Battler... ^@/
+sl
+langen:voicedelay 3960:dwave_eng 0, bea_9e530:^que jusqu'à ce jour...^@/
+sl
+langen:voicedelay 1070:dwave_eng 0, bea_9e531:^ j'ai continué à me battre... ?^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_spiral_1a.jpg",":b;bmp\background\efe\different_spiral_1a.png",22
+advchar "27"
+langjp:dwave_jp 0, bea_9e532:　…………勝てるかもしれないと、/
+sl
+langjp:voicedelay 2790: …始めたゲームだった。@
+advchar "27"
+langen:dwave_eng 0, bea_9e532:^... C'est en me disant que je pourrais peut-être gagner...^@/
+sl
+langen:voicedelay 2790:^ que j'avais commencé cette partie.^@
+br
+advchar "27"
+langjp:dwave_jp 0, bea_9e533:　簡単には勝てなくても、無限に繰り返すゲームの中で、いつかは奇跡が起こると信じてた。@
+langen:dwave_eng 0, bea_9e533:^Même si la victoire ne viendrait pas facilement, je croyais qu'à force de répéter cette partie à l'infini, un miracle finirait par se produire.^@
+br
+langjp:dwave_jp 0, bea_9e534:　……何しろ、妾には絶対に勝つという、絶対の意思がある。\
+langen:dwave_eng 0, bea_9e534:^... Après tout, j'avais une volonté absolue : celle de gagner, quoi qu'il arrive.^\
+
+mono 1
+
+me1v 17,40
+
+print 8
+
+langjp:dwave_jp 0, bea_9e535:　……しかし、今やその奇跡は完全に失われた。\
+langen:dwave_eng 0, bea_9e535:^... Mais ce miracle-là a désormais entièrement disparu.^\
+
+langjp:dwave_jp 0, bea_9e536:　そして、絶対の意思は戦人に宿り、………私には万一の奇跡も絶対にない。@
+langen:dwave_eng 0, bea_9e536:^Cette volonté absolue habite à présent Battler... et pour moi, il n'existe absolument plus le moindre miracle.^@
+br
+
+langjp:dwave_jp 0, bea_9e537:　いや、奇跡も絶対^~ib~^も^~ib~^ない、が正しいのか……。\
+langen:dwave_eng 0, bea_9e537:^Ou plutôt, devrais-je dire qu'il n'existe plus pour moi ni miracle ~ib~ni~ib~ absolu...^\
+
+langjp:dwave_jp 0, bea_9e538:　勝利はなく、引き分けによる終了もない。@
+langen:dwave_eng 0, bea_9e538:^Je n'aurai aucune victoire... et pas même de match nul.^@
+br
+langjp:dwave_jp 0, bea_9e539:^^!s1　……唯一許された決着、/
+sl
+langjp:voicedelay 2190:dwave_jp 0, bea_9e540:^^……敗北を与えられるまで、/
+sl
+langjp:voicedelay 2170:dwave_jp 0, bea_9e541:^^………延々と抗うだけの、……ゲーム……。/
+sl
+langen:dwave_eng 0, bea_9e539:^^!s1^ ... La seule issue qui me soit permise...^@/
+sl
+langen:voicedelay 2190:dwave_eng 0, bea_9e540:^ jusqu'à ce que la défaite me soit infligée...^@/
+sl
+langen:voicedelay 2170:dwave_eng 0, bea_9e541:^ c'est de lutter, encore et encore, dans une partie sans fin...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+mono off
+print 1
+
+fede 10,1000
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e542:　そうさ、私は、@:dwave_jp 0, bea_9e543:………戦人に殺されるためだけに、………戦っている………。\
+langen:dwave_eng 0, bea_9e542:^Oui, moi...^@:dwave_eng 0, bea_9e543:^ je ne me bats... que pour être tuée par Battler...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld c,$BUT_majimeA3,26
+
+advchar "-1"
+langjp　……戦人の、瞳を見る。@
+langjp　その中にいるのは、私ではない。@
+langen^Je regarde Battler dans les yeux.^@
+langen^Ce qui s'y reflète... ce n'est pas moi.^@
+br
+langjp　………彼の帰りを待つ、妹と、…連れ帰るべき家族の姿が映っている。\
+langen^... Ce sont sa petite sœur, qui attend son retour... et la famille qu'il doit ramener avec lui.^\
+
+langjp　私の存在などもはや、……彼にとっては一人の存在でさえない。@
+langen^À ses yeux, je n'existe déjà même plus... en tant que personne.^@
+br
+langjp　…当然だ。@彼は最初から、私という個人を否定するために戦っている。\
+langen^... C'est normal. ^@^Depuis le tout début, il se bat pour nier la personne que je suis.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+me1v 5,40
+
+mono 1
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\mhal_2an.jpg",":b;bmp\background\mainbuilding\mhal_2an.png",0
+ld l,$BUT_defA2,0
+ld r,$BEA_waraiA2,2
+
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e544:　…………あぁ、…前回のゲームは、/
+sl
+langjp:voicedelay 5000:dwave_jp 0, bea_9e545:^^…面白かったなァ……。@
+langen:dwave_eng 0, bea_9e544:^... Ah... la partie précédente...^@/
+sl
+langen:voicedelay 5000:dwave_eng 0, bea_9e545:^ qu'est-ce que c'était amusant...^@
+br
+langjp:dwave_jp 0, bea_9e546:　ちょっと騙しただけだったけど、@:dwave_jp 0, bea_9e547:……ほんのわずかの間だけでも分かり合えたような感じになって、……面白かったなぁ……。\
+langen:dwave_eng 0, bea_9e546:^Je ne faisais que le tromper un peu, ^@:dwave_eng 0, bea_9e547:^mais, l'espace d'un instant, j'ai eu l'impression que nous nous comprenions... C'était amusant...^\
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\mainbuilding\m2f_p1cn.jpg",":b;bmp\background\mainbuilding\m2f_p1cn.png",0
+ld l,$WAL_akuwaraiA2,0
+ld r,$BEA_akuwaraiA2,2
+
+langjp:dwave_jp 0, bea_9e548:　……そうだよ、/
+sl
+langjp:voicedelay 1170:dwave_jp 0, bea_9e549:^^……あそこで手を打っておけばよかったんだよ…。@
+langjp:dwave_jp 0, bea_9e550:　戦人がコロっと騙されたまま、永遠に騙し続けてれば良かったんだ…。\
+langen:dwave_eng 0, bea_9e548:^C'est vrai^@/
+sl
+langen:voicedelay 1170:dwave_eng 0, bea_9e549:^... j'aurais dû m'arrêter là...^@
+langen:dwave_eng 0, bea_9e550:^J'aurais dû continuer à le tromper éternellement, tant que Battler se laissait si facilement duper...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+mono off
+
+langjp:dwave_jp 0, bea_9e551:^^!s1　…………でも、/
+sl
+langjp:voicedelay 640:dwave_jp 0, bea_9e552:^^………駄目なんだよなァ…。@
+langen:dwave_eng 0, bea_9e551:^^!s1^... Mais...^@/
+sl
+langen:voicedelay 640:dwave_eng 0, bea_9e552:^ ça ne marche pas comme ça, hein... ?^@
+br
+langjp:dwave_jp 0, bea_9e553:　………あれじゃ、/
+sl
+langjp:voicedelay 2270:dwave_jp 0, bea_9e554:^^…本当の勝ちじゃないんだよなぁ………。/
+sl
+langen:dwave_eng 0, bea_9e553:^... Ça...^@/
+sl
+langen:voicedelay 2270:dwave_eng 0, bea_9e554:^ ça n'aurait pas été une vraie victoire...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+
+me1v 16,40
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld c,$BUT_majimeA1,22
+ld c,$BUT_komaruA2,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e407:「…………これで、……チェックメイトか？@:dwave_jp 0, but_9e408:　ベアトリーチェ。」\
+;＜戦人
+langen:dwave_eng 0, but_9e407:^Alors... échec et mat ? ^@:dwave_eng 0, but_9e408:^Béatrice ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_2bp.jpg",":b;bmp\background\garden\rose_2bpr.png",22  ;fixed lighting issue
+;ld c,$BEA_GamanA7,22
+
+advchar "-1"
+langjp　ベアトは何本もの青き杭に打ち抜かれ、立ったままの姿で大地に、滅多刺しの串刺しにされている。@
+langen^Transpercée de toutes parts par une multitude de pieux bleus, Béato restait clouée au sol, debout.^@
+br
+langjp　そのため、倒れることさえ許されず、@………空を仰ぐような姿勢のまま、……縫い止められているのだ……。\
+langen^Ainsi, elle n'avait même pas le droit de s'effondrer...^@^ et demeurait épinglée là... le visage tourné vers le ciel...^\
+
+langjp　その無残な姿は、１８人の命を無限に弄び、幾百幾千と殺し続けた残忍なる魔女の末路に、@……相応しいかもしれない。\
+langen^Ce spectacle atroce...^@^ était peut-être une fin à la hauteur de la cruelle sorcière qui avait joué sans fin avec la vie de dix-huit personnes, les tuant encore et encore, par centaines, par milliers.^\
+
+me2v 12,50
+dllefe 1,2
+
+langjp　しとしとと、……誰かが何かを悲しむような雨が、降り始める。@
+langjp　……その雨の中、ベアトは雨曝しとなって、……磔にされていた……。\
+langen^Une pluie fine se mit à tomber... comme si quelqu'un pleurait en silence.^@
+langen^... Livrée à la pluie, Béato restait là... crucifiée...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld c,$BUT_NayamuA1,24
+
+advchar "10"
+langjp:dwave_jp 0, but_9e409:「……終わりなのか、ベアト。」\
+;＜戦人
+langen:dwave_eng 0, but_9e409:^C'est fini, Béato ?^\
+
+;bg rose_3aN,0
+;ld r,$BEA_GamanA3,23
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e555:^^!s1「……………ぐぅの音も、/
+sl
+langjp:voicedelay 3240:dwave_jp 0, bea_9e556:^^………出ぬわ………。」/
+sl
+langen:dwave_eng 0, bea_9e555:^^!s1^... Je n'ai même plus...^@/
+sl
+langen:voicedelay 3240:dwave_eng 0, bea_9e556:^ la force de répondre...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜ベアト
+
+
+;ld l,$BUT_MajimeA4,23
+
+advchar "10"
+langjp:dwave_jp 0, but_9e410:「まだだろ。@:dwave_jp 0, but_9e411:お前はこの程度で、終わる女じゃねぇだろ。」\
+;＜戦人
+langen:dwave_eng 0, but_9e410:^Pas encore.^@:dwave_eng 0, but_9e411:^ T'es pas du genre à t'arrêter là.^\
+
+
+;ld r,$BEA_GamanA5,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e557:^^!s1「……………………。@:dwave_jp 0, bea_9e558:………無茶を、/
+sl
+langjp:voicedelay 1010:dwave_jp 0, bea_9e559:^^………言う……。@:dwave_jp 0, bea_9e560:………この姿がどう見たら、/
+sl
+langjp:voicedelay 2350:dwave_jp 0, bea_9e561:^^………終わっていないように、/
+sl
+langjp:voicedelay 1580:dwave_jp 0, bea_9e562:^^………見えるのか……。@:dwave_jp 0, bea_9e563:……早く、トドメを刺せよ………。」/
+sl
+langen:dwave_eng 0, bea_9e557:^^!s1^...^@:dwave_eng 0, bea_9e558:^ Tu en as...^@/
+sl
+langen:voicedelay 1010:dwave_eng 0, bea_9e559:^ de bonnes... ^@:dwave_eng 0, bea_9e560:^Tu me vois dans cet état...^@/
+sl
+langen:voicedelay 2350:dwave_eng 0, bea_9e561:^ et tu crois encore que ce n'est pas...^@/
+sl
+langen:voicedelay 1580:dwave_eng 0, bea_9e562:^ fini... ? ^@:dwave_eng 0, bea_9e563:^... Dépêche-toi... achève-moi...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜ベアト
+
+se1 38
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2a.jpg",":b;bmp\background\efe\blood_2a.png",1
+wait 1000
+
+se2 38
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2c.jpg",":b;bmp\background\efe\blood_2c.png",1
+wait 400
+
+se3v 38,90
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2e.jpg",":b;bmp\background\efe\blood_2e.png",1
+
+wait 1000
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld l,$BUT_NiramuA1,2
+
+advchar "10"
+langjp:dwave_jp 0, but_9e412:「……………………………………。」\
+;＜戦人
+langen:dwave_eng 0, but_9e412:^^\
+
+ld r,$BEA_gamanA3,22
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e564:^^!s1「…言っちまえよ。@:dwave_jp 0, bea_9e565:…お前の、青き真実で。@:dwave_jp 0, bea_9e566:…………« 以上により、/
+sl
+langjp:voicedelay 1590:dwave_jp 0, bea_9e567:^^……魔女は存在しない »、/
+sl
+langjp:voicedelay 2840:dwave_jp 0, bea_9e568:^^…って……。@:dwave_jp 0, bea_9e569:………言っちまえよ………。@:dwave_jp 0, bea_9e570:………その一撃で、/
+sl
+langjp:voicedelay 1750:dwave_jp 0, bea_9e571:^^……私の息の根を、/
+sl
+langjp:voicedelay 1830:dwave_jp 0, bea_9e572:^^……………止めてしまえ………。」/
+sl
+langen:dwave_eng 0, bea_9e564:^^!s1^... Dis-le. ^@:dwave_eng 0, bea_9e565:^... Avec ta... vérité bleue. ^@:dwave_eng 0, bea_9e566:^... « Par conséquent^@/
+sl
+langen:voicedelay 1590:dwave_eng 0, bea_9e567:^... les sorcières n'existent pas. »^@/
+sl
+langen:voicedelay 2840:dwave_eng 0, bea_9e568:^... Dis-le... ^@:dwave_eng 0, bea_9e569:^Dis-le donc... ^@:dwave_eng 0, bea_9e570:^Et d'un seul coup^@/
+sl
+langen:voicedelay 1750:dwave_eng 0, bea_9e571:^... achève-moi...^@/
+sl
+langen:voicedelay 1830:dwave_eng 0, bea_9e572:^ une bonne fois pour toutes...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜ベアト
+
+ld l,$BUT_majimeA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e413:「駄目だな。」\
+;＜戦人
+langen:dwave_eng 0, but_9e413:^Non.^\
+
+
+ld r,$BEA_GamanA5,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e573:「…………ほぅ……。@:dwave_jp 0, bea_9e574:………妾にこれ以上、……生き恥を、………晒せというのか…。@:dwave_jp 0, bea_9e575:すでに決着はついておろうに……。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e573:^... Oh... ^@:dwave_eng 0, bea_9e574:^Tu veux donc que je continue à vivre... couverte de honte... ? ^@:dwave_eng 0, bea_9e575:^L'issue est pourtant déjà scellée...^\
+
+ld l,$BUT_oyaA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e414:「立てよ。@:dwave_jp 0, but_9e415:俺たちの殴り合いは、まだ終わってない。」\
+;＜戦人
+langen:dwave_eng 0, but_9e414:^Debout.^@:dwave_eng 0, but_9e415:^ Notre baston n'est pas terminée.^\
+
+ld r,$BEA_gamanA3,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e576:「………………まだ、……とな………。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e576:^... Pas encore... dis-tu... ?^\
+
+ld l,$BUT_komaruA3,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e416:「お前のそれは、負けじゃない。@:dwave_jp 0, but_9e417:もう止めたと、投了しているだけだ。」\
+;＜戦人
+langen:dwave_eng 0, but_9e416:^Ça, c'est pas une défaite.^@:dwave_eng 0, but_9e417:^ T'as juste baissé les bras et déclaré forfait.^\
+
+ld r,$BEA_GamanA2,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e577:「………いいでは…ないかよ……。@:dwave_jp 0, bea_9e578:……投了で…。@:dwave_jp 0, bea_9e579:……それでそなたの勝ちだろうが。@/
+langjp:dwave_jp 0, bea_9e580:^^!s1………とっとと、/
+sl
+langjp:voicedelay 1040:dwave_jp 0, bea_9e581:^^……妹のところへ、/
+sl
+langjp:voicedelay 2820:dwave_jp 0, bea_9e582:^^…帰るがいい……。@:dwave_jp 0, bea_9e583:妾などこの場に、/
+sl
+langjp:voicedelay 2040:dwave_jp 0, bea_9e584:^^………打ち棄てていけ………。」/
+sl
+langen:dwave_eng 0, bea_9e577:^... Et alors... ? ^@:dwave_eng 0, bea_9e578:^... Si j'abandonne...^@:dwave_eng 0, bea_9e579:^ c'est bien toi qui gagnes, non ?^@/
+langen:dwave_eng 0, bea_9e580:^^!s1^ ... Va donc...^@/
+sl
+langen:voicedelay 1040:dwave_eng 0, bea_9e581:^ retrouver ta petite sœur...^@/
+sl
+langen:voicedelay 2820:dwave_eng 0, bea_9e582:^ sans plus tarder... ^@:dwave_eng 0, bea_9e583:^Et laisse-moi...^@/
+sl
+langen:voicedelay 2040:dwave_eng 0, bea_9e584:^ là où je suis...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜ベアト
+
+ld l,$BUT_MajimeA4,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e418:「俺は言ったはずだ。@:dwave_jp 0, but_9e419:逃げない。@:dwave_jp 0, but_9e420:そして、/
+sl
+langen:dwave_eng 0, but_9e418:^Je te l'ai déjà dit. ^@:dwave_eng 0, but_9e419:^Je ne fuirai pas. ^@:dwave_eng 0, but_9e420:^Et... ^@/
+sl
+E_B
+langjp:dwave_jp 0, but_9e421:お前を逃がさないとな。」@
+;＜戦人
+langen:dwave_eng 0, but_9e421:^je ne te laisserai pas fuir non plus.^@
+
+ld r,$BEA_GamanA5,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e585:「……………………………。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e585:^...^\
+
+ld l,$BUT_OdorokiA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e422:「お前は、何者だ。@:dwave_jp 0, but_9e423:そして一体、何が望みだったんだ。」\
+;＜戦人
+langen:dwave_eng 0, but_9e422:^Qui es-tu ?^@:dwave_eng 0, but_9e423:^ Et au fond, qu'est-ce que tu voulais vraiment ?^\
+
+mset2ef 22
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e586:　それが知りたくば、……そなたの十八番でも試せば良い……。\
+langen:dwave_eng 0, bea_9e586:^Si tu veux le savoir... tu n'as qu'à sortir ton numéro fétiche... le numéro dix-huit.^\
+
+mendef 22
+
+ld r,$BEA_GamanA2,80
+
+langjp:dwave_jp 0, bea_9e587:^^!s1「……………いいではないか…。@:dwave_jp 0, bea_9e588:…ただの、/
+sl
+langjp:voicedelay 1030:dwave_jp 0, bea_9e589:^^……妄想、/
+sl
+langjp:voicedelay 1200:dwave_jp 0, bea_9e590:^^……幻想……。@:dwave_jp 0, bea_9e591:それで、/
+sl
+langjp:voicedelay 820:dwave_jp 0, bea_9e592:^^……いいではないか……。」/
+sl
+langen:dwave_eng 0, bea_9e587:^^!s1^... Et alors... ? ^@:dwave_eng 0, bea_9e588:^... Je ne serais qu'un...^@/
+sl
+langen:voicedelay 1030:dwave_eng 0, bea_9e589:^ délire, ^@/
+sl
+langen:voicedelay 1200:dwave_eng 0, bea_9e590:^une illusion... ^@:dwave_eng 0, bea_9e591:^N'est-ce pas...^@/
+sl
+langen:voicedelay 820:dwave_eng 0, bea_9e592:^ suffisant... ?^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜ベアト
+
+ld l,$BUT_oyaA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e424:「全然駄目だぜ。@:dwave_jp 0, but_9e425:俺はお前を、/
+sl
+langen:dwave_eng 0, but_9e424:^Ça ne marche pas du tout. ^@:dwave_eng 0, but_9e425:^Je ne... ^@/
+sl
+E_A
+langjp:dwave_jp 0, but_9e426:逃がさない。」@
+;＜戦人
+langen:dwave_eng 0, but_9e426:^te laisserai pas fuir.^@
+
+ld r,$BEA_gamanA4,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e593:「…………………………………。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e593:^...^\
+
+;se3 21
+
+bgm1 85
+
+ld l,$BUT_MajimeA4,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e427:「俺はお前を、打ち破る。@:dwave_jp 0, but_9e428:このまま逃がしてなるもんか。」@
+langen:dwave_eng 0, but_9e427:^Je vais te vaincre.^@:dwave_eng 0, but_9e428:^ Pas question de te laisser filer comme ça.^@
+
+me1v 12,40
+
+ld r,$BEA_gamanA5,80
+advchar "27"
+langjp:dwave_jp 0, bea_9e594:「……………………………。」\
+langen:dwave_eng 0, bea_9e594:^...^\
+
+ld l,$BUT_odorokiA1,80
+
+me2v 5,50
+
+advchar "10"
+langjp:dwave_jp 0, but_9e429:「お前をうやむやにしたまま、幻想の暗闇に逃げ帰らせはしない。@:dwave_jp 0, but_9e430:………打ち破る。@:dwave_jp 0, but_9e431:完全にな。@:dwave_jp 0, but_9e432:だから立て。@:dwave_jp 0, but_9e433:弱々しいふりなんかするな！@:dwave_jp 0, but_9e434:　お前はまだ何手か隠してる！@:dwave_jp 0, but_9e435:　俺にはわかる！」\
+;＜戦人
+langen:dwave_eng 0, but_9e429:^Je ne te laisserai pas retourner te terrer dans les ténèbres de tes illusions sans avoir tiré les choses au clair.^@:dwave_eng 0, but_9e430:^ ... Je vais te vaincre.^@:dwave_eng 0, but_9e431:^ Complètement.^@:dwave_eng 0, but_9e432:^ Alors debout.^@:dwave_eng 0, but_9e433:^ Arrête de jouer les faibles !^@:dwave_eng 0, but_9e434:^ T'as encore quelques coups en réserve !^@:dwave_eng 0, but_9e435:^ Je le sais !^\
+
+ld r,$BEA_HanbesoA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e595:「……………………なぜ、……大人しく見逃してくれぬのか……。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e595:^... Pourquoi... ne me laisses-tu pas simplement partir... ?^\
+
+
+ld l,$BUT_kuyasigaruA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e436:「親父を、お袋を、そして縁寿を。@:dwave_jp 0, but_9e437:いとこのみんなや親族のみんなを。@:dwave_jp 0, but_9e438:そして使用人のみんなを。@:dwave_jp 0, but_9e439:お前はあれだけ弄んで殺した…！！@:dwave_jp 0, but_9e440:　その非道を、俺は絶対に忘れない、許さない！\
+langen:dwave_eng 0, but_9e436:^Papa, Maman, et Ange.^@:dwave_eng 0, but_9e437:^ Tous mes cousins, toute la famille.^@:dwave_eng 0, but_9e438:^ Et tous les domestiques.^@:dwave_eng 0, but_9e439:^ Tu as joué avec eux et tu les as tués, encore et encore... !!^@:dwave_eng 0, but_9e440:^ Cette cruauté, je ne l'oublierai jamais, et je ne te la pardonnerai jamais !^\
+
+ld l,$BUT_sakebuA1,80
+
+langjp:dwave_jp 0, but_9e441:　俺の肩にはよ、……まだ縁寿の、腕の感触が残ってるんだよ…！！@/
+langen:dwave_eng 0, but_9e441:^Je sens encore... les bras d'Ange autour de mes épaules... !! ^@/
+
+me3v 17,50
+
+ld l,$BUT_sakebuA2,80
+
+langjp:dwave_jp 0, but_9e442:　俺はッ、お前の非道を、許さないッ…！！@:dwave_jp 0, but_9e443:　だから、そんなことで、逃がさない…！！！」\
+;＜戦人
+langen:dwave_eng 0, but_9e442:^Je ne te pardonnerai jamais ta cruauté... !! ^@:dwave_eng 0, but_9e443:^Alors c'est pas comme ça que tu vas t'en tirer... !!!^\
+
+;ld l,$BUT_MajimeA3,80
+
+advchar "-1"
+langjp　戦人の目が憎悪の炎に燃える…。@
+langen^Les yeux de Battler brûlaient de haine...^@
+br
+langjp　……弱々しい仕草に同情を得られたのは、もう遠い過去の話だ。@
+langjp　……一度騙された戦人は、二度と妾に情けなど掛けない。\
+langen^Le temps où une attitude fragile pouvait éveiller sa compassion était depuis longtemps révolu.^@
+langen^... Trompé une fois, Battler n'aura plus jamais la moindre pitié pour moi.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+dllefe_off
+print 1
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e596:^^!s1　狼と羊のパズルどころか、/
+sl
+langjp:voicedelay 3080:dwave_jp 0, bea_9e597:^^………これじゃア、狼少年だなぁ……………。@
+langen:dwave_eng 0, bea_9e596:^^!s1^On est bien loin de l'énigme des loups et des moutons... ^@/
+sl
+langen:voicedelay 3080:dwave_eng 0, bea_9e597:^me voilà devenue le garçon qui criait au loup...^@
+br
+langjp:dwave_jp 0, bea_9e598:　…………どうすればいいんだよ、妾は………。@:dwave_jp 0, bea_9e599:………どうすれば…………。/
+sl
+langen:dwave_eng 0, bea_9e598:^Qu'est-ce que je suis censée faire, moi... ? ^@:dwave_eng 0, bea_9e599:^... Qu'est-ce que je dois faire... ?^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e600:　……負けを認めぬためだけに、無限に戦うのも、……無限の魔女に相応しき無限の拷問か。@
+langen:dwave_eng 0, bea_9e600:^... Me battre à l'infini, à seule fin de ne pas reconnaître ma défaite... est-ce donc la torture infinie qui sied à la Sorcière Infinie ?^@
+br
+langjp:dwave_jp 0, bea_9e601:　……………戦人に勝利を与えぬために、無限に嫌がらせを繰り返すのもまた、無限の魔女なのか………。\
+langen:dwave_eng 0, bea_9e601:^... Harceler Battler à l'infini pour ne jamais lui accorder la victoire... est-ce donc cela aussi, être la Sorcière Infinie... ?^\
+
+fede 10,1000
+
+langjp:dwave_jp 0, bea_9e602:^^!s1　……………悲しいなぁ……。@
+langen:dwave_eng 0, bea_9e602:^^!s1^... Que c'est triste...^@
+br
+langjp:dwave_jp 0, bea_9e603:　………こんなのが、/
+sl
+langjp:voicedelay 1470:dwave_jp 0, bea_9e604:^^………無限の魔法なのかぁ………。\
+langen:dwave_eng 0, bea_9e603:^C'est donc...^@/
+sl
+langen:voicedelay 1470:dwave_eng 0, bea_9e604:^ cela, la magie de l'Infini... ?^\
+
+langjp:dwave_jp 0, bea_9e605:　もう、/
+sl
+langjp:voicedelay 780:dwave_jp 0, bea_9e606:^^………嫌だ………。@
+langen:dwave_eng 0, bea_9e605:^J'en ai...^@/
+sl
+langen:voicedelay 780:dwave_eng 0, bea_9e606:^ assez...^@
+br
+langjp:dwave_jp 0, bea_9e607:　魔女たちに、/
+sl
+langjp:voicedelay 1150:dwave_jp 0, bea_9e608:^^………無限に玩具にされるなんて、/
+sl
+langjp:voicedelay 2430:dwave_jp 0, bea_9e609:^^…………もう、/
+sl
+langjp:voicedelay 600:dwave_jp 0, bea_9e610:^^……嫌だ……。/
+sl
+langen:dwave_eng 0, bea_9e607:^J'en ai...^@/
+sl
+langen:voicedelay 1150:dwave_eng 0, bea_9e608:^ assez...^@/
+sl
+langen:voicedelay 2430:dwave_eng 0, bea_9e609:^ d'être éternellement le jouet...^@/
+sl
+langen:voicedelay 600:dwave_eng 0, bea_9e610:^ des sorcières...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_spiral_1a.jpg",":b;bmp\background\efe\different_spiral_1a.png",8
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e611:　勝ちはなく、引き分け終了もない。@
+langen:dwave_eng 0, bea_9e611:^Je n'aurai ni victoire... ni même de match nul.^@
+br
+langjp:dwave_jp 0, bea_9e612:　……ならば、妾を解放してくれる結末は、ひとつしかない。@
+langen:dwave_eng 0, bea_9e612:^... Alors il ne reste qu'une seule fin qui puisse me libérer.^@
+br
+langjp:dwave_jp 0, bea_9e613:　……ふ、……ははははははは……。\
+langen:dwave_eng 0, bea_9e613:^... Fu... hahahahahahaha...^\
+
+me5v 17,0
+fedexx 0,0,0,0,0,50,3000
+textoff
+wait 1000
+
+langjp:dwave_jp 0, bea_9e614:　魔女の道に堕ちた時から。@
+langjp:dwave_jp 0, bea_9e615:　悪魔と契約をしたその日から。@
+langen:dwave_eng 0, bea_9e614:^Depuis l'instant où je suis tombée dans la voie des sorcières.^@
+langen:dwave_eng 0, bea_9e615:^Depuis le jour où j'ai conclu un pacte avec un démon.^@
+br
+langjp:dwave_jp 0, bea_9e616:　………末路は悲劇であると、約束されていたではないか………。\
+langen:dwave_eng 0, bea_9e616:^... Il était écrit que ma fin serait tragique, n'est-ce pas... ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+me1v 13,50
+
+dllefe 1,1
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_2bp.jpg",":b;bmp\background\garden\rose_2bpr.png",0  ;fixed lighting issue
+ld c,$BUT_sakebuB1,22
+
+advchar "10"
+langjp:dwave_jp 0, but_9e444:「どうしたッ！！@:dwave_jp 0, but_9e445:　黄金の魔女、ベアトリーチェッ！！@:dwave_jp 0, but_9e446:　六軒島の支配者ならば、最後もそれに相応しい貫禄を見せてみろぉおおおおおおおおおぉぉ！！！」\
+;＜戦人
+langen:dwave_eng 0, but_9e444:^Qu'est-ce qui t'arrive ?!!^@:dwave_eng 0, but_9e445:^ Sorcière d'Or, Béatrice !!^@:dwave_eng 0, but_9e446:^ Si t'es vraiment la maîtresse de Rokkenjima, alors montre-moi jusqu'au bout une fin digne de ce noooooooooom !!!^\
+
+textoff
+se1v 27,100
+wait 100
+se2v 27,100
+wait 100
+se3v 27,100
+
+wait 300
+
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",42
+
+advchar "-1"
+langjp　落雷。@
+langen^La foudre tomba.^@
+br
+langjp　……世界が白く潰れる。@
+langen^... Le monde s'abîma dans un éclat blanc.^@
+br
+langjp　………六軒島の支配者に相応しき、最期を。\
+langen^... Une fin digne... de la maîtresse de Rokkenjima.^\
+
+dllefe_off
+print 1
+;bg rose_2cN,22
+E_A
+
+br
+langjp　はは、………はっははははははははは………。\
+langen^Haha... hahahahahahahahaha...^\
+
+
+bgm1v 73,85
+
+textoff
+
+se1v 2,100
+mbg white,1
+mcbg 0
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",0
+;lsp2 4,$BEA_gamanA6,500,350,200,200,0
+lsp_var 112,"bmp\zoom\BEA_gamanA6Z20",-260,0  ;convert to widescreen
+print 22
+
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e617:「はっはははははは……、わっはっはっはははははははははははははは…！！！」@
+;＜ベアト
+langen:dwave_eng 0, bea_9e617:^Hahahahahahaha... wahahahahahahahahahahahahahaha... !!!^@
+
+;ld r,$BUT_MajimeA3,24
+textoff
+;lsp2 4,$BEA_gamanA6,500,350,200,200,0
+;lsp2 3,$BUT_MajimeA3,150,480,200,200,0
+lsp_var 111,"bmp\zoom\BUT_MajimeA3Z20",-187,0  ;convert to widescreen
+print 23
+
+advchar "10"
+langjp:dwave_jp 0, but_9e447:「………………………。」\
+;＜戦人
+langen:dwave_eng 0, but_9e447:^...^\
+
+advchar "-1"
+langjp　ベアトは青き杭に貫かれたまま、……雨空に向かい、笑い声をあげる。@
+langjp　そしてゆっくりと顔を上げ、……戦人を見据えた。\
+langen^Toujours transpercée par les pieux bleus... Béato éclata de rire, face au ciel pluvieux.^@
+langen^Puis elle baissa lentement la tête... et fixa Battler.^\
+
+;ld c,$BEA_AkuwaraiA4,80
+textoff
+
+se1v 2,100
+se2v 37,100
+mbg white,1
+mcbg 0
+
+
+;lsp2 4,$BEA_ikariA2,500,350,200,200,0
+;lsp2 3,$BUT_MajimeA3,150,480,200,200,0
+lsp_var 112,"bmp\zoom\BEA_ikariA2Z20",-260,0  ;convert to widescreen
+print 2
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e618:「………愚か者め。@:dwave_jp 0, bea_9e619:……そなたの健闘を讃え、勝ちを譲ってやろうと思ったのに…。@:dwave_jp 0, bea_9e620:………慢心したな、後悔するぞ……。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e618:^... Imbécile.^@:dwave_eng 0, bea_9e619:^ ... J'allais saluer ta vaillance et te céder la victoire...^@:dwave_eng 0, bea_9e620:^ Tu as péché par orgueil. Tu vas le regretter...^\
+
+textoff
+;lsp2 4,$BEA_ikariA2,500,350,200,200,0
+;lsp2 3,$BUT_MajimeA4,150,480,200,200,0
+lsp_var 111,"bmp\zoom\BUT_MajimeA4Z20b",-187,0  ;convert to widescreen
+print 80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e448:「それは譲られるものじゃねぇ。@:dwave_jp 0, but_9e449:お前から奪い取るものだッ！！@:dwave_jp 0, but_9e450:　お前だってそうだろうが！！@:dwave_jp 0, but_9e451:　俺が、魔女はいてもいいかななんて言い出す、そんな甘っちょろい勝ち方が納得できなかったから、前回はわざとああして最後にぶっ壊してくれたんだろうが…！！！@:dwave_jp 0, but_9e452:　そうさ、俺は前回、お前に一度情けをもらってたんじゃねぇか！！\
+langen:dwave_eng 0, but_9e448:^Une victoire, ça se cède pas.^@:dwave_eng 0, but_9e449:^ Ça s'arrache !!^@:dwave_eng 0, but_9e450:^ Et pour toi, c'est pareil, non ?!!^@:dwave_eng 0, but_9e451:^ La dernière fois, t'as tout fait voler en éclats exprès, parce que t'acceptais pas une victoire aussi molle, où j'allais finir par dire que les sorcières avaient peut-être le droit d'exister... !!!^@:dwave_eng 0, but_9e452:^ C'est ça ! La dernière fois, t'as eu pitié de moi !!^\
+
+textoff
+
+se1v 2,100
+mbg white,1
+mcbg 0
+
+;lsp2 4,$BEA_ikariA2,500,350,200,200,0
+;lsp2 3,$BUT_sakebuA1,150,480,200,200,0
+lsp_var 111,"bmp\zoom\BUT_sakebuA1Z20",-187,0  ;convert to widescreen
+print 2
+
+langjp:dwave_jp 0, but_9e453:　だからその借りを、これで返す！　立てッ！！！@:dwave_jp 0, but_9e454:　俺の敵、俺の黄金の魔女ッ、ベアトリーチェッ！！！」\
+;＜戦人
+langen:dwave_eng 0, but_9e453:^Alors je te rends la pareille ! Debout !!!^@:dwave_eng 0, but_9e454:^ Mon ennemie, ma Sorcière d'Or, Béatrice !!!^\
+
+
+textoff
+;lsp2 4,$BEA_hanbesoA6,500,350,200,200,0
+;lsp2 3,$BUT_sakebuA1,150,480,200,200,0
+lsp_var 112,"bmp\zoom\BEA_hanbesoA6Z20",-260,0  ;convert to widescreen
+print 42
+
+
+se1v 2,100
+se2v 37,100
+mbg white,1
+mcbg 0
+
+;lsp2 4,$BEA_gamanA6,500,350,200,200,0
+;lsp2 3,$BUT_sakebuA1,150,480,200,200,0
+lsp_var 112,"bmp\zoom\BEA_gamanA6Z20",-260,0  ;convert to widescreen
+print 2
+
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e621:「はっははは……。@:dwave_jp 0, bea_9e622:馬鹿が。@/
+langen:dwave_eng 0, bea_9e621:^Hahahaha... ^@:dwave_eng 0, bea_9e622:^Imbécile.^@/
+
+E_MA
+se1v 2,100
+se2v 37,100
+se3v 27,100
+mbg white,1
+mcbg 0
+
+textoff
+;lsp2 4,$BEA_ikariA2,500,350,200,200,0
+;lsp2 3,$BUT_sakebuA1,150,480,200,200,0
+lsp_var 112,"bmp\zoom\BEA_ikariA2Z20",-260,0  ;convert to widescreen
+print 2
+
+langjp:dwave_jp 0, bea_9e623:………馬鹿があああぁあぁ、っはっはははははははははははッ！！@:dwave_jp 0, bea_9e624:　ゥ愚か者がぁ…！！@:dwave_jp 0, bea_9e625:　二度とチャンスがあると思うなァ？！@:dwave_jp 0, bea_9e626:　うおあああぁあああああッ！！！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e623:^ ... Imbéciiiiiiiiiiiiiile, hahahahahahahahahahahaha !! ^@:dwave_eng 0, bea_9e624:^Pauvre sot... !! ^@:dwave_eng 0, bea_9e625:^Ne crois pas que tu auras une seconde chance !! ^@:dwave_eng 0, bea_9e626:^Uoaaaaaaaahhhhh !!!^\
+
+se1v 1006,100
+se2v 27,100
+se3v 1006,100
+
+csp_var 111
+csp_var 112
+
+bg white,1
+
+if %is_old_sprites = 1 bfly1 0  ;only activates if old sprites are on
+
+;bg rose_3bN,2
+wait 500
+
+se1v 55,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\stake1a.jpg",":b;bmp\background\efe\stake1a.png",0
+ld5 c,$BEA_gamanA7,99,3000,"breakup.dll/llb"
+
+advchar "-1"
+langjp　ベアトが叫ぶと、胸を貫いていた青き杭が砕け散って消える。@
+langen^Au cri de Béato, les pieux bleus qui lui transperçaient la poitrine volèrent en éclats et disparurent.^@
+br
+langjp　……しかし、足を貫いている一番最初の青き楔は消えない。\
+langen^... Mais le tout premier pieu bleu, celui qui lui transperçait le pied, ne disparut pas.^\
+
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld l,$BUT_MajimeA4,23
+
+advchar "10"
+langjp:dwave_jp 0, but_9e455:「まだ抜けてないぜ。@:dwave_jp 0, but_9e456:１８人目のＸの青き真実が抜けていない…！！」\
+;＜戦人
+langen:dwave_eng 0, but_9e455:^T'as pas encore retiré celui-là.^@:dwave_eng 0, but_9e456:^ La vérité bleue de la dix-huitième personne X est toujours plantée là... !!^\
+
+se1 20
+
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+se2v 57,100
+se3v 57,100
+mono 2
+mbg white,1
+mcbg 0
+bfly1 0
+
+mono off
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld r,$BEA_ikariA1,2
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e627:「そなたの復唱要求の一つに応じる。@:dwave_jp 0, bea_9e628:そなたの推理通り、/
+sl
+langen:dwave_eng 0, bea_9e627:^Je vais répondre à l'une de tes demandes de répétition. ^@:dwave_eng 0, bea_9e628:^Comme tu l'as deviné,^@/
+sl
+se1 59
+langjp:dwave_jp 0, bea_9e629:#ff0000全ゲームの開始時に金蔵はすでに死んでいる！#ffffff@:dwave_jp 0, bea_9e630:　しかし、ならばつまりは１人を抜かせば良いこと！！@/
+langen:dwave_eng 0, bea_9e629:^#ff0000 Kinzo est déjà mort au début de chacune des parties !#ffffff ^@:dwave_eng 0, bea_9e630:^Mais dans ce cas, il suffit de retirer une personne !! ^@/
+se2 59
+langjp:dwave_jp 0, bea_9e631:　#ff0000妾はこれまで、この島には１９人以上の人間は存在しないと宣言してきた。@/
+langen:dwave_eng 0, bea_9e631:^#ff0000Jusqu'ici, j'ai déclaré qu'il n'existait pas plus de dix-huit êtres humains sur cette île. ^@/
+se3 59
+langjp:dwave_jp 0, bea_9e632:それを、金蔵の分、１人減らす！！\
+langen:dwave_eng 0, bea_9e632:^Je retire de ce nombre une personne : Kinzo !!#ffffff^\
+
+ld r,$BEA_akuwaraiA4,80
+
+se1v 2,100
+se2 59
+langjp:dwave_jp 0, bea_9e633:　この島には１８人以上の人間は存在しない！！@/
+langen:dwave_eng 0, bea_9e633:^#ff0000Il n'existe pas plus de dix-sept êtres humains sur cette île !! ^@/
+se3 59
+langjp:dwave_jp 0, bea_9e634:　以上とはつまり１８人目を含めるぞ。@/
+langen:dwave_eng 0, bea_9e634:^« Pas plus de dix-sept », cela exclut bien un dix-huitième. ^@/
+
+se1 59
+langjp:dwave_jp 0, bea_9e635:つまり、１８人目のＸは存在しないッ！！@/
+langen:dwave_eng 0, bea_9e635:^Autrement dit, la dix-huitième personne X n'existe pas !! ^@/
+se2 59
+langjp:dwave_jp 0, bea_9e636:　これは全ゲームに共通することである！！！#ffffff」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e636:^Et cela vaut pour toutes les parties !!!#ffffff^\
+
+
+cbfly 0
+textoff
+
+se1v 20,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade2r.jpg",":b;bmp\background\efe\blade2r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,100 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,100
+
+se2v 20,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade4r.jpg",":b;bmp\background\efe\blade4r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,100 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,100
+
+se3v 20,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade2r.jpg",":b;bmp\background\efe\blade2r.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,100 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,100
+wait 600
+
+		mono 2
+
+E_MA
+se1v 57,100
+se2v 57,100
+se3v 36,100
+bg white,1
+		mono off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade7_2r.jpg",":b;bmp\background\efe\blade7_2r.png",2
+
+se1v 27,100
+se2v 27,100
+bg white,1
+
+bfly2 0
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",42
+
+fedexx 0,50,0,0,0,0,2000
+E_B
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld l,$BUT_FutekiA2,42
+
+me1v 5,70
+
+advchar "10"
+langjp:dwave_jp 0, but_9e457:「そら見ろ。@:dwave_jp 0, but_9e458:やっぱりまだ、とんでもねぇ奥の手を隠してやがったぜ……。@:dwave_jp 0, but_9e459:１７人しか人間のいない島が１８人と偽られてきた。@:dwave_jp 0, but_9e460:それが１人減って１７人になり、ようやく正しい数になったってわけだ。@/
+langen:dwave_eng 0, but_9e457:^Tu vois.^@:dwave_eng 0, but_9e458:^ Je savais que t'avais encore un sacré atout caché dans ta manche...^@:dwave_eng 0, but_9e459:^ Sur cette île, il n'y avait que dix-sept humains, mais on nous faisait croire qu'ils étaient dix-huit.^@:dwave_eng 0, but_9e460:^ En en retirant un, on retombe enfin sur le vrai nombre : dix-sept.^@/
+
+;ld l,$BUT_FutekiA1,80
+
+langjp:dwave_jp 0, but_9e461:…………これで、お前をブチ抜いていた楔が抜かれたな。@:dwave_jp 0, but_9e462:戦いはゼロから仕切り直しってわけだ…！」\
+;＜戦人
+langen:dwave_eng 0, but_9e461:^ ... Voilà, le pieu que je t'avais planté vient de sauter.^@:dwave_eng 0, but_9e462:^ On repart donc de zéro... !^\
+
+se1 1006
+monocro #0000ff
+mbg white,1
+monocro off
+mcbg 0
+
+se2 20
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",26
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",22  ;fixed lighting issue
+ld c,$BEA_nayamuA1,25
+se1 11
+quakey 2,200
+advchar "-1"
+langjp　ベアトを縫い止めていた青き楔が砕け散る。@
+langjp　………もう、ベアトを貫くものは何もない。\
+langen^Le pieu bleu qui clouait Béato sur place vola en éclats.^@
+langen^... Plus rien ne la transperçait désormais.^\
+
+se1v 22,100
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld c,$BEA_majimeA1,28
+
+se2v 2,100
+se3v 57,100
+mono 2
+mbg white,1
+mono off
+mcbg 2
+
+langjp　彼女の体の傷痕も完全に消え去っている。@
+langen^Les blessures de son corps s'étaient elles aussi entièrement refermées.^@
+br
+langjp　そこには、戦人が望んだ通りの、……貫禄ある六軒島の支配者である黄金の魔女の姿があった。\
+langen^Elle se tenait là... telle que Battler l'avait voulue : la majestueuse Sorcière d'Or, maîtresse de Rokkenjima.^\
+
+E_MA
+bgm1v 107,80
+
+ld c,$BEA_majimeA3,2
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e637:「……さぁ来い、戦人。@:dwave_jp 0, bea_9e638:もう一度最初からだ。@:dwave_jp 0, bea_9e639:全てについて、青き真実で打ち抜いてみよ。@:dwave_jp 0, bea_9e640:妾ももはや遊ばぬ、逃げもせぬ、隠れもせぬ。\
+langen:dwave_eng 0, bea_9e637:^... Alors viens, Battler.^@:dwave_eng 0, bea_9e638:^ Reprenons depuis le début.^@:dwave_eng 0, bea_9e639:^ Transperce donc tout avec ta vérité bleue.^@:dwave_eng 0, bea_9e640:^ Moi non plus, je ne joue plus. Je ne fuirai plus, je ne me cacherai plus.^\
+
+ld c,$BEA_defA2,80
+
+langjp:dwave_jp 0, bea_9e641:　そなたが不甲斐ないならばこの勝負、この場にて決着してくれようぞ。@/
+langen:dwave_eng 0, bea_9e641:^Si tu te montres décevant, cette partie s'achèvera ici même. ^@/
+
+ld c,$BEA_akuwaraiA3,80
+
+langjp:dwave_jp 0, bea_9e642:妾の譲りし勝利にて妥協しなかったことを永遠に後悔させてくれるッ！！！@:dwave_jp 0, bea_9e643:　さあ第１のゲームからだ！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e642:^Je te ferai regretter pour l'éternité d'avoir refusé la victoire que je t'offrais !!! ^@:dwave_eng 0, bea_9e643:^Allons, commençons par la première partie !^\
+
+se1 20
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+monocro #0000ff
+se1v 2,100
+se2v 57,100
+mbg white,1
+monocro off
+mcbg 0
+
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld l,$BUT_OdorokiA1,2
+
+advchar "10"
+langjp:dwave_jp 0, but_9e463:「おうッ！！@:dwave_jp 0, but_9e464:　第１のゲーム、第一の晩からだ！！/
+sl
+langen:dwave_eng 0, but_9e463:^Ouais !! ^@:dwave_eng 0, but_9e464:^Première partie, premier crépuscule !! ^@/
+sl
+se1v 2,100
+langjp:dwave_jp 0, but_9e465:　#5decff最初の園芸倉庫で見つかった親族６人の殺人に不審な点はない！@/
+langen:dwave_eng 0, but_9e465:^#5decffLe meurtre des six membres de la famille retrouvés dans la remise de la roseraie n'a rien d'étrange ! ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e466:　アリバイのない誰にでも犯行は可能だった！！#ffffff」\
+;＜戦人
+langen:dwave_eng 0, but_9e466:^N'importe qui sans alibi aurait pu le commettre !!#ffffff^\
+
+cbfly 0
+
+se1 20
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",24  ;fixed lighting issue
+ld r,$BEA_futekiA2,25
+se1 11
+quakey 2,200
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e644:「有効だ。@:dwave_jp 0, bea_9e645:続けるぞ、次の絵羽夫婦の密室殺人はどうか！@:dwave_jp 0, bea_9e646:　チェーンまで掛かった密室であったぞ！@:dwave_jp 0, bea_9e647:　赤き真実を追加する。@/
+langen:dwave_eng 0, bea_9e644:^Valide.^@:dwave_eng 0, bea_9e645:^ Au suivant : le meurtre en chambre close d'Eva et de son mari ?!^@:dwave_eng 0, bea_9e646:^ La chaîne de sûreté était même mise !^@:dwave_eng 0, bea_9e647:^ J'ajoute une vérité rouge.^@/
+se1 59
+langjp:dwave_jp 0, bea_9e648:#ff0000二人は他殺である！@/
+langen:dwave_eng 0, bea_9e648:^#ff0000 Tous deux ont été victimes d'un homicide ! ^@/
+se2 59
+langjp:dwave_jp 0, bea_9e649:　密室構築後に片方を殺害の後に自殺したのではない！@/
+langen:dwave_eng 0, bea_9e649:^Aucun des deux n'a tué l'autre avant de se suicider une fois la chambre close établie ! ^@/
+
+se3 59
+langjp:dwave_jp 0, bea_9e650:　また、殺人は執行者、犠牲者が共に同室して行なわれた！@/
+langen:dwave_eng 0, bea_9e650:^De plus, au moment du meurtre, l'auteur et la victime se trouvaient tous deux dans la même pièce ! ^@/
+se1 59
+langjp:dwave_jp 0, bea_9e651:　執行者が室外から殺害する手段は存在しない！#ffffff」\
+langen:dwave_eng 0, bea_9e651:^Il n'existe aucun moyen pour l'auteur de tuer depuis l'extérieur de la pièce !#ffffff^\
+se2v 2,100
+
+ld l,$BUT_futekiA3,65
+se1 11
+quakey 2,200
+
+advchar "10"
+langjp:dwave_jp 0, but_9e467:「#5decff犯人には、アリバイのない人間を想定する。@/
+langen:dwave_eng 0, but_9e467:^#5decffSupposons que le coupable soit quelqu'un sans alibi. ^@/
+
+se3v 2,100
+langjp:dwave_jp 0, but_9e468:それは死者だ！@/
+langen:dwave_eng 0, but_9e468:^Un mort ! ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e469:　最初の６人の死体の中には、顔面粉砕による身元不明死体が含まれる。@/
+langen:dwave_eng 0, but_9e469:^Parmi les six premiers corps, certains étaient impossibles à identifier, le visage en bouillie. ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e470:これが実は偽装死体で、犠牲者のふりをして姿をくらました犯人Ｘが二人を殺したとの仮説は可能だ！@/
+langen:dwave_eng 0, but_9e470:^On peut supposer que l'un d'eux était un faux cadavre : le coupable X a fait croire à sa propre mort pour disparaître, puis il a tué ces deux-là ! ^@/
+se3v 2,100
+langjp:dwave_jp 0, but_9e471:　そして犯人は密室殺人構築後、ベッドの下に隠れ、俺たち全員をやり過ごしたんだ！！#ffffff」\
+langen:dwave_eng 0, but_9e471:^Après avoir monté son meurtre en chambre close, il s'est caché sous le lit et nous a tous laissés passer sans se faire voir !!#ffffff^\
+
+textoff
+
+me1v 28,100
+
+se3v 66,100
+
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\map04.jpg",":b;bmp\background\efe\map04.png",80
+wait 1000
+
+se1v 57,100
+se2v 46,100
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\bullet2a.jpg",":b;bmp\background\efe\bullet2a.png",1
+monocro #0000ff
+bg white,10,120
+monocro off
+
+se1v 57,100
+se2v 46,100
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\bullet2b.jpg",":b;bmp\background\efe\bullet2b.png",1
+monocro #0000ff
+bg white,10,120
+monocro off
+
+wait 120
+
+E_MA
+se1v 1006,100
+se2v 36,100
+se3v 27,100
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",24  ;fixed lighting issue
+ld r,$BEA_AkuwaraiA1,65
+se1 11
+se2v 39,100
+quakey 2,400
+
+mono 2
+
+se3v 2,100
+mbg white,1
+mcbg 0
+mono off
+ld r,$BEA_AkuwaraiA2,2
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e652:「よかろう、次だ！@:dwave_jp 0, bea_9e653:　ボイラー室に至った嘉音が殺されたな？@:dwave_jp 0, bea_9e654:　赤き真実を追加する。@/
+langen:dwave_eng 0, bea_9e652:^Fort bien, au suivant !^@:dwave_eng 0, bea_9e653:^ Kanon a été tué dans la chaufferie, n'est-ce pas ?^@:dwave_eng 0, bea_9e654:^ J'ajoute une vérité rouge.^@/
+se1 59
+langjp:dwave_jp 0, bea_9e655:#ff0000全ての生存者にアリバイがある！@/
+langen:dwave_eng 0, bea_9e655:^#ff0000 Tous les survivants ont un alibi ! ^@/
+se2 59
+langjp:dwave_jp 0, bea_9e656:　さらに死者も含めようぞ！！@/
+langen:dwave_eng 0, bea_9e656:^Et j'y inclus même les morts !! ^@/
+se3 59
+langjp:dwave_jp 0, bea_9e657:　つまり、島の如何なる人間にも死者にも、嘉音は殺せなかった！#ffffff」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e657:^Autrement dit, aucun humain de l'île, vivant ou mort, n'aurait pu tuer Kanon !#ffffff^\
+
+se1 20
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3bp.jpg",":b;bmp\background\garden\rose_3bp.png",0  ;fixed lighting issue
+ld c,$BUT_NiramuA1,23
+
+se1v 2,100
+advchar "10"
+langjp:dwave_jp 0, but_9e472:「#5decff誰にも殺せないなら、自分で殺したということはあるかもな！！@/
+langen:dwave_eng 0, but_9e472:^#5decffSi personne ne pouvait le tuer, il s'est peut-être tué lui-même !! ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e473:　なら嘉音くんは自殺かもしれない。#ffffff\
+langen:dwave_eng 0, but_9e473:^Kanon s'est peut-être suicidé.#ffffff^\
+
+cl a,0
+
+se1v 2,100
+se2v 57,100
+mbg white,1
+mcbg 0
+notif %is_old_sprites = 0 ld l,$BUT_majimeB4,22  ;only display this sprite if using old sprites
+if %is_old_sprites = 1 jumpf
+	lsp 882,c_e0103_wall,0,0
+	print 64
+	lsp 881,c_e0103_a,0,0
+	print 83
+~
+
+langjp:dwave_jp 0, but_9e474:　復唱要求！@:dwave_jp 0, but_9e475:« 嘉音くんは自殺ではない »！」/
+sl
+langen:dwave_eng 0, but_9e474:^Demande de répétition !^@:dwave_eng 0, but_9e475:^ « Kanon ne s'est pas suicidé » !^@/
+se1v 2,100
+se2v 57,100
+quakex 4,400
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜戦人
+
+
+cbfly 0
+csp 882 : csp 881
+se1 20
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+mono 2
+
+se2v 57,100
+se3v 37,100
+mbg white,1
+mcbg 0
+mono off
+
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld l,$BEA_futekiA1,2
+
+se1 59
+advchar "27"
+langjp:dwave_jp 0, bea_9e658:「#ff0000嘉音は自殺ではない#ffffff。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e658:^#ff0000Kanon ne s'est pas suicidé#ffffff.^\
+
+ld r,$BUT_MajimeA4,64
+se1 11
+quakex 2,200
+
+advchar "10"
+langjp:dwave_jp 0, but_9e476:「重ねるぜ。@/
+langen:dwave_eng 0, but_9e476:^J'enchaîne. ^@/
+
+se2v 2,100
+se3v 57,100
+
+mbg white,1
+mcbg 0
+ld r,$BUT_odorokiA1,22
+
+langjp:dwave_jp 0, but_9e477:復唱要求« 嘉音くんは他殺された »。」\
+;＜戦人
+langen:dwave_eng 0, but_9e477:^Demande de répétition : « Kanon a été victime d'un homicide ».^\
+
+cbfly 0
+se1 20
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",24  ;fixed lighting issue
+ld r,$BEA_akuwaraiA5,65
+se1 11
+quakey 2,200
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e659:「復唱を拒否する。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e659:^Je refuse de le répéter.^\
+
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld l,$BUT_niramuB1,23
+
+advchar "10"
+langjp:dwave_jp 0, but_9e478:「その拒否で、他殺を認めることも可能だが、お前はすでに赤で誰にも殺せなかったと宣言している。@:dwave_jp 0, but_9e479:つまり、他殺ではないんだ。@:dwave_jp 0, but_9e480:これは第３のゲームの連鎖密室と同じなのさ。\
+langen:dwave_eng 0, but_9e478:^Avec ton refus, je pourrais en déduire que c'est un homicide, mais tu as déjà déclaré en rouge que personne ne pouvait le tuer.^@:dwave_eng 0, but_9e479:^ Ce n'est donc pas un homicide.^@:dwave_eng 0, but_9e480:^ C'est la même chose que pour les chambres closes en chaîne de la troisième partie.^\
+
+ld l,$BUT_niramuB2,80
+
+se1v 2,100
+langjp:dwave_jp 0, but_9e481:#5decff　嘉音くんは自殺でも他殺でもない理由で死亡したんだ。@/
+langen:dwave_eng 0, but_9e481:^#5decffKanon est mort pour une raison qui n'est ni un suicide ni un homicide. ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e482:状況は不明だが事故死というわけさ。\
+langen:dwave_eng 0, but_9e482:^Les circonstances restent inconnues, mais c'est donc une mort accidentelle.#ffffff^\
+se3v 2,100
+
+ld l,$BUT_FutekiA2,80
+
+langjp:dwave_jp 0, but_9e483:　胸に杭がブチ込まれて死んでしまうような、どのようなドジを踏んで事故死に至ったかについての説明は、悪魔の証明により説明拒否ッ！！#ffffff」\
+;＜戦人
+langen:dwave_eng 0, but_9e483:^#5decffQuant à savoir quelle bourde a pu provoquer un accident où un pieu lui transperce la poitrine, j'invoque la preuve du diable et je refuse d'expliquer !!#ffffff^\
+
+se1v 57,100
+se3v 27,100
+cbfly 0
+mbg white,1
+mcbg 0
+
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld c,$BEA_iiwakeA1,42
+ld c,$BEA_fukigenA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e660:「ほほぅ、悪魔の力を身につけたそなたは今や敵なしだな！@:dwave_jp 0, bea_9e661:　有効であるぞ！\
+langen:dwave_eng 0, bea_9e660:^Hoho ! Maintenant que tu as fait tienne la preuve du diable, plus rien ne t'arrête !^@:dwave_eng 0, bea_9e661:^ C'est valide !^\
+
+
+se1v 57,100
+mbg white,1
+mcbg 0
+ld c,$BEA_AkuwaraiA3,2
+
+langjp:dwave_jp 0, bea_9e662:　ならば、その後の客間にての、源次、南條、熊沢の３名の殺人はどうか！@:dwave_jp 0, bea_9e663:　無論、/
+sl
+langen:dwave_eng 0, bea_9e662:^Alors, les trois meurtres du salon qui suivirent : Genji, Nanjo et Kumasawa ?!^@:dwave_eng 0, bea_9e663:^ Bien entendu,^@/
+sl
+se1 59
+langjp:dwave_jp 0, bea_9e664:#ff0000同室していた真里亞は殺していないぞ！@/
+langen:dwave_eng 0, bea_9e664:^#ff0000 Maria, qui se trouvait dans la même pièce, ne les a pas tués ! ^@/
+se2 59
+langjp:dwave_jp 0, bea_9e665:　そしてもちろん三人は他殺だ！#ffffff」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e665:^Et naturellement, tous les trois ont été victimes d'un homicide !#ffffff^\
+
+
+se1 20
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld l,$BUT_MajimeA2,24
+se1v 2,100
+advchar "10"
+langjp:dwave_jp 0, but_9e484:「#5decff殺人を実行したのは、身元不明死体で姿をくらました犯人Ｘで説明できる。@/
+langen:dwave_eng 0, but_9e484:^#5decffCes meurtres s'expliquent par le coupable X, qui s'est fait disparaître grâce à un cadavre non identifiable. ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e485:そもそも、あの３人の顔面も粉砕されていた。@/
+langen:dwave_eng 0, but_9e485:^D'ailleurs, ces trois-là avaient eux aussi le visage en bouillie. ^@/
+se3v 2,100
+langjp:dwave_jp 0, but_9e486:どれかが替え玉死体の可能性は充分にある！#ffffff」\
+;＜戦人
+langen:dwave_eng 0, but_9e486:^Il est tout à fait possible que l'un d'eux ait été un faux cadavre !#ffffff^\
+
+se1v 20,85
+
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld r,$BEA_AkuwaraiA4,24
+
+se1 59
+advchar "27"
+langjp:dwave_jp 0, bea_9e666:「#ff0000身元不明死体について、その身元を全て保証する。@/
+langen:dwave_eng 0, bea_9e666:^#ff0000Je garantis l'identité de tous les cadavres non identifiables. ^@/
+se2 59
+langjp:dwave_jp 0, bea_9e667:即ち、替え玉トリックは存在しない！#ffffff」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e667:^Autrement dit, il n'y a eu aucun tour de passe-passe avec un faux cadavre !#ffffff^\
+
+se1v 57,100
+mbg white,1
+mcbg 0
+ld l,$BUT_FutekiA2,22
+
+se2v 2,100
+advchar "10"
+langjp:dwave_jp 0, but_9e487:「#5decffならば相打ち殺人で説明できる。@/
+langen:dwave_eng 0, but_9e487:^#5decffAlors, ils se sont entretués au même instant. ^@/
+se3v 2,100
+langjp:dwave_jp 0, but_9e488:３人はそれぞれに銃を持って時計回りに突きつけ、同時に相手の顔面を吹き飛ばした！@/
+langen:dwave_eng 0, but_9e488:^Chacun tenait une arme pointée sur son voisin, dans le sens des aiguilles d'une montre, et ils se sont fait sauter le visage en même temps ! ^@/
+
+se1v 2,100
+langjp:dwave_jp 0, but_9e489:　その後、真里亞がその銃を回収して隠した！！#ffffff@:dwave_jp 0, but_9e490:　これならどうだッ！！！」\
+;＜戦人
+langen:dwave_eng 0, but_9e489:^Ensuite, Maria a ramassé les armes et les a cachées !!#ffffff ^@:dwave_eng 0, but_9e490:^Alors, qu'est-ce que tu dis de ça ?!!!^\
+
+se1 20
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",23  ;fixed lighting issue
+ld r,$BEA_odorokiA1,65
+se1 11
+quakey 2,200
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e668:「なッ、……何と言う暴論ッ！！！@/
+langen:dwave_eng 0, bea_9e668:^Q-Quoi... ? Quelle théorie insensée !!!^@/
+
+ld r,$BEA_akuwaraiA3,80
+
+langjp:dwave_jp 0, bea_9e669:　き、気に入ったァ…！！@:dwave_jp 0, bea_9e670:　ならば最後の夏妃は？！\
+langen:dwave_eng 0, bea_9e669:^ J-Je l'adore... !!^@:dwave_eng 0, bea_9e670:^ Alors, et Natsuhi pour finir ?!^\
+
+se1v 57,100
+se2v 37,100
+
+mono 2
+mbg white,1
+mcbg 0
+mono off
+
+ld r,$BEA_akuwaraiA4,2
+
+langjp:dwave_jp 0, bea_9e671:　赤き真実を追加！@　/
+langen:dwave_eng 0, bea_9e671:^J'ajoute une vérité rouge ! ^@/
+se1 59
+langjp:dwave_jp 0, bea_9e672:#ff0000夏妃は他殺である！@/
+langen:dwave_eng 0, bea_9e672:^#ff0000Natsuhi a été victime d'un homicide ! ^@/
+se2 59
+langjp:dwave_jp 0, bea_9e673:　身元不明死体は一切なく、生存者も全員がアリバイがある！#ffffff」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e673:^Il n'y avait aucun cadavre non identifiable, et tous les survivants avaient un alibi !#ffffff^\
+
+se1v 57,100
+mbg white,1
+mcbg 0
+ld l,$BUT_MajimeA4,22
+se2v 2,100
+advchar "10"
+langjp:dwave_jp 0, but_9e491:「#5decffトラップＸによる間接殺人で説明できる！@/
+langen:dwave_eng 0, but_9e491:^#5decffÇa s'explique par un meurtre indirect au moyen du piège X ! ^@/
+se3v 2,100
+langjp:dwave_jp 0, but_9e492:　夏妃伯母さんの銃に細工がされてたんだ。@/
+langen:dwave_eng 0, but_9e492:^Le fusil de tante Natsuhi avait été trafiqué. ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e493:あの銃は、構えて撃った人間の、ちょうど眉間に弾をくれてやるように作られた、罠の銃だったとすれば説明できる！！#ffffff」\
+;＜戦人
+langen:dwave_eng 0, but_9e493:^Si c'était une arme piégée, conçue pour loger une balle pile entre les yeux de celui qui la met en joue et tire, tout s'explique !!#ffffff^\
+
+se1v 57,100
+mbg BLADE6_2R,1
+mcbg 0
+ld r,$BEA_AkuwaraiA5,22
+se2 59
+advchar "27"
+langjp:dwave_jp 0, bea_9e674:「#ff0000夏妃の額に埋まりし銃弾は、夏妃の銃から放たれたものではない！#ffffff」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e674:^#ff0000La balle logée dans le front de Natsuhi n'a pas été tirée par son fusil !#ffffff^\
+
+se1v 2,100
+ld l,$BUT_odorokiA1,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e494:「#5decff夏妃伯母さんは、内容不明の手紙により誘き出された可能性がある！@/
+langen:dwave_eng 0, but_9e494:^#5decffIl est possible que tante Natsuhi ait été attirée dehors par cette lettre dont on ignore le contenu ! ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e495:　そしてホールに呼び出された。@/
+langen:dwave_eng 0, but_9e495:^On lui a donné rendez-vous dans le hall. ^@/
+se3v 2,100
+langjp:dwave_jp 0, but_9e496:そして特定の時刻に特定の場所に立つように強いられて、予め設置してあった銃を利用したトラップＸにより殺害されたんだ！！#ffffff」\
+;＜戦人
+langen:dwave_eng 0, but_9e496:^Puis on l'a obligée à se tenir à un endroit précis, à une heure précise, et elle a été tuée par le piège X, une arme installée à l'avance !!#ffffff^\
+
+se1v 1006,100
+se2v 27,100
+
+monocro #0000ff
+
+mbg white,1
+mcbg 0
+
+monocro off
+
+ld r,$BEA_WaraiA2,2
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e675:「素晴らしいッ！！@:dwave_jp 0, bea_9e676:　そなたの暴論はもはや心地よくすらある！@:dwave_jp 0, bea_9e677:　敬意を表し、第一のゲームをそなたに譲ろうぞ…！！@:dwave_jp 0, bea_9e678:　感服したわッ！！@/
+langen:dwave_eng 0, bea_9e675:^Magnifique !!^@:dwave_eng 0, bea_9e676:^ Tes théories insensées en deviennent presque agréables !^@:dwave_eng 0, bea_9e677:^ En signe de respect, je te cède la première partie... !!^@:dwave_eng 0, bea_9e678:^ Chapeau bas !!^@/
+
+textoff
+;bg white,1
+;wait 200
+;se1 57
+;bg homing7BSR,1
+;wait 200
+;se2 36
+;bg blood_2e,1
+;quakex 5,1200
+
+;ld c,$BEA_komaruA1,80
+
+cbfly 0
+
+se3v 66,100
+
+monocro #0000ff
+bg white,2
+
+se1v 57,100
+bg white,1
+monocro off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\bullet2a.jpg",":b;bmp\background\efe\bullet2a.png",22
+
+monocro #0000ff
+
+se2v 57,100
+bg white,1
+monocro off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\bullet2b.jpg",":b;bmp\background\efe\bullet2b.png",22
+
+
+se1v 36,100
+bg white,1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\bullet_1a.jpg" : mov $oldnew_bg,":b;bmp\background\efe\bullet_1a.png" : if %4095 = 0 bg ":b;bmp\background\efe\bullet_1a.png",10,120 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\bullet_1a.jpg",10,120
+
+se2v 36,100
+bg white,1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\bullet_1b.jpg" : mov $oldnew_bg,":b;bmp\background\efe\bullet_1b.png" : if %4095 = 0 bg ":b;bmp\background\efe\bullet_1b.png",10,120 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\bullet_1b.jpg",10,120
+
+se1v 36,100
+bg white,1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\bullet_1c.jpg" : mov $oldnew_bg,":b;bmp\background\efe\bullet_1c.png" : if %4095 = 0 bg ":b;bmp\background\efe\bullet_1c.png",10,120 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\bullet_1c.jpg",10,120
+
+se2v 36,100
+bg white,1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\bullet_1d.jpg" : mov $oldnew_bg,":b;bmp\background\efe\bullet_1d.png" : if %4095 = 0 bg ":b;bmp\background\efe\bullet_1d.png",10,120 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\bullet_1d.jpg",10,120
+
+se1v 36,100
+bg white,1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\bullet_1e.jpg" : mov $oldnew_bg,":b;bmp\background\efe\bullet_1e.png" : if %4095 = 0 bg ":b;bmp\background\efe\bullet_1e.png",10,120 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\bullet_1e.jpg",10,120
+
+wait 500
+
+E_MA
+se1v 36,100
+se2v 27,100
+se3v 27,100
+
+bg white,1
+
+monocro off
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2e.jpg",":b;bmp\background\efe\blood_2e.png",42
+
+
+
+
+
+langjp:dwave_jp 0, bea_9e679:　…………がはッ！！！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e679:^ ... Gah !!!^\
+
+advchar "-1"
+langjp　ベアトが第１のゲームの敗北を認めた瞬間、@青き真実の杭が再び、ものすごい音を立てて彼女の胸板を貫く…。\
+langen^À l'instant où Béato reconnut sa défaite dans la première partie, ^@^les pieux de la vérité bleue lui transpercèrent de nouveau la poitrine dans un fracas terrible...^\
+
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld c,$BEA_gamanA7,26
+ld c,$BEA_GamanA6,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e680:「……く、……ぐぉ、……………がああぁッ！！！@:dwave_jp 0, bea_9e681:　これくらいでは、堪えぬわ、……まだまだぁ！！@:dwave_jp 0, bea_9e682:　来いッ、第二のゲームだ！！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e680:^Ku... guoh... gaaaaaah !!!^@:dwave_eng 0, bea_9e681:^ Ce n'est pas ça qui va m'abattre... loin de là !!^@:dwave_eng 0, bea_9e682:^ Viens ! Passons à la deuxième partie !!^\
+
+se1v 38,100
+
+advchar "-1"
+langjp　ベアトは胸に突き刺さっていた杭を、辛うじて引き抜くが、@……さすがに穴は開いてないとはいえ、おびただしい血を流す大怪我をしているようだった。@
+langen^Béato parvint tant bien que mal à arracher les pieux plantés dans sa poitrine... ^@^mais si aucun trou ne restait visible, elle semblait grièvement blessée et perdait énormément de sang.^@
+
+br
+langjp　そして、それに見合った激痛に苛まれている…。\
+langen^Et la douleur qui allait avec devait être atroce...^\
+
+ld c,$BEA_GamanA3,80
+
+langjp　しかしベアトは歯を食い縛りながらニヤリと笑い、次のゲームを促す。\
+langen^Pourtant, Béato serra les dents, esquissa un sourire et l'invita à passer à la partie suivante.^\
+
+cbfly 0
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+me1v 5,70
+
+langjp　だが同情はしないぜ。@
+langen^Mais je n'aurai aucune pitié.^@
+br
+langjp　……ヤツがただそこに存在しているだけで、俺たちは何度も殺され、甚振られ、@………縁寿は孤独な未来を強いられるんだ…！！\
+langen^... Rien que parce qu'elle existe, nous avons été tués et torturés encore et encore...^@^ et Ange a été condamnée à un avenir de solitude... !!^\
+
+me2v 28,100
+
+;ld c,$BEA_IiwakeA3,80
+textoff
+;lsp2 4,$BEA_gamanA3,500,350,200,200,0
+lsp_var 4,"bmp\zoom\BEA_gamanA3Z20",-260,0  ;convert to widescreen
+print 24
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e683:「そうとも、妾がここにいて、ただ笑うだけでも、永遠の地獄は続く…！！@/
+langen:dwave_eng 0, bea_9e683:^Précisément. Il me suffit d'être là et de rire pour que cet enfer éternel continue... !!^@/
+
+textoff
+;lsp2 4,$BEA_AkuwaraiA4,500,350,200,200,0
+lsp_var 4,"bmp\zoom\BEA_akuwaraiA4Z20",-260,0  ;convert to widescreen
+print 80
+
+langjp:dwave_jp 0, bea_9e684:　そなたを妹に返しはしない…！@:dwave_jp 0, bea_9e685:　妹は帰らぬ家族に千年の間、泣き続ければ良い…！！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e684:^ Je ne te rendrai pas à ta petite sœur... ! ^@:dwave_eng 0, bea_9e685:^Qu'elle passe mille ans à pleurer une famille qui ne reviendra jamais... !!^\
+
+;ld c,$BUT_kuyasigaruA1,80
+textoff
+
+se1v 2,100
+mbg white,1
+mcbg 0
+;lsp2 4,$BEA_AkuwaraiA4,500,350,200,200,0
+;lsp2 3,$BUT_sakebuA1,150,480,200,200,0
+lsp_var 3,"bmp\zoom\BUT_sakebuA1Z20",-187,0  ;convert to widescreen
+print 22
+
+
+advchar "10"
+langjp:dwave_jp 0, but_9e497:「畜生があぁああああぁ！！@:dwave_jp 0, but_9e498:　情けも容赦もしねぇぜ、第二のゲームだ、行くぜ！！@:dwave_jp 0, but_9e499:　まずは最初の事件だ！@:dwave_jp 0, but_9e500:　６人が殺された礼拝堂での密室殺人については、当時の俺がすでに看破している。@/
+langen:dwave_eng 0, but_9e497:^Espèce de salooooooope !!^@:dwave_eng 0, but_9e498:^ Plus de pitié, plus de quartier ! Deuxième partie, on y va !!^@:dwave_eng 0, but_9e499:^ D'abord, le premier crime !^@:dwave_eng 0, but_9e500:^ Le meurtre en chambre close de la chapelle, où six personnes ont été tuées : je l'avais déjà percé à jour à l'époque.^@/
+se3v 2,100
+langjp:dwave_jp 0, but_9e501:#5decff真里亞の鍵を、何者かが密かに拝借し、事件終了後に密かに真里亞のカバンに戻したんだ！！#ffffff」\
+;＜戦人
+langen:dwave_eng 0, but_9e501:^#5decff Quelqu'un a discrètement emprunté la clé de Maria, puis l'a remise dans son sac après le crime !!#ffffff^\
+
+;ld c,$BEA_AkuwaraiA4,80
+textoff
+;lsp2 4,$BEA_futekiA1,500,350,200,200,0
+;lsp2 3,$BUT_sakebuA1,150,480,200,200,0
+lsp_var 4,"bmp\zoom\BEA_futekiA1Z20",-260,0  ;convert to widescreen
+print 80
+
+se1 59
+advchar "27"
+langjp:dwave_jp 0, bea_9e686:「#ff0000真里亞の鍵は、真里亞受領後から翌日の楼座開封の瞬間まで、誰の手にも渡っていない！！#ffffff」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e686:^#ff0000Depuis l'instant où Maria a reçu sa clé jusqu'à celui où Rosa a ouvert l'enveloppe le lendemain, la clé n'est passée entre les mains de personne !!#ffffff^\
+
+se1v 2,100
+
+textoff
+;lsp2 4,$BEA_futekiA1,500,350,200,200,0
+;lsp2 3,$BUT_majimeA4,150,480,200,200,0
+lsp_var 3,"bmp\zoom\BUT_majimeA4Z20b",-187,0  ;convert to widescreen
+print 80
+
+
+advchar "10"
+langjp:dwave_jp 0, but_9e502:「#5decffジジイの書斎と同じ構造で、礼拝堂の扉がオートロックだった可能性がある。@/
+langen:dwave_eng 0, but_9e502:^#5decffLa porte de la chapelle pouvait se verrouiller automatiquement, comme celle du bureau de Grand-père. ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e503:つまり、事件前に開錠しておいて、扉が閉まりきらないように石でも挟んでおいた。@/
+langen:dwave_eng 0, but_9e503:^Autrement dit, on l'a déverrouillée avant le crime et on a coincé une pierre pour l'empêcher de se refermer complètement. ^@/
+se3v 2,100
+langjp:dwave_jp 0, but_9e504:そして鍵を真里亞に預けた。@/
+langen:dwave_eng 0, but_9e504:^Puis on a confié la clé à Maria. ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e505:施錠はオートのため、鍵は必要なかったとの仮説もありえる！#ffffff」\
+;＜戦人
+langen:dwave_eng 0, but_9e505:^Comme la porte se verrouillait toute seule, la clé n'était pas nécessaire : c'est une hypothèse possible !#ffffff^\
+
+se3v 37,100
+
+textoff
+;lsp2 4,$BEA_AkuwaraiA3,500,350,200,200,0
+;lsp2 3,$BUT_majimeA4,150,480,200,200,0
+lsp_var 4,"bmp\zoom\BEA_akuwaraiA3Z20",-260,0  ;convert to widescreen
+print 80
+
+se1 59
+advchar "27"
+langjp:dwave_jp 0, bea_9e687:「#ff0000金蔵の書斎以外にオートロックの扉は存在しない！#ffffff」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e687:^#ff0000Il n'existe aucune porte à verrouillage automatique en dehors de celle du bureau de Kinzo !#ffffff^\
+
+;ld c,$BUT_NiramuA3,80
+
+se1v 2,100
+
+textoff
+;lsp2 4,$BEA_AkuwaraiA3,500,350,200,200,0
+;lsp2 3,$BUT_OdorokiA1,150,480,200,200,0
+lsp_var 3,"bmp\zoom\BUT_odorokiA1Z20",-187,0  ;convert to widescreen
+print 80
+
+;se1v 2,100
+advchar "10"
+langjp:dwave_jp 0, but_9e506:「#5decff扉は犠牲者たちが内側から閉めたんだ。@/
+langen:dwave_eng 0, but_9e506:^#5decffLes victimes ont fermé la porte de l'intérieur. ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e507:６人の中に犯人がいて、５人を殺し、死んだふりをしていた！！#ffffff」\
+;＜戦人
+langen:dwave_eng 0, but_9e507:^Le coupable était l'un des six : il a tué les cinq autres, puis il a fait le mort !!#ffffff^\
+
+
+;ld c,$BEA_AkuwaraiA1,80
+textoff
+;lsp2 4,$BEA_IkariA1,500,350,200,200,0
+;lsp2 3,$BUT_OdorokiA1,150,480,200,200,0
+lsp_var 4,"bmp\zoom\BEA_IkariA1Z20",-260,0  ;convert to widescreen
+
+print 80
+
+se1 59
+advchar "27"
+langjp:dwave_jp 0, bea_9e688:「#ff0000６人は発見時にすでに全員死亡していた！@/
+langen:dwave_eng 0, bea_9e688:^#ff0000Les six étaient déjà morts quand on les a découverts ! ^@/
+se2 59
+langjp:dwave_jp 0, bea_9e689:　全員が他殺だ！@/
+langen:dwave_eng 0, bea_9e689:^Tous ont été victimes d'un homicide ! ^@/
+se3 59
+langjp:dwave_jp 0, bea_9e690:　６人は全員が純粋な犠牲者であり、相互の殺人には関与しない！@/
+langen:dwave_eng 0, bea_9e690:^Les six étaient de simples victimes et n'ont pris part à aucun meurtre les uns contre les autres ! ^@/
+se1 59
+langjp:dwave_jp 0, bea_9e691:　相打ち殺人は存在しない！！#ffffff」\
+langen:dwave_eng 0, bea_9e691:^Ils ne se sont pas entretués !!#ffffff^\
+;＜ベアト
+
+se1v 2,100
+
+;ld c,$BUT_AseruA1,80
+textoff
+;lsp2 4,$BEA_IkariA1,500,350,200,200,0
+;lsp2 3,$BUT_futekiA2,150,480,200,200,0
+lsp_var 3,"bmp\zoom\BUT_futekiA2Z20",-187,0  ;convert to widescreen
+print 80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e508:「#5decff熊沢さんを始め、当時アリバイがない人間が存在した。@/
+langen:dwave_eng 0, but_9e508:^#5decffÀ ce moment-là, certaines personnes n'avaient pas d'alibi, à commencer par Kumasawa. ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e509:そんな誰かが６人を殺し、内側に隠れていたと仮定すれば問題ない！#ffffff」\
+;＜戦人
+langen:dwave_eng 0, but_9e509:^Si l'une d'elles a tué les six puis s'est cachée à l'intérieur, plus aucun problème !#ffffff^\
+
+textoff
+;lsp2 4,$BEA_AkuwaraiA2,500,350,200,200,0
+;lsp2 3,$BUT_futekiA2,150,480,200,200,0
+lsp_var 4,"bmp\zoom\BEA_AkuwaraiA2Z20",-260,0  ;convert to widescreen
+print 80
+
+se1 59
+advchar "27"
+langjp:dwave_jp 0, bea_9e692:「#ff0000あの礼拝堂には誰も隠れていなかった。@/
+langen:dwave_eng 0, bea_9e692:^#ff0000Personne ne se cachait dans la chapelle. ^@/
+se2 59
+langjp:dwave_jp 0, bea_9e693:よってその、引き篭もり密室は通用しない！#ffffff@/
+langen:dwave_eng 0, bea_9e693:^Ta chambre close avec un meurtrier tapi à l'intérieur ne tient donc pas !#ffffff ^@/
+
+;ld c,$BEA_AkuwaraiA2,80
+textoff
+;lsp2 4,$BEA_AkuwaraiA3,500,350,200,200,0
+;lsp2 3,$BUT_futekiA2,150,480,200,200,0
+lsp_var 4,"bmp\zoom\BEA_AkuwaraiA3Z20",-260,0  ;convert to widescreen
+print 80
+
+langjp:dwave_jp 0, bea_9e694:　どうしたよ、右代宮戦人ぁ、それで終わりかぁ？！@:dwave_jp 0, bea_9e695:　第２のゲームからは甘くないぜぇええぇ？！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e694:^Qu'est-ce qui t'arrive, Battler Ushiromiyaaaa, c'est tout ce que tu as ?!^@:dwave_eng 0, bea_9e695:^ À partir de la deuxième partie, ça ne sera plus aussi faciiiiile ?!^\
+
+csp_var 3
+csp_var 4
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+E_MA
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",23  ;fixed lighting issue
+
+advchar "-1"
+langjp　凄まじき赤と青の真実の応酬。@
+langen^Un échange foudroyant de vérités rouges et bleues.^@
+
+br
+
+cbfly 0
+bg stake0,22
+wait 300
+textoff
+se1 57
+;bg homing6BS,1
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\stake1a.jpg",":b;bmp\background\efe\stake1a.png",22
+wait 300
+se2 58
+;bg BLADE1R,1
+bg white,1
+bg stake2,22
+wait 100
+se3 58
+;bg BLADE2R,1
+bg white,1
+bg stake3,22
+wait 100
+se1 57
+;bg homing6BSR,1
+bg white,1
+bg stake4,22
+wait 100
+se2 58
+;bg BLADE3R,1
+bg white,1
+bg stake3,22
+wait 100
+se3 57
+;bg homing7BS,1
+bg white,1
+bg stake4,22
+wait 200
+se1 20
+;bg BLADE7_1R,1
+bg white,1
+bg stake4,22
+wait 500
+se2v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blade7_2r.jpg",":b;bmp\background\efe\blade7_2r.png",1
+bg white,1
+bg stake0,99,2000,"breakup.dll/lrp"
+wait 500
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld c,$BEA_komaruA3,2
+
+langjp　俺から放たれて次々に襲い掛かる青き真実の杭や楔を、ベアトは次々に赤き真実こと、赤き宝刀で切り伏せ、叩き落していく。\
+langen^Les pieux et les pointes de vérité bleue que je lui décochais fondaient sur elle les uns après les autres, et Béato les tranchait et les abattait un à un avec sa vérité rouge, sa lame écarlate.^\
+
+langjp　しかし、第一のゲームを落とした際の出血がひどいのだろう。@
+langjp　その激しい運動は彼女にさらなる負担を強いていた。\
+langen^Mais l'hémorragie de la première partie devait être sévère.^@
+langen^Ces mouvements violents ne faisaient qu'aggraver son état.^\
+
+langjp　呼吸の荒さも見える。@
+langen^Elle commençait même à haleter.^@
+br
+langjp　だからこそ、俺はここで手を休めない！@
+langjp　……あの魔女を追い詰める！\
+langen^C'est justement pour ça que je ne vais pas ralentir !^@
+langen^... Je vais acculer cette sorcière !^\
+
+langjp　今度こそ打ち破ってやるッ！\
+langen^Cette fois, je vais la vaincre pour de bon !^\
+
+se1 20
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld r,$BUT_kuyasigaruA1,24
+
+advchar "10"
+langjp:dwave_jp 0, but_9e510:「まだだぜ、あぁ、駄目だ、全然駄目だ！！@:dwave_jp 0, but_9e511:　俺の屁理屈は終わっちゃいねぇぜ！！@:dwave_jp 0, but_9e512:　ならばこれはどうだ！！\
+langen:dwave_eng 0, but_9e510:^Pas encore ! Ah, ça marche pas, ça marche pas du tout !!^@:dwave_eng 0, but_9e511:^ J'ai encore plein de théories tordues en stock !!^@:dwave_eng 0, but_9e512:^ Alors, que dis-tu de ça ?!!^\
+
+se1v 2,100
+se3v 27,00
+
+monocro #0000ff
+mbg white,1
+mcbg 0
+monocro off
+ld r,$BUT_odorokiA1,22
+
+langjp:dwave_jp 0, but_9e513:　#5decff彼らに与えられた飲食物に小型爆弾が入っていて、腹の中で爆発した。@/
+langen:dwave_eng 0, but_9e513:^#5decffLa nourriture et les boissons qu'on leur a servies contenaient des bombes miniatures qui ont explosé dans leur ventre. ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e514:つまりトラップＸによる犯行の可能性！@/
+langen:dwave_eng 0, but_9e514:^Bref, un crime commis au moyen du piège X ! ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e515:　気付かずに飲み込んで腹をブチまけるような爆弾の詳細については悪魔の証明ッ！@/
+langen:dwave_eng 0, but_9e515:^Quant à savoir comment fonctionnent des bombes qu'on avale sans s'en rendre compte et qui vous font éclater le ventre : preuve du diable ! ^@/
+se2v 57,100
+se1v 2,100
+langjp:dwave_jp 0, but_9e516:　説明拒否ッ！！#ffffff」\
+;＜戦人
+langen:dwave_eng 0, but_9e516:^Je refuse d'expliquer !!#ffffff^\
+
+E_MA
+se1v 57,100
+se2v 2,100
+se3v 27,100
+
+cbfly 0
+bg white,1
+
+bfly1 0
+;ld c,$BEA_AkuwaraiA4,80
+fr_bg ":b;fr_bg\orig\bmp\background\forest\moon_1a.jpg",":b;bmp\background\forest\moon_1b.png",22  ;fixed lighting issue
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e696:「ぶッ、っはっはっはっはっはっは！！@:dwave_jp 0, bea_9e697:　何だよそりゃあああぁああ？！@/
+langen:dwave_eng 0, bea_9e696:^Pff, hahahahahahahahahaha !!^@:dwave_eng 0, bea_9e697:^ C'est quoi ce trucuuuuuuuuu ?!^@/
+
+;ld c,$BEA_AkuwaraiA3,80
+
+langjp:dwave_jp 0, bea_9e698:　小型爆弾んん？！@:dwave_jp 0, bea_9e699:　わあっはっはっはっはっは！！」@
+;＜ベアト
+langen:dwave_eng 0, bea_9e698:^ Des bombes miniatuuuuuuures ?!^@:dwave_eng 0, bea_9e699:^ Wahahahahahaha !!^@
+br
+advchar "-1"
+langjp　しかし、その変化球のように歪に飛ぶ青き楔を、ベアトは叩き落し損ねる。\
+langen^Mais ce pieu bleu, qui volait de travers comme une balle à effet, Béato ne parvint pas à l'abattre.^\
+
+textoff
+
+cbfly 0
+
+bg stake0,22
+wait 500
+monocro #0000ff
+se1v 36,100
+se2v 27,100
+se3v 60,100
+bg white,1
+monocro off
+;bg blood_2c,2
+fr_bg ":b;fr_bg\orig\bmp\background\efe\stake1c.jpg",":b;bmp\background\efe\stake1c.png",2
+
+
+langjp　それは、ドカッという重い音を立てて、彼女の左肩に深々と突き刺さった。\
+langen^Dans un bruit sourd, il s'enfonça profondément dans son épaule gauche.^\
+
+langjp　しかし、そのあまりの変化球ぶりに、食らっておきながら笑いが止まらないらしい。@
+langjp　……あぁ、そうだろうな、俺も何て滅茶苦茶な推理だろうと思うぜ…！！\
+langen^Pourtant, l'effet était si tordu qu'elle ne pouvait s'empêcher de rire, même après l'avoir encaissé.^@
+langen^... Ouais, je sais, même moi je trouve cette théorie complètement délirante... !!^\
+
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",22  ;fixed lighting issue
+ld r,$BUT_futekiA3,65
+se1 11
+quakey 3,300
+
+advchar "10"
+langjp:dwave_jp 0, but_9e517:「ハッ、好きなだけ笑いやがれ！！@:dwave_jp 0, but_9e518:　文句があるのかッ！！」\
+;＜戦人
+langen:dwave_eng 0, but_9e517:^Ha ! Ris autant que tu veux !!^@:dwave_eng 0, but_9e518:^ T'as une objection ?!!^\
+
+se1 20
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",23  ;fixed lighting issue
+ld l,$BEA_gamanA3,65
+se1 11
+quakey 3,300
+se2 11
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e700:「無しッ！！@:dwave_jp 0, bea_9e701:　その暴論や、心地よしッ！！！@/
+langen:dwave_eng 0, bea_9e700:^Aucune !!^@:dwave_eng 0, bea_9e701:^ Cette théorie insensée est délicieuse !!!^@/
+
+mono 2
+
+se1v 57,100
+mbg white,1
+mcbg 0
+
+mono off
+
+ld l,$BEA_AkuwaraiA3,22
+
+langjp:dwave_jp 0, bea_9e702:　次なる朱志香と嘉音の密室は！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e702:^ Au suivant : la chambre close de Jessica et Kanon !^\
+
+ld r,$BUT_OdorokiA1,64
+se1 11
+quakex 2,200
+
+advchar "10"
+langjp:dwave_jp 0, but_9e519:「問題ないッ！@/
+langen:dwave_eng 0, but_9e519:^Aucun problème ! ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e520:　#5decff使用人の誰かが犯人であればマスターキーを使える。@/
+langen:dwave_eng 0, but_9e520:^#5decffSi le coupable était l'un des domestiques, il pouvait se servir d'un passe-partout. ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e521:密室ですらない！#ffffff」\
+;＜戦人
+langen:dwave_eng 0, but_9e521:^Ce n'est même pas une chambre close !#ffffff^\
+
+ld l,$BEA_futekiA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e703:「その後、使用人室で嘉音らしき謎の人物が襲い掛かり、南條と熊沢が殺されたな？！@:dwave_jp 0, bea_9e704:　嘉音の死亡はあの時刻以前に赤で宣言済みだった。@:dwave_jp 0, bea_9e705:ならばあの嘉音は何者だというのか？！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e703:^Ensuite, dans la salle des domestiques, un mystérieux individu qui ressemblait à Kanon les a attaqués, et Nanjo et Kumasawa ont été tués, n'est-ce pas ?!^@:dwave_eng 0, bea_9e704:^ La mort de Kanon avait déjà été déclarée en rouge avant ce moment-là.^@:dwave_eng 0, bea_9e705:^ Alors, qui était donc ce Kanon ?!^\
+
+
+monocro #0000ff
+
+se1v 2,100
+se2v 57,100
+mbg white,1
+mcbg 0
+
+monocro off
+
+ld r,$BUT_FutekiA2,22
+
+advchar "10"
+langjp:dwave_jp 0, but_9e522:「#5decff嘉音くんの死亡は赤で宣言済みならば、生きているわけがない。@/
+langen:dwave_eng 0, but_9e522:^#5decffSi la mort de Kanon a été déclarée en rouge, il ne pouvait évidemment pas être vivant. ^@/
+se3v 2,100
+langjp:dwave_jp 0, but_9e523:よって、襲われた彼らが、嘉音くんと誤認するような何者かの変装の可能性がある！#ffffff」\
+;＜戦人
+langen:dwave_eng 0, but_9e523:^Leur agresseur était donc peut-être quelqu'un de déguisé, qu'ils ont pris pour Kanon !#ffffff^\
+
+ld l,$BEA_AkuwaraiA5,80
+
+se1 59
+advchar "27"
+langjp:dwave_jp 0, bea_9e706:「#ff0000彼らは異なる人物を嘉音と誤認することは絶対にない！#ffffff」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e706:^#ff0000Jamais ils ne pourraient prendre quelqu'un d'autre pour Kanon !#ffffff^\
+
+cbfly 0
+
+textoff
+se1v 20,70
+fr_bg ":b;fr_bg\orig\bmp\background\efe\homing6bs.jpg",":b;bmp\background\efe\homing6bs.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,100 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,100
+se2v 20,85
+fr_bg ":b;fr_bg\orig\bmp\background\efe\homing6bsr.jpg",":b;bmp\background\efe\homing6bsr.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,100 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,100
+se3v 20,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\homing6bs.jpg",":b;bmp\background\efe\homing6bs.png",1
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\black.jpg" : mov $oldnew_bg,":b;bmp\background\efe\black.png" : if %4095 = 0 bg ":b;bmp\background\efe\black.png",10,100 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",10,100
+
+wait 600
+
+monocro #0000ff
+
+se1v 2,100
+se2v 2,100
+se3v 60,100
+
+mbg white,1
+mcbg 0
+monocro off
+
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg" : mov $oldnew_bg,":b;bmp\background\garden\rose_3apr.png" : mov $witchh12,$oldnew_bg_old
+bg $witchh12,0  ;fixed lighting issue
+ld r,$BUT_odorokiA1,2
+se1v 2,100
+advchar "10"
+langjp:dwave_jp 0, but_9e524:「#5decffならば金蔵の名の世襲と同じに、嘉音の名が世襲された可能性がある。@/
+langen:dwave_eng 0, but_9e524:^#5decffAlors, tout comme le nom de Kinzo s'est transmis, celui de Kanon s'est peut-être transmis lui aussi. ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e525:嘉音くんが殺され、別の人物がその名を受け継ぎ、彼らを襲ったと仮定できるッ！！#ffffff」\
+;＜戦人
+langen:dwave_eng 0, but_9e525:^On peut supposer que Kanon a été tué, puis qu'une autre personne a hérité de son nom et les a attaqués !!#ffffff^\
+
+se1v 1006,100
+
+textoff
+
+cl a,0
+ld c,$BEA_gamanA3,23
+
+cbfly 0
+
+se1v 38,100
+se2v 38,100
+
+monocro #ff0000
+
+bg white,15,2000,":c;bmp\efe\blood_2a_efe.bmp"
+
+se1v 36,100
+se2v 36,100
+se3v 27,100
+
+me1v 17,70
+
+bg white,1
+monocro off
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\stake1a.jpg",":b;bmp\background\efe\stake1a.png",42
+
+advchar "-1"
+langjp　西瓜が押し潰されるような音が響き渡り、ベアトの左の脇腹に青き楔が深々と打ち込まれる…。\
+langen^Dans un bruit de pastèque écrasée, un pieu bleu s'enfonça profondément dans le flanc gauche de Béato...^\
+
+langjp　場所が悪かったのか、かなり効いたらしい。@
+langen^Il avait dû frapper au mauvais endroit : le coup sembla particulièrement douloureux.^@
+br
+langjp　しばらくの間、屈み込んで呻いた後、/
+sl
+langen^Elle resta un moment pliée en deux, à gémir^@/
+sl
+se1 37
+langjp^^!d800……へっちゃらだとでも言うようにげらげらと笑い捨てた。\
+langen:!d800^... puis elle éclata de rire, comme pour dire que ce n'était rien.^\
+
+langjp　あぁ、わかってるぜ。@
+langjp　すっげえ痛かったんだろ…！！\
+langen^Ouais, j'ai compris.^@
+langen^Ça a dû te faire un mal de chien... !!^\
+
+textoff
+
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",22  ;fixed lighting issue
+ld c,$BEA_AkuwaraiA2,65
+se1 11
+quakey 2,200
+
+cl c,1
+
+se2v 13,85
+quakey 5,1000
+
+ld c,$BEA_gamanA3,6
+ld c,$BEA_AkuwaraiA2,80
+
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e707:「ひゃっはああああぁ！！@:dwave_jp 0, bea_9e708:　またしても事も無げに、ニンゲンの誰かを犯人に仕立ててきやがったぜぇ！！@:dwave_jp 0, bea_9e709:　ゲーム盤上では口が裂けても言えぬことを、実にしゃあしゃあとのたまう！！\
+langen:dwave_eng 0, bea_9e707:^Hyahhaaaaaaaah !!^@:dwave_eng 0, bea_9e708:^ Encore une fois, tu accuses tranquillement un Humain !!^@:dwave_eng 0, bea_9e709:^ Des choses que tu n'oserais jamais dire sur l'échiquier, tu les sors avec un aplomb incroyable !!^\
+
+E_MA
+se1v 57,100
+mbg white,1
+mcbg 0
+ld c,$BEA_AkuwaraiA3,22
+
+langjp:dwave_jp 0, bea_9e710:　しかし有効だッ！@:dwave_jp 0, bea_9e711:　その暴言ッ、心地よし！！@:dwave_jp 0, bea_9e712:　……心地よいぞ。@:dwave_jp 0, bea_9e713:………これは痛みではない、……心地よさだぁあ！！」\
+;＜戦人
+langen:dwave_eng 0, bea_9e710:^Mais c'est valide ! ^@:dwave_eng 0, bea_9e711:^Cette absurdité est délicieuse !! ^@:dwave_eng 0, bea_9e712:^... Délicieuse. ^@:dwave_eng 0, bea_9e713:^... Ce n'est pas de la douleur... c'est du plaisiiiiir !!^\
+
+se3v 1006,100
+
+monocro #0000ff
+
+mbg white,1
+
+
+monocro off
+mcbg 0
+ld c,$BEA_gamanA4,22
+
+advchar "-1"
+langjp　ベアトが吼えると突き刺さっていた楔が弾き飛ばされる。@
+langjp　しかし傷口は残り、激痛で苛み続ける。\
+langen^Au rugissement de Béato, le pieu qui la transperçait fut projeté au loin.^@
+langen^Mais la plaie restait ouverte, et une douleur atroce continuait de la torturer.^\
+
+se1 20
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld l,$BUT_OdorokiB1,23
+
+advchar "10"
+langjp:dwave_jp 0, but_9e526:「いいのか、続けて行くぜ？@:dwave_jp 0, but_9e527:　第二のゲームの最後の殺人、夏妃伯母さんの部屋で死んだ３人についての青き真実は、１８人目のＸを否定されても有効のはず！@:dwave_jp 0, but_9e528:　赤で反論はあるか？！@:dwave_jp 0, but_9e529:　なければ第２のゲームも俺のものだッ！」\
+;＜戦人
+langen:dwave_eng 0, but_9e526:^Ça te va ? Je continue, alors.^@:dwave_eng 0, but_9e527:^ Ma vérité bleue sur les trois morts de la chambre de tante Natsuhi doit tenir même si la dix-huitième personne X a été réfutée !^@:dwave_eng 0, but_9e528:^ T'as une réponse en rouge ?!^@:dwave_eng 0, but_9e529:^ Sinon, la deuxième partie est à moi aussi !^\
+
+ld r,$BEA_AkuwaraiA4,65
+se1 11
+quakey 2,200
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e714:「あぁ、ないぞ！！@:dwave_jp 0, bea_9e715:　そのような瑣末で戦うのもつまらないッ！！@:dwave_jp 0, bea_9e716:　くれてやるッ、第２のゲームなぞ貴様にくれてやるわッ！！@/
+langen:dwave_eng 0, bea_9e714:^Non, aucune !!^@:dwave_eng 0, bea_9e715:^ Me battre pour de telles broutilles serait d'un ennui mortel !!^@:dwave_eng 0, bea_9e716:^ Je te la donne ! La deuxième partie, je te l'offre !!^@/
+
+
+cbfly 0
+
+se3v 66,100
+
+monocro #0000ff
+bg white,2
+
+se1v 57,100
+bg white,1
+monocro off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\bullet2a.jpg",":b;bmp\background\efe\bullet2a.png",22
+
+monocro #0000ff
+
+se2v 57,100
+bg white,1
+monocro off
+fr_bg ":b;fr_bg\orig\bmp\background\efe\bullet2b.jpg",":b;bmp\background\efe\bullet2b.png",22
+
+;se1v 36,100
+;bg white,1
+;bg bullet_1a,10,120
+
+;se2v 36,100
+;bg white,1
+;bg bullet_1b,10,120
+
+;se1v 36,100
+;bg white,1
+;bg bullet_1c,10,120
+
+;se2v 36,100
+;bg white,1
+;bg bullet_1d,10,120
+
+se1v 36,100
+bg white,1
+;bg bullet_1e,10,120
+mov %oldnew_bg,1 : mov $oldnew_bg_old,":b;fr_bg\orig\bmp\background\efe\stake1a.jpg" : mov $oldnew_bg,":b;bmp\background\efe\stake1a.png" : if %4095 = 0 bg ":b;bmp\background\efe\stake1a.png",10,120 : if %4095 != 0 bg ":b;fr_bg\orig\bmp\background\efe\stake1a.jpg",10,120
+
+wait 500
+
+E_MA
+se1v 36,100
+se2v 27,100
+se3v 27,100
+
+bg white,1
+
+monocro off
+
+;bg blood_2e,42
+bg stake2,42
+
+;textoff
+;se1v 57,100
+;bg homing7BSR,1
+;bg white,22
+;se2v 57,100
+;bg homing7BS,1
+;bg white,22
+;se1 36
+;bg blood_1a,1 
+;quakex 5,1200
+
+;ld c,$BEA_KomaruA1,80
+langjp:dwave_jp 0, bea_9e717:　ぐおあああぁがッ！！！！@/
+langen:dwave_eng 0, bea_9e717:^ Gwoaaaaaaaagh !!!!^@/
+
+;ld c,$BEA_AseruA1,80
+langjp:dwave_jp 0, bea_9e718:　………ふ、……ぐおおおおぉおおおぉおぉ………！！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e718:^ ... Fu... guoooooooooh... !!^\
+
+advchar "-1"
+langjp　第２のゲームの敗北を認めた瞬間に、今度は２本の青き杭がベアトの胸を抉り貫く…！@
+langen^À l'instant où elle reconnut sa défaite dans la deuxième partie, deux pieux bleus lui labourèrent la poitrine de part en part... !^@
+br
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2e.jpg",":b;bmp\background\efe\blood_2e.png",2
+
+langjp　魔女の肺を抉り、腸を抉る。@
+langjp　魔女が苦悶に表情を歪める。@
+langjp　身を捩り、激痛に喘ぐ。\
+langen^Ils déchirèrent les poumons de la sorcière, puis ses entrailles.^@
+langen^Son visage se tordit de douleur.^@
+langen^Elle se plia en deux, haletant de souffrance.^\
+
+me1v 16,70
+
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",22  ;fixed lighting issue
+ld c,$BUT_NiramuA4,26
+
+advchar "10"
+langjp:dwave_jp 0, but_9e530:「痛ぇのか……？」\
+;＜戦人
+langen:dwave_eng 0, but_9e530:^Ça fait mal... ?^\
+
+se1 20
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",24  ;fixed lighting issue
+ld r,$BEA_gamanA3,6
+
+cl r,1
+se1v 13,85
+quakey 3,700
+
+ld r,$BEA_gamanA7,6
+
+ld r,$BEA_gamanA6,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e719:「痛いぃぃ？@:dwave_jp 0, bea_9e720:　……いやいやぁ、くすぐったいくらいよ。@/
+langen:dwave_eng 0, bea_9e719:^Maaaaal ? ^@:dwave_eng 0, bea_9e720:^... Mais non, ça me chatouille à peine. ^@/
+se1v 37,100
+langjp:dwave_jp 0, bea_9e721:うっひゃっひゃひゃっひゃあああぁああぁ！！@:dwave_jp 0, bea_9e722:　全身を細切れにされて屑肉の山にされた、お前の妹に比べればなァあああぁ？！@:dwave_jp 0, bea_9e723:　お前も屑肉にしてやるぞ、兄妹仲良く混ぜて合挽きにしてくれるわァ、あーっきゃっきゃっきゃあああぁああああぁ！！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e721:^Uhhyahhyahyahyahhyaaaaaaah !! ^@:dwave_eng 0, bea_9e722:^... C'est rien du tout, comparé à ta petite sœur, découpée en morceaux jusqu'à ne plus être qu'un tas de viande hachéééée ?! ^@:dwave_eng 0, bea_9e723:^Toi aussi, je vais te réduire en hachis, et je vous mélangerai tous les deux, frère et sœur, en un joli hachis mixte, aaaaaahahahahaha !!^\
+
+se1v 2,100
+se2v 1006,100
+
+mbg white,1
+mcbg 0
+ld l,$BUT_SakebuA2,22
+
+advchar "10"
+langjp:dwave_jp 0, but_9e531:「う、……うぉおおおおおおおおぉおおおお！！@:dwave_jp 0, but_9e532:　ブチ殺してやる、お前を同じ細切れにしてやるッ！！@:dwave_jp 0, but_9e533:　次だ！@:dwave_jp 0, but_9e534:　第３のゲームだ！！@:dwave_jp 0, but_9e535:　いつまでへばってやがる！！@:dwave_jp 0, but_9e536:　てめえを地獄に叩き落してやるのはこれからだッ！！」\
+;＜戦人
+langen:dwave_eng 0, but_9e531:^U... UOOOOOOOOOOOOOOH !! ^@:dwave_eng 0, but_9e532:^Je vais te buter, te découper en morceaux comme elle !! ^@:dwave_eng 0, but_9e533:^La suite ! ^@:dwave_eng 0, but_9e534:^Troisième partie !! ^@:dwave_eng 0, but_9e535:^Combien de temps tu vas rester là à souffler ?!! ^@:dwave_eng 0, but_9e536:^C'est maintenant que je vais te jeter en enfer !!^\
+
+mbg black,22
+
+;ld r,$BEA_komaruA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e724:「……ぐ……、が、……うおおおああぁッ！@:dwave_jp 0, bea_9e725:　無論よ、これくらいでへばるものかッ！\
+langen:dwave_eng 0, bea_9e724:^... Gu... gah... UOAAAAAAAH !! ^@:dwave_eng 0, bea_9e725:^Bien sûr ! Ce n'est pas ça qui va m'abattre !^\
+
+mcbg 0
+ld r,$BEA_ikariA2,80
+E_MA
+langjp:dwave_jp 0, bea_9e726:　そうとも。まだまだこれからよ！/
+sl
+langen:dwave_eng 0, bea_9e726:^Précisément. On ne fait que commencer !^@/
+se1v 2,100
+quakey 3,300
+langjp:noclear_cw:dwave_jp 0, bea_9e727:　さぁ第３のゲームを始めようぞ、まずは最初の六連結の連鎖密室！@:dwave_jp 0, bea_9e728:　本来ならこの密室はそなたが当時に看破している。@/
+langen:noclear_cw:dwave_eng 0, bea_9e727:^ Allons, attaquons la troisième partie par les six chambres closes en chaîne !^@:dwave_eng 0, bea_9e728:^ À l'époque, tu avais déjà percé cette énigme à jour.^@/
+langjp:dwave_jp 0, bea_9e729:しかし、そなたは金蔵を^~ib~^殺してしまった^~ib~^…！！」\
+;＜ベアト
+;＜点処理：殺してしまった
+langen:dwave_eng 0, bea_9e729:^ Mais tu as ~ib~tué Kinzo~ib~... !!^\
+
+cbfly 0
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+se1v 57,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\map10.jpg",":b;bmp\background\efe\map10.png",22
+
+advchar "-1"
+langjp　俺は当時、ジジイが犯人で、@他の５人を殺して部屋の鍵をそれぞれ数珠繋ぎにした後、自分の密室をボイラー室に構築、@
+langen^À l'époque, j'avais supposé que Grand-père était le coupable : ^@^qu'après avoir tué les cinq autres et enchaîné les clés de leurs chambres les unes aux autres, il s'était enfermé dans sa propre chambre close, la chaufferie...^@
+br
+langjp　そこで、何らかの工作を行なう最中に事故死して、ボイラーで焼け死んだと仮定した。\
+langen^puis qu'il était mort par accident en y préparant je ne sais quel dispositif, et qu'il avait brûlé dans la chaudière.^\
+
+se1v 1006,100
+se2v 1100,100
+
+mono 1
+print 1
+
+
+langjp　しかし俺は、ジジイはすでに死んでいると宣言しちまった。@
+langjp　つまりは、自分で自分の説を否定しちまったわけだな。@皮肉な話だぜ…！@
+langen^Mais cette fois, j'ai moi-même déclaré que Grand-père était déjà mort.^@
+langen^Bref, j'ai démoli ma propre théorie. Belle ironie... !^@
+br
+langjp　だがッ、\
+langen^Mais !^\
+
+mono off
+
+monocro #0000ff
+
+se1v 57,100
+
+mbg white,1
+mcbg 0
+
+monocro off
+
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld c,$BUT_OdorokiB1,22
+
+advchar "10"
+langjp:dwave_jp 0, but_9e537:「問題ないッ！@/
+langen:dwave_eng 0, but_9e537:^Aucun problème ! ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e538:　#5decffジジイ以外にも犯行可能な人間は大勢いる！@/
+langen:dwave_eng 0, but_9e538:^#5decffÀ part Grand-père, plein de gens auraient pu commettre le crime ! ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e539:　親族会議中だった大人たちが、全員グルで犯行に及んだとさえ言い切れる！#ffffff」\
+;＜戦人
+langen:dwave_eng 0, but_9e539:^Je peux même affirmer que tous les adultes présents à la conférence familiale étaient complices !#ffffff^\
+
+se1 20
+
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld r,$BEA_AkuwaraiA4,24
+se1 59
+advchar "27"
+langjp:dwave_jp 0, bea_9e730:「#ff0000マスターキー５本は全て、５人の使用人の懐よりそれぞれ発見された！@/
+langen:dwave_eng 0, bea_9e730:^#ff0000Les cinq passe-partout ont tous été retrouvés, chacun dans la poche de l'un des cinq domestiques ! ^@/
+se2 59
+langjp:dwave_jp 0, bea_9e731:　個別の鍵は死体の傍らの封筒の中に！@/
+langen:dwave_eng 0, bea_9e731:^Les clés individuelles, elles, se trouvaient dans les enveloppes à côté des cadavres ! ^@/
+se3 59
+langjp:dwave_jp 0, bea_9e732:　つまり、連鎖密室にかかわる全ての鍵が、連鎖密室内に閉じ込められていたわけだ！！@/
+langen:dwave_eng 0, bea_9e732:^Autrement dit, toutes les clés des chambres closes en chaîne étaient elles-mêmes enfermées dans les chambres closes en chaîne !! ^@/
+se1 59
+langjp:dwave_jp 0, bea_9e733:　ドアの隙間だの窓の隙間だの通気口だのッ、そんなところを使って密室外から鍵を戻すことなど出来ぬぞ！！#ffffff」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e733:^Et pas question de remettre une clé depuis l'extérieur en la glissant sous une porte, par l'interstice d'une fenêtre ou par une bouche d'aération !!#ffffff^\
+
+se1 20
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld l,$BUT_NayamuA3,23
+
+se1v 2,100
+advchar "10"
+langjp:dwave_jp 0, but_9e540:「#5decffなら毒ガスで殺したんだ！@/
+langen:dwave_eng 0, but_9e540:^#5decffAlors ils ont été tués au gaz toxique ! ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e541:　鍵は通らなくてもガスなら通るぜ？！@/
+langen:dwave_eng 0, but_9e541:^Une clé ne passe peut-être pas, mais un gaz, si, non ?! ^@/
+se3v 2,100
+langjp:dwave_jp 0, but_9e542:　密室の外から殺人を実行したんだ！！#ffffff」\
+;＜戦人
+langen:dwave_eng 0, but_9e542:^Le meurtre a donc été commis depuis l'extérieur de la chambre close !!#ffffff^\
+
+ld r,$BEA_fukigenA1,64
+se1 11
+quakex 2,200
+
+se2 59
+advchar "27"
+langjp:dwave_jp 0, bea_9e734:「#ff0000彼ら全員には致命傷となった銃創と思わしき傷痕があったぞ！@/
+langen:dwave_eng 0, bea_9e734:^#ff0000Ils portaient tous une blessure mortelle qui ressemblait à une plaie par balle ! ^@/
+se3 59
+langjp:dwave_jp 0, bea_9e735:　室外からの殺害は不可能だぞ！！@/
+langen:dwave_eng 0, bea_9e735:^Les tuer depuis l'extérieur de la pièce était impossible !! ^@/
+se1 59
+langjp:dwave_jp 0, bea_9e736:　さらに赤を重ねようぞ！@/
+langen:dwave_eng 0, bea_9e736:^Et j'en rajoute en rouge ! ^@/
+se2 59
+langjp:dwave_jp 0, bea_9e737:　金蔵を除く５人の殺人の際、殺人者は必ず同室していた！@/
+langen:dwave_eng 0, bea_9e737:^Lors du meurtre des cinq victimes autres que Kinzo, le meurtrier se trouvait forcément dans la même pièce que sa victime ! ^@/
+se3 59
+langjp:dwave_jp 0, bea_9e738:　自殺者がいないことは当時に赤で宣言済みだ！！#ffffff」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e738:^Et j'ai déjà déclaré en rouge à l'époque qu'aucun d'eux ne s'était suicidé !!#ffffff^\
+
+se1v 2,100
+
+ld l,$BUT_futekiA2,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e543:「#5decff犯人は全員をそれぞれの部屋で殺害後、連鎖密室を構築した。@/
+langen:dwave_eng 0, but_9e543:^#5decffLe coupable a tué chaque victime dans sa chambre, puis il a monté les chambres closes en chaîne. ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e544:しかし、最後の部屋の鍵だけは、どうしても密室内に戻せない。@/
+langen:dwave_eng 0, but_9e544:^Mais la clé de la dernière chambre, il ne pouvait en aucun cas la remettre à l'intérieur. ^@/
+se3v 2,100
+langjp:dwave_jp 0, but_9e545:だが戻すことは出来たぜ。@/
+langen:dwave_eng 0, but_9e545:^Et pourtant, il a pu la remettre. ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e546:死体の第一発見者が、鍵を見つけたふりをして、誰かの死体のポケットから取り出して見せればいいからだ！！#ffffff」\
+;＜戦人
+langen:dwave_eng 0, but_9e546:^Parce qu'il suffisait que la personne qui a découvert les corps fasse semblant de trouver la clé en la sortant de la poche d'un cadavre !!#ffffff^\
+
+textoff
+
+cbfly 0
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",1
+monocro #0000ff
+se1v 66,100
+se2v 66,100
+se3v 66,100
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\bullet2a.jpg",":b;bmp\background\efe\bullet2a.png",2
+
+se1v 46,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\bullet2b.jpg",":b;bmp\background\efe\bullet2b.png",80
+
+for %ryuu1=1 to 7
+	resettimer
+	se2v 46,100
+	se1v 46,100
+	bg white,1
+	waittimer 90
+
+	se1v 46,100
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\bullet2b.jpg",":b;bmp\background\efe\bullet2b.png",1
+	waittimer 180
+
+	se2v 46,100
+	fr_bg ":b;fr_bg\orig\bmp\background\efe\bullet2a.jpg",":b;bmp\background\efe\bullet2a.png",1
+	waittimer 270
+next
+
+;wait 80
+
+E_MA
+
+bg white,1
+se1v 36,100
+se2v 27,100
+se3v 61,100
+monocro off
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1a.jpg",":b;bmp\background\efe\blood_1a.png",1
+quakex 5,1200
+
+
+advchar "-1"
+langjp　その青き楔の応酬を防ぎきれない…！@
+langjp　ベアトは次々と繰り出される青き楔に押され、ついに弾き漏らし再び深手を負う。\
+langen^Elle ne parvint pas à parer toute cette rafale de pieux bleus... !^@
+langen^Submergée par les pieux bleus qui fondaient sur elle les uns après les autres, Béato finit par en laisser passer un et fut de nouveau grièvement blessée.^\
+
+;ld c,$BEA_KomaruA1,80
+
+me1v 17,70
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e739:「ぎ、ぎぎ、……ぐああああぁッ！！」/
+sl
+langen:dwave_eng 0, bea_9e739:^G... gigi... gwaaaaaah !!^@/
+quakey 4,500
+mov %disable_adv_clear, 1
+langjp\
+langen\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜ベアト
+
+se1v 38,100
+se2v 38,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1ar.jpg",":b;bmp\background\efe\blood_1ar.png",80
+
+langjp　激痛に咆哮しながら、右腕に突き刺さった青き楔を引き抜く。\
+langen^Hurlant de douleur, elle arracha le pieu bleu planté dans son bras droit.^\
+
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",22  ;fixed lighting issue
+ld c,$BEA_gamanA7,6
+ld c,$BEA_gamanA5,80
+
+langjp　……ベアトの全身は、何度も何度も青き楔や杭、そして刃に切り裂かれ、貫かれ、@今や全身を血塗れにしていた。\
+langen^... Lacéré et transpercé encore et encore par des pieux, des pointes et des lames bleues, ^@^le corps de Béato était à présent couvert de sang de la tête aux pieds.^\
+
+ld c,$BEA_gamanA6,80
+
+E_MA
+langjp　しかしそれでも、ベアトはニヤリと笑う。@
+langjp　さも愉快であるようにげらげらと笑う…！\
+langen^Et pourtant, Béato souriait.^@
+langen^Elle riait aux éclats, comme si tout cela l'amusait au plus haut point... !^\
+
+ld c,$BEA_ikariA1,80
+se1v 37,100
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e740:「ふっはっはっはぁああああぁ！！@:dwave_jp 0, bea_9e741:　縁寿に、親を連れ戻して帰宅すると約束した男が、どの口で親を犯人にした説を語るというのか？\
+langen:dwave_eng 0, bea_9e740:^Mouhahahahahaaaaaah !! ^@:dwave_eng 0, bea_9e741:^Et c'est toi, qui as promis à Ange de lui ramener ses parents, qui oses avancer une théorie qui fait d'eux les coupables ?^\
+
+ld c,$BEA_AkuwaraiA3,80
+
+langjp:dwave_jp 0, bea_9e742:　いいぜ、それでもいいんだぜぇえぇ？@:dwave_jp 0, bea_9e743:　家族で仲良く大量殺人に手を染めて、@:dwave_jp 0, bea_9e744:決して落ちぬ血に塗れながら縁寿のところに帰れよぉおおおッ！！@:dwave_jp 0, bea_9e745:　それでこそ、魔女の島からの生還者にお似合いだぜぇえええぇ？@/
+langen:dwave_eng 0, bea_9e742:^Très bien, ça me va parfaitement, tu saiiiiis ? ^@:dwave_eng 0, bea_9e743:^Trempez donc les mains dans un massacre, tous ensemble, en famille bien unie, ^@:dwave_eng 0, bea_9e744:^puis rentrez auprès d'Ange, couverts d'un sang qui ne partira jamaaaaaais !! ^@:dwave_eng 0, bea_9e745:^Voilà qui sied parfaitement aux rescapés de l'île de la sorcièèèèèèère, non ? ^@/
+;ld c,$BEA_AkuwaraiA5,80
+
+langjp:dwave_jp 0, bea_9e746:　屑肉縁寿にぴったりだぁああああああひゃっはああぁあああああぁッ！！！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e746:^Pile ce qu'il faut pour Ange la viande hachéééééée, hyahhaaaaaaaaaaaah !!!^\
+
+se1v 2,100
+se2v 2,100
+se3v 27,100
+mbg white,1
+mcbg 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld r,$BUT_SAkebuA2,2
+
+advchar "10"
+langjp:dwave_jp 0, but_9e547:「うおおおおおおぉおおお黙りやがれええええぇええええ！！@:dwave_jp 0, but_9e548:　てめえを殺すッ！！@:dwave_jp 0, but_9e549:　バラバラにして殺すッ！！@:dwave_jp 0, but_9e550:　命乞いの必要はねぇぜ、絶対にこの手で、最悪の死を与えてやるッ！！」\
+;＜戦人
+langen:dwave_eng 0, but_9e547:^UOOOOOOOOOOH, FERME TA GUEUUUUUUULE !! ^@:dwave_eng 0, but_9e548:^Je vais te tuer !! ^@:dwave_eng 0, but_9e549:^Je vais te découper en morceaux !! ^@:dwave_eng 0, but_9e550:^Pas la peine de supplier : je te réserve de mes propres mains la pire mort qui soit !!^\
+
+
+ld l,$BEA_GamanA3,26
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e747:「あぁ、そなたなら出来るだろうよ…！！@:dwave_jp 0, bea_9e748:　千年の果てに残虐の限りを尽くしきった妾に、それに見合う最期を与えてくれるだろうよ…！！\
+langen:dwave_eng 0, bea_9e747:^Oui, toi, tu en es sûrement capable... !! ^@:dwave_eng 0, bea_9e748:^À moi qui ai poussé la cruauté à son comble au bout de mille ans, tu sauras offrir une fin à la hauteur... !!^\
+
+ld l,$BEA_AkuwaraiA5,80
+langjp:dwave_jp 0, bea_9e749:　あぁ、それは痛いのか？@:dwave_jp 0, bea_9e750:　辛いのか？@:dwave_jp 0, bea_9e751:　それともくすぐったいのかなぁあああぁああぁ？！\
+langen:dwave_eng 0, bea_9e749:^Ah, ça fait mal ? ^@:dwave_eng 0, bea_9e750:^C'est douloureux ? ^@:dwave_eng 0, bea_9e751:^Ou bien ça chatouiiiiiiiiille ?!^\
+
+ld l,$BEA_IkariA1,80
+se1v 37,100
+langjp:dwave_jp 0, bea_9e752:　これくらいで堪えるかよ、来いよ右代宮戦人ぁああぁ、まだ謎は残ってるぜぇええええぇ！！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e752:^Tu crois que ça suffit à m'abattre ? Viens, Battler Ushiromiyaaaaaa, il reste encore des énigmes à résouuuuuuuuudre !!^\
+
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",26
+
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\forest\moon_1a.jpg",":b;bmp\background\forest\moon_1b.png",22  ;fixed lighting issue
+
+advchar "-1"
+langjp　ベアトはすでに、俺の最初の強力な一手、１８人目のＸを、@島の人数を１７人にすることで切り返している。\
+langen^Béato avait déjà paré mon premier coup de force, la dix-huitième personne X, ^@^en ramenant à dix-sept le nombre de personnes sur l'île.^\
+
+langjp　だが、１７人に制限したところで、絵羽伯母さんという犯人を仮定した説は覆らない。@
+langen^Mais limiter ce nombre à dix-sept ne renversait pas pour autant la théorie qui faisait de tante Eva la coupable.^@
+br
+langjp　第３のゲームの殺人のほとんどは、この説で撃破できるのだ…！\
+langen^Avec elle, je pouvais briser la plupart des meurtres de la troisième partie... !^\
+
+textoff
+cbfly 0
+E_MA
+
+se1v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\homing6bsr.jpg",":b;bmp\background\efe\homing6bsr.png",1
+bg white,10,120
+se2v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\homing6bs.jpg",":b;bmp\background\efe\homing6bs.png",1
+bg white,10,120
+se1v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\homing7bsr.jpg",":b;bmp\background\efe\homing7bsr.png",1
+bg white,10,120
+se2v 57,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\homing7bs.jpg",":b;bmp\background\efe\homing7bs.png",1
+bg white,10,120
+se1v 27,100
+se3v 36,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_1b.jpg",":b;bmp\background\efe\blood_1b.png",1
+quakex 5,1000
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+se2 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2a.jpg",":b;bmp\background\efe\blood_2a.png",1
+wait 500
+se2 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2c.jpg",":b;bmp\background\efe\blood_2c.png",1
+wait 700
+se2 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2e.jpg",":b;bmp\background\efe\blood_2e.png",1
+
+langjp　全身から血を滴り落とす黄金の魔女……。@
+langen^La Sorcière d'Or, ruisselante de sang...^@
+br
+langjp　それを、今こそ完膚なきまでに、容赦なく追い詰める俺。\
+langen^Et moi qui, cette fois, l'acculais sans merci, sans la moindre pitié.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+me1v 5,70
+
+langjp　これは、勝ち負けを決めて遊ぶゲームではない。@
+langen^Ce n'est pas un jeu où l'on s'amuse à désigner un gagnant et un perdant.^@
+br
+langjp　……そうさ、遊びじゃないんだ。\
+langen^... Ouais. On ne joue plus.^\
+
+langjp　ここでこうして戦って遊んでいるだけでも、………帰りが遅れてるんだ。@
+langen^Rien qu'à rester là à me battre comme ça... je retarde mon retour.^@
+br
+langjp　孤独な縁寿が、悲しみと寂しさで心を切り刻まれ続けてるんだ…！@
+langen^Ange est toute seule, et la tristesse et la solitude continuent de lui lacérer le cœur... !^@
+br
+langjp　一秒でも早く、俺は縁寿のところへ帰ってやらなければならないんだッ！！\
+langen^Je dois retourner auprès d'Ange au plus vite, sans perdre une seule seconde !!^\
+
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",26  ;fixed lighting issue
+ld c,$BUT_majimeA3,22
+
+advchar "10"
+langjp:dwave_jp 0, but_9e551:「…………ボロボロだな。@:dwave_jp 0, but_9e552:虫の息ってヤツか？」\
+;＜戦人
+langen:dwave_eng 0, but_9e551:^... T'es dans un sale état. ^@:dwave_eng 0, but_9e552:^T'as plus qu'un souffle de vie, hein ?^\
+
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",23  ;fixed lighting issue
+ld r,$BEA_GamanA5,6
+wait 400
+cl r,1
+se1v 13,85
+se3v 39,100
+wait 1500
+ld r,$BEA_GamanA7,6
+wait 1500
+
+se1v 2,100
+mbg white,1
+mcbg 0
+ld r,$BEA_GamanA1,22
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e753:「……くっくっくっく。@:dwave_jp 0, bea_9e754:……まだまだ、……堪えぬわ……。@:dwave_jp 0, bea_9e755:……これくらい、………っ。@/
+langen:dwave_eng 0, bea_9e753:^... Kukukuku. ^@:dwave_eng 0, bea_9e754:^... Ce n'est toujours... pas assez... ^@:dwave_eng 0, bea_9e755:^Ça... ce n'est... rien... !^@/
+
+ld r,$BEA_ikariA2,80
+
+langjp:dwave_jp 0, bea_9e756:……くっくくくく、こそばゆいわぁ…！！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e756:^ ... Kukukukuku, ça chatouille... !!^\
+
+ld l,$BUT_nayamuA4,24
+
+advchar "10"
+langjp:dwave_jp 0, but_9e553:「いらねえようだな、容赦。」@
+;＜戦人
+langen:dwave_eng 0, but_9e553:^On dirait que t'as pas besoin que je te ménage.^@
+
+
+ld r,$BEA_iiwakeA3,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e757:「元よりそのつもりもなかろうが。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e757:^Comme si tu en avais eu l'intention.^\
+
+ld l,$BUT_FutekiA2,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e554:「存分に行くぜ。」\
+;＜戦人
+langen:dwave_eng 0, but_9e554:^Alors je vais y aller à fond.^\
+
+E_MA
+
+se1 11
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",23
+
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",23  ;fixed lighting issue
+ld c,$BEA_gamanA4,65
+se1 11
+quakey 2,200
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e758:「そうせよ。@:dwave_jp 0, bea_9e759:逆の立場だった時、妾は容赦しなかった。@:dwave_jp 0, bea_9e760:だからそなたもそのチャンスがあったならそうするべきであろうが。\
+langen:dwave_eng 0, bea_9e758:^Fais donc. ^@:dwave_eng 0, bea_9e759:^Quand nos positions étaient inversées, je n'ai eu aucune pitié. ^@:dwave_eng 0, bea_9e760:^Alors maintenant que l'occasion se présente, tu ferais bien d'en faire autant.^\
+
+se1v 2,100
+se2v 37,100
+mbg white,1
+mcbg 0
+ld c,$BEA_GAMANA6,22
+
+langjp:dwave_jp 0, bea_9e761:　じゃないと、また別の世界の孤独な縁寿を呼んで、@:dwave_jp 0, bea_9e762:今度は四肢を引き千切って槍に刺して炙り焼きにしちまうぜぇええええぇ？？@/
+langen:dwave_eng 0, bea_9e761:^Sinon, j'irai chercher dans un autre monde une autre Ange livrée à sa solitude, ^@:dwave_eng 0, bea_9e762:^et cette fois, je lui arracherai les bras et les jambes, je l'embrocherai sur une lance et je la ferai rôtir, hein ?? ^@/
+se1v 37,100
+se2v 37,100
+langjp:dwave_jp 0, bea_9e763:　うっひゃっはあぁあああああああ！！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e763:^Uhyahahahahahahaha !!^\
+
+se1v 2,100
+se2v 57,100
+
+mbg white,1
+mcbg 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld r,$BUT_SakebuA1,22
+
+advchar "10"
+langjp:dwave_jp 0, but_9e555:「黙れぇえええええぇ！！/
+sl
+langen:dwave_eng 0, but_9e555:^FERME-LAAAAAAAA !! ^@/
+se3v 12,85
+quakex 3,400
+langjp:noclear_cw:dwave_jp 0, but_9e556:　もう二度と！！@:dwave_jp 0, but_9e557:　俺の家族も！@:dwave_jp 0, but_9e558:　親族も！@:dwave_jp 0, but_9e559:　そして使用人のみんなも！！@:dwave_jp 0, but_9e560:　お前の玩具にはさせねぇぜ！！\
+langen:noclear_cw:dwave_eng 0, but_9e556:^Plus jamais !! ^@:dwave_eng 0, but_9e557:^Ni ma famille ! ^@:dwave_eng 0, but_9e558:^Ni mes proches ! ^@:dwave_eng 0, but_9e559:^Ni aucun des domestiques !! ^@:dwave_eng 0, but_9e560:^Je ne te laisserai plus jamais en faire tes jouets !!^\
+
+ld r,$BUT_MajimeA4,80
+
+langjp:dwave_jp 0, but_9e561:　……俺はすでに第４のゲームの謎も全て青き真実で打ち破っている。@:dwave_jp 0, but_9e562:………残る謎は、第３のゲームの一番最後。@:dwave_jp 0, but_9e563:……南條先生の殺人だけだぜ。」\
+;＜戦人
+langen:dwave_eng 0, but_9e561:^... Avec la vérité bleue, j'ai déjà brisé tous les mystères de la quatrième partie. ^@:dwave_eng 0, but_9e562:^... Il ne reste que le tout dernier mystère de la troisième partie. ^@:dwave_eng 0, but_9e563:^... Le meurtre du docteur Nanjo.^\
+
+
+;ld c,$BEA_GamanA2,80
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+me1v 16,70
+
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\forest\moon_1a.jpg",":b;bmp\background\forest\moon_1b.png",26  ;fixed lighting issue
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e764:「……おや、………妾はもうそんなところまで追い詰められていたか……。@:dwave_jp 0, bea_9e765:……くっくくくく、妾も風前の灯であるなぁ…。@:dwave_jp 0, bea_9e766:……いぃっひっひっひっひ、……がはッ、ごほごほッ！/
+sl
+langen:dwave_eng 0, bea_9e764:^... Oh... serais-je déjà acculée à ce point... ? ^@:dwave_eng 0, bea_9e765:^... Kukukuku, me voilà ne tenant plus qu'à un fil... ^@:dwave_eng 0, bea_9e766:^Héhéhéhé... gah, kof, kof !^@/
+sl
+quakey 4,500
+advchar "-1"
+langjp」\
+langen^ ^\
+
+cbfly 0
+
+;＜ベアト
+textoff
+;se3 35
+;bg blood_2a,1
+;wait 1000
+;se1 35
+;bg blood_2b,1
+;wait 1000
+se2 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2d.jpg",":b;bmp\background\efe\blood_2d.png",1
+
+langjp　咳き込み、血反吐を吐き出す。@
+langen^Elle toussa violemment et cracha du sang.^@
+br
+langjp　……あれだけ何度も内臓をブチ抜かれたんだ。@
+langjp　当然だ。\
+langen^... Après s'être fait transpercer les entrailles autant de fois...^@
+langen^ça n'avait rien d'étonnant.^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",26  ;fixed lighting issue
+ld l,$BUT_majimeA3,22
+
+
+advchar "10"
+langjp:dwave_jp 0, but_9e564:「ということは、この南條先生殺しの謎だけが、お前が魔女であることの、最後の防衛線ってことになるな……？」\
+;＜戦人
+langen:dwave_eng 0, but_9e564:^Le meurtre du docteur Nanjo, c'est donc ta dernière ligne de défense pour prouver que t'es une sorcière... c'est ça ?^\
+
+ld r,$BEA_gamanA4,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e767:「…………そうなるな。@:dwave_jp 0, bea_9e768:これを破られたなら、妾は全ての謎を破られたことになる。@:dwave_jp 0, bea_9e769:………そなたの真実のいずれかを新しき赤き真実で反論するか、新しき謎を提示しない限り、@:dwave_jp 0, bea_9e770:妾は、死ぬ。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e767:^... Exact. ^@:dwave_eng 0, bea_9e768:^Si tu perces celui-là, toutes mes énigmes auront été percées. ^@:dwave_eng 0, bea_9e769:^... À moins que je ne réfute l'une de tes vérités par une nouvelle vérité rouge, ou que je ne pose un nouveau mystère, ^@:dwave_eng 0, bea_9e770:^je mourrai.^\
+
+ld l,$BUT_komaruA3,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e565:「……………………。@:dwave_jp 0, but_9e566:……追い詰められて、風前の灯火って感じには見えねぇぜ。@:dwave_jp 0, but_9e567:……まだ、何か隠し球を持ってやがるな……？」\
+;＜戦人
+langen:dwave_eng 0, but_9e565:^...^@:dwave_eng 0, but_9e566:^ T'as pourtant pas l'air d'une femme acculée, qui ne tient plus qu'à un fil. ^@:dwave_eng 0, but_9e567:^... T'as encore un atout caché, hein... ?^\
+
+ld r,$BEA_IiwakeA3,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e771:「さぁて、どうかな…？@:dwave_jp 0, bea_9e772:　妾はもはや、千年の長過ぎる生涯に飽いている…！@:dwave_jp 0, bea_9e773:　その果てに巡り合ったそなたという好敵手によって、生涯を閉じるのも悪くないと思い始めている。\
+langen:dwave_eng 0, bea_9e771:^Qui sait... ? ^@:dwave_eng 0, bea_9e772:^Cette vie de mille ans, bien trop longue, a fini par me lasser... ! ^@:dwave_eng 0, bea_9e773:^Et je commence à me dire que finir mes jours de la main d'un rival comme toi, rencontré au bout de ce si long chemin, ne serait pas si mal.^\
+
+ld r,$BEA_fukigenA1,80
+E_MA
+langjp:dwave_jp 0, bea_9e774:　くっくくくく、そなたなら、やれるよなぁ？@:dwave_jp 0, bea_9e775:　やってくれよ。@:dwave_jp 0, bea_9e776:……頼むよ、殺してくれよぉおおぉ。@:dwave_jp 0, bea_9e777:殺してばっかりでさァ、殺された試しがねぇんだよぉおおお！\
+langen:dwave_eng 0, bea_9e774:^Kukukuku, toi, tu peux le faire, pas vrai ? ^@:dwave_eng 0, bea_9e775:^Fais-le. ^@:dwave_eng 0, bea_9e776:^... Allez, je t'en supplie, tue-moiiiii. ^@:dwave_eng 0, bea_9e777:^Moi, je ne fais que tuer, et j'ai jamais eu l'occasion de me faire tuéééééer !^\
+
+ld r,$BEA_gamanA6,80
+
+langjp:dwave_jp 0, bea_9e778:　お前ら１８人を幾百と殺してはきたけれど、殺された試しは一度もねぇから、@:dwave_jp 0, bea_9e779:一回くらいは経験してみてえんだよぉおおおおお、うっひひひひひひい！！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e778:^Vous dix-huit, je vous ai tués des centaines de fois, mais moi, je me suis jamais fait tuer une seule fois, ^@:dwave_eng 0, bea_9e779:^alors j'aimerais bien essayer au moins une fois, uhéhéhéhéhéhéhé !!^\
+
+advchar "-1"
+langjp　それは先ほどから変わらぬ、品のない強がり。@
+langen^Toujours la même bravade vulgaire que tout à l'heure.^@
+br
+langjp　……しかし口から血を零し、美しかったドレスを穴だらけにされ、@全身から血を流すその姿は、その態度からかけ離れている。\
+langen^... Mais du sang coulait de sa bouche, sa belle robe était criblée de trous, et son corps tout entier saignait.^@^ Son allure jurait terriblement avec ces fanfaronnades.^\
+
+langjp　脇腹に食らった一撃が未だに堪えているのだろうか、@無意識にそこを押さえる姿勢に、優雅さは微塵もない。\
+langen^Le coup reçu au flanc devait encore la faire souffrir, ^@^car elle le pressait d'une main sans même s'en rendre compte, sans plus la moindre élégance.^\
+
+langjp　……しかし、同情の余地はないのだ。@
+langjp　この魔女に情けを掛ける限り、ここから俺や家族は開放されない。@
+langen^... Mais il n'y avait aucune place pour la compassion.^@
+langen^Tant que j'aurai pitié de cette sorcière, ni ma famille ni moi ne pourrons sortir d'ici.^@
+br
+langjp　……こいつを倒さない限り、俺たちは家へ帰れないんだ…！！\
+langen^... Tant que je ne l'aurai pas vaincue, nous ne pourrons pas rentrer chez nous... !!^\
+
+langjp　世の中、敵対する人間であっても、状況が変わればわかりあうことも出来るだろう。@
+langen^Dans ce monde, même des ennemis peuvent finir par se comprendre quand les circonstances changent.^@
+br
+langjp　しかし、絶対悪というものが存在する。@
+langjp　それは、ただ存在するだけで不幸を強いる邪悪であり、如何なる妥協も許されない。@
+langen^Mais il existe une chose qu'on appelle le mal absolu.^@
+langen^Un mal qui, par sa seule existence, impose le malheur, et qui ne souffre aucun compromis.^@
+br
+langjp　ただ存在し続けるだけで、………悪ッ！！\
+langen^Le simple fait qu'il continue d'exister... est un mal !!^\
+
+ld l,$BUT_majimeA4,80
+
+me1v 16,70
+
+advchar "10"
+langjp:dwave_jp 0, but_9e568:「お前を哀れには思わない。@:dwave_jp 0, but_9e569:お前が、俺たちの誰にも哀れまなかったように…！」\
+;＜戦人
+langen:dwave_eng 0, but_9e568:^Je n'aurai aucune pitié pour toi. ^@:dwave_eng 0, but_9e569:^Tout comme tu n'en as eu pour aucun d'entre nous... !^\
+
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",24
+
+bfly2 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld c,$BEA_iiwakeA3,24
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e780:「………そうともさァ。@:dwave_jp 0, bea_9e781:お前らなんてゲームの駒だぜェ！@:dwave_jp 0, bea_9e782:　毎回毎回、最初の６人は誰を殺そうかなぁ、次の２人はどう殺そうかなぁ、@:dwave_jp 0, bea_9e783:もっともっとグロい殺し方はねぇかなぁあって考えるのは最ッ高に楽しいぜぇえええぇ？？\
+langen:dwave_eng 0, bea_9e780:^... Évidemment. ^@:dwave_eng 0, bea_9e781:^Vous n'êtes que des pièces sur un échiquier ! ^@:dwave_eng 0, bea_9e782:^À chaque partie, choisir qui seront les six premiers à crever, réfléchir à comment tuer les deux suivants,^@:dwave_eng 0, bea_9e783:^ imaginer des façons toujours plus gores de vous massacrer... c'est trop jouissiiiiiif, tu comprends ??^\
+
+ld c,$BEA_gamanA6,80
+
+langjp:dwave_jp 0, bea_9e784:　なぁ戦人よぉ、少し改心するから今回も許してくれよぉお。@:dwave_jp 0, bea_9e785:そしたらさ、もうちょっとマシな殺し方に変えてやるからよぉ？@:dwave_jp 0, bea_9e786:　誰をどの順でどんな風に殺すか、お前の希望も聞いてやるからよぉおおお？\
+langen:dwave_eng 0, bea_9e784:^Dis, Battler, je vais me repentir un tout petit peu, alors pardonne-moi encore cette fois. ^@:dwave_eng 0, bea_9e785:^En échange, je trouverai des façons de tuer un peu plus convenables, d'accord ? ^@:dwave_eng 0, bea_9e786:^Je te laisserai même choisir qui tuer, dans quel ordre et comment, hein ??^\
+
+ld c,$BEA_ikariA2,80
+
+langjp:dwave_jp 0, bea_9e787:　楽しいぜぇええぇ、人の命を弄ぶってのはよぉおおおおおおお！！@:dwave_jp 0, bea_9e788:　お前なら考え付くよ、縁寿をもっともっと屑肉にしてやる方法をよぉおおおおおおお！！@:dwave_jp 0, bea_9e789:　来いよ戦人ぁあああ！！@/
+langen:dwave_eng 0, bea_9e787:^C'est tellement jouissif de jouer avec la vie des geeeens !! ^@:dwave_eng 0, bea_9e788:^Toi, tu trouverais sûrement comment réduire Ange en morceaux encore plus petits, encore plus fins !! ^@:dwave_eng 0, bea_9e789:^Viens, Battleeeeeer !! ^@/
+E_MA
+se1v 2,100
+langjp:dwave_jp 0, bea_9e790:　南條殺し、暴いてみろォオオオオオオオオッ！！」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e790:^Le meurtre de Nanjo, vas-y, perce-le à jouuuuuuuuuur !!^\
+
+cbfly 0
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+advchar "-1"
+langjp　１８人目のＸは破られている。@
+langen^La dix-huitième personne X a été réfutée.^@
+br
+langjp　だが、俺は屈しない…！！@
+langjp　魔女の息の根を、止めるッ！！\
+langen^Mais je ne plierai pas... !!^@
+langen^Je vais achever cette sorcière !!^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_spiral_1a.jpg",":b;bmp\background\efe\different_spiral_1a.png",22
+
+me1v 28,100
+
+langjp　第３のゲームのラスト。@
+langen^La fin de la troisième partie.^@
+br
+langjp　あの時点での生存者であった、戦人、絵羽、朱志香、@そして南條の４人はいずれも南條殺しに関係ないと赤で宣言されている。@
+langen^Il a été déclaré en rouge que les quatre survivants de ce moment-là, Battler, Eva, Jessica ^@^et le docteur Nanjo, n'avaient rien à voir avec le meurtre du docteur Nanjo.^@
+br
+langjp　また、目の前で直接的に殺害したとも宣言している。\
+langen^Il a aussi été déclaré qu'il avait été tué directement, par quelqu'un qui se tenait face à lui.^\
+
+langjp　それ以外の人物については、赤で死を宣言されるという最強のアリバイも持っている……。@
+langen^Quant à tous les autres, ils avaient l'alibi suprême... leur mort avait été déclarée en rouge...^@
+br
+langjp　…………１８人目のＸ以外の方法で、これを…打ち破る……！\
+langen^Je vais... briser ce mystère sans la dix-huitième personne X... !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+se1v 2,100
+fr_bg ":b;fr_bg\orig\bmp\background\efe\different_spiral_1a.jpg",":b;bmp\background\efe\different_spiral_1a.png",1
+
+langjp　考えろ、思考を停止させるな……！！@
+langjp　ヤツの赤は俺を縛るだけじゃない、ヤツの弱点にもなるはず…！@
+langen^Réfléchis. Surtout, ne cesse pas de réfléchir... !!^@
+langen^Ses vérités rouges ne servent pas qu'à m'entraver. Elles doivent aussi pouvoir devenir ses points faibles... !^@
+br
+langjp　何とか逆手に使うんだ………！\
+langen^Je dois trouver un moyen de les retourner contre elle... !^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+me2v 16,70
+
+langjp^^!s0　…………そうだ、/
+sl
+langjp^^!d800……まだ、隙間はある……！/
+sl
+langen^^!s0^... C'est ça^@/
+sl
+langen:!d800^... il reste encore une brèche... !^@/
+sl
+mov %disable_adv_clear, 1
+langjp!sd@
+langen!sd@
+mov %disable_adv_clear, 0
+
+br
+langjp　そうさ、……これで、打ち破る。@
+langen^ Ouais... avec ça, je peux la briser.^@
+br
+langjp　これでベアトリーチェの魔女伝説はおしまいだ。\
+langen^Avec ça, la légende de la sorcière Béatrice s'arrête ici.^\
+
+bfly1 0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld c,$BUT_MajimeA3,22
+ld c,$BUT_MajimeA4,80
+
+advchar "10"
+langjp:dwave_jp 0, but_9e570:「……確かに、他の連中は死亡だったろうさ。@/
+langen:dwave_eng 0, but_9e570:^... C'est vrai, les autres étaient bel et bien morts. ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e571:#5decffだが、赤で死亡を宣言されたのは、南條先生が死んだ瞬間ではない。@/
+langen:dwave_eng 0, but_9e571:^#5decffMais leur mort n'a pas été déclarée en rouge au moment précis où le docteur Nanjo a été tué. ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e572:厳密に言えば南條先生の死体が見つかった後の俺とエヴァの戦いにおいてだ。@/
+langen:dwave_eng 0, but_9e572:^Pour être exact, elle l'a été pendant mon affrontement avec EVA, après la découverte du corps du docteur Nanjo. ^@/
+se3v 2,100
+langjp:dwave_jp 0, but_9e573:つまり、南條先生を殺した時点では生きていた何者かが、エヴァの死亡宣言までの間に死亡していれば、その間隙は縫えることになる！！@/
+langen:dwave_eng 0, but_9e573:^Donc, si quelqu'un était encore vivant au moment du meurtre du docteur Nanjo, puis est mort avant la déclaration d'EVA, on peut se faufiler par cette brèche !! ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e574:　つまりはこういうことさ。\
+langen:dwave_eng 0, but_9e574:^En clair, voilà ce qui s'est passé.#ffffff^\
+
+se2v 2,100
+
+ld c,$BUT_OdorokiB1,1
+
+langjp:dwave_jp 0, but_9e575:　エヴァの死亡宣言で初めて死亡とされた人物の中に犯人がいて、@/
+langen:dwave_eng 0, but_9e575:^#5decffLe coupable se trouve parmi ceux qu'EVA a été la première à déclarer morts. ^@/
+se3v 2,100
+langjp:dwave_jp 0, but_9e576:その人物は最初、うまいこと死んだふりをして俺たちをやり過ごした…！@/
+langen:dwave_eng 0, but_9e576:^D'abord, il a habilement fait le mort et nous a laissés passer sans éveiller nos soupçons... ! ^@/
+se1v 2,100
+langjp:dwave_jp 0, but_9e577:　そして赤での死亡宣言がないまま、俺たちには死んだと思い込ませた。@/
+langen:dwave_eng 0, but_9e577:^Aucune vérité rouge ne déclarait sa mort : il nous a simplement fait croire qu'il était mort. ^@/
+se2v 2,100
+langjp:dwave_jp 0, but_9e578:そして南條先生を殺し、……その後に何かの理由で死んだ！@/
+langen:dwave_eng 0, but_9e578:^Puis il a tué le docteur Nanjo... et il est mort ensuite, pour une raison ou pour une autre ! ^@/
+se3v 2,100
+langjp:dwave_jp 0, but_9e579:　そしてその後にエヴァが赤で死亡宣言を出す！！#ffffff@:dwave_jp 0, but_9e580:　以上の仮説でも、南條先生の事件は説明できるッ！！」\
+;＜戦人
+langen:dwave_eng 0, but_9e579:^Et c'est seulement après qu'EVA a déclaré sa mort en rouge !!#ffffff ^@:dwave_eng 0, but_9e580:^Cette hypothèse suffit elle aussi à expliquer le meurtre du docteur Nanjo !!^\
+
+monocro #0000ff
+
+se1v 2,100
+se2v 57,100
+
+mbg white,1
+
+mcbg 0
+monocro off
+ld c,$BUT_sakebuB1,2
+
+advchar "-1"
+langjp　どうだッ、ベアトリーチェッ？！\
+langen^Alors, qu'est-ce que t'en dis, Béatrice ?!^\
+
+cbfly 0
+textoff
+;bg Armor0,22
+bg stake0,22
+
+E_B
+
+se1v 57,100
+se2v 12,100
+se3v 36,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\stake1d.jpg",":b;bmp\background\efe\stake1d.png",2
+
+langjp　そう強く問い掛けた時、……圧搾としか例えられない凄まじい音がして、@黄金の魔女を、丸太のような太さの青き杭が、@……地中より現れてベアトを串刺しにし、宙に吊るし上げた……。\
+langen^À l'instant où il lançait cette question, un bruit effroyable, qu'on ne pouvait comparer qu'à celui d'une presse, retentit, ^@^et un pieu bleu épais comme un tronc d'arbre...^@^ jaillit du sol, transperça Béato, la Sorcière d'Or, et la souleva dans les airs...^\
+
+E_MA
+
+textoff
+se1v 13,100
+se2v 57,100
+bg white,1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\stake1a.jpg",":b;bmp\background\efe\stake1a.png",22
+
+se1v 13,00
+se3v 57,100
+bg white,1
+bg stake2,22
+
+se1v 13,00
+se3v 57,100
+bg white,1
+bg stake3,22
+
+se1v 36,100
+se2v 27,100
+se3v 57,100
+bg white,1
+bg stake4,2
+
+langjp　ぐしゃ、ぼぎゃッ、という醜い音が響き渡り、@その音の度に、……ベアトリーチェの体を、青き杭が、楔が、現れては貫いていく。\
+langen^Des bruits immondes de chair écrasée et d'os brisés résonnèrent, ^@^et à chacun d'eux, de nouveaux pieux et pointes bleus surgissaient pour transpercer le corps de Béatrice.^\
+
+bg stake5,2
+
+langjp　……やがて、それが終わった時。@
+langen^... Lorsque cela cessa enfin...^@
+br
+langjp　そこには、全身を十本を超える杭や楔で滅多刺しにされて血を滴らせ、………磔にされて吊るし上げられた無残な姿が、晒されていた……。\
+langen^elle était là, offerte aux regards : lardée de plus de dix pieux et pointes, ruisselante de sang... crucifiée, suspendue dans le vide, dans un état pitoyable...^\
+
+me1v 12,50
+
+if %is_old_sprites = 1 dllefe 1,2
+set_oldnew_bg e0901_a,stake5,1,2
+
+langjp　……そこに、死者の尊厳を嘲笑い、生者を幾百も弄んで殺した残虐なる魔女の、威厳はない。@
+langen^Il ne restait plus rien de la superbe de cette cruelle sorcière qui avait bafoué la dignité des morts et joué avec la vie de centaines de vivants avant de les massacrer.^@
+br
+langjp　いつしか降り始めた雨は、……静かに磔の魔女を、苛む……。\
+langen^La pluie, qui s'était mise à tomber sans qu'on y prenne garde... martyrisait en silence la sorcière crucifiée...^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+clr_oldnew_bg
+dllefe 1,0
+fr_bg ":b;fr_bg\orig\bmp\background\garden\rose_3ap.jpg",":b;bmp\background\garden\rose_3apr.png",0  ;fixed lighting issue
+ld c,$BUT_MajimeA3,22
+
+langjp　戦人は肩で息をしながら、黄金の魔女が何かを答えるのを待つ…。@
+langen^Battler, à bout de souffle, attendit que la Sorcière d'Or réponde quelque chose...^@
+br
+langjp　……黄金の魔女が、まだ生きている気配を見せるには、@長くないとはいえ、少しの時間を掛けた……。\
+langen^Il fallut un moment, bref certes,^@^ avant que la Sorcière d'Or ne montre qu'elle était encore en vie...^\
+
+;ld c,$BEA_fukigenA1,80
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+;bg stake1d,22
+set_oldnew_bg e0901_a,stake5,1,22
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e791:「……………痛ぇ……、/
+sl
+langjp:voicedelay 2310:dwave_jp 0, bea_9e792:^^……痛ぇよォ……………。」@
+;＜ベアト
+langen:dwave_eng 0, bea_9e791:^... Ça fait mal...^@/
+sl
+langen:voicedelay 2310:dwave_eng 0, bea_9e792:^ Ça fait trop maaaal...^@
+
+;ld c,$BUT_NiramuA2,80
+
+me2v 5,40
+
+advchar "10"
+langjp:dwave_jp 0, but_9e581:「……自業、…自得…だぜ。@:dwave_jp 0, but_9e582:……お前が殺めてきた人々の痛みの一部を、思い知れ……。」\
+;＜戦人
+langen:dwave_eng 0, but_9e581:^C'est... bien fait... pour toi. ^@:dwave_eng 0, but_9e582:^... Ressens au moins un peu de la douleur de tous ceux que tu as tués...^\
+
+advchar "-1"
+langjp　そうは言い放つが、そのあまりに痛々しい姿に、戦人はわずかに気勢を削がれているようだった。@
+langen^Malgré ses mots, la vue de Béatrice dans un état aussi pitoyable semblait avoir quelque peu entamé la détermination de Battler.^@
+br
+langjp　……例え敵とはいえ、@女がこんな無残な姿を晒しているのを、正視できるわけもない。\
+langen^... Même s'il s'agissait d'une ennemie, ^@^comment regarder en face une femme réduite à un état aussi atroce ?^\
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",22
+
+langjp　しかしそれでも、………ベアトリーチェを滅ぼさない限り、@戦いは、終わらないのだ…。\
+langen^Et pourtant... tant qu'il n'aurait pas anéanti Béatrice, ^@^cette bataille... ne prendrait pas fin...^\
+
+;ld c,$BEA_HanbesoA1,80
+;bg stake1d,0
+set_oldnew_bg e0901_a,stake5,1,0
+print 2
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e793:^^!s1「…………戦人ァ、/
+sl
+langjp:voicedelay 1320:dwave_jp 0, bea_9e794:^^………頼むよぉ……………。@:dwave_jp 0, bea_9e795:……えっく…。」/
+sl
+langen:dwave_eng 0, bea_9e793:^^!s1^... Battleeeer^@/
+sl
+langen:voicedelay 1320:dwave_eng 0, bea_9e794:^... Je t'en supplie...^@:dwave_eng 0, bea_9e795:^ snif...^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜ベアト
+
+
+langjp　え……？@
+langen^Hein... ?^@
+br
+langjp　……ベアトは、嗚咽を漏らした…。\
+langen^... Béato venait de laisser échapper un sanglot...^\
+
+;ld c,$BEA_HanbesoA2,80
+
+E_A
+bgm1v 79,85
+
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e796:^^!s1「……痛ぇよ…………。@:dwave_jp 0, bea_9e797:……すげェ/
+sl
+langjp:voicedelay 1870:dwave_jp 0, bea_9e798:^^………痛ぇよぉぉ………。@:dwave_jp 0, bea_9e799:………終わらせて……、/
+sl
+langjp:voicedelay 4750:dwave_jp 0, bea_9e800:^^………終わらせてぇ………。@:dwave_jp 0, bea_9e801:……これでもまだ、/
+sl
+langjp:voicedelay 3300:dwave_jp 0, bea_9e802:^^………死ねねぇんだよォ……。@:dwave_jp 0, bea_9e803:…ひっく……。@:dwave_jp 0, bea_9e804:………こんなに痛ぇのに、/
+sl
+langjp:voicedelay 3790:dwave_jp 0, bea_9e805:^^………まだ、/
+sl
+langjp:voicedelay 1230:dwave_jp 0, bea_9e806:^^……死ねねぇんだよォ………。@:dwave_jp 0, bea_9e807:………うっく…！」/
+sl
+langen:dwave_eng 0, bea_9e796:^^!s1^... Ça fait mal... ^@:dwave_eng 0, bea_9e797:^Ça fait trop...^@/
+sl
+langen:voicedelay 1870:dwave_eng 0, bea_9e798:^ maaaal... ^@:dwave_eng 0, bea_9e799:^Fais que ça s'arrête...^@/
+sl
+langen:voicedelay 4750:dwave_eng 0, bea_9e800:^ Fais que ça s'arrête... ^@:dwave_eng 0, bea_9e801:^Même dans cet état, je...^@/
+sl
+langen:voicedelay 3300:dwave_eng 0, bea_9e802:^ j'arrive pas à crever...^@:dwave_eng 0, bea_9e803:^ snif... ^@:dwave_eng 0, bea_9e804:^Même si ça fait aussi mal^@/
+sl
+langen:voicedelay 3790:dwave_eng 0, bea_9e805:^... je...^@/
+sl
+langen:voicedelay 1230:dwave_eng 0, bea_9e806:^ j'arrive toujours pas à crever...^@:dwave_eng 0, bea_9e807:^ snif... !^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜ベアト
+
+;ld l,$BUT_nayamuA1,23
+;mbg black,22
+
+advchar "10"
+langjp:dwave_jp 0, but_9e583:^^!s1「…………俺に、/
+sl
+langjp:voicedelay 740:dwave_jp 0, but_9e584:^^……何を、/
+sl
+langjp:voicedelay 640:dwave_jp 0, but_9e585:^^……求めやがる…。」/
+sl
+langen:dwave_eng 0, but_9e583:^^!s1^... Qu'est-ce que tu...^@/
+sl
+langen:voicedelay 740:dwave_eng 0, but_9e584:^ attends...^@/
+sl
+langen:voicedelay 640:dwave_eng 0, but_9e585:^ de moi... ?^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜戦人
+
+;mcbg 2
+;ld c,$BEA_HanbesoA1,80
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e808:「……………終わらして…、………。@:dwave_jp 0, bea_9e809:………この苦痛から、………解放して…………。」\
+;＜ベアト
+langen:dwave_eng 0, bea_9e808:^... Fais que ça s'arrête... ^@:dwave_eng 0, bea_9e809:^Libère-moi... de cette douleur...^\
+
+me1v 16,50
+clr_oldnew_bg
+csp -1
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",2
+
+
+advchar "-1"
+langjp　ベアトの表情は、……血と涙で、ぐしゃぐしゃだった。\
+langen^Le visage de Béato... n'était plus qu'un mélange de sang et de larmes.^\
+
+textoff
+se3 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2a.jpg",":b;bmp\background\efe\blood_2a.png",1
+wait 1000
+se1 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2b.jpg",":b;bmp\background\efe\blood_2b.png",1
+wait 1000
+se2 35
+fr_bg ":b;fr_bg\orig\bmp\background\efe\blood_2c.jpg",":b;bmp\background\efe\blood_2c.png",1
+
+langjp　戦人は確かに一度、彼女に騙されていた。@
+langjp　……だからこの表情も、涙さえも、演技だろうと疑うことができただろう。@
+langen^Battler avait déjà été trompé une fois par elle.^@
+langen^... Il aurait donc pu soupçonner ce visage, et jusqu'à ces larmes, de n'être qu'un jeu d'actrice.^@
+br
+langjp　しかし、………戦人はその涙を、信じた。\
+langen^Pourtant... Battler crut à ces larmes.^\
+
+langjp　………なぜなら、その涙は、@真実の赤が、混じっていたから。\
+langen^... Parce qu'à ces larmes...^@^ se mêlait le rouge de la vérité.^\
+
+;ld c,$BUT_FutekiA1,80
+textoff
+
+
+fr_bg ":b;fr_bg\orig\bmp\background\efe\black.jpg",":b;bmp\background\efe\black.png",0
+;lsp2 4,$BUT_nayamuA4,150,350,200,200,0
+lsp_var 3,"bmp\zoom\BUT_nayamuA4Z20b",-187,0  ;convert to widescreen
+print 2
+
+
+advchar "10"
+langjp:dwave_jp 0, but_9e586:「……どうすりゃいい。@:dwave_jp 0, but_9e587:どうすれば、お前の痛みを終わらせられる…。」\
+;＜戦人
+langen:dwave_eng 0, but_9e586:^... Qu'est-ce que je dois faire ? ^@:dwave_eng 0, but_9e587:^Comment je peux mettre fin à ta douleur... ?^\
+
+;ld c,$BEA_hanbesoA1,80
+textoff
+;lsp2 4,$BEA_HanbesoA4,500,420,200,200,0
+;lsp2 3,$BUT_NayamuA4,150,350,200,200,0
+lsp_var 4,"bmp\zoom\BEA_hanbesoA4Z20",-260,0  ;convert to widescreen
+print 24
+
+
+advchar "27"
+langjp:dwave_jp 0, bea_9e810:^^!s1「…………今から、/
+sl
+langjp:voicedelay 4190:dwave_jp 0, bea_9e811:^^…………全て…を、晒すから。@:dwave_jp 0, bea_9e812:………それが、/
+sl
+langjp:voicedelay 1680:dwave_jp 0, bea_9e813:^^………妾の、/
+sl
+langjp:voicedelay 1240:dwave_jp 0, bea_9e814:^^心臓。」/
+sl
+langen:dwave_eng 0, bea_9e810:^^!s1^... Maintenant...^@/
+sl
+langen:voicedelay 4190:dwave_eng 0, bea_9e811:^ je vais tout... te dévoiler. ^@:dwave_eng 0, bea_9e812:^... Ce sera...^@/
+sl
+langen:voicedelay 1680:dwave_eng 0, bea_9e813:^ mon... ^@/
+sl
+langen:voicedelay 1240:dwave_eng 0, bea_9e814:^cœur.^@/
+mov %disable_adv_clear, 1
+langjp!sd\
+langen!sd\
+mov %disable_adv_clear, 0
+advchar "-1"
+
+;＜ベアト
+
+textoff
+;lsp2 4,$BEA_HanbesoA4,500,420,200,200,0
+;lsp2 3,$BUT_majimeA1,150,350,200,200,0
+lsp_var 3,"bmp\zoom\BUT_majimeA1Z20",-187,0  ;convert to widescreen
