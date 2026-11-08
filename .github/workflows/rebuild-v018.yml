@@ -1,0 +1,33 @@
+name: Rebuild Umineko 0.1.18 updater packages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/rebuild_v018_manifest.py'
+      - '.github/workflows/rebuild-v018.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: umineko-rebuild-v018
+  cancel-in-progress: false
+
+jobs:
+  rebuild:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Check published Release and source ZIP
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view v0.1.18 --repo Naries5/umineko-fr
+      - name: Rebuild verified packages and publish manifest last
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/rebuild_v018_manifest.py
