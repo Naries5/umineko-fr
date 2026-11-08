@@ -1,0 +1,99 @@
+name: Build and roll out self-updating Windows wrapper
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'src/Wrapper/**'
+      - 'src/Shared/UpdaterCore.cs'
+      - '.github/workflows/rollout-wrapper.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: umineko-wrapper-rollout
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Build Windows standalone updater
+        shell: pwsh
+        run: |
+          dotnet publish src/Wrapper/Wrapper.csproj -c Release -r win-x64 --self-contained true -o publish
+          if ($LASTEXITCODE -ne 0) { throw "Build failed" }
+          $exe = "publish/Umineko1to4.exe"
+          if (!(Test-Path $exe)) { throw "Executable missing" }
+          $size = (Get-Item $exe).Length
+          if ($size -lt 1000000) { throw "Binary unexpectedly small" }
+          Write-Host "Compiled updater size $size"
+      - name: Validate self-replacement without modifying installed games
+        shell: pwsh
+        run: |
+          $sandbox = Join-Path $env:RUNNER_TEMP "umiseiftest"
+          New-Item -ItemType Directory -Force -Path $sandbox | Out-Null
+          $target = Join-Path $sandbox "Umineko1to4.exe"
+          $exe = (Resolve-Path "publish/Umineko1to4.exe").Path
+          # The self-replace branch overwrites a dummy target and launches it.
+          # A copy with no game files will immediately exit with code 20; safe.
+          [IO.File]::WriteAllBytes($target,[byte[]](0..31))
+          $p = Start-Process -FilePath $exe -ArgumentList @("--self-replace", ('"' + $target + '"'), "0") -PassThru -Wait
+          if ($p.ExitCode -ne 0) { throw "Self-replace failed with $($p.ExitCode)" }
+          if ((Get-FileHash $target -Algorithm SHA256).Hash -ne (Get-FileHash $exe -Algorithm SHA256).Hash) {
+            throw "Self-replaced executable hash mismatch"
+          }
+          Write-Host "Self replacement test passed"
+      - name: Publish versioned updater and switch manifest last
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $repo = "Naries5/umineko-fr"
+          $tag = "v0.1.18"
+          $assetName = "UminekoFR-Updater-win-x64-v3.4.exe"
+          $exe = "publish/Umineko1to4.exe"
+          $hash = (Get-FileHash $exe -Algorithm SHA256).Hash.ToLowerInvariant()
+          $size = (Get-Item $exe).Length
+          $current = gh api "repos/$repo/contents/update/manifest.json" | ConvertFrom-Json
+          if ($LASTEXITCODE -ne 0) { throw "Cannot read manifest" }
+          $bytes = [Convert]::FromBase64String(($current.content -replace '\s',''))
+          $manifest = [Text.Encoding]::UTF8.GetString($bytes) | ConvertFrom-Json
+          if ($manifest.version -ne "0.1.18" -or $manifest.schemaVersion -ne 3 -or $manifest.files.Count -lt 4000) {
+            throw "Current V3 manifest is unexpected; refusing to publish"
+          }
+          $previousSha = $current.sha
+          gh release upload $tag "$($exe)#$assetName" --repo $repo --clobber
+          if ($LASTEXITCODE -ne 0) { throw "Release upload failed" }
+          $release = gh release view $tag --repo $repo --json assets | ConvertFrom-Json
+          if ($LASTEXITCODE -ne 0) { throw "Release verification failed" }
+          $asset = @($release.assets | Where-Object { $_.name -eq $assetName })
+          if ($asset.Count -ne 1 -or $asset[0].size -ne $size -or $asset[0].digest -ne "sha256:$hash") {
+            throw "Uploaded updater verification failed"
+          }
+          $manifest.updater = [pscustomobject]@{
+            version = "0.1.18-wrapper-3.4"
+            downloadUrl = "https://github.com/$repo/releases/download/$tag/$assetName"
+            sha256 = $hash
+            size = $size
+          }
+          $encoded = [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes(($manifest | ConvertTo-Json -Depth 100)))
+          $body = [ordered]@{
+            message = "fix: roll out verified self-updating wrapper v3.4 to existing players"
+            content = $encoded
+            sha = $previousSha
+            branch = "main"
+          } | ConvertTo-Json -Compress -Depth 5
+          $temp = Join-Path $env:RUNNER_TEMP "manifest-update.json"
+          [IO.File]::WriteAllText($temp, $body)
+          gh api --method PUT "repos/$repo/contents/update/manifest.json" --input $temp
+          if ($LASTEXITCODE -ne 0) { throw "Manifest switch failed" }
+          Write-Host "SUCCESS: published $assetName ($hash) and enabled self-update"
