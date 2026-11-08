@@ -1,0 +1,98 @@
+name: Build and publish reliable Windows updater v3.5
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-wrapper-v35.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: umineko-wrapper-v35-rollout
+  cancel-in-progress: false
+
+jobs:
+  build-test-publish:
+    runs-on: windows-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Build standalone Windows updater
+        shell: pwsh
+        run: |
+          dotnet publish src/Wrapper/Wrapper.csproj -c Release -r win-x64 --self-contained true -o publish
+          if ($LASTEXITCODE -ne 0) { throw "Build failed" }
+          $exe = "publish/Umineko1to4.exe"
+          if (!(Test-Path $exe) -or (Get-Item $exe).Length -lt 30000000) {
+            throw "Missing or suspicious compiled updater"
+          }
+      - name: Test self-replacement in isolated temporary folder
+        shell: pwsh
+        run: |
+          $sandbox = Join-Path $env:RUNNER_TEMP "umineko-v35-selftest"
+          New-Item -ItemType Directory -Force -Path $sandbox | Out-Null
+          $target = Join-Path $sandbox "Umineko1to4.exe"
+          $exe = (Resolve-Path "publish/Umineko1to4.exe").Path
+          [IO.File]::WriteAllBytes($target, [byte[]](0..31))
+          $p = Start-Process -FilePath $exe -ArgumentList @("--self-replace", ('"' + $target + '"'), "0") -PassThru -Wait
+          if ($p.ExitCode -ne 0) { throw "Self-replace failed with code $($p.ExitCode)" }
+          if ((Get-FileHash $target -Algorithm SHA256).Hash -ne (Get-FileHash $exe -Algorithm SHA256).Hash) {
+            throw "Self-replaced binary differs from original"
+          }
+          Write-Host "SELF-REPLACE PASS"
+      - name: Publish binary and activate existing self-update protocol
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $ErrorActionPreference = "Stop"
+          $repo = "Naries5/umineko-fr"
+          $tag = "v0.1.19"
+          $assetName = "UminekoFR-Updater-win-x64-v3.5.exe"
+          New-Item -ItemType Directory -Force -Path "release" | Out-Null
+          Copy-Item "publish/Umineko1to4.exe" "release/$assetName"
+          $file = "release/$assetName"
+          $size = (Get-Item $file).Length
+          $hash = (Get-FileHash $file -Algorithm SHA256).Hash.ToLowerInvariant()
+          $current = gh api "repos/$repo/contents/update/manifest.json" | ConvertFrom-Json
+          if ($LASTEXITCODE -ne 0) { throw "Manifest request failed" }
+          $raw = [Convert]::FromBase64String(($current.content -replace '\s', ''))
+          $manifest = [Text.Encoding]::UTF8.GetString($raw) | ConvertFrom-Json
+          if ($manifest.version -ne "0.1.19" -or $manifest.schemaVersion -ne 3 -or
+              $manifest.files.Count -ne 4047 -or $manifest.packages.Count -ne 18) {
+            throw "Manifest format/version unexpected; no rollout"
+          }
+          gh release upload $tag $file --repo $repo --clobber
+          if ($LASTEXITCODE -ne 0) { throw "Upload failed; manifest unchanged" }
+          $release = gh api "repos/$repo/releases/tags/$tag" | ConvertFrom-Json
+          if ($LASTEXITCODE -ne 0 -or $release.draft) { throw "Release not public" }
+          $asset = @($release.assets | Where-Object { $_.name -eq $assetName })
+          if ($asset.Count -ne 1 -or $asset[0].state -ne "uploaded" -or
+              $asset[0].size -ne $size -or $asset[0].digest -ne "sha256:$hash") {
+            throw "Release asset integrity check failed; manifest unchanged"
+          }
+          $manifest.updater = [pscustomobject]@{
+            version = "0.1.19-wrapper-3.5"
+            downloadUrl = "https://github.com/$repo/releases/download/$tag/$assetName"
+            sha256 = $hash
+            size = $size
+          }
+          $newJson = $manifest | ConvertTo-Json -Depth 100 -Compress
+          $encoded = [Convert]::ToBase64String([Text.Encoding]::UTF8.GetBytes($newJson))
+          $payload = [ordered]@{
+            message = "fix: remotely roll out resilient v3.5 self-updating Windows wrapper"
+            content = $encoded
+            sha = $current.sha
+            branch = "main"
+          } | ConvertTo-Json -Compress
+          $inputFile = Join-Path $env:RUNNER_TEMP "v35-manifest.json"
+          [IO.File]::WriteAllText($inputFile, $payload)
+          gh api --method PUT "repos/$repo/contents/update/manifest.json" --input $inputFile | Out-Null
+          if ($LASTEXITCODE -ne 0) { throw "Manifest activation failed" }
+          Write-Host "SUCCESS: v3.5 published and manifest activation complete; SHA256=$hash"
