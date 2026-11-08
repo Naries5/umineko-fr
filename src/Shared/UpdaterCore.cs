@@ -81,15 +81,31 @@ public static class UpdaterCore
         string manifestUrl,
         int timeoutSeconds = 20)
     {
+        // Existing v3.3 installations can still contain TimeoutSeconds=20.
+        // Do not allow that stale value to sabotage future automatic updates.
+        int effectiveTimeout = Math.Max(120, timeoutSeconds);
         using var http = new HttpClient
         {
-            Timeout = TimeSpan.FromSeconds(Math.Max(5, timeoutSeconds))
+            Timeout = TimeSpan.FromSeconds(effectiveTimeout)
         };
         http.DefaultRequestHeaders.UserAgent.ParseAdd(
-            "Le-Sanglot-des-Goelands-Updater/3.0"
+            "Le-Sanglot-des-Goelands-Updater/3.5"
         );
 
-        string json = await http.GetStringAsync(manifestUrl);
+        string json = "";
+        const int maxAttempts = 3;
+        for (int attempt = 1; attempt <= maxAttempts; attempt++)
+        {
+            try
+            {
+                json = await http.GetStringAsync(manifestUrl);
+                break;
+            }
+            catch (Exception ex) when (IsTransientDownloadError(ex) && attempt < maxAttempts)
+            {
+                await Task.Delay(TimeSpan.FromSeconds(attempt * 3));
+            }
+        }
         var manifest = JsonSerializer.Deserialize<RemoteManifest>(
             json,
             JsonOptions()
