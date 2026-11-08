@@ -10,7 +10,7 @@ internal static class SmokeTest
     {
         const string manifestUrl = "https://raw.githubusercontent.com/Naries5/umineko-fr/main/update/manifest.json";
         var manifest = await UpdaterCore.GetRemoteManifestAsync(manifestUrl);
-        if (manifest.Version != "0.1.18" || manifest.SchemaVersion != 3)
+        if (manifest.Version != "0.1.19" || manifest.SchemaVersion != 3)
             throw new Exception("Manifest version/schema mismatch.");
         if (manifest.Packages is null || manifest.Packages.Count < 10 ||
             manifest.Files is null || manifest.Files.Count < 4000)
