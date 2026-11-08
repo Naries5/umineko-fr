@@ -1,0 +1,36 @@
+name: Publish compatible V3 patcher to latest release
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/publish-v3-patcher.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  attach:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify and publish V3 patcher binaries without changing manifest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          repo="Naries5/umineko-fr"
+          mkdir -p patcher
+          for name in LeSanglotDesGoelands-Patcher.exe UminekoFR-Updater-win-x64.exe; do
+            expected="$(gh release view v0.1.10 --repo "$repo" --json assets --jq '.assets[] | select(.name == "'"$name"'") | .digest')"
+            if [[ ! "$expected" =~ ^sha256:[0-9a-f]{64}$ ]]; then
+              echo "Cannot verify source asset digest: $name ($expected)"
+              exit 1
+            fi
+            gh release download v0.1.10 --repo "$repo" --pattern "$name" --dir patcher
+            actual="$(sha256sum "patcher/$name" | cut -d' ' -f1)"
+            test "sha256:$actual" = "$expected"
+            echo "Verified $name"
+          done
+          gh release upload v0.1.18 patcher/LeSanglotDesGoelands-Patcher.exe patcher/UminekoFR-Updater-win-x64.exe --repo "$repo" --clobber
+          echo "V3 patcher binaries available in v0.1.18"
