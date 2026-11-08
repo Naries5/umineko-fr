@@ -1,0 +1,27 @@
+name: Publish flat root-level legacy ZIP for v0.1.19
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/repack_flat_v019.py'
+      - '.github/workflows/publish-flat-v019.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: umineko-flat-v019
+  cancel-in-progress: false
+
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+      - name: Normalize original ZIP, verify all files, publish release and manifest last
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 tools/repack_flat_v019.py
