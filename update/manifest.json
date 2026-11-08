@@ -1,9 +1,9 @@
 {
   "schemaVersion": 3,
-  "version": "0.1.18",
-  "downloadUrl": "https://github.com/Naries5/umineko-fr/releases/download/v0.1.18/patch-fr-0.1.18.zip",
-  "sha256": "622e88ec177f65b212b70ef6c98dda162387bedaad6411ea771f23c247544797",
-  "notes": "Mise a jour 0.1.18; packages verifies pour mises a jour et reinstallations.",
+  "version": "0.1.19",
+  "downloadUrl": "https://github.com/Naries5/umineko-fr/releases/download/v0.1.19/patch-fr-0.1.19.zip",
+  "sha256": "fa583e5a3d9ccf838862f2b95be2718874d262eddd900d32f28a344c6fd358e4",
+  "notes": "Correction installation : 0.u, bmp et en directement dans le dossier du jeu. Compatible avec les anciens patchers.",
   "requires07thMod": true,
   "updater": {
     "version": "0.1.10",
