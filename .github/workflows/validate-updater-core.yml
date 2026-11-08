@@ -1,0 +1,25 @@
+name: Validate updater core (no player rollout)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/Shared/UpdaterCore.cs'
+      - 'src/UpdaterSmoke/**'
+      - '.github/workflows/validate-updater-core.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Compile and exercise updater core against current manifest
+        run: dotnet run --project src/UpdaterSmoke/UpdaterSmoke.csproj --configuration Release
