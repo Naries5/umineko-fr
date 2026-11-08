@@ -2,12 +2,6 @@ name: Build and roll out self-updating Windows wrapper
 
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'src/Wrapper/**'
-      - 'src/Shared/UpdaterCore.cs'
-      - '.github/workflows/rollout-wrapper.yml'
 
 permissions:
   contents: write
