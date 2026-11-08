@@ -1,0 +1,72 @@
+name: Publish Umineko FR v0.1.20 (exact Questions script)
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/publish-v020.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: umineko-v020-release
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check working storage and tools
+        run: |
+          set -euo pipefail
+          df -h .
+          command -v zip
+          command -v python3
+          command -v gh
+      - name: Reassemble and verify exact original user-provided 0.u
+        run: |
+          set -euo pipefail
+          python3 tools/publish_v020.py prepare
+      - name: Obtain verified v0.1.19 full archive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p old-release
+          gh release download v0.1.19 --repo Naries5/umineko-fr \
+            --pattern 'patch-fr-0.1.19.zip' --dir old-release
+          df -h .
+      - name: Build and validate full v0.1.20 backward-compatible patch
+        run: |
+          set -euo pipefail
+          python3 tools/publish_v020.py build-legacy
+          unzip -tq publish/UminekoFR-Questions-0.1.20.zip
+          unzip -tq publish/patch-fr-0.1.20.zip
+          df -h .
+      - name: Publish new release with both tested assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          if gh release view v0.1.20 --repo Naries5/umineko-fr >/dev/null 2>&1; then
+            gh release upload v0.1.20 --repo Naries5/umineko-fr \
+              publish/UminekoFR-Questions-0.1.20.zip \
+              publish/patch-fr-0.1.20.zip --clobber
+          else
+            gh release create v0.1.20 \
+              publish/UminekoFR-Questions-0.1.20.zip \
+              publish/patch-fr-0.1.20.zip \
+              --repo Naries5/umineko-fr --target main \
+              --title 'Le Sanglot des Goélands — v0.1.20' \
+              --notes 'Mise à jour du script français Questions (0.u). Le reste des fichiers est préservé. Inclut un package incrémental pour les mises à jour automatiques et le patch complet pour les anciens clients.'
+          fi
+      - name: Verify uploaded SHA-256 and switch manifest ONLY after both assets are valid
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          python3 tools/publish_v020.py activate
