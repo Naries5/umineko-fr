@@ -68,10 +68,20 @@ def main():
             if not members:
                 raise RuntimeError("Empty source archive")
             names = [safe_name(x.filename) for x in members]
-            # A wrapper directory is not expected. Reject it rather than
-            # silently installing its contents into an incorrect game path.
+            print("ZIP sample:", names[:35], flush=True)
+            # Allow a single enclosing folder only when it contains the game's
+            # 0.u and all entries share the same prefix.
+            prefix = ""
             if "0.u" not in names:
-                raise RuntimeError("0.u missing from ZIP root; inspect archive layout")
+                candidates = [n[:-3] for n in names if n.endswith("/0.u")]
+                candidates = [p for p in candidates if p and all(n.startswith(p) for n in names)]
+                if len(candidates) == 1:
+                    prefix = candidates[0]
+                    names = [n[len(prefix):] for n in names]
+                    print("Stripping verified archive root:", prefix, flush=True)
+                else:
+                    raise RuntimeError("0.u missing or ambiguous; archive layout: " + repr(names[:35]))
+
             seen = set()
             for name, info in zip(names, members):
                 key = name.casefold()
