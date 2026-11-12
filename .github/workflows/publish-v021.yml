@@ -17,18 +17,9 @@ jobs:
       GH_TOKEN: ${{ github.token }}
     steps:
       - uses: actions/checkout@v4
-      - name: Verify exact supplied ZIP and compare 17 files to v0.1.20
-        run: python3 tools/publish_v021.py prepare
-      - name: Download previous full patch
-        run: gh release download v0.1.20 --repo Naries5/umineko-fr --pattern patch-fr-0.1.20.zip --dir old-release
-      - name: Build full patch and verify all 4047 files
-        run: python3 tools/publish_v021.py build
-      - name: Create draft release with both archives
-        run: |
-          gh release create v0.1.21 publish/UminekoFR-Questions-0.1.21.zip publish/patch-fr-0.1.21.zip --repo Naries5/umineko-fr --target "$GITHUB_SHA" --draft --title 'Le Sanglot des Goélands — v0.1.21' --notes 'Mise à jour de la traduction Questions (épisodes 1 à 4) et de 16 images. Les autres fichiers du patch sont préservés. Inclut le paquet incrémental et le patch complet compatible avec les anciens patchers.'
-      - name: Verify uploaded hashes and independently redownload both archives
+      - name: Verify existing release 442754341 and downloaded archives without rebuilding
         run: python3 tools/publish_v021.py verify
-      - name: Publish verified release
-        run: gh release edit v0.1.21 --repo Naries5/umineko-fr --draft=false --latest
+      - name: Publish verified existing release by ID
+        run: python3 tools/publish_v021.py publish
       - name: Activate manifest only after published assets are verified
         run: python3 tools/publish_v021.py activate
