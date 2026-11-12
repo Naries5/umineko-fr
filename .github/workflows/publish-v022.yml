@@ -1,0 +1,44 @@
+name: Publish Umineko FR v0.1.22 Questions script
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/publish-v022.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: umineko-release
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 75
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+      - name: Verify exact supplied source and baseline manifest
+        run: python3 tools/publish_v022.py prepare
+      - name: Download previous full patch
+        run: gh release download v0.1.21 --repo Naries5/umineko-fr --pattern patch-fr-0.1.21.zip --dir old-release
+      - name: Compare scripts and build full patch preserving all other files
+        run: python3 tools/publish_v022.py build
+      - name: Prepare candidate without activating manifest
+        run: python3 tools/publish_v022.py candidate
+      - name: Exercise unchanged updater core against v0.1.21 and candidate
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 --directory publish > publish/http.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          dotnet run --project tools/v022-compat/Compat.csproj --configuration Release -- publish
+      - name: Create or reuse the unique draft and retain its real ID
+        run: python3 tools/publish_v022.py create
+      - name: Independently redownload both assets by ID and verify SHA-256 and sizes
+        run: python3 tools/publish_v022.py verify
+      - name: Publish verified release by ID
+        run: python3 tools/publish_v022.py publish
+      - name: Activate manifest after public release validation
+        run: python3 tools/publish_v022.py activate
