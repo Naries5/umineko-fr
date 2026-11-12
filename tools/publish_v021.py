@@ -13,6 +13,9 @@ import zipfile
 REPO = 'Naries5/umineko-fr'
 TAG = 'v0.1.21'
 SOURCE_SHA = '8bd8e1fe3fa721342808f42eb99578c93eba2c62029477d5436dcc4af8e3bd88'
+RELEASE_ID = 442754341
+RELEASE_COMMIT = '973756688e2b650a39b1a88fa5b55a7032f2e948'
+FULL_SHA = '9058a4af15e704ef564495e52cc15faf4cf3aa3bcd3986f9bb86d55d3a7c6d54'
 OLD_FULL_SHA = 'a329a1532cc3bf554e95b657980d5ca27c0fcb0d3dfc3f7cf51d18be8056b711'
 OUT = Path('publish')
 DELTA = OUT / 'UminekoFR-Questions-0.1.21.zip'
@@ -109,7 +112,11 @@ def build():
         print(p.name, p.stat().st_size, sha(p))
 
 def release_verify():
-    release = api(f'repos/{REPO}/releases/tags/{TAG}')
+    release = api(f'repos/{REPO}/releases/{RELEASE_ID}')
+    assert release['id'] == RELEASE_ID and release['tag_name'] == TAG
+    assert release['target_commitish'] == RELEASE_COMMIT
+    assert not release['prerelease']
+    assert len(release['assets']) == 2
     assets = {a['name']:a for a in release['assets']}
     for p in (DELTA,FULL):
         a = assets[p.name]
@@ -118,16 +125,55 @@ def release_verify():
     return release
 
 def verify():
+    # Resume the existing draft only: never rebuild or upload an archive.
+    OUT.mkdir(exist_ok=True)
+    baseline = json.loads(BASE.read_text())
+    assert baseline['version'] == '0.1.20' and baseline['schemaVersion'] == 3
+    assert baseline['sha256'] == OLD_FULL_SHA
+    expected = {f['path']: f for f in baseline['files']}
+    assert len(expected) == len(baseline['files']) == 4047
+    release = api(f'repos/{REPO}/releases/{RELEASE_ID}')
+    assert release['id'] == RELEASE_ID and release['tag_name'] == TAG
+    assert release['target_commitish'] == RELEASE_COMMIT and not release['prerelease']
+    assets = {a['name']: a for a in release['assets']}
+    assert len(release['assets']) == len(assets) == 2
+    pins = {DELTA.name: (738938490, SOURCE_SHA), FULL.name: (738938489, FULL_SHA)}
+    for p in (DELTA, FULL):
+        a = assets[p.name]
+        asset_id, digest = pins[p.name]
+        assert a['id'] == asset_id and a['state'] == 'uploaded'
+        assert a['digest'] == 'sha256:' + digest
+        with p.open('xb') as output:
+            subprocess.run(['gh','api',f'repos/{REPO}/releases/assets/{asset_id}',
+                            '-H','Accept: application/octet-stream'],stdout=output,check=True)
+        assert p.stat().st_size == a['size'] and sha(p) == digest
+        print(p.name, p.stat().st_size, digest, flush=True)
+    shutil.copyfile(DELTA, SOURCE)
+    files = source_files()
+    assert set(files) <= set(expected)
+    assert all(sha_bytes(b) != expected[n]['sha256'] for n,b in files.items())
+    with zipfile.ZipFile(FULL) as z:
+        names = z.namelist()
+        assert len(names) == len(set(names))
+        assert {i.filename for i in z.infolist() if not i.is_dir()} == set(expected)
+        for n, entry in expected.items():
+            with z.open(n) as f:
+                digest = hashlib.file_digest(f, 'sha256').hexdigest()
+            assert digest == (sha_bytes(files[n]) if n in files else entry['sha256']), n
+            assert z.getinfo(n).file_size == (len(files[n]) if n in files else entry['size']), n
+    shutil.copyfile(BASE, OUT / 'baseline-manifest.json')
     release_verify()
-    # Independently redownload the uploaded bytes, not only asset metadata.
-    d = OUT / 'remote-verified'
-    d.mkdir(exist_ok=True)
-    run('gh','release','download',TAG,'--repo',REPO,'--dir',str(d),
-        '--pattern',DELTA.name,'--pattern',FULL.name)
-    for p in (DELTA,FULL):
-        remote = d / p.name
-        assert remote.stat().st_size == p.stat().st_size and sha(remote) == sha(p)
-    print('Both uploaded archives redownloaded: exact SHA-256 and size confirmed')
+    print('VERIFIED: existing release 442754341; 17 replacements; 4030 other files including Answers unchanged; no deletions', flush=True)
+
+def publish():
+    release_verify()
+    # Only reached after verification of downloaded bytes and all 4047 files.
+    run('gh','api','--method','PATCH',f'repos/{REPO}/releases/{RELEASE_ID}',
+        '-F','draft=false','-f','make_latest=true')
+    r = release_verify()
+    assert not r['draft']
+    assert api(f'repos/{REPO}/releases/tags/{TAG}')['id'] == RELEASE_ID
+    print('Published existing release', RELEASE_ID)
 
 def activate():
     r = release_verify()
@@ -169,4 +215,4 @@ def activate():
     print('SUCCESS: active manifest 0.1.21; 4047 files, 20 packages; existing updater unchanged')
 
 if __name__ == '__main__':
-    {'prepare':prepare,'build':build,'verify':verify,'activate':activate}[sys.argv[1]]()
+    {'prepare':prepare,'build':build,'verify':verify,'publish':publish,'activate':activate}[sys.argv[1]]()
