@@ -93,6 +93,9 @@ def prepare():
     assert m['sha256'] == OLD_FULL_SHA and not m.get('deletePaths')
     index = {f['path']: f for f in m['files']}
     assert len(index) == len(m['files']) == 4047
+    for path in index:
+        assert path == str(PurePosixPath(path)) and not PurePosixPath(path).is_absolute()
+        assert '..' not in PurePosixPath(path).parts and '\\' not in path
     assert sha_bytes(files['0.u']) != index['0.u']['sha256']
     shutil.copyfile(BASE, OUT / 'baseline-manifest.json')
     shutil.copyfile(SOURCE, DELTA)

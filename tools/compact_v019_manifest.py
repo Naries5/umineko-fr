@@ -6,6 +6,21 @@ transfer bytes, but does not guarantee success on an unavailable network.
 """
 import base64, json, subprocess
 
+# Run the authorized v0.1.23 publication through this existing contents-write
+# workflow. The original v0.1.19 compaction below remains untouched.
+from pathlib import Path
+import sys
+if __name__ == '__main__' and Path('.staging/v0.1.23/chunks/009.part').is_file():
+    version = json.loads(Path('update/manifest.json').read_text())['version']
+    if version == '0.1.22':
+        from run_v023 import main
+        main()
+        sys.exit(0)
+    if version == '0.1.23':
+        print('v0.1.23 already active; no changes made', flush=True)
+        sys.exit(0)
+
+
 repo="Naries5/umineko-fr"
 def read(*args):
     return subprocess.check_output(args,text=True)
