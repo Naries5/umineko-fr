@@ -28,7 +28,7 @@ const dollar=x=>x;
 dollar.NSData={dataWithContentsOfFile:p=>fs.readFileSync(p,'utf8')};
 dollar.NSString={alloc:{initWithDataEncoding:data=>data}};
 dollar.unwrap=x=>x; dollar.NSUTF8StringEncoding=4;
-const context={ObjC:{import:()=>{}},$:dollar};
+const context={ObjC:{import:()=>{},unwrap:x=>x},$:dollar};
 vm.createContext(context); vm.runInContext(fs.readFileSync(script,'utf8'),context);
 process.stdout.write(context.run(argv)+'\\n');
 ''')
@@ -62,7 +62,12 @@ worker=worker.replace('SUPPORT="$HOME/Library/Application Support/LeSanglotDesGo
 worker=worker.replace('LOG_DIR="$HOME/Library/Logs"','LOG_DIR='+shlex.quote(str(fixture/'logs')))
 for original,replacement in [('/usr/bin/osascript',jxa),('/usr/bin/ditto',ditto),('/usr/bin/curl',curl)]: worker=worker.replace(original,shlex.quote(str(replacement)))
 test_worker=fixture/'worker-adapted.sh';test_worker.write_text(worker)
-def run(): subprocess.run(['/bin/bash',str(test_worker),'update',str(game)],check=True)
+def run():
+ result = subprocess.run(['/bin/bash',str(test_worker),'update',str(game)])
+ if result.returncode:
+  for p in (support/'result.tsv', fixture/'logs/LeSanglotDesGoelands-Patcher-Mac.log'):
+   if p.exists(): print(p.read_text(), flush=True)
+ result.check_returncode()
 def snapshot():
  return {str(p.relative_to(game)):(p.stat().st_size,p.stat().st_mtime_ns,hashlib.sha256(p.read_bytes()).hexdigest()) for p in game.rglob('*') if p.is_file()}
 run()
