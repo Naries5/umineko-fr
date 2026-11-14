@@ -12,7 +12,7 @@ import zipfile
 
 REPO = 'Naries5/umineko-fr'
 TAG = 'v1.0.0'
-SOURCE_SHA = 'eee67f02c8e1380c5f2ebc35aac78d4b739dbe2ca0398cd9c3892d8f13985b0d'
+SOURCE_SHA = 'bccc71a782bc8571364cb54e0e243eed13c209284e5bc7c66ff358ccd3534447'
 RELEASE_STATE = Path('publish/release.json')
 OLD_FULL_SHA = 'cdd7ae16cbf70604b9009f2d2c6e14c7c998701dc70869eeb33c23c7e78ccce3'
 OUT = Path('publish')
@@ -87,6 +87,18 @@ def prepare():
     with SOURCE.open('xb') as f:
         for p in parts:
             f.write(p.read_bytes())
+    assert sha(SOURCE) == 'eee67f02c8e1380c5f2ebc35aac78d4b739dbe2ca0398cd9c3892d8f13985b0d'
+    with zipfile.ZipFile(SOURCE) as z:
+        assert z.namelist() == ['0.u'] and z.testzip() is None
+        script = z.read('0.u')
+    assert sha_bytes(script) == '001f81c43ff5c60168ee857013b38dce3b72046395ff072e8f84ce85f9759235'
+    info = zipfile.ZipInfo('0.u', (2026,11,14,8,13,0))
+    info.create_system = 3
+    info.external_attr = 25165824
+    with zipfile.ZipFile(SOURCE, 'w', compression=8, compresslevel=9) as z:
+        z.writestr(info, script, compress_type=8, compresslevel=9)
+    # Exact byte-for-byte reproduction of the attached ZIP, checked locally.
+    assert SOURCE.stat().st_size == 4688645 and sha(SOURCE) == SOURCE_SHA
     files = source_files()
     m = json.loads(BASE.read_text())
     assert m['version'] == '0.1.23' and m['schemaVersion'] == 3
