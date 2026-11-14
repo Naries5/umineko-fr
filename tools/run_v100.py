@@ -50,7 +50,7 @@ def main(finalize=False):
         return
     release_time=datetime(2026,11,14,9,19,tzinfo=timezone.utc)
     delay=(release_time-datetime.now(timezone.utc)).total_seconds()
-    assert delay<240,'Finalization launched too early; draft preserved'
+    assert delay<3600,'Finalization launched more than one hour early; draft preserved'
     while datetime.now(timezone.utc)<release_time:
         remaining=(release_time-datetime.now(timezone.utc)).total_seconds()
         print('Official release time guard; remaining seconds',round(remaining,1),flush=True)
