@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "status": "draft-verified",
+  "releaseId": 445145996,
+  "releaseUrl": "https://github.com/Naries5/umineko-fr/releases/tag/untagged-63917a110d830e7299f7",
+  "officialReleaseParis": "2026-11-14T10:19:00+01:00",
+  "sourceScriptSHA256": "001f81c43ff5c60168ee857013b38dce3b72046395ff072e8f84ce85f9759235",
+  "scriptPhysicalLines": 342483,
+  "changedFrenchLines": 8,
+  "japaneseLinesChanged": 0,
+  "otherFilesPreserved": 4046,
+  "filesTotal": 4047,
+  "windowsCoreTest": "passed; one incremental download; second launch no changes",
+  "macWorkerTest": "passed under Linux with adapters for macOS system commands; one incremental download; second launch no game changes; native macOS GUI not executed",
+  "workflowUrl": "https://github.com/Naries5/umineko-fr/actions/runs/43575886140",
+  "assets": [
+    {
+      "name": "UminekoFR-Questions-1.0.0.zip",
+      "size": 4688645,
+      "sha256": "bccc71a782bc8571364cb54e0e243eed13c209284e5bc7c66ff358ccd3534447"
+    },
+    {
+      "name": "patch-fr-1.0.0.zip",
+      "size": 1102353278,
+      "sha256": "a6a5664473d2c742179f68283821dada5a0d365822269f70c7ddbe664839814a"
+    }
+  ],
+  "checkedAt": "2026-11-14T08:31:04.101828+00:00"
+}
