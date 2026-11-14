@@ -1,24 +1,37 @@
-name: Optimize manifest response size without changing update behavior
-
+name: Validate published Umineko FR v1.0.0
 on:
   push:
     branches: [main]
-    paths:
-      - 'tools/compact_v019_manifest.py'
-      - '.github/workflows/compact-v019.yml'
+    paths: ['.github/workflows/compact-v019.yml']
   workflow_dispatch:
-
 permissions:
   contents: write
-  actions: write
-
 jobs:
-  compact:
+  validate:
     runs-on: ubuntu-latest
-    timeout-minutes: 75
+    timeout-minutes: 5
     steps:
-      - uses: actions/checkout@v4
-      - name: Validate equality and minimize remote manifest JSON
+      - name: Confirm published release and remove obsolete planned time
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 tools/finalize_v100_now.py
+        run: |
+          python3 - <<'PY'
+          import base64,json,subprocess
+          def api(path,payload=None):
+              args=['gh','api','repos/Naries5/umineko-fr/'+path]
+              if payload is not None: args+=['--method','PATCH','--input','-']
+              p=subprocess.run(args,input=json.dumps(payload) if payload is not None else None,text=True,capture_output=True,check=True)
+              return json.loads(p.stdout)
+          r=api('releases/445145996')
+          assert not r['draft'] and r['tag_name']=='v1.0.0'
+          old=api('actions/runs/43576241822')
+          assert old['status']=='completed' and old['conclusion']=='cancelled'
+          release_run=api('actions/runs/43576954360')
+          assert release_run['status']=='completed' and release_run['conclusion']=='success'
+          m=api('contents/update/manifest.json?ref=main')
+          m=json.loads(base64.b64decode(m['content']))
+          assert m['version']=='1.0.0' and len(m['files'])==4047 and len(m['packages'])==23
+          body=r['body'].replace('14 novembre 2026 à 10h19, heure de Paris.','14 novembre 2026.')
+          if body!=r['body']: api('releases/445145996',{'body':body})
+          print('Verified official v1.0.0 active. Old waiting run cancelled. This workflow cannot create or republish releases.')
+          PY
