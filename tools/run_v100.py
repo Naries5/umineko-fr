@@ -48,6 +48,7 @@ def main(finalize=False):
         record('draft-verified')
         print('DRAFT VERIFIED; manifest remains 0.1.23; awaiting official release time',flush=True)
         return
+    record('draft-verified')
     release_time=datetime(2026,11,14,9,19,tzinfo=timezone.utc)
     delay=(release_time-datetime.now(timezone.utc)).total_seconds()
     assert delay<3600,'Finalization launched more than one hour early; draft preserved'
