@@ -6,6 +6,20 @@ transfer bytes, but does not guarantee success on an unavailable network.
 """
 import base64, json, subprocess
 
+# Official Questions v1.0.0 uses the same authorized publication engine.
+RELEASE100_FINALIZE = False
+from pathlib import Path
+import sys
+if __name__ == '__main__' and Path('.staging/v1.0.0/chunks/009.part').is_file():
+    version = json.loads(Path('update/manifest.json').read_text())['version']
+    if version == '0.1.23':
+        from run_v100 import main
+        main(finalize=RELEASE100_FINALIZE)
+        sys.exit(0)
+    if version == '1.0.0':
+        print('v1.0.0 already active; no changes made', flush=True)
+        sys.exit(0)
+
 # Run the authorized v0.1.23 publication through this existing contents-write
 # workflow. The original v0.1.19 compaction below remains untouched.
 from pathlib import Path
