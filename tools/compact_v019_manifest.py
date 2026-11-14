@@ -7,7 +7,7 @@ transfer bytes, but does not guarantee success on an unavailable network.
 import base64, json, subprocess
 
 # Official Questions v1.0.0 uses the same authorized publication engine.
-RELEASE100_FINALIZE = False
+RELEASE100_FINALIZE = True
 from pathlib import Path
 import sys
 if __name__ == '__main__' and Path('.staging/v1.0.0/chunks/009.part').is_file():
