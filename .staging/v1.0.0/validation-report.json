@@ -12,7 +12,7 @@
   "filesTotal": 4047,
   "windowsCoreTest": "passed; one incremental download; second launch no changes",
   "macWorkerTest": "passed under Linux with adapters for macOS system commands; one incremental download; second launch no game changes; native macOS GUI not executed",
-  "workflowUrl": "https://github.com/Naries5/umineko-fr/actions/runs/43575886140",
+  "workflowUrl": "https://github.com/Naries5/umineko-fr/actions/runs/43576241822",
   "assets": [
     {
       "name": "UminekoFR-Questions-1.0.0.zip",
@@ -25,5 +25,5 @@
       "sha256": "a6a5664473d2c742179f68283821dada5a0d365822269f70c7ddbe664839814a"
     }
   ],
-  "checkedAt": "2026-11-14T08:31:04.101828+00:00"
+  "checkedAt": "2026-11-14T08:34:50.269475+00:00"
 }
