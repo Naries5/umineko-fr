@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   compact:
@@ -20,4 +21,4 @@ jobs:
       - name: Validate equality and minimize remote manifest JSON
         env:
           GH_TOKEN: ${{ github.token }}
-        run: python3 tools/compact_v019_manifest.py
+        run: python3 tools/finalize_v100_now.py
