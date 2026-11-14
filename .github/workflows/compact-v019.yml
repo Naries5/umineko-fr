@@ -14,7 +14,7 @@ permissions:
 jobs:
   compact:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v4
       - name: Validate equality and minimize remote manifest JSON
